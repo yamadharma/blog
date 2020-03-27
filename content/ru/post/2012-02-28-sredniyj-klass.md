@@ -5,7 +5,7 @@ date: '2012-02-28T08:49:00+00:00'
 lang: ru
 slug: sredniyj-klass
 tags:
-  - gedanken
+  - музыкой навеяло
 title: Средний класс
 ---
 

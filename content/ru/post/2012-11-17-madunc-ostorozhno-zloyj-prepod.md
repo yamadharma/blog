@@ -5,7 +5,7 @@ date: '2012-11-17T15:37:00+00:00'
 lang: ru
 slug: madunc-ostorozhno-zloyj-prepod
 tags:
-  - education
+  - образование
 title: Мадунц А. - Осторожно! Злой препод!
 ---
 

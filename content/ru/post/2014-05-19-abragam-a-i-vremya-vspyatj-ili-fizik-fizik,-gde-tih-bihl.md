@@ -5,7 +5,7 @@ date: '2014-05-19T08:37:00+00:00'
 lang: ru
 slug: abragam-a-i-vremya-vspyatj-ili-fizik-fizik,-gde-tih-bihl
 tags:
-  - science-history
+  - история науки
   - science-people
 title: Абрагам А. И. - Время вспять или физик-физик, где ты был
 ---

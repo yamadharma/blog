@@ -5,7 +5,7 @@ date: '2008-01-03T23:42:00+00:00'
 lang: ru
 slug: kulturologija
 tags:
-  - gedanken
+  - музыкой навеяло
 title: Культурология
 ---
 

@@ -5,7 +5,7 @@ date: '2012-08-08T16:32:00+00:00'
 lang: ru
 slug: povsednevnaya-zhiznj-kremlya-pri-prezidentakh
 tags:
-  - microhistory
+  - микроистория
 title: Повседневная жизнь Кремля при президентах
 ---
 

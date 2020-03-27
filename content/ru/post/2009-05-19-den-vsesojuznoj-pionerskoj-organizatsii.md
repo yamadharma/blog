@@ -6,7 +6,7 @@ lang: ru
 slug: den-vsesojuznoj-pionerskoj-organizatsii
 tags:
   - даты
-  - gedanken
+  - музыкой навеяло
 title: День Всесоюзной пионерской организации
 ---
 

@@ -6,8 +6,8 @@ lang: ru
 slug: nam-pishut-iz-gruzii
 tags:
   - акын
-  - doch
-  - gedanken
+  - однако
+  - музыкой навеяло
 title: Нам пишут из Грузии
 ---
 

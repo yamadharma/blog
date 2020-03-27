@@ -5,7 +5,7 @@ date: '2013-04-03T15:27:00+00:00'
 lang: ru
 slug: razmernosti
 tags:
-  - gedanken
+  - музыкой навеяло
 title: Размерности
 ---
 

@@ -5,7 +5,7 @@ date: '2012-07-26T16:14:00+00:00'
 lang: ru
 slug: povsednevnaya-zhiznj-francuzov-pri-napoleone
 tags:
-  - microhistory
+  - микроистория
 title: Повседневная жизнь французов при Наполеоне
 ---
 

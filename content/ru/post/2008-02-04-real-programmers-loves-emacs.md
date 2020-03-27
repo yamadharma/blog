@@ -5,7 +5,7 @@ date: '2008-02-04T15:03:00+00:00'
 lang: ru
 slug: real-programmers-loves-emacs
 tags:
-  - gedanken
+  - музыкой навеяло
 title: Real programmers loves emacs
 ---
 

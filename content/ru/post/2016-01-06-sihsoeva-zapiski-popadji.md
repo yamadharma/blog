@@ -5,7 +5,7 @@ date: '2016-01-06T15:52:00+00:00'
 lang: ru
 slug: sihsoeva-zapiski-popadji
 tags:
-  - microhistory
+  - микроистория
 title: 'Сысоева Ю. М. - Записки попадьи: особенности жизни русского духовенства'
 ---
 

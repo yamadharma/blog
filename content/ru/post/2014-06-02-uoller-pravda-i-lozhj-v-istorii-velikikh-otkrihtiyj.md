@@ -5,7 +5,7 @@ date: '2014-06-02T08:52:00+00:00'
 lang: ru
 slug: uoller-pravda-i-lozhj-v-istorii-velikikh-otkrihtiyj
 tags:
-  - science-history
+  - история науки
 title: Уоллер Дж. - Правда и ложь в истории великих открытий
 ---
 

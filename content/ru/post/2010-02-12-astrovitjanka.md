@@ -5,7 +5,7 @@ date: '2010-02-12T12:26:00+00:00'
 lang: ru
 slug: astrovitjanka
 tags:
-  - sci-fiction
+  - sci fiction
 title: Астровитянка
 ---
 

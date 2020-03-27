@@ -5,7 +5,7 @@ date: '2006-12-29T12:29:00+00:00'
 lang: ru
 slug: ochen-zhiznenno
 tags:
-  - gedanken
+  - музыкой навеяло
 title: Очень жизненно
 ---
 
