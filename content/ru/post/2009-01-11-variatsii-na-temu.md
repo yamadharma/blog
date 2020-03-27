@@ -9,7 +9,6 @@ tags:
 title: Вариации на тему
 ---
 
-
 ## Вариации на тему
 
-{% owl youtube JVj45Lwp2Q0 %}
+{{< youtube JVj45Lwp2Q0 >}}

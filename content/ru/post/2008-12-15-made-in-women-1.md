@@ -12,14 +12,14 @@ title: Made in women № 1
 
 ## Покупай Gucci
 
-{% owl youtube vt6bH9xnBgQ  %} 
+{{< youtube vt6bH9xnBgQ  >}}
 
 <!--more-->
 
 ## Частушки
   
-{% owl youtube e3Cn7bmuCR0 %}
+{{< youtube e3Cn7bmuCR0 >}}
   
 ## Танец и мысли
   
-{% owl youtube LIlhl45K8E4 %}
+{{< youtube LIlhl45K8E4 >}}
