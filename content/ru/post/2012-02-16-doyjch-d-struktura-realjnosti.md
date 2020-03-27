@@ -5,7 +5,7 @@ date: '2012-02-16T11:59:00+00:00'
 lang: ru
 slug: doyjch-d-struktura-realjnosti
 tags:
-  - философия науки
+  - science-philosophy
 title: Дойч Д.  Структура реальности
 ---
 

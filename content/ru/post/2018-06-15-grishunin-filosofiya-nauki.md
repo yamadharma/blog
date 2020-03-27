@@ -5,7 +5,7 @@ date: '2018-06-15T16:25:46+00:00'
 lang: ru
 slug: grishunin-filosofiya-nauki
 tags:
-  - философия науки
+  - science-philosophy
 title: Гришунин С. И. - Философия науки. Основные концепции и проблемы
 ---
 

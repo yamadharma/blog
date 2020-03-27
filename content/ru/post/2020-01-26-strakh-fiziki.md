@@ -6,7 +6,7 @@ lang: ru
 slug: strakh-fiziki
 tags:
   - научпоп
-  - философия науки
+  - science-philosophy
 title: Краусс Л. М. - Страх физики. Сферический конь в вакууме
 ---
 
