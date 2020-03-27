@@ -5,7 +5,7 @@ date: '2006-09-30T22:58:00+00:00'
 lang: ru
 slug: pokrovskie-vorota
 tags:
-  - культура
+  - culture
   - соционика
 title: Покровские ворота
 ---

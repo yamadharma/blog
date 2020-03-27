@@ -5,7 +5,7 @@ date: '2014-05-13T08:51:00+00:00'
 lang: ru
 slug: gamov-moya-mirovaya-liniya
 tags:
-  - история науки
+  - science-history
   - science-people
 title: Гамов Г. А. - Моя мировая линия
 ---

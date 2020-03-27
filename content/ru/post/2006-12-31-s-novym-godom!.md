@@ -5,7 +5,7 @@ date: '2006-12-31T19:20:00+00:00'
 lang: ru
 slug: s-novym-godom!
 tags:
-  - музыкой навеяло
+  - gedanken
 title: С Новым Годом!
 ---
 

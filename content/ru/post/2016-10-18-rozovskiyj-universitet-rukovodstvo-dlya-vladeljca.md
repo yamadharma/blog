@@ -6,7 +6,7 @@ lang: ru
 slug: rozovskiyj-universitet-rukovodstvo-dlya-vladeljca
 tags:
   - science
-  - образование
+  - education
 title: Розовский Г. - Университет. Руководство для владельца
 ---
 

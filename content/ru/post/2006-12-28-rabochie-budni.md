@@ -5,7 +5,7 @@ date: '2006-12-28T10:43:00+00:00'
 lang: ru
 slug: rabochie-budni
 tags:
-  - музыкой навеяло
+  - gedanken
 title: Рабочие будни
 ---
 

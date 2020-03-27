@@ -5,7 +5,7 @@ date: '2010-03-09T21:28:00+00:00'
 lang: ru
 slug: grafinja-de-monsoro-na-ntv
 tags:
-  - музыкой навеяло
+  - gedanken
 title: Графиня дё Монсоро на НТВ
 ---
 

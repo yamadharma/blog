@@ -5,8 +5,8 @@ date: '2008-01-28T10:41:00+00:00'
 lang: ru
 slug: tsitata-iz-dr-house
 tags:
-  - музыкой навеяло
-  - мысли
+  - gedanken
+  - gedanken
 title: Цитата из Dr. House
 ---
 

@@ -6,7 +6,7 @@ lang: ru
 slug: christmas-rozhestvo
 tags:
   - за окном
-  - музыкой навеяло
+  - gedanken
 title: С Рождеством!
 ---
 

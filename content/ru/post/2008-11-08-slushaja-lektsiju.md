@@ -5,8 +5,8 @@ date: '2008-11-08T16:55:00+00:00'
 lang: ru
 slug: slushaja-lektsiju
 tags:
-  - мысли
-  - музыкой навеяло
+  - gedanken
+  - gedanken
 title: Слушая лекцию
 ---
 

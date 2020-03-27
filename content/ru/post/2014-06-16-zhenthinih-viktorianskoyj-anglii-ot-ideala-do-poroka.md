@@ -5,7 +5,7 @@ date: '2014-06-16T08:13:00+00:00'
 lang: ru
 slug: zhenthinih-viktorianskoyj-anglii-ot-ideala-do-poroka
 tags:
-  - микроистория
+  - microhistory
 title: Женщины Викторианской Англии. От идеала до порока
 ---
 
