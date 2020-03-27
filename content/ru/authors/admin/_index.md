@@ -18,24 +18,32 @@ organizations:
   url: "http://www.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+#bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Мои научные интересы включают физику, администрирование Unix и сетей. 
 
 Interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Теория относительности
+- Геометризация физики
+- Электродинамика и оптика
+- История физики
+- Философия физики
+- LaTeX
+
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
+  - course: Доктор физико-математических наук
     institution: Российский университет дружбы народов
-    year: 2012
-  - course: MEng in Artificial Intelligence
+    year: 2017
+  - course: Кандидат физико-математических наук
     institution: Российский университет дружбы народов
-    year: 2009
-  - course: BSc in Artificial Intelligence
+    year: 2000
+  - course: Магистр физики
     institution: Российский университет дружбы народов
-    year: 2008
+    year: 1995
+  - course: Бакалавр физики
+    institution: Российский университет дружбы народов
+    year: 1993
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -103,11 +111,13 @@ email: "yamadharma@gmail.com"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Кулябов Дмитрий Сергеевич работает профессором на кафедре прикладной
+информатики и теории вероятностей Российского университета дружбы
+народов. Его научные интересы относятся к области теоретической физики
+и математического моделирования.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.

@@ -5,7 +5,7 @@ date: '2015-01-02T13:23:00+00:00'
 lang: ru
 slug: smolin-nepriyatnosti-s-fizikoyj
 tags:
-  - наука
+  - science
 title: Смолин Ли - Неприятности с физикой
 ---
 

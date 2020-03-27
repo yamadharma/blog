@@ -5,7 +5,7 @@ date: '2006-12-22T20:43:00+00:00'
 lang: ru
 slug: blog-klienty-2-deepest-sender
 tags:
-  - lj
+  - blogging
 title: Blog-клиенты (2). Deepest Sender
 ---
 

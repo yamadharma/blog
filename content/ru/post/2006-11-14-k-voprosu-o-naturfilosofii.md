@@ -6,7 +6,7 @@ lang: ru
 slug: k-voprosu-o-naturfilosofii
 tags:
   - мысли
-  - наука
+  - science
 title: К вопросу о натурфилософии
 ---
 

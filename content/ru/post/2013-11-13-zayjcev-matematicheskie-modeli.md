@@ -5,7 +5,7 @@ date: '2013-11-13T07:14:00+00:00'
 lang: ru
 slug: zayjcev-matematicheskie-modeli
 tags:
-  - наука
+  - science
 title: Зайцев В. Ф. - Математические модели в точных и гуманитарных науках
 ---
 

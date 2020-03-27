@@ -17,28 +17,41 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-[[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
-  description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
-  """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Профессор"
+  company = "Российский университет дружбы народов"
+  company_url = "http://www.rudn.ru/en"
+  location = "Москва, Российская Федерация"
+  date_start = "2019-02-01"
+  #date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Старший научный сотрудник"
+  company = "Joint Institute for Nuclear Research"
+  company_url = "http://www.jinr.ru/main-en/"
+  location = "Дубна, Московская область, Российская Федерация"
+  date_start = "2013-09-15"
+  #date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Доцент"
+  company = "Российский университет дружбы народов"
+  company_url = "http://www.rudn.ru/en"
+  location = "Москва, Российская Федерация"
+  date_start = "2001-07-01"
+  date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Старший научный сотрудник"
+  company = "ООО «НИИгазэкономика»"
+  company_url = "https://niigazekonomika.gazprom.ru/"
+  location = "Москва, Российская Федерация"
+  date_start = "1997-05-01"
+  date_end = "2001-06-30"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
 
 +++

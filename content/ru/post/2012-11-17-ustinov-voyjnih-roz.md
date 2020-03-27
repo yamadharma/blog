@@ -5,7 +5,7 @@ date: '2012-11-17T16:08:00+00:00'
 lang: ru
 slug: ustinov-voyjnih-roz
 tags:
-  - история
+  - history
 title: Устинов В. Г. - Войны роз. Йорки против Ланкастеров
 ---
 

@@ -5,7 +5,7 @@ date: '2012-06-24T12:22:00+00:00'
 lang: ru
 slug: ehrlanzhe-genrikh-tretiyj-posledniyj-iz-valua
 tags:
-  - история
+  - history
 title: Эрланже Ф. - Генрих Третий. Последний из Валуа
 ---
 

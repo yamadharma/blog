@@ -5,7 +5,7 @@ date: '2012-10-18T11:03:00+00:00'
 lang: ru
 slug: vorobeyjchik-sovetih-molodomu-uchyonomu
 tags:
-  - наука
+  - science
 title: Воробейчик Е. Л. (ред) - Советы молодому учёному
 ---
 

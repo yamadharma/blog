@@ -5,7 +5,7 @@ date: '2014-05-22T08:08:00+00:00'
 lang: ru
 slug: katyuk-izrailj-kotorogo-ne-bihlo
 tags:
-  - история
+  - history
 title: Катюк Г. П. - Израиль, которого не было
 ---
 

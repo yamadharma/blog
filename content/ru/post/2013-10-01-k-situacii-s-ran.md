@@ -6,7 +6,7 @@ lang: ru
 slug: k-situacii-s-ran
 tags:
   - музыкой навеяло
-  - наука
+  - science
 title: К ситуации с РАН
 ---
 

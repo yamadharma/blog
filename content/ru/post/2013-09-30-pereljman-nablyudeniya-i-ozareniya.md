@@ -5,7 +5,7 @@ date: '2013-09-30T09:03:00+00:00'
 lang: ru
 slug: pereljman-nablyudeniya-i-ozareniya
 tags:
-  - наука
+  - science
 title: Перельман М. Е. - Наблюдения и озарения. От кванта до тёмной материи
 ---
 

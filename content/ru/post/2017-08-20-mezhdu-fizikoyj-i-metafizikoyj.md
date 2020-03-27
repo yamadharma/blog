@@ -5,7 +5,7 @@ date: '2017-08-20T12:25:00+00:00'
 lang: ru
 slug: mezhdu-fizikoyj-i-metafizikoyj
 tags:
-  - наука
+  - science
   - физика
 title: Владимиров Ю. C. - Между физикой и метафизикой
 ---

@@ -5,7 +5,7 @@ date: '2014-06-10T16:58:00+00:00'
 lang: ru
 slug: sasskind-teoreticheskiyj-minimum
 tags:
-  - наука
+  - science
 title: Сасскинд Л., Грабовски Дж. - Теоретический минимум. Все, что нужно знать о современной физике
 ---
 

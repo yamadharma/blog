@@ -6,7 +6,7 @@ lang: ru
 slug: zapiski-gidrodinamika
 tags:
   - science-people
-  - наука
+  - science
 title: Бетяев С. К. - Записки гидродинамика
 ---
 

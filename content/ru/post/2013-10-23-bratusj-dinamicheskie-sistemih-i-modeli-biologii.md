@@ -5,7 +5,7 @@ date: '2013-10-23T10:47:00+00:00'
 lang: ru
 slug: bratusj-dinamicheskie-sistemih-i-modeli-biologii
 tags:
-  - наука
+  - science
 title: Братусь А. С. и др. - Динамические системы и модели биологии
 ---
 

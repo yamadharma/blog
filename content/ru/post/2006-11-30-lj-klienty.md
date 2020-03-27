@@ -5,7 +5,7 @@ date: '2006-11-30T22:14:00+00:00'
 lang: ru
 slug: lj-klienty
 tags:
-  - lj
+  - blogging
 title: lj-клиенты
 ---
 

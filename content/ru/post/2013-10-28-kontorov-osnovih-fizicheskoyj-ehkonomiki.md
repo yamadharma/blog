@@ -5,7 +5,7 @@ date: '2013-10-28T08:28:00+00:00'
 lang: ru
 slug: kontorov-osnovih-fizicheskoyj-ehkonomiki
 tags:
-  - наука
+  - science
 title: Конторов Д. С. и  др. - Основы физической экономики
 ---
 

@@ -5,7 +5,7 @@ date: '2018-04-22T16:55:59+00:00'
 lang: ru
 slug: basovskaya-ot-tamary-do-dartagnana
 tags:
-  - история
+  - history
 title: Басовская Н. И. - От царицы Тамары до д’Артаньяна
 ---
 

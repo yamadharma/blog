@@ -5,7 +5,7 @@ date: '2018-01-03T19:03:00+00:00'
 lang: ru
 slug: progulki-po-srednevekovjyu
 tags:
-  - история
+  - history
 title: Мартьянов А. Л. - Прогулки по Средневековью
 ---
 

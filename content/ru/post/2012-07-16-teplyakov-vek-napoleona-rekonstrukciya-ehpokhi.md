@@ -5,7 +5,7 @@ date: '2012-07-16T18:51:00+00:00'
 lang: ru
 slug: teplyakov-vek-napoleona-rekonstrukciya-ehpokhi
 tags:
-  - история
+  - history
 title: Тепляков С. А. - Век Наполеона. Реконструкция эпохи
 ---
 

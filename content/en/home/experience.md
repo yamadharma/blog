@@ -17,28 +17,41 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-[[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
-  description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
-  """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Full Professor"
+  company = "Peoples' Friendship University of Russia"
+  company_url = "http://www.rudn.ru/en"
+  location = "Moscow, Russian Federation"
+  date_start = "2019-02-01"
+  #date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Senior Researcher"
+  company = "Joint Institute for Nuclear Research"
+  company_url = "http://www.jinr.ru/main-en/"
+  location = "Dubna, Moscow region, Russian Federation"
+  date_start = "2013-09-15"
+  #date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Associate Professor"
+  company = "Peoples' Friendship University of Russia"
+  company_url = "http://www.rudn.ru/en"
+  location = "Moscow, Russian Federation"
+  date_start = "2001-07-01"
+  date_end = "2019-01-31"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
+
+[[experience]]
+  title = "Senior Researcher"
+  company = "NII Gazekonomika"
+  company_url = "https://niigazekonomika.gazprom.ru/"
+  location = "Moscow, Russian Federation"
+  date_start = "1997-05-01"
+  date_end = "2001-06-30"
+  #description = """Taught electronic engineering and researched semiconductor physics."""
 
 +++

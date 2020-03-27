@@ -5,7 +5,7 @@ date: '2013-10-03T07:10:00+00:00'
 lang: ru
 slug: pervushin-principih-kvantovoyj-vselennoyj
 tags:
-  - наука
+  - science
 title: Первушин В. Н., Павлов А. Е. - Принципы квантовой Вселенной
 ---
 

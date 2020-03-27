@@ -5,7 +5,7 @@ date: '2013-01-04T15:32:00+00:00'
 lang: ru
 slug: grant-dzh-otvergnutaya-nauk
 tags:
-  - наука
+  - science
 title: Грант Дж. - Отвергнутая наука
 ---
 

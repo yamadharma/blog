@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Dmitry S. Kulyabov
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,38 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Professor of the Department of Applied Informatics and Probability Theory
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Peoples' Friendship University of Russia (RUDN University)
+  url: "http://www.rudn.ru/en"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include physics, Unix administration, and networking.
 
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+Interests:
+- Relativity
+- Geometrization 
+- Electrodynamics and optics
+- History of Physics
+- Philosophy of Physics
+- LaTeX
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: Doctor of Sciences in Physics and Mathematics
+    institution: Peoples' Friendship University of Russia
+    year: 2017
+  - course: Candidate of Sciences in Physics and Mathematics
+    institution: Peoples' Friendship University of Russia
+    year: 2000
+  - course: Master of Science in Physics
+    institution: Peoples' Friendship University of Russia
+    year: 1995
+  - course: Bachelor of Science in Physics
+    institution: Peoples' Friendship University of Russia
+    year: 1993
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -47,13 +53,51 @@ social:
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/dskulyabov
+- icon: youtube
+  icon_pack: fab
+  link: https://www.youtube.com/channel/UC_AO7kL5lhqM6c1O2tjH0GQ
+
+
+
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0000-0002-0877-7063
+- icon: impactstory
+  icon_pack: ai
+  link: https://profiles.impactstory.org/u/0000-0002-0877-7063
+- icon: researcherid
+  icon_pack: ai
+  link: http://www.researcherid.com/rid/I-3183-2013
+- icon: dblp
+  icon_pack: ai
+  link: https://dblp.uni-trier.de/pers/hd/k/Kulyabov:Dmitry_S=
 - icon: google-scholar
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://scholar.google.com/citations?user=D5XLDn4AAAAJ
+- icon: mendeley
+  icon_pack: ai
+  link: https://www.mendeley.com/profiles/dmitry-kulyabov/
+- icon: researchgate
+  icon_pack: ai
+  link: https://www.researchgate.net/profile/Dmitry_Kulyabov
+- icon: academia
+  icon_pack: ai
+  link: https://rudn.academia.edu/DmitryKulyabov
+
+
+- icon: arxiv
+  icon_pack: ai
+  link: http://arxiv.org/a/kulyabov_d_1
+
+- icon: bitbucket
+  icon_pack: fab
+  link: https://bitbucket.org/yamadharma/
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/yamadharma
+
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -61,15 +105,18 @@ social:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ""
+email: "yamadharma@gmail.com"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
-user_groups:
-- Researchers
-- Visitors
+#user_groups:
+#- Researchers
+#- Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+Dmitry S. Kulyabov works as a professor at the Department of
+Applied Informatics and Probability Theory of Peoples' Friendship
+University of Russia. His research interests are in the field of
+theoretical physics and mathematical modeling.
+

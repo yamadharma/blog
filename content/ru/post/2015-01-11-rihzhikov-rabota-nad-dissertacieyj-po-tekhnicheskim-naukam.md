@@ -5,7 +5,7 @@ date: '2015-01-11T17:52:00+00:00'
 lang: ru
 slug: rihzhikov-rabota-nad-dissertacieyj-po-tekhnicheskim-naukam
 tags:
-  - наука
+  - science
 title: Рыжиков Ю. И. - Работа над диссертацией по техническим наукам
 ---
 

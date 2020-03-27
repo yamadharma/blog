@@ -5,7 +5,7 @@ date: '2013-04-08T07:40:00+00:00'
 lang: ru
 slug: polnaya-istoriya-tayjnihkh-obthestv-i-sekt-mira
 tags:
-  - история
+  - history
 title: Полная история тайных обществ и сект мира
 ---
 

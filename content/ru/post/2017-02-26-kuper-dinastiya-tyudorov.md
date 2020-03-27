@@ -5,7 +5,7 @@ date: '2017-02-26T13:13:00+00:00'
 lang: ru
 slug: kuper-dinastiya-tyudorov
 tags:
-  - история
+  - history
 title: Купер Т. - Династия Тюдоров
 ---
 

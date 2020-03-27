@@ -5,7 +5,7 @@ date: '2013-12-09T08:28:00+00:00'
 lang: ru
 slug: bruks-trinadcatj-vetheyj-v-kotorihkh-net-ni-maleyjshego-smihsla
 tags:
-  - наука
+  - science
 title: Брукс М. - Тринадцать вещей, в которых нет ни малейшего смысла
 ---
 

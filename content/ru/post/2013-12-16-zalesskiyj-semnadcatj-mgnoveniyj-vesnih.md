@@ -5,7 +5,7 @@ date: '2013-12-16T07:44:00+00:00'
 lang: ru
 slug: zalesskiyj-semnadcatj-mgnoveniyj-vesnih
 tags:
-  - история
+  - history
 title: Залесский К. А. - Семнадцать мгновений весны. Кривое зеркало Третьего рейха
 ---
 

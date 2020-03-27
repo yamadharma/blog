@@ -5,7 +5,7 @@ date: '2018-03-27T15:56:18+00:00'
 lang: ru
 slug: from-blogspot-to-hexo
 tags:
-  - hexo
+  - blogging
 title: Миграция с blogspot на hexo
 ---
 
