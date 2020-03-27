@@ -5,7 +5,7 @@ date: '2011-02-17T15:22:00+00:00'
 lang: ru
 slug: razgvor-s-dzerzhinskim
 tags:
-  - настроение
+  - mood
   - музыкой навеяло
 title: Разговор с Дзержинским
 ---

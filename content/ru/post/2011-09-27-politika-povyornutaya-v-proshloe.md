@@ -5,8 +5,8 @@ date: '2011-09-27T10:35:00+00:00'
 lang: ru
 slug: politika-povyornutaya-v-proshloe
 tags:
-  - мысли
-  - однако
+  - gedanken
+  - doch
 title: Политика, повёрнутая в прошлое
 ---
 

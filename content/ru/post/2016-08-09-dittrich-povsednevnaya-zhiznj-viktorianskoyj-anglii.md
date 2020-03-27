@@ -5,7 +5,7 @@ date: '2016-08-09T12:45:00+00:00'
 lang: ru
 slug: dittrich-povsednevnaya-zhiznj-viktorianskoyj-anglii
 tags:
-  - микроистория
+  - microhistory
 title: Диттрич Т. В. - Повседневная жизнь викторианской Англии
 ---
 

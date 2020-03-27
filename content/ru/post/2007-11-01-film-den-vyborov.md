@@ -5,8 +5,8 @@ date: '2007-11-01T20:08:00+00:00'
 lang: ru
 slug: film-den-vyborov
 tags:
-  - культура
-  - мысли
+  - culture
+  - gedanken
   - акын
 title: Фильм "День выборов"
 ---

@@ -6,7 +6,7 @@ lang: ru
 slug: sviderskaya-kak-napisatj-i-opublikovatj-statjyu
 tags:
   - science
-  - образование
+  - education
 title: Свидерская И. В. - Как написать и опубликовать статью в международном научном журнале
 ---
 

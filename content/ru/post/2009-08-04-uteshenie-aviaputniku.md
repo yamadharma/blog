@@ -5,7 +5,7 @@ date: '2009-08-04T11:56:00+00:00'
 lang: ru
 slug: uteshenie-aviaputniku
 tags:
-  - мысли
+  - gedanken
   - музыкой навеяло
 title: Утешение авиапутнику
 ---

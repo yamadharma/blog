@@ -5,7 +5,7 @@ date: '2015-04-16T10:54:00+00:00'
 lang: ru
 slug: shirakh-nochj-fizikov
 tags:
-  - история науки
+  - science-history
   - science-people
 title: Ширах Р. - Ночь физиков. Гейзенберг, Ган, Вайцзеккер и немецкая бомба
 ---

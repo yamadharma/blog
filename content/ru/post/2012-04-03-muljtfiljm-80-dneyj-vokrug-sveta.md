@@ -6,7 +6,7 @@ lang: ru
 slug: muljtfiljm-80-dneyj-vokrug-sveta
 tags:
   - музыкой навеяло
-  - мысли
+  - gedanken
 title: Мультфильм 80 дней вокруг света
 ---
 

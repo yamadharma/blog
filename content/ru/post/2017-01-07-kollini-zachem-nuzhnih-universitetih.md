@@ -6,7 +6,7 @@ lang: ru
 slug: kollini-zachem-nuzhnih-universitetih
 tags:
   - science
-  - образование
+  - education
 title: Коллини С. - Зачем нужны университеты
 ---
 

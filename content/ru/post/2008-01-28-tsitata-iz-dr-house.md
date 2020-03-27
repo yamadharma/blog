@@ -6,7 +6,7 @@ lang: ru
 slug: tsitata-iz-dr-house
 tags:
   - музыкой навеяло
-  - мысли
+  - gedanken
 title: Цитата из Dr. House
 ---
 

@@ -5,7 +5,7 @@ date: '2007-02-19T20:56:00+00:00'
 lang: ru
 slug: slovarnaja-statja
 tags:
-  - мысли
+  - gedanken
   - музыкой навеяло
 title: Словарная статья
 ---

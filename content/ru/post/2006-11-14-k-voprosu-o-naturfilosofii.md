@@ -5,7 +5,7 @@ date: '2006-11-14T17:30:00+00:00'
 lang: ru
 slug: k-voprosu-o-naturfilosofii
 tags:
-  - мысли
+  - gedanken
   - science
 title: К вопросу о натурфилософии
 ---

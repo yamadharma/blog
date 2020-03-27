@@ -6,7 +6,7 @@ lang: ru
 slug: sokolov-kak-stanovyatsya-professorami
 tags:
   - science
-  - образование
+  - education
 title: Соколов М. - Как становятся профессорами
 ---
 
