@@ -12,3 +12,5 @@ title: С Рождеством!
 
 
 ![Christmas=Рождество](/img/2020/01/christmas-rozhestvo.jpg)
+
+<!--more-->

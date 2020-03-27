@@ -9,10 +9,9 @@ tags:
 title: Распопов Д. В. - Осколки сердец
 ---
 
-
-
-
 ## Распопов Д. В. - Осколки сердец
+
+<!--more-->
 
 [http://flibusta.is/sequence/9124](http://flibusta.is/sequence/9124)  
 [http://flibusta.is/b/222838](http://flibusta.is/b/222838)  
