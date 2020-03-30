@@ -29,7 +29,7 @@ date_format = "2006-01"
 
 [[experience]]
   title = "Старший научный сотрудник"
-  company = "Joint Institute for Nuclear Research"
+  company = "Объединенный институт ядерных исследований"
   company_url = "http://www.jinr.ru/"
   location = "Дубна, Московская область, Российская Федерация"
   date_start = "2013-09-15"
