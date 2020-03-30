@@ -58,7 +58,7 @@ highlight_languages = ["r"]  # Add support for highlighting additional languages
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
@@ -87,11 +87,11 @@ phone = ""
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
 #address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
-address = {street = "3 Ordzhonikidze", city = "Moscow", country = "Russian Federation", region = "Russian Federation", country_code = "RU"}
+address = {street = "3 Ordzhonikidze", city = "Moscow", region = "Russian Federation", postcode = "115419", country = "Russian Federation", country_code = "RU"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "55.710657", longitude = "37.603062"}
+coordinates = {latitude = "55.710707", longitude = "37.603774"}
 
 # Directions for visitors to locate you.
 directions = "Enter Building and take the stairs to Office 384 on Floor 3"

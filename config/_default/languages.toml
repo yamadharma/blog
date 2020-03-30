@@ -8,7 +8,8 @@
   contentDir = "content/ru"  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   title = "Д. С. Кулябов"
   date_format = "2006-01-02"
-  address = {street = "ул. Орджоникидзе, 3", city = "г. Москва", country = "Российская Федерация", region = "Российская Федерация", country_code = "RU"}
+  address = {street = "ул. Орджоникидзе, 3", city = "г. Москва", region = "Российская Федерация", postcode = "115419", country = "Российская Федерация", country_code = "RU"}
+  address_format = "zh"
 
 [[ru.menu.main]]
   name = "Home"
