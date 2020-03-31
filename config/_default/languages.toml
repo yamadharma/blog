@@ -12,7 +12,7 @@
   address_format = "zh"
 
 [[ru.menu.main]]
-  name = "Home"
+  name = "Обо мне"
   url = "#about"
   weight = 10
 

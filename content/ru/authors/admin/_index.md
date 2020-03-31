@@ -19,7 +19,7 @@ organizations:
 
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests include distributed robotics, mobile computing and programmable matter.
-bio: Мои научные интересы включают физику, администрирование Unix и сетей. 
+bio: Мои научные интересы включают физику, администрирование Unix и сетей.
 
 Interests:
 - Теория относительности
