@@ -9,5 +9,7 @@ featured: false
 publication: "*Proceedings of the 27th Symposium on Nuclear Electronics and Computing (NEC-2019)*"
 tags: ["rfbr19-01-00645", "rudn5-100", "scopus", "scopus"]
 url_pdf: "http://ceur-ws.org/Vol-2507/272-275-paper-48.pdf"
+projects:
+- machine-learning
 ---
 

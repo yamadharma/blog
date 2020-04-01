@@ -23,16 +23,21 @@ subtitle = ""
   filter_default = 0
   
   [[content.filter_button]]
-     name = "All"
+     name = "Всё"
      tag = "*"
 
   [[content.filter_button]]
      name = "Наука"
-     tag = "Science"
+     tag = "project-science"
+
+  [[content.filter_button]]
+     name = "Программирование"
+     tag = "project-programing"
+
 
   [[content.filter_button]]
      name = "Сисадмин"
-     tag = "Sysadm"
+     tag = "project-sysadm"
 
   # [[content.filter_button]]
   #   name = "Deep Learning"
