@@ -1,7 +1,7 @@
 ---
 categories:
   - сисадмин
-date: 2015-10-27T13:48:49+00:00T+00:00
+date: 2015-10-27T13:48:49+03:00
 lang: ru
 slug: samba-migrate
 tags:

@@ -1,7 +1,7 @@
 ---
 categories:
   - soft
-date: 2015-03-23T13:51:36+03:00T+00:00
+date: 2015-03-23T13:51:36+03:00
 lang: ru
 slug: jekyll-octopress
 tags:
