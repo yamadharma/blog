@@ -7,6 +7,7 @@ slug: from-lj-to-hexo
 tags:
   - blogging
 title: Миграция с livejournal на hexo
+projects: ["misc-utils"]
 ---
 
 
@@ -22,6 +23,7 @@ title: Миграция с livejournal на hexo
 Вторым вариантом я рассмотрел [ljdump](https://github.com/ghewgill/ljdump). Он скачивает журнал в _html_. Для идентификации использует логин и пароль.
 
 Потом пришлось преобразовать в _markdown_. Для этого написал скрипт _xml2md_.
+
 ```python
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-

@@ -7,6 +7,7 @@ slug: samba-migrate
 tags:
   - samba
 title: Миграция с Samba3 на Samba4
+projects: ["misc-utils"]
 ---
 
 

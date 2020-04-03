@@ -7,6 +7,7 @@ slug: webfm-uninstall
 tags:
   - drupal
 title: Деинсталляция WebFM из Drupal
+projects: ["misc-utils"]
 ---
 
 

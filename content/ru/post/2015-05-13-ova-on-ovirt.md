@@ -7,6 +7,7 @@ slug: ova-on-ovirt
 tags:
   - net
 title: Установка виртуальной машины NOC на oVirt
+projects: ["misc-utils"]
 ---
 
 

@@ -3,7 +3,7 @@ categories:
   - through-the-pages
 date: '2013-11-06T07:35:00+00:00'
 lang: ru
-slug: khoking-s.,-mlodinov-l-vihsshiyj-zamihsel
+slug: khoking-mlodinov-vihsshiyj-zamihsel
 tags:
   - научпоп
 title: Хокинг С., Млодинов Л. - Высший замысел

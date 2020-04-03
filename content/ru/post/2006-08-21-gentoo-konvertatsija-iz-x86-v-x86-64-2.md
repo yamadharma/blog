@@ -9,6 +9,7 @@ tags:
   - linux
   - gentoo
 title: 'Gentoo: конвертация из x86 в x86_64 (2)'
+projects: ["misc-utils"]
 ---
 
 

@@ -7,6 +7,7 @@ slug: from-blogspot-to-hexo
 tags:
   - blogging
 title: Миграция с blogspot на hexo
+projects: ["misc-utils"]
 ---
 
 

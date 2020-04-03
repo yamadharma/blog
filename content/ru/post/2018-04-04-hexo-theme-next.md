@@ -7,6 +7,7 @@ slug: hexo-theme-next
 tags:
   - blogging
 title: Установка темы NexT для hexo
+projects: ["misc-utils"]
 ---
 
 

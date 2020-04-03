@@ -7,6 +7,7 @@ slug: jekyll-octopress
 tags:
   - jekyll
 title: Перенос блога на Jekyll + Octopress
+projects: ["misc-utils"]
 ---
 
 
