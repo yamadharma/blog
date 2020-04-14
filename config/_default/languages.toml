@@ -32,6 +32,12 @@
   weight = 40
 
 [[ru.menu.main]]
+#  name = "Courses"
+  name = "Курсы"
+  url = "courses/"
+  weight = 50
+
+[[ru.menu.main]]
   name = "Контакты"
   url = "#contact"
   weight = 60
