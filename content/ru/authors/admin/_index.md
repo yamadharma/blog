@@ -65,6 +65,9 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-0877-7063
+- icon: erlang
+  icon_pack: fab
+  link: https://www.elibrary.ru/author_profile.asp?authorid=360953
 - icon: impactstory
   icon_pack: ai
   link: https://profiles.impactstory.org/u/0000-0002-0877-7063
