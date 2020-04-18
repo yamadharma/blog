@@ -5,7 +5,7 @@ date: '2014-01-14T07:15:00+00:00'
 lang: ru
 slug: pavlovich-kak-ya-ukral-million-ispovedj-raskayavshegosya-kardera
 tags:
-  - познавательно
+  - cognitive
 title: Павлович С. - Как я украл миллион. Исповедь раскаявшегося кардера
 ---
 

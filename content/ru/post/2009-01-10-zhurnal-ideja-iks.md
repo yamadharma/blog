@@ -5,7 +5,7 @@ date: '2009-01-10T21:25:00+00:00'
 lang: ru
 slug: zhurnal-ideja-iks
 tags:
-  - познавательно
+  - cognitive
 title: Журнал «Идея Икс»
 ---
 

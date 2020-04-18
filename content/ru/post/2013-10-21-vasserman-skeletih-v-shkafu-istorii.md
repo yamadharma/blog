@@ -5,7 +5,7 @@ date: '2013-10-21T13:44:00+00:00'
 lang: ru
 slug: vasserman-skeletih-v-shkafu-istorii
 tags:
-  - познавательно
+  - cognitive
 title: Вассерман А. А. - Скелеты в шкафу истории
 ---
 

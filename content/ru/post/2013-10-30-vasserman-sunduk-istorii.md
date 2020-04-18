@@ -5,7 +5,7 @@ date: '2013-10-30T07:36:00+00:00'
 lang: ru
 slug: vasserman-sunduk-istorii
 tags:
-  - познавательно
+  - cognitive
 title: Вассерман А. А. - Сундук истории. Секреты денег и человеческих пороков
 ---
 
