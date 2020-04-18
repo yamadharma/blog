@@ -1,7 +1,10 @@
 
-n.n.n / 2020-04-05
+0.1.1 / 2020-04-18
 ==================
 
+  * Added post
+  * Added link to elibrary.ru
+  * Добавил каталог для курсов
   * Google html-file verification
   * SEO configs
   * Added file for Yandex webmaster
@@ -22,10 +25,7 @@ n.n.n / 2020-04-05
   * Renamed tags
   * Tuning widgets
   * tags renamed
-  * Revert "tags renamed"
-  * tags renamed
   * Формат даты
-  * Заполнил поля
   * Заполнил поля
   * public as submodule
   * Hugo blog
