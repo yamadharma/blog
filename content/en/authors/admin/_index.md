@@ -33,6 +33,9 @@ education:
   - course: Doctor of Sciences in Physics and Mathematics
     institution: Peoples' Friendship University of Russia
     year: 2017
+  - course: Docent at the Department
+    institution: Peoples' Friendship University of Russia
+    year: 2005
   - course: Candidate of Sciences in Physics and Mathematics
     institution: Peoples' Friendship University of Russia
     year: 2000

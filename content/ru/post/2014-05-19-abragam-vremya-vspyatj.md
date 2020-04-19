@@ -3,19 +3,18 @@ categories:
   - through-the-pages
 date: '2014-05-19T08:37:00+00:00'
 lang: ru
-slug: abragam-a-i-vremya-vspyatj-ili-fizik-fizik,-gde-tih-bihl
+slug: abragam-vremya-vspyatj
 tags:
   - science-history
   - science-people
 title: Абрагам А. И. - Время вспять или физик-физик, где ты был
 ---
 
-
-
-
 ## Абрагам А. И. - Время вспять или физик-физик, где ты был
 
-[http://libgen.is/book/index.php?md5=D2503C16043E8B389CB2643BB835A80E](http://libgen.is/book/index.php?md5=D2503C16043E8B389CB2643BB835A80E)  
+<http://libgen.is/book/index.php?md5=D2503C16043E8B389CB2643BB835A80E>
+
+<!--more-->
 
 1.  Очень легко написано. Читается, как беллетристика. Особенно радует чувство русского языка у автора.
 2.  Описания работы во Франции и вообще французской науки показалось малоинтересным.
