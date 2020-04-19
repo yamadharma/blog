@@ -1,4 +1,12 @@
 
+0.1.2 / 2020-04-19
+=============
+
+  * Added Docent as education
+  * Tags: физика -> physics
+  * Old posts cleanups
+  * CC-BY license
+
 0.1.1 / 2020-04-18
 ==================
 
