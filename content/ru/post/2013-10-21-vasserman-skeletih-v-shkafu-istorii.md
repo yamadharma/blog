@@ -1,7 +1,7 @@
 ---
 categories:
   - through-the-pages
-date: '2013-10-21T13:44:00+00:00'
+date: '2013-10-21T13:44:00+03:00'
 lang: ru
 slug: vasserman-skeletih-v-shkafu-istorii
 tags:
@@ -14,7 +14,9 @@ title: Вассерман А. А. - Скелеты в шкафу истории
 
 ## Вассерман А. А. - Скелеты в шкафу истории
 
-[http://flibusta.is/b/298360](http://flibusta.is/b/298360)  
+<http://flibusta.is/b/298360>
+
+<!--more-->
 
 1. Очередной сборник статей.
 2. Название крайне условное.
