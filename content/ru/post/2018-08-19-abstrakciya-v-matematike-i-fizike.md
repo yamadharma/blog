@@ -6,7 +6,7 @@ lang: ru
 slug: abstrakciya-v-matematike-i-fizike
 tags:
   - science
-  - физика
+  - physics
 title: Каганов М. И., Любарский Г. Я. - Абстракция в математике и физике
 ---
 
