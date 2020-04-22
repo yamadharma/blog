@@ -6,7 +6,7 @@ lang: ru
 slug: russkij-marsh
 tags:
   - политика
-  - события
+  - occasion
 title: Русский марш
 ---
 

@@ -6,7 +6,7 @@ lang: ru
 slug: sic-transit-gloria-mundi
 tags:
   - doch
-  - события
+  - occasion
 title: Sic transit gloria mundi
 ---
 

@@ -5,7 +5,7 @@ date: '2020-01-07T13:59:03+00:00'
 lang: ru
 slug: christmas-rozhestvo
 tags:
-  - за окном
+  - through-the-window
   - музыкой навеяло
 title: С Рождеством!
 ---
