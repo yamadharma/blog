@@ -5,7 +5,7 @@ date: '2016-04-18T08:07:00+00:00'
 lang: ru
 slug: sonmez-putj-programmista
 tags:
-  - программирование
+  - programming
 title: Сонмез Д. - Путь программиста
 ---
 

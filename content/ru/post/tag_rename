@@ -19,4 +19,5 @@ sed -i \
     -e 's:- за окном$:- through-the-window:g' \
     -e 's:- события$:- occasion:g' \
     -e 's:- научпоп$:- popular-science:g' \
+    -e 's:- программирование$:- programming:g' \
     *.md
