@@ -1,6 +1,6 @@
 ---
 categories:
-  - сисадмин
+  - sysadmin
 date: '2007-06-30T13:30:00+00:00'
 lang: ru
 slug: schaste-est

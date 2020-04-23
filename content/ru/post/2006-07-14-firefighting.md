@@ -1,6 +1,6 @@
 ---
 categories:
-  - сисадмин
+  - sysadmin
 date: '2006-07-14T11:48:00+00:00'
 lang: ru
 slug: firefighting
