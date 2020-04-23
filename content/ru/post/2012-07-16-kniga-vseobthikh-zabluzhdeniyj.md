@@ -5,7 +5,7 @@ date: '2012-07-16T19:45:00+00:00'
 lang: ru
 slug: kniga-vseobthikh-zabluzhdeniyj
 tags:
-  - научпоп
+  - popular-science
 title: Книга всеобщих заблуждений
 ---
 

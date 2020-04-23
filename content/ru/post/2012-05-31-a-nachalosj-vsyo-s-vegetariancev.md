@@ -5,7 +5,7 @@ date: '2012-05-31T09:10:00+00:00'
 lang: ru
 slug: a-nachalosj-vsyo-s-vegetariancev
 tags:
-  - научпоп
+  - popular-science
 title: А началось всё с вегетарианцев
 ---
 

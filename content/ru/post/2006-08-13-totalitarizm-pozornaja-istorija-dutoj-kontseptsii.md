@@ -5,7 +5,7 @@ date: '2006-08-13T21:02:00+00:00'
 lang: ru
 slug: totalitarizm-pozornaja-istorija-dutoj-kontseptsii
 tags:
-  - политика
+  - politics
 title: 'Тоталитаризм: позорная история дутой концепции'
 ---
 
