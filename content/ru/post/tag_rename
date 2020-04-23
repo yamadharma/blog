@@ -21,4 +21,5 @@ sed -i \
     -e 's:- научпоп$:- popular-science:g' \
     -e 's:- программирование$:- programming:g' \
     -e 's:- литературоведение$:- literary-studies:g' \
+    -e 's:- политика$:- politics:g' \
     *.md
