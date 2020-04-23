@@ -5,7 +5,7 @@ date: '2017-07-30T16:34:00+00:00'
 lang: ru
 slug: dostayuthee-zveno
 tags:
-  - научпоп
+  - popular-science
 title: Дробышевский С. В. - Достающее звено
 ---
 

@@ -5,7 +5,7 @@ date: '2016-07-02T19:10:00+00:00'
 lang: ru
 slug: fisher-rastut-li-volosih-u-pokoyjnika
 tags:
-  - научпоп
+  - popular-science
 title: Фишер Э. П. - Растут ли волосы у покойника
 ---
 

@@ -5,7 +5,7 @@ date: '2020-01-04T14:32:43+00:00'
 lang: ru
 slug: byt-diktatorom
 tags:
-  - научпоп
+  - popular-science
 title: Хем М. - Быть диктатором. Практическое руководство
 ---
 

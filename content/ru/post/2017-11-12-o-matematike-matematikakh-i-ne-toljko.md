@@ -5,7 +5,7 @@ date: '2017-11-12T14:22:00+00:00'
 lang: ru
 slug: o-matematike-matematikakh-i-ne-toljko
 tags:
-  - научпоп
+  - popular-science
 title: Писаревский Б. М., Харин В. Т. - О математике, математиках и не только
 ---
 

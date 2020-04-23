@@ -5,7 +5,7 @@ date: '2013-12-18T07:38:00+00:00'
 lang: ru
 slug: petrov-gravitaciya
 tags:
-  - научпоп
+  - popular-science
 title: Петров А. Н. - Гравитация. От хрустальных сфер до кротовых нор
 ---
 
