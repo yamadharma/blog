@@ -20,4 +20,5 @@ sed -i \
     -e 's:- события$:- occasion:g' \
     -e 's:- научпоп$:- popular-science:g' \
     -e 's:- программирование$:- programming:g' \
+    -e 's:- литературоведение$:- literary-studies:g' \
     *.md

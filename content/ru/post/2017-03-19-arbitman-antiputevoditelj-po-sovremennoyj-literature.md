@@ -6,7 +6,7 @@ lang: ru
 slug: arbitman-antiputevoditelj-po-sovremennoyj-literature
 tags:
   - culture
-  - литературоведение
+  - literary-studies
 title: Арбитман Р. Э. - Антипутеводитель по современной литературе
 ---
 
