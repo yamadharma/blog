@@ -1,8 +1,8 @@
 ---
 categories:
-  - soft
+  - sysadmin
 date: '2018-04-21T15:37:34+00:00'
-lang: ru
+lang: en
 slug: from-lj-to-hexo
 tags:
   - blogging

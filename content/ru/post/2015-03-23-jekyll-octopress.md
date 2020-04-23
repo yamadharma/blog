@@ -1,6 +1,6 @@
 ---
 categories:
-  - soft
+  - sysadmin
 date: 2015-03-23T13:51:36+03:00
 lang: ru
 slug: jekyll-octopress
