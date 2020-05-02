@@ -10,5 +10,10 @@ publication: "*Saratov Fall Meeting 2018: Laser Physics, Photonic Technologies, 
 tags: ["rfbr19-01-00645", "rinc", "rudn5-100", "scopus", "wos", "rinc"]
 url_pdf: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11066/2525534/Finslerian-representation-of-the-Maxwell-equations/10.1117/12.2525534.full"
 doi: "10.1117/12.2525534"
+links:
+- icon: arxiv
+  icon_pack: ai
+  name: arXiv
+  url: https://arxiv.org/abs/2002.05446
 ---
 
