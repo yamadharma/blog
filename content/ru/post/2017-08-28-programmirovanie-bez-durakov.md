@@ -5,7 +5,7 @@ date: '2017-08-28T10:23:00+00:00'
 lang: ru
 slug: programmirovanie-bez-durakov
 tags:
-  - программирование
+  - programming
 title: Пассиг К. - Программирование без дураков
 ---
 

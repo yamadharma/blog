@@ -5,7 +5,7 @@ date: '2013-10-08T08:18:00+00:00'
 lang: ru
 slug: khoking-kratkaya-istoriya-vremeni
 tags:
-  - научпоп
+  - popular-science
 title: Хокинг С. - Краткая история времени
 ---
 

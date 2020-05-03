@@ -1,6 +1,6 @@
 ---
 categories:
-  - soft
+  - sysadmin
 date: '2006-08-18T09:21:00+00:00'
 lang: ru
 slug: gentoo-konvertatsija-iz-x86-v-x86-64

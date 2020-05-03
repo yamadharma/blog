@@ -5,7 +5,7 @@ date: '2007-10-12T21:33:00+00:00'
 lang: ru
 slug: red-google
 tags:
-  - политика
+  - politics
   - акын
 title: Red Google
 ---

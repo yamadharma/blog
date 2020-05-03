@@ -5,7 +5,7 @@ date: '2009-12-27T18:46:00+00:00'
 lang: ru
 slug: s-novym-godom
 tags:
-  - события
+  - occasion
 title: С Новым Годом!
 ---
 

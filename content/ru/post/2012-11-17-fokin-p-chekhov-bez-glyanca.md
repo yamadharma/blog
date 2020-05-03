@@ -5,7 +5,7 @@ date: '2012-11-17T15:48:00+00:00'
 lang: ru
 slug: fokin-p-chekhov-bez-glyanca
 tags:
-  - литературоведение
+  - literary-studies
 title: Фокин П. - Чехов без глянца
 ---
 

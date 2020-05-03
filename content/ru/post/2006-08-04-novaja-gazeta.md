@@ -5,7 +5,7 @@ date: "2006-08-04T00:14:00+00:00"
 lang: ru
 slug: novaja-gazeta
 tags:
-- политика
+- politics
 - пресса
 title: Новая газета
 ---

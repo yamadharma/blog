@@ -5,7 +5,7 @@ date: '2012-12-28T10:10:00+00:00'
 lang: ru
 slug: kolbert-d-volshebnihe-mirih
 tags:
-  - литературоведение
+  - literary-studies
 title: Колберт Д. - Волшебные миры
 ---
 

@@ -5,7 +5,7 @@ date: '2017-06-25T09:18:00+00:00'
 lang: ru
 slug: khoun-khroniki-tirannozavra
 tags:
-  - научпоп
+  - popular-science
 title: Хоун Д. - Хроники тираннозавра
 ---
 

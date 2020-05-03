@@ -1,6 +1,6 @@
 ---
 categories:
-  - soft
+  - sysadmin
 date: 2015-04-20T13:17:32+00:00
 lang: ru
 slug: octopus-multilingual
