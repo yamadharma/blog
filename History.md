@@ -1,4 +1,22 @@
 
+0.1.3 / 2020-05-03
+==================
+
+  * Try to add links to arxiv
+  * Moved files for bibliography
+  * Changed posts address
+  * Some: soft -> sysadmin
+  * сисадмин -> sysadmin
+  * политика -> politics
+  * литературоведение -> literary-studies
+  * программирование -> programming
+  * научпоп -> popular-science
+  * Translated some posts to english
+  * Maked images in en as links
+  * Попробовал перейи на webp. Смысла пока нет
+  * tags rename
+  * День рождения
+
 0.1.2 / 2020-04-19
 =============
 
