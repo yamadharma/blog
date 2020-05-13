@@ -5,8 +5,8 @@ date: '2007-05-30T14:35:00+00:00'
 lang: ru
 slug: sic-transit-gloria-mundi
 tags:
-  - doch
-  - occasion
+  - однако
+  - события
 title: Sic transit gloria mundi
 ---
 

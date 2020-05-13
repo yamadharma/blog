@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-04-16T10:54:00+00:00'
 lang: ru
 slug: shirakh-nochj-fizikov

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-12-16T07:44:00+00:00'
 lang: ru
 slug: zalesskiyj-semnadcatj-mgnoveniyj-vesnih

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-12-22T13:32:00+00:00'
 lang: ru
 slug: stomma-pereocenennihe-sobihtiya-istorii

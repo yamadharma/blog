@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-01-27T07:33:00+00:00'
 lang: ru
 slug: levenson-njyuton-i-faljshivomonetchik

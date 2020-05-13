@@ -6,7 +6,7 @@ subtitle: ""
 summary: ""
 authors: []
 tags: ["science-people"]
-categories: ["through-the-pages"]
+categories: ["листая-страницы"]
 slug: ackroyd-newton
 date: 2020-03-28T16:43:46+03:00
 lastmod: 2020-03-28T16:43:46+03:00

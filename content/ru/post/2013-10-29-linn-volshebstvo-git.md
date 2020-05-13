@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-10-29T09:15:00+00:00'
 lang: ru
 slug: linn-volshebstvo-git

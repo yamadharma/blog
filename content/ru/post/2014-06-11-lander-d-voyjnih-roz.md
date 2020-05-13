@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-06-11T08:01:00+00:00'
 lang: ru
 slug: lander-d-voyjnih-roz

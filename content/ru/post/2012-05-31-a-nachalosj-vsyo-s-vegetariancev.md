@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-05-31T09:10:00+00:00'
 lang: ru
 slug: a-nachalosj-vsyo-s-vegetariancev

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-08-04T20:14:00+00:00'
 lang: ru
 slug: kolganov-fenomen-db

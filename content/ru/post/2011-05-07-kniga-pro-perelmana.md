@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2011-05-07T21:19:00+00:00'
 lang: ru
 slug: kniga-pro-perelmana

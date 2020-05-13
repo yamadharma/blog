@@ -1,11 +1,11 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-10-21T13:44:00+03:00'
 lang: ru
 slug: vasserman-skeletih-v-shkafu-istorii
 tags:
-  - cognitive
+  - познавательно
 title: Вассерман А. А. - Скелеты в шкафу истории
 ---
 

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-01-06T21:07:00+00:00'
 lang: ru
 slug: mlodinov-raduga-feyjnmana

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2018-06-15T16:25:46+00:00'
 lang: ru
 slug: grishunin-filosofiya-nauki

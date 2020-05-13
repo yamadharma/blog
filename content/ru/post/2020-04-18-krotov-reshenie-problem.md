@@ -5,8 +5,8 @@ title: "Кротов А. В. - Решение проблем по-простей
 subtitle: ""
 summary: ""
 authors: []
-tags: ["cognitive"]
-categories: ["through-the-pages"]
+tags: ["познавательно"]
+categories: ["листая-страницы"]
 date: 2020-04-18T18:13:25+03:00
 lastmod: 2020-04-18T18:13:25+03:00
 featured: false

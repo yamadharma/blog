@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-02-16T11:59:00+00:00'
 lang: ru
 slug: doyjch-d-struktura-realjnosti

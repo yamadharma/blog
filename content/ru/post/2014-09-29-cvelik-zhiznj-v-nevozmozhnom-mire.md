@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-09-29T08:00:00+00:00'
 lang: ru
 slug: cvelik-zhiznj-v-nevozmozhnom-mire

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-06-10T16:58:00+00:00'
 lang: ru
 slug: sasskind-teoreticheskiyj-minimum

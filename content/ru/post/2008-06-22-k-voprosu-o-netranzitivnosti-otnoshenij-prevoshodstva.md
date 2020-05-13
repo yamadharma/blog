@@ -5,7 +5,7 @@ date: '2008-06-22T21:23:00+00:00'
 lang: ru
 slug: k-voprosu-o-netranzitivnosti-otnoshenij-prevoshodstva
 tags:
-  - gedanken
+  - мысли
 title: К вопросу о нетранзитивности отношений превосходства
 ---
 

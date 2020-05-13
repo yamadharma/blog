@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-02-17T07:13:00+00:00'
 lang: ru
 slug: uljyanenko-shokiruyuthie-kitayjcih

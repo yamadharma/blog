@@ -6,7 +6,7 @@ subtitle: ""
 summary: ""
 authors: []
 tags: ["microhistory"]
-categories: ["through-the-pages"]
+categories: ["листая-страницы"]
 date: 2020-03-30T15:18:29+03:00
 lastmod: 2020-03-30T15:18:29+03:00
 featured: false

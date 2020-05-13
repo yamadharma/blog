@@ -1,4 +1,12 @@
 
+0.1.4 / 2020-05-13
+==================
+
+  * Renamed tags
+  * Reverce renamed tags
+  * Fixed themes uncompabilities
+  * Updated theme
+
 0.1.3 / 2020-05-03
 ==================
 

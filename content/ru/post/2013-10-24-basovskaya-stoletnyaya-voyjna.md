@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-10-24T07:11:00+00:00'
 lang: ru
 slug: basovskaya-stoletnyaya-voyjna

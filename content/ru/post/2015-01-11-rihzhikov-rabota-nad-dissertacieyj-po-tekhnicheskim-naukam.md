@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-01-11T17:52:00+00:00'
 lang: ru
 slug: rihzhikov-rabota-nad-dissertacieyj-po-tekhnicheskim-naukam

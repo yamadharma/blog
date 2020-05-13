@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Dmitry S. Kulyabov
+title: Dmitry S. Kulyabov
 
 # Username (this should match the folder name)
 authors:

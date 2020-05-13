@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2020-02-23T15:31:03+03:00'
 lang: ru
 slug: gureev-einstein

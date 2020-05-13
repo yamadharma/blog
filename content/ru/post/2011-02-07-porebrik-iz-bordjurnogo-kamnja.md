@@ -1,11 +1,11 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2011-02-07T15:00:00+00:00'
 lang: ru
 slug: porebrik-iz-bordjurnogo-kamnja
 tags:
-  - cognitive
+  - познавательно
 title: Поребрик из бордюрного камня
 ---
 

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-07-16T19:45:00+00:00'
 lang: ru
 slug: kniga-vseobthikh-zabluzhdeniyj

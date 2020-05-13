@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-05-19T08:37:00+00:00'
 lang: ru
 slug: abragam-vremya-vspyatj

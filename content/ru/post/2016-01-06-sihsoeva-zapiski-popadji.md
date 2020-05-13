@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-01-06T15:52:00+00:00'
 lang: ru
 slug: sihsoeva-zapiski-popadji

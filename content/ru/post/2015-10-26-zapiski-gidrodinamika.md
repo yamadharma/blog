@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-10-26T08:46:00+00:00'
 lang: ru
 slug: zapiski-gidrodinamika

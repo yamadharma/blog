@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-08-19T18:06:00+00:00'
 lang: ru
 slug: neandertaljcih-istoriya-nesostoyavshegosya-chelovechestva

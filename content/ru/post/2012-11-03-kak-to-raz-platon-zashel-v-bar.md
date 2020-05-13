@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-11-03T10:21:00+00:00'
 lang: ru
 slug: kak-to-raz-platon-zashel-v-bar
