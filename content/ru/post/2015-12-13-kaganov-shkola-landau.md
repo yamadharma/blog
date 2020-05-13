@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-12-13T19:40:00+00:00'
 lang: ru
 slug: kaganov-shkola-landau

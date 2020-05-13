@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-11-06T07:35:00+00:00'
 lang: ru
 slug: khoking-mlodinov-vihsshiyj-zamihsel

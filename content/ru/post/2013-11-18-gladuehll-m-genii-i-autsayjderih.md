@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-11-18T07:42:00+00:00'
 lang: ru
 slug: gladuehll-m-genii-i-autsayjderih

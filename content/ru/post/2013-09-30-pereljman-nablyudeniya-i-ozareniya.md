@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-09-30T09:03:00+00:00'
 lang: ru
 slug: pereljman-nablyudeniya-i-ozareniya

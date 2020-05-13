@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-10-28T08:28:00+00:00'
 lang: ru
 slug: kontorov-osnovih-fizicheskoyj-ehkonomiki

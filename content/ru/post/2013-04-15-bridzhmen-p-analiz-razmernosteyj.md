@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-04-15T13:13:00+00:00'
 lang: ru
 slug: bridzhmen-p-analiz-razmernosteyj

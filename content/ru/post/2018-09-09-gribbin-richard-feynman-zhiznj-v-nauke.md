@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2018-09-09T09:13:31+00:00'
 lang: ru
 slug: gribbin-richard-feynman-zhiznj-v-nauke

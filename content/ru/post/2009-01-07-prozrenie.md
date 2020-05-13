@@ -5,8 +5,8 @@ date: '2009-01-07T00:48:00+00:00'
 lang: ru
 slug: prozrenie
 tags:
-  - gedanken
-  - mood
+  - мысли
+  - настроение
 title: Прозрение
 ---
 

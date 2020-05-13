@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-12-17T16:53:00+00:00'
 lang: ru
 slug: goncharova-nekromant-rabochie-budni

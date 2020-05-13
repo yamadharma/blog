@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-02-16T16:40:00+00:00'
 lang: ru
 slug: lisina-professionaljnihyj-nekromant

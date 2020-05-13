@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-10-18T11:03:00+00:00'
 lang: ru
 slug: vorobeyjchik-sovetih-molodomu-uchyonomu

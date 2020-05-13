@@ -6,7 +6,7 @@ lang: ru
 slug: windows-7-beta
 tags:
   - windows
-  - музыкой навеяло
+  - музыкой-навеяло
 title: Windows 7 beta
 ---
 

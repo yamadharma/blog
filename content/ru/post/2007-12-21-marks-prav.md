@@ -5,8 +5,8 @@ date: '2007-12-21T17:32:00+00:00'
 lang: ru
 slug: marks-prav
 tags:
-  - gedanken
-  - doch
+  - мысли
+  - однако
 title: Маркс прав
 ---
 

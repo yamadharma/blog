@@ -6,9 +6,9 @@ lang: ru
 slug: polety-vo-sne-i-na-javu
 tags:
   - culture
-  - gedanken
-  - mood
-  - музыкой навеяло
+  - мысли
+  - настроение
+  - музыкой-навеяло
 title: Полёты во сне и на яву
 ---
 

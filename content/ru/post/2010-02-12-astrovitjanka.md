@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2010-02-12T12:26:00+00:00'
 lang: ru
 slug: astrovitjanka

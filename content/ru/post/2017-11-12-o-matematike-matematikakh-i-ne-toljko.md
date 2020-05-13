@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2017-11-12T14:22:00+00:00'
 lang: ru
 slug: o-matematike-matematikakh-i-ne-toljko

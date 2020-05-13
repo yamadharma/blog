@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-06-24T19:33:00+00:00'
 lang: ru
 slug: bellok-kh-rishelje

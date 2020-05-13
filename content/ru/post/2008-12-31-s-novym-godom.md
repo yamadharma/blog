@@ -5,7 +5,7 @@ date: '2008-12-31T19:33:00+00:00'
 lang: ru
 slug: s-novym-godom
 tags:
-  - through-the-window
+  - за-окном
 title: С Новым Годом!
 ---
 

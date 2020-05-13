@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-10-23T10:47:00+00:00'
 lang: ru
 slug: bratusj-dinamicheskie-sistemih-i-modeli-biologii

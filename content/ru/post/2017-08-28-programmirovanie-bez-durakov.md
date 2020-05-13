@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2017-08-28T10:23:00+00:00'
 lang: ru
 slug: programmirovanie-bez-durakov

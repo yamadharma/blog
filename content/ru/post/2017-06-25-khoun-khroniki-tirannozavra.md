@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2017-06-25T09:18:00+00:00'
 lang: ru
 slug: khoun-khroniki-tirannozavra

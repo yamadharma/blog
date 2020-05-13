@@ -5,8 +5,8 @@ date: '2010-08-08T10:16:00+00:00'
 lang: ru
 slug: proekt-zakona-o-militsii
 tags:
-  - gedanken
-  - музыкой навеяло
+  - мысли
+  - музыкой-навеяло
 title: Проект закона о милиции
 ---
 

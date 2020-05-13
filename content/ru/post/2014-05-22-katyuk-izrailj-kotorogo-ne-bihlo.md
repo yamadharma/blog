@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-05-22T08:08:00+00:00'
 lang: ru
 slug: katyuk-izrailj-kotorogo-ne-bihlo

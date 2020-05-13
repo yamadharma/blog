@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-08-27T19:44:00+00:00'
 lang: ru
 slug: raspopov-oskolki-serdec

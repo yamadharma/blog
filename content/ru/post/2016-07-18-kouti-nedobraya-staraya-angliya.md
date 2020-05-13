@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-07-18T18:50:00+00:00'
 lang: ru
 slug: kouti-nedobraya-staraya-angliya

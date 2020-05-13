@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-01-13T07:02:00+00:00'
 lang: ru
 slug: rubin-ustroyjstvo-nasheyj-vselennoyj

@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-11-17T15:37:00+00:00'
 lang: ru
 slug: madunc-ostorozhno-zloyj-prepod

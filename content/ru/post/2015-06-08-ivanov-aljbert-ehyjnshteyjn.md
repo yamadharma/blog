@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-06-08T16:16:00+00:00'
 lang: ru
 slug: ivanov-aljbert-ehyjnshteyjn

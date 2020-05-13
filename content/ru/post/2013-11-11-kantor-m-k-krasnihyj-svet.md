@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-11-11T15:59:00+00:00'
 lang: ru
 slug: kantor-m-k-krasnihyj-svet

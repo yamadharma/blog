@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-02-21T20:22:00+00:00'
 lang: ru
 slug: ayjzekson-ehyjnshteyjn

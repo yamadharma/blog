@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-05-05T10:49:00+00:00'
 lang: ru
 slug: krug-landau

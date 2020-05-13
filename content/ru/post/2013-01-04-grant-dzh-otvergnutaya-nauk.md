@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2013-01-04T15:32:00+00:00'
 lang: ru
 slug: grant-dzh-otvergnutaya-nauk

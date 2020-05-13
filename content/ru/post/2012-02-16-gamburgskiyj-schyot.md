@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-02-16T12:34:00+00:00'
 lang: ru
 slug: gamburgskiyj-schyot

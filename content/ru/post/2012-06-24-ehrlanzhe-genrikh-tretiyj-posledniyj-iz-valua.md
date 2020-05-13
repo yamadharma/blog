@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-06-24T12:22:00+00:00'
 lang: ru
 slug: ehrlanzhe-genrikh-tretiyj-posledniyj-iz-valua

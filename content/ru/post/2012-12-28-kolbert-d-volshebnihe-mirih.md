@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2012-12-28T10:10:00+00:00'
 lang: ru
 slug: kolbert-d-volshebnihe-mirih

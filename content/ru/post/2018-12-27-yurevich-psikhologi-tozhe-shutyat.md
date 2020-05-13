@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2018-12-27T10:05:15+00:00'
 lang: ru
 slug: yurevich-psikhologi-tozhe-shutyat

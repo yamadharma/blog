@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2015-01-02T13:23:00+00:00'
 lang: ru
 slug: smolin-nepriyatnosti-s-fizikoyj

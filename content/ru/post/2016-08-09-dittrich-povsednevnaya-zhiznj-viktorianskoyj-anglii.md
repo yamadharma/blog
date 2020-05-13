@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-08-09T12:45:00+00:00'
 lang: ru
 slug: dittrich-povsednevnaya-zhiznj-viktorianskoyj-anglii

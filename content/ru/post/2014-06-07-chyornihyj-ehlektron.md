@@ -1,11 +1,11 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2014-06-07T14:02:00+00:00'
 lang: ru
 slug: chyornihyj-ehlektron
 tags:
-  - музыкой навеяло
+  - музыкой-навеяло
 title: Чёрный электрон
 ---
 

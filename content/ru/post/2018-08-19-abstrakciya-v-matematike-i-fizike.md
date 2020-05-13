@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2018-08-19T14:36:08+00:00'
 lang: ru
 slug: abstrakciya-v-matematike-i-fizike

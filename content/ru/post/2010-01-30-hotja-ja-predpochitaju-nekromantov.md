@@ -5,7 +5,7 @@ date: '2010-01-30T17:26:00+00:00'
 lang: ru
 slug: hotja-ja-predpochitaju-nekromantov
 tags:
-  - doch
+  - однако
 title: Хотя я предпочитаю некромантов
 ---
 

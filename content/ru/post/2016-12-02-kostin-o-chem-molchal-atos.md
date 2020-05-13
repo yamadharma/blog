@@ -1,6 +1,6 @@
 ---
 categories:
-  - through-the-pages
+  - листая-страницы
 date: '2016-12-02T12:17:00+00:00'
 lang: ru
 slug: kostin-o-chem-molchal-atos
