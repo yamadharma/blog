@@ -77,6 +77,10 @@ social:
 - icon: researcherid
   icon_pack: ai
   link: http://www.researcherid.com/rid/I-3183-2013
+- icon: scopus
+  icon_pack: custom
+  link: https://www.scopus.com/authid/detail.uri?authorId=35194130800
+
 - icon: dblp
   icon_pack: ai
   link: https://dblp.uni-trier.de/pers/hd/k/Kulyabov:Dmitry_S=
@@ -86,6 +90,7 @@ social:
 - icon: mendeley
   icon_pack: ai
   link: https://www.mendeley.com/profiles/dmitry-kulyabov/
+
 - icon: researchgate
   icon_pack: ai
   link: https://www.researchgate.net/profile/Dmitry_Kulyabov
