@@ -87,7 +87,9 @@ social:
 - icon: academia
   icon_pack: ai
   link: https://rudn.academia.edu/DmitryKulyabov
-
+- icon: osf
+  icon_pack: ai
+  link: https://osf.io/5ya7v/
 
 - icon: arxiv
   icon_pack: ai
