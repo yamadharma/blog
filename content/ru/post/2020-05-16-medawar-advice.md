@@ -31,7 +31,7 @@ projects: []
 
 ## Медавар П. Б. - Советы молодому учёному
 
-<https://library.bz/main/uploads/6EFF30EFA9B665A8AFE0E90AF8C771BE>
+<https://libgen.is/book/index.php?md5=6EFF30EFA9B665A8AFE0E90AF8C771BE>
 
 <!--more-->
 
