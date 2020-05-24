@@ -12,7 +12,7 @@ title: Сталин ненадолго отошел
 Сидят Рузвельт и Черчилль. 
 Памятник называется «Союзники», но больше подходит «Сталин ненадолго отошел». 
 
-![The Allies sculpture on Bond Street](/img/2010/06/stalin.jpg "The Allies sculpture on Bond Street")
+{{< figure library="true" src="/2010/06/stalin.jpg" title="The Allies sculpture on Bond Street" lightbox="true" >}}
 
 <!--more-->
 

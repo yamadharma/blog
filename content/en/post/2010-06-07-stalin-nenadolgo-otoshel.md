@@ -12,7 +12,7 @@ title: Stalin departed for a short while
 Roosevelt and Churchill are sitting.
 The monument is called "Allies", but more appropriate, "Stalin departed for a short while."
 
-![The Allies sculpture on Bond Street](/img/2010/06/stalin.jpg "The Allies sculpture on Bond Street")
+{{< figure library="true" src="/2010/06/stalin.jpg" title="The Allies sculpture on Bond Street" lightbox="true" >}}
 
 <!--more-->
 
