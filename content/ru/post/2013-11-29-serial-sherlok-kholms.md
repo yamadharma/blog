@@ -8,13 +8,12 @@ tags: []
 title: Сериал Шерлок Холмс (Андрей Кавун)
 ---
 
-
-
-
 ## Сериал «Шерлок Холмс» (Андрей Кавун)
 
-[http://rutracker.org/forum/viewtopic.php?t=4592547](http://rutracker.org/forum/viewtopic.php?t=4592547)  
-[http://thetvdb.com/?tab=series&id=275448&lid=22](http://thetvdb.com/?tab=series&id=275448&lid=22)  
+- [http://rutracker.org/forum/viewtopic.php?t=4592547](http://rutracker.org/forum/viewtopic.php?t=4592547)  
+- [http://thetvdb.com/?tab=series&id=275448&lid=22](http://thetvdb.com/?tab=series&id=275448&lid=22)  
+
+<!--more-->
 
 1.  Видно сильное влияние фильма Гая Ричи.
 2.  Допкунайте тесно в роли миссис Хадсон. Так и ждёшь, когда она выйдет на первый план.

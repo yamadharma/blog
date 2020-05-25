@@ -10,6 +10,9 @@ tags:
 title: К вопросу о терморектальном криптоанализе
 ---
 
+{{< figure library="true" src="/2009/02/538_v1.png" title="Безопасность" lightbox="true" >}}
 
+<!--more-->
 
-![http://pics.livejournal.com/yamadharma/pic/0000y9rz](http://pics.livejournal.com/yamadharma/pic/0000y9rz) http://www.xkcd.ru/538/ http://xkcd.com/538/
+- <http://www.xkcd.ru/538/>
+- <http://xkcd.com/538/>
