@@ -1,6 +1,6 @@
 ---
-title: Введение в операционную систему UNIX
-linktitle: Лекция 1
+title: Управление программным обеспечением
+linktitle: Лекция 8
 toc: true
 type: docs
 date: "2020-04-14T16:00:00+03:00"
@@ -8,13 +8,13 @@ draft: false
 menu:
   os-intro:
     parent: Лекции
-    weight: 1
+    weight: 8
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 1
-url_slides: "/files/bib/2020/vychmat-2020-rnd-cas.pdf"
+weight: 8
 ---
 
 ## Видео презентации
 
-{{< youtube HBJxzv6WaVA >}}
+{{< youtube 0SdkK3Y7kew >}}
+
