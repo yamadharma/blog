@@ -1,6 +1,6 @@
 ---
 title: Введение в операционную систему UNIX
-event: Лекция 1. Курс «Операционные системы»
+#event: Лекция 1. Курс «Операционные системы»
 #event_url: https://example.org
 
 #location: Source Themes HQ
@@ -80,13 +80,16 @@ slides: "courses/os-intro/lection01"
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects:
-- internal-project
+projects: ["courses-os-intro"]
 
 # Enable math on this page?
 math: true
 ---
 
-## Видео презентации
+## Курс «Операционные системы»
+
+## Лекция 1. Введение в операционную систему UNIX
+
+### Видео презентации
 
 {{< youtube HBJxzv6WaVA >}}
