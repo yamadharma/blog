@@ -12,7 +12,6 @@ menu:
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 1
-url_slides: "/files/bib/2020/vychmat-2020-rnd-cas.pdf"
 ---
 
 ## Видео презентации
