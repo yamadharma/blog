@@ -59,7 +59,7 @@ social:
   link: https://twitter.com/dskulyabov
 - icon: youtube
   icon_pack: fab
-  link: https://www.youtube.com/channel/UC_AO7kL5lhqM6c1O2tjH0GQ
+  link: https://www.youtube.com/c/DmitryKulyabov
 
 
 
