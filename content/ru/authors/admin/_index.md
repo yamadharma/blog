@@ -77,8 +77,8 @@ social:
 - icon: researcherid
   icon_pack: ai
   link: http://www.researcherid.com/rid/I-3183-2013
-- icon: scopus
-  icon_pack: custom
+- icon: elsevier
+  icon_pack: ai
   link: https://www.scopus.com/authid/detail.uri?authorId=35194130800
 
 - icon: dblp
