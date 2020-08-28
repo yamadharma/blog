@@ -3,6 +3,7 @@
 
 title: "Акройд П. - Ньютон. Биография"
 subtitle: ""
+slug: ackroyd-newton
 summary: ""
 authors: []
 tags: ["science-people"]

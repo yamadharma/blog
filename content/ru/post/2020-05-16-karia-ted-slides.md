@@ -3,6 +3,7 @@
 
 title: "Кариа А. - Поражай своей презентацией"
 subtitle: ""
+slug: karia-ted-slides
 summary: ""
 authors: []
 tags: ["познавательно"]

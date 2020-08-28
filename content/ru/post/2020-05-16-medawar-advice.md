@@ -3,6 +3,7 @@
 
 title: "Медавар П. Б. - Советы молодому учёному"
 subtitle: ""
+slug: medawar-advice
 summary: ""
 authors: []
 tags: ["жизнь-в-науке"]
