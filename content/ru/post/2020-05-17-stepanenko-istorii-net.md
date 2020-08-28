@@ -3,6 +3,7 @@
 
 title: "Степаненко А. - Истории больше нет"
 subtitle: ""
+slug: stepanenko-istorii-net
 summary: ""
 authors: []
 tags: ["quasi-science","history"]

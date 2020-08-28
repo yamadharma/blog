@@ -3,6 +3,7 @@
 
 title: "Сидоров В. Г. - Повседневная жизнь эпохи Шерлока Холмса и доктора Ватсона"
 subtitle: ""
+slug: sidorov-holms
 summary: ""
 authors: []
 tags: ["microhistory"]

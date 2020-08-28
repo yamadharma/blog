@@ -3,6 +3,7 @@
 
 title: "Мартынова И. - Маг под прикрытием"
 subtitle: ""
+slug: mag-pod-prikrytiem
 summary: ""
 authors: []
 tags: ["fantasy"]
