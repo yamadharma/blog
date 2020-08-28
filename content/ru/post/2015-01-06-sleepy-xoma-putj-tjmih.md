@@ -9,12 +9,11 @@ tags:
 title: Sleepy Xoma - Путь тьмы
 ---
 
-
-
-
 ## Sleepy Xoma - Путь тьмы
 
 [http://samlib.ru/w/wiktor_w_w/pt_all.shtml](http://samlib.ru/w/wiktor_w_w/pt_all.shtml)  
+
+<!--more-->
 
 1.  Сильная вещь. Прочёл на одном дыхании.
 2.  Ещё раз убедился, что фантастика не жанр, а метод.

@@ -10,7 +10,6 @@ tags:
 title: С Рождеством!
 ---
 
-
-![Christmas=Рождество](/img/2020/01/christmas-rozhestvo.jpg)
+{{< figure library="true" src="/2020/01/christmas-rozhestvo.jpg" title="Christmas=Рождество" lightbox="true" >}}
 
 <!--more-->

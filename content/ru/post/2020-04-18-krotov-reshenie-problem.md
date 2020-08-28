@@ -3,6 +3,7 @@
 
 title: "Кротов А. В. - Решение проблем по-простейшему"
 subtitle: ""
+slug: krotov-reshenie-problem
 summary: ""
 authors: []
 tags: ["познавательно"]

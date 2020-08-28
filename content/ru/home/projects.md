@@ -31,9 +31,12 @@ subtitle = ""
      tag = "project-science"
 
   [[content.filter_button]]
+     name = "Преподавание"
+     tag = "project-education"
+
+  [[content.filter_button]]
      name = "Программирование"
      tag = "project-programing"
-
 
   [[content.filter_button]]
      name = "Сисадмин"

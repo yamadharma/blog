@@ -9,13 +9,12 @@ tags:
 title: Чакон С. -  Pro Git
 ---
 
-
-
-
 ## Чакон С. -  Pro Git
 
-Чакон С. -  Pro Git  [http://libgen.is/book/index.php?md5=02355925e241babf0cb954a4c941aaa3](http://libgen.is/book/index.php?md5=02355925e241babf0cb954a4c941aaa3)  
-Chacon S. - Pro Git [http://libgen.is/book/index.php?md5=ee21756330d9cab2fbd5f1d4b077d0ed](http://libgen.is/book/index.php?md5=ee21756330d9cab2fbd5f1d4b077d0ed)  
+- Чакон С. -  Pro Git  [http://libgen.is/book/index.php?md5=02355925e241babf0cb954a4c941aaa3](http://libgen.is/book/index.php?md5=02355925e241babf0cb954a4c941aaa3)  
+- Chacon S. - Pro Git [http://libgen.is/book/index.php?md5=ee21756330d9cab2fbd5f1d4b077d0ed](http://libgen.is/book/index.php?md5=ee21756330d9cab2fbd5f1d4b077d0ed)  
+
+<!--more-->
 
 1.  Отличная книга для начинающего использовать git.
 2.  Изложение ведётся по возникающим перед разработчиком задачам.

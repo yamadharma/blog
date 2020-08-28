@@ -9,6 +9,16 @@ tags:
 title: Сталин ненадолго отошел
 ---
 
+Сидят Рузвельт и Черчилль. 
+Памятник называется «Союзники», но больше подходит «Сталин ненадолго отошел». 
 
+{{< figure library="true" src="/2010/06/stalin.jpg" title="The Allies sculpture on Bond Street" lightbox="true" >}}
 
-Сидят Рузвельт и Черчиль. Памятник называется «Сталин ненадолго отошел». ![http://pics.livejournal.com/yamadharma/pic/00013q3k](http://pics.livejournal.com/yamadharma/pic/00013q3k) This bronze, seated Churchill and Roosevelt statue called Allies was sculpted by Lawrence Holofcener and unveiled in 1995 by Princess Margaret. Located in downtown London in the pedestrian area in Old Bond Street, visitors to the statue frequently have their photograph taken seated between the two famous personages.
+<!--more-->
+
+Эта бронзовая статуя Черчилля и Рузвельта под названием «Союзники»
+была создана Лоуренсом Олофценером и представлена в 1995 году
+принцессой Маргарет. Находясь в центре Лондона в пешеходной зоне на
+старой Бонд-стрит (Old Bond Street), посетители статуи часто
+фотографируются между двумя известными персонажами.
+

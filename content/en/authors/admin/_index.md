@@ -59,7 +59,7 @@ social:
   link: https://twitter.com/dskulyabov
 - icon: youtube
   icon_pack: fab
-  link: https://www.youtube.com/channel/UC_AO7kL5lhqM6c1O2tjH0GQ
+  link: https://www.youtube.com/c/DmitryKulyabov
 
 
 
@@ -72,6 +72,10 @@ social:
 - icon: researcherid
   icon_pack: ai
   link: http://www.researcherid.com/rid/I-3183-2013
+- icon: elsevier
+  icon_pack: ai
+  link: https://www.scopus.com/authid/detail.uri?authorId=35194130800
+
 - icon: dblp
   icon_pack: ai
   link: https://dblp.uni-trier.de/pers/hd/k/Kulyabov:Dmitry_S=
@@ -81,13 +85,16 @@ social:
 - icon: mendeley
   icon_pack: ai
   link: https://www.mendeley.com/profiles/dmitry-kulyabov/
+
 - icon: researchgate
   icon_pack: ai
   link: https://www.researchgate.net/profile/Dmitry_Kulyabov
 - icon: academia
   icon_pack: ai
   link: https://rudn.academia.edu/DmitryKulyabov
-
+- icon: osf
+  icon_pack: ai
+  link: https://osf.io/5ya7v/
 
 - icon: arxiv
   icon_pack: ai

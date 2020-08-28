@@ -9,13 +9,12 @@ tags:
 title: Сыромятникова И. В. - Житие мое
 ---
 
-
-
-
 ## Сыромятникова И. В. - Житие мое
 
 [http://flibusta.is/s/24837](http://flibusta.is/s/24837)  
 [http://samlib.ru/s/syromjatnikowa_i/](http://samlib.ru/s/syromjatnikowa_i/)  
+
+<!--more-->
 
 1.  Написано легко. Трудно остановить чтение.
 2.  По построению скорее роман. Много побочных ветвей.

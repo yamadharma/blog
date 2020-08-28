@@ -1,4 +1,35 @@
 
+v0.1.5 / 2020-08-28
+==================
+
+  * deploy site
+  * feat(post): add post about Julia book
+  * feat(theme): update theme
+  * regenerated
+  * feat: update theme
+  * fix: static/img -> static/media
+  * feat: update theme
+  * Подправил пост: Лисина - Некромант по вызову
+  * Changed: updated theme
+  * theme update
+  * Мартынова И. - Маг под прикрытием
+  * updates
+  * Deployed
+  * Added: project for course os-intro
+  * Added: Slides for os-intro, 1
+  * Updated: theme
+  * Added: OS lection video
+  * Updated theme
+  * Added image from xkcd
+  * New type of images including
+  * Сделал основу курса Операционные системы
+  * Перевёл пост про памятник союзникам
+  * Книга Истории больше нет
+  * Пост о презентациях
+  * Added scopus link for future use
+  * Added OSF link
+  * Прочёл Медавара
+
 0.1.4 / 2020-05-13
 ==================
 
