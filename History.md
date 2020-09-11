@@ -1,4 +1,14 @@
 
+v0.1.6 / 2020-09-11
+==================
+
+  * feat: change docs type -> book type
+  * feat(config): show license CC-BY-SA
+  * feat(theme): update to Version 5.0 (WIP)
+  * feat(theme): add `summaryLength` and `abstract_length`
+  * feat(theme): remove robots.txt, supported by theme
+  * fix typo
+
 v0.1.5 / 2020-08-28
 ==================
 
