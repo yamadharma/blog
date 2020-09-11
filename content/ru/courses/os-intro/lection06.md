@@ -2,7 +2,7 @@
 title: Сеть в UNIX
 linktitle: Лекция 6
 toc: true
-type: docs
+type: book
 date: "2020-04-14T16:00:00+03:00"
 draft: false
 menu:
