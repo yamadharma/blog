@@ -1,4 +1,11 @@
 
+v0.1.7 / 2020-09-16
+==================
+
+  * feat(post): change sections level
+  * feat(post): libgen.is -> libgen.rs
+  * feat(posts): sway post
+
 v0.1.6 / 2020-09-11
 ==================
 
