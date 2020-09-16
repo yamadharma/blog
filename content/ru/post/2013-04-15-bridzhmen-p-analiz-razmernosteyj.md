@@ -11,6 +11,6 @@ title: Бриджмен П. - Анализ размерностей
 
 
 **Бриджмен П. - Анализ размерностей**  
-[http://libgen.is/book/index.php?md5=EC0257067F9C11BAA73F066AE61D55A1](http://libgen.is/book/index.php?md5=EC0257067F9C11BAA73F066AE61D55A1)  
+[http://libgen.rs/book/index.php?md5=EC0257067F9C11BAA73F066AE61D55A1](http://libgen.rs/book/index.php?md5=EC0257067F9C11BAA73F066AE61D55A1)  
 
 Фундаментальная книга. Нисколько не устарела. Позиция автора по поводу нефизичности фундаментальных систем единиц, хотя и идёт против мейнстрима, однако хорошо обоснована.

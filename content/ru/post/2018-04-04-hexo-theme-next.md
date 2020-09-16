@@ -19,7 +19,7 @@ projects: ["misc-utils"]
   * <https://github.com/theme-next/hexo-theme-next/blob/master/docs/ru/README.md>
   * <https://github.com/iissnan/hexo-theme-next/blob/master/README.md> 
   
-### Скачиваем тему ###
+## Скачиваем тему ###
 
 Переходим в каталог блога и скачиваем.
 ``` bash
@@ -27,7 +27,7 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
 
-### Конфигурационный файл ###
+## Конфигурационный файл ###
 
 ``` bash
 mkdir -p source/_data
@@ -52,7 +52,7 @@ source_dir: source
 В файл `source/_data/next.yml` переносим из `themes/next/_config.yml`
 параметры, которые меняем.
 
-### Страницы категорий и тегов ###
+## Страницы категорий и тегов ###
 
 Создадим страницы `tags` и `categories`
 ``` bash
@@ -86,7 +86,7 @@ menu:
   archives: /archives/ || archive
 ```
 
-### Личная фотография ###
+## Личная фотография ###
 
 Сделаем каталог для изображений:
 ``` bash
@@ -100,7 +100,7 @@ avatar: /images/avatar.jpg
 ```
 Я сделал ширину 126px.
 
-### Комментарии ###
+## Комментарии ###
 
 Комментарии настроил через Disqus. 
 Для этого сконфигурил на [Disqus](http://www.disqus.com) сайт с коротким именем _yamadharma-blog_.

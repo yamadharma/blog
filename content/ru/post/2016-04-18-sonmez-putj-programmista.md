@@ -9,9 +9,9 @@ tags:
 title: Сонмез Д. - Путь программиста
 ---
 
-## Сонмез Д. - Путь программиста
+# Сонмез Д. - Путь программиста
 
-[http://libgen.is/book/index.php?md5=B2BF33EDAC00871FFF29D159A0F91FBA](http://libgen.is/book/index.php?md5=B2BF33EDAC00871FFF29D159A0F91FBA)  
+[http://libgen.rs/book/index.php?md5=B2BF33EDAC00871FFF29D159A0F91FBA](http://libgen.rs/book/index.php?md5=B2BF33EDAC00871FFF29D159A0F91FBA)  
 
 <!--more-->
 

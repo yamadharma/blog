@@ -9,9 +9,9 @@ tags:
 title: Хокинг С., Млодинов Л. - Высший замысел
 ---
 
-## Хокинг С., Млодинов Л. - Высший замысел
+# Хокинг С., Млодинов Л. - Высший замысел
 
-[http://libgen.is/book/index.php?md5=59f8a844ddd4cebd24fe4dddbbd6c1ea](http://libgen.is/book/index.php?md5=59f8a844ddd4cebd24fe4dddbbd6c1ea)  
+[http://libgen.rs/book/index.php?md5=59f8a844ddd4cebd24fe4dddbbd6c1ea](http://libgen.rs/book/index.php?md5=59f8a844ddd4cebd24fe4dddbbd6c1ea)  
 
 <!--more-->
 

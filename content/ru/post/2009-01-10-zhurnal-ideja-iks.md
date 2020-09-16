@@ -11,7 +11,7 @@ title: Журнал «Идея Икс»
 
 
 
-## Журнал «Идея Икс», № 1-2, 2009. 
+# Журнал «Идея Икс», № 1-2, 2009. 
 
 - <http://www.id-nautilus.ru/ideax/journal/archive/?ID=56>
 - <http://awas1952.livejournal.com/74095.html?view=4487023> 

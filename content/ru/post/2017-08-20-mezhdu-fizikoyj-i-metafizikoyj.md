@@ -11,29 +11,29 @@ title: Владимиров Ю. C. - Между физикой и метафиз
 ---
 
 
-## Владимиров Ю. C. - Между физикой и метафизикой
+# Владимиров Ю. C. - Между физикой и метафизикой
 
 <!--more-->
 
-### Кн. 1. Диамату вопреки
+## Кн. 1. Диамату вопреки
 
-[http://libgen.is/book/index.php?md5=A8C9C7ACAB746B1F8954BBE5A9583D01](http://libgen.is/book/index.php?md5=A8C9C7ACAB746B1F8954BBE5A9583D01)
+[http://libgen.rs/book/index.php?md5=A8C9C7ACAB746B1F8954BBE5A9583D01](http://libgen.rs/book/index.php?md5=A8C9C7ACAB746B1F8954BBE5A9583D01)
 
-### Кн. 2. По пути Клиффорда-Эйнштейна
+## Кн. 2. По пути Клиффорда-Эйнштейна
 
-[http://libgen.is/book/index.php?md5=18D0502EAE188DAB016C3749CF4C9B02](http://libgen.is/book/index.php?md5=18D0502EAE188DAB016C3749CF4C9B02)
+[http://libgen.rs/book/index.php?md5=18D0502EAE188DAB016C3749CF4C9B02](http://libgen.rs/book/index.php?md5=18D0502EAE188DAB016C3749CF4C9B02)
 
-### Кн. 3. Геометрическая парадигма. Испытание временем
+## Кн. 3. Геометрическая парадигма. Испытание временем
 
-[http://libgen.is/book/index.php?md5=3E579435D108ABE90E09A2ED34E9AE48](http://libgen.is/book/index.php?md5=3E579435D108ABE90E09A2ED34E9AE48)
+[http://libgen.rs/book/index.php?md5=3E579435D108ABE90E09A2ED34E9AE48](http://libgen.rs/book/index.php?md5=3E579435D108ABE90E09A2ED34E9AE48)
 
-### Кн. 4. Вслед за Лейбницем и Махом
+## Кн. 4. Вслед за Лейбницем и Махом
 
-[http://libgen.is/book/index.php?md5=9845CBFF471F58B06FFDB9EB0073B087](http://libgen.is/book/index.php?md5=9845CBFF471F58B06FFDB9EB0073B087)
+[http://libgen.rs/book/index.php?md5=9845CBFF471F58B06FFDB9EB0073B087](http://libgen.rs/book/index.php?md5=9845CBFF471F58B06FFDB9EB0073B087)
 
-### Кн. 5. Космофизика Чижевского. XX век
+## Кн. 5. Космофизика Чижевского. XX век
 
-[http://libgen.is/book/index.php?md5=a3f05eb9ecee3b15fd0dc37cae29d949](http://libgen.is/book/index.php?md5=a3f05eb9ecee3b15fd0dc37cae29d949)
+[http://libgen.rs/book/index.php?md5=a3f05eb9ecee3b15fd0dc37cae29d949](http://libgen.rs/book/index.php?md5=a3f05eb9ecee3b15fd0dc37cae29d949)
 
 1. Одновременно и мемуары, и описание (в этой работе не очень внятное) онтологических парадигм физики XX-го века.
 2. Мемуарная часть ограничена группой, аффилированной с Д. Д. Иваненко.

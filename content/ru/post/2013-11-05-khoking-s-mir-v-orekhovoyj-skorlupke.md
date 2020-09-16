@@ -9,9 +9,9 @@ tags:
 title: Хокинг С. - Мир в ореховой скорлупке
 ---
 
-## Хокинг С. - Мир в ореховой скорлупке
+# Хокинг С. - Мир в ореховой скорлупке
 
-[http://libgen.is/book/index.php?md5=cfb9c077d7e46dd227f568d663b304f6](http://libgen.is/book/index.php?md5=cfb9c077d7e46dd227f568d663b304f6)  
+[http://libgen.rs/book/index.php?md5=cfb9c077d7e46dd227f568d663b304f6](http://libgen.rs/book/index.php?md5=cfb9c077d7e46dd227f568d663b304f6)  
 
 <!--more-->
 

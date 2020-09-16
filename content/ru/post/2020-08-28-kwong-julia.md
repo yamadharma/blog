@@ -29,7 +29,7 @@ image:
 projects: []
 ---
 
-## Kwong T. - Hands-On Design Patterns and Best Practices with Julia
+# Kwong T. - Hands-On Design Patterns and Best Practices with Julia
 
 <http://libgen.rs/book/index.php?md5=42BAB0AA178AA6A4CC0522CA7B2B3853>
 

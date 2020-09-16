@@ -29,9 +29,9 @@ image:
 projects: []
 ---
 
-## Кариа А. - Поражай своей презентацией
+# Кариа А. - Поражай своей презентацией
 
-<https://libgen.is/book/index.php?md5=F5D7F265816A4B494945F418828EFE5A>
+<http://libgen.rs/book/index.php?md5=F5D7F265816A4B494945F418828EFE5A>
 
 <!--more-->
   

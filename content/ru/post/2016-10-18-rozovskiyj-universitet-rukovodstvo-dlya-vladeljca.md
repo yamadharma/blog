@@ -10,9 +10,9 @@ tags:
 title: Розовский Г. - Университет. Руководство для владельца
 ---
 
-## Розовский Г. - Университет. Руководство для владельца
+# Розовский Г. - Университет. Руководство для владельца
 
-[http://libgen.is/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255](http://libgen.is/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255)  
+[http://libgen.rs/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255](http://libgen.rs/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255)  
 
 <!--more-->
 

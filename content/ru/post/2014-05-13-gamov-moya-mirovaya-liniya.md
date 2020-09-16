@@ -10,9 +10,9 @@ tags:
 title: Гамов Г. А. - Моя мировая линия
 ---
 
-## Гамов Г. А. - Моя мировая линия
+# Гамов Г. А. - Моя мировая линия
 
-[http://libgen.is/book/index.php?md5=067128ABE78CE776D969ADEB31F5B700](http://libgen.is/book/index.php?md5=067128ABE78CE776D969ADEB31F5B700)  
+[http://libgen.rs/book/index.php?md5=067128ABE78CE776D969ADEB31F5B700](http://libgen.rs/book/index.php?md5=067128ABE78CE776D969ADEB31F5B700)  
 
 <!--more-->
 

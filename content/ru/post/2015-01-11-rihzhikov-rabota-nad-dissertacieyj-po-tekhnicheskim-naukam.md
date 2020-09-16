@@ -9,9 +9,9 @@ tags:
 title: Рыжиков Ю. И. - Работа над диссертацией по техническим наукам
 ---
 
-## Рыжиков Ю. И. - Работа над диссертацией по техническим наукам
+# Рыжиков Ю. И. - Работа над диссертацией по техническим наукам
 
-[http://libgen.is/book/index.php?md5=2bf924ce634e7d91b73491635a82e7a9](http://libgen.is/book/index.php?md5=2bf924ce634e7d91b73491635a82e7a9)  
+[http://libgen.rs/book/index.php?md5=2bf924ce634e7d91b73491635a82e7a9](http://libgen.rs/book/index.php?md5=2bf924ce634e7d91b73491635a82e7a9)  
 
 <!--more-->
 

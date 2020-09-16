@@ -10,7 +10,7 @@ title: Ленин... Поезд
 ---
 
 
-## Ленин... Поезд [Lenin... The Train] (Дамиано Дамиани / Damiano Damiani) (1988) 
+# Ленин... Поезд [Lenin... The Train] (Дамиано Дамиани / Damiano Damiani) (1988) 
 [http://rutracker.org/forum/viewtopic.php?t=3432187](http://rutracker.org/forum/viewtopic.php?t=3432187) 
 
 1. Буржуазный режисёр — буржуазный фильм. Большевики — толпа филистеров. Ленин — главный филистер. 
