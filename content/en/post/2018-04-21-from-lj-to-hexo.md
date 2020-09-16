@@ -10,6 +10,8 @@ title: Migrating from livejournal to hexo
 projects: ["misc-utils"]
 ---
 
+# Migrating from livejournal to hexo
+
 Migrating from [livejornal](https://yamadharma.livejournal.com/) posed some problems.
 
 <!--more-->

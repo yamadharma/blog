@@ -9,7 +9,7 @@ tags:
 title: Любарский Г. Ю. - Новый наряд Гутенберга
 ---
 
-## Любарский Г. Ю. - Новый наряд Гутенберга
+# Любарский Г. Ю. - Новый наряд Гутенберга
 
 [http://libgen.rs/book/index.php?md5=bd041842f0cf69ddcac01fe8f68f07d1](http://libgen.rs/book/index.php?md5=bd041842f0cf69ddcac01fe8f68f07d1)  
 

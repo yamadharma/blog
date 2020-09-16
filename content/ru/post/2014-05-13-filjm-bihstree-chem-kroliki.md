@@ -8,7 +8,7 @@ tags: []
 title: Быстрее, чем кролики
 ---
 
-## Фильм «Быстрее, чем кролики» (Дмитрий Дьяченко) (2013)
+# Фильм «Быстрее, чем кролики» (Дмитрий Дьяченко) (2013)
 
 [http://hdclub.org/details.php?id=18146](http://hdclub.org/details.php?id=18146)  
 [http://hdclub.org/details.php?id=18057](http://hdclub.org/details.php?id=18057) [Extended Cut]  

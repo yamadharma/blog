@@ -10,7 +10,7 @@ title: А началось всё с вегетарианцев
 ---
 
 
-## Панчин А. - Апофения  
+# Панчин А. - Апофения  
 [https://sites.google.com/site/thestoryofapophenia/](https://sites.google.com/site/thestoryofapophenia/)  
 
 1. Научно-фантастическая новелла об антисциентистском будущем.  

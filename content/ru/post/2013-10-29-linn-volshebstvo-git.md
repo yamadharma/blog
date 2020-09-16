@@ -12,7 +12,7 @@ title: Линн Б. - Волшебство Git
 
 
 
-## Линн Б. - Волшебство Git
+# Линн Б. - Волшебство Git
 
 [http://libgen.rs/book/index.php?md5=347b462d91d20779ec736d5f393645ba](http://libgen.rs/book/index.php?md5=347b462d91d20779ec736d5f393645ba)  
 
