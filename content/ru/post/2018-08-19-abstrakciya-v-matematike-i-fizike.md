@@ -13,7 +13,7 @@ title: Каганов М. И., Любарский Г. Я. - Абстракция
 
 ## Каганов М. И., Любарский Г. Я. - Абстракция в математике и физике ##
 
-<http://libgen.is/book/index.php?md5=6096DCC3AF8FF50B38BDD7EC48833B51>
+<http://libgen.rs/book/index.php?md5=6096DCC3AF8FF50B38BDD7EC48833B51>
 
 <!--more-->
 

@@ -11,7 +11,7 @@ title: Каганов М. И. - Школа Ландау. Что я о ней д�
 
 ## Каганов М. И. - Школа Ландау. Что я о ней думаю
 
-[http://libgen.is/book/index.php?md5=7c6b657bc395ce601733eb56c618d04f](http://libgen.is/book/index.php?md5=7c6b657bc395ce601733eb56c618d04f)  
+[http://libgen.rs/book/index.php?md5=7c6b657bc395ce601733eb56c618d04f](http://libgen.rs/book/index.php?md5=7c6b657bc395ce601733eb56c618d04f)  
 
 <!--more-->
 

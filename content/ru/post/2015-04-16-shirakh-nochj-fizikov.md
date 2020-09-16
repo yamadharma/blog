@@ -12,7 +12,7 @@ title: Ширах Р. - Ночь физиков. Гейзенберг, Ган, �
 
 ## Ширах Р. --- Ночь физиков. Гейзенберг, Ган, Вайцзеккер и немецкая бомба ##
 
-[http://libgen.is/book/index.php?md5=b0eb45a4720b6a56c3eb13381c70e017](http://libgen.is/book/index.php?md5=b0eb45a4720b6a56c3eb13381c70e017)
+[http://libgen.rs/book/index.php?md5=b0eb45a4720b6a56c3eb13381c70e017](http://libgen.rs/book/index.php?md5=b0eb45a4720b6a56c3eb13381c70e017)
 
 <!--more-->
 

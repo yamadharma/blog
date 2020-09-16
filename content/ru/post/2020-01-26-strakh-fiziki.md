@@ -13,7 +13,7 @@ title: Краусс Л. М. - Страх физики. Сферический к
 
 ## Краусс Л. М. - Страх физики. Сферический конь в вакууме
 
-<https://libgen.is/book/index.php?md5=8E7E4715307D6EE4D88A768377FDAF9D>
+<http://libgen.rs/book/index.php?md5=8E7E4715307D6EE4D88A768377FDAF9D>
 
 <!--more-->
 

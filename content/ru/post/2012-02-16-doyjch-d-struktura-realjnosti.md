@@ -13,7 +13,7 @@ title: Дойч Д.  Структура реальности
 ## Дойч Д.  Структура реальности
 
 [http://www.flibusta.net/b/72572](http://www.flibusta.net/b/72572)
-[http://libgen.is/book/index.php?md5=390BD1CF7B3A1A187A1F65EE247A4DA3](http://libgen.is/book/index.php?md5=390BD1CF7B3A1A187A1F65EE247A4DA3)
+[http://libgen.rs/book/index.php?md5=390BD1CF7B3A1A187A1F65EE247A4DA3](http://libgen.rs/book/index.php?md5=390BD1CF7B3A1A187A1F65EE247A4DA3)
 
 1. Основная тема в книге — многомировая интерпретация Эверетта.
 2. Плюс к этому, критика позитивизма с этой точки зрения.

@@ -12,7 +12,7 @@ title: Коллини С. - Зачем нужны университеты
 
 ## Коллини С. - Зачем нужны университеты
 
-[http://libgen.is/book/index.php?md5=017286764E239E0FE60B68D2A56D9BD0](http://libgen.is/book/index.php?md5=017286764E239E0FE60B68D2A56D9BD0)  
+[http://libgen.rs/book/index.php?md5=017286764E239E0FE60B68D2A56D9BD0](http://libgen.rs/book/index.php?md5=017286764E239E0FE60B68D2A56D9BD0)  
 
 <!--more-->
 

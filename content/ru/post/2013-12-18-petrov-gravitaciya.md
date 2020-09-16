@@ -11,7 +11,7 @@ title: Петров А. Н. - Гравитация. От хрустальных 
 
 ## Петров А. Н. - Гравитация. От хрустальных сфер до кротовых нор
 
-[http://libgen.is/book/index.php?md5=e925b25479a015a730a901274cca0671](http://libgen.is/book/index.php?md5=e925b25479a015a730a901274cca0671)  
+[http://libgen.rs/book/index.php?md5=e925b25479a015a730a901274cca0671](http://libgen.rs/book/index.php?md5=e925b25479a015a730a901274cca0671)  
 
 <!--more-->
 

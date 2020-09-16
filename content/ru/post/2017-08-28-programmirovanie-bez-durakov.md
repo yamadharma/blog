@@ -12,7 +12,7 @@ title: Пассиг К. - Программирование без дураков
 
 ## Пассиг К. - Программирование без дураков
 
-[http://libgen.is/book/index.php?md5=709D6B27BBEB57769CC9B1934DED2451](http://libgen.is/book/index.php?md5=709D6B27BBEB57769CC9B1934DED2451)  
+[http://libgen.rs/book/index.php?md5=709D6B27BBEB57769CC9B1934DED2451](http://libgen.rs/book/index.php?md5=709D6B27BBEB57769CC9B1934DED2451)  
 
 <!--more-->
 

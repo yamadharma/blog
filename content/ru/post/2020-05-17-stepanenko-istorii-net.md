@@ -31,7 +31,7 @@ projects: []
 
 ## Степаненко А. -- Истории больше нет
 
-<https://libgen.is/book/index.php?md5=98A00B7281124D4373ABE08B08314C8B>
+<http://libgen.rs/book/index.php?md5=98A00B7281124D4373ABE08B08314C8B>
 
 <!--more-->
 

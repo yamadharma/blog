@@ -11,7 +11,7 @@ title: Журавлев А. Ю. - Парнокопытные киты, четы�
 
 ## Журавлев А. Ю. - Парнокопытные киты, четырехкрылые динозавры, бегающие черви
 
-[http://libgen.is/book/index.php?md5=B9ED2ACF25CF7FE0A44E6475201CB085](http://libgen.is/book/index.php?md5=B9ED2ACF25CF7FE0A44E6475201CB085)  
+[http://libgen.rs/book/index.php?md5=B9ED2ACF25CF7FE0A44E6475201CB085](http://libgen.rs/book/index.php?md5=B9ED2ACF25CF7FE0A44E6475201CB085)  
 
 <!--more-->
 

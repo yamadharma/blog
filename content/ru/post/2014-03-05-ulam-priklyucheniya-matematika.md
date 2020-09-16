@@ -12,7 +12,7 @@ title: Улам С. М. - Приключения математика
 
 ## Улам С. М. - Приключения математика
 
-[http://libgen.is/book/index.php?md5=896DD94CB45117F25A4F877A99D34729](http://libgen.is/book/index.php?md5=896DD94CB45117F25A4F877A99D34729)  
+[http://libgen.rs/book/index.php?md5=896DD94CB45117F25A4F877A99D34729](http://libgen.rs/book/index.php?md5=896DD94CB45117F25A4F877A99D34729)  
 
 <!--more-->
 

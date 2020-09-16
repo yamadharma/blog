@@ -12,7 +12,7 @@ title: Писаревский Б. М., Харин В. Т. - О математи�
 
 ## Писаревский Б. М., Харин В. Т. - О математике, математиках и не только
 
-[http://libgen.is/book/index.php?md5=2AC8DF4EBAFB439DF96110C85A43016F](http://libgen.is/book/index.php?md5=2AC8DF4EBAFB439DF96110C85A43016F)  
+[http://libgen.rs/book/index.php?md5=2AC8DF4EBAFB439DF96110C85A43016F](http://libgen.rs/book/index.php?md5=2AC8DF4EBAFB439DF96110C85A43016F)  
 
 <!--more-->
 

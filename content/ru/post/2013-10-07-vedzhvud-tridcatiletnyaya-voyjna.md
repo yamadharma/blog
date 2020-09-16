@@ -14,7 +14,7 @@ title: Веджвуд С. В. - Тридцатилетняя война
 
 ## Веджвуд С. В. - Тридцатилетняя война
 
-[http://libgen.is/book/index.php?md5=590314e8ce4c0f35d9dbf960f5975901](http://libgen.is/book/index.php?md5=590314e8ce4c0f35d9dbf960f5975901)  
+[http://libgen.rs/book/index.php?md5=590314e8ce4c0f35d9dbf960f5975901](http://libgen.rs/book/index.php?md5=590314e8ce4c0f35d9dbf960f5975901)  
 
 1.  Классическая книга по данной теме.
 2.  Книга описательная, элементы анализа появляются лишь в последней главе.
