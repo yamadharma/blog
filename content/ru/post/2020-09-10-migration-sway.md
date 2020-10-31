@@ -95,6 +95,9 @@ cp /etc/sway/config ~/.config/sway/
 - `Mod` + `Shift` + `c` -- перечитать конфигурацию `sway` (перестартовать);
 - `Mod` + `Shift` + `e` -- выйти из `sway`.
 
+Кроме того, часть сочетаний клавиш определяется в файлах, определяющих
+конкретный функционал.
+
 ## Замена приложений
 
 ### Снимки экрана
@@ -175,8 +178,8 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/
 
 ### Строка состояний
 
-Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение.
-
+Sway поддерживает свою строку состояний `sway-bar`. Удобное и
+минималистическое приложение. Однако, удручает, что иконки в трее не активны.
 
 Попробуем использовать более продвинутый вариант --
 [`waybar`](https://github.com/Alexays/Waybar)
@@ -184,6 +187,41 @@ Sway поддерживает свою строку состояний `sway-bar
 ``` bash
 emerge -v gui-apps/waybar
 ```
+Конфигурация:
+
+``` conf
+## sway-bar
+# Read `man 5 sway-bar` for more information about this section.
+
+# bar {
+#     position top
+
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
+
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+
+## Waybar
+# <https://github.com/Alexays/Waybar>
+
+exec_always ~/.config/sway/scripts/waybar.sh
+
+# Waybar Tooltips don't steel focus
+
+no_focus [app_id="waybar"]
+for_window [app_id="waybar" floating] {
+    move position cursor
+    move down 60px # adjust if some menus still don't fit
+}
+```
+
+Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
 ### Уведомления
 
