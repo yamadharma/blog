@@ -5,7 +5,7 @@ lastmod: 2020-12-02T18:09:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
-slug: "hugo-markdown"
+slug: hugo-markdown
 ---
 
 <!--more-->
