@@ -10,7 +10,7 @@ tags:
 title: Гладуэлл М. - Гении и аутсайдеры
 ---
 
-# Гладуэлл М. - Гении и аутсайдеры
+## Гладуэлл М. - Гении и аутсайдеры
 
 [http://libgen.rs/book/index.php?md5=e7773815cb2bf8d9eb64243756d76b14](http://libgen.rs/book/index.php?md5=e7773815cb2bf8d9eb64243756d76b14)  
 

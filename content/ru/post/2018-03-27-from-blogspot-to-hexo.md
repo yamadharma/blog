@@ -11,7 +11,7 @@ projects: ["misc-utils"]
 ---
 
 
-# Hexo
+## Hexo
 
 Перешёл на [hexo](https://hexo.io). Дополнительно решил перенести свои заметки с [blogspot](http://yamadharma.blogspot.ru/).
 
