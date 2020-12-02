@@ -10,7 +10,7 @@ tags:
 title: Бетяев С. К. - Записки гидродинамика
 ---
 
-# Бетяев С. К. --- Записки гидродинамика
+## Бетяев С. К. --- Записки гидродинамика
 
 [http://libgen.rs/book/index.php?md5=090a69b11bb67bf00e92d21f69502e0d](http://libgen.rs/book/index.php?md5=090a69b11bb67bf00e92d21f69502e0d)  
 

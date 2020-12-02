@@ -9,7 +9,7 @@ tags:
 title: Левенсон Т. - Ньютон и фальшивомонетчик
 ---
 
-# Левенсон Т. - Ньютон и фальшивомонетчик
+## Левенсон Т. - Ньютон и фальшивомонетчик
 
 [http://libgen.rs/book/index.php?md5=f62f591690c9dfae73a272f3842b89f3](http://libgen.rs/book/index.php?md5=f62f591690c9dfae73a272f3842b89f3)  
 

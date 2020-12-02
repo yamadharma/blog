@@ -25,8 +25,8 @@ projects: ["misc-utils"]
 Потом пришлось преобразовать в _markdown_. Для этого написал скрипт _xml2md_.
 
 ```python
-#!/usr/bin/python3
-# -*- coding: utf-8 -*-
+##!/usr/bin/python3
+## -*- coding: utf-8 -*-
 
 import os
 import sys
@@ -52,8 +52,8 @@ for elem in post.getchildren():
         text = "None"
     else:
         text = elem.text
-    # print(elem.tag + " => " + text)
-    # book_dict[elem.tag] = text
+    ## print(elem.tag + " => " + text)
+    ## book_dict[elem.tag] = text
     if elem.tag == 'subject':
         postTitle = text
     if elem.tag == 'eventtime':
@@ -66,7 +66,7 @@ for elem in post.getchildren():
                 text = "None"
             else:
                 text = propsElem.text
-            # print(propsElem.tag + " => " + text)
+            ## print(propsElem.tag + " => " + text)
             if propsElem.tag == 'taglist':
                 postTags = text
             

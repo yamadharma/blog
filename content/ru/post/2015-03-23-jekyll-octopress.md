@@ -11,7 +11,7 @@ projects: ["misc-utils"]
 ---
 
 
-# Репозиторий для сайта ##
+## Репозиторий для сайта
 
 - Создал локальный каталог для сайта:
 
@@ -21,7 +21,7 @@ mkdir ~/mysite
 
 <!--more-->
 
-## Локальный git-репозиторий ###
+## Локальный git-репозиторий
 
 - Создал пустой git-репозиторий:
 
@@ -50,10 +50,10 @@ git branch source
 git checkout source
 ```
 
-[Далее создаю шаблон для сайта](#head_site-template-create) в ветке `source`.
+[Далее создаю шаблон для сайта](##head_site-template-create) в ветке `source`.
 
 
-## Репозиторий на Bitbucket ###
+#### Репозиторий на Bitbucket ######
 
 Я пользовался [инструкцией от bitbucket'а][website-on-bitbucket].
 
@@ -69,7 +69,7 @@ git push -u origin --all
 git push -u origin --tags
 ```
 
-## Выкладывание сайта на Bitbucket ###
+## Выкладывание сайта на Bitbucket
 
 - Создал файл `_deploy.yml` с помощью команды
 
@@ -103,7 +103,7 @@ git commit -am 'Поправил сайт'
 git push
 ```
 
-# <a name='head_site-template-create'></a> Создание шаблона сайта ##
+## <a name='head_site-template-create'></a> Создание шаблона сайта ####
 
 - В каталоге сайта создаю шаблон:
 
