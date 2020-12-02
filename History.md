@@ -1,4 +1,12 @@
 
+v0.1.8 / 2020-12-02
+==================
+
+  * feat(post): change main header to 2 level
+  * feat(post): change main header to 2 level partialy
+  * feat(post): add post from ox-hugo
+  * feat: update hugo modules
+
 v0.1.7 / 2020-09-16
 ==================
 
