@@ -29,7 +29,7 @@ image:
 projects: ["misc-utils"]
 ---
 
-# Переход на Sway
+## Переход на Sway
 
 Решил попробовать [Wayland](https://wayland.freedesktop.org/). По этой
 причине пришлось
@@ -44,7 +44,7 @@ projects: ["misc-utils"]
 emerge -v gui-wm/sway
 ```
 
-## Репозитории `gentoo`
+### Репозитории `gentoo`
 
 Программы для Wayland есть как в основном репозитории, так и
 дополнительных. Хочу порекомендовать для просмотра следующие
@@ -62,7 +62,7 @@ layman -a wayland-desktop
 layman -a guru
 ```
 
-## Первоначальная конфигурация
+### Первоначальная конфигурация
 
 При запуске без локальной конфигурации `sway` использует глобальную
 конфигурацию `/etc/sway/config`. При желании внести изменение в
@@ -74,7 +74,7 @@ mkdir -p ~/.config/sway
 cp /etc/sway/config ~/.config/sway/
 ```
 
-## Комбинации клавиш
+### Комбинации клавиш
 
 Основные сочетания клавиш:
 
@@ -98,9 +98,9 @@ cp /etc/sway/config ~/.config/sway/
 Кроме того, часть сочетаний клавиш определяется в файлах, определяющих
 конкретный функционал.
 
-## Замена приложений
+### Замена приложений
 
-### Снимки экрана
+#### Снимки экрана
 
 Исходно использовался `scrot`.
 
@@ -131,11 +131,11 @@ bindsym $mod+Shift+Print exec grim -t png -g "$(slurp)" "$(xdg-user-dir PICTURES
 - При нажатии `Mod4`+`PrtScr` делается снимок активного окна.
 - При нажатии `Mod4`+`Shift`+`PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
 
-### Видеозапись экрана (скринкаст)
+#### Видеозапись экрана (скринкаст)
 
 Ранее использовался [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
-#### Видеозапись экрана -- командная строка
+##### Видеозапись экрана -- командная строка
 
 Для записи из командной строки используем [`wf-recorder`](https://github.com/ammen99/wf-recorder):
 
@@ -171,12 +171,12 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv
 wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/renderD128
 ```
 
-#### Видеозапись экрана -- графическое приложение
+##### Видеозапись экрана -- графическое приложение
 
 Для захвата десктопа в Wayland используется плагин
 [`wlrobs`](https://hg.sr.ht/~scoopta/wlrobs).
 
-### Строка состояний
+#### Строка состояний
 
 Sway поддерживает свою строку состояний `sway-bar`. Удобное и
 минималистическое приложение. Однако, удручает, что иконки в трее не активны.
@@ -223,7 +223,7 @@ for_window [app_id="waybar" floating] {
 
 Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
-### Уведомления
+#### Уведомления
 
 Используется [`mako`](https://github.com/emersion/mako).
 
@@ -242,7 +242,7 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 # exec_always mako --font 'Source Code Pro 10' --background-color '#002b36' --text-color '#839496' --default-timeout 5000 --width 400 --markup 1 --border-radius 5
 ```
 
-### Настройка вывода
+#### Настройка вывода
 
 В XWindow используется программа `xrandr` (с её помощью можно изменять
 параметры вывода изображения RandR). В `sway` можно управлять с
@@ -253,7 +253,7 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 emerge -v gui-apps/wlr-randr
 ```
 
-### Мену программ (launcher)
+#### Меню программ (launcher)
 
 Для запуска программы используется `dmenu`. Если не нравится, можно заменить.
 
@@ -301,7 +301,7 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 bindsym $mod+d exec $menu
 ```
 
-### Буфер обмена
+#### Буфер обмена
 
 Предлагается использовать
 [`wl-clipboard`](https://github.com/bugaevc/wl-clipboard).
