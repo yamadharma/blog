@@ -9,7 +9,7 @@ tags:
 title: Рубин С. Г. - Устройство нашей Вселенной
 ---
 
-# Рубин С. Г. - Устройство нашей Вселенной
+## Рубин С. Г. - Устройство нашей Вселенной
 
 [http://libgen.rs/book/index.php?md5=6f90269a115c3c99fed7b9a9e1515eb9](http://libgen.rs/book/index.php?md5=6f90269a115c3c99fed7b9a9e1515eb9)  
 

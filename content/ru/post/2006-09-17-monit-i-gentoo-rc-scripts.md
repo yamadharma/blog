@@ -21,10 +21,10 @@ title: Monit и gentoo rc-scripts
   
 
 ``` bash
-#!/bin/sh  
-# kickservice by Eric Radman  
-# Script used by monit to kill off and restart daemons  
-# /etc/monit.d/bin/kickservice  
+##!/bin/sh  
+## kickservice by Eric Radman  
+## Script used by monit to kill off and restart daemons  
+## /etc/monit.d/bin/kickservice  
    
 function stop ()  
 {  

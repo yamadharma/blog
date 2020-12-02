@@ -14,7 +14,7 @@ projects: ["misc-utils"]
 
 * `setsebool` запускаем как с ключём `-P` (для запоминания настроек), так и без него (чтобы работало в текущей сессии).
 
-#  <a name='head_www-server'></a> WWW-сервер ##
+##  <a name='head_www-server'></a> WWW-сервер ##
 
 ```bash
 setsebool -P httpd_unified 1
@@ -26,7 +26,7 @@ setsebool -P httpd_execmem 1
 setsebool -P httpd_use_fusefs 1
 ```
 
-# <a name='head_db'></a> Базы данных ##
+## <a name='head_db'></a> Базы данных ##
 
 <!--more-->
 
@@ -42,7 +42,7 @@ setsebool -P selinuxuser_postgresql_connect_enabled 1
 setsebool -P selinuxuser_mysql_connect_enabled 1
 ```
 
-# OJS ##
+## OJS ##
 
 * Настраиваем [www-сервер](#head_www-server) и [базу данных](#head_db).
 
@@ -57,7 +57,7 @@ semanage fcontext --add -t httpd_sys_rw_content_t "/var/www/html/ojs/plugins/gen
 semanage fcontext --add -t httpd_sys_rw_content_t "/var/www/data(/.*)?"
 ```
 
-# Drupal ##
+## Drupal ##
 
 * Настраиваем [www-сервер](#head_www-server) и [базу данных](#head_db).
 
@@ -70,7 +70,7 @@ semanage fcontext --add -t httpd_sys_rw_content_t "/var/www/html/sites/drupal/(.
 ```
 
 
-# Moodle ##
+## Moodle ##
 
 * Настраиваем [www-сервер](#head_www-server) и [базу данных](#head_db).
 
@@ -82,7 +82,7 @@ semanage fcontext --add -t httpd_sys_rw_content_t "/var/www/moodle/web-git/local
 semanage fcontext --add -t httpd_sys_rw_content_t "/var/www/moodle/web-git/theme(/.*)?"
 ```
 
-# LetsEncript ##
+## LetsEncript ##
 
 ```bash
 semanage fcontext -a -t cert_t '/etc/letsencrypt/(archive|live)(/.*)?'

@@ -12,7 +12,7 @@ title: Хокинг С. - Краткая история времени
 
 
 
-# Хокинг С. - Краткая история времени. От большого взрыва до черных дыр
+## Хокинг С. - Краткая история времени. От большого взрыва до черных дыр
 
 djvu: [http://libgen.rs/book/index.php?md5=C4417A5FC9566743FD62E1DD18B423A5](http://libgen.rs/book/index.php?md5=C4417A5FC9566743FD62E1DD18B423A5)  
 fb2: [http://www.flibusta.net/b/78758](http://www.flibusta.net/b/78758)  

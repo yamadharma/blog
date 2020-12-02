@@ -11,7 +11,7 @@ projects: ["misc-utils"]
 ---
 
 
-## Установка пакетов ###
+## Установка пакетов
 
 В качестве системы для сервера используем Centos7. Там пока не
 поддерживается функционал Samba4 AD (конфликт mit-krb и heimdal). Поэтому поставим самбу с
@@ -37,7 +37,7 @@ yum -y install bind
 
 
 
-## Поиск дубликатов SID ###
+## Поиск дубликатов SID
 
 Найдём дубликаты SID с помощью следующего скрипта (запусткается на
 машине, где расположен ldap).
@@ -64,7 +64,7 @@ anydup(line)
 Далее дубликаты удаляются с помощью редактирования ldap (я использовал
 <https://directory.apache.org/studio/>).
 
-## Предварительная конфигурация ###
+## Предварительная конфигурация
 
 Добавил в файл `/etc/hosts` адрес хоста.
 
@@ -75,7 +75,7 @@ anydup(line)
 
 Также прописал его в прямой и обратной зонах DNS.
 
-## Перенос конфигурационных файлов ###
+## Перенос конфигурационных файлов
 
 ```bash
 pdc ~ # scp -r /var/lib/samba/private/ dc.dk.sci.pfu.edu.ru:/var/lib/samba/samba3tdb/
@@ -97,13 +97,13 @@ URI     ldap://ldap.dk.sci.pfu.edu.ru
 TLS_REQCERT     allow
 ```
 
-## Проведение миграции ###
+## Проведение миграции
 
 ```bash
 samba-tool domain classicupgrade --dbdir=/var/lib/samba/samba3tdb/ --use-xattrs=yes --realm=dk.sci.pfu.edu.ru --dns-backend=BIND9_DLZ /var/lib/samba/samba3tdb/smb.conf
 ```
 
-### Шаманство ####
+### Шаманство
 
 В файле `/var/lib/samba/samba3tdb/smb.conf` заменил доменное имя
 ```
@@ -116,7 +116,7 @@ passdb backend = ldapsam:ldap://10.130.64.11
 Без этого миграция падала с ошибкой `LDAP client internal error: NT_STATUS_BAD_NETWORK_NAME`.
 
 
-### Настройка firewalld ####
+### Настройка firewalld
 
 ```bash
 firewall-cmd --add-service=ldap --permanent
@@ -128,7 +128,7 @@ firewall-cmd --reload
 ```
 
 
-### Настройка SELinux ####
+### Настройка SELinux
 
 ```bash
 setsebool -P samba_export_all_ro 1
@@ -136,7 +136,7 @@ setsebool -P samba_export_all_rw 1
 setsebool -P samba_domain_controller 1
 ```
 
-## Настройка Kerberos ###
+### Настройка Kerberos
 
 Создадим файл конфигурации kerberos:
 ```bash
@@ -144,7 +144,7 @@ mv /etc/krb5.conf{,.default}
 cp /var/lib/samba/private/krb5.conf /etc
 ```
 
-## Настройка DNS ###
+### Настройка DNS
 
 В файле `/etc/resolv.conf` задаём локальный DNS-сервер:
 ```
@@ -183,14 +183,14 @@ options {
 };
 ```
 
-### Настройка firewalld ####
+### Настройка firewalld
 
 ```bash
 firewall-cmd --add-service=dns --permanent
 firewall-cmd --reload
 ```
 
-### Настройки прав доступа ####
+### Настройки прав доступа
 
 Права доступа:
 
@@ -204,7 +204,7 @@ chgrp -R named /var/lib/samba/private/sam.ldb.d
 chmod g+rw /var/lib/samba/private/sam.ldb.d/*
 ```
 
-### Настройка SELinux ####
+### Настройка SELinux
 
 Изменим текущий контекст:
 
@@ -227,7 +227,7 @@ semanage fcontext -a -t named_var_run_t /var/lib/samba/private/dns/${MYREALM}.zo
 semanage fcontext -a -t named_var_run_t /var/lib/samba/private/dns/${MYREALM}.zone.jnl
 ```
 
-## Запуск демонов ###
+## Запуск демонов
 
 Сконфигурим тип сервера samba в файле `/etc/default/sernet-samba`:
 ```
@@ -248,7 +248,7 @@ systemctl enable named.service
 systemctl enable sernet-samba-ad.service
 ```
 
-## Проверка ###
+## Проверка
 
 Проверка DNS.
 
@@ -285,7 +285,7 @@ kinit administrator@DK.SCI.PFU.EDU.RU
 klist
 ```
 
-## Дополнительно ###
+## Дополнительно
 
 Убрать проверку сложности пароля:
 ```bash
