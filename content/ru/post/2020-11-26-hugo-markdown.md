@@ -1,11 +1,11 @@
 ---
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 date: 2020-11-26T18:07:00+03:00
-lastmod: 2020-12-02T18:09:00+03:00
+lastmod: 2020-12-08T14:52:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
-slug: hugo-markdown
+slug: "hugo-markdown"
 ---
 
 <!--more-->

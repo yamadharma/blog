@@ -11,7 +11,7 @@ title: Сексик Л. - Эйнштейн
 
 ## Сексик Л. - Эйнштейн
 
-[http://libgen.rs/book/index.php?md5=4CF41CE81F8258095B3C057A0DA3001B](http://libgen.rs/book/index.php?md5=4CF41CE81F8258095B3C057A0DA3001B)  
+[http://libgen.li/book/index.php?md5=4CF41CE81F8258095B3C057A0DA3001B](http://libgen.li/book/index.php?md5=4CF41CE81F8258095B3C057A0DA3001B)  
 
 <!--more-->
 

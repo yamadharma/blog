@@ -11,7 +11,7 @@ title: Диттрич Т. В. - Повседневная жизнь виктор
 
 ## Диттрич Т. В. - Повседневная жизнь викторианской Англии
 
-djvu: [http://libgen.rs/book/index.php?md5=DBD5E6072B6418C687DE4E3387924232](http://libgen.rs/book/index.php?md5=DBD5E6072B6418C687DE4E3387924232)  
+djvu: [http://libgen.li/book/index.php?md5=DBD5E6072B6418C687DE4E3387924232](http://libgen.li/book/index.php?md5=DBD5E6072B6418C687DE4E3387924232)  
 fb2: [http://flibusta.is/b/431726](http://flibusta.is/b/431726)  
 
 <!--more-->

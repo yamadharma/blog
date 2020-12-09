@@ -14,7 +14,7 @@ title: Хокинг С. - Кратчайшая история времени
 
 ## Хокинг С., Млодинов Л. - Кратчайшая история времени
 
-pdf: [http://libgen.rs/book/index.php?md5=aa0dbc18dd1a3405f12dc9f8b301b9a9](http://libgen.rs/book/index.php?md5=aa0dbc18dd1a3405f12dc9f8b301b9a9)  
+pdf: [http://libgen.li/book/index.php?md5=aa0dbc18dd1a3405f12dc9f8b301b9a9](http://libgen.li/book/index.php?md5=aa0dbc18dd1a3405f12dc9f8b301b9a9)  
 fb2: [http://www.flibusta.net/b/329705](http://www.flibusta.net/b/329705)
 
 1. Книгу следует рассматривать как переработанный вариант «Краткой истории времени».

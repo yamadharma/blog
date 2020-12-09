@@ -12,7 +12,7 @@ title: Соколов М. - Как становятся профессорами
 
 ## Соколов М. - Как становятся профессорами
 
-[http://libgen.rs/book/index.php?md5=6f62524275a3787147a5a9e50dd774fb](http://libgen.rs/book/index.php?md5=6f62524275a3787147a5a9e50dd774fb)  
+[http://libgen.li/book/index.php?md5=6f62524275a3787147a5a9e50dd774fb](http://libgen.li/book/index.php?md5=6f62524275a3787147a5a9e50dd774fb)  
 
 <!--more-->
 

@@ -12,7 +12,7 @@ title: Мартьянов А. Л. - Прогулки по Средневеков
 
 ## Мартьянов А. Л. - Прогулки по Средневековью
 
-[http://libgen.rs/book/index.php?md5=549f91d6196d6315df30f1f60a5a44c7](http://libgen.rs/book/index.php?md5=549f91d6196d6315df30f1f60a5a44c7)  
+[http://libgen.li/book/index.php?md5=549f91d6196d6315df30f1f60a5a44c7](http://libgen.li/book/index.php?md5=549f91d6196d6315df30f1f60a5a44c7)  
 
 <!--more-->
 

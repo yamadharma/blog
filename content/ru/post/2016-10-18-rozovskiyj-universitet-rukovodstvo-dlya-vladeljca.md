@@ -12,7 +12,7 @@ title: Розовский Г. - Университет. Руководство �
 
 ## Розовский Г. - Университет. Руководство для владельца
 
-[http://libgen.rs/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255](http://libgen.rs/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255)  
+[http://libgen.li/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255](http://libgen.li/book/index.php?md5=E238AFF3C027A1D65848CE55F2A19255)  
 
 <!--more-->
 

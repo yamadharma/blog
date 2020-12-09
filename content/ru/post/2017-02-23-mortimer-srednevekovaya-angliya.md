@@ -15,7 +15,7 @@ title: Мортимер Ян - Средневековая Англия
 
 ### Мортимер Ян - Средневековая Англия
 
-[http://libgen.rs/book/index.php?md5=DE47B4FDAAC0035CA8A55530AFB104BD](http://libgen.rs/book/index.php?md5=DE47B4FDAAC0035CA8A55530AFB104BD)  
+[http://libgen.li/book/index.php?md5=DE47B4FDAAC0035CA8A55530AFB104BD](http://libgen.li/book/index.php?md5=DE47B4FDAAC0035CA8A55530AFB104BD)  
 
 ### Мортимер Ян - Елизаветинская Англия
 
