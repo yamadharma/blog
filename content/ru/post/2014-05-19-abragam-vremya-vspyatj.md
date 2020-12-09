@@ -12,7 +12,7 @@ title: Абрагам А. И. - Время вспять или физик-физ
 
 ## Абрагам А. И. - Время вспять или физик-физик, где ты был
 
-<http://libgen.rs/book/index.php?md5=D2503C16043E8B389CB2643BB835A80E>
+<http://libgen.li/book/index.php?md5=D2503C16043E8B389CB2643BB835A80E>
 
 <!--more-->
 

@@ -11,7 +11,7 @@ title: Зайцев В. Ф. - Математические модели в то�
 
 ## Зайцев В. Ф. - Математические модели в точных и гуманитарных науках
 
-[http://libgen.rs/book/index.php?md5=C47C884B9DCF71537796A48BAF276AA2](http://libgen.rs/book/index.php?md5=C47C884B9DCF71537796A48BAF276AA2)  
+[http://libgen.li/book/index.php?md5=C47C884B9DCF71537796A48BAF276AA2](http://libgen.li/book/index.php?md5=C47C884B9DCF71537796A48BAF276AA2)  
 
 <!--more-->
 

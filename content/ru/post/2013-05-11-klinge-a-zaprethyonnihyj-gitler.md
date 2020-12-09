@@ -12,7 +12,7 @@ title: Клинге А. - Запрещённый Гитлер
 
 ## Клинге А. - Запрещённый Гитлер
 
-[http://libgen.rs/book/index.php?md5=b07f2cd3f68098eb01f35fce643a038f](http://libgen.rs/book/index.php?md5=b07f2cd3f68098eb01f35fce643a038f)  
+[http://libgen.li/book/index.php?md5=b07f2cd3f68098eb01f35fce643a038f](http://libgen.li/book/index.php?md5=b07f2cd3f68098eb01f35fce643a038f)  
 
 1. Книга не претендует на научность.  
 2. Основной посыл книги представляется следующим — нужно рационально смотреть на жизнь. И на историю, в частности. 

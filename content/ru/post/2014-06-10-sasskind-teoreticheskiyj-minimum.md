@@ -11,13 +11,13 @@ title: Сасскинд Л., Грабовски Дж. - Теоретически
 
 ## Сасскинд Л., Грабовски Дж. - Теоретический минимум. Все, что нужно знать о современной физике
 
-[http://libgen.rs/book/index.php?md5=3c42105898c3fd11a1d7370b070921d4](http://libgen.rs/book/index.php?md5=3c42105898c3fd11a1d7370b070921d4)  
+[http://libgen.li/book/index.php?md5=3c42105898c3fd11a1d7370b070921d4](http://libgen.li/book/index.php?md5=3c42105898c3fd11a1d7370b070921d4)  
 
 <!--more-->
 
 ### Susskind L., Hrabovsky G. - The Theoretical Minimum. What You Need to Know to Start Doing Physics
 
-[http://libgen.rs/book/index.php?md5=fd758fa1972887e461f7d73a5fcea35b](http://libgen.rs/book/index.php?md5=fd758fa1972887e461f7d73a5fcea35b)  
+[http://libgen.li/book/index.php?md5=fd758fa1972887e461f7d73a5fcea35b](http://libgen.li/book/index.php?md5=fd758fa1972887e461f7d73a5fcea35b)  
 
 1.  Первая книга из заявленной серии, посвящена классической физике.
 2.  Подход более всего напоминает подход учебника Зельдовича.

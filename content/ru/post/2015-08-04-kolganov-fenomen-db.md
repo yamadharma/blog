@@ -12,7 +12,7 @@ title: Колганов В. А. - Феномен ДБ. Дмитрий Быков
 
 ## Колганов В. А. - Феномен ДБ. Дмитрий Быков и его двойники
 
-[http://libgen.rs/book/index.php?md5=64a3f2c433ea32dd25be3bcff72dcd24](http://libgen.rs/book/index.php?md5=64a3f2c433ea32dd25be3bcff72dcd24)  
+[http://libgen.li/book/index.php?md5=64a3f2c433ea32dd25be3bcff72dcd24](http://libgen.li/book/index.php?md5=64a3f2c433ea32dd25be3bcff72dcd24)  
 
 <!--more-->
 
