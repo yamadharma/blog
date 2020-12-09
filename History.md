@@ -1,4 +1,11 @@
 
+v0.1.9 / 2020-12-09
+==================
+
+  * feat: deploy
+  * feat(wowchemy): update module
+  * feat(post): http://libgen.rs/ -> http://libgen.li/
+
 v0.1.8 / 2020-12-02
 ==================
 
