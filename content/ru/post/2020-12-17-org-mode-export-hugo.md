@@ -1,12 +1,14 @@
 ---
 title: "Org-mode. Экспорт в Hugo"
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2021-01-06T21:27:00+03:00
+lastmod: 2021-01-07T14:43:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
 slug: "org-mode-export-hugo"
 ---
+
+Экспорт org-mode в Hugo является одной из составных частей научного рабочего процесса на основе Emacs и org-mode.
 
 <!--more-->
 
@@ -49,6 +51,71 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ```org
 #+hugo: more
 ```
+
+
+#### Резюме и подробная информация {#резюме-и-подробная-информация}
+
+-   Специальный блок «Детали» `#+begin_details … #+end_details`
+    используется для создания элемента, раскрывающего дополнительные
+    сведения (`<details>` и `<summary>`).
+
+    ```org
+    #+begin_details
+    #+begin_summary
+    Краткая информация
+    #+end_summary
+    А здесь подробная информация.
+    #+end_details
+    ```
+
+    Выглядить это так:
+
+    <details>
+    <summary>
+    Краткая информация
+    </summary>
+    <p class="details">
+
+    А здесь подробная информация.
+    </p>
+    </details>
+
+-   Если блок `summary` отсутствует, резюме будет заменено на некоторое значение по умолчанию. Так, блок
+
+    ```org
+    #+begin_details
+    А здесь подробная информация.
+    #+end_details
+    ```
+
+    будет иметь следующий вид:
+
+    <details>
+    <p class="details">А здесь подробная информация.
+    </p>
+    </details>
+
+-   Можно показывать блок открытым по умолчанию. Для этого следует добавить атрибут HTML `#+attr_html: :open t`:
+
+    ```org
+    #+attr_html: :open t
+    #+begin_details
+    #+begin_summary
+    Краткая информация
+    #+end_summary
+    А здесь подробная информация.
+    #+end_details
+    ```
+
+    <details open>
+    <summary>
+    Краткая информация
+    </summary>
+    <p class="details">
+
+    А здесь подробная информация.
+    </p>
+    </details>
 
 
 ### Свойства экспорта {#свойства-экспорта}
