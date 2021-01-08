@@ -1,7 +1,7 @@
 ---
 title: "Хоссенфельдер С. - Уродливая Вселенная"
 date: 2021-01-06T14:25:00+03:00
-lastmod: 2021-01-08T22:33:00+03:00
+lastmod: 2021-01-08T22:53:00+03:00
 categories: ["blog"]
 draft: false
 slug: "hossenfelder-lost-math"
