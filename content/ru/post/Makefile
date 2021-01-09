@@ -1,5 +1,6 @@
 all:
 
 fixlinks:
-	find 202* -name "*.md" -exec ./org-roam-links '{}' \;
+	find . -name "*.md" -newer .fixlinks -exec ./org-roam-links '{}' \;
+	touch .fixlinks
 
