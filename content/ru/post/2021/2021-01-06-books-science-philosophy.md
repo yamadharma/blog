@@ -1,7 +1,8 @@
 ---
 title: "Книги. Философия науки"
 date: 2021-01-06T14:29:00+03:00
-lastmod: 2021-01-09T17:36:00+03:00
+lastmod: 2021-01-10T14:21:00+03:00
+tags: ["science-philosophy"]
 categories: ["листая-страницы"]
 draft: false
 slug: "books-science-philosophy"
@@ -24,4 +25,4 @@ slug: "books-science-philosophy"
 
 ### [Прочитанные книги]({{< relref "2020-12-15-books" >}}) {#прочитанные-книги}
 
-[Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
+[Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})

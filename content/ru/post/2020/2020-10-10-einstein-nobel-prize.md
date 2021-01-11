@@ -1,8 +1,9 @@
 ---
 title: "Einstein vs. the Nobel Prize"
 date: 2020-10-10T18:15:00+03:00
-lastmod: 2021-01-07T14:49:00+03:00
-categories: ["blog"]
+lastmod: 2021-01-10T18:39:00+03:00
+tags: ["science-people", "science-history"]
+categories: ["сиянс"]
 draft: false
 slug: "einstein-nobel-prize"
 ---
@@ -179,3 +180,11 @@ Friedman's research brought to light "how political the deliberations
 of the Nobel Committees sometimes were---and presumably still are."
 </p>
 </details>
+
+
+## Backlinks {#backlinks}
+
+
+### [Пенроуз - нобелиат]({{< relref "2020-10-10-penrose-nobeliat" >}}) {#пенроуз-нобелиат}
+
+P.S. По этому поводу вспоминается Эйнштейн, которому тоже долго не давали Нобелевскую премию (см. [Einstein vs. the Nobel Prize]({{< relref "2020-10-10-einstein-nobel-prize" >}})).

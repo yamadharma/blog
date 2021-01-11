@@ -1,7 +1,7 @@
 ---
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2021-01-07T20:17:00+03:00
+lastmod: 2021-01-10T20:21:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
@@ -446,19 +446,16 @@ Crash --> [*]
 ## Backlinks {#backlinks}
 
 
-## 3 Backlinks {#3-backlinks}
-
-
-### [Синтаксис языка Markdown]({{< relref "2020-12-07-hugo-site-generator" >}}) {#синтаксис-языка-markdown}
+### [Синтаксис языка Markdown]({{< relref "2020-12-08-markdown-syntax" >}}) {#синтаксис-языка-markdown}
 
 Генератор статистических сайтов [Hugo](https://gohugo.io/) [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}) использует вариант Markdown на основе библиотеки [Goldmark](https://github.com/yuin/goldmark/) [Синтаксис markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}).
 
 
-### [Генератор статических сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}) {#генератор-статических-сайтов-hugo}
+### [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}) {#генератор-статических-сайтов-hugo}
 
 Язык расширен в основном за счёт операторов (shortcodes) и поддержки расширений для диаграмм, LaTeX и др. [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}).
 
 
-### [Org-mode. Экспорт в Hugo]({{< relref "2020-11-26-hugo-markdown" >}}) {#org-mode-dot-экспорт-в-hugo}
+### [Org-mode. Экспорт в Hugo]({{< relref "2020-12-17-org-mode-export-hugo" >}}) {#org-mode-dot-экспорт-в-hugo}
 
 При экспорте Org преобразуется в стандартный Markdown. Однако в Hugo используются собственные нестандартные расширения (см. [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})). При необходимости их можно вставлять прямо в текст.

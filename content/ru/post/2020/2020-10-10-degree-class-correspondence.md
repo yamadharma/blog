@@ -1,9 +1,9 @@
 ---
 title: "Соответствие учёных степеней классным чинам"
 date: 2020-10-10T18:15:00+03:00
-lastmod: 2021-01-07T17:07:00+03:00
+lastmod: 2021-01-10T15:45:00+03:00
 tags: ["sci-admin"]
-categories: ["blog"]
+categories: ["сиянс"]
 draft: false
 slug: "degree-class-correspondence"
 ---
@@ -54,4 +54,4 @@ slug: "degree-class-correspondence"
 -   [Диссертации о диссертациях](https://www.kommersant.ru/doc/4135345)
 -   [Записка по вопросам учёных степеней и званий](https://trv-science.ru/2020/03/zapiska-po-voprosam-uchenyx-stepenej-i-zvanij/)
 
-[^fn:1]: "Я обидел его, я сказал: "Капитан, никогда ты не будешь майором" _Высоцкий В. С. Случай в ресторане_.
+[^fn:1]: Я обидел его, я сказал: "Капитан, никогда ты не будешь майором" _Высоцкий В. С. Случай в ресторане_.
