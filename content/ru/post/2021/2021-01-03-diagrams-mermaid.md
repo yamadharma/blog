@@ -1,11 +1,19 @@
 ---
 title: "Диаграммы. Mermaid"
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2021-01-07T20:18:00+03:00
-categories: ["blog"]
+lastmod: 2021-01-10T18:58:00+03:00
+tags: ["blogging"]
+categories: ["sysadmin"]
 draft: false
 slug: "diagrams-mermaid"
 ---
+
+Материалы по языку рисования диаграмм Mermaid.
+
+<!--more-->
+
+{{< toc >}}
+
 
 ## Введение {#введение}
 
@@ -70,9 +78,6 @@ slug: "diagrams-mermaid"
 
 
 ## Backlinks {#backlinks}
-
-
-## 1 Backlinks {#1-backlinks}
 
 
 ### [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}) {#синтаксис-markdown-для-генератора-сайтов-hugo}

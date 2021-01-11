@@ -1,12 +1,19 @@
 ---
 title: "Генератор статических сайтов Hugo"
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2021-01-07T20:23:00+03:00
+lastmod: 2021-01-10T20:21:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
 slug: "hugo-site-generator"
 ---
+
+Особенности генератора статических сайтов Hugo.
+
+<!--more-->
+
+{{< toc >}}
+
 
 ## Язык описания страниц {#язык-описания-страниц}
 
@@ -19,14 +26,11 @@ slug: "hugo-site-generator"
 ## Backlinks {#backlinks}
 
 
-## 2 Backlinks {#2-backlinks}
-
-
-### [Введение в научное программирование]({{< relref "2020-11-26-hugo-markdown" >}}) {#введение-в-научное-программирование}
+### [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}}) {#введение-в-научное-программирование}
 
 Генератор сайтов Hugo [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}).
 
 
-### [Синтаксис языка Markdown]({{< relref "2020-11-26-hugo-markdown" >}}) {#синтаксис-языка-markdown}
+### [Синтаксис языка Markdown]({{< relref "2020-12-08-markdown-syntax" >}}) {#синтаксис-языка-markdown}
 
 Генератор статистических сайтов [Hugo](https://gohugo.io/) [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}) использует вариант Markdown на основе библиотеки [Goldmark](https://github.com/yuin/goldmark/) [Синтаксис markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}).

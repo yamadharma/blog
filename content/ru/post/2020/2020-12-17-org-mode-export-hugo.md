@@ -1,8 +1,8 @@
 ---
 title: "Org-mode. Экспорт в Hugo"
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2021-01-07T14:43:00+03:00
-tags: ["blogging"]
+lastmod: 2021-01-10T20:18:00+03:00
+tags: ["blogging", "emacs"]
 categories: ["sysadmin"]
 draft: false
 slug: "org-mode-export-hugo"

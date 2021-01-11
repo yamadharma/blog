@@ -1,8 +1,9 @@
 ---
 title: "Пенроуз - нобелиат"
 date: 2020-10-10T18:04:00+03:00
-lastmod: 2021-01-07T14:49:00+03:00
-categories: ["blog"]
+lastmod: 2021-01-10T18:38:00+03:00
+tags: ["science-people"]
+categories: ["сиянс"]
 draft: false
 slug: "penrose-nobeliat"
 ---
