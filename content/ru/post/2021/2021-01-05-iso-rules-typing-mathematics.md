@@ -1,8 +1,8 @@
 ---
 title: "Правила ISO для набора математики"
 date: 2021-01-05T14:59:00+03:00
-lastmod: 2021-01-11T14:27:00+03:00
-tags: ["science"]
+lastmod: 2021-01-11T14:31:00+03:00
+tags: ["science", "tex"]
 categories: ["сиянс"]
 draft: false
 slug: "iso-rules-typing-mathematics"
