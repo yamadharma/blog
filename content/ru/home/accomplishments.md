@@ -21,13 +21,33 @@ date_format = "2006-01-02"
 [[item]]
   organization = "Министерство образования Российской Федерации"
   organization_url = "https://www.minobrnauki.gov.ru/"
+  title = "Диплом доктора наук"
+  url = ""
+  certificate_url = ""
+  date_start = "2017-10-13"
+  date_end = ""
+  description = "Доктор физико-математических наук, специальность 05.13.18 --- Математическое моделирование, численные методы и комплексы программ"
+
+[[item]]
+  organization = "Министерство образования Российской Федерации"
+  organization_url = "https://www.minobrnauki.gov.ru/"
   title = "Аттестат доцента"
   url = ""
   certificate_url = ""
   date_start = "2005-05-18"
   date_end = ""
-  description = ""
-	
+  description = "Доцент по кафедре Систем телекоммуникаций"
+
+[[item]]
+  organization = "Министерство образования Российской Федерации"
+  organization_url = "https://www.minobrnauki.gov.ru/"
+  title = "Диплом кандидата наук"
+  url = ""
+  certificate_url = ""
+  date_start = "2000-06-05"
+  date_end = ""
+  description = "Кандидат физико-математических наук, специальность 01.04.02 --- Теоретическая физика"
+
 
 # [[item]]
 #   organization = "Coursera"
