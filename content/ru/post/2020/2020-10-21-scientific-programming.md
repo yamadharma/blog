@@ -1,6 +1,7 @@
 ---
 title: "Научное программирование"
-lastmod: 2021-01-10T20:22:00+03:00
+date: 2020-10-21T18:08:00+03:00
+lastmod: 2021-01-16T13:10:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

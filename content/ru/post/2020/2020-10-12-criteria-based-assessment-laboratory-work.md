@@ -1,7 +1,7 @@
 ---
 title: "Критериальное оценивание лабораторных работ"
 date: 2020-10-12T09:57:00+03:00
-lastmod: 2021-01-11T13:25:00+03:00
+lastmod: 2021-01-16T13:05:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -77,6 +77,6 @@ slug: "criteria-based-assessment-laboratory-work"
 ## Backlinks {#backlinks}
 
 
-### [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}}) {#введение-в-научное-программирование}
+### [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}}) {#структура-лабораторной-работы}
 
-Критерии оценивания лабораторных работ [Критериальное оценивание лабораторных работ]({{< relref "2020-10-12-criteria-based-assessment-laboratory-work" >}})
+При проверке лабораторных работ следует использовать понятные критерии оценки (см. [Критериальное оценивание лабораторных работ]({{< relref "2020-10-12-criteria-based-assessment-laboratory-work" >}})).
