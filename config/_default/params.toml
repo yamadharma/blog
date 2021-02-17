@@ -145,7 +145,7 @@ address_format = "en-us"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {enable = true, align = "l", show_logo = true, highlight_active_link = true, show_language = true}
+main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = true, show_day_night = true, show_search = true, enable = true, highlight_active_link = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -244,6 +244,10 @@ plugins_js  = []
   #   1: Academic (built-in)
   #   2: Algolia (https://www.algolia.com)
   engine = 1
+
+  [search.wowchemy]
+    min_length = 1  # Only the matches whose length exceeds this value will be returned.
+    threshold = 0.3  # Where 0 requires a perfect match and 1 matches anything. 
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
