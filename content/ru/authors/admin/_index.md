@@ -33,20 +33,23 @@ Interests:
 education:
   courses:
   - course: Доктор физико-математических наук
-    institution: Российский университет дружбы народов
+    institution: Российский университет дружбы народов, г. Москва
     year: 2017
   - course: Доцент по кафедре
-    institution: Российский университет дружбы народов
+    institution: Российский университет дружбы народов, г. Москва
     year: 2005	
   - course: Кандидат физико-математических наук
-    institution: Российский университет дружбы народов
+    institution: Российский университет дружбы народов, г. Москва
     year: 2000
   - course: Магистр физики
-    institution: Российский университет дружбы народов
+    institution: Российский университет дружбы народов, г. Москва
     year: 1995
   - course: Бакалавр физики
-    institution: Российский университет дружбы народов
+    institution: Российский университет дружбы народов, г. Москва
     year: 1993
+  - course: Среднее образование
+    institution: ФМШ № 31, г. Челябинск
+    year: 1987
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
