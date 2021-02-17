@@ -1,7 +1,7 @@
 ---
 title: "Практический сценарий использования git"
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-01-18T13:35:00+03:00
+lastmod: 2021-01-28T19:10:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс"]
 draft: false
@@ -46,13 +46,25 @@ slug: "git-practical-use-case"
 -   Windows
 
     ```shell
-    choco -y install nodejs
-    choco -y install yarn
+    choco install nodejs
+    choco install yarn
     ```
 -   MacOS
 
     ```shell
     brew install node
+    ```
+
+
+### Настройка Node.js {#настройка-node-dot-js}
+
+Для работы с Node.js добавим каталог с исполняемыми файлами, устанавливаемыми `yarn`, в переменную `PATH`.
+
+-   Linux
+    В файле `~/.bashrc` добавьте к переменной `PATH`:
+
+    ```conf-unix
+    PATH=~/.yarn/bin:$PATH
     ```
 
 
@@ -72,7 +84,7 @@ slug: "git-practical-use-case"
     Git-flow входит в состав пакета git.
 
     ```shell
-    choco -y install git
+    choco install git
     ```
 
 
@@ -87,22 +99,64 @@ slug: "git-practical-use-case"
 yarn global add commitizen
 ```
 
+При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
+
 
 ## Настройка git {#настройка-git}
 
 
+### Настройка параметров git {#настройка-параметров-git}
+
+-   Зададим имя и email владельца репозитория:
+
+    ```shell
+    git config --global user.name "Name Surname"
+    git config --global user.email "work@mail"
+    ```
+-   Настроим utf-8 в выводе сообщений git:
+
+    ```shell
+    git config --global core.quotepath false
+    ```
+-   Настройте верификацию коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
+
+
 ## Практический сценарий использования git {#практический-сценарий-использования-git}
 
+
+### Создание репозитория git {#создание-репозитория-git}
+
+
+#### Подключение репозитория к github {#подключение-репозитория-к-github}
+
+-   Создайте репозиторий на GitHub. Для примера назовём его `test-repo`.
 -   Рабочий каталог будем обозначать как `workdir`. Вначале нужно перейти в этот каталог:
 
     ```shell
     cd workdir
     ```
--   Инициализация системы git:
+-   Инициализируем системы git:
 
     ```shell
     git init
     ```
+-   Создаём заготовку для файла `README.md`:
+
+    ```shell
+    echo "# test-repo" >> README.md
+    git add README.md
+    ```
+-   Делаем первый коммит и выкладываем на github:
+
+    ```shell
+    git commit -m "first commit"
+    git remote add origin git@github.com:<username>/test-repo.git
+    git push -u origin master
+    ```
+
+
+#### Конфигурация общепринятых коммитов {#конфигурация-общепринятых-коммитов}
+
 -   Конфигурация для пакетов Node.js
 
     ```shell
@@ -113,10 +167,83 @@ yarn global add commitizen
 
     -   Название пакета.
     -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`.
--   Сконфигурить формат коммитов.
+-   Сконфигурим формат коммитов. Для этого добавим в файл `package.json` команду для формирования коммитов:
+
+    ```js
+    "config": {
+        "commitizen": {
+    	"path": "cz-conventional-changelog"
+        }
+    }
+    ```
+
+    Таким образом, файл `package.json` приобретает вид:
+
+    ```js
+    {
+        "name": "test-repo",
+        "version": "1.0.0",
+        "description": "Git repo for educational purposes",
+        "main": "index.js",
+        "repository": "git@github.com:username/test-repo.git",
+        "author": "Name Surname <username@gmail.com>",
+        "license": "CC-BY-4.0",
+        "config": {
+    	"commitizen": {
+    	    "path": "cz-conventional-changelog"
+    	}
+        }
+    }
+    ```
+-   Добавим файл лицензии:
 
     ```shell
-    npm install commitizen
+    wget https://raw.githubusercontent.com/spdx/license-list-data/master/text/CC-BY-4.0.txt -O LICENSE
+    ```
+-   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
+
+    ```shell
+    curl -L -s https://www.gitignore.io/api/list
+    ```
+
+    Затем скачаем шаблон, например, для C и C++:
+
+    ```shell
+    curl -L -s https://www.gitignore.io/api/c >> .gitignore
+    curl -L -s https://www.gitignore.io/api/c++ >> .gitignore
+    ```
+
+    Можно это же сделать через web-интерфейс на сайте <https://www.gitignore.io/>.
+-   Добавим новые файлы:
+
+    ```shell
+    git add .
+    ```
+-   Выполним коммит:
+
+    ```shell
+    git cz
+    ```
+-   Отправим на github:
+
+    ```shell
+    git push
+    ```
+
+
+#### Конфигурация git-flow {#конфигурация-git-flow}
+
+-   Инициализируем git-flow
+
+    ```shell
+    git flow init
+    ```
+
+    Префикс для ярлыков установим в `v`.
+-   Проверьте, что Вы на ветке `develop`:
+
+    ```shell
+    git branch
     ```
 
 

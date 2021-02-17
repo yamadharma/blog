@@ -1,0 +1,19 @@
+---
+title: "Самоорганизация"
+date: 2021-02-03T12:16:00+03:00
+lastmod: 2021-02-17T15:52:00+03:00
+categories: ["blog"]
+draft: false
+slug: "self-management"
+---
+
+Организация жизни и работы.
+
+<!--more-->
+
+{{< toc >}}
+
+-   [Управление временем]({{< relref "2020-12-22-time-management" >}})
+-   [Использование org-roam]({{< relref "2020-10-05-use-org-roam" >}})
+-   [Организация меток для записей]({{< relref "2021-02-03-tags-organizing" >}})
+-   [Прочитанные книги]({{< relref "2020-12-15-books" >}})

@@ -1,7 +1,7 @@
 ---
-title: "Einstein vs. the Nobel Prize"
+title: "Эйнштейн и Нобелевская премия"
 date: 2020-10-10T18:15:00+03:00
-lastmod: 2021-01-10T18:39:00+03:00
+lastmod: 2021-01-30T11:27:00+03:00
 tags: ["science-people", "science-history"]
 categories: ["сиянс"]
 draft: false
