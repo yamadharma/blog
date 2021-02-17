@@ -1,7 +1,7 @@
 ---
 title: "Видеозапись самостоятельной работы"
 date: 2021-01-25T16:55:00+03:00
-lastmod: 2021-02-12T19:43:00+03:00
+lastmod: 2021-02-17T17:07:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -133,3 +133,8 @@ slug: "self-work-recording"
 {{< youtube KrOKWRw4JHo >}}
 
 <https://www.youtube.com/watch?v=KrOKWRw4JHo>
+
+
+## <span class="section-num">5</span> Backlinks {#backlinks}
+
+-   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})
