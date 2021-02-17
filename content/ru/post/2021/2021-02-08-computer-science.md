@@ -1,9 +1,9 @@
 ---
 title: "Computer science"
 date: 2021-02-08T20:31:00+03:00
-lastmod: 2021-02-17T16:32:00+03:00
+lastmod: 2021-02-17T17:41:00+03:00
 tags: ["research"]
-categories: ["computer-science", "сиянсе"]
+categories: ["computer-science", "сиянс"]
 draft: false
 slug: "computer-science"
 ---
