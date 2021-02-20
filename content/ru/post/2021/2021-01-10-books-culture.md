@@ -1,8 +1,8 @@
 ---
 title: "Книги. Культура"
 date: 2021-01-10T14:10:00+03:00
-lastmod: 2021-01-10T14:33:00+03:00
-tags: ["culture"]
+lastmod: 2021-02-20T17:23:00+03:00
+tags: ["культура"]
 categories: ["листая-страницы"]
 draft: false
 slug: "books-culture"
@@ -22,7 +22,4 @@ slug: "books-culture"
 
 ## Backlinks {#backlinks}
 
-
-### [Прочитанные книги]({{< relref "2020-12-15-books" >}}) {#прочитанные-книги}
-
-[Культура]({{< relref "2021-01-10-books-culture" >}})
+-   [Прочитанные книги]({{< relref "2020-12-15-books" >}})

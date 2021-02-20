@@ -1,7 +1,7 @@
 ---
 title: "Организация меток для записей"
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2021-02-12T15:24:00+03:00
+lastmod: 2021-02-20T17:24:00+03:00
 categories: ["blog"]
 draft: false
 slug: "tags-organizing"
@@ -35,7 +35,9 @@ slug: "tags-organizing"
     -   maxwell
     -   kinetic
 -   @blog
--   @read (листая-страницы)
+-   @book
+    -   science-people
+    -   culture
 
 | Уровень  | org-mode todo | org-roam           | blog (ru)        | blog (en)        |
 |----------|---------------|--------------------|------------------|------------------|
@@ -46,13 +48,11 @@ slug: "tags-organizing"
 | tag      | education     | education          | education        | education        |
 | tag      | research      | research           | research         | research         |
 | tag      | sci\_admin    | sci\_admin         | sci-admin        | sci-admin        |
-| category |               | @read              | листая-страницы  |                  |
-|          |               |                    |                  |                  |
+| category |               | @book              | листая-страницы  |                  |
+| tag      |               | science-people     | люди-науки       |                  |
+| tag      |               | culture            | культура         |                  |
 
 
 ## <span class="section-num">3</span> Backlinks {#backlinks}
 
-
-### <span class="section-num">3.1</span> [Самоорганизация]({{< relref "2021-02-03-self-management" >}}) {#самоорганизация}
-
-[Организация меток для записей]({{< relref "2021-02-03-tags-organizing" >}})
+-   [Самоорганизация]({{< relref "2021-02-03-self-management" >}})
