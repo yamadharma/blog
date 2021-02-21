@@ -1,7 +1,7 @@
 ---
 title: "Научно-административная деятельность"
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-02-07T20:46:00+03:00
+lastmod: 2021-02-20T20:26:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -34,9 +34,11 @@ slug: "scientific-administrative"
 -   [Поступление в аспирантуру студентов]({{< relref "2021-02-07-admission-postgraduate-students" >}})
 
 
-## <span class="section-num">4</span> Backlinks {#backlinks}
+## <span class="section-num">4</span> Научная школа {#научная-школа}
+
+-   [Научная школа Математическое моделирование]({{< relref "2021-02-20-scientific-school-mathematical-modeling" >}})
 
 
-### <span class="section-num">4.1</span> [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}}) {#научная-деятельность}
+## <span class="section-num">5</span> Backlinks {#backlinks}
 
-[Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
+-   [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})
