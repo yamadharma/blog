@@ -1,7 +1,7 @@
 ---
 title: "Практический сценарий использования git"
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-01-28T19:10:00+03:00
+lastmod: 2021-02-22T16:12:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс"]
 draft: false
@@ -166,7 +166,7 @@ yarn global add commitizen
     Необходимо заполнить несколько параметров пакета.
 
     -   Название пакета.
-    -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`.
+    -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`. (см. [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})).
 -   Сконфигурим формат коммитов. Для этого добавим в файл `package.json` команду для формирования коммитов:
 
     ```js
@@ -198,7 +198,7 @@ yarn global add commitizen
 -   Добавим файл лицензии:
 
     ```shell
-    wget https://raw.githubusercontent.com/spdx/license-list-data/master/text/CC-BY-4.0.txt -O LICENSE
+    wget https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt -O LICENSE
     ```
 -   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
 
@@ -249,7 +249,4 @@ yarn global add commitizen
 
 ## Backlinks {#backlinks}
 
-
-### [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}}) {#структура-лабораторной-работы}
-
-Исходный код программ, отчёты по лабораторным работам и т.д. размещаются в системе контроля версий git (см. [Практический сценарий использования git]({{< relref "2021-01-17-git-practical-use-case" >}})).
+-   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})

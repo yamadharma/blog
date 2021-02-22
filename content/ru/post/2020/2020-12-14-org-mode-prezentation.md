@@ -1,17 +1,24 @@
 ---
 title: "Org-mode. Презентации"
 date: 2020-12-14T10:49:00+03:00
-lastmod: 2021-02-21T20:04:00+03:00
-tags: ["org-mode", "emacs"]
-categories: ["blog"]
+lastmod: 2021-02-22T16:16:00+03:00
+tags: ["org-mode", "emacs", "tex"]
+categories: ["computer-science"]
 draft: false
 slug: "org-mode-prezentation"
 ---
 
-## Beamer {#beamer}
+Создание презентаций в org-mode Emacs.
+
+<!--more-->
+
+{{< toc >}}
 
 
-### Конфигурационный файл Emacs {#конфигурационный-файл-emacs}
+## <span class="section-num">1</span> Beamer {#beamer}
+
+
+### <span class="section-num">1.1</span> Конфигурационный файл Emacs {#конфигурационный-файл-emacs}
 
 -   Считаем, что экспорт в LaTeX уже настроен (см. [Org-mode. Экспорт в LaTeX]({{< relref "2020-12-14-org-mode-export-latex" >}})).
 -   Подключаем библиотеку экспорта:
@@ -41,7 +48,7 @@ slug: "org-mode-prezentation"
     ```
 
 
-### Опции экспорта {#опции-экспорта}
+### <span class="section-num">1.2</span> Опции экспорта {#опции-экспорта}
 
 Общие опции экспорта:
 
