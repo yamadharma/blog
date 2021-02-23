@@ -1,7 +1,7 @@
 ---
 title: "Генератор статических сайтов Hugo"
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2021-02-23T11:59:00+03:00
+lastmod: 2021-02-23T12:03:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
