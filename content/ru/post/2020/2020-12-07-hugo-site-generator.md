@@ -1,7 +1,7 @@
 ---
 title: "Генератор статических сайтов Hugo"
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2021-01-10T20:21:00+03:00
+lastmod: 2021-02-23T11:59:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
@@ -23,14 +23,16 @@ slug: "hugo-site-generator"
 -   Также возможно использование [Emacs Org-mode](https://github.com/niklasfasching/go-org), [AsciiDoc](https://asciidoctor.org/), [RST](http://docutils.sourceforge.net/rst.html), [Pandoc](https://www.pandoc.org/) через внешние программы.
 
 
+## Собственная favicon для сайта {#собственная-favicon-для-сайта}
+
+-   Собственная иконка для сайта делается в виде файла `icon.png`, размеры 512x512 пикселей.
+-   Иконка располагается в каталоге `assets/media/`.
+
+
 ## Backlinks {#backlinks}
 
+-   [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}})
 
-### [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}}) {#введение-в-научное-программирование}
+<!--listend-->
 
-Генератор сайтов Hugo [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}).
-
-
-### [Синтаксис языка Markdown]({{< relref "2020-12-08-markdown-syntax" >}}) {#синтаксис-языка-markdown}
-
-Генератор статистических сайтов [Hugo](https://gohugo.io/) [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}}) использует вариант Markdown на основе библиотеки [Goldmark](https://github.com/yuin/goldmark/) [Синтаксис markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}).
+-   [Синтаксис языка Markdown]({{< relref "2020-12-08-markdown-syntax" >}})
