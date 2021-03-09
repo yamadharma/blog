@@ -1,7 +1,7 @@
 ---
 title: "Семантическое версионирование. Conventional Changelog"
 date: 2021-01-16T17:41:00+03:00
-lastmod: 2021-01-17T20:05:00+03:00
+lastmod: 2021-02-28T16:30:00+03:00
 tags: ["programming"]
 categories: ["sysadmin"]
 draft: false
@@ -134,18 +134,45 @@ yarn [global] add [--dev] commitizen
 ```
 
 
+### conventional-github-releaser {#conventional-github-releaser}
+
+Утилита, создающая новый выпуск на GitHub на основе метаданных git.
+
+
+#### Установка {#установка}
+
+```shell
+yarn [global] add [--dev] conventional-github-releaser
+```
+
+
+#### Использование {#использование}
+
+-   Создание релиза с определённым пресетом:
+
+    ```shell
+    conventional-github-releaser -p angular
+    ```
+
+    Здесь `angular` --- один из пресетов : `angular`, `atom`, `codemirror`, `ember`, `eslint`, `express`, `jquery`, `jscs`, `jshint`.
+
+-   Недавно сломали утилиту (см. <https://github.com/conventional-changelog/releaser-tools/issues/190>). Пока не починят, можно применять такой трюк:
+
+    ```shell
+    CONVENTIONAL_GITHUB_RELEASER_TOKEN=asdf conventional-github-releaser -p angular
+    ```
+
+
 ## Примерный рабочий процесс {#примерный-рабочий-процесс}
 
 -   Внести изменения.
 -   Зафиксировать эти изменения.
--   Причина, по которой вы должны зафиксировать изменения и создать метку после
-    выполнения `standard-changelog` заключается в том, что CHANGELOG.md должен быть
-    включён в новую версию.
+
+Причина, по которой вы должны зафиксировать изменения и создать метку после
+выполнения `standard-changelog` заключается в том, что CHANGELOG.md должен быть
+включён в новую версию.
 
 
 ## Backlinks {#backlinks}
 
-
-### [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}}) {#семантическое-версионирование}
-
-Пакет [Conventional Changelog]({{< relref "2021-01-16-semantic-versioning-conventional-changelog" >}}) является комплексным решением по управлению коммитами и генерации журнала изменений.  Он содержит набор утилит, которые можно использовать по-отдельности.
+-   [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}})

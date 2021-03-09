@@ -1,7 +1,7 @@
 ---
 title: "Org-mode. Экспорт в Hugo"
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2021-02-20T16:35:00+03:00
+lastmod: 2021-03-08T21:20:00+03:00
 tags: ["blogging", "emacs"]
 categories: ["sysadmin"]
 draft: false
@@ -447,6 +447,32 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     ```
 
 
-## <span class="section-num">6</span> Backlinks {#backlinks}
+## <span class="section-num">6</span> Экспорт элементов {#экспорт-элементов}
+
+-   При экспорте элементов для _Hugo_ используется блок
+
+    ```org
+    #+begin_export hugo
+    Текст для Hugo
+    #+end_export
+    ```
+-   Возникла коллизия, когда из единого источника необходимо было вывести информацию и в _Hugo_, и в _Markdown_. При экспорте посредством блока
+
+    ```org
+    #+begin_export markdown
+    Текст для Markdown
+    #+end_export
+    ```
+
+    этот текст появлялся и в файле для _Hugo_. Для обхода этой ситуации я стал задавать блок для _Markdown_ в следующем виде:
+
+    ```org
+    #+begin_src markdown :exports (if (eq org-export-current-backend 'md) "" "none")
+    Текст для Markdown
+    #+end_src
+    ```
+
+
+## <span class="section-num">7</span> Backlinks {#backlinks}
 
 -   [Организация меток для записей]({{< relref "2021-02-03-tags-organizing" >}})

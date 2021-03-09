@@ -1,7 +1,7 @@
 ---
 title: "Видеозапись самостоятельной работы"
 date: 2021-01-25T16:55:00+03:00
-lastmod: 2021-02-17T17:07:00+03:00
+lastmod: 2021-03-08T21:04:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -59,8 +59,6 @@ slug: "self-work-recording"
 
 {{< youtube Xhkydl4ty9c >}}
 
-<https://www.youtube.com/watch?v=Xhkydl4ty9c>
-
 
 ### <span class="section-num">3.3</span> Настройка параметров программы {#настройка-параметров-программы}
 
@@ -85,8 +83,6 @@ slug: "self-work-recording"
 
 {{< youtube hFSTk15mK3Q >}}
 
-<https://www.youtube.com/watch?v=hFSTk15mK3Q>
-
 
 ### <span class="section-num">3.4</span> Устранение неисправностей {#устранение-неисправностей}
 
@@ -108,7 +104,7 @@ slug: "self-work-recording"
 
 ## <span class="section-num">4</span> Выкладывание получившихся файлов {#выкладывание-получившихся-файлов}
 
-Видео выкладывается на видеохостинг, например на <https://www.youtube.com/>.
+Видео выкладывается на видеохостинг, например, на <https://www.youtube.com/>.
 
 
 ### <span class="section-num">4.1</span> Подтверждение канала на youtube.com {#подтверждение-канала-на-youtube-dot-com}
@@ -118,21 +114,15 @@ slug: "self-work-recording"
 
 {{< youtube _qAzdmqctSM >}}
 
-<https://www.youtube.com/watch?v=_qAzdmqctSM>
-
 
 ### <span class="section-num">4.2</span> Загрузка видео на youtube.com {#загрузка-видео-на-youtube-dot-com}
 
 {{< youtube BKH2tU50seA >}}
 
-<https://www.youtube.com/watch?v=BKH2tU50seA>
-
 
 ### <span class="section-num">4.3</span> Прикрепление видео в качестве ответа в системе Moodle {#прикрепление-видео-в-качестве-ответа-в-системе-moodle}
 
 {{< youtube KrOKWRw4JHo >}}
-
-<https://www.youtube.com/watch?v=KrOKWRw4JHo>
 
 
 ## <span class="section-num">5</span> Backlinks {#backlinks}

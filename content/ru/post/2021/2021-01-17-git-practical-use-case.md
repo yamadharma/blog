@@ -1,14 +1,14 @@
 ---
 title: "Практический сценарий использования git"
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-02-22T16:12:00+03:00
+lastmod: 2021-03-01T12:18:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс"]
 draft: false
 slug: "git-practical-use-case"
 ---
 
-Предлагается следующий практический сценарий использование git.
+Предлагается следующий практический сценарий использование git. В нём мы используем стратегию _git flow_, скрипты для генерации общепринятых коммитов, журнала изменений.
 
 <!--more-->
 
@@ -245,6 +245,41 @@ yarn global add commitizen
     ```shell
     git branch
     ```
+-   Создадим релиз с версией 1.0.0
+
+    ```shell
+    git flow release start 1.0.0
+    ```
+-   Создадим журнал изменений
+
+    ```shell
+    standard-changelog
+    ```
+-   Добавим журнал изменений в индекс
+
+    ```shell
+    git add CHANGELOG.md
+    git commit -am 'chore(site): add changelog'
+    ```
+-   Зальём релизную ветку в основную ветку
+
+    ```shell
+    git flow release finish 1.0.0
+    ```
+-   Отправим данные на github
+
+    ```shell
+    git push --all
+    git push --tags
+    ```
+-   Создадим релиз на github:
+
+    ```shell
+    conventional-github-releaser -p angular
+    ```
+
+
+### Работа с репозиторием git {#работа-с-репозиторием-git}
 
 
 ## Backlinks {#backlinks}
