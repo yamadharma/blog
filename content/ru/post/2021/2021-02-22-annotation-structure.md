@@ -1,7 +1,7 @@
 ---
 title: "Структура аннотации"
 date: 2021-02-22T16:38:00+03:00
-lastmod: 2021-02-22T17:41:00+03:00
+lastmod: 2021-03-15T15:04:00+03:00
 tags: ["research"]
 categories: ["сиянс"]
 draft: false

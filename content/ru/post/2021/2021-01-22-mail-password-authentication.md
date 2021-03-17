@@ -1,7 +1,7 @@
 ---
 title: "Почта. Парольная аутентификация"
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2021-01-22T15:30:00+03:00
+lastmod: 2021-03-14T19:49:00+03:00
 categories: ["blog"]
 draft: false
 slug: "mail-password-authentication"
@@ -35,17 +35,18 @@ chmod 600 ~/.authinfo.gpg
 
 ### <span class="section-num">1.3</span> Формат файла паролей {#формат-файла-паролей}
 
-Файл имеет следующий формат:
+-   Файл имеет следующий формат:
 
-```config
-machine HOST login NAME password VALUE port NUMBER
-```
+    ```conf-unix
+    machine HOST login NAME password VALUE port NUMBER
+    ```
 
-Если имеется несколько учётных записей на одном сервере (например, на gmail), вместо имени хоста можно использовать имя профиля:
+-   Если имеется несколько учётных записей на одном сервере (например, на gmail), вместо имени хоста можно использовать имя профиля:
 
-```config
-machine PROFILE login NAME password VALUE port NUMBER
-```
+    ```conf-unix
+    machine PROFILE login NAME password VALUE port NUMBER
+    ```
+-   Учитывая, что с одним логином могут быть почтовые адреса на разных доменах, предлагается в качестве `PROFILE` использовать полный почтовый адрес (такой, как `account@domain`).
 
 
 ### <span class="section-num">1.4</span> Шифрование файла паролей {#шифрование-файла-паролей}
@@ -54,18 +55,15 @@ machine PROFILE login NAME password VALUE port NUMBER
 
 -   Зашифровать файл:
 
-<!--listend-->
+    ```shell
+    gpg -c .authinfo
+    ```
 
-```shell
-gpg -c .authinfo
-```
+    или
 
-или
-
-```shell
-gpg --symmetric .authinfo
-```
-
+    ```shell
+    gpg --symmetric .authinfo
+    ```
 -   Расшифровать файл:
 
     ```shell
@@ -80,12 +78,8 @@ gpg --symmetric .authinfo
 
 ## <span class="section-num">2</span> Backlinks {#backlinks}
 
+-   [Emacs. Почта. GNUS]({{< relref "2020-12-21-emacs-mail-gnus" >}})
 
-### <span class="section-num">2.1</span> [Emacs. Почта. GNUS]({{< relref "2020-12-21-emacs-mail-gnus" >}}) {#emacs-dot-почта-dot-gnus}
+<!--listend-->
 
-Для аутентификации будем использовать файл формата `.authinfo` (см. [Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
-
-
-### <span class="section-num">2.2</span> [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}}) {#почта-dot-синхронизация-dot-mbsync}
-
-Для хранения паролей будем использовать файл формата `.authinfo` (см. [Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
+-   [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}})
