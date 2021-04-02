@@ -82,9 +82,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=D5XLDn4AAAAJ
-- icon: mendeley
-  icon_pack: ai
-  link: https://www.mendeley.com/profiles/dmitry-kulyabov/
+#- icon: mendeley
+#  icon_pack: ai
+#  link: https://www.mendeley.com/profiles/dmitry-kulyabov/
 
 - icon: researchgate
   icon_pack: ai
