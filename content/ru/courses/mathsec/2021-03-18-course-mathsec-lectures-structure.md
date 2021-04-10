@@ -79,4 +79,4 @@ menu:
 
 ## <span class="section-num">3</span> Backlinks {#backlinks}
 
--   [Курс МОЗИиИБ. Лекции]({{< relref "20210311183200-курс_мозиииб_лекции" >}})
+-   [Курс МОЗИиИБ. Лекции]({{< relref "2021-03-11-course-mathsec-lections" >}})

@@ -1,7 +1,7 @@
 ---
 title: "Научно-административная деятельность"
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-02-20T20:26:00+03:00
+lastmod: 2021-04-06T18:08:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -39,6 +39,11 @@ slug: "scientific-administrative"
 -   [Научная школа Математическое моделирование]({{< relref "2021-02-20-scientific-school-mathematical-modeling" >}})
 
 
-## <span class="section-num">5</span> Backlinks {#backlinks}
+## <span class="section-num">5</span> Конференции {#конференции}
+
+-   [Конференция ITTMM]({{< relref "2021-04-06-ittmm-conference" >}})
+
+
+## <span class="section-num">6</span> Backlinks {#backlinks}
 
 -   [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})

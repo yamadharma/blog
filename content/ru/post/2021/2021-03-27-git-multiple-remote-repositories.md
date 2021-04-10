@@ -1,7 +1,7 @@
 ---
 title: "git. Несколько удалённых репозиториев"
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2021-03-27T14:40:00+03:00
+lastmod: 2021-04-10T15:37:00+03:00
 categories: ["computer_science"]
 draft: false
 slug: "git-multiple-remote-repositories"
@@ -35,7 +35,7 @@ slug: "git-multiple-remote-repositories"
     ```shell
     git remote add github git@github.com:your_name/repository_name.git
     git remote add gitlab git@gitlab.com:your_name/repository_name.git
-    git remote add bitbucket ssh://git@bitbucket.org:your_name/repository_name.git
+    git remote add bitbucket git@bitbucket.org:your_name/repository_name.git
     ```
 -   По команде `git remote -v` получим список репозиториев:
 
@@ -44,8 +44,8 @@ slug: "git-multiple-remote-repositories"
     github git@github.com:your_name/repository_name.git (push)
     gitlab git@gitlab.com:your_name/repository_name.git (fetch)
     gitlab git@gitlab.com:your_name/repository_name.git (push)
-    bitbucket ssh://git@bitbucket.org:your_name/repository_name.git (fetch)
-    bitbucket ssh://git@bitbucket.org:your_name/repository_name.git (push)
+    bitbucket git@bitbucket.org:your_name/repository_name.git (fetch)
+    bitbucket git@bitbucket.org:your_name/repository_name.git (push)
     ```
 -   Для отправки кода в репозиторий необходимо указать его имя:
 
@@ -59,4 +59,4 @@ slug: "git-multiple-remote-repositories"
 
 ## <span class="section-num">1</span> Backlinks {#backlinks}
 
--   [Система контроля версий git]({{< relref "20201207154700-система_контроля_версии_git" >}})
+-   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})

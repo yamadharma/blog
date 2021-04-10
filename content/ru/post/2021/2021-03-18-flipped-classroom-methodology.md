@@ -83,4 +83,4 @@ slug: "flipped-classroom-methodology"
 
 ## <span class="section-num">2</span> Backlinks {#backlinks}
 
--   [Преподавание. Методические заметки]({{< relref "20210224181000-преподавание_методические_заметки" >}})
+-   [Преподавание. Методические заметки]({{< relref "2021-02-24-teaching-methodical-notes" >}})

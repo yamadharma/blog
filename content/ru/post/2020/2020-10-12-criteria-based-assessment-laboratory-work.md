@@ -153,4 +153,4 @@ slug: "criteria-based-assessment-laboratory-work"
 
 ## <span class="section-num">4</span> Backlinks {#backlinks}
 
--   [Структура лабораторной работы]({{< relref "20210116125600-структура_лабораторнои_работы" >}})
+-   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})

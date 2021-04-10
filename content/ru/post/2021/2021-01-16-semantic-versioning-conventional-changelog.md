@@ -226,4 +226,4 @@ yarn [global] add [--dev] conventional-github-releaser
 
 ## Backlinks {#backlinks}
 
--   [Семантическое версионирование]({{< relref "20201211191700-семантическое_версионирование" >}})
+-   [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}})

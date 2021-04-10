@@ -274,4 +274,4 @@ slug: "lectures-structure"
 
 ## <span class="section-num">6</span> Backlinks {#backlinks}
 
--   [Лекционные занятия]({{< relref "20210317121600-лекционные_занятия" >}})
+-   [Лекционные занятия]({{< relref "2021-03-17-lectures" >}})
