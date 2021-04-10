@@ -1,0 +1,14 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "Dmitry S. Kulyabov's blog",
+    "main": "index.js",
+    "repository": "git@github.com:yamadharma/blog.git",
+    "author": "Dmitry S. Kulyabov <yamadharma@gmail.com>",
+    "license": "CC-BY-4.0",
+    "config": {
+	"commitizen": {
+	    "path": "cz-conventional-changelog"
+	}
+    }
+}

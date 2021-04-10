@@ -6,6 +6,9 @@
 #
 # Command: bash ./update_wowchemy.sh
 
+mkdir -p "$(pwd)/resources/hugo_cache"
+export HUGO_CACHEDIR="$(pwd)/resources/hugo_cache"
+
 # Check for prerequisites.
 if [ ! -d content ]; then
   echo "ERROR: `cd` into your website folder before running this tool."
@@ -16,7 +19,8 @@ fi
 function update_wowchemy () {
   # Update Wowchemy to the latest master version
   echo -e "Updating Wowchemy to the latest master version...\n"
-  hugo mod get github.com/wowchemy/wowchemy-hugo-modules/wowchemy/@master
+  # hugo mod get github.com/wowchemy/wowchemy-hugo-modules/wowchemy/@master 
+  hugo mod get -u
   hugo mod tidy
 }
 

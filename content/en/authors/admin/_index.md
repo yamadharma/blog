@@ -72,7 +72,7 @@ social:
 - icon: researcherid
   icon_pack: ai
   link: http://www.researcherid.com/rid/I-3183-2013
-- icon: elsevier
+- icon: scopus
   icon_pack: ai
   link: https://www.scopus.com/authid/detail.uri?authorId=35194130800
 
@@ -82,9 +82,9 @@ social:
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=D5XLDn4AAAAJ
-- icon: mendeley
-  icon_pack: ai
-  link: https://www.mendeley.com/profiles/dmitry-kulyabov/
+#- icon: mendeley
+#  icon_pack: ai
+#  link: https://www.mendeley.com/profiles/dmitry-kulyabov/
 
 - icon: researchgate
   icon_pack: ai
@@ -116,6 +116,9 @@ social:
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "yamadharma@gmail.com"
+
+# Highlight the author in author lists? (true/false)
+highlight_name: true
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
