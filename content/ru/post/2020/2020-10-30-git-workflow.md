@@ -1,6 +1,6 @@
 ---
 title: "Варианты Git Workflow"
-lastmod: 2021-01-10T19:17:00+03:00
+lastmod: 2021-04-18T20:16:00+03:00
 tags: ["programming"]
 categories: ["sysadmin"]
 draft: false
@@ -21,10 +21,13 @@ slug: "git-workflow"
 
 ## Git flow {#git-flow}
 
+-   [Рабочий процесс Gitflow]({{< relref "2021-04-18-gitflow-workflow" >}})
+
 
 ## Backlinks {#backlinks}
 
+-   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
 
-### [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}}) {#система-контроля-версий-git}
+<!--listend-->
 
-[Варианты Git Workflow]({{< relref "2020-10-30-git-workflow" >}})
+-   [Практический сценарий использования git]({{< relref "2021-01-17-git-practical-use-case" >}})

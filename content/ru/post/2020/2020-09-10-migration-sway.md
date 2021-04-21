@@ -1,121 +1,101 @@
 ---
-# Documentation: https://sourcethemes.com/academic/docs/managing-content/
-
 title: "Переход на Sway"
-subtitle: ""
-slug: migration-sway
-summary: ""
-authors: []
-tags: ["gentoo"]
-categories: ["sysadmin"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2020-09-10T10:33:15+03:00
-featured: false
+lastmod: 2021-04-10T18:25:00+03:00
+tags: ["gentoo", "sysadmin"]
+categories: ["computer-science"]
 draft: false
-
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
-# Projects (optional).
-#   Associate this post with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
-#   Otherwise, set `projects = []`.
-projects: ["misc-utils"]
+slug: "migration-sway"
+project: ["misc-utils"]
 ---
 
-## Переход на Sway
-
-Решил попробовать [Wayland](https://wayland.freedesktop.org/). По этой
-причине пришлось
-[перейти](http://way-cooler.org/blog/2020/01/09/way-cooler-post-mortem.html)
-с [awesome](https://awesomewm.org/) на [sway](https://swaywm.org/).
+Решил попробовать [Wayland](https://wayland.freedesktop.org/). По этой причине пришлось [перейти](http://way-cooler.org/blog/2020/01/09/way-cooler-post-mortem.html) с [awesome](https://awesomewm.org/) на [swlay](https://swaywm.org/).
 
 <!--more-->
 
-Установка `sway`:
+{{< toc >}}
 
-``` bash
+
+## <span class="section-num">1</span> Установка `sway` {#установка-sway}
+
+```shell
 emerge -v gui-wm/sway
 ```
 
-### Репозитории `gentoo`
+
+### <span class="section-num">1.1</span> Репозитории `gentoo` {#репозитории-gentoo}
 
 Программы для Wayland есть как в основном репозитории, так и
 дополнительных. Хочу порекомендовать для просмотра следующие
 репозитории:
 
-- [wayland-desktop](https://github.com/epsilon-0/wayland-desktop)
+-   [wayland-desktop](https://github.com/epsilon-0/wayland-desktop)
 
-``` bash
+<!--listend-->
+
+```shell
 layman -a wayland-desktop
 ```
 
-- [guru](https://wiki.gentoo.org/wiki/Project:GURU)
+-   [guru](https://wiki.gentoo.org/wiki/Project:GURU)
 
-``` bash
+<!--listend-->
+
+```shell
 layman -a guru
 ```
 
-### Первоначальная конфигурация
 
-При запуске без локальной конфигурации `sway` использует глобальную
-конфигурацию `/etc/sway/config`. При желании внести изменение в
-конфигурацию можно скопировать файл глобальной конфигурации в
-локальную:
+## <span class="section-num">2</span> Первоначальная конфигурация {#первоначальная-конфигурация}
 
-``` bash
+При запуске без локальной конфигурации `sway` использует глобальную конфигурацию `/etc/sway/config`. При желании внести изменение в конфигурацию можно скопировать файл глобальной конфигурации в локальную:
+
+```shell
 mkdir -p ~/.config/sway
 cp /etc/sway/config ~/.config/sway/
 ```
 
-### Комбинации клавиш
+
+## <span class="section-num">3</span> Комбинации клавиш {#комбинации-клавиш}
 
 Основные сочетания клавиш:
 
-- `Mod` + `Enter` -- открыть новый терминал;
-- `Mod` + `d` -- запустить программу;
-- `Mod` + `0`..`9` -- переключение между workspace’ами;
-- `Mod` + `Shift` + `0`..`9` -- перемещение окон в заданный workspace;
-- `Mod` + `Shift` + `q` -- закрыть текущее окно;
-- `Mod` + Стрелочки -- перемещение между окнами, вместо стрелочек также могут быть использованы клавиши «J» (влево), «K» (вниз), «L» (вверх) и «;» (вправо);
-- `Mod` + `Shift` + Стрелочки -- перемещение окон в пределах workspace’а, вместо стрелочек также могут быть использованы буковки и точка с запятой;
-- `Mod` + `v` -- использовать вертикальное разбиение;
-- `Mod` + `h` -- использовать горизонтальное разбиение;
-- `Mod` + `e` -- размещение окон по-умолчанию (default layout);
-- `Mod` + `s` -- стековое размещение (stacking layout);
-- `Mod` + `w` -- размещение с табами (tabbed layout);
-- `Mod` + `f` -- раскрыть окно во весь экран или свернуть его обратно;
-- `Mod` + `Shift` + `Space` -- разрешить свободное перемещение окна (floating mode) или вернуть его в мозаику;
-- `Mod` + `Shift` + `c` -- перечитать конфигурацию `sway` (перестартовать);
-- `Mod` + `Shift` + `e` -- выйти из `sway`.
+-   `Mod` + `Enter` -- открыть новый терминал;
+-   `Mod` + `d` -- запустить программу;
+-   `Mod` + `0`.. `9` -- переключение между workspace'ами;
+-   `Mod` + `Shift` + `0`..=9= -- перемещение окон в заданный workspace;
+-   `Mod` + `Shift` + `q` -- закрыть текущее окно;
+-   `Mod` + Стрелочки -- перемещение между окнами, вместо стрелочек также   могут быть использованы клавиши «J» (влево), «K» (вниз), «L» (вверх) и  «;» (вправо);
+-   `Mod` + `Shift` + Стрелочки -- перемещение окон в пределах workspace'а, вместо стрелочек также могут быть использованы буковки и точка с запятой;
+-   `Mod` + `v` -- использовать вертикальное разбиение;
+-   `Mod` + `h` -- использовать горизонтальное разбиение;
+-   `Mod` + `e` -- размещение окон по-умолчанию (default layout);
+-   `Mod` + `s` -- стековое размещение (stacking layout);
+-   `Mod` + `w` -- размещение с табами (tabbed layout);
+-   `Mod` + `f` -- раскрыть окно во весь экран или свернуть его обратно;
+-   `Mod` + `Shift` + `Space` -- разрешить свободное перемещение окна (floating mode) или вернуть его в мозаику;
+-   `Mod` + `Shift` + `c` -- перечитать конфигурацию `sway` (перестартовать);
+-   `Mod` + `Shift` + `e` -- выйти из `sway`.
 
-Кроме того, часть сочетаний клавиш определяется в файлах, определяющих
-конкретный функционал.
+Кроме того, часть сочетаний клавиш определяется в файлах, определяющих конкретный функционал.
 
-### Замена приложений
 
-#### Снимки экрана
+## <span class="section-num">4</span> Замена приложений {#замена-приложений}
+
+
+### <span class="section-num">4.1</span> Снимки экрана {#снимки-экрана}
 
 Исходно использовался `scrot`.
 
-Для Wayland перешёл на связку
-[`grim`](https://github.com/emersion/grim) (получение снимка
-экрана) + [`slurp`](https://github.com/emersion/slurp) (выделение
-области экрана):
+Для Wayland перешёл на связку [grim](https://github.com/emersion/grim) (получение снимка экрана) + [slurp](https://github.com/emersion/slurp) (выделение области экрана):
 
-``` bash
+```shell
 emerge -uv gui-apps/slurp gui-apps/grim
 ```
 
 Настроим получение снимков экрана:
 
-``` conf
+```conf-unix
 # ~/.config/sway/config.d/80-screenshots.conf
 # Screenshot active display
 bindsym Print exec grim -t png "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
@@ -127,69 +107,80 @@ bindsym $mod+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid
 bindsym $mod+Shift+Print exec grim -t png -g "$(slurp)" "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
 ```
 
-- При нажатии клавиши `PrtScr` делается снимок всего экрана.
-- При нажатии `Mod4`+`PrtScr` делается снимок активного окна.
-- При нажатии `Mod4`+`Shift`+`PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
+-   При нажатии клавиши `PrtScr` делается снимок всего экрана.
+-   При нажатии `Mod4` + `PrtScr` делается снимок активного окна.
+-   При нажатии `Mod4` + `Shift` + `PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
 
-#### Видеозапись экрана (скринкаст)
+
+### <span class="section-num">4.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
 
 Ранее использовался [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
-##### Видеозапись экрана -- командная строка
 
-Для записи из командной строки используем [`wf-recorder`](https://github.com/ammen99/wf-recorder):
+#### <span class="section-num">4.2.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
 
-``` bash
+Для записи из командной строки используем [wf-recorder](https://github.com/ammen99/wf-recorder):
+
+```shell
 emerge -v gui-apps/wf-recorder
 ```
 
 Варианты использования:
 
-- Запись всего экрана в файл `recording.mkv` (только видео):
+-   Запись всего экрана в файл `recording.mkv` (только видео):
 
-``` bash
+<!--listend-->
+
+```shell
 wf-recorder -f recording$(date +%Y-%m-%d_%H-%M-%S).mkv
 ```
 
 Если файл не указывать, запись будет в текущий каталог.
 
-- Запись фрагмента экрана (тут имя файла задаётся по времени начала записи):
+-   Запись фрагмента экрана (тут имя файла задаётся по времени начала
+    записи):
 
-``` bash
+<!--listend-->
+
+```shell
 wf-recorder -g "$(slurp)" -f $(date +%Y-%m-%d_%H-%M-%S).mkv
 ```
 
-- Запись со звуком:
+-   Запись со звуком:
 
-``` bash
+<!--listend-->
+
+```shell
 wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv
 ```
 
-- Запись с использование GPU (VAAPI интерфейс):
+-   Запись с использование GPU (VAAPI интерфейс):
 
-``` bash
+<!--listend-->
+
+```shell
 wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/renderD128
 ```
 
-##### Видеозапись экрана -- графическое приложение
 
-Для захвата десктопа в Wayland используется плагин
-[`wlrobs`](https://hg.sr.ht/~scoopta/wlrobs).
+#### <span class="section-num">4.2.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
 
-#### Строка состояний
+Для захвата десктопа в Wayland используется плагин [wlrobs](https://hg.sr.ht/~scoopta/wlrobs).
 
-Sway поддерживает свою строку состояний `sway-bar`. Удобное и
-минималистическое приложение. Однако, удручает, что иконки в трее не активны.
 
-Попробуем использовать более продвинутый вариант --
-[`waybar`](https://github.com/Alexays/Waybar)
+### <span class="section-num">4.3</span> Строка состояний {#строка-состояний}
 
-``` bash
+Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
+
+Попробуем использовать более продвинутый вариант -- [waybar](https://github.com/Alexays/Waybar)
+
+```shell
 emerge -v gui-apps/waybar
 ```
+
 Конфигурация:
 
-``` conf
+```conf-unix
 ## sway-bar
 # Read `man 5 sway-bar` for more information about this section.
 
@@ -223,17 +214,18 @@ for_window [app_id="waybar" floating] {
 
 Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
-#### Уведомления
 
-Используется [`mako`](https://github.com/emersion/mako).
+### <span class="section-num">4.4</span> Уведомления {#уведомления}
 
-``` bash
+Используется [mako](https://github.com/emersion/mako).
+
+```shell
 emerge -v gui-apps/mako
 ```
 
 Сконфигурировал следующим образом:
 
-``` conf
+```conf-unix
 # ~/.config/sway/config.d/80-mako.conf
 # Light
 exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text-color '#657b83' --default-timeout 5000 --width 400 --markup 1 --border-radius 5
@@ -242,31 +234,33 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 # exec_always mako --font 'Source Code Pro 10' --background-color '#002b36' --text-color '#839496' --default-timeout 5000 --width 400 --markup 1 --border-radius 5
 ```
 
-#### Настройка вывода
 
-В XWindow используется программа `xrandr` (с её помощью можно изменять
-параметры вывода изображения RandR). В `sway` можно управлять с
-помощью `swaymsg output` или с помощью утилиты
-[`wlr-randr`](https://github.com/emersion/wlr-randr).
+### <span class="section-num">4.5</span> Настройка вывода {#настройка-вывода}
 
-``` bash
+В XWindow используется программа `xrandr` (с её помощью можно изменять параметры вывода изображения RandR). В `sway` можно управлять с помощью `swaymsg output` или с помощью утилиты [wlr-randr](https://github.com/emersion/wlr-randr).
+
+```shell
 emerge -v gui-apps/wlr-randr
 ```
 
-#### Меню программ (launcher)
+
+### <span class="section-num">4.6</span> Меню программ (launcher) {#меню-программ--launcher}
 
 Для запуска программы используется `dmenu`. Если не нравится, можно заменить.
 
-- [`wofi`](https://hg.sr.ht/~scoopta/wofi) --- аналог `rofi` для Wayland. Попроще, конечно.
+-   [wofi](https://hg.sr.ht/~scoopta/wofi) --- аналог `rofi` для Wayland. Попроще, конечно.
 
-``` bash
+<!--listend-->
+
+```shell
 emerge -v gui-apps/wofi
 ```
+
 В отличии от `dmenu` запоминает последние выбранные команды.
 
 Общая конфигурация:
 
-``` conf
+```conf-unix
 # ~/.config/sway/config.d/80-launcher.conf
 
 # dmenu
@@ -301,12 +295,12 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 bindsym $mod+d exec $menu
 ```
 
-#### Буфер обмена
 
-Предлагается использовать
-[`wl-clipboard`](https://github.com/bugaevc/wl-clipboard).
+### <span class="section-num">4.7</span> Буфер обмена {#буфер-обмена}
 
-``` bash
+Предлагается использовать [wl-clipboard](https://github.com/bugaevc/wl-clipboard).
+
+```shell
 emerge -v gui-apps/wl-clipboard
 ```
 
@@ -314,7 +308,7 @@ emerge -v gui-apps/wl-clipboard
 
 Пример использования:
 
-``` bash
+```shell
 # copy a simple text message
 $ wl-copy Hello world!
 
@@ -336,3 +330,8 @@ $ wl-copy "!!"
 # replace the current selection with the list of types it's offered in
 $ wl-paste --list-types | wl-copy
 ```
+
+
+## <span class="section-num">5</span> Backlinks {#backlinks}
+
+-   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

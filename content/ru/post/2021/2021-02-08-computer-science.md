@@ -1,7 +1,7 @@
 ---
 title: "Computer science"
 date: 2021-02-08T20:31:00+03:00
-lastmod: 2021-02-17T17:41:00+03:00
+lastmod: 2021-04-10T18:23:00+03:00
 tags: ["research"]
 categories: ["computer-science", "сиянс"]
 draft: false
@@ -15,6 +15,7 @@ slug: "computer-science"
 {{< toc >}}
 
 -   [Процессор Apple M1]({{< relref "2021-02-08-chip-apple-m1" >}})
+-   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
 
 
 ## <span class="section-num">1</span> Backlinks {#backlinks}
