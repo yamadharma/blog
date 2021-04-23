@@ -1,7 +1,7 @@
 ---
 title: "Установка NS-2. Ubuntu"
 date: 2021-04-21T13:31:00+03:00
-lastmod: 2021-04-21T17:45:00+03:00
+lastmod: 2021-04-23T19:27:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "installation-ns2-ubuntu"
@@ -126,4 +126,4 @@ apt-get install build-essential linux-headers-`uname -r`
 
 ## <span class="section-num">4</span> Backlinks {#backlinks}
 
--   [Средство имитационного моделирования NS2]({{< relref "2021-04-21-средство_имитационного_моделирования_ns2" >}})
+-   [Средство имитационного моделирования NS2]({{< relref "2021-04-21-ns2-network-simulator" >}})

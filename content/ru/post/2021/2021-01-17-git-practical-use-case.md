@@ -1,7 +1,7 @@
 ---
 title: "Практический сценарий использования git"
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-03-01T12:18:00+03:00
+lastmod: 2021-04-23T12:27:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс"]
 draft: false
@@ -86,6 +86,11 @@ slug: "git-practical-use-case"
     ```shell
     choco install git
     ```
+-   MacOS
+
+    ```shell
+    brew install git-flow
+    ```
 
 
 ### Общепринятые коммиты {#общепринятые-коммиты}
@@ -105,7 +110,7 @@ yarn global add commitizen
 ## Настройка git {#настройка-git}
 
 
-### Настройка параметров git {#настройка-параметров-git}
+### Первичная настройка параметров git {#первичная-настройка-параметров-git}
 
 -   Зададим имя и email владельца репозитория:
 
@@ -118,7 +123,56 @@ yarn global add commitizen
     ```shell
     git config --global core.quotepath false
     ```
--   Настройте верификацию коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
+-   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
+
+
+### Дополнительные настройки {#дополнительные-настройки}
+
+
+#### Работа с переносами строк {#работа-с-переносами-строк}
+
+-   В разных операционных системах приняты разные символы для перевода строк:
+    -   Windows: `\r\n` (`CR` и `LF`);
+    -   Unix: `\n` (`LF`);
+    -   Mac: `\r` (`CR`).
+-   Посмотреть значения переносов строк в репозитории можно командой:
+
+    ```shell
+    git ls-files --eol
+    ```
+
+<!--list-separator-->
+
+-  Параметр `autocrlf`
+
+    -   Настройка `core.autocrlf` предназначена для того, чтобы в главном репозитории все переводы строк текстовых файлах были одинаковы.
+    -   Настройка `core.autocrlf` с параметрами `true` и `input` делает все переводы строк текстовых файлов в главном репозитории одинаковыми.
+        -   `core.autocrlf true`: конвертация `CRLF->LF` при коммите и обратно `LF->CRLF` при выгрузке кода из репозитория на файловую систему (обычно используется в Windows).
+        -   `core.autocrlf input`: конвертация `CRLF->LF` только при коммитах (используются в MacOS/Linux).
+    -   Установка параметра:
+        -   Для Windows
+
+            ```shell
+            git config --global core.autocrlf true
+            ```
+        -   Для Linux
+
+            ```shell
+            git config --global core.autocrlf input
+            ```
+
+<!--list-separator-->
+
+-  Параметр `safecrlf`
+
+    -   Настройка `core.safecrlf`  предназначена для проверки, является ли окончаний строк обратимым для текущей настройки `core.autocrlf`.
+        -   `core.safecrlf true`: запрещается необратимое преобразование `lf<->crlf`. Полезно, когда существуют бинарные файлы, похожие на текстовые файлы.
+        -   `core.safecrlf warn`: печать предупреждения, но коммиты с необратимым переходом принимаются.
+    -   Установка параметра:
+
+        ```shell
+        git config --global core.safecrlf warn
+        ```
 
 
 ## Практический сценарий использования git {#практический-сценарий-использования-git}
@@ -198,7 +252,7 @@ yarn global add commitizen
 -   Добавим файл лицензии:
 
     ```shell
-    wget https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt -O LICENSE
+    wget https://creativecommons.org/licenses/by/4.0/legalcode.txt -O LICENSE
     ```
 -   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
 
@@ -253,7 +307,7 @@ yarn global add commitizen
 -   Создадим журнал изменений
 
     ```shell
-    standard-changelog
+    standard-changelog --first-release
     ```
 -   Добавим журнал изменений в индекс
 
@@ -283,5 +337,9 @@ yarn global add commitizen
 
 
 ## Backlinks {#backlinks}
+
+-   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
+
+<!--listend-->
 
 -   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})

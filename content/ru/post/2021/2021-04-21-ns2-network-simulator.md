@@ -1,11 +1,11 @@
 ---
 title: "Средство имитационного моделирования NS2"
 date: 2021-04-21T17:38:00+03:00
-lastmod: 2021-04-21T17:42:00+03:00
+lastmod: 2021-04-23T19:26:00+03:00
 tags: ["modeling"]
 categories: ["сиянс", "computer-science"]
 draft: false
-slug: "средство_имитационного_моделирования_ns2"
+slug: "ns2-network-simulator"
 ---
 
 Средство имитационного моделирования NS2.
