@@ -1,7 +1,7 @@
 ---
 title: "Критериальное оценивание лабораторных работ"
 date: 2020-10-12T09:57:00+03:00
-lastmod: 2021-04-19T12:05:00+03:00
+lastmod: 2021-04-25T17:40:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -162,6 +162,11 @@ slug: "criteria-based-assessment-laboratory-work"
 | Нет ответа на дополнительные вопросы            | Ошибки при ответе на дополнительные вопросы   | Полные и развёрнутые ответы на дополнительные вопросы |
 
 
-## <span class="section-num">5</span> Backlinks {#backlinks}
+## <span class="section-num">5</span> Настройка для Moodle {#настройка-для-moodle}
+
+{{< youtube Xuu8Vuj_jOk >}}
+
+
+## <span class="section-num">6</span> Backlinks {#backlinks}
 
 -   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})
