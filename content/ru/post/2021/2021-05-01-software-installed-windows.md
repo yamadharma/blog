@@ -1,11 +1,11 @@
 ---
 title: "Программное обеспечение, устанавливаемое на Windows"
 date: 2021-05-01T16:38:00+03:00
-lastmod: 2021-05-01T17:31:00+03:00
+lastmod: 2021-05-02T20:39:00+03:00
 tags: ["windows", "education"]
 categories: ["computer-science"]
 draft: false
-slug: "программное_обеспечение_устанасливаемое_на_windows"
+slug: "software-installed-windows"
 ---
 
 Обычно при проведении занятий используется Linux. Но часть программного обеспечения можно установить и на Windows.

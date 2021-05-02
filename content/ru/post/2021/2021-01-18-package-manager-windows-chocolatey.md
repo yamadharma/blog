@@ -1,7 +1,7 @@
 ---
 title: "Пакетный менеджер для Windows. Chocolatey"
 date: 2021-01-18T11:23:00+03:00
-lastmod: 2021-05-02T20:09:00+03:00
+lastmod: 2021-05-02T20:41:00+03:00
 tags: ["sysadmin", "education", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -164,4 +164,4 @@ slug: "package-manager-windows-chocolatey"
 
 <!--listend-->
 
--   [Программное обеспечение, устанавливаемое на Windows]({{< relref "2021-05-01-программное_обеспечение_устанасливаемое_на_windows" >}})
+-   [Программное обеспечение, устанавливаемое на Windows]({{< relref "2021-05-01-software-installed-windows" >}})

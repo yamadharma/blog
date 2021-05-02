@@ -1,7 +1,7 @@
 ---
 title: "Администрирование Windows"
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2021-05-01T16:41:00+03:00
+lastmod: 2021-05-02T20:40:00+03:00
 tags: ["windows"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "windows-administration"
 ## <span class="section-num">1</span> Управление программным обеспечением {#управление-программным-обеспечением}
 
 -   [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})
--
+-   [Программное обеспечение, устанавливаемое на Windows]({{< relref "2021-05-01-software-installed-windows" >}})
 
 
 ## <span class="section-num">2</span> Backlinks {#backlinks}
