@@ -1,7 +1,7 @@
 ---
 title: "Рабочий процесс Gitflow"
 date: 2021-04-18T20:14:00+03:00
-lastmod: 2021-04-18T20:55:00+03:00
+lastmod: 2021-04-28T13:56:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,17 @@ slug: "gitflow-workflow"
         ```shell
         apt-get install git-flow
         ```
+    -   Centos
+        -   Первоначально нужно установить репозиторий _epel_ (<https://fedoraproject.org/wiki/EPEL>):
+
+            ```shell
+            yum install epel-release
+            ```
+        -   Затем, собственно, установить git-flow:
+
+            ```shell
+            yum install gitflow
+            ```
 
 
 ## <span class="section-num">3</span> Процесс работы с Gitflow {#процесс-работы-с-gitflow}

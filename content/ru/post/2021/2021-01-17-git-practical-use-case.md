@@ -1,9 +1,9 @@
 ---
 title: "Практический сценарий использования git"
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-04-23T12:27:00+03:00
+lastmod: 2021-04-28T16:25:00+03:00
 tags: ["education", "programming"]
-categories: ["сиянс"]
+categories: ["сиянс", "computer-science"]
 draft: false
 slug: "git-practical-use-case"
 ---
@@ -70,16 +70,28 @@ slug: "git-practical-use-case"
 
 ### Установка git-flow {#установка-git-flow}
 
--   Gentoo
+-   Linux
+    -   Gentoo
 
-    ```shell
-    emerge dev-vcs/git-flow
-    ```
--   Ubuntu
+        ```shell
+        emerge dev-vcs/git-flow
+        ```
+    -   Ubuntu
 
-    ```shell
-    apt-get install git-flow
-    ```
+        ```shell
+        apt-get install git-flow
+        ```
+    -   Centos
+        -   Первоначально нужно установить репозиторий _epel_ (<https://fedoraproject.org/wiki/EPEL>):
+
+            ```shell
+            yum install epel-release
+            ```
+        -   Затем, собственно, установить git-flow:
+
+            ```shell
+            yum install gitflow
+            ```
 -   Windows
     Git-flow входит в состав пакета git.
 
@@ -149,6 +161,21 @@ yarn global add commitizen
     -   Настройка `core.autocrlf` с параметрами `true` и `input` делает все переводы строк текстовых файлов в главном репозитории одинаковыми.
         -   `core.autocrlf true`: конвертация `CRLF->LF` при коммите и обратно `LF->CRLF` при выгрузке кода из репозитория на файловую систему (обычно используется в Windows).
         -   `core.autocrlf input`: конвертация `CRLF->LF` только при коммитах (используются в MacOS/Linux).
+    -   Варианты конвертации
+
+        <div class="table-caption">
+          <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+          Варианты конвертации для разных значений параметра core.autocrlf
+        </div>
+
+        | core.autocrlf | false        | input        | true         |
+        |---------------|--------------|--------------|--------------|
+        | git commit    | LF -> LF     | LF -> LF     | LF -> CRLF   |
+        |               | CR -> CR     | CR -> CR     | CR -> CR     |
+        |               | CRLF -> CRLF | CRLF -> LF   | CRLF -> CRLF |
+        | git checkout  | LF -> LF     | LF -> LF     | LF -> CRLF   |
+        |               | CR -> CR     | CR -> CR     | CR -> CR     |
+        |               | CRLF -> CRLF | CRLF -> CRLF | CRLF -> CRLF |
     -   Установка параметра:
         -   Для Windows
 

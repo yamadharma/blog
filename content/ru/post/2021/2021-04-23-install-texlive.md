@@ -1,7 +1,7 @@
 ---
 title: "Установка TeX Live"
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2021-04-23T19:28:00+03:00
+lastmod: 2021-05-01T12:20:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -83,8 +83,19 @@ slug: "install-texlive"
 
 ### <span class="section-num">3.2</span> Клиенты {#клиенты}
 
--   На клиентах вначале устанавливаем вручную.
--   Для обновления используем скрипт:
+
+#### <span class="section-num">3.2.1</span> Установка {#установка}
+
+-   На клиентах вначале устанавливаем вручную. Для этого на клиенте запускаем:
+
+    ```shell
+    /com/lib/portage/extras/texlive/install-tl --repository=/com/lib/portage/extras/texlive
+    ```
+
+
+### <span class="section-num">3.3</span> Обновление {#обновление}
+
+-   Для обновления используем на клиенте скрипт:
 
     ```shell
     #!/bin/bash
