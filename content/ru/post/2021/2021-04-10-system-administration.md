@@ -1,7 +1,7 @@
 ---
 title: "Системное администрирование"
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-05-01T16:32:00+03:00
+lastmod: 2021-05-03T15:23:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -26,7 +26,7 @@ slug: "system-administration"
 
 ### <span class="section-num">2.1</span> Windows {#windows}
 
--
+-   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
 
 
 ### <span class="section-num">2.2</span> Установка операционных систем {#установка-операционных-систем}
@@ -36,9 +36,13 @@ slug: "system-administration"
 
 ## <span class="section-num">3</span> Пользовательские программы {#пользовательские-программы}
 
+
+## <span class="section-num">4</span> Безопасность {#безопасность}
+
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
+-   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 
 
-## <span class="section-num">4</span> Backlinks {#backlinks}
+## <span class="section-num">5</span> Backlinks {#backlinks}
 
 -   [Computer science]({{< relref "2021-02-08-computer-science" >}})

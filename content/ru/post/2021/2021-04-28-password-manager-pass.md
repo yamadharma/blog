@@ -1,7 +1,7 @@
 ---
 title: "Менеджер паролей pass"
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2021-05-02T20:06:00+03:00
+lastmod: 2021-05-02T21:34:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -26,13 +26,16 @@ slug: "password-manager-pass"
 
 ## <span class="section-num">3</span> Реализации {#реализации}
 
-На данный момент существует 2 реализации:
+-   Утилиты командной строки:
+    -   На данный момент существует 2 основных реализации:
 
--   `pass` --- классическая реализация в виде shell-скриптов (<https://www.passwordstore.org/>);
--   `gopass` --- реализация на go с дополнительными интегрированными функциями (<https://www.gopass.pw/>).
--   `qtpass` --- может работать как графический интерфейс к `pass`, так и как самостоятельная программа.
+        -   `pass` --- классическая реализация в виде shell-скриптов (<https://www.passwordstore.org/>);
+        -   `gopass` --- реализация на go с дополнительными интегрированными функциями (<https://www.gopass.pw/>).
 
-    Дальше в тексте будет использоваться программа `pass`, но всё то же самое можно сделать с помощью программы `gopass`.
+        Дальше в тексте будет использоваться программа `pass`, но всё то же самое можно сделать с помощью программы `gopass`.
+-   Графические интерфейсы:
+    -   `qtpass` --- может работать как графический интерфейс к `pass`, так и как самостоятельная программа. В настройках можно переключаться между использованием `pass` и `gnupg`.
+    -   `gopass-ui` --- интерфейс к `gopass`.
 
 
 ## <span class="section-num">4</span> Установка {#установка}
@@ -45,11 +48,23 @@ slug: "password-manager-pass"
             emerge app-admin/pass
             ```
         -   `gopass`
-            -   Собственно `gopass`
+
+            ```shell
+            emerge app-admin/gopass
+            ```
+        -   `qtpass`
+
+            ```shell
+            emerge app-admin/qtpass
+            ```
+        -   Gopass UI
+            -   Находится в оверлее awesome (<https://gitlab.awesome-it.de/overlays/awesome/>).
+            -   Установка:
 
                 ```shell
-                emerge app-admin/gopass
+                emerge app-admin/gopass-ui
                 ```
+
 -   Macintosh
 
     ```shell
