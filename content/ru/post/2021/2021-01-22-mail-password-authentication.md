@@ -1,7 +1,7 @@
 ---
 title: "Почта. Парольная аутентификация"
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2021-03-14T19:49:00+03:00
+lastmod: 2021-05-11T15:38:00+03:00
 categories: ["blog"]
 draft: false
 slug: "mail-password-authentication"

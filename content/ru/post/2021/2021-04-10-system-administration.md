@@ -1,7 +1,7 @@
 ---
 title: "Системное администрирование"
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-05-03T15:23:00+03:00
+lastmod: 2021-05-14T16:38:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,6 +18,7 @@ slug: "system-administration"
 ## <span class="section-num">1</span> Графическое окружение {#графическое-окружение}
 
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
+-   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
 
 

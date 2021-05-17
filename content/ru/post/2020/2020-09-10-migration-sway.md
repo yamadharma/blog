@@ -1,7 +1,7 @@
 ---
 title: "Переход на Sway"
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-04-28T11:47:00+03:00
+lastmod: 2021-05-14T11:33:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -16,14 +16,20 @@ project: ["misc-utils"]
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Установка `sway` {#установка-sway}
+## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   <https://swaywm.org/>
+-   Создавался для замены i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) под Wayland.
+
+
+## <span class="section-num">2</span> Установка `sway` {#установка-sway}
 
 ```shell
 emerge -v gui-wm/sway
 ```
 
 
-### <span class="section-num">1.1</span> Репозитории `gentoo` {#репозитории-gentoo}
+### <span class="section-num">2.1</span> Репозитории `gentoo` {#репозитории-gentoo}
 
 Программы для Wayland есть как в основном репозитории, так и
 дополнительных. Хочу порекомендовать для просмотра следующие
@@ -46,7 +52,7 @@ layman -a guru
 ```
 
 
-## <span class="section-num">2</span> Первоначальная конфигурация {#первоначальная-конфигурация}
+## <span class="section-num">3</span> Первоначальная конфигурация {#первоначальная-конфигурация}
 
 При запуске без локальной конфигурации `sway` использует глобальную конфигурацию `/etc/sway/config`. При желании внести изменение в конфигурацию можно скопировать файл глобальной конфигурации в локальную:
 
@@ -56,17 +62,17 @@ cp /etc/sway/config ~/.config/sway/
 ```
 
 
-## <span class="section-num">3</span> Комбинации клавиш {#комбинации-клавиш}
+## <span class="section-num">4</span> Комбинации клавиш {#комбинации-клавиш}
 
 Основные сочетания клавиш:
 
 -   `Mod` + `Enter` -- открыть новый терминал;
 -   `Mod` + `d` -- запустить программу;
 -   `Mod` + `0`.. `9` -- переключение между workspace'ами;
--   `Mod` + `Shift` + `0..9` -- перемещение окон в заданный workspace;
+-   `Mod` + `Shift` + `0` .. `9` -- перемещение окон в заданный workspace;
 -   `Mod` + `Shift` + `q` -- закрыть текущее окно;
--   `Mod` + Стрелочки -- перемещение между окнами, вместо стрелочек также   могут быть использованы клавиши «J» (влево), «K» (вниз), «L» (вверх) и  «;» (вправо);
--   `Mod` + `Shift` + Стрелочки -- перемещение окон в пределах workspace'а, вместо стрелочек также могут быть использованы буковки и точка с запятой;
+-   `Mod` + стрелки -- перемещение между окнами, вместо стрелочек также   могут быть использованы клавиши «J» (влево), «K» (вниз), «L» (вверх) и  «;» (вправо);
+-   `Mod` + `Shift` + стрелки -- перемещение окон в пределах workspace'а, вместо стрелок также могут быть использованы буквы и точка с запятой;
 -   `Mod` + `v` -- использовать вертикальное разбиение;
 -   `Mod` + `h` -- использовать горизонтальное разбиение;
 -   `Mod` + `e` -- размещение окон по-умолчанию (default layout);
@@ -80,10 +86,10 @@ cp /etc/sway/config ~/.config/sway/
 Кроме того, часть сочетаний клавиш определяется в файлах, определяющих конкретный функционал.
 
 
-## <span class="section-num">4</span> Замена приложений {#замена-приложений}
+## <span class="section-num">5</span> Замена приложений {#замена-приложений}
 
 
-### <span class="section-num">4.1</span> Снимки экрана {#снимки-экрана}
+### <span class="section-num">5.1</span> Снимки экрана {#снимки-экрана}
 
 Исходно использовался `scrot`.
 
@@ -112,12 +118,12 @@ bindsym $mod+Shift+Print exec grim -t png -g "$(slurp)" "$(xdg-user-dir PICTURES
 -   При нажатии `Mod4` + `Shift` + `PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
 
 
-### <span class="section-num">4.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
+### <span class="section-num">5.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
 
 Ранее использовался [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
 
-#### <span class="section-num">4.2.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
+#### <span class="section-num">5.2.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
 
 Для записи из командной строки используем [wf-recorder](https://github.com/ammen99/wf-recorder):
 
@@ -163,12 +169,12 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/
 ```
 
 
-#### <span class="section-num">4.2.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
+#### <span class="section-num">5.2.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
 
 Для захвата десктопа в Wayland используется плагин [wlrobs](https://hg.sr.ht/~scoopta/wlrobs).
 
 
-### <span class="section-num">4.3</span> Строка состояний {#строка-состояний}
+### <span class="section-num">5.3</span> Строка состояний {#строка-состояний}
 
 Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
 
@@ -215,7 +221,7 @@ for_window [app_id="waybar" floating] {
 Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
 
-### <span class="section-num">4.4</span> Уведомления {#уведомления}
+### <span class="section-num">5.4</span> Уведомления {#уведомления}
 
 Используется [mako](https://github.com/emersion/mako).
 
@@ -235,7 +241,7 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 ```
 
 
-### <span class="section-num">4.5</span> Настройка вывода {#настройка-вывода}
+### <span class="section-num">5.5</span> Настройка вывода {#настройка-вывода}
 
 В XWindow используется программа `xrandr` (с её помощью можно изменять параметры вывода изображения RandR). В `sway` можно управлять с помощью `swaymsg output` или с помощью утилиты [wlr-randr](https://github.com/emersion/wlr-randr).
 
@@ -244,7 +250,7 @@ emerge -v gui-apps/wlr-randr
 ```
 
 
-### <span class="section-num">4.6</span> Меню программ (launcher) {#меню-программ--launcher}
+### <span class="section-num">5.6</span> Меню программ (launcher) {#меню-программ--launcher}
 
 Для запуска программы используется `dmenu`. Если не нравится, можно заменить.
 
@@ -296,7 +302,7 @@ bindsym $mod+d exec $menu
 ```
 
 
-### <span class="section-num">4.7</span> Буфер обмена {#буфер-обмена}
+### <span class="section-num">5.7</span> Буфер обмена {#буфер-обмена}
 
 Предлагается использовать [wl-clipboard](https://github.com/bugaevc/wl-clipboard).
 
@@ -332,6 +338,6 @@ $ wl-paste --list-types | wl-copy
 ```
 
 
-## <span class="section-num">5</span> Backlinks {#backlinks}
+## <span class="section-num">6</span> Backlinks {#backlinks}
 
 -   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
