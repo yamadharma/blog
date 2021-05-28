@@ -1,7 +1,7 @@
 ---
 title: "Оформление диссертации"
 date: 2021-04-20T17:46:00+03:00
-lastmod: 2021-04-20T20:46:00+03:00
+lastmod: 2021-05-19T12:00:00+03:00
 tags: ["research"]
 categories: ["сиянс"]
 draft: false

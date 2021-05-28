@@ -1,7 +1,7 @@
 ---
 title: "Подготовка презентации к записи для edX"
 date: 2021-04-14T10:51:00+03:00
-lastmod: 2021-04-14T12:36:00+03:00
+lastmod: 2021-05-17T12:48:00+03:00
 tags: ["education", "sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -110,5 +110,9 @@ slug: "preparing-presentations-records-edx"
 
 
 ## <span class="section-num">4</span> Backlinks {#backlinks}
+
+-   [Курс Математические основы информационной безопасности]({{< relref "2020-10-21-course-mathsec" >}})
+
+<!--listend-->
 
 -   [Комиссия Цифровая магистратура]({{< relref "2020-12-14-commission-digitalization-msc" >}})

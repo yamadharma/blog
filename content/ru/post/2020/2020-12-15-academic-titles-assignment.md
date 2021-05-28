@@ -1,7 +1,7 @@
 ---
 title: "О порядке присвоения учёных званий"
 date: 2020-12-15T18:08:00+03:00
-lastmod: 2021-01-10T15:46:00+03:00
+lastmod: 2021-05-17T19:37:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -392,7 +392,4 @@ slug: "academic-titles-assignment"
 
 ## Backlinks {#backlinks}
 
-
-### [Соответствие учёных степеней классным чинам]({{< relref "2020-10-10-degree-class-correspondence" >}}) {#соответствие-учёных-степеней-классным-чинам}
-
-Кандидат не может быть профессором (см. [О порядке присвоения учёных званий]({{< relref "2020-12-15-academic-titles-assignment" >}})).
+-   [Соответствие учёных степеней классным чинам]({{< relref "2020-10-10-degree-class-correspondence" >}})

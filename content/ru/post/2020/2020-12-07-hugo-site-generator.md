@@ -1,9 +1,9 @@
 ---
 title: "Генератор статических сайтов Hugo"
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2021-02-23T12:03:00+03:00
-tags: ["blogging"]
-categories: ["sysadmin"]
+lastmod: 2021-05-25T12:18:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "hugo-site-generator"
 ---
@@ -27,6 +27,11 @@ slug: "hugo-site-generator"
 
 -   Собственная иконка для сайта делается в виде файла `icon.png`, размеры 512x512 пикселей.
 -   Иконка располагается в каталоге `assets/media/`.
+
+
+## Взаимодействие с внешними сервисами {#взаимодействие-с-внешними-сервисами}
+
+-   Для комментариев используются сервисы [Disqus](https://disqus.com/) и [Commento](https://commento.io/) (см. [Комментирование для статических сайтов]({{< relref "2021-05-25-commenting-static-sites" >}})).
 
 
 ## Backlinks {#backlinks}

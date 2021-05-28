@@ -1,7 +1,7 @@
 ---
 title: "Системное администрирование"
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-05-14T16:38:00+03:00
+lastmod: 2021-05-25T15:45:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -33,6 +33,12 @@ slug: "system-administration"
 ### <span class="section-num">2.2</span> Установка операционных систем {#установка-операционных-систем}
 
 -   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
+-   [Установка Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
+
+
+### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
+
+-   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 
 
 ## <span class="section-num">3</span> Пользовательские программы {#пользовательские-программы}
