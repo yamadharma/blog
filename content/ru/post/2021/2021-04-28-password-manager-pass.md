@@ -1,7 +1,7 @@
 ---
 title: "Менеджер паролей pass"
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2021-05-02T21:34:00+03:00
+lastmod: 2021-06-01T11:17:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -161,11 +161,25 @@ slug: "password-manager-pass"
 -   Для взаимодействия с броузером используется интерфейс native messaging.
 
 
-#### <span class="section-num">5.4.1</span> gopass {#gopass}
+#### <span class="section-num">5.4.1</span> pass {#pass}
+
+-   Плагин для браузера называется [browserpass](https://github.com/browserpass/browserpass-extension).
+    -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/browserpass-ce/>.
+    -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/browserpass-ce/naepdomgkenhinolocfifgehidddafch>.
+-   Интерфейс для взаимодействия с броузером (native messaging) (<https://github.com/browserpass/browserpass-native>):
+    -   Gentoo:
+
+        ```shell
+        emerge www-plugins/browserpass
+        ```
+
+
+#### <span class="section-num">5.4.2</span> gopass {#gopass}
 
 -   Плагин для браузера называется [gopass bridge](https://github.com/gopasspw/gopassbridge)
     -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/gopass-bridge/>
     -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/gopass-bridge/kkhfnlkhiapbiehimabddjbimfaijdhk>
+-   Начиная с версии gopass-1.12.0 команда создания интерфейса взаимодействия с броузером выделена в отдельную утилиту.
 -   Устанавливаем интерфейс для взаимодействия с броузером (native messaging):
     -   Gentoo
 
@@ -177,19 +191,6 @@ slug: "password-manager-pass"
     ```shell
     gopass-jsonapi configure
     ```
-
-
-#### <span class="section-num">5.4.2</span> pass {#pass}
-
--   Плагин для браузера называется [browserpass](https://github.com/browserpass/browserpass-extension).
-    -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/browserpass-ce/>.
-    -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/browserpass-ce/naepdomgkenhinolocfifgehidddafch>.
--   Интерфейс для взаимодействия с броузером (native messaging) (<https://github.com/browserpass/browserpass-native>):
-    -   Gentoo:
-
-        ```shell
-        emerge www-plugins/browserpass
-        ```
 
 
 ### <span class="section-num">5.5</span> Тонкие настройки {#тонкие-настройки}
@@ -294,7 +295,79 @@ slug: "password-manager-pass"
         ```
 
 
-## <span class="section-num">8</span> Backlinks {#backlinks}
+## <span class="section-num">8</span> Дополнительные возможности {#дополнительные-возможности}
+
+
+### <span class="section-num">8.1</span> Проверка утечки пароля {#проверка-утечки-пароля}
+
+-   Проверка утечки пароля производится с помощью сервиса (см. [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})).
+
+
+#### <span class="section-num">8.1.1</span> pass {#pass}
+
+-   Проверка производится с помощью плагина `pass-audit`.
+-   Код: <https://github.com/roddhjav/pass-audit>.
+-   Установка:
+    -   Gentoo:
+        Находится в репозитории <https://github.com/yamadharma/gentoo-portage-local>.
+
+        ```shell
+        emerge app-admin/pass-audit
+        ```
+-   Использование:
+    -   Проверка по парольному каталогу или по парольной записи:
+
+        ```shell
+        pass audit [каталог или одна запись]
+        ```
+    -   Без параметра проверяет всю базу паролей.
+
+
+#### <span class="section-num">8.1.2</span> gopass {#gopass}
+
+<!--list-separator-->
+
+1.  Простая проверка качества пароля
+
+    -   Простая проверка качества пароля по парольному каталогу или по парольной записи:
+
+        ```shell
+        gopass audit [каталог или одна запись]
+        ```
+    -   Без параметра проверяет всю базу паролей.
+
+<!--list-separator-->
+
+2.  Проверка утечки пароля
+
+    -   Начиная с версии gopass-1.12.0 команда создания интерфейса взаимодействия с HIPB выделена в отдельную утилиту.
+    -   Проверка производится с помощью плагина `gopass-hibp`.
+    -   Код: <https://github.com/gopasspw/gopass-hibp>.
+    -   Установка:
+        -   Gentoo:
+
+            ```shell
+            emerge app-admin/gopass-hibp
+            ```
+    -   Использование:
+        -   Использование HIBPv2 API
+
+            ```shell
+            gopass-hibp api
+            ```
+        -   Сравнение хешей паролей с дампом HIBP:
+            -   Скачиваем дамп SHA-1 хешей паролей с <https://haveibeenpwned.com/Passwords> и распаковываем его.
+            -   Проверяем пароли:
+
+                ```shell
+                gopass-hibp dump pwned-passwords-1.0.txt
+                ```
+
+                Этот вариант помедленнее.
+    -   Проверяет сразу все записи в базе паролей. Один пароль проверить нельзя.
+
+
+## <span class="section-num">9</span> Backlinks {#backlinks}
 
 -   [Личные базы данных]({{< relref "2021-04-27-personal-databases" >}})
 

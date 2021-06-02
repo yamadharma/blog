@@ -1,7 +1,7 @@
 ---
 title: "Замена Centos"
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2021-05-25T17:01:00+03:00
+lastmod: 2021-05-28T14:40:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -67,22 +67,43 @@ slug: "replacing-centos"
 
 1.  Описание дистрибутива
 
+    -   <https://www.oracle.com/linux/>
+    -   Особенность ---  собственное ядро _Unbreakable Enterprise Kernel_.
+
+
+#### <span class="section-num">2.1.3</span> VzLinux {#vzlinux}
+
+<!--list-separator-->
+
+1.  Описание дистрибутива
+
+    -   <https://vzlinux.org/>
+    -   Разрабатывает компания Virtuozzo (бывшее подразделение компании Parallels).
+    -   Специализация: разработка серверного ПО для виртуализации на основе открытых проектов.
+
 
 ### <span class="section-num">2.2</span> Полные альтернативы {#полные-альтернативы}
 
 
-#### <span class="section-num">2.2.1</span> Almalinux {#almalinux}
+#### <span class="section-num">2.2.1</span> Rocky Linux {#rocky-linux}
 
 <!--list-separator-->
 
 1.  Описание дистрибутива
 
+    -   <https://rockylinux.org/>
+    -   Руководитель: Грегори Курцер (Gregory Kurtzer), основател CentOS.
+    -   Для развития продуктов и поддержки сообщества разработчиков создана коммерческая компания Ctrl IQ.
+    -   В финансировании проекта участвуют компании MontaVista, 45Drives, OpenDrives и Amazon Web Services.
 
-#### <span class="section-num">2.2.2</span> Rocky Linux {#rocky-linux}
+
+#### <span class="section-num">2.2.2</span> Almalinux {#almalinux}
 
 <!--list-separator-->
 
 1.  Описание дистрибутива
+
+    -   <https://almalinux.org/>
 
 
 ## <span class="section-num">3</span> Backlinks {#backlinks}

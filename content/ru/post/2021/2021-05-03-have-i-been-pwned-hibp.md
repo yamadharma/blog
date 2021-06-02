@@ -1,7 +1,7 @@
 ---
 title: "Have I Been Pwned (HIBP)"
 date: 2021-05-03T15:21:00+03:00
-lastmod: 2021-05-03T15:34:00+03:00
+lastmod: 2021-05-31T17:56:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,6 +18,11 @@ slug: "have-i-been-pwned-hibp"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Сайт <https://haveibeenpwned.com/>
+-   Код <https://github.com/HaveIBeenPwned/>
+-   Написан на C#.
+-   Лицензия BSD.
+-   2021-05-28 открыты исходные сервиса:
+    -   <https://www.troyhunt.com/pwned-passwords-open-source-in-the-dot-net-foundation-and-working-with-the-fbi/>
 
 
 ## <span class="section-num">2</span> Порядок работы {#порядок-работы}
@@ -30,6 +35,23 @@ slug: "have-i-been-pwned-hibp"
 -   На сайте также имеется страница _Взломанные пароли_ _(Pwned Passwords)_.
 
 
-## <span class="section-num">3</span> Backlinks {#backlinks}
+## <span class="section-num">3</span> Клиентские утилиты {#клиентские-утилиты}
+
+
+### <span class="section-num">3.1</span> passchek {#passchek}
+
+-   <https://github.com/edyatl/passchek>
+
+
+### <span class="section-num">3.2</span> pwnedpasswords.sh {#pwnedpasswords-dot-sh}
+
+-   <https://github.com/jamesridgway/pwnedpasswords.sh>
+
+
+## <span class="section-num">4</span> Backlinks {#backlinks}
 
 -   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
+
+<!--listend-->
+
+-   [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})
