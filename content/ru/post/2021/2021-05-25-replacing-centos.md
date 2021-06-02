@@ -1,7 +1,7 @@
 ---
 title: "Замена Centos"
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2021-05-28T14:40:00+03:00
+lastmod: 2021-06-02T16:24:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -21,7 +21,7 @@ slug: "replacing-centos"
 -   IBM купила RedHat.
 -   Компания RedHat декларировала завершение разработки и поддержки _CentOS_ в конце 2021 года и переход на поддержку непрерывного релиза _CentOS Stream_.
     -   <https://blog.centos.org/2020/12/future-is-centos-stream/>.
-    -   <https://centos.rip/>
+    -   <https://centos.rip/> (издевательский сайт).
 
 
 ## <span class="section-num">2</span> Альтернативы Centos {#альтернативы-centos}
@@ -32,7 +32,16 @@ slug: "replacing-centos"
 ### <span class="section-num">2.1</span> Условные альтернативы {#условные-альтернативы}
 
 
-#### <span class="section-num">2.1.1</span> CentOS Stream {#centos-stream}
+#### <span class="section-num">2.1.1</span> RHEL {#rhel}
+
+<!--list-separator-->
+
+1.  Описание дистрибутива
+
+    -
+
+
+#### <span class="section-num">2.1.2</span> CentOS Stream {#centos-stream}
 
 <!--list-separator-->
 
@@ -61,7 +70,7 @@ slug: "replacing-centos"
         ```
 
 
-#### <span class="section-num">2.1.2</span> Oracle Linux {#oracle-linux}
+#### <span class="section-num">2.1.3</span> Oracle Linux {#oracle-linux}
 
 <!--list-separator-->
 
@@ -71,7 +80,7 @@ slug: "replacing-centos"
     -   Особенность ---  собственное ядро _Unbreakable Enterprise Kernel_.
 
 
-#### <span class="section-num">2.1.3</span> VzLinux {#vzlinux}
+#### <span class="section-num">2.1.4</span> VzLinux {#vzlinux}
 
 <!--list-separator-->
 
@@ -104,8 +113,3 @@ slug: "replacing-centos"
 1.  Описание дистрибутива
 
     -   <https://almalinux.org/>
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

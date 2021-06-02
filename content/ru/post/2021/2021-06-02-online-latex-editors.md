@@ -1,7 +1,7 @@
 ---
 title: "Онлайн редакторы LaTeX"
 date: 2021-06-02T09:52:00+03:00
-lastmod: 2021-06-02T10:15:00+03:00
+lastmod: 2021-06-02T17:12:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -31,6 +31,9 @@ slug: "online-latex-editors"
 -   Основная цель --- совместная работа.
 
 
-## <span class="section-num">3</span> Backlinks {#backlinks}
+## <span class="section-num">3</span> MathCha {#mathcha}
 
--   [Система TeX]({{< relref "2021-04-23-tex" >}})
+-   <https://www.mathcha.io/>
+-   Редактор WYSIWYG с поддержкой математики в нотации TeX.
+-   Некая смесь Word и TeX.
+-   Есть экспорт в LaTeX.

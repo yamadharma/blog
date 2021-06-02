@@ -1,7 +1,7 @@
 ---
 title: "Моноширинные шрифты"
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-05-21T18:56:00+03:00
+lastmod: 2021-06-02T16:22:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -90,12 +90,3 @@ slug: "monospace-fonts"
         ```
     -   Стиль для `listings`:
         -   <https://github.com/mossr/julia-mono-listings>
-
-
-## <span class="section-num">7</span> Backlinks {#backlinks}
-
--   [Computer science]({{< relref "2021-02-08-computer-science" >}})
-
-<!--listend-->
-
--   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})

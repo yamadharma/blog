@@ -1,7 +1,7 @@
 ---
 title: "Ограничения ёмкости регистров TeX'а"
 date: 2021-05-28T10:47:00+03:00
-lastmod: 2021-05-28T11:36:00+03:00
+lastmod: 2021-06-02T16:24:00+03:00
 tags: ["sysadmin", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -103,8 +103,3 @@ slug: "limitations-capacity-tex-registers"
     max_in_open = 50
     ```
 -   Здесь мы увеличили количество одновременно открытых файлов до 50.
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Система TeX]({{< relref "2021-04-23-tex" >}})

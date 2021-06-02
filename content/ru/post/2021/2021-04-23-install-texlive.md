@@ -1,7 +1,7 @@
 ---
 title: "Установка TeX Live"
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2021-05-01T12:20:00+03:00
+lastmod: 2021-06-02T16:28:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -110,8 +110,3 @@ slug: "install-texlive"
         tlmgr update --all
     fi
     ```
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Система TeX]({{< relref "2021-04-23-tex" >}})

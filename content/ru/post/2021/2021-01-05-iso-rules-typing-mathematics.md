@@ -1,7 +1,7 @@
 ---
 title: "Правила ISO для набора математики"
 date: 2021-01-05T14:59:00+03:00
-lastmod: 2021-04-23T18:16:00+03:00
+lastmod: 2021-06-02T16:28:00+03:00
 tags: ["tex"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -99,8 +99,3 @@ slug: "iso-rules-typing-mathematics"
 
 -   unicode-math – Unicode mathematics support for XeTeX and LuaTeX
     -   <https://ctan.org/pkg/unicode-math>
-
-
-## Backlinks {#backlinks}
-
--   [Система TeX]({{< relref "2021-04-23-tex" >}})

@@ -1,7 +1,7 @@
 ---
 title: "Have I Been Pwned (HIBP)"
 date: 2021-05-03T15:21:00+03:00
-lastmod: 2021-05-31T17:56:00+03:00
+lastmod: 2021-06-02T16:24:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -46,12 +46,3 @@ slug: "have-i-been-pwned-hibp"
 ### <span class="section-num">3.2</span> pwnedpasswords.sh {#pwnedpasswords-dot-sh}
 
 -   <https://github.com/jamesridgway/pwnedpasswords.sh>
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
-
-<!--listend-->
-
--   [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})
