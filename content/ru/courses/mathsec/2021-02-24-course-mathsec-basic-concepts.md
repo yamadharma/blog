@@ -1,7 +1,9 @@
 ---
 title: "Курс МОЗИиИБ. Основные понятия информационной безопасности"
 date: 2021-02-24T12:49:00+03:00
-lastmod: 2021-03-15T17:11:00+03:00
+lastmod: 2021-06-02T19:20:00+03:00
+tags: ["education"]
+categories: ["сиянс", "computer-science"]
 draft: false
 weight: 101
 toc: true
@@ -403,8 +405,3 @@ ITU-T (X.800) определил пять услуг, связанных с це
 ### <span class="section-num">8.2</span> Услуги и механизмы информационной безопасности {#услуги-и-механизмы-информационной-безопасности}
 
 {{< youtube bRFw1RRD0DE >}}
-
-
-## <span class="section-num">9</span> Backlinks {#backlinks}
-
--   [Курс МОЗИиИБ. Лекции]({{< relref "2021-03-11-course-mathsec-lections" >}})
