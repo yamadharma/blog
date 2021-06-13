@@ -1,7 +1,7 @@
 ---
 title: "Курс МОЗИиИБ. Лекции"
 date: 2021-03-11T18:32:00+03:00
-lastmod: 2021-06-02T19:22:00+03:00
+lastmod: 2021-06-08T15:12:00+03:00
 tags: ["education"]
 categories: ["computer-science", "сиянс"]
 draft: false
@@ -250,3 +250,13 @@ menu:
 ### <span class="section-num">4.2</span> Лекция № 2 {#лекция-2}
 
 -   [Курс МОЗИиИБ. Модульная арифметика]({{< relref "2021-04-08-course-mathsec-modular-arithmetic" >}})
+
+
+### <span class="section-num">4.3</span> Лекция № 3 {#лекция-3}
+
+-   [Курс МОЗИиИБ. Современные шифры с симметричным ключом]({{< relref "2021-06-06-course-mathsec-modern-symmetric-key-ciphers" >}})
+
+
+### <span class="section-num">4.4</span> Лекция № 4 {#лекция-4}
+
+-   [Курс МОЗИиИБ. Стандарт шифрования данных (DES)]({{< relref "2021-06-08-course-mathsec-data-encryption-standard" >}})

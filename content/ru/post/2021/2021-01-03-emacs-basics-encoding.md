@@ -1,7 +1,7 @@
 ---
 title: "Emacs. Основы. Кодировка"
 date: 2021-01-03T12:22:00+03:00
-lastmod: 2021-01-10T20:08:00+03:00
+lastmod: 2021-06-13T19:46:00+03:00
 categories: ["blog"]
 draft: false
 slug: "emacs-basics-encoding"
@@ -27,6 +27,8 @@ slug: "emacs-basics-encoding"
 (set-file-name-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)
+
+(setq default-process-coding-system '(utf-8 . utf-8))
 
 ;;; Backwards compatibility as default-buffer-file-coding-system is deprecated in 23.2.
 (if (boundp 'buffer-file-coding-system)
@@ -76,11 +78,3 @@ slug: "emacs-basics-encoding"
 ### Какие кодировки поддерживает emacs {#какие-кодировки-поддерживает-emacs}
 
 Наберите `M+x list-coding-systems`.
-
-
-## Backlinks {#backlinks}
-
-
-### [Emacs. Основы работы]({{< relref "2021-01-03-emacs-basics" >}}) {#emacs-dot-основы-работы}
-
-[Emacs. Основы. Кодировка]({{< relref "2021-01-03-emacs-basics-encoding" >}})

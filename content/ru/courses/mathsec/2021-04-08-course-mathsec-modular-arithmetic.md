@@ -1,7 +1,7 @@
 ---
 title: "Курс МОЗИиИБ. Модульная арифметика"
 date: 2021-04-08T18:55:00+03:00
-lastmod: 2021-06-02T20:34:00+03:00
+lastmod: 2021-06-06T16:16:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false

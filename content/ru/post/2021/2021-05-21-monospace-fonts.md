@@ -1,7 +1,7 @@
 ---
 title: "Моноширинные шрифты"
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-06-02T16:22:00+03:00
+lastmod: 2021-06-13T21:10:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -32,12 +32,62 @@ slug: "monospace-fonts"
 
 ## <span class="section-num">3</span> Лигатуры {#лигатуры}
 
--   Часть шрифтов для программирования содержит лигатуры.
+-   Часть шрифтов для программирования содержит лигатуры:
+
+
+### <span class="section-num">3.1</span> Fira Code {#fira-code}
+
+-   Шрифт сделан на базе Fira Mono.
+-   Репозиторий: <https://github.com/tonsky/FiraCode>
+-   Автор: Никита Прокопов
+    -   Блог в livejournal (на русском): <https://tonsky.livejournal.com/>
+    -   Блог на английском: <https://tonsky.me/>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: нет
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/fira-code
+        ```
+
+
+### <span class="section-num">3.2</span> Iosevka {#iosevka}
+
+-   Сайт: <https://typeof.net/Iosevka/>
+-   Репозиторий: <https://github.com/be5invis/Iosevka/>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/iosevka
+        ```
+
+
+### <span class="section-num">3.3</span> JetBrains Mono {#jetbrains-mono}
+
+-   Сайт: <https://www.jetbrains.com/lp/mono/>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/jetbrains-mono
+        ```
 
 
 ## <span class="section-num">4</span> Применимость {#применимость}
 
--   Для шрифта для редактора (например, emacs) желательно выбирать шрифт с курсивом. Иначе, теряется определённый напор выделений текста.
+-   Шрифт для редактора (например, emacs) желательно выбирать с курсивом. Иначе, теряется определённый набор выделений текста.
 
 
 ## <span class="section-num">5</span> Шрифты с иконками {#шрифты-с-иконками}
@@ -79,7 +129,6 @@ slug: "monospace-fonts"
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: есть
     -   Курсив: нет
-    -   Variable
 -   LaTeX
     -   Использование в LuaLaTeX и XeTeX:
 
