@@ -1,7 +1,7 @@
 ---
 title: "Моноширинные шрифты"
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-06-13T21:10:00+03:00
+lastmod: 2021-06-14T18:34:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -30,9 +30,9 @@ slug: "monospace-fonts"
 -   На данный момент наибольшее количество математических символов содержит шрифт _JuliaMono_.
 
 
-## <span class="section-num">3</span> Лигатуры {#лигатуры}
+## <span class="section-num">3</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
 
--   Часть шрифтов для программирования содержит лигатуры:
+-   Часть шрифтов для программирования содержит лигатуры.
 
 
 ### <span class="section-num">3.1</span> Fira Code {#fira-code}
@@ -85,6 +85,55 @@ slug: "monospace-fonts"
         ```
 
 
+### <span class="section-num">3.4</span> JuliaMono {#juliamono}
+
+-   Достаточно полный набор математических символов:
+    -   <https://mono-math.netlify.app/#JuliaMono>
+    -   <https://coding-fonts.css-tricks.com/fonts/juliamono/?language=charmap>
+-   <https://juliamono.netlify.app/>
+-   <https://github.com/cormullion/juliamono>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: нет
+-   LaTeX
+    -   Использование в LuaLaTeX и XeTeX:
+
+        ```latex
+        \newfontfamily\JuliaMono{JuliaMono-Regular}
+        \newfontface\JuliaMonoMedium{JuliaMono-Regular}
+        \setmonofont{JuliaMonoMedium}[Contextuals=Alternate]
+        ```
+    -   Стиль для `listings`:
+        -   <https://github.com/mossr/julia-mono-listings>
+
+
+### <span class="section-num">3.5</span> Hasklig {#hasklig}
+
+-   Сделан на основе Source Code Pro с добавлением лигатур.
+-   Репозиторий: <https://github.com/i-tu/Hasklig>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: нет
+
+
+### <span class="section-num">3.6</span> Cascadia Code {#cascadia-code}
+
+-   Разработан для Windows Terminal.
+-   Репозиторий: <https://github.com/microsoft/cascadia-code>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: есть
+    -   Курсив: нет
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/cascadia-code
+        ```
+
+
 ## <span class="section-num">4</span> Применимость {#применимость}
 
 -   Шрифт для редактора (например, emacs) желательно выбирать с курсивом. Иначе, теряется определённый набор выделений текста.
@@ -118,24 +167,33 @@ slug: "monospace-fonts"
 ## <span class="section-num">6</span> Шрифты {#шрифты}
 
 
-### <span class="section-num">6.1</span> JuliaMono {#juliamono}
+### <span class="section-num">6.1</span> Source Code Pro {#source-code-pro}
 
--   Достаточно полный набор математических символов:
-    -   <https://mono-math.netlify.app/#JuliaMono>
-    -   <https://coding-fonts.css-tricks.com/fonts/juliamono/?language=charmap>
--   <https://juliamono.netlify.app/>
--   <https://github.com/cormullion/juliamono>
+-   Часть набора Source Pro.
+-   Сайт: <http://adobe-fonts.github.io/source-code-pro/>
+-   Репозиторий: <https://github.com/adobe-fonts/source-code-pro>
 -   Свойства
     -   Лицензия: SIL Open Font licence
-    -   Лигатуры: есть
+    -   Лигатуры: нет
     -   Курсив: нет
--   LaTeX
-    -   Использование в LuaLaTeX и XeTeX:
+-   Установка.
+    -   Gentoo:
 
-        ```latex
-        \newfontfamily\JuliaMono{JuliaMono-Regular}
-        \newfontface\JuliaMonoMedium{JuliaMono-Regular}
-        \setmonofont{JuliaMonoMedium}[Contextuals=Alternate]
+        ```shell
+        emerge media-fonts/source-pro
         ```
-    -   Стиль для `listings`:
-        -   <https://github.com/mossr/julia-mono-listings>
+
+
+### <span class="section-num">6.2</span> Hack {#hack}
+
+-   Репозиторий: <https://github.com/source-foundry/Hack>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: нет
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/hack
+        ```
