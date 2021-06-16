@@ -1,7 +1,7 @@
 ---
 title: "Переход на Sway"
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-05-14T11:33:00+03:00
+lastmod: 2021-06-16T20:27:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -336,8 +336,3 @@ $ wl-copy "!!"
 # replace the current selection with the list of types it's offered in
 $ wl-paste --list-types | wl-copy
 ```
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

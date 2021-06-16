@@ -1,7 +1,7 @@
 ---
 title: "Window manager i3"
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-05-17T09:08:00+03:00
+lastmod: 2021-06-16T20:27:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -133,7 +133,7 @@ slug: "window-manager-i3"
 
 1.  Поддержка иконок в i3bar
 
-    -   В `i3bar` можно использовать шрифты иконок.
+    -   В `i3bar` можно использовать шрифты иконок (см. [Моноширинные шрифты]({{< relref "2021-05-21-monospace-fonts" >}})).
     -   Наиболее распространённым является шрифт [Font Awesome](https://fontawesome.com/).
     -   Установка:
         -   Gentoo
@@ -479,12 +479,3 @@ slug: "window-manager-i3"
     -   По клавише `PtrScr` делается скриншот.
     -   По клавише `Shift` + `PtrScr` предлагается выделить область экрана, скриншот которой следует сделать.
     -   Скриншоты переносятся в каталог $XDG\_PICTURES\_DIR (обычно `~/Изображения`).
-
-
-## <span class="section-num">5</span> Backlinks {#backlinks}
-
--   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
-
-<!--listend-->
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
