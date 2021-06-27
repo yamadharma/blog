@@ -1,7 +1,7 @@
 ---
 title: "Курс МОЗИиИБ. Стандарт шифрования данных (DES)"
 date: 2021-06-08T14:53:00+03:00
-lastmod: 2021-06-08T20:27:00+03:00
+lastmod: 2021-06-17T20:51:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false

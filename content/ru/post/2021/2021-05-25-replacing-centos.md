@@ -1,7 +1,7 @@
 ---
 title: "Замена Centos"
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2021-06-02T16:24:00+03:00
+lastmod: 2021-06-22T13:47:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -26,10 +26,10 @@ slug: "replacing-centos"
 
 ## <span class="section-num">2</span> Альтернативы Centos {#альтернативы-centos}
 
--   Данные дистрибутивы можно считать либо условными, либо временными альтернативами.
-
 
 ### <span class="section-num">2.1</span> Условные альтернативы {#условные-альтернативы}
+
+-   Данные дистрибутивы можно считать либо условными, либо временными альтернативами.
 
 
 #### <span class="section-num">2.1.1</span> RHEL {#rhel}
@@ -38,7 +38,17 @@ slug: "replacing-centos"
 
 1.  Описание дистрибутива
 
-    -
+    -   <https://www.redhat.com/>
+    -   Собственно, это и есть первичный дистрибутив, который копируют.
+    -   Отличается надёжностью, используется для корпоративных систем.
+    -   Большой значение имеют дополнительные продукты: Satellite, Openstack, RHEV, Pacemaker, Gluster, Ceph, Openshift.
+
+<!--list-separator-->
+
+2.  Распространение
+
+    -   В качестве компенсации за прекращение распространения CentOS предлагает программу для разработчиков ([Red Hat Developer](https://developers.redhat.com/products/rhel/download)).
+    -   В рамках этой программы можно установить 16 хостов.
 
 
 #### <span class="section-num">2.1.2</span> CentOS Stream {#centos-stream}
@@ -48,6 +58,8 @@ slug: "replacing-centos"
 1.  Описание дистрибутива
 
     -   <https://www.centos.org/>
+    -   Это rolling release.
+    -   Теряется основное преимущество --- стабильность.
 
 <!--list-separator-->
 
@@ -78,6 +90,7 @@ slug: "replacing-centos"
 
     -   <https://www.oracle.com/linux/>
     -   Особенность ---  собственное ядро _Unbreakable Enterprise Kernel_.
+    -   Нет доверия Ораклу. Они и дистрибутив сделали открытым в пику RedHat, чтобы пользователей перетянуть. В любой момент могут доступ прикрыть.
 
 
 #### <span class="section-num">2.1.4</span> VzLinux {#vzlinux}
@@ -89,6 +102,7 @@ slug: "replacing-centos"
     -   <https://vzlinux.org/>
     -   Разрабатывает компания Virtuozzo (бывшее подразделение компании Parallels).
     -   Специализация: разработка серверного ПО для виртуализации на основе открытых проектов.
+    -   Для них это побочное занятие.
 
 
 ### <span class="section-num">2.2</span> Полные альтернативы {#полные-альтернативы}
@@ -113,3 +127,11 @@ slug: "replacing-centos"
 1.  Описание дистрибутива
 
     -   <https://almalinux.org/>
+    -   Основан компанией CloudLinux.
+    -   Проект курирует отдельная некоммерческая организация AlmaLinux OS Foundation.
+    -   Слишком быстро выходят сборки (сразу после выпуска RedHat).
+
+
+## <span class="section-num">3</span> Что выбрать {#что-выбрать}
+
+-   На данный момент склоняюсь более к Rocky Linux.

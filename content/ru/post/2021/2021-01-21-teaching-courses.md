@@ -1,7 +1,7 @@
 ---
 title: "Преподавание. Курсы"
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2021-02-01T20:09:00+03:00
+lastmod: 2021-06-27T11:02:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -33,16 +33,10 @@ slug: "teaching-courses"
 
 ## 4 курс {#4-курс}
 
+-   [Моделирование сетей передачи данных]({{< relref "2021-06-24-course-simulation-data-networks" >}})
+
 
 ## 5 курс {#5-курс}
 
 -   [Математические основы информационной безопасности]({{< relref "2020-10-21-course-mathsec" >}})
 -   [Научное программирование]({{< relref "2020-10-21-scientific-programming" >}})
-
-
-## Backlinks {#backlinks}
-
-
-### [Преподавание]({{< relref "2021-02-01-teaching" >}}) {#преподавание}
-
-[Преподавание. Курсы]({{< relref "2021-01-21-teaching-courses" >}})

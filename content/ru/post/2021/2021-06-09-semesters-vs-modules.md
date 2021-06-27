@@ -1,7 +1,7 @@
 ---
 title: "Семестры vs. модули"
 date: 2021-06-09T13:16:00+03:00
-lastmod: 2021-06-10T16:51:00+03:00
+lastmod: 2021-06-27T11:03:00+03:00
 tags: ["sci-admin", "education"]
 categories: ["сиянс"]
 draft: false
