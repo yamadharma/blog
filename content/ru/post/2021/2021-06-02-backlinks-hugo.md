@@ -1,7 +1,7 @@
 ---
 title: "Обратные ссылки в Hugo"
 date: 2021-06-02T17:19:00+03:00
-lastmod: 2021-06-02T18:27:00+03:00
+lastmod: 2021-07-02T16:51:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

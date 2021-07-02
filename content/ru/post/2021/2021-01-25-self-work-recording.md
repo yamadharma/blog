@@ -1,7 +1,7 @@
 ---
 title: "Видеозапись самостоятельной работы"
 date: 2021-01-25T16:55:00+03:00
-lastmod: 2021-03-31T17:03:00+03:00
+lastmod: 2021-06-28T10:21:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -175,8 +175,3 @@ slug: "self-work-recording"
 ### <span class="section-num">4.3</span> Прикрепление видео в качестве ответа в системе Moodle {#прикрепление-видео-в-качестве-ответа-в-системе-moodle}
 
 {{< youtube KrOKWRw4JHo >}}
-
-
-## <span class="section-num">5</span> Backlinks {#backlinks}
-
--   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})

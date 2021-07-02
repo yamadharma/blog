@@ -1,7 +1,7 @@
 ---
 title: "Научно-административная деятельность"
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-04-06T18:08:00+03:00
+lastmod: 2021-06-28T09:45:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -41,9 +41,7 @@ slug: "scientific-administrative"
 
 ## <span class="section-num">5</span> Конференции {#конференции}
 
+Это конференции, в организации которых я принимал какое-либо участие.
+
 -   [Конференция ITTMM]({{< relref "2021-04-06-ittmm-conference" >}})
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})
+-   [Конференция Computer Algebra]({{< relref "2021-06-28-conference-computer-algebra" >}})

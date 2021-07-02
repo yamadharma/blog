@@ -1,7 +1,7 @@
 ---
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2021-03-07T21:48:00+03:00
+lastmod: 2021-07-02T16:52:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
@@ -441,16 +441,3 @@ Crash --> [*]
 ````html
 <!--more-->
 ````
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Синтаксис языка Markdown]({{< relref "2020-12-08-markdown-syntax" >}})
-
-<!--listend-->
-
--   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
-
-<!--listend-->
-
--   [Org-mode. Экспорт в Hugo]({{< relref "2020-12-17-org-mode-export-hugo" >}})

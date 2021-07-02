@@ -1,7 +1,7 @@
 ---
 title: "Использование org-roam"
 date: 2020-10-05T15:26:00+03:00
-lastmod: 2021-02-17T15:51:00+03:00
+lastmod: 2021-07-02T16:51:00+03:00
 categories: ["blog"]
 draft: false
 slug: "use-org-roam"
@@ -24,8 +24,3 @@ M-x org-roam-find-file
 
 
 ## <span class="section-num">2</span> Org-mode {#org-mode}
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Самоорганизация]({{< relref "2021-02-03-self-management" >}})

@@ -1,7 +1,7 @@
 ---
 title: "Метод Zettelkasten"
 date: 2021-02-18T18:37:00+03:00
-lastmod: 2021-06-25T11:00:00+03:00
+lastmod: 2021-07-02T16:51:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "zettelkasten-method"

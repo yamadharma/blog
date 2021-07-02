@@ -1,7 +1,7 @@
 ---
 title: "Window manager i3"
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-06-16T20:27:00+03:00
+lastmod: 2021-07-02T12:02:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -21,29 +21,101 @@ slug: "window-manager-i3"
 -   <https://i3wm.org/>
 
 
-## <span class="section-num">2</span> Навигация {#навигация}
+## <span class="section-num">2</span> Репозиторий конфигурации {#репозиторий-конфигурации}
+
+-   Я сделал репозиторий со своей конфигурацией: <https://github.com/yamadharma/config-i3>
 
 
-### <span class="section-num">2.1</span> Basics {#basics}
-
--   `Mod` + Enter	open new terminal
--   `Mod` + j	focus left
--   `Mod` + k	focus down
--   `Mod` + l	focus up
--   `Mod` + ;	focus right
--   `Mod` + a	focus parent
--   `Mod` + Space	toggle focus mode
+## <span class="section-num">3</span> Навигация {#навигация}
 
 
-### <span class="section-num">2.2</span> Moving windows {#moving-windows}
+### <span class="section-num">3.1</span> Клавиша-модификатор {#клавиша-модификатор}
 
--   `Mod` + Shift + j	move window left
--   `Mod` + Shift + k	move window down
--   `Mod` + Shift + l	move window up
--   `Mod` + Shift + ;	move window right
+-   В качестве модификатора обычно используется:
+    -   `Alt`:
+
+        ```conf-unix
+        set $mod Mod1
+        ```
+    -   `Super` (Клавиша со значком _Windows_):
+
+        ```conf-unix
+        set $mod Mod4
+        ```
+    -   Предпочитаю `Super`, чтобы не конфликтовать с Emacs.
 
 
-### <span class="section-num">2.3</span> Modifying windows {#modifying-windows}
+### <span class="section-num">3.2</span> Основные комбинации клавиш {#основные-комбинации-клавиш}
+
+-   `Mod` + `Enter`: открыть терминал.
+
+
+### <span class="section-num">3.3</span> Перемещение фокуса {#перемещение-фокуса}
+
+-   Фокус можно перемещать как с помощью стрелок, так и с помощью буквенных клавиш, как в редакторе _vi_.
+    -   `Mod` + `h` или `Mod` + `Left`: сдвиг фокуса влево.
+    -   `Mod` + `j` или `Mod` + `Down`: сдвиг фокуса вниз.
+    -   `Mod` + `k` или `Mod` + `Up`: сдвиг фокуса вверх.
+    -   `Mod` + `l` или `Mod` + `Right`: сдвиг фокуса вправо.
+-   Конфигурация выглядит следующим образом:
+
+    ```conf-unix
+    ## Home row direction keys, like vim
+    set $left h
+    set $down j
+    set $up k
+    set $right l
+    ## Move your focus around
+    bindsym $mod+$left focus left
+    bindsym $mod+$down focus down
+    bindsym $mod+$up focus up
+    bindsym $mod+$right focus right
+    ## Or use $mod+[up|down|left|right]
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+    ```
+-   Впрочем, следует заметить, что также могут использоваться и другие соглашения:
+    -   `j`: влево;
+    -   `k`: вниз;
+    -   `l`: вверх;
+    -   `;`: вправо.
+-   Поскольку в данном менеджере окон поддерживаются контейнеры, то можно переключить фокус на родительский контейнер:
+    -   `Mod` + `a`: переключить фокус на родительский контейнер.
+    -   Конфигурация:
+
+        ```conf-unix
+        ## Move focus to the parent container
+        bindsym $mod+a focus parent
+        ```
+-   `Mod` + `Space`: переключить режим фокуса.
+
+
+### <span class="section-num">3.4</span> Перемещение окон {#перемещение-окон}
+
+-   Делается аналогично перемещению фокуса, но с добавлением модификатора `Shift`:
+    -   `Mod` + `Shift` + `h` или `Mod` + `Shift` + `Left`: перемещение влево;
+    -   `Mod` + `Shift` + `j` или `Mod` + `Shift` + `Down`: перемещение вниз;
+    -   `Mod` + `Shift` + `k` или `Mod` + `Shift` + `Up`: перемещение вверх;
+    -   `Mod` + `Shift` + `l` или `Mod` + `Shift` + `Right`: перемещение вправо.
+-   Конфигурация выглядит следующим образом:
+
+    ```conf-unix
+    ## Move the focused window with the same, but add Shift
+    bindsym $mod+Shift+$left move left
+    bindsym $mod+Shift+$down move down
+    bindsym $mod+Shift+$up move up
+    bindsym $mod+Shift+$right move right
+    ## Ditto, with arrow keys
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+    ```
+
+
+### <span class="section-num">3.5</span> Modifying windows {#modifying-windows}
 
 -   `Mod` + f	toggle fullscreen
 -   `Mod` + v	split a window vertically
@@ -51,32 +123,91 @@ slug: "window-manager-i3"
 -   `Mod` + r	resize mode
 
 
-### <span class="section-num">2.4</span> Changing the container layout {#changing-the-container-layout}
+### <span class="section-num">3.6</span> Структура расположения контейнеров {#структура-расположения-контейнеров}
 
--   `Mod` + e	default
--   `Mod` + s	stacking
--   `Mod` + w	tabbed
+-   Поддерживаются следующие расположения контейнеров:
+    -   `Mod` + `e`: переключение разделённого расположения (split layout);
+    -   `Mod` + `s`: стековое размещение (stacking layout);
+    -   `Mod` + `w`: размещение с табами (tabbed layout).
+-   Конфигурация:
+
+    ```conf-unix
+    ## Switch the current container between different layout styles
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+    ```
+-   Для раскладки по умолчанию я использую табы:
+
+    ```conf-unix
+    ### Layout mode for new containers
+    ## default|stacking|tabbed
+    workspace_layout tabbed
+    ```
 
 
-### <span class="section-num">2.5</span> Floating {#floating}
+### <span class="section-num">3.7</span> Floating {#floating}
 
 -   `Mod` + Shift + Space	toggle floating
 -   `Mod` + Left click	drag floating
 
 
-### <span class="section-num">2.6</span> Using workspaces {#using-workspaces}
+### <span class="section-num">3.8</span> Рабочие области (workspaces) {#рабочие-области--workspaces}
 
--   `Mod` + 0-9	switch to another workspace
--   `Mod` + Shift + 0-9	move a window to another workspace
+-   Сконфигурим рабочие области:
+
+    ```conf-unix
+    ## Define names for workspaces
+    set $ws1    1
+    set $ws2    2
+    set $ws3    3
+    set $ws4    4
+    set $ws5    5
+    set $ws6    6
+    set $ws7    7
+    set $ws8    8
+    set $ws9    9
+    set $ws10   10
+    ```
+-   `Mod` + `0` -- `9`: переключиться на соответствующую рабочую область:
+
+    ```conf-unix
+    ## Switch to workspace
+    bindsym $mod+1 workspace $ws1
+    bindsym $mod+2 workspace $ws2
+    bindsym $mod+3 workspace $ws3
+    bindsym $mod+4 workspace $ws4
+    bindsym $mod+5 workspace $ws5
+    bindsym $mod+6 workspace $ws6
+    bindsym $mod+7 workspace $ws7
+    bindsym $mod+8 workspace $ws8
+    bindsym $mod+9 workspace $ws9
+    bindsym $mod+0 workspace $ws10
+    ```
+-   `Mod` + `Shift` + `0` -- `9`: перенести окно на соответствующую рабочую область:
+
+    ```conf-unix
+    ## Move focused container to workspace
+    bindsym $mod+Shift+1 move container to workspace $ws1
+    bindsym $mod+Shift+2 move container to workspace $ws2
+    bindsym $mod+Shift+3 move container to workspace $ws3
+    bindsym $mod+Shift+4 move container to workspace $ws4
+    bindsym $mod+Shift+5 move container to workspace $ws5
+    bindsym $mod+Shift+6 move container to workspace $ws6
+    bindsym $mod+Shift+7 move container to workspace $ws7
+    bindsym $mod+Shift+8 move container to workspace $ws8
+    bindsym $mod+Shift+9 move container to workspace $ws9
+    bindsym $mod+Shift+0 move container to workspace $ws10
+    ```
 
 
-### <span class="section-num">2.7</span> Opening applications / Closing windows {#opening-applications-closing-windows}
+### <span class="section-num">3.9</span> Opening applications / Closing windows {#opening-applications-closing-windows}
 
 -   `Mod` + d	open application launcher (dmenu)
 -   `Mod` + Shift + q	kill a window
 
 
-### <span class="section-num">2.8</span> Выход/Перезапуск {#выход-перезапуск}
+### <span class="section-num">3.10</span> Выход/Перезапуск {#выход-перезапуск}
 
 -   `Mod` + `Shift` + `c`: перечитать конфигурационный файл.
 
@@ -104,13 +235,31 @@ slug: "window-manager-i3"
     ```
 
 
-## <span class="section-num">3</span> Настройка {#настройка}
+## <span class="section-num">4</span> Настройка {#настройка}
 
 
-### <span class="section-num">3.1</span> Строка статуса {#строка-статуса}
+### <span class="section-num">4.1</span> Терминал {#терминал}
+
+-   В качестве терминала я использую kitty.
+-   Конфигурация запуска терминала:
+
+    ```conf-unix
+    set $term kitty
+    bindsym $mod+Return exec $term
+    ```
+
+    В этом случае запускается одно окно терминала.
+-   Для работы я использую специальную настройку сессии терминала. Я её запускаю при входе в сессию. Для этого я приспособил комбинацию `Mod` + `Shift` + `Enter`:
+
+    ```conf-unix
+    bindsym $mod+Shift+Return exec kitty --session ~/.config/kitty/startup
+    ```
 
 
-#### <span class="section-num">3.1.1</span> i3bar {#i3bar}
+### <span class="section-num">4.2</span> Строка статуса {#строка-статуса}
+
+
+#### <span class="section-num">4.2.1</span> i3bar {#i3bar}
 
 -   Отрисовку панели осуществляет утилита `i3bar`.
 -   Отображается вверху или внизу экрана.
@@ -349,7 +498,7 @@ slug: "window-manager-i3"
         ```
 
 
-#### <span class="section-num">3.1.2</span> polybar {#polybar}
+#### <span class="section-num">4.2.2</span> polybar {#polybar}
 
 -   Отдельное приложение для строки статуса.
 -   Применяется для замены _i3bar_.
@@ -412,13 +561,13 @@ slug: "window-manager-i3"
         ```
 
 
-### <span class="section-num">3.2</span> Строка состояний {#строка-состояний}
+### <span class="section-num">4.3</span> Строка состояний {#строка-состояний}
 
 -   По умолчанию используется `dmenu`.
 -   Можно заменить на `rofi`.
 
 
-#### <span class="section-num">3.2.1</span> rofi {#rofi}
+#### <span class="section-num">4.3.1</span> rofi {#rofi}
 
 -   Используется для запуска приложений, переключения окон.
 -   <https://github.com/davatorium/rofi>
@@ -457,10 +606,10 @@ slug: "window-manager-i3"
 -   Конфигурация с помощью конфигурационного файла (поместим его в `~/.config/i3/rofi/config`).
 
 
-## <span class="section-num">4</span> Приложения {#приложения}
+## <span class="section-num">5</span> Приложения {#приложения}
 
 
-### <span class="section-num">4.1</span> Снимки экрана {#снимки-экрана}
+### <span class="section-num">5.1</span> Снимки экрана {#снимки-экрана}
 
 -   Для скриншотов можно использовать [scrot](https://github.com/resurrecting-open-source-projects/scrot).
     -   Gentoo

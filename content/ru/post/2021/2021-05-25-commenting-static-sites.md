@@ -1,7 +1,7 @@
 ---
 title: "Комментирование для статических сайтов"
 date: 2021-05-25T11:46:00+03:00
-lastmod: 2021-05-25T15:21:00+03:00
+lastmod: 2021-07-02T16:52:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -76,8 +76,3 @@ slug: "commenting-static-sites"
     -   Настраиваемые уведомления (телеграм, RSS).
 -   Для Hugo надо настраивать отдельно:
     -   <https://blog.lasall.dev/post/hugo-and-comments-with-remark42/>
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})

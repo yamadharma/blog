@@ -1,8 +1,9 @@
 ---
 title: "git. Несколько удалённых репозиториев"
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2021-04-10T15:37:00+03:00
-categories: ["computer_science"]
+lastmod: 2021-06-28T11:16:00+03:00
+tags: ["programming"]
+categories: ["computer-science"]
 draft: false
 slug: "git-multiple-remote-repositories"
 ---
@@ -55,8 +56,3 @@ slug: "git-multiple-remote-repositories"
     git push bitbucket
     ```
 -   Любой из репозиториев можно назвать `origin`, тогда он будет репозиторием по умолчанию.
-
-
-## <span class="section-num">1</span> Backlinks {#backlinks}
-
--   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})

@@ -1,7 +1,7 @@
 ---
-title: "Почта. Парольная аутентификация"
+title: "Emacs. Почта. Парольная аутентификация"
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2021-05-11T15:38:00+03:00
+lastmod: 2021-06-29T12:19:00+03:00
 categories: ["blog"]
 draft: false
 slug: "mail-password-authentication"
@@ -14,17 +14,68 @@ slug: "mail-password-authentication"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Парольная аутентификация {#парольная-аутентификация}
+## <span class="section-num">1</span> Описание {#описание}
+
+-   Библиотека `auth-source` для emacs создавалась для хранения паролей для gnus.
+-   Документация: <https://www.gnu.org/software/emacs/manual/html%5Fmono/auth.html>
+-   Библиотека `auth-source` поддерживает несколько бэкэнд-хранилищ:
+    -   бэкэнд _netrc_,
+    -   файлы _json_,
+        -   формат файла:
+
+            ```js
+            [{ "machine": "SERVER", "port": "PORT", "login": "USER", "password": "PASSWORD" }]
+            ```
+    -   _Secret Service API_ (<https://www.freedesktop.org/wiki/Specifications/secret-storage-spec/>),
+    -   стандартный менеджер паролей Unix _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
 
 
-### <span class="section-num">1.1</span> Конфигурационные файлы {#конфигурационные-файлы}
+## <span class="section-num">2</span> Настройка Emacs {#настройка-emacs}
+
+-   Переменная `auth-sources`  задаёт источники аутентификации:
+    -   устаревшая настройка по умолчанию (для _netrc_):
+
+        ```elisp
+        (setq auth-sources '((:source "~/.authinfo.gpg" :host t :port t)))
+        ```
+    -   то же самое, но короче (для _netrc_):
+
+        ```elisp
+        (setq auth-sources '((:source "~/.authinfo.gpg")))
+        ```
+    -   несколько источников (все варианты для _netrc_):
+
+        ```elisp
+        (setq auth-sources '("~/.authinfo.gpg" "~/.authinfo" "~/.netrc"))
+        ```
+    -   использование _Secrets API_:
+
+        ```elisp
+        (setq auth-sources '("secrets:Login"))
+        ```
+    -   использование _pass_:
+
+        ```elisp
+        (setq auth-sources '(password-store))
+        ```
+    -   использование _json_:
+
+        ```elisp
+        (setq auth-sources '("~/.authinfo.json.gpg"))
+        ```
+
+
+## <span class="section-num">3</span> Парольная аутентификация _netrc_ {#парольная-аутентификация-netrc}
+
+
+### <span class="section-num">3.1</span> Конфигурационные файлы {#конфигурационные-файлы}
 
 -   `~/.authinfo.gpg` - зашифрованный;
 -   `~/.authinfo` - не зашифрованный;
 -   `~/.netrc` - устаревший вариант.
 
 
-### <span class="section-num">1.2</span> Разрешения {#разрешения}
+### <span class="section-num">3.2</span> Разрешения {#разрешения}
 
 Установите права только на чтение и запись для пользователя:
 
@@ -33,7 +84,7 @@ chmod 600 ~/.authinfo.gpg
 ```
 
 
-### <span class="section-num">1.3</span> Формат файла паролей {#формат-файла-паролей}
+### <span class="section-num">3.3</span> Формат файла паролей {#формат-файла-паролей}
 
 -   Файл имеет следующий формат:
 
@@ -47,9 +98,14 @@ chmod 600 ~/.authinfo.gpg
     machine PROFILE login NAME password VALUE port NUMBER
     ```
 -   Учитывая, что с одним логином могут быть почтовые адреса на разных доменах, предлагается в качестве `PROFILE` использовать полный почтовый адрес (такой, как `account@domain`).
+-   Также можно использовать этот файл для указания клиентских сертификатов, которые будут использоваться при настройке TLS-соединений:
+
+    ```conf-unix
+    machine HOST port PORT key KEY cert CERT
+    ```
 
 
-### <span class="section-num">1.4</span> Шифрование файла паролей {#шифрование-файла-паролей}
+### <span class="section-num">3.4</span> Шифрование файла паролей {#шифрование-файла-паролей}
 
 Для безопасности следует зашифровать файл паролей (см. [Работа с PGP]({{< relref "2020-12-18-using-pgp" >}})).
 
@@ -71,15 +127,6 @@ chmod 600 ~/.authinfo.gpg
     ```
 
 
-### <span class="section-num">1.5</span> Настройка подключения к Google {#настройка-подключения-к-google}
+### <span class="section-num">3.5</span> Настройка подключения к Google {#настройка-подключения-к-google}
 
 [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})
-
-
-## <span class="section-num">2</span> Backlinks {#backlinks}
-
--   [Emacs. Почта. GNUS]({{< relref "2020-12-21-emacs-mail-gnus" >}})
-
-<!--listend-->
-
--   [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}})
