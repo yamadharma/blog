@@ -1,7 +1,7 @@
 ---
 title: "Мультимедиа сервер PipeWire"
 date: 2021-04-28T16:28:00+03:00
-lastmod: 2021-04-28T18:46:00+03:00
+lastmod: 2021-07-03T18:27:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -57,7 +57,7 @@ PipeWire - это новый аудио и видео сервер. В осно�
 
 ### <span class="section-num">4.1</span> Замена PulseAudio {#замена-pulseaudio}
 
--   Одновременно отключим PelseAudio и включим PipeWire для каждого пользователя:
+-   Одновременно отключим PulseAudio и включим PipeWire для каждого пользователя:
 
     ```shell
     systemctl --user disable pulseaudio.socket pulseaudio.service
@@ -89,8 +89,3 @@ PipeWire - это новый аудио и видео сервер. В осно�
     ```shell
     PIPEWIRE_LATENCY="128/48000" pw-jack <application>
     ```
-
-
-## <span class="section-num">5</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

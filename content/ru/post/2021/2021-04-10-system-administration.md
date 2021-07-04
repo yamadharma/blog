@@ -1,7 +1,7 @@
 ---
 title: "Системное администрирование"
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-06-16T12:57:00+03:00
+lastmod: 2021-07-02T17:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -53,3 +53,8 @@ slug: "system-administration"
 ## <span class="section-num">5</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
+
+
+## <span class="section-num">6</span> Профессиональные требования {#профессиональные-требования}
+
+-   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

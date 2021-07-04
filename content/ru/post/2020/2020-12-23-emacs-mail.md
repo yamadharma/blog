@@ -1,8 +1,9 @@
 ---
 title: "Emacs. Почта"
 date: 2020-12-23T11:12:00+03:00
-lastmod: 2021-01-10T20:09:00+03:00
-categories: ["blog"]
+lastmod: 2021-07-04T21:07:00+03:00
+tags: ["emacs"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-mail"
 ---
@@ -14,27 +15,27 @@ slug: "emacs-mail"
 {{< toc >}}
 
 
-## Почтовые клиенты Emacs {#почтовые-клиенты-emacs}
+## <span class="section-num">1</span> Почтовые клиенты Emacs {#почтовые-клиенты-emacs}
 
 
-### Клиенты IMAP {#клиенты-imap}
+### <span class="section-num">1.1</span> Клиенты IMAP {#клиенты-imap}
 
 
-#### Gnus {#gnus}
+#### <span class="section-num">1.1.1</span> Gnus {#gnus}
 
 -   [Emacs. Почта. GNUS]({{< relref "2020-12-21-emacs-mail-gnus" >}})
 
 
-#### WanderLust {#wanderlust}
+#### <span class="section-num">1.1.2</span> WanderLust {#wanderlust}
 
 
-### Индексаторы почты {#индексаторы-почты}
+### <span class="section-num">1.2</span> Индексаторы почты {#индексаторы-почты}
 
 Индексаторы почты работают с локальными почтовыми
 сообщениями. Получить их с сервера можно с помощью других средств.
 
 
-#### NotMuch {#notmuch}
+#### <span class="section-num">1.2.1</span> NotMuch {#notmuch}
 
 -   URL: <https://notmuchmail.org/>
 -   Является интерфейсом для консольного клиента `notmuch`.
@@ -49,7 +50,7 @@ slug: "emacs-mail"
 -   Не рендерит html-почту.
 
 
-#### mu4e {#mu4e}
+#### <span class="section-num">1.2.2</span> mu4e {#mu4e}
 
 -   [Emacs. Почта. Mu4e]({{< relref "2020-12-24-emacs-mail-mu4e" >}})
 -   URL: <https://www.djcbsoftware.nl/code/mu/>
@@ -64,11 +65,3 @@ slug: "emacs-mail"
 -   Поддерживает почтовые операции на сервере, такие как перемещение, удаление и т.д.
 -   Содержимое html-письма рендерится с помощью Webkit в качестве бэкэнда и отображается как pdf.
 -   Автозаполнение адресов на основе сообщений (нет необходимости в управлении адресными книгами).
-
-
-## Backlinks {#backlinks}
-
-
-### [Emacs]({{< relref "2020-12-24-emacs" >}}) {#emacs}
-
-Работа с почтой (см. [Emacs. Почта]({{< relref "2020-12-23-emacs-mail" >}}))

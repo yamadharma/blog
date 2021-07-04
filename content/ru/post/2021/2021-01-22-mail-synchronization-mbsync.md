@@ -1,7 +1,7 @@
 ---
 title: "Почта. Синхронизация. mbsync"
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-05-12T14:35:00+03:00
+lastmod: 2021-07-04T21:03:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -17,7 +17,8 @@ slug: "mail-synchronization-mbsync"
 
 ## <span class="section-num">1</span> Описание {#описание}
 
-isync/mbsync --- программа для синхронизации IMAP и локальных почтовых файлов. isync --- старое название (для совместимости).
+-   `isync` / `mbsync` --- программа для синхронизации IMAP и локальных почтовых файлов.
+-   `isync` --- старое название (для совместимости).
 
 Домашняя страница: <https://isync.sourceforge.io/>.
 
@@ -34,7 +35,7 @@ isync/mbsync --- программа для синхронизации IMAP и л
 ## <span class="section-num">3</span> Настройка синхронизации {#настройка-синхронизации}
 
 -   Будем настраивать синхронизацию нескольких учётных записей.
--   Для хранения паролей будем использовать файл формата `.authinfo` (см. [Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
+-   Для хранения паролей будем использовать аутентификацию, совместимую с emacs (например, файл формата `.authinfo`) (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
 
 
 ## <span class="section-num">4</span> Конфигурация учётных записей {#конфигурация-учётных-записей}
@@ -46,7 +47,9 @@ isync/mbsync --- программа для синхронизации IMAP и л
     mkdir -p ~/Maildir/account@domain
     ```
 -   Делаем конфигурационный файл для _mbsync_. Файл называется `~/.mbsyncrc`.
--   Чтобы не хранить пароли в конфигурационном файле будем использовать хранение пароля в файле `~/.authinfo.gpg` (см. [Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
+-   Чтобы не хранить пароли в конфигурационном файле будем использовать хранение пароля, совместимое с _emacs_:
+    -   в файле `~/.authinfo.gpg` (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}}));
+    -   в менеджере паролей _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
 -   Начиная с версии _mbsync-1.4.1_ операторы `Master` и `Slave` заменены на `Far` и `Near`.
 
 
@@ -312,6 +315,211 @@ isync/mbsync --- программа для синхронизации IMAP и л
     ```
 
 
+#### <span class="section-num">4.2.5</span> Yandex {#yandex}
+
+-   <https://yandex.ru/>
+-   [Почта. Yandex. Настройка почтового клиента]({{< relref "2021-07-04-mail-yandex-configuring-mail-client" >}})
+-   Конфигурация:
+
+    ```conf-unix
+    ## IMAPAccount (Yandex)
+
+    IMAPAccount account@yandex.ru
+    Host imap.yandex.ru
+    User account@yandex.ru
+    # Pass ***************
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@yandex.ru/ {print $6}'"
+    PassCmd "pass email/yandex.ru/account@yandex.ru"
+    AuthMechs LOGIN
+    SSLType IMAPS
+    SSLVersion TLSv1.2
+
+    MaildirStore account@yandex.ru-local
+    Path ~/Maildir/account@yandex.ru/
+    Inbox ~/Maildir/account@yandex.ru/Inbox
+    SubFolders Verbatim
+
+    IMAPStore account@yandex.ru-remote
+    Account account@yandex.ru
+
+    Channel account@yandex.ru
+    Far :account@yandex.ru-remote:
+    Near :account@yandex.ru-local:
+    Patterns "INBOX" "Archive" "Trash" "Spam" "Drafts" "Sent"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+    ```
+
+
+#### <span class="section-num">4.2.6</span> Mail.ru {#mail-dot-ru}
+
+-   [Почта. Mail.ru. Настройка почтового клиента]({{< relref "2021-07-04-mail-mail-ru-configuring-mail-client" >}})
+-   Конфигурация:
+
+    ```conf-unix
+    ## IMAPAccount (Mail.ru)
+
+    IMAPAccount account@mail.ru
+    Host imap.mail.ru
+    User account@mail.ru
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@mail.ru/ {print $6}'"
+    PassCmd "pass email/mail.ru/account@mail.ru"
+    AuthMechs LOGIN
+    SSLType IMAPS
+    SSLVersion TLSv1.2
+
+    MaildirStore account@mail.ru-local
+    Path ~/Maildir/account@mail.ru/
+    Inbox ~/Maildir/account@mail.ru/Inbox
+    SubFolders Verbatim
+
+    IMAPStore account@mail.ru-remote
+    Account account@mail.ru
+
+    Channel account@mail.ru-inbox
+    Far :account@mail.ru-remote:"INBOX"
+    Near :account@mail.ru-local:"INBOX"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@mail.ru-trash
+    Far :account@mail.ru-remote:"Корзина"
+    Near :account@mail.ru-local:"Trash"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@mail.ru-spam
+    Far :account@mail.ru-remote:"Спам"
+    Near :account@mail.ru-local:"Spam"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@mail.ru-drafts
+    Far :account@mail.ru-remote:"Черновики"
+    Near :account@mail.ru-local:"Drafts"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@mail.ru-archive
+    Far :account@mail.ru-remote:"Архив"
+    Near :account@mail.ru-local:"Archive"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@mail.ru-sent
+    Far :account@mail.ru-remote:"Отправленные"
+    Near :account@mail.ru-local:"Sent"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Group account@mail.ru
+    Channel account@mail.ru-inbox
+    Channel account@mail.ru-trash
+    Channel account@mail.ru-spam
+    Channel account@mail.ru-drafts
+    Channel account@mail.ru-archive
+    Channel account@mail.ru-sent
+    ```
+
+
+#### <span class="section-num">4.2.7</span> Office365 {#office365}
+
+-   [Почта. Office365. Настройка почтового клиента]({{< relref "2021-07-04-mail-office365-configuring-mail-client" >}})
+-   Названия IMAP-ящиков даётся в модифицированной кодировке UTF-7 (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
+-   Конфигурация:
+
+    ```conf-unix
+    ## IMAPAccount (outlook.office365.com)
+
+    IMAPAccount account@example.com
+    Host smtp.office365.com
+    User account@example.com
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
+    PassCmd "pass email/example.com/account@example.com"
+    AuthMechs LOGIN
+    SSLType IMAPS
+    SSLVersion TLSv1.2
+
+    MaildirStore account@example.com-local
+    Path ~/Maildir/account@example.com/
+    Inbox ~/Maildir/account@example.com/Inbox
+    SubFolders Verbatim
+
+    IMAPStore account@example.com-remote
+    Account account@example.com
+
+    Channel account@example.com-inbox
+    Far :account@example.com-remote:"INBOX"
+    Near :account@example.com-local:"INBOX"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@example.com-trash
+    Far :account@example.com-remote:"&BCMENAQwBDsENQQ9BD0ESwQ1-"
+    Near :account@example.com-local:"Trash"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@example.com-spam
+    Far :account@example.com-remote:"&BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &BD8EPgRHBEIEMA-"
+    Near :account@example.com-local:"Spam"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@example.com-drafts
+    Far :account@example.com-remote:"&BCcENQRABD0EPgQyBDgEOgQ4-"
+    Near :account@example.com-local:"Drafts"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@example.com-archive
+    Far :account@example.com-remote:"Archive1"
+    Near :account@example.com-local:"Archive"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@example.com-sent
+    Far :account@example.com-remote:"&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+    Near :account@example.com-local:"Sent"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Group account@example.com
+    Channel account@example.com-inbox
+    Channel account@example.com-trash
+    Channel account@example.com-spam
+    Channel account@example.com-drafts
+    Channel account@example.com-archive
+    Channel account@example.com-sent
+    ```
+
+
 ## <span class="section-num">5</span> Синхронизация {#синхронизация}
 
 
@@ -366,8 +574,3 @@ isync/mbsync --- программа для синхронизации IMAP и л
     [Install]
     WantedBy=timers.target
     ```
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Emacs. Почта. Mu4e]({{< relref "2020-12-24-emacs-mail-mu4e" >}})

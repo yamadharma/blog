@@ -1,9 +1,9 @@
 ---
 title: "Emacs. Почта. GNUS"
 date: 2020-12-21T19:44:00+03:00
-lastmod: 2021-01-22T15:30:00+03:00
-tags: ["programming", "emacs"]
-categories: ["sysadmin"]
+lastmod: 2021-07-04T21:09:00+03:00
+tags: ["emacs", "sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-mail-gnus"
 ---
@@ -15,12 +15,12 @@ Gnus является программой для чтения новостей.
 {{< toc >}}
 
 
-## Аутентификация {#аутентификация}
+## <span class="section-num">1</span> Аутентификация {#аутентификация}
 
 Для аутентификации будем использовать файл формата `.authinfo` (см. [Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
 
 
-## Чтение сообщений {#чтение-сообщений}
+## <span class="section-num">2</span> Чтение сообщений {#чтение-сообщений}
 
 -   Введите `M-x gnus` для загрузки Gnus.
 -   Gnus подключается к серверу, отображает список групп (почтовые папки отображаются как группы).
@@ -47,11 +47,3 @@ Gnus является программой для чтения новостей.
 | Удалить текущее сообщение                                                                          | B DEL             | `gnus­summary­delete­article`        |
 | Переместить текущее сообщение в другую группу                                                      | B m               | `gnus­summary­move­article`          |
 | Выйти из текущей группы и вернуться к экрану выбора группы                                         | q                 | `gnus­summary­exit`                  |
-
-
-## Backlinks {#backlinks}
-
-
-### [Emacs. Почта]({{< relref "2020-12-23-emacs-mail" >}}) {#emacs-dot-почта}
-
-[Emacs. Почта. GNUS]({{< relref "2020-12-21-emacs-mail-gnus" >}})

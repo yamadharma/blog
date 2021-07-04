@@ -1,7 +1,7 @@
 ---
 title: "Emacs. Почта. Парольная аутентификация"
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2021-06-29T12:19:00+03:00
+lastmod: 2021-07-04T11:56:00+03:00
 categories: ["blog"]
 draft: false
 slug: "mail-password-authentication"
@@ -43,7 +43,7 @@ slug: "mail-password-authentication"
         ```elisp
         (setq auth-sources '((:source "~/.authinfo.gpg")))
         ```
-    -   несколько источников (все варианты для _netrc_):
+    -   несколько источников (все варианты для _netrc_) (это является значением по умолчанию):
 
         ```elisp
         (setq auth-sources '("~/.authinfo.gpg" "~/.authinfo" "~/.netrc"))

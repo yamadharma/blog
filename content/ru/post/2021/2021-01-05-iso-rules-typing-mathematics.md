@@ -1,7 +1,7 @@
 ---
 title: "Правила ISO для набора математики"
 date: 2021-01-05T14:59:00+03:00
-lastmod: 2021-06-02T16:28:00+03:00
+lastmod: 2021-07-02T18:13:00+03:00
 tags: ["tex"]
 categories: ["сиянс", "computer-science"]
 draft: false

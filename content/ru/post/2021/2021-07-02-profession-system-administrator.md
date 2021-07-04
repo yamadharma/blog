@@ -1,7 +1,7 @@
 ---
 title: "Профессия Системный администратор"
 date: 2021-07-02T12:02:00+03:00
-lastmod: 2021-07-02T14:56:00+03:00
+lastmod: 2021-07-02T17:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
