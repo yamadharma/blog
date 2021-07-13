@@ -1,7 +1,7 @@
 ---
 title: "Правила ISO для набора математики"
 date: 2021-01-05T14:59:00+03:00
-lastmod: 2021-07-02T18:13:00+03:00
+lastmod: 2021-07-12T12:58:00+03:00
 tags: ["tex"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -87,15 +87,15 @@ slug: "iso-rules-typing-mathematics"
 ### LaTeX {#latex}
 
 
+#### XeLaTeX и LuaLaTeX {#xelatex-и-lualatex}
+
+-   unicode-math – Unicode mathematics support for XeTeX and LuaTeX
+    -   <https://ctan.org/pkg/unicode-math>
+
+
 #### pdfLaTeX {#pdflatex}
 
 -   PM-ISOmath (The Poor Man ISO math bundle)
     -   <https://www.ctan.org/pkg/pm-isomath>
 -   isomath – Mathematics style for science and technology
     -   <https://www.ctan.org/pkg/isomath>
-
-
-#### XeLaTeX и LuaLaTeX {#xelatex-и-lualatex}
-
--   unicode-math – Unicode mathematics support for XeTeX and LuaTeX
-    -   <https://ctan.org/pkg/unicode-math>

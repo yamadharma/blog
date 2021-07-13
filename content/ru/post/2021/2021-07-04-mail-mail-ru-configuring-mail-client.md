@@ -1,7 +1,7 @@
 ---
 title: "Почта. Mail.ru. Настройка почтового клиента"
 date: 2021-07-04T15:30:00+03:00
-lastmod: 2021-07-04T20:57:00+03:00
+lastmod: 2021-07-06T14:30:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

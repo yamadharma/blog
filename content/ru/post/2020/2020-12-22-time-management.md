@@ -1,13 +1,13 @@
 ---
 title: "Управление временем"
 date: 2020-12-22T11:13:00+03:00
-lastmod: 2021-02-17T17:06:00+03:00
-categories: ["blog"]
+lastmod: 2021-07-12T15:04:00+03:00
+categories: ["self-management"]
 draft: false
 slug: "time-management"
 ---
 
-Управление временем.
+Управление временем (тайм-менеджмент).
 
 <!--more-->
 
@@ -23,6 +23,6 @@ slug: "time-management"
 -   [Inbox Infinity]({{< relref "2020-12-22-inbox_infinity" >}})
 
 
-## Backlinks {#backlinks}
+### Общие методы управления временем {#общие-методы-управления-временем}
 
--   [Самоорганизация]({{< relref "2021-02-03-self-management" >}})
+-   [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})

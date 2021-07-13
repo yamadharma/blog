@@ -1,7 +1,7 @@
 ---
 title: "Конференция Computer Algebra"
 date: 2021-06-28T09:42:00+03:00
-lastmod: 2021-06-28T11:16:00+03:00
+lastmod: 2021-07-10T15:02:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -25,9 +25,11 @@ slug: "conference-computer-algebra"
 
 -   Основной сайт: <http://www.ccas.ru/ca/conference>
 -   Сайт со стороны РУДН: <https://events.rudn.ru/event/125/>
--   Список видео:
-
-    <https://www.youtube.com/playlist?list=PLhyPdV6jkp-TGy89fAc6X8H68wzZmQImU>
+-   Программа конференции: <http://www.ccas.ru/ca/%5Fmedia/schedule%5F2021.pdf>
+-   Материалы конференции: <http://www.ccas.ru/ca/%5Fmedia/ca-2021.pdf>
+-   Видеозаписи конференции:
+    -   Ссылки на официальные видеозаписи находятся на сайте конференции.
+    -   Мой список видео: <https://www.youtube.com/playlist?list=PLhyPdV6jkp-TGy89fAc6X8H68wzZmQImU>
 
 
 ## <span class="section-num">3</span> Архив конференции {#архив-конференции}

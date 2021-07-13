@@ -1,7 +1,7 @@
 ---
 title: "Самоорганизация"
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2021-04-27T15:26:00+03:00
+lastmod: 2021-07-12T13:03:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -19,3 +19,4 @@ slug: "self-management"
 -   [Организация меток для записей]({{< relref "2021-02-03-tags-organizing" >}})
 -   [Прочитанные книги]({{< relref "2020-12-15-books" >}})
 -   [Личные базы данных]({{< relref "2021-04-27-personal-databases" >}})
+-   [Работа с почтой]({{< relref "2021-07-12-email-workflow" >}})

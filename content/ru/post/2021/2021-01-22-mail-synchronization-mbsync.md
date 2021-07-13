@@ -1,7 +1,7 @@
 ---
 title: "Почта. Синхронизация. mbsync"
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-07-04T21:03:00+03:00
+lastmod: 2021-07-06T16:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -32,13 +32,16 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-## <span class="section-num">3</span> Настройка синхронизации {#настройка-синхронизации}
-
--   Будем настраивать синхронизацию нескольких учётных записей.
--   Для хранения паролей будем использовать аутентификацию, совместимую с emacs (например, файл формата `.authinfo`) (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
+## <span class="section-num">3</span> Настройка {#настройка}
 
 
-## <span class="section-num">4</span> Конфигурация учётных записей {#конфигурация-учётных-записей}
+### <span class="section-num">3.1</span> Общие положения {#общие-положения}
+
+-   Все учётные записи приводятся к единой структуре.
+-   Папки IMAP унифицируются следующим образом: Inbox, Archive, Sent, Trash, Drafts, Spam.
+
+
+### <span class="section-num">3.2</span> Конфигурация учётных записей {#конфигурация-учётных-записей}
 
 -   Учётные записи делаем по полному наименованию почты. Я это делаю потому, что у меня есть почтовые ящики с одинаковыми именами в разных почтовых доменах.
 -   Создать необходимые каталоги:
@@ -47,13 +50,27 @@ slug: "mail-synchronization-mbsync"
     mkdir -p ~/Maildir/account@domain
     ```
 -   Делаем конфигурационный файл для _mbsync_. Файл называется `~/.mbsyncrc`.
--   Чтобы не хранить пароли в конфигурационном файле будем использовать хранение пароля, совместимое с _emacs_:
-    -   в файле `~/.authinfo.gpg` (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}}));
-    -   в менеджере паролей _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
+-   Чтобы не хранить пароли в конфигурационном файле (оператор `Pass`) будем использовать хранение пароля, совместимое с _emacs_ (с использованием оператора `PassCmd`):
+    -   в файле `~/.authinfo.gpg` (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})):
+        -   структура команды:
+
+            ```conf-unix
+            PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
+            ```
+    -   в менеджере паролей _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})):
+
+        -   структура команды:
+
+        <!--listend-->
+
+        ```conf-unix
+        PassCmd "pass email/example.com/account@example.com"
+        ```
+
 -   Начиная с версии _mbsync-1.4.1_ операторы `Master` и `Slave` заменены на `Far` и `Near`.
 
 
-### <span class="section-num">4.1</span> Общие параметры {#общие-параметры}
+### <span class="section-num">3.3</span> Общие параметры {#общие-параметры}
 
 -   Установка параметра `CopyArrivalDate`:
 
@@ -67,41 +84,43 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-### <span class="section-num">4.2</span> Примеры конфигурации для разных провайдеров {#примеры-конфигурации-для-разных-провайдеров}
+### <span class="section-num">3.4</span> Примеры конфигурации для разных провайдеров {#примеры-конфигурации-для-разных-провайдеров}
 
 
-#### <span class="section-num">4.2.1</span> Gmail {#gmail}
+#### <span class="section-num">3.4.1</span> Gmail {#gmail}
 
 -   <https://www.google.com/intl/ru/gmail/about/>
+-   [Почта. Google. Настройка почтового клиента]({{< relref "2021-07-06-mail-google-configuring-mail-client" >}})
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
 -   Папка "Отправленные" не синхронизируется потому, что Google сохраняет всю электронную почту в папке "Все сообщения", и в результате мы получим локально дубликаты.
 
     ```conf-unix
     # IMAPAccount (gmail)
 
-    IMAPAccount account1@gmail.com
+    IMAPAccount account@gmail.com
     Host imap.gmail.com
-    User account1@gmail.com
+    User account@gmail.com
     # Pass ***************
-    # To store the password in an encrypted file use PassCmd instead of Pass
-    PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account1@gmail.com/ {print $6}'"
+    ## To store the password in an encrypted file use PassCmd instead of Pass
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@gmail.com/ {print $6}'"
+    PassCmd "pass email/gmail.com/account@gmail.com"
     Port 993
     SSLType IMAPS
     AuthMechs LOGIN
     SSLVersions TLSv1.2
 
-    IMAPStore account1-remote
-    Account account1
+    IMAPStore account-remote
+    Account account
 
-    MaildirStore account1-local
+    MaildirStore account-local
     SubFolders Verbatim
     # The trailing "/" is important
-    Path ~/Maildir/account1/
-    Inbox ~/Maildir/account1/inbox
+    Path ~/Maildir/account/
+    Inbox ~/Maildir/account/inbox
 
-    Channel account1
-    Master :account1-remote:
-    Slave :account1-local:
+    Channel account
+    Master :account-remote:
+    Slave :account-local:
     # Exclude everything under the internal [Gmail] folder, except the interesting folders
     Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
     # Or include everything
@@ -195,7 +214,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.2</span> Apple {#apple}
+#### <span class="section-num">3.4.2</span> Apple {#apple}
 
 -   <https://www.icloud.com/mail>
 
@@ -243,7 +262,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.3</span> GMX {#gmx}
+#### <span class="section-num">3.4.3</span> GMX {#gmx}
 
 -   <https://www.gmx.com/>
 -   <https://www.gmx.net/>
@@ -278,7 +297,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.4</span> Proton {#proton}
+#### <span class="section-num">3.4.4</span> Proton {#proton}
 
 -   <https://protonmail.com/>
 -   Заблокирован в России.
@@ -315,7 +334,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.5</span> Yandex {#yandex}
+#### <span class="section-num">3.4.5</span> Yandex {#yandex}
 
 -   <https://yandex.ru/>
 -   [Почта. Yandex. Настройка почтового клиента]({{< relref "2021-07-04-mail-yandex-configuring-mail-client" >}})
@@ -328,6 +347,7 @@ slug: "mail-synchronization-mbsync"
     Host imap.yandex.ru
     User account@yandex.ru
     # Pass ***************
+    ## To store the password in an encrypted file use PassCmd instead of Pass
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@yandex.ru/ {print $6}'"
     PassCmd "pass email/yandex.ru/account@yandex.ru"
     AuthMechs LOGIN
@@ -353,7 +373,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.6</span> Mail.ru {#mail-dot-ru}
+#### <span class="section-num">3.4.6</span> Mail.ru {#mail-dot-ru}
 
 -   [Почта. Mail.ru. Настройка почтового клиента]({{< relref "2021-07-04-mail-mail-ru-configuring-mail-client" >}})
 -   Конфигурация:
@@ -364,6 +384,8 @@ slug: "mail-synchronization-mbsync"
     IMAPAccount account@mail.ru
     Host imap.mail.ru
     User account@mail.ru
+    # Pass ***************
+    ## To store the password in an encrypted file use PassCmd instead of Pass
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@mail.ru/ {print $6}'"
     PassCmd "pass email/mail.ru/account@mail.ru"
     AuthMechs LOGIN
@@ -436,7 +458,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-#### <span class="section-num">4.2.7</span> Office365 {#office365}
+#### <span class="section-num">3.4.7</span> Office365 {#office365}
 
 -   [Почта. Office365. Настройка почтового клиента]({{< relref "2021-07-04-mail-office365-configuring-mail-client" >}})
 -   Названия IMAP-ящиков даётся в модифицированной кодировке UTF-7 (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
@@ -448,6 +470,8 @@ slug: "mail-synchronization-mbsync"
     IMAPAccount account@example.com
     Host smtp.office365.com
     User account@example.com
+    # Pass ***************
+    ## To store the password in an encrypted file use PassCmd instead of Pass
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
     PassCmd "pass email/example.com/account@example.com"
     AuthMechs LOGIN
@@ -520,10 +544,16 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-## <span class="section-num">5</span> Синхронизация {#синхронизация}
+## <span class="section-num">4</span> Синхронизация {#синхронизация}
 
 
-### <span class="section-num">5.1</span> Запуск из командной строки {#запуск-из-командной-строки}
+### <span class="section-num">4.1</span> Настройка синхронизации {#настройка-синхронизации}
+
+-   Будем настраивать синхронизацию нескольких учётных записей.
+-   Для хранения паролей будем использовать аутентификацию, совместимую с emacs (например, файл формата `.authinfo`) (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})).
+
+
+### <span class="section-num">4.2</span> Запуск из командной строки {#запуск-из-командной-строки}
 
 -   Синхронизация конкретной учётной записи:
 
@@ -537,7 +567,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 
-### <span class="section-num">5.2</span> Запуск по таймеру {#запуск-по-таймеру}
+### <span class="section-num">4.3</span> Запуск по таймеру {#запуск-по-таймеру}
 
 -   Для синхронизации с помощью `systemd` надо добавить сервис и таймер.
 -   После создания этих файлов добавьте `mbsync.timer` в `systemctl`:

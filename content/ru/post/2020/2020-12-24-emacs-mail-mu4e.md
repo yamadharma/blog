@@ -1,7 +1,7 @@
 ---
 title: "Emacs. Почта. Mu4e"
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2021-07-04T21:05:00+03:00
+lastmod: 2021-07-08T15:11:00+03:00
 categories: ["blog"]
 draft: false
 slug: "emacs-mail-mu4e"
@@ -48,13 +48,22 @@ USE="emacs" emerge -v mu
 
 ### <span class="section-num">3.2</span> Инициализация {#инициализация}
 
-Перед использованием необходимо инициализировать базу данных писем:
+-   Перед использованием необходимо инициализировать базу данных писем:
 
-```shell
-mu init --maildir=~/Maildir \
-   --my-address=account1@domain1 \
-   --my-address=account2@domain2
-```
+    ```shell
+    mu init --maildir=~/Maildir \
+       --my-address=account1@domain1 \
+       --my-address=account2@domain2
+    ```
+-   Можно это выполнить скриптом:
+
+    ```shell
+    #!/bin/sh
+
+    list_imap=$(grep -e "^IMAPAccount" ~/.mbsyncrc | cut -d" " -f2 | xargs -I {} -n 1 echo "--my-address="{})
+    mu init --maildir=~/Maildir $list_imap
+    ```
+-   Я использую скрипт, поскольку у меня кэш находится на временной файловой системе, и не сохраняется при перезагрузке.
 
 
 ### <span class="section-num">3.3</span> Индексирование почты {#индексирование-почты}
@@ -64,5 +73,57 @@ mu init --maildir=~/Maildir \
 ```shell
 mu index
 ```
+
+
+## <span class="section-num">4</span> Дополнительные пакеты {#дополнительные-пакеты}
+
+
+### <span class="section-num">4.1</span> Чтение писем {#чтение-писем}
+
+
+### <span class="section-num">4.2</span> Написание писем {#написание-писем}
+
+
+#### <span class="section-num">4.2.1</span> org-mime {#org-mime}
+
+-   Репозиторий: <https://github.com/org-mime/org-mime>
+-   Отправка электропочты в формате HTML с помощью экспорта HTML из _org-mode_.
+
+
+#### <span class="section-num">4.2.2</span> org-msg {#org-msg}
+
+-   Для редактирования сообщения с использованием `org-mode`.
+-   Заменяет встроенную в _mu4e_ поддержку `org-mode`.
+
+<!--list-separator-->
+
+1.  Общая информация
+
+    -   Репозиторий: <https://github.com/jeremy-compostella/org-msg>
+    -   Поддерживаемые режимы:
+        -   Message mode;
+        -   mu4e mode;
+        -   notmuch mode.
+
+<!--list-separator-->
+
+2.  Использование
+
+    -   `C-c` `C-e` --- генерирует и отображает экспортированную версию электронной почты (`org-msg-preview`).
+    -   `C-c` `C-k` --- закрывает буфер (`message-kill-buffer`).
+    -   `C-c` `C-s` --- переход к теме сообщения (как и в режиме сообщения) (`message-goto-subject`).
+    -   `C-c` `C-b` --- переход к телу сообщения (аналогично `message-goto-body` в режиме сообщения) (`org-msg-goto-body`).
+    -   `C-c` `C-a` --- добавить (или удалить) вложение (похоже на функцию `org-attach`) (`org-msg-attach`). Список вложений хранится в свойстве `attachment:`.
+    -   `C-c` `C-c` --- генерирует сообщение MIME и отправляет его (`org-ctrl-c-ctrl-c`).
+
+<!--list-separator-->
+
+3.  Настройка
+
+    -   Необходимо задать `mail-user-agent` до загрузки `org-msg`:
+
+        ```elisp
+        (setq mail-user-agent 'mu4e-user-agent)
+        ```
 
 [^fn:1]: URL: <https://ru.wikipedia.org/wiki/Maildir>
