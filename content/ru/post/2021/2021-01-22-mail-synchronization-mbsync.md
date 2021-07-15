@@ -1,7 +1,8 @@
 ---
 title: "Почта. Синхронизация. mbsync"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-07-06T16:35:00+03:00
+lastmod: 2021-07-15T12:13:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -575,7 +576,19 @@ slug: "mail-synchronization-mbsync"
     ```shell
     systemctl --user --now enable mbsync.timer
     ```
--   `~/.config/systemd/user/mbsync.service`. После синхронизации запускаем индексирование для `mu`.
+-   `~/.config/systemd/user/mbsync.service`.
+
+    ```conf-unix
+    # ~/.config/systemd/user/mbsync.service
+
+    [Unit]
+    Description=Mailbox synchronization service
+
+    [Service]
+    Type=oneshot
+    ExecStart=/usr/bin/mbsync -a
+    ```
+-   `~/.config/systemd/user/mbsync.service`. Здесь мы после синхронизации запускаем индексирование для `mu`.
 
     ```conf-unix
     # ~/.config/systemd/user/mbsync.service

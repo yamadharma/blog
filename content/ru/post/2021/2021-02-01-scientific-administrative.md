@@ -1,7 +1,8 @@
 ---
 title: "Научно-административная деятельность"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-06-28T09:45:00+03:00
+lastmod: 2021-07-15T21:14:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -34,12 +35,17 @@ slug: "scientific-administrative"
 -   [Поступление в аспирантуру студентов]({{< relref "2021-02-07-admission-postgraduate-students" >}})
 
 
-## <span class="section-num">4</span> Научная школа {#научная-школа}
+## <span class="section-num">4</span> Редакторская деятельность {#редакторская-деятельность}
+
+-   [Журнал Mathematics]({{< relref "2021-07-15-journal-mathematics" >}})
+
+
+## <span class="section-num">5</span> Научная школа {#научная-школа}
 
 -   [Научная школа Математическое моделирование]({{< relref "2021-02-20-scientific-school-mathematical-modeling" >}})
 
 
-## <span class="section-num">5</span> Конференции {#конференции}
+## <span class="section-num">6</span> Конференции {#конференции}
 
 Это конференции, в организации которых я принимал какое-либо участие.
 
