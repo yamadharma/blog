@@ -1,7 +1,8 @@
 ---
 title: "Emacs. Почта. Mu4e"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2021-07-08T15:11:00+03:00
+lastmod: 2021-07-17T15:52:00+03:00
 categories: ["blog"]
 draft: false
 slug: "emacs-mail-mu4e"
@@ -81,6 +82,19 @@ mu index
 ### <span class="section-num">4.1</span> Чтение писем {#чтение-писем}
 
 
+#### <span class="section-num">4.1.1</span> mu4e-views {#mu4e-views}
+
+-   Пакет позволяет пользователю выбирать вариант просмотра электронных писем.
+-   Основной вариант использования --- просмотр электронные письма с использованием окна `xwidgets`.
+
+<!--list-separator-->
+
+1.  Общая информация
+
+    -   Репозиторий: <https://github.com/lordpretzel/mu4e-views>
+    -   Пакет: <https://melpa.org/#/mu4e-views>
+
+
 ### <span class="section-num">4.2</span> Написание писем {#написание-писем}
 
 
@@ -100,6 +114,7 @@ mu index
 1.  Общая информация
 
     -   Репозиторий: <https://github.com/jeremy-compostella/org-msg>
+    -   Пакет: <https://melpa.org/#/org-msg>
     -   Поддерживаемые режимы:
         -   Message mode;
         -   mu4e mode;
@@ -107,7 +122,13 @@ mu index
 
 <!--list-separator-->
 
-2.  Использование
+2.  Зависимости
+
+    -   Необходим пакет [emacs-htmlize](https://github.com/hniksic/emacs-htmlize).
+
+<!--list-separator-->
+
+3.  Использование
 
     -   `C-c` `C-e` --- генерирует и отображает экспортированную версию электронной почты (`org-msg-preview`).
     -   `C-c` `C-k` --- закрывает буфер (`message-kill-buffer`).
@@ -118,7 +139,7 @@ mu index
 
 <!--list-separator-->
 
-3.  Настройка
+4.  Настройка
 
     -   Необходимо задать `mail-user-agent` до загрузки `org-msg`:
 

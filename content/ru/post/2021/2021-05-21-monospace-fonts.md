@@ -1,7 +1,8 @@
 ---
 title: "Моноширинные шрифты"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-06-14T18:34:00+03:00
+lastmod: 2021-07-18T17:59:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -30,12 +31,19 @@ slug: "monospace-fonts"
 -   На данный момент наибольшее количество математических символов содержит шрифт _JuliaMono_.
 
 
-## <span class="section-num">3</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
+## <span class="section-num">3</span> Применимость {#применимость}
+
+-   Шрифт для редактора (например, emacs) желательно выбирать с курсивом. Иначе, теряется определённый набор выделений текста.
+-   Также для семантического выделения курсив используют разные программы с текстовым интерфейсам (например, эмулятор терминала _kitty_).
+-   Если шрифт имеет переменную ширину знаков, то едут таблицы.
+
+
+## <span class="section-num">4</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
 
 -   Часть шрифтов для программирования содержит лигатуры.
 
 
-### <span class="section-num">3.1</span> Fira Code {#fira-code}
+### <span class="section-num">4.1</span> Fira Code {#fira-code}
 
 -   Шрифт сделан на базе Fira Mono.
 -   Репозиторий: <https://github.com/tonsky/FiraCode>
@@ -54,10 +62,12 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">3.2</span> Iosevka {#iosevka}
+### <span class="section-num">4.2</span> Iosevka {#iosevka}
 
 -   Сайт: <https://typeof.net/Iosevka/>
 -   Репозиторий: <https://github.com/be5invis/Iosevka/>
+-   Шрифт псевдопропорциональный, поэтому таблицы, оформленные этим шрифтом, разъезжаются.
+-   Имеет узкий дизайн.
 -   Свойства
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: есть
@@ -70,7 +80,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">3.3</span> JetBrains Mono {#jetbrains-mono}
+### <span class="section-num">4.3</span> JetBrains Mono {#jetbrains-mono}
 
 -   Сайт: <https://www.jetbrains.com/lp/mono/>
 -   Свойства
@@ -85,7 +95,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">3.4</span> JuliaMono {#juliamono}
+### <span class="section-num">4.4</span> JuliaMono {#juliamono}
 
 -   Достаточно полный набор математических символов:
     -   <https://mono-math.netlify.app/#JuliaMono>
@@ -108,7 +118,7 @@ slug: "monospace-fonts"
         -   <https://github.com/mossr/julia-mono-listings>
 
 
-### <span class="section-num">3.5</span> Hasklig {#hasklig}
+### <span class="section-num">4.5</span> Hasklig {#hasklig}
 
 -   Сделан на основе Source Code Pro с добавлением лигатур.
 -   Репозиторий: <https://github.com/i-tu/Hasklig>
@@ -118,7 +128,7 @@ slug: "monospace-fonts"
     -   Курсив: нет
 
 
-### <span class="section-num">3.6</span> Cascadia Code {#cascadia-code}
+### <span class="section-num">4.6</span> Cascadia Code {#cascadia-code}
 
 -   Разработан для Windows Terminal.
 -   Репозиторий: <https://github.com/microsoft/cascadia-code>
@@ -134,9 +144,26 @@ slug: "monospace-fonts"
         ```
 
 
-## <span class="section-num">4</span> Применимость {#применимость}
+### <span class="section-num">4.7</span> Victor Mono {#victor-mono}
 
--   Шрифт для редактора (например, emacs) желательно выбирать с курсивом. Иначе, теряется определённый набор выделений текста.
+-   Сайт: <https://rubjo.github.io/victor-mono/>
+-   Репозиторий: <https://github.com/rubjo/victor-mono>
+-   Таблицы, оформленные этим шрифтом, разъезжаются.
+-   Имеет узкий дизайн.
+-   Свойства
+    -   Лицензия: MIT
+    -   Лигатуры: есть
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+        -   Можно найти в оверлее:
+            -   _4nykey_: <https://gpo.zugaina.org/Overlays/4nykey>
+            -   karma: <https://github.com/yamadharma/gentoo-portage-local>
+        -   Установка
+
+            ```shell
+            emerge media-fonts/victor-mono
+            ```
 
 
 ## <span class="section-num">5</span> Шрифты с иконками {#шрифты-с-иконками}
@@ -175,7 +202,7 @@ slug: "monospace-fonts"
 -   Свойства
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: нет
-    -   Курсив: нет
+    -   Курсив: есть
 -   Установка.
     -   Gentoo:
 
@@ -184,9 +211,9 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">6.2</span> Hack {#hack}
+### <span class="section-num">6.2</span> Anonymous Pro {#anonymous-pro}
 
--   Репозиторий: <https://github.com/source-foundry/Hack>
+-   Сайт: <https://www.marksimonson.com/fonts/view/anonymous-pro>
 -   Свойства
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: нет
@@ -195,5 +222,53 @@ slug: "monospace-fonts"
     -   Gentoo:
 
         ```shell
+        emerge media-fonts/anonymous-pro
+        ```
+
+
+### <span class="section-num">6.3</span> Hack {#hack}
+
+-   Репозиторий: <https://github.com/source-foundry/Hack>
+-   Свойства
+    -   Лицензия: MIT
+    -   Лигатуры: нет
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
         emerge media-fonts/hack
+        ```
+
+
+### <span class="section-num">6.4</span> Hermit {#hermit}
+
+-   Сайт: <https://pcaro.es/p/hermit/>
+-   Репозиторий: <https://github.com/pcaro90/hermit>
+-   Таблицы, оформленные им, разъезжаются.
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: нет
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/hermit
+        ```
+
+
+### <span class="section-num">6.5</span> IBM Plex Mono {#ibm-plex-mono}
+
+-   Сайт: <https://www.ibm.com/plex/>
+-   Репозиторий: <https://github.com/IBM/plex>
+-   Свойства
+    -   Лицензия: SIL Open Font licence
+    -   Лигатуры: нет
+    -   Курсив: есть
+-   Установка.
+    -   Gentoo:
+
+        ```shell
+        emerge media-fonts/ibm-plex
         ```

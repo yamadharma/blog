@@ -1,7 +1,8 @@
 ---
 title: "git. Несколько удалённых репозиториев"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2021-06-28T11:16:00+03:00
+lastmod: 2021-07-22T13:58:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -56,3 +57,14 @@ slug: "git-multiple-remote-repositories"
     git push bitbucket
     ```
 -   Любой из репозиториев можно назвать `origin`, тогда он будет репозиторием по умолчанию.
+-   Также можно заменить текущий удалённый репозиторий:
+
+    ```shell
+    git remote set-url <remote_name> <remote_url>
+    ```
+
+    Например:
+
+    ```shell
+    git remote set-url origin https://github.com/your_name/repository_name.git
+    ```

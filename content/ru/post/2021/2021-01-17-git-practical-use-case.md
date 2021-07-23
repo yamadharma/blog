@@ -1,7 +1,8 @@
 ---
 title: "Практический сценарий использования git"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-04-28T16:25:00+03:00
+lastmod: 2021-07-22T14:35:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -361,12 +362,3 @@ yarn global add commitizen
 
 
 ### Работа с репозиторием git {#работа-с-репозиторием-git}
-
-
-## Backlinks {#backlinks}
-
--   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
-
-<!--listend-->
-
--   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})
