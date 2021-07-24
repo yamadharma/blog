@@ -2,7 +2,7 @@
 title: "Видео. KDEnlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-23T19:10:00+03:00
-lastmod: 2021-07-23T19:35:00+03:00
+lastmod: 2021-07-23T19:51:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-kdenlive"
@@ -28,3 +28,5 @@ slug: "video-kdenlive"
 
 
 ## <span class="section-num">3</span> Обработка видео {#обработка-видео}
+
+-   [Видео. KDEnlive. Создание intro и outro]({{< relref "2021-07-23-video-kdenlive-creation-intro-outro" >}})

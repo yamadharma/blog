@@ -1,7 +1,8 @@
 ---
 title: "Курс МОЗИиИБ. Модульная арифметика"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-08T18:55:00+03:00
-lastmod: 2021-06-06T16:16:00+03:00
+lastmod: 2021-07-23T13:45:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -25,3 +26,11 @@ menu:
 
 
 ## <span class="section-num">1</span> Видео к лекции {#видео-к-лекции}
+
+-   Целочисленная арифметика
+
+    {{< youtube O3Ovs1KTwcE >}}
+
+-   Модульная арифметика
+
+    {{< youtube 5y4zG8FQQ-c >}}

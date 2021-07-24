@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-07-23T19:19:00+03:00
+lastmod: 2021-07-23T19:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,9 +18,9 @@ slug: "system-administration"
 
 ## <span class="section-num">1</span> Графическое окружение {#графическое-окружение}
 
--   [Переход на Sway](../notes/20210410175400-переход_на_sway.md)
--   [Window manager i3](../notes/20210514113200-window_manager_i3.md)
--   [Мультимедиа сервер PipeWire](../notes/20210428162800-мультимедиа_сервер_pipewire.md)
+-   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
+-   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
+-   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
 
 
 ## <span class="section-num">2</span> Операционные системы {#операционные-системы}
@@ -28,18 +28,18 @@ slug: "system-administration"
 
 ### <span class="section-num">2.1</span> Windows {#windows}
 
--   [Администрирование Windows](../notes/20210501162800-администрирование_windows.md)
+-   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
 
 
 ### <span class="section-num">2.2</span> Установка операционных систем {#установка-операционных-систем}
 
--   [Загрузочная флешка](../notes/20210410184600-загрузочная_флешка.md)
--   [Установка Linux на btrfs](../notes/20210521203800-установка_linux_на_btrfs.md)
+-   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
+-   [Установка Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 
 
 ### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
 
--   [Замена Centos](../notes/20210525152200-замена_centos.md)
+-   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 
 
 ## <span class="section-num">3</span> Пользовательские программы {#пользовательские-программы}
@@ -47,20 +47,20 @@ slug: "system-administration"
 
 ### <span class="section-num">3.1</span> Обработка видео {#обработка-видео}
 
--   [Видео. KDEnlive](../notes/20210723191000-видео_kdenlive.md)
+-   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 
 
 ## <span class="section-num">4</span> Безопасность {#безопасность}
 
--   [Менеджеры паролей](../notes/20210429115600-менеджеры_паролеи.md)
--   [Have I Been Pwned (HIBP)](../notes/20210503152100-have_i_been_pwned_hibp.md)
+-   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
+-   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 
 
 ## <span class="section-num">5</span> Сети {#сети}
 
--   [Администрирование Cisco](../notes/20210616123800-администрирование_cisco.md)
+-   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
 ## <span class="section-num">6</span> Профессиональные требования {#профессиональные-требования}
 
--   [Профессия Системный администратор](../notes/20210702120200-профессия_системныи_администратор.md)
+-   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

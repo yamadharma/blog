@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-07-18T17:59:00+03:00
+lastmod: 2021-07-24T15:39:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false

@@ -1,7 +1,8 @@
 ---
 title: "Установка Linux на btrfs"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2021-05-22T14:20:00+03:00
+lastmod: 2021-07-23T19:45:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -210,8 +211,3 @@ slug: "installing-linux-btrfs"
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/var/vm
     umount /mnt/from/
     ```
-
-
-## <span class="section-num">8</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

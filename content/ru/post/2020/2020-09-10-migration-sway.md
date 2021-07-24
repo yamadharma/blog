@@ -1,7 +1,8 @@
 ---
 title: "Переход на Sway"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-06-16T20:27:00+03:00
+lastmod: 2021-07-24T17:56:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -54,12 +55,21 @@ layman -a guru
 
 ## <span class="section-num">3</span> Первоначальная конфигурация {#первоначальная-конфигурация}
 
-При запуске без локальной конфигурации `sway` использует глобальную конфигурацию `/etc/sway/config`. При желании внести изменение в конфигурацию можно скопировать файл глобальной конфигурации в локальную:
+-   Файл конфигурации ищется в следующем порядке:
+    -   `~/.sway/config`;
+    -   `$XDG_CONFIG_HOME/sway/config`;
+    -   `~/.i3/config`;
+    -   `$XDG_CONFIG_HOME/i3/config`;
+    -   `/etc/sway/config`;
+    -   `/etc/i3/config`.
+    -   Переменная окружения `$XDG_CONFIG_HOME` по умолчанию установлена в `~/.config/`.
+-   Пакет устанавливает глобальную конфигурацию в `/etc/sway/config`.
+-   При желании внести изменение в конфигурацию можно скопировать файл глобальной конфигурации в локальную:
 
-```shell
-mkdir -p ~/.config/sway
-cp /etc/sway/config ~/.config/sway/
-```
+    ```shell
+    mkdir -p ~/.config/sway
+    cp /etc/sway/config ~/.config/sway/
+    ```
 
 
 ## <span class="section-num">4</span> Комбинации клавиш {#комбинации-клавиш}
@@ -336,3 +346,58 @@ $ wl-copy "!!"
 # replace the current selection with the list of types it's offered in
 $ wl-paste --list-types | wl-copy
 ```
+
+
+## <span class="section-num">6</span> Совместимость приложений {#совместимость-приложений}
+
+
+### <span class="section-num">6.1</span> Java {#java}
+
+
+#### <span class="section-num">6.1.1</span> Серое окно, приложения не меняют размер с помощью WM, меню сразу закрываются {#серое-окно-приложения-не-меняют-размер-с-помощью-wm-меню-сразу-закрываются}
+
+-   В стандартных тулкитах для Java жестко зашит список оконных менеджеров.
+-   Следует установить переменную окружения:
+
+    ```shell
+    export _JAVA_AWT_WM_NONREPARENTING=1
+    ```
+
+
+#### <span class="section-num">6.1.2</span> Меню в приложениях плавает отдельно, им невозможно пользоваться {#меню-в-приложениях-плавает-отдельно-им-невозможно-пользоваться}
+
+-   В выпусках Java до версии 9 GTK интерфейс ориентирован на GTK2, в последующих версиях на GTK3.
+-   GTK LookAndFeel может работать с GTK версий 2, 2.2 и 3.
+-   По умолчанию используется GTK3.
+-   Следует явно задать более старую версию:
+
+    ```shell
+    export JAVA_TOOL_OPTIONS='-Djdk.gtk.version=2.2'
+    ```
+-   Например, в файле `~/.profile`:
+
+    ```shell
+    if [ "$XDG_SESSION_DESKTOP" = "sway" ] ; then
+        # https://github.com/swaywm/sway/issues/595
+        export _JAVA_AWT_WM_NONREPARENTING=1
+        export JAVA_TOOL_OPTIONS='-Djdk.gtk.version=2.2
+    fi
+    ```
+
+
+### <span class="section-num">6.2</span> Приложения GTK+ запускаются с задержкой {#приложения-gtk-plus-запускаются-с-задержкой}
+
+-   Приложения GTK+ ожидают запуск `xdg-desktop-portal` через D-Bus.
+-   Ожидание прекращается по таймауту потому, что активированная служба D-Bus не знает, к какому `WAYLAND_DISPLAY` подключиться.
+-   Это можно исправить, добавив в файл конфигурации следующее:
+
+    ```shell
+    exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+    exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+    ```
+
+
+### <span class="section-num">6.3</span> Qt приложения {#qt-приложения}
+
+-   Qt по умолчанию использует бэкэнд X11 вместо собственного бэкэнда Wayland. Чтобы использовать бэкэнд Wayland, установите `QT_QPA_PLATFORM=wayland`.
+-   Qt прорисовает оформление окон на стороне клиента. Чтобы отключить это, установите `QT_WAYLAND_DISABLE_WINDOWDECORATION="1"`.

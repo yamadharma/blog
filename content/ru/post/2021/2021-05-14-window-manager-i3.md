@@ -1,7 +1,8 @@
 ---
 title: "Window manager i3"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-07-02T12:02:00+03:00
+lastmod: 2021-07-24T17:30:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -26,10 +27,19 @@ slug: "window-manager-i3"
 -   Я сделал репозиторий со своей конфигурацией: <https://github.com/yamadharma/config-i3>
 
 
-## <span class="section-num">3</span> Навигация {#навигация}
+## <span class="section-num">3</span> Конфигурация {#конфигурация}
+
+-   Файлы конфигурации просматриваются в следующем порядке:
+    -   `$XDG_CONFIG_HOME/i3/config` (`~/.config/i3/config`);
+    -   `~/.i3/config`;
+    -   `$XDG_CONFIG_DIRS/i3/config` (`/etc/xdg/i3/config`);
+    -   `/etc/i3/config`.
 
 
-### <span class="section-num">3.1</span> Клавиша-модификатор {#клавиша-модификатор}
+## <span class="section-num">4</span> Навигация {#навигация}
+
+
+### <span class="section-num">4.1</span> Клавиша-модификатор {#клавиша-модификатор}
 
 -   В качестве модификатора обычно используется:
     -   `Alt`:
@@ -45,12 +55,12 @@ slug: "window-manager-i3"
     -   Предпочитаю `Super`, чтобы не конфликтовать с Emacs.
 
 
-### <span class="section-num">3.2</span> Основные комбинации клавиш {#основные-комбинации-клавиш}
+### <span class="section-num">4.2</span> Основные комбинации клавиш {#основные-комбинации-клавиш}
 
 -   `Mod` + `Enter`: открыть терминал.
 
 
-### <span class="section-num">3.3</span> Перемещение фокуса {#перемещение-фокуса}
+### <span class="section-num">4.3</span> Перемещение фокуса {#перемещение-фокуса}
 
 -   Фокус можно перемещать как с помощью стрелок, так и с помощью буквенных клавиш, как в редакторе _vi_.
     -   `Mod` + `h` или `Mod` + `Left`: сдвиг фокуса влево.
@@ -92,7 +102,7 @@ slug: "window-manager-i3"
 -   `Mod` + `Space`: переключить режим фокуса.
 
 
-### <span class="section-num">3.4</span> Перемещение окон {#перемещение-окон}
+### <span class="section-num">4.4</span> Перемещение окон {#перемещение-окон}
 
 -   Делается аналогично перемещению фокуса, но с добавлением модификатора `Shift`:
     -   `Mod` + `Shift` + `h` или `Mod` + `Shift` + `Left`: перемещение влево;
@@ -115,7 +125,7 @@ slug: "window-manager-i3"
     ```
 
 
-### <span class="section-num">3.5</span> Modifying windows {#modifying-windows}
+### <span class="section-num">4.5</span> Modifying windows {#modifying-windows}
 
 -   `Mod` + f	toggle fullscreen
 -   `Mod` + v	split a window vertically
@@ -123,7 +133,7 @@ slug: "window-manager-i3"
 -   `Mod` + r	resize mode
 
 
-### <span class="section-num">3.6</span> Структура расположения контейнеров {#структура-расположения-контейнеров}
+### <span class="section-num">4.6</span> Структура расположения контейнеров {#структура-расположения-контейнеров}
 
 -   Поддерживаются следующие расположения контейнеров:
     -   `Mod` + `e`: переключение разделённого расположения (split layout);
@@ -146,13 +156,13 @@ slug: "window-manager-i3"
     ```
 
 
-### <span class="section-num">3.7</span> Floating {#floating}
+### <span class="section-num">4.7</span> Floating {#floating}
 
 -   `Mod` + Shift + Space	toggle floating
 -   `Mod` + Left click	drag floating
 
 
-### <span class="section-num">3.8</span> Рабочие области (workspaces) {#рабочие-области--workspaces}
+### <span class="section-num">4.8</span> Рабочие области (workspaces) {#рабочие-области--workspaces}
 
 -   Сконфигурим рабочие области:
 
@@ -201,13 +211,13 @@ slug: "window-manager-i3"
     ```
 
 
-### <span class="section-num">3.9</span> Opening applications / Closing windows {#opening-applications-closing-windows}
+### <span class="section-num">4.9</span> Opening applications / Closing windows {#opening-applications-closing-windows}
 
 -   `Mod` + d	open application launcher (dmenu)
 -   `Mod` + Shift + q	kill a window
 
 
-### <span class="section-num">3.10</span> Выход/Перезапуск {#выход-перезапуск}
+### <span class="section-num">4.10</span> Выход/Перезапуск {#выход-перезапуск}
 
 -   `Mod` + `Shift` + `c`: перечитать конфигурационный файл.
 
@@ -235,10 +245,10 @@ slug: "window-manager-i3"
     ```
 
 
-## <span class="section-num">4</span> Настройка {#настройка}
+## <span class="section-num">5</span> Настройка {#настройка}
 
 
-### <span class="section-num">4.1</span> Терминал {#терминал}
+### <span class="section-num">5.1</span> Терминал {#терминал}
 
 -   В качестве терминала я использую kitty.
 -   Конфигурация запуска терминала:
@@ -256,10 +266,10 @@ slug: "window-manager-i3"
     ```
 
 
-### <span class="section-num">4.2</span> Строка статуса {#строка-статуса}
+### <span class="section-num">5.2</span> Строка статуса {#строка-статуса}
 
 
-#### <span class="section-num">4.2.1</span> i3bar {#i3bar}
+#### <span class="section-num">5.2.1</span> i3bar {#i3bar}
 
 -   Отрисовку панели осуществляет утилита `i3bar`.
 -   Отображается вверху или внизу экрана.
@@ -498,7 +508,7 @@ slug: "window-manager-i3"
         ```
 
 
-#### <span class="section-num">4.2.2</span> polybar {#polybar}
+#### <span class="section-num">5.2.2</span> polybar {#polybar}
 
 -   Отдельное приложение для строки статуса.
 -   Применяется для замены _i3bar_.
@@ -561,13 +571,13 @@ slug: "window-manager-i3"
         ```
 
 
-### <span class="section-num">4.3</span> Строка состояний {#строка-состояний}
+### <span class="section-num">5.3</span> Строка состояний {#строка-состояний}
 
 -   По умолчанию используется `dmenu`.
 -   Можно заменить на `rofi`.
 
 
-#### <span class="section-num">4.3.1</span> rofi {#rofi}
+#### <span class="section-num">5.3.1</span> rofi {#rofi}
 
 -   Используется для запуска приложений, переключения окон.
 -   <https://github.com/davatorium/rofi>
@@ -606,10 +616,10 @@ slug: "window-manager-i3"
 -   Конфигурация с помощью конфигурационного файла (поместим его в `~/.config/i3/rofi/config`).
 
 
-## <span class="section-num">5</span> Приложения {#приложения}
+## <span class="section-num">6</span> Приложения {#приложения}
 
 
-### <span class="section-num">5.1</span> Снимки экрана {#снимки-экрана}
+### <span class="section-num">6.1</span> Снимки экрана {#снимки-экрана}
 
 -   Для скриншотов можно использовать [scrot](https://github.com/resurrecting-open-source-projects/scrot).
     -   Gentoo
@@ -628,3 +638,31 @@ slug: "window-manager-i3"
     -   По клавише `PtrScr` делается скриншот.
     -   По клавише `Shift` + `PtrScr` предлагается выделить область экрана, скриншот которой следует сделать.
     -   Скриншоты переносятся в каталог $XDG\_PICTURES\_DIR (обычно `~/Изображения`).
+
+
+## <span class="section-num">7</span> Совместимость приложений {#совместимость-приложений}
+
+
+### <span class="section-num">7.1</span> Java {#java}
+
+
+#### <span class="section-num">7.1.1</span> Серое окно, приложения не меняют размер с помощью WM, меню сразу закрываются {#серое-окно-приложения-не-меняют-размер-с-помощью-wm-меню-сразу-закрываются}
+
+-   В стандартных тулкитах для Java жестко зашит список оконных менеджеров.
+-   Следует установить переменную окружения:
+
+    ```shell
+    export _JAVA_AWT_WM_NONREPARENTING=1
+    ```
+
+
+#### <span class="section-num">7.1.2</span> Меню в приложениях плавает отдельно, им невозможно пользоваться {#меню-в-приложениях-плавает-отдельно-им-невозможно-пользоваться}
+
+-   В выпусках Java до версии 9 GTK интерфейс ориентирован на GTK2, в последующих версиях на GTK3.
+-   GTK LookAndFeel может работать с GTK версий 2, 2.2 и 3.
+-   По умолчанию используется GTK3.
+-   Следует явно задать более старую версию:
+
+    ```shell
+    export JAVA_TOOL_OPTIONS='-Djdk.gtk.version=2.2'
+    ```
