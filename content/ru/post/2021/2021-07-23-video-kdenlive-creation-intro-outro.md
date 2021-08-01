@@ -2,8 +2,8 @@
 title: "Видео. KDEnlive. Создание intro и outro"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-23T19:47:00+03:00
-lastmod: 2021-07-23T20:04:00+03:00
-categories: ["computer_science"]
+lastmod: 2021-08-01T20:48:00+03:00
+categories: ["computer-science"]
 draft: false
 slug: "video-kdenlive-creation-intro-outro"
 ---
