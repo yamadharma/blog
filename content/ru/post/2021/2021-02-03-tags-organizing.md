@@ -1,8 +1,9 @@
 ---
 title: "Организация меток для записей"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2021-02-20T17:24:00+03:00
-categories: ["blog"]
+lastmod: 2021-08-01T15:50:00+03:00
+categories: ["self-management"]
 draft: false
 slug: "tags-organizing"
 ---
@@ -20,24 +21,25 @@ slug: "tags-organizing"
 -   Метки и категории должны быть согласованы для разных областей применения.
 -   Метки и категории должны быть согласованы для разных языков (на данный момент русского и английского).
 -   При этом на разных языках они могут звучать по-разному.
--   Предлагается категории предварять символом `@` (см. [Org-mode. Экспорт в Hugo]({{< relref "2020-12-17-org-mode-export-hugo" >}})).
+-   Предлагается категории предварять символом `@` (см. [Org-mode. Экспорт в Hugo]({{<relref "../notes/20201217110100-org_mode_экспорт_в_hugo.md#" >}})).
 
 
 ## <span class="section-num">2</span> Категории и метки {#категории-и-метки}
 
--   @science
-    -   education
-    -   research
-    -   sci\_admin
+-   `@science`: Научные занятия.
+    -   `education`: Преподавание.
+    -   `research`: Научные исследования и инженерная деятельность.
+    -   `sci_admin`: Научно-административная деятельность.
 -   research
     -   emacs
     -   tex
     -   maxwell
     -   kinetic
--   @blog
--   @book
-    -   science-people
-    -   culture
+-   `@blog`
+-   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
+-   `@book`: Книги, которые прочитал
+    -   `science-people`: Биографии учёных, мемуары учёных.
+    -   `culture`: Всё, что имеет отношение к культуре (культурология, литературоведение).
 
 | Уровень  | org-mode todo | org-roam           | blog (ru)        | blog (en)        |
 |----------|---------------|--------------------|------------------|------------------|
@@ -51,8 +53,5 @@ slug: "tags-organizing"
 | category |               | @book              | листая-страницы  |                  |
 | tag      |               | science-people     | люди-науки       |                  |
 | tag      |               | culture            | культура         |                  |
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Самоорганизация]({{< relref "2021-02-03-self-management" >}})
+| category |               | @self\_management  | self-management  | self-management  |
+| tags     |               | gtd                | gtd              | gtd              |
