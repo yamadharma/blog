@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-08-01T19:36:00+03:00
+lastmod: 2021-08-01T20:32:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -292,7 +292,7 @@ slug: "window-manager-i3"
 
 1.  Поддержка иконок в i3bar
 
-    -   В `i3bar` можно использовать шрифты иконок (см. [Моноширинные шрифты]({{<relref "20210521132500-моноширинные_шрифты.md#" >}})).
+    -   В `i3bar` можно использовать шрифты иконок (см. [Моноширинные шрифты]({{< relref "2021-05-21-monospace-fonts" >}})).
     -   Наиболее распространённым является шрифт [Font Awesome](https://fontawesome.com/).
     -   Установка:
         -   Gentoo

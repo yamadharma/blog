@@ -1,7 +1,8 @@
 ---
 title: "Управление временем"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-22T11:13:00+03:00
-lastmod: 2021-07-12T15:04:00+03:00
+lastmod: 2021-08-01T20:30:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "time-management"
