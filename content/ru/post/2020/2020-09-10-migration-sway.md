@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-08-01T10:53:00+03:00
+lastmod: 2021-08-01T19:56:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -20,7 +20,7 @@ project: ["misc-utils"]
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   <https://swaywm.org/>
--   Создавался для замены i3 (см. [Window manager i3]({{<relref "20210514113200-window_manager_i3.md#" >}})) под Wayland.
+-   Создавался для замены i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) под Wayland.
 
 
 ## <span class="section-num">2</span> Установка `sway` {#установка-sway}
