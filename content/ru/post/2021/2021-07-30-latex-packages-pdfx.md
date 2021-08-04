@@ -2,7 +2,7 @@
 title: "LaTeX. Пакет pdfx"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-30T11:25:00+03:00
-lastmod: 2021-08-01T10:55:00+03:00
+lastmod: 2021-08-04T13:03:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -19,9 +19,9 @@ slug: "latex-packages-pdfx"
 ## <span class="section-num">1</span> Проблемы {#проблемы}
 
 
-### <span class="section-num">1.1</span> 2021-07 Совместимость с LaTeX2e <span class="timestamp-wrapper"><span class="timestamp">&lt;2021-06-01 Вт&gt;</span></span> {#2021-07-совместимость-с-latex2e}
+### <span class="section-num">1.1</span> 2021-07 Совместимость с LaTeX2e, версия от 2021-06-01 {#2021-07-совместимость-с-latex2e-версия-от-2021-06-01}
 
--   После закрытия ошибки 605 <https://github.com/latex3/latex2e/issues/605> пакет pdfx перестал работать.
+-   После закрытия ошибки 605 (см. <https://github.com/latex3/latex2e/issues/605>) пакет _pdfx_ перестал работать.
 -   В качестве временного решения предложено при компиляции откатиться на состояние до закрытия ошибки 605.
 -   Предложенный код (см. <https://tex.stackexchange.com/questions/605854/error-using-pdfx-on-tex-live-2021>):
 

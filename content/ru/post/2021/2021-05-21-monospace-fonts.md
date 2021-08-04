@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-07-24T15:39:00+03:00
+lastmod: 2021-08-04T12:56:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -38,12 +38,25 @@ slug: "monospace-fonts"
 -   Если шрифт имеет переменную ширину знаков, то едут таблицы.
 
 
-## <span class="section-num">4</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
+## <span class="section-num">4</span> Активация лигатур в шрифтах {#активация-лигатур-в-шрифтах}
+
+
+### <span class="section-num">4.1</span> LaTeX {#latex}
+
+-   При использовании LuaTeX и XeTeX лигатуры включаются опцией `Contextuals=Alternate` пакета `fontspec`:
+
+    ```latex
+    \usepackage{fontspec}
+    \setmonofont{FontName}[Contextuals=Alternate]
+    ```
+
+
+## <span class="section-num">5</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
 
 -   Часть шрифтов для программирования содержит лигатуры.
 
 
-### <span class="section-num">4.1</span> Fira Code {#fira-code}
+### <span class="section-num">5.1</span> Fira Code {#fira-code}
 
 -   Шрифт сделан на базе Fira Mono.
 -   Репозиторий: <https://github.com/tonsky/FiraCode>
@@ -62,7 +75,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">4.2</span> Iosevka {#iosevka}
+### <span class="section-num">5.2</span> Iosevka {#iosevka}
 
 -   Сайт: <https://typeof.net/Iosevka/>
 -   Репозиторий: <https://github.com/be5invis/Iosevka/>
@@ -80,7 +93,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">4.3</span> JetBrains Mono {#jetbrains-mono}
+### <span class="section-num">5.3</span> JetBrains Mono {#jetbrains-mono}
 
 -   Сайт: <https://www.jetbrains.com/lp/mono/>
 -   Свойства
@@ -95,30 +108,42 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">4.4</span> JuliaMono {#juliamono}
+### <span class="section-num">5.4</span> JuliaMono {#juliamono}
 
 -   Достаточно полный набор математических символов:
     -   <https://mono-math.netlify.app/#JuliaMono>
     -   <https://coding-fonts.css-tricks.com/fonts/juliamono/?language=charmap>
--   <https://juliamono.netlify.app/>
--   <https://github.com/cormullion/juliamono>
+-   Сайт: <https://juliamono.netlify.app/>
+-   Репозиторий: <https://github.com/cormullion/juliamono>
 -   Свойства
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: есть
     -   Курсив: нет
 -   LaTeX
-    -   Использование в LuaLaTeX и XeTeX:
+    -   Использование в LuaLaTeX и XeLaTeX:
 
         ```latex
-        \newfontfamily\JuliaMono{JuliaMono-Regular}
-        \newfontface\JuliaMonoMedium{JuliaMono-Regular}
-        \setmonofont{JuliaMonoMedium}[Contextuals=Alternate]
+        \usepackage{fontspec}
+
+        \newfontfamily\JuliaMono{JuliaMono}[
+        Path=./fonts/,
+        UprightFont=*-Regular,
+        BoldFont=*-Bold,
+        Extension=.ttf]
+        \newfontface\JuliaMonoRegular{JuliaMono-Regular}
+        \newfontface\JuliaMonoBold{JuliaMono-Bold}
+        \setmonofont{JuliaMono-Medium}[
+        Contextuals=Alternate,
+        Scale=0.8]
         ```
+
+        -   Здесь шрифты расположены в локальном каталоге `./fonts`.
+        -   В зависимости от гарнитуры основного текста для кода можно использовать вместо гарнитуры `JuliaMono-Medium` гарнитуру `JuliaMono-Light`.
     -   Стиль для `listings`:
         -   <https://github.com/mossr/julia-mono-listings>
 
 
-### <span class="section-num">4.5</span> Hasklig {#hasklig}
+### <span class="section-num">5.5</span> Hasklig {#hasklig}
 
 -   Сделан на основе Source Code Pro с добавлением лигатур.
 -   Репозиторий: <https://github.com/i-tu/Hasklig>
@@ -128,7 +153,7 @@ slug: "monospace-fonts"
     -   Курсив: нет
 
 
-### <span class="section-num">4.6</span> Cascadia Code {#cascadia-code}
+### <span class="section-num">5.6</span> Cascadia Code {#cascadia-code}
 
 -   Разработан для Windows Terminal.
 -   Репозиторий: <https://github.com/microsoft/cascadia-code>
@@ -144,7 +169,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">4.7</span> Victor Mono {#victor-mono}
+### <span class="section-num">5.7</span> Victor Mono {#victor-mono}
 
 -   Сайт: <https://rubjo.github.io/victor-mono/>
 -   Репозиторий: <https://github.com/rubjo/victor-mono>
@@ -166,10 +191,10 @@ slug: "monospace-fonts"
             ```
 
 
-## <span class="section-num">5</span> Шрифты с иконками {#шрифты-с-иконками}
+## <span class="section-num">6</span> Шрифты с иконками {#шрифты-с-иконками}
 
 
-### <span class="section-num">5.1</span> Font Awesome {#font-awesome}
+### <span class="section-num">6.1</span> Font Awesome {#font-awesome}
 
 -   Наиболее известный шрифт с иконками.
 -   <https://fontawesome.com/>
@@ -185,16 +210,16 @@ slug: "monospace-fonts"
     -   Для использования шрифта можно использовать список кодов для иконок <https://fontawesome.com/cheatsheet>.
 
 
-### <span class="section-num">5.2</span> Nerd fonts {#nerd-fonts}
+### <span class="section-num">6.2</span> Nerd fonts {#nerd-fonts}
 
 -   Проект по добавлению ы разные шрифты дополнительных глифов (в основном иконок).
 -   <https://www.nerdfonts.com/>
 
 
-## <span class="section-num">6</span> Шрифты {#шрифты}
+## <span class="section-num">7</span> Шрифты {#шрифты}
 
 
-### <span class="section-num">6.1</span> Source Code Pro {#source-code-pro}
+### <span class="section-num">7.1</span> Source Code Pro {#source-code-pro}
 
 -   Часть набора Source Pro.
 -   Сайт: <http://adobe-fonts.github.io/source-code-pro/>
@@ -211,7 +236,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">6.2</span> Anonymous Pro {#anonymous-pro}
+### <span class="section-num">7.2</span> Anonymous Pro {#anonymous-pro}
 
 -   Сайт: <https://www.marksimonson.com/fonts/view/anonymous-pro>
 -   Свойства
@@ -226,7 +251,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">6.3</span> Hack {#hack}
+### <span class="section-num">7.3</span> Hack {#hack}
 
 -   Репозиторий: <https://github.com/source-foundry/Hack>
 -   Свойства
@@ -241,7 +266,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">6.4</span> Hermit {#hermit}
+### <span class="section-num">7.4</span> Hermit {#hermit}
 
 -   Сайт: <https://pcaro.es/p/hermit/>
 -   Репозиторий: <https://github.com/pcaro90/hermit>
@@ -258,7 +283,7 @@ slug: "monospace-fonts"
         ```
 
 
-### <span class="section-num">6.5</span> IBM Plex Mono {#ibm-plex-mono}
+### <span class="section-num">7.5</span> IBM Plex Mono {#ibm-plex-mono}
 
 -   Сайт: <https://www.ibm.com/plex/>
 -   Репозиторий: <https://github.com/IBM/plex>
