@@ -1,7 +1,8 @@
 ---
 title: "Рабочий процесс Gitflow"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-18T20:14:00+03:00
-lastmod: 2021-04-28T13:56:00+03:00
+lastmod: 2021-08-07T16:53:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -178,8 +179,3 @@ git flow hotfix start hotfix_branch
 ```shell
 git flow hotfix finish hotfix_branch
 ```
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Варианты Git Workflow]({{< relref "2020-10-30-git-workflow" >}})

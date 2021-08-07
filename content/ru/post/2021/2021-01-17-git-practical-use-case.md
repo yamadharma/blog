@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-07-30T14:05:00+03:00
+lastmod: 2021-08-07T18:29:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -16,20 +16,20 @@ slug: "git-practical-use-case"
 {{< toc >}}
 
 
-## Используемые стандарты и программные продукты {#используемые-стандарты-и-программные-продукты}
+## <span class="section-num">1</span> Используемые стандарты и программные продукты {#используемые-стандарты-и-программные-продукты}
 
 -   Стандарт Git Flow (см. [Варианты Git Workflow]({{< relref "2020-10-30-git-workflow" >}})).
 -   Стандарт [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}}).
 -   Стандарт [Общепринятые коммиты]({{< relref "2020-12-11-conventional-commits" >}}).
 
 
-## Установка программного обеспечения {#установка-программного-обеспечения}
+## <span class="section-num">2</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 -   Для Windows используется пакетный менеджер Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})).
 -   Для MacOS используется пакетный менеджер [Homebrew](https://brew.sh/).
 
 
-### Установка Node.js {#установка-node-dot-js}
+### <span class="section-num">2.1</span> Установка Node.js {#установка-node-dot-js}
 
 На Node.js базируется программное обеспечение для семантического версионирования и общепринятых коммитов.
 
@@ -57,7 +57,7 @@ slug: "git-practical-use-case"
     ```
 
 
-### Настройка Node.js {#настройка-node-dot-js}
+### <span class="section-num">2.2</span> Настройка Node.js {#настройка-node-dot-js}
 
 Для работы с Node.js добавим каталог с исполняемыми файлами, устанавливаемыми `yarn`, в переменную `PATH`.
 
@@ -69,7 +69,7 @@ slug: "git-practical-use-case"
     ```
 
 
-### Установка git-flow {#установка-git-flow}
+### <span class="section-num">2.3</span> Установка git-flow {#установка-git-flow}
 
 -   Linux
     -   Gentoo
@@ -106,10 +106,10 @@ slug: "git-practical-use-case"
     ```
 
 
-### Общепринятые коммиты {#общепринятые-коммиты}
+### <span class="section-num">2.4</span> Общепринятые коммиты {#общепринятые-коммиты}
 
 
-#### commitizen {#commitizen}
+#### <span class="section-num">2.4.1</span> commitizen {#commitizen}
 
 Данная программа используется для помощи в форматировании коммитов.
 
@@ -120,10 +120,10 @@ yarn global add commitizen
 При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
 
 
-## Настройка git {#настройка-git}
+## <span class="section-num">3</span> Настройка git {#настройка-git}
 
 
-### Первичная настройка параметров git {#первичная-настройка-параметров-git}
+### <span class="section-num">3.1</span> Первичная настройка параметров git {#первичная-настройка-параметров-git}
 
 -   Зададим имя и email владельца репозитория:
 
@@ -139,10 +139,10 @@ yarn global add commitizen
 -   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
 
 
-### Дополнительные настройки {#дополнительные-настройки}
+### <span class="section-num">3.2</span> Дополнительные настройки {#дополнительные-настройки}
 
 
-#### Работа с переносами строк {#работа-с-переносами-строк}
+#### <span class="section-num">3.2.1</span> Работа с переносами строк {#работа-с-переносами-строк}
 
 -   В разных операционных системах приняты разные символы для перевода строк:
     -   Windows: `\r\n` (`CR` и `LF`);
@@ -156,7 +156,7 @@ yarn global add commitizen
 
 <!--list-separator-->
 
--  Параметр `autocrlf`
+1.  Параметр `autocrlf`
 
     -   Настройка `core.autocrlf` предназначена для того, чтобы в главном репозитории все переводы строк текстовых файлах были одинаковы.
     -   Настройка `core.autocrlf` с параметрами `true` и `input` делает все переводы строк текстовых файлов в главном репозитории одинаковыми.
@@ -191,7 +191,7 @@ yarn global add commitizen
 
 <!--list-separator-->
 
--  Параметр `safecrlf`
+2.  Параметр `safecrlf`
 
     -   Настройка `core.safecrlf`  предназначена для проверки, является ли окончаний строк обратимым для текущей настройки `core.autocrlf`.
         -   `core.safecrlf true`: запрещается необратимое преобразование `lf<->crlf`. Полезно, когда существуют бинарные файлы, похожие на текстовые файлы.
@@ -203,24 +203,18 @@ yarn global add commitizen
         ```
 
 
-## Практический сценарий использования git {#практический-сценарий-использования-git}
+## <span class="section-num">4</span> Практический сценарий использования git {#практический-сценарий-использования-git}
 
 
-### Создание репозитория git {#создание-репозитория-git}
+### <span class="section-num">4.1</span> Создание репозитория git {#создание-репозитория-git}
 
 
-#### Подключение репозитория к github {#подключение-репозитория-к-github}
+#### <span class="section-num">4.1.1</span> Подготовка каталога {#подготовка-каталога}
 
--   Создайте репозиторий на GitHub. Для примера назовём его `test-repo`.
 -   Рабочий каталог будем обозначать как `workdir`. Вначале нужно перейти в этот каталог:
 
     ```shell
     cd workdir
-    ```
--   Инициализируем системы git:
-
-    ```shell
-    git init
     ```
 -   Создаём заготовку для файла `README.md`:
 
@@ -228,6 +222,36 @@ yarn global add commitizen
     echo "# test-repo" >> README.md
     git add README.md
     ```
+-   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
+
+    ```shell
+    curl -L -s https://www.gitignore.io/api/list
+    ```
+
+    Затем скачаем шаблон, например, для C и C++:
+
+    ```shell
+    curl -L -s https://www.gitignore.io/api/c >> .gitignore
+    curl -L -s https://www.gitignore.io/api/c++ >> .gitignore
+    ```
+
+    Можно это же сделать через web-интерфейс на сайте <https://www.gitignore.io/>.
+-   Добавим файл лицензии. В данном случае мы выбираем лицензию `CC-BY-4.0` (см. [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})):
+
+    ```shell
+    wget https://creativecommons.org/licenses/by/4.0/legalcode.txt -O LICENSE
+    ```
+-   Инициализируем системы git:
+
+    ```shell
+    git init
+    ```
+
+
+#### <span class="section-num">4.1.2</span> Подключение репозитория к github {#подключение-репозитория-к-github}
+
+-   Создайте репозиторий на GitHub. Для примера назовём его `test-repo`.
+
 -   Делаем первый коммит и выкладываем на github:
 
     ```shell
@@ -237,7 +261,7 @@ yarn global add commitizen
     ```
 
 
-#### Конфигурация общепринятых коммитов {#конфигурация-общепринятых-коммитов}
+#### <span class="section-num">4.1.3</span> Конфигурация общепринятых коммитов {#конфигурация-общепринятых-коммитов}
 
 -   Конфигурация для пакетов Node.js
 
@@ -248,7 +272,7 @@ yarn global add commitizen
     Необходимо заполнить несколько параметров пакета.
 
     -   Название пакета.
-    -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`. (см. [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})).
+    -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`.
 -   Сконфигурим формат коммитов. Для этого добавим в файл `package.json` команду для формирования коммитов:
 
     ```js
@@ -277,25 +301,7 @@ yarn global add commitizen
         }
     }
     ```
--   Добавим файл лицензии:
 
-    ```shell
-    wget https://creativecommons.org/licenses/by/4.0/legalcode.txt -O LICENSE
-    ```
--   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
-
-    ```shell
-    curl -L -s https://www.gitignore.io/api/list
-    ```
-
-    Затем скачаем шаблон, например, для C и C++:
-
-    ```shell
-    curl -L -s https://www.gitignore.io/api/c >> .gitignore
-    curl -L -s https://www.gitignore.io/api/c++ >> .gitignore
-    ```
-
-    Можно это же сделать через web-интерфейс на сайте <https://www.gitignore.io/>.
 -   Добавим новые файлы:
 
     ```shell
@@ -313,7 +319,7 @@ yarn global add commitizen
     ```
 
 
-#### Конфигурация git-flow {#конфигурация-git-flow}
+#### <span class="section-num">4.1.4</span> Конфигурация git-flow {#конфигурация-git-flow}
 
 -   Инициализируем git-flow
 
@@ -354,11 +360,63 @@ yarn global add commitizen
     git push --all
     git push --tags
     ```
--   Создадим релиз на github:
+-   Создадим релиз на github. Для этого будем использовать утилиты работы с github (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})):
 
     ```shell
-    conventional-github-releaser -p angular
+    gh release create v1.0.0 -F CHANGELOG.md
     ```
 
 
-### Работа с репозиторием git {#работа-с-репозиторием-git}
+### <span class="section-num">4.2</span> Работа с репозиторием git {#работа-с-репозиторием-git}
+
+
+#### <span class="section-num">4.2.1</span> Разработка новой функциональности {#разработка-новой-функциональности}
+
+-   Создадим ветку для новой функциональности:
+
+    ```shell
+    git flow feature start feature_branch
+    ```
+-   Далее, продолжаем работу c git как обычно.
+-   По окончании разработки новой функциональности следующим шагом следует объединить ветку `feature_branch` c `develop`:
+
+    ```shell
+    git flow feature finish feature_branch
+    ```
+
+
+#### <span class="section-num">4.2.2</span> Создание релиза git-flow {#создание-релиза-git-flow}
+
+-   Создадим релиз с версией `1.2.3`:
+
+    ```shell
+    git flow release start 1.2.3
+    ```
+-   Обновите номер версии в файле `package.json`. Установите её в `1.2.3`.
+-   Создадим журнал изменений
+
+    ```shell
+    standard-changelog
+    ```
+-   Добавим журнал изменений в индекс
+
+    ```shell
+    git add CHANGELOG.md
+    git commit -am 'chore(site): update changelog'
+    ```
+-   Зальём релизную ветку в основную ветку
+
+    ```shell
+    git flow release finish 1.2.3
+    ```
+-   Отправим данные на github
+
+    ```shell
+    git push --all
+    git push --tags
+    ```
+-   Создадим релиз на github с комментарием из журнала изменений:
+
+    ```shell
+    gh release create v1.2.3 -F CHANGELOG.md
+    ```
