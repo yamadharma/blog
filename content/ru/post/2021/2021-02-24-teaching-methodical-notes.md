@@ -1,7 +1,8 @@
 ---
 title: "Преподавание. Методические заметки"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-24T18:10:00+03:00
-lastmod: 2021-06-27T11:03:00+03:00
+lastmod: 2021-08-08T10:43:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

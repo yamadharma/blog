@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-07-23T18:59:00+03:00
+lastmod: 2021-08-09T17:51:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -40,6 +40,7 @@ slug: "mail-synchronization-mbsync"
 
 -   Все учётные записи приводятся к единой структуре.
 -   Папки IMAP унифицируются следующим образом: Inbox, Archive, Sent, Trash, Drafts, Spam.
+-   В принципе, никто не мешает использовать названия папок самого IMAP-сервера.
 
 
 ### <span class="section-num">3.2</span> Конфигурация учётных записей {#конфигурация-учётных-записей}
@@ -49,6 +50,16 @@ slug: "mail-synchronization-mbsync"
 
     ```conf-unix
     mkdir -p ~/Maildir/account@domain
+    ```
+-   Можно создать каталоги все скопом из конфигурационного файла `~/.mbsyncrc`:
+
+    ```shell
+    #!/bin/sh
+
+    MAILDIR=~/Maildir
+
+    # make mailbox directories
+    grep -e "^IMAPAccount" ~/.mbsyncrc | cut -d" " -f2 | xargs -I {} -n 1 mkdir -p "${MAILDIR}/{}"
     ```
 -   Делаем конфигурационный файл для _mbsync_. Файл называется `~/.mbsyncrc`.
 -   Чтобы не хранить пароли в конфигурационном файле (оператор `Pass`) будем использовать хранение пароля, совместимое с _emacs_ (с использованием оператора `PassCmd`):
@@ -94,6 +105,7 @@ slug: "mail-synchronization-mbsync"
 -   [Почта. Google. Настройка почтового клиента]({{< relref "2021-07-06-mail-google-configuring-mail-client" >}})
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
 -   Папка "Отправленные" не синхронизируется потому, что Google сохраняет всю электронную почту в папке "Все сообщения", и в результате мы получим локально дубликаты.
+-   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
 
     ```conf-unix
     # IMAPAccount (gmail)
@@ -104,49 +116,15 @@ slug: "mail-synchronization-mbsync"
     # Pass ***************
     ## To store the password in an encrypted file use PassCmd instead of Pass
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@gmail.com/ {print $6}'"
-    PassCmd "pass email/gmail.com/account@gmail.com"
+    # PassCmd "pass email/google.com/account@gmail.com@apppassword"
+    PassCmd "pass email/google.com/account@gmail.com"
     Port 993
     SSLType IMAPS
     AuthMechs LOGIN
     SSLVersions TLSv1.2
 
-    IMAPStore account-remote
-    Account account
-
-    MaildirStore account-local
-    SubFolders Verbatim
-    # The trailing "/" is important
-    Path ~/Maildir/account/
-    Inbox ~/Maildir/account/inbox
-
-    Channel account
-    Master :account-remote:
-    Slave :account-local:
-    # Exclude everything under the internal [Gmail] folder, except the interesting folders
-    Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
-    # Or include everything
-    #Patterns *
-    # Automatically create missing mailboxes, both locally and on the server
-    Create Both
-    Sync All
-    Expunge Both
-    # Save the synchronization state files in the relevant directory
-    SyncState *
-    ```
-
-    ```conf-unix
-    # IMAPAccount (gmail)
-
-    IMAPAccount account@gmail.com
-    Host imap.gmail.com
-    User account@gmail.com
-    # Pass ***************
-    # To store the password in an encrypted file use PassCmd instead of Pass
-    PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@gmail.com/ {print $6}'"
-    AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersions TLSv1.2
-    Port 993
+    IMAPStore account@gmail.com-remote
+    Account account@gmail.com
 
     MaildirStore account@gmail.com-local
     Path ~/Maildir/account@gmail.com/
@@ -160,50 +138,44 @@ slug: "mail-synchronization-mbsync"
     Far :account@gmail.com-remote:"INBOX"
     Near :account@gmail.com-local:"INBOX"
     CopyArrivalDate yes
-    # Automatically create missing mailboxes, both locally and on the server
     Create Both
     Expunge Both
-    # Save the synchronization state files in the relevant directory
     SyncState *
 
     Channel account@gmail.com-trash
-    Far :account@gmail.com-remote:"[Gmail]/Trash"
+    # Far :account@gmail.com-remote:"[Gmail]/Trash"
+    Far :account@gmail.com-remote:"[Gmail]/&BBoEPgRABDcEOAQ9BDA-"
     Near :account@gmail.com-local:"Trash"
     CopyArrivalDate yes
-    # Automatically create missing mailboxes, both locally and on the server
     Create Both
     Expunge Both
-    # Save the synchronization state files in the relevant directory
     SyncState *
 
     Channel account@gmail.com-spam
-    Far :account@gmail.com-remote:"[Gmail]/Spam"
+    # Far :account@gmail.com-remote:"[Gmail]/Spam"
+    Far :account@gmail.com-remote:"[Gmail]/&BCEEPwQwBDw-"
     Near :account@gmail.com-local:"Spam"
     CopyArrivalDate yes
-    # Automatically create missing mailboxes, both locally and on the server
     Create Both
     Expunge Both
-    # Save the synchronization state files in the relevant directory
     SyncState *
 
     Channel account@gmail.com-all
-    Far :account@gmail.com-remote:"[Gmail]/All Mail"
+    # Far :account@gmail.com-remote:"[Gmail]/All Mail"
+    Far :account@gmail.com-remote:"[Gmail]/&BBIEQQRP- &BD8EPgRHBEIEMA-"
     Near :account@gmail.com-local:"Archive"
     CopyArrivalDate yes
-    # Automatically create missing mailboxes, both locally and on the server
     Create Both
     Expunge Both
-    # Save the synchronization state files in the relevant directory
     SyncState *
 
     Channel account@gmail.com-drafts
-    Far :account@gmail.com-remote:"[Gmail]/Drafts"
+    # Far :account@gmail.com-remote:"[Gmail]/Drafts"
+    Far :account@gmail.com-remote:"[Gmail]/&BCcENQRABD0EPgQyBDgEOgQ4-"
     Near :account@gmail.com-local:"Drafts"
     CopyArrivalDate yes
-    # Automatically create missing mailboxes, both locally and on the server
     Create Both
     Expunge Both
-    # Save the synchronization state files in the relevant directory
     SyncState *
 
     Group account@gmail.com

@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-08-01T19:56:00+03:00
+lastmod: 2021-08-09T18:17:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -346,6 +346,93 @@ $ wl-copy "!!"
 # replace the current selection with the list of types it's offered in
 $ wl-paste --list-types | wl-copy
 ```
+
+
+### <span class="section-num">5.8</span> Блокировка экрана {#блокировка-экрана}
+
+
+#### <span class="section-num">5.8.1</span> swaylock {#swaylock}
+
+<!--list-separator-->
+
+1.  Общая информация
+
+    -   Официальное приложение для блокировки экрана для _Sway_ --- _swaylock_.
+    -   Репозиторий: <https://github.com/swaywm/swaylock>
+    -   Установка:
+        -   Gentoo:
+
+            ```shell
+            emerge gui-apps/swaylock
+            ```
+    -   В информационной панеле _waybar_ есть опция для отключения блокировки при простое (например, для демонстрации слайдов).
+
+<!--list-separator-->
+
+2.  Блокировка при простое
+
+    -   Заблокировать экран после 300 секунд бездействия.
+    -   Затем выключить дисплей ещё через 300 секунд.
+    -   Включить экран при возобновлении работы.
+    -   Также заблокировать экран перед тем, как компьютер перейдет в спящий режим.
+    -   Конфигурационный файл:
+
+        ```conf-unix
+        ### ~/.config/sway/config.d/80-lock.conf
+
+        ### Idle lock
+        ## - Lock your screen after 300 seconds of inactivity
+        ## - Then turn off your displays after another 300 seconds
+        ## - Turn your screens back on when resumed
+        ## - Also lock your screen before your computer goes to sleep
+
+        exec swayidle -w \
+        	 timeout 300 'swaylock -f -c 000000 -k' \
+        	 timeout 600 'swaymsg "output * dpms off"' \
+        	 resume 'swaymsg "output * dpms on"' \
+        	 before-sleep 'swaylock -f -c 000000 -k'
+        ```
+
+<!--list-separator-->
+
+3.  Ручная блокировка
+
+    -   `Mod` + `Ctrl` + `l` для немедленной блокировки экрана.
+    -   Через 10 секунд выключить экран.
+    -   Конфигурационный файл:
+
+        ```conf-unix
+        ### ~/.config/sway/config.d/80-lock.conf
+
+        ### Manual lock
+        ## - Mod + Ctrl + l to lock the screen immediately
+        ## - In 10 sec also switch the screen off
+
+        set $lockman exec bash ~/.config/sway/scripts/lockman.sh
+        bindsym $mod+Ctrl+l exec $lockman
+        ```
+    -   Скрипт блокировки:
+
+        ```shell
+        #!/bin/bash
+        # ~/.config/sway/scripts/lockman.sh
+
+        # Times the screen off and puts it to background
+        swayidle \
+            timeout 10 'swaymsg "output * dpms off"' \
+            resume 'swaymsg "output * dpms on"' &
+        # Locks the screen immediately
+        swaylock -c 550000 -k
+        # Kills last background task so idle timer doesn't keep running
+        kill %%
+        ```
+
+
+#### <span class="section-num">5.8.2</span> swaylock-effects {#swaylock-effects}
+
+-   _swaylock-effects_ является форком _swaylock_:
+    -   Репозиторий: <https://github.com/mortie/swaylock-effects>
+    -   Добавляет встроенные скриншоты и эффекты манипулирования изображениями, такие как размытие.
 
 
 ## <span class="section-num">6</span> Совместимость приложений {#совместимость-приложений}
