@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-08-09T17:51:00+03:00
+lastmod: 2021-08-14T17:00:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -98,6 +98,13 @@ slug: "mail-synchronization-mbsync"
 
 ### <span class="section-num">3.4</span> Примеры конфигурации для разных провайдеров {#примеры-конфигурации-для-разных-провайдеров}
 
+-   Может потребоваться для разных провайдеров увеличить тайм-аут соединения (по умолчанию равно `20`):
+
+    ```conf-unix
+    # Increase timeout
+    Timeout 120
+    ```
+
 
 #### <span class="section-num">3.4.1</span> Gmail {#gmail}
 
@@ -122,6 +129,8 @@ slug: "mail-synchronization-mbsync"
     SSLType IMAPS
     AuthMechs LOGIN
     SSLVersions TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     IMAPStore account@gmail.com-remote
     Account account@gmail.com
@@ -202,6 +211,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@icloud.com-local
     Path ~/Maildir/account@icloud.com/
@@ -250,6 +261,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@gmx.com-local
     Path ~/Maildir/account@gmx.com/
@@ -287,6 +300,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType STARTTLS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@protonmail.com-local
     Path ~/Maildir/account@protonmail.com/
@@ -326,6 +341,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@yandex.ru-local
     Path ~/Maildir/account@yandex.ru/
@@ -364,6 +381,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@mail.ru-local
     Path ~/Maildir/account@mail.ru/
@@ -450,6 +469,8 @@ slug: "mail-synchronization-mbsync"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
 
     MaildirStore account@example.com-local
     Path ~/Maildir/account@example.com/
