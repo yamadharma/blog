@@ -1,7 +1,8 @@
 ---
 title: "Программное обеспечение, устанавливаемое на Windows"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:38:00+03:00
-lastmod: 2021-05-14T13:00:00+03:00
+lastmod: 2021-08-19T16:51:00+03:00
 tags: ["windows", "education"]
 categories: ["computer-science"]
 draft: false
@@ -79,8 +80,8 @@ slug: "software-installed-windows"
 
 ### <span class="section-num">5.1</span> Scilab {#scilab}
 
--   Scilab - открытая реализация языка MATLAB.
--   <https://www.scilab.org/>
+-   Scilab --- открытая реализация языка MATLAB.
+-   Сайт: <https://www.scilab.org/>
 -   Отличительной особенностью является наличие реализации (Xcos) среды _Symulink_.
 -   Установка:
 
@@ -89,7 +90,22 @@ slug: "software-installed-windows"
     ```
 
 
-### <span class="section-num">5.2</span> OpenModelica {#openmodelica}
+### <span class="section-num">5.2</span> Octave {#octave}
+
+-   Octave --- открытая реализация языка MATLAB.
+-   Сайт: <https://www.gnu.org/software/octave/>
+-   Достаточно строгая реализация языка Matlab.
+-   Установка:
+
+    ```shell
+    choco install octave -y
+    ```
+-   Видео:
+
+    {{< youtube LRjtS8cyrdM >}}
+
+
+### <span class="section-num">5.3</span> OpenModelica {#openmodelica}
 
 -   Открытая реализация языка _Modelica_.
 -   <https://www.openmodelica.org/>
@@ -100,7 +116,7 @@ slug: "software-installed-windows"
     ```
 
 
-### <span class="section-num">5.3</span> CPN Tools {#cpn-tools}
+### <span class="section-num">5.4</span> CPN Tools {#cpn-tools}
 
 -   Работа с раскрашенными сетями Петри.
 -   <https://cpntools.org/>
@@ -109,8 +125,3 @@ slug: "software-installed-windows"
     ```shell
     choco install cpntools -y
     ```
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})

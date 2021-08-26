@@ -1,7 +1,8 @@
 ---
-title: "Научное программирование"
+title: "Курс Научное программирование"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-10-21T18:08:00+03:00
-lastmod: 2021-01-16T13:10:00+03:00
+lastmod: 2021-08-26T16:49:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

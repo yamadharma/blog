@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-08-14T17:00:00+03:00
+lastmod: 2021-08-25T12:09:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -104,6 +104,7 @@ slug: "mail-synchronization-mbsync"
     # Increase timeout
     Timeout 120
     ```
+-   Вместо `pass` я использую `gopass`. При последовательном запуске нескольких `pass` утилита может не находить ключ _pgp_.
 
 
 #### <span class="section-num">3.4.1</span> Gmail {#gmail}

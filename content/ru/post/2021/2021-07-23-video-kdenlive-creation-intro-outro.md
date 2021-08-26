@@ -2,7 +2,7 @@
 title: "Видео. KDEnlive. Создание intro и outro"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-23T19:47:00+03:00
-lastmod: 2021-08-04T13:06:00+03:00
+lastmod: 2021-08-19T16:02:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-kdenlive-creation-intro-outro"
@@ -32,6 +32,16 @@ slug: "video-kdenlive-creation-intro-outro"
     yes | avidemux3_cli --load intro.mp4 --append input.mkv --append outro.mp4 --output-format mkv --save output.mkv
     ```
 -   Поскольку `avidemux3_cli` просит подтверждения действий, я добавил в начало команду `yes` (чтобы не отвечать).
+-   Для автоматизации сборки нескольких файлов написал простой скрипт:
+
+    ```shell
+    #!/bin/bash
+
+    for i in *.mkv
+    do
+        yes | avidemux3_cli --load *intro*.mp4 --append ${i} --append *outro*.mp4 --output-format mkv --save "`basename ${i} .mkv`+intro.mkv"
+    done
+    ```
 
 
 ## <span class="section-num">3</span> Видео {#видео}
