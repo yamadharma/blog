@@ -2,7 +2,7 @@
 title: "Курс Сетевые технологии"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-17T14:10:00+03:00
-lastmod: 2021-08-18T20:45:00+03:00
+lastmod: 2021-08-31T19:59:00+03:00
 tags: ["education", "network"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -63,12 +63,14 @@ slug: "course-network-technologies"
     -   Рассмотрение протоколов ARP и ICMP.
 -   Содержание лабораторной работы:
     -   Протокол ARP.
-    -   Протокол ICMP. Утилита ping.
-    -   Протокол ICMP. Утилита traceroute.
--   Ресурсы:
-    -   <https://www.youtube.com/watch?v=0UbLESURFwQ>
-    -   <https://www.youtube.com/watch?v=5S-4L0YUVDw>
-    -   <https://www.youtube.com/watch?v=TbsBhyyIth4>
+    -   Протокол ICMP. Утилита `ping`.
+    -   Протокол ICMP. Утилита `traceroute`.
+-   Задания
+    -   С помощью утилиты `traceroute` постройте маршрут до некоторого (выбранного Вами) хоста.
+        -   Исследуйте структуру пакетов при построении маршрута.
+        -   Постройте маршрут с помощью утилиты `ping`.
+        -   Исследуйте структуру пакетов при построении маршрута.
+        -   Сравните результаты, полученные с помощью `traceroute` и `ping`.
 
 
 ### <span class="section-num">1.5</span> Packet Tracer. Моделирование простой сети {#packet-tracer-dot-моделирование-простой-сети}
@@ -91,9 +93,6 @@ slug: "course-network-technologies"
     -   Адресация IPv6.
     -   Статическая маршрутизация в сетях IPv6.
     -   Настройка автоматической выдачи адресов в сети IPv6.
--   Ресурсы:
-    -   <https://wiki.merionet.ru/seti/42/primer-nastrojki-ipv6-na-cisco/>
-    -   <https://wiki.merionet.ru/seti/42/nastrojka-ipv6-s-eui-64-na-cisco/>
 
 
 ### <span class="section-num">1.7</span> Packet Tracer. Динамическая маршрутизация {#packet-tracer-dot-динамическая-маршрутизация}
@@ -108,7 +107,10 @@ slug: "course-network-technologies"
 -   Уровень ISO/OSI: транспортный уровень
 -   Содержание лабораторной работы:
     -   Порты транспортного уровня.
-    -   Установка соединения в TCP.
--   Ресурсы:
-    -   <https://www.youtube.com/watch?v=%5F7O9On9%5FTZE>
-    -   <https://www.youtube.com/watch?v=REjQGkrREKg>
+    -   Установка соединения TCP (TCP-handshake).
+-   Задания
+    -   Захватить несколько прикладных протоколов и исследовать, как они используют порты транспортного уровня.
+    -   Захватить пакеты DHCP. Какие особенности выделения портов можно наблюдать.
+    -   С помощью клиента ftp подключитесь к какому-либо ftp-серверу.
+        -   Выберите пассивный вариант ftp. Какие особенности выделения портов можно наблюдать.
+        -   Выберите активный вариант ftp. Какие особенности выделения портов можно наблюдать.

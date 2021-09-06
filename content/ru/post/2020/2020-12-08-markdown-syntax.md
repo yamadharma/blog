@@ -1,9 +1,10 @@
 ---
 title: "Синтаксис языка Markdown"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-10-22T09:48:00+03:00
-lastmod: 2021-03-07T21:54:00+03:00
-tags: ["programming"]
-categories: ["soft"]
+lastmod: 2021-08-28T19:38:00+03:00
+tags: ["programming", "education"]
+categories: ["computer-science"]
 draft: false
 slug: "markdown-syntax"
 ---
@@ -36,8 +37,3 @@ slug: "markdown-syntax"
     ```markdown
     [![alternative text for search engines](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
     ```
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}})

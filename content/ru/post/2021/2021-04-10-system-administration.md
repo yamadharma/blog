@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-07-23T19:43:00+03:00
+lastmod: 2021-08-27T11:42:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -40,6 +40,11 @@ slug: "system-administration"
 ### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
+
+
+### <span class="section-num">2.4</span> Файловые системы {#файловые-системы}
+
+-   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 
 
 ## <span class="section-num">3</span> Пользовательские программы {#пользовательские-программы}
