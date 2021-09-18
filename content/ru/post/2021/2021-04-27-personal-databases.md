@@ -1,7 +1,8 @@
 ---
 title: "Личные базы данных"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-27T15:06:00+03:00
-lastmod: 2021-04-28T18:55:00+03:00
+lastmod: 2021-09-12T16:11:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "personal-databases"
@@ -40,11 +41,18 @@ slug: "personal-databases"
 
 ## <span class="section-num">3</span> Возможные реализации систем ведения личных баз данных {#возможные-реализации-систем-ведения-личных-баз-данных}
 
--   Базы паролей:
-    -   pass (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}}));
-    -   KeePassXC.
+
+### <span class="section-num">3.1</span> Базы паролей {#базы-паролей}
+
+-   pass (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}}));
+-   KeePassXC.
 
 
-## <span class="section-num">4</span> Backlinks {#backlinks}
+### <span class="section-num">3.2</span> Адресная книга {#адресная-книга}
 
--   [Самоорганизация]({{< relref "2021-02-03-self-management" >}})
+-   [Vdirsyncer. Синхронизация адресной книги и календаря]({{< relref "2021-09-12-vdirsyncer-synchronizing-address-book-calendar" >}})
+
+
+### <span class="section-num">3.3</span> Календарь {#календарь}
+
+-   [Vdirsyncer. Синхронизация адресной книги и календаря]({{< relref "2021-09-12-vdirsyncer-synchronizing-address-book-calendar" >}})

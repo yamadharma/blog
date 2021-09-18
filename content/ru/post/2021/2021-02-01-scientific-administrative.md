@@ -2,7 +2,7 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-09-05T14:24:00+03:00
+lastmod: 2021-09-18T19:48:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -39,6 +39,7 @@ slug: "scientific-administrative"
 
 -   [Журнал Mathematics]({{< relref "2021-07-15-journal-mathematics" >}})
 -   [Журнал Discrete and Continuous Models]({{< relref "2021-02-26-editing-discrete-continuous-models" >}})
+-   [Репозиторий конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}})
 
 
 ## <span class="section-num">5</span> Научная школа {#научная-школа}

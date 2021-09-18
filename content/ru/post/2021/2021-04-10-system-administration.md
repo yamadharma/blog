@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-08-27T11:42:00+03:00
+lastmod: 2021-09-18T17:40:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -21,6 +21,7 @@ slug: "system-administration"
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
+-
 
 
 ## <span class="section-num">2</span> Операционные системы {#операционные-системы}
@@ -53,6 +54,11 @@ slug: "system-administration"
 ### <span class="section-num">3.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
+
+
+### <span class="section-num">3.2</span> Виртуализация {#виртуализация}
+
+-   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
 ## <span class="section-num">4</span> Безопасность {#безопасность}

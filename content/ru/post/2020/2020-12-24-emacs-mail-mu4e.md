@@ -2,8 +2,9 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2021-09-04T14:11:00+03:00
-categories: ["blog"]
+lastmod: 2021-09-11T13:04:00+03:00
+tags: ["emacs"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-mail-mu4e"
 ---
@@ -168,13 +169,93 @@ mu index
 | `q`          | покунуть просмотр сообщений                                               |
 
 
-## <span class="section-num">5</span> Дополнительные пакеты {#дополнительные-пакеты}
+## <span class="section-num">5</span> Интеграция {#интеграция}
 
 
-### <span class="section-num">5.1</span> Чтение писем {#чтение-писем}
+### <span class="section-num">5.1</span> Интеграция с org-mode {#интеграция-с-org-mode}
 
 
-#### <span class="section-num">5.1.1</span> mu4e-views {#mu4e-views}
+#### <span class="section-num">5.1.1</span> Предварительная настройка {#предварительная-настройка}
+
+-   Подключаем библиотеку для связи с _org_:
+
+    ```elisp
+    (require 'mu4e-org)
+    ```
+-   Следует активировать генерацию ссылок на почтовые сообщения:
+
+    ```elisp
+    (setq mu4e-support-org t)
+    ```
+
+    -   Это значение задано по умолчанию.
+-   Можно захватывать ссылки для того, чтобы добавить сообщения электронной почты в свой список дел.
+-   Для захвата ссылок используется функция `mu4e-org-store-and-capture`.
+
+
+#### <span class="section-num">5.1.2</span> Шаблон для захвата {#шаблон-для-захвата}
+
+-   Можно добавить специальный шаблон захвата.
+-   Для шаблонов захвата доступны следующие значения для _mu4e_:
+
+    | Шаблон                                                     | Описание                       |
+    |------------------------------------------------------------|--------------------------------|
+    | `%:date`, `%:date-timestamp`, `%d:date-timestamp-inactive` | дата, отметки времени          |
+    | `%:from`, `%:fromname`, `%:fromaddress`                    | отправитель, имя, адрес        |
+    | `%:to`, `%:toname`, `%:toaddress`                          | получатель, имя, адрес         |
+    | `%:maildir`                                                | почтовый каталог для сообщения |
+    | `%:message-id`                                             | идентификатор сообщения        |
+    | `%:path`                                                   | путь в файловой системе        |
+    | `%:subject`                                                | тема сообщения                 |
+-   Примерный вид шаблона для захвата:
+
+    ```elisp
+    (add-to-list
+     'org-capture-templates '("M" "TODO from mail" entry (file org-default-notes-file)
+    			  "* TODO %:fromname: %:subject %?\nDEADLINE: %(org-insert-time-stamp (org-read-date nil t \"+2d\"))\n%a\n\n%i"))
+    ```
+
+    -   Сообщение добавляется в список дел и устанавливается крайний срок для его обработки в течение двух дней.
+    -   Шаблон `%a` добавляет ссылку на письмо в _mu4e_.
+    -   Шаблон `%i` добавляет выделенный фрагмент письма.
+
+
+#### <span class="section-num">5.1.3</span> Захват сообщения {#захват-сообщения}
+
+-   Можно задать комбинации клавиш для захвата:
+
+    ```elisp
+    (define-key mu4e-headers-mode-map (kbd "C-c c") 'mu4e-org-store-and-capture)
+    (define-key mu4e-view-mode-map    (kbd "C-c c") 'mu4e-org-store-and-capture)
+    ```
+-   Теперь при нажатии комбинации `C-c c` при просмотре сообщения или при просмотре списка сообщений запрашивается шаблон захвата и ссылка на письмо захватывается.
+
+
+#### <span class="section-num">5.1.4</span> Копирование ссылки на сообщение {#копирование-ссылки-на-сообщение}
+
+-   В режиме просмотра сообщений (Message view) можно сохранить ссылку на конкретное сообщение: `M-x org-store-link`.
+-   В режиме просмотра списка сообщений (Headers view) выполнение `M-x org-store-link`:
+    -   создаёт ссылку на запрос, если `mu4e-org-link-query-in-headers-mode` не равен `nil`;
+    -   создаёт ссылку на конкретное сообщение, если `mu4e-org-link-query-in-headers-mode` равен `nil` (по умолчанию).
+-   Команда обычно привязана к `C-c C-l`.
+-   Ссылку можно вставить командой `M-x org-insert-link` (сочетание клавиш `C-c l`).
+
+
+#### <span class="section-num">5.1.5</span> Переход на письмо {#переход-на-письмо}
+
+-   В режиме org вы можете перейти к сообщению, на которое указывает ссылка:
+    -   с помощью `M-x org-scheme-open-link` в буфере повестки дня (_agenda_);
+    -   с помощью `M-x org-open-at-point` в другом месте.
+-   Оба действия обычно привязаны к `C-c C-o`.
+
+
+## <span class="section-num">6</span> Дополнительные пакеты {#дополнительные-пакеты}
+
+
+### <span class="section-num">6.1</span> Чтение писем {#чтение-писем}
+
+
+#### <span class="section-num">6.1.1</span> mu4e-views {#mu4e-views}
 
 -   Пакет позволяет пользователю выбирать вариант просмотра электронных писем.
 -   Основной вариант использования --- просмотр электронные письма с использованием окна `xwidgets`.
@@ -187,16 +268,16 @@ mu index
     -   Пакет: <https://melpa.org/#/mu4e-views>
 
 
-### <span class="section-num">5.2</span> Написание писем {#написание-писем}
+### <span class="section-num">6.2</span> Написание писем {#написание-писем}
 
 
-#### <span class="section-num">5.2.1</span> org-mime {#org-mime}
+#### <span class="section-num">6.2.1</span> org-mime {#org-mime}
 
 -   Репозиторий: <https://github.com/org-mime/org-mime>
 -   Отправка электропочты в формате HTML с помощью экспорта HTML из _org-mode_.
 
 
-#### <span class="section-num">5.2.2</span> org-msg {#org-msg}
+#### <span class="section-num">6.2.2</span> org-msg {#org-msg}
 
 -   Для редактирования сообщения с использованием `org-mode`.
 -   Заменяет встроенную в _mu4e_ поддержку `org-mode`.
