@@ -61,8 +61,6 @@ social:
   icon_pack: fab
   link: https://www.youtube.com/c/DmitryKulyabov
 
-
-
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0002-0877-7063
@@ -95,6 +93,9 @@ social:
 - icon: osf
   icon_pack: ai
   link: https://osf.io/5ya7v/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/dmitry-kulyabov
 
 - icon: arxiv
   icon_pack: ai
