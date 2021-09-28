@@ -2,7 +2,7 @@
 title: "Emacs. Менеджер библиографической информации Ebib"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-14T16:19:00+03:00
-lastmod: 2021-09-14T19:14:00+03:00
+lastmod: 2021-09-25T21:00:00+03:00
 tags: ["emacs", "sysadmin"]
 categories: ["science", "computer-science"]
 draft: false
@@ -36,6 +36,7 @@ slug: "emacs-ebib-bibliography-manager"
 
 -   `R d`: пометить запись как выполненную.
 -   `R a`: добавить текущую запись в список чтения.
+-   `R v`: просмотр листа чтения.
 
 
 ### <span class="section-num">3.3</span> Шаблоны захвата {#шаблоны-захвата}
@@ -53,9 +54,13 @@ slug: "emacs-ebib-bibliography-manager"
     -   Метка выполнения записи.
     -   По умолчанию `TODO`.
 -   `%L` (`ebib-create-org-link`)
+    -   Ссылка на файл публикации.
 -   `%F` (`ebib-create-org-file-link`)
+    -   Ссылка на файл публикации.
 -   `%D` (`ebib-create-org-doi-link`)
+    -   Ссылка на _doi_ публикации.
 -   `%U` (`bib-create-org-url-link`)
+    -   Ссылка на _url_ публикации.
 
 
 #### <span class="section-num">3.3.2</span> Пример шаблона захвата {#пример-шаблона-захвата}

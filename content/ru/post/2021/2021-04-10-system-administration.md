@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-09-18T17:40:00+03:00
+lastmod: 2021-09-26T19:39:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -36,6 +36,7 @@ slug: "system-administration"
 
 -   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
 -   [Установка Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
+-   [Установка загрузчика grub]({{< relref "2021-09-19-installing-grub-bootloader" >}})
 
 
 ### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
@@ -72,6 +73,11 @@ slug: "system-administration"
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-## <span class="section-num">6</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">6</span> Организация обучения {#организация-обучения}
+
+-
+
+
+## <span class="section-num">7</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

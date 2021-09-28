@@ -1,7 +1,8 @@
 ---
 title: "Курс МОЗИиИБ. Лекции"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-11T18:32:00+03:00
-lastmod: 2021-06-08T15:12:00+03:00
+lastmod: 2021-09-21T20:22:00+03:00
 tags: ["education"]
 categories: ["computer-science", "сиянс"]
 draft: false
@@ -260,3 +261,17 @@ menu:
 ### <span class="section-num">4.4</span> Лекция № 4 {#лекция-4}
 
 -   [Курс МОЗИиИБ. Стандарт шифрования данных (DES)]({{< relref "2021-06-08-course-mathsec-data-encryption-standard" >}})
+
+
+### <span class="section-num">4.5</span> Лекция № 5 {#лекция-5}
+
+-   [Курс МОЗИиИБ. Криптография с ассимметричным ключом]({{< relref "2021-09-21-course-mathsec-asymmetric-cryptography" >}})
+
+
+### <span class="section-num">4.6</span> Лекция № 6 {#лекция-6}
+
+
+### <span class="section-num">4.7</span> Лекция № 7 {#лекция-7}
+
+
+### <span class="section-num">4.8</span> Лекция № 8 {#лекция-8}

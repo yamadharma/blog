@@ -1,7 +1,8 @@
 ---
 title: "Менеджер паролей pass"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2021-07-10T15:19:00+03:00
+lastmod: 2021-09-20T13:36:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -284,6 +285,22 @@ slug: "password-manager-pass"
 ### <span class="section-num">5.5</span> Тонкие настройки {#тонкие-настройки}
 
 -   По умолчанию каталог с паролями называется `~/.password-store`. Но его можно задать также с помощью переменной окружения `PASSWORD_STORE_DIR`.
+
+
+### <span class="section-num">5.6</span> Устранение сбоев {#устранение-сбоев}
+
+
+#### <span class="section-num">5.6.1</span> Невозможно расшифровать пароль {#невозможно-расшифровать-пароль}
+
+-   Команда `gopass show secret` выдаёт `Error: Failed to decrypt`.
+-   Можно установить в `~/.bashrc` или `~/.profile`:
+
+    ```shell
+    export GPG_TTY=$(tty)
+    ```
+
+    -   <https://github.com/gopasspw/gopass/issues/208>
+    -   <https://github.com/gopasspw/gopass/issues/209>
 
 
 ## <span class="section-num">6</span> Работа с паролями {#работа-с-паролями}

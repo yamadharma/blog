@@ -2,7 +2,7 @@
 title: "Установка Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2021-07-23T19:45:00+03:00
+lastmod: 2021-09-23T10:09:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -203,6 +203,11 @@ slug: "installing-linux-btrfs"
     ```shell
     cd /mnt/gentoo/var/
     chattr +C vm
+    ```
+-   Посмотреть результат можно командой:
+
+    ```shell
+    lsattr -a vm
     ```
 -   Скопируем файлы:
 

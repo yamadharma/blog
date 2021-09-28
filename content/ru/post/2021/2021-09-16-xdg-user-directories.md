@@ -2,7 +2,7 @@
 title: "XDG. Пользовательские каталоги"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-16T20:15:00+03:00
-lastmod: 2021-09-17T10:41:00+03:00
+lastmod: 2021-09-25T21:00:00+03:00
 draft: false
 slug: "xdg-user-directories"
 ---

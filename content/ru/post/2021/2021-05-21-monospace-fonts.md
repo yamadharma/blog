@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-08-04T12:56:00+03:00
+lastmod: 2021-09-21T16:08:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -79,7 +79,7 @@ slug: "monospace-fonts"
 
 -   Сайт: <https://typeof.net/Iosevka/>
 -   Репозиторий: <https://github.com/be5invis/Iosevka/>
--   Шрифт псевдопропорциональный, поэтому таблицы, оформленные этим шрифтом, разъезжаются.
+-   `Шрифт псевдопропорциональный, поэтому таблицы, оформленные этим шрифтом, разъезжаются.` (Исправлено в версии 10).
 -   Имеет узкий дизайн.
 -   Свойства
     -   Лицензия: SIL Open Font licence
