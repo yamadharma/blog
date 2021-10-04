@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2021-09-27T19:18:00+03:00
+lastmod: 2021-09-29T16:24:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -242,8 +242,8 @@ mu index
 -   В режиме просмотра списка сообщений (Headers view) выполнение `M-x org-store-link`:
     -   создаёт ссылку на запрос, если `mu4e-org-link-query-in-headers-mode` не равен `nil`;
     -   создаёт ссылку на конкретное сообщение, если `mu4e-org-link-query-in-headers-mode` равен `nil` (по умолчанию).
--   Команда обычно привязана к `C-c C-l`.
--   Ссылку можно вставить командой `M-x org-insert-link` (сочетание клавиш `C-c l`).
+    -   Команда обычно привязана к `C-c l`.
+-   Ссылку можно вставить командой `M-x org-insert-link` (сочетание клавиш `C-c C-l`).
 
 
 #### <span class="section-num">5.2.5</span> Переход на письмо {#переход-на-письмо}

@@ -1,7 +1,8 @@
 ---
 title: "Загрузочная флешка"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:46:00+03:00
-lastmod: 2021-04-10T19:59:00+03:00
+lastmod: 2021-09-29T12:55:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -14,7 +15,7 @@ slug: "bootable-usb-stick"
 
 {{< toc >}}
 
-Несмотря на наличие usb-диска в корпусе Zalman ZM-VE200 (<https://www.zalman.com/RU/Product/ProductList.do?searchCategory1=86&searchCategory2=89>), хотелось также иметь бутовую флешку, загружающую операционные системы из ISO-образов.
+Несмотря на наличие usb-диска в корпусе Zalman ZM-VE300 (<https://www.zalman.com/RU/Product/ProductList.do?searchCategory1=86&searchCategory2=89>), хотелось также иметь бутовую флешку, загружающую операционные системы из ISO-образов.
 
 
 ## <span class="section-num">1</span> Программный загрузчик {#программный-загрузчик}
@@ -43,6 +44,10 @@ slug: "bootable-usb-stick"
 ### <span class="section-num">2.2</span> Установка для Linux {#установка-для-linux}
 
 -   Скачиваем откомпилированный образ для Linux из <https://github.com/ventoy/Ventoy/releases>.
+
+
+#### <span class="section-num">2.2.1</span> Установка из командной строки {#установка-из-командной-строки}
+
 -   Запустить от пользователя `root` установщик:
 
     ```shell
@@ -55,6 +60,13 @@ slug: "bootable-usb-stick"
     -   `-i` --- установить загрузчик;
     -   `-I` --- установить загрузчик принудительно (даже если на флешке был уже установлен этот загрузчик);
     -   `-u` --- обновить загрузчик.
+
+
+#### <span class="section-num">2.2.2</span> Графическая установка {#графическая-установка}
+
+-   Начиная с версии 1.0.52 поддерживается графическая установка.
+-   Исполняемый файл имеет название вида `VentoyGUI.<архитектура>`.
+-   Установщик запускается из-под пользователя `root` или из-под обычного пользователя.
 
 
 ### <span class="section-num">2.3</span> Копирование образов систем {#копирование-образов-систем}
@@ -76,13 +88,14 @@ slug: "bootable-usb-stick"
 -   <https://www.system-rescue-cd.org/>
 
 
+### <span class="section-num">3.2</span> Windows {#windows}
+
+У нас имеется лицензия на Windows for Education. Поэтому я использую следующий образ:
+<https://www.microsoft.com/ru-ru/software-download/vlacademicwindows10iso>
+
+
 ## <span class="section-num">4</span> Видезапись {#видезапись}
 
 Видеозапись процесса создания бутовой флешки.
 
 {{< youtube vHFncWdJCzY >}}
-
-
-## <span class="section-num">5</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
