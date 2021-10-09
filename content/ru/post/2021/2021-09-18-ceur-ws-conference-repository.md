@@ -2,7 +2,7 @@
 title: "Репозиторий конференций CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2021-09-18T20:09:00+03:00
+lastmod: 2021-10-07T19:03:00+03:00
 categories: ["computer_science", "сиянс"]
 draft: false
 slug: "ceur-ws-conference-repository"
@@ -25,3 +25,8 @@ slug: "ceur-ws-conference-repository"
 
 -   [LaTeX. Стиль CEURART]({{< relref "2021-09-18-latex-ceurart-style" >}})
 -   [Шаблон конференции для CEUR-WS]({{< relref "2021-09-18-conference-template-ceur-ws" >}})
+
+
+## <span class="section-num">3</span> Редакторская работа {#редакторская-работа}
+
+-   [Редактирование материалов в CEUR-WS]({{< relref "2021-10-07-editing-submissions-ceur-ws" >}})

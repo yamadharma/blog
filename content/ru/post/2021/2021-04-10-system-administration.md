@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-09-26T19:39:00+03:00
+lastmod: 2021-10-08T12:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -21,7 +21,7 @@ slug: "system-administration"
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
--
+-   [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})
 
 
 ## <span class="section-num">2</span> Операционные системы {#операционные-системы}
@@ -75,7 +75,7 @@ slug: "system-administration"
 
 ## <span class="section-num">6</span> Организация обучения {#организация-обучения}
 
--
+-   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
 ## <span class="section-num">7</span> Профессиональные требования {#профессиональные-требования}

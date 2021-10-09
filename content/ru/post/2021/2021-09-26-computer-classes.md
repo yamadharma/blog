@@ -2,7 +2,7 @@
 title: "Дисплейные классы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-26T19:40:00+03:00
-lastmod: 2021-09-26T19:45:00+03:00
+lastmod: 2021-10-08T19:18:00+03:00
 tags: ["sysadmin", "education"]
 categories: ["computer-science"]
 draft: false

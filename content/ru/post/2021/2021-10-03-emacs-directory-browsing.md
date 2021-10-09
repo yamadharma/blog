@@ -2,7 +2,7 @@
 title: "Emacs. Просмотр каталогов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-03T20:25:00+03:00
-lastmod: 2021-10-03T20:58:00+03:00
+lastmod: 2021-10-04T20:57:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -65,3 +65,9 @@ slug: "emacs-directory-browsing"
 
 -   _Neotree_ основан на идее NerdTree для Vim.
 -   Репозиторий: <https://github.com/jaypei/emacs-neotree>
+
+
+### <span class="section-num">3.4</span> Treemacs {#treemacs}
+
+-   _Treemacs_ не для работы с файловой системой, а для работы с проектами.
+-   Репозиторий: <https://github.com/Alexander-Miller/treemacs>

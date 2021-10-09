@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2021-09-21T16:08:00+03:00
+lastmod: 2021-10-05T18:33:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -208,12 +208,28 @@ slug: "monospace-fonts"
         -   Шрифты: SIL Open Font licence
         -   Программный код: MIT
     -   Для использования шрифта можно использовать список кодов для иконок <https://fontawesome.com/cheatsheet>.
+-   Установка
+    -   Gentoo
+
+        ```shell
+        emerge media-fonts/fontawesome
+        ```
 
 
 ### <span class="section-num">6.2</span> Nerd fonts {#nerd-fonts}
 
 -   Проект по добавлению ы разные шрифты дополнительных глифов (в основном иконок).
--   <https://www.nerdfonts.com/>
+-   Сайт: <https://www.nerdfonts.com/>
+-   Репозиторий: <https://github.com/ryanoasis/nerd-fonts/>
+-   Установка
+    -   Gentoo
+
+        ```shell
+        USE="iosevka" emerge nerd-fonts
+        ```
+
+        -   При установке следует указать, какой конкретно шрифт следует устанавливать.
+        -   Ebuild находится не в основном репозитории.
 
 
 ## <span class="section-num">7</span> Шрифты {#шрифты}
