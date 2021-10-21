@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-10-08T12:37:00+03:00
+lastmod: 2021-10-21T17:34:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,11 +55,17 @@ slug: "system-administration"
 ### <span class="section-num">3.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
+-   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 
 
 ### <span class="section-num">3.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
+
+
+### <span class="section-num">3.3</span> Редакторы {#редакторы}
+
+-   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
 ## <span class="section-num">4</span> Безопасность {#безопасность}

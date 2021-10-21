@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-08-01T20:32:00+03:00
+lastmod: 2021-10-21T17:33:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -34,6 +34,28 @@ slug: "window-manager-i3"
     -   `~/.i3/config`;
     -   `$XDG_CONFIG_DIRS/i3/config` (`/etc/xdg/i3/config`);
     -   `/etc/i3/config`.
+-   Начиная с версии 4.20, можно подключать другие файлы конфигурации из основного файла конфигурации _i3_.
+    -   Примеры использования директивы `include`:
+
+        ```conf
+        # Тильда преобразуется в домашний каталог пользователя
+        include ~/.config/i3/assignments.conf
+
+        # Переменные среды разыменовываются
+        include $HOME/.config/i3/assignments.conf
+
+        # Символы подстановки раскрываются
+        include ~/.config/i3/config.d/*.conf
+
+        # Можно выполнять команду
+        include ~/.config/i3/`hostname`.conf
+
+        # Каждый путь загружается только один раз
+        include ~/.config/i3/config
+
+        # Относительные пути интерпретируются относительно каталога конфигурационного файла
+        include assignments.conf
+        ```
 
 
 ## <span class="section-num">4</span> Навигация {#навигация}
@@ -614,6 +636,45 @@ slug: "window-manager-i3"
     set $menu rofi -combi-modi window#drun -show combi -modi combi -show-icons
     ```
 -   Конфигурация с помощью конфигурационного файла (поместим его в `~/.config/i3/rofi/config`).
+
+
+### <span class="section-num">5.4</span> Блокировка экрана {#блокировка-экрана}
+
+-   Для отключения экрана можно использовать DPMS:
+
+    ```conf
+    exec --no-startup-id xset dpms 1800
+    ```
+
+    -   Отключается через 30 минут.
+-   В качестве блокировщика экрана используем `i3lock`.
+    -   Установка
+        -   Gentoo
+
+            ```shell
+            emerge x11-misc/i3lock
+            ```
+    -   Использование в конфигурационном файле:
+
+        ```conf
+        set $Locker i3lock --color=000000 && sleep 1
+        ```
+
+        -   `sleep 1` добавляет небольшую задержку, чтобы предотвратить возможное состояние гонки.
+-   Для блокировки экрана после заданного периода времени используем ==xautolock.
+-   Установка
+    -   Gentoo
+
+        ```shell
+        emerge x11-misc/xautolock
+        ```
+-   Использование в конфигурационном файле:
+
+    ```conf
+    exec --no-startup-id xautolock -time 10 -locker "$Locker"
+    ```
+
+    -   Блокирует через 10 минут.
 
 
 ## <span class="section-num">6</span> Приложения {#приложения}

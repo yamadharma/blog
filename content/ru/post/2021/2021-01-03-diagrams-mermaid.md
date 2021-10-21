@@ -1,7 +1,8 @@
 ---
 title: "Диаграммы. Mermaid"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2021-01-10T18:58:00+03:00
+lastmod: 2021-10-12T21:13:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
@@ -33,17 +34,35 @@ slug: "diagrams-mermaid"
 -   Онлайн редактор: <https://mermaid-js.github.io/mermaid-live-editor/>
 
 
+## Необходимое программное обеспечение {#необходимое-программное-обеспечение}
+
+
 ## Синтаксис {#синтаксис}
 
 
 ### Элементы синтаксиса {#элементы-синтаксиса}
 
--   Стили фигур
 -   Стили соединителей
     -   стрелка
-    -   пунктир
-    -   без стрелки
-    -   стрелка с меткой
+
+        ```mermaid
+        graph LR;
+            A-->B
+        ```
+
+<!--listend-->
+
+-   пунктир
+
+    ```mermaid
+    graph LR;
+        A-.-->B
+    ```
+-   без стрелки
+-   стрелка с меткой
+
+<!--listend-->
+
 -   Комментарий
 -   Ориентация
     -   `TB` - сверху вниз
@@ -54,32 +73,3 @@ slug: "diagrams-mermaid"
 
 
 ### Типы диаграмм {#типы-диаграмм}
-
-
-#### graph {#graph}
-
-
-#### Круговая диаграмма (pie) {#круговая-диаграмма--pie}
-
-
-#### gantt {#gantt}
-
-
-#### sequenceDiagram {#sequencediagram}
-
-
-#### stateDiagram {#statediagram}
-
-
-#### classDiagram {#classdiagram}
-
-
-#### gitgraph {#gitgraph}
-
-
-## Backlinks {#backlinks}
-
-
-### [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}}) {#синтаксис-markdown-для-генератора-сайтов-hugo}
-
-Как обычно для Markdown поддерживается расширение для рисования диаграмм [mermaid](https://mermaid-js.github.io/mermaid/) (см. [Диаграммы. Mermaid]({{< relref "2021-01-03-diagrams-mermaid" >}})). Для использования нужно включить эту функцию в файле `params.toml` или добавив `diagram: true` в преамбуле страницы.

@@ -2,7 +2,7 @@
 title: "Курс МОЗИиИБ. Криптография с асимметричным ключом"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-21T20:18:00+03:00
-lastmod: 2021-09-27T20:30:00+03:00
+lastmod: 2021-10-12T19:17:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false

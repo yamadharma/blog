@@ -2,7 +2,7 @@
 title: "Курс МОЗИиИБ. Лекции"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-11T18:32:00+03:00
-lastmod: 2021-09-21T20:22:00+03:00
+lastmod: 2021-10-19T19:05:00+03:00
 tags: ["education"]
 categories: ["computer-science", "сиянс"]
 draft: false
@@ -270,8 +270,14 @@ menu:
 
 ### <span class="section-num">4.6</span> Лекция № 6 {#лекция-6}
 
+-   [Курс МОЗИиИБ. Целостность сообщения и установление подлинности сообщения]({{< relref "2021-10-14-course-mathsec-message-integrity-authentication" >}})
+
 
 ### <span class="section-num">4.7</span> Лекция № 7 {#лекция-7}
 
+-   [Курс МОЗИиИБ. Установление подлинности объекта]({{< relref "2021-10-16-course-mathsec-object-authentication" >}})
+
 
 ### <span class="section-num">4.8</span> Лекция № 8 {#лекция-8}
+
+-   [Курс МОЗИиИБ. Управление ключами]({{< relref "2021-10-18-course-mathsec-key-management" >}})
