@@ -2,10 +2,10 @@
 title: "Организация рабочего каталога"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-01T15:51:00+03:00
-lastmod: 2021-08-04T14:19:00+03:00
+lastmod: 2021-11-15T09:16:00+03:00
 categories: ["self-management"]
 draft: false
-slug: "организация_рабочего_каталога"
+slug: "organization-working-directory"
 ---
 
 Структура моего рабочего каталога.
@@ -25,6 +25,7 @@ slug: "организация_рабочего_каталога"
 
 ## <span class="section-num">2</span> Общая структура каталога {#общая-структура-каталога}
 
+-   Каталоги (по крайней мере верхнего уровня) стараюсь называть по-английски. Это сделано для упрощения навигации (не надо переключать язык).
 -   Общая структура каталога выглядит следующим образом:
 
     ```shell
@@ -33,16 +34,17 @@ slug: "организация_рабочего_каталога"
     ├── bib
     ├── blog
     ├── book
+    ├── configs
     ├── education
+    ├── job
+    ├── life
     ├── org
     ├── peoples
     ├── projects
     ├── research
     ├── science
     ├── students
-    ├── typo
-    ├── Жизнь
-    └── Работа
+    └── typo
     ```
 
 
@@ -64,28 +66,28 @@ slug: "организация_рабочего_каталога"
 ### <span class="section-num">3.5</span> education {#education}
 
 
-### <span class="section-num">3.6</span> org {#org}
+### <span class="section-num">3.6</span> job {#job}
 
 
-### <span class="section-num">3.7</span> peoples {#peoples}
+### <span class="section-num">3.7</span> life {#life}
 
 
-### <span class="section-num">3.8</span> projects {#projects}
+### <span class="section-num">3.8</span> org {#org}
 
 
-### <span class="section-num">3.9</span> research {#research}
+### <span class="section-num">3.9</span> peoples {#peoples}
 
 
-### <span class="section-num">3.10</span> science {#science}
+### <span class="section-num">3.10</span> projects {#projects}
 
 
-### <span class="section-num">3.11</span> students {#students}
+### <span class="section-num">3.11</span> research {#research}
 
 
-### <span class="section-num">3.12</span> typo {#typo}
+### <span class="section-num">3.12</span> science {#science}
 
 
-### <span class="section-num">3.13</span> Жизнь {#жизнь}
+### <span class="section-num">3.13</span> students {#students}
 
 
-### <span class="section-num">3.14</span> Работа {#работа}
+### <span class="section-num">3.14</span> typo {#typo}

@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2021-09-20T13:36:00+03:00
+lastmod: 2021-11-20T21:53:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -418,7 +418,7 @@ slug: "password-manager-pass"
 
 ### <span class="section-num">8.1</span> Проверка утечки пароля {#проверка-утечки-пароля}
 
--   Проверка утечки пароля производится с помощью сервиса (см. [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})).
+-   Проверка утечки пароля производится с помощью сервиса <https://haveibeenpwned.com/> (см. [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})).
 
 
 #### <span class="section-num">8.1.1</span> pass {#pass}
@@ -483,3 +483,8 @@ slug: "password-manager-pass"
 
                 Этот вариант помедленнее.
     -   Проверяет сразу все записи в базе паролей. Один пароль проверить нельзя.
+
+
+## <span class="section-num">9</span> Интеграция с другими программами {#интеграция-с-другими-программами}
+
+-   [Менеджер паролей pass. Интеграция с другими программами]({{< relref "2021-11-20-password-manager-pass-integration" >}})

@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-10-21T17:33:00+03:00
+lastmod: 2021-11-19T20:07:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -593,10 +593,10 @@ slug: "window-manager-i3"
         ```
 
 
-### <span class="section-num">5.3</span> Строка состояний {#строка-состояний}
+### <span class="section-num">5.3</span> Запуск приложений {#запуск-приложений}
 
 -   По умолчанию используется `dmenu`.
--   Можно заменить на `rofi`.
+-   Можно заменить на `rofi` (см. [Запуск приложений. Rofi]({{< relref "2021-11-19-launcher_rofi" >}})).
 
 
 #### <span class="section-num">5.3.1</span> rofi {#rofi}

@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-09-10T10:40:00+03:00
+lastmod: 2021-11-10T19:47:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -327,6 +327,11 @@ slug: "mail-synchronization-mbsync"
 
 -   <https://yandex.ru/>
 -   [Почта. Yandex. Настройка почтового клиента]({{< relref "2021-07-04-mail-yandex-configuring-mail-client" >}})
+-   Пароли приложений
+    -   При подключении паролей приложений обычные пароли использовать не получится. Придётся сгенерить пароль приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
+    -   Для паролей `pass`:
+        -   Пароль для приложения почты можно назвать `account@yandex.ru@apppassword@mail`.
+        -   Пароль для smtp следует именовать как `account@yandex.ru@smtp.yandex.ru` (это тот же пароль для почтового приложения).
 -   Конфигурация:
 
     ```conf-unix
@@ -338,6 +343,7 @@ slug: "mail-synchronization-mbsync"
     # Pass ***************
     ## To store the password in an encrypted file use PassCmd instead of Pass
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@yandex.ru/ {print $6}'"
+    # PassCmd "pass email/yandex.ru/account@yandex.ru@apppassword@mail"
     PassCmd "pass email/yandex.ru/account@yandex.ru"
     AuthMechs LOGIN
     SSLType IMAPS
@@ -455,6 +461,7 @@ slug: "mail-synchronization-mbsync"
 
 -   [Почта. Office365. Настройка почтового клиента]({{< relref "2021-07-04-mail-office365-configuring-mail-client" >}})
 -   Названия IMAP-ящиков даётся в модифицированной кодировке UTF-7 (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
+-   Для smtp следует именовать пароль _pass_ как `account@example.com@smtp.office365.com`.
 -   Конфигурация:
 
     ```conf-unix

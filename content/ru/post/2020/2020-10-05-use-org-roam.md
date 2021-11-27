@@ -1,7 +1,8 @@
 ---
 title: "Использование org-roam"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-10-05T15:26:00+03:00
-lastmod: 2021-07-04T17:09:00+03:00
+lastmod: 2021-11-11T16:37:00+03:00
 categories: ["blog"]
 draft: false
 slug: "use-org-roam"

@@ -2,7 +2,7 @@
 title: "Vdirsyncer. Синхронизация адресной книги и календаря"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-12T16:01:00+03:00
-lastmod: 2021-09-12T16:26:00+03:00
+lastmod: 2021-11-02T12:31:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -33,6 +33,9 @@ slug: "vdirsyncer-synchronizing-address-book-calendar"
 
 
 ## <span class="section-num">3</span> Конфигурирование {#конфигурирование}
+
+
+### <span class="section-num">3.1</span> Типовая конфигурация {#типовая-конфигурация}
 
 -   В поставке идёт пример файла конфигурации:
 
@@ -108,6 +111,18 @@ slug: "vdirsyncer-synchronizing-address-book-calendar"
     #username =
     #password =
     ```
+
+
+### <span class="section-num">3.2</span> Синхронизация с Google {#синхронизация-с-google}
+
+
+### <span class="section-num">3.3</span> Синхронизация с Office 365 {#синхронизация-с-office-365}
+
+
+### <span class="section-num">3.4</span> Синхронизация с Yandex {#синхронизация-с-yandex}
+
+
+### <span class="section-num">3.5</span> Синхронизация с Fuux {#синхронизация-с-fuux}
 
 
 ## <span class="section-num">4</span> Утилиты для работы с _vdir_ {#утилиты-для-работы-с-vdir}

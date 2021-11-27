@@ -2,7 +2,7 @@
 title: "Курс МОЗИиИБ. Управление ключами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-18T20:43:00+03:00
-lastmod: 2021-10-19T20:11:00+03:00
+lastmod: 2021-10-29T21:02:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false

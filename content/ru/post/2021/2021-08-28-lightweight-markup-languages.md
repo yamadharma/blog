@@ -2,7 +2,7 @@
 title: "Легковесные языки разметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T19:43:00+03:00
-lastmod: 2021-10-14T18:12:00+03:00
+lastmod: 2021-10-27T11:47:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "lightweight-markup-languages"
@@ -33,3 +33,8 @@ slug: "lightweight-markup-languages"
 -   reStructuredText
 -   Textile
 -   Вики-разметка
+
+
+## <span class="section-num">3</span> Легковесные языки для записи математических выражений {#легковесные-языки-для-записи-математических-выражений}
+
+-   [AsciiMath]({{< relref "2021-10-25-asciimath" >}})

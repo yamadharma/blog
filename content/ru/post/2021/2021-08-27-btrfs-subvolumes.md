@@ -2,7 +2,7 @@
 title: "Подтома btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:41:00+03:00
-lastmod: 2021-08-27T12:10:00+03:00
+lastmod: 2021-11-21T15:50:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,39 @@ slug: "btrfs-subvolumes"
 ## <span class="section-num">1</span> Именование подтомов {#именование-подтомов}
 
 -   Для определённости я называю подтома по шаблону `@имя_подтома`.
+
+
+### <span class="section-num">1.1</span> Список подтомов {#список-подтомов}
+
+<div class="table-caption">
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+  Возможные наименования подтомов btrfs
+</div>
+
+| Подтом                | Точка монтирования                           | Описание                                                                                                                             |
+|-----------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| `@`                   | `/`                                          | Корневой каталог (системные файлы)                                                                                                   |
+| `@home`               | `/home`                                      | Домашний каталог с пользовательскими данными                                                                                         |
+| `@snapshots`          | ‒                                            | Корневой подтом для снапшотов                                                                                                        |
+| `@snapshots/root`     | `/.snapshots`                                | Содержит снапшоты корня, которые создает snapper                                                                                     |
+| `@snapshots/home`     | `/home/.snapshots`                           | Содержит снапшоты хомяка, которые создает snapper                                                                                    |
+| `@machines`           | `/var/lib/machines`                          | Если не существует, то создаст systemd                                                                                               |
+| `@portables`          | `/var/lib/portables`                         | Если не существует, то создаст systemd                                                                                               |
+| `@docker`             | `/var/lib/docker`                            | Докер создаёт подтома в `./btrfs/subvolumes` либо в `./XXX/btrfs/subvolumes`                                                         |
+| `@var`                | `/var`                                       | Аналогично выше описанному                                                                                                           |
+| `@var_lib`            | `/var/lib`                                   | Вместо создания `@machines`, `@portables`, `@docker` можно создать только этот, если в `/var/lib` не будет храниться чего-то важного |
+| `@var_tmp`            | `/var/tmp`                                   | Содержит временные файлы. Должен монтироваться с `nodatacow`                                                                         |
+| `@var_log` или `@log` | `/var/log`                                   | Содержит кучу файлов, которые пишутся маленькими частями, от чего занимаемое ими место пухнет. Должен монтироваться с `nodatacow`    |
+| `@swap`               | `/swap` или `/var/swap`, или `/var/lib/swap` | Подтом для файла подкачки. Должен монтироваться с `nodatacow`                                                                        |
+
+
+### <span class="section-num">1.2</span> Минимально рекомендуемый набор подтомов {#минимально-рекомендуемый-набор-подтомов}
+
+-   Минимум нужны два подтома: `@` и `@home`.
+
+
+## <span class="section-num">2</span> Создание подтомов {#создание-подтомов}
+
 -   При установки системы я создаю подтома следующим образом:
     -   Подмонтируем раздел с btrfs:
 
@@ -33,6 +66,7 @@ slug: "btrfs-subvolumes"
         btrfs subvol create @
         btrfs subvol create @var
         btrfs subvol create @var_tmp
+        btrfs subvol create @var_log
         btrfs subvol create @vm
         btrfs subvol create @portage
         btrfs subvol create @portage_local
@@ -40,7 +74,7 @@ slug: "btrfs-subvolumes"
         ```
 
 
-## <span class="section-num">2</span> Монтирование подтомов в fstab {#монтирование-подтомов-в-fstab}
+## <span class="section-num">3</span> Монтирование подтомов в fstab {#монтирование-подтомов-в-fstab}
 
 -   При монтировании я указываю универсальный идентификатор (UUID) файловой системы:
 
@@ -62,7 +96,7 @@ slug: "btrfs-subvolumes"
     ```
 
 
-## <span class="section-num">3</span> Создание нового подтома {#создание-нового-подтома}
+## <span class="section-num">4</span> Создание нового подтома {#создание-нового-подтома}
 
 -   После установки системы может возникнуть необходимость создания дополнительных подтомов на существующем томе.
 

@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-08-07T18:29:00+03:00
+lastmod: 2021-10-30T17:56:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -332,6 +332,11 @@ yarn global add commitizen
 
     ```shell
     git branch
+    ```
+-   Установите внешнюю ветку как вышестоящую для этой ветки:
+
+    ```shell
+    git branch --set-upstream-to=origin/develop develop
     ```
 -   Создадим релиз с версией 1.0.0
 

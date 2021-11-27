@@ -2,7 +2,7 @@
 title: "Критериальное оценивание лабораторных работ"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-12T09:57:00+03:00
-lastmod: 2021-08-30T20:34:00+03:00
+lastmod: 2021-11-04T17:47:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
