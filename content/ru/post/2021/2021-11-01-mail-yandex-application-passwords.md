@@ -2,14 +2,10 @@
 title: "Почта. Yandex. Пароли приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T21:09:00+03:00
-lastmod: 2021-11-01T21:22:00+03:00
+lastmod: 2021-11-27T15:34:00+03:00
 draft: false
 slug: "mail-yandex-application-passwords"
 ---
-
-:ID:       7b071a46-4f26-4a3b-9ca7-b7a6c056e332
-
-
 
 Пароли приложений Yandex.
 
