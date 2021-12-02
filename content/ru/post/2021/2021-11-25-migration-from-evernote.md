@@ -2,7 +2,7 @@
 title: "Миграция с Evernote"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-25T15:28:00+03:00
-lastmod: 2021-11-25T20:14:00+03:00
+lastmod: 2021-11-30T11:45:00+03:00
 draft: false
 slug: "migration-from-evernote"
 ---
@@ -16,10 +16,15 @@ slug: "migration-from-evernote"
 
 ## <span class="section-num">1</span> Чем вызвано желание уйти с Evernote {#чем-вызвано-желание-уйти-с-evernote}
 
--   На Evernote установили ограничение на количество подключённых устройств.
+-   На Evernote установили ограничение на количество подключённых устройств на бесплатных планах.
     -   [Разбор ограничения устройств](https://help.evernote.com/hc/ru/articles/218558068-%D0%A0%D0%B0%D0%B7%D0%B1%D0%BE%D1%80-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2)
--   Evernote превратился в свалку информации. Использовать эту информацию практически невозможно.
+-   Evernote превратился в свалку информации (см. [Заблуждение коллекционера]({{< relref "2021-11-30-collector-fallacy" >}})). Использовать эту информацию практически невозможно.
 -   Так и не появилось клиента по Linux.
+-   Через web-интерфейс работать не удобно.
+-   Evernote первоначально позиционировался как блокнот для работы.
+    -   Но не было представлено никакого примера организации работы.
+    -   Фактически, Evernote использовался для складирования разных страниц, к которым потом и не возвращаешься.
+-   [Нереализованный потенциал Evernote](https://vc.ru/story/73191-nerealizovannyy-potencial-evernote-pochemu-odin-iz-samyh-populyarnyh-servisov-dlya-zametok-teryaet-polzovateley)
 
 
 ## <span class="section-num">2</span> Экспорт {#экспорт}
@@ -32,7 +37,7 @@ slug: "migration-from-evernote"
 -   У разных приложений свой формат экспорта.
 -   Обычно для дальнейшей конвертации используют формат приложений самого Evernote: ENEX.
 -   Приложения для Evernote с возможностью экспорта только под Windows и Mac.
--   Я установил на виртуальную машину с Windows:
+-   Я установил на виртуальную машину с Windows (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
 
     ```shell
     choco -y install evernote
