@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2021-08-01T20:33:00+03:00
+lastmod: 2021-12-14T17:33:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "tags-organizing"
@@ -40,18 +40,22 @@ slug: "tags-organizing"
 -   `@book`: Книги, которые прочитал
     -   `science-people`: Биографии учёных, мемуары учёных.
     -   `culture`: Всё, что имеет отношение к культуре (культурология, литературоведение).
+-   `@life`: Жизнь
+-   `@reflections`: Размышления, мысли
 
-| Уровень  | org-mode todo | org-roam           | blog (ru)        | blog (en)        |
-|----------|---------------|--------------------|------------------|------------------|
-| category |               | @computer\_science | computer-science | computer-science |
-| tag      |               | hard               |                  |                  |
-| tag      |               | soft               |                  |                  |
-| category | @science      | @science           | сиянс            | science          |
-| tag      | education     | education          | education        | education        |
-| tag      | research      | research           | research         | research         |
-| tag      | sci\_admin    | sci\_admin         | sci-admin        | sci-admin        |
-| category |               | @book              | листая-страницы  |                  |
-| tag      |               | science-people     | люди-науки       |                  |
-| tag      |               | culture            | культура         |                  |
-| category |               | @self\_management  | self-management  | self-management  |
-| tags     |               | gtd                | gtd              | gtd              |
+| Уровень  | org-mode todo | org-roam           | blog (ru)        | blog (en)         |
+|----------|---------------|--------------------|------------------|-------------------|
+| category |               | @computer\_science | computer-science | computer-science  |
+| tag      |               | hard               |                  |                   |
+| tag      |               | soft               |                  |                   |
+| category | @science      | @science           | сиянс            | science           |
+| tag      | education     | education          | education        | education         |
+| tag      | research      | research           | research         | research          |
+| tag      | sci\_admin    | sci\_admin         | sci-admin        | sci-admin         |
+| category |               | @book              | листая-страницы  | through-the-pages |
+| tag      |               | science-people     | люди-науки       | science-people    |
+| tag      |               | culture            | культура         | culture           |
+| category |               | @self\_management  | self-management  | self-management   |
+| tag      |               | gtd                | gtd              | gtd               |
+| category | @life         | @life              | жизнь            | life              |
+| category | @reflections  | @reflections       | мысли            | reflections       |

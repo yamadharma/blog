@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-10-30T17:56:00+03:00
+lastmod: 2021-12-21T20:04:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -111,13 +111,21 @@ slug: "git-practical-use-case"
 
 #### <span class="section-num">2.4.1</span> commitizen {#commitizen}
 
-Данная программа используется для помощи в форматировании коммитов.
+-   Данная программа используется для помощи в форматировании коммитов.
 
-```shell
-yarn global add commitizen
-```
+    ```shell
+    yarn global add commitizen
+    ```
+-   При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
 
-При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
+
+#### <span class="section-num">2.4.2</span> standard-version {#standard-version}
+
+-   Данная программа автоматизирует изменение номера версии.
+
+    ```shell
+    yarn global add standard-version
+    ```
 
 
 ## <span class="section-num">3</span> Настройка git {#настройка-git}
@@ -137,6 +145,11 @@ yarn global add commitizen
     git config --global core.quotepath false
     ```
 -   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
+-   Зададим имя начальной ветки (будем называть её `master`):
+
+    ```shell
+    git config --global init.defaultBranch master
+    ```
 
 
 ### <span class="section-num">3.2</span> Дополнительные настройки {#дополнительные-настройки}
@@ -169,14 +182,14 @@ yarn global add commitizen
           Варианты конвертации для разных значений параметра core.autocrlf
         </div>
 
-        | core.autocrlf | false        | input        | true         |
-        |---------------|--------------|--------------|--------------|
-        | git commit    | LF -> LF     | LF -> LF     | LF -> CRLF   |
-        |               | CR -> CR     | CR -> CR     | CR -> CR     |
-        |               | CRLF -> CRLF | CRLF -> LF   | CRLF -> CRLF |
-        | git checkout  | LF -> LF     | LF -> LF     | LF -> CRLF   |
-        |               | CR -> CR     | CR -> CR     | CR -> CR     |
-        |               | CRLF -> CRLF | CRLF -> CRLF | CRLF -> CRLF |
+        | core.autocrlf | false           | input           | true            |
+        |---------------|-----------------|-----------------|-----------------|
+        | git commit    | LF -&gt; LF     | LF -&gt; LF     | LF -&gt; CRLF   |
+        |               | CR -&gt; CR     | CR -&gt; CR     | CR -&gt; CR     |
+        |               | CRLF -&gt; CRLF | CRLF -&gt; LF   | CRLF -&gt; CRLF |
+        | git checkout  | LF -&gt; LF     | LF -&gt; LF     | LF -&gt; CRLF   |
+        |               | CR -&gt; CR     | CR -&gt; CR     | CR -&gt; CR     |
+        |               | CRLF -&gt; CRLF | CRLF -&gt; CRLF | CRLF -&gt; CRLF |
     -   Установка параметра:
         -   Для Windows
 

@@ -2,7 +2,7 @@
 title: "Анализатор протоколов Wireshark"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-18T18:29:00+03:00
-lastmod: 2021-08-19T16:09:00+03:00
+lastmod: 2021-12-22T12:39:00+03:00
 tags: ["education", "network"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -84,6 +84,18 @@ slug: "wireshark-protocol-analyzer"
             chgrp wireshark /usr/bin/dumpcap
             chmod 750 /usr/bin/dumpcap
             ```
+        -   Кроме того, зададим _capabilities_ для этого файла:
+
+            ```shell
+            setcap cap_net_raw,cap_net_admin=eip /usr/bin/dumpcap
+            ```
+
+            -   Можно проверить, что параметры установлены правильно:
+
+                ```shell
+                getcap /usr/bin/dumpcap
+                ```
+
         -   После этого можно перелогиниться или временно добавить себя в новую группу:
 
             ```shell
