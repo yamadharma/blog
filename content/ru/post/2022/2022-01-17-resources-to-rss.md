@@ -1,0 +1,53 @@
+---
+title: "Подключение ресурсов через RSS"
+author: ["Dmitry S. Kulyabov"]
+date: 2022-01-17T17:14:00+03:00
+lastmod: 2022-01-17T18:22:00+03:00
+tags: ["sysadmin"]
+categories: ["self-management"]
+draft: false
+slug: "resources-to-rss"
+---
+
+Мне удобно читать обновления web-ресурсов через RSS. К сожалению сейчас стало много ресурсов, не поддерживающих подключение через этот формат.
+Но можно осуществить просмотр ресурсов через RSS, используя разные шлюзы.
+
+<!--more-->
+
+{{< toc >}}
+
+
+## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   RSS --- семейство XML-форматов, предназначенных для описания разных интернет ресурсов.
+-   В разных версиях аббревиатура RSS имела разные расшифровки:
+    -   Rich Site Summary (RSS 0.9x) --- обогащённая сводка сайта;
+    -   RDF Site Summary (RSS 0.9 и 1.0) --- сводка сайта с применением инфраструктуры описания ресурсов;
+    -   Really Simple Syndication (RSS 2.x) --- очень простое распространение.
+-   Существуют специализированные приложения (RSS-агрегаторы), собирающие и обрабатывающие информацию RSS-каналов.
+
+
+## <span class="section-num">2</span> Универсальный шлюз _rsshub.app_ {#универсальный-шлюз-rsshub-dot-app}
+
+-   Адрес: <https://rsshub.app/>
+-   Репозиторий: <https://github.com/DIYgod/RSSHub>
+-   Документация: <https://docs.rsshub.app/en/>
+-   Имеет большое количество шлюзов для обработки разных ресурсов.
+
+
+## <span class="section-num">3</span> Ресурсы {#ресурсы}
+
+-   Ресурсы, которыми я пользуюсь.
+
+
+### <span class="section-num">3.1</span> Vkontakte {#vkontakte}
+
+-   Шлюз _vkrss.ru_
+    -   Адрес: <https://vkrss.ru/>
+    -   Если у вас группа `https://vk.com/groupname`, то имя rss-канала будет `https://vkrss.ru/groupname`.
+
+
+### <span class="section-num">3.2</span> Telegram {#telegram}
+
+-   Шлюз _rsshub.app_
+    -   Если нужно подключить канал _<https://t.me/channelname>_, то имя rss-канала будет _<https://rsshub.app/telegram/channel/channelname>_.

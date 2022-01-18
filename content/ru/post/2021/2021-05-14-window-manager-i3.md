@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2021-11-19T20:07:00+03:00
+lastmod: 2022-01-18T12:25:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -299,7 +299,7 @@ slug: "window-manager-i3"
     -   область с кнопками переключения рабочих областей _i3_;
     -   системную строку, генерируемую при помощи `i3status` или аналогов;
     -   системный трей с иконками программ.
--   В конфигурационном файле задаётся следующим образом (<https://i3wm.org/docs/userguide.html#%5Fconfiguring%5Fi3bar>):
+-   В конфигурационном файле задаётся следующим образом (<https://i3wm.org/docs/userguide.html#_configuring_i3bar>):
 
     ```conf-unix
     # ~/.config/i3/config -*- mode: conf-unix; -*-
@@ -691,14 +691,22 @@ slug: "window-manager-i3"
 -   Добавим в конфигурационный файл:
 
     ```conf-unix
-    ### Screenshots
-    bindsym --release Print exec --no-startup-id scrot -e 'mv $f `xdg-user-dir PICTURES` 2>/dev/null'
-    bindsym --release Shift+Print exec --no-startup-id scrot -s -e 'mv $f `xdg-user-dir PICTURES` 2>/dev/null'
+    ## Screenshot
+
+    ## Screenshot active display
+    bindsym --release Print exec --no-startup-id scrot '%Y-%m-%d_%H-%M-%S_$wx$h.png' -e 'mv $f `xdg-user-dir PICTURES` 2>/dev/null'
+
+    ## Screenshot current window
+    bindsym --release $mod+Print exec --no-startup-id scrot -u '%Y-%m-%d_%H-%M-%S_$wx$h.png' -e 'mv $f `xdg-user-dir PICTURES` 2>/dev/null'
+
+    ## Screenshot selected region
+    bindsym --release $mod+Shift+Print exec --no-startup-id scrot -s '%Y-%m-%d_%H-%M-%S_$wx$h.png' -e 'mv $f `xdg-user-dir PICTURES` 2>/dev/null'
     ```
 
-    -   По клавише `PtrScr` делается скриншот.
-    -   По клавише `Shift` + `PtrScr` предлагается выделить область экрана, скриншот которой следует сделать.
-    -   Скриншоты переносятся в каталог $XDG\_PICTURES\_DIR (обычно `~/Изображения`).
+    -   По клавише `PrtScr` делается скриншот.
+    -   По клавише `mod` + `PrtScr` делается скриншот активного окна.
+    -   По клавише `mod` + `Shift` + `PrtScr` предлагается выделить область экрана, скриншот которой следует сделать.
+    -   Скриншоты переносятся в каталог $XDG_PICTURES_DIR (обычно `~/Pictures` или `~/Изображения`).
 
 
 ## <span class="section-num">7</span> Совместимость приложений {#совместимость-приложений}

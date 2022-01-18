@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Message-mode"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-27T19:00:00+03:00
-lastmod: 2021-12-06T12:42:00+03:00
+lastmod: 2021-12-27T15:42:00+03:00
 tags: ["sysadmin", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -27,6 +27,6 @@ slug: "emacs-mail-message-mode"
 -   Откройте каталог в режиме `dired` с помощью `C-x 4 d`.
 -   Введите `M-x turn-on-gnus-dired-mode`.
     -   Если у Вас `M-x` привязано к `helm`, то сделать это сразу не получится.
-    -   ТОгда Вам надо нажать на нужном каталоге `C-RET`, а потом уже ввести `M-x turn-on-gnus-dired-mode`.
+    -   Тогда Вам надо нажать на нужном каталоге `C-RET`, а потом уже ввести `M-x turn-on-gnus-dired-mode`.
 -   Отметьте необходимые файлы с помощью `m`.
 -   Введите `C-c RET C-a` для вставки в уже открытый буфер сообщений (или назначьте новый).

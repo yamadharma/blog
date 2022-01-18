@@ -2,13 +2,13 @@
 title: "Журнал Mathematics"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-15T12:15:00+03:00
-lastmod: 2021-07-15T21:13:00+03:00
+lastmod: 2022-01-17T18:29:00+03:00
 categories: ["сиянс"]
 draft: false
 slug: "journal-mathematics"
 ---
 
-Журнал _Mathematics_.
+Журнал _Mathematics_. Входит в издательство MDPI (см. [Издательство MDPI]({{< relref "2022-01-17-mdpi-publishing-house" >}})).
 
 <!--more-->
 
@@ -33,4 +33,4 @@ slug: "journal-mathematics"
 -   Шаблон публикации:
     -   LaTeX:
         -   Общая информация: <https://www.mdpi.com/authors/latex>.
-        -   Шаблон для LaTeX: <https://www.mdpi.com/data/MDPI%5Ftemplate.zip>
+        -   Шаблон для LaTeX: <https://www.mdpi.com/data/MDPI_template.zip>

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2021-11-12T12:14:00+03:00
+lastmod: 2022-01-18T19:09:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -22,6 +22,7 @@ slug: "system-administration"
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
 -   [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})
+-   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
 
 
 ## <span class="section-num">2</span> Операционные системы {#операционные-системы}
@@ -50,46 +51,51 @@ slug: "system-administration"
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 
 
-## <span class="section-num">3</span> Шрифты {#шрифты}
+## <span class="section-num">3</span> Управление и мониторинг {#управление-и-мониторинг}
+
+-   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
+
+
+## <span class="section-num">4</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">4</span> Пользовательские программы {#пользовательские-программы}
+## <span class="section-num">5</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">4.1</span> Обработка видео {#обработка-видео}
+### <span class="section-num">5.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 
 
-### <span class="section-num">4.2</span> Виртуализация {#виртуализация}
+### <span class="section-num">5.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">4.3</span> Редакторы {#редакторы}
+### <span class="section-num">5.3</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-## <span class="section-num">5</span> Безопасность {#безопасность}
+## <span class="section-num">6</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 
 
-## <span class="section-num">6</span> Сети {#сети}
+## <span class="section-num">7</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-## <span class="section-num">7</span> Организация обучения {#организация-обучения}
+## <span class="section-num">8</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">8</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">9</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

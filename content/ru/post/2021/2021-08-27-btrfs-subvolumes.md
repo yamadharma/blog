@@ -2,7 +2,7 @@
 title: "Подтома btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:41:00+03:00
-lastmod: 2021-11-21T15:50:00+03:00
+lastmod: 2021-12-23T10:07:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -43,6 +43,7 @@ slug: "btrfs-subvolumes"
 | `@var_tmp`            | `/var/tmp`                                   | Содержит временные файлы. Должен монтироваться с `nodatacow`                                                                         |
 | `@var_log` или `@log` | `/var/log`                                   | Содержит кучу файлов, которые пишутся маленькими частями, от чего занимаемое ими место пухнет. Должен монтироваться с `nodatacow`    |
 | `@swap`               | `/swap` или `/var/swap`, или `/var/lib/swap` | Подтом для файла подкачки. Должен монтироваться с `nodatacow`                                                                        |
+| `@libvirt`            | `/var/lib/libvirt/images`                    | Образы для _libvirt_. Должен монтироваться с `nodatacow`                                                                             |
 
 
 ### <span class="section-num">1.2</span> Минимально рекомендуемый набор подтомов {#минимально-рекомендуемый-набор-подтомов}
@@ -71,10 +72,49 @@ slug: "btrfs-subvolumes"
         btrfs subvol create @portage
         btrfs subvol create @portage_local
         btrfs subvol create @portage_com
+        btrfs subvol create @libvirt
         ```
 
 
-## <span class="section-num">3</span> Монтирование подтомов в fstab {#монтирование-подтомов-в-fstab}
+## <span class="section-num">3</span> Отключение CoW {#отключение-cow}
+
+-   Для файловых систем с образами виртуальных машин следует отключить CoW (copy-on-write).
+-   Так же стоит отключить _CoW_ для часто изменяемых файлов (например, журналов).
+-   Подмонтируем файловую систему `btrfs`:
+
+    ```shell
+    mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sda4 /mnt/gentoo/var/vm
+    mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sda4 /mnt/gentoo/var/lib/libvirt/images
+    mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9,subvol=@var_log /dev/sda4 /mnt/gentoo/var/log
+    ```
+-   Отключим для этого подтома CoW:
+    -   Для `/var/vm`
+
+        ```shell
+        cd /mnt/gentoo/var/
+        chattr +C vm
+        ```
+    -   Для `/var/lib/libvirt/images`
+
+        ```shell
+        cd /mnt/gentoo/var/lib/libvirt/
+        chattr +C images
+        ```
+    -   Для `/var/log`
+
+        ```shell
+        cd /mnt/gentoo/var/
+        chattr +C log
+        ```
+-   Посмотреть результат можно командой:
+
+    ```shell
+    lsattr -a /mnt/gentoo/var/
+    lsattr -a /mnt/gentoo/var/lib/libvirt/
+    ```
+
+
+## <span class="section-num">4</span> Монтирование подтомов в fstab {#монтирование-подтомов-в-fstab}
 
 -   При монтировании я указываю универсальный идентификатор (UUID) файловой системы:
 
@@ -88,6 +128,7 @@ slug: "btrfs-subvolumes"
     UUID="f8963df3-1320-4bc0-a125-62be185b029e"     /usr/portage    btrfs   relatime,discard,autodefrag,compress=zstd:9,subvol=@portage     0 0
     UUID="f8963df3-1320-4bc0-a125-62be185b029e"     /usr/local/share/portage        btrfs   relatime,discard,autodefrag,compress=zstd:9,subvol=@portage_local       0 0
     UUID="f8963df3-1320-4bc0-a125-62be185b029e"     /com/lib/portage        btrfs   relatime,discard,autodefrag,compress=zstd:9,subvol=@portage_com 0 0
+    UUID="f8963df3-1320-4bc0-a125-62be185b029e"    /var/lib/libvirt/images       btrfs   relatime,discard,autodefrag,compress=zstd:9,subvol=@libvirt 0 0
     ```
 -   Идентификатор файловой системы можно узнать следующим образом:
 
@@ -96,7 +137,7 @@ slug: "btrfs-subvolumes"
     ```
 
 
-## <span class="section-num">4</span> Создание нового подтома {#создание-нового-подтома}
+## <span class="section-num">5</span> Создание нового подтома {#создание-нового-подтома}
 
 -   После установки системы может возникнуть необходимость создания дополнительных подтомов на существующем томе.
 

@@ -2,7 +2,7 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2021-08-01T20:31:00+03:00
+lastmod: 2022-01-17T17:34:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -22,3 +22,4 @@ slug: "self-management"
 -   [Личные базы данных]({{< relref "2021-04-27-personal-databases" >}})
 -   [Работа с почтой]({{< relref "2021-07-12-email-workflow" >}})
 -   [Организация рабочего каталога]({{< relref "2021-08-01-organization-working-directory" >}})
+-   [Подключение ресурсов через RSS]({{< relref "2022-01-17-resources-to-rss" >}})

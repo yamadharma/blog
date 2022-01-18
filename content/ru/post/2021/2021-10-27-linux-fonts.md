@@ -2,7 +2,7 @@
 title: "Шрифты в Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-27T11:36:00+03:00
-lastmod: 2021-10-27T11:40:00+03:00
+lastmod: 2021-12-29T11:47:00+03:00
 draft: false
 slug: "linux-fonts"
 ---
