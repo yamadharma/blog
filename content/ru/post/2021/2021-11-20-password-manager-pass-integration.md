@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2021-11-20T21:52:00+03:00
+lastmod: 2022-01-30T14:44:00+03:00
 draft: false
 slug: "password-manager-pass-integration"
 ---
@@ -48,3 +48,83 @@ slug: "password-manager-pass-integration"
             ```shell
             layman -a winny
             ```
+
+
+## <span class="section-num">2</span> Настройка интерфейса с броузером {#настройка-интерфейса-с-броузером}
+
+-   Для взаимодействия с броузером используется интерфейс _native messaging_.
+-   Поэтому кроме плагина к броузеру устанавливается программа, обеспечивающая интерфейс _native messaging_.
+
+
+### <span class="section-num">2.1</span> pass {#pass}
+
+
+#### <span class="section-num">2.1.1</span> Плагин [browserpass](https://github.com/browserpass/browserpass-extension) {#плагин-browserpass}
+
+-   Репозиторий: <https://github.com/browserpass/browserpass-extension>
+-   Плагин для брoузера
+    -   Плагин для Firefox: <https://addons.mozilla.org/en-US/firefox/addon/browserpass-ce/>.
+    -   Плагин для Chrome/Chromium: <https://chrome.google.com/webstore/detail/browserpass-ce/naepdomgkenhinolocfifgehidddafch>.
+-   Интерфейс для взаимодействия с броузером (native messaging)
+    -   Репозиторий: <https://github.com/browserpass/browserpass-native>
+    -   Gentoo:
+
+        ```shell
+        emerge www-plugins/browserpass
+        ```
+    -   Ubuntu, Debian
+
+        ```shell
+        apt-get install webext-browserpass
+        ```
+
+
+#### <span class="section-num">2.1.2</span> Плагин chrome-pass {#плагин-chrome-pass}
+
+-   Репозиторий: <https://github.com/hsanson/chrome-pass>
+-   Плагин для брoузера
+    -   Плагин для Chrome/Chromium: <https://chrome.google.com/webstore/detail/chrome-pass-zx2c4/oblajhnjmknenodebpekmkliopipoolo>
+-   Интерфейс для взаимодействия с броузером (native messaging)
+    -   Установка для пользователя:
+
+        ```shell
+        pip3 install --user chrome-pass==0.3.0
+        nativePass install
+        ```
+
+
+#### <span class="section-num">2.1.3</span> Плагин passff {#плагин-passff}
+
+-   Репозиторий: <https://github.com/passff/passff>
+-   Плагин для брoузера
+    -   Плагин для Firefox: <https://addons.mozilla.org/ru/firefox/addon/passff/>
+-   Интерфейс для взаимодействия с броузером (native messaging)
+    -   Репозиторий: <https://github.com/passff/passff-host>
+    -   Установка:
+
+        ```shell
+        curl -sSL github.com/passff/passff-host/releases/latest/download/install_host_app.sh | bash -s -- firefox
+        ```
+
+        -   Пользователям других поддерживаемых броузеров необходимо заменить последний аргумент (`firefox`) на `chrome`, `opera`, `chromium` или `vivaldi`.
+        -   Скрипт загрузит хост-приложение (небольшой скрипт на _python_) и файл манифеста плагина (файл конфигурации _JSON_) и поместит их в нужное место.
+        -   Можно загрузить файлы самостоятельно и запустить сценарий с параметром `--local` или установить файлы самостоятельно.
+
+
+### <span class="section-num">2.2</span> gopass {#gopass}
+
+-   Плагин для браузера называется [gopass bridge](https://github.com/gopasspw/gopassbridge)
+    -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/gopass-bridge/>
+    -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/gopass-bridge/kkhfnlkhiapbiehimabddjbimfaijdhk>
+-   Начиная с версии gopass-1.12.0 команда создания интерфейса взаимодействия с броузером выделена в отдельную утилиту.
+-   Устанавливаем интерфейс для взаимодействия с броузером (native messaging):
+    -   Gentoo
+
+        ```shell
+        emerge app-admin/gopass-jsonapi
+        ```
+-   Для связки плагина с `gopass` необходимо создать вспомогательный скрипт и манифест:
+
+    ```shell
+    gopass-jsonapi configure
+    ```

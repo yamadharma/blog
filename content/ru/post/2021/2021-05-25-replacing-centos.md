@@ -2,7 +2,7 @@
 title: "Замена Centos"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2022-01-07T22:14:00+03:00
+lastmod: 2022-01-21T18:47:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -56,7 +56,7 @@ slug: "replacing-centos"
 3.  Миграция с Centos8
 
     -   Репозиторий скриптов: <https://github.com/oamg/convert2rhel/>
-    -   Документация: <https://access.redhat.com/documentation/en-us/red%5Fhat%5Fenterprise%5Flinux/8/html-single/converting%5Ffrom%5Fan%5Frpm-based%5Flinux%5Fdistribution%5Fto%5Frhel/index>
+    -   Документация: <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/converting_from_an_rpm-based_linux_distribution_to_rhel/index>
     -   Обновить дистрибутив:
 
         ```shell
@@ -194,6 +194,18 @@ slug: "replacing-centos"
         ```shell
         sudo bash vzdeploy8
         ```
+
+
+#### <span class="section-num">2.1.5</span> SUSE Liberty Linux {#suse-liberty-linux}
+
+<!--list-separator-->
+
+1.  Описание дистрибутива
+
+    -   Сайт: <https://www.suse.com/products/suse-liberty-linux/>
+    -   Пакеты пространства пользователя в SUSE Liberty Linux сформировано путём пересборки исходных SRPM-пакетов из RHEL 8.5.
+    -   Пакет с ядром заменён на собственный вариант, основанный на ветке ядра Linux 5.3 и созданный путём пересборки пакета с ядром из дистрибутива SUSE Linux Enterprise 15 SP3.
+    -   Дистрибутив формируется только для архитектуры x86-64.
 
 
 ### <span class="section-num">2.2</span> Полные альтернативы {#полные-альтернативы}

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-01-18T19:09:00+03:00
+lastmod: 2022-02-03T14:53:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -51,6 +51,11 @@ slug: "system-administration"
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 
 
+### <span class="section-num">2.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
+
+-   [Обновление пакетов python]({{< relref "2022-01-21-update-all-python-packages" >}})
+
+
 ## <span class="section-num">3</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
@@ -80,10 +85,16 @@ slug: "system-administration"
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
+### <span class="section-num">5.4</span> Текстовые процессоры {#текстовые-процессоры}
+
+-   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
+
+
 ## <span class="section-num">6</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
+-   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
 
 
 ## <span class="section-num">7</span> Сети {#сети}

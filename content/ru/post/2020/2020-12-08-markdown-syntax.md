@@ -2,7 +2,7 @@
 title: "Синтаксис языка Markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-22T09:48:00+03:00
-lastmod: 2021-08-28T19:38:00+03:00
+lastmod: 2022-02-09T17:06:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -32,7 +32,7 @@ slug: "markdown-syntax"
       <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="alternative text for search engines" width="240" height="180" border="10" />
     </a>
     ```
--   Можно добавить изображение со ссылкой на видео в виде `markdown`:
+-   Можно добавить изображение со ссылкой на видео в виде `markdown` (см. [Миниатюры видео для youtube]({{< relref "2022-02-05-youtube-video-thumbnail" >}})):
 
     ```markdown
     [![alternative text for search engines](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)

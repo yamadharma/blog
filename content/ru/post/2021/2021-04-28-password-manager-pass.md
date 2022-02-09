@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2021-11-20T21:53:00+03:00
+lastmod: 2022-01-30T14:23:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -245,52 +245,15 @@ slug: "password-manager-pass"
     ```
 
 
-### <span class="section-num">5.4</span> Настройка интерфейса с броузером {#настройка-интерфейса-с-броузером}
-
--   Для взаимодействия с броузером используется интерфейс native messaging.
-
-
-#### <span class="section-num">5.4.1</span> pass {#pass}
-
--   Плагин для браузера называется [browserpass](https://github.com/browserpass/browserpass-extension).
-    -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/browserpass-ce/>.
-    -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/browserpass-ce/naepdomgkenhinolocfifgehidddafch>.
--   Интерфейс для взаимодействия с броузером (native messaging) (<https://github.com/browserpass/browserpass-native>):
-    -   Gentoo:
-
-        ```shell
-        emerge www-plugins/browserpass
-        ```
-
-
-#### <span class="section-num">5.4.2</span> gopass {#gopass}
-
--   Плагин для браузера называется [gopass bridge](https://github.com/gopasspw/gopassbridge)
-    -   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/gopass-bridge/>
-    -   Chrome/Chromium: <https://chrome.google.com/webstore/detail/gopass-bridge/kkhfnlkhiapbiehimabddjbimfaijdhk>
--   Начиная с версии gopass-1.12.0 команда создания интерфейса взаимодействия с броузером выделена в отдельную утилиту.
--   Устанавливаем интерфейс для взаимодействия с броузером (native messaging):
-    -   Gentoo
-
-        ```shell
-        emerge app-admin/gopass-jsonapi
-        ```
--   Для связки плагина с `gopass` необходимо создать вспомогательный скрипт и манифест:
-
-    ```shell
-    gopass-jsonapi configure
-    ```
-
-
-### <span class="section-num">5.5</span> Тонкие настройки {#тонкие-настройки}
+### <span class="section-num">5.4</span> Тонкие настройки {#тонкие-настройки}
 
 -   По умолчанию каталог с паролями называется `~/.password-store`. Но его можно задать также с помощью переменной окружения `PASSWORD_STORE_DIR`.
 
 
-### <span class="section-num">5.6</span> Устранение сбоев {#устранение-сбоев}
+### <span class="section-num">5.5</span> Устранение сбоев {#устранение-сбоев}
 
 
-#### <span class="section-num">5.6.1</span> Невозможно расшифровать пароль {#невозможно-расшифровать-пароль}
+#### <span class="section-num">5.5.1</span> Невозможно расшифровать пароль {#невозможно-расшифровать-пароль}
 
 -   Команда `gopass show secret` выдаёт `Error: Failed to decrypt`.
 -   Можно установить в `~/.bashrc` или `~/.profile`:
@@ -388,7 +351,7 @@ slug: "password-manager-pass"
 
 #### <span class="section-num">7.2.1</span> LastPass {#lastpass}
 
--   В меню выберите _Account options > Advanced > Export > LastPass CVS File_.
+-   В меню выберите _Account options &gt; Advanced &gt; Export &gt; LastPass CVS File_.
 -   Сохраняем результат в файл `lastpass_export.csv`.
 -   Конвертация с помощью `pass-import`:
 

@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2022-01-18T12:25:00+03:00
+lastmod: 2022-01-26T12:25:00+03:00
 tags: ["sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -661,7 +661,8 @@ slug: "window-manager-i3"
         ```
 
         -   `sleep 1` добавляет небольшую задержку, чтобы предотвратить возможное состояние гонки.
--   Для блокировки экрана после заданного периода времени используем ==xautolock.
+-   Для блокировки экрана после заданного периода времени можно использовать `xautolock` или `xss-lock`.
+-   Использование `xautolock`.
 -   Установка
     -   Gentoo
 
@@ -675,6 +676,18 @@ slug: "window-manager-i3"
     ```
 
     -   Блокирует через 10 минут.
+-   Использование `xss-lock`.
+-   Установка
+    -   Gentoo
+
+        ```shell
+        emerge x11-misc/xss-lock
+        ```
+-   Использование в конфигурационном файле:
+
+    ```conf
+    exec --no-startup-id xss-lock -- "$Locker"
+    ```
 
 
 ## <span class="section-num">6</span> Приложения {#приложения}
@@ -706,7 +719,7 @@ slug: "window-manager-i3"
     -   По клавише `PrtScr` делается скриншот.
     -   По клавише `mod` + `PrtScr` делается скриншот активного окна.
     -   По клавише `mod` + `Shift` + `PrtScr` предлагается выделить область экрана, скриншот которой следует сделать.
-    -   Скриншоты переносятся в каталог $XDG_PICTURES_DIR (обычно `~/Pictures` или `~/Изображения`).
+    -   Скриншоты переносятся в каталог $XDG_PICTURES_DIR (обычно `~/Pictures` или `~/Изображения`) (см. [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})).
 
 
 ## <span class="section-num">7</span> Совместимость приложений {#совместимость-приложений}
