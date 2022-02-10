@@ -2,9 +2,9 @@
 title: "Журнал TUGboat"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T16:49:00+03:00
-lastmod: 2022-02-10T16:56:00+03:00
+lastmod: 2022-02-10T16:59:00+03:00
 draft: false
-slug: "tugboat-jornal"
+slug: "tugboat-journal"
 ---
 
 Журнал _TUGboat_ является основным изданием TeX Users Group (TUG).
