@@ -2,7 +2,9 @@
 title: "Тип ключа ssh"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-03T14:48:00+03:00
-lastmod: 2022-02-03T15:09:00+03:00
+lastmod: 2022-02-09T17:51:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "ssh-key-type"
 ---
@@ -48,17 +50,17 @@ slug: "ssh-key-type"
 ### <span class="section-num">2.3</span> Конфигурация для группы хостов {#конфигурация-для-группы-хостов}
 
 -   Можно задать группу хостов в виде шаблонов командной строки (wildcards).
--   Например, правило для сети:
+    -   Например, правило для сети:
 
-    ```conf-unix
-    Host 192.168.0.*
-     HostKeyAlgorithms=+ssh-rsa
-     PubkeyAcceptedKeyTypes +ssh-rsa
-    ```
--   Можно задать привило для всех хостов:
+        ```conf-unix
+        Host 192.168.0.*
+         HostKeyAlgorithms=+ssh-rsa
+         PubkeyAcceptedKeyTypes +ssh-rsa
+        ```
+    -   Можно задать привило для всех хостов:
 
-    ```conf-unix
-    Host *
-     HostKeyAlgorithms=+ssh-rsa
-     PubkeyAcceptedKeyTypes +ssh-rsa
-    ```
+        ```conf-unix
+        Host *
+         HostKeyAlgorithms=+ssh-rsa
+         PubkeyAcceptedKeyTypes +ssh-rsa
+        ```

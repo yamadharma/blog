@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-02-03T14:53:00+03:00
+lastmod: 2022-02-10T15:03:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -44,6 +44,7 @@ slug: "system-administration"
 ### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
+-   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
 
 
 ### <span class="section-num">2.4</span> Файловые системы {#файловые-системы}
