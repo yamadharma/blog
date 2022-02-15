@@ -2,8 +2,9 @@
 title: "Репозиторий конференций CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2021-10-07T19:03:00+03:00
-categories: ["computer_science", "сиянс"]
+lastmod: 2022-02-15T12:27:00+03:00
+tags: ["sci-admin"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "ceur-ws-conference-repository"
 ---

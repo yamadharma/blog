@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-02-10T15:03:00+03:00
+lastmod: 2022-02-15T12:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,16 @@ slug: "system-administration"
 ### <span class="section-num">2.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
 
 -   [Обновление пакетов python]({{< relref "2022-01-21-update-all-python-packages" >}})
+
+
+### <span class="section-num">2.6</span> Дистрибутивы Linux {#дистрибутивы-linux}
+
+
+#### <span class="section-num">2.6.1</span> Режим киоска {#режим-киоска}
+
+-   Данные дистрибутивы созданы для организации режима киоска (см. [Режим киоска]({{< relref "2022-02-15-kiosk-mode" >}})).
+-   [Porteus Kiosk]({{< relref "2022-02-15-porteus-kiosk" >}})
+-   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
 
 
 ## <span class="section-num">3</span> Управление и мониторинг {#управление-и-мониторинг}

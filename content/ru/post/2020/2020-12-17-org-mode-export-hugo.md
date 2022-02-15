@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2021-08-29T18:24:00+03:00
+lastmod: 2022-02-15T12:16:00+03:00
 tags: ["org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -72,13 +72,11 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     Выглядить это так:
 
     <details>
-    <summary>
-    Краткая информация
-    </summary>
-    <p class="details">
+    <summary>Краткая информация</summary>
+    <div class="details">
 
     А здесь подробная информация.
-    </p>
+    </div>
     </details>
 
 -   Если блок `summary` отсутствует, резюме будет заменено на некоторое значение по умолчанию. Так, блок
@@ -92,8 +90,10 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     будет иметь следующий вид:
 
     <details>
-    <p class="details">А здесь подробная информация.
-    </p>
+    <div class="details">
+
+    А здесь подробная информация.
+    </div>
     </details>
 
 -   Можно показывать блок открытым по умолчанию. Для этого следует добавить атрибут HTML `#+attr_html: :open t`:
@@ -109,13 +109,11 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     ```
 
     <details open>
-    <summary>
-    Краткая информация
-    </summary>
-    <p class="details">
+    <summary>Краткая информация</summary>
+    <div class="details">
 
     А здесь подробная информация.
-    </p>
+    </div>
     </details>
 
 
@@ -333,7 +331,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
     примет вид (для TOML)
 
-    ```conf-toml
+    ```toml
     feature = true
     ```
 
@@ -360,7 +358,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
     примет вид (для TOML)
 
-    ```conf-toml
+    ```toml
     animals = ["dog", "cat", "penguin", "mountain gorilla"]
     integers = [123, -5, 17, 1_234]
     floats = [12.3, -5.0, -1.7e-05]
@@ -389,7 +387,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
     примет вид (для TOML)
 
-    ```conf-toml
+    ```toml
     [versions]
       emacs = "27.0.50"
       hugo = 0.48
