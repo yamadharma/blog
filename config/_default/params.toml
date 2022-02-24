@@ -300,3 +300,9 @@ plugins_js  = []
 [icon.pack]
   ai = true  # Academicons icon pack https://jpswalsh.github.io/academicons/
 
+[params.mermaid]
+enable = true
+theme = "neutral"
+
+[params.mermaid.flowchart]
+diagramPadding = 6

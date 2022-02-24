@@ -1,7 +1,8 @@
 ---
 title: "Почта. Подключение к Google"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-25T16:55:00+03:00
-lastmod: 2021-07-07T17:09:00+03:00
+lastmod: 2022-02-17T14:51:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

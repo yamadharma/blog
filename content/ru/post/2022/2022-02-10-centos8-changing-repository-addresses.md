@@ -2,7 +2,7 @@
 title: "CentOS 8. Изменение адресов репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T14:39:00+03:00
-lastmod: 2022-02-10T17:07:00+03:00
+lastmod: 2022-02-18T15:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
