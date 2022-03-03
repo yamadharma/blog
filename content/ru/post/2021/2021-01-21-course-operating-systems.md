@@ -2,7 +2,7 @@
 title: "Курс Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2022-02-17T15:40:00+03:00
+lastmod: 2022-03-01T21:18:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -133,9 +133,9 @@ slug: "course-operating-systems"
 
 ### <span class="section-num">4.2</span> Первоначальна настройка git {#первоначальна-настройка-git}
 
--   Учётная запись на github
+-   Учётная запись на _github_.
 -   Ключ ssh (см. [Ключи ssh]({{< relref "2022-02-17-ssh-keys" >}})).
--   Ключи pgp
+-   Ключи pgp (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
 
 
 ### <span class="section-num">4.3</span> Настройка рабочей среды {#настройка-рабочей-среды}
