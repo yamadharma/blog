@@ -2,7 +2,7 @@
 title: "Замена Centos"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2022-01-21T18:47:00+03:00
+lastmod: 2022-03-08T20:56:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -43,6 +43,7 @@ slug: "replacing-centos"
     -   Собственно, это и есть первичный дистрибутив, который копируют.
     -   Отличается надёжностью, используется для корпоративных систем.
     -   Большой значение имеют дополнительные продукты: Satellite, Openstack, RHEV, Pacemaker, Gluster, Ceph, Openshift.
+    -   <span class="timestamp-wrapper"><span class="timestamp">[2022-03-08 Вт]</span></span>Компания Red Hat прекратила работу с организациями из России и Белоруссии (<https://www.redhat.com/en/blog/red-hats-response-war-ukraine>).
 
 <!--list-separator-->
 

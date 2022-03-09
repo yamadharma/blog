@@ -2,7 +2,7 @@
 title: "Выбор научного журнала для публикации"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-03T16:02:00+03:00
-lastmod: 2022-03-03T17:03:00+03:00
+lastmod: 2022-03-03T17:28:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "selecting-scientific-journal"
 
 ## <span class="section-num">1</span> Список издательств {#список-издательств}
 
--   Американское физическое общество (<https://journals.aps.org/>) издаёт журналы по физике (ваш К.О.).
+-   Американское физическое общество (<https://journals.aps.org/>) издаёт журналы по физике.
 -   Королевское химическое общество (UK) (<https://pubs.rsc.org/>) издаёт журналы по химии.
 -   Elsevier (<https://www.sciencedirect.com/>).
 -   SpringerNature (<https://link.springer.com/>).

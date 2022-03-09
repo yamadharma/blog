@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-02-15T12:43:00+03:00
+lastmod: 2022-03-09T18:39:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -84,6 +84,7 @@ slug: "system-administration"
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
+-   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
 ### <span class="section-num">5.2</span> Виртуализация {#виртуализация}
@@ -99,6 +100,11 @@ slug: "system-administration"
 ### <span class="section-num">5.4</span> Текстовые процессоры {#текстовые-процессоры}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
+
+
+### <span class="section-num">5.5</span> Работа с дисками {#работа-с-дисками}
+
+-   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
 ## <span class="section-num">6</span> Безопасность {#безопасность}
