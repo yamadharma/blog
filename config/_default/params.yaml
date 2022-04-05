@@ -98,13 +98,6 @@ features:
     api_key: ''
     zoom: 15
 
-## Contact widget
-    
-content:
-  coordinates:
-    latitude: '55.710707'
-    longitude: '37.603774'
-    
 # Extensions
 
 extensions:
@@ -119,14 +112,6 @@ extensions:
 
 ###    
       
-address:
-  street: 3 Ordzhonikidze
-  city: Moscow
-  region: Russian Federation
-  postcode: "115419"
-  country: Russian Federation
-  country_code: RU
-
 show_related:
   docs: true
   page: false
@@ -136,14 +121,6 @@ show_related:
   talk: true
 local_business_type: ""
 
-email: kulyabov-ds@rudn.ru
-phone: ""
-directions: Enter Building and take the stairs to Office 384 on Floor 3
-office_hours:
-  - Monday 09:00 to 16:00
-  - Tuesday 09:00 to 16:00
-  - Wednesday 09:00 to 16:00
-  - Thursday 09:00 to 16:00
 sharing_image: ""
 
 reading_time: true
