@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2022-01-30T14:44:00+03:00
+lastmod: 2022-04-03T19:16:00+03:00
 draft: false
 slug: "password-manager-pass-integration"
 ---
@@ -19,35 +19,8 @@ slug: "password-manager-pass-integration"
 
 ### <span class="section-num">1.1</span> rofi-pass {#rofi-pass}
 
+-   [rofi-pass]({{< relref "2022-04-03-rofi-pass" >}})
 -   Интеграция _pass_ с _rofi_ (см. [Запуск приложений. Rofi]({{< relref "2021-11-19-launcher_rofi" >}})).
-
-
-#### <span class="section-num">1.1.1</span> Описание {#описание}
-
--   Интеграция _pass_ с _rofi_
--   Репозиторий: <https://github.com/carnager/rofi-pass>
-
-
-#### <span class="section-num">1.1.2</span> Установка {#установка}
-
--   Репозиторий:
-
-    ```shell
-    https://github.com/carnager/rofi-pass
-    ```
--   Установка
-    -   Gentoo
-
-        ```shell
-        emerge x11-misc/rofi-pass
-        ```
-
-        -   Находится в репозитории [winny](https://gpo.zugaina.org/Overlays/winny).
-        -   Добавить репозиторий:
-
-            ```shell
-            layman -a winny
-            ```
 
 
 ## <span class="section-num">2</span> Настройка интерфейса с броузером {#настройка-интерфейса-с-броузером}

@@ -2,7 +2,7 @@
 title: "Синтаксис языка Markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-22T09:48:00+03:00
-lastmod: 2022-02-09T17:06:00+03:00
+lastmod: 2022-04-04T16:41:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -21,7 +21,10 @@ slug: "markdown-syntax"
 -   Генератор статистических сайтов [Hugo](https://gohugo.io/) (см. [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})) использует вариант Markdown на основе библиотеки [Goldmark](https://github.com/yuin/goldmark/) (см. [Синтаксис markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})).
 
 
-## <span class="section-num">2</span> Видео youtube {#видео-youtube}
+## <span class="section-num">2</span> Специальные элементы {#специальные-элементы}
+
+
+### <span class="section-num">2.1</span> Видео _Youtube_ {#видео-youtube}
 
 -   Видео youtube нельзя добавить напрямую.
 -   В некоторых особых случаях можно добавлять непосредственно ссылку (например, в системе Moodle).
@@ -35,5 +38,23 @@ slug: "markdown-syntax"
 -   Можно добавить изображение со ссылкой на видео в виде `markdown` (см. [Миниатюры видео для youtube]({{< relref "2022-02-05-youtube-video-thumbnail" >}})):
 
     ```markdown
-    [![alternative text for search engines](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+    [![alternative text for search engines](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
     ```
+
+
+### <span class="section-num">2.2</span> Видео _Rutube_ {#видео-rutube}
+
+-   Идентификатор видео на _Rutube_ представляет собой шестнадцатеричное число.
+-   В адресе для миниатюры используются первые цифры идентификатора.
+-   Изображение со ссылкой на видео в виде `markdown`:
+
+    ```markdown
+    [![alternative text for search engines](https://pic.rutubelist.ru/video/12/34/RUTUBE_VIDEO_ID.jpg)](https://rutube.ru/video/RUTUBE_VIDEO_ID/)
+    ```
+
+    -   Здесь 12 --- первые 2 цифры RUTUBE_VIDEO_ID; 34 --- 3 и 4 цифры RUTUBE_VIDEO_ID.
+    -   Пример (идентификатор видео: `e6033653f134bd93e79aa2fe81848f09`):
+
+        ```markdown
+        [![alternative text for search engines](https://pic.rutubelist.ru/video/e6/03/e6033653f134bd93e79aa2fe81848f09.jpg)](https://rutube.ru/video/e6033653f134bd93e79aa2fe81848f09/)
+        ```

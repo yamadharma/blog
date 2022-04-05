@@ -2,8 +2,8 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2022-01-26T12:25:00+03:00
-tags: ["sysadmin", "gentoo"]
+lastmod: 2022-04-04T11:14:00+03:00
+tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "window-manager-i3"
@@ -27,7 +27,7 @@ slug: "window-manager-i3"
 -   Я сделал репозиторий со своей конфигурацией: <https://github.com/yamadharma/config-i3>
 
 
-## <span class="section-num">3</span> Конфигурация {#конфигурация}
+## <span class="section-num">3</span> Файл конфигурации {#файл-конфигурации}
 
 -   Файлы конфигурации просматриваются в следующем порядке:
     -   `$XDG_CONFIG_HOME/i3/config` (`~/.config/i3/config`);
@@ -37,7 +37,7 @@ slug: "window-manager-i3"
 -   Начиная с версии 4.20, можно подключать другие файлы конфигурации из основного файла конфигурации _i3_.
     -   Примеры использования директивы `include`:
 
-        ```conf
+        ```cfg
         # Тильда преобразуется в домашний каталог пользователя
         include ~/.config/i3/assignments.conf
 
@@ -288,10 +288,49 @@ slug: "window-manager-i3"
     ```
 
 
-### <span class="section-num">5.2</span> Строка статуса {#строка-статуса}
+### <span class="section-num">5.2</span> Управление окном с помощью мышки {#управление-окном-с-помощью-мышки}
+
+-   Можно управлять окнами с помощью мышки.
+-   Привязка осуществляется следующей командой:
+
+    ```conf-unix
+    bindsym [--release] [--border] [--whole-window] [--exclude-titlebar] [<Modifiers>+]button<n> command
+    ```
+
+    -   По умолчанию привязка запускается только при нажатии на строку заголовка окна.
+    -   Если указан флаг `--release`, он запустится, когда кнопка мыши будет отпущена.
+    -   Если указан флаг `--whole-window`, то привязка также будет выполняться при щелчке по любой части окна, за исключением границы.
+    -   Чтобы привязка выполнялась при щелчке границы, нужно указать флаг `--border`.
+    -   Если задан флаг `--exclude-titlebar`, заголовок не будет учитываться для привязки клавиш.
+-   Примеры.
+    -   Средняя кнопка на заголовке закрывает окно:
+
+        ```conf-unix
+        bindsym --release button2 kill
+        ```
+    -   Средняя кнопка и модификатор над любой частью окна закрывает окно:
+
+        ```conf-unix
+        bindsym --whole-window $mod+button2 kill
+        ```
+    -   Правая кнопка мыши переключает плавающий режим:
+
+        ```conf-unix
+        bindsym button3 floating toggle
+        bindsym $mod+button3 floating toggle
+        ```
+    -   Боковые кнопки мыши перемещают окно:
+
+        ```conf-unix
+        bindsym button9 move left
+        bindsym button8 move right
+        ```
 
 
-#### <span class="section-num">5.2.1</span> i3bar {#i3bar}
+### <span class="section-num">5.3</span> Строка статуса {#строка-статуса}
+
+
+#### <span class="section-num">5.3.1</span> i3bar {#i3bar}
 
 -   Отрисовку панели осуществляет утилита `i3bar`.
 -   Отображается вверху или внизу экрана.
@@ -530,7 +569,7 @@ slug: "window-manager-i3"
         ```
 
 
-#### <span class="section-num">5.2.2</span> polybar {#polybar}
+#### <span class="section-num">5.3.2</span> polybar {#polybar}
 
 -   Отдельное приложение для строки статуса.
 -   Применяется для замены _i3bar_.
@@ -593,13 +632,13 @@ slug: "window-manager-i3"
         ```
 
 
-### <span class="section-num">5.3</span> Запуск приложений {#запуск-приложений}
+### <span class="section-num">5.4</span> Запуск приложений {#запуск-приложений}
 
 -   По умолчанию используется `dmenu`.
 -   Можно заменить на `rofi` (см. [Запуск приложений. Rofi]({{< relref "2021-11-19-launcher_rofi" >}})).
 
 
-#### <span class="section-num">5.3.1</span> rofi {#rofi}
+#### <span class="section-num">5.4.1</span> rofi {#rofi}
 
 -   Используется для запуска приложений, переключения окон.
 -   <https://github.com/davatorium/rofi>
@@ -638,11 +677,11 @@ slug: "window-manager-i3"
 -   Конфигурация с помощью конфигурационного файла (поместим его в `~/.config/i3/rofi/config`).
 
 
-### <span class="section-num">5.4</span> Блокировка экрана {#блокировка-экрана}
+### <span class="section-num">5.5</span> Блокировка экрана {#блокировка-экрана}
 
 -   Для отключения экрана можно использовать DPMS:
 
-    ```conf
+    ```cfg
     exec --no-startup-id xset dpms 1800
     ```
 
@@ -656,7 +695,7 @@ slug: "window-manager-i3"
             ```
     -   Использование в конфигурационном файле:
 
-        ```conf
+        ```cfg
         set $Locker i3lock --color=000000 && sleep 1
         ```
 
@@ -671,7 +710,7 @@ slug: "window-manager-i3"
         ```
 -   Использование в конфигурационном файле:
 
-    ```conf
+    ```cfg
     exec --no-startup-id xautolock -time 10 -locker "$Locker"
     ```
 
@@ -685,7 +724,7 @@ slug: "window-manager-i3"
         ```
 -   Использование в конфигурационном файле:
 
-    ```conf
+    ```cfg
     exec --no-startup-id xss-lock -- "$Locker"
     ```
 

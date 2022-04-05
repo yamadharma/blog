@@ -2,8 +2,8 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-03-09T18:39:00+03:00
-tags: ["sysadmin"]
+lastmod: 2022-03-23T18:42:00+03:00
+tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "system-administration"

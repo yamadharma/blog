@@ -2,18 +2,18 @@
 title: "Emacs. Просмотр каталогов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-03T20:25:00+03:00
-lastmod: 2021-10-04T20:57:00+03:00
+lastmod: 2022-03-23T19:39:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-directory-browsing"
 ---
 
+Просмотр каталогов и проектов.
+
 <!--more-->
 
 {{< toc >}}
-
-Просмотр каталогов и проектов.
 
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
@@ -26,7 +26,7 @@ slug: "emacs-directory-browsing"
 
 -   Я использую:
     -   _dired_:  для просмотра файловой системы;
-    -   _treemacs_: для разработки программного обеспечения.
+-   _treemacs_: для разработки программного обеспечения.
 
 
 ## <span class="section-num">3</span> Пакеты, реализующие просмотр и навигацию по файловой системе {#пакеты-реализующие-просмотр-и-навигацию-по-файловой-системе}
@@ -63,6 +63,7 @@ slug: "emacs-directory-browsing"
 
 ### <span class="section-num">3.3</span> Neotree {#neotree}
 
+-   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   _Neotree_ основан на идее NerdTree для Vim.
 -   Репозиторий: <https://github.com/jaypei/emacs-neotree>
 

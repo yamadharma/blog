@@ -2,7 +2,7 @@
 title: "Курс Математические основы информационной безопасности"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-21T11:35:00+03:00
-lastmod: 2021-10-30T20:10:00+03:00
+lastmod: 2022-03-31T15:29:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

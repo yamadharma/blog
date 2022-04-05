@@ -1,0 +1,43 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://wowchemy.com/docs/guide/language/
+
+# Default language
+
+ru:
+  address:
+    street: ул. Орджоникидзе, 3
+    city: г. Москва
+    region: Российская Федерация
+    postcode: "115419"
+    country: Российская Федерация
+    country_code: RU
+  languageCode: ru-ru
+  contentDir: content/ru
+  title: Д. С. Кулябов
+  date_format: "2006-01-02"
+  address_format: zh
+  menu:
+    main:
+      - name: Обо мне
+        url: '#about'
+        weight: 10
+      - name: Блог
+        url: '#posts'
+        weight: 20
+      - name: Проекты
+        url: '#projects'
+        weight: 30
+      - name: Публикации
+        url: '#featured'
+        weight: 40
+      - name: Курсы
+        url: courses/
+        weight: 50
+      - name: Контакты
+        url: '#contact'
+        weight: 60
+en:
+  languageCode: en-us
+  contentDir: content/en
+  title: Dmitry S. Kulyabov

@@ -2,7 +2,8 @@
 title: "Языки разметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-14T18:02:00+03:00
-lastmod: 2021-10-14T18:07:00+03:00
+lastmod: 2022-03-26T18:52:00+03:00
+tags: ["programming"]
 categories: ["computer-science"]
 draft: false
 slug: "markup-languages"
@@ -24,3 +25,11 @@ slug: "markup-languages"
 
 -   [Легковесные языки разметки]({{< relref "2021-08-28-lightweight-markup-languages" >}})
 -   [Система TeX]({{< relref "2021-04-23-tex" >}})
+
+
+## <span class="section-num">3</span> Системы рендеринга {#системы-рендеринга}
+
+-   Обычно системы рендеринга привязаны к определённому языку.
+-   Но существуют и сторонние (относительно языка) системы рендеринга.
+    -   [Pandoc]({{< relref "2021-08-28-pandoc" >}})
+    -   [MathJax]({{< relref "2022-03-26-mathjax" >}})

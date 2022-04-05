@@ -1,14 +1,15 @@
 ---
 title: "Курс Моделирование сетей передачи данных"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-06-24T15:01:00+03:00
-lastmod: 2021-06-28T13:28:00+03:00
+lastmod: 2022-03-31T16:11:00+03:00
 tags: ["network", "education"]
-categories: ["сиянс"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "course-simulation-data-networks"
 ---
 
-Курс Моделирование сетей передачи данных.
+Курс _Моделирование сетей передачи данных_.
 
 <!--more-->
 
@@ -73,7 +74,7 @@ slug: "course-simulation-data-networks"
 
 ## <span class="section-num">4</span> Лабораторные работы {#лабораторные-работы}
 
-1.  Введение в Mininet.
+1.  [Введение в Mininet]({{< relref "2022-03-31-mininet-intro" >}})
 2.  Генератор трафика iperf.
 3.  Эмуляция сетей: задержка, джиттер.
 4.  Эмуляция сетей: потеря, дублирование, переупорядочивание пакетов.

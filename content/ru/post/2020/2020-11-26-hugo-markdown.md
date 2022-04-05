@@ -2,7 +2,7 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2021-12-22T18:50:00+03:00
+lastmod: 2022-04-04T16:50:00+03:00
 tags: ["blogging"]
 categories: ["sysadmin"]
 draft: false
@@ -274,20 +274,29 @@ Crash --> [*]
 
 #### <span class="section-num">3.2.2</span> Youtube {#youtube}
 
-Видео, размещённое на Youtube:
+-   Видео, размещённое на _Youtube_:
 
-````markdown
-{{</* youtube w7Ft2ymGmfc */>}}
-````
+    ````markdown
+    {{</* youtube w7Ft2ymGmfc */>}}
+    ````
 
 
 #### <span class="section-num">3.2.3</span> Vimeo {#vimeo}
 
-Видео, размещённое на Vimeo:
+-   Видео, размещённое на _Vimeo_:
 
-````markdown
-{{</* vimeo 146022717 */>}}
-````
+    ````markdown
+    {{</* vimeo 146022717 */>}}
+    ````
+
+
+#### <span class="section-num">3.2.4</span> Rutube {#rutube}
+
+-   Видео, размещённое на _Rutube_ (см. [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})):
+
+    ````markdown
+    {{</* rutube e6033653f134bd93e79aa2fe81848f09 */>}}
+    ````
 
 
 ## <span class="section-num">4</span> Разное {#разное}
