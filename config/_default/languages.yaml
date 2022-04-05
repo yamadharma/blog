@@ -32,7 +32,7 @@ ru:
         url: '#featured'
         weight: 40
       - name: Курсы
-        url: courses/
+        url: course/
         weight: 50
       - name: Контакты
         url: '#contact'

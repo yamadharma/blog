@@ -12,7 +12,7 @@ main:
     url: '#featured'
     weight: 40
   - name: Courses
-    url: courses/
+    url: course/
     weight: 50
   - name: Contact
     url: '#contact'

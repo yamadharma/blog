@@ -8,6 +8,36 @@ baseURL: 'https://yamadharma.github.io/' # Website URL
 copyright: '&copy; {year} Dmitry S. Kulyabov'
 
 ############################
+## PAGE OPTIONS
+############################
+
+cascade:
+  # Blog post options
+  - _target:
+      path: /post/**
+    editable: false
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+    share: true
+    header:
+      navbar:
+        enable: true
+  - _target:
+      path: /course/**
+    editable: false
+    reading_time: true
+    commentable: true
+    show_related: true
+    show_breadcrumb: true
+    share: true
+    header:
+      navbar:
+        enable: true
+
+
+############################
 ## LANGUAGE
 ############################
 
