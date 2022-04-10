@@ -2,12 +2,12 @@
 title: "Уравнения Максвелла. Дифференциальные формы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-24T19:24:00+03:00
-lastmod: 2022-03-24T20:25:00+03:00
-tags: ["maxwell-geometrization", "physics"]
+lastmod: 2022-04-06T17:39:00+03:00
+tags: ["geometrization", "physics"]
 categories: ["science"]
 draft: false
 slug: "maxwell-equations-differential-forms"
-projects: ["maxwell-geometrization"]
+projects: ["geometrization"]
 ---
 
 <!--more-->
@@ -30,14 +30,6 @@ projects: ["maxwell-geometrization"]
 
 -   3-форма тока, дуальная к 4-вектору тока
 -   \\( J = J ^{\alpha} \varepsilon\_{\alpha\beta\gamma\delta} d x ^{\beta} \wedge d x ^{\gamma} \wedge d x ^{\delta}\\).
-
-В этих обозначениях уравнения Максвелла могут быть очень компактно записаны как
-
-{\displaystyle \mathrm {d} \\,{\textbf {F}}={\textbf {0}}}{\mathrm  {d}}\\,{{\textbf  {F}}}={\textbf  {0}},
-{\displaystyle \mathrm {d} \\,{**{\textbf {F}}}={\*{\textbf {J}}}}{\displaystyle \mathrm {d} \\,{\*{\textbf {F}}}={\*{\textbf {J}}}},
-где {\displaystyle \*}** — оператор звезды Ходжа. Подобным образом может быть описана геометрия общей калибровочной теории.
-
-2-форма {\displaystyle \*\mathbf {F} }\*{\mathbf  {F}} также называется 2-формой Максвелла.
 
 
 ## <span class="section-num">2</span> Уравнения Максвелла {#уравнения-максвелла}

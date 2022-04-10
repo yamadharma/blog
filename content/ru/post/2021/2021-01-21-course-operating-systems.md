@@ -2,7 +2,7 @@
 title: "Курс Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2022-04-05T18:30:00+03:00
+lastmod: 2022-04-06T18:21:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -145,7 +145,7 @@ slug: "course-operating-systems"
 
 ### <span class="section-num">5.1</span> Установка ОС Linux {#установка-ос-linux}
 
--   [Лабораторная работа Установка ОС Linux]({{< relref "2022-04-04-linux-install" >}})
+-   [Лабораторная работа Установка ОС Linux]({{< relref "2022-04-04-lab-linux-install" >}})
 -   Предлагается установка Fedora Linux
 -   Установка необходимого программного обеспечения
 -   Установка на внешний SSD-диск
@@ -153,6 +153,7 @@ slug: "course-operating-systems"
 
 ### <span class="section-num">5.2</span> Первоначальна настройка git {#первоначальна-настройка-git}
 
+-   [Лабораторная работа Первоначальна настройка git]({{< relref "2022-04-06-lab-initial-git-setup" >}})
 -   Учётная запись на _github_.
 -   Ключ ssh (см. [Ключи ssh]({{< relref "2022-02-17-ssh-keys" >}})).
 -   Ключи pgp (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).

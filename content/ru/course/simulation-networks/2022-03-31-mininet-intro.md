@@ -2,7 +2,7 @@
 title: "Введение в Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-31T16:10:00+03:00
-lastmod: 2022-04-04T13:44:00+03:00
+lastmod: 2022-04-07T19:35:00+03:00
 tags: ["network", "education"]
 categories: ["science", "computer-science"]
 draft: false
@@ -110,12 +110,89 @@ menu:
 -   После этого должны запускаться графические приложения.
 
 
-### <span class="section-num">1.6</span> Видео {#видео}
+### <span class="section-num">1.6</span> Работа с Mininet из-под Windows {#работа-с-mininet-из-под-windows}
 
 
-#### <span class="section-num">1.6.1</span> Youtube {#youtube}
+#### <span class="section-num">1.6.1</span> Варианты Xserver {#варианты-xserver}
+
+-   Использовать можно любой вариант Xserver.
+
+<!--list-separator-->
+
+1.  VcXsrv Windows X Server
+
+    -   Сайт: <https://sourceforge.net/projects/vcxsrv/>
+    -   Лицензия: GPLv3.
+    -   Компиляция: Visual C++ 2012 Express Edition
+
+<!--list-separator-->
+
+2.  Xming X Server
+
+    -   Сайт: <http://www.straightrunning.com/XmingNotes/>
+    -   Лицензия:
+        -   _Public Domain Release_: MIT
+        -   _Website Release_: за загрузку новых выпусков необходимо вносить плату; приобретение лицензии дает пользователю доступ к новым загрузкам в течение одного года.
+    -   Компиляция: MinGW, Pthreads-Win32.
+
+
+#### <span class="section-num">1.6.2</span> Установка программного обеспечения {#установка-программного-обеспечения}
+
+-   Установите `putty`:
+
+    ```shell
+    choco install putty
+    ```
+-   Установите VcXsrv Windows X Server
+
+    ```shell
+    choco install vcxsrv
+    ```
+
+
+#### <span class="section-num">1.6.3</span> Запуск Xserver {#запуск-xserver}
+
+-   Запустите `XLaunch`.
+-   Выберите опции:
+    -   _Multiple windows_;
+    -   _Display number_: -1;
+    -   _Start no client_.
+-   Можно сохранить параметры, тогда при следующем запуске не нужно будет отмечать эти опции.
+
+
+#### <span class="section-num">1.6.4</span> Запуск putty {#запуск-putty}
+
+-   При подключении добавьте опцию перенаправления X11:
+    -   Connection, SSH, X11 : _Enable X11 forwarding_.
+
+
+## <span class="section-num">2</span> Основы работы в _Mininet_ {#основы-работы-в-mininet}
+
+
+## <span class="section-num">3</span> Видео {#видео}
+
+
+### <span class="section-num">3.1</span> Youtube {#youtube}
+
+
+#### <span class="section-num">3.1.1</span> Виртуальная машина Mininet {#виртуальная-машина-mininet}
 
 {{< youtube ZjA4bjiO_DM >}}
 
 
-#### <span class="section-num">1.6.2</span> Rutube {#rutube}
+#### <span class="section-num">3.1.2</span> Работа с Mininet из-под Windows {#работа-с-mininet-из-под-windows}
+
+{{< youtube KPQMokxQ4Gw >}}
+
+
+### <span class="section-num">3.2</span> Rutube {#rutube}
+
+
+#### <span class="section-num">3.2.1</span> Виртуальная машина Mininet {#виртуальная-машина-mininet}
+
+{{< rutube 3afa7009a47f1f5d44d53e282d0d5fe4 >}}
+
+
+#### <span class="section-num">3.2.2</span> Работа с Mininet из-под Windows {#работа-с-mininet-из-под-windows}
+
+{{< rutube c98ef1bb6b01c1e463854464e20cd1f3 >}}

@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2021-11-10T19:47:00+03:00
+lastmod: 2022-04-10T20:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -462,88 +462,118 @@ slug: "mail-synchronization-mbsync"
 -   [Почта. Office365. Настройка почтового клиента]({{< relref "2021-07-04-mail-office365-configuring-mail-client" >}})
 -   Названия IMAP-ящиков даётся в модифицированной кодировке UTF-7 (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
 -   Для smtp следует именовать пароль _pass_ как `account@example.com@smtp.office365.com`.
--   Конфигурация:
 
-    ```conf-unix
-    ## IMAPAccount (outlook.office365.com)
+<!--list-separator-->
 
-    IMAPAccount account@example.com
-    Host smtp.office365.com
-    User account@example.com
-    # Pass ***************
-    ## To store the password in an encrypted file use PassCmd instead of Pass
-    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
-    PassCmd "pass email/example.com/account@example.com"
-    AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
-    # Increase timeout
-    Timeout 120
+1.  Аутентификация _LOGIN_
 
-    MaildirStore account@example.com-local
-    Path ~/Maildir/account@example.com/
-    Inbox ~/Maildir/account@example.com/Inbox
-    SubFolders Verbatim
+    -   Конфигурация:
 
-    IMAPStore account@example.com-remote
-    Account account@example.com
+        ```conf-unix
+        ## IMAPAccount (outlook.office365.com)
 
-    Channel account@example.com-inbox
-    Far :account@example.com-remote:"INBOX"
-    Near :account@example.com-local:"INBOX"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        IMAPAccount account@example.com
+        Host smtp.office365.com
+        User account@example.com
+        # Pass ***************
+        ## To store the password in an encrypted file use PassCmd instead of Pass
+        # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
+        PassCmd "pass email/example.com/account@example.com"
+        AuthMechs LOGIN
+        SSLType IMAPS
+        SSLVersion TLSv1.2
+        # Increase timeout
+        Timeout 120
+        PipelineDepth 50
 
-    Channel account@example.com-trash
-    Far :account@example.com-remote:"&BCMENAQwBDsENQQ9BD0ESwQ1-"
-    Near :account@example.com-local:"Trash"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        MaildirStore account@example.com-local
+        Path ~/Maildir/account@example.com/
+        Inbox ~/Maildir/account@example.com/Inbox
+        SubFolders Verbatim
 
-    Channel account@example.com-spam
-    Far :account@example.com-remote:"&BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &BD8EPgRHBEIEMA-"
-    Near :account@example.com-local:"Spam"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        IMAPStore account@example.com-remote
+        Account account@example.com
 
-    Channel account@example.com-drafts
-    Far :account@example.com-remote:"&BCcENQRABD0EPgQyBDgEOgQ4-"
-    Near :account@example.com-local:"Drafts"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        Channel account@example.com-inbox
+        Far :account@example.com-remote:"INBOX"
+        Near :account@example.com-local:"INBOX"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
 
-    Channel account@example.com-archive
-    Far :account@example.com-remote:"Archive1"
-    Near :account@example.com-local:"Archive"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        Channel account@example.com-trash
+        Far :account@example.com-remote:"&BCMENAQwBDsENQQ9BD0ESwQ1-"
+        Near :account@example.com-local:"Trash"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
 
-    Channel account@example.com-sent
-    Far :account@example.com-remote:"&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
-    Near :account@example.com-local:"Sent"
-    CopyArrivalDate yes
-    Create Both
-    Expunge Both
-    SyncState *
+        Channel account@example.com-spam
+        Far :account@example.com-remote:"&BB0ENQQ2BDUEOwQwBEIENQQ7BEwEPQQwBE8- &BD8EPgRHBEIEMA-"
+        Near :account@example.com-local:"Spam"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
 
-    Group account@example.com
-    Channel account@example.com-inbox
-    Channel account@example.com-trash
-    Channel account@example.com-spam
-    Channel account@example.com-drafts
-    Channel account@example.com-archive
-    Channel account@example.com-sent
-    ```
+        Channel account@example.com-drafts
+        Far :account@example.com-remote:"&BCcENQRABD0EPgQyBDgEOgQ4-"
+        Near :account@example.com-local:"Drafts"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
+
+        Channel account@example.com-archive
+        Far :account@example.com-remote:"Archive1"
+        Near :account@example.com-local:"Archive"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
+
+        Channel account@example.com-sent
+        Far :account@example.com-remote:"&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+        Near :account@example.com-local:"Sent"
+        CopyArrivalDate yes
+        Create Both
+        Expunge Both
+        SyncState *
+
+        Group account@example.com
+        Channel account@example.com-inbox
+        Channel account@example.com-trash
+        Channel account@example.com-spam
+        Channel account@example.com-drafts
+        Channel account@example.com-archive
+        Channel account@example.com-sent
+        ```
+
+<!--list-separator-->
+
+2.  Аутентификация _Oauth2_ с _DavMail_
+
+    -   Аутентификацию _oauth2_ можно настроить с помощью _DavMail_ (см. [DavMail]({{< relref "2022-04-10-davmail" >}})).
+    -   Сначала сконфигурите _DavMail_ аутентификацией `O365Interactive` или `O365Manual=б а потом переключите в режим =O365Modern`.
+    -   В конфигурации меняется блок аутентификации:
+
+        ```conf-unix
+        IMAPAccount account@example.com
+        Host 127.0.0.1
+        Port 1143
+        User account@example.com
+        # Pass ***************
+        ## To store the password in an encrypted file use PassCmd instead of Pass
+        # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
+        PassCmd "pass email/example.com/account@example.com"
+        AuthMechs LOGIN
+        SSLType None
+        ## Increase timeout
+        Timeout 120
+        PipelineDepth 50
+        ```
 
 
 ## <span class="section-num">4</span> Синхронизация {#синхронизация}

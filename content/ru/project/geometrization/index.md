@@ -3,7 +3,7 @@ title: Геометризация
 summary: Геометрический подход в электродинамике
 tags:
 - project-science
-- maxwell-geometrization
+- geometrization
 date: "2020-04-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).

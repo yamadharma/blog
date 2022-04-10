@@ -1,9 +1,10 @@
 ---
 title: "Научная школа Математическое моделирование"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T20:17:00+03:00
-lastmod: 2021-02-20T20:28:00+03:00
+lastmod: 2022-04-07T13:22:00+03:00
 tags: ["sci-admin"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "scientific-school-mathematical-modeling"
 ---
@@ -64,8 +65,4 @@ slug: "scientific-school-mathematical-modeling"
 ## <span class="section-num">3</span> Исследования {#исследования}
 
 -   [Научная школа. Научные задачи]({{< relref "2021-02-20-scientific-school-scientific-goals" >}})
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
+-   [Научная школа. Возможные инновации]({{< relref "2022-04-07-scientific-school-possible-innovations" >}})

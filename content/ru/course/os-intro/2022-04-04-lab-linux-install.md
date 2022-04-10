@@ -2,14 +2,14 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2022-04-04T17:16:00+03:00
+lastmod: 2022-04-06T18:07:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
 weight: 201
 toc: true
 type: "book"
-slug: "linux-install"
+slug: "lab-linux-install"
 summary: "Установка ОС Linux"
 menu:
   "os-intro-lab":

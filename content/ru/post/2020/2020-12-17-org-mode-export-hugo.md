@@ -2,8 +2,8 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2022-02-15T12:16:00+03:00
-tags: ["org-mode", "emacs"]
+lastmod: 2022-04-06T17:12:00+03:00
+tags: ["hugo", "org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "org-mode-export-hugo"
@@ -38,7 +38,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
 ```org
 #+begin_export hugo
-{{</* toc */>}}
+{{</*/* toc */*/>}}
 #+end_export
 ```
 
@@ -533,7 +533,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
     ```org
     :PROPERTIES:
-    :EXPORT_HUGO_SECTION: ru/courses
+    :EXPORT_HUGO_SECTION: ru/course
     :EXPORT_HUGO_BUNDLE: mathsec
     :EXPORT_FILE_NAME: _index
     :END:
