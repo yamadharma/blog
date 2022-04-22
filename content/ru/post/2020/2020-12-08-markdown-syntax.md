@@ -2,7 +2,7 @@
 title: "Синтаксис языка Markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-22T09:48:00+03:00
-lastmod: 2022-04-04T16:41:00+03:00
+lastmod: 2022-04-17T17:47:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -49,12 +49,8 @@ slug: "markdown-syntax"
 -   Изображение со ссылкой на видео в виде `markdown`:
 
     ```markdown
-    [![alternative text for search engines](https://pic.rutubelist.ru/video/12/34/RUTUBE_VIDEO_ID.jpg)](https://rutube.ru/video/RUTUBE_VIDEO_ID/)
+    [![alternative text for search engines](https://pic.rutubelist.ru/video/12/34/RUTUBE_PIC_ID.jpg)](https://rutube.ru/video/RUTUBE_VIDEO_ID/)
     ```
 
-    -   Здесь 12 --- первые 2 цифры RUTUBE_VIDEO_ID; 34 --- 3 и 4 цифры RUTUBE_VIDEO_ID.
-    -   Пример (идентификатор видео: `e6033653f134bd93e79aa2fe81848f09`):
-
-        ```markdown
-        [![alternative text for search engines](https://pic.rutubelist.ru/video/e6/03/e6033653f134bd93e79aa2fe81848f09.jpg)](https://rutube.ru/video/e6033653f134bd93e79aa2fe81848f09/)
-        ```
+    -   Здесь 12 --- первые 2 цифры `RUTUBE_PIC_ID`; 34 --- 3 и 4 цифры `RUTUBE_PIC_ID`.
+-   Связь `RUTUBE_PIC_ID` и `RUTUBE_VIDEO_ID` мне пока не понятна.

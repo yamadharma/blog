@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2021-12-21T20:04:00+03:00
+lastmod: 2022-04-17T13:26:00+03:00
 tags: ["education", "programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -93,6 +93,17 @@ slug: "git-practical-use-case"
             ```shell
             yum install gitflow
             ```
+    -   Fedora
+        -   Это программное обеспечение удалено из репозитория.
+        -   Необходимо устанавливать его вручную:
+
+            ```shell
+            cd /tmp
+            wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh
+            chmod +x gitflow-installer.sh
+            sudo ./gitflow-installer.sh install stable
+            ```
+
 -   Windows
     Git-flow входит в состав пакета git.
 
@@ -178,7 +189,7 @@ slug: "git-practical-use-case"
     -   Варианты конвертации
 
         <div class="table-caption">
-          <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+          <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
           Варианты конвертации для разных значений параметра core.autocrlf
         </div>
 

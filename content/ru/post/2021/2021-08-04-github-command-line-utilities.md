@@ -2,7 +2,7 @@
 title: "github: утилиты командной строки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-04T14:40:00+03:00
-lastmod: 2021-08-07T16:52:00+03:00
+lastmod: 2022-04-17T15:38:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -32,6 +32,11 @@ slug: "github-command-line-utilities"
 
     ```shell
     emerge dev-util/github-cli
+    ```
+-   Fedora:
+
+    ```shell
+    sudo dnf install gh
     ```
 
 

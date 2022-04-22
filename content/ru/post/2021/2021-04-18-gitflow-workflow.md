@@ -2,7 +2,7 @@
 title: "Рабочий процесс Gitflow"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-18T20:14:00+03:00
-lastmod: 2021-08-07T16:53:00+03:00
+lastmod: 2022-04-17T13:16:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -18,6 +18,10 @@ slug: "gitflow-workflow"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
+-
+
+-   Репозиторий: <https://github.com/petervanderdoes/gitflow-avh/>
+-   Описание модели ветвления: <https://nvie.com/posts/a-successful-git-branching-model/>
 -   Gitflow Workflow опубликована и популяризована Винсентом Дриссеном из компании vie.
 -   Gitflow Workflow предполагает выстраивание строгой модели ветвления с учётом выпуска проекта.
 -   Данная модель отлично подходит для организации рабочего процесса на основе релизов.

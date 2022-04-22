@@ -2,7 +2,7 @@
 title: "Уравнения Максвелла. Дифференциальные формы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-24T19:24:00+03:00
-lastmod: 2022-04-06T17:39:00+03:00
+lastmod: 2022-04-22T14:05:00+03:00
 tags: ["geometrization", "physics"]
 categories: ["science"]
 draft: false
@@ -20,7 +20,7 @@ projects: ["geometrization"]
 -   1-форма потенциала поля
     -   связность тривиального главного расслоения со структурной группой \\(U(1)\\)
 
-\\[A = A\_{\alpha} \dd{x^{\alpha}}.\\]
+\\[ A = A\_{\alpha} \dd{x^{\alpha}}. \\]
 
 -   2-форма Фарадея
     -   соответствующую тензору электромагнитного поля
@@ -29,7 +29,7 @@ projects: ["geometrization"]
 \\[F=\frac{1}{2} F\_{\mu\nu} \dd{x^{\mu}}  \wedge \dd{x^{\nu}}.\\]
 
 -   3-форма тока, дуальная к 4-вектору тока
--   \\( J = J ^{\alpha} \varepsilon\_{\alpha\beta\gamma\delta} d x ^{\beta} \wedge d x ^{\gamma} \wedge d x ^{\delta}\\).
+-   \\(J = J^{\alpha} \varepsilon\_{\alpha\beta\gamma\delta} d x^{\beta} \wedge d x^{\gamma} \wedge d x^{\delta}\\).
 
 
 ## <span class="section-num">2</span> Уравнения Максвелла {#уравнения-максвелла}

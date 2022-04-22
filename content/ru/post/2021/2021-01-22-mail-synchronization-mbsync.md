@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2022-04-10T20:43:00+03:00
+lastmod: 2022-04-12T18:24:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -461,13 +461,12 @@ slug: "mail-synchronization-mbsync"
 
 -   [Почта. Office365. Настройка почтового клиента]({{< relref "2021-07-04-mail-office365-configuring-mail-client" >}})
 -   Названия IMAP-ящиков даётся в модифицированной кодировке UTF-7 (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
--   Для smtp следует именовать пароль _pass_ как `account@example.com@smtp.office365.com`.
 
 <!--list-separator-->
 
 1.  Аутентификация _LOGIN_
 
-    -   Конфигурация:
+    -   Конфигурация _mbsync_:
 
         ```conf-unix
         ## IMAPAccount (outlook.office365.com)
@@ -550,13 +549,23 @@ slug: "mail-synchronization-mbsync"
         Channel account@example.com-archive
         Channel account@example.com-sent
         ```
+    -   Конфигурация SMTP для Emacs:
+
+        ```emacs-lisp
+        (setq send-mail-function    'smtpmail-send-it
+              smtpmail-smtp-server  "example.com"
+              smtpmail-stream-type  'starttls
+              smtpmail-smtp-service 587)
+        ```
+
+        -   Для smtp следует именовать пароль _pass_ как `account@example.com@smtp.office365.com` (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
 
 <!--list-separator-->
 
 2.  Аутентификация _Oauth2_ с _DavMail_
 
     -   Аутентификацию _oauth2_ можно настроить с помощью _DavMail_ (см. [DavMail]({{< relref "2022-04-10-davmail" >}})).
-    -   Сначала сконфигурите _DavMail_ аутентификацией `O365Interactive` или `O365Manual=б а потом переключите в режим =O365Modern`.
+    -   Сначала настройте _DavMail_ аутентификацией `O365Interactive` или `O365Manual`, а потом переключите в режим `O365Modern`.
     -   В конфигурации меняется блок аутентификации:
 
         ```conf-unix
@@ -574,6 +583,16 @@ slug: "mail-synchronization-mbsync"
         Timeout 120
         PipelineDepth 50
         ```
+    -   Конфигурация SMTP для Emacs:
+
+        ```emacs-lisp
+        (setq send-mail-function    'smtpmail-send-it
+              smtpmail-smtp-server  "localhost"
+              smtpmail-stream-type  'plain
+              smtpmail-smtp-service 1025)
+        ```
+
+        -   Для smtp следует именовать пароль _pass_ как `account@example.com@localhost` (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
 
 
 ## <span class="section-num">4</span> Синхронизация {#синхронизация}
