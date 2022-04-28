@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2021-09-29T16:24:00+03:00
+lastmod: 2022-04-27T15:57:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -275,54 +275,6 @@ mu index
 
 ### <span class="section-num">6.2</span> Написание писем {#написание-писем}
 
-
-#### <span class="section-num">6.2.1</span> org-mime {#org-mime}
-
--   Репозиторий: <https://github.com/org-mime/org-mime>
--   Отправка электропочты в формате HTML с помощью экспорта HTML из _org-mode_.
-
-
-#### <span class="section-num">6.2.2</span> org-msg {#org-msg}
-
--   Для редактирования сообщения с использованием `org-mode`.
--   Заменяет встроенную в _mu4e_ поддержку `org-mode`.
-
-<!--list-separator-->
-
-1.  Общая информация
-
-    -   Репозиторий: <https://github.com/jeremy-compostella/org-msg>
-    -   Пакет: <https://melpa.org/#/org-msg>
-    -   Поддерживаемые режимы:
-        -   Message mode;
-        -   mu4e mode;
-        -   notmuch mode.
-
-<!--list-separator-->
-
-2.  Зависимости
-
-    -   Необходим пакет [emacs-htmlize](https://github.com/hniksic/emacs-htmlize).
-
-<!--list-separator-->
-
-3.  Использование
-
-    -   `C-c` `C-e` --- генерирует и отображает экспортированную версию электронной почты (`org-msg-preview`).
-    -   `C-c` `C-k` --- закрывает буфер (`message-kill-buffer`).
-    -   `C-c` `C-s` --- переход к теме сообщения (как и в режиме сообщения) (`message-goto-subject`).
-    -   `C-c` `C-b` --- переход к телу сообщения (аналогично `message-goto-body` в режиме сообщения) (`org-msg-goto-body`).
-    -   `C-c` `C-a` --- добавить (или удалить) вложение (похоже на функцию `org-attach`) (`org-msg-attach`). Список вложений хранится в свойстве `attachment:`.
-    -   `C-c` `C-c` --- генерирует сообщение MIME и отправляет его (`org-ctrl-c-ctrl-c`).
-
-<!--list-separator-->
-
-4.  Настройка
-
-    -   Необходимо задать `mail-user-agent` до загрузки `org-msg`:
-
-        ```elisp
-        (setq mail-user-agent 'mu4e-user-agent)
-        ```
+-   [Emacs. Org-mode для написания писем]({{< relref "2022-04-27-emacs-org-mode-for-compose-emails" >}})
 
 [^fn:1]: URL: <https://ru.wikipedia.org/wiki/Maildir>

@@ -2,7 +2,7 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2022-04-14T19:36:00+03:00
+lastmod: 2022-04-28T13:42:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false
@@ -102,8 +102,17 @@ menu:
 
 ### <span class="section-num">4.1</span> Общая информация {#общая-информация}
 
+
+#### <span class="section-num">4.1.1</span> Генератор статических сайтов {#генератор-статических-сайтов}
+
 -   Для реализации сайта используется генератор статических сайтов _Hugo_.
+-   Сайт: <https://gohugo.io/>
+-   Репозиторий: <https://github.com/gohugoio/hugo>
 -   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
+
+
+#### <span class="section-num">4.1.2</span> Шаблон для сайта {#шаблон-для-сайта}
+
 -   Общие файлы для тем _Wowchemy_:
     -   Репозиторий: <https://github.com/wowchemy/wowchemy-hugo-themes>
 -   В качестве шаблона индивидуального сайта используется шаблон _Hugo Academic Theme_.
@@ -112,6 +121,21 @@ menu:
 -   В качестве шаблона для группового проекта используется шаблон _Hugo Research Group Theme_.
     -   Демо-сайт: <https://research-group.netlify.app/>
     -   Репозиторий: <https://github.com/wowchemy/starter-hugo-research-group>
+
+
+#### <span class="section-num">4.1.3</span> Видео {#видео}
+
+<!--list-separator-->
+
+1.  Youtube
+
+    {{< youtube ysEdxhyYl8k >}}
+
+<!--list-separator-->
+
+2.  Rutube
+
+    {{< rutube 1bea1bcf9215678e8ccf797187cc52fd >}}
 
 
 ### <span class="section-num">4.2</span> Создание сайта на Hugo {#создание-сайта-на-hugo}

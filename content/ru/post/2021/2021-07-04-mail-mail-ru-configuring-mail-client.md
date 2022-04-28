@@ -1,7 +1,8 @@
 ---
 title: "Почта. Mail.ru. Настройка почтового клиента"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T15:30:00+03:00
-lastmod: 2021-07-06T14:30:00+03:00
+lastmod: 2022-04-26T17:02:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2022-04-12T18:24:00+03:00
+lastmod: 2022-04-26T18:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -593,6 +593,92 @@ slug: "mail-synchronization-mbsync"
         ```
 
         -   Для smtp следует именовать пароль _pass_ как `account@example.com@localhost` (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
+
+
+#### <span class="section-num">3.4.8</span> Yahoo.com {#yahoo-dot-com}
+
+-   [Почта. Yahoo.com. Настройка почтового клиента]({{< relref "2022-04-26-mail-yahoo-com-configuring-mail-client" >}})
+-   Конфигурация:
+
+    ```conf-unix
+    ## IMAPAccount (Yahoo.com)
+
+    IMAPAccount account@yahoo.com
+    Host imap.mail.yahoo.com
+    User account@yahoo.com
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@yahoo.com/ {print $6}'"
+    PassCmd "gopass email/yahoo.com/account@yahoo.com@apppassword"
+    AuthMechs LOGIN
+    SSLType IMAPS
+    SSLVersion TLSv1.2
+    # Increase timeout
+    Timeout 120
+    PipelineDepth 50
+
+    MaildirStore account@yahoo.com-local
+    Path ~/Maildir/account@yahoo.com/
+    Inbox ~/Maildir/account@yahoo.com/Inbox
+    SubFolders Verbatim
+
+    IMAPStore account@yahoo.com-remote
+    Account account@yahoo.com
+
+    Channel account@yahoo.com-inbox
+    Far :account@yahoo.com-remote:"INBOX"
+    Near :account@yahoo.com-local:"INBOX"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@yahoo.com-trash
+    Far :account@yahoo.com-remote:"Trash"
+    Near :account@yahoo.com-local:"Trash"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@yahoo.com-spam
+    Far :account@yahoo.com-remote:"Bulk Mail"
+    Near :account@yahoo.com-local:"Spam"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@yahoo.com-drafts
+    Far :account@yahoo.com-remote:"Draft"
+    Near :account@yahoo.com-local:"Drafts"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@yahoo.com-archive
+    Far :account@yahoo.com-remote:"Archive"
+    Near :account@yahoo.com-local:"Archive"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Channel account@yahoo.com-sent
+    Far :account@yahoo.com-remote:"Sent"
+    Near :account@yahoo.com-local:"Sent"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
+    Group account@yahoo.com
+    Channel account@yahoo.com-inbox
+    Channel account@yahoo.com-trash
+    Channel account@yahoo.com-spam
+    Channel account@yahoo.com-drafts
+    Channel account@yahoo.com-archive
+    Channel account@yahoo.com-sent
+    ```
 
 
 ## <span class="section-num">4</span> Синхронизация {#синхронизация}
