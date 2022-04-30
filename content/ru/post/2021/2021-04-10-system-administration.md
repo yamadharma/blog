@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-03-23T18:42:00+03:00
+lastmod: 2022-04-30T20:10:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -16,7 +16,12 @@ slug: "system-administration"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Графическое окружение {#графическое-окружение}
+## <span class="section-num">1</span> Оборудование {#оборудование}
+
+-   [Критерии выбора ноутбука]({{< relref "2022-04-30-criteria-choosing-laptop" >}})
+
+
+## <span class="section-num">2</span> Графическое окружение {#графическое-окружение}
 
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
@@ -25,15 +30,15 @@ slug: "system-administration"
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
 
 
-## <span class="section-num">2</span> Операционные системы {#операционные-системы}
+## <span class="section-num">3</span> Операционные системы {#операционные-системы}
 
 
-### <span class="section-num">2.1</span> Windows {#windows}
+### <span class="section-num">3.1</span> Windows {#windows}
 
 -   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
 
 
-### <span class="section-num">2.2</span> Установка операционных систем {#установка-операционных-систем}
+### <span class="section-num">3.2</span> Установка операционных систем {#установка-операционных-систем}
 
 -   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
 -   [Установка Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
@@ -41,89 +46,90 @@ slug: "system-administration"
 -   [Использование vagrant]({{< relref "2021-11-12-using-vagrant" >}})
 
 
-### <span class="section-num">2.3</span> Серверные системы {#серверные-системы}
+### <span class="section-num">3.3</span> Серверные системы {#серверные-системы}
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 -   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
 
 
-### <span class="section-num">2.4</span> Файловые системы {#файловые-системы}
+### <span class="section-num">3.4</span> Файловые системы {#файловые-системы}
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 
 
-### <span class="section-num">2.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
+### <span class="section-num">3.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
 
 -   [Обновление пакетов python]({{< relref "2022-01-21-update-all-python-packages" >}})
 
 
-### <span class="section-num">2.6</span> Дистрибутивы Linux {#дистрибутивы-linux}
+### <span class="section-num">3.6</span> Дистрибутивы Linux {#дистрибутивы-linux}
 
 
-#### <span class="section-num">2.6.1</span> Режим киоска {#режим-киоска}
+#### <span class="section-num">3.6.1</span> Режим киоска {#режим-киоска}
 
 -   Данные дистрибутивы созданы для организации режима киоска (см. [Режим киоска]({{< relref "2022-02-15-kiosk-mode" >}})).
 -   [Porteus Kiosk]({{< relref "2022-02-15-porteus-kiosk" >}})
 -   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
 
 
-## <span class="section-num">3</span> Управление и мониторинг {#управление-и-мониторинг}
+## <span class="section-num">4</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 
 
-## <span class="section-num">4</span> Шрифты {#шрифты}
+## <span class="section-num">5</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">5</span> Пользовательские программы {#пользовательские-программы}
+## <span class="section-num">6</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">5.1</span> Обработка видео {#обработка-видео}
+### <span class="section-num">6.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">5.2</span> Виртуализация {#виртуализация}
+### <span class="section-num">6.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">5.3</span> Редакторы {#редакторы}
+### <span class="section-num">6.3</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-### <span class="section-num">5.4</span> Текстовые процессоры {#текстовые-процессоры}
+### <span class="section-num">6.4</span> Текстовые процессоры {#текстовые-процессоры}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 
 
-### <span class="section-num">5.5</span> Работа с дисками {#работа-с-дисками}
+### <span class="section-num">6.5</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-## <span class="section-num">6</span> Безопасность {#безопасность}
+## <span class="section-num">7</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
+-   [Сертификаты Let's Encrypt]({{< relref "2022-04-30-lets-encrypt-certificates" >}})
 
 
-## <span class="section-num">7</span> Сети {#сети}
+## <span class="section-num">8</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-## <span class="section-num">8</span> Организация обучения {#организация-обучения}
+## <span class="section-num">9</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">9</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">10</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

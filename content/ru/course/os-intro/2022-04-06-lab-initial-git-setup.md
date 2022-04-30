@@ -2,7 +2,7 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2022-04-18T06:53:00+03:00
+lastmod: 2022-04-30T17:02:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
