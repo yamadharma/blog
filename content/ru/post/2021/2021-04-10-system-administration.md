@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-04-30T20:10:00+03:00
+lastmod: 2022-05-02T16:46:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -117,7 +117,7 @@ slug: "system-administration"
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
--   [Сертификаты Let's Encrypt]({{< relref "2022-04-30-lets-encrypt-certificates" >}})
+-   [Сертификаты ACME]({{< relref "2022-04-30-acme-certificates" >}})
 
 
 ## <span class="section-num">8</span> Сети {#сети}
