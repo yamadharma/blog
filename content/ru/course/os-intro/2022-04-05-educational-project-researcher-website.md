@@ -2,7 +2,7 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2022-04-28T13:42:00+03:00
+lastmod: 2022-05-05T18:01:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false
@@ -51,8 +51,8 @@ menu:
         -   Разместить краткое описание владельца сайта (Biography).
         -   Добавить информацию об интересах (Interests).
         -   Добавить информацию от образовании (Education).
-    -   Сделать пост по прошедшей неделе.
-    -   Добавить пост на тему по выбору:
+    -   Сделать пост по прошедшей неделе (см. [Шаблон поста по прошедшей неделе]({{< relref "2022-05-05-template-post-last-week" >}})).
+    -   Добавить пост на тему по выбору (см. [Научное эссе]({{< relref "2022-05-05-scientific-essay" >}})):
         -   Управление версиями. Git.
         -   Непрерывная интеграция и непрерывное развертывание (CI/CD).
 
@@ -111,8 +111,9 @@ menu:
 -   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
 
 
-#### <span class="section-num">4.1.2</span> Шаблон для сайта {#шаблон-для-сайта}
+### <span class="section-num">4.2</span> Шаблон для сайта {#шаблон-для-сайта}
 
+-   [Hugo. Шаблон для научных работников]({{< relref "2021-07-02-hugo-template-for-scientists" >}})
 -   Общие файлы для тем _Wowchemy_:
     -   Репозиторий: <https://github.com/wowchemy/wowchemy-hugo-themes>
 -   В качестве шаблона индивидуального сайта используется шаблон _Hugo Academic Theme_.
@@ -123,7 +124,7 @@ menu:
     -   Репозиторий: <https://github.com/wowchemy/starter-hugo-research-group>
 
 
-#### <span class="section-num">4.1.3</span> Видео {#видео}
+#### <span class="section-num">4.2.1</span> Видео {#видео}
 
 <!--list-separator-->
 
@@ -138,23 +139,21 @@ menu:
     {{< rutube 1bea1bcf9215678e8ccf797187cc52fd >}}
 
 
-### <span class="section-num">4.2</span> Создание сайта на Hugo {#создание-сайта-на-hugo}
+### <span class="section-num">4.3</span> Создание сайта на Hugo {#создание-сайта-на-hugo}
 
 -   [Создание сайта на Hugo]({{< relref "2022-04-12-creating-hugo-site" >}})
 
 
-### <span class="section-num">4.3</span> Используемый шаблон {#используемый-шаблон}
-
--   [Hugo. Шаблон для научных работников]({{< relref "2021-07-02-hugo-template-for-scientists" >}})
+### <span class="section-num">4.4</span> Используемый шаблон {#используемый-шаблон}
 
 
-### <span class="section-num">4.4</span> Markdown для Hugo {#markdown-для-hugo}
+### <span class="section-num">4.5</span> Markdown для Hugo {#markdown-для-hugo}
 
 -   [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})
 -   [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})
 
 
-### <span class="section-num">4.5</span> Org-mode для Hugo {#org-mode-для-hugo}
+### <span class="section-num">4.6</span> Org-mode для Hugo {#org-mode-для-hugo}
 
 -   [Org-mode. Экспорт в Hugo]({{< relref "2020-12-17-org-mode-export-hugo" >}})
 -   [Обратные ссылки в Hugo]({{< relref "2021-06-02-backlinks-hugo" >}})

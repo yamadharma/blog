@@ -2,7 +2,7 @@
 title: "Введение в Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-31T16:10:00+03:00
-lastmod: 2022-04-22T18:27:00+03:00
+lastmod: 2022-05-05T18:28:00+03:00
 tags: ["network", "education"]
 categories: ["science", "computer-science"]
 draft: false
@@ -21,8 +21,6 @@ menu:
 Введение в средство натурного моделирования _Mininet_.
 
 <!--more-->
-
-{{< toc >}}
 
 
 ## <span class="section-num">1</span> Настройка стенда виртуальной машины _Mininet_ {#настройка-стенда-виртуальной-машины-mininet}
