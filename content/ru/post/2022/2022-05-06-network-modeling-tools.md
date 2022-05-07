@@ -2,7 +2,9 @@
 title: "Средства моделирования сетей для целей обучения"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-06T18:59:00+03:00
-lastmod: 2022-05-06T20:30:00+03:00
+lastmod: 2022-05-07T15:58:00+03:00
+tags: ["network", "education"]
+categories: ["computer-science"]
 draft: false
 slug: "network-modeling-tools"
 ---
@@ -49,7 +51,7 @@ slug: "network-modeling-tools"
 -   Доступен студентам _Сетевой академии Cisco (Cisco Network Academy)_.
 -   Для получения Packet Tracer необходимо зарегистрироваться на свободном курсе _Сетевой академии Cisco_.
 -   Для работы требует регистрации на сайте.
--   На данный момент доступ к сайту из России блокирован.
+-   На данный момент доступ к сайту из России блокирован (см. [Работа без учётной записи в Cisco Packet Tracer]({{< relref "2022-05-07-cisco-packet-tracer-accountless" >}})).
 
 
 #### <span class="section-num">2.1.3</span> Выводы {#выводы}
@@ -153,6 +155,7 @@ slug: "network-modeling-tools"
 
 -   Сайт: <https://gns3.com/>
 -   Репозитории: <https://github.com/GNS3>
+-   [Средство натурного моделирования сетей GNS3]({{< relref "2022-05-07-gns3-network-simulation-tool" >}})
 -   GNS (Graphical Network Simulator).
 -   Цифра _3_ является частью названия.
 -   Позволяет использовать виртуализацию Dynamips, QEMU, Docker.
@@ -161,13 +164,13 @@ slug: "network-modeling-tools"
 -   Поддерживается работа в Linux, Windows и Mac OS X.
 -   Можно использовать те же инструменты, что и для работы с реальными системами.
 -   Поддерживает оборудование различных производителей: Cisco, Juniper, MikroTik, Aruba (HPE), Fortinet и др.
--   Содержит несколько собственных сетевых примитивов (имитационные модели): конечные узлы (Virtual PC Simulator, VPCS), коммутаторы и т.д..
+-   Содержит несколько собственных сетевых примитивов (имитационные модели): конечные узлы (Virtual PC Simulator, VPCS), коммутаторы и т.д.
 
 
 #### <span class="section-num">4.2.2</span> Доступность {#доступность}
 
 -   Распространяется бесплатно по лицензии GNU GPL.
--   Образы эмулируемых систем доступны в магазине: <https://gns3.com/marketplace>.
+-   Образы эмулируемых систем доступны в магазине: <https://gns3.com/marketplace> (см. [GNS3. Образы оборудования]({{< relref "2022-05-07-gns3-appliances" >}})).
 -   Вернее, там доступны файлы описания для GNS3 и ссылки (если есть) на скачивание образов.
 -   Также в магазине есть и платный контент.
 
