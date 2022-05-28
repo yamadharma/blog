@@ -2,8 +2,8 @@
 title: "Обслуживание btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-23T10:22:00+03:00
-lastmod: 2021-09-23T11:54:00+03:00
-tags: ["sysadmin"]
+lastmod: 2022-05-26T14:34:00+03:00
+tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "btrfs-maintenence"

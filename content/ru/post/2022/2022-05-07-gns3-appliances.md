@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2022-05-07T16:24:00+03:00
+lastmod: 2022-05-08T21:06:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -63,5 +63,6 @@ slug: "gns3-appliances"
 -   Сайт: <http://www.freertr.org/>.
 -   Репозиторий: <https://github.com/rare-freertr/freeRtr>
 -   Виртуализация: qemu.
+-   Необходимо RAM: 2048 MB.
 -   Реализован на Java.
 -   Система команд похожа на Cisco.

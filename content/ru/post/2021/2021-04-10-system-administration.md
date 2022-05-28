@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-05-03T20:07:00+03:00
+lastmod: 2022-05-26T13:34:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,7 @@ slug: "system-administration"
 ### <span class="section-num">3.4</span> Файловые системы {#файловые-системы}
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
+-   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
 
 
 ### <span class="section-num">3.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
