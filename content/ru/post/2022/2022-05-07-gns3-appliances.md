@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2022-05-08T21:06:00+03:00
+lastmod: 2022-06-03T12:26:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -61,8 +61,33 @@ slug: "gns3-appliances"
 ### <span class="section-num">5.1</span> FreeRTR {#freertr}
 
 -   Сайт: <http://www.freertr.org/>.
--   Репозиторий: <https://github.com/rare-freertr/freeRtr>
+-   Репозиторий: <https://github.com/rare-freertr/freeRtr>.
 -   Виртуализация: qemu.
 -   Необходимо RAM: 2048 MB.
 -   Реализован на Java.
 -   Система команд похожа на Cisco.
+
+
+### <span class="section-num">5.2</span> FRRouting {#frrouting}
+
+-   [Маршрутизация. FRRouting]({{< relref "2022-06-02-routing-frrouting" >}})
+-   Магазин: <https://www.gns3.com/marketplace/appliances/frr>.
+-   Сайт: <https://frrouting.org/>.
+-   Репозиторий: <https://github.com/FRRouting/frr>
+-   Виртуализация: qemu.
+-   Необходимо RAM: 256 MB.
+-   Система команд похожа на Cisco.
+-   Неофициальные образы делаются для GNS3: <https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/>.
+
+
+### <span class="section-num">5.3</span> VyOS {#vyos}
+
+-   [Маршрутизация. VyOS]({{< relref "2022-06-03-routing-vyos" >}})
+-   Магазин: <https://www.gns3.com/marketplace/appliances/vyos>.
+-   Сайт: <https://vyos.net/>.
+-   Коммерческий сайт: <https://vyos.io/>.
+-   Репозиторий: <https://github.com/vyos/vyos-1x>
+-   Виртуализация: qemu.
+-   Необходимо RAM: 512 MB.
+-   Система команд похожа на Juniper.
+-   Неофициальные образы для vyos-1.1: <https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/>.

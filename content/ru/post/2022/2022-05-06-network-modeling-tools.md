@@ -2,7 +2,7 @@
 title: "Средства моделирования сетей для целей обучения"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-06T18:59:00+03:00
-lastmod: 2022-05-07T15:58:00+03:00
+lastmod: 2022-05-28T15:51:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -72,7 +72,7 @@ slug: "network-modeling-tools"
 
 #### <span class="section-num">2.2.2</span> Доступность {#доступность}
 
--   Симулятор платный: цена колеблется от $179 до $349 за разные версии экзаменов.
+-   Симулятор платный: цена колеблется от 179 до 349 долларов за разные версии экзаменов.
 
 
 ## <span class="section-num">3</span> Эмуляторы {#эмуляторы}
