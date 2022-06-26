@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2022-06-03T12:26:00+03:00
+lastmod: 2022-06-04T15:46:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,12 @@ slug: "gns3-appliances"
 -   Виртуализация: qemu.
 -   Необходимо RAM: 256 MB.
 -   Система команд похожа на Cisco.
+
+
+#### <span class="section-num">5.2.1</span> Образы для GNS3 {#образы-для-gns3}
+
 -   Неофициальные образы делаются для GNS3: <https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/>.
+-   Фактически это Debian  с подсистемой FRRouting. При запуске сразу открывается оболочка _vtysh_.
 
 
 ### <span class="section-num">5.3</span> VyOS {#vyos}
@@ -90,4 +95,4 @@ slug: "gns3-appliances"
 -   Виртуализация: qemu.
 -   Необходимо RAM: 512 MB.
 -   Система команд похожа на Juniper.
--   Неофициальные образы для vyos-1.1: <https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/>.
+-   Образы для vyos-1.1: <https://sourceforge.net/projects/gns-3/files/Qemu%20Appliances/>.

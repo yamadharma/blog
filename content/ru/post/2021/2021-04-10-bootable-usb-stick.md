@@ -2,7 +2,7 @@
 title: "Загрузочная флешка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:46:00+03:00
-lastmod: 2021-09-29T12:55:00+03:00
+lastmod: 2022-06-06T14:59:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -15,7 +15,7 @@ slug: "bootable-usb-stick"
 
 {{< toc >}}
 
-Несмотря на наличие usb-диска в корпусе Zalman ZM-VE300 (<https://www.zalman.com/RU/Product/ProductList.do?searchCategory1=86&searchCategory2=89>), хотелось также иметь бутовую флешку, загружающую операционные системы из ISO-образов.
+Несмотря на наличие usb-диска в корпусе Zalman ZM-VE300 (см. [Контейнер для жесткого диска Zalman ZM-VE300]({{< relref "2022-06-06-zalman-zm-ve300" >}})), хотелось также иметь бутовую флешку, загружающую операционные системы из ISO-образов.
 
 
 ## <span class="section-num">1</span> Программный загрузчик {#программный-загрузчик}
@@ -25,7 +25,7 @@ slug: "bootable-usb-stick"
 -   <https://www.ventoy.net/>
 -   <https://github.com/ventoy/Ventoy>
 
-Он основан на загрузчике `grub2` (<https://ru.wikipedia.org/wiki/GNU%5FGRUB>).
+Он основан на загрузчике `grub2` (<https://ru.wikipedia.org/wiki/GNU_GRUB>).
 
 
 ## <span class="section-num">2</span> Установка {#установка}
@@ -35,7 +35,6 @@ slug: "bootable-usb-stick"
 
 -   Скачиваем откомпилированный образ для Windows из <https://github.com/ventoy/Ventoy/releases>.
 -   Запускаем установщик:
-
     ```shell
     Ventoy2Disk.exe
     ```
@@ -49,11 +48,9 @@ slug: "bootable-usb-stick"
 #### <span class="section-num">2.2.1</span> Установка из командной строки {#установка-из-командной-строки}
 
 -   Запустить от пользователя `root` установщик:
-
     ```shell
     Ventoy2Disk.sh { -i | -I | -u } /dev/sdX
     ```
-
     Здесь
 
     -   `/dev/sdX` --- usb-диск (флешка);

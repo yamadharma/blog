@@ -2,9 +2,9 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2022-04-04T16:50:00+03:00
-tags: ["blogging"]
-categories: ["sysadmin"]
+lastmod: 2022-06-26T18:55:00+03:00
+tags: ["hugo"]
+categories: ["computer-science"]
 draft: false
 slug: "hugo-markdown"
 ---
@@ -80,7 +80,6 @@ _Курсив_ - подчёркивания.
 -   нажмите `Файл -> Опубликовать в Интернете -> Встраивать в Документы Google`;
 -   скопируйте URL-адрес в отображаемом атрибуте `src="..."`;
 -   вставьте URL-адрес в форму:
-
     ```markdown
     {{</* gdocs src="https://docs.google.com/..." */>}}
     ```
@@ -109,29 +108,24 @@ _Курсив_ - подчёркивания.
 Статические изображения по-умолчанию подгружаются из каталога `assets/media/`.
 
 -   Можно подключать изображение с помощью стандартного оператора `markdown`:
-
     ```markdown
     ![alternative text for search engines](image.jpg)
     ```
 
 -   Наряду со стандартной загрузкой изображений можно использовать и следующую конструкцию:
-
     ```markdown
     {{</* figure library="true" src="image.jpg" title="A caption" */>}}
     ```
 
 -   Изображение можно помещать в папку страницы:
-
     ```markdown
     {{</* figure src="image.jpg" title="A caption" */>}}
     ```
 
 -   Можно вставлять нумерованные рисунки:
-
     ```markdown
     {{</* figure src="image.jpg" title="A caption" numbered="true" */>}}
     ```
-
     С оператором `figure` используется библиотека `fancybox` для
     отображения картинок.
 
@@ -275,7 +269,6 @@ Crash --> [*]
 #### <span class="section-num">3.2.2</span> Youtube {#youtube}
 
 -   Видео, размещённое на _Youtube_:
-
     ````markdown
     {{</* youtube w7Ft2ymGmfc */>}}
     ````
@@ -284,7 +277,6 @@ Crash --> [*]
 #### <span class="section-num">3.2.3</span> Vimeo {#vimeo}
 
 -   Видео, размещённое на _Vimeo_:
-
     ````markdown
     {{</* vimeo 146022717 */>}}
     ````
@@ -293,10 +285,15 @@ Crash --> [*]
 #### <span class="section-num">3.2.4</span> Rutube {#rutube}
 
 -   Видео, размещённое на _Rutube_ (см. [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})):
-
     ````markdown
     {{</* rutube e6033653f134bd93e79aa2fe81848f09 */>}}
     ````
+
+
+#### <span class="section-num">3.2.5</span> Размещение видео во вкладках {#размещение-видео-во-вкладках}
+
+-   Одно и то же видео, размещённое на разных хостингах, удобно размещать во вкладках.
+-   [Hugo. Видео во вкладках]({{< relref "2022-06-26-hugo-video-tabs" >}})
 
 
 ## <span class="section-num">4</span> Разное {#разное}
@@ -305,11 +302,16 @@ Crash --> [*]
 ### <span class="section-num">4.1</span> Таблицы {#таблицы}
 
 -   Таблицы в формате _csv_ можно отображать с помощью оператора:
-
     ````markdown
     {{</* table path="results.csv" header="true" caption="Table 1: My results" */>}}
     ````
 -   Таблица в виде файла _csv_ должна находиться в папке страницы.
+
+
+### <span class="section-num">4.2</span> Вкладки {#вкладки}
+
+-   Тема _Wowchemy_ не поддерживает вкладки.
+-   Можно добавить поддержку вкладок: [Hugo. Вкладки]({{< relref "2022-06-26-hugo-tabbed-view" >}}).
 
 
 ## <span class="section-num">5</span> Ссылки {#ссылки}

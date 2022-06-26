@@ -2,7 +2,7 @@
 title: "Установка Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2022-05-26T14:33:00+03:00
+lastmod: 2022-06-18T16:40:00+03:00
 tags: ["btrfs", "sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -41,22 +41,18 @@ slug: "installing-linux-btrfs"
     -   p4 --- всё остальное для `btrfs`.
 -   Создадим файловые системы:
     -   p1 (`EFI`):
-
         ```shell
         mkfs.vfat -F32 -n EFI /dev/sda1
         ```
     -   p2 (`/boot`):
-
         ```shell
         mkfs.ext4 -L boot /dev/sda2
         ```
     -   p3 (`swap`):
-
         ```shell
         mkswap -L swap /dev/sda3
         ```
     -   p4 (`btrfs`)
-
         ```shell
         mkfs.btrfs /dev/sda4
         ```
@@ -65,13 +61,11 @@ slug: "installing-linux-btrfs"
 ## <span class="section-num">3</span> Подготовка раздела с btrfs {#подготовка-раздела-с-btrfs}
 
 -   Подмонтируем раздел с btrfs:
-
     ```shell
     mkdir /mnt/gentoo
     mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9 /dev/sda4 /mnt/gentoo/
     ```
 -   Создадим подтома на btrfs:
-
     ```shell
     cd /mnt/gentoo/
     btrfs subvol create @
@@ -87,40 +81,34 @@ slug: "installing-linux-btrfs"
 ## <span class="section-num">4</span> Копирование существующих файловых систем {#копирование-существующих-файловых-систем}
 
 -   Создадим точку монтирования:
-
     ```shell
     mkdir /mnt/from
     ```
 -   Подмонтируем и скопируем root-партицию:
-
     ```shell
     mount /dev/vgs/root /mnt/from/
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `/var`:
-
     ```shell
     mount /dev/vgs/var /mnt/from/
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@var
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `portage`:
-
     ```shell
     mount /dev/vgs/portage /mnt/from/
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `portage_local`:
-
     ```shell
     mount /dev/vgs/portage_local /mnt/from/
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage_local
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `/boot`:
-
     ```shell
     mkdir /mnt/to/
     mount /dev/sda2 /mnt/to
@@ -134,7 +122,6 @@ slug: "installing-linux-btrfs"
 ## <span class="section-num">5</span> Установка загрузчика {#установка-загрузчика}
 
 -   Перемонтируем файловую систему `btrfs`:
-
     ```shell
     umount /mnt/gentoo
     mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9,subvol=@ /dev/sda4 /mnt/gentoo/
@@ -144,7 +131,6 @@ slug: "installing-linux-btrfs"
     mount /dev/sda1 /mnt/gentoo/boot/efi
     ```
 -   Подмонтируем псевдо-файловые системы:
-
     ```shell
     mount -o bind /dev /mnt/gentoo/dev/
     mount -o bind /proc /mnt/gentoo/proc/
@@ -152,7 +138,6 @@ slug: "installing-linux-btrfs"
     mount -o bind /run /mnt/gentoo/run/
     ```
 -   Установим загрузчик:
-
     ```shell
     cd /mnt/gentoo/
     chroot /mnt/gentoo/ /bin/bash
@@ -164,17 +149,14 @@ slug: "installing-linux-btrfs"
 ## <span class="section-num">6</span> Создадим файл монтирования fstab {#создадим-файл-монтирования-fstab}
 
 -   Узнаем идентификатор партиции с файловой системой btrfs:
-
     ```shell
     blkid /dev/sda4
     ```
 -   Получим строчку:
-
     ```shell
     UUID="<uuid_number>"
     ```
 -   Создадим файл `/mnt/gentoo/etc/fstab`
-
     ```conf-unix
     LABEL="boot-m2"					/boot		ext4	relatime,discard					1 1
     LABEL="EFI-M2"					/boot/efi	vfat	defaults,discard					0 0
@@ -194,23 +176,19 @@ slug: "installing-linux-btrfs"
 
 -   Для образов виртуальных машин следует отключить CoW (copy-on-write).
 -   Подмонтируем файловую систему `btrfs`:
-
     ```shell
     mount -tbtrfs -orelatime,space_cache,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sda4 /mnt/gentoo/var/vm
     ```
 -   Отключим для этого подтома CoW:
-
     ```shell
     cd /mnt/gentoo/var/
     chattr +C vm
     ```
 -   Посмотреть результат можно командой:
-
     ```shell
     lsattr -a vm
     ```
 -   Скопируем файлы:
-
     ```shell
     mount /dev/vgs/vm /mnt/from/
     rsync -av -HS --delete /mnt/from/ /mnt/gentoo/var/vm

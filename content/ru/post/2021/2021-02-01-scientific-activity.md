@@ -2,7 +2,7 @@
 title: "Научная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:00:00+03:00
-lastmod: 2021-10-08T18:49:00+03:00
+lastmod: 2022-06-22T17:50:00+03:00
 categories: ["сиянс"]
 draft: false
 slug: "scientific-activity"

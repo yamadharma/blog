@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2022-04-28T18:50:00+03:00
+lastmod: 2022-06-26T18:28:00+03:00
 tags: ["hugo", "org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 -   Специальный блок «Детали» `#+begin_details … #+end_details`
     используется для создания элемента, раскрывающего дополнительные
     сведения (`<details>` и `<summary>`).
-
     ```org
     #+begin_details
     #+begin_summary
@@ -86,7 +85,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     А здесь подробная информация.
     #+end_details
     ```
-
     Выглядить это так:
 
     <details>
@@ -98,13 +96,11 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     </details>
 
 -   Если блок `summary` отсутствует, резюме будет заменено на некоторое значение по умолчанию. Так, блок
-
     ```org
     #+begin_details
     А здесь подробная информация.
     #+end_details
     ```
-
     будет иметь следующий вид:
 
     <details>
@@ -115,7 +111,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     </details>
 
 -   Можно показывать блок открытым по умолчанию. Для этого следует добавить атрибут HTML `#+attr_html: :open t`:
-
     ```org
     #+attr_html: :open t
     #+begin_details
@@ -150,7 +145,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
         Markdown будут сохранены в каталог `~/hugo/content/<HUGO_SECTION>/`.
 -   Данные свойства можно устанавливать как на уровне файла, так и на уровне каталога или проекта.
 -   Переменные на уровне каталога задаются в файле `.dir-locals.el`:
-
     ```elisp
     ((org-mode . ((org-hugo-base-dir . "~/work/blog/git")
     	 (org-hugo-section . "ru/post"))))
@@ -209,6 +203,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 | `tags_weight = 123` (auto-calc)    |                                      | `:EXPORT_HUGO_WEIGHT: :tags auto`       |
 | `weight = 123` (in [menu.foo])     | `#+hugo_menu: :menu foo :weight 123` | `:EXPORT_HUGO_MENU: :menu foo`          |
 | `categories_weight = 123`          | `#+hugo_weight: :categories 123`     |                                         |
+|                                    |                                      |                                         |
 
 
 ## <span class="section-num">4</span> Сочетания клавиш {#сочетания-клавиш}
@@ -247,12 +242,10 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ### <span class="section-num">5.1</span> Экспорт уровня файла {#экспорт-уровня-файла}
 
 -   Список тегов:
-
     ```org
     #+hugo_tags
     ```
 -   Список категорий:
-
     ```org
     #+hugo_categories
     ```
@@ -319,14 +312,12 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 #### <span class="section-num">6.1.1</span> Пары ключ-значение {#пары-ключ-значение}
 
 -   Можно записывать в одном поле:
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 value1 :key2 value2
     :END:
     ```
 -   Можно разбить на несколько полей:
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 value1
@@ -334,21 +325,17 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     :END:
     ```
 -   На уровне файла посредством ключевого слова:
-
     ```org
     #+hugo_custom_front_matter: :key1 value1
     #+hugo_custom_front_matter: :key2 value2
     ```
 -   Например, запись
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :feature true
     :END:
     ```
-
     примет вид (для TOML)
-
     ```toml
     feature = true
     ```
@@ -357,14 +344,12 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 #### <span class="section-num">6.1.2</span> Списочные значения {#списочные-значения}
 
 -   Запись имеет следующий вид:
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 '(elem11 elem12) :key2 '(elem21 elem22)
     :END:
     ```
 -   Например, запись
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :animals '(dog cat "penguin" "mountain gorilla")
@@ -373,9 +358,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :booleans '(true false)
     :END:
     ```
-
     примет вид (для TOML)
-
     ```toml
     animals = ["dog", "cat", "penguin", "mountain gorilla"]
     integers = [123, -5, 17, 1_234]
@@ -387,14 +370,12 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 #### <span class="section-num">6.1.3</span> Многоуровневые значения {#многоуровневые-значения}
 
 -   Запись имеет следующий вид:
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :key1 '((subkey11 . subval11) (subkey12 . (subelem121 subelem122))) :key2 '((subkey21 . subval21))
     :END:
     ```
 -   Например, запись
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :versions '((emacs . "27.0.50") (hugo . "0.48"))
@@ -402,9 +383,7 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
     :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :collection '((animals . (dog cat "penguin" "mountain gorilla")) (integers . (123 -5 17 1_234)) (floats . (12.3 -5.0 -17E-6)) (booleans . (true false)))
     :END:
     ```
-
     примет вид (для TOML)
-
     ```toml
     [versions]
       emacs = "27.0.50"
@@ -473,22 +452,18 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ## <span class="section-num">7</span> Экспорт элементов {#экспорт-элементов}
 
 -   При экспорте элементов для _Hugo_ используется блок
-
     ```org
     #+begin_export hugo
     Текст для Hugo
     #+end_export
     ```
 -   Возникла коллизия, когда из единого источника необходимо было вывести информацию и в _Hugo_, и в _Markdown_. При экспорте посредством блока
-
     ```org
     #+begin_export markdown
     Текст для Markdown
     #+end_export
     ```
-
     этот текст появлялся и в файле для _Hugo_. Для обхода этой ситуации я стал задавать блок для _Markdown_ в следующем виде:
-
     ```org
     #+begin_src markdown :exports (if (eq org-export-current-backend 'md) "" "none")
     Текст для Markdown
@@ -520,7 +495,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
         -   `#+EXPORT_FILE_NAME: _index`.
     -   Пример пакет-страницы (Leaf Bundle):
         -   экспорт в `content/xyz/index.md`
-
             ```org
             ​* Page title
             :PROPERTIES:
@@ -531,7 +505,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
             ```
     -   Пример пакета веток (Branch Bundle)
         -   экспорт в `content/uvw/_index.md`
-
             ```org
             ​* Page title
             :PROPERTIES:
@@ -548,7 +521,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 
 -   Пусть курс называется `mathsec`.
 -   Свойства для экспорта:
-
     ```org
     :PROPERTIES:
     :EXPORT_HUGO_SECTION: ru/course
@@ -564,7 +536,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ### <span class="section-num">9.1</span> Установка на уровне каталога {#установка-на-уровне-каталога}
 
 -   Установка делается в файле `.dir-locals.el` в текущем каталоге:
-
     ```elisp
     ((org-mode . ((eval . (org-hugo-auto-export-mode)))))
     ```
@@ -574,7 +545,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ### <span class="section-num">9.2</span> Установка на уровне проекта {#установка-на-уровне-проекта}
 
 -   Если org-файлы находятся в некотором каталоге, например в `content-org`, то в файле `.dir-locals.el` задаётся конфигурация для этого каталога:
-
     ```elisp
     (("content-org/"
       . ((org-mode . ((eval . (org-hugo-auto-export-mode)))))))
@@ -584,7 +554,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ### <span class="section-num">9.3</span> Установка для конкретного файла {#установка-для-конкретного-файла}
 
 -   Для каждого файла можно задать локальные переменные:
-
     ```org
     ​* Footnotes
     ​* COMMENT Local Variables                          :ARCHIVE:
@@ -595,7 +564,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 -   Рекомендуется добавить заголовок `* Footnotes`, чтобы в случае добавления каких-либо сносок они добавлялись в данный раздел.
 -   В противном случае будет автоматически создан новый заголовок `* Footnotes` в конце файла, и заголовок `Local Variables` больше не будет последним и не будет обрабатываться.
 -   Перечитать локальные переменные можно командой:
-
     ```elisp
     M-x normal-mode
     ```
@@ -604,7 +572,6 @@ Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-h
 ### <span class="section-num">9.4</span> Запрет авто сохранения для конкретного файла {#запрет-авто-сохранения-для-конкретного-файла}
 
 -   Для каждого файла можно задать локальные переменные для запрета экспорта:
-
     ```org
     ​* Footnotes
     ​* COMMENT Local Variables                          :ARCHIVE:
