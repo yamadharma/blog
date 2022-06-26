@@ -2,7 +2,7 @@
 title: "GNS3 на Virtualbox"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-25T16:57:00+03:00
-lastmod: 2022-06-25T20:47:00+03:00
+lastmod: 2022-06-26T20:03:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -53,6 +53,22 @@ menu:
         -   Tools.
 -   При установке будет скачан образ для виртуальной машины (в папку `Downloads`).
 -   После установки не надо запускать GNS3, нужно вначале сконфигурить виртуальную машину.
+
+
+#### <span class="section-num">1.1.3</span> Видео: Установка программ GNS3 на Windows (VirtualBox) {#видео-установка-программ-gns3-на-windows--virtualbox}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube b5c79641d5bb7dde0bcd1f54a8158b34 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube XCAlbMvczGc >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ### <span class="section-num">1.2</span> Установка на Linux {#установка-на-linux}
@@ -142,20 +158,42 @@ menu:
     -   Процессорные ядра: желательно не менее 2-х.
 
 
-{{< tabs tabTotal="3" >}}
-{{< tab tabName="Tab 1" >}}
+### <span class="section-num">2.5</span> Видео: Установка GNS3 VM VirtualBox {#видео-установка-gns3-vm-virtualbox}
 
-**Tab 1 Content**
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
 
-{{< /tab >}}
-{{< tab tabName="Tab 2" >}}
+{{< rutube 4ef91d4d2b3a1a517f415198cd7f5224 >}}
 
-**Tab 2 Content**
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
 
-{{< /tab >}}
-{{< tab tabName="Tab 3">}}
+{{< youtube kGlLSjFlrCQ >}}
 
-**Tab 3 Content**
+{{< /rtab >}}
+{{< /tabs >}}
 
-{{< /tab >}}
+
+## <span class="section-num">3</span> Дополнительные замечания {#дополнительные-замечания}
+
+
+### <span class="section-num">3.1</span> Настройка эмулятора терминала {#настройка-эмулятора-терминала}
+
+-   В качестве эмулятора терминала предлагается использовать _KDE Konsole_.
+-   Настройка заключается в установке нового профиля с увеличенным шрифтом и светлым фоном.
+
+
+#### <span class="section-num">3.1.1</span> Видео: Настройка терминала KDE Konsole {#видео-настройка-терминала-kde-konsole}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube eda5f307121be91d64475061eb2f1a9d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube nk25Pnm0soM >}}
+
+{{< /rtab >}}
 {{< /tabs >}}

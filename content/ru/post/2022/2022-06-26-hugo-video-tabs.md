@@ -2,7 +2,7 @@
 title: "Hugo. Видео во вкладках"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-26T18:46:00+03:00
-lastmod: 2022-06-26T19:35:00+03:00
+lastmod: 2022-06-26T19:42:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false

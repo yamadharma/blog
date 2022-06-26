@@ -2,7 +2,7 @@
 title: "Маршрутизация. FRRouting"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-02T19:30:00+03:00
-lastmod: 2022-06-03T12:11:00+03:00
+lastmod: 2022-06-26T20:08:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -37,3 +37,22 @@ slug: "routing-frrouting"
 -   Next Hop Resolution Protocol (NHRP)
 -   Bidirectional Forwarding Detection (BFD)
 -   Policy-based Routing (PBR)
+
+
+## <span class="section-num">3</span> Установка в GNS3 {#установка-в-gns3}
+
+
+### <span class="section-num">3.1</span> Видео: Установка приложения (маршрутизатор FRR) {#видео-установка-приложения--маршрутизатор-frr}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube f90d7b7baaea8a0d5549384327207060 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube BgIzJo18yp8 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
