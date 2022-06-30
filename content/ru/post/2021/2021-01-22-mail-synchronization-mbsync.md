@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2022-04-26T18:10:00+03:00
+lastmod: 2022-06-28T20:29:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -27,7 +27,6 @@ slug: "mail-synchronization-mbsync"
 ## <span class="section-num">2</span> Установка {#установка}
 
 -   Gentoo
-
     ```shell
     emerge isync
     ```
@@ -47,12 +46,10 @@ slug: "mail-synchronization-mbsync"
 
 -   Учётные записи делаем по полному наименованию почты. Я это делаю потому, что у меня есть почтовые ящики с одинаковыми именами в разных почтовых доменах.
 -   Создать необходимые каталоги:
-
     ```conf-unix
     mkdir -p ~/Maildir/account@domain
     ```
 -   Можно создать каталоги все скопом из конфигурационного файла `~/.mbsyncrc`:
-
     ```shell
     #!/bin/sh
 
@@ -65,7 +62,6 @@ slug: "mail-synchronization-mbsync"
 -   Чтобы не хранить пароли в конфигурационном файле (оператор `Pass`) будем использовать хранение пароля, совместимое с _emacs_ (с использованием оператора `PassCmd`):
     -   в файле `~/.authinfo.gpg` (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})):
         -   структура команды:
-
             ```conf-unix
             PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
             ```
@@ -85,7 +81,6 @@ slug: "mail-synchronization-mbsync"
 ### <span class="section-num">3.3</span> Общие параметры {#общие-параметры}
 
 -   Установка параметра `CopyArrivalDate`:
-
     ```conf-unix
     # By default (CopyArrivalDate no), if you copy an old email from inbox to
     # Archive (e.g.) it will get the date of the copy assigned, instead of just
@@ -99,7 +94,6 @@ slug: "mail-synchronization-mbsync"
 ### <span class="section-num">3.4</span> Примеры конфигурации для разных провайдеров {#примеры-конфигурации-для-разных-провайдеров}
 
 -   Может потребоваться для разных провайдеров увеличить тайм-аут соединения (по умолчанию равно `20`):
-
     ```conf-unix
     # Increase timeout
     Timeout 120
@@ -114,7 +108,6 @@ slug: "mail-synchronization-mbsync"
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
 -   Папка "Отправленные" не синхронизируется потому, что Google сохраняет всю электронную почту в папке "Все сообщения", и в результате мы получим локально дубликаты.
 -   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
-
     ```conf-unix
     # IMAPAccount (gmail)
 
@@ -200,7 +193,6 @@ slug: "mail-synchronization-mbsync"
 #### <span class="section-num">3.4.2</span> Apple {#apple}
 
 -   <https://www.icloud.com/mail>
-
     ```conf-unix
     # IMAPAccount (Apple)
 
@@ -251,7 +243,6 @@ slug: "mail-synchronization-mbsync"
 
 -   <https://www.gmx.com/>
 -   <https://www.gmx.net/>
-
     ```conf-unix
     # IMAPAccount (GMX)
 
@@ -289,7 +280,6 @@ slug: "mail-synchronization-mbsync"
 -   <https://protonmail.com/>
 -   Заблокирован в России.
 -   Для работы необходимо установить локальное приложение <https://protonmail.com/bridge/>.
-
     ```conf-unix
     # IMAPAccount (Proton)
 
@@ -333,7 +323,6 @@ slug: "mail-synchronization-mbsync"
         -   Пароль для приложения почты можно назвать `account@yandex.ru@apppassword@mail`.
         -   Пароль для smtp следует именовать как `account@yandex.ru@smtp.yandex.ru` (это тот же пароль для почтового приложения).
 -   Конфигурация:
-
     ```conf-unix
     ## IMAPAccount (Yandex)
 
@@ -374,7 +363,6 @@ slug: "mail-synchronization-mbsync"
 
 -   [Почта. Mail.ru. Настройка почтового клиента]({{< relref "2021-07-04-mail-mail-ru-configuring-mail-client" >}})
 -   Конфигурация:
-
     ```conf-unix
     ## IMAPAccount (Mail.ru)
 
@@ -467,7 +455,6 @@ slug: "mail-synchronization-mbsync"
 1.  Аутентификация _LOGIN_
 
     -   Конфигурация _mbsync_:
-
         ```conf-unix
         ## IMAPAccount (outlook.office365.com)
 
@@ -550,7 +537,6 @@ slug: "mail-synchronization-mbsync"
         Channel account@example.com-sent
         ```
     -   Конфигурация SMTP для Emacs:
-
         ```emacs-lisp
         (setq send-mail-function    'smtpmail-send-it
               smtpmail-smtp-server  "example.com"
@@ -567,7 +553,6 @@ slug: "mail-synchronization-mbsync"
     -   Аутентификацию _oauth2_ можно настроить с помощью _DavMail_ (см. [DavMail]({{< relref "2022-04-10-davmail" >}})).
     -   Сначала настройте _DavMail_ аутентификацией `O365Interactive` или `O365Manual`, а потом переключите в режим `O365Modern`.
     -   В конфигурации меняется блок аутентификации:
-
         ```conf-unix
         IMAPAccount account@example.com
         Host 127.0.0.1
@@ -584,7 +569,6 @@ slug: "mail-synchronization-mbsync"
         PipelineDepth 50
         ```
     -   Конфигурация SMTP для Emacs:
-
         ```emacs-lisp
         (setq send-mail-function    'smtpmail-send-it
               smtpmail-smtp-server  "localhost"
@@ -599,7 +583,6 @@ slug: "mail-synchronization-mbsync"
 
 -   [Почта. Yahoo.com. Настройка почтового клиента]({{< relref "2022-04-26-mail-yahoo-com-configuring-mail-client" >}})
 -   Конфигурация:
-
     ```conf-unix
     ## IMAPAccount (Yahoo.com)
 
@@ -693,12 +676,10 @@ slug: "mail-synchronization-mbsync"
 ### <span class="section-num">4.2</span> Запуск из командной строки {#запуск-из-командной-строки}
 
 -   Синхронизация конкретной учётной записи:
-
     ```shell
     mbsync <chanel>
     ```
 -   Синхронизация всех учётных записей:
-
     ```shell
     mbsync --all
     ```
@@ -708,12 +689,10 @@ slug: "mail-synchronization-mbsync"
 
 -   Для синхронизации с помощью `systemd` надо добавить сервис и таймер.
 -   После создания этих файлов добавьте `mbsync.timer` в `systemctl`:
-
     ```shell
     systemctl --user --now enable mbsync.timer
     ```
 -   `~/.config/systemd/user/mbsync.service`.
-
     ```conf-unix
     # ~/.config/systemd/user/mbsync.service
 
@@ -725,7 +704,6 @@ slug: "mail-synchronization-mbsync"
     ExecStart=/usr/bin/mbsync -a
     ```
 -   `~/.config/systemd/user/mbsync.service`. Здесь мы после синхронизации запускаем индексирование для `mu`.
-
     ```conf-unix
     # ~/.config/systemd/user/mbsync.service
 
@@ -734,11 +712,12 @@ slug: "mail-synchronization-mbsync"
 
     [Service]
     Type=oneshot
-    ExecStart=/usr/bin/mbsync -a
-    ExecStartPost=/usr/bin/mu index
+    ExecStart=-/usr/bin/mbsync -a
+    ExecStartPost=-/usr/bin/mu index
     ```
--   `~/.config/systemd/user/mbsync.timer`. Настраиваем запуск `mbsync` через 2 минуты после загрузки, а затем запускаем каждые 5 минут.
 
+    -   Знак `-` перед командой позволяет игнорировать код возврата.
+-   `~/.config/systemd/user/mbsync.timer`. Настраиваем запуск `mbsync` через 2 минуты после загрузки, а затем запускаем каждые 5 минут.
     ```conf-unix
     # ~/.config/systemd/user/mbsync.timer
 
@@ -771,13 +750,11 @@ slug: "mail-synchronization-mbsync"
 -   Предлагается скопировать текущую базу на другой хост (в качестве первоначальной постовой базы), а потом переименовать файлы почты.
     -   Необходимо скопировать данные с `host1` на `host2`.
     -   Проведём проверку переименования:
-
         ```shell
         cd ~/Maildir/
         find . -iname "*host1*" | sed 'p;s:host1:host2:' | xargs -n2 -p mv
         ```
     -   Проведём переименование, убрав ключ `p` у `xargs`:
-
         ```shell
         cd ~/Maildir/
         find . -iname "*host1*" | sed 'p;s:host1:host2:' | xargs -n2 mv
@@ -790,14 +767,12 @@ slug: "mail-synchronization-mbsync"
 ### <span class="section-num">7.1</span> Имена почтовых файлов {#имена-почтовых-файлов}
 
 -   Информация по почтовым файлам хранится либо в каталоге `~/.mbsync` в файлах вида:
-
     ```shell
     <remote account>:<remote!folder>:<local account>:<local!folder>
     ```
 -   Либо информация хранится в почтовых папках в файлах `.mbsyncstate` (параметр `SyncState *`).
 -   В файле `.uidvalidity` хранится последняя отметка времени и идентификатор.
 -   Файлы сообщений именуются по шаблону:
-
     ```shell
     <timestamp>.<PID>_<counter>.<hostname>,U=<increment>:2,<flags>
     ```
