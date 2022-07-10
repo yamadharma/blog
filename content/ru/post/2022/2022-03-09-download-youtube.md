@@ -2,7 +2,7 @@
 title: "Закачка с youtube"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-09T17:38:00+03:00
-lastmod: 2022-03-09T18:40:00+03:00
+lastmod: 2022-06-30T13:05:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -23,10 +23,74 @@ slug: "download-youtube"
 -   Является продвинутым форком `youtube-dl`.
 
 
-## <span class="section-num">2</span> Скачивание своего общедоступного видео с Youtube {#скачивание-своего-общедоступного-видео-с-youtube}
+## <span class="section-num">2</span> Установка {#установка}
 
 
-### <span class="section-num">2.1</span> Постановка задачи {#постановка-задачи}
+### <span class="section-num">2.1</span> Linux {#linux}
+
+-   Gentoo
+    -   Установка `yt-dlp`:
+        ```shell
+        emerge net-misc/yt-dlp
+        ```
+    -   Установка в режиме совместимости с `youtube-dl`:
+        ```shell
+        USE=yt-dlp emerge net-misc/youtube-dl
+        ```
+
+
+### <span class="section-num">2.2</span> Windows {#windows}
+
+-   C использованием [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})
+    ```shell
+    choco install yt-dlp
+    ```
+
+
+## <span class="section-num">3</span> Конфигурационный файл {#конфигурационный-файл}
+
+-   Конфигурационный файл служит для заданий опций по умолчанию.
+-   Конфигурационный файл:
+    ```shell
+    ~/.config/yt-dlp/config
+    ```
+
+-   Пример содержания конфигурационого файла:
+    ```conf-unix
+    ## Ignore errors
+    --ignore-errors
+
+    ## Save in ~/Videos
+    -o ~/Videos/%(title)s.%(ext)s
+
+    ## Prefer 1080p or lower resolutions, FPS < 60 Hz
+    -f bestvideo[ext=mp4][height<1200][fps<60]+bestaudio[ext=m4a]/bestvideo[height<1200][fps<60]+bestaudio/best[height<1200][fps<60]/best
+    ```
+
+
+## <span class="section-num">4</span> Примеры использования {#примеры-использования}
+
+
+### <span class="section-num">4.1</span> Скачавание видео с Youtube {#скачавание-видео-с-youtube}
+
+-   Просто указывается линк на скачиваемое видео:
+    ```shell
+    yt-dlp <url>
+    ```
+
+
+### <span class="section-num">4.2</span> Скачать только аудио-дорожку {#скачать-только-аудио-дорожку}
+
+-   Опция `-x` используется для загрузки только аудио (требуется _FFmpeg_):
+    ```shell
+    youtube-dl -x -f bestaudio <url>
+    ```
+
+
+### <span class="section-num">4.3</span> Скачивание своего общедоступного видео с Youtube {#скачивание-своего-общедоступного-видео-с-youtube}
+
+
+#### <span class="section-num">4.3.1</span> Постановка задачи {#постановка-задачи}
 
 -   Видео добавлены в плейлисты по темам.
 -   Есть ссылки на чужие видео.
@@ -34,7 +98,7 @@ slug: "download-youtube"
 -   Следует сохранить порядок расположения видео в плейлистах.
 
 
-### <span class="section-num">2.2</span> Решение {#решение}
+#### <span class="section-num">4.3.2</span> Решение {#решение}
 
 -   `%(playlist)s` : будем сортировать виде по плейлистам.
 -   `%(playlist_index)s` : будем сохранять номер видео в плейлисте.
@@ -42,11 +106,11 @@ slug: "download-youtube"
 -   `--write-comments` : будем сохранять всю дополнительную информацию в отдельный файл формата `json`.
 -   `--match-filter "uploader = 'Dmitry Kulyabov'"` : будем скачивать только те видео, который загрузили мы сами.
 
+<!--list-separator-->
 
-#### <span class="section-num">2.2.1</span> Итоговый скрипт {#итоговый-скрипт}
+1.  Итоговый скрипт
 
--   Итоговый скрипт будет иметь следующий вид:
-
-    ```shell
-    yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/user/<youtube user name>/playlists" --write-comments --match-filter "uploader = 'Dmitry Kulyabov'"
-    ```
+    -   Итоговый скрипт будет иметь следующий вид:
+        ```shell
+        yt-dlp -o "%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s" "https://www.youtube.com/user/<youtube user name>/playlists" --write-comments --match-filter "uploader = 'Dmitry Kulyabov'"
+        ```

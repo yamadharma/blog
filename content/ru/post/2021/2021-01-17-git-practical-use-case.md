@@ -2,9 +2,9 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2022-04-17T13:26:00+03:00
-tags: ["education", "programming"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2022-07-03T21:12:00+03:00
+tags: ["programming", "education"]
+categories: ["computer-science"]
 draft: false
 slug: "git-practical-use-case"
 ---
@@ -34,24 +34,20 @@ slug: "git-practical-use-case"
 На Node.js базируется программное обеспечение для семантического версионирования и общепринятых коммитов.
 
 -   Gentoo
-
     ```shell
     emerge nodejs
     ```
 -   Ubuntu
-
     ```shell
     apt-get install nodejs
     apt-get install yarn
     ```
 -   Windows
-
     ```shell
     choco install nodejs
     choco install yarn
     ```
 -   MacOS
-
     ```shell
     brew install node
     ```
@@ -63,7 +59,6 @@ slug: "git-practical-use-case"
 
 -   Linux
     В файле `~/.bashrc` добавьте к переменной `PATH`:
-
     ```conf-unix
     PATH=~/.yarn/bin:$PATH
     ```
@@ -73,30 +68,25 @@ slug: "git-practical-use-case"
 
 -   Linux
     -   Gentoo
-
         ```shell
         emerge dev-vcs/git-flow
         ```
     -   Ubuntu
-
         ```shell
         apt-get install git-flow
         ```
     -   Centos
         -   Первоначально нужно установить репозиторий _epel_ (<https://fedoraproject.org/wiki/EPEL>):
-
             ```shell
             yum install epel-release
             ```
         -   Затем, собственно, установить git-flow:
-
             ```shell
             yum install gitflow
             ```
     -   Fedora
         -   Это программное обеспечение удалено из репозитория.
         -   Необходимо устанавливать его вручную:
-
             ```shell
             cd /tmp
             wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh
@@ -106,12 +96,10 @@ slug: "git-practical-use-case"
 
 -   Windows
     Git-flow входит в состав пакета git.
-
     ```shell
     choco install git
     ```
 -   MacOS
-
     ```shell
     brew install git-flow
     ```
@@ -123,7 +111,6 @@ slug: "git-practical-use-case"
 #### <span class="section-num">2.4.1</span> commitizen {#commitizen}
 
 -   Данная программа используется для помощи в форматировании коммитов.
-
     ```shell
     yarn global add commitizen
     ```
@@ -133,7 +120,6 @@ slug: "git-practical-use-case"
 #### <span class="section-num">2.4.2</span> standard-version {#standard-version}
 
 -   Данная программа автоматизирует изменение номера версии.
-
     ```shell
     yarn global add standard-version
     ```
@@ -145,19 +131,16 @@ slug: "git-practical-use-case"
 ### <span class="section-num">3.1</span> Первичная настройка параметров git {#первичная-настройка-параметров-git}
 
 -   Зададим имя и email владельца репозитория:
-
     ```shell
     git config --global user.name "Name Surname"
     git config --global user.email "work@mail"
     ```
 -   Настроим utf-8 в выводе сообщений git:
-
     ```shell
     git config --global core.quotepath false
     ```
 -   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
 -   Зададим имя начальной ветки (будем называть её `master`):
-
     ```shell
     git config --global init.defaultBranch master
     ```
@@ -173,7 +156,6 @@ slug: "git-practical-use-case"
     -   Unix: `\n` (`LF`);
     -   Mac: `\r` (`CR`).
 -   Посмотреть значения переносов строк в репозитории можно командой:
-
     ```shell
     git ls-files --eol
     ```
@@ -203,12 +185,10 @@ slug: "git-practical-use-case"
         |               | CRLF -&gt; CRLF | CRLF -&gt; CRLF | CRLF -&gt; CRLF |
     -   Установка параметра:
         -   Для Windows
-
             ```shell
             git config --global core.autocrlf true
             ```
         -   Для Linux
-
             ```shell
             git config --global core.autocrlf input
             ```
@@ -221,7 +201,6 @@ slug: "git-practical-use-case"
         -   `core.safecrlf true`: запрещается необратимое преобразование `lf<->crlf`. Полезно, когда существуют бинарные файлы, похожие на текстовые файлы.
         -   `core.safecrlf warn`: печать предупреждения, но коммиты с необратимым переходом принимаются.
     -   Установка параметра:
-
         ```shell
         git config --global core.safecrlf warn
         ```
@@ -236,37 +215,29 @@ slug: "git-practical-use-case"
 #### <span class="section-num">4.1.1</span> Подготовка каталога {#подготовка-каталога}
 
 -   Рабочий каталог будем обозначать как `workdir`. Вначале нужно перейти в этот каталог:
-
     ```shell
     cd workdir
     ```
 -   Создаём заготовку для файла `README.md`:
-
     ```shell
     echo "# test-repo" >> README.md
     git add README.md
     ```
 -   Добавим шаблон игнорируемых файлов. Просмотрим список имеющихся шаблонов:
-
     ```shell
     curl -L -s https://www.gitignore.io/api/list
     ```
-
     Затем скачаем шаблон, например, для C и C++:
-
     ```shell
     curl -L -s https://www.gitignore.io/api/c >> .gitignore
     curl -L -s https://www.gitignore.io/api/c++ >> .gitignore
     ```
-
     Можно это же сделать через web-интерфейс на сайте <https://www.gitignore.io/>.
 -   Добавим файл лицензии. В данном случае мы выбираем лицензию `CC-BY-4.0` (см. [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})):
-
     ```shell
     wget https://creativecommons.org/licenses/by/4.0/legalcode.txt -O LICENSE
     ```
 -   Инициализируем системы git:
-
     ```shell
     git init
     ```
@@ -277,7 +248,6 @@ slug: "git-practical-use-case"
 -   Создайте репозиторий на GitHub. Для примера назовём его `test-repo`.
 
 -   Делаем первый коммит и выкладываем на github:
-
     ```shell
     git commit -m "first commit"
     git remote add origin git@github.com:<username>/test-repo.git
@@ -288,17 +258,14 @@ slug: "git-practical-use-case"
 #### <span class="section-num">4.1.3</span> Конфигурация общепринятых коммитов {#конфигурация-общепринятых-коммитов}
 
 -   Конфигурация для пакетов Node.js
-
     ```shell
     yarn init
     ```
-
     Необходимо заполнить несколько параметров пакета.
 
     -   Название пакета.
     -   Лицензия пакета. Список лицензий для npm: <https://spdx.org/licenses/>. Предлагается выбирать лицензию `CC-BY-4.0`.
 -   Сконфигурим формат коммитов. Для этого добавим в файл `package.json` команду для формирования коммитов:
-
     ```js
     "config": {
         "commitizen": {
@@ -306,9 +273,7 @@ slug: "git-practical-use-case"
         }
     }
     ```
-
     Таким образом, файл `package.json` приобретает вид:
-
     ```js
     {
         "name": "test-repo",
@@ -327,17 +292,14 @@ slug: "git-practical-use-case"
     ```
 
 -   Добавим новые файлы:
-
     ```shell
     git add .
     ```
 -   Выполним коммит:
-
     ```shell
     git cz
     ```
 -   Отправим на github:
-
     ```shell
     git push
     ```
@@ -346,51 +308,41 @@ slug: "git-practical-use-case"
 #### <span class="section-num">4.1.4</span> Конфигурация git-flow {#конфигурация-git-flow}
 
 -   Инициализируем git-flow
-
     ```shell
     git flow init
     ```
-
     Префикс для ярлыков установим в `v`.
 -   Проверьте, что Вы на ветке `develop`:
-
     ```shell
     git branch
     ```
 -   Установите внешнюю ветку как вышестоящую для этой ветки:
-
     ```shell
     git branch --set-upstream-to=origin/develop develop
     ```
 -   Создадим релиз с версией 1.0.0
-
     ```shell
     git flow release start 1.0.0
     ```
 -   Создадим журнал изменений
-
     ```shell
     standard-changelog --first-release
     ```
 -   Добавим журнал изменений в индекс
-
     ```shell
     git add CHANGELOG.md
     git commit -am 'chore(site): add changelog'
     ```
 -   Зальём релизную ветку в основную ветку
-
     ```shell
     git flow release finish 1.0.0
     ```
 -   Отправим данные на github
-
     ```shell
     git push --all
     git push --tags
     ```
 -   Создадим релиз на github. Для этого будем использовать утилиты работы с github (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})):
-
     ```shell
     gh release create v1.0.0 -F CHANGELOG.md
     ```
@@ -402,13 +354,11 @@ slug: "git-practical-use-case"
 #### <span class="section-num">4.2.1</span> Разработка новой функциональности {#разработка-новой-функциональности}
 
 -   Создадим ветку для новой функциональности:
-
     ```shell
     git flow feature start feature_branch
     ```
 -   Далее, продолжаем работу c git как обычно.
 -   По окончании разработки новой функциональности следующим шагом следует объединить ветку `feature_branch` c `develop`:
-
     ```shell
     git flow feature finish feature_branch
     ```
@@ -417,35 +367,29 @@ slug: "git-practical-use-case"
 #### <span class="section-num">4.2.2</span> Создание релиза git-flow {#создание-релиза-git-flow}
 
 -   Создадим релиз с версией `1.2.3`:
-
     ```shell
     git flow release start 1.2.3
     ```
 -   Обновите номер версии в файле `package.json`. Установите её в `1.2.3`.
 -   Создадим журнал изменений
-
     ```shell
     standard-changelog
     ```
 -   Добавим журнал изменений в индекс
-
     ```shell
     git add CHANGELOG.md
     git commit -am 'chore(site): update changelog'
     ```
 -   Зальём релизную ветку в основную ветку
-
     ```shell
     git flow release finish 1.2.3
     ```
 -   Отправим данные на github
-
     ```shell
     git push --all
     git push --tags
     ```
 -   Создадим релиз на github с комментарием из журнала изменений:
-
     ```shell
     gh release create v1.2.3 -F CHANGELOG.md
     ```
