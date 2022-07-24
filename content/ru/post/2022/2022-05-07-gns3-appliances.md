@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2022-06-04T15:46:00+03:00
+lastmod: 2022-07-16T12:17:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,27 @@ slug: "gns3-appliances"
 ## <span class="section-num">4</span> Коммутаторы {#коммутаторы}
 
 
+### <span class="section-num">4.1</span> Arista EOS {#arista-eos}
+
+-   [Arista EOS]({{< relref "2022-07-16-arista-eos" >}})
+-   [GNS3. Установка Arista EOS]({{< relref "2022-07-16-gns3-install-arista-eos" >}})
+
+
+#### <span class="section-num">4.1.1</span> Arista vEOS {#arista-veos}
+
+-   Виртуализация: qemu.
+-   Архитектура: i386 и amd64.
+-   Необходимо RAM: 2048 MB.
+-   Система команд похожа на Cisco.
+
+
+#### <span class="section-num">4.1.2</span> Arista cEOS {#arista-ceos}
+
+-   Виртуализация: docker.
+-   Архитектура: i386 и amd64.
+-   Система команд похожа на Cisco.
+
+
 ## <span class="section-num">5</span> Маршрутизаторы {#маршрутизаторы}
 
 
@@ -88,6 +109,7 @@ slug: "gns3-appliances"
 ### <span class="section-num">5.3</span> VyOS {#vyos}
 
 -   [Маршрутизация. VyOS]({{< relref "2022-06-03-routing-vyos" >}})
+-   [GNS3. Образ VyOS]({{< relref "2022-07-14-gns3-vyos" >}})
 -   Магазин: <https://www.gns3.com/marketplace/appliances/vyos>.
 -   Сайт: <https://vyos.net/>.
 -   Коммерческий сайт: <https://vyos.io/>.

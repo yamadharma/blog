@@ -2,7 +2,7 @@
 title: "GNS3 на Virtualbox"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-25T16:57:00+03:00
-lastmod: 2022-07-01T17:18:00+03:00
+lastmod: 2022-07-14T12:42:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false

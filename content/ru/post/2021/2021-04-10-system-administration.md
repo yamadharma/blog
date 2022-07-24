@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-05-26T13:34:00+03:00
+lastmod: 2022-07-24T16:41:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,7 @@ slug: "system-administration"
 ## <span class="section-num">1</span> Оборудование {#оборудование}
 
 -   [Критерии выбора ноутбука]({{< relref "2022-04-30-criteria-choosing-laptop" >}})
+-   [Критерии выбора персонального компьютера]({{< relref "2022-07-21-criteria-choosing-personal-computer" >}})
 
 
 ## <span class="section-num">2</span> Графическое окружение {#графическое-окружение}
@@ -73,6 +74,16 @@ slug: "system-administration"
 -   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
 
 
+### <span class="section-num">3.7</span> Терминальный доступ {#терминальный-доступ}
+
+-   [Virtual Desktop Infrastructure]({{< relref "2022-07-23-virtual-desktop-infrastructure" >}})
+
+
+### <span class="section-num">3.8</span> Утилиты настройки среды {#утилиты-настройки-среды}
+
+-   [Утилита module]({{< relref "2022-07-24-module-utility" >}})
+
+
 ## <span class="section-num">4</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
@@ -111,6 +122,11 @@ slug: "system-administration"
 ### <span class="section-num">6.5</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
+
+
+### <span class="section-num">6.6</span> Вычисления {#вычисления}
+
+-   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 
 
 ## <span class="section-num">7</span> Безопасность {#безопасность}
