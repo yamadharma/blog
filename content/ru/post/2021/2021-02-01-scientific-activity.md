@@ -2,7 +2,7 @@
 title: "Научная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:00:00+03:00
-lastmod: 2022-06-22T17:50:00+03:00
+lastmod: 2022-08-10T19:29:00+03:00
 categories: ["сиянс"]
 draft: false
 slug: "scientific-activity"
@@ -27,10 +27,11 @@ slug: "scientific-activity"
 
 -   [Инфраструктура GRID]({{< relref "2021-07-21-grid-infrastructure" >}})
 -   [Университет дружбы народов]({{< relref "2021-06-27-peoples-friendship-university" >}})
--   [Учёные степени и звания]({{< relref "2021-10-08-academic-degrees-ranks" >}})
+-   [Студенческие публикации]({{< relref "2022-08-01-student-publications" >}})
+-   [Бытие науки]({{< relref "2021-02-04-being-science" >}})
 
 
-## <span class="section-num">3</span> Достижения {#достижения}
+## <span class="section-num">3</span> Мои достижения {#мои-достижения}
 
 -   [Повышение квалификации]({{< relref "2021-09-20-professional-development" >}})
 -   [Ученики]({{< relref "2021-03-09-students" >}})

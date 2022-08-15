@@ -2,7 +2,7 @@
 title: "GNS3 на Virtualbox"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-25T16:57:00+03:00
-lastmod: 2022-07-14T12:42:00+03:00
+lastmod: 2022-08-15T20:02:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -12,8 +12,8 @@ type: "book"
 slug: "gns3-virtualbox"
 summary: "GNS3 на Virtualbox"
 menu:
-  "nettech-gns3-lab":
-    parent: "nettech-gns3"
+  "gns3-virtualbox":
+    parent: "nettech-gns3-lab"
     weight: 201
     identifier: "gns3-virtualbox"
 ---

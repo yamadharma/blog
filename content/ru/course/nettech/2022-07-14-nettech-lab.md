@@ -2,7 +2,7 @@
 title: "Сетевые технологии. Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-14T12:27:00+03:00
-lastmod: 2022-07-14T19:52:00+03:00
+lastmod: 2022-08-15T20:04:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -15,7 +15,7 @@ menu:
   "nettech-gns3-lab":
     parent: "nettech"
     weight: 200
-    identifier: "nettech-lab"
+    identifier: "nettech-gns3-lab"
 ---
 
 Лабораторные работы по курсу _Сетевые технологии_.

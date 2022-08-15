@@ -2,7 +2,7 @@
 title: "Туннель ipv6-ipv4"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-14T16:27:00+03:00
-lastmod: 2022-07-14T19:48:00+03:00
+lastmod: 2022-08-15T20:02:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -12,8 +12,8 @@ type: "book"
 slug: "tunnel-ipv6-ipv4"
 summary: "Туннель ipv6-ipv4"
 menu:
-  "nettech-gns3-lab":
-    parent: "nettech"
+  "tunnel-ipv6-ipv4":
+    parent: "nettech-gns3-lab"
     weight: 221
     identifier: "tunnel-ipv6-ipv4"
 ---
@@ -45,7 +45,7 @@ menu:
 
 ### <span class="section-num">3.1</span> Схема сети {#схема-сети}
 
-{{< figure src="20220714162700-topology.png" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Схема сети" >}}
+{{< figure src="/ox-hugo/20220714162700-topology.png" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Схема сети" >}}
 
 
 ### <span class="section-num">3.2</span> Адреса сетей {#адреса-сетей}

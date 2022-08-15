@@ -1,9 +1,9 @@
 ---
 # Page title
-title: Сетевые технологии
+title: Численные методы
 # Title for the menu link if you wish to use a shorter link title, otherwise remove this option.
-linktitle: Сетевые технологии
-summary: Сетевые технологии
+linktitle: Численные методы
+summary: Численные методы
 weight: 1
 
 date: "2020-04-14T16:00:00+03:00:00"
@@ -16,10 +16,8 @@ type: book  # Do not modify.
 # - name: Declare this menu item as a parent with ID `name`.
 # - weight: Position of link in menu.
 menu:
-  nettech:
+  numerical-methods:
     name: Обзор
     weight: 1
 ---
-
-## Цели и задачи дисциплины
 

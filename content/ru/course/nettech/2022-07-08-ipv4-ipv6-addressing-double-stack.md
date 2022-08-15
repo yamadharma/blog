@@ -2,7 +2,7 @@
 title: "Адресация IPv4 и IPv6. Двойной стек"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-08T13:19:00+03:00
-lastmod: 2022-07-14T19:50:00+03:00
+lastmod: 2022-08-15T20:06:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -12,8 +12,8 @@ type: "book"
 slug: "ipv4-ipv6-addressing-double-stack"
 summary: "Адресация IPv4 и IPv6. Двойной стек"
 menu:
-  "nettech-gns3-lab":
-    parent: "nettech-gns3"
+  "ipv4-ipv6-addressing-double-stack":
+    parent: "nettech-gns3-lab"
     weight: 211
     identifier: "ipv4-ipv6-addressing-double-stack"
 ---
@@ -41,7 +41,7 @@ menu:
 
 ### <span class="section-num">1.3</span> Схема сети {#схема-сети}
 
-{{< figure src="20220708131900-topology.png" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Схема сети" >}}
+{{< figure src="/ox-hugo/20220708131900-topology.png" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Схема сети" >}}
 
 
 ### <span class="section-num">1.4</span> Исходные данные {#исходные-данные}

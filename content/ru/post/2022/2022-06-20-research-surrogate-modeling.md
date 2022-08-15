@@ -2,9 +2,7 @@
 title: "Исследования. Суррогатное моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-20T15:48:00+03:00
-lastmod: 2022-06-21T12:38:00+03:00
-tags: ["modeling"]
-categories: ["science"]
+lastmod: 2022-07-29T17:38:00+03:00
 draft: false
 slug: "research-surrogate-modeling"
 ---

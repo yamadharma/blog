@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-07-24T16:41:00+03:00
+lastmod: 2022-08-12T13:59:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -51,6 +51,7 @@ slug: "system-administration"
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 -   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
+-   [Rocky Linux 9. Установка сервера]({{< relref "2022-08-12-rockylinux9-server-installation" >}})
 
 
 ### <span class="section-num">3.4</span> Файловые системы {#файловые-системы}

@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2022-06-03T14:58:00+03:00
+lastmod: 2022-08-04T13:09:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -29,6 +29,8 @@ slug: "routing-vyos"
 -   Реализовано на основе дистрибутива Debian.
 -   Система команд похожа на Juniper.
 -   Подсистема маршрутизации основывается на проекте FRRouting (см. [Маршрутизация. FRRouting]({{< relref "2022-06-02-routing-frrouting" >}})).
+-   Можно купить аппаратную платформу, на которой возможно развернуть маршрутизатор:
+    -   <https://aliexpress.ru/popular/vyos-router.html>
 
 
 ## <span class="section-num">2</span> Модель распространения {#модель-распространения}

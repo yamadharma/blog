@@ -2,7 +2,7 @@
 title: "Журнал Mathematics"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-15T12:15:00+03:00
-lastmod: 2022-07-07T19:54:00+03:00
+lastmod: 2022-08-09T19:44:00+03:00
 categories: ["science"]
 draft: false
 slug: "journal-mathematics"
@@ -49,6 +49,7 @@ slug: "journal-mathematics"
 |------|-------------|
 | 2021 | 1400        |
 | 2022 | 1800        |
+| 2023 | 2100        |
 
 
 ### <span class="section-num">2.2</span> Инструкции для авторов {#инструкции-для-авторов}
@@ -61,3 +62,9 @@ slug: "journal-mathematics"
 -   LaTeX:
     -   Общая информация: <https://www.mdpi.com/authors/latex>.
     -   Шаблон для LaTeX: <https://www.mdpi.com/data/MDPI_template.zip>
+
+
+## <span class="section-num">3</span> Специальные выпуски журнала Mathematics {#специальные-выпуски-журнала-mathematics}
+
+-   [Редактирование. Журнал Mathematics. 2021]({{< relref "2021-01-24-editing-journal-mathematics" >}})
+-   [Редактирование. Журнал Mathematics. 2022]({{< relref "2022-08-09-editing-journal-mathematics-2022" >}})
