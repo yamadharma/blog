@@ -2,7 +2,7 @@
 title: "Emacs. Completion systems"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-15T14:34:00+03:00
-lastmod: 2022-08-15T15:14:00+03:00
+lastmod: 2022-08-15T20:26:00+03:00
 tags: ["MOC", "emacs"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Сетевые технологии. Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-14T12:27:00+03:00
-lastmod: 2022-08-15T20:04:00+03:00
+lastmod: 2022-08-15T20:34:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -39,6 +39,7 @@ menu:
 6.  Адресация IPv4 и IPv6. Двойной стек
     -   [Адресация IPv4 и IPv6. Двойной стек]({{< relref "2022-07-08-ipv4-ipv6-addressing-double-stack" >}})
 7.  Адресация IPv4 и IPv6. Настройка DHCP
+    -   [Адресация IPv4 и IPv6. Настройка DHCP для IPv4]({{< relref "2022-08-15-configuring-dhcp-ipv4" >}})
 8.  Адресация IPv4 и IPv6. Туннель ipv6-ipv4
     -   [Туннель ipv6-ipv4]({{< relref "2022-07-14-tunnel-ipv6-ipv4" >}})
 9.  Адресация IPv4 и IPv6. Настройка маршрутизации
