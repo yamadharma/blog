@@ -2,7 +2,7 @@
 title: "Адресация IPv4 и IPv6. Двойной стек"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-08T13:19:00+03:00
-lastmod: 2022-08-15T20:06:00+03:00
+lastmod: 2022-08-17T20:32:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false

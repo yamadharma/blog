@@ -77,7 +77,7 @@ social:
   link: https://profiles.impactstory.org/u/0000-0002-0877-7063
 - icon: researcherid
   icon_pack: ai
-  link: http://www.researcherid.com/rid/I-3183-2013
+  link: https://www.webofscience.com/wos/author/rid/I-3183-2013
 - icon: scopus
   icon_pack: ai
   link: https://www.scopus.com/authid/detail.uri?authorId=35194130800

@@ -2,7 +2,9 @@
 title: "Адресация IPv4 и IPv6. Настройка DHCPv6 для IPv6"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-17T19:48:00+03:00
-lastmod: 2022-08-17T20:17:00+03:00
+lastmod: 2022-08-17T20:32:00+03:00
+tags: ["network", "education"]
+categories: ["computer-science"]
 draft: false
 toc: true
 type: "book"
