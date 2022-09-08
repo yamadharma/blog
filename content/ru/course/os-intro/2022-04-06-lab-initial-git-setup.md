@@ -2,7 +2,7 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2022-04-30T17:02:00+03:00
+lastmod: 2022-08-23T17:46:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -38,19 +38,16 @@ menu:
 #### <span class="section-num">2.1.1</span> Первичная настройка параметров git {#первичная-настройка-параметров-git}
 
 -   Зададим имя и email владельца репозитория:
-
     ```shell
     git config --global user.name "Name Surname"
     git config --global user.email "work@mail"
     ```
 -   Настроим utf-8 в выводе сообщений git:
-
     ```shell
     git config --global core.quotepath false
     ```
 -   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
 -   Зададим имя начальной ветки (будем называть её `master`):
-
     ```shell
     git config --global init.defaultBranch master
     ```
@@ -67,7 +64,6 @@ menu:
         -   Unix: `\n` (`LF`);
         -   Mac: `\r` (`CR`).
     -   Посмотреть значения переносов строк в репозитории можно командой:
-
         ```shell
         git ls-files --eol
         ```
@@ -97,12 +93,10 @@ menu:
             |               | CRLF -&gt; CRLF | CRLF -&gt; CRLF | CRLF -&gt; CRLF |
         -   Установка параметра:
             -   Для Windows
-
                 ```shell
                 git config --global core.autocrlf true
                 ```
             -   Для Linux
-
                 ```shell
                 git config --global core.autocrlf input
                 ```
@@ -115,7 +109,6 @@ menu:
             -   `core.safecrlf true`: запрещается необратимое преобразование `lf<->crlf`. Полезно, когда существуют бинарные файлы, похожие на текстовые файлы.
             -   `core.safecrlf warn`: печать предупреждения, но коммиты с необратимым переходом принимаются.
         -   Установка параметра:
-
             ```shell
             git config --global core.safecrlf warn
             ```
@@ -175,7 +168,6 @@ menu:
     -   Убедитесь, что у вас ещё нет ключа.
     -   Файлы закрытых ключей имеют названия типа `id_<алгоритм>` (например, `id_dsa`, `id_rsa`).
         -   По умолчанию закрытые ключи имеют имена:
-
             ```shell
             id_dsa
             id_ecdsa
@@ -185,7 +177,6 @@ menu:
 
     -   Открытые ключи имеют дополнительные расширения `.pub`.
         -   По умолчанию публичные ключи имеют имена:
-
             ```shell
             id_dsa.pub
             id_ecdsa.pub
@@ -194,7 +185,6 @@ menu:
             ```
     -   При создании ключа команда попросит ввести любую ключевую фразу для более надёжной защиты вашего пароля. Можно пропустить этот этап, нажав `Enter`.
     -   Сменить пароль на ключ можно с помощью команды:
-
         ```shell
         ssh-keygen -p
         ```
@@ -203,24 +193,20 @@ menu:
 #### <span class="section-num">2.2.2</span> Создание ключа ssh {#создание-ключа-ssh}
 
 -   Ключ ssh создаётся командой:
-
     ```shell
     ssh-keygen -t <алгоритм>
     ```
 -   Создайте ключи:
     -   по алгоритму _rsa_ с ключём размером 4096 бит:
-
         ```shell
         ssh-keygen -t rsa -b 4096
         ```
     -   по алгоритму _ed25519_:
-
         ```shell
         ssh-keygen -t ed25519
         ```
 -   При создании ключа команда попросит ввести любую ключевую фразу для более надёжной защиты вашего пароля. Можно пропустить этот этап, нажав `Enter`.
 -   Сменить пароль на ключ можно с помощью команды:
-
     ```shell
     ssh-keygen -p
     ```
@@ -229,7 +215,6 @@ menu:
 #### <span class="section-num">2.2.3</span> Добавление SSH-ключа в учётную запись GitHub {#добавление-ssh-ключа-в-учётную-запись-github}
 
 -   Скопируйте созданный SSH-ключ в буфер обмена командой:
-
     ```conf-unix
     xclip -i < ~/.ssh/id_ed25519.pub
     ```
@@ -260,7 +245,6 @@ menu:
 #### <span class="section-num">2.3.2</span> Создание ключа {#создание-ключа}
 
 -   Генерируем ключ
-
     ```shell
     gpg --full-generate-key
     ```
@@ -278,20 +262,17 @@ menu:
 #### <span class="section-num">2.3.3</span> Экспорт ключа {#экспорт-ключа}
 
 -   Выводим список ключей и копируем отпечаток приватного ключа:
-
     ```shell
     gpg --list-secret-keys --keyid-format LONG
     ```
 -   Отпечаток ключа --- это последовательность байтов, используемая для идентификации более длинного, по сравнению с самим отпечатком ключа.
 -   Формат строки:
-
     ```text
     sec   Алгоритм/Отпечаток_ключа Дата_создания [Флаги] [Годен_до]
           ID_ключа
     ```
 
 -   Экспортируем ключ в формате ASCII по его отпечатку:
-
     ```shell
     gpg --armor --export <PGP Fingerprint>
     ```
@@ -301,7 +282,6 @@ menu:
 
 -   Копируем ключ и добавляем его в настройках профиля на GitHub (или GitLab).
 -   Cкопируйте ваш сгенерированный PGP ключ в буфер обмена:
-
     ```shell
     gpg --armor --export <PGP Fingerprint> | xclip -sel clip
     ```
@@ -311,7 +291,6 @@ menu:
 #### <span class="section-num">2.3.5</span> Подписывание коммитов git {#подписывание-коммитов-git}
 
 -   Подпись коммитов при работе через терминал:
-
     ```shell
     git commit -a -S -m 'your commit message'
     ```
@@ -321,7 +300,6 @@ menu:
 #### <span class="section-num">2.3.6</span> Настройка автоматических подписей коммитов git {#настройка-автоматических-подписей-коммитов-git}
 
 -   Используя введёный email, укажите Git применять его при подписи коммитов:
-
     ```shell
     git config --global user.signingkey <PGP Fingerprint>
     git config --global commit.gpgsign true
@@ -363,7 +341,6 @@ menu:
     -   Fedora
         -   Это программное обеспечение удалено из репозитория.
         -   Необходимо устанавливать его вручную:
-
             ```shell
             cd /tmp
             wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh
@@ -375,7 +352,6 @@ menu:
 #### <span class="section-num">4.1.2</span> Установка gh {#установка-gh}
 
 -   Fedora:
-
     ```shell
     sudo dnf install gh
     ```
@@ -384,30 +360,25 @@ menu:
 ### <span class="section-num">4.2</span> Базовая настройка git {#базовая-настройка-git}
 
 -   Зададим имя и email владельца репозитория:
-
     ```shell
     git config --global user.name "Name Surname"
     git config --global user.email "work@mail"
     ```
 -   Настроим utf-8 в выводе сообщений git:
-
     ```shell
     git config --global core.quotepath false
     ```
 -   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
 -   Зададим имя начальной ветки (будем называть её `master`):
-
     ```shell
     git config --global init.defaultBranch master
     ```
 -   Параметр `autocrlf`:
-
     ```shell
     git config --global core.autocrlf input
     ```
 
 -   Параметр `safecrlf`:
-
     ```shell
     git config --global core.safecrlf warn
     ```
@@ -416,12 +387,10 @@ menu:
 ### <span class="section-num">4.3</span> Создайте ключи _ssh_ {#создайте-ключи-ssh}
 
 -   по алгоритму _rsa_ с ключём размером 4096 бит:
-
     ```shell
     ssh-keygen -t rsa -b 4096
     ```
 -   по алгоритму _ed25519_:
-
     ```shell
     ssh-keygen -t ed25519
     ```
@@ -430,7 +399,6 @@ menu:
 ### <span class="section-num">4.4</span> Создайте ключи _pgp_ {#создайте-ключи-pgp}
 
 -   Генерируем ключ
-
     ```shell
     gpg --full-generate-key
     ```
@@ -448,19 +416,16 @@ menu:
 ### <span class="section-num">4.5</span> Добавление PGP ключа в GitHub {#добавление-pgp-ключа-в-github}
 
 -   Выводим список ключей и копируем отпечаток приватного ключа:
-
     ```shell
     gpg --list-secret-keys --keyid-format LONG
     ```
 -   Отпечаток ключа --- это последовательность байтов, используемая для идентификации более длинного, по сравнению с самим отпечатком ключа.
 -   Формат строки:
-
     ```text
     sec   Алгоритм/Отпечаток_ключа Дата_создания [Флаги] [Годен_до]
           ID_ключа
     ```
 -   Cкопируйте ваш сгенерированный PGP ключ в буфер обмена:
-
     ```shell
     gpg --armor --export <PGP Fingerprint> | xclip -sel clip
     ```
@@ -470,7 +435,6 @@ menu:
 ### <span class="section-num">4.6</span> Настройка автоматических подписей коммитов git {#настройка-автоматических-подписей-коммитов-git}
 
 -   Используя введёный email, укажите Git применять его при подписи коммитов:
-
     ```shell
     git config --global user.signingkey <PGP Fingerprint>
     git config --global commit.gpgsign true
@@ -486,35 +450,31 @@ menu:
 #### <span class="section-num">4.7.1</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
 
 -   Необходимо создать шаблон рабочего пространства (см. [Рабочее пространство для лабораторной работы]({{< relref "2021-01-16-workspace-laboratory-work" >}})).
--   Например, для 2021--2022 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
-
+-   Например, для 2022--2023 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
     ```shell
-    mkdir -p ~/work/study/2021-2022/"Операционные системы"
+    mkdir -p ~/work/study/2022-2023/"Операционные системы"
     cd ~/work/study/2021-2022/"Операционные системы"
-    gh repo create study_2021-2022_os-intro --template=yamadharma/course-directory-student-template --public
-    git clone --recursive git@github.com:<owner>/study_2021-2022_os-intro.git os-intro
+    gh repo create study_2022-2023_os-intro --template=yamadharma/course-directory-student-template --public
+    git clone --recursive git@github.com:<owner>/study_2022-2023_os-intro.git os-intro
     ```
 
 
 #### <span class="section-num">4.7.2</span> Настройка каталога курса {#настройка-каталога-курса}
 
 -   Перейдите в каталог курса:
-
     ```shell
-    cd ~/work/study/2021-2022/"Операционные системы"/os-intro
+    cd ~/work/study/2022-2023/"Операционные системы"/os-intro
     ```
 -   Удалите лишние файлы:
-
     ```shell
     rm package.json
     ```
 -   Создайте необходимые каталоги:
-
     ```shell
-    make COURSE=os-intro
+    echo os-intro > COURSE
+    make
     ```
 -   Отправьте файлы на сервер:
-
     ```shell
     git add .
     git commit -am 'feat(main): make course structure'

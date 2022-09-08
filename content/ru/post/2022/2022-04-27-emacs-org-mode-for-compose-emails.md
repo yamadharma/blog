@@ -2,7 +2,7 @@
 title: "Emacs. Org-mode для написания писем"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-27T15:53:00+03:00
-lastmod: 2022-04-27T16:20:00+03:00
+lastmod: 2022-08-28T19:21:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -56,18 +56,38 @@ slug: "emacs-org-mode-for-compose-emails"
 -   `C-c` `C-b` --- переход к телу сообщения (аналогично `message-goto-body` в режиме сообщения) (`org-msg-goto-body`).
 -   `C-c` `C-a` --- добавить (или удалить) вложение (похоже на функцию `org-attach`) (`org-msg-attach`). Список вложений хранится в свойстве `attachment:`.
 -   `C-c` `C-c` --- генерирует сообщение MIME и отправляет его (`org-ctrl-c-ctrl-c`).
+-   Интерактивная функция `org-msg-mode` может быть вызвана для включения или отключения `org-msg`.
+    -   По умолчанию после загрузки модуля он отключён.
+    -   Если необходимо ответить на электронное письмо, не используя `org-msg`, нужно вызвать эту функцию перед ответом.
 
 
 ### <span class="section-num">2.4</span> Настройка {#настройка}
 
--   Необходимо задать `mail-user-agent` до загрузки `org-msg`:
 
+#### <span class="section-num">2.4.1</span> Тип редактора сообщения {#тип-редактора-сообщения}
+
+-   Необходимо задать `mail-user-agent` до загрузки `org-msg`:
     ```elisp
     (setq mail-user-agent 'mu4e-user-agent)
     ```
 
 
-### <span class="section-num">2.5</span> Недостатки {#недостатки}
+#### <span class="section-num">2.4.2</span> Параметры org-mode {#параметры-org-mode}
+
+-   Можно задать параметры форматирования `org-mode`:
+    ```emacs-lisp
+    (setq org-msg-options "html-postamble:nil H:5 num:nil ^:{} toc:nil author:nil email:nil \\n:t tex:dvipng"
+          org-msg-startup "hidestars indent inlineimages")
+    ```
+
+
+### <span class="section-num">2.5</span> Достоинства {#достоинства}
+
+-   Полное окружение `org-mode`.
+-   Формулы работают из коробки.
+
+
+### <span class="section-num">2.6</span> Недостатки {#недостатки}
 
 -   Пакет реализует собственный механизм подключения вложений.
 -   Поэтому становится невозможно использование mime-вложений, например, нельзя подписать (электроподписью) сообщение с вложением.
@@ -89,7 +109,6 @@ slug: "emacs-org-mode-for-compose-emails"
 
 -   Переключение в `org-mu4e-compose-org-mode` при создании сообщения.
 -   Преобразование в `html` при отправке сообщения.
-
     ```emacs-lisp
     (require 'org-mu4e)
 
@@ -110,3 +129,4 @@ slug: "emacs-org-mode-for-compose-emails"
     	    "My settings for message composition."
     	    (org-mu4e-compose-org-mode)))
     ```
+-   Для преобразования используется пакет `org-mime`.

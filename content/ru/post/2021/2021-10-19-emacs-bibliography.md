@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-19T14:21:00+03:00
-lastmod: 2021-10-19T14:40:00+03:00
+lastmod: 2022-09-01T10:12:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -21,21 +21,35 @@ slug: "emacs-bibliography"
 
 ### <span class="section-num">1.1</span> Управление библиографической базой {#управление-библиографической-базой}
 
--   `ebib`: предоставляет инструмент для редактирования самих файлов `.bib` (см. [Emacs. Менеджер библиографической информации Ebib]({{< relref "2021-09-14-emacs-ebib-bibliography-manager" >}}))
+
+#### <span class="section-num">1.1.1</span> Ebib {#ebib}
+
+-   `ebib`: предоставляет инструмент для редактирования самих файлов `.bib`.
+-   [Emacs. Менеджер библиографической информации Ebib]({{< relref "2021-09-14-emacs-ebib-bibliography-manager" >}})
 
 
 ### <span class="section-num">1.2</span> Управление ссылками {#управление-ссылками}
 
--   `org-ref`: система управления ссылками, тесно интегрированная с `org-mode`.
-    -   Можно редактировать файлы `bibtex`,
-    -   вставлять цитаты,
-    -   искать и загружать PDF-файлы для ссылок,
-    -   вставлять библиографические данные.
+
+#### <span class="section-num">1.2.1</span> Helm-bibtex {#helm-bibtex}
 
 -   `helm-bibtex`: инструмент для поиска файлов `.bib`.
-    -   Запустите helm-bibtex, и он представит список любых файлов .bib, которые вы настроили для поиска.
-    -   Когда вы выбираете что-то, у вас есть возможность
-        -   перейти по URL-адресу,
-        -   открыть PDF-файл,
-        -   вставить запись в качестве цитаты,
-        -   вставить запись BibTeX.
+-   [Emacs. Работа с библиографией. helm-bibtex]({{< relref "2022-08-30-emacs-bibliography-helm-bibtex" >}})
+-   Позволяет вставлять ссылки в файл.
+
+
+#### <span class="section-num">1.2.2</span> Org-ref {#org-ref}
+
+-   `org-ref`: система управления ссылками, тесно интегрированная с `org-mode`.
+-   [Emacs. Работа с библиографией. org-ref]({{< relref "2022-08-30-emacs-bibliography-org-ref" >}})
+-   Можно:
+    -   редактировать файлы `bibtex`;
+    -   вставлять цитаты;
+    -   искать и загружать PDF-файлы для ссылок;
+    -   вставлять библиографические данные.
+
+
+#### <span class="section-num">1.2.3</span> Org Roam BibTeX {#org-roam-bibtex}
+
+-   Расширение Org Roam, которое интегрирует Org Roam с программным обеспечением для управления библиографией/цитированием: Org Ref, Helm и Ivy BibTeX и Citar.
+-   [Emacs. Работа с библиографией. Org-roam-bibtex]({{< relref "2022-08-30-emacs-bibliography-org-roam-bibtex" >}})

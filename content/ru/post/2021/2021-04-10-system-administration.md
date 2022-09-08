@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-08-12T13:59:00+03:00
+lastmod: 2022-09-07T14:40:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -128,6 +128,7 @@ slug: "system-administration"
 ### <span class="section-num">6.6</span> Вычисления {#вычисления}
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
+-   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
 ## <span class="section-num">7</span> Безопасность {#безопасность}

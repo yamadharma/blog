@@ -2,7 +2,7 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2021-09-18T19:48:00+03:00
+lastmod: 2022-09-01T21:06:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -37,9 +37,37 @@ slug: "scientific-administrative"
 
 ## <span class="section-num">4</span> Редакторская деятельность {#редакторская-деятельность}
 
--   [Журнал Mathematics]({{< relref "2021-07-15-journal-mathematics" >}})
+
+### <span class="section-num">4.1</span> Discrete and Continuous Models and Applied Computational Science {#discrete-and-continuous-models-and-applied-computational-science}
+
 -   [Журнал Discrete and Continuous Models]({{< relref "2021-02-26-editing-discrete-continuous-models" >}})
+-   заместитель главного редактора
+-   <https://elibrary.ru/title_about_new.asp?id=73749>
+-   <https://journals.rudn.ru/miph>
+
+
+### <span class="section-num">4.2</span> Mathematical Modelling and Geometry {#mathematical-modelling-and-geometry}
+
+-   член редакционной коллегии
+-   <https://elibrary.ru/title_about_new.asp?id=55385>
+-   <https://mmg.tversu.ru/>
+
+
+### <span class="section-num">4.3</span> CEUR Workshop Proceedings {#ceur-workshop-proceedings}
+
 -   [Репозиторий конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}})
+-   CEUR Workshop Proceedings (CEUR-WS.org). Free Open-Access Proceedings for Computer Science Workshops
+-   член редакционной коллегии (Associate Editor)
+    -   <http://ceur-ws.org/>
+    -   <http://ceur-ws.org/CEURWS-TEAM.html>
+
+
+### <span class="section-num">4.4</span> Журнал Mathematics {#журнал-mathematics}
+
+-   [Журнал Mathematics]({{< relref "2021-07-15-journal-mathematics" >}})
+-   Приглашённый редактор
+    -   [Редактирование. Журнал Mathematics. 2021]({{< relref "2021-01-24-editing-journal-mathematics" >}})
+    -   [Редактирование. Журнал Mathematics. 2022]({{< relref "2022-08-09-editing-journal-mathematics-2022" >}})
 
 
 ## <span class="section-num">5</span> Научная школа {#научная-школа}

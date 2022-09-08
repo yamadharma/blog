@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2022-01-30T14:23:00+03:00
+lastmod: 2022-08-31T13:50:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -32,22 +32,18 @@ slug: "password-manager-pass"
 
 -   Рассмотрим пользователя `user` в домене `example.com`, порт `22`.
 -   Отсутствие имени пользователя или порта в имени файла означает, что любое имя пользователя и порт будут совпадать:
-
     ```shell
     example.com.pgp
     ```
 -   Соответствующее имя пользователя может быть именем файла внутри каталога, имя которого совпадает с хостом. Это полезно, если в базе есть пароли для нескольких пользователей на одном хосте:
-
     ```shell
     example.com/user.pgp
     ```
 -   Имя пользователя также может быть записано в виде префикса, отделенного от хоста знаком `@`:
-
     ```shell
     user@example.com.pgp
     ```
 -   Соответствующий порт может быть указан после хоста, отделённый двоеточием (`:`):
-
     ```shell
     example.com:22.pgp
     example.com:22/user.pgp
@@ -103,7 +99,6 @@ slug: "password-manager-pass"
 -   Репозиторий: <https://github.com/NicolasPetton/pass>
 -   Позволяет редактировать базу данных паролей.
 -   Запуск:
-
     ```elisp
     M-x pass
     ```
@@ -114,7 +109,6 @@ slug: "password-manager-pass"
 -   Интерфейс _helm_ для _pass_.
 -   Репозиторий: <https://github.com/emacs-helm/helm-pass>
 -   Запуск:
-
     ```elisp
     M-x helm-pass
     ```
@@ -132,41 +126,34 @@ slug: "password-manager-pass"
 -   Linux
     -   Gentoo
         -   `pass`
-
             ```shell
             emerge app-admin/pass
             ```
         -   `gopass`
-
             ```shell
             emerge app-admin/gopass
             ```
         -   `qtpass`
-
             ```shell
             emerge app-admin/qtpass
             ```
         -   Gopass UI
             -   Находится в оверлее awesome (<https://gitlab.awesome-it.de/overlays/awesome/>).
             -   Установка:
-
                 ```shell
                 emerge app-admin/gopass-ui
                 ```
 
 -   Macintosh
-
     ```shell
     brew install pass
     ```
 -   Windows
     -   `pass`
-
         ```shell
         choco install pass4win
         ```
     -   `gopass`
-
         ```shell
         choco install gopass
         ```
@@ -178,12 +165,10 @@ slug: "password-manager-pass"
 ### <span class="section-num">5.1</span> Ключи GPG {#ключи-gpg}
 
 -   Просмотр списка ключей:
-
     ```shell
     gpg --list-secret-keys
     ```
 -   Если ключа нет, нужно создать новый:
-
     ```shell
     gpg --full-generate-key
     ```
@@ -195,7 +180,6 @@ slug: "password-manager-pass"
 #### <span class="section-num">5.2.1</span> pass {#pass}
 
 -   Инициализируем хранилище:
-
     ```shell
     pass init <gpg-id or email>
     ```
@@ -204,7 +188,6 @@ slug: "password-manager-pass"
 #### <span class="section-num">5.2.2</span> gopass {#gopass}
 
 -   Для `gopass` можно просто ввести:
-
     ```shell
     gopass init
     ```
@@ -216,7 +199,6 @@ slug: "password-manager-pass"
 #### <span class="section-num">5.2.3</span> qtpass {#qtpass}
 
 -   Также можно инициализировать с помощью графического инструмента `qtpass`:
-
     ```shell
     qtpass
     ```
@@ -229,17 +211,14 @@ slug: "password-manager-pass"
 
 -   При инициализации `gopass` инициализирует также структуру git.
 -   При необходимости это можно сделать отдельно:
-
     ```shell
     gopass git init
     ```
 -   Также можно задать адрес репозитория на хостинге (репозиторий необходимо предварительно создать):
-
     ```shell
     gopass git remote add origin git@github.com:<git_username>/<git_repo>.git
     ```
 -   Для синхронизации выполняется следующая команда:
-
     ```shell
     gopass sync
     ```
@@ -257,7 +236,6 @@ slug: "password-manager-pass"
 
 -   Команда `gopass show secret` выдаёт `Error: Failed to decrypt`.
 -   Можно установить в `~/.bashrc` или `~/.profile`:
-
     ```shell
     export GPG_TTY=$(tty)
     ```
@@ -279,7 +257,6 @@ slug: "password-manager-pass"
 -   Синхронизацию с _git_ придётся выполнять вручную.
 -   Не следует использовать символьные ссылки. Они не переносимы между разными операционными системами и могут нарушиться при синхронизации (например, с Android).
 -   После ручного редактирования рекомендуется проверить структуру базы паролей:
-
     ```shell
     gopass fsck
     ```
@@ -313,7 +290,6 @@ slug: "password-manager-pass"
     -   Gentoo
         -   Находится в оверлее `wjn-overlay` (<https://data.gpo.zugaina.org/wjn-overlay/>).
         -   Установка:
-
             ```shell
             emerge app-admin/pass-import
             ```
@@ -324,17 +300,14 @@ slug: "password-manager-pass"
 
     -   Для `pass`:
         -   Автоопределение формата источника:
-
             ```shell
             pass import path/to/passwords
             ```
         -   Если автоопределение не сработало:
-
             ```shell
             pass import <password_manager> path/to/passwords
             ```
         -   Если конвертация не для `pass`:
-
             ```shell
             pimport <new_pm> <former_pm> path/to/passwords --out path/to/destination/pm
             ```
@@ -354,23 +327,19 @@ slug: "password-manager-pass"
 -   В меню выберите _Account options &gt; Advanced &gt; Export &gt; LastPass CVS File_.
 -   Сохраняем результат в файл `lastpass_export.csv`.
 -   Конвертация с помощью `pass-import`:
-
     ```shell
     pass import lastpass lastpass_export.csv
     ```
 -   Альтернативный вариант. Не используйте его. Результат не соответствует структуре именования `pass`.
     -   Скачайте скрипт:
-
         ```shell
         wget https://git.zx2c4.com/password-store/plain/contrib/importers/lastpass2pass.rb
         ```
     -   Сделайте скрипт исполняемым:
-
         ```shell
         chmod +x lastpass2pass.rb
         ```
     -   Импортируйте пароли:
-
         ```shell
         ./lastpass2pass.rb lastpass_export.csv
         ```
@@ -391,13 +360,11 @@ slug: "password-manager-pass"
 -   Установка:
     -   Gentoo:
         Находится в репозитории <https://github.com/yamadharma/gentoo-portage-local>.
-
         ```shell
         emerge app-admin/pass-audit
         ```
 -   Использование:
     -   Проверка по парольному каталогу или по парольной записи:
-
         ```shell
         pass audit [каталог или одна запись]
         ```
@@ -411,7 +378,6 @@ slug: "password-manager-pass"
 1.  Простая проверка качества пароля
 
     -   Простая проверка качества пароля по парольному каталогу или по парольной записи:
-
         ```shell
         gopass audit [каталог или одна запись]
         ```
@@ -426,24 +392,20 @@ slug: "password-manager-pass"
     -   Код: <https://github.com/gopasspw/gopass-hibp>.
     -   Установка:
         -   Gentoo:
-
             ```shell
             emerge app-admin/gopass-hibp
             ```
     -   Использование:
         -   Использование HIBPv2 API
-
             ```shell
             gopass-hibp api
             ```
         -   Сравнение хешей паролей с дампом HIBP:
             -   Скачиваем дамп SHA-1 хешей паролей с <https://haveibeenpwned.com/Passwords> и распаковываем его.
             -   Проверяем пароли:
-
                 ```shell
                 gopass-hibp dump pwned-passwords-1.0.txt
                 ```
-
                 Этот вариант помедленнее.
     -   Проверяет сразу все записи в базе паролей. Один пароль проверить нельзя.
 

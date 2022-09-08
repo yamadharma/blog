@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2022-04-27T15:57:00+03:00
+lastmod: 2022-08-30T11:49:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -45,20 +45,18 @@ USE="emacs" emerge -v mu
 
 ### <span class="section-num">3.1</span> Синхронизация mbsync {#синхронизация-mbsync}
 
-Для синхронизации будем использовать программу _mbsync_ (см. [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}})).
+-   Для синхронизации будем использовать программу _mbsync_ (см. [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}})).
 
 
 ### <span class="section-num">3.2</span> Инициализация {#инициализация}
 
 -   Перед использованием необходимо инициализировать базу данных писем:
-
     ```shell
     mu init --maildir=~/Maildir \
        --my-address=account1@domain1 \
        --my-address=account2@domain2
     ```
 -   Можно это выполнить скриптом:
-
     ```shell
     #!/bin/sh
 
@@ -70,11 +68,10 @@ USE="emacs" emerge -v mu
 
 ### <span class="section-num">3.3</span> Индексирование почты {#индексирование-почты}
 
-После загрузки писем необходимо инициализировать базу данных `mu` и про индексировать электрические письма:
-
-```shell
-mu index
-```
+-   После загрузки писем необходимо инициализировать базу данных `mu` и про индексировать электрические письма:
+    ```shell
+    mu index
+    ```
 
 
 ## <span class="section-num">4</span> Сочетания клавиш {#сочетания-клавиш}
@@ -183,12 +180,10 @@ mu index
 #### <span class="section-num">5.2.1</span> Предварительная настройка {#предварительная-настройка}
 
 -   Подключаем библиотеку для связи с _org_:
-
     ```elisp
     (require 'mu4e-org)
     ```
 -   Следует активировать генерацию ссылок на почтовые сообщения:
-
     ```elisp
     (setq mu4e-support-org t)
     ```
@@ -213,7 +208,6 @@ mu index
     | `%:path`                                                   | путь в файловой системе        |
     | `%:subject`                                                | тема сообщения                 |
 -   Примерный вид шаблона для захвата:
-
     ```elisp
     (add-to-list
      'org-capture-templates '("M" "TODO from mail" entry (file org-default-notes-file)
@@ -228,7 +222,6 @@ mu index
 #### <span class="section-num">5.2.3</span> Захват сообщения {#захват-сообщения}
 
 -   Можно задать комбинации клавиш для захвата:
-
     ```elisp
     (define-key mu4e-headers-mode-map (kbd "C-c c") 'mu4e-org-store-and-capture)
     (define-key mu4e-view-mode-map    (kbd "C-c c") 'mu4e-org-store-and-capture)

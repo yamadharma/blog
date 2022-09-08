@@ -2,7 +2,7 @@
 title: "LaTeX. Греческие буквы в листингах"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-15T16:20:00+03:00
-lastmod: 2022-07-24T16:58:00+03:00
+lastmod: 2022-09-02T19:12:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -51,3 +51,22 @@ LaTeX. Греческие буквы в листингах.
     \end{minted}
     ```
 -   Ограничители `escapeinside` не срабатывают в комментариях и строках.
+-   Можно обойти проблему со строками, задав оператор, заключающий аргумент в кавычки, заданные с помощью внутренних команд _minted_.
+-   Зададим оператор:
+    ```latex
+    \newcommand{\mintescapestring}[1]{\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{#1}\PYG{l+s}{\PYGZsq{}}}
+    ```
+-   Тогда его можно применять следующим образом:
+    ```latex
+    \begin{minted}[escapeinside=||]{python}
+      |\texttheta| = sp.Symbol(|\mintescapestring{\texttheta}|, real=True)
+      (|\texttheta|*i).exp()
+    \end{minted}
+    ```
+-   В кодировке unicode это выглядит следующим образом:
+    ```latex
+    \begin{minted}{python}
+      θ = sp.Symbol('θ', real=True)
+      (θ*i).exp()
+    \end{minted}
+    ```
