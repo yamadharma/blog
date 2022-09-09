@@ -30,6 +30,9 @@ Interests:
 
 education:
   courses:
+  - course: Professor by specialty
+    institution: Peoples' Friendship University of Russia
+    year: 2022
   - course: Doctor of Sciences in Physics and Mathematics
     institution: Peoples' Friendship University of Russia
     year: 2017

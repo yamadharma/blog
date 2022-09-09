@@ -21,6 +21,16 @@ date_format = "2006-01-02"
 [[item]]
   organization = "Министерство образования Российской Федерации"
   organization_url = "https://www.minobrnauki.gov.ru/"
+  title = "Аттестат о присвоении учёного звания профессора"
+  url = ""
+  certificate_url = ""
+  date_start = "2022-07-12"
+  date_end = ""
+  description = "Учёное звание профессора по специальности «Математическое моделирование, численные методы и комплексы программ»"
+
+[[item]]
+  organization = "Министерство образования Российской Федерации"
+  organization_url = "https://www.minobrnauki.gov.ru/"
   title = "Диплом доктора наук"
   url = ""
   certificate_url = ""
@@ -31,12 +41,12 @@ date_format = "2006-01-02"
 [[item]]
   organization = "Министерство образования Российской Федерации"
   organization_url = "https://www.minobrnauki.gov.ru/"
-  title = "Аттестат доцента"
+  title = "Аттестат о присвоении учёного звания доцента"
   url = ""
   certificate_url = ""
   date_start = "2005-05-18"
   date_end = ""
-  description = "Доцент по кафедре Систем телекоммуникаций"
+  description = "Учёное звание доцента по кафедре Систем телекоммуникаций"
 
 [[item]]
   organization = "Министерство образования Российской Федерации"
