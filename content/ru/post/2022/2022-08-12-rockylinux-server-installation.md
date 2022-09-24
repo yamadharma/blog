@@ -1,15 +1,15 @@
 ---
-title: "Rocky Linux 9. Установка сервера"
+title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2022-08-12T15:36:00+03:00
+lastmod: 2022-09-24T20:13:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
-slug: "rockylinux9-server-installation"
+slug: "rockylinux-server-installation"
 ---
 
-Установка базисного сервера на Rocky Linux 9.
+Установка базисного сервера на Rocky Linux.
 
 <!--more-->
 
@@ -110,66 +110,119 @@ slug: "rockylinux9-server-installation"
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf -y install tmux mc
+    dnf install tmux mc
     ```
+
 -   Программы мониторинга:
     ```shell
-    dnf -y install htop
+    dnf install htop
     ```
 
 
-### <span class="section-num">4.2</span> Безопасность {#безопасность}
+### <span class="section-num">4.2</span> Утилиты {#утилиты}
+
+
+#### <span class="section-num">4.2.1</span> rsync {#rsync}
+
+-   Установим rsync:
+    ```shell
+    dnf install rsync
+    ```
+
+
+### <span class="section-num">4.3</span> Безопасность {#безопасность}
+
+
+#### <span class="section-num">4.3.1</span> Fail2ban {#fail2ban}
 
 -   Защита от атак:
     ```shell
-    dnf -y install fail2ban
+    dnf install fail2ban
     ```
+
 -   Следует сконфигурить и запустить:
     ```shell
     systemctl enable --now fail2ban.service
     ```
 
 
-### <span class="section-num">4.3</span> Вариации на тему стека LAMP (Linux, Apache, MySQL, PHP) {#вариации-на-тему-стека-lamp--linux-apache-mysql-php}
+#### <span class="section-num">4.3.2</span> Работа с  Let's Encrypt {#работа-с-let-s-encrypt}
+
+-   Установим certbot:
+    ```shell
+    dnf install certbot
+    ```
+-   Установим модуль под Apache:
+    ```shell
+    dnf install python3-certbot-apache
+    ```
+-   Если используется Nginx, установим модуль под Nginx:
+    ```shell
+    install certbot python3-certbot-nginx
+    ```
+
+
+### <span class="section-num">4.4</span> Вариации на тему стека LAMP (Linux, Apache, MySQL, PHP) {#вариации-на-тему-стека-lamp--linux-apache-mysql-php}
 
 -   Устанавливается, если необходимо поддерживать приложение на PHP.
 -   Обычно используются базы данных Mysql или Postgresql.
 
 
-#### <span class="section-num">4.3.1</span> Apache {#apache}
+#### <span class="section-num">4.4.1</span> Apache {#apache}
 
 -   Установка Apache:
     ```shell
-    dnf -y install httpd
+    dnf install httpd
+    ```
+-   Установка поддержки HTTPS:
+    ```shell
+    dnf install mod_ssl
     ```
 
 
-#### <span class="section-num">4.3.2</span> PHP {#php}
+#### <span class="section-num">4.4.2</span> PHP {#php}
 
 -   Установим php:
     ```shell
-    dnf -y install php
+    dnf install php
     ```
 
 
-#### <span class="section-num">4.3.3</span> Mysql: {#mysql}
+#### <span class="section-num">4.4.3</span> Mysql {#mysql}
 
 -   Установим _mariadb_:
     ```shell
-    dnf -y install maridb
+    dnf install mariadb
+    dnf install mariadb-server
     ```
 -   Установим модуль для php:
     ```shell
-    dnf -y install php-mysqlnd
+    dnf install php-mysqlnd
     ```
 
 
-### <span class="section-num">4.4</span> Администрирование {#администрирование}
+### <span class="section-num">4.5</span> Администрирование {#администрирование}
 
 
-#### <span class="section-num">4.4.1</span> Резервное копирование {#резервное-копирование}
+#### <span class="section-num">4.5.1</span> Резервное копирование {#резервное-копирование}
 
 -   Для резервного копирования используется _restic_:
     ```shell
-    dnf -y install restic
+    dnf install restic
+    ```
+
+
+### <span class="section-num">4.6</span> Файловые системы {#файловые-системы}
+
+
+#### <span class="section-num">4.6.1</span> GlusterFS {#glusterfs}
+
+-   Установите пакет для последнего релиза GlusterFS (см. <https://wiki.centos.org/SpecialInterestGroup/Storage>):
+    ```shell
+    dnf install centos-release-gluster
+    ```
+-   Установка клиента GlusterFS:
+    ```shell
+    dnf install glusterfs
+    dnf install glusterfs-fuse
     ```

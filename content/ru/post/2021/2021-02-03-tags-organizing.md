@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2022-08-25T18:47:00+03:00
+lastmod: 2022-09-17T13:29:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -37,9 +37,10 @@ slug: "tags-organizing"
     -   maxwell
     -   kinetic
 -   `@computer_science`: Компьютерные науки
-    -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
-    -   `hugo`: [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
     -   `emacs`: [Emacs]({{< relref "2020-12-24-emacs" >}})
+    -   `gentoo`[^fn:1]: [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
+    -   `hugo`: [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
+    -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
 -   `@blog`
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
@@ -53,24 +54,27 @@ slug: "tags-organizing"
     -   `disciples`: [Disciples]({{< relref "2022-06-07-disciples-game" >}})
     -   `homm`: [Heroes of Might and Magic]({{< relref "2022-06-07-homm" >}})
 
-| Уровень  | org-mode todo | org-roam          | blog (ru)        | blog (en)         |
-|----------|---------------|-------------------|------------------|-------------------|
-| category |               | @computer_science | computer-science | computer-science  |
-| tag      |               | hard              |                  |                   |
-| tag      |               | soft              |                  |                   |
-| category | `@science`    | `@science`        | `сиянс`          | `science`         |
-| tag      | `education`   | `education`       | `education`      | `education`       |
-| tag      | `research`    | `research`        | `research`       | `research`        |
-| tag      | `sci_admin`   | `sci_admin`       | `sci-admin`      | `sci-admin`       |
-| tag      | `sci_being`   | `sci_being`       | `sci-being`      | `sci-being`       |
-| tag      | `sci_writing` | `sci_writing`     | `sci-writing`    | `sci-writing`     |
-| category |               | @book             | листая-страницы  | through-the-pages |
-| tag      |               | science_people    | люди-науки       | science-people    |
-| tag      |               | culture           | культура         | culture           |
-| category |               | @self_management  | self-management  | self-management   |
-| tag      |               | gtd               | gtd              | gtd               |
-| category |               | @life             | жизнь            | life              |
-| category |               | @reflections      | мысли            | reflections       |
-| category |               | @games            | games            | games             |
-| tag      |               | disciples         | disciples        | disciples         |
-| tag      |               | homm              | homm             | homm              |
+| Уровень  | org-mode todo | org-roam            | blog (ru)        | blog (en)         |
+|----------|---------------|---------------------|------------------|-------------------|
+| category |               | `@computer_science` | computer-science | computer-science  |
+| tag      |               | `hard`              |                  |                   |
+| tag      |               | `soft`              |                  |                   |
+| tags     |               | `gentoo`            |                  |                   |
+| category | `@science`    | `@science`          | `сиянс`          | `science`         |
+| tag      | `education`   | `education`         | `education`      | `education`       |
+| tag      | `research`    | `research`          | `research`       | `research`        |
+| tag      | `sci_admin`   | `sci_admin`         | `sci-admin`      | `sci-admin`       |
+| tag      | `sci_being`   | `sci_being`         | `sci-being`      | `sci-being`       |
+| tag      | `sci_writing` | `sci_writing`       | `sci-writing`    | `sci-writing`     |
+| category |               | `@book`             | листая-страницы  | through-the-pages |
+| tag      |               | `science_people`    | люди-науки       | science-people    |
+| tag      |               | `culture`           | культура         | culture           |
+| category |               | `@self_management`  | self-management  | self-management   |
+| tag      |               | `gtd`               | gtd              | gtd               |
+| category |               | `@life`             | жизнь            | life              |
+| category |               | `@reflections`      | мысли            | reflections       |
+| category |               | `@games`            | games            | games             |
+| tag      |               | `disciples`         | disciples        | disciples         |
+| tag      |               | `homm`              | homm             | homm              |
+
+[^fn:1]: Это мой основной дистрибутив Linux.

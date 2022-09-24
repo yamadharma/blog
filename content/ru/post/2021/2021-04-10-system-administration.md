@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-09-07T14:40:00+03:00
+lastmod: 2022-09-24T20:17:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -20,6 +20,7 @@ slug: "system-administration"
 
 -   [Критерии выбора ноутбука]({{< relref "2022-04-30-criteria-choosing-laptop" >}})
 -   [Критерии выбора персонального компьютера]({{< relref "2022-07-21-criteria-choosing-personal-computer" >}})
+-   [Набор вещей для системного администратора]({{< relref "2022-09-11-system-administrator-tools" >}})
 
 
 ## <span class="section-num">2</span> Графическое окружение {#графическое-окружение}
@@ -51,7 +52,7 @@ slug: "system-administration"
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 -   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
--   [Rocky Linux 9. Установка сервера]({{< relref "2022-08-12-rockylinux9-server-installation" >}})
+-   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
 
 
 ### <span class="section-num">3.4</span> Файловые системы {#файловые-системы}
@@ -68,11 +69,19 @@ slug: "system-administration"
 ### <span class="section-num">3.6</span> Дистрибутивы Linux {#дистрибутивы-linux}
 
 
-#### <span class="section-num">3.6.1</span> Режим киоска {#режим-киоска}
+#### <span class="section-num">3.6.1</span> Общая информация {#общая-информация}
+
+
+#### <span class="section-num">3.6.2</span> Режим киоска {#режим-киоска}
 
 -   Данные дистрибутивы созданы для организации режима киоска (см. [Режим киоска]({{< relref "2022-02-15-kiosk-mode" >}})).
 -   [Porteus Kiosk]({{< relref "2022-02-15-porteus-kiosk" >}})
 -   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
+
+
+#### <span class="section-num">3.6.3</span> Дистрибутивы общего назначения {#дистрибутивы-общего-назначения}
+
+-   [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
 
 
 ### <span class="section-num">3.7</span> Терминальный доступ {#терминальный-доступ}
@@ -85,53 +94,61 @@ slug: "system-administration"
 -   [Утилита module]({{< relref "2022-07-24-module-utility" >}})
 
 
-## <span class="section-num">4</span> Управление и мониторинг {#управление-и-мониторинг}
+## <span class="section-num">4</span> Серверы приложений {#серверы-приложений}
+
+
+### <span class="section-num">4.1</span> Drupal {#drupal}
+
+-   [Перенос Drupal на другую машину]({{< relref "2022-09-13-move-drupal-other-machine" >}})
+
+
+## <span class="section-num">5</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 
 
-## <span class="section-num">5</span> Шрифты {#шрифты}
+## <span class="section-num">6</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">6</span> Пользовательские программы {#пользовательские-программы}
+## <span class="section-num">7</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">6.1</span> Обработка видео {#обработка-видео}
+### <span class="section-num">7.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">6.2</span> Виртуализация {#виртуализация}
+### <span class="section-num">7.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">6.3</span> Редакторы {#редакторы}
+### <span class="section-num">7.3</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-### <span class="section-num">6.4</span> Текстовые процессоры {#текстовые-процессоры}
+### <span class="section-num">7.4</span> Текстовые процессоры {#текстовые-процессоры}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 
 
-### <span class="section-num">6.5</span> Работа с дисками {#работа-с-дисками}
+### <span class="section-num">7.5</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-### <span class="section-num">6.6</span> Вычисления {#вычисления}
+### <span class="section-num">7.6</span> Вычисления {#вычисления}
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 -   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
-## <span class="section-num">7</span> Безопасность {#безопасность}
+## <span class="section-num">8</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
@@ -140,16 +157,16 @@ slug: "system-administration"
 -   [Механизм HSTS]({{< relref "2022-05-03-hsts-mechanism" >}})
 
 
-## <span class="section-num">8</span> Сети {#сети}
+## <span class="section-num">9</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-## <span class="section-num">9</span> Организация обучения {#организация-обучения}
+## <span class="section-num">10</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">10</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">11</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
