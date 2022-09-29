@@ -2,7 +2,7 @@
 title: "Профессия Системный администратор"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T12:02:00+03:00
-lastmod: 2021-09-16T20:14:00+03:00
+lastmod: 2022-09-25T14:31:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2022-09-17T13:29:00+03:00
+lastmod: 2022-09-27T11:09:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -34,20 +34,24 @@ slug: "tags-organizing"
     -   `sci_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
     -   `sci_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
 -   `@physics`:
-    -   maxwell
-    -   kinetic
+    -   `maxwell`
+    -   `kinetic`
 -   `@computer_science`: Компьютерные науки
     -   `emacs`: [Emacs]({{< relref "2020-12-24-emacs" >}})
     -   `gentoo`[^fn:1]: [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
     -   `hugo`: [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
     -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
+    -   `linux`:
+    -   `redhat`:
+    -   `org-mode`: [Org-mode]({{< relref "2021-10-14-org-mode" >}})
 -   `@blog`
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
     -   `gtd`: [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})
 -   `@book`: Книги, которые прочитал
-    -   `science_people`: Биографии учёных, мемуары учёных.
-    -   `culture`: Всё, что имеет отношение к культуре (культурология, литературоведение).
+    -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
+    -   `culture`[^fn:3]: [Книги. Культура]({{< relref "2021-01-10-books-culture" >}})
+    -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
 -   `@life`: [Жизнь]({{< relref "2021-11-26-life" >}})
 -   `@reflections`: [Мысли]({{< relref "2021-12-14-reflections" >}})
 -   `@games`: [Компьютерные игры]({{< relref "2022-06-07-computer-games" >}})
@@ -78,3 +82,5 @@ slug: "tags-organizing"
 | tag      |               | `homm`              | homm             | homm              |
 
 [^fn:1]: Это мой основной дистрибутив Linux.
+[^fn:2]: Биографии учёных, мемуары учёных.
+[^fn:3]: Всё, что имеет отношение к культуре (культурология, литературоведение).
