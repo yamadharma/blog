@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2022-09-25T10:06:00+03:00
+lastmod: 2022-10-17T17:03:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -147,6 +147,11 @@ slug: "system-administration"
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 -   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
+
+
+### <span class="section-num">7.7</span> Квантовая химия {#квантовая-химия}
+
+-   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
 
 
 ## <span class="section-num">8</span> Безопасность {#безопасность}

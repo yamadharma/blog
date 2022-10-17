@@ -2,7 +2,7 @@
 title: "Исследования. Mininet. Подготовка стенда"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-23T18:33:00+03:00
-lastmod: 2022-02-23T20:10:00+03:00
+lastmod: 2022-10-02T17:07:00+03:00
 tags: ["research", "network"]
 categories: ["computer-science", "science"]
 draft: false
@@ -49,24 +49,20 @@ slug: "research-mininet-stand-preparation"
     -   login: mininet
     -   password: mininet
 -   Посмотрите адрес машины:
-
     ```shell
     ifconfig
     ```
 -   Для активации второго интерфейса наберите:
-
     ```shell
     sudo dhclient eth1
     ifconfig
     ```
 -   Внутренний адрес машины будет иметь вид 192.168.x.y.
 -   Подключитесь к виртуальной машине:
-
     ```shell
     ssh -Y mininet@192.168.x.y
     ```
 -   Настройте вход по ключу (см. [Ключи ssh]({{< relref "2022-02-17-ssh-keys" >}})):
-
     ```shell
     ssh-copy-id mininet@192.168.x.y
     ```

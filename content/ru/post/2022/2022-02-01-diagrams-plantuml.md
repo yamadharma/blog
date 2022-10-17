@@ -2,7 +2,7 @@
 title: "Диаграммы. PlantUML"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-01T19:06:00+03:00
-lastmod: 2022-02-01T19:29:00+03:00
+lastmod: 2022-10-15T21:18:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -22,6 +22,7 @@ slug: "diagrams-plantuml"
 -   Репозиторий: <https://github.com/plantuml/plantuml>
 -   Список официальных тем: <https://the-lum.github.io/puml-themes-gallery/>
 -   Язык реализации: Java.
+-   В качестве бекэнда использует GraphViz.
 
 
 ## <span class="section-num">2</span> Поддерживаемые типы диаграмм {#поддерживаемые-типы-диаграмм}

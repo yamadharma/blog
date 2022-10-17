@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2022-09-22T18:40:00+03:00
+lastmod: 2022-10-17T14:13:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -101,18 +101,91 @@ The layered design and corresponding corrections in the method of synthesis of h
 {{< /tabs >}}
 
 
-## <span class="section-num">3</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-10-13 Чт] </span></span> Белов А. А. {#белов-а-dot-а-dot}
+## <span class="section-num">3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-06 Чт&gt; </span></span> Блинков Ю. А. _Построение первого дифференциального приближения для методов Рунге-Кутты_ {#блинков-ю-dot-а-dot-построение-первого-дифференциального-приближения-для-методов-рунге-кутты}
 
 
-## <span class="section-num">4</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-10-27 Чт] </span></span> Блинков Ю. А. {#блинков-ю-dot-а-dot}
+### <span class="section-num">3.1</span> Докладчик {#докладчик}
+
+-   Блинков Юрий Андреевич
+-   Д.ф.-м.н., директор научного центра вычислительных методов в прикладной математике института прикладной математики и телекоммуникаций РУДН
 
 
-## <span class="section-num">5</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-11-10 Чт] </span></span> Венева М., Айрян А. С. _Численные методы решения уравнений диффузии_ {#венева-м-dot-айрян-а-dot-с-dot-численные-методы-решения-уравнений-диффузии}
+### <span class="section-num">3.2</span> Информация {#информация}
+
+-   Построение первого дифференциального приближения для методов Рунге-Кутты
+-   Блинков Ю.А.
+-   Д.ф.-м.н., директор научного центра вычислительных методов в прикладной математике института прикладной математики и телекоммуникаций РУДН
+-   Предложен метод построения первого дифференциального приближения для методов Рунге-Кутты для систем обыкновенных дифференциальных уравнений. В частности, это дает возможность исследовать поведение методов Рунге-Кутты в зависимости от параметров,  входящих в уравнения и их первых интегралов. Для результатов аналитических выводов  проведены вычислительные эксперименты.
+
+---
+
+-   Construction of the first differential approximation for Runge-Kutta methods
+-   Yurii Blinkov
+-   DSc, Head of the Research Center of Computational Methods in Applied Mathematics at the RUDN Institute of Applied Mathematics and Telecommunications
+-   A method for constructing the first differential approximation for Runge-Kutta methods for systems of ordinary differential equations is proposed. In particular, this makes it possible to investigate the behavior of Runge-Kutta methods depending on the parameters included in the equations and their first integrals. Computational experiments were carried out for the results of analytical conclusions.
+
+
+### <span class="section-num">3.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube b824a2e9865ad01e880934cf8d84163d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube fdzu_1MazKs >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+## <span class="section-num">4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-20 Чт&gt; </span></span> Кройтор О.К. _Компьютерное моделирование некоторых задач математической физики_ {#кройтор-о-dot-к-dot-компьютерное-моделирование-некоторых-задач-математической-физики}
+
+
+### <span class="section-num">4.1</span> Докладчик {#докладчик}
+
+-   Кройтор О.К.
+-   Старший педагог кафедры Общеобразовательных дисциплин, РУДН
+-   Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+
+### <span class="section-num">4.2</span> Информация {#информация}
+
+-   Компьютерное моделирование некоторых задач математической физики
+-   Кройтор О.К.
+-   Старший педагог кафедры Общеобразовательных дисциплин, РУДН
+-   Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+На конкретных и актуальных задачах рассматривается преимущества применения СКА при моделировании 1) колебаний кинематической опоры при землетрясении, 2) поверхностные волны Дьяконова и 3) нормальные моды волноводов с оптически неоднородным или анизотропным заполнением.
+Разработан и налажен процесс составления уравнений, описывающих одну из математических моделей опоры Курзанова. Полученная система уравнении разрешена относительно старших производных в СКА и затем решена численно в СКА Sage по методу Рунге-Кутта.
+Решена в радикалах система алгебраических нелинейных уравнений, описывающих поверхностные волны Дьяконова. Разработан алгоритм отыскания коридоров существования поверхностной волны Дьяконова на границе изотропа и анизотропа.
+Спектральная задача математической теории волноводов сведена к исследованию самосопряженного квадратичного операторного пучка.
+Предложен новый метод построения дисперсионной кривой волновода с оптически неоднородным заполнением. Составлена программа в системе компьютерной алгебры Sage, в которой реализован этот метод для волновода прямоугольного сечения с прямоугольными вставками и протестировали на SLE модах. Показана, что программа успешно справляется с вычислением точек дисперсионной кривой, отвечающих гибридным модам волновода и найденные точки с графической точностью ложатся на аналитическую кривую даже при небольшом числе учитываемых базисных элементов.
+
+---
+
+-   Computer modeling of some problems of mathematical physics
+-   Kroytor, Oleg K.
+-   Senior teacher of the Department of General Education Disciplines, RUDN University
+-   Assistant of the Department of Applied Probability and Informatics, RUDN University
+
+The advantages of using SKA in modeling 1) kinematic support vibrations during an earthquake, 2) Diakonov surface waves, and 3) normal waveguide modes with optically inhomogeneous or anisotropic filling are considered on specific and topical tasks.
+The process of composing equations describing one of the mathematical models of the Kurzanov support has been developed and adjusted. The resulting system of equations is solved with respect to the higher derivatives in SKA and then solved numerically in SKA Sage by the Runge-Kutta method.
+A system of algebraic nonlinear equations describing Dyakonov surface waves is solved in radicals. An algorithm for finding the corridors of the existence of a surface Dyakonov wave at the boundary of an isotropic and anisotropic is developed.
+The spectral problem of the mathematical theory of waveguides is reduced to the study of a self-adjoint quadratic operator beam. A new method for constructing the dispersion curve of a waveguide with optically inhomogeneous filling is proposed. A program has been compiled in the Sage computer algebra system, in which this method is implemented for a rectangular waveguide with rectangular inserts and tested on SLE modes. It is shown that the program successfully copes with the calculation of the points of the dispersion curve corresponding to the hybrid modes of the waveguide and the points found with graphical accuracy fall on the analytical curve even with a small number of basic elements taken into account.
+
+
+### <span class="section-num">4.3</span> Видео {#видео}
+
+
+## <span class="section-num">5</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-10-13 Чт] </span></span> Белов А. А. {#белов-а-dot-а-dot}
+
+
+## <span class="section-num">6</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-11-10 Чт] </span></span> Венева М., Айрян А. С. _Численные методы решения уравнений диффузии_ {#венева-м-dot-айрян-а-dot-с-dot-численные-методы-решения-уравнений-диффузии}
 
 -   Айрян А. С.
     -   Объединённый институт ядерных исследований
 -   Венева Милена
 -   Численные методы решения уравнений диффузии
-
-
-## <span class="section-num">6</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-11-24 Чт] </span></span> Кройтор {#кройтор}
