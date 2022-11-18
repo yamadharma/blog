@@ -2,7 +2,7 @@
 title: "CentOS 8. Изменение адресов репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T14:39:00+03:00
-lastmod: 2022-02-18T15:10:00+03:00
+lastmod: 2022-11-02T18:23:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,6 @@ slug: "centos8-changing-repository-addresses"
 ## <span class="section-num">1</span> Ошибка {#ошибка}
 
 -   При работе с репозиториями в CentOS 8 появилась ошибка:
-
     ```shell
     Error: Failed to download metadata for repo 'repo_name': Cannot prepare internal mirrorlist: No URLs in mirrorlist
     ```
@@ -37,7 +36,6 @@ slug: "centos8-changing-repository-addresses"
 -   Следует обновить файлы описания репозиториев в `/etc/yum.repos.d`.
 -   Следует использовать `vault.centos.org` вместо `mirror.centos.org`.
 -   Предлагается выполнить следующие команды:
-
     ```shell
     sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" \
     -e "s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g" \

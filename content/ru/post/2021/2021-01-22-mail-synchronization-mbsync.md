@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2022-06-28T20:29:00+03:00
+lastmod: 2022-11-01T12:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -98,6 +98,7 @@ slug: "mail-synchronization-mbsync"
     # Increase timeout
     Timeout 120
     ```
+
 -   Вместо `pass` я использую `gopass`. При последовательном запуске нескольких `pass` утилита может не находить ключ _pgp_.
 
 
@@ -362,6 +363,11 @@ slug: "mail-synchronization-mbsync"
 #### <span class="section-num">3.4.6</span> Mail.ru {#mail-dot-ru}
 
 -   [Почта. Mail.ru. Настройка почтового клиента]({{< relref "2021-07-04-mail-mail-ru-configuring-mail-client" >}})
+-   Пароли приложений
+    -   При подключении паролей приложений обычные пароли использовать не получится. Придётся сгенерить пароль приложения (см. [Пароли mail.ru]({{< relref "2022-10-27-mail-ru-passwords" >}})).
+    -   Для паролей `pass`:
+        -   Пароль для приложения почты можно назвать `account@mail.ru@apppassword@mail`.
+        -   Пароль для smtp следует именовать как `account@mail.ru@smtp.mail.ru` (это тот же пароль для почтового приложения).
 -   Конфигурация:
     ```conf-unix
     ## IMAPAccount (Mail.ru)
@@ -371,8 +377,8 @@ slug: "mail-synchronization-mbsync"
     User account@mail.ru
     # Pass ***************
     ## To store the password in an encrypted file use PassCmd instead of Pass
-    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@mail.ru/ {print $6}'"
-    PassCmd "pass email/mail.ru/account@mail.ru"
+    # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@mail.ru@apppassword@mail/ {print $6}'"
+    PassCmd "pass email/mail.ru/account@mail.ru@apppassword@mail"
     AuthMechs LOGIN
     SSLType IMAPS
     SSLVersion TLSv1.2
@@ -679,6 +685,7 @@ slug: "mail-synchronization-mbsync"
     ```shell
     mbsync <chanel>
     ```
+
 -   Синхронизация всех учётных записей:
     ```shell
     mbsync --all
@@ -692,6 +699,7 @@ slug: "mail-synchronization-mbsync"
     ```shell
     systemctl --user --now enable mbsync.timer
     ```
+
 -   `~/.config/systemd/user/mbsync.service`.
     ```conf-unix
     # ~/.config/systemd/user/mbsync.service
@@ -703,6 +711,7 @@ slug: "mail-synchronization-mbsync"
     Type=oneshot
     ExecStart=/usr/bin/mbsync -a
     ```
+
 -   `~/.config/systemd/user/mbsync.service`. Здесь мы после синхронизации запускаем индексирование для `mu`.
     ```conf-unix
     # ~/.config/systemd/user/mbsync.service

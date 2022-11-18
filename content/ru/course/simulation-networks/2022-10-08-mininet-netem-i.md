@@ -2,7 +2,7 @@
 title: "Mininet. Использование netem (latency, jitter)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-08T21:33:00+03:00
-lastmod: 2022-10-14T18:21:00+03:00
+lastmod: 2022-10-20T17:54:00+03:00
 draft: false
 weight: 203
 slug: "mininet-netem-i"
@@ -19,8 +19,6 @@ menu:
 Mininet. Использование netem. Задержки, джтиттер.
 
 <!--more-->
-
-{{< toc >}}
 
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}

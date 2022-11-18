@@ -1,8 +1,9 @@
 ---
 title: "Администрирование Windows"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2021-05-02T20:40:00+03:00
-tags: ["windows"]
+lastmod: 2022-11-16T20:51:00+03:00
+tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
 slug: "windows-administration"
@@ -21,6 +22,6 @@ slug: "windows-administration"
 -   [Программное обеспечение, устанавливаемое на Windows]({{< relref "2021-05-01-software-installed-windows" >}})
 
 
-## <span class="section-num">2</span> Backlinks {#backlinks}
+## <span class="section-num">2</span> Настройка операционной системы {#настройка-операционной-системы}
 
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
+-   [Windows. Синхронизация времени]({{< relref "2022-11-16-windows-time-synchronization" >}})

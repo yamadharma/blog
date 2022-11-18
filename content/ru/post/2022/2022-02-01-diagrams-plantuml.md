@@ -2,7 +2,7 @@
 title: "Диаграммы. PlantUML"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-01T19:06:00+03:00
-lastmod: 2022-10-15T21:18:00+03:00
+lastmod: 2022-10-20T13:12:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -50,3 +50,8 @@ slug: "diagrams-plantuml"
     -   Диаграммы иерархической структуры работ (WBS)
     -   Математика в нотации AsciiMath или JLaTeXMath
     -   Диаграммы типа сущность - связь (ER)
+
+
+## <span class="section-num">3</span> Поддержка редактирования plantuml {#поддержка-редактирования-plantuml}
+
+-   [Emacs. Plantuml]({{< relref "2022-10-20-emacs-plantuml" >}})

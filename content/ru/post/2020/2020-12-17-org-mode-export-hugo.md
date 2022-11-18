@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2022-10-13T16:29:00+03:00
+lastmod: 2022-10-20T17:19:00+03:00
 tags: ["hugo", "org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -197,7 +197,7 @@ slug: "org-mode-export-hugo"
 
 ## <span class="section-num">4</span> Сочетания клавиш {#сочетания-клавиш}
 
-Экспорт осуществляется через стандартный интерфейс экспорта в org-mode.
+-   Экспорт осуществляется через стандартный интерфейс экспорта в org-mode.
 
 
 ### <span class="section-num">4.1</span> Для режимов _один пост на файл_ и _один пост на поддерево_ {#для-режимов-один-пост-на-файл-и-один-пост-на-поддерево}

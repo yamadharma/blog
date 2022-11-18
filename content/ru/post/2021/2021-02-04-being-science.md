@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2022-08-10T19:29:00+03:00
+lastmod: 2022-11-05T18:38:00+03:00
 tags: ["sci-being", "MOC"]
 categories: ["science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2022-09-27T11:09:00+03:00
+lastmod: 2022-11-16T20:50:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -41,9 +41,12 @@ slug: "tags-organizing"
     -   `gentoo`[^fn:1]: [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
     -   `hugo`: [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
     -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
+    -   `network`:
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
     -   `linux`:
+    -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
     -   `redhat`:
+    -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
     -   `org-mode`: [Org-mode]({{< relref "2021-10-14-org-mode" >}})
 -   `@blog`
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.

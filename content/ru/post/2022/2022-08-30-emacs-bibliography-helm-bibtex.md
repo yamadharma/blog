@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией. helm-bibtex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T12:21:00+03:00
-lastmod: 2022-10-11T14:24:00+03:00
+lastmod: 2022-10-25T17:43:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -40,7 +40,7 @@ slug: "emacs-bibliography-helm-bibtex"
 
 ### <span class="section-num">2.2</span> Изменение формата цитирования {#изменение-формата-цитирования}
 
--   При использовании org-cite (см. [Emacs. Работа с библиографией. Org-cite]({{< relref "2022-10-10-emacs-bibliography-org-cite" >}})) можно переключиться на соответствующий формат цитирования для org-файлов:
+-   При использовании org-cite (см. ) можно переключиться на соответствующий формат цитирования для org-файлов:
     ```emacs-lisp
     (add-to-list 'bibtex-completion-format-citation-functions
     	     '(org-mode . bibtex-completion-format-citation-org-cite))
@@ -62,6 +62,45 @@ slug: "emacs-bibliography-helm-bibtex"
 
 
 ## <span class="section-num">4</span> Настройка {#настройка}
+
+
+### <span class="section-num">4.1</span> Поля, используемые для поиска {#поля-используемые-для-поиска}
+
+-   Поля по умолчанию, используемые для поиска: author, title, year, BibTeX key, entry type.
+-   Переменная `bibtex-completion-addition-search-fields` может использоваться для расширения этого списка.
+-   Добавим ключевые слова к списку поиска:
+    ```emacs-lisp
+    (setq bibtex-completion-additional-search-fields '(keywords))
+    ```
+
+
+### <span class="section-num">4.2</span> Настройка результатов поиска {#настройка-результатов-поиска}
+
+-   Настройка представления результатов поиска делается в переменной `bibtex-completion-display-formats`.
+-   По умолчанию она имеет вид:
+    ```emacs-lisp
+    '((t . "${author:36} ${title:*} ${year:4} ${=has-pdf=:1}${=has-note=:1} ${=type=:7}"))
+    ```
+-   Числа указывают, сколько символов зарезервировано для соответствующего поля.
+-   Символ `*` означает, что это поле занимает всё оставшееся место.
+-   Можно задать разный формат вывода для разных типов записей:
+    ```emacs-lisp
+    (setq bibtex-completion-display-formats
+          '((article	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${journal:40}")
+    	(inbook		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} Chapter ${chapter:32}")
+    	(incollection	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+    	(inproceedings	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+    	(book 		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${subtitle:40} ${volume:2}")
+    	(t		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*}")))
+    ```
+-   Чтобы это работало, необходимо добавить `journal` и `booktitle` к `bibtex-completion-additional-search-fields`:
+    ```emacs-lisp
+    (add-to-list 'bibtex-completion-additional-search-fields 'journal)
+    (add-to-list 'bibtex-completion-additional-search-fields 'booktitle)
+    (add-to-list 'bibtex-completion-additional-search-fields 'subtitle)
+    (add-to-list 'bibtex-completion-additional-search-fields 'chapter)
+    (add-to-list 'bibtex-completion-additional-search-fields 'volume)
+    ```
 
 
 ## <span class="section-num">5</span> Использование {#использование}

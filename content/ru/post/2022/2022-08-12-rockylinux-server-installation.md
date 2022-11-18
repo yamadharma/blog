@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2022-09-25T12:29:00+03:00
+lastmod: 2022-10-22T15:47:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "rockylinux-server-installation"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})).
+-   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. ).
 -   Сайт: <https://rockylinux.org/>.
 -   Образы:
     -   <https://rockylinux.org/download>;
@@ -100,6 +100,42 @@ slug: "rockylinux-server-installation"
     ```shell
     dnf config-manager --set-enabled crb
     dnf -y install epel-release
+    ```
+
+
+### <span class="section-num">3.3</span> Установка часового пояса {#установка-часового-пояса}
+
+-   Просмотрите список всех часовых поясов:
+    ```shell
+    timedatectl list-timezones
+    ```
+-   Установите часовой пояс (например, UTC):
+    ```shell
+    timedatectl set-timezone Etc/UTC
+    ```
+
+
+### <span class="section-num">3.4</span> Синхронизация времени {#синхронизация-времени}
+
+-   Установите демон синхронизации:
+    ```shell
+    dnf install systemd-timesyncd
+    ```
+-   Запустите демон:
+    ```shell
+    systemctl enable --now systemd-timesyncd
+    ```
+-   Включите сетевую синхронизацию времени:
+    ```shell
+    timedatectl set-ntp true
+    ```
+-   Проверьте, работает ли он:
+    ```shell
+    timedatectl status
+    ```
+-   Подробная информация:
+    ```shell
+    timedatectl timesync-status
     ```
 
 
@@ -214,7 +250,7 @@ slug: "rockylinux-server-installation"
 
 #### <span class="section-num">4.5.2</span> Автоматическое обновление {#автоматическое-обновление}
 
--   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
+-   При необходимости можно использовать автоматическое обновление (см. ).
 -   Установка программного обеспечения:
     ```shell
     dnf install dnf-automatic
@@ -223,6 +259,30 @@ slug: "rockylinux-server-installation"
 -   Запустите таймер:
     ```shell
     systemctl enable --now dnf-automatic.timer
+    ```
+
+
+#### <span class="section-num">4.5.3</span> Сервер сетевого времени {#сервер-сетевого-времени}
+
+-   Запустите сервер сетевого времени:
+    ```shell
+    systemctl enable --now chronyd
+    ```
+-   Проверьте пулы NTP:
+    ```shell
+    chronyc sources
+    ```
+-   Проверьте состояние синхронизации NTP:
+    ```shell
+    chronyc tracking
+    ```
+-   Чтобы принимать входящие запросы клиентов, разрешите службу NTP через брандмауэр:
+    ```shell
+    firewall-cmd --permanent --add-service=ntp
+    ```
+-   Перезапустите брандмауэр:
+    ```shell
+    firewall-cmd --reload
     ```
 
 

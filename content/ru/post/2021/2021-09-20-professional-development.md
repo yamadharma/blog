@@ -2,7 +2,7 @@
 title: "Повышение квалификации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-20T10:24:00+03:00
-lastmod: 2022-09-09T19:01:00+03:00
+lastmod: 2022-10-27T10:47:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

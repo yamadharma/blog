@@ -2,7 +2,7 @@
 title: "Тип ключа ssh"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-03T14:48:00+03:00
-lastmod: 2022-02-09T17:51:00+03:00
+lastmod: 2022-11-02T18:24:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "ssh-key-type"
 ## <span class="section-num">1</span> Описание ситуации {#описание-ситуации}
 
 -   После перехода на openssh-8.8 при подключении к серверам со старыми версиями системы появляется сообщение типа: _no matching host key type found. Their offer: ssh-rsa,ssh-dss_.
--   Понятно, что старый ssh поддерживал механизмы ssh-rsa и ssh-dss, а в новой версии их отключили.
+-   Старый ssh поддерживал механизмы ssh-rsa и ssh-dss, а в новой версии их отключили.
 
 
 ## <span class="section-num">2</span> Решение {#решение}
@@ -30,7 +30,6 @@ slug: "ssh-key-type"
 ### <span class="section-num">2.1</span> Однократное подключение {#однократное-подключение}
 
 -   Зададим алгоритм подключения как опции командной строки:
-
     ```shell
     ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.0.10
     ```
@@ -39,7 +38,6 @@ slug: "ssh-key-type"
 ### <span class="section-num">2.2</span> Конфигурация для конкретного хоста {#конфигурация-для-конкретного-хоста}
 
 -   Зададим конфигурацию конкретного хоста в файле `~/.ssh/config`:
-
     ```conf-unix
     Host 192.168.0.10
      HostKeyAlgorithms=+ssh-rsa
@@ -51,14 +49,12 @@ slug: "ssh-key-type"
 
 -   Можно задать группу хостов в виде шаблонов командной строки (wildcards).
     -   Например, правило для сети:
-
         ```conf-unix
         Host 192.168.0.*
          HostKeyAlgorithms=+ssh-rsa
          PubkeyAcceptedKeyTypes +ssh-rsa
         ```
     -   Можно задать привило для всех хостов:
-
         ```conf-unix
         Host *
          HostKeyAlgorithms=+ssh-rsa
