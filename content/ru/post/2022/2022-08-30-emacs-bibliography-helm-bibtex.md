@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией. helm-bibtex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T12:21:00+03:00
-lastmod: 2022-10-25T17:43:00+03:00
+lastmod: 2022-11-18T19:36:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -40,7 +40,7 @@ slug: "emacs-bibliography-helm-bibtex"
 
 ### <span class="section-num">2.2</span> Изменение формата цитирования {#изменение-формата-цитирования}
 
--   При использовании org-cite (см. ) можно переключиться на соответствующий формат цитирования для org-файлов:
+-   При использовании org-cite (см. [Emacs. Работа с библиографией. Org-cite]({{< relref "2022-10-10-emacs-bibliography-org-cite" >}})) можно переключиться на соответствующий формат цитирования для org-файлов:
     ```emacs-lisp
     (add-to-list 'bibtex-completion-format-citation-functions
     	     '(org-mode . bibtex-completion-format-citation-org-cite))
@@ -109,7 +109,7 @@ slug: "emacs-bibliography-helm-bibtex"
 ### <span class="section-num">5.1</span> Клавиши для поиска {#клавиши-для-поиска}
 
 -   Будем считать, что общий префикс _Helm_ --- `C-c h`.
--   `C-c h b`: поиск в центральной базе bib.
+-   `C-c h b`: поиск в центральной и в локальной базах bib.
 -   `C-c h b`: поиск в локальной базе bib.
     -   Для org-файлов используются как локальная, так и глобальная библиографические базы.
 -   `C-c h n`: поиска только среди записей, содержащих примечания.
