@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2022-09-11T16:50:00+03:00
+lastmod: 2022-11-21T13:17:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,7 @@ slug: "hugo-template-for-scientists"
 -   Репозиторий модуля темы: <https://github.com/wowchemy/wowchemy-hugo-modules>
 
 
-## <span class="section-num">2</span> Обновление {#обновление}
+## <span class="section-num">2</span> Обновление шаблонов Wowchemy {#обновление-шаблонов-wowchemy}
 
 
 ### <span class="section-num">2.1</span> До версии 5.3 {#до-версии-5-dot-3}
@@ -85,7 +85,7 @@ slug: "hugo-template-for-scientists"
     ```
 
     -   Вы настраиваете версию модуля в операторе `require`.
-    -   Вместо версии `main` можно задать конкретную версию модуля.
+    -   Вместо версии `main` можно задать конкретную версию модуля (в формате `v5.x.y`).
 -   Обновите пути модулей в файле `config/_default/config.yaml`:
     ```yaml
     module:
@@ -107,6 +107,7 @@ slug: "hugo-template-for-scientists"
         ```shell
         hugo mod get -u ./...
         ```
+-   После этого `main` в `go.mod` будет заменена на конкретную версию.
 -   Если Вы обновляете совсем старую версию, Вам может быть проще создать новый сайт и перенести папку `content`.
 
 
