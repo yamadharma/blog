@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2022-11-17T17:56:00+03:00
+lastmod: 2022-11-21T17:28:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -30,7 +30,7 @@ slug: "initial-cisco-switch-configuration"
     -   порт USB: `/dev/ttyUSB0`.
 -   Итоговая конфигурация:
     ```text
-    A - Последовательный порт          : /dev/ttyUSB
+    A - Последовательный порт          : /dev/ttyUSB0
     B - Размещение lock-файла          : /var/lock
     C - Программа при выходе           :
     D - Программа при запуске          :
@@ -266,7 +266,6 @@ slug: "initial-cisco-switch-configuration"
 -   Подключитесь к Observium.
 -   Добавьте коммутатор в список наблюдения в Observium:
     ```shell
-    [root@observium ~]# cd /opt/observium
     [root@observium ~]# /opt/observium/add_device.php sw-103-1 rocom
     [root@observium ~]# /opt/observium/discovery.php -h sw-103-1; /opt/observium/poller.php -h sw-103-1
     ```

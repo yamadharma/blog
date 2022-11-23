@@ -1,7 +1,8 @@
 ---
 title: "Org-mode. Презентации. Beamer"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T20:46:00+03:00
-lastmod: 2021-06-16T20:51:00+03:00
+lastmod: 2022-11-23T19:14:00+03:00
 tags: ["emacs", "tex", "org-mode"]
 categories: ["computer-science"]
 draft: false
@@ -27,19 +28,14 @@ slug: "org-mode-prezentation-beamer"
 ```
 
 -   Задаём уровень заголовка, который будет восприниматься как заголовок слайда:
-
     ```elisp
     (setq org-beamer-frame-level 3)
     ```
-
     Этот параметр можно переопределить как на уровне файла:
-
     ```org
     #+OPTIONS: H:3
     ```
-
     так и на уровне поддерева:
-
     ```org
     :EXPORT_OPTIONS: H:3
     ```
@@ -54,20 +50,19 @@ slug: "org-mode-prezentation-beamer"
 
 <a id="table--Опции экспорта для файла и поддерева"></a>
 
-| Опции экспорта файла | Опции экспорта поддерева     |
-|----------------------|------------------------------|
-| BEAMER\_THEME        | EXPORT\_BEAMER\_THEME        |
-| BEAMER\_COLOR\_THEME | EXPORT\_BEAMER\_COLOR\_THEME |
-| BEAMER\_FONT\_THEME  | EXPORT\_BEAMER\_FONT\_THEME  |
-| BEAMER\_INNER\_THEME | EXPORT\_BEAMER\_INNER\_THEME |
-| BEAMER\_OUTER\_THEME | EXPORT\_BEAMER\_OUTER\_THEME |
-| BEAMER\_HEADER       |                              |
+| Опции экспорта файла | Опции экспорта поддерева  |
+|----------------------|---------------------------|
+| BEAMER_THEME         | EXPORT_BEAMER_THEME       |
+| BEAMER_COLOR_THEME   | EXPORT_BEAMER_COLOR_THEME |
+| BEAMER_FONT_THEME    | EXPORT_BEAMER_FONT_THEME  |
+| BEAMER_INNER_THEME   | EXPORT_BEAMER_INNER_THEME |
+| BEAMER_OUTER_THEME   | EXPORT_BEAMER_OUTER_THEME |
+| BEAMER_HEADER        |                           |
 
 
 ## <span class="section-num">3</span> Явный разрыв слайда {#явный-разрыв-слайда}
 
 -   Если текст не умещается на одном слайде, его нужно разбить. Для этого необходимо установить параметр `allowframebreaks` для конкретного слайда:
-
     ```org
     ** A very long "frame" with breaks
     :PROPERTIES:
@@ -75,12 +70,10 @@ slug: "org-mode-prezentation-beamer"
     :END:
     ```
 -   Чтобы добавить явный разрыв страницы:
-
     ```org
     #+beamer: \framebreak
     ```
 -   Можно установить глобально для всех слайдов:
-
     ```org
     #+BIND: org-beamer-frame-default-options "allowframebreaks"
     ```
@@ -101,14 +94,11 @@ slug: "org-mode-prezentation-beamer"
 ## <span class="section-num">5</span> Иллюстрации {#иллюстрации}
 
 -   При подготовке иллюстраций можно передать параметры \\(\LaTeX\\):
-
     ```org
     #+attr_latex: :width 0.8\linewidth
     [[file:../media/image.png]]
     ```
-
     В результате получим:
-
     ```latex
     \includegraphics[width=0.8\linewidth]{../media/image.png}
     ```

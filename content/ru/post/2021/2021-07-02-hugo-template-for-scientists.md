@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2022-11-21T13:17:00+03:00
+lastmod: 2022-11-22T16:33:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -148,3 +148,11 @@ slug: "hugo-template-for-scientists"
     ​      - ^HUGO_
     ​      - ^WC_
     ```
+
+
+## <span class="section-num">4</span> Элементы шаблонов Wowchemy {#элементы-шаблонов-wowchemy}
+
+
+## <span class="section-num">5</span> Типы контента Wowchemy {#типы-контента-wowchemy}
+
+-   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})

@@ -2,7 +2,7 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2022-06-26T18:55:00+03:00
+lastmod: 2022-11-23T18:54:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -319,117 +319,107 @@ Crash --> [*]
 
 ### <span class="section-num">5.1</span> Стандартные ссылки {#стандартные-ссылки}
 
-Можно использовать стандартный формат ссылок Markdown:
-
-````markdown
-[I'm a link](https://www.google.com)
-````
+-   Можно использовать стандартный формат ссылок Markdown:
+    ````markdown
+    [I'm a link](https://www.google.com)
+    ````
 
 
 ### <span class="section-num">5.2</span> Генерация ссылок {#генерация-ссылок}
 
-Ссылки модно генерить с помощью операторов `ref` и `relref`:
+-   Ссылки модно генерить с помощью операторов `ref` и `relref`:
+    ````markdown
+    {{</* ref "document" */>}}
+    {{</* ref "document#anchor" */>}}
+    {{</* ref "document.md" */>}}
+    {{</* ref "document.md#anchor" */>}}
+    {{</* ref "#anchor" */>}}
+    {{</* ref "/blog/my-post" */>}}
+    {{</* ref "/blog/my-post.md" */>}}
+    {{</* relref "document" */>}}
+    {{</* relref "document.md" */>}}
+    {{</* relref "#anchor" */>}}
+    {{</* relref "/blog/my-post.md" */>}}
+    ````
 
-````markdown
-{{</* ref "document" */>}}
-{{</* ref "document#anchor" */>}}
-{{</* ref "document.md" */>}}
-{{</* ref "document.md#anchor" */>}}
-{{</* ref "#anchor" */>}}
-{{</* ref "/blog/my-post" */>}}
-{{</* ref "/blog/my-post.md" */>}}
-{{</* relref "document" */>}}
-{{</* relref "document.md" */>}}
-{{</* relref "#anchor" */>}}
-{{</* relref "/blog/my-post.md" */>}}
-````
+    -   `ref` задаёт абсолютную ссылку, `relref` --- относительную.
 
-`ref` задаёт абсолютную ссылку, `relref` --- относительную.
-
-Эти ссылки можно использовать внутри стандартных ссылок Markdown:
-
-````markdown
-[A post]({{</* ref "/post/my-page-name/index.md" */>}})
-[A publication]({{</* ref "/publication/my-page-name/index.md" */>}})
-[A project]({{</* ref "/project/my-page-name/index.md" */>}})
-[A relative link from one post to another post]({{</* relref "../my-page-name/index.md" */>}})
-[Scroll down to a page section with heading *Hi*](#hi)
-````
+-   Эти ссылки можно использовать внутри стандартных ссылок Markdown:
+    ````markdown
+    [A post]({{</* ref "/post/my-page-name/index.md" */>}})
+    [A publication]({{</* ref "/publication/my-page-name/index.md" */>}})
+    [A project]({{</* ref "/project/my-page-name/index.md" */>}})
+    [A relative link from one post to another post]({{</* relref "../my-page-name/index.md" */>}})
+    [Scroll down to a page section with heading *Hi*](#hi)
+    ````
 
 
 #### <span class="section-num">5.2.1</span> Ссылка на версию на другом языке {#ссылка-на-версию-на-другом-языке}
 
-Чтобы создать ссылку на версию документа на другом языке, используйте следующий синтаксис:
-
-````markdown
-{{</* relref path = "document.md" lang = "en"' */>}}
-````
-
-
-#### <span class="section-num">5.2.2</span> Другой формат вывода {#другой-формат-вывода}
-
-Чтобы сослаться на другой формат вывода:
-
-````markdown
-{{</* relref path = "document.md" outputFormat = "rss" */>}}
-````
+-   Чтобы создать ссылку на версию документа на другом языке, используйте следующий синтаксис:
+    ````markdown
+    {{</* relref path = "document.md" lang = "en"' */>}}
+    ````
 
 
-#### <span class="section-num">5.2.3</span> Идентификаторы заголовков {#идентификаторы-заголовков}
+#### <span class="section-num">5.2.2</span> Ссылка на пакет страниц {#ссылка-на-пакет-страниц}
 
-Для документов markdown Hugo генерирует идентификаторы элементов для каждого заголовка на странице.
-Например, для кода
+-   При ссылке на пакет страниц необходимо задать путь к пакету.
+-   Возможно придётся задавать полный путь, поскольку краткий (только часть пути) может не сработать.
 
-````markdown
-## Reference
-````
 
-создаётся следующий HTML:
+#### <span class="section-num">5.2.3</span> Другой формат вывода {#другой-формат-вывода}
 
-````html
-<h2 id="reference">Reference</h2>
-````
+-   Чтобы сослаться на другой формат вывода:
+    ````markdown
+    {{</* relref path = "document.md" outputFormat = "rss" */>}}
+    ````
 
-Ссылку можно задать следующим образом:
 
-````markdown
-{{</* ref "document.md#reference" */>}}
-{{</* relref "document.md#reference" */>}}
-````
+#### <span class="section-num">5.2.4</span> Идентификаторы заголовков {#идентификаторы-заголовков}
 
-Идентификатор можно задать и явно:
-
-````markdown
-## Reference A {#foo}
-## Reference B {id="bar"}
-````
+-   Для документов markdown Hugo генерирует идентификаторы элементов для каждого заголовка на странице.
+-   Например, для кода
+    ````markdown
+    ## Reference
+    ````
+    создаётся следующий HTML:
+    ````html
+    <h2 id="reference">Reference</h2>
+    ````
+-   Ссылку можно задать следующим образом:
+    ````markdown
+    {{</* ref "document.md#reference" */>}}
+    {{</* relref "document.md#reference" */>}}
+    ````
+-   Идентификатор можно задать и явно:
+    ````markdown
+    ## Reference A {#foo}
+    ## Reference B {id="bar"}
+    ````
 
 
 ### <span class="section-num">5.3</span> Ссылка на статический файл {#ссылка-на-статический-файл}
 
-Ссылка на файл из иерархии `static/`, обычно размещаемый в подкаталоге `static/files/`:
+-   Ссылка на файл из иерархии `static/`, обычно размещаемый в подкаталоге `static/files/`:
+    ````markdown
+    {{</* staticref "files/cv.pdf" "newtab" */>}}Download my CV{{</* /staticref */>}}
+    ````
 
-````markdown
-{{</* staticref "files/cv.pdf" "newtab" */>}}Download my CV{{</* /staticref */>}}
-````
-
-Опция `newtab` для открытия файла в новой вкладке.
+    -   Опция `newtab` используется для открытия файла в новой вкладке.
 
 
 ### <span class="section-num">5.4</span> Цитирование {#цитирование}
 
-Цитирование страницы (ссылка на папку страницы):
-
-````markdown
-{{</* cite page="/publication/preprint" view="4" */>}}
-````
-
-Опция `view` задаёт один из стандартных форматов:
-
--   Stream,
--   Compact (установлен по умолчанию),
--   Card,
--   Параметр устанавливается согласно `citation_style` из `params.toml`.
+-   Цитирование страницы (ссылка на папку страницы):
+    ````markdown
+    {{</* cite page="/publication/preprint" view="4" */>}}
+    ````
+-   Опция `view` задаёт один из стандартных форматов:
+    -   `Stream`,
+    -   `Compact` (установлен по умолчанию),
+    -   `Card`,
+    -   Параметр устанавливается согласно `citation_style` из `params.toml`.
 
 
 ## <span class="section-num">6</span> Специальные элементы {#специальные-элементы}

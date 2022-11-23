@@ -8,6 +8,8 @@ import os
 import glob
 
 orgroamdir = os.path.expanduser("~/work/org/notes/")
+# possible file named for bundle
+bundle_file_name_list = [ 'index','_index' ]
 
 def find_md_links(md):
     """Returns dict of links in markdown:
@@ -54,7 +56,8 @@ if __name__ == "__main__":
     fin = open(filename, "rt")
     filetext = fin.read()
 
-    export_file_name_re = re.compile(r'(?:#\+|:)EXPORT_FILE_NAME:\s+\S+', re.IGNORECASE)
+    export_file_name_re = re.compile(r'(?:#\+|:)export_file_name:\s+\S+', re.IGNORECASE)
+    export_hugo_bundle_re = re.compile(r'(?:#\+|:)export_hugo_bundle:\s+\S+', re.IGNORECASE)
     relref_re = re.compile(r"{{<\s{0,1}relref \"(.+).md\" >}}", re.IGNORECASE)
 
 
@@ -78,9 +81,16 @@ if __name__ == "__main__":
             orgfile = orgfile
             orgfiletext =  open(orgfile).read()
             export_file_name_text = export_file_name_re.findall(orgfiletext)
-            # print(export_file_name_text)
             export_file_name_link = export_file_name_text[0].split()
-            hugolink = "{{< relref \"" + export_file_name_link[1] + "\" >}}"
+            if export_file_name_link[1] in bundle_file_name_list:
+                export_hugo_bundle_text = export_hugo_bundle_re.findall(orgfiletext)
+                print(export_hugo_bundle_text)
+                export_hugo_bundle_link = export_hugo_bundle_text[0].split()
+                print_export_file_name_link = export_hugo_bundle_link[1]
+            else:
+                print_export_file_name_link = export_file_name_link[1]
+                
+            hugolink = "{{< relref \"" + print_export_file_name_link + "\" >}}"
             if isrelref:
                 linkfrom = "{{< relref \"" + linkpath + ".md" + "\" >}}"
                 filetext = filetext.replace(linkfrom,hugolink)
