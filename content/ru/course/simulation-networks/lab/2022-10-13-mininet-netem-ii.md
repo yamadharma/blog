@@ -2,15 +2,16 @@
 title: "Mininet. Использование netem (потери пакетов)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-13T14:27:00+03:00
-lastmod: 2022-11-04T21:01:00+03:00
+lastmod: 2022-11-23T19:33:00+03:00
 tags: ["network", "education"]
-categories: ["science", "computer-science"]
+categories: ["computer-science"]
 draft: false
 weight: 204
-slug: "mininet-netem-ii"
-summary: "Использование netem (потери пакетов)"
 toc: true
 type: "book"
+slug: "mininet-netem-ii"
+summary: "Использование netem (потери пакетов)"
+linktitle: "Использование netem (потери пакетов)"
 menu:
   "mininet-netem-ii":
     parent: "simulation-networks-lab"
@@ -36,6 +37,22 @@ menu:
 -   В ходе работы требуется освоить следующие умения:
     -   эмуляция  сети, характеризующихся такими параметрами, как задержка, потеря пакетов, повреждение пакетов, переупорядочивание пакетов и дублирование пакетов;
     -   измерение производительности глобальных сетей, характеризующихся различными значениями параметров.
+
+
+### <span class="section-num">1.3</span> Видео: Использование netem II. Введение {#видео-использование-netem-ii-dot-введение}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube dbb8edc601a8941aa093a15303b5391d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube E6yKPh6Vhq4 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ## <span class="section-num">2</span> Теоретические сведения {#теоретические-сведения}
@@ -91,7 +108,7 @@ menu:
     points="9.5,7,9.5,7.2102,19.5,6.5857,29.5,7.1933,39.5,7.3997,49.5,6.2866,59.5,6.9223,69.5,7,69.4456,6.8687,69.8046,7.0283,70.1984,7.2719,70.4725,7.2264,70.9848,7.7563,71.2678,7.7322,71.0737,7.6518,71.3533,8.0606,71.6937,8.4944,71.6807,8.782,71.8746,9.1552,72,9.5,71.9681,9.5,72.1785,19.7318,72.2391,29.9635,72.5857,40.1953,72.6711,50.427,72.6793,60.6588,72.2546,70.8905,72.4636,81.1223,72.7022,91.354,71.2788,101.5858,72,111.8175,72.209,111.9041,71.7622,112.1332,71.8715,112.5927,71.4082,112.815,71.3931,113.223,71.2678,113.5853,71.3624,113.8137,70.908,113.7167,70.5741,113.9106,70.2503,114.1289,69.9066,114.2992,69.5,114.3175,69.5,114.3136,59.5,114.6047,49.5,113.7451,39.5,114.6019,29.5,114.8657,19.5,114.762,9.5,114.3175,9.5782,114.5063,9.0848,114.0223,8.7097,113.8238,8.3601,113.6868,8.0783,113.7136,7.7322,113.5853,7.6717,113.5602,7.7956,113.3186,7.3855,112.8559,7.1872,112.4809,7.2167,112.2002,7,111.8175,6.3332,111.8175,6.4809,101.5858,7.649,91.354,7.4357,81.1223,7.7345,70.8905,6.6782,60.6588,7.3192,50.427,7.5904,40.1953,6.5276,29.9635,6.9041,19.7318,7,9.5,7.0388,9.5161,7.3472,9.2296,7.2916,8.7924,7.5818,8.4983,7.4152,8.0151,7.7322,7.7322,7.6458,7.5237,8.15,7.7409,8.3479,7.2186,8.8578,7.4496,9.1728,7.2101,9.5,7"
     style="stroke:#181818;stroke-width:0.5;"/><image height="48"
     width="45" x="17"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAIAAAAKMGSIAAABYUlEQVR4Xu2Y7Y3DIAyGu2JGyAgZ4UbICBmBEW4ERugI3eCsvEAxifnwWbqexPMrjfHLE0olmsfrM3iUN/6I4OG937ZtGYe6qJdFqggeOglAvSxSRfAoswdhkSqmB+fGw/eRt7BIFTcerC6jaKlw46GARaqYHpzpwZkenH/lse/7dxWeqaHt4S2OF00aHsdxUJWeuCwYQSvd5VGvmoCvdcBjtwaxzrkxD1wbgtjpEUHs9IggdnpEEDs9IogVPb4y8mrotgOxokc2MiDd/yWIFT0+ZT1y8iquDUHs9IggVvTIRgZwn85mzhTEOsnjmXGtmiN65GBQcjcn/SQbHsu5PBhTp2w76ex99Xgs584o3wZlIOH2jWOcpU2XxxUyo3M2SaQnphUuxqzr+p6nRfBIe7iHYrXpoxM2EB3K04LVCR6j0MTrSTmzDA1Ou/KK0uN2N/Qg7VylB76LUSr/yJUe5vwAo6Ho0KlFbyoAAAAASUVORK5CYII="
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAIAAAAKMGSIAAABA0lEQVR42u2Z0Q3DIAxEsyIjMAIjdARGYARG6AiM0BG6QU9FQlEkiE0MJarvLwpOHuYi2c72XkPbWhwpJeec4QtRiBXj6IMoKGIc5pqUYwJHomk4BzFS/aEcyqEcN+Lw3j+bmsEhUl5c5Qgh4C52bMYImSZxiLinrXysDA4vrfzYGCOPQ9wTyqEcyqEcgzgeO/2Soxbwr/lQn67JUQtAbRZFdcLx2mlCPUY6l7yosIurfJLn9XrJCn0cwo2l9i9wRmMw1Jg4Du/nQIY6GxBlx8jwYY21ls3B8vkh27isGQhFObEN65xr48X2K3oKsbi4Uoyje/5cc24nRz4Lrhod+Sr/Gz6joejQ6zC0iQAAAABJRU5ErkJggg=="
     y="17"/><text fill="#000000" font-family="xkcd Script" font-size="14"
     lengthAdjust="spacing" textLength="10" x="36.5"
     y="80.2429">h1</text><text fill="#000000" font-family="xkcd Script"
@@ -100,7 +117,7 @@ menu:
     points="384.5,7,384.5,7.2102,394.5,6.5857,404.5,7.1933,414.5,7.3997,424.5,6.2866,434.5,6.9223,444.5,7,444.4456,6.8687,444.8046,7.0283,445.1984,7.2719,445.4725,7.2264,445.9848,7.7563,446.2678,7.7322,446.0737,7.6518,446.3533,8.0606,446.6937,8.4944,446.6807,8.782,446.8746,9.1552,447,9.5,446.9681,9.5,447.1785,19.7318,447.2391,29.9635,447.5857,40.1953,447.6711,50.427,447.6793,60.6588,447.2546,70.8905,447.4636,81.1223,447.7022,91.354,446.2788,101.5858,447,111.8175,447.209,111.9041,446.7622,112.1332,446.8715,112.5927,446.4082,112.815,446.3931,113.223,446.2678,113.5853,446.3624,113.8137,445.908,113.7167,445.5741,113.9106,445.2503,114.1289,444.9066,114.2992,444.5,114.3175,444.5,114.3136,434.5,114.6047,424.5,113.7451,414.5,114.6019,404.5,114.8657,394.5,114.762,384.5,114.3175,384.5782,114.5063,384.0848,114.0223,383.7097,113.8238,383.3601,113.6868,383.0783,113.7136,382.7322,113.5853,382.6717,113.5602,382.7956,113.3186,382.3855,112.8559,382.1872,112.4809,382.2167,112.2002,382,111.8175,381.3332,111.8175,381.4809,101.5858,382.649,91.354,382.4357,81.1223,382.7345,70.8905,381.6782,60.6588,382.3192,50.427,382.5904,40.1953,381.5276,29.9635,381.9041,19.7318,382,9.5,382.0388,9.5161,382.3472,9.2296,382.2916,8.7924,382.5818,8.4983,382.4152,8.0151,382.7322,7.7322,382.6458,7.5237,383.15,7.7409,383.3479,7.2186,383.8578,7.4496,384.1728,7.2101,384.5,7"
     style="stroke:#181818;stroke-width:0.5;"/><image height="48"
     width="45" x="392"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAIAAAAKMGSIAAABYUlEQVR4Xu2Y7Y3DIAyGu2JGyAgZ4UbICBmBEW4ERugI3eCsvEAxifnwWbqexPMrjfHLE0olmsfrM3iUN/6I4OG937ZtGYe6qJdFqggeOglAvSxSRfAoswdhkSqmB+fGw/eRt7BIFTcerC6jaKlw46GARaqYHpzpwZkenH/lse/7dxWeqaHt4S2OF00aHsdxUJWeuCwYQSvd5VGvmoCvdcBjtwaxzrkxD1wbgtjpEUHs9IggdnpEEDs9IogVPb4y8mrotgOxokc2MiDd/yWIFT0+ZT1y8iquDUHs9IggVvTIRgZwn85mzhTEOsnjmXGtmiN65GBQcjcn/SQbHsu5PBhTp2w76ex99Xgs584o3wZlIOH2jWOcpU2XxxUyo3M2SaQnphUuxqzr+p6nRfBIe7iHYrXpoxM2EB3K04LVCR6j0MTrSTmzDA1Ou/KK0uN2N/Qg7VylB76LUSr/yJUe5vwAo6Ho0KlFbyoAAAAASUVORK5CYII="
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAwCAIAAAAKMGSIAAABA0lEQVR42u2Z0Q3DIAxEsyIjMAIjdARGYARG6AiM0BG6QU9FQlEkiE0MJarvLwpOHuYi2c72XkPbWhwpJeec4QtRiBXj6IMoKGIc5pqUYwJHomk4BzFS/aEcyqEcN+Lw3j+bmsEhUl5c5Qgh4C52bMYImSZxiLinrXysDA4vrfzYGCOPQ9wTyqEcyqEcgzgeO/2Soxbwr/lQn67JUQtAbRZFdcLx2mlCPUY6l7yosIurfJLn9XrJCn0cwo2l9i9wRmMw1Jg4Du/nQIY6GxBlx8jwYY21ls3B8vkh27isGQhFObEN65xr48X2K3oKsbi4Uoyje/5cc24nRz4Lrhod+Sr/Gz6joejQ6zC0iQAAAABJRU5ErkJggg=="
     y="17"/><text fill="#000000" font-family="xkcd Script" font-size="14"
     lengthAdjust="spacing" textLength="15" x="409"
     y="80.2429">h2</text><text fill="#000000" font-family="xkcd Script"
@@ -109,7 +126,7 @@ menu:
     points="195.5,31.5,195.5,31.7102,206,31.0857,216.5,31.6933,227,31.8997,237.5,30.7866,248,31.4223,258.5,31.5,258.4456,31.3687,258.8046,31.5283,259.1984,31.7719,259.4725,31.7264,259.9848,32.2563,260.2678,32.2322,260.0737,32.1518,260.3533,32.5606,260.6937,32.9944,260.6807,33.282,260.8746,33.6552,261,34,260.9681,34,261.1785,44.5318,261.2391,55.0635,261.5857,65.5953,261.6711,76.127,261,86.6588,261.2092,86.7454,260.932,87.0448,260.8499,87.425,260.7769,87.809,260.1921,87.981,260.2678,88.4265,260.3543,88.6355,259.8764,88.4817,259.6288,88.8838,259.144,88.7134,258.8448,88.9912,258.5,89.1588,258.5,89.9004,248,89.11,237.5,89.2641,227,89.4974,216.5,89.575,206,89.1549,195.5,89.1588,195.5366,89.2472,195.0734,88.836,194.8292,88.9534,194.5093,88.8882,194.1425,88.7099,193.7322,88.4265,193.921,88.5047,193.437,88.0113,193.2385,87.6362,193.1015,87.2866,193.1283,87.0048,193,86.6588,192.8035,86.6588,193.6814,76.127,192.8253,65.5953,192.6569,55.0635,193.2283,44.5318,193,34,192.7946,33.9149,192.9866,33.5802,193.4927,33.3757,193.5735,32.9949,193.812,32.6795,193.7322,32.2322,193.6912,32.1331,194.1265,32.1841,194.5147,32.1212,194.7326,31.6474,195.1342,31.6169,195.5,31.5"
     style="stroke:#181818;stroke-width:0.5;"/><image height="18"
     width="48" x="203"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAASCAIAAACSBMrtAAAA4klEQVR4Xs2WYRHDIAyFa7ESKgEJSEACEpCABCQgAQfLJXcQMtig20G/n6958JpQrkd6GIcUdlMCWWvPTSilQghVIGOMrFpOjLEE4tJ6qB3UpCoQqyl476WEBESqyKzFOQe7k+tLICptrvJ3y1AgGCLUNUfZe90blqFAsCKJmfwIPgqua61vW4hfAwkdNpu1XNeVH6XBQAnPJifr0Hau8+lw3Y9Z0nighBucnesAGiM6T5CleVZ6lolAsG4vECwN94dUP1oMItWpQGvoBuJjXgnd1P490F6qQDLzDujYPe5/6AU/4JUKUwnC3AAAAABJRU5ErkJggg=="
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAASCAIAAACSBMrtAAAAyElEQVR42s2V4RHDIAiFs2JGcARHcARHcARHYARHcIRuUC7cpZDCNVov+n4SHvkCaLbXYtrWBUop7ZPkvS+lCKAY4z5btdYPEA89L2oHNUkAqdkAoMbLoSGWnDO+nVw/gChVrTLccgsIh4h56iitz+2w3ALCipelOx/hoeDxEEK3ZQzQ96FttTjnekYGUrzzPM6n02Fp2yFMsq4DbMyl89yi7oplaQDCuhYQlsb7o8kSD/0F9IxMIJgkuqkVoLkSQLCAxM91Hb0BP+CVCm8acDEAAAAASUVORK5CYII="
     y="41.5"/><text fill="#000000" font-family="xkcd Script"
     font-size="14" lengthAdjust="spacing" textLength="9" x="224.5"
     y="74.7429">s1</text></g><g id="link_h1_s1"><path d="M72.39,60.5 L72.39,60.7802
@@ -192,7 +209,7 @@ menu:
 -   Скорость потерянных пакетов часто измеряется как процентная доля потерянных пакетов по отношению к количеству отправленных пакетов.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc add dev h1-eth0 root netem loss 10%
+    tc qdisc add dev h1-eth0 root netem loss 10%
     ```
 -   Эта команда добавляет 10% потери пакетов к интерфейсу `h1-eth0` хоста `h1`.
 -   Теперь можно проверить наличие потерь пакетов, используя команду `ping` с терминала хоста `h1`. Параметр `-c` указывает общее количество пакетов для отправки:
@@ -205,7 +222,7 @@ menu:
 -   Если мы хотим эмулировать потерю пакетов в обоих направлениях, к хосту `h2` также необходимо добавить потерю пакетов в размере 10%.
 -   В терминале хоста `h2` введите следующую команду:
     ```shell
-    sudo tc qdisc add dev h2-eth0 root netem loss 10%
+    tc qdisc add dev h2-eth0 root netem loss 10%
     ```
 -   Можно убедиться, что соединение между хостом `h1` и хостом `h2` имеет больше потерь пакетов (10% от хоста `h1` + 10% от хоста `h2`), повторив команду `ping` на терминале хоста `h1`:
     ```shell
@@ -216,11 +233,11 @@ menu:
 -   Чтобы удалить добавленную потерю пакетов и восстановить конфигурацию по умолчанию, необходимо удалить правила интерфейсов на хосте `h1` и хосте `h2`.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc del dev h1-eth0 root netem
+    tc qdisc del dev h1-eth0 root netem
     ```
 -   Примените те же действия для удаления правил на хосте `h2`. В терминале хоста `h2` введите следующую команду:
     ```shell
-    sudo tc qdisc del dev h2-eth0 root netem
+    tc qdisc del dev h2-eth0 root netem
     ```
 -   В результате дисциплина организации очереди tc восстановит свои значения по умолчанию.
 -   Теперь можно убедиться, что соединение от хоста `h1` к хосту `h2` не имеет явной потери пакетов.
@@ -236,7 +253,7 @@ menu:
 -   Можно добавить необязательную корреляцию.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc add dev h1-eth0 root netem loss 50% 50%
+    tc qdisc add dev h1-eth0 root netem loss 50% 50%
     ```
 -   Команда вводит коэффициент потери пакетов 50% (такой высокий уровень потери пакетов маловероятен), и каждая последующая вероятность зависит на 50% от последней.
 -   Теперь пользователь может проверить, что между хостом `h1` и хостом `h2` теряются пакеты, используя команду `ping` с терминала хоста `h1`:
@@ -247,7 +264,7 @@ menu:
 -   В сводном отчёте `ping` сообщает о проценте потерянных пакетов после завершения передачи.
 -   В терминале хоста `h1` введите следующую команду, чтобы удалить предыдущие конфигурации:
     ```shell
-    sudo tc qdisc del dev h1-eth0 root netem
+    tc qdisc del dev h1-eth0 root netem
     ```
 
 
@@ -256,7 +273,7 @@ menu:
 -   Помимо потери пакетов, с помощью NETEM можно эмулировать повреждение пакетов.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc add dev h1-eth0 root netem corrupt 0.01%
+    tc qdisc add dev h1-eth0 root netem corrupt 0.01%
     ```
 -   Добавленное здесь новое значение представляет собой процент повреждения пакетов (0,01%).
 -   Теперь пользователь может проверить предыдущую конфигурацию с помощью инструмента `iperf3` для проверки повторных передач.
@@ -271,7 +288,7 @@ menu:
 -   Посмотрите значения повторной передачи на каждом временном интервале и общее количество повторно переданных пакетов.
 -   В терминале хоста `h1` введите следующую команду, чтобы удалить предыдущие конфигурации:
     ```shell
-    sudo tc qdisc del dev h1-eth0 root netem
+    tc qdisc del dev h1-eth0 root netem
     ```
 -   Чтобы остановить сервер, нажмите `Ctrl+c` в терминале хоста `h2`.
 
@@ -280,9 +297,15 @@ menu:
 
 -   Иногда пакеты доставляются не в том порядке, в котором они были отправлены.
 -   Для эмуляции переупорядочивания в NETEM используется опция переупорядочивания.
+-   Посмотрим поведение трафика без переупорядочивания пакетов.
+-   В терминале хоста `h1` введём:
+    ```shell
+    ping 10.0.0.2
+    ```
+-   Нажмите `Ctrl+c`, чтобы остановить тест.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc add dev h1-eth0 root netem delay 10ms reorder 25% 50%
+    tc qdisc add dev h1-eth0 root netem delay 10ms reorder 25% 50%
     ```
 -   В этой команде 25% пакетов (со значением корреляции 50%) будут отправлены немедленно, а остальные 75% будут задержаны на 10 мс.
 -   Пользователь может проверить эффект переупорядочивания пакетов с помощью команды `ping` на терминале хоста `h1` (нажмите `Ctrl+c`, чтобы остановить тест):
@@ -292,7 +315,7 @@ menu:
 -   Первый и второй пакеты не будут иметь задержки (один из четырех, или 25%), а следующие три пакета будут иметь задержку около 10 миллисекунд (три из четырех, или 75%).
 -   В терминале хоста `h1` введите следующую команду, чтобы удалить предыдущие конфигурации:
     ```shell
-    sudo tc qdisc del dev h1-eth0 root netem
+    tc qdisc del dev h1-eth0 root netem
     ```
 
 
@@ -302,7 +325,7 @@ menu:
 -   NETEM предоставляет возможность эмуляции дублирования пакетов.
 -   В терминале хоста `h1` введите следующую команду:
     ```shell
-    sudo tc qdisc change dev h1-eth0 root netem duplicate 50%
+    tc qdisc add dev h1-eth0 root netem duplicate 50%
     ```
 -   Команда создаст дублирование 50% (т. е. 50% пакетов будут получены дважды).
 -   Пользователь может проверить эффект дублирования пакетов с помощью команды `ping` на терминале хоста `h1` (нажмите `Ctrl+c`, чтобы остановить тест):
@@ -313,5 +336,143 @@ menu:
 -   Измеренная скорость дублирования пакетов будет приближаться к настроенной скорости по мере выполнения большего количества попыток.
 -   В терминале хоста `h1` введите следующую команду, чтобы удалить предыдущие конфигурации:
     ```shell
-    sudo tc qdisc del dev h1-eth0 root netem
+    tc qdisc del dev h1-eth0 root netem
+    ```
+
+
+### <span class="section-num">4.8</span> Видео: Использование netem II. Интерактивный эксперимент {#видео-использование-netem-ii-dot-интерактивный-эксперимент}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube b374d511a828ef5d969a6c538f9d18b1 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube l061lvu_8w4 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+## <span class="section-num">5</span> Воспроизводимый эксперимент {#воспроизводимый-эксперимент}
+
+
+### <span class="section-num">5.1</span> Постановка задания {#постановка-задания}
+
+-   Будем исследовать задержки и построим графики для них.
+-   Выполните все интерактивные эксперименты в виде воспроизводимых.
+-   Для каждого эксперимента `expname` создайте свой каталог:
+    ```shell
+    mkdir -p ~/work/lab_netem_ii/expname
+    ```
+-   В него мы будем помещать файлы эксперимента.
+-   Здесь `expname` может принимать значения `simple-drop`, `correlation-drop` и т.п.
+-   Для каждого эксперимента создайте скрипт для проведения эксперимента `lab_netem_i.py` и скрипт для визуализации `ping_plot`.
+-   Кроме визуализации вычислите минимальное, среднее, максимальное и стандартное отклонение времени приёма-передачи.
+-   Для примера реализуем задание простейшей задержки.
+
+
+### <span class="section-num">5.2</span> Добавление потери пакетов на интерфейс, подключённый к эмулируемой глобальной сети {#добавление-потери-пакетов-на-интерфейс-подключённый-к-эмулируемой-глобальной-сети}
+
+-   В качестве примера исследуем
+-   Создадим каталог `simple-drop`:
+    ```shell
+    mkdir -p ~/work/lab_netem_ii/simple-drop
+    cd ~/work/lab_netem_ii/simple-drop
+    ```
+-   Создадим скрипт для эксперимента `lab_netem_ii.py`:
+    ```python
+    #!/usr/bin/env python
+
+    """
+    Simple experiment.
+    Output: ping.dat
+    """
+
+    from mininet.net import Mininet
+    from mininet.node import Controller
+    from mininet.cli import CLI
+    from mininet.log import setLogLevel, info
+    import time
+
+    def emptyNet():
+
+        "Create an empty network and add nodes to it."
+
+        net = Mininet( controller=Controller, waitConnected=True )
+
+        info( '*** Adding controller\n' )
+        net.addController( 'c0' )
+
+        info( '*** Adding hosts\n' )
+        h1 = net.addHost( 'h1', ip='10.0.0.1' )
+        h2 = net.addHost( 'h2', ip='10.0.0.2' )
+
+        info( '*** Adding switch\n' )
+        s1 = net.addSwitch( 's1' )
+
+        info( '*** Creating links\n' )
+        net.addLink( h1, s1 )
+        net.addLink( h2, s1 )
+
+        info( '*** Starting network\n')
+        net.start()
+
+        info( '*** Set loss\n')
+        h1.cmdPrint( 'tc qdisc add dev h1-eth0 root netem loss 10%' )
+        h2.cmdPrint( 'tc qdisc add dev h2-eth0 root netem loss 10%' )
+
+        time.sleep(10)  # Wait 10 seconds
+
+        info( '*** Ping\n')
+        h1.cmdPrint( 'ping -c 200', h2.IP(), '| grep "time=" | awk \'{print $5, $7}\' | sed -e \'s/time=//g\' -e \'s/icmp_seq=//g\' > ping.dat' )
+
+        info( '*** Stopping network' )
+        net.stop()
+
+
+    if __name__ == '__main__':
+        setLogLevel( 'info' )
+        emptyNet()
+    ```
+-   Создадим скрипт для визуализации `ping_plot`:
+    ```shell
+    #!/usr/bin/gnuplot --persist
+
+    set terminal png crop
+    set output 'ping.png'
+    set xlabel "Sequence number"
+    set ylabel "Delay (ms)"
+    set grid
+    plot "ping.dat" with lines
+    ```
+-   Зададим права доступа:
+    ```shell
+    chmod +x ping_plot
+    ```
+-   Создадим `Makefile`:
+    ```makefile
+    all: ping.dat ping.png
+
+    ping.dat:
+    	sudo python lab_netem_i.py
+    	sudo chown mininet:mininet ping.dat
+
+    ping.png: ping.dat
+    	./ping_plot
+
+    clean:
+    	-rm -f *.dat *.png
+    ```
+-   Выполним эксперимент:
+    ```shell
+    make
+    ```
+-   Посмотрите график.
+-   Вычислите минимальное, среднее, максимальное и стандартное отклонение времени приёма-передачи.
+-   Очистите каталог от результатов проведения экспериментов:
+    ```shell
+    make clean
     ```

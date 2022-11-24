@@ -2,7 +2,7 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2022-11-21T12:57:00+03:00
+lastmod: 2022-11-24T11:10:00+03:00
 tags: ["hugo", "MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -27,7 +27,7 @@ slug: "hugo-site-generator"
 -   В качестве языка описания страниц используется Markdown. Сам Hugo использует библиотеку [Goldmark](https://github.com/yuin/goldmark/). Этот диалект полностью соответствует спецификации [CommonMark](https://commonmark.org/).
 -   Язык расширен в основном за счёт операторов (shortcodes) и поддержки расширений для диаграмм, LaTeX и др. ( см. [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})).
 -   Кроме того, возможно использование и других диалектов Markdown.
--   Также возможно использование [Emacs Org-mode](https://github.com/niklasfasching/go-org), [AsciiDoc](https://asciidoctor.org/), [RST](http://docutils.sourceforge.net/rst.html), [Pandoc](https://www.pandoc.org/) через внешние программы.
+-   Также возможно использование других легковесных языков разметки (см. [Легковесные языки разметки]({{< relref "2021-08-28-lightweight-markup-languages" >}})): [Emacs Org-mode](https://github.com/niklasfasching/go-org), [AsciiDoc](https://asciidoctor.org/), [RST](http://docutils.sourceforge.net/rst.html) через внешние программы.
 
 
 ## <span class="section-num">3</span> Собственная favicon для сайта {#собственная-favicon-для-сайта}
@@ -44,7 +44,7 @@ slug: "hugo-site-generator"
 ## <span class="section-num">5</span> Процесс создания блога {#процесс-создания-блога}
 
 -   Предлагается не писать заметки непосредственно для сайта, а использовать систему генерации статических сайтов как бэкенд для систем ведения заметок.
--   Предлагается использовать режим _org-roam_ (см. [Использование org-roam]({{< relref "2020-10-05-use-org-roam" >}})) редактора _emacs_ как реализации _Zettelkasten_ (см. [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})).
+-   Предлагается использовать режим _org-roam_ (см. [Org-roam. Экспорт в Hugo]({{< relref "2022-11-23-org-roam-hugo-export" >}})) редактора _emacs_ как реализации _Zettelkasten_ (см. [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})).
 -   Для реализации методики _Zettelkasten_ на сайте необходима реализация обратных ссылок (см. [Обратные ссылки в Hugo]({{< relref "2021-06-02-backlinks-hugo" >}})).
 
 

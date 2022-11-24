@@ -2,15 +2,16 @@
 title: "Mininet. Введение в Iperf"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T21:11:00+03:00
-lastmod: 2022-10-08T21:29:00+03:00
+lastmod: 2022-11-23T19:31:00+03:00
 tags: ["network", "education"]
-categories: ["science", "computer-science"]
+categories: ["computer-science"]
 draft: false
 weight: 202
-slug: "mininet-iperf-intro"
-summary: "Введение в Iperf"
 toc: true
 type: "book"
+slug: "mininet-iperf-intro"
+summary: "Введение в Iperf"
+linktitle: "Введение в Iperf"
 menu:
   "iperf-intro":
     parent: "simulation-networks-lab"

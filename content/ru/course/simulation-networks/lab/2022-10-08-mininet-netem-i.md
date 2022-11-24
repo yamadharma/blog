@@ -2,13 +2,16 @@
 title: "Mininet. Использование netem (latency, jitter)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-08T21:33:00+03:00
-lastmod: 2022-10-20T17:54:00+03:00
+lastmod: 2022-11-23T19:31:00+03:00
+tags: ["network", "education"]
+categories: ["computer-science"]
 draft: false
 weight: 203
-slug: "mininet-netem-i"
-summary: "Использование netem (latency, jitter)"
 toc: true
 type: "book"
+slug: "mininet-netem-i"
+summary: "Использование netem (latency, jitter)"
+linktitle: "Использование netem (latency, jitter)"
 menu:
   "mininet-netem-i":
     parent: "simulation-networks-lab"

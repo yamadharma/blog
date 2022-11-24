@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2022-10-20T17:19:00+03:00
+lastmod: 2022-11-23T19:48:00+03:00
 tags: ["hugo", "org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -193,6 +193,11 @@ slug: "org-mode-export-hugo"
 | `weight = 123` (in [menu.foo])     | `#+hugo_menu: :menu foo :weight 123` | `:EXPORT_HUGO_MENU: :menu foo`          |
 | `categories_weight = 123`          | `#+hugo_weight: :categories 123`     |                                         |
 |                                    |                                      |                                         |
+
+
+### <span class="section-num">3.3</span> Особенности экспорта {#особенности-экспорта}
+
+-   [Org-roam. Экспорт в Hugo]({{< relref "2022-11-23-org-roam-hugo-export" >}})
 
 
 ## <span class="section-num">4</span> Сочетания клавиш {#сочетания-клавиш}
