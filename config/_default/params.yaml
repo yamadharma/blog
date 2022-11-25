@@ -72,6 +72,8 @@ features:
     enable: true
   privacy_pack:
     enable: true
+  feedback:
+    enable: false
   repository:
     url: 'https://github.com/yamadharma/blog'
     content_dir: content
