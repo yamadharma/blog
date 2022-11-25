@@ -2,7 +2,9 @@
 title: "Biblatex. Препринты"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-24T16:02:00+03:00
-lastmod: 2022-11-24T17:42:00+03:00
+lastmod: 2022-11-25T15:40:00+03:00
+tags: ["tex"]
+categories: ["computer-science"]
 draft: false
 slug: "biblatex-eprints"
 ---

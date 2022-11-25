@@ -50,7 +50,7 @@ footer:
       allow_commercial: true
       ## For multilingual sites, show a language chooser in the footer
       show_translations: true
-      
+
 ## Localization
 
 locale:
@@ -76,6 +76,7 @@ features:
     url: 'https://github.com/yamadharma/blog'
     content_dir: content
     branch: master
+  feedback: false
   avatar:
     gravatar: true
     shape: circle
@@ -86,6 +87,11 @@ features:
       show_count: true
     commento:
       url: ''
+    giscus:
+      repo: ''
+      repo_id: ''
+      category: ''
+      category_id: ''
   search:
     provider: wowchemy
     algolia:
@@ -110,8 +116,8 @@ extensions:
   academicons:
     enable: true
 
-###    
-      
+###
+
 show_related:
   docs: true
   page: false

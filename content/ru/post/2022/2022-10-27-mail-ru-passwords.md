@@ -2,7 +2,9 @@
 title: "Пароли mail.ru"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-27T15:04:00+03:00
-lastmod: 2022-10-27T15:12:00+03:00
+lastmod: 2022-11-25T15:38:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "mail-ru-passwords"
 ---

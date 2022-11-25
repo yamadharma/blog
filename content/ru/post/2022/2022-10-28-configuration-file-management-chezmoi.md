@@ -2,7 +2,9 @@
 title: "Управление файлами конфигурации. Chezmoi"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-28T19:49:00+03:00
-lastmod: 2022-10-28T20:26:00+03:00
+lastmod: 2022-11-25T15:39:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "configuration-file-management-chezmoi"
 ---

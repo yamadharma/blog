@@ -2,7 +2,9 @@
 title: "Язык программирования HCL"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-05T18:03:00+03:00
-lastmod: 2022-11-05T18:07:00+03:00
+lastmod: 2022-11-25T15:41:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "hcl-programming-language"
 ---
