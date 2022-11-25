@@ -126,10 +126,10 @@ security:
     getenv:
       - ^HUGO_
       - ^WC_
-      
+
 sitemap:
   _merge: deep
-      
+
 enableRobotsTXT: true
 canonifyURLs: true
 
@@ -137,7 +137,7 @@ mediaTypes:
   application/manifest+json:
     suffixes:
       - webmanifest
-      
+
 outputFormats:
   WebAppManifest:
     mediaType: application/manifest+json

@@ -2,7 +2,7 @@
 title: "Org-roam. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-23T19:40:00+03:00
-lastmod: 2022-11-23T20:02:00+03:00
+lastmod: 2022-11-24T14:33:00+03:00
 tags: ["hugo", "org-mode", "org-roam"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Обратные ссылки в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-02T17:19:00+03:00
-lastmod: 2021-07-23T21:18:00+03:00
+lastmod: 2022-11-24T15:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -25,7 +25,6 @@ slug: "backlinks-hugo"
 
 -   Обратные ссылки можно создавать напрямую при экспорте из _emacs_.
 -   Для экспорта обратных ссылок я использовал следующий скрипт на _elisp_:
-
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Export Backlinks
@@ -77,7 +76,7 @@ slug: "backlinks-hugo"
 
 -   Примеры создания обратных ссылок в Hugo:
     -   <https://gabrielleearnshaw.medium.com/implementing-backlinks-in-a-hugo-website-e548d3d8f0e0>
-    -   <https://seds.nl/notes/export%5Forg%5Froam%5Fbacklinks%5Fwith%5Fgohugo/>
+    -   <https://seds.nl/notes/export_org_roam_backlinks_with_gohugo/>
 -   Есть тема для Hugo, основным свойством которой является поддержка обратных ссылок:
     -   <https://github.com/kausalflow/connectome>
 -   Для создания обратных ссылок необходимо поправить шаблон.
@@ -90,7 +89,6 @@ slug: "backlinks-hugo"
 ### <span class="section-num">3.2</span> Каталоги для новой структуры {#каталоги-для-новой-структуры}
 
 -   Добавим каталог `layouts` в корень нашего сайта для создания собственных шаблонов:
-
     ```shell
     layouts
     ├── _default
@@ -103,7 +101,6 @@ slug: "backlinks-hugo"
 ### <span class="section-num">3.3</span> Шаблон генерации обратных ссылок {#шаблон-генерации-обратных-ссылок}
 
 -   Зададим частичный шаблон `layouts/partials/backlinks.html`, создающий список обратных ссылок и отображающий его:
-
     ```html
     {{ $re := $.File.BaseFileName }}
     {{ $backlinks := slice }}
@@ -138,12 +135,10 @@ slug: "backlinks-hugo"
 -   Шаблон страницы лучше делать на основе используемой темы.
 -   Я использую шаблон _Academic_ (`https://github.com/wowchemy/starter-hugo-academic`), основанную на модуле _wowchemy_ (`https://github.com/wowchemy/wowchemy-hugo-modules.git`).
     -   Скачиваю модуль:
-
         ```shell
         git clone https://github.com/wowchemy/wowchemy-hugo-modules.git
         ```
     -   Копирую файл `wowchemy-hugo-modules/wowchemy/layouts/_default/single.html` в локальный каталог. Он имеет следующий вид (зависит от темы):
-
         ```html
         {{- define "main" -}}
 
@@ -165,7 +160,6 @@ slug: "backlinks-hugo"
         {{- end -}}
         ```
     -   Добавляю использование частичного шаблона обратных ссылок:
-
         ```diff
         --- orig/single.html	2021-06-02 18:12:17.337530907 +0300
         +++ single.html	2021-06-02 16:15:08.178764024 +0300
@@ -179,7 +173,6 @@ slug: "backlinks-hugo"
              {{ partial "page_footer" . }}
         ```
     -   Получаю следующий файл `layouts/_default/single.html`:
-
         ```html
         {{- define "main" -}}
 
@@ -211,7 +204,6 @@ slug: "backlinks-hugo"
 -   Предлагается после экспорта заменять ссылки на файлы на внутренние ссылки Hugo типа `{{</* relref имя_файла */>}}` (см. [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})).
 -   Имя файла предполагается брать из поля `#+EXPORT_FILE_NAME:`.
 -   Для этого был написан скрипт:
-
     ```python
     #!/usr/bin/env python3
     # -*- coding: utf-8 -*-
@@ -221,7 +213,7 @@ slug: "backlinks-hugo"
     import re
     import os
 
-    orgroamdir = "~/me/org/notes/"
+    orgroamdir = "~/work/org/notes/"
 
     def find_md_links(md):
         """Returns dict of links in markdown:
@@ -300,7 +292,6 @@ slug: "backlinks-hugo"
         fin.close()
     ```
 -   Запуск скрипта осуществляется через `Makefile`:
-
     ```makefile
     all:
 
@@ -312,7 +303,6 @@ slug: "backlinks-hugo"
     	find . -name "*~" -delete
     ```
 -   Запуск осуществляется следующим образом:
-
     ```shell
     make fixlinks clean
     ```
