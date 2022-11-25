@@ -2,7 +2,7 @@
 title: "Преподавание. Курсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2022-03-31T16:10:00+03:00
+lastmod: 2022-11-25T16:32:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -45,7 +45,7 @@ slug: "teaching-courses"
 
 #### Администрирование локальных сетей {#администрирование-локальных-сетей}
 
--   [Администрирование локальных сетей]({{< relref "2021-01-31-administration-local-networks" >}})
+-   [Администрирование локальных сетей]({{< relref "course/net-admin" >}})
 
 
 #### Сетевые технологии {#сетевые-технологии}

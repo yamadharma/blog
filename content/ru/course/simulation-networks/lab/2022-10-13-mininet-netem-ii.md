@@ -2,13 +2,14 @@
 title: "Mininet. Использование netem (потери пакетов)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-13T14:27:00+03:00
-lastmod: 2022-11-23T19:33:00+03:00
+lastmod: 2022-11-25T16:50:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 204
 toc: true
 type: "book"
+feedback: false
 slug: "mininet-netem-ii"
 summary: "Использование netem (потери пакетов)"
 linktitle: "Использование netem (потери пакетов)"

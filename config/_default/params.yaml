@@ -76,7 +76,6 @@ features:
     url: 'https://github.com/yamadharma/blog'
     content_dir: content
     branch: master
-  feedback: false
   avatar:
     gravatar: true
     shape: circle

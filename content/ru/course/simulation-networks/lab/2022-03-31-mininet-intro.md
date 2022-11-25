@@ -2,13 +2,14 @@
 title: "Введение в Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-31T16:10:00+03:00
-lastmod: 2022-11-23T19:26:00+03:00
+lastmod: 2022-11-25T16:52:00+03:00
 tags: ["network", "education"]
 categories: ["science", "computer-science"]
 draft: false
 weight: 201
 toc: true
 type: "book"
+feedback: false
 slug: "mininet-intro"
 summary: "Введение в Mininet"
 linktitle: "Введение в Mininet"

@@ -2,11 +2,12 @@
 title: "Mininet. Token Bucket Filter"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-19T19:51:00+03:00
-lastmod: 2022-11-25T13:57:00+03:00
+lastmod: 2022-11-25T16:53:00+03:00
 draft: false
 weight: 205
 toc: true
 type: "book"
+feedback: false
 slug: "mininet-token-bucket-filter"
 summary: "Управление пропускной способностью с помощью дисциплина очередей Token Bucket Filter (TBF)"
 linktitle: "Token Bucket Filter"

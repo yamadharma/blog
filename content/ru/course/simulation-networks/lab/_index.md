@@ -2,16 +2,14 @@
 title: "Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T21:19:00+03:00
-lastmod: 2022-11-23T19:18:00+03:00
+lastmod: 2022-11-25T16:50:00+03:00
 tags: ["network", "education"]
 categories: ["science", "computer-science"]
 draft: false
-weight: 200
+weight: 20
 toc: false
 type: "book"
-slug: "mininet-lab"
-summary: "Лабораторные работы"
-linktitle: "Лабораторные работы"
+feedback: false
 menu:
   "simulation-networks-lab":
     parent: "simulation-networks"
