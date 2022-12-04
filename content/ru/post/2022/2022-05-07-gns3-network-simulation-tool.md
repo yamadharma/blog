@@ -2,7 +2,7 @@
 title: "Средство натурного моделирования сетей GNS3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:54:00+03:00
-lastmod: 2022-05-07T16:00:00+03:00
+lastmod: 2022-11-30T19:53:00+03:00
 tags: ["MOC", "network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -39,6 +39,12 @@ slug: "gns3-network-simulation-tool"
 -   Также в магазине есть и платный контент.
 
 
-## <span class="section-num">3</span> Оборудование {#оборудование}
+## <span class="section-num">3</span> Установка {#установка}
+
+-   [GNS3 на Virtualbox]({{< relref "2022-06-25-gns3-virtualbox" >}})
+-   [GNS3 на Hyper-V]({{< relref "2022-11-29-gns3-hyperv" >}})
+
+
+## <span class="section-num">4</span> Оборудование {#оборудование}
 
 -   [GNS3. Образы оборудования]({{< relref "2022-05-07-gns3-appliances" >}})

@@ -2,7 +2,7 @@
 title: "Создание bib-файла с процитированными ссылками"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-20T19:44:00+03:00
-lastmod: 2022-11-25T15:37:00+03:00
+lastmod: 2022-12-04T21:17:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -39,6 +39,10 @@ slug: "bib-file-cited"
 
     -   `extracted.bib` : имя, которое вы хотите дать своему новому bib-файлу;
     -   необходимо указать расширение `.aux` (или вообще не указывать расширение).
+-   Если используется централизованная база библиографии, то можно использовать её вместо локально bib-файла:
+    ```shell
+    bibexport -r ~/work/bib/bib/main.bib -o extracted.bib myarticle.aux
+    ```
 
 
 ### <span class="section-num">2.2</span> Jabref {#jabref}
@@ -48,7 +52,7 @@ slug: "bib-file-cited"
 -   Можно работать как в режиме командной строки, так и в режиме графического интерфейса.
 -   В режиме командной строки:
     ```shell
-    jabref.jar -n -a old_ref.aux,new_ref.bib old_ref.bib
+    jabref -n -a old_ref.aux,new_ref.bib old_ref.bib
     ```
 
     -   `-n` : отключение графического интерфейса.

@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e. Процесс работы с почтой"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-12T14:19:00+03:00
-lastmod: 2021-07-13T16:24:00+03:00
+lastmod: 2022-12-04T17:34:00+03:00
 tags: ["emacs", "gtd"]
 categories: ["self-management"]
 draft: false
