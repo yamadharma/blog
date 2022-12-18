@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2022-04-04T11:14:00+03:00
+lastmod: 2022-12-17T21:12:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -36,7 +36,6 @@ slug: "window-manager-i3"
     -   `/etc/i3/config`.
 -   Начиная с версии 4.20, можно подключать другие файлы конфигурации из основного файла конфигурации _i3_.
     -   Примеры использования директивы `include`:
-
         ```cfg
         # Тильда преобразуется в домашний каталог пользователя
         include ~/.config/i3/assignments.conf
@@ -65,12 +64,10 @@ slug: "window-manager-i3"
 
 -   В качестве модификатора обычно используется:
     -   `Alt`:
-
         ```conf-unix
         set $mod Mod1
         ```
     -   `Super` (Клавиша со значком _Windows_):
-
         ```conf-unix
         set $mod Mod4
         ```
@@ -90,7 +87,6 @@ slug: "window-manager-i3"
     -   `Mod` + `k` или `Mod` + `Up`: сдвиг фокуса вверх.
     -   `Mod` + `l` или `Mod` + `Right`: сдвиг фокуса вправо.
 -   Конфигурация выглядит следующим образом:
-
     ```conf-unix
     ## Home row direction keys, like vim
     set $left h
@@ -116,7 +112,6 @@ slug: "window-manager-i3"
 -   Поскольку в данном менеджере окон поддерживаются контейнеры, то можно переключить фокус на родительский контейнер:
     -   `Mod` + `a`: переключить фокус на родительский контейнер.
     -   Конфигурация:
-
         ```conf-unix
         ## Move focus to the parent container
         bindsym $mod+a focus parent
@@ -132,7 +127,6 @@ slug: "window-manager-i3"
     -   `Mod` + `Shift` + `k` или `Mod` + `Shift` + `Up`: перемещение вверх;
     -   `Mod` + `Shift` + `l` или `Mod` + `Shift` + `Right`: перемещение вправо.
 -   Конфигурация выглядит следующим образом:
-
     ```conf-unix
     ## Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -162,7 +156,6 @@ slug: "window-manager-i3"
     -   `Mod` + `s`: стековое размещение (stacking layout);
     -   `Mod` + `w`: размещение с табами (tabbed layout).
 -   Конфигурация:
-
     ```conf-unix
     ## Switch the current container between different layout styles
     bindsym $mod+s layout stacking
@@ -170,7 +163,6 @@ slug: "window-manager-i3"
     bindsym $mod+e layout toggle split
     ```
 -   Для раскладки по умолчанию я использую табы:
-
     ```conf-unix
     ### Layout mode for new containers
     ## default|stacking|tabbed
@@ -187,7 +179,6 @@ slug: "window-manager-i3"
 ### <span class="section-num">4.8</span> Рабочие области (workspaces) {#рабочие-области--workspaces}
 
 -   Сконфигурим рабочие области:
-
     ```conf-unix
     ## Define names for workspaces
     set $ws1    1
@@ -202,7 +193,6 @@ slug: "window-manager-i3"
     set $ws10   10
     ```
 -   `Mod` + `0` -- `9`: переключиться на соответствующую рабочую область:
-
     ```conf-unix
     ## Switch to workspace
     bindsym $mod+1 workspace $ws1
@@ -217,7 +207,6 @@ slug: "window-manager-i3"
     bindsym $mod+0 workspace $ws10
     ```
 -   `Mod` + `Shift` + `0` -- `9`: перенести окно на соответствующую рабочую область:
-
     ```conf-unix
     ## Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace $ws1
@@ -242,7 +231,6 @@ slug: "window-manager-i3"
 ### <span class="section-num">4.10</span> Выход/Перезапуск {#выход-перезапуск}
 
 -   `Mod` + `Shift` + `c`: перечитать конфигурационный файл.
-
     ```conf-unix
     ## ~/.config/i3/config
 
@@ -250,7 +238,6 @@ slug: "window-manager-i3"
     bindsym $mod+Shift+c reload
     ```
 -   `Mod` + `Shift` + `r`: перестартовать _i3_, сохранив сессию.
-
     ```conf-unix
     ## ~/.config/i3/config
 
@@ -258,7 +245,6 @@ slug: "window-manager-i3"
     bindsym $mod+Shift+r restart
     ```
 -   `Mod` + `Shift` + `e`: выход из _i3_.
-
     ```conf-unix
     ## ~/.config/i3/config
 
@@ -274,15 +260,13 @@ slug: "window-manager-i3"
 
 -   В качестве терминала я использую kitty.
 -   Конфигурация запуска терминала:
-
     ```conf-unix
     set $term kitty
     bindsym $mod+Return exec $term
     ```
 
-    В этом случае запускается одно окно терминала.
+    -   В этом случае запускается одно окно терминала.
 -   Для работы я использую специальную настройку сессии терминала. Я её запускаю при входе в сессию. Для этого я приспособил комбинацию `Mod` + `Shift` + `Enter`:
-
     ```conf-unix
     bindsym $mod+Shift+Return exec kitty --session ~/.config/kitty/startup
     ```
@@ -292,7 +276,6 @@ slug: "window-manager-i3"
 
 -   Можно управлять окнами с помощью мышки.
 -   Привязка осуществляется следующей командой:
-
     ```conf-unix
     bindsym [--release] [--border] [--whole-window] [--exclude-titlebar] [<Modifiers>+]button<n> command
     ```
@@ -304,23 +287,19 @@ slug: "window-manager-i3"
     -   Если задан флаг `--exclude-titlebar`, заголовок не будет учитываться для привязки клавиш.
 -   Примеры.
     -   Средняя кнопка на заголовке закрывает окно:
-
         ```conf-unix
         bindsym --release button2 kill
         ```
     -   Средняя кнопка и модификатор над любой частью окна закрывает окно:
-
         ```conf-unix
         bindsym --whole-window $mod+button2 kill
         ```
     -   Правая кнопка мыши переключает плавающий режим:
-
         ```conf-unix
         bindsym button3 floating toggle
         bindsym $mod+button3 floating toggle
         ```
     -   Боковые кнопки мыши перемещают окно:
-
         ```conf-unix
         bindsym button9 move left
         bindsym button8 move right
@@ -339,13 +318,12 @@ slug: "window-manager-i3"
     -   системную строку, генерируемую при помощи `i3status` или аналогов;
     -   системный трей с иконками программ.
 -   В конфигурационном файле задаётся следующим образом (<https://i3wm.org/docs/userguide.html#_configuring_i3bar>):
-
     ```conf-unix
     # ~/.config/i3/config -*- mode: conf-unix; -*-
     ## Start i3bar to display a workspace bar
     bar {
-        status_command	i3status
-        position		top
+        status_command i3status
+        position top
     }
     ```
 
@@ -357,13 +335,11 @@ slug: "window-manager-i3"
     -   Наиболее распространённым является шрифт [Font Awesome](https://fontawesome.com/).
     -   Установка:
         -   Gentoo
-
             ```shell
             emerge media-fonts/fontawesome
             ```
     -   Для вставки шрифта в файл можно использовать список кодов для иконок <https://fontawesome.com/cheatsheet>.
     -   Шрифт лучше явно обозначить в конфигурации:
-
         ```conf-unix
         ## ~/.config/i3/config
         bar {
@@ -407,7 +383,6 @@ slug: "window-manager-i3"
         -   переменная `order` --- в неё записывается порядок вывода интересующих модулей;
         -   блоки конфигурации модулей --- непосредственно настройки самих блоков с метриками.
     -   В конфигурации i3bar задаётся конфигурационный файл для i3status:
-
         ```conf-unix
         # ~/.config/i3/config -*- mode: conf-unix; -*-
         ## Start i3bar to display a workspace bar
@@ -418,7 +393,6 @@ slug: "window-manager-i3"
         }
         ```
     -   Структура информационной панели задаётся в конфигурационном файле:
-
         ```conf-unix
         ### -*- mode: conf-unix; -*-
         ## ~/.config/i3/i3status/config
@@ -569,7 +543,48 @@ slug: "window-manager-i3"
         ```
 
 
-#### <span class="section-num">5.3.2</span> polybar {#polybar}
+#### <span class="section-num">5.3.2</span> py3status {#py3status}
+
+-   `py3status` --- это расширяемая оболочка для `i3status`, написанная на python.
+-   Сайт: <https://py3status.readthedocs.io/>.
+-   Репозиторий: <https://github.com/ultrabug/py3status>.
+-   Можно управлять `i3bar`:
+    -   используя один из доступных модулей, поставляемых с `py3status`;
+    -   группировать несколько модулей и автоматически или вручную циклически отображать их отображение;
+    -   писать свои собственные модули и отображать их вывод на панели;
+    -   обрабатывать события кликов на `i3bar`.
+-   Отображается вверху или внизу экрана.
+-   Содержит:
+    -   область с кнопками переключения рабочих областей _i3_;
+    -   системную строку;
+    -   системный трей с иконками программ.
+
+<!--list-separator-->
+
+1.  Запуск py3status
+
+    -   Запускается вместо `i3bar`:
+        ```conf-unix
+        # ~/.config/i3/config -*- mode: conf-unix; -*-
+        ## Start py3status to display a workspace bar
+        bar {
+            font pango:Iosevka Nerd Font 12
+            status_command py3status
+            position top
+        }
+        ```
+    -   Использует конфигурационный файл от `i3status` или собственную конфигурацию.
+    -   Порядок поиска конфигурационного файла:
+        -   `$XDG_CONFIG_HOME/py3status/config`;
+        -   `$XDG_CONFIG_HOME/i3status/config`;
+        -   `$XDG_CONFIG_HOME/i3/i3status.conf`;
+        -   `~/.i3status.conf`;
+        -   `~/.i3/i3status.conf`;
+        -   `$XDG_CONFIG_DIRS/i3status/config`;
+        -   `/etc/i3status.conf`.
+
+
+#### <span class="section-num">5.3.3</span> polybar {#polybar}
 
 -   Отдельное приложение для строки статуса.
 -   Применяется для замены _i3bar_.
@@ -579,10 +594,10 @@ slug: "window-manager-i3"
 -   Одним из побудительных мотивов установки _polybar_ может быть то, что здесь можно без проблем настроить индикатор раскладки клавиатуры.
 -   Установка
     -   Gentoo:
-
         ```shell
         USE="i3wm" emerge x11-misc/polybar
         ```
+
 -   Конфигурационный файл:
     -   стандартное расположение:  `~/.config/polybar/config` (`$XDG_CONFIG_HOME/polybar/config`);
     -   использую для локальных настроек только для _i3_: `~/.config/i3/polybar/config`.
@@ -592,7 +607,6 @@ slug: "window-manager-i3"
 1.  Скрипт запуска
 
     -   Создадим скрипт запуска `polybar`.
-
         ```shell
         #!/bin/bash
         # ~/.config/i3/polybar/launch.sh
@@ -611,12 +625,10 @@ slug: "window-manager-i3"
         echo "Polybar launched..."
         ```
     -   Установим права на исполнение:
-
         ```shell
         chmod +x ~/.config/i3/polybar/launch.sh
         ```
     -   Добавим вызов `polybar` в файл конфигурации _i3_. Конфигурацию для _i3bar_ следует закомментировать.
-
         ```conf-unix
         ## ~/.config/i3/config
 
@@ -644,7 +656,6 @@ slug: "window-manager-i3"
 -   <https://github.com/davatorium/rofi>
 -   Конфигурация по умолчанию находится в `~/.config/rofi/config`.
 -   Для выбора темы можно использовать команду:
-
     ```shell
     rofi-theme-selector
     ```
@@ -658,18 +669,14 @@ slug: "window-manager-i3"
     -   `script`: использование простых скриптов.
     -   `combi`: объединяет несколько мод в одну.
 -   Использование запятых в файле настроек _i3_ может привести к проблемам. Лучше использовать файл настроек _rofi_ или замените запятые символом `#`, например, заменить строку
-
     ```conf-unix
     rofi -combi-modi window,drun,ssh
     ```
-
     на
-
     ```conf-unix
     rofi -combi-modi window#drun#ssh
     ```
 -   Возможная конфигурация в командной строке команды `rofi`:
-
     ```conf-unix
     ## ~/.config/i3/config
     set $menu rofi -combi-modi window#drun -show combi -modi combi -show-icons
@@ -680,36 +687,35 @@ slug: "window-manager-i3"
 ### <span class="section-num">5.5</span> Блокировка экрана {#блокировка-экрана}
 
 -   Для отключения экрана можно использовать DPMS:
-
     ```cfg
     exec --no-startup-id xset dpms 1800
     ```
 
     -   Отключается через 30 минут.
+
+
+#### <span class="section-num">5.5.1</span> Блокировщик экрана `i3lock` {#блокировщик-экрана-i3lock}
+
 -   В качестве блокировщика экрана используем `i3lock`.
     -   Установка
         -   Gentoo
-
             ```shell
             emerge x11-misc/i3lock
             ```
-    -   Использование в конфигурационном файле:
+-   Использование в конфигурационном файле:
+    ```cfg
+    set $Locker i3lock --color=000000 && sleep 1
+    ```
 
-        ```cfg
-        set $Locker i3lock --color=000000 && sleep 1
-        ```
-
-        -   `sleep 1` добавляет небольшую задержку, чтобы предотвратить возможное состояние гонки.
+    -   `sleep 1` добавляет небольшую задержку, чтобы предотвратить возможное состояние гонки.
 -   Для блокировки экрана после заданного периода времени можно использовать `xautolock` или `xss-lock`.
 -   Использование `xautolock`.
 -   Установка
     -   Gentoo
-
         ```shell
         emerge x11-misc/xautolock
         ```
 -   Использование в конфигурационном файле:
-
     ```cfg
     exec --no-startup-id xautolock -time 10 -locker "$Locker"
     ```
@@ -718,15 +724,38 @@ slug: "window-manager-i3"
 -   Использование `xss-lock`.
 -   Установка
     -   Gentoo
-
         ```shell
         emerge x11-misc/xss-lock
         ```
 -   Использование в конфигурационном файле:
-
     ```cfg
     exec --no-startup-id xss-lock -- "$Locker"
     ```
+
+
+#### <span class="section-num">5.5.2</span> Блокировщик экрана `i3lock-color` {#блокировщик-экрана-i3lock-color}
+
+-   Репозиторий: <https://github.com/Raymo111/i3lock-color>
+
+<!--list-separator-->
+
+1.  Дополнительные возможности в i3lock-color
+
+    -   Дополнительное управление цветом элементов.
+    -   Размытие текущего экрана и использование его в качестве фона блокировки.
+    -   Отображение часов в индикаторе.
+    -   Обновление по таймеру, а не при каждом нажатии клавиши.
+    -   Отображение раскладки клавиатуры.
+
+<!--list-separator-->
+
+2.  Установка
+
+    -   Gentoo
+        -   Порт находится в оверлее `guru`:
+            ```shell
+            emerge x11-misc/i3lock-color
+            ```
 
 
 ## <span class="section-num">6</span> Приложения {#приложения}
@@ -736,12 +765,10 @@ slug: "window-manager-i3"
 
 -   Для скриншотов можно использовать [scrot](https://github.com/resurrecting-open-source-projects/scrot).
     -   Gentoo
-
         ```shell
         emerge media-gfx/scrot
         ```
 -   Добавим в конфигурационный файл:
-
     ```conf-unix
     ## Screenshot
 
@@ -771,7 +798,6 @@ slug: "window-manager-i3"
 
 -   В стандартных тулкитах для Java жестко зашит список оконных менеджеров.
 -   Следует установить переменную окружения:
-
     ```shell
     export _JAVA_AWT_WM_NONREPARENTING=1
     ```
@@ -783,7 +809,6 @@ slug: "window-manager-i3"
 -   GTK LookAndFeel может работать с GTK версий 2, 2.2 и 3.
 -   По умолчанию используется GTK3.
 -   Следует явно задать более старую версию:
-
     ```shell
     export JAVA_TOOL_OPTIONS='-Djdk.gtk.version=2.2'
     ```

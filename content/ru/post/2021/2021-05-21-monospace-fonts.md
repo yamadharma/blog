@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2022-01-25T14:01:00+03:00
+lastmod: 2022-12-17T16:24:00+03:00
 tags: ["programming"]
 categories: ["сиянс", "computer-science"]
 draft: false
@@ -44,7 +44,6 @@ slug: "monospace-fonts"
 ### <span class="section-num">4.1</span> LaTeX {#latex}
 
 -   При использовании LuaTeX и XeTeX лигатуры включаются опцией `Contextuals=Alternate` пакета `fontspec`:
-
     ```latex
     \usepackage{fontspec}
     \setmonofont{FontName}[Contextuals=Alternate]
@@ -69,7 +68,6 @@ slug: "monospace-fonts"
     -   Курсив: нет
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/fira-code
         ```
@@ -94,7 +92,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/iosevka
         ```
@@ -109,7 +106,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/jetbrains-mono
         ```
@@ -128,7 +124,6 @@ slug: "monospace-fonts"
     -   Курсив: нет
 -   LaTeX
     -   Использование в LuaLaTeX и XeLaTeX:
-
         ```latex
         \usepackage{fontspec}
 
@@ -170,7 +165,6 @@ slug: "monospace-fonts"
     -   Курсив: нет
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/cascadia-code
         ```
@@ -192,7 +186,6 @@ slug: "monospace-fonts"
             -   _4nykey_: <https://gpo.zugaina.org/Overlays/4nykey>
             -   karma: <https://github.com/yamadharma/gentoo-portage-local>
         -   Установка
-
             ```shell
             emerge media-fonts/victor-mono
             ```
@@ -217,7 +210,6 @@ slug: "monospace-fonts"
     -   Для использования шрифта можно использовать список кодов для иконок <https://fontawesome.com/cheatsheet>.
 -   Установка
     -   Gentoo
-
         ```shell
         emerge media-fonts/fontawesome
         ```
@@ -228,9 +220,9 @@ slug: "monospace-fonts"
 -   Проект по добавлению ы разные шрифты дополнительных глифов (в основном иконок).
 -   Сайт: <https://www.nerdfonts.com/>
 -   Репозиторий: <https://github.com/ryanoasis/nerd-fonts/>
+-   Поиск глифа: <https://www.nerdfonts.com/cheat-sheet>
 -   Установка
     -   Gentoo
-
         ```shell
         USE="iosevka" emerge nerd-fonts
         ```
@@ -253,7 +245,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/source-pro
         ```
@@ -268,7 +259,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/anonymous-pro
         ```
@@ -283,7 +273,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/hack
         ```
@@ -300,7 +289,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/hermit
         ```
@@ -316,7 +304,6 @@ slug: "monospace-fonts"
     -   Курсив: есть
 -   Установка.
     -   Gentoo:
-
         ```shell
         emerge media-fonts/ibm-plex
         ```

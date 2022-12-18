@@ -2,7 +2,7 @@
 title: "Работа без учётной записи в Cisco Packet Tracer"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:39:00+03:00
-lastmod: 2022-05-07T15:44:00+03:00
+lastmod: 2022-12-07T13:31:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -30,7 +30,7 @@ slug: "cisco-packet-tracer-accountless"
 -   Перед этим следует отключить (временно) антивирус.
 
 
-### <span class="section-num">2.1</span> Видео {#видео}
+### <span class="section-num">2.1</span> Видео: Установка патча на Packet Tracer (Windows) {#видео-установка-патча-на-packet-tracer--windows}
 
 {{< youtube JVmEkkMFI_g >}}
 
@@ -40,34 +40,86 @@ slug: "cisco-packet-tracer-accountless"
 -   При запуске Packet Tracer на компьютере без доступа к сети учётная запись не проверяется.
 
 
-### <span class="section-num">3.1</span> Программа _firejail_ {#программа-firejail}
+### <span class="section-num">3.1</span> Linux {#linux}
 
 
-#### <span class="section-num">3.1.1</span> Общая информация {#общая-информация}
+#### <span class="section-num">3.1.1</span> Программа _firejail_ {#программа-firejail}
 
--   Ограничивает среду выполнения ненадёжных приложений с помощью _пространств имён Linux_ и _seccomp-bpf_.
--   Сайт: <https://firejail.wordpress.com/>
+<!--list-separator-->
 
+1.  Общая информация
 
-#### <span class="section-num">3.1.2</span> Установка {#установка}
+    -   Ограничивает среду выполнения ненадёжных приложений с помощью _пространств имён Linux_ и _seccomp-bpf_.
+    -   Сайт: <https://firejail.wordpress.com/>
 
--   Gentoo
-    -   Стандартная версия
+<!--list-separator-->
 
+2.  Установка
+
+    -   Gentoo
+        -   Стандартная версия
+            ```shell
+            emerge sys-apps/firejail
+            ```
+        -   Версия с долговременной поддержкой
+            ```shell
+            emerge sys-apps/firejail-lts
+            ```
+
+<!--list-separator-->
+
+3.  Запуск Packet Tracer
+
+    -   Запускаем с отключённой сетью:
         ```shell
-        emerge sys-apps/firejail
-        ```
-    -   Версия с долговременной поддержкой
-
-        ```shell
-        emerge sys-apps/firejail-lts
+        firejail --net=none --noprofile packettracer
         ```
 
 
-#### <span class="section-num">3.1.3</span> Запуск Packet Tracer {#запуск-packet-tracer}
+#### <span class="section-num">3.1.2</span> Запуск Packet Tracer без сети на Linux {#запуск-packet-tracer-без-сети-на-linux}
 
--   Запускаем с отключённой сетью:
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
 
-    ```shell
-    firejail --net=none --noprofile packettracer
-    ```
+{{< rutube d20632ba64ccef923c3295da9fe19a7d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube OvfE3MsH-Jo >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="section-num">3.2</span> Windows {#windows}
+
+
+#### <span class="section-num">3.2.1</span> Блокировка доступа в интернет {#блокировка-доступа-в-интернет}
+
+-   Откройте _Панель управления_.
+-   Откройте пункт _Брандмауэр Защитника Windows_ или просто _Брандмауэр Windows_.
+-   В открывшемся окне нажмите _Дополнительные параметры_.
+-   Откроется окно брандмауэра в режиме повышенной безопасности.
+-   Выберите _Правило для исходящего подключения_, а потом --- _Создать правило_.
+-   Выберите _Для программы_ и нажмите _Далее_.
+-   Укажите путь к исполняемому файлу программы, которой нужно запретить доступ в Интернет.
+-   В следующем окне оставьте отмеченным пункт /Блокировать подключение.
+-   В следующем окне отметьте, для каких сетей выполнять блокировку. Если для любых --- оставьте отмеченными все пункты.
+-   Укажите понятное для вас имя правила и нажмите _Готово_.
+
+
+#### <span class="section-num">3.2.2</span> Запуск Packet Tracer без сети на Windows {#запуск-packet-tracer-без-сети-на-windows}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 220a90487801dbf81e5016f6c1d213be >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube DMkFAMDjLIo >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

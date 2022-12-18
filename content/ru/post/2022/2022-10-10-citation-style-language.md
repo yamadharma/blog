@@ -2,7 +2,7 @@
 title: "Citation Style Language (CSL)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:22:00+03:00
-lastmod: 2022-10-16T15:54:00+03:00
+lastmod: 2022-12-15T13:45:00+03:00
 draft: false
 slug: "citation-style-language"
 ---
@@ -19,7 +19,9 @@ slug: "citation-style-language"
 -   Язык стилей цитирования представляет собой открытый язык на основе XML для описания форматирования цитат и библиографий.
 -   Сайт: <https://citationstyles.org/>
 -   Репозиторий стилей: <https://github.com/citation-style-language/styles>.
--   Поиск по стилям: <https://www.zotero.org/styles>.
+-   Поиск по стилям:
+    -   <https://www.zotero.org/styles>;
+    -   <https://csl.mendeley.com/>.
 -   Спецификация: <https://docs.citationstyles.org/en/stable/specification.html>.
 
 
@@ -41,3 +43,42 @@ slug: "citation-style-language"
 -   Zotero: <https://www.zotero.org/>.
 -   Mendeley: <http://mendeley.com/>.
 -   Pandoc (см. [Pandoc]({{< relref "2021-08-28-pandoc" >}})) поддерживает цитаты в форматах CSL, YAML и JSON и может отображать их с использованием стилей CSL.
+
+
+## <span class="section-num">3</span> Соответствие полей CSL и библиографических систем {#соответствие-полей-csl-и-библиографических-систем}
+
+<div class="table-caption">
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
+  Соответствие полей CSL и Mendeley
+</div>
+
+| CSL                | Mendeley               |
+|--------------------|------------------------|
+| article            | Generic                |
+| bill               | Bill                   |
+| book               | Book                   |
+| chapter            | Book Section           |
+| article            | Case                   |
+| article            | Computer Program       |
+| paper-conference   | Conference Proceedings |
+| entry-encyclopedia | Encyclopedia Article   |
+| motion_picture     | Film                   |
+| speech             | Hearing                |
+| article-journal    | Journal Article        |
+| article-magazine   | Magazine Article       |
+| article-newspaper  | Newspaper Article      |
+| patent             | Patent                 |
+| report             | Report                 |
+| legislation        | Statute                |
+| thesis             | Thesis                 |
+| broadcast          | Television Broadcast   |
+| webpage            | Web Page               |
+| article            | Working Paper          |
+
+
+## <span class="section-num">4</span> Стили CSL {#стили-csl}
+
+
+### <span class="section-num">4.1</span> Стили CSL для библиографии ГОСТ {#стили-csl-для-библиографии-гост}
+
+-   [Библиография. CSL. ГОСТ]({{< relref "2022-12-15-csl-gost" >}})

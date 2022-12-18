@@ -2,7 +2,7 @@
 title: "Работа с почтой"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-12T12:59:00+03:00
-lastmod: 2022-12-04T17:55:00+03:00
+lastmod: 2022-12-06T16:42:00+03:00
 tags: ["gtd"]
 categories: ["self-management"]
 draft: false

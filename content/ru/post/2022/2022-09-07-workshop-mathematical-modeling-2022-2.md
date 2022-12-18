@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2022-10-29T18:59:00+03:00
+lastmod: 2022-12-05T15:59:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -253,6 +253,7 @@ Based on this hypothesis, a heuristic method is proposed that allows one to dete
 
 ### <span class="section-num">6.2</span> Информация {#информация}
 
+-   <https://events.rudn.ru/event/200/>
 -   Управление заданиями в больших вычислительных системах на основе элементов ИИ
 -   Гостев И. М.
 -   докт. техн. наук, в.н.с. ИППИ РАН
@@ -292,8 +293,71 @@ The report considers a simulation model of a system that satisfies the set condi
 
 ### <span class="section-num">6.3</span> Видео {#видео}
 
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
 
-## <span class="section-num">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-10 Чт&gt; </span></span> Белов А. А. {#белов-а-dot-а-dot}
+{{< rutube 85894a3a2839290a40f5fc99892908f3 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube Ya8QeP_xeYs >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+## <span class="section-num">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-12-15 Чт&gt; </span></span> Белов А. А. Обобщение метода конечных разностей на задачи с особенностями в решении {#белов-а-dot-а-dot-обобщение-метода-конечных-разностей-на-задачи-с-особенностями-в-решении}
+
+
+### <span class="section-num">7.1</span> Докладчик {#докладчик}
+
+-   Белов Александр Александрович
+-   к.ф.-м.н.
+-   доцент каф. Прикладной информатики и теории вероятностей
+
+
+### <span class="section-num">7.2</span> Информация {#информация}
+
+-
+
+-   Обобщение метода конечных разностей на задачи с особенностями в решении (по материалам докторской диссертации)
+-   Белов Александр Александрович
+-   доцент каф. Прикладной информатики и теории вероятностей
+
+В физике и технике возникают новые все более сложные задачи, предъявляющие чрезвычайно высокие требования к точности и надежности расчета. Это приводит к бурному развитию приближенных методов расчета, из которых наиболее универсальными являются методы конечных разностей (МКР) и конечных элементов (МКЭ). В рамках этих подходов разработано большое количество алгоритмов как общего назначения, так и ориентированных на конкретные прикладные задачи. Эти алгоритмы реализованы в широко известных прикладных пакетах.
+
+Большой вклад в развитие МКР был сделан Калиткиным и его учениками: предложенные ими алгоритмы позволили значительно расширить круг задач, которые удается успешно решать с помощью МКР.
+
+Однако, несмотря на достигнутые успехи, ряд задач по-прежнему не удается решить в рамках существующих реализаций МКР. Общим свойством этих задач является наличие особенностей в решении: пограничных слоев (которые в пределе при уменьшении ширины стремятся к сильным разрывам), сингулярностей (в которых решение обращается в бесконечность), сильных либо слабых разрывов на границах раздела сред. Такие особенности представляют принципиальные трудностями для разностных методов.
+
+В диссертации предложены и обоснованы, программно реализованы и протестированы новые алгоритмы метода конечных разностей для следующих классов задач.
+
+1.  Жесткие задачи Коши для ОДУ. Предложен новый метод автоматического выбора шага по кривизне интегральной кривой (геометрически-адаптивные сетки). Разработана процедура сгущения таких сеток, которая позволила применить метод Ричардсона и находить апостериорную асимптотически точную оценку погрешности полученного решения. Это позволило вести расчеты задач высокой жесткости по экономичным явным схемам с апостериорным контролем точности.
+
+2.  Задачи Коши с сингулярностями в решении. Предложены методы численного исследования подвижных особых точек и их последовательностей в решениях ОДУ с апостериорной асимптотически точной оценкой погрешности.
+
+3.  Задачи для системы одномерных уравнений Максвелла в слоистых средах с частотной дисперсией. Для системы стационарных и нестационарных одномерных уравнений Максвелла предложена бикомпактная консервативная разностная схема. Построено обобщение этой схемы на двумерную задачу о наклонном падении излучения плоской волны на систему плоско-параллельных пластин.
+
+---
+
+-   Generalization of the finite difference method to problems with special points in the solution (based on the materials of the doctoral dissertation)
+-   Belov A.A.
+-   Associate Professor Applied Informatics and Probability Theory
+
+In physics and engineering, new increasingly complex problems arise that place extremely high demands on the accuracy and reliability of calculations. This leads to the rapid development of approximate calculation methods, of which the methods of finite differences (FDM) and finite elements (FEM) are the most versatile. Within the framework of these approaches, a large number of algorithms have been developed, both general-purpose and focused on specific applied tasks. These algorithms are implemented in widely known application packages.
+
+A great contribution to the development of FDM was made by Kalitkin and his students: the algorithms they proposed made it possible to significantly expand the range of tasks that can be successfully solved with the help of FDM.
+
+However, despite the successes achieved, a number of tasks still cannot be solved within the framework of existing FDM implementations. A common property of these problems is  the presence of special points in the solution: boundary layers (which tend to strong discontinuities in the limit when the width decreases), singularities (in which the solution turns to infinity), strong or weak discontinuities at the interface of media. These special points introduce fundamental difficulties for numerical techniques.
+
+In the dissertation, new algorithms of the FDM for the following classes of problems are proposed and justified, programmatically implemented and tested.
+
+1.  Stiff Cauchy problems for ODES. A new method of automatic step selection by the curvature of the integral curve (geometrically adaptive grids) is proposed. A procedure for thickening such grids has been developed, which made it possible to apply the Richardson method and find a posteriori asymptotically accurate estimate of the error of the obtained solution. This made it possible to calculate high-stiff problems using efficient explicit schemes with a posteriori accuracy control.
+
+2.  Cauchy problems with singularities in the solution. Methods of numerical investigation of moving singular points and their sequences in solutions of ODES with a posteriori asymptotically accurate error estimation are proposed.
+
+3.  Problems for a system of one-dimensional Maxwell equations in layered media with frequency dispersion. A bicompact conservative difference scheme is proposed for a system of stationary and non-stationary one-dimensional Maxwell equations. A generalization of this scheme to the two-dimensional problem of the oblique incidence of plane wave radiation on a system of plane-parallel plates is constructed.
 
 
 ## <span class="section-num">8</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-24 Чт&gt; </span></span> Венева М., Айрян А. С. _Численные методы решения уравнений диффузии_ {#венева-м-dot-айрян-а-dot-с-dot-численные-методы-решения-уравнений-диффузии}

@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией. helm-bibtex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T12:21:00+03:00
-lastmod: 2022-11-18T19:36:00+03:00
+lastmod: 2022-12-14T20:36:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -43,7 +43,7 @@ slug: "emacs-bibliography-helm-bibtex"
 -   При использовании org-cite (см. [Emacs. Работа с библиографией. Org-cite]({{< relref "2022-10-10-emacs-bibliography-org-cite" >}})) можно переключиться на соответствующий формат цитирования для org-файлов:
     ```emacs-lisp
     (add-to-list 'bibtex-completion-format-citation-functions
-    	     '(org-mode . bibtex-completion-format-citation-org-cite))
+                 '(org-mode . bibtex-completion-format-citation-org-cite))
     ```
 
 
@@ -87,11 +87,11 @@ slug: "emacs-bibliography-helm-bibtex"
     ```emacs-lisp
     (setq bibtex-completion-display-formats
           '((article	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${journal:40}")
-    	(inbook		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} Chapter ${chapter:32}")
-    	(incollection	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
-    	(inproceedings	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
-    	(book 		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${subtitle:40} ${volume:2}")
-    	(t		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*}")))
+            (inbook		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} Chapter ${chapter:32}")
+            (incollection	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+            (inproceedings	. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${booktitle:40}")
+            (book 		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*} ${subtitle:40} ${volume:2}")
+            (t		. "${=has-pdf=:1}${=has-note=:1} ${=type=:7} ${year:4} ${author:36} ${title:*}")))
     ```
 -   Чтобы это работало, необходимо добавить `journal` и `booktitle` к `bibtex-completion-additional-search-fields`:
     ```emacs-lisp
@@ -108,10 +108,9 @@ slug: "emacs-bibliography-helm-bibtex"
 
 ### <span class="section-num">5.1</span> Клавиши для поиска {#клавиши-для-поиска}
 
--   Будем считать, что общий префикс _Helm_ --- `C-c h`.
+-   Будем считать, что общий префикс _Helm_ --- `C-c h` (см. [Emacs. Автодополнение. Helm]({{< relref "2022-12-14-emacs-completion-helm" >}})).
 -   `C-c h b`: поиск в центральной и в локальной базах bib.
--   `C-c h b`: поиск в локальной базе bib.
-    -   Для org-файлов используются как локальная, так и глобальная библиографические базы.
+-   `C-c h B`: поиск в локальной базе bib.
 -   `C-c h n`: поиска только среди записей, содержащих примечания.
 -   Настройка проводится следующим образом:
     ```emacs-lisp
