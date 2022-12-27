@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2022-12-05T15:59:00+03:00
+lastmod: 2022-12-19T14:07:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -307,7 +307,7 @@ The report considers a simulation model of a system that satisfies the set condi
 {{< /tabs >}}
 
 
-## <span class="section-num">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-12-15 Чт&gt; </span></span> Белов А. А. Обобщение метода конечных разностей на задачи с особенностями в решении {#белов-а-dot-а-dot-обобщение-метода-конечных-разностей-на-задачи-с-особенностями-в-решении}
+## <span class="section-num">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-12-15 Чт&gt; </span></span> Белов А. А. _Обобщение метода конечных разностей на задачи с особенностями в решении_ {#белов-а-dot-а-dot-обобщение-метода-конечных-разностей-на-задачи-с-особенностями-в-решении}
 
 
 ### <span class="section-num">7.1</span> Докладчик {#докладчик}
@@ -360,9 +360,17 @@ In the dissertation, new algorithms of the FDM for the following classes of prob
 3.  Problems for a system of one-dimensional Maxwell equations in layered media with frequency dispersion. A bicompact conservative difference scheme is proposed for a system of stationary and non-stationary one-dimensional Maxwell equations. A generalization of this scheme to the two-dimensional problem of the oblique incidence of plane wave radiation on a system of plane-parallel plates is constructed.
 
 
-## <span class="section-num">8</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-11-24 Чт&gt; </span></span> Венева М., Айрян А. С. _Численные методы решения уравнений диффузии_ {#венева-м-dot-айрян-а-dot-с-dot-численные-методы-решения-уравнений-диффузии}
+### <span class="section-num">7.3</span> Видео {#видео}
 
--   Айрян А. С.
-    -   Объединённый институт ядерных исследований
--   Венева Милена
--   Численные методы решения уравнений диффузии
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 15e6fb22b481d8b6f472deb1f5a77c76 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube yPcgNQ1X9eU >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

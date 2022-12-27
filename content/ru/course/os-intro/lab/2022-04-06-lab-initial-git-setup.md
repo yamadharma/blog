@@ -2,20 +2,21 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2022-08-23T17:46:00+03:00
+lastmod: 2022-12-27T14:14:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
-weight: 202
+weight: 205
 toc: true
 type: "book"
 slug: "lab-initial-git-setup"
 summary: "Первоначальна настройка git"
+linktitle: "Первоначальна настройка"
 menu:
-  "os-intro-lab":
+  "lab-initial-git-setup":
     identifier: "лабораторная-работа-первоначальна-настройка-git"
-    parent: "os-intro"
-    weight: 202
+    parent: "os-intro-lab"
+    weight: 205
 ---
 
 Лабораторная работа _Первоначальна настройка git_.
