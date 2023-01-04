@@ -2,7 +2,7 @@
 title: "Рабочий процесс Gitflow"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-18T20:14:00+03:00
-lastmod: 2022-04-17T13:16:00+03:00
+lastmod: 2023-01-04T13:58:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -40,36 +40,47 @@ slug: "gitflow-workflow"
 
 -   Для Windows используется пакетный менеджер Chocolatey.
     Git-flow входит в состав пакета git.
-
     ```shell
     choco install git
     ```
 -   Для MacOS используется пакетный менеджер [Homebrew](https://brew.sh/).
-
     ```shell
     brew install git-flow
     ```
 -   Linux
     -   Gentoo
-
         ```shell
         emerge dev-vcs/git-flow
         ```
     -   Ubuntu
-
         ```shell
         apt-get install git-flow
         ```
     -   Centos
         -   Первоначально нужно установить репозиторий _epel_ (<https://fedoraproject.org/wiki/EPEL>):
-
             ```shell
-            yum install epel-release
+            dnf install epel-release
             ```
         -   Затем, собственно, установить git-flow:
-
             ```shell
-            yum install gitflow
+            dnf install gitflow
+            ```
+    -   Fedora
+        -   Это программное обеспечение удалено из основного репозитория.
+        -   Можно установить вручную или из коллекции репозиториев _Copr_.
+        -   Установка из коллекции репозиториев _Copr_ (<https://copr.fedorainfracloud.org/coprs/elegos/gitflow/>):
+            ```shell
+            # Enable the copr repository
+            dnf copr enable elegos/gitflow
+            # Install gitflow
+            dnf install gitflow
+            ```
+        -   Установка вручную:
+            ```shell
+            cd /tmp
+            wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh
+            chmod +x gitflow-installer.sh
+            sudo ./gitflow-installer.sh install stable
             ```
 
 

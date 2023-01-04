@@ -2,7 +2,7 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2022-12-27T14:14:00+03:00
+lastmod: 2023-01-04T21:18:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -11,7 +11,7 @@ toc: true
 type: "book"
 slug: "lab-initial-git-setup"
 summary: "Первоначальна настройка git"
-linktitle: "Первоначальна настройка"
+linktitle: "Первоначальна настройка git"
 menu:
   "lab-initial-git-setup":
     identifier: "лабораторная-работа-первоначальна-настройка-git"
@@ -336,25 +336,32 @@ menu:
 ### <span class="section-num">4.1</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 
-#### <span class="section-num">4.1.1</span> Установка git-flow {#установка-git-flow}
+#### <span class="section-num">4.1.1</span> Установка git {#установка-git}
+
+-   Установим _git_:
+    ```shell
+    dnf install git
+    ```
+
+
+#### <span class="section-num">4.1.2</span> Установка git-flow {#установка-git-flow}
 
 -   Linux
     -   Fedora
-        -   Это программное обеспечение удалено из репозитория.
-        -   Необходимо устанавливать его вручную:
+        -   Установка из коллекции репозиториев _Copr_ (<https://copr.fedorainfracloud.org/coprs/elegos/gitflow/>):
             ```shell
-            cd /tmp
-            wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh
-            chmod +x gitflow-installer.sh
-            sudo ./gitflow-installer.sh install stable
+            # Enable the copr repository
+            dnf copr enable elegos/gitflow
+            # Install gitflow
+            dnf install gitflow
             ```
 
 
-#### <span class="section-num">4.1.2</span> Установка gh {#установка-gh}
+#### <span class="section-num">4.1.3</span> Установка gh {#установка-gh}
 
 -   Fedora:
     ```shell
-    sudo dnf install gh
+    dnf install gh
     ```
 
 

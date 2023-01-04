@@ -2,7 +2,7 @@
 title: "Приёмка квартиры в новостройке"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:15:00+03:00
-lastmod: 2022-12-25T20:30:00+03:00
+lastmod: 2022-12-28T18:05:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false

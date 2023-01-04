@@ -2,7 +2,7 @@
 title: "Система виртуализации VirtualBox"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-17T11:35:00+03:00
-lastmod: 2021-09-17T11:45:00+03:00
+lastmod: 2023-01-03T18:24:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -16,10 +16,74 @@ slug: "virtualbox-virtualization-system"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
+## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://www.virtualbox.org/>.
+-   Лицензия: 	GNU GPL-2 + проприетарная (<https://www.virtualbox.org/wiki/VirtualBox_PUEL>).
 
 
-### <span class="section-num">1.1</span> MacOS {#macos}
+## <span class="section-num">2</span> Настойка параметров {#настойка-параметров}
+
+
+### <span class="section-num">2.1</span> Настройка хост-клавиши {#настройка-хост-клавиши}
+
+
+#### <span class="section-num">2.1.1</span> Графический интерфейс {#графический-интерфейс}
+
+-   В меню выберите _Файл_, _Настройки_.
+-   Выберите _Ввод_, вкладка _Виртуальная машина_.
+-   Выберите _Сочетание клавиш_ в строке _Хост-комбинация_.
+-   Нажмите новое сочетание клавиш.
+-   Нажмите ОК, чтобы сохранить изменения.
+
+
+#### <span class="section-num">2.1.2</span> Командная строка {#командная-строка}
+
+-   Проверьте текущую комбинацию для хост-клавиши:
+    ```shell
+    VBoxManage getextradata global GUI/Input/HostKeyCombination
+    ```
+
+    -   По умолчанию установлена комбинация `65508`, соответствующая правой клавише `Ctrl`.
+-   Установите нужную клавишу (в примере клавиша _Menu_):
+    ```shell
+    VBoxManage setextradata global GUI/Input/HostKeyCombination 65383
+    ```
+-   Комбинации клавиш можно, например, посмотреть на странице <https://pythonhosted.org/pyglet/api/pyglet.window.key-module.html>.
+
+
+### <span class="section-num">2.2</span> Папка виртуальных машин {#папка-виртуальных-машин}
+
+
+#### <span class="section-num">2.2.1</span> Значения по умолчанию {#значения-по-умолчанию}
+
+-   Linux: `$HOME/VirtualBox VMs`.
+
+
+#### <span class="section-num">2.2.2</span> Графический интерфейс {#графический-интерфейс}
+
+-   В меню выберите _Файл_, _Настройки_.
+-   Выберите _Общие_, поле _Папка для машин по умолчанию_.
+-   Установите новое значение, например `/var/vm`.
+-   Нажмите ОК, чтобы сохранить изменения.
+
+
+#### <span class="section-num">2.2.3</span> Командная строка {#командная-строка}
+
+-   Установим папку для виртуальных машине в `/var/vm`:
+    ```shell
+    VBoxManage setproperty machinefolder /var/vm
+    ```
+-   Можно восстановить значение по умолчанию:
+    ```shell
+    VBoxManage setproperty machinefolder default
+    ```
+
+
+## <span class="section-num">3</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
+
+
+### <span class="section-num">3.1</span> MacOS {#macos}
 
 -   Начиная с версии MacOS 10.13 требуется ряд новых полномочий для программного обеспечения.
 -   После установки кнопка с запросом разрешений находится в панели "Системные настройки", раздел "Безопасность и конфиденциальность".
