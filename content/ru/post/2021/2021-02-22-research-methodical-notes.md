@@ -2,9 +2,9 @@
 title: "Научно-исследовательская деятельность. Методические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:05:00+03:00
-lastmod: 2021-11-01T15:35:00+03:00
+lastmod: 2023-01-12T14:56:00+03:00
 tags: ["research"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "research-methodical-notes"
 ---
@@ -17,5 +17,5 @@ slug: "research-methodical-notes"
 
 -   [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})
 -   [Структура аннотации]({{< relref "2021-02-22-annotation-structure" >}})
--   [Оформление диссертации]({{< relref "2021-04-20-making-thesis" >}})
+-   [Подготовка диссертации]({{< relref "2023-01-12-thesis-preparation" >}})
 -   [Презентация в markdown]({{< relref "2021-11-01-markdown-presentation" >}})
