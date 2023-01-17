@@ -2,7 +2,7 @@
 title: "Личные базы данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-27T15:06:00+03:00
-lastmod: 2021-12-06T13:00:00+03:00
+lastmod: 2023-01-17T14:54:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "personal-databases"
@@ -62,3 +62,4 @@ slug: "personal-databases"
 ### <span class="section-num">3.4</span> Заметки {#заметки}
 
 -   [Миграция с Evernote]({{< relref "2021-11-25-migration-from-evernote" >}})
+-   [Org-roam]({{< relref "2022-11-23-org-roam" >}})
