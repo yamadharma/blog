@@ -2,7 +2,7 @@
 title: "Структура записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-14T12:07:00+03:00
-lastmod: 2023-01-17T17:50:00+03:00
+lastmod: 2023-01-17T18:53:00+03:00
 tags: ["MOC"]
 categories: ["life"]
 draft: false
@@ -55,8 +55,8 @@ slug: "structure-notes"
 
 ### <span class="section-num">2.2</span> Жизнь {#жизнь}
 
--   [Жизнь]({{< relref "2021-11-26-life" >}})
-    -   Это моя повседневная жизнь.
+-   Моя повседневная жизнь (см. [Жизнь]({{< relref "2021-11-26-life" >}})).
+-   Отдых (см. [Отдых]({{< relref "2023-01-17-recreation" >}}))
 
 
 ### <span class="section-num">2.3</span> Чтение {#чтение}

@@ -2,7 +2,7 @@
 title: "Emacs. Пакет org-appear"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-16T18:37:00+03:00
-lastmod: 2023-01-16T19:23:00+03:00
+lastmod: 2023-01-20T12:50:00+03:00
 tags: ["emacs", "org-mode"]
 categories: ["computer-science"]
 draft: false
