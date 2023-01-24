@@ -2,7 +2,7 @@
 title: "Курс Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2022-12-27T14:34:00+03:00
+lastmod: 2023-01-22T19:10:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false

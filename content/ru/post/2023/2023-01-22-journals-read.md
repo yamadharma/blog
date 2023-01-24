@@ -2,9 +2,9 @@
 title: "Журналы, которые я читаю"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-22T14:23:00+03:00
-lastmod: 2023-01-22T14:33:00+03:00
+lastmod: 2023-01-22T15:05:00+03:00
 categories: ["book"]
-draft: true
+draft: false
 slug: "journals-read"
 ---
 
