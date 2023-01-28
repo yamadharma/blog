@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Chezmoi"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-28T19:49:00+03:00
-lastmod: 2023-01-15T20:32:00+03:00
+lastmod: 2023-01-25T18:50:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -46,10 +46,20 @@ slug: "configuration-file-management-chezmoi"
             emerge chezmoi-bin
             ```
     -   Fedora
-        -   установка через Snap:
-            ```shell
-            snap install chezmoi --classic
-            ```
+        -   Установка через _Snap_:
+            -   Установите _Snap_:
+                ```shell
+                dnf install snapd
+                ```
+            -   Либо выйдите из системы, либо снова войдите в нее, либо перезагрузите систему, чтобы убедиться, что пути snap обновлены правильно.
+            -   Включите поддержку классического варианта snap:
+                ```shell
+                ln -s /var/lib/snapd/snap /snap
+                ```
+            -   Установите chezmoi:
+                ```shell
+                snap install chezmoi --classic
+                ```
 -   Windows
     -   установка посредством Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
         ```shell

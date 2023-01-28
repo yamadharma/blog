@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2022-11-21T17:28:00+03:00
+lastmod: 2023-01-24T16:25:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

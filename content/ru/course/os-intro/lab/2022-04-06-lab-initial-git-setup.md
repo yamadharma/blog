@@ -2,7 +2,7 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2023-01-20T13:10:00+03:00
+lastmod: 2023-01-25T18:15:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -571,20 +571,7 @@ _Системы контроля версий (Version Control System, VCS)_ п�
     ```
 
 
-#### <span class="section-num">4.1.2</span> Установка git-flow {#установка-git-flow}
-
--   Linux
-    -   Fedora
-        -   Установка из коллекции репозиториев _Copr_ (<https://copr.fedorainfracloud.org/coprs/elegos/gitflow/>):
-            ```shell
-            # Enable the copr repository
-            dnf copr enable elegos/gitflow
-            # Install gitflow
-            dnf install gitflow
-            ```
-
-
-#### <span class="section-num">4.1.3</span> Установка gh {#установка-gh}
+#### <span class="section-num">4.1.2</span> Установка gh {#установка-gh}
 
 -   Fedora:
     ```shell
