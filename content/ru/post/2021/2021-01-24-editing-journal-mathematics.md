@@ -2,9 +2,9 @@
 title: "Редактирование. Журнал Mathematics. 2021"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-24T20:19:00+03:00
-lastmod: 2022-12-12T10:03:00+03:00
+lastmod: 2023-02-03T19:35:00+03:00
 tags: ["sci-admin"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "editing-journal-mathematics"
 ---
@@ -16,10 +16,10 @@ slug: "editing-journal-mathematics"
 {{< toc >}}
 
 
-## Сведения о журнале Mathematics {#сведения-о-журнале-mathematics}
+## <span class="section-num">1</span> Сведения о журнале Mathematics {#сведения-о-журнале-mathematics}
 
 
-### Информация о журнале {#информация-о-журнале}
+### <span class="section-num">1.1</span> Информация о журнале {#информация-о-журнале}
 
 -   Open access
 -   ISSN 2227-7390
@@ -30,7 +30,7 @@ slug: "editing-journal-mathematics"
     -   <https://www.scimagojr.com/journalsearch.php?q=21100830702&tip=sid&clean=0>
 
 
-### Основные положения предложения {#основные-положения-предложения}
+### <span class="section-num">1.2</span> Основные положения предложения {#основные-положения-предложения}
 
 -   Тема выпуска: Construction and Research of Mathematical Models
 -   Работа в качестве приглашённого соредактора заключается в следующем:
@@ -40,15 +40,15 @@ slug: "editing-journal-mathematics"
     -   Журнал можем предоставить сертификат (в том, что являлся соредактором).
 
 
-## Сведения о выпуске {#сведения-о-выпуске}
+## <span class="section-num">2</span> Сведения о выпуске {#сведения-о-выпуске}
 
 -   Сайт: <https://www.mdpi.com/journal/mathematics/special_issues/Construction_Research_of_Math_Models>
 
 
-### Редколлегия {#редколлегия}
+### <span class="section-num">2.1</span> Редколлегия {#редколлегия}
 
 
-#### Leonid A. Sevastianov {#leonid-a-dot-sevastianov}
+#### <span class="section-num">2.1.1</span> Leonid A. Sevastianov {#leonid-a-dot-sevastianov}
 
 -   Leonid Antonovich Sevastianov
 -   Full Professor
@@ -65,7 +65,7 @@ slug: "editing-journal-mathematics"
     -   publications: 26
 
 
-#### Vladimir V. Korenkov {#vladimir-v-dot-korenkov}
+#### <span class="section-num">2.1.2</span> Vladimir V. Korenkov {#vladimir-v-dot-korenkov}
 
 -   Vladimir Vasilievich Korenkov
 -   Doctor of Technical sciences
@@ -83,14 +83,14 @@ slug: "editing-journal-mathematics"
     -   publications: 179
 
 
-### Абстракт {#абстракт}
+### <span class="section-num">2.2</span> Абстракт {#абстракт}
 
 Математическое моделирование является мощнейшим научным методом. Именно этот метод является основным методом физики.  Из физики метод математического моделирования распространился на другие области науки.  Но язык математики лишь один из языков реализации моделей. С развитием компьютеров появились новые виды моделирования: имитационное моделирование, суррогатное моделирование.  Кроме того, для описания одного и того же явления возможно использовать не одну модель, а целый ансамбль моделей. Такого рода подход, когда применяются разные реализации моделей и ансамбли моделей мы называем многомодельным подходом.
 
 Этот специальный выпуск посвящен использованию современных достижений математического моделирования в аспектах исследования и применения много модельного подхода. Кроме того, мы рассматриваем и разные комбинированные аспекты исследования моделей, например, комбинацию аналитических и численных методов исследования.
 
 
-## Special Issue Information {#special-issue-information}
+## <span class="section-num">3</span> Special Issue Information {#special-issue-information}
 
 **Special Issue Title:** Construction and Research of Mathematical Models
 

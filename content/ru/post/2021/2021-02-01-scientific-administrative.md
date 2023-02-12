@@ -2,9 +2,9 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2022-09-01T21:06:00+03:00
+lastmod: 2023-02-12T19:52:00+03:00
 tags: ["sci-admin"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "scientific-administrative"
 ---
@@ -41,14 +41,14 @@ slug: "scientific-administrative"
 ### <span class="section-num">4.1</span> Discrete and Continuous Models and Applied Computational Science {#discrete-and-continuous-models-and-applied-computational-science}
 
 -   [Журнал Discrete and Continuous Models]({{< relref "2021-02-26-editing-discrete-continuous-models" >}})
--   заместитель главного редактора
+-   Заместитель главного редактора
 -   <https://elibrary.ru/title_about_new.asp?id=73749>
 -   <https://journals.rudn.ru/miph>
 
 
 ### <span class="section-num">4.2</span> Mathematical Modelling and Geometry {#mathematical-modelling-and-geometry}
 
--   член редакционной коллегии
+-   Член редакционной коллегии
 -   <https://elibrary.ru/title_about_new.asp?id=55385>
 -   <https://mmg.tversu.ru/>
 
@@ -57,7 +57,7 @@ slug: "scientific-administrative"
 
 -   [Репозиторий конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}})
 -   CEUR Workshop Proceedings (CEUR-WS.org). Free Open-Access Proceedings for Computer Science Workshops
--   член редакционной коллегии (Associate Editor)
+-   Член редакционной коллегии (Associate Editor)
     -   <http://ceur-ws.org/>
     -   <http://ceur-ws.org/CEURWS-TEAM.html>
 

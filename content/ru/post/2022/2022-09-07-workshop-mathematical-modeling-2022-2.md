@@ -1,29 +1,32 @@
 ---
-title: "Семинар Математическое моделирование, 2022-2"
+title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2022-12-19T14:07:00+03:00
+lastmod: 2023-02-02T20:11:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
 
-Заседания семинара Математическое моделирование, осенний семестр 2022-2023 учебного года.
+Заседания семинара Математическое моделирование, 2022-2023 учебный год.
 
 <!--more-->
 
 {{< toc >}}
 
 
-## <span class="section-num">1</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-09-15 Чт] </span></span> Баддур Али _Исследование консервативных разностных схем в моделях движения многих тел_ {#баддур-али-исследование-консервативных-разностных-схем-в-моделях-движения-многих-тел}
+## <span class="section-num">1</span> 2022 {#2022}
 
 
-### <span class="section-num">1.1</span> Докладчик {#докладчик}
+### <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-09-15 Чт] </span></span> Баддур Али _Исследование консервативных разностных схем в моделях движения многих тел_ {#баддур-али-исследование-консервативных-разностных-схем-в-моделях-движения-многих-тел}
+
+
+#### <span class="section-num">1.1.1</span> Докладчик {#докладчик}
 
 -   Баддур Али
 -   Аспирант кафедры Прикладной информатики и теории вероятностей РУДН
 
 
-### <span class="section-num">1.2</span> Информация {#информация}
+#### <span class="section-num">1.1.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/190/>
 -   Investigation of conservative difference schemes for many-body motion models
@@ -39,7 +42,7 @@ slug: "workshop-mathematical-modeling-2022-2"
 -   Предложен новый подход к конструированию разностных схем любого порядка для задачи многих тел, сохраняющих все ее алгебраические интегралы. В его основе — комбинирование метода квадратизации энергии и отказ от наследования симплектической структуры. Представлены  результаты тестирования простейшей из этого класса схем. Для тестирования избрана плоская задача трех тел равной массы. Рассмотрен случай, когда тела проходят близко друг к другу, для чего специально разработан алгоритм измельчения шага по времени возле числовых особенностей. Проведено сравнение с явным методом Рунге–Кутты 4-го порядка и простейшим симплектическим методом — схемой средней точки.
 
 
-### <span class="section-num">1.3</span> Видео {#видео}
+#### <span class="section-num">1.1.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -55,17 +58,17 @@ slug: "workshop-mathematical-modeling-2022-2"
 {{< /tabs >}}
 
 
-## <span class="section-num">2</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-09-22 Чт] </span></span> Черник В. В. _Эффективные методы синтеза голограмм с комбинированной структурой и математического моделирования голографических изображений_ {#черник-в-dot-в-dot-эффективные-методы-синтеза-голограмм-с-комбинированной-структурой-и-математического-моделирования-голографических-изображений}
+### <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-09-22 Чт] </span></span> Черник В. В. _Эффективные методы синтеза голограмм с комбинированной структурой и математического моделирования голографических изображений_ {#черник-в-dot-в-dot-эффективные-методы-синтеза-голограмм-с-комбинированной-структурой-и-математического-моделирования-голографических-изображений}
 
 
-### <span class="section-num">2.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.2.1</span> Докладчик {#докладчик}
 
 -   Черник Виталий Валерьевич
 -   Инженер лаборатории механики управляемых систем Института проблем механики, г. Москва
 -   gungho424@gmail.com
 
 
-### <span class="section-num">2.2</span> Информация {#информация}
+#### <span class="section-num">1.2.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/192/>
 -   Эффективные методы синтеза голограмм с комбинированной структурой и математического моделирования голографических изображений
@@ -85,7 +88,7 @@ The efficient methods for the synthesis of holographic masks, modeling of the ho
 The layered design and corresponding corrections in the method of synthesis of holographic masks are proposed, as well as the method for calculating diffraction on a periodic layered structure based on Galerkin approach. The corresponding software module has been developed, the calculation results have been verified by analytical solutions on the limited class of structures and calculations by the approximate method.
 
 
-### <span class="section-num">2.3</span> Видео {#видео}
+#### <span class="section-num">1.2.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -101,16 +104,16 @@ The layered design and corresponding corrections in the method of synthesis of h
 {{< /tabs >}}
 
 
-## <span class="section-num">3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-06 Чт&gt; </span></span> Блинков Ю. А. _Построение первого дифференциального приближения для методов Рунге-Кутты_ {#блинков-ю-dot-а-dot-построение-первого-дифференциального-приближения-для-методов-рунге-кутты}
+### <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-06 Чт&gt; </span></span> Блинков Ю. А. _Построение первого дифференциального приближения для методов Рунге-Кутты_ {#блинков-ю-dot-а-dot-построение-первого-дифференциального-приближения-для-методов-рунге-кутты}
 
 
-### <span class="section-num">3.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.3.1</span> Докладчик {#докладчик}
 
 -   Блинков Юрий Андреевич
 -   Д.ф.-м.н., директор научного центра вычислительных методов в прикладной математике института прикладной математики и телекоммуникаций РУДН
 
 
-### <span class="section-num">3.2</span> Информация {#информация}
+#### <span class="section-num">1.3.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/194/>
 -   Построение первого дифференциального приближения для методов Рунге-Кутты
@@ -126,7 +129,7 @@ The layered design and corresponding corrections in the method of synthesis of h
 -   A method for constructing the first differential approximation for Runge-Kutta methods for systems of ordinary differential equations is proposed. In particular, this makes it possible to investigate the behavior of Runge-Kutta methods depending on the parameters included in the equations and their first integrals. Computational experiments were carried out for the results of analytical conclusions.
 
 
-### <span class="section-num">3.3</span> Видео {#видео}
+#### <span class="section-num">1.3.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -142,17 +145,17 @@ The layered design and corresponding corrections in the method of synthesis of h
 {{< /tabs >}}
 
 
-## <span class="section-num">4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-20 Чт&gt; </span></span> Кройтор О. К. _Компьютерное моделирование некоторых задач математической физики_ {#кройтор-о-dot-к-dot-компьютерное-моделирование-некоторых-задач-математической-физики}
+### <span class="section-num">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-10-20 Чт&gt; </span></span> Кройтор О. К. _Компьютерное моделирование некоторых задач математической физики_ {#кройтор-о-dot-к-dot-компьютерное-моделирование-некоторых-задач-математической-физики}
 
 
-### <span class="section-num">4.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.4.1</span> Докладчик {#докладчик}
 
 -   Кройтор О.К.
 -   Старший педагог кафедры Общеобразовательных дисциплин, РУДН
 -   Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
 
 
-### <span class="section-num">4.2</span> Информация {#информация}
+#### <span class="section-num">1.4.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/195/>
 -   Компьютерное моделирование некоторых задач математической физики
@@ -179,7 +182,7 @@ A system of algebraic nonlinear equations describing Dyakonov surface waves is s
 The spectral problem of the mathematical theory of waveguides is reduced to the study of a self-adjoint quadratic operator beam. A new method for constructing the dispersion curve of a waveguide with optically inhomogeneous filling is proposed. A program has been compiled in the Sage computer algebra system, in which this method is implemented for a rectangular waveguide with rectangular inserts and tested on SLE modes. It is shown that the program successfully copes with the calculation of the points of the dispersion curve corresponding to the hybrid modes of the waveguide and the points found with graphical accuracy fall on the analytical curve even with a small number of basic elements taken into account.
 
 
-### <span class="section-num">4.3</span> Видео {#видео}
+#### <span class="section-num">1.4.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -195,16 +198,16 @@ The spectral problem of the mathematical theory of waveguides is reduced to the 
 {{< /tabs >}}
 
 
-## <span class="section-num">5</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-10-27 Чт] </span></span> Еднерал В. Ф. _Об интегрируемости автономной системы ОДУ с зависящей от параметров полиномиальной правой частью_ {#еднерал-в-dot-ф-dot-об-интегрируемости-автономной-системы-оду-с-зависящей-от-параметров-полиномиальной-правой-частью}
+### <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-10-27 Чт] </span></span> Еднерал В. Ф. _Об интегрируемости автономной системы ОДУ с зависящей от параметров полиномиальной правой частью_ {#еднерал-в-dot-ф-dot-об-интегрируемости-автономной-системы-оду-с-зависящей-от-параметров-полиномиальной-правой-частью}
 
 
-### <span class="section-num">5.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
 
 -   Еднерал Виктор Фёдорович
 -   доцент кафедры Прикладной информатики и теории вероятностей РУДН
 
 
-### <span class="section-num">5.2</span> Информация {#информация}
+#### <span class="section-num">1.5.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/196/>
 -   Об интегрируемости автономной системы ОДУ с зависящей от параметров полиномиальной правой частью
@@ -225,7 +228,7 @@ In the report, on an experimental basis, a possible connection is considered bet
 Based on this hypothesis, a heuristic method is proposed that allows one to determine the cases of integrability of an autonomous ODE system with a polynomial right-hand side depending on a parameter in the presence of a resonance in the linear part of this system.
 
 
-### <span class="section-num">5.3</span> Видео {#видео}
+#### <span class="section-num">1.5.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -241,17 +244,17 @@ Based on this hypothesis, a heuristic method is proposed that allows one to dete
 {{< /tabs >}}
 
 
-## <span class="section-num">6</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-11-10 Чт] </span></span> Гостев И. М. _Управление заданиями в больших вычислительных системах на основе элементов ИИ_ {#гостев-и-dot-м-dot-управление-заданиями-в-больших-вычислительных-системах-на-основе-элементов-ии}
+### <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2022-11-10 Чт] </span></span> Гостев И. М. _Управление заданиями в больших вычислительных системах на основе элементов ИИ_ {#гостев-и-dot-м-dot-управление-заданиями-в-больших-вычислительных-системах-на-основе-элементов-ии}
 
 
-### <span class="section-num">6.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
 
 -   Гостев Иван Михайлович
 -   докт. техн. наук
 -   в.н.с. ИППИ РАН
 
 
-### <span class="section-num">6.2</span> Информация {#информация}
+#### <span class="section-num">1.6.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/200/>
 -   Управление заданиями в больших вычислительных системах на основе элементов ИИ
@@ -291,7 +294,7 @@ Obviously, the satisfaction of such conditions with a continuous flow of tasks a
 The report considers a simulation model of a system that satisfies the set conditions on the base of the queuing theory.
 
 
-### <span class="section-num">6.3</span> Видео {#видео}
+#### <span class="section-num">1.6.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -307,17 +310,17 @@ The report considers a simulation model of a system that satisfies the set condi
 {{< /tabs >}}
 
 
-## <span class="section-num">7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-12-15 Чт&gt; </span></span> Белов А. А. _Обобщение метода конечных разностей на задачи с особенностями в решении_ {#белов-а-dot-а-dot-обобщение-метода-конечных-разностей-на-задачи-с-особенностями-в-решении}
+### <span class="section-num">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-12-15 Чт&gt; </span></span> Белов А. А. _Обобщение метода конечных разностей на задачи с особенностями в решении_ {#белов-а-dot-а-dot-обобщение-метода-конечных-разностей-на-задачи-с-особенностями-в-решении}
 
 
-### <span class="section-num">7.1</span> Докладчик {#докладчик}
+#### <span class="section-num">1.7.1</span> Докладчик {#докладчик}
 
 -   Белов Александр Александрович
 -   к.ф.-м.н.
 -   доцент каф. Прикладной информатики и теории вероятностей
 
 
-### <span class="section-num">7.2</span> Информация {#информация}
+#### <span class="section-num">1.7.2</span> Информация {#информация}
 
 -
 
@@ -360,7 +363,7 @@ In the dissertation, new algorithms of the FDM for the following classes of prob
 3.  Problems for a system of one-dimensional Maxwell equations in layered media with frequency dispersion. A bicompact conservative difference scheme is proposed for a system of stationary and non-stationary one-dimensional Maxwell equations. A generalization of this scheme to the two-dimensional problem of the oblique incidence of plane wave radiation on a system of plane-parallel plates is constructed.
 
 
-### <span class="section-num">7.3</span> Видео {#видео}
+#### <span class="section-num">1.7.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -374,3 +377,66 @@ In the dissertation, new algorithms of the FDM for the following classes of prob
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+## <span class="section-num">2</span> 2023 {#2023}
+
+
+### <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-14 Вт] </span></span> Кройтор О. К. _Распространение монохроматических поляризованных волн оптического диапазона в направляющих структурах_ {#кройтор-о-dot-к-dot-распространение-монохроматических-поляризованных-волн-оптического-диапазона-в-направляющих-структурах}
+
+
+#### <span class="section-num">2.1.1</span> Докладчик {#докладчик}
+
+-   Кройтор О.К.
+-   Старший педагог кафедры Общеобразовательных дисциплин, РУДН
+-   Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+
+#### <span class="section-num">2.1.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/211/>
+-   Распространение монохроматических поляризованных волн оптического диапазона в направляющих структурах
+-   Кройтор О.К.
+-   Старший педагог кафедры Общеобразовательных дисциплин, РУДН
+-   Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+Распространение монохроматических поляризованных волн оптического диапазона в направляющих структурах
+Старший педагог кафедры Общеобразовательных дисциплин, РУДН
+Ассистент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+В докладе будут представлены новые численные и аналитические методы исследования распространения монохроматических поляризованных волн оптического диапазона в направляющих структурах, как можно более точно подражающих исходной задаче.
+Для анизотропного случая, разработан численно-аналитический метод исследования поверхностных волн Дьяконова. Особенностью этого подхода является решение системы алгебраических уравнений, описывающих волну Дьяконова в радикалах. Ранее эта система решалась численно и ее решение в конечном виде не было известно.
+Для изотропного случая, на основе векторной модели электромагнитного поля предложена новая самосопряженная постановка задачи построения дисперсионной кривой волновода, заполненного оптически неоднородным, но изотропным веществом.
+Разработан численный метод построения дисперсионной кривой на основе этой постановки и реализован в системе Sage. Проведена верификация на точно решаемых примерах, в которых возникают гибридные моды.
+
+---
+
+**Propagation of monochromatic polarized optical waves in guiding structures**
+_Senior teacher of the Department of General Education Disciplines, RUDN University_
+_Assistant of the Department of Applied Probability and Informatics, RUDN University_
+
+The report will present new numerical and analytical methods for studying the propagation of monochromatic polarized optical waves in guiding structures that mimic the original problem as accurately as possible.
+For the anisotropic case, a numerical-analytical method for studying Diakonov surface waves has been developed. A feature of this approach is the solution of a system of algebraic equations describing the Dyakonov wave in radicals. Previously, this system was solved numerically and its final solution was not known.
+For the isotropic case, based on the vector model of the electromagnetic field, a new self-adjoint formulation of the problem of constructing the dispersion curve of a waveguide filled with an optically inhomogeneous but isotropic substance is proposed.
+A numerical method for constructing a dispersion curve based on this formulation has been developed and implemented in the Sage system. Verification was carried out on precisely solved examples in which hybrid modes arise.
+
+
+### <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+
+
+### <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-14 Вт] </span></span> Цирулёв {#цирулёв}
+
+
+### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+
+
+### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+
+
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-25 Вт] </span></span> Ловецкий К. П. _Псевдо-спектральный метод_ {#ловецкий-к-dot-п-dot-псевдо-спектральный-метод}
+
+
+### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+
+
+### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}

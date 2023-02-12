@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2023-01-04T21:16:00+03:00
+lastmod: 2023-01-31T19:46:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -421,6 +421,10 @@ menu:
 -   Установим `pandoc`:
     ```shell
     dnf -y install pandoc
+    ```
+-   Установите необходимые расширения:
+    ```shell
+    pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos --user
     ```
 
 
