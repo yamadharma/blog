@@ -2,7 +2,7 @@
 title: "Диссертационный совет"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:46:00+03:00
-lastmod: 2023-02-03T19:26:00+03:00
+lastmod: 2023-02-13T09:34:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
