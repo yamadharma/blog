@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-02-02T20:11:00+03:00
+lastmod: 2023-02-14T16:12:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -419,6 +419,22 @@ The report will present new numerical and analytical methods for studying the pr
 For the anisotropic case, a numerical-analytical method for studying Diakonov surface waves has been developed. A feature of this approach is the solution of a system of algebraic equations describing the Dyakonov wave in radicals. Previously, this system was solved numerically and its final solution was not known.
 For the isotropic case, based on the vector model of the electromagnetic field, a new self-adjoint formulation of the problem of constructing the dispersion curve of a waveguide filled with an optically inhomogeneous but isotropic substance is proposed.
 A numerical method for constructing a dispersion curve based on this formulation has been developed and implemented in the Sage system. Verification was carried out on precisely solved examples in which hybrid modes arise.
+
+
+#### <span class="section-num">2.1.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 18091c13a857b73d9cf4d73a6b6afbb4 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube JEgZWwc1Qkg >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ### <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
