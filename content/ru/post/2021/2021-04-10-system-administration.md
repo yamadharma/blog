@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-02-05T14:06:00+03:00
+lastmod: 2023-02-20T13:43:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -43,7 +43,7 @@ slug: "system-administration"
 ### <span class="section-num">3.2</span> Установка операционных систем {#установка-операционных-систем}
 
 -   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
--   [Установка Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
+-   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 -   [Установка загрузчика grub]({{< relref "2021-09-19-installing-grub-bootloader" >}})
 -   [Использование vagrant]({{< relref "2021-11-12-using-vagrant" >}})
 
@@ -95,87 +95,92 @@ slug: "system-administration"
 -   [Утилита module]({{< relref "2022-07-24-module-utility" >}})
 
 
-## <span class="section-num">4</span> Языки программирования {#языки-программирования}
+## <span class="section-num">4</span> Файловые системы {#файловые-системы}
+
+-   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
+
+
+## <span class="section-num">5</span> Языки программирования {#языки-программирования}
 
 -   [Язык программирования HCL]({{< relref "2022-11-05-hcl-programming-language" >}})
 
 
-## <span class="section-num">5</span> Серверы приложений {#серверы-приложений}
+## <span class="section-num">6</span> Серверы приложений {#серверы-приложений}
 
 
-### <span class="section-num">5.1</span> Drupal {#drupal}
+### <span class="section-num">6.1</span> Drupal {#drupal}
 
 -   [Перенос Drupal на другую машину]({{< relref "2022-09-13-move-drupal-other-machine" >}})
 
 
-### <span class="section-num">5.2</span> OJS {#ojs}
+### <span class="section-num">6.2</span> OJS {#ojs}
 
 -   [Open Journal Systems]({{< relref "2022-10-22-open-journal-systems" >}})
 
 
-## <span class="section-num">6</span> Управление и мониторинг {#управление-и-мониторинг}
+## <span class="section-num">7</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 
 
-## <span class="section-num">7</span> Шрифты {#шрифты}
+## <span class="section-num">8</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">8</span> Пользовательские программы {#пользовательские-программы}
+## <span class="section-num">9</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">8.1</span> Обработка видео {#обработка-видео}
+### <span class="section-num">9.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">8.2</span> Виртуализация {#виртуализация}
+### <span class="section-num">9.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">8.3</span> Редакторы {#редакторы}
+### <span class="section-num">9.3</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-### <span class="section-num">8.4</span> Текстовые процессоры {#текстовые-процессоры}
+### <span class="section-num">9.4</span> Текстовые процессоры {#текстовые-процессоры}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 
 
-### <span class="section-num">8.5</span> Работа с дисками {#работа-с-дисками}
+### <span class="section-num">9.5</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-### <span class="section-num">8.6</span> Вычисления {#вычисления}
+### <span class="section-num">9.6</span> Вычисления {#вычисления}
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 -   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
-### <span class="section-num">8.7</span> Квантовая химия {#квантовая-химия}
+### <span class="section-num">9.7</span> Квантовая химия {#квантовая-химия}
 
 -   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
 
 
-### <span class="section-num">8.8</span> Синхронизация файлов {#синхронизация-файлов}
+### <span class="section-num">9.8</span> Синхронизация файлов {#синхронизация-файлов}
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
 
 
-### <span class="section-num">8.9</span> Файлы конфигурации {#файлы-конфигурации}
+### <span class="section-num">9.9</span> Файлы конфигурации {#файлы-конфигурации}
 
 -   [Управление файлами конфигурации. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
 
 
-## <span class="section-num">9</span> Безопасность {#безопасность}
+## <span class="section-num">10</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
@@ -184,17 +189,17 @@ slug: "system-administration"
 -   [Механизм HSTS]({{< relref "2022-05-03-hsts-mechanism" >}})
 
 
-## <span class="section-num">10</span> Сети {#сети}
+## <span class="section-num">11</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 
 
-## <span class="section-num">11</span> Организация обучения {#организация-обучения}
+## <span class="section-num">12</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">12</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">13</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})

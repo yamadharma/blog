@@ -2,7 +2,7 @@
 title: "Обслуживание btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-23T10:22:00+03:00
-lastmod: 2022-05-26T14:34:00+03:00
+lastmod: 2023-02-21T12:25:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -31,8 +31,7 @@ slug: "btrfs-maintenence"
 
 ### <span class="section-num">1.2</span> Установка {#установка}
 
--   Google
-
+-   Gentoo Linux
     ```shell
     emerge sys-fs/btrfsmaintenance
     ```
@@ -42,12 +41,10 @@ slug: "btrfs-maintenence"
 
 -   Данные действия выполняют обычно менеджеры пакетов.
 -   Обновление таймеров через _systemd_:
-
     ```shell
     /usr/share/btrfsmaintenance/btrfsmaintenance-refresh-cron.sh systemd-timer
     ```
 -   Обновление таблиц _crond_ (без _systemd_):
-
     ```shell
     /usr/share/btrfsmaintenance/btrfsmaintenance-refresh-cron.sh
     ```
@@ -57,7 +54,6 @@ slug: "btrfs-maintenence"
 
 -   Данные действия выполняют обычно менеджеры пакетов.
 -   Для удаления всех таймеров запустите:
-
     ```shell
     /usr/share/btrfsmaintenance/btrfsmaintenance-refresh-cron.sh uninstall
     ```

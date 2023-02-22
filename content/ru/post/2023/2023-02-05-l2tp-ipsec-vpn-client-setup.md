@@ -1,8 +1,8 @@
 ---
-title: "VPN. L2TP/IPsec. Подключение клиента"
+title: "VPN. L2TP over IPsec. Подключение клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-05T13:35:00+03:00
-lastmod: 2023-02-05T14:03:00+03:00
+lastmod: 2023-02-17T20:23:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

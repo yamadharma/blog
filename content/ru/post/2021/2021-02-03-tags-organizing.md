@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-01-17T18:54:00+03:00
+lastmod: 2023-02-18T20:39:00+03:00
 tags: ["MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -59,6 +59,7 @@ slug: "tags-organizing"
 -   `@life`: [Жизнь]({{< relref "2021-11-26-life" >}})
     -   `apartment`: [Квартира]({{< relref "2022-12-16-apartment" >}})
     -   `recreation`: [Отдых]({{< relref "2023-01-17-recreation" >}})
+    -   `money`: [Взгляд обывателя на финансы]({{< relref "2023-02-18-philistine-view-finance" >}})
 -   `@job`: Работа
     -   `rudn`: [РУДН]({{< relref "2023-01-17-rudn" >}})
 -   `@reflections`: [Мысли]({{< relref "2021-12-14-reflections" >}})
