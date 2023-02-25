@@ -1,20 +1,22 @@
 ---
-categories:
-  - листая-страницы
-date: '2015-10-26T08:46:00+00:00'
-lang: ru
-slug: zapiski-gidrodinamika
-tags:
-  - science-people
-  - science
-title: Бетяев С. К. - Записки гидродинамика
+title: "Бетяев, С. К. (2009): Записки гидродинамика"
+author: ["Dmitry S. Kulyabov"]
+date: 2015-10-26T15:51:00+03:00
+lastmod: 2023-02-25T17:18:00+03:00
+tags: ["science", "science-people"]
+categories: ["book"]
+draft: false
+slug: "betyaev_book_notes-hydrodynamicist_ru"
 ---
 
-## Бетяев С. К. --- Записки гидродинамика
-
-[http://libgen.li/book/index.php?md5=090a69b11bb67bf00e92d21f69502e0d](http://libgen.li/book/index.php?md5=090a69b11bb67bf00e92d21f69502e0d)  
+Бетяев С. К. --- Записки гидродинамика [<a href="#citeproc_bib_item_1">1</a>].
 
 <!--more-->
+
+{{< toc >}}
+
+
+## <span class="section-num">1</span> Резюме {#резюме}
 
 1.  Автор --- явная контра. Причём из раскулаченных, ненавидящих всё, что было в XX веке всеми фибрами души.
 2.  Кроме того, он воинствующий приверженец религии.
@@ -23,3 +25,12 @@ title: Бетяев С. К. - Записки гидродинамика
 5.  Автор имеет мнение по большому количеству вопросов науки. Правда, они производят впечатления писанины начитанного обывателя (письма учёного соседа).
 6.  Чувствуется сильное влияние Л. Н. Гумилёва и Ю. С. Владимирова.
 7.  Из всей книги полезного материала можно выделить на маленькую статью.
+
+## Литература
+
+<style>.csl-left-margin{float: left; padding-right: 0em;}
+ .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
+    <div class="csl-left-margin">1.</div><div class="csl-right-inline">Бетяев С.К. <a href="https://libgen.li/ads.php?md5=090a69b11bb67bf00e92d21f69502e0d">Записки гидродинамика</a>. Москва: Книжный дом «Либроком», 2009. 336 p.</div>
+  </div>
+</div>

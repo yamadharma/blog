@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-02-14T16:12:00+03:00
+lastmod: 2023-02-22T16:24:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -437,19 +437,59 @@ A numerical method for constructing a dispersion curve based on this formulation
 {{< /tabs >}}
 
 
-### <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+### <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-02 Чт] </span></span> Ловецкий К. П. _Численный спектральный метод коллокаций решения обыкновенных дифференциальных уравнений первого порядка_ {#ловецкий-к-dot-п-dot-численный-спектральный-метод-коллокаций-решения-обыкновенных-дифференциальных-уравнений-первого-порядка}
 
 
-### <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-14 Вт] </span></span> Цирулёв {#цирулёв}
+#### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
+
+-   Ловецкий Константин Петрович
+-   Доцент кафедры Прикладной информатики и теории вероятностей, РУДН
 
 
-### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+#### <span class="section-num">2.2.2</span> Информация {#информация}
+
+-   Численный спектральный метод коллокаций решения обыкновенных дифференциальных уравнений первого порядка
+-   Л.А. Севастьянов, К.П. Ловецкий, Д.С. Кулябов
+-   Кафедра прикладной информатики и теории вероятностей
+
+Рассмотрен классический спектральный метод коллокации, основанный на разложении решения по полиномам Чебышева. Метод состоит из нескольких этапов:
+
+-   интерполяция функций, основанная на свойстве дискретной ортогональности модифицированных матриц Чебышева;
+-   отыскание общего решения простейшего ОДУ на основе матриц интегрирования;
+-   отыскание общего решения ОДУ 1-го порядка методом интегрирующих множителей
+-   отыскание частного решения ОДУ 1-го порядка на основе дополнительных условий.
+
+Новизна подхода заключается в том, чтобы сначала выделить класс (множество) функций, удовлетворяющих дифференциальному уравнению с помощью устойчивого и простого с вычислительной точки зрения метода интерполяции (коллокации) производной будущего решения. Затем рассчитать коэффициенты (кроме первого) разложения будущего решения по вычисленным коэффициентам разложения производной с помощью матрицы интегрирования. И лишь после этого выделить из этого множества решений те, которые соответствуют заданным начальным/граничным условиям.
+
+---
+
+-   Numerical spectral collocation method for solving ordinary differential equations of the first order
+-   L.A. Sevastianov, K.P. Lovetskiy, D.S. Kulyabov
+-   Department of Applied Informatics and Probability Theory
+
+The classical spectral method of collocation based on the expansion of the solution in terms of Chebyshev polynomials is considered. The method consists of several stages:
+
+-   interpolation of functions based on the property of discrete orthogonality of modified Chebyshev matrices;
+-   search for general solution to the simplest ODE based on integration matrices;
+-   search for general solution to the 1st order ODE by the method of integrating factors;
+-   search for particular solution to the 1st order ODE based on additional conditions.
+
+The novelty of the approach is to first select a class (set) of functions that satisfy the differential equation using a stable and computationally simple method of interpolation (collocation) of the derivative of the future solution. Then calculate the coefficients (except for the first one) of the expansion of the future solution by the calculated expansion coefficients of the derivative using the integration matrix. And only after that, select from this set of solutions those that correspond to the given initial/boundary conditions.
 
 
-### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+#### <span class="section-num">2.2.3</span> Видео {#видео}
 
 
-### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-25 Вт] </span></span> Ловецкий К. П. _Псевдо-спектральный метод_ {#ловецкий-к-dot-п-dot-псевдо-спектральный-метод}
+### <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+
+
+### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-14 Вт] </span></span> Цирулёв {#цирулёв}
+
+
+### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+
+
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
 
 
 ### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
