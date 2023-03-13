@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-02-20T13:43:00+03:00
+lastmod: 2023-03-02T16:05:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -180,6 +180,11 @@ slug: "system-administration"
 -   [Управление файлами конфигурации. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
 
 
+### <span class="section-num">9.10</span> Сетевые клиенты {#сетевые-клиенты}
+
+-   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
+
+
 ## <span class="section-num">10</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
@@ -193,6 +198,11 @@ slug: "system-administration"
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
+
+
+### <span class="section-num">11.1</span> Мониторинг {#мониторинг}
+
+-   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 
 
 ## <span class="section-num">12</span> Организация обучения {#организация-обучения}

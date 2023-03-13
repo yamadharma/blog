@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2022-08-04T13:09:00+03:00
+lastmod: 2023-03-06T15:57:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -25,6 +25,9 @@ slug: "routing-vyos"
     -   Документация: <https://docs.vyos.io/>.
     -   Документация в `pdf`: <https://buildmedia.readthedocs.org/media/pdf/vyos/latest/vyos.pdf>.
     -   Блог: <https://blog.vyos.io/>.
+-   Поддержка Vagrant (см. [Использование vagrant]({{< relref "2021-11-12-using-vagrant" >}})).
+    -   Образы для Vagrant: <https://app.vagrantup.com/vyos/>.
+    -   Плагин для Vagrant: <https://github.com/higebu/vagrant-vyos>.
 -   Форк проекта _Vyatta_.
 -   Реализовано на основе дистрибутива Debian.
 -   Система команд похожа на Juniper.

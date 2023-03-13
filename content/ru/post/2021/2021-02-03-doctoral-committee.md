@@ -2,7 +2,7 @@
 title: "Диссертационный совет"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:46:00+03:00
-lastmod: 2023-02-13T09:34:00+03:00
+lastmod: 2023-03-01T12:22:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -21,7 +21,8 @@ slug: "doctoral-committee"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Сайт диссертационного совета <https://events.rudn.ru/category/15/>.
+-   Сайт диссертационного совета (локальный): <https://events.rudn.ru/category/15/>.
+-   Сайт диссертационного совета на сервере РУДН: <https://www.rudn.ru/science/dissovet/dissertacionnye-sovety/pds-0200006>.
 
 
 ## <span class="section-num">2</span> История совета {#история-совета}
@@ -29,21 +30,27 @@ slug: "doctoral-committee"
 
 ### <span class="section-num">2.1</span> ПДС 0200.006 {#пдс-0200-dot-006}
 
--   Сайт диссертационного совета <https://events.rudn.ru/category/15/>.
+-   Сайт диссертационного совета (локальный): <https://events.rudn.ru/category/15/>.
+-   Сайт диссертационного совета на сервере РУДН: <https://www.rudn.ru/science/dissovet/dissertacionnye-sovety/pds-0200006>.
 
 
 ### <span class="section-num">2.2</span> ПДС 0200.001 {#пдс-0200-dot-001}
 
--   Сайт диссертационного совета <https://events.rudn.ru/category/11/>.
--   Диссертационный совет считается закрытым с 2022-10-10.
+-   Сайт диссертационного совета (локальный): <https://events.rudn.ru/category/11/>.
+-   Сайт диссертационного совета на сервере РУДН: <http://dissovet.rudn.ru/web-local/prep/rj/index.php?id=55>.
 -   Специальности:
     -   05.13.17 Теоретические основы информатики;
     -   05.13.18 Математическое моделирование, численные методы и комплексы программ.
+-   Диссертационный совет считается закрытым с 2022-10-10.
 
 
 ### <span class="section-num">2.3</span> Д 212.203.28 {#д-212-dot-203-dot-28}
 
--   Сайт диссертационного совета <https://events.rudn.ru/category/9/>.
+-   Сайт диссертационного совета (локальный): <https://events.rudn.ru/category/9/>.
+-   Сайт диссертационного совета на сервере РУДН: <http://dissovet.rudn.ru/web-local/prep/rj/index.php?id=27>.
+-   Специальности:
+    -   05.13.17 Теоретические основы информатики;
+    -   05.13.18 Математическое моделирование, численные методы и комплексы программ.
 -   Диссертационный совет считается закрытым с 2019-07-01.
 
 

@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-02-22T16:24:00+03:00
+lastmod: 2023-03-12T20:36:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -479,11 +479,49 @@ The novelty of the approach is to first select a class (set) of functions that s
 
 #### <span class="section-num">2.2.3</span> Видео {#видео}
 
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
 
-### <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+{{< rutube 852d0a89ef938333551793d4d559673d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube ACK-S6l8C0k >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
-### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-14 Вт] </span></span> Цирулёв {#цирулёв}
+### <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-16 Чт] </span></span> Цирулёв А. Н. _Математические модели событий приливного разрушения звезд в центрах галактик_ {#цирулёв-а-dot-н-dot-математические-модели-событий-приливного-разрушения-звезд-в-центрах-галактик}
+
+
+#### <span class="section-num">2.3.1</span> Докладчик {#докладчик}
+
+-   Цирулёв А. Н.
+-   Математический факультет, Тверской госуниверситет, Тверь, Россия
+
+
+#### <span class="section-num">2.3.2</span> Информация {#информация}
+
+-   Математические модели событий приливного разрушения звезд в центрах галактик
+-   Э.Л. Андре, А.Н. Цирулев
+-   Факультет естественных наук, Университет Агостиньо Нето, Луанда, Ангола
+-   Математический факультет, Тверской госуниверситет, Тверь, Россия
+
+Доклад посвящен приливным силам вблизи объектов с сильной гравитацией в центрах галактик. В нашем подходе темная материя, окружающая центры галактик, моделируется нелинейным скалярным полем. Мы фокусируемся на статических, асимптотически плоских, сферически симметричных черных дырах и голых сингулярностях, которые образованы скалярным полем, минимально связанным с гравитацией. Мы рассматриваем влияние темной материи на приливные силы, вызываемые центральными объектами, и некоторые особенности движения материи вблизи этих конфигураций. Оказывается, во-первых, что радиус горизонта событий черной дыры со скалярным полем может быть сколь угодно мал, так же как и радиус внутренней устойчивой круговой орбиты, а приливные силы вблизи этой орбиты могут быть очень большими. Во-вторых, мы показываем, что если сильно гравитирующие объекты в центрах галактик являются голыми сингулярностями, то яркие вспышки (события приливного разрушения) в ядрах галактик можно объяснить по-другому. Вблизи голой сингулярности скалярного поля барионная материя концентрируется в гравитационной потенциальной яме, образуя «серую оболочку», состоящую из холодного сжатого вещества. В данном случае вспышки вызваны столкновениями звезд с этой оболочкой.
+
+---
+
+-   Mathematical models of tidal disruption events in the centers of galaxies
+-   E.L. Andre and A.N. Tsirulev
+-   Faculty of Sciences, Agostinho Neto University, Luanda, Angola
+-   Faculty of Mathematics, Tver State University, Tver, Russia
+
+This report is devoted to tidal forces near strongly gravitating objects at the centers of galaxies. In our approach, dark matter surrounding the centers of galaxies is modeled by a nonlinear scalar field. We focus on static, asymptotically flat, spherically symmetric black holes and naked singularities supported by a real self-gravitating scalar field minimally coupled to gravity. We consider the influence of dark matter on the tidal forces caused by the central objects and some features of the motion of matter near these configurations. It turns out, first, that the event horizon radius of a scalar field black hole can be arbitrarily small as well as the radius of the innermost stable circular orbit, and tidal forces near this orbit can be very large. Second, we show that if strongly gravitating objects in the centers of galaxies are naked singularities, then bright flares (tidal disruption events) in the nuclei of galaxies can be explained in different way. In the vicinity of a scalar field naked singularity, baryonic matter is concentrated in the gravitational potential well forming a \`\`gray shell'' consisting of cold compressed matter. In this case, the flares are caused by the collisions of stars with this shell.
+
+
+### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
 
 
 ### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}

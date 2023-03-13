@@ -2,9 +2,9 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2022-12-17T16:24:00+03:00
+lastmod: 2023-03-08T11:36:00+03:00
 tags: ["programming"]
-categories: ["сиянс", "computer-science"]
+categories: ["computer-science"]
 draft: false
 slug: "monospace-fonts"
 ---
@@ -75,6 +75,9 @@ slug: "monospace-fonts"
 
 ### <span class="section-num">5.2</span> Iosevka {#iosevka}
 
+
+#### <span class="section-num">5.2.1</span> Общая информация {#общая-информация}
+
 -   Сайт: <https://typeof.net/Iosevka/>
 -   Репозиторий: <https://github.com/be5invis/Iosevka/>
 -   Дизайн на основе:
@@ -90,11 +93,33 @@ slug: "monospace-fonts"
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: есть
     -   Курсив: есть
--   Установка.
-    -   Gentoo:
-        ```shell
-        emerge media-fonts/iosevka
-        ```
+
+
+#### <span class="section-num">5.2.2</span> Варианты {#варианты}
+
+-   Для всех вариантов пакеты содержат три варианта интервалов.
+    -   _Default_: вариант по умолчанию с лигатурами. Также содержит широкие (2 столбца) символы (например, стрелки).
+    -   _Terminal (Term)_: более узкий вариант для терминала. Стрелки и геометрические символы будут узкими.
+    -   _Fixed_: моноширинный шрифт без лигатур и широких глифов.
+        -   Некоторые среды не воспринимают _Iosevka_ или _Iosevka Term_ как моноширинные шрифты и не могут работать с лигатурами.
+
+
+#### <span class="section-num">5.2.3</span> Начертания {#начертания}
+
+-   _Iosevka_: Monospace, Default.
+-   _Iosevka Slab_: Monospace, Slab-serif.
+-   _Iosevka Curly_: Monospace, Curly Style.
+-   _Iosevka Curly Slab_: Monospace, Curly Style, Slab-serif.
+-   _Iosevka Aile_: Quasi-proportional, Sans-serif.
+-   _Iosevka Etoile_: Quasi-proportional, Slab-serif.
+
+
+#### <span class="section-num">5.2.4</span> Установка {#установка}
+
+-   Gentoo:
+    ```shell
+    emerge media-fonts/iosevka
+    ```
 
 
 ### <span class="section-num">5.3</span> JetBrains Mono {#jetbrains-mono}

@@ -2,7 +2,7 @@
 title: "Bibtex. Пакет bibtex-tydy"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-13T17:27:00+03:00
-lastmod: 2022-12-15T12:26:00+03:00
+lastmod: 2023-02-26T20:47:00+03:00
 draft: false
 slug: "bibtex-tydy"
 ---
