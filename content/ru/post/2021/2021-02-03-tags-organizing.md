@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-02-18T20:39:00+03:00
+lastmod: 2023-03-17T18:00:00+03:00
 tags: ["MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -49,9 +49,9 @@ slug: "tags-organizing"
     -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
     -   `org_mode`: [Org-mode]({{< relref "2021-10-14-org-mode" >}})
     -   `org_roam`: [Org-roam]({{< relref "2022-11-23-org-roam" >}})
--   `@blog`
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
     -   `gtd`: [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})
+    -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})
 -   `@book`: [Прочитанные книги]({{< relref "2020-12-15-books" >}})
     -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
     -   `culture`[^fn:3]: [Книги. Культура]({{< relref "2021-01-10-books-culture" >}})

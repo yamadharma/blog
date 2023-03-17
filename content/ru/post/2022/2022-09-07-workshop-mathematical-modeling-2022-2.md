@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-03-12T20:36:00+03:00
+lastmod: 2023-03-16T17:39:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -448,6 +448,7 @@ A numerical method for constructing a dispersion curve based on this formulation
 
 #### <span class="section-num">2.2.2</span> Информация {#информация}
 
+-   <https://events.rudn.ru/event/215/>
 -   Численный спектральный метод коллокаций решения обыкновенных дифференциальных уравнений первого порядка
 -   Л.А. Севастьянов, К.П. Ловецкий, Д.С. Кулябов
 -   Кафедра прикладной информатики и теории вероятностей
@@ -504,6 +505,7 @@ The novelty of the approach is to first select a class (set) of functions that s
 
 #### <span class="section-num">2.3.2</span> Информация {#информация}
 
+-   <https://events.rudn.ru/event/217/>
 -   Математические модели событий приливного разрушения звезд в центрах галактик
 -   Э.Л. Андре, А.Н. Цирулев
 -   Факультет естественных наук, Университет Агостиньо Нето, Луанда, Ангола
@@ -519,6 +521,22 @@ The novelty of the approach is to first select a class (set) of functions that s
 -   Faculty of Mathematics, Tver State University, Tver, Russia
 
 This report is devoted to tidal forces near strongly gravitating objects at the centers of galaxies. In our approach, dark matter surrounding the centers of galaxies is modeled by a nonlinear scalar field. We focus on static, asymptotically flat, spherically symmetric black holes and naked singularities supported by a real self-gravitating scalar field minimally coupled to gravity. We consider the influence of dark matter on the tidal forces caused by the central objects and some features of the motion of matter near these configurations. It turns out, first, that the event horizon radius of a scalar field black hole can be arbitrarily small as well as the radius of the innermost stable circular orbit, and tidal forces near this orbit can be very large. Second, we show that if strongly gravitating objects in the centers of galaxies are naked singularities, then bright flares (tidal disruption events) in the nuclei of galaxies can be explained in different way. In the vicinity of a scalar field naked singularity, baryonic matter is concentrated in the gravitational potential well forming a \`\`gray shell'' consisting of cold compressed matter. In this case, the flares are caused by the collisions of stars with this shell.
+
+
+#### <span class="section-num">2.3.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube cff63e50f0c3a0eb358225162775683f >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube 2K9ku8JPaBE >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
