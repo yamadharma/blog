@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-03-17T18:00:00+03:00
+lastmod: 2023-03-19T16:45:00+03:00
 tags: ["MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -42,6 +42,7 @@ slug: "tags-organizing"
     -   `hugo`: [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
     -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
     -   `network`:
+    -   `hard`:
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
     -   `linux`:
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})

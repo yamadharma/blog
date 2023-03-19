@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-03-02T16:05:00+03:00
+lastmod: 2023-03-19T17:17:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -148,9 +148,10 @@ slug: "system-administration"
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-### <span class="section-num">9.4</span> Текстовые процессоры {#текстовые-процессоры}
+### <span class="section-num">9.4</span> Офисные программы {#офисные-программы}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
+-   [Альтернативы Microsoft Office]({{< relref "2023-03-19-microsoft-office-alternatives" >}})
 
 
 ### <span class="section-num">9.5</span> Работа с дисками {#работа-с-дисками}
@@ -203,6 +204,11 @@ slug: "system-administration"
 ### <span class="section-num">11.1</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
+
+
+### <span class="section-num">11.2</span> Железо {#железо}
+
+-   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
 ## <span class="section-num">12</span> Организация обучения {#организация-обучения}
