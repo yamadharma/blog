@@ -2,7 +2,8 @@
 title: "Фильтры pandoc"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T20:00:00+03:00
-lastmod: 2021-08-29T20:47:00+03:00
+lastmod: 2023-03-25T13:47:00+03:00
+tags: ["pandoc", "markdown"]
 categories: ["computer-science"]
 draft: false
 slug: "pandoc-filters"
@@ -68,18 +69,15 @@ slug: "pandoc-filters"
             -   Например, если установить для `LUA_PATH` значение `mydir/?.lua;;`, окончательным путём будет компонент `mydir/?.lua`, за которым следует путь по умолчанию.
         -   Для каждого шаблона `require` будет заменять каждый вопросительный знак на имя файла `filename`.
     -   Пусть путь задан следующим образом:
-
         ```shell
         ?;?.lua;c:\windows\?;/usr/local/lua/?/?.lua
         ```
 
         -   В модуле делается вызов:
-
             ```lua
             require "sql"
             ```
         -   Ищутся файлы:
-
             ```shell
             sql
             sql.lua
@@ -87,7 +85,14 @@ slug: "pandoc-filters"
             /usr/local/lua/sql/sql.lua
             ```
 -   Я в проекте библиотеки размещаю в каталоге `pandoc/lua`, поэтому задаю переменную среды:
-
     ```shell
     LUA_PATH="pandoc/lua/?.lua;;"
     ```
+
+
+## <span class="section-num">3</span> Фильтры по области применения {#фильтры-по-области-применения}
+
+
+### <span class="section-num">3.1</span> Включения других файлов в документ {#включения-других-файлов-в-документ}
+
+-   [Pandoc. Фильтры. Включение файлов]({{< relref "2023-03-23-pandoc-filters-include" >}})

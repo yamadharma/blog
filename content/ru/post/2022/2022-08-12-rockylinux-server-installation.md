@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2022-12-29T15:18:00+03:00
+lastmod: 2023-03-20T16:43:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -182,7 +182,7 @@ slug: "rockylinux-server-installation"
 -   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
     ```shell
-    dnf install dnf-automatic
+    dnf -y install dnf-automatic
     ```
 -   Задаёте необходимую конфигурацию в файле `/etc/dnf/automatic.conf`.
 -   Запустите таймер:

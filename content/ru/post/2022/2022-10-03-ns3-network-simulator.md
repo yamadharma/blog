@@ -2,8 +2,8 @@
 title: "Средство имитационного моделирования NS-3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-03T15:41:00+03:00
-lastmod: 2022-10-03T15:42:00+03:00
-tags: ["modeling"]
+lastmod: 2023-03-25T19:56:00+03:00
+tags: ["MOC", "modeling"]
 categories: ["science"]
 draft: false
 slug: "ns3-network-simulator"
@@ -13,6 +13,6 @@ slug: "ns3-network-simulator"
 
 <!--more-->
 
-{{< toc >}}
+@hugo:{{&lt; toc &gt;}}@@
 
 -   [Установка NS-3]({{< relref "2022-10-03-ns3-installation" >}})

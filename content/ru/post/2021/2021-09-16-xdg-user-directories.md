@@ -2,7 +2,9 @@
 title: "XDG. Пользовательские каталоги"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-16T20:15:00+03:00
-lastmod: 2021-09-25T21:00:00+03:00
+lastmod: 2023-04-02T13:37:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "xdg-user-directories"
 ---
@@ -31,7 +33,6 @@ slug: "xdg-user-directories"
 
 -   Программа `xdg-user-dir` служит для запроса имён каталогов, соответствующих стандартным переменным.
 -   Например, для получения каталога для переменной `XDG_TEMPLATES_DIR` (это каталог, содержащий шаблоны):
-
     ```shell
     xdg-user-dir TEMPLATES
     ```
@@ -43,14 +44,12 @@ slug: "xdg-user-directories"
     -   `/etc/xdg/user-dirs.conf`: уровень системы;
     -   `~/.config/user-dirs.conf`: уровень пользователя.
     -   Содержание данного файла имеет вид:
-
-        ```conf
+        ```cfg
         enabled=True
         filename_encoding=UTF-8
         ```
 -   Имена каталогов по умолчанию (системный уровень) находятся в файле `/etc/xdg/user-dirs.defaults`:
-
-    ```conf
+    ```cfg
     # Default settings for user directories
     #
     # The values are relative pathnames from the home directory and
@@ -70,8 +69,7 @@ slug: "xdg-user-directories"
     ```
 -   Локальный файл конфигурации `~/.config/user-dirs.dirs` используется для явного задания имён каталогов.
     -   Например, файл `~/.config/user-dirs.dirs` со стандартными английскими названиями:
-
-        ```conf
+        ```cfg
         XDG_DESKTOP_DIR="$HOME/Desktop"
         XDG_DOCUMENTS_DIR="$HOME/Documents"
         XDG_DOWNLOAD_DIR="$HOME/Downloads"
@@ -83,7 +81,6 @@ slug: "xdg-user-directories"
         ```
     -   Редактировать этот файл можно как непосредственно, так и с помощью утилиты `xdg-user-dirs-update`.
     -   Например, зададим значение `XDG_DOWNLOAD_DIR` как `$HOME/Internet`:
-
         ```shell
         xdg-user-dirs-update --set DOWNLOAD ~/Internet
         ```
@@ -94,18 +91,15 @@ slug: "xdg-user-directories"
 
 -   Иногда русские названия стандартных каталогов не очень удобны. Например, при работе в консоли приходится переключать язык.
 -   Для принудительного создания каталогов с английскими именами можно использовать:
-
     ```shell
     LC_ALL=en_US xdg-user-dirs-update --force
     ```
 -   Для фиксации локали для каталогов нужно задать её в файле конфигурации:
-
     ```shell
     echo 'en_US' > ~/.config/user-dirs.locale
     ```
 
     -   После этого надо пересоздать каталоги:
-
         ```shell
         LC_ALL=en_US xdg-user-dirs-update --force
         ```

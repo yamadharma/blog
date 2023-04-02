@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-03-19T16:45:00+03:00
+lastmod: 2023-04-02T19:14:00+03:00
 tags: ["MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -33,6 +33,7 @@ slug: "tags-organizing"
     -   `sci_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
     -   `sci_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
     -   `sci_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
+    -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})
 -   `@physics`:
     -   `maxwell`
     -   `kinetic`
@@ -44,6 +45,7 @@ slug: "tags-organizing"
     -   `network`:
     -   `hard`:
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
+    -   `pandoc`: [Pandoc]({{< relref "2021-08-28-pandoc" >}})
     -   `linux`:
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
     -   `redhat`:
@@ -57,16 +59,19 @@ slug: "tags-organizing"
     -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
     -   `culture`[^fn:3]: [Книги. Культура]({{< relref "2021-01-10-books-culture" >}})
     -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
+    -   `history`:
 -   `@life`: [Жизнь]({{< relref "2021-11-26-life" >}})
     -   `apartment`: [Квартира]({{< relref "2022-12-16-apartment" >}})
     -   `recreation`: [Отдых]({{< relref "2023-01-17-recreation" >}})
     -   `money`: [Взгляд обывателя на финансы]({{< relref "2023-02-18-philistine-view-finance" >}})
 -   `@job`: Работа
     -   `rudn`: [РУДН]({{< relref "2023-01-17-rudn" >}})
--   `@reflections`: [Мысли]({{< relref "2021-12-14-reflections" >}})
+-   `@thinking`: [Мысли]({{< relref "2021-12-14-reflections" >}})
+    -   `sociology`: [Социологические заметки]({{< relref "2021-10-23-sociological-notes" >}})
 -   `@games`: [Компьютерные игры]({{< relref "2022-06-07-computer-games" >}})
     -   `disciples`: [Disciples]({{< relref "2022-06-07-disciples-game" >}})
     -   `homm`: [Heroes of Might and Magic]({{< relref "2022-06-07-homm" >}})
+    -   `mm`: [Might And Magic]({{< relref "2023-04-02-might-magic" >}})
 
 | Уровень  | org-mode todo | org-roam            | blog (ru)        | blog (en)         |
 |----------|---------------|---------------------|------------------|-------------------|

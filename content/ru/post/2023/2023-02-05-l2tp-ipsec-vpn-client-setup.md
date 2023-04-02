@@ -2,7 +2,7 @@
 title: "VPN. L2TP over IPsec. Подключение клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-05T13:35:00+03:00
-lastmod: 2023-02-17T20:23:00+03:00
+lastmod: 2023-03-20T14:57:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -53,3 +53,12 @@ slug: "l2tp-ipsec-vpn-client-setup"
             USE="-caps -non-root" emerge strongswan
             ```
         -   либо собрать NetworkManager с поддержкой capabilities (см. <https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/merge_requests/1053>).
+
+
+## <span class="section-num">2</span> L2TP over IPSec через межсетевой экран с NAT {#l2tp-over-ipsec-через-межсетевой-экран-с-nat}
+
+-   Необходимо задать правила на межсетевом экране для трафика L2TP over IPSec VPN.
+-   IKE (UDP 500) --- протокол обмена ключами. Без него IPSec не работает. Посредством этого протокола происходит согласование и обмен ключами. Пробрасывать нужно.
+-   NAT-T (UDP 4500) --- протокол инкапсулирует IPSec в UDP пакеты, что позволяет проходить трафику через NAT. Без этого протокола пакет не дойдет до получателя, а будут потерян на первом же NAT устройстве. Пробрасывать нужно.
+-   ESP (protocol 50) --- протокол обеспечивает шифрование, аутентификацию и целостность. Инкапсулируется в UDP.  Пробрасывать не нужно.
+-   L2TP (UDP 1701) --- протокол туннелирования. О нём знают только оконечные узлы туннеля IPSec. Инкапсулируется в IPSec.. Пробрасывать не нужно

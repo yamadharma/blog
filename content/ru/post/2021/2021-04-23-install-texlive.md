@@ -1,14 +1,15 @@
 ---
-title: "Установка TeX Live"
+title: "Установка TeXlive"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2021-06-02T16:28:00+03:00
+lastmod: 2023-03-22T17:53:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
 slug: "install-texlive"
 ---
 
-Установка дистрибутива _TeX Live_.
+Установка дистрибутива _TeXlive_.
 
 <!--more-->
 
@@ -39,12 +40,10 @@ slug: "install-texlive"
 -   Для Windows: запускаете исполняемый файл и устанавливаете.
 -   Для Linux
     -   Распаковываете скачанный файл:
-
         ```shell
         tar xzvf install-tl-unx.tar.gz.
         ```
     -   Заходите в распакованный каталог и запускаете установщик:
-
         ```shell
         ./install-tl
         ```
@@ -54,7 +53,6 @@ slug: "install-texlive"
 ### <span class="section-num">2.2</span> Установка с помощью менеджера пакетов {#установка-с-помощью-менеджера-пакетов}
 
 -   Windows. Используйте пакетный менеджер Chocolatey.
-
     ```shell
     choco install texlive
     ```
@@ -69,7 +67,6 @@ slug: "install-texlive"
 -   Храним её в каталоге `/com/lib/portage/extras/texlive` (естественно, можно выбрать любой).
 -   Данный каталог расшариваем по NFS (например).
 -   Сделаем скрипт для ежедневного скачивания:
-
     ```shell
     #!/bin/bash
     # /etc/cron.daily/texlive-rsync-tree
@@ -87,7 +84,6 @@ slug: "install-texlive"
 #### <span class="section-num">3.2.1</span> Установка {#установка}
 
 -   На клиентах вначале устанавливаем вручную. Для этого на клиенте запускаем:
-
     ```shell
     /com/lib/portage/extras/texlive/install-tl --repository=/com/lib/portage/extras/texlive
     ```
@@ -96,7 +92,6 @@ slug: "install-texlive"
 ### <span class="section-num">3.3</span> Обновление {#обновление}
 
 -   Для обновления используем на клиенте скрипт:
-
     ```shell
     #!/bin/bash
     # /etc/cron.weekly/texlive-update
@@ -110,3 +105,54 @@ slug: "install-texlive"
         tlmgr update --all
     fi
     ```
+
+
+## <span class="section-num">4</span> Обновление до следующей версии TeXlive {#обновление-до-следующей-версии-texlive}
+
+-   Рекомендуется установить новую версию TeXlive отдельно.
+-   Но можно сделать ручное обновление, используя уже существующую установку.
+-   Будем считать, что у нас архитектура `x86_64-linux`.
+-   Если вы установили символические ссылки в системные каталоги (через опцию установщика или `tlmgr path add`), удалите их:
+    ```shell
+    tlmgr path remove
+    ```
+-   Перенесите весь каталог TeXlive так, чтобы он соответствовал новой версии, например:
+    ```shell
+    mv /usr/local/texlive/2022/ /usr/local/texlive/2023
+    ```
+-   Удалите бекапы пакетов:
+    ```shell
+    rm /usr/local/texlive/2023/tlpkg/backups/*
+    ```
+-   Создайте ссылки на исполняемые файлы:
+    ```shell
+    /usr/local/texlive/2023/bin/x86_64-linux/tlmgr path add
+    ```
+-   Загрузите последнюю версию скрипта `update-tlmgr-latest.sh`:
+    ```shell
+    cd /tmp
+    wget https://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
+    ```
+-   Запустите скрипт:
+    ```shell
+    sh ./update-tlmgr-latest.sh -- upgrade
+    ```
+-   Если вы не хотите использовать репозиторий по умолчанию для загрузки новых файлов, то замените его:
+    ```shell
+    tlmgr option repository <reponame>
+    ```
+-   Обновите менеджер пакетов TeXlive:
+    ```shell
+    tlmgr update --self
+    ```
+-   Обновите пакеты TeXlive:
+    ```shell
+    tlmgr update --all
+    ```
+-   Можно пересоздать кэш _lualatex_ под пользователем:
+    ```shell
+    rm -rvf ~/.texlive2022
+    luaotfload-tool -fu
+    ```
+
+    -   Если этого не сделать, то кэш будет пересоздан при первом запуске `lualatex`.

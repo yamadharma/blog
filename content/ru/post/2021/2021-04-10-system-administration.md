@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-03-19T17:17:00+03:00
+lastmod: 2023-04-02T14:10:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -29,6 +29,7 @@ slug: "system-administration"
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
 -   [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})
+-   [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
 
 
@@ -186,6 +187,11 @@ slug: "system-administration"
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 
 
+### <span class="section-num">9.11</span> Телеконференции {#телеконференции}
+
+-   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
+
+
 ## <span class="section-num">10</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
@@ -204,6 +210,7 @@ slug: "system-administration"
 ### <span class="section-num">11.1</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
+-   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 
 
 ### <span class="section-num">11.2</span> Железо {#железо}

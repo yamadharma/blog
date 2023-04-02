@@ -2,8 +2,9 @@
 title: "Мысли"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-14T17:33:00+03:00
-lastmod: 2021-12-22T18:25:00+03:00
-categories: ["мысли"]
+lastmod: 2023-04-02T19:16:00+03:00
+tags: ["MOC"]
+categories: ["thinking"]
 draft: false
 slug: "reflections"
 ---
@@ -13,6 +14,7 @@ slug: "reflections"
 <!--more-->
 
 {{< toc >}}
+\#+end_export
 
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
@@ -22,6 +24,3 @@ slug: "reflections"
 
 
 ## <span class="section-num">2</span> По годам {#по-годам}
-
-
-### <span class="section-num">2.1</span> 2021 {#2021}

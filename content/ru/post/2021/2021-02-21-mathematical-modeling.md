@@ -2,8 +2,8 @@
 title: "Математическое моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-21T16:33:00+03:00
-lastmod: 2022-10-03T15:51:00+03:00
-tags: ["modeling"]
+lastmod: 2023-03-25T19:58:00+03:00
+tags: ["MOC", "modeling"]
 categories: ["science"]
 draft: false
 slug: "mathematical-modeling"
@@ -36,6 +36,7 @@ slug: "mathematical-modeling"
 
 -   [Средство имитационного моделирования NS-2]({{< relref "2021-04-21-ns2-network-simulator" >}})
 -   [Средство имитационного моделирования NS-3]({{< relref "2022-10-03-ns3-network-simulator" >}})
+-   [Симулятор трафика Simulation of Urban MObility (SUMO)]({{< relref "2023-03-25-simulation-urban-mobility-sumo" >}})
 
 
 ### <span class="section-num">2.4</span> Статистическое моделирование {#статистическое-моделирование}

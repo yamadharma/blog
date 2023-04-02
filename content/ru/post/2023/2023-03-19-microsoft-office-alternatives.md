@@ -2,7 +2,7 @@
 title: "Альтернативы Microsoft Office"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-19T17:13:00+03:00
-lastmod: 2023-03-19T18:27:00+03:00
+lastmod: 2023-03-25T15:38:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -27,6 +27,7 @@ slug: "microsoft-office-alternatives"
 
 -   Сайт: <https://www.onlyoffice.com/>.
 -   Репозитории: <https://github.com/ONLYOFFICE/>.
+-   Веб-сервис: <https://personal.onlyoffice.com/ru>.
 -   Интерфейс пакета сделан очень близко к MS Office.
 -   Есть Community версия.
 -   Операционные системы: Windows, OS X, Linux, iOS, Android.

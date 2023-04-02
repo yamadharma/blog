@@ -2,9 +2,9 @@
 title: "Преподавание. Методические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-24T18:10:00+03:00
-lastmod: 2021-10-12T12:54:00+03:00
+lastmod: 2023-04-02T17:53:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "teaching-methodical-notes"
 ---
@@ -21,6 +21,7 @@ slug: "teaching-methodical-notes"
 -   [Структура лабораторной работы]({{< relref "2021-01-16-laboratory-work-structure" >}})
 -   [Лекционные занятия]({{< relref "2021-03-17-lectures" >}})
 -   [Учебное видео]({{< relref "2021-10-12-instructional-video" >}})
+-   [Активности при преподавании предмета]({{< relref "2023-04-02-activities-teaching" >}})
 
 
 ## <span class="section-num">2</span> Методика преподавания {#методика-преподавания}
