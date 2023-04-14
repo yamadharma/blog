@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-03-16T17:39:00+03:00
+lastmod: 2023-04-13T17:31:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -539,16 +539,65 @@ This report is devoted to tidal forces near strongly gravitating objects at the 
 {{< /tabs >}}
 
 
-### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+### <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-13 Чт] </span></span> Геворкян М. Н. _Применение проективной геометрии в компьютерной графике_ {#геворкян-м-dot-н-dot-применение-проективной-геометрии-в-компьютерной-графике}
 
 
-### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+#### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
+
+-   Геворкян Мигран Нельсонович
+-   Доцент кафедры Прикладной информатики и теории вероятностей, РУДН
 
 
-### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+#### <span class="section-num">2.4.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/218/>
+-   Применение проективной геометрии в компьютерной графике
+-   М. Н. Геворкян
+-   Доцент кафедры Прикладной информатики и теории вероятностей, РУДН
+
+Данный доклад носит методологический характер. Авторы в процессе работы над пособием по компьютерной геометрии столкнулись с проблемой изложения основных принципов проективной геометрии в линейно-алгебраическом виде, доступном для студентов второго курса физико-математических специальностей.
+Основной задачей компьютерной графики является реалистичное изображение. окружающего мира. Прямые в виде отрезков, плоскости в виде многоугольников, а также точки в виде вершин, являются базовыми объектами для построения полигональных трехмерных моделей в компьютерной графике. Задачи определения положения точек, прямых и плоскостей в пространстве относительно друг-друга являются основой всех алгоритмов компьютерной графики.
+Отличительной особенностью работы является применение однородных координат к описанию точек, прямых и плоскостей. Для прямых и плоскостей такие координаты также носят название координат Плюккера и в случае с прямыми тесно связаны с теорией моторов и винтов. Ключевое преимущество данного подхода является отсутствие исключительных случаев, так как в проективном пространстве все прямые пересекаются в конечной или идеальной точках, а все плоскости по конечной или идеальной прямым. С точки зрения алгоритма это означает, что в вычислениях отсутствуют многочисленные дополнительные проверки и деление на ноль.
+В докладе используется большое количество рисунков созданных программным способом с помощью языка для векторной графики Asymptote. Это позволяет как на практике проверить корректность формул, так и обеспечить высокую степень наглядности материала.
+
+---
+
+-   Application of projective geometry in computer graphics
+-   Migran N. Gevorkyan
+-   Department of Applied Informatics and Probability Theory, RUDN University
+
+This report is methodological in nature. While working on the manual on computer geometry, the authors faced the problem of presenting the basic principles of projective geometry in a linear-algebraic form accessible to second-year students of physics and mathematics specialties.
+The main task of computer graphics is a realistic image. the surrounding world. Straight lines in the form of segments, planes in the form of polygons, as well as points in the form of vertices, are the basic objects for constructing polygonal three-dimensional models in computer graphics. The problems of determining the position of points, lines and planes in space relative to each other are the basis of all computer graphics algorithms.
+A distinctive feature of the work is the application of homogeneous coordinates to the description of points, lines and planes. For straight lines and planes, such coordinates are also called Plucker coordinates and, in the case of straight lines, are closely related to the theory of motors and screws. The key advantage of this approach is the absence of exceptional cases, since in a projective space all lines intersect at finite or ideal points, and all planes intersect along finite or ideal lines. From the point of view of the algorithm, this means that there are no numerous additional checks and division by zero in the calculations.
+The report uses a large number of drawings created programmatically using the language for vector graphics Asymptote. This allows both to verify the correctness of the formulas in practice and to ensure a high degree of clarity of the material.
 
 
-### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+#### <span class="section-num">2.4.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 64f02cc05dd23470ce6fedcd47c59b1c >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube 3HthH8R8jfE >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
-### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+
+
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+
+
+### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+
+
+### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+
+
+### <span class="section-num">2.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}

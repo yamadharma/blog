@@ -2,7 +2,7 @@
 title: "Квартира"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:18:00+03:00
-lastmod: 2023-02-16T15:20:00+03:00
+lastmod: 2023-04-14T17:47:00+03:00
 tags: ["MOC", "apartment"]
 categories: ["life"]
 draft: false
@@ -29,3 +29,8 @@ slug: "apartment"
 ## <span class="section-num">2</span> Коммуникации {#коммуникации}
 
 -   [Домашний интернет]({{< relref "2023-02-16-home-internet" >}})
+
+
+## <span class="section-num">3</span> Оборудование {#оборудование}
+
+-   [Фильтры воды]({{< relref "2023-04-14-water-filters" >}})

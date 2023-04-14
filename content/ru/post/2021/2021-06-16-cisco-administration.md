@@ -2,7 +2,7 @@
 title: "Администрирование Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T12:38:00+03:00
-lastmod: 2023-03-03T15:26:00+03:00
+lastmod: 2023-04-04T15:35:00+03:00
 tags: ["MOC", "cisco", "sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -21,6 +21,7 @@ slug: "cisco-administration"
 -   [Cisco. Защита от широковещательного шторма]({{< relref "2021-06-16-cisco-storm-control" >}})
 -   [Начальная конфигурация коммутатора Cisco]({{< relref "2022-11-15-initial-cisco-switch-configuration" >}})
 -   [Контроллер Cisco WLC]({{< relref "2023-03-03-cisco-wlc" >}})
+-   [Сопоставление команд Cisco и Huawei]({{< relref "2023-04-04-cisco-huawei-commands" >}})
 
 
 ## <span class="section-num">2</span> Обслуживание {#обслуживание}

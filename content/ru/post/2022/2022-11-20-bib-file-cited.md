@@ -2,7 +2,7 @@
 title: "Создание bib-файла с процитированными ссылками"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-20T19:44:00+03:00
-lastmod: 2022-12-04T21:17:00+03:00
+lastmod: 2023-04-13T13:52:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -28,7 +28,7 @@ slug: "bib-file-cited"
 ### <span class="section-num">2.1</span> bibexport {#bibexport}
 
 -   CTAN: <https://ctan.org/pkg/bibexport>
--   Поставляется в дистрибутиве TeX Live.
+-   Поставляется в составе дистрибутива _TeX Live_.
 -   Работает с полями bibtex, не поддерживает biblatex (см. [bibtex vs biblatex]({{< relref "2022-09-11-bibtex-biblatex" >}})).
 -   Можно добавить свои поля.
 -   Не совместим с _biber_.
@@ -50,12 +50,23 @@ slug: "bib-file-cited"
 -   Сайт: <https://www.jabref.org/>
 -   Работает также с _biblatex_ и _biber_.
 -   Можно работать как в режиме командной строки, так и в режиме графического интерфейса.
+-   Нужно устанавливать отдельно.
 -   В режиме командной строки:
     ```shell
-    jabref -n -a old_ref.aux,new_ref.bib old_ref.bib
+    jabref -n -a infile[.aux],outfile[.bib] base-BibTeX-file.bib
     ```
 
-    -   `-n` : отключение графического интерфейса.
+    -   `-n` : отключение графического интерфейса;
+    -   `-a` : обработка файла `.aux`.
+-   Удобно использовать централизованную базу bib-данных:
+    ```shell
+    jabref -n -a infile[.aux],outfile[.bib] ~/work/bib/bib/main.bib
+    ```
+-   Пояснение.
+    -   Когда вы компилируете документ LaTeX (например, `infile.tex`), создаётся файл `.aux` (`infile.aux`).
+    -   Среди прочего, он содержит список записей, используемых в вашем документе.
+    -   JabRef извлекает используемые ссылки из `.bib`-файла `base-BibTeX-file.bib` в новый `.bib`-файл (`outfile.bib`).
+    -   В результате получается подбаза данных, содержащая только записи, используемые в файле `.tex`.
 
 
 ### <span class="section-num">2.3</span> bibtool {#bibtool}
