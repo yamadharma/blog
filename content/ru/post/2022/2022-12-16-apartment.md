@@ -2,7 +2,7 @@
 title: "Квартира"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:18:00+03:00
-lastmod: 2023-04-14T17:47:00+03:00
+lastmod: 2023-05-09T19:14:00+03:00
 tags: ["MOC", "apartment"]
 categories: ["life"]
 draft: false
@@ -34,3 +34,8 @@ slug: "apartment"
 ## <span class="section-num">3</span> Оборудование {#оборудование}
 
 -   [Фильтры воды]({{< relref "2023-04-14-water-filters" >}})
+
+
+## <span class="section-num">4</span> Домашняя техника {#домашняя-техника}
+
+[Критерии выбора робота-пылесоса]({{< relref "2023-05-09-criteria-choosing-robot-cleaner" >}})

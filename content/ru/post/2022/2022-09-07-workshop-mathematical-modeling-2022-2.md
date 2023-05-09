@@ -2,7 +2,8 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-04-13T17:31:00+03:00
+lastmod: 2023-05-03T17:46:00+03:00
+categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
 ---
@@ -588,10 +589,58 @@ The report uses a large number of drawings created programmatically using the la
 {{< /tabs >}}
 
 
-### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+### <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-05-03 Ср&gt; </span></span> Чулуунбаатар Галмандах _Вычислительные схемы решения квантовомеханических задач_ {#чулуунбаатар-галмандах-вычислительные-схемы-решения-квантовомеханических-задач}
 
 
-### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-03-28 Вт] </span></span> Чулуунбаатар {#чулуунбаатар}
+#### <span class="section-num">2.5.1</span> Докладчик {#докладчик}
+
+-   Чулуунбаатар Галмандах
+-   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
+
+
+#### <span class="section-num">2.5.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/222/>
+-   Вычислительные схемы решения квантовомеханических задач
+-   Чулуунбаатар Галмандах
+-   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
+
+-   Разработана и протестирована новая вычислительная схема непрерывной минимаксной оптимизации (вычисления локальных равновесий Нэша или минимаксных точек) нелинейных функционалов.
+-   Проведена разработка, обоснование и тестирование эффективных вычислительных схем вариационного метода непрерывной минимаксной оптимизации c  ограничениями по нелинейным параметрам пробных функций для больших и малых компонент решения уравнения Дирака для электрона в поле двух кулоновских зарядов тяжелых ионов и схем метода конечных элементов высокого порядка точности решения краевых задач для системы ОДУ второго порядка с применением современных компьютерных технологий.
+-   Разработаны алгоритмы и комплекс программ построения полностью симметричных квадратурных формул p-го порядка на d-мерных симплексах с положительными весами и узлами внутри симплексов.
+-   Представлены приложения разработанных вычислительных схем вариационного метода и метода конечных элементов для решения и анализа краевых задач атомной и молекулярной физики.
+-   Выполнены высокоточные расчеты собственных значений энергии релятивистского электрона в кулоновском поле зарядов двух тяжелых ионов, и связанных и метастабильных состояний двухатомной молекулы бериллия.
+
+---
+
+-   Computational schemes for solving quantum mechanical problems
+-   Chuluunbaatar Galmandakh
+-   Department of Applied Informatics and Probability Theory, RUDN University
+
+-   A new computational scheme for continuous minimax optimization (computations of local Nash equilibria or minimax points) of nonlinear functionals has been developed.
+-   The development, justification and testing of efficient computational schemes of variational method with continuous minimax optimization and constraints on nonlinear parameters of test functions for large and small components of the solution of the Dirac equation for an electron in the field of two Coulomb charges of heavy ions and computational finite element method schemes of high order accuracy for solving boundary value problems for a system of second-order ODEs was carried out using modern computer technologies.
+-   Algorithms and computer program for calculation of full symmetric p-order quadrature formulas on d-dimensional simplexes with positive weights and nodes inside the simplexes are developed.
+-   Applications of the developed computational schemes of the variational method and the finite element method for solving and analyzing of boundary value problems of atomic and molecular physics are presented.
+-   High-precision calculations of the energy eigenvalues of a relativistic electron in the Coulomb field of charges of two heavy ions and bound and metastable states of two atomic beryllium molecules were conducted.
+
+
+#### <span class="section-num">2.5.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube f5a2947658011cf55e9cb5cb881eccc2 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube UKzt7cVteZ4 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
 
 
 ### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}

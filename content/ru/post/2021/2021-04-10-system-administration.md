@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-04-02T14:10:00+03:00
+lastmod: 2023-04-20T18:23:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -226,3 +226,8 @@ slug: "system-administration"
 ## <span class="section-num">13</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
+
+
+## <span class="section-num">14</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
+
+-   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})

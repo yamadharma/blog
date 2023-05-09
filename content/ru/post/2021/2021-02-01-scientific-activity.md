@@ -2,7 +2,7 @@
 title: "Научная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:00:00+03:00
-lastmod: 2022-11-13T18:27:00+03:00
+lastmod: 2023-05-05T12:46:00+03:00
 categories: ["science"]
 draft: false
 slug: "scientific-activity"
@@ -36,3 +36,8 @@ slug: "scientific-activity"
 -   [Научно-исследовательская деятельность]({{< relref "2021-02-01-research" >}})
 -   [Повышение квалификации]({{< relref "2021-09-20-professional-development" >}})
 -   [Ученики]({{< relref "2021-03-09-students" >}})
+
+
+## <span class="section-num">4</span> Работа {#работа}
+
+-   [Научная должность]({{< relref "2022-10-29-position" >}})
