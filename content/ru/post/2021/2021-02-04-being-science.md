@@ -2,8 +2,8 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2023-05-01T10:59:00+03:00
-tags: ["sci-being", "MOC"]
+lastmod: 2023-05-18T21:09:00+03:00
+tags: ["seedling", "sci-being", "MOC"]
 categories: ["science"]
 draft: false
 slug: "being-science"
@@ -47,3 +47,10 @@ _Бытие науки_. Разрозненные мысли.
 ### <span class="section-num">2.2</span> Научный руководитель {#научный-руководитель}
 
 -   [Выбор научного руководителя]({{< relref "2023-05-01-choice-scientific-adviser" >}})
+
+
+## <span class="section-num">3</span> Система публикаций {#система-публикаций}
+
+-   [Квартили списка ВАК]({{< relref "2023-05-18-hac-list-quartiles" >}})
+-   [Список журналов ВАК]({{< relref "2023-05-18-hac-list" >}})
+-   [Белый список журналов Минобрнауки]({{< relref "2023-05-18-white-list-journals" >}})

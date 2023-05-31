@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-03-20T16:43:00+03:00
+lastmod: 2023-05-23T10:29:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -164,7 +164,7 @@ slug: "rockylinux-server-installation"
     dnf install fail2ban
     ```
 
--   Следует сконфигурить и запустить:
+-   Следует сконфигурировать и запустить:
     ```shell
     systemctl enable --now fail2ban.service
     ```
@@ -256,6 +256,11 @@ slug: "rockylinux-server-installation"
 
 #### <span class="section-num">4.3.2</span> Сервер сетевого времени {#сервер-сетевого-времени}
 
+-   В файле `/etc/chrony.conf` Разрешите подключение клиентов из локальной сети:
+    ```conf-unix
+    allow 192.168.0.0/16
+    ```
+
 -   Запустите сервер сетевого времени:
     ```shell
     systemctl enable --now chronyd
@@ -342,3 +347,8 @@ slug: "rockylinux-server-installation"
     dnf install glusterfs
     dnf install glusterfs-fuse
     ```
+
+
+### <span class="section-num">4.7</span> DNS сервера {#dns-сервера}
+
+-   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})

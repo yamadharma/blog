@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-05-03T17:46:00+03:00
+lastmod: 2023-05-18T09:19:00+03:00
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
@@ -640,13 +640,42 @@ The report uses a large number of drawings created programmatically using the la
 {{< /tabs >}}
 
 
-### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-01 Чт&gt; </span></span> Фёдоров А. В. - Вывод уравнения эйконала {#фёдоров-а-dot-в-dot-вывод-уравнения-эйконала}
 
 
-### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+#### <span class="section-num">2.6.1</span> Докладчик {#докладчик}
+
+-   Фёдоров Арсений Витальевич
+-   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
 
 
-### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+#### <span class="section-num">2.6.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/223/>
+-   Вывод уравнения эйконала
+-   Фёдоров Арсений Витальевич
+    -   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
+-   Штепа Кристина Александровна
+
+В ходе изучения уравнения эйконала докладчик столкнулся с необходимостью разобрать подробно все шаги для получения итогового уравнения из уравнений Максвелла, поскольку вывод в хрестоматийной монографии (1968 г.) М. Борна и Э. Вольфа достаточно краток. Дабы восполнить данный пробел было решено подготовить материал, восполняющий некоторые лакуны изложения и дающий исчерпывающий вывод данного уравнения из уравнений Максвелла. Вывод был проведён в рамках классического формализма векторного анализа с использованием операторов дивергенции, ротора, градиента. Результатом работы является, полученный методический материал с подробным изложением   вывода уравнения эйконала из уравнений Максвелла. Изложенный материал может использоваться в методических целях.
+
+---
+
+-   Deriving the eikonal equation
+-   Arseny V. Fedorov
+-   Christina A. Stepa
+-   Department of Applied Informatics and Probability Theory, RUDN University
+
+In the course of studying the eikonal equation the reporter was faced to with the need to understand in detail all the steps to obtain the final equation from Maxwell's equations, because the conclusion in the monograph \`\`Principles of Optic'' (1968) by M. Born and E. Wolf was brief. In order to fill in this gap it was decided to prepare a material filling in all the gaps and giving a complete and exhaustive derivation of the given equation from Maxwell's equations.  The derivation was realized within the classical formalism of vector analysis using operators of divergence, rotor, and gradient. The result of the work is, the obtained methodical material with a detailed statement of the derivation of the eikonal equation from Maxwell equations. The presented material can be used for methodical purposes.
 
 
-### <span class="section-num">2.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+
+
+### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+
+
+### <span class="section-num">2.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+
+
+### <span class="section-num">2.10</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}

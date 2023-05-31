@@ -2,7 +2,7 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2023-02-12T19:52:00+03:00
+lastmod: 2023-05-18T08:26:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -28,6 +28,7 @@ slug: "scientific-administrative"
 ## <span class="section-num">2</span> Диссовет {#диссовет}
 
 -   [Диссертационный совет]({{< relref "2021-02-03-doctoral-committee" >}})
+-   [Требования к документам для защиты диссертации в РУДН]({{< relref "2023-05-18-requirements-documents-defending-thesis-rudn" >}})
 
 
 ## <span class="section-num">3</span> Аспирантура {#аспирантура}

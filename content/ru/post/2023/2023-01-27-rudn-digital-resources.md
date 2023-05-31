@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-04-26T16:42:00+03:00
+lastmod: 2023-05-15T10:00:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -23,9 +23,10 @@ slug: "rudn-digital-resources"
 -   Система управления качеством РУДН: <http://quality.rudn.ru/>.
 
 
-### <span class="section-num">1.1</span> Факультеты {#факультеты}
+### <span class="section-num">1.1</span> Подразделения {#подразделения}
 
 -   Медицинский факультет: <https://med.rudn.ru/>.
+-   Институт физических исследований и технологий: <http://applphys.rudn.ru/>.
 
 
 ## <span class="section-num">2</span> Рабочие ресурсы {#рабочие-ресурсы}

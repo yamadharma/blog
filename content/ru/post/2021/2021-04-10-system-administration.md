@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-04-20T18:23:00+03:00
+lastmod: 2023-05-29T16:54:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -204,18 +204,36 @@ slug: "system-administration"
 ## <span class="section-num">11</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
+
+
+### <span class="section-num">11.1</span> Протоколы {#протоколы}
+
+-   [Технологии туннелирования IPv6]({{< relref "2023-05-26-ipv6-tunneling-technologies" >}})
+
+
+### <span class="section-num">11.2</span> VPN {#vpn}
+
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 
 
-### <span class="section-num">11.1</span> Мониторинг {#мониторинг}
+### <span class="section-num">11.3</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 
 
-### <span class="section-num">11.2</span> Железо {#железо}
+### <span class="section-num">11.4</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
+
+
+### <span class="section-num">11.5</span> Сервисы {#сервисы}
+
+
+#### <span class="section-num">11.5.1</span> DNS {#dns}
+
+-   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
+-   [Общедоступные резольверы DNS]({{< relref "2023-05-26-public-dns-resolvers" >}})
 
 
 ## <span class="section-num">12</span> Организация обучения {#организация-обучения}
