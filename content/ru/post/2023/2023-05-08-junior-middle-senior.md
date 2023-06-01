@@ -2,9 +2,9 @@
 title: "Junior, Middle, Senior"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-08T17:00:00+03:00
-lastmod: 2023-05-09T11:33:00+03:00
-tags: ["seedling"]
-categories: ["thinking"]
+lastmod: 2023-06-01T19:20:00+03:00
+tags: ["sci-being", "seedling"]
+categories: ["science"]
 draft: false
 slug: "junior-middle-senior"
 ---

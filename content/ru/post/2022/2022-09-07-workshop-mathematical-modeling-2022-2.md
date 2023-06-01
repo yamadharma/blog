@@ -2,7 +2,8 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-05-18T09:19:00+03:00
+lastmod: 2023-06-01T19:18:00+03:00
+tags: ["seedling"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2022-2"
@@ -640,7 +641,7 @@ The report uses a large number of drawings created programmatically using the la
 {{< /tabs >}}
 
 
-### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-01 Чт&gt; </span></span> Фёдоров А. В. - Вывод уравнения эйконала {#фёдоров-а-dot-в-dot-вывод-уравнения-эйконала}
+### <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-01 Чт&gt; </span></span> Фёдоров А. В. _Вывод уравнения эйконала_ {#фёдоров-а-dot-в-dot-вывод-уравнения-эйконала}
 
 
 #### <span class="section-num">2.6.1</span> Докладчик {#докладчик}
@@ -667,6 +668,22 @@ The report uses a large number of drawings created programmatically using the la
 -   Department of Applied Informatics and Probability Theory, RUDN University
 
 In the course of studying the eikonal equation the reporter was faced to with the need to understand in detail all the steps to obtain the final equation from Maxwell's equations, because the conclusion in the monograph \`\`Principles of Optic'' (1968) by M. Born and E. Wolf was brief. In order to fill in this gap it was decided to prepare a material filling in all the gaps and giving a complete and exhaustive derivation of the given equation from Maxwell's equations.  The derivation was realized within the classical formalism of vector analysis using operators of divergence, rotor, and gradient. The result of the work is, the obtained methodical material with a detailed statement of the derivation of the eikonal equation from Maxwell equations. The presented material can be used for methodical purposes.
+
+
+#### <span class="section-num">2.6.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube b19f5a4c6e95235c51b10aefd1876aea >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube xEN667AoPU8 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}

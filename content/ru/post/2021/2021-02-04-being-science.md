@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2023-05-18T21:09:00+03:00
+lastmod: 2023-06-01T19:20:00+03:00
 tags: ["seedling", "sci-being", "MOC"]
 categories: ["science"]
 draft: false
@@ -47,6 +47,12 @@ _Бытие науки_. Разрозненные мысли.
 ### <span class="section-num">2.2</span> Научный руководитель {#научный-руководитель}
 
 -   [Выбор научного руководителя]({{< relref "2023-05-01-choice-scientific-adviser" >}})
+
+
+### <span class="section-num">2.3</span> Исследователи {#исследователи}
+
+-   [Классификация исследователей]({{< relref "2023-06-01-classification-researchers" >}})
+-   [Junior, Middle, Senior]({{< relref "2023-05-08-junior-middle-senior" >}})
 
 
 ## <span class="section-num">3</span> Система публикаций {#система-публикаций}

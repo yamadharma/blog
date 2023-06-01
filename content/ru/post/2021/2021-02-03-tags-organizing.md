@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-05-14T19:52:00+03:00
+lastmod: 2023-06-01T19:10:00+03:00
 tags: ["seedling", "MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
