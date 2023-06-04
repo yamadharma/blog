@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-05-15T10:00:00+03:00
+lastmod: 2023-06-02T16:18:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -16,20 +16,32 @@ slug: "rudn-digital-resources"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Информационные ресурсы {#информационные-ресурсы}
+## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+
+### <span class="section-num">1.1</span> Парольная политика {#парольная-политика}
+
+-   Максимальный срок действия пароля: 90 дней
+-   Минимальная длина пароля: 9 знаков.
+-   Сложность пароля: латинские буквы в разных регистрах, цифры, специальные символы.
+-   Порог блокировки учетной записи: 5 неудачных попыток входа.
+-   Передача парольно-ключевой информации (логина и/или пароля) третьим лицам запрещена.
+
+
+## <span class="section-num">2</span> Информационные ресурсы {#информационные-ресурсы}
 
 -   Основной портал: <https://www.rudn.ru/>.
 -   Приёмная комиссия: <https://admission.rudn.ru/>.
 -   Система управления качеством РУДН: <http://quality.rudn.ru/>.
 
 
-### <span class="section-num">1.1</span> Подразделения {#подразделения}
+### <span class="section-num">2.1</span> Подразделения {#подразделения}
 
 -   Медицинский факультет: <https://med.rudn.ru/>.
 -   Институт физических исследований и технологий: <http://applphys.rudn.ru/>.
 
 
-## <span class="section-num">2</span> Рабочие ресурсы {#рабочие-ресурсы}
+## <span class="section-num">3</span> Рабочие ресурсы {#рабочие-ресурсы}
 
 -   Для доступа к этим ресурсам необходима идентификация пользователя: <https://id.rudn.ru/>.
 -   Подача документов на конкурс на замещение должностей ППС: <https://vote.rudn.ru/>.
@@ -44,13 +56,13 @@ slug: "rudn-digital-resources"
 -   Библиотека РУДН: <https://lib.rudn.ru/>.
 
 
-## <span class="section-num">3</span> Научные ресурсы {#научные-ресурсы}
+## <span class="section-num">4</span> Научные ресурсы {#научные-ресурсы}
 
 -   Портал [ScienceAdmin](https://www.scienceadmin.ru/): <https://scienceadmin.rudn.ru/>.
 -   [Суперкомпьютер РУДН]({{< relref "2023-02-12-supercomputer-rudn" >}})
 
 
-### <span class="section-num">3.1</span> Диссоветы {#диссоветы}
+### <span class="section-num">4.1</span> Диссоветы {#диссоветы}
 
 -   Старый сайт диссоветов РУДН: <http://dissovet.rudn.ru/>.
     -   Информация по диссоветам старая, а нормативные акты новые.
@@ -59,6 +71,6 @@ slug: "rudn-digital-resources"
     -   ПДС 0200.006: <https://www.rudn.ru/science/dissovet/dissertacionnye-sovety/pds-0200006>.
 
 
-## <span class="section-num">4</span> Учебные ресурсы {#учебные-ресурсы}
+## <span class="section-num">5</span> Учебные ресурсы {#учебные-ресурсы}
 
 -   Учебный портал (ТУИС --- Телекоммуникационная учебно-информационная система): <https://esystem.rudn.ru/>.

@@ -2,8 +2,7 @@
 title: "Вечнозелёные заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-01T19:36:00+03:00
-lastmod: 2023-06-01T19:46:00+03:00
-tags: ["seedling"]
+lastmod: 2023-06-02T21:23:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "evergreen-notes"

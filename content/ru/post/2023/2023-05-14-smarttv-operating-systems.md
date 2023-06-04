@@ -2,8 +2,8 @@
 title: "SmartTV. Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:30:00+03:00
-lastmod: 2023-05-14T20:52:00+03:00
-tags: ["appliance", "seedling"]
+lastmod: 2023-06-04T15:47:00+03:00
+tags: ["appliance"]
 categories: ["life"]
 draft: false
 slug: "smarttv-operating-systems"
@@ -49,7 +49,7 @@ slug: "smarttv-operating-systems"
 
 ## <span class="section-num">4</span> Google TV {#google-tv}
 
--   Google TV должна заменить Android TV.
+-   Google TV заменила Android TV.
 
 
 ## <span class="section-num">5</span> Tizen {#tizen}

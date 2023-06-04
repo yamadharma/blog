@@ -2,8 +2,8 @@
 title: "Белый список журналов Минобрнауки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T21:07:00+03:00
-lastmod: 2023-05-19T18:27:00+03:00
-tags: ["sci-being", "seedling"]
+lastmod: 2023-06-02T12:57:00+03:00
+tags: ["seedling", "sci-being"]
 categories: ["science"]
 draft: false
 slug: "white-list-journals"
@@ -19,7 +19,10 @@ slug: "white-list-journals"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Предполагается использовать для задач мониторинга и оценки публикационной активности российских учёных.
+-   В Белый список включены пока только журналы, индексируемые в RSCI, Scopus, WoS.
 -   Сайт: <https://journalrank.rcsi.science/ru/>.
+-   О методике ранжирования: <https://www.minobrnauki.gov.ru/press-center/news/nauka/68029/>.
+-   Файл с методикой оценки и ранжирования: <https://www.minobrnauki.gov.ru/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F.pdf>.
 
 
 ## <span class="section-num">2</span> Критерии {#критерии}

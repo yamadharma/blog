@@ -2,8 +2,8 @@
 title: "Редактирование. Discrete and Continuous Models. Scopus"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-10T10:32:00+03:00
-lastmod: 2023-05-10T10:57:00+03:00
-tags: ["sci-admin", "seedling"]
+lastmod: 2023-06-02T16:20:00+03:00
+tags: ["seedling", "sci-admin"]
 categories: ["science"]
 draft: false
 slug: "editing-discrete-continuous-models-scopus"
@@ -16,7 +16,7 @@ slug: "editing-discrete-continuous-models-scopus"
 {{< toc >}}
 
 
-## <span class="section-num">1</span>  {#d41d8c}
+## <span class="section-num">1</span> Подготовка материалов к подачи в Scopus {#подготовка-материалов-к-подачи-в-scopus}
 
 
 ## <span class="section-num">2</span> Проверить статус подачи журнала в Scopus {#проверить-статус-подачи-журнала-в-scopus}
@@ -38,9 +38,7 @@ slug: "editing-discrete-continuous-models-scopus"
     >
     > Subject Chair - Default - Final decision: Accept
     >
-    > Title: Discrete and Continuous Models and Applied Computational Science
-    > ISSN / E-ISSN: 2658-4670 / 2658-7149
-    > Publisher: Peoples’ Friendship University of Russia (RUDN University)
+    > Title: Discrete and Continuous Models and Applied Computational Science ISSN / E-ISSN: 2658-4670 / 2658-7149 Publisher: Peoples’ Friendship University of Russia (RUDN University)
     >
     > Dear Dmitriy S. Kulyabov,
     >
@@ -88,3 +86,36 @@ slug: "editing-discrete-continuous-models-scopus"
     > come to terms with the publisher on a licensing agreement. In no event shall Elsevier be liable for any indirect,
     > incidental, special, consequential or punitive damages arising out of or in connection with any advice disclosed
     > or any selection decision made. This statement must not be used for advertisement purposes.
+-   > От: Sridhar, Kalyani (ELS-CHN) &lt;Ka.Sridhar@elsevier.com&gt;
+    > Отправлено: 2 июня 2023 г. 13:26
+    > Тема: Request permission for Discrete and Continuous Models and Applied Computational Science /PR-00029646
+    >
+    > Dear Reader,
+    >
+    > I am reaching you on behalf of Elsevier’s research databases namely Scopus , Embase etc.
+    >
+    > We require a formal permission to initiate indexing your publication. Could you please let me know the
+    > appropriate person who could give us a consent and sign the permission form.
+    >
+    > Looking forward to hearing from you.
+    >
+    > ​​​​​​​Regards,
+    > Kalyani
+    >
+    > Note: Please address missing contents via - Scopus web form and for queries on indexing please write to bd-scm@elsevier.com
+    >
+    > Kalyani Sridhar
+    >
+    > Sr. Engagement Manager
+    >
+    > ELSEVIER  | Content and Data Sourcing - Data-Operations
+    >
+    > RELX India Private Limited
+    >
+    > <span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline"><span class="underline">_</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+    >
+    > International Tech Park | Crest –12th Floor | Taramani Road | Taramani | Chennai 600 113 |India
+    >
+    > Tel: +91 44 42994442 | Fax: +91 44 42994568
+    >
+    > E-mail ka.sridhar@elsevier.com  URL: www.elsevier.com
