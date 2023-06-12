@@ -2,7 +2,7 @@
 title: "Загрузочная флешка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:46:00+03:00
-lastmod: 2022-06-06T14:59:00+03:00
+lastmod: 2023-06-08T15:26:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Фильтры воды"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-14T17:43:00+03:00
-lastmod: 2023-04-16T11:02:00+03:00
+lastmod: 2023-06-08T14:40:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false
@@ -305,7 +305,9 @@ slug: "water-filters"
 
 1.  Compact OSMO
 
-    -   <https://www.barrier.ru/product/protochnye-filtry/pod-mojku/filtry-obratniy-osmos/compact-osmo/>
+    -   Сайт: <https://www.barrier.ru/product/protochnye-filtry/pod-mojku/filtry-obratniy-osmos/compact-osmo/>
+    -   Обзоры:
+        -   <https://www.ixbt.com/home/barrier-compact-osmo-m-review.html>
 
 <!--list-separator-->
 

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-05-29T16:54:00+03:00
+lastmod: 2023-06-11T21:56:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -41,7 +41,12 @@ slug: "system-administration"
 -   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
 
 
-### <span class="section-num">3.2</span> Установка операционных систем {#установка-операционных-систем}
+### <span class="section-num">3.2</span> Linux {#linux}
+
+-   [Администрирование Linux]({{< relref "2023-06-07-linux-administration" >}})
+
+
+### <span class="section-num">3.3</span> Установка операционных систем {#установка-операционных-систем}
 
 -   [Загрузочная флешка]({{< relref "2021-04-10-bootable-usb-stick" >}})
 -   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
@@ -49,7 +54,7 @@ slug: "system-administration"
 -   [Использование vagrant]({{< relref "2021-11-12-using-vagrant" >}})
 
 
-### <span class="section-num">3.3</span> Серверные системы {#серверные-системы}
+### <span class="section-num">3.4</span> Серверные системы {#серверные-системы}
 
 -   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 -   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
@@ -57,41 +62,17 @@ slug: "system-administration"
 -   [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})
 
 
-### <span class="section-num">3.4</span> Файловые системы {#файловые-системы}
-
--   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
--   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
-
-
 ### <span class="section-num">3.5</span> Управление программным обеспечением {#управление-программным-обеспечением}
 
 -   [Обновление пакетов python]({{< relref "2022-01-21-update-all-python-packages" >}})
 
 
-### <span class="section-num">3.6</span> Дистрибутивы Linux {#дистрибутивы-linux}
-
-
-#### <span class="section-num">3.6.1</span> Общая информация {#общая-информация}
-
-
-#### <span class="section-num">3.6.2</span> Режим киоска {#режим-киоска}
-
--   Данные дистрибутивы созданы для организации режима киоска (см. [Режим киоска]({{< relref "2022-02-15-kiosk-mode" >}})).
--   [Porteus Kiosk]({{< relref "2022-02-15-porteus-kiosk" >}})
--   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
-
-
-#### <span class="section-num">3.6.3</span> Дистрибутивы общего назначения {#дистрибутивы-общего-назначения}
-
--   [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
-
-
-### <span class="section-num">3.7</span> Терминальный доступ {#терминальный-доступ}
+### <span class="section-num">3.6</span> Терминальный доступ {#терминальный-доступ}
 
 -   [Virtual Desktop Infrastructure]({{< relref "2022-07-23-virtual-desktop-infrastructure" >}})
 
 
-### <span class="section-num">3.8</span> Утилиты настройки среды {#утилиты-настройки-среды}
+### <span class="section-num">3.7</span> Утилиты настройки среды {#утилиты-настройки-среды}
 
 -   [Утилита module]({{< relref "2022-07-24-module-utility" >}})
 
@@ -99,6 +80,7 @@ slug: "system-administration"
 ## <span class="section-num">4</span> Файловые системы {#файловые-системы}
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
+-   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
 
 
 ## <span class="section-num">5</span> Языки программирования {#языки-программирования}
@@ -249,3 +231,4 @@ slug: "system-administration"
 ## <span class="section-num">14</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
+-   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})

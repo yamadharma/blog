@@ -2,8 +2,8 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2023-06-01T19:50:00+03:00
-tags: ["evergreen", "tex"]
+lastmod: 2023-06-07T18:29:00+03:00
+tags: ["tex"]
 categories: ["computer-science"]
 draft: false
 slug: "install-texlive"
@@ -36,15 +36,20 @@ slug: "install-texlive"
 
 -   Скачивается инсталлятор:
     -   Unix: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz>
+        ```shell
+        cd /tmp/
+        wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+        ```
     -   Windows: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe>
 -   Для Windows: запускаете исполняемый файл и устанавливаете.
 -   Для Linux
     -   Распаковываете скачанный файл:
         ```shell
-        tar xzvf install-tl-unx.tar.gz.
+        tar xzvf install-tl-unx.tar.gz
         ```
     -   Заходите в распакованный каталог и запускаете установщик:
         ```shell
+        cd install-tl-[0-9]*
         ./install-tl
         ```
     -   Рекомендуется создать ссылки на исполняемые файлы в каталоге `/usr/local/bin`. Для этого в консольном варианте утилиты выберите опцию `O`, а затем `L`. Для возврата в предыдущее меню используйте `R`.

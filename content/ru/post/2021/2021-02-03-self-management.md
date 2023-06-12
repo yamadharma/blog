@@ -2,8 +2,8 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2023-06-01T19:49:00+03:00
-tags: ["seedling", "MOC"]
+lastmod: 2023-06-05T16:29:00+03:00
+tags: ["MOC"]
 categories: ["self-management"]
 draft: false
 slug: "self-management"

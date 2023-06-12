@@ -2,8 +2,8 @@
 title: "Общедоступные резольверы DNS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-26T12:14:00+03:00
-lastmod: 2023-05-30T11:48:00+03:00
-tags: ["network", "seedling"]
+lastmod: 2023-06-05T16:30:00+03:00
+tags: ["network"]
 categories: ["computer-science"]
 draft: false
 slug: "public-dns-resolvers"

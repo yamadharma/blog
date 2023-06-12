@@ -2,8 +2,8 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-06-01T19:10:00+03:00
-tags: ["seedling", "MOC", "emacs", "hugo"]
+lastmod: 2023-06-07T18:38:00+03:00
+tags: ["MOC", "emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
 slug: "tags-organizing"
@@ -46,7 +46,7 @@ slug: "tags-organizing"
     -   `hard`:
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
     -   `pandoc`: [Pandoc]({{< relref "2021-08-28-pandoc" >}})
-    -   `linux`:
+    -   `linux`: [Администрирование Linux]({{< relref "2023-06-07-linux-administration" >}})
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
     -   `redhat`:
     -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})

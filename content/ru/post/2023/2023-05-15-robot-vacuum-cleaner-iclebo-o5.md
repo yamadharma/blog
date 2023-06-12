@@ -2,8 +2,8 @@
 title: "Робот-пылесос iCLEBO O5"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-15T16:29:00+03:00
-lastmod: 2023-05-15T16:52:00+03:00
-tags: ["appliance", "seedling"]
+lastmod: 2023-06-05T16:30:00+03:00
+tags: ["appliance"]
 categories: ["life"]
 draft: false
 slug: "robot-vacuum-cleaner-iclebo-o5"
