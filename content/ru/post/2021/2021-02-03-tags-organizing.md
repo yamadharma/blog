@@ -2,8 +2,8 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-06-07T18:38:00+03:00
-tags: ["MOC", "emacs", "hugo"]
+lastmod: 2023-06-16T13:17:00+03:00
+tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
 slug: "tags-organizing"
@@ -73,6 +73,7 @@ slug: "tags-organizing"
     -   `disciples`: [Disciples]({{< relref "2022-06-07-disciples-game" >}})
     -   `homm`: [Heroes of Might and Magic]({{< relref "2022-06-07-homm" >}})
     -   `mm`: [Might And Magic]({{< relref "2023-04-02-might-magic" >}})
+    -   `diablo`: [Игры. Diablo]({{< relref "2023-06-16-games-diablo" >}})
 
 | Уровень  | org-mode todo | org-roam            | blog (ru)        | blog (en)         |
 |----------|---------------|---------------------|------------------|-------------------|

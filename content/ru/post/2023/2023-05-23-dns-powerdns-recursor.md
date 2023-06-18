@@ -2,8 +2,8 @@
 title: "DNS. PowerDNS Recursor"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-23T10:08:00+03:00
-lastmod: 2023-05-23T10:47:00+03:00
-tags: ["sysadmin", "network", "seedling"]
+lastmod: 2023-06-16T18:49:00+03:00
+tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
 slug: "dns-powerdns-recursor"

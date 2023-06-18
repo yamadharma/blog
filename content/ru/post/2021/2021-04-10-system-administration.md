@@ -2,8 +2,8 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-06-11T21:56:00+03:00
-tags: ["MOC", "sysadmin"]
+lastmod: 2023-06-16T11:37:00+03:00
+tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "system-administration"
@@ -88,93 +88,98 @@ slug: "system-administration"
 -   [Язык программирования HCL]({{< relref "2022-11-05-hcl-programming-language" >}})
 
 
-## <span class="section-num">6</span> Серверы приложений {#серверы-приложений}
+## <span class="section-num">6</span> Разработка {#разработка}
+
+-   [Обновление хостовых ключей ssh Bitbucket Cloud]({{< relref "2023-06-14-update-bitbucket-ssh-host-keys" >}})
 
 
-### <span class="section-num">6.1</span> Drupal {#drupal}
+## <span class="section-num">7</span> Серверы приложений {#серверы-приложений}
+
+
+### <span class="section-num">7.1</span> Drupal {#drupal}
 
 -   [Перенос Drupal на другую машину]({{< relref "2022-09-13-move-drupal-other-machine" >}})
 
 
-### <span class="section-num">6.2</span> OJS {#ojs}
+### <span class="section-num">7.2</span> OJS {#ojs}
 
 -   [Open Journal Systems]({{< relref "2022-10-22-open-journal-systems" >}})
 
 
-## <span class="section-num">7</span> Управление и мониторинг {#управление-и-мониторинг}
+## <span class="section-num">8</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 
 
-## <span class="section-num">8</span> Шрифты {#шрифты}
+## <span class="section-num">9</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">9</span> Пользовательские программы {#пользовательские-программы}
+## <span class="section-num">10</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">9.1</span> Обработка видео {#обработка-видео}
+### <span class="section-num">10.1</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">9.2</span> Виртуализация {#виртуализация}
+### <span class="section-num">10.2</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">9.3</span> Редакторы {#редакторы}
+### <span class="section-num">10.3</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 
 
-### <span class="section-num">9.4</span> Офисные программы {#офисные-программы}
+### <span class="section-num">10.4</span> Офисные программы {#офисные-программы}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 -   [Альтернативы Microsoft Office]({{< relref "2023-03-19-microsoft-office-alternatives" >}})
 
 
-### <span class="section-num">9.5</span> Работа с дисками {#работа-с-дисками}
+### <span class="section-num">10.5</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-### <span class="section-num">9.6</span> Вычисления {#вычисления}
+### <span class="section-num">10.6</span> Вычисления {#вычисления}
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 -   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
-### <span class="section-num">9.7</span> Квантовая химия {#квантовая-химия}
+### <span class="section-num">10.7</span> Квантовая химия {#квантовая-химия}
 
 -   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
 
 
-### <span class="section-num">9.8</span> Синхронизация файлов {#синхронизация-файлов}
+### <span class="section-num">10.8</span> Синхронизация файлов {#синхронизация-файлов}
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
 
 
-### <span class="section-num">9.9</span> Файлы конфигурации {#файлы-конфигурации}
+### <span class="section-num">10.9</span> Файлы конфигурации {#файлы-конфигурации}
 
 -   [Управление файлами конфигурации. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
 
 
-### <span class="section-num">9.10</span> Сетевые клиенты {#сетевые-клиенты}
+### <span class="section-num">10.10</span> Сетевые клиенты {#сетевые-клиенты}
 
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 
 
-### <span class="section-num">9.11</span> Телеконференции {#телеконференции}
+### <span class="section-num">10.11</span> Телеконференции {#телеконференции}
 
 -   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
 
 
-## <span class="section-num">10</span> Безопасность {#безопасность}
+## <span class="section-num">11</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
@@ -183,52 +188,53 @@ slug: "system-administration"
 -   [Механизм HSTS]({{< relref "2022-05-03-hsts-mechanism" >}})
 
 
-## <span class="section-num">11</span> Сети {#сети}
+## <span class="section-num">12</span> Сети {#сети}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-### <span class="section-num">11.1</span> Протоколы {#протоколы}
+### <span class="section-num">12.1</span> Протоколы {#протоколы}
 
 -   [Технологии туннелирования IPv6]({{< relref "2023-05-26-ipv6-tunneling-technologies" >}})
 
 
-### <span class="section-num">11.2</span> VPN {#vpn}
+### <span class="section-num">12.2</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 
 
-### <span class="section-num">11.3</span> Мониторинг {#мониторинг}
+### <span class="section-num">12.3</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
+-   [Мониторинг пропускной способности и скорости сети]({{< relref "2023-06-16-bandwidth-network-speed-monitoring" >}})
 
 
-### <span class="section-num">11.4</span> Железо {#железо}
+### <span class="section-num">12.4</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
-### <span class="section-num">11.5</span> Сервисы {#сервисы}
+### <span class="section-num">12.5</span> Сервисы {#сервисы}
 
 
-#### <span class="section-num">11.5.1</span> DNS {#dns}
+#### <span class="section-num">12.5.1</span> DNS {#dns}
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
 -   [Общедоступные резольверы DNS]({{< relref "2023-05-26-public-dns-resolvers" >}})
 
 
-## <span class="section-num">12</span> Организация обучения {#организация-обучения}
+## <span class="section-num">13</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">13</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">14</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
 
 
-## <span class="section-num">14</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
+## <span class="section-num">15</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
 -   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})

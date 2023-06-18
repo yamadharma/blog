@@ -2,7 +2,7 @@
 title: "SmartTV. Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:30:00+03:00
-lastmod: 2023-06-04T15:47:00+03:00
+lastmod: 2023-06-16T18:52:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false

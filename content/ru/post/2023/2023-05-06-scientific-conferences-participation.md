@@ -2,8 +2,8 @@
 title: "Участие в научных конференциях"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T19:37:00+03:00
-lastmod: 2023-05-07T17:11:00+03:00
-tags: ["research", "seedling"]
+lastmod: 2023-06-17T14:09:00+03:00
+tags: ["research"]
 categories: ["science"]
 draft: false
 slug: "scientific-conferences-participation"

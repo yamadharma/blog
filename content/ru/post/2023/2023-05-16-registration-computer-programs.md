@@ -2,8 +2,8 @@
 title: "Регистрация программ для ЭВМ"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-16T13:53:00+03:00
-lastmod: 2023-05-16T15:55:00+03:00
-tags: ["research", "seedling"]
+lastmod: 2023-06-16T18:49:00+03:00
+tags: ["research"]
 categories: ["job", "science"]
 draft: false
 slug: "registration-computer-programs"

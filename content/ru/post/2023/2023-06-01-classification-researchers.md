@@ -2,8 +2,8 @@
 title: "Классификация исследователей"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-01T19:14:00+03:00
-lastmod: 2023-06-01T19:38:00+03:00
-tags: ["seedling", "sci-being"]
+lastmod: 2023-06-16T18:51:00+03:00
+tags: ["sci-being"]
 categories: ["science"]
 draft: false
 slug: "classification-researchers"
