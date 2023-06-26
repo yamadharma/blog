@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-06-16T11:37:00+03:00
+lastmod: 2023-06-26T19:40:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -31,6 +31,7 @@ slug: "system-administration"
 -   [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})
 -   [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
+-   [Тайловые оконные менеджеры]({{< relref "2023-06-19-tiling-window-manager" >}})
 
 
 ## <span class="section-num">3</span> Операционные системы {#операционные-системы}
@@ -179,6 +180,11 @@ slug: "system-administration"
 -   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
 
 
+### <span class="section-num">10.12</span> Наборы программ {#наборы-программ}
+
+-   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
+
+
 ## <span class="section-num">11</span> Безопасность {#безопасность}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
@@ -195,7 +201,7 @@ slug: "system-administration"
 
 ### <span class="section-num">12.1</span> Протоколы {#протоколы}
 
--   [Технологии туннелирования IPv6]({{< relref "2023-05-26-ipv6-tunneling-technologies" >}})
+-   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
 ### <span class="section-num">12.2</span> VPN {#vpn}

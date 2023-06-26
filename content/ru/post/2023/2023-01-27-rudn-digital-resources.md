@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-06-02T16:18:00+03:00
+lastmod: 2023-06-26T19:46:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -48,7 +48,9 @@ slug: "rudn-digital-resources"
 -   Система 1С (см. [Работа с 1С в РУДН]({{< relref "2020-12-09-working-with-1c-rudn-university" >}})).
 -   Портал единой информационной системы РУДН (ЕИС): <https://portal.pfur.ru/>.
     -   Постепенно информация переносится на другие сайты. Например, на <https://lk.rudn.ru/>.
--   Многофункциональный центр для студентов и сотрудников РУДН: <https://lk.rudn.ru/>.
+-   Многофункциональный центр для студентов и сотрудников РУДН:
+    -   Сайт: <https://lk.rudn.ru/>.
+    -   Приложение: <https://play.google.com/store/search?q=RUDN>
 -   Корпоративная почта РУДН: <https://outlook.office.com/>.
 -   Антиплагиат РУДН: <https://antiplagiat.rudn.ru/>.
 -   Репозиторий РУДН: <https://repository.rudn.ru/>.

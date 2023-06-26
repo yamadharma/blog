@@ -2,8 +2,8 @@
 title: "Технологии туннелирования IPv6"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-26T19:17:00+03:00
-lastmod: 2023-05-30T12:06:00+03:00
-tags: ["ipv6", "network", "seedling"]
+lastmod: 2023-06-26T16:35:00+03:00
+tags: ["ipv6", "network"]
 categories: ["computer-science"]
 draft: false
 slug: "ipv6-tunneling-technologies"
@@ -38,9 +38,11 @@ slug: "ipv6-tunneling-technologies"
 
 ## <span class="section-num">2</span> 6in4 {#6in4}
 
+-   [Брокеры IPv6]({{< relref "2023-06-26-ipv6-tunnelbrokers" >}})
 -   Разработан в 1996 году.
--   Крупные туннельные брокеры: Hurricane Electric, SIXXS.
+-   Крупные туннельные брокеры: Hurricane Electric.
 -   Номер протокол: 41.
+-   Требует белый IP-адрес.
 -   Не работает через NAT.
 -   Не подразумевает каких-либо фиксированных адресов и префиксов.
 

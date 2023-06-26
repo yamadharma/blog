@@ -2,7 +2,7 @@
 title: "Спецификации компьютеров"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-11T21:50:00+03:00
-lastmod: 2023-06-11T21:54:00+03:00
+lastmod: 2023-06-23T13:09:00+03:00
 tags: ["sysadmin", "rudn"]
 categories: ["computer-science", "job"]
 draft: false

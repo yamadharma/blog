@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2021-08-09T18:17:00+03:00
+lastmod: 2023-06-21T18:40:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -65,7 +65,6 @@ layman -a guru
     -   Переменная окружения `$XDG_CONFIG_HOME` по умолчанию установлена в `~/.config/`.
 -   Пакет устанавливает глобальную конфигурацию в `/etc/sway/config`.
 -   При желании внести изменение в конфигурацию можно скопировать файл глобальной конфигурации в локальную:
-
     ```shell
     mkdir -p ~/.config/sway
     cp /etc/sway/config ~/.config/sway/
@@ -99,7 +98,16 @@ layman -a guru
 ## <span class="section-num">5</span> Замена приложений {#замена-приложений}
 
 
-### <span class="section-num">5.1</span> Снимки экрана {#снимки-экрана}
+### <span class="section-num">5.1</span> Ресурсы по миграции с X Window {#ресурсы-по-миграции-с-x-window}
+
+-   <https://github.com/swaywm/sway/wiki/i3-Migration-Guide>
+-   <https://github.com/swaywm/sway/wiki/Useful-add-ons-for-sway>
+-   <https://wiki.gentoo.org/wiki/List_of_software_for_Wayland>
+-   <https://github.com/natpen/awesome-wayland>
+-   <https://arewewaylandyet.com/>
+
+
+### <span class="section-num">5.2</span> Снимки экрана {#снимки-экрана}
 
 Исходно использовался `scrot`.
 
@@ -128,12 +136,12 @@ bindsym $mod+Shift+Print exec grim -t png -g "$(slurp)" "$(xdg-user-dir PICTURES
 -   При нажатии `Mod4` + `Shift` + `PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
 
 
-### <span class="section-num">5.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
+### <span class="section-num">5.3</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
 
 Ранее использовался [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
 
-#### <span class="section-num">5.2.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
+#### <span class="section-num">5.3.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
 
 Для записи из командной строки используем [wf-recorder](https://github.com/ammen99/wf-recorder):
 
@@ -179,12 +187,12 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/
 ```
 
 
-#### <span class="section-num">5.2.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
+#### <span class="section-num">5.3.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
 
 Для захвата десктопа в Wayland используется плагин [wlrobs](https://hg.sr.ht/~scoopta/wlrobs).
 
 
-### <span class="section-num">5.3</span> Строка состояний {#строка-состояний}
+### <span class="section-num">5.4</span> Строка состояний {#строка-состояний}
 
 Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
 
@@ -231,7 +239,7 @@ for_window [app_id="waybar" floating] {
 Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
 
-### <span class="section-num">5.4</span> Уведомления {#уведомления}
+### <span class="section-num">5.5</span> Уведомления {#уведомления}
 
 Используется [mako](https://github.com/emersion/mako).
 
@@ -251,7 +259,7 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 ```
 
 
-### <span class="section-num">5.5</span> Настройка вывода {#настройка-вывода}
+### <span class="section-num">5.6</span> Настройка вывода {#настройка-вывода}
 
 В XWindow используется программа `xrandr` (с её помощью можно изменять параметры вывода изображения RandR). В `sway` можно управлять с помощью `swaymsg output` или с помощью утилиты [wlr-randr](https://github.com/emersion/wlr-randr).
 
@@ -260,7 +268,7 @@ emerge -v gui-apps/wlr-randr
 ```
 
 
-### <span class="section-num">5.6</span> Меню программ (launcher) {#меню-программ--launcher}
+### <span class="section-num">5.7</span> Меню программ (launcher) {#меню-программ--launcher}
 
 Для запуска программы используется `dmenu`. Если не нравится, можно заменить.
 
@@ -312,7 +320,7 @@ bindsym $mod+d exec $menu
 ```
 
 
-### <span class="section-num">5.7</span> Буфер обмена {#буфер-обмена}
+### <span class="section-num">5.8</span> Буфер обмена {#буфер-обмена}
 
 Предлагается использовать [wl-clipboard](https://github.com/bugaevc/wl-clipboard).
 
@@ -348,10 +356,10 @@ $ wl-paste --list-types | wl-copy
 ```
 
 
-### <span class="section-num">5.8</span> Блокировка экрана {#блокировка-экрана}
+### <span class="section-num">5.9</span> Блокировка экрана {#блокировка-экрана}
 
 
-#### <span class="section-num">5.8.1</span> swaylock {#swaylock}
+#### <span class="section-num">5.9.1</span> swaylock {#swaylock}
 
 <!--list-separator-->
 
@@ -361,7 +369,6 @@ $ wl-paste --list-types | wl-copy
     -   Репозиторий: <https://github.com/swaywm/swaylock>
     -   Установка:
         -   Gentoo:
-
             ```shell
             emerge gui-apps/swaylock
             ```
@@ -376,7 +383,6 @@ $ wl-paste --list-types | wl-copy
     -   Включить экран при возобновлении работы.
     -   Также заблокировать экран перед тем, как компьютер перейдет в спящий режим.
     -   Конфигурационный файл:
-
         ```conf-unix
         ### ~/.config/sway/config.d/80-lock.conf
 
@@ -387,10 +393,10 @@ $ wl-paste --list-types | wl-copy
         ## - Also lock your screen before your computer goes to sleep
 
         exec swayidle -w \
-        	 timeout 300 'swaylock -f -c 000000 -k' \
-        	 timeout 600 'swaymsg "output * dpms off"' \
-        	 resume 'swaymsg "output * dpms on"' \
-        	 before-sleep 'swaylock -f -c 000000 -k'
+                 timeout 300 'swaylock -f -c 000000 -k' \
+                 timeout 600 'swaymsg "output * dpms off"' \
+                 resume 'swaymsg "output * dpms on"' \
+                 before-sleep 'swaylock -f -c 000000 -k'
         ```
 
 <!--list-separator-->
@@ -400,7 +406,6 @@ $ wl-paste --list-types | wl-copy
     -   `Mod` + `Ctrl` + `l` для немедленной блокировки экрана.
     -   Через 10 секунд выключить экран.
     -   Конфигурационный файл:
-
         ```conf-unix
         ### ~/.config/sway/config.d/80-lock.conf
 
@@ -412,7 +417,6 @@ $ wl-paste --list-types | wl-copy
         bindsym $mod+Ctrl+l exec $lockman
         ```
     -   Скрипт блокировки:
-
         ```shell
         #!/bin/bash
         # ~/.config/sway/scripts/lockman.sh
@@ -428,7 +432,7 @@ $ wl-paste --list-types | wl-copy
         ```
 
 
-#### <span class="section-num">5.8.2</span> swaylock-effects {#swaylock-effects}
+#### <span class="section-num">5.9.2</span> swaylock-effects {#swaylock-effects}
 
 -   _swaylock-effects_ является форком _swaylock_:
     -   Репозиторий: <https://github.com/mortie/swaylock-effects>
@@ -445,7 +449,6 @@ $ wl-paste --list-types | wl-copy
 
 -   В стандартных тулкитах для Java жестко зашит список оконных менеджеров.
 -   Следует установить переменную окружения:
-
     ```shell
     export _JAVA_AWT_WM_NONREPARENTING=1
     ```
@@ -457,12 +460,10 @@ $ wl-paste --list-types | wl-copy
 -   GTK LookAndFeel может работать с GTK версий 2, 2.2 и 3.
 -   По умолчанию используется GTK3.
 -   Следует явно задать более старую версию:
-
     ```shell
     export JAVA_TOOL_OPTIONS='-Djdk.gtk.version=2.2'
     ```
 -   Например, в файле `~/.profile`:
-
     ```shell
     if [ "$XDG_SESSION_DESKTOP" = "sway" ] || [ "$XDG_SESSION_DESKTOP" = "i3" ]
     then
@@ -478,7 +479,6 @@ $ wl-paste --list-types | wl-copy
 -   Приложения GTK+ ожидают запуск `xdg-desktop-portal` через D-Bus.
 -   Ожидание прекращается по таймауту потому, что активированная служба D-Bus не знает, к какому `WAYLAND_DISPLAY` подключиться.
 -   Это можно исправить, добавив в файл конфигурации следующее:
-
     ```shell
     exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
     exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

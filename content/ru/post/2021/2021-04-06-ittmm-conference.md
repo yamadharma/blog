@@ -2,7 +2,7 @@
 title: "Конференция ITTMM"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-06T16:11:00+03:00
-lastmod: 2023-06-17T14:11:00+03:00
+lastmod: 2023-06-22T18:58:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

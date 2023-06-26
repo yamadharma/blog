@@ -2,8 +2,8 @@
 title: "Хоссенфельдер, С. (2021): Уродливая Вселенная Как поиски красоты заводят физиков в тупик"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-06T14:25:00+03:00
-lastmod: 2023-06-01T21:20:00+03:00
-tags: ["science-philosophy", "physics", "seedling"]
+lastmod: 2023-06-21T18:22:00+03:00
+tags: ["science-philosophy", "physics"]
 categories: ["book"]
 draft: false
 slug: "hossenfelder_book_lost-math_ru"

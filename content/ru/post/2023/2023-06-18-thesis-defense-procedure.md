@@ -2,7 +2,7 @@
 title: "Процедура защиты диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-18T18:45:00+03:00
-lastmod: 2023-06-18T18:48:00+03:00
+lastmod: 2023-06-22T18:58:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

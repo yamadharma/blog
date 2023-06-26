@@ -2,8 +2,8 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2023-06-01T19:20:00+03:00
-tags: ["seedling", "sci-being", "MOC"]
+lastmod: 2023-06-26T16:50:00+03:00
+tags: ["sci-being"]
 categories: ["science"]
 draft: false
 slug: "being-science"

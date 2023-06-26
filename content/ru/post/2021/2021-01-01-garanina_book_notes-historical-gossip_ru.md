@@ -2,7 +2,7 @@
 title: "Гаранина, М. Б. (2021): Записки исторической сплетницы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-01T13:52:00+03:00
-lastmod: 2023-05-05T12:34:00+03:00
+lastmod: 2023-06-26T16:54:00+03:00
 tags: ["history"]
 categories: ["book"]
 draft: false

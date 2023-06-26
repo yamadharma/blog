@@ -2,7 +2,7 @@
 title: "Книги. Философия науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-06T14:29:00+03:00
-lastmod: 2023-06-07T17:30:00+03:00
+lastmod: 2023-06-21T18:20:00+03:00
 tags: ["science-philosophy"]
 categories: ["book"]
 draft: false

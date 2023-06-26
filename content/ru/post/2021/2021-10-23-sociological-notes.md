@@ -2,8 +2,8 @@
 title: "Социологические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-23T20:17:00+03:00
-lastmod: 2023-04-22T14:19:00+03:00
-tags: ["MOC", "sociology"]
+lastmod: 2023-06-22T20:04:00+03:00
+tags: ["sociology"]
 categories: ["thinking"]
 draft: false
 slug: "sociological-notes"
@@ -21,6 +21,7 @@ slug: "sociological-notes"
 -   [Социальные лифты]({{< relref "2021-10-23-social-elevators" >}})
 -   [Социальные страты]({{< relref "2021-10-23-social-strata" >}})
 -   [Цветные воротнички]({{< relref "2023-04-02-collar-color" >}})
+-   [Люди доллара]({{< relref "2023-06-22-dollar-people" >}})
 
 
 ## <span class="section-num">2</span> Образование {#образование}

@@ -2,7 +2,7 @@
 title: "Темы emacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-15T17:17:00+03:00
-lastmod: 2023-06-16T18:52:00+03:00
+lastmod: 2023-06-21T18:22:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

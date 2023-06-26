@@ -2,7 +2,7 @@
 title: "Бетяев, С. К. (2009): Записки гидродинамика"
 author: ["Dmitry S. Kulyabov"]
 date: 2015-10-26T15:51:00+03:00
-lastmod: 2023-02-25T17:18:00+03:00
+lastmod: 2023-06-26T16:54:00+03:00
 tags: ["science", "science-people"]
 categories: ["book"]
 draft: false
@@ -28,9 +28,6 @@ slug: "betyaev_book_notes-hydrodynamicist_ru"
 
 ## Литература
 
-<style>.csl-left-margin{float: left; padding-right: 0em;}
- .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
-    <div class="csl-left-margin">1.</div><div class="csl-right-inline">Бетяев С.К. <a href="https://libgen.li/ads.php?md5=090a69b11bb67bf00e92d21f69502e0d">Записки гидродинамика</a>. Москва: Книжный дом «Либроком», 2009. 336 p.</div>
-  </div>
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Бетяев С. К. <a href="https://libgen.li/ads.php?md5=090a69b11bb67bf00e92d21f69502e0d">Записки гидродинамика</a> / С. К.  Бетяев. – Москва : Книжный дом «Либроком», 2009. – 336 сс.</div>
 </div>

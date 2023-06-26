@@ -2,12 +2,14 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2022-11-10T10:57:00+03:00
+lastmod: 2023-06-25T16:49:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "using-vagrant"
 ---
+
+Использование vagrant.
 
 <!--more-->
 
@@ -19,7 +21,9 @@ slug: "using-vagrant"
 -   Сайт: <https://www.vagrantup.com/>
 -   Репозиторий: <https://github.com/hashicorp/vagrant>
 -   Бинарные сборки: <https://releases.hashicorp.com/vagrant> (на данный момент не доступно из России).
--   Зеркало бинарных сборок: <https://hashicorp-releases.yandexcloud.net/vagrant/>
+-   Зеркало бинарных сборок:
+    -   <https://hashicorp-releases.yandexcloud.net/vagrant/>
+    -   <https://sourceforge.net/projects/vagrant.mirror/files/>
 
 
 ## <span class="section-num">2</span> Подготовка образа {#подготовка-образа}

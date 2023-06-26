@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2023-06-09T21:42:00+03:00
+lastmod: 2023-06-23T13:09:00+03:00
 tags: ["MOC", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
