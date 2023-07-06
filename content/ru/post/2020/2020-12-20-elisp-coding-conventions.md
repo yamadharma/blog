@@ -1,7 +1,8 @@
 ---
 title: "Соглашение о кодировании. Emacs lisp"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-20T15:51:00+03:00
-lastmod: 2021-01-10T20:15:00+03:00
+lastmod: 2023-07-06T15:20:00+03:00
 tags: ["programming", "emacs"]
 categories: ["sysadmin"]
 draft: false
@@ -31,14 +32,6 @@ slug: "elisp-coding-conventions"
 ## Внешние ссылки {#внешние-ссылки}
 
 -   [A community-driven Emacs Lisp style guide](https://github.com/bbatsov/emacs-lisp-style-guide)
-
-
-## Backlinks {#backlinks}
-
-
-### [Emacs]({{< relref "2020-12-24-emacs" >}}) {#emacs}
-
-[Соглашение о кодировании. Emacs lisp]({{< relref "2020-12-20-elisp-coding-conventions" >}})
 
 [^fn:1]: `p` нельзя, потому что не все функции, заканчивающиеся на `p`, являются предикатом.
 [^fn:2]: Это пришло из современных практик на других языках (я думаю, python ruby).

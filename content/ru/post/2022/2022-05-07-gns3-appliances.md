@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2022-07-16T12:17:00+03:00
+lastmod: 2023-07-06T16:41:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false

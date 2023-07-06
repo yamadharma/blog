@@ -2,7 +2,7 @@
 title: "Конференция Computer Algebra"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-28T09:42:00+03:00
-lastmod: 2022-09-08T18:58:00+03:00
+lastmod: 2023-07-06T14:56:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

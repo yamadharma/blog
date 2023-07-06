@@ -2,7 +2,7 @@
 title: "Hugo. Вкладки"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-26T18:11:00+03:00
-lastmod: 2022-06-26T18:49:00+03:00
+lastmod: 2023-07-03T10:47:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -39,27 +39,27 @@ slug: "hugo-tabbed-view"
 -   Файл `tabs.html`:
     ```html
     <nav>
-    	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-    		{{ $tabTotal := .Get "tabTotal" }}
-    		{{ $tabRightAlign := .Get "tabRightAlign" }}
-    		{{ $tabName := .Scratch.Get "tabName" }}
-    		{{ $tabID := .Scratch.Get "tabID" }}
+                    {{ $tabTotal := .Get "tabTotal" }}
+                    {{ $tabRightAlign := .Get "tabRightAlign" }}
+                    {{ $tabName := .Scratch.Get "tabName" }}
+                    {{ $tabID := .Scratch.Get "tabID" }}
 
-    		{{ range $i, $sequence := (seq $tabTotal) }}
+                    {{ range $i, $sequence := (seq $tabTotal) }}
 
-    		<a class="nav-item nav-link {{ if eq $i 0 }} active {{ end }}{{ if in $tabRightAlign (add 1 $i) }} ml-auto {{ end }}"
-    		   id="nav-{{ (index $tabID $i) }}" data-toggle="tab" href="#{{ (index $tabID $i) }}"
-    		   role="tab" aria-controls="nav-home" aria-selected="true">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
+                    <a class="nav-item nav-link {{ if eq $i 0 }} active {{ end }}{{ if in $tabRightAlign (add 1 $i) }} ml-auto {{ end }}"
+                       id="nav-{{ (index $tabID $i) }}" data-toggle="tab" href="#{{ (index $tabID $i) }}"
+                       role="tab" aria-controls="nav-home" aria-selected="true">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
 
-    		{{ end }}
+                    {{ end }}
 
-    	</div>
+            </div>
     </nav>
 
     <div class="tab-content" id="nav-tab-content">
 
-    	{{ .Inner }}
+            {{ .Inner }}
 
     </div>
     ```
@@ -73,7 +73,7 @@ slug: "hugo-tabbed-view"
 
     <div class="tab-pane fade show {{ if eq .Ordinal 0 }}active {{ end }}" id="{{ $tabID }}" role="tabpanel" aria-labelledby="nav-1">
 
-    	{{ $.Inner | markdownify }}
+            {{ $.Inner | markdownify }}
 
     </div>
     ```

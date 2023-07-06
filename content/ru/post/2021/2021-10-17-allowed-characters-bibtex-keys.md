@@ -2,10 +2,14 @@
 title: "Допустимые символы для ключей BibTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-17T21:04:00+03:00
-lastmod: 2021-10-18T13:40:00+03:00
+lastmod: 2023-07-05T17:08:00+03:00
+tags: ["tex"]
+categories: ["computer-science"]
 draft: false
 slug: "allowed-characters-bibtex-keys"
 ---
+
+Допустимые символы для ключей BibTeX.
 
 <!--more-->
 
@@ -51,7 +55,6 @@ slug: "allowed-characters-bibtex-keys"
 -   `:` (двоеточие)
     -   `babel` объявляет активным символом двоеточие для французского языка.
     -   Отключить его восприятие как активного можно, задав в начале документа следующее:
-
         ```latex
         \shorthandoff{:}
         ```

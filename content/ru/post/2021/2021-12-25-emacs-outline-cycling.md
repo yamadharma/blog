@@ -2,7 +2,7 @@
 title: "Emacs. Режим структуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-25T19:48:00+03:00
-lastmod: 2021-12-25T20:06:00+03:00
+lastmod: 2023-07-06T15:18:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -36,7 +36,6 @@ slug: "emacs-outline-cycling"
 ### <span class="section-num">1.3</span> Настройка {#настройка}
 
 -   Пакет модифицирует настройки _outline-mode_:
-
     ```emacs-lisp
     (require 'bicycle)
 
@@ -44,7 +43,6 @@ slug: "emacs-outline-cycling"
     (define-key outline-minor-mode-map (kbd "<S-tab>") #'bicycle-cycle-global)
     ```
 -   Его можно активировать для разных старших мод:
-
     ```emacs-lisp
     (add-hook 'prog-mode-hook #'outline-minor-mode)
     (add-hook 'markdown-mode-hook #'outline-minor-mode)

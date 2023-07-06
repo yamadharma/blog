@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-17T11:01:00+03:00
-lastmod: 2022-11-23T19:48:00+03:00
+lastmod: 2023-07-03T10:43:00+03:00
 tags: ["hugo", "org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -136,7 +136,7 @@ slug: "org-mode-export-hugo"
 -   Переменные на уровне каталога задаются в файле `.dir-locals.el`:
     ```elisp
     ((org-mode . ((org-hugo-base-dir . "~/work/blog/git")
-    	 (org-hugo-section . "ru/post"))))
+             (org-hugo-section . "ru/post"))))
     ```
 
 

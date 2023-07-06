@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-19T14:21:00+03:00
-lastmod: 2022-10-11T13:15:00+03:00
+lastmod: 2023-07-05T17:22:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

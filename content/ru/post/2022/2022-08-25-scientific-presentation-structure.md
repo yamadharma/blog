@@ -2,7 +2,7 @@
 title: "Структура научной презентации"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-25T18:31:00+03:00
-lastmod: 2023-05-13T19:57:00+03:00
+lastmod: 2023-06-29T12:23:00+03:00
 categories: ["science"]
 draft: false
 slug: "scientific-presentation-structure"

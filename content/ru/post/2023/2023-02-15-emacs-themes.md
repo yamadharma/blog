@@ -2,7 +2,7 @@
 title: "Темы emacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-15T17:17:00+03:00
-lastmod: 2023-06-21T18:22:00+03:00
+lastmod: 2023-07-01T17:26:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "emacs-themes"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Список тем {#список-тем}
+## <span class="section-num">1</span> Список наборов тем {#список-наборов-тем}
 
 -   [Emacs. Темы. Spacemacs-theme]({{< relref "2023-02-15-emacs-themes-spacemacs-theme" >}})
 -   [Emacs. Темы. Doom-themes]({{< relref "2023-02-15-emacs-themes-doom-themes" >}})

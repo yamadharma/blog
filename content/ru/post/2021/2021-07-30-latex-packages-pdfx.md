@@ -2,7 +2,7 @@
 title: "LaTeX. Пакет pdfx"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-30T11:25:00+03:00
-lastmod: 2021-08-04T13:03:00+03:00
+lastmod: 2023-07-05T16:55:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -24,7 +24,6 @@ slug: "latex-packages-pdfx"
 -   После закрытия ошибки 605 (см. <https://github.com/latex3/latex2e/issues/605>) пакет _pdfx_ перестал работать.
 -   В качестве временного решения предложено при компиляции откатиться на состояние до закрытия ошибки 605.
 -   Предложенный код (см. <https://tex.stackexchange.com/questions/605854/error-using-pdfx-on-tex-live-2021>):
-
     ```latex
     \ProvidesPackage{fixpdfx}[2021-07-22 A package that fixes pdfx errors on TeX Live 2021 in a quick and dirty way]
 
@@ -44,18 +43,18 @@ slug: "latex-packages-pdfx"
       % \scan_stop: here, which breaks pdfx
       \mode_if_horizontal:TF {
         \mode_if_inner:F {
-    	 \tex_unskip:D
-    	 \hook_use:n{para/end}
-    	 \@kernel@after@para@end
-    	 \mode_if_horizontal:TF {
-    	   \if_int_compare:w 0 < \tex_lastnodetype:D
-    	     \tex_kern:D \c_zero_dim
-    	   \fi:
-    	   \tex_par:D
-    	   \hook_use:n{para/after}
-    	   \@kernel@after@para@after
-    	 }
-    	 { \msg_error:nnnn { hooks }{ para-mode }{end}{horizontal} }
+             \tex_unskip:D
+             \hook_use:n{para/end}
+             \@kernel@after@para@end
+             \mode_if_horizontal:TF {
+               \if_int_compare:w 0 < \tex_lastnodetype:D
+                 \tex_kern:D \c_zero_dim
+               \fi:
+               \tex_par:D
+               \hook_use:n{para/after}
+               \@kernel@after@para@after
+             }
+             { \msg_error:nnnn { hooks }{ para-mode }{end}{horizontal} }
         }
       }
       \tex_par:D
@@ -69,11 +68,11 @@ slug: "latex-packages-pdfx"
 
     \AtBeginDocument{
         \@ifpackageloaded{pdfx}{}{
-    	\PackageError{fixpdfx}{pdfx~is~not~loaded}{You~did~not~load~pdfx~and~thus~do~not~need~this~package}
+            \PackageError{fixpdfx}{pdfx~is~not~loaded}{You~did~not~load~pdfx~and~thus~do~not~need~this~package}
         }
         % pdfx v1.6.3 from 2019-02-27 is bad, so anything later is hopefully fixed...
         \@ifpackagelater{pdfx}{2019/02/28}{
-    	\PackageError{fixpdfx}{Please~check~whether~you~really~need~this~package.}{Your~pdfx~package~is~more~recent~than~2019-02-27~and~thus~might~not~require~this~package's~fix.}
+            \PackageError{fixpdfx}{Please~check~whether~you~really~need~this~package.}{Your~pdfx~package~is~more~recent~than~2019-02-27~and~thus~might~not~require~this~package's~fix.}
         }{}
 
         \PackageWarning{fixpdf}{Restoring~old~\para_end:~implementation}

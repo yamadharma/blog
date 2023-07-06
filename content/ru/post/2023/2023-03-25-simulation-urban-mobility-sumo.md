@@ -2,7 +2,7 @@
 title: "Симулятор трафика Simulation of Urban MObility (SUMO)"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-25T19:53:00+03:00
-lastmod: 2023-03-26T17:03:00+03:00
+lastmod: 2023-06-29T12:47:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

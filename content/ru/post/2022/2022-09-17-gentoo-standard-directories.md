@@ -2,8 +2,8 @@
 title: "Стандартные каталоги Gentoo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-17T13:31:00+03:00
-lastmod: 2022-09-22T16:09:00+03:00
-tags: ["gentoo"]
+lastmod: 2023-07-06T14:59:00+03:00
+tags: ["linux", "gentoo"]
 categories: ["computer-science"]
 draft: false
 slug: "gentoo-standard-directories"

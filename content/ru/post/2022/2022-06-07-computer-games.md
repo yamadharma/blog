@@ -2,7 +2,7 @@
 title: "Компьютерные игры"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-07T15:31:00+03:00
-lastmod: 2023-04-02T18:38:00+03:00
+lastmod: 2023-07-06T14:50:00+03:00
 categories: ["games"]
 draft: false
 slug: "computer-games"
@@ -17,7 +17,8 @@ slug: "computer-games"
 
 ## <span class="section-num">1</span> Стратегии {#стратегии}
 
--   [Disciples II]({{< relref "2022-06-07-disciples2" >}})
+-   [Disciples]({{< relref "2022-06-07-disciples-game" >}})
+    -   [Disciples II]({{< relref "2022-06-07-disciples2" >}})
 -   [Heroes of Might and Magic]({{< relref "2022-06-07-homm" >}})
 
 

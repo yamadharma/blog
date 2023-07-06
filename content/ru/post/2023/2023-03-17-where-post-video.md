@@ -2,7 +2,7 @@
 title: "Где размещать видео"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-17T17:51:00+03:00
-lastmod: 2023-03-17T18:28:00+03:00
+lastmod: 2023-07-04T11:05:00+03:00
 tags: ["blog"]
 categories: ["self-management"]
 draft: false
@@ -16,35 +16,130 @@ slug: "where-post-video"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Youtube {#youtube}
+## <span class="section-num">1</span> Варианты видеохостингов {#варианты-видеохостингов}
+
+-   YouTube: <https://www.youtube.com/>
+-   RuTube: <https://rutube.ru/>
+-   VK Видео: <https://vk.com/video>
+-   Дзен Видео: <https://dzen.ru/video>
+-   Видео Мail: <https://my.mail.ru/video>
+-   Одноклассники: <https://ok.ru/video>
 
 
-## <span class="section-num">2</span> Rutube {#rutube}
+## <span class="section-num">2</span> Youtube {#youtube}
 
 
-### <span class="section-num">2.1</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
+### <span class="section-num">2.1</span> Подтверждение канала на youtube.com {#подтверждение-канала-на-youtube-dot-com}
+
+По умолчанию размеры загружаемых видеофайлов ограничены (не более 15 минут). Для снятия ограничений, необходимо подтвердить права на канал.
+Для этого перейдите на страницу <http://youtube.com/verify> и укажите свой номер телефона. После этого вы получите код подтверждения в формате SMS или телефонного звонка.
+
+{{< youtube _qAzdmqctSM >}}
+
+
+### <span class="section-num">2.2</span> Загрузка видео на youtube.com {#загрузка-видео-на-youtube-dot-com}
+
+{{< youtube BKH2tU50seA >}}
+
+
+## <span class="section-num">3</span> Rutube {#rutube}
+
+
+### <span class="section-num">3.1</span> Техническая информация {#техническая-информация}
+
+-   Размер: не более 10 Гб
+-   Длительность: не более 300 минут
+-   Формат контейнера: MP4
+-   Видеокодек: H264 (MainConcept)
+-   Аудиокодек: MPEG 2 ACC-LC, Stereo
+-   Параметры видео: bitrate выше 3600 kbps, 1280 x 720, frame rate: 25 fps, key frame каждый 50-й
+-   Параметры аудио: bitrate 128 kbps, 44 100 KHz
+-   Премодерация
+-   Для каналов с верификацией выборочная постмодерация
+
+
+### <span class="section-num">3.2</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
 
 -   Пакетный перенос отсутствует.
 -   Необходимо скачать видео с Youtube (см. [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})) и вручную перезалить на Rutube.
 
 
-### <span class="section-num">2.2</span> Подключение к блогу {#подключение-к-блогу}
+### <span class="section-num">3.3</span> Подключение к блогу {#подключение-к-блогу}
 
 -   [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})
 
 
-## <span class="section-num">3</span> VK Video {#vk-video}
+## <span class="section-num">4</span> VK Video {#vk-video}
 
 
-### <span class="section-num">3.1</span> Перенос видео с Youtube вручную {#перенос-видео-с-youtube-вручную}
+### <span class="section-num">4.1</span> Общая информация {#общая-информация}
+
+-   Сайт: [[<https://vk.com/video>]]
+-   Не позиционирует себя как хостинг виде.
+-   Много параметров для вставки видео в свою страницу.
+
+
+### <span class="section-num">4.2</span> Техническая информация {#техническая-информация}
+
+-   Размер: не более 5 Гб
+-   Длительность: ограничена объемом
+-   Формат контейнера: AVI, MP4, 3GP, MPEG, MOV, FLV, F4V, WMV, MKV, WEBM, VOB, RM, RMVB, M4V, MPG, OGV, TS, M2TS, MTS
+-   Видеокодек: MPEG4
+-   Аудиокодек: AAC
+-   Параметры видео: от 1280×720 (30 FPS) Битрейт 1500 – 4000; до 3840 Х 2160 (60 FPS) Битрейт 25000 – 30000
+-   Параметры аудио: bitrate 320
+-   Один пользователь может загрузить до 5000 видео на своей странице или в группе.
+-   Пропорции у видео: вертикальная и горизонтальная.
+-   Модерация есть для всех пользователей.
+
+
+### <span class="section-num">4.3</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
+
+
+#### <span class="section-num">4.3.1</span> Перенос видео с Youtube вручную {#перенос-видео-с-youtube-вручную}
 
 1.  Скопируйте ссылку на ролик с YouTube, откройте Видео → Добавить видео (в левом верхнем углу) → Добавить с другого сайта → вставьте ссылку и нажмите на → Сохранить.
 2.  Под видеороликами на YouTube нажмите на Поделиться → кнопка ВКонтакте → поставьте галочку Добавить в Мои Видео и нажмите Отправить.
 
 
-### <span class="section-num">3.2</span> Пакетный перенос видео из Youtube {#пакетный-перенос-видео-из-youtube}
+#### <span class="section-num">4.3.2</span> Пакетный перенос видео из Youtube {#пакетный-перенос-видео-из-youtube}
 
 -   Пакетный перенос можно сделать с помощью приложение VK Transfer Video.
 -   Ссылка: <https://vk.com/vktransfer>
 -   Запускать приложение нужно через веб-версию Вконтакте.
 -   Переносит видео и плейлисты.
+
+
+## <span class="section-num">5</span> Видео Мail {#видео-мail}
+
+
+### <span class="section-num">5.1</span> Общая информация {#общая-информация}
+
+-   Ощущение, что не развивается.
+
+
+### <span class="section-num">5.2</span> Техническая информация {#техническая-информация}
+
+-   Размер: не более 5 Гб
+
+
+## <span class="section-num">6</span> Дзен Видео {#дзен-видео}
+
+
+### <span class="section-num">6.1</span> Техническая информация {#техническая-информация}
+
+-   Размер: не более 10 Гб
+-   Пропорции: горизонтальная, вертикальная, квадрат.
+-   Форматы: MPG, FLV, OGM, MP4, WebM, WMV, ASX, OGV, MPEG, MOV, M4V, AVI.
+-   Модерация: для всего видео.
+-   Обязательная реклама в видео.
+
+
+## <span class="section-num">7</span> Одноклассники {#одноклассники}
+
+
+### <span class="section-num">7.1</span> Техническая информация {#техническая-информация}
+
+-   Размер: не более 32 Гб
+-   Премодерация.
+-   Отсутствие рекламы в видеороликах.

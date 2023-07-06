@@ -1,7 +1,8 @@
 ---
 title: "Комиссия по развитию электронной образовательной среды РУДН"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-16T10:14:00+03:00
-lastmod: 2021-01-11T10:18:00+03:00
+lastmod: 2023-07-06T14:54:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false

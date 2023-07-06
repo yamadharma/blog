@@ -2,7 +2,7 @@
 title: "Миниатюры видео для youtube"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-05T18:18:00+03:00
-lastmod: 2023-06-23T13:10:00+03:00
+lastmod: 2023-06-27T19:09:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "youtube-video-thumbnail"

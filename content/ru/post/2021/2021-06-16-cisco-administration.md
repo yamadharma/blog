@@ -2,8 +2,8 @@
 title: "Администрирование Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T12:38:00+03:00
-lastmod: 2023-04-04T15:35:00+03:00
-tags: ["MOC", "cisco", "sysadmin", "network"]
+lastmod: 2023-07-05T21:06:00+03:00
+tags: ["cisco", "sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
 slug: "cisco-administration"

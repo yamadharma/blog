@@ -2,7 +2,7 @@
 title: "Виды комментариев в Emacs Lisp"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-12T18:45:00+03:00
-lastmod: 2022-07-12T19:19:00+03:00
+lastmod: 2023-07-06T15:20:00+03:00
 tags: ["emacs", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -30,9 +30,9 @@ slug: "emacs-lisp-comments"
       "My function"
       (message
        (concat "Hello "
-    	   (if name ; check if nil
-    	       name
-    	     "World"))))
+               (if name ; check if nil
+                   name
+                 "World"))))
 
     (greet)
     ;; This prints Hello World
@@ -57,8 +57,8 @@ slug: "emacs-lisp-comments"
     ```emacs-lisp
     (setq base-version-list                 ; There was a base
           (assoc (substring fn 0 start-vn)  ; version to which
-    	     file-version-assoc-list))  ; this looks like
-    					; a subversion.
+                 file-version-assoc-list))  ; this looks like
+                                            ; a subversion.
     ```
 
 
@@ -68,8 +68,8 @@ slug: "emacs-lisp-comments"
 -   Такие комментарии обычно описывают назначение следующих строк или состояние программы в этот момент:
     ```emacs-lisp
     (prog1 (setq auto-fill-function
-    	     …
-    	     …
+                 …
+                 …
       ;; Update mode line.
       (force-mode-line-update)))
     ```

@@ -2,7 +2,7 @@
 title: "Журнал TUGboat"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T16:49:00+03:00
-lastmod: 2022-02-10T17:11:00+03:00
+lastmod: 2023-07-05T17:14:00+03:00
 tags: ["tex"]
 categories: ["science"]
 draft: false
@@ -32,7 +32,6 @@ slug: "tugboat-journal"
 ## <span class="section-num">2</span> Скачать все выпуски {#скачать-все-выпуски}
 
 -   Набросал скрипт, чтобы скачать все выпуски _TUGboat_:
-
     ```shell
     #!/bin/bash
 
@@ -42,52 +41,52 @@ slug: "tugboat-journal"
     do
         for number in $(seq 0 5)
         do
-    	issue=tb${volume}-${number}
-    	issue2=tb${volume}-${number}-$((number + 1))
-    	echo ${issue} + ${pass_through_number}
-    	server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue}/tb${pass_through_number}complete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
-    	if [[ ${server_response} == 404 ]]
-    	then
-    	    # Volume 12, number 3-4
-    	    server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}acomplete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
-    	    server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}bcomplete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
-    	    if [[ ${server_response} != 404 ]]
-    	    then
-    		mkdir -p ${volume}
-    		mv tb${pass_through_number}acomplete.pdf ${volume}/"TUGboat - ${volume} - ${number}a (${pass_through_number})".pdf
-    		mv tb${pass_through_number}bcomplete.pdf ${volume}/"TUGboat - ${volume} - ${number}b (${pass_through_number})".pdf
-    		# Increase `pass_through_number`
-    		pass_through_number=$(echo ${pass_through_number} + 1 | bc)
-    		if (( ${pass_through_number} < 10 ))
-    		then
-    		    pass_through_number=0${pass_through_number}
-    		fi
-    	    fi
-    	    # Volume 22, number 1-2
-    	    server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}complete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
-    	    if [[ ${server_response} != 404 ]]
-    	    then
-    		mkdir -p ${volume}
-    		mv tb${pass_through_number}complete.pdf ${volume}/"TUGboat - ${volume} - ${number2} (${pass_through_number})".pdf
-    		# Increase `pass_through_number`
-    		pass_through_number=$(echo ${pass_through_number} + 1 | bc)
-    		if (( ${pass_through_number} < 10 ))
-    		then
-    		    pass_through_number=0${pass_through_number}
-    		fi
-    	    fi
-    	    continue
-    	else
-    	    # Rename file
-    	    mkdir -p ${volume}
-    	    mv tb${pass_through_number}complete.pdf ${volume}/"TUGboat - ${volume} - ${number} (${pass_through_number})".pdf
-    	    # Increase `pass_through_number`
-    	    pass_through_number=$(echo ${pass_through_number} + 1 | bc)
-    	    if (( ${pass_through_number} < 10 ))
-    	    then
-    		pass_through_number=0${pass_through_number}
-    	    fi
-    	fi
+            issue=tb${volume}-${number}
+            issue2=tb${volume}-${number}-$((number + 1))
+            echo ${issue} + ${pass_through_number}
+            server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue}/tb${pass_through_number}complete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
+            if [[ ${server_response} == 404 ]]
+            then
+                # Volume 12, number 3-4
+                server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}acomplete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
+                server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}bcomplete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
+                if [[ ${server_response} != 404 ]]
+                then
+                    mkdir -p ${volume}
+                    mv tb${pass_through_number}acomplete.pdf ${volume}/"TUGboat - ${volume} - ${number}a (${pass_through_number})".pdf
+                    mv tb${pass_through_number}bcomplete.pdf ${volume}/"TUGboat - ${volume} - ${number}b (${pass_through_number})".pdf
+                    # Increase `pass_through_number`
+                    pass_through_number=$(echo ${pass_through_number} + 1 | bc)
+                    if (( ${pass_through_number} < 10 ))
+                    then
+                        pass_through_number=0${pass_through_number}
+                    fi
+                fi
+                # Volume 22, number 1-2
+                server_response=$(wget --server-response https://www.tug.org/TUGboat/${issue2}/tb${pass_through_number}complete.pdf 2>&1 | awk '/^  HTTP/{print $2}')
+                if [[ ${server_response} != 404 ]]
+                then
+                    mkdir -p ${volume}
+                    mv tb${pass_through_number}complete.pdf ${volume}/"TUGboat - ${volume} - ${number2} (${pass_through_number})".pdf
+                    # Increase `pass_through_number`
+                    pass_through_number=$(echo ${pass_through_number} + 1 | bc)
+                    if (( ${pass_through_number} < 10 ))
+                    then
+                        pass_through_number=0${pass_through_number}
+                    fi
+                fi
+                continue
+            else
+                # Rename file
+                mkdir -p ${volume}
+                mv tb${pass_through_number}complete.pdf ${volume}/"TUGboat - ${volume} - ${number} (${pass_through_number})".pdf
+                # Increase `pass_through_number`
+                pass_through_number=$(echo ${pass_through_number} + 1 | bc)
+                if (( ${pass_through_number} < 10 ))
+                then
+                    pass_through_number=0${pass_through_number}
+                fi
+            fi
         done
     done
     ```

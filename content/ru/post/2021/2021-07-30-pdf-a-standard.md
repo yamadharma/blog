@@ -2,7 +2,7 @@
 title: "Стандарт PDF/A"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-30T10:47:00+03:00
-lastmod: 2022-06-30T18:51:00+03:00
+lastmod: 2023-07-05T16:55:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

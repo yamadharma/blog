@@ -2,7 +2,9 @@
 title: "Emacs. Автодополнение. Helm"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-14T20:25:00+03:00
-lastmod: 2023-02-23T19:43:00+03:00
+lastmod: 2023-07-06T15:01:00+03:00
+tags: ["emacs"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-completion-helm"
 ---

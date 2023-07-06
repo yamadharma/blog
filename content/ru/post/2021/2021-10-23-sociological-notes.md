@@ -2,7 +2,7 @@
 title: "Социологические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-23T20:17:00+03:00
-lastmod: 2023-06-22T20:04:00+03:00
+lastmod: 2023-07-05T21:18:00+03:00
 tags: ["sociology"]
 categories: ["thinking"]
 draft: false

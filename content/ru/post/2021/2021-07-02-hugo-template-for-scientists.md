@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2022-11-22T16:33:00+03:00
+lastmod: 2023-07-03T10:41:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -32,7 +32,7 @@ slug: "hugo-template-for-scientists"
 -   В файле `go.mod` установите необходимую версию (например, `5.3`), исправив строку:
     ```conf-unix
     require (
-    	github.com/wowchemy/wowchemy-hugo-modules/v5 v5.3.0
+            github.com/wowchemy/wowchemy-hugo-modules/v5 v5.3.0
     )
     ```
 -   Обновите пути к модулям в конфигурации в файле `config/_default/config.yaml`:

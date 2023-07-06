@@ -2,7 +2,7 @@
 title: "Hugo. Видео во вкладках"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-26T18:46:00+03:00
-lastmod: 2022-06-27T17:57:00+03:00
+lastmod: 2023-07-01T17:35:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -52,7 +52,7 @@ slug: "hugo-video-tabs"
 
 <div class="tab-pane fade show {{ if eq .Ordinal 0 }}active {{ end }}" id="{{ $tabID }}" role="tabpanel" aria-labelledby="nav-1">
 
-	{{ $.Inner }}
+        {{ $.Inner }}
 
 </div>
 ```

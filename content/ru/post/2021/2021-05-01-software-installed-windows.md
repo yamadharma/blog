@@ -2,7 +2,7 @@
 title: "Программное обеспечение, устанавливаемое на Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:38:00+03:00
-lastmod: 2022-02-09T17:12:00+03:00
+lastmod: 2023-07-06T14:52:00+03:00
 tags: ["windows", "education"]
 categories: ["computer-science"]
 draft: false
@@ -31,12 +31,10 @@ slug: "software-installed-windows"
 
         {{< youtube _1O4vKHhm3I >}}
 -   Настройка автоматического обновления программного обеспечения:
-
     ```shell
     choco install choco-upgrade-all-at --params "'/DAILY:yes /TIME:10:00 /ABORTTIME:18:00'"
     ```
 -   Файловый менеджер Far:
-
     ```shell
     choco install far -y
     ```
@@ -47,7 +45,6 @@ slug: "software-installed-windows"
 ## <span class="section-num">3</span> Средства разработки {#средства-разработки}
 
 -   Редактор Visual Studio Code:
-
     ```shell
     choco install vscode
     ```
@@ -59,7 +56,6 @@ slug: "software-installed-windows"
 ### <span class="section-num">4.1</span> Средство управления версиями git {#средство-управления-версиями-git}
 
 -   Установим средство управления версиями git (см. [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})) через пакетный менеджер:
-
     ```shell
     choco install git -y
     ```
@@ -69,7 +65,6 @@ slug: "software-installed-windows"
 
 -   Средство `pandoc` для работы с языком разметки Markdown:
     -   Установка с помощью менеджера пакетов
-
         ```shell
         choco install pandoc --ia=ALLUSERS=1 -y
         ```
@@ -89,7 +84,6 @@ slug: "software-installed-windows"
 ### <span class="section-num">4.3</span> Работа с языком TeX {#работа-с-языком-tex}
 
 -   Для генерации формата `pdf` необходимо установить TeX. Будем устанавливать TeX Live:
-
     ```shell
     choco install texlive -y
     ```
@@ -104,7 +98,6 @@ slug: "software-installed-windows"
 -   Сайт: <https://www.scilab.org/>
 -   Отличительной особенностью является наличие реализации (Xcos) среды _Symulink_.
 -   Установка:
-
     ```shell
     choco install scilab -y
     ```
@@ -116,7 +109,6 @@ slug: "software-installed-windows"
 -   Сайт: <https://www.gnu.org/software/octave/>
 -   Достаточно строгая реализация языка Matlab.
 -   Установка:
-
     ```shell
     choco install octave -y
     ```
@@ -130,7 +122,6 @@ slug: "software-installed-windows"
 -   Открытая реализация языка _Modelica_.
 -   <https://www.openmodelica.org/>
 -   Установка:
-
     ```shell
     choco install openmodelica -y
     ```
@@ -141,7 +132,6 @@ slug: "software-installed-windows"
 -   Работа с раскрашенными сетями Петри.
 -   <https://cpntools.org/>
 -   Установка:
-
     ```shell
     choco install cpntools -y
     ```

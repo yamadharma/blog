@@ -1,15 +1,15 @@
 ---
-title: "Каганов, М. И. (1998): Школа ландау: что я о ней думаю"
+title: "Каганов, М. И. (1998): Школа Ландау: что я о ней думаю"
 author: ["Dmitry S. Kulyabov"]
 date: 2015-12-13T19:40:00+00:00
-lastmod: 2023-06-26T16:55:00+03:00
+lastmod: 2023-07-01T17:28:00+03:00
 tags: ["science-people"]
 categories: ["book"]
 draft: false
 slug: "kaganov_book_landau-school_ru"
 ---
 
-Каганов, М. И. (1998): Школа ландау: что я о ней думаю [<a href="#citeproc_bib_item_1">1</a>].
+Каганов, М. И. (1998): Школа Ландау: что я о ней думаю [<a href="#citeproc_bib_item_1">1</a>].
 
 <!--more-->
 

@@ -2,8 +2,8 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2022-11-24T11:10:00+03:00
-tags: ["hugo", "MOC", "sysadmin"]
+lastmod: 2023-07-05T21:06:00+03:00
+tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "hugo-site-generator"

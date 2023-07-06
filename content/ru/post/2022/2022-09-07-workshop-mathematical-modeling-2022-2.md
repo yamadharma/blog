@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-06-16T18:50:00+03:00
+lastmod: 2023-06-29T13:08:00+03:00
 tags: ["rudn"]
 categories: ["job", "science"]
 draft: false
@@ -686,13 +686,50 @@ In the course of studying the eikonal equation the reporter was faced to with th
 {{< /tabs >}}
 
 
-### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-02-28 Вт] </span></span> Щетинин {#щетинин}
+### <span class="section-num">2.7</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-06-29 Чт&gt; </span></span> Чулуунбаатар Галмандах _Вычислительные схемы решения квантовомеханических задач. Предзащита_ {#чулуунбаатар-галмандах-вычислительные-схемы-решения-квантовомеханических-задач-dot-предзащита}
 
 
-### <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-04-11 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+#### <span class="section-num">2.7.1</span> Докладчик {#докладчик}
+
+-   Чулуунбаатар Галмандах
+-   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
 
 
-### <span class="section-num">2.9</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-16 Вт] </span></span> Диваков Д. В. _Обобщение метода Гаусса для вырожденных СЛАУ_ {#диваков-д-dot-в-dot-обобщение-метода-гаусса-для-вырожденных-слау}
+#### <span class="section-num">2.7.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/230/>
+-   Вычислительные схемы решения квантовомеханических задач
+-   Чулуунбаатар Галмандах
+-   Аспирант кафедры Прикладной информатики и теории вероятностей, РУДН
+
+-   В докладе будут представлены:
+    -   Разработанная новая вычислительная схема непрерывной минимаксной оптимизации нелинейных функционалов, и ее применения для высокоточных расчетов собственных значений энергии релятивистского электрона уравнения Дирака для электрона в поле двух кулоновских зарядов тяжелых ионов.
+    -   Разработанная новая вычислительная схема метода конечных элементов высокого порядка точности решения краевых задач для системы ОДУ второго порядка с применением современных компьютерных технологий, и ее применения для высокоточных расчетов связанных и метастабильных состояний двухатомной молекулы бериллия.
+    -   Разработаные алгоритмы и комплекс программ построения полностью симметричных квадратурных формул \\(p\\)-го порядка на \\(d\\)-мерных симплексах с положительными весами и узлами внутри симплексов.
+
+---
+
+-   Computational schemes for solving quantum mechanical problems
+-   Chuluunbaatar Galmandakh
+-   Department of Applied Informatics and Probability Theory, RUDN University
+
+-   The report will present:
+    -   Developed a new computational scheme for continuous minimax optimization of nonlinear functionals, and its application for high-precision calculations of the energy eigenvalues of a relativistic electron of the Dirac equation for an electron in the field of two Coulomb charges of heavy ions.
+    -   Developed a new computational scheme of the finite element method of a high order of accuracy for solving boundary value problems for a second-order ODE system using modern computer technologies, and its application for high-precision calculations of bound and metastable states of a diatomic beryllium molecule.
+    -   Algorithms and a set of programs for constructing completely symmetric quadrature formulas of the \\(p\\)-th order on \\(d\\)-dimensional simplices with positive weights and nodes inside the simplices have been developed.
 
 
-### <span class="section-num">2.10</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-05-30 Вт] </span></span> Белов А. А. (директор центра) {#белов-а-dot-а-dot--директор-центра}
+#### <span class="section-num">2.7.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 54e1ad23ed1d80c9e5bb75eab68d1fa3 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube BeBUC1oMQIs >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

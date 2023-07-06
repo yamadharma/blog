@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией. helm-bibtex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T12:21:00+03:00
-lastmod: 2022-12-14T20:36:00+03:00
+lastmod: 2023-07-05T17:20:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

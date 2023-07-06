@@ -1,7 +1,8 @@
 ---
 title: "Комиссия Цифровая магистратура"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-14T12:27:00+03:00
-lastmod: 2021-04-14T10:58:00+03:00
+lastmod: 2023-07-06T14:54:00+03:00
 tags: ["education", "sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -38,12 +39,3 @@ slug: "commission-digitalization-msc"
 
 -   Электронные учебные курса [Преобразование учебных курсов в электронные курсы]({{< relref "2020-10-14-conversion-courses-to-e-learning" >}})
 -   Платформы электронного образования [Платформы MOOC]({{< relref "2020-10-17-mooc-platforms" >}})
-
-
-## Backlinks {#backlinks}
-
--   [Комиссия по развитию электронной образовательной среды РУДН]({{< relref "2020-12-16-commission-development-electronic-educational-environment" >}})
-
-<!--listend-->
-
--   [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})

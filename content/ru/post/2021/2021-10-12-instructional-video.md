@@ -2,9 +2,9 @@
 title: "Учебное видео"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-12T12:52:00+03:00
-lastmod: 2021-10-12T12:59:00+03:00
+lastmod: 2023-06-28T17:38:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "instructional-video"
 ---

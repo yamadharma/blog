@@ -2,7 +2,7 @@
 title: "Язык разметки org-mode"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-14T18:49:00+03:00
-lastmod: 2021-10-14T19:05:00+03:00
+lastmod: 2023-07-06T15:01:00+03:00
 tags: ["emacs", "org-mode"]
 categories: ["computer-science"]
 draft: false
@@ -22,12 +22,10 @@ slug: "org-mode-markup-language"
 ### <span class="section-num">1.1</span> Изображения {#изображения}
 
 -   Изображение можно вставлять просто в виде имени файла:
-
     ```org
     ./img/cat.jpg
     ```
 -   Можно задать заголовок и метку для изображения. Тогда изображение вставляется в виде ссылки.
-
     ```org
     #+CAPTION: Заголовок изображения
     #+NAME:   fig:image-a

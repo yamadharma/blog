@@ -2,7 +2,7 @@
 title: "Средство имитационного моделирования NS-2"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-21T17:38:00+03:00
-lastmod: 2022-10-03T15:43:00+03:00
+lastmod: 2023-06-29T12:19:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

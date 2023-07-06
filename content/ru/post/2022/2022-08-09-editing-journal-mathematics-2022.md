@@ -2,7 +2,9 @@
 title: "Редактирование. Журнал Mathematics. 2022"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-09T19:37:00+03:00
-lastmod: 2023-02-03T19:30:00+03:00
+lastmod: 2023-07-06T14:56:00+03:00
+tags: ["sci-admin"]
+categories: ["science"]
 draft: false
 slug: "editing-journal-mathematics-2022"
 ---

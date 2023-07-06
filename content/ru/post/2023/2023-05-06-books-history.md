@@ -2,8 +2,8 @@
 title: "Книги. История"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T10:29:00+03:00
-lastmod: 2023-05-06T10:33:00+03:00
-tags: ["history", "seedling"]
+lastmod: 2023-07-01T20:25:00+03:00
+tags: ["history"]
 categories: ["book"]
 draft: false
 slug: "books-history"

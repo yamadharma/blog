@@ -2,9 +2,9 @@
 title: "LaTeX. Что читать"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-20T19:28:00+03:00
-lastmod: 2023-01-20T19:44:00+03:00
+lastmod: 2023-07-05T16:49:00+03:00
 tags: ["tex"]
-categories: ["computer-science"]
+categories: ["book", "computer-science"]
 draft: false
 slug: "latex-what-read"
 ---
@@ -22,9 +22,6 @@ slug: "latex-what-read"
 
 ## Литература
 
-<style>.csl-left-margin{float: left; padding-right: 0em;}
- .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
-    <div class="csl-left-margin">1.</div><div class="csl-right-inline">Коттвиц Ш. Latex: руководство для начинающих: Создание визуально привлекательных текстов, статей и книг. Москва: ДМК Пресс, 2022. 320 p.</div>
-  </div>
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Коттвиц Ш. Latex: руководство для начинающих: Создание визуально привлекательных текстов, статей и книг. Latex: руководство для начинающих / Ш.  Коттвиц. – Москва : ДМК Пресс, 2022. – 320 сс.</div>
 </div>

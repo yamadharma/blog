@@ -2,7 +2,7 @@
 title: "Emacs. Менеджер библиографической информации Ebib"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-14T16:19:00+03:00
-lastmod: 2021-09-25T21:00:00+03:00
+lastmod: 2023-07-04T10:48:00+03:00
 tags: ["emacs", "sysadmin"]
 categories: ["science", "computer-science"]
 draft: false
@@ -17,6 +17,10 @@ slug: "emacs-ebib-bibliography-manager"
 
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://joostkremers.github.io/ebib/>
+-   Репозиторий: <https://github.com/joostkremers/ebib>
+-   Документация: <https://joostkremers.github.io/ebib/ebib-manual.html>
 
 
 ## <span class="section-num">2</span> Организация библиографической информации {#организация-библиографической-информации}
@@ -66,7 +70,6 @@ slug: "emacs-ebib-bibliography-manager"
 #### <span class="section-num">3.3.2</span> Пример шаблона захвата {#пример-шаблона-захвата}
 
 -   Шаблон по умолчанию имеет вид:
-
     ```elisp
     (setq ebib-reading-list-template "* %M %T\n:PROPERTIES:\n%K\n:END:\n%F\n")
     ```

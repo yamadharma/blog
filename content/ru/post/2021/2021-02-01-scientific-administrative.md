@@ -2,7 +2,7 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2023-05-18T08:26:00+03:00
+lastmod: 2023-07-06T14:57:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

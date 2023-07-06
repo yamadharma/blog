@@ -2,7 +2,7 @@
 title: "Структура лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-16T12:56:00+03:00
-lastmod: 2023-06-23T13:10:00+03:00
+lastmod: 2023-06-27T19:06:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

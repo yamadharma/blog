@@ -2,7 +2,7 @@
 title: "Формат ключа BibTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-18T11:25:00+03:00
-lastmod: 2021-10-18T16:21:00+03:00
+lastmod: 2023-07-05T17:13:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -53,7 +53,6 @@ slug: "bibtex-key-format"
 
 -   Я решил заменить разделитель полей `:` на `_`.
 -   Для этого я выполнил скрипт:
-
     ```shell
     sed -i -r 's/(^@.*)/echo "\1" | tr : _ /e' main.bib
     ```

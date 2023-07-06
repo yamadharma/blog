@@ -2,7 +2,7 @@
 title: "Технологии туннелирования IPv6"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-26T19:17:00+03:00
-lastmod: 2023-06-26T16:35:00+03:00
+lastmod: 2023-06-30T11:12:00+03:00
 tags: ["ipv6", "network"]
 categories: ["computer-science"]
 draft: false

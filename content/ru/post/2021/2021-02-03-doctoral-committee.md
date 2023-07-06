@@ -2,7 +2,7 @@
 title: "Диссертационный совет"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:46:00+03:00
-lastmod: 2023-06-18T18:55:00+03:00
+lastmod: 2023-06-30T10:01:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -165,5 +165,5 @@ slug: "doctoral-committee"
 ## <span class="section-num">8</span> Видеозаписи защиты диссертации {#видеозаписи-защиты-диссертации}
 
 -   RuTube: <https://rutube.ru/plst/141990/>
--   Youtube: <https://www.youtube.com/watch?v=5FxkNDwko0E&list=PLhyPdV6jkp-QZjeLE06ts1Ucvafhz1CD->
+-   Youtube: <https://www.youtube.com/playlist?list=PLhyPdV6jkp-QZjeLE06ts1Ucvafhz1CD->
 -   VK Видео: <https://vk.com/video/playlist/606414976_2>

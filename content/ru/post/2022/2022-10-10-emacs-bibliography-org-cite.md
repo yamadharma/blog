@@ -2,7 +2,7 @@
 title: "Emacs. Работа с библиографией. Org-cite"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T12:34:00+03:00
-lastmod: 2022-10-11T17:14:00+03:00
+lastmod: 2023-07-05T17:19:00+03:00
 tags: ["emacs", "org-mode"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,9 @@
 title: "bibtex vs biblatex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-11T20:22:00+03:00
-lastmod: 2022-09-11T20:50:00+03:00
+lastmod: 2023-07-05T17:06:00+03:00
+tags: ["tex"]
+categories: ["computer-science"]
 draft: false
 slug: "bibtex-biblatex"
 ---

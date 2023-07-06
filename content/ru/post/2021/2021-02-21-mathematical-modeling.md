@@ -2,8 +2,8 @@
 title: "Математическое моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-21T16:33:00+03:00
-lastmod: 2023-03-25T19:58:00+03:00
-tags: ["MOC", "modeling"]
+lastmod: 2023-06-28T17:33:00+03:00
+tags: ["modeling"]
 categories: ["science"]
 draft: false
 slug: "mathematical-modeling"

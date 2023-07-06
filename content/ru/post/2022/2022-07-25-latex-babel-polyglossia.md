@@ -2,7 +2,9 @@
 title: "LaTeX. babel vs polyglossia"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-25T17:10:00+03:00
-lastmod: 2022-07-27T17:45:00+03:00
+lastmod: 2023-07-05T16:53:00+03:00
+tags: ["tex"]
+categories: ["computer-science"]
 draft: false
 slug: "latex-babel-polyglossia"
 ---

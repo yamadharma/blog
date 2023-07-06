@@ -2,7 +2,7 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2022-11-23T18:54:00+03:00
+lastmod: 2023-07-01T17:33:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false

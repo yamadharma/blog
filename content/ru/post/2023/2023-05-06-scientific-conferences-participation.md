@@ -2,7 +2,7 @@
 title: "Участие в научных конференциях"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T19:37:00+03:00
-lastmod: 2023-06-17T14:09:00+03:00
+lastmod: 2023-07-05T16:15:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -54,3 +54,8 @@ slug: "scientific-conferences-participation"
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Apreutesey A. M. Y. <a href="http://ceur-ws.org/Vol-2946/paper-04.pdf">Computer simulation of the stochastic red algorithm</a> / A. M. Y. Apreutesey, A. V. Korolkova, D. S. Kulyabov // Workshop on information technology and scientific computing in the framework of the xi international conference information and telecommunication technologies and mathematical modeling of high-tech systems (ittmm-2021) : Ceur workshop proceedings / ред. D. S. Kulyabov [и др.]. – Moscow, 2021. – Т. 2946. – Сс. 45–53.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Sevastianov L. A. <a href="https://doi.org/10.1109/itnt55410.2022.9848731">Multistage collocation pseudo-spectral method for the solution of the first order linear ode</a> / L. A. Sevastianov, K. P. Lovetskiy, D. S. Kulyabov // 2022 viii international conference on information technology and nanotechnology (itnt). – Samara, Russian Federation : Institute of Electrical and Electronics Engineers Inc., 2022. – Сс. 1–6.</div>
 </div>
+
+
+## <span class="section-num">3</span> Saratov Fall Meeting (SFM) {#saratov-fall-meeting--sfm}
+
+-   [Конференция Saratov Fall Meeting]({{< relref "2023-07-05-conference-saratov-fall-meeting" >}})

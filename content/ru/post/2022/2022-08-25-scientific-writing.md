@@ -2,8 +2,8 @@
 title: "Научная писанина"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-25T18:39:00+03:00
-lastmod: 2022-08-25T18:49:00+03:00
-tags: ["MOC", "sci-writing"]
+lastmod: 2023-06-28T17:28:00+03:00
+tags: ["sci-writing"]
 categories: ["science"]
 draft: false
 slug: "scientific-writing"

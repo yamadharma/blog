@@ -2,7 +2,7 @@
 title: "Emacs. Почта"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-23T11:12:00+03:00
-lastmod: 2021-09-27T19:19:00+03:00
+lastmod: 2023-07-06T15:16:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

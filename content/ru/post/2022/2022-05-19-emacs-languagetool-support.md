@@ -2,7 +2,7 @@
 title: "Emacs. Поддержка LanguageTool"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-19T19:45:00+03:00
-lastmod: 2022-05-19T20:48:00+03:00
+lastmod: 2023-07-06T15:18:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

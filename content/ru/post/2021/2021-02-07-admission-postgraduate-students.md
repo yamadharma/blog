@@ -1,7 +1,8 @@
 ---
 title: "Поступление в аспирантуру студентов"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-07T20:09:00+03:00
-lastmod: 2021-02-07T20:44:00+03:00
+lastmod: 2023-07-06T14:55:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

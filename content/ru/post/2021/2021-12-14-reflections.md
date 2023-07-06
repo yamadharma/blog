@@ -2,8 +2,7 @@
 title: "Мысли"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-14T17:33:00+03:00
-lastmod: 2023-05-09T11:31:00+03:00
-tags: ["MOC"]
+lastmod: 2023-07-05T21:18:00+03:00
 categories: ["thinking"]
 draft: false
 slug: "reflections"

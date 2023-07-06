@@ -1,7 +1,8 @@
 ---
 title: "Ограничения ёмкости регистров TeX'а"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-28T10:47:00+03:00
-lastmod: 2021-06-02T16:24:00+03:00
+lastmod: 2023-07-05T17:24:00+03:00
 tags: ["sysadmin", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -34,51 +35,40 @@ slug: "limitations-capacity-tex-registers"
 -   Рассматривается дистрибутив, установленный установщиком TeX Live (см. [Установка TeX Live]({{< relref "2021-04-23-install-texlive" >}})).
 -   Системный уровень
     -   Все команды выполняются с полномочиями администратора:
-
         ```shell
         su -
         ```
     -   При обычной установке настройки делаются в каталоге
-
         ```shell
         /usr/local/texlive/texmf-local
         ```
     -   Локальные настройки для форматов TeX находятся в файле
-
         ```shell
         /usr/local/texlive/texmf-local/web2c/texmf.cnf
         ```
-
         Этот каталог задаётся переменной
-
         ```conf-unix
         TEXMFLOCAL
         ```
     -   После исправления файлов следует перегенерить форматы TeX:
-
         ```shell
         fmtutil-sys --all
         ```
 -   Пользовательский уровень
     -   Все операции выполняются с полномочиями пользователя.
     -   При обычной установке настройки делаются в каталоге
-
         ```shell
         ~/texmf
         ```
-
         Этот каталог задаётся переменной
-
         ```conf-unix
         TEXMFHOME
         ```
     -   Настройки пользователя для форматов TeX находятся в файле
-
         ```shell
         ~/texmf/web2c/texmf.cnf
         ```
     -   После исправления файлов следует перегенерить форматы TeX:
-
         ```shell
         fmtutil-user --all
         ```
@@ -91,12 +81,10 @@ slug: "limitations-capacity-tex-registers"
 
 -   При компиляции ограничено количество открытых одновременно файлов.
 -   Ошибка выглядит следующим образом:
-
     ```shell
     ! TeX capacity exceeded, sorry [text input levels=15].
     ```
 -   Необходимо увеличить количество открытых одновременно файлов:
-
     ```conf-unix
     %% web2c/texmf.cnf
     %% simultaneous input files and error insertions, also applies to MetaPost

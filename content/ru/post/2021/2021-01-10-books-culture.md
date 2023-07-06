@@ -2,7 +2,7 @@
 title: "Книги. Культура"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-10T14:10:00+03:00
-lastmod: 2022-09-25T14:31:00+03:00
+lastmod: 2023-07-03T10:39:00+03:00
 tags: ["culture"]
 categories: ["book"]
 draft: false
@@ -16,6 +16,9 @@ slug: "books-culture"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Список книг {#book-list}
+## <span class="section-num">1</span> Список по годам {#список-по-годам}
+
+
+### <span class="section-num">1.1</span> 2021 {#2021}
 
 -   <span class="timestamp-wrapper"><span class="timestamp">[2021-01-09 Сб 19:49] </span></span> [Чёрт И. - Анатомия шоу-бизнеса]({{< relref "2021-01-10-chert-anatomy-show-business" >}})

@@ -2,7 +2,7 @@
 title: "Диаграммы. Mermaid"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2022-02-23T17:33:00+03:00
+lastmod: 2023-07-04T11:11:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -53,7 +53,6 @@ Mermaid реализует концепцию _Diagram as Code_.
     -   необработанный код из блока передаётся его в _Mermaid.js_,
     -   код преобразуется в диаграмму.
 -   Пример входного кода
-
     ````markdown
     ```mermaid
       graph TD;
@@ -64,7 +63,6 @@ Mermaid реализует концепцию _Diagram as Code_.
     ```
     ````
 -   Результирующее изображение
-
     ````mermaid
     graph TD;
         A-->B;
@@ -90,7 +88,6 @@ Mermaid реализует концепцию _Diagram as Code_.
 ### <span class="section-num">1.5</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
 
 -   Необходимо установить программу `mmdc` из проекта <https://github.com/mermaid-js/mermaid-cli>.
-
     ````shell
     yarn global add @mermaid-js/mermaid-cli
     ````
@@ -121,7 +118,6 @@ Mermaid реализует концепцию _Diagram as Code_.
     -   Для экранирования используют кавычки.
         -   Всё содержимое в кавычках считается текстом.
 -   `click`: задаёт ссылку для узла.
-
     ````markdown
     click <узел> "<ссылка>" <_blank>
     ````
@@ -135,7 +131,6 @@ Mermaid реализует концепцию _Diagram as Code_.
     -   `RL`: справа налево (right to left);
     -   `LR`: слева направо (left to right).
 -   `style`: задаёт оформление диаграммы.
-
     ````markdown
     style <узел> <style_tag:значение>,<style_tag:значение>
     ````
@@ -147,7 +142,6 @@ Mermaid реализует концепцию _Diagram as Code_.
         -   `color`: цвет текста;
         -   `stroke-dasharray`: пунктирная граница.
     -   `classDef`: задаёт класс, содержащий набор стилей.
-
         ````markdown
         classDef <имя_класса> <style_tag:значение>,<style_tag:значение>
         ````
@@ -277,13 +271,13 @@ Mermaid реализует концепцию _Diagram as Code_.
     flowchart TB
         c1 --> a2
         subgraph one
-    	a1 --> a2
+            a1 --> a2
         end
         subgraph two
-    	b1 --> b2
+            b1 --> b2
         end
         subgraph three
-    	c1 --> c2
+            c1 --> c2
         end
     ````
 -   Ссылки
@@ -473,11 +467,11 @@ Mermaid реализует концепцию _Diagram as Code_.
           Пишем черновик: 5: Я
           Готовим картинки: 4: Я
         section Редактируем
-    	Проверяем: 3: Я, Соавтор
-    	Финальные правки: 2: Я
+            Проверяем: 3: Я, Соавтор
+            Финальные правки: 2: Я
         section Публикация
-    	Публикуем: 5: Я
-    	Радуемся: 8: Я, Соавтор
+            Публикуем: 5: Я
+            Радуемся: 8: Я, Соавтор
     ````
 
 
