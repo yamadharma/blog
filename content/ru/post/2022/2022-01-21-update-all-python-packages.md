@@ -2,7 +2,7 @@
 title: "Обновление пакетов python"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T16:33:00+03:00
-lastmod: 2022-01-21T16:47:00+03:00
+lastmod: 2023-07-11T11:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -20,12 +20,10 @@ slug: "update-all-python-packages"
 ## <span class="section-num">1</span> Список всех устаревших пакетов {#список-всех-устаревших-пакетов}
 
 -   Создать список всех устаревших пакетов:
-
     ```shell
     pip3 list --outdated
     ```
 -   Создать список всех устаревших пакетов, установленных пользователем:
-
     ```shell
     pip3 list --outdated --user
     ```
@@ -35,12 +33,10 @@ slug: "update-all-python-packages"
 
 -   Обновляем пакеты, установленные пользователем (`--user`).
 -   С использованием `pip` и `grep`:
-
     ```shell
     pip3 list --outdated --format=freeze --user | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U --user
     ```
 -   С использованием `pip` и `awk`:
-
     ```shell
     pip3 list --outdated --user | cut -f1 -d' ' | tr " " "\n" | awk '{if(NR>=3)print)' | cut -d' ' -f1 | xargs -n1 pip3 install -U --user
     ```
@@ -50,7 +46,6 @@ slug: "update-all-python-packages"
 
 -   Обновляем пакеты, установленные пользователем (`--user`).
 -   Используем _powershell_:
-
     ```shell
     pip freeze --user | %{$_.split('==')[0]} | %{pip install --upgrade $_ --user}
     ```

@@ -2,7 +2,7 @@
 title: "Система виртуализации VirtualBox"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-17T11:35:00+03:00
-lastmod: 2023-01-03T18:24:00+03:00
+lastmod: 2023-07-11T11:11:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

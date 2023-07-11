@@ -2,7 +2,7 @@
 title: "Web консоль Cockpit"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-18T17:23:00+03:00
-lastmod: 2022-01-18T19:09:00+03:00
+lastmod: 2023-07-11T11:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -40,24 +40,20 @@ _Cockpit_ представляет собой инструмент для адм
 ### <span class="section-num">3.1</span> Установка в RedHat и деривативах: {#установка-в-redhat-и-деривативах}
 
 -   Centos 7
-
     ```shell
     yum install cockpit
     ```
 -   Centos 8
-
     ```shell
     dnf install cockpit
     ```
 
     -   В CentOS 8 _cockpit_ устанавливается по умолчанию.
 -   Запуск служб
-
     ```shell
     systemctl enable --now cockpit.socket
     ```
 -   Настройка брандмауэра
-
     ```shell
     firewall-cmd --add-service=cockpit --permanent
     firewall-cmd --reload
@@ -78,12 +74,10 @@ _Cockpit_ представляет собой инструмент для адм
 -   cockpit-packagekit
     -   Работа с пакетами.
     -   Установка:
-
         ```shell
         yum install cockpit-packagekit
         ```
     -   Установка необходимого программного обеспечения:
-
         ```shell
         yum install virt-install
         ```

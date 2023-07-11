@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-06-29T13:08:00+03:00
+lastmod: 2023-07-11T11:17:00+03:00
 tags: ["rudn"]
 categories: ["job", "science"]
 draft: false

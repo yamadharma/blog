@@ -2,7 +2,7 @@
 title: "Работа с 1С в РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-09T11:35:00+03:00
-lastmod: 2023-06-29T10:53:00+03:00
+lastmod: 2023-07-10T14:25:00+03:00
 tags: ["rudn", "sysadmin"]
 categories: ["computer-science"]
 draft: false

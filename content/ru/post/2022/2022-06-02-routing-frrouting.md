@@ -2,7 +2,7 @@
 title: "Маршрутизация. FRRouting"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-02T19:30:00+03:00
-lastmod: 2022-06-26T20:08:00+03:00
+lastmod: 2023-07-09T17:40:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

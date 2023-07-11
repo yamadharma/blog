@@ -2,7 +2,7 @@
 title: "Формат ключа BibTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-18T11:25:00+03:00
-lastmod: 2023-07-05T17:13:00+03:00
+lastmod: 2023-07-10T14:27:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

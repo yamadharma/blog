@@ -2,8 +2,8 @@
 title: "Выбор научного руководителя"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-01T10:52:00+03:00
-lastmod: 2023-05-01T13:08:00+03:00
-tags: ["sci-being", "seedling"]
+lastmod: 2023-07-08T18:49:00+03:00
+tags: ["sci-being"]
 categories: ["science"]
 draft: false
 slug: "choice-scientific-adviser"

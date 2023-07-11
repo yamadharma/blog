@@ -2,7 +2,7 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2023-06-25T16:49:00+03:00
+lastmod: 2023-07-11T11:32:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

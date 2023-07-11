@@ -5,18 +5,9 @@
 # Default language
 
 ru:
-  address:
-    street: ул. Орджоникидзе, 3
-    city: г. Москва
-    region: Российская Федерация
-    postcode: "115419"
-    country: Российская Федерация
-    country_code: RU
   languageCode: ru-ru
   contentDir: content/ru
-  title: Д. С. Кулябов
-  date_format: "2006-01-02"
-  address_format: zh
+  title: Д. С. Кулябов  
   menu:
     main:
       - name: Обо мне

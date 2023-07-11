@@ -2,7 +2,7 @@
 title: "Open Journal Systems"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-22T15:50:00+03:00
-lastmod: 2022-11-18T16:23:00+03:00
+lastmod: 2023-07-11T11:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

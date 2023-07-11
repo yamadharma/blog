@@ -2,7 +2,7 @@
 title: "Правила ISO для набора математики"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-05T14:59:00+03:00
-lastmod: 2023-07-05T17:01:00+03:00
+lastmod: 2023-07-10T14:24:00+03:00
 tags: ["tex"]
 categories: ["computer-science", "science"]
 draft: false

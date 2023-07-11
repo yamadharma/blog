@@ -2,8 +2,8 @@
 title: "Дедупликация данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-26T13:31:00+03:00
-lastmod: 2022-05-26T14:31:00+03:00
-tags: ["MOC", "sysadmin"]
+lastmod: 2023-07-11T11:09:00+03:00
+tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "data-deduplication"

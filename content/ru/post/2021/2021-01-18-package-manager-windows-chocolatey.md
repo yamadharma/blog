@@ -2,8 +2,8 @@
 title: "Пакетный менеджер для Windows. Chocolatey"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-18T11:23:00+03:00
-lastmod: 2023-07-06T14:51:00+03:00
-tags: ["sysadmin", "education", "windows"]
+lastmod: 2023-07-08T16:24:00+03:00
+tags: ["windows", "sysadmin", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "package-manager-windows-chocolatey"

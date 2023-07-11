@@ -2,7 +2,7 @@
 title: "Локальные поисковики"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-27T10:57:00+03:00
-lastmod: 2023-06-27T12:51:00+03:00
+lastmod: 2023-07-11T11:04:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "desktop-search"

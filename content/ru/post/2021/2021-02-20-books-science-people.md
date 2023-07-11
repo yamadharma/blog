@@ -2,7 +2,7 @@
 title: "Книги. Люди науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T17:17:00+03:00
-lastmod: 2023-07-03T10:23:00+03:00
+lastmod: 2023-07-07T17:57:00+03:00
 tags: ["science-people"]
 categories: ["book"]
 draft: false
@@ -27,5 +27,5 @@ slug: "books-science-people"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Каганов М. И. <a href="https://libgen.li/ads.php?md5=1e4b5c2b3ab356bd94dae0b1816ed9ca">Школа ландау: что я о ней думаю</a> / М. И.  Каганов. – Троицк : Тровант, 1998. – 368 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Каганов М. И. <a href="https://libgen.is/book/index.php?md5=1e4b5c2b3ab356bd94dae0b1816ed9ca">Школа ландау: что я о ней думаю</a> / М. И.  Каганов. – Троицк : Тровант, 1998. – 368 сс.</div>
 </div>

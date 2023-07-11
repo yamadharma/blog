@@ -2,7 +2,7 @@
 title: "Установка загрузчика grub"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-19T13:58:00+03:00
-lastmod: 2021-09-19T21:10:00+03:00
+lastmod: 2023-07-11T11:07:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -30,12 +30,10 @@ slug: "installing-grub-bootloader"
     -   `/boot`: загрузочный раздел (значение по умолчанию для опции `--boot-directory`);
     -   `/boot/efi`: раздел UEFI (значение по умолчанию для опции `--efi-directory`).
 -   Установка осуществляется следующим образом:
-
     ```shell
     grub-install --boot-directory=/boot --efi-directory=/boot/efi --target=x86_64-efi
     ```
 -   Если используются значения по умолчанию, можно просто выполнить:
-
     ```shell
     grub-install
     ```
@@ -48,7 +46,6 @@ slug: "installing-grub-bootloader"
     -   для другой архитектуры;
     -   на сменный носитель.
 -   При отсутствии доступа к переменным UEFI (`efibootmgr` не работает):
-
     ```shell
     grub-install --boot-directory=/boot --efi-directory=/boot/efi --target=x86_64-efi --removable
     ```
@@ -60,13 +57,11 @@ slug: "installing-grub-bootloader"
 ### <span class="section-num">3.1</span> Подмонтировать каталоги {#подмонтировать-каталоги}
 
 -   Создадим точку монтирования
-
     ```shell
     mkdir /mnt/
     ```
 -   Подмонтируем партиции.
     -   Например, для btrfs:
-
         ```shell
         mount -o subvol=@ /dev/sda4 /mnt
         mount /dev/sda2 /mnt/boot
@@ -80,7 +75,6 @@ slug: "installing-grub-bootloader"
 ### <span class="section-num">3.2</span> Подмонтировать виртуальные файловые системы {#подмонтировать-виртуальные-файловые-системы}
 
 -   Для функционирования окружения _chroot_ необходимо подключить виртуальные файловые системы:
-
     ```shell
     mount -t proc proc /mnt/proc
     mount -t sysfs sys /mnt/sys
@@ -93,7 +87,6 @@ slug: "installing-grub-bootloader"
 ### <span class="section-num">3.3</span> Подмонтировать виртуальные файловые системы для случая UEFI {#подмонтировать-виртуальные-файловые-системы-для-случая-uefi}
 
 -   Для доступа к переменным UEFI нужно подмонтировать соответствующую виртуальную файловую систему:
-
     ```shell
     mount -t efivarfs efivarfs /mnt/sys/firmware/efi/efivars
     ```
@@ -102,7 +95,6 @@ slug: "installing-grub-bootloader"
 ### <span class="section-num">3.4</span> Перейти в chroot {#перейти-в-chroot}
 
 -   Перейдём в окружение chroot
-
     ```shell
     cd /mnt
     chroot /mnt
@@ -112,7 +104,6 @@ slug: "installing-grub-bootloader"
 ### <span class="section-num">3.5</span> Установим grub {#установим-grub}
 
 -   Установка grub выполняется стандартным образом:
-
     ```shell
     grub-install
     grub-mkconfig -o /boot/grub/grub.cfg

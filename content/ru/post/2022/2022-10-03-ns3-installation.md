@@ -2,7 +2,7 @@
 title: "Установка NS-3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-03T15:34:00+03:00
-lastmod: 2023-07-05T17:26:00+03:00
+lastmod: 2023-07-10T14:33:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

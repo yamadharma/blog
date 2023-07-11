@@ -2,7 +2,7 @@
 title: "Virtual Desktop Infrastructure"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-23T19:29:00+03:00
-lastmod: 2022-07-24T16:54:00+03:00
+lastmod: 2023-07-11T11:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

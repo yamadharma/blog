@@ -2,7 +2,7 @@
 title: "Hugo. Wowchemy. Book"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-22T16:31:00+03:00
-lastmod: 2022-11-22T17:13:00+03:00
+lastmod: 2023-07-07T18:10:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false

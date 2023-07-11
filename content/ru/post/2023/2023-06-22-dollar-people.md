@@ -2,7 +2,7 @@
 title: "Люди доллара"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-22T20:02:00+03:00
-lastmod: 2023-06-22T20:21:00+03:00
+lastmod: 2023-07-07T18:06:00+03:00
 tags: ["sociology"]
 categories: ["thinking"]
 draft: false

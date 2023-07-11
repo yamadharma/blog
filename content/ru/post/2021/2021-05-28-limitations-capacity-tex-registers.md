@@ -2,7 +2,7 @@
 title: "Ограничения ёмкости регистров TeX'а"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-28T10:47:00+03:00
-lastmod: 2023-07-05T17:24:00+03:00
+lastmod: 2023-07-10T14:33:00+03:00
 tags: ["sysadmin", "tex"]
 categories: ["computer-science"]
 draft: false

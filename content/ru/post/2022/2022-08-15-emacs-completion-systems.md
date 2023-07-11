@@ -2,7 +2,7 @@
 title: "Emacs. Completion systems"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-15T14:34:00+03:00
-lastmod: 2023-07-06T15:19:00+03:00
+lastmod: 2023-07-08T16:26:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -33,6 +33,7 @@ slug: "emacs-completion-systems"
 
 ### <span class="section-num">2.2</span> Helm {#helm}
 
+-   [Emacs. Автодополнение. Helm]({{< relref "2022-12-14-emacs-completion-helm" >}})
 -   Репозиторий: <https://github.com/emacs-helm/helm>.
 -   Имеет очень много функций и большое количество пакетов, которые с ним интегрированы.
 -   Количество возможностей даже излишне.

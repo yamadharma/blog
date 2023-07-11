@@ -28,12 +28,12 @@ content:
   email: 'kulyabov-ds@rudn.ru'
   phone: ''
   address:
-        street: '3 Ordzhonikidze'
-        city: 'Moscow'
-        region: 'Russian Federation'
-        postcode: '115419'
-        country: 'Russian Federation'
-        country_code: 'RU'
+    street: ул. Орджоникидзе, 3
+    city: г. Москва
+    region: Российская Федерация
+    postcode: "115419"
+    country: Российская Федерация
+    country_code: RU
 
   coordinates:
     latitude: '55.710707'

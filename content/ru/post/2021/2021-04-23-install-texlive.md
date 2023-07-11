@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2023-06-07T18:29:00+03:00
+lastmod: 2023-07-07T17:55:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -32,32 +32,32 @@ slug: "install-texlive"
 
 ### <span class="section-num">2.1</span> Установка с помощью дистрибутивных скриптов {#установка-с-помощью-дистрибутивных-скриптов}
 
-Ссылки на сайте даны зеркала. Зеркало выбирается автоматически.
+-   Ссылки на сайте даны зеркала. Зеркало выбирается автоматически.
+    -   Скачивается инсталлятор:
+        -   Unix: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz>
+            ```shell
+            cd /tmp/
+            wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+            ```
+        -   Windows: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe>
+    -   Для Windows: запускаете исполняемый файл и устанавливаете.
+    -   Для Linux
+        -   Распаковываете скачанный файл:
+            ```shell
+            tar xzvf install-tl-unx.tar.gz
+            ```
+        -   Заходите в распакованный каталог и запускаете установщик:
+            ```shell
+            cd install-tl-[0-9]*
+            ./install-tl
+            ```
 
--   Скачивается инсталлятор:
-    -   Unix: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz>
-        ```shell
-        cd /tmp/
-        wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-        ```
-    -   Windows: <https://mirror.ctan.org/systems/texlive/tlnet/install-tl-windows.exe>
--   Для Windows: запускаете исполняемый файл и устанавливаете.
--   Для Linux
-    -   Распаковываете скачанный файл:
-        ```shell
-        tar xzvf install-tl-unx.tar.gz
-        ```
-    -   Заходите в распакованный каталог и запускаете установщик:
-        ```shell
-        cd install-tl-[0-9]*
-        ./install-tl
-        ```
-    -   Рекомендуется создать ссылки на исполняемые файлы в каталоге `/usr/local/bin`. Для этого в консольном варианте утилиты выберите опцию `O`, а затем `L`. Для возврата в предыдущее меню используйте `R`.
+            -   Рекомендуется создать ссылки на исполняемые файлы в каталоге `/usr/local/bin`. Для этого в консольном варианте утилиты выберите опцию `O`, а затем `L`. Для возврата в предыдущее меню используйте `R`.
 
 
 ### <span class="section-num">2.2</span> Установка с помощью менеджера пакетов {#установка-с-помощью-менеджера-пакетов}
 
--   Windows. Используйте пакетный менеджер Chocolatey.
+-   Windows. Используйте пакетный менеджер Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})).
     ```shell
     choco install texlive
     ```

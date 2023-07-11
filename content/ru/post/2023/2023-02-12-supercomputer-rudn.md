@@ -2,14 +2,14 @@
 title: "Суперкомпьютер РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-12T18:35:00+03:00
-lastmod: 2023-07-04T12:25:00+03:00
+lastmod: 2023-07-09T16:56:00+03:00
 tags: ["rudn"]
 categories: ["job", "computer-science"]
 draft: false
 slug: "supercomputer-rudn"
 ---
 
-Суперкомпьютер РУДН
+Суперкомпьютер РУДН.
 
 <!--more-->
 
@@ -45,8 +45,8 @@ slug: "supercomputer-rudn"
 
 -   Приказ № 1021-р от 30 июня 2023 г.
 -   Базовые тарифы за использование мощностей суперкомпьютера (за один сервер):
-    -   аренда сервера (2x Intel Xeon E5-2690v4 (28 ядер на узел), 256 GB RAM) – 53 руб./час;
-    -   аренда сервера с GPU (8x NVIDIA Tesla V100, 2x Intel Xeon E5-2698v4, 512 GB RAM) – 1145 руб./час.
+    -   аренда сервера (2x Intel Xeon E5-2690v4 (28 ядер на узел), 256 GB RAM) --- 53 руб./час;
+    -   аренда сервера с GPU (8x NVIDIA Tesla V100, 2x Intel Xeon E5-2698v4, 512 GB RAM) --- 1145 руб./час.
 -   Формула расчета средней стоимости услуг:
     \\[q = \frac{s}{720}n,\\]
 

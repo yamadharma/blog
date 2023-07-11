@@ -1,7 +1,8 @@
 ---
 title: "Менеджеры паролей"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-29T11:56:00+03:00
-lastmod: 2021-04-29T12:03:00+03:00
+lastmod: 2023-07-11T11:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -24,8 +25,3 @@ slug: "password-managers"
 ## <span class="section-num">3</span> pass {#pass}
 
 -   [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})

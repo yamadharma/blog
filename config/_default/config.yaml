@@ -46,6 +46,12 @@ hasCJKLanguage: false
 defaultContentLanguageInSubdir: true
 removePathAccents: true
 
+languages:
+  ru:
+    params:
+      date_format: "2006-01-02"
+      address_format: zh
+
 ############################
 ## MODULES
 ############################

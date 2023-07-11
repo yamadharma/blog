@@ -2,7 +2,8 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2021-10-21T17:51:00+03:00
+lastmod: 2023-07-11T11:11:00+03:00
+categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
 ---
@@ -23,7 +24,6 @@ slug: "video-processing-command-line"
 -   Установка
     -   Linux
         -   Gentoo
-
             ```shell
             emerge media-video/ffmpeg
             ```
@@ -35,7 +35,6 @@ slug: "video-processing-command-line"
 -   Установка
     -   Linux
         -   Gentoo
-
             ```shell
             emerge media-video/mkvtoolnix
             ```
@@ -51,7 +50,6 @@ slug: "video-processing-command-line"
 -   Причина: звуковая дорожка закодирована с частотой дискретизации 48 кГц, а телевизор воспринимает только с частотой дискретизации 44,1 кГц.
 -   В видеофайле одна видео-дорожка и одна аудио-дорожка.
 -   Для перекодирования сделан командный файл:
-
     ```shell
     #!/bin/bash
     # recode-48to44.1

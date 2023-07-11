@@ -2,7 +2,7 @@
 title: "Издательство MDPI"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-17T18:25:00+03:00
-lastmod: 2023-07-05T17:03:00+03:00
+lastmod: 2023-07-10T14:25:00+03:00
 categories: ["science"]
 draft: false
 slug: "mdpi-publishing-house"

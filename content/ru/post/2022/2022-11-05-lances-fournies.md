@@ -2,7 +2,8 @@
 title: "Рыцарское копьё"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-05T18:09:00+03:00
-lastmod: 2022-11-05T18:30:00+03:00
+lastmod: 2023-07-08T18:48:00+03:00
+categories: ["thinking"]
 draft: false
 slug: "lances-fournies"
 ---

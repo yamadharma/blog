@@ -2,7 +2,7 @@
 title: "Настройка LibreOffice"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-27T14:00:00+03:00
-lastmod: 2022-01-27T14:14:00+03:00
+lastmod: 2023-07-11T11:11:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -34,7 +34,6 @@ slug: "libreoffice-tuning"
 #### <span class="section-num">2.1.1</span> Проблемы с OpenCL {#проблемы-с-opencl}
 
 -   Можно отключить OpenCL для LibreOffice, задав переменные среды:
-
     ```shell
     export SAL_DISABLE_OPENCL=1
     export SAL_DISABLEGL=1

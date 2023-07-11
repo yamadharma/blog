@@ -2,7 +2,7 @@
 title: "Журнал Mathematics"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-15T12:15:00+03:00
-lastmod: 2023-07-05T17:03:00+03:00
+lastmod: 2023-07-07T20:37:00+03:00
 categories: ["science"]
 draft: false
 slug: "journal-mathematics"
@@ -49,7 +49,7 @@ slug: "journal-mathematics"
 |------|-------------|
 | 2021 | 1400        |
 | 2022 | 1800        |
-| 2023 | 2100        |
+| 2023 | 2600        |
 
 
 ### <span class="section-num">2.2</span> Инструкции для авторов {#инструкции-для-авторов}

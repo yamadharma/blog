@@ -2,8 +2,8 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2023-06-23T13:09:00+03:00
-tags: ["MOC", "sysadmin", "linux"]
+lastmod: 2023-07-11T11:32:00+03:00
+tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
 slug: "linux-administration"

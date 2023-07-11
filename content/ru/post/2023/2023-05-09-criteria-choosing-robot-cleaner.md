@@ -2,8 +2,8 @@
 title: "Критерии выбора робота-пылесоса"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-09T19:11:00+03:00
-lastmod: 2023-05-14T20:38:00+03:00
-tags: ["appliance", "seedling"]
+lastmod: 2023-07-08T18:49:00+03:00
+tags: ["appliance"]
 categories: ["life"]
 draft: false
 slug: "criteria-choosing-robot-cleaner"

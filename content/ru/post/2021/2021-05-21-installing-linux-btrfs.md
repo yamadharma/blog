@@ -2,7 +2,7 @@
 title: "Перенос Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2023-02-21T11:31:00+03:00
+lastmod: 2023-07-11T11:07:00+03:00
 tags: ["btrfs", "sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -190,46 +190,7 @@ slug: "installing-linux-btrfs"
     ```
 
 
-## <span class="section-num">7</span> Отключение CoW {#отключение-cow}
-
--   Для файловых систем с образами виртуальных машин следует отключить CoW (copy-on-write).
--   Так же стоит отключить _CoW_ для часто изменяемых файлов (например, журналов).
--   Подмонтируем файловую систему `btrfs`:
-    ```shell
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sda4 /mnt/gentoo/var/vm
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sda4 /mnt/gentoo/var/lib/libvirt/images
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var_log /dev/sda4 /mnt/gentoo/var/log
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var_tmp /dev/sda4 /mnt/gentoo/var/tmp
-    ```
--   Отключим для этого подтома CoW:
-    -   Для `/var/vm`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C vm
-        ```
-    -   Для `/var/lib/libvirt/images`
-        ```shell
-        cd /mnt/gentoo/var/lib/libvirt/
-        chattr +C images
-        ```
-    -   Для `/var/log`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C log
-        ```
-    -   Для `/var/tmp`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C tmp
-        ```
--   Посмотреть результат можно командой:
-    ```shell
-    lsattr -a /mnt/gentoo/var/
-    lsattr -a /mnt/gentoo/var/lib/libvirt/
-    ```
-
-
-### <span class="section-num">7.1</span> Копирование специальных файловых систем {#копирование-специальных-файловых-систем}
+### <span class="section-num">6.1</span> Копирование специальных файловых систем {#копирование-специальных-файловых-систем}
 
 -   Файловые системы с отключённым CoW (copy-on-write) копируются после монтирования каталога.
 -   Скопируем файлы:
@@ -240,7 +201,7 @@ slug: "installing-linux-btrfs"
     ```
 
 
-## <span class="section-num">8</span> Файл подкачки на файловой системе btrfs {#файл-подкачки-на-файловой-системе-btrfs}
+## <span class="section-num">7</span> Файл подкачки на файловой системе btrfs {#файл-подкачки-на-файловой-системе-btrfs}
 
 -   Для раздела файла подкачки следует отключить CoW (copy-on-write).
 -   Подмонтируем файловую систему `btrfs`:

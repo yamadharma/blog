@@ -2,16 +2,16 @@
 title: "Реформа высшего образования"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-22T14:09:00+03:00
-lastmod: 2023-05-19T20:54:00+03:00
-tags: ["seedling", "education"]
+lastmod: 2023-07-08T18:51:00+03:00
+tags: ["education"]
 categories: ["science"]
 draft: false
 slug: "higher-education-reform"
 ---
 
-<!--more-->
-
 Реформа высшего образования в России, 2023 год.
+
+<!--more-->
 
 {{< toc >}}
 

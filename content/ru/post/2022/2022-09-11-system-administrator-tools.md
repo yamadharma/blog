@@ -2,7 +2,7 @@
 title: "Набор вещей для системного администратора"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-11T16:51:00+03:00
-lastmod: 2022-09-11T17:21:00+03:00
+lastmod: 2023-07-11T11:06:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,9 @@
 title: "Шрифты в Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-27T11:36:00+03:00
-lastmod: 2021-12-29T11:47:00+03:00
+lastmod: 2023-07-11T11:10:00+03:00
+tags: ["linux", "sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "linux-fonts"
 ---
@@ -24,7 +26,6 @@ slug: "linux-fonts"
 
 -   Шрифты Microsoft не идут под свободной лицензией.
 -   Для работы с ними нужно установить соответствующий пакет:
-
     ```shell
     apt-get install ttf-mscorefonts-installer
     ```

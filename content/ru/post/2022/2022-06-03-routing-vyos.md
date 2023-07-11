@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2023-07-06T16:53:00+03:00
+lastmod: 2023-07-08T16:16:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Emacs. Проверка правописания. flyspell-correct"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-15T13:43:00+03:00
-lastmod: 2022-08-15T14:46:00+03:00
+lastmod: 2023-07-10T14:46:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

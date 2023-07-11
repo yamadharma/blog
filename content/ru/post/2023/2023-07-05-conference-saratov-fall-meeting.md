@@ -2,7 +2,7 @@
 title: "Конференция Saratov Fall Meeting"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-05T14:47:00+03:00
-lastmod: 2023-07-05T16:36:00+03:00
+lastmod: 2023-07-10T21:25:00+03:00
 categories: ["science"]
 draft: false
 slug: "conference-saratov-fall-meeting"
@@ -38,17 +38,26 @@ slug: "conference-saratov-fall-meeting"
 -   Нужно подготовить статью к публикации и послать в предлагаемый журнал.
 
 
-## <span class="section-num">4</span> Транспорт {#транспорт}
+## <span class="section-num">4</span> Оргвзнос {#оргвзнос}
+
+-   Оргвзноса, как такового, нет.
+-   Но предлагается оплатить следующие активности (по желанию):
+    -   Opening (вечеринка по поводу открытия конференции): 1000 ₽.
+    -   Катание на катере: 1000 ₽.
+    -   Шашлыки: 1000 ₽.
 
 
-### <span class="section-num">4.1</span> До Саратова {#до-саратова}
+## <span class="section-num">5</span> Транспорт {#транспорт}
+
+
+### <span class="section-num">5.1</span> До Саратова {#до-саратова}
 
 -   Из Москвы добираемся поездом.
 -   С Павелецкого вокзала.
 -   Поезда 009 и 005. В 18--19 часов. Расписание немного плавает.
 
 
-### <span class="section-num">4.2</span> Внутри города {#внутри-города}
+### <span class="section-num">5.2</span> Внутри города {#внутри-города}
 
 -   Общественный транспорт нормальный.
 -   Город длинный, вытянут вдоль Волги.
@@ -56,7 +65,7 @@ slug: "conference-saratov-fall-meeting"
 -   Часто быстрее дойти пешком.
 
 
-## <span class="section-num">5</span> Гостиница {#гостиница}
+## <span class="section-num">6</span> Гостиница {#гостиница}
 
 -   Оптимальной является гостиница _«Богемия» на Вавилова»_.
 -   <https://bohemiahotel.ru/hotel/bogemiya-na-vavilova/>
@@ -66,7 +75,7 @@ slug: "conference-saratov-fall-meeting"
 -   Следует бронировать номера не позже июня (а то не достанется).
 
 
-## <span class="section-num">6</span> Питание {#питание}
+## <span class="section-num">7</span> Питание {#питание}
 
 -   Позади комплекса зданий Университета находится кафе «Полиглот».
 -   _Му-му_ на минималках.

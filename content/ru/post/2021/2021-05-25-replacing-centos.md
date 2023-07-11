@@ -2,7 +2,7 @@
 title: "Замена Centos"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2023-06-23T12:14:00+03:00
+lastmod: 2023-07-07T18:11:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -290,4 +290,5 @@ slug: "replacing-centos"
 
 ## <span class="section-num">4</span> Что выбрать {#что-выбрать}
 
+-   Наблюдается паритет у Rocky Linux и Almalinux.
 -   На данный момент склоняюсь более к Rocky Linux.

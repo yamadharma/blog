@@ -2,7 +2,7 @@
 title: "Подготовка скринкаста для занятия"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T17:35:00+03:00
-lastmod: 2021-10-09T18:01:00+03:00
+lastmod: 2023-07-10T14:37:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -39,7 +39,6 @@ slug: "preparing-screencast-lesson"
 -   Для хранения файлы следует перекодировать для уменьшения их размера.
 -   Для перекодирования можно использовать любую программу.
     -   Handbrake <https://handbrake.fr/>
-
         ```shell
         #!/bin/sh
 

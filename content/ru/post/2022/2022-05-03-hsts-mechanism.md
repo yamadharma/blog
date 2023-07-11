@@ -2,7 +2,7 @@
 title: "Механизм HSTS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-03T20:05:00+03:00
-lastmod: 2022-05-03T20:45:00+03:00
+lastmod: 2023-07-11T11:15:00+03:00
 tags: ["security", "network"]
 categories: ["computer-science"]
 draft: false
@@ -65,7 +65,6 @@ _HSTS_ (_HTTP Strict Transport Security_) --- механизм, принудит
 -   За HSTS отвечает директива `Strict-Transport-Security`.
 -   Реализуется с помощью модуля `mod_headers`.
 -   Для блока `<VirtualHost *:443>` следует установить
-
     ```conf-unix
     <VirtualHost *:443>
     ...

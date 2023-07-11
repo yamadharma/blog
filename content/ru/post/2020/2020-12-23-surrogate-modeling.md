@@ -2,7 +2,7 @@
 title: "Суррогатное моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-23T17:38:00+03:00
-lastmod: 2023-04-19T16:11:00+03:00
+lastmod: 2023-07-11T11:26:00+03:00
 tags: ["research", "modeling"]
 categories: ["science"]
 draft: false

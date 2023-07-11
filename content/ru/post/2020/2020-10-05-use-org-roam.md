@@ -2,9 +2,9 @@
 title: "Использование org-roam"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-05T15:26:00+03:00
-lastmod: 2023-07-06T15:06:00+03:00
+lastmod: 2023-07-11T11:30:00+03:00
 tags: ["emacs", "org-roam"]
-categories: ["blog"]
+categories: ["computer-science", "self-management"]
 draft: false
 slug: "use-org-roam"
 ---
@@ -17,8 +17,6 @@ slug: "use-org-roam"
 
 
 ## <span class="section-num">1</span> Создание файла {#создание-файла}
-
-
 
 ```emacs
 M-x org-roam-find-file

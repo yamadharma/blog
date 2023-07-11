@@ -2,7 +2,7 @@
 title: "Критерии выбора ноутбука"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-30T20:06:00+03:00
-lastmod: 2022-07-21T20:22:00+03:00
+lastmod: 2023-07-11T11:05:00+03:00
 tags: ["hard", "sysadmin"]
 categories: ["computer-science"]
 draft: false

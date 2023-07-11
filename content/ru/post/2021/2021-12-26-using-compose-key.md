@@ -2,7 +2,8 @@
 title: "Ввод с помощью Compose"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-26T13:33:00+03:00
-lastmod: 2022-01-11T13:30:00+03:00
+lastmod: 2023-07-11T11:07:00+03:00
+categories: ["computer-science"]
 draft: false
 slug: "using-compose-key"
 ---
@@ -35,36 +36,31 @@ slug: "using-compose-key"
 
 -   Хотя некоторые клавиатуры имеют железную клавишу `Compose`, её обычно переопределяют на какую-либо  другую клавишу.
 -   Разрешённые клавиши для подстановки определены в `/usr/share/X11/xkb/rules/base.lst`:
-
     ```shell
     grep "compose:" /usr/share/X11/xkb/rules/base.lst
     ```
 -   Чтобы просмотреть настройки _XKB_:
-
     ```shell
     setxkbmap -print -verbose 10
     ```
 -   Например, чтобы сделать клавишу `Right Alt` клавишей `Compose`:
     -   через конфигурацию окружения рабочего стола,
     -   через конфигурационные файлы X. пропишите `compose:ralt` в `XkbOptions`:
-
-        ```conf
+        ```cfg
         # /etc/X11/xorg.conf.d/00-keyboard.conf
         Section "InputClass"
-        	Identifier "system-keyboard"
-        	...
-        	Option "XkbOptions" "compose:ralt"
+                Identifier "system-keyboard"
+                ...
+                Option "XkbOptions" "compose:ralt"
         EndSection
         ```
     -   используя `setxkbmap`:
-
         ```shell
         setxkbmap -option compose:ralt
         ```
     -   используя `localectl`
         -   `localectl` сохраняет настройки в файл `/etc/X11/xorg.conf.d/00-keyboard.conf`, который не следует редактировать вручную, потому что `localectl` перепишет его при следующем запуске.
         -   используйте следующим образом:
-
             ```shell
             localectl [--no-convert] set-x11-keymap раскладка [модель [вариант [опции]]]
             ```
@@ -79,7 +75,7 @@ slug: "using-compose-key"
 ### <span class="section-num">3.1</span> Таблица сочетаний {#таблица-сочетаний}
 
 <div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
   Основные сочетания для клавиши <code>Compose</code>
 </div>
 
@@ -138,7 +134,7 @@ slug: "using-compose-key"
 
 <!--listend-->
 
-```conf
+```cfg
 # ~/.XCompose
 include "%L"
 
@@ -152,20 +148,17 @@ include "%L"
 
 -   Данные строчки добавляются в файл `~/.XCompose`.
     -   Знак рубля (_₽_):
-
-        ```conf
+        ```cfg
         <Multi_key><minus><p>:"₽"
         ```
     -   Русские ударения:
-
-        ```conf
+        ```cfg
         <Multi_key> <apostrophe> <apostrophe> : "́" U0301 # COMBINING ACUTE ACCENT
         ```
 
         -   Знак ударения вводится через последовательность клавиш `Compose` + `апостроф` + `апостроф`.
         -   Эту комбинацию клавиш надо нажимать после (справа) от буквы, на которой надо поставить ударение.
         -   Для латинских букв в _XCompose_ прописаны комбинации типа `Compose` + `апостроф` + `буква`:
-
-            ```conf
+            ```cfg
             <Multi_key> <apostrophe> <I>        : "Í"   Iacute # LATIN CAPITAL LETTER I WITH ACUTE
             ```

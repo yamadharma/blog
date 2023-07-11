@@ -2,7 +2,7 @@
 title: "LaTeX. Шаблоны публикаций. Elsevier"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-03T20:26:00+03:00
-lastmod: 2023-07-04T11:15:00+03:00
+lastmod: 2023-07-10T14:30:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

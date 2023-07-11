@@ -2,9 +2,9 @@
 title: "Поступление в аспирантуру студентов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-07T20:09:00+03:00
-lastmod: 2023-07-06T14:55:00+03:00
+lastmod: 2023-07-08T16:02:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "admission-postgraduate-students"
 ---
@@ -20,7 +20,7 @@ slug: "admission-postgraduate-students"
 
 Для иностранцев есть 2 квоты для поступления:
 
--   Одна - за счёт государства.
--   Другая - квота РУДН.
+-   Одна --- за счёт государства.
+-   Другая --- квота РУДН.
 
 В любом случае  надо зарегистрироваться на сайте <https://education-in-russia.com/> и заполнить там заявку на поступление.

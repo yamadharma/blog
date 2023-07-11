@@ -2,7 +2,7 @@
 title: "Журнал TUGboat"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T16:49:00+03:00
-lastmod: 2023-07-05T17:14:00+03:00
+lastmod: 2023-07-10T14:27:00+03:00
 tags: ["tex"]
 categories: ["science"]
 draft: false

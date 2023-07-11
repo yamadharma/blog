@@ -2,7 +2,7 @@
 title: "Виды комментариев в Emacs Lisp"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-12T18:45:00+03:00
-lastmod: 2023-07-06T15:20:00+03:00
+lastmod: 2023-07-08T16:15:00+03:00
 tags: ["emacs", "programming"]
 categories: ["computer-science"]
 draft: false

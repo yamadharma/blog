@@ -2,7 +2,7 @@
 title: "Мультимедиа сервер PipeWire"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T16:28:00+03:00
-lastmod: 2022-09-02T12:34:00+03:00
+lastmod: 2023-07-11T11:06:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false

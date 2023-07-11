@@ -2,7 +2,7 @@
 title: "Протокол IPv6"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-26T19:36:00+03:00
-lastmod: 2023-06-30T14:16:00+03:00
+lastmod: 2023-07-11T11:18:00+03:00
 tags: ["network", "ipv6"]
 categories: ["computer-science"]
 draft: false

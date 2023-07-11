@@ -1,7 +1,8 @@
 ---
 title: "Have I Been Pwned (HIBP)"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-03T15:21:00+03:00
-lastmod: 2021-06-02T16:24:00+03:00
+lastmod: 2023-07-11T11:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

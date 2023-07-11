@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-06-26T19:46:00+03:00
+lastmod: 2023-07-11T11:19:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false

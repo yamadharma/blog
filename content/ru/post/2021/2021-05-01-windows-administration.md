@@ -2,8 +2,8 @@
 title: "Администрирование Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2023-06-08T16:51:00+03:00
-tags: ["MOC", "sysadmin", "windows"]
+lastmod: 2023-07-10T14:13:00+03:00
+tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
 slug: "windows-administration"

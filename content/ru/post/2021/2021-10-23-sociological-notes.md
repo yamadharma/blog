@@ -2,7 +2,7 @@
 title: "Социологические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-23T20:17:00+03:00
-lastmod: 2023-07-05T21:18:00+03:00
+lastmod: 2023-07-08T19:21:00+03:00
 tags: ["sociology"]
 categories: ["thinking"]
 draft: false
@@ -28,3 +28,4 @@ slug: "sociological-notes"
 
 -   [Высшее образование. Зачем]({{< relref "2021-10-23-higher-education-why" >}})
 -   [Реформа высшего образования]({{< relref "2023-04-22-higher-education-reform" >}})
+-   [Образование. Франция]({{< relref "2023-07-08-education-france" >}})

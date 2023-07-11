@@ -2,7 +2,7 @@
 title: "Допустимые символы для ключей BibTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-17T21:04:00+03:00
-lastmod: 2023-07-05T17:08:00+03:00
+lastmod: 2023-07-10T14:26:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

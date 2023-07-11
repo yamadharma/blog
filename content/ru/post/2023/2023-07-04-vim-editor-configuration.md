@@ -2,7 +2,7 @@
 title: "Настройка редактора vim"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-04T20:17:00+03:00
-lastmod: 2023-07-04T21:09:00+03:00
+lastmod: 2023-07-10T14:21:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "vim-editor-configuration"

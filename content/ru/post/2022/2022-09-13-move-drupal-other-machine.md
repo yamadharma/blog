@@ -2,7 +2,7 @@
 title: "Перенос Drupal на другую машину"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-13T19:45:00+03:00
-lastmod: 2022-09-24T20:13:00+03:00
+lastmod: 2023-07-11T11:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Подходы к моделированию"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-21T12:25:00+03:00
-lastmod: 2023-06-28T17:31:00+03:00
+lastmod: 2023-07-10T14:21:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

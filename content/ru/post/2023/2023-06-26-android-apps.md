@@ -2,7 +2,7 @@
 title: "Программы на Android"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-26T19:06:00+03:00
-lastmod: 2023-06-26T19:20:00+03:00
+lastmod: 2023-07-11T11:19:00+03:00
 categories: ["computer-science", "life"]
 draft: false
 slug: "android-apps"

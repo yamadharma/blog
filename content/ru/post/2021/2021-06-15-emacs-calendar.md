@@ -2,7 +2,7 @@
 title: "Emacs. Календарь"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-15T15:50:00+03:00
-lastmod: 2023-07-06T15:16:00+03:00
+lastmod: 2023-07-08T16:22:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

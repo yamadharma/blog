@@ -2,7 +2,7 @@
 title: "Windows. Синхронизация времени"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-16T20:26:00+03:00
-lastmod: 2023-07-06T14:52:00+03:00
+lastmod: 2023-07-08T16:19:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false

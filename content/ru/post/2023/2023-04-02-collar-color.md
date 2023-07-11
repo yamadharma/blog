@@ -2,7 +2,7 @@
 title: "Цветные воротнички"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-02T19:03:00+03:00
-lastmod: 2023-06-26T16:51:00+03:00
+lastmod: 2023-07-08T18:49:00+03:00
 tags: ["sociology"]
 categories: ["thinking"]
 draft: false

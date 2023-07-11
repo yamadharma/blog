@@ -2,7 +2,7 @@
 title: "LaTeX. Греческие буквы в листингах"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-15T16:20:00+03:00
-lastmod: 2023-07-05T17:10:00+03:00
+lastmod: 2023-07-10T14:27:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

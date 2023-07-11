@@ -2,7 +2,7 @@
 title: "Emacs. Julia. Julia-repl"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T18:03:00+03:00
-lastmod: 2022-01-21T18:28:00+03:00
+lastmod: 2023-07-11T11:34:00+03:00
 tags: ["emacs", "julia", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "emacs-julia-julia-repl"
 ## <span class="section-num">2</span> Сочетания клавиш {#сочетания-клавиш}
 
 <div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
   Сочетание клавишь при работе с julia-repl
 </div>
 

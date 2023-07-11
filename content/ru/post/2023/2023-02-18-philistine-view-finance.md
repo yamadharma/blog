@@ -2,8 +2,8 @@
 title: "Взгляд обывателя на финансы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-18T20:34:00+03:00
-lastmod: 2023-03-17T18:34:00+03:00
-tags: ["MOC", "money"]
+lastmod: 2023-07-10T14:12:00+03:00
+tags: ["money"]
 categories: ["life"]
 draft: false
 slug: "philistine-view-finance"

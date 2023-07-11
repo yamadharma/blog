@@ -2,8 +2,8 @@
 title: "Тип ключа ssh"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-03T14:48:00+03:00
-lastmod: 2022-11-02T18:24:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-07-11T11:15:00+03:00
+tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "ssh-key-type"

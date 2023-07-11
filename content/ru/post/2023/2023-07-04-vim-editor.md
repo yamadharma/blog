@@ -2,7 +2,7 @@
 title: "Редактор vim"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-04T20:22:00+03:00
-lastmod: 2023-07-04T21:15:00+03:00
+lastmod: 2023-07-10T14:25:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "vim-editor"

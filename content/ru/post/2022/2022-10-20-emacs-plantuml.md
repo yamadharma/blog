@@ -2,7 +2,7 @@
 title: "Emacs. Plantuml"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-20T13:07:00+03:00
-lastmod: 2023-07-06T15:19:00+03:00
+lastmod: 2023-07-08T16:29:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

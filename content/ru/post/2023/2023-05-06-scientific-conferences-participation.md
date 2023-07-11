@@ -2,7 +2,7 @@
 title: "Участие в научных конференциях"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T19:37:00+03:00
-lastmod: 2023-07-05T16:15:00+03:00
+lastmod: 2023-07-08T18:51:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Книги. Культура"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-10T14:10:00+03:00
-lastmod: 2023-07-03T10:39:00+03:00
+lastmod: 2023-07-07T18:07:00+03:00
 tags: ["culture"]
 categories: ["book"]
 draft: false

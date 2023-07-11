@@ -2,12 +2,13 @@
 title: "Учёный и инженер"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-09T11:30:00+03:00
-lastmod: 2023-05-09T16:19:00+03:00
-tags: ["seedling"]
+lastmod: 2023-07-08T18:50:00+03:00
 categories: ["thinking", "science"]
 draft: false
 slug: "scientist-engineer"
 ---
+
+Учёный и инженер.
 
 <!--more-->
 

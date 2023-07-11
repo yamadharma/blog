@@ -2,7 +2,7 @@
 title: "Сертификаты ACME"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-30T14:49:00+03:00
-lastmod: 2022-05-02T17:06:00+03:00
+lastmod: 2023-07-11T11:14:00+03:00
 tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false

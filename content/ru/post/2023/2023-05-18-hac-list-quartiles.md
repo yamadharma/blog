@@ -2,7 +2,7 @@
 title: "Квартили списка ВАК"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T20:12:00+03:00
-lastmod: 2023-06-16T18:51:00+03:00
+lastmod: 2023-07-11T11:18:00+03:00
 tags: ["sci-being"]
 categories: ["science"]
 draft: false

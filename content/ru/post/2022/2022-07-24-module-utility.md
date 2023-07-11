@@ -2,7 +2,7 @@
 title: "Утилита module"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-24T16:14:00+03:00
-lastmod: 2022-07-24T16:40:00+03:00
+lastmod: 2023-07-11T11:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

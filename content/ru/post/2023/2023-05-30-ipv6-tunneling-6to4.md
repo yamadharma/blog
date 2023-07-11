@@ -2,7 +2,7 @@
 title: "IPv6. Туннелирование. 6to4"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-30T11:58:00+03:00
-lastmod: 2023-06-26T12:50:00+03:00
+lastmod: 2023-07-11T12:25:00+03:00
 tags: ["network", "ipv6"]
 categories: ["computer-science"]
 draft: false

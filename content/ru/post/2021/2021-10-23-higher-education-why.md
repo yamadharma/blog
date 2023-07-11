@@ -2,7 +2,7 @@
 title: "Высшее образование. Зачем"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-23T20:23:00+03:00
-lastmod: 2021-10-26T20:48:00+03:00
+lastmod: 2023-07-08T19:21:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false

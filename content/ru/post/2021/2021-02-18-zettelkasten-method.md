@@ -2,7 +2,7 @@
 title: "Метод Zettelkasten"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-18T18:37:00+03:00
-lastmod: 2023-07-05T21:29:00+03:00
+lastmod: 2023-07-07T20:32:00+03:00
 tags: ["zettelkasten"]
 categories: ["self-management"]
 draft: false
@@ -33,6 +33,7 @@ slug: "zettelkasten-method"
 ## <span class="section-num">3</span> Принципы Zettelkasten {#принципы-zettelkasten}
 
 -   [Принципы Zettelkasten]({{< relref "2023-07-05-zettelkasten-principles" >}})
+-   [Вечнозелёные заметки]({{< relref "2023-06-01-evergreen-notes" >}})
 
 
 ## <span class="section-num">4</span> Ресурсы {#ресурсы}
