@@ -2,9 +2,9 @@
 title: "Высшее образование. Зачем"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-23T20:23:00+03:00
-lastmod: 2023-07-08T19:21:00+03:00
-tags: ["education"]
-categories: ["сиянс"]
+lastmod: 2023-07-12T18:17:00+03:00
+tags: ["sociology", "education"]
+categories: ["thinking", "science"]
 draft: false
 slug: "higher-education-why"
 ---
@@ -14,9 +14,6 @@ slug: "higher-education-why"
 <!--more-->
 
 {{< toc >}}
-
--   Женщины с образованием выигрывают на рынке труда больше, чем мужчины с образованием.
-    -   Девочкам надо учиться.
 
 
 ## <span class="section-num">1</span> Образование и социальные страты {#образование-и-социальные-страты}

@@ -2,7 +2,7 @@
 title: "bibtex vs biblatex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-11T20:22:00+03:00
-lastmod: 2023-07-10T14:26:00+03:00
+lastmod: 2023-07-11T17:55:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -18,6 +18,7 @@ slug: "bibtex-biblatex"
 
 ## <span class="section-num">1</span> Типы записей {#типы-записей}
 
+-   [BibTeX. Типы записей]({{< relref "2023-07-11-bibtex-entry-type" >}})
 -   Набор типов записей, определенный с помощью _biblatex_ отличается от набора, используемого _BibTeX_.
 -   В основном _biblatex_ добавляются новые типы записей, но есть несколько типов записей BibTeX, которые были удалены.
 -   _biblatex_ по-прежнему распознает эти типы записей, но рассматривает их как псевдонимы для собственных типов.
@@ -56,3 +57,12 @@ slug: "bibtex-biblatex"
 | `pdf`           | `file`         |
 | `primaryclass`  | `eprintclass`  |
 | `school`        | `institution`  |
+
+
+## <span class="section-num">3</span> Новые поля {#новые-поля}
+
+
+### <span class="section-num">3.1</span> Поле `date` {#поле-date}
+
+-   Вместо поля `year` рекомендуется использовать поле `date`.
+-   Дата в поле `date` задаётся в формате `YYYY-MM-DD`.

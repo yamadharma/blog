@@ -2,8 +2,8 @@
 title: "Клиенты ACME"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T16:50:00+03:00
-lastmod: 2022-05-02T17:15:00+03:00
-tags: ["MOC", "sysadmin", "network", "security"]
+lastmod: 2023-07-13T12:11:00+03:00
+tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false
 slug: "acme-clients"

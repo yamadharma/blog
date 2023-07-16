@@ -1,0 +1,9 @@
+#!/bin/bash
+
+git pull --all
+
+# git submodule update --recursive --remote
+
+git add .
+git commit -am "chore(main): $(date)"
+git push

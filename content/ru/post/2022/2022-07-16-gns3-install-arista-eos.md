@@ -2,7 +2,7 @@
 title: "GNS3. Установка Arista EOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-16T12:14:00+03:00
-lastmod: 2023-07-09T17:11:00+03:00
+lastmod: 2023-07-12T18:15:00+03:00
 tags: ["network", "modeling"]
 categories: ["computer-science"]
 draft: false

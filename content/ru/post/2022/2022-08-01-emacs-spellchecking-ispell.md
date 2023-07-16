@@ -2,12 +2,14 @@
 title: "Emacs. Проверка правописания. ispell"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-01T17:31:00+03:00
-lastmod: 2023-07-09T16:58:00+03:00
+lastmod: 2023-07-12T18:14:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-spellchecking-ispell"
 ---
+
+Проверка правописания в Emacs. Ispell.
 
 <!--more-->
 

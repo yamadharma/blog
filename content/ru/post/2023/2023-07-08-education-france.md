@@ -2,7 +2,7 @@
 title: "Образование. Франция"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-08T19:19:00+03:00
-lastmod: 2023-07-09T16:56:00+03:00
+lastmod: 2023-07-12T18:27:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

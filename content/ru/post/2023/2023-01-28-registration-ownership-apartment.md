@@ -2,7 +2,7 @@
 title: "Регистрация прав собственности на квартиру"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-28T12:19:00+03:00
-lastmod: 2023-02-08T11:04:00+03:00
+lastmod: 2023-07-15T20:45:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false

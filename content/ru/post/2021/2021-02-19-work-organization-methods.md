@@ -2,7 +2,7 @@
 title: "Методы организации труда"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-19T11:44:00+03:00
-lastmod: 2023-07-05T20:47:00+03:00
+lastmod: 2023-07-14T17:40:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "work-organization-methods"

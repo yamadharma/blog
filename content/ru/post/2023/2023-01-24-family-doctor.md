@@ -2,7 +2,8 @@
 title: "Семейный доктор"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-24T12:59:00+03:00
-lastmod: 2023-07-11T12:45:00+03:00
+lastmod: 2023-07-12T18:12:00+03:00
+tags: ["health"]
 categories: ["life"]
 draft: false
 slug: "family-doctor"

@@ -2,7 +2,7 @@
 title: "Научная тема по работе с ОИЯИ 2021"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-25T19:34:00+03:00
-lastmod: 2023-07-11T12:25:00+03:00
+lastmod: 2023-07-13T11:58:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

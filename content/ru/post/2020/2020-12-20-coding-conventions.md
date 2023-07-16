@@ -2,9 +2,9 @@
 title: "Соглашения о кодировании"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-20T16:10:00+03:00
-lastmod: 2023-07-05T17:12:00+03:00
+lastmod: 2023-07-14T17:46:00+03:00
 tags: ["programming"]
-categories: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "coding-conventions"
 ---
@@ -27,13 +27,12 @@ slug: "coding-conventions"
 
 ### <span class="section-num">2.1</span> Именование переменных {#именование-переменных}
 
-Существует несколько популярных соглашений об именования переменных:
-
--   Верблюжья нотация (`CamelCase`): `MyClass`
--   Змеиная нотация (`snake_case`): `my_const`
--   Шашлычная нотация (`kebab-case`): `my-data`
--   [Венгерская нотация](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B3%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F) - соглашение об именовании идентификаторов (переменных и функций), которое сводится к кодированию типов данных прямо в название: `userArray`.
--   Нотация Cobol: `COBOL-CASE`.
+-   Существует несколько популярных соглашений об именования переменных:
+    -   Верблюжья нотация (`CamelCase`): `MyClass`
+    -   Змеиная нотация (`snake_case`): `my_const`
+    -   Шашлычная нотация (`kebab-case`): `my-data`
+    -   [Венгерская нотация](https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%BD%D0%B3%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F_%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D1%8F) - соглашение об именовании идентификаторов (переменных и функций), которое сводится к кодированию типов данных прямо в название: `userArray`.
+    -   Нотация Cobol: `COBOL-CASE`.
 
 
 ### <span class="section-num">2.2</span> Предикаты {#предикаты}

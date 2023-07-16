@@ -2,7 +2,7 @@
 title: "Дедупликация btrfs. Bees"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-28T14:51:00+03:00
-lastmod: 2022-05-28T15:32:00+03:00
+lastmod: 2023-07-13T12:08:00+03:00
 tags: ["sysadmin", "btrfs"]
 categories: ["computer-science"]
 draft: false
@@ -51,7 +51,6 @@ BEES (Best-Effort Extent-Same) --- агент дедупликации _btrfs_.
 ## <span class="section-num">3</span> Установка {#установка}
 
 -   Gentoo:
-
     ```shell
     emerge bees
     ```
@@ -64,12 +63,10 @@ BEES (Best-Effort Extent-Same) --- агент дедупликации _btrfs_.
 
 -   Для запуска используем скрипт `beesd` (в исходниках `scripts/beesd`).
 -   Посмотрим идентификаторы `UUID` файловых систем:
-
     ```shell
     btrfs filesystem show
     ```
 -   Активируем демон дедупликации, указав `UUID` в качестве идентификатора инстанса. Пусть `UUID="f8963df3-1320-4bc0-a125-62be185b029e"`, тогда команда активации будет иметь вид:
-
     ```shell
     systemctl enable --now beesd@f8963df3-1320-4bc0-a125-62be185b029e
     ```
@@ -79,12 +76,10 @@ BEES (Best-Effort Extent-Same) --- агент дедупликации _btrfs_.
 
 -   Для работы демона необходим файл конфигурации.
 -   Шаблон для файла конфигурации:
-
     ```shell
     /etc/bees/beesd.conf.sample
     ```
 -   Скопируйте его, задав произвольное имя (например, `root.conf`):
-
     ```shell
     cp /etc/bees/beesd.conf.sample /etc/bees/root.conf
     ```

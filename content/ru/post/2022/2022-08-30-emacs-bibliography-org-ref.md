@@ -2,8 +2,8 @@
 title: "Emacs. Работа с библиографией. org-ref"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T13:23:00+03:00
-lastmod: 2022-08-30T15:16:00+03:00
-tags: ["emacs"]
+lastmod: 2023-07-15T20:42:00+03:00
+tags: ["bib", "emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-bibliography-org-ref"

@@ -2,7 +2,7 @@
 title: "Файловая система btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:33:00+03:00
-lastmod: 2023-07-11T11:09:00+03:00
+lastmod: 2023-07-12T18:06:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false

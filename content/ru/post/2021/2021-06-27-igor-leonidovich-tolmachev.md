@@ -1,7 +1,8 @@
 ---
 title: "Игорь Леонидович Толмачёв"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-06-27T10:42:00+03:00
-lastmod: 2021-06-27T11:01:00+03:00
+lastmod: 2023-07-15T20:34:00+03:00
 tags: ["science-people"]
 draft: false
 slug: "igor-leonidovich-tolmachev"

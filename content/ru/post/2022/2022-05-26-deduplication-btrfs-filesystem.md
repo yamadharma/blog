@@ -2,7 +2,7 @@
 title: "Дедупликация файловой системы btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-26T14:29:00+03:00
-lastmod: 2022-05-28T14:57:00+03:00
+lastmod: 2023-07-13T12:09:00+03:00
 tags: ["sysadmin", "btrfs"]
 categories: ["computer-science"]
 draft: false
@@ -45,3 +45,4 @@ slug: "deduplication-btrfs-filesystem"
 ## <span class="section-num">3</span> Дедупликация на уровне файлов {#дедупликация-на-уровне-файлов}
 
 -   Некоторые утилиты для дедупликации на уровне файлов поддерживают файловую систему _btrfs_.
+-   [Дедупликация файлов в Linux]({{< relref "2022-05-26-file-deduplication-linux" >}})

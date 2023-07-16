@@ -2,7 +2,9 @@
 title: "Дедупликация файлов в Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-26T14:21:00+03:00
-lastmod: 2022-05-26T14:25:00+03:00
+lastmod: 2023-07-13T12:04:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "file-deduplication-linux"
 ---

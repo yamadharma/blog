@@ -2,14 +2,14 @@
 title: "Метод GTD"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-12T15:00:00+03:00
-lastmod: 2023-07-05T21:16:00+03:00
+lastmod: 2023-07-14T18:03:00+03:00
 tags: ["gtd"]
 categories: ["self-management"]
 draft: false
 slug: "gtd-method"
 ---
 
-Метод управления временем _Getting Things Done (GTD)_.
+Метод управления делами _Getting Things Done (GTD)_.
 
 <!--more-->
 

@@ -2,8 +2,8 @@
 title: "Квартира"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:18:00+03:00
-lastmod: 2023-06-02T21:19:00+03:00
-tags: ["MOC", "apartment"]
+lastmod: 2023-07-14T17:49:00+03:00
+tags: ["apartment"]
 categories: ["life"]
 draft: false
 slug: "apartment"

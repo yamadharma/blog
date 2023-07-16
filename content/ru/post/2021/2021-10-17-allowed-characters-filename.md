@@ -2,7 +2,7 @@
 title: "Допустимые символы в имени файла"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-17T20:40:00+03:00
-lastmod: 2023-07-05T17:08:00+03:00
+lastmod: 2023-07-14T17:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

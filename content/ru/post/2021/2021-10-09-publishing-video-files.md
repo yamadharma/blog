@@ -2,7 +2,7 @@
 title: "Публикация видеофайлов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T17:48:00+03:00
-lastmod: 2023-06-28T15:38:00+03:00
+lastmod: 2023-07-12T18:29:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false

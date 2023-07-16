@@ -2,7 +2,7 @@
 title: "Фильтры pandoc"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T20:00:00+03:00
-lastmod: 2023-03-25T13:47:00+03:00
+lastmod: 2023-07-15T20:40:00+03:00
 tags: ["pandoc", "markdown"]
 categories: ["computer-science"]
 draft: false

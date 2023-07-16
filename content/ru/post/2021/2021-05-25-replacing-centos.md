@@ -2,7 +2,7 @@
 title: "Замена Centos"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2023-07-07T18:11:00+03:00
+lastmod: 2023-07-14T20:25:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -38,6 +38,10 @@ slug: "replacing-centos"
 -   AlmaLinux
     -   <https://almalinux.org/blog/impact-of-rhel-changes/>
     -   Отслеживание изменений из репозитория CentOS Stream, использование репозитория Oracle Linux.
+    -   -   <https://almalinux.org/blog/future-of-almalinux/>
+        -   Проект AlmaLinux объявил об изменении стратегии развития
+        -   Дистрибутив больше не будет полностью клонировать Red Hat Enterprise Linux и станет допускать наличие незначительных расхождений в поведении.
+        -   Сохранит бинарную совместимость на уровне ABI.
 -   Rocky Linux
     -   <https://rockylinux.org/news/2023-06-22-press-release/>
     -   Создании дополнительного репозитория <https://git.rockylinux.org/staging/src-rhel/rpms>, отслеживании рассинхронизированных обновлений.

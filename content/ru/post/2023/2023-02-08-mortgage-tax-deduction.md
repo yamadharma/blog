@@ -2,7 +2,7 @@
 title: "Получение налогового вычета по ипотеке"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-08T13:57:00+03:00
-lastmod: 2023-03-26T11:50:00+03:00
+lastmod: 2023-07-15T20:43:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false
