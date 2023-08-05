@@ -2,7 +2,7 @@
 title: "Научная деятельность нашей группы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-05T15:53:00+03:00
-lastmod: 2022-10-29T18:34:00+03:00
+lastmod: 2023-07-31T18:42:00+03:00
 tags: ["sci-admin", "research", "education"]
 categories: ["science"]
 draft: false

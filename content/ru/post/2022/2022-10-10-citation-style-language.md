@@ -2,7 +2,7 @@
 title: "Citation Style Language (CSL)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:22:00+03:00
-lastmod: 2023-07-15T20:32:00+03:00
+lastmod: 2023-07-20T13:35:00+03:00
 tags: ["bib"]
 categories: ["computer-science"]
 draft: false
@@ -38,3 +38,49 @@ slug: "citation-style-language"
     -   1.0 (22 марта 2010 г.), обратно несовместимый с предыдущими версиями;
     -   1.0.1 (3 сентября 2012 г.);
     -   1.0.2.
+
+
+## <span class="section-num">2</span> Поддерживающие программы {#поддерживающие-программы}
+
+-   Zotero: <https://www.zotero.org/>.
+-   Mendeley: <http://mendeley.com/>.
+-   Pandoc (см. [Pandoc]({{< relref "2021-08-28-pandoc" >}})) поддерживает цитаты в форматах CSL, YAML и JSON и может отображать их с использованием стилей CSL.
+
+
+## <span class="section-num">3</span> Соответствие полей CSL и библиографических систем {#соответствие-полей-csl-и-библиографических-систем}
+
+<div class="table-caption">
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
+  Соответствие полей CSL и Mendeley
+</div>
+
+| CSL                | Mendeley               |
+|--------------------|------------------------|
+| article            | Generic                |
+| bill               | Bill                   |
+| book               | Book                   |
+| chapter            | Book Section           |
+| article            | Case                   |
+| article            | Computer Program       |
+| paper-conference   | Conference Proceedings |
+| entry-encyclopedia | Encyclopedia Article   |
+| motion_picture     | Film                   |
+| speech             | Hearing                |
+| article-journal    | Journal Article        |
+| article-magazine   | Magazine Article       |
+| article-newspaper  | Newspaper Article      |
+| patent             | Patent                 |
+| report             | Report                 |
+| legislation        | Statute                |
+| thesis             | Thesis                 |
+| broadcast          | Television Broadcast   |
+| webpage            | Web Page               |
+| article            | Working Paper          |
+
+
+## <span class="section-num">4</span> Стили CSL {#стили-csl}
+
+
+### <span class="section-num">4.1</span> Стили CSL для библиографии ГОСТ {#стили-csl-для-библиографии-гост}
+
+-   [Библиография. CSL. ГОСТ]({{< relref "2022-12-15-csl-gost" >}})

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-07-06T18:32:00+03:00
+lastmod: 2023-07-30T14:29:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -182,7 +182,8 @@ slug: "system-administration"
 
 ### <span class="section-num">11.10</span> Файлы конфигурации {#файлы-конфигурации}
 
--   [Управление файлами конфигурации. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
+-   [Управление файлами конфигурации. Домашний каталог. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
+-   [Управление файлами конфигурации. Домашний каталог. Репозиторий]({{< relref "2023-07-30-configuration-file-management-repo" >}})
 
 
 ### <span class="section-num">11.11</span> Сетевые клиенты {#сетевые-клиенты}
@@ -211,35 +212,38 @@ slug: "system-administration"
 
 ## <span class="section-num">13</span> Сети {#сети}
 
+
+### <span class="section-num">13.1</span> Cisco {#cisco}
+
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-### <span class="section-num">13.1</span> Протоколы {#протоколы}
+### <span class="section-num">13.2</span> Протоколы {#протоколы}
 
 -   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
-### <span class="section-num">13.2</span> VPN {#vpn}
+### <span class="section-num">13.3</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 
 
-### <span class="section-num">13.3</span> Мониторинг {#мониторинг}
+### <span class="section-num">13.4</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Мониторинг пропускной способности и скорости сети]({{< relref "2023-06-16-bandwidth-network-speed-monitoring" >}})
 
 
-### <span class="section-num">13.4</span> Железо {#железо}
+### <span class="section-num">13.5</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
-### <span class="section-num">13.5</span> Сервисы {#сервисы}
+### <span class="section-num">13.6</span> Сервисы {#сервисы}
 
 
-#### <span class="section-num">13.5.1</span> DNS {#dns}
+#### <span class="section-num">13.6.1</span> DNS {#dns}
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
 -   [Общедоступные резольверы DNS]({{< relref "2023-05-26-public-dns-resolvers" >}})
@@ -255,7 +259,12 @@ slug: "system-administration"
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
 
 
-## <span class="section-num">16</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
+## <span class="section-num">16</span> DevOps {#devops}
+
+-   [Непрерывная интеграция. GitHub Actions]({{< relref "2023-07-16-continuous-integration-github-actions" >}})
+
+
+## <span class="section-num">17</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
 -   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})

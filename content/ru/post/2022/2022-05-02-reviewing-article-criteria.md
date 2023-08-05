@@ -2,7 +2,8 @@
 title: "Критерии рецензирования статей"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T17:52:00+03:00
-lastmod: 2023-06-29T12:16:00+03:00
+lastmod: 2023-07-16T17:17:00+03:00
+tags: ["sci-admin"]
 categories: ["science"]
 draft: false
 slug: "reviewing-article-criteria"

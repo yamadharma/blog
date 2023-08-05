@@ -2,7 +2,7 @@
 title: "Средство имитационного моделирования NS-3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-03T15:41:00+03:00
-lastmod: 2023-06-29T12:49:00+03:00
+lastmod: 2023-07-16T17:09:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

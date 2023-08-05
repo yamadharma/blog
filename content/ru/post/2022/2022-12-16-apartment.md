@@ -2,7 +2,7 @@
 title: "Квартира"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:18:00+03:00
-lastmod: 2023-07-14T17:49:00+03:00
+lastmod: 2023-08-01T13:37:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false
@@ -26,17 +26,22 @@ slug: "apartment"
 -   [Получение налогового вычета по ипотеке]({{< relref "2023-02-08-mortgage-tax-deduction" >}})
 
 
-## <span class="section-num">2</span> Коммуникации {#коммуникации}
+## <span class="section-num">2</span> Продажа квартиры {#продажа-квартиры}
+
+-   [Продажа квартиры]({{< relref "2023-08-01-sale-apartment" >}})
+
+
+## <span class="section-num">3</span> Коммуникации {#коммуникации}
 
 -   [Домашний интернет]({{< relref "2023-02-16-home-internet" >}})
 
 
-## <span class="section-num">3</span> Оборудование {#оборудование}
+## <span class="section-num">4</span> Оборудование {#оборудование}
 
 -   [Фильтры воды]({{< relref "2023-04-14-water-filters" >}})
 
 
-## <span class="section-num">4</span> Домашняя техника {#домашняя-техника}
+## <span class="section-num">5</span> Домашняя техника {#домашняя-техника}
 
 -   [Критерии выбора робота-пылесоса]({{< relref "2023-05-09-criteria-choosing-robot-cleaner" >}})
 -   [Робот-пылесос iCLEBO O5]({{< relref "2023-05-15-robot-vacuum-cleaner-iclebo-o5" >}})

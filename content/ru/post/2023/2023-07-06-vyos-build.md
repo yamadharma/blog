@@ -2,7 +2,7 @@
 title: "Сборка образа VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-06T16:38:00+03:00
-lastmod: 2023-07-06T17:40:00+03:00
+lastmod: 2023-07-17T17:21:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false

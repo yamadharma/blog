@@ -1,9 +1,10 @@
 ---
 title: "Общепринятые коммиты"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-11T19:39:00+03:00
-lastmod: 2021-01-15T17:46:00+03:00
-tags: ["programming"]
-categories: ["sysadmin"]
+lastmod: 2023-07-19T16:01:00+03:00
+tags: ["education", "programming"]
+categories: ["computer-science"]
 draft: false
 slug: "conventional-commits"
 ---
@@ -15,7 +16,7 @@ slug: "conventional-commits"
 {{< toc >}}
 
 
-## Описание {#описание}
+## <span class="section-num">1</span> Описание {#описание}
 
 Спецификация [Conventional Commits](https://www.conventionalcommits.org/ru/):
 
@@ -24,7 +25,7 @@ slug: "conventional-commits"
 -   Регламентирует структуру и основные типы коммитов.
 
 
-### Структура коммита {#структура-коммита}
+### <span class="section-num">1.1</span> Структура коммита {#структура-коммита}
 
 ```text
 <type>(<scope>): <subject>
@@ -32,6 +33,16 @@ slug: "conventional-commits"
 <body>
 <BLANK LINE>
 <footer>
+```
+
+Или, по-русски:
+
+```text
+<тип>(<область>): <описание изменения>
+<пустая линия>
+[необязательное тело]
+<пустая линия>
+[необязательный нижний колонтитул]
 ```
 
 -   Заголовок является обязательным.
@@ -43,11 +54,15 @@ slug: "conventional-commits"
 -   Тело (body) должно включать мотивацию к изменению и противопоставлять это предыдущему поведению.
     -   Как и в теме, используйте повелительное наклонение в настоящем времени.
 -   Нижний колонтитул (footer) должен содержать любую информацию о критических изменениях.
+    -   Следует использовать для указания внешних ссылок, контекста коммита или другой мета информации.
     -   Также содержит ссылку на issue (например, на github), который закрывает эта фиксация.
     -   Критические изменения должны начинаться со слова `BREAKING CHANGE:` с пробела или двух символов новой строки. Затем для этого используется остальная часть сообщения фиксации.
 
 
-#### Базовые типы коммитов {#базовые-типы-коммитов}
+### <span class="section-num">1.2</span> Типы коммитов {#типы-коммитов}
+
+
+#### <span class="section-num">1.2.1</span> Базовые типы коммитов {#базовые-типы-коммитов}
 
 -   `fix:` --- коммит типа fix исправляет ошибку (bug) в вашем коде (он соответствует PATCH в SemVer).
 -   `feat:` --- коммит типа feat добавляет новую функцию (feature) в ваш код (он соответствует MINOR в SemVer).
@@ -61,13 +76,13 @@ slug: "conventional-commits"
     style:, refactor:, perf:, test:, и другие.
 
 
-#### Соглашения The Angular convention {#соглашения-the-angular-convention}
+#### <span class="section-num">1.2.2</span> Соглашения The Angular convention {#соглашения-the-angular-convention}
 
-Одно из популярных соглашений о поддержке исходных кодов --- конвенция Angular ([The Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)).
+-   Одно из популярных соглашений о поддержке исходных кодов --- конвенция Angular ([The Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)).
 
 <!--list-separator-->
 
--  Типы коммитов The Angular convention
+1.  Типы коммитов The Angular convention
 
     Конвенция Angular ([The Angular convention](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)) требует следующие типы коммитов:
 
@@ -83,7 +98,7 @@ slug: "conventional-commits"
 
 <!--list-separator-->
 
--  Области действия (scope)
+2.  Области действия (scope)
 
     Областью действия должно быть имя затронутого пакета npm (как его воспринимает человек, читающий журнал изменений, созданный из сообщений фиксации).
 
@@ -94,22 +109,9 @@ slug: "conventional-commits"
     -   отсутствует область действия --- полезно для изменений стиля, тестирования и рефакторинга, которые выполняются во всех пакетах (например, style: добавить отсутствующие точки с запятой).
 
 
-#### Соглашения @commitlint/config-conventional {#соглашения-commitlint-config-conventional}
+#### <span class="section-num">1.2.3</span> Соглашения @commitlint/config-conventional {#соглашения-commitlint-config-conventional}
 
 Соглашение [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) входит в пакет [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog). В целом в этом соглашении придерживаются соглашения Angular.
 
 
-## Программное обеспечение {#программное-обеспечение}
-
-
-## Backlinks {#backlinks}
-
-
-### [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}}) {#система-контроля-версий-git}
-
-[Общепринятые коммиты]({{< relref "2020-12-11-conventional-commits" >}})
-
-
-### [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}}) {#семантическое-версионирование}
-
-Для реализации семантического версионирования создано несколько программных продуктов. При этом лучше всего использовать комплексные продукты, которые используют информацию из коммитов системы версионирования. Естественно, коммиты должны иметь стандартизованный вид. Поэтому в семантическое версионирование применяется вместе с [Общепринятыми коммитами]({{< relref "2020-12-11-conventional-commits" >}}).
+## <span class="section-num">2</span> Программное обеспечение {#программное-обеспечение}

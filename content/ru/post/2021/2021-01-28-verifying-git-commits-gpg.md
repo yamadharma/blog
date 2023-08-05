@@ -2,7 +2,7 @@
 title: "Верификация коммитов git с помощью GPG"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-28T18:47:00+03:00
-lastmod: 2022-04-17T13:04:00+03:00
+lastmod: 2023-07-19T15:52:00+03:00
 tags: ["sysadmin", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -36,7 +36,6 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">2.1</span> Создание ключа {#создание-ключа}
 
 -   Генерируем ключ
-
     ```shell
     gpg --full-generate-key
     ```
@@ -55,20 +54,17 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">2.2</span> Экспорт ключа {#экспорт-ключа}
 
 -   Выводим список ключей и копируем отпечаток приватного ключа:
-
     ```shell
     gpg --list-secret-keys --keyid-format LONG
     ```
 
     -   Отпечаток ключа --- это последовательность байтов, используемая для идентификации более длинного, по сравнению с самим отпечатком ключа.
     -   Формат строки:
-
         ```text
         sec   Алгоритм/Отпечаток_ключа Дата_создания [Флаги] [Годен_до]
               ID_ключа
         ```
 -   Экспортируем ключ в формате ASCII по его отпечатку:
-
     ```shell
     gpg --armor --export <PGP Fingerprint>
     ```
@@ -78,7 +74,6 @@ slug: "verifying-git-commits-gpg"
 
 -   Копируем ключ и добавляем его в настройках профиля на GitHub (или GitLab).
 -   Cкопируйте ваш сгенерированный PGP ключ в буфер обмена:
-
     ```shell
     gpg --armor --export <PGP Fingerprint> | xclip -sel clip
     ```
@@ -88,7 +83,6 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">2.4</span> Подписывание коммитов git {#подписывание-коммитов-git}
 
 -   Подпись коммитов при работе через терминал:
-
     ```shell
     git commit -a -S -m 'your commit message'
     ```
@@ -98,7 +92,6 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">2.5</span> Настройка автоматических подписей коммитов git {#настройка-автоматических-подписей-коммитов-git}
 
 -   Используя введёный email, укажите Git применять его при подписи коммитов:
-
     ```shell
     git config --global user.signingkey <PGP Fingerprint>
     git config --global commit.gpgsign true
@@ -110,7 +103,6 @@ slug: "verifying-git-commits-gpg"
 
 -   Для генерации и хранения GPG ключей можно использовать Keybase <https://keybase.io/>.
 -   После того, как вы зарегистрируетесь в Keybase, зайдите в терминал и запустите следующие команды:
-
     ```shell
     keybase login
     ```
@@ -119,12 +111,10 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">3.1</span> Генерация GPG ключа {#генерация-gpg-ключа}
 
 -   Создайте новый GPG ключ, используя ваше настоящее имя и email, сохраненный в GitHub:
-
     ```shell
     keybase pgp gen
     ```
 -   Просмотр списка ключей:
-
     ```shell
     keybase pgp list
     ```
@@ -133,7 +123,6 @@ slug: "verifying-git-commits-gpg"
 ### <span class="section-num">3.2</span> Добавление GPG ключа в GitHub {#добавление-gpg-ключа-в-github}
 
 -   Cкопируйте ваш сгенерированный PGP ключ:
-
     ```shell
     keybase pgp export | xclip -i
     ```

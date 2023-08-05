@@ -2,7 +2,7 @@
 title: "Обновление хостовых ключей ssh Bitbucket Cloud"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-14T17:45:00+03:00
-lastmod: 2023-06-14T17:55:00+03:00
+lastmod: 2023-07-18T13:14:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

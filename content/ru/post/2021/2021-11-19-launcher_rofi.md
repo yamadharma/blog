@@ -2,7 +2,8 @@
 title: "Запуск приложений. Rofi"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-19T20:00:00+03:00
-lastmod: 2021-11-20T21:51:00+03:00
+lastmod: 2023-08-04T13:10:00+03:00
+categories: ["computer-science"]
 draft: false
 slug: "launcher_rofi"
 ---
@@ -28,14 +29,12 @@ slug: "launcher_rofi"
 -   Репозиторий: <https://github.com/lbonn/rofi>
 -   Установка
     -   Gentoo
-
         ```shell
         emerge x11-misc/rofi-wayland
         ```
 
         -   Находится в репозитории [swirl](http://gpo.zugaina.org/Overlays/swirl).
         -   Добавить репозиторий:
-
             ```shell
             layman -a swirl
             ```
@@ -45,7 +44,6 @@ slug: "launcher_rofi"
 ## <span class="section-num">3</span> Темы {#темы}
 
 -   Для выбора темы можно использовать команду:
-
     ```shell
     rofi-theme-selector
     ```
@@ -66,18 +64,14 @@ slug: "launcher_rofi"
 ### <span class="section-num">4.1</span> i3wm {#i3wm}
 
 -   Использование запятых в файле настроек _i3_ может привести к проблемам. Лучше использовать файл настроек _rofi_ или замените запятые символом `#`, например, заменить строку
-
     ```conf-unix
     rofi -combi-modi window,drun,ssh
     ```
-
     на
-
     ```conf-unix
     rofi -combi-modi window#drun#ssh
     ```
 -   Возможная конфигурация в командной строке команды `rofi`:
-
     ```conf-unix
     ## ~/.config/i3/config
     set $menu rofi -combi-modi window#drun -show combi -modi combi -show-icons

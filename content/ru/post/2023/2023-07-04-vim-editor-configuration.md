@@ -2,7 +2,7 @@
 title: "Настройка редактора vim"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-04T20:17:00+03:00
-lastmod: 2023-07-10T14:21:00+03:00
+lastmod: 2023-07-20T13:04:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "vim-editor-configuration"
@@ -26,7 +26,7 @@ slug: "vim-editor-configuration"
 -   Комментарий начинается со знака кавычки: `"`.
 
 
-## <span class="section-num">3</span> Поддержка языков {#поддержка-языков}
+## <span class="section-num">3</span> Поддержка русского языка {#поддержка-русского-языка}
 
 -   Поскольку vim работает в консоли, можно использовать системное переключение языка.
 -   Однако при этом не возможно использовать клавишные комбинации.

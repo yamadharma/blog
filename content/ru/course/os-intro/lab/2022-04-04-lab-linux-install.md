@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2023-01-31T19:46:00+03:00
+lastmod: 2023-07-29T19:59:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -503,31 +503,16 @@ menu:
 4.  Как посмотреть, какие файловые системы подмонтированы в ОС?
 5.  Как удалить зависший процесс?
 
-При ответах на контрольные вопросы рекомендуется ознакомиться с информацией из  [<a href="#citeproc_bib_item_1">1</a>,<a href="#citeproc_bib_item_1">1</a>–<a href="#citeproc_bib_item_7">7</a>].
+При ответах на контрольные вопросы рекомендуется ознакомиться с информацией из  [<a href="#citeproc_bib_item_1">1</a>–<a href="#citeproc_bib_item_3">3</a>; <a href="#citeproc_bib_item_3">3</a>–<a href="#citeproc_bib_item_7">7</a>].
 
 ## Литература
 
-<style>.csl-left-margin{float: left; padding-right: 0em;}
- .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
-    <div class="csl-left-margin">1.</div><div class="csl-right-inline">Dash P. Getting started with oracle vm virtualbox. Packt Publishing Ltd, 2013. 86 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>
-    <div class="csl-left-margin">2.</div><div class="csl-right-inline">Colvin H. Virtualbox: An ultimate guide book on virtualization with virtualbox. CreateSpace Independent Publishing Platform, 2015. 70 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>
-    <div class="csl-left-margin">3.</div><div class="csl-right-inline">van Vugt S. Red hat rhcsa/rhce 7 cert guide : Red hat enterprise linux 7 (ex200 and ex300). Pearson IT Certification, 2016. 1008 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>
-    <div class="csl-left-margin">4.</div><div class="csl-right-inline">Робачевский А., Немнюгин С., Стесик О. Операционная система unix. 2-е изд. Санкт-Петербург: БХВ-Петербург, 2010. 656 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>
-    <div class="csl-left-margin">5.</div><div class="csl-right-inline">Немет Э. et al. Unix и Linux: руководство системного администратора. 4-е изд. Вильямс, 2014. 1312 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>
-    <div class="csl-left-margin">6.</div><div class="csl-right-inline">Колисниченко Д.Н. Самоучитель системного администратора Linux. СПб.: БХВ-Петербург, 2011. 544 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>
-    <div class="csl-left-margin">7.</div><div class="csl-right-inline">Robbins A. Bash pocket reference. O’Reilly Media, 2016. 156 p.</div>
-  </div>
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Robbins A. Bash pocket reference / A.  Robbins. – O’Reilly Media, 2016. – 156 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Colvin H. Virtualbox: An ultimate guide book on virtualization with virtualbox / H.  Colvin. – CreateSpace Independent Publishing Platform, 2015. – 70 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Dash P. Getting started with oracle vm virtualbox / P.  Dash. – Packt Publishing Ltd, 2013. – 86 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Vugt S. van. Red hat rhcsa/rhce 7 cert guide : Red hat enterprise linux 7 (ex200 and ex300) : Certification guide / S.  van Vugt. – Pearson IT Certification, 2016. – 1008 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Колисниченко Д. Н. Самоучитель системного администратора Linux : Системный администратор / Д. Н.  Колисниченко. – СПб. : БХВ-Петербург, 2011. – 544 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Немет Э. Unix и Linux: руководство системного администратора / Э.  Немет, Г.  Снайдер, Т. Р.  Хейн, Б.  Уэйли. – 4-е изд. – Вильямс, 2014. – 1312 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Робачевский А. Операционная система unix / А.  Робачевский, С.  Немнюгин, О.  Стесик. – 2-е изд. – Санкт-Петербург : БХВ-Петербург, 2010. – 656 pp.</div>
 </div>

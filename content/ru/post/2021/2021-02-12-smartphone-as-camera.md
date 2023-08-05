@@ -1,7 +1,8 @@
 ---
 title: "Использование смартфона в качестве камеры"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-12T18:38:00+03:00
-lastmod: 2021-02-17T15:35:00+03:00
+lastmod: 2023-08-04T15:43:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -44,7 +45,6 @@ slug: "smartphone-as-camera"
 #### <span class="section-num">1.1.2</span> Windows {#windows}
 
 -   Установка с помощью менеджера пакетов Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})).
-
     ```shell
     choco install droidcamclient
     ```
@@ -54,7 +54,6 @@ slug: "smartphone-as-camera"
 #### <span class="section-num">1.1.3</span> Linux {#linux}
 
 -   Необходима поддержка `Video4Linux loopback` в ядре:
-
     ```conf-unix
     Device Drivers --->
       <M> Multimedia support --->
@@ -73,17 +72,14 @@ slug: "smartphone-as-camera"
         -   Пакет отсутствует в основном дереве portage. Следует использовать overlay:
             -   nex-overlay <https://gitlab.com/NexAdn/nex-overlay>;
             -   thegreatmcpain
-
                 ```shell
                 layman -a thegreatmcpain
                 ```
             -   guru
-
                 ```shell
                 layman -a guru
                 ```
         -   Установка:
-
             ```shell
             emerge droidcam
             ```
@@ -99,7 +95,6 @@ slug: "smartphone-as-camera"
         -   `/etc/modprobe.d/v4l2loopback-dc.conf`;
         -   `/etc/modprobe.d/droidcam.conf`.
     -   Формат записи:
-
         ```conf-unix
         options v4l2loopback-dc width=640 height=480
         ```
@@ -142,8 +137,3 @@ slug: "smartphone-as-camera"
 -   На компьютере в программе выбрать режим `Connect over USB` (на компьютере должны быть установлены драйвера ADB).
 -   Подключить смартфон по USB кабелю.
 -   На компьютере нажать `Start`.
-
-
-## <span class="section-num">2</span> Backlinks {#backlinks}
-
--   [Видеозапись самостоятельной работы]({{< relref "2021-01-25-self-work-recording" >}})

@@ -2,7 +2,7 @@
 title: "Файловая система btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:33:00+03:00
-lastmod: 2023-07-12T18:06:00+03:00
+lastmod: 2023-07-21T16:59:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -38,14 +38,19 @@ slug: "btrfs-file-system"
 
 -   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 -   [Подтома btrfs]({{< relref "2021-08-27-btrfs-subvolumes" >}})
+
+
+## <span class="section-num">3</span> Обслуживание btrfs {#обслуживание-btrfs}
+
 -   [Обслуживание btrfs]({{< relref "2021-09-23-btrfs-maintenence" >}})
 -   [Дедупликация файловой системы btrfs]({{< relref "2022-05-26-deduplication-btrfs-filesystem" >}})
+-   [Восстановление btrfs]({{< relref "2023-07-21-btrfs-recovery" >}})
 
 
-## <span class="section-num">3</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
+## <span class="section-num">4</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
 
 
-### <span class="section-num">3.1</span> btrfs-progs {#btrfs-progs}
+### <span class="section-num">4.1</span> btrfs-progs {#btrfs-progs}
 
 -   Утилиты для работы с _btrfs_.
 -   Установка
@@ -55,7 +60,7 @@ slug: "btrfs-file-system"
         ```
 
 
-### <span class="section-num">3.2</span> btrfsmaintenance {#btrfsmaintenance}
+### <span class="section-num">4.2</span> btrfsmaintenance {#btrfsmaintenance}
 
 -   Скрипт для регулярного обслуживания файловой системы _btrfs_
 -   Установка
@@ -65,7 +70,7 @@ slug: "btrfs-file-system"
         ```
 
 
-### <span class="section-num">3.3</span> snapper {#snapper}
+### <span class="section-num">4.3</span> snapper {#snapper}
 
 -   Управление снапшотами
 -   Установка

@@ -2,8 +2,8 @@
 title: "Emacs. Работа с библиографией. Org-roam-bibtex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-30T15:13:00+03:00
-lastmod: 2023-07-04T10:45:00+03:00
-tags: ["emacs"]
+lastmod: 2023-07-16T17:25:00+03:00
+tags: ["bib", "emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-bibliography-org-roam-bibtex"

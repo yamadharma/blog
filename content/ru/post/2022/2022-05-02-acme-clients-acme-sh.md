@@ -2,7 +2,7 @@
 title: "Клиенты ACME. acme.sh"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T17:11:00+03:00
-lastmod: 2022-05-02T17:16:00+03:00
+lastmod: 2023-07-16T17:13:00+03:00
 tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false

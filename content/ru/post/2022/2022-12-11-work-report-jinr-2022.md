@@ -2,7 +2,9 @@
 title: "Отчёт по работе в ОИЯИ за 2022"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-11T15:48:00+03:00
-lastmod: 2022-12-18T14:32:00+03:00
+lastmod: 2023-07-31T18:42:00+03:00
+tags: ["jinr"]
+categories: ["job"]
 draft: false
 slug: "work-report-jinr-2022"
 ---
@@ -61,11 +63,11 @@ slug: "work-report-jinr-2022"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Gevorkyan M. N. <a href="https://doi.org/10.1134/S0361768822010054">Analytical-numerical implementation of polyvector algebra in julia</a> / M. N. Gevorkyan, A. V. Demidova, T. R. Velieva [et al.] // Programming and computer software. – 2022. – Vol. 48. – № 1. – Pp. 49–58.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Lovetskiy K. P. <a href="https://doi.org/10.22363/2658-4670-2022-30-2-127-138">Multistage pseudo-spectral method (method of collocations) for the approximate solution of an ordinary differential equation of the first order</a> / K. P. Lovetskiy, D. S. Kulyabov, A. W. Hissein // Discrete and continuous models and applied computational science. – 2022. – Vol. 30. – № 2. – Pp. 127–138.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Sevastianov L. A. <a href="https://doi.org/10.1109/itnt55410.2022.9848731">Multistage collocation pseudo-spectral method for the solution of the first order linear ode</a> / L. A. Sevastianov, K. P. Lovetskiy, D. S. Kulyabov // 2022 viii international conference on information technology and nanotechnology (itnt). – Samara, Russian Federation : Institute of Electrical and Electronics Engineers Inc., 2022. – Pp. 1–6.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Gevorkyan M. N. <a href="https://doi.org/10.1134/S0361768822010054">Analytical-numerical implementation of polyvector algebra in julia</a> / M. N. Gevorkyan, A. V. Demidova, T. R. Velieva [и др.] // Programming and computer software. – 2022. – Т. 48. – № 1. – Сс. 49–58.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Lovetskiy K. P. <a href="https://doi.org/10.22363/2658-4670-2022-30-2-127-138">Multistage pseudo-spectral method (method of collocations) for the approximate solution of an ordinary differential equation of the first order</a> / K. P. Lovetskiy, D. S. Kulyabov, A. W. Hissein // Discrete and continuous models and applied computational science. – 2022. – Т. 30. – № 2. – Сс. 127–138.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Sevastianov L. A. <a href="https://doi.org/10.1109/itnt55410.2022.9848731">Multistage collocation pseudo-spectral method for the solution of the first order linear ode</a> / L. A. Sevastianov, K. P. Lovetskiy, D. S. Kulyabov // 2022 viii international conference on information technology and nanotechnology (itnt). – Samara, Russian Federation : Institute of Electrical and Electronics Engineers Inc., 2022. – Сс. 1–6.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Баулин Е. А. Численное моделирование стохастической модели лотки-вольтерра / Е. А.  Баулин, А. В.  Королькова, Д. С.  Кулябов, Ф. А.  Витальевич. – Федеральное государственное автономное образовательное учреждение высшего образования «Российский университет дружбы народов» (РУДН), 2022.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Геворкян М. Н. <a href="https://doi.org/10.31857/s0132347422010058">Аналитико-численная реализация алгебры поливекторов на языке julia</a> / М. Н. Геворкян, А. В. Демидова, Т. Р. Велиева [et al.] // Программирование. – 2022. – № 1. – Pp. 54–64.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Геворкян М. Н. <a href="https://doi.org/10.31857/s0132347422010058">Аналитико-численная реализация алгебры поливекторов на языке julia</a> / М. Н. Геворкян, А. В. Демидова, Т. Р. Велиева [и др.] // Программирование. – 2022. – № 1. – Сс. 54–64.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Геворкян М. Н. Расчет линз максвелла и люнеберга с помощью численного решения уравнения эйконала / М. Н.  Геворкян, А. В.  Королькова, Д. С.  Кулябов. – Федеральное государственное автономное образовательное учреждение высшего образования «Российский университет дружбы народов» (РУДН), 2022.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Кулябов Д. С. Основы администрирования операционных систем: Лабораторные работы. Основы администрирования операционных систем / Д. С.  Кулябов, А. В.  Королькова. – 2. – Москва : Российский университет дружбы народов, 2022.</div>
 </div>

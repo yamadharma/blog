@@ -2,7 +2,7 @@
 title: "Повышение квалификации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-20T10:24:00+03:00
-lastmod: 2023-06-07T17:30:00+03:00
+lastmod: 2023-08-03T19:25:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -59,7 +59,7 @@ slug: "professional-development"
 ### <span class="section-num">3.1</span> 2009 {#2009}
 
 
-#### <span class="section-num">3.1.1</span> Организация учебного процесса по системе зачётных единиц {#организация-учебного-процесса-по-системе-зачётных-единиц}
+#### <span class="section-num">3.1.1</span> Организация учебного процесса по системе зачётных единиц <span class="tag"><span class="ATTACH">ATTACH</span></span> {#организация-учебного-процесса-по-системе-зачётных-единиц}
 
 -   72 ак. ч.
 
@@ -67,7 +67,7 @@ slug: "professional-development"
 ### <span class="section-num">3.2</span> 2011 {#2011}
 
 
-#### <span class="section-num">3.2.1</span> Суперкомпьютерные системы и приложения. Администрирование суперкомпьютерных систем {#суперкомпьютерные-системы-и-приложения-dot-администрирование-суперкомпьютерных-систем}
+#### <span class="section-num">3.2.1</span> Суперкомпьютерные системы и приложения. Администрирование суперкомпьютерных систем <span class="tag"><span class="ATTACH">ATTACH</span></span> {#суперкомпьютерные-системы-и-приложения-dot-администрирование-суперкомпьютерных-систем}
 
 -   72 ак. ч.
 -   МГУ
@@ -82,7 +82,7 @@ slug: "professional-development"
 ### <span class="section-num">3.4</span> 2013 {#2013}
 
 
-#### <span class="section-num">3.4.1</span> Преподаватель высшей школы {#преподаватель-высшей-школы}
+#### <span class="section-num">3.4.1</span> Преподаватель высшей школы <span class="tag"><span class="ATTACH">ATTACH</span></span> {#преподаватель-высшей-школы}
 
 -   600 ак. ч.
 
@@ -90,7 +90,7 @@ slug: "professional-development"
 ### <span class="section-num">3.5</span> 2015 {#2015}
 
 
-#### <span class="section-num">3.5.1</span> Современные технологии образовательного процесса {#современные-технологии-образовательного-процесса}
+#### <span class="section-num">3.5.1</span> Современные технологии образовательного процесса <span class="tag"><span class="ATTACH">ATTACH</span></span> {#современные-технологии-образовательного-процесса}
 
 -   144 ак. ч.
 
@@ -98,7 +98,7 @@ slug: "professional-development"
 ### <span class="section-num">3.6</span> 2016 {#2016}
 
 
-#### <span class="section-num">3.6.1</span> Создание электронных курсов {#создание-электронных-курсов}
+#### <span class="section-num">3.6.1</span> Создание электронных курсов <span class="tag"><span class="ATTACH">ATTACH</span></span> {#создание-электронных-курсов}
 
 -   57 ак. ч.
 
@@ -106,7 +106,7 @@ slug: "professional-development"
 ### <span class="section-num">3.7</span> 2018 {#2018}
 
 
-#### <span class="section-num">3.7.1</span> Технологии инклюзивного образования {#технологии-инклюзивного-образования}
+#### <span class="section-num">3.7.1</span> Технологии инклюзивного образования <span class="tag"><span class="ATTACH">ATTACH</span></span> {#технологии-инклюзивного-образования}
 
 -   18 ак. ч.
 
@@ -114,7 +114,7 @@ slug: "professional-development"
 ### <span class="section-num">3.8</span> 2019 {#2019}
 
 
-#### <span class="section-num">3.8.1</span> Английский язык в международно-ориентированном вузе (уровень Elementary) {#английский-язык-в-международно-ориентированном-вузе--уровень-elementary}
+#### <span class="section-num">3.8.1</span> Английский язык в международно-ориентированном вузе (уровень Elementary) <span class="tag"><span class="ATTACH">ATTACH</span></span> {#английский-язык-в-международно-ориентированном-вузе--уровень-elementary}
 
 -   108 ак. ч.
 -   Институт повышения квалификации и переподготовки кадров РУДН
@@ -133,7 +133,7 @@ slug: "professional-development"
 -   2 часа
 
 
-#### <span class="section-num">3.9.2</span> Диплом о профессиональной переподготовке {#диплом-о-профессиональной-переподготовке}
+#### <span class="section-num">3.9.2</span> Диплом о профессиональной переподготовке <span class="tag"><span class="ATTACH">ATTACH</span></span> {#диплом-о-профессиональной-переподготовке}
 
 <!--list-separator-->
 
@@ -171,7 +171,7 @@ slug: "professional-development"
 ### <span class="section-num">3.10</span> 2022 {#2022}
 
 
-#### <span class="section-num">3.10.1</span> Результативное использование информационных баз данных в учебно-научной деятельности НПР {#результативное-использование-информационных-баз-данных-в-учебно-научной-деятельности-нпр}
+#### <span class="section-num">3.10.1</span> Результативное использование информационных баз данных в учебно-научной деятельности НПР <span class="tag"><span class="ATTACH">ATTACH</span></span> {#результативное-использование-информационных-баз-данных-в-учебно-научной-деятельности-нпр}
 
 <!--list-separator-->
 
@@ -188,7 +188,7 @@ slug: "professional-development"
     -   с 26 апреля 2022 года по 30 июня 2022 года
 
 
-#### <span class="section-num">3.10.2</span> Английский язык {#английский-язык}
+#### <span class="section-num">3.10.2</span> Английский язык <span class="tag"><span class="ATTACH">ATTACH</span></span> {#английский-язык}
 
 <!--list-separator-->
 
@@ -205,7 +205,7 @@ slug: "professional-development"
     -   с 10.10.2022 по 28.12.2022
 
 
-#### <span class="section-num">3.10.3</span> Технологии инклюзивного образования {#технологии-инклюзивного-образования}
+#### <span class="section-num">3.10.3</span> Технологии инклюзивного образования <span class="tag"><span class="ATTACH">ATTACH</span></span> {#технологии-инклюзивного-образования}
 
 -   Программа: Технологии инклюзивного образования
     -   Программа разработана в соответствии с лицензией на осуществление образовательной деятельности № 1204 ОТ 23.12.2014г. и на основе профессиональной части федерального государственного образовательного стандарта ВПО по направлению (специальности) 050701 «Педагогика» (согласно коду ОКСО лицензии).

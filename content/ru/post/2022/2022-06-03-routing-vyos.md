@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2023-07-08T16:16:00+03:00
+lastmod: 2023-07-17T17:28:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -226,3 +226,4 @@ slug: "routing-vyos"
 
 -   [GNS3. Образ VyOS]({{< relref "2022-07-14-gns3-vyos" >}})
 -   [Сборка образа VyOS]({{< relref "2023-07-06-vyos-build" >}})
+-   [Сборка образа VyOS. Репозиторий]({{< relref "2023-07-16-vyos-build-repository" >}})

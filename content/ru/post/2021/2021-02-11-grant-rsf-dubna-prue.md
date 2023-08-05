@@ -2,7 +2,7 @@
 title: "Грант РНФ Дубна-РЭУ"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-11T18:33:00+03:00
-lastmod: 2023-07-11T12:33:00+03:00
+lastmod: 2023-07-20T13:26:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

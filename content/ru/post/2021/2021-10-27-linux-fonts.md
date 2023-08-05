@@ -2,7 +2,7 @@
 title: "Шрифты в Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-27T11:36:00+03:00
-lastmod: 2023-07-13T12:16:00+03:00
+lastmod: 2023-07-18T20:08:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false

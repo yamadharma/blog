@@ -2,7 +2,7 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2022-05-05T18:01:00+03:00
+lastmod: 2023-07-29T20:04:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false

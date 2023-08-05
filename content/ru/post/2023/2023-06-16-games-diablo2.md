@@ -2,7 +2,7 @@
 title: "Игры. Diablo II"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-16T13:42:00+03:00
-lastmod: 2023-06-26T16:52:00+03:00
+lastmod: 2023-07-21T17:02:00+03:00
 tags: ["diablo"]
 categories: ["games"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Фильтры воды"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-14T17:43:00+03:00
-lastmod: 2023-06-08T14:40:00+03:00
+lastmod: 2023-07-21T17:57:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false

@@ -104,7 +104,10 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false
+    codeFences: true
+    anchorLineNos: true
+    lineNoStart: 1
+    lineNos: false
   tableOfContents:
     startLevel: 2
     endLevel: 6

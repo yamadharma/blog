@@ -2,7 +2,7 @@
 title: "XDG. Пользовательские каталоги"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-16T20:15:00+03:00
-lastmod: 2023-07-11T11:06:00+03:00
+lastmod: 2023-08-02T19:42:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

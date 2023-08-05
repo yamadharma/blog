@@ -2,7 +2,7 @@
 title: "Компьютерные игры"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-07T15:31:00+03:00
-lastmod: 2023-07-10T14:12:00+03:00
+lastmod: 2023-07-20T13:11:00+03:00
 categories: ["games"]
 draft: false
 slug: "computer-games"

@@ -2,7 +2,7 @@
 title: "Arista EOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-16T11:30:00+03:00
-lastmod: 2023-07-10T14:41:00+03:00
+lastmod: 2023-07-16T17:16:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false

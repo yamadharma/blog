@@ -2,7 +2,7 @@
 title: "Книги. История"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T10:29:00+03:00
-lastmod: 2023-07-14T17:36:00+03:00
+lastmod: 2023-07-18T19:55:00+03:00
 tags: ["history"]
 categories: ["book"]
 draft: false
@@ -19,7 +19,15 @@ slug: "books-history"
 ## <span class="section-num">1</span> Список по годам {#список-по-годам}
 
 
-## <span class="section-num">2</span> Средневековье {#средневековье}
+### <span class="section-num">1.1</span> 2023 {#2023}
+
+-   <span class="timestamp-wrapper"><span class="timestamp">[2021-01-01 Пт 13:53] </span></span> [Гаранина, М. Б. (2021): Записки исторической сплетницы]({{< relref "2021-01-01-garanina_book_notes-historical-gossip_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
+
+
+## <span class="section-num">2</span> Список по темам {#список-по-темам}
+
+
+### <span class="section-num">2.1</span> Средневековье {#средневековье}
 
 -   [Гаранина, М. Б. (2021): Записки исторической сплетницы]({{< relref "2021-01-01-garanina_book_notes-historical-gossip_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
 

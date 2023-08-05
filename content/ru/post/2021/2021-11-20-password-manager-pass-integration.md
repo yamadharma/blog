@@ -2,7 +2,9 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2022-04-03T19:16:00+03:00
+lastmod: 2023-08-04T13:12:00+03:00
+tags: ["security"]
+categories: ["computer-science"]
 draft: false
 slug: "password-manager-pass-integration"
 ---
@@ -21,6 +23,13 @@ slug: "password-manager-pass-integration"
 
 -   [rofi-pass]({{< relref "2022-04-03-rofi-pass" >}})
 -   Интеграция _pass_ с _rofi_ (см. [Запуск приложений. Rofi]({{< relref "2021-11-19-launcher_rofi" >}})).
+-   Работает в X11.
+
+
+### <span class="section-num">1.2</span> tessen {#tessen}
+
+-   Репозиторий: <https://github.com/ayushnix/tessen>
+-   Работает в Wayland.
 
 
 ## <span class="section-num">2</span> Настройка интерфейса с броузером {#настройка-интерфейса-с-броузером}
@@ -41,12 +50,10 @@ slug: "password-manager-pass-integration"
 -   Интерфейс для взаимодействия с броузером (native messaging)
     -   Репозиторий: <https://github.com/browserpass/browserpass-native>
     -   Gentoo:
-
         ```shell
         emerge www-plugins/browserpass
         ```
     -   Ubuntu, Debian
-
         ```shell
         apt-get install webext-browserpass
         ```
@@ -59,7 +66,6 @@ slug: "password-manager-pass-integration"
     -   Плагин для Chrome/Chromium: <https://chrome.google.com/webstore/detail/chrome-pass-zx2c4/oblajhnjmknenodebpekmkliopipoolo>
 -   Интерфейс для взаимодействия с броузером (native messaging)
     -   Установка для пользователя:
-
         ```shell
         pip3 install --user chrome-pass==0.3.0
         nativePass install
@@ -74,7 +80,6 @@ slug: "password-manager-pass-integration"
 -   Интерфейс для взаимодействия с броузером (native messaging)
     -   Репозиторий: <https://github.com/passff/passff-host>
     -   Установка:
-
         ```shell
         curl -sSL github.com/passff/passff-host/releases/latest/download/install_host_app.sh | bash -s -- firefox
         ```
@@ -92,12 +97,10 @@ slug: "password-manager-pass-integration"
 -   Начиная с версии gopass-1.12.0 команда создания интерфейса взаимодействия с броузером выделена в отдельную утилиту.
 -   Устанавливаем интерфейс для взаимодействия с броузером (native messaging):
     -   Gentoo
-
         ```shell
         emerge app-admin/gopass-jsonapi
         ```
 -   Для связки плагина с `gopass` необходимо создать вспомогательный скрипт и манифест:
-
     ```shell
     gopass-jsonapi configure
     ```

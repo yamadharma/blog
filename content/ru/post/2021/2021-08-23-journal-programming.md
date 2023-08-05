@@ -2,7 +2,8 @@
 title: "Журнал Программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-23T19:12:00+03:00
-lastmod: 2021-08-23T19:26:00+03:00
+lastmod: 2023-07-31T18:31:00+03:00
+categories: ["computer-science", "science"]
 draft: false
 slug: "journal-programming"
 ---
@@ -48,4 +49,10 @@ slug: "journal-programming"
 
     -   <https://www.scimagojr.com/journalsearch.php?q=19869&tip=sid>
     -   Квартиль:
-        -   2014-2020: Q3.
+        -   2014--2021: Q3.
+        -   2022: Q4
+
+
+#### <span class="section-num">1.3.2</span> ВАК {#вак}
+
+-   2023: K1.

@@ -2,7 +2,7 @@
 title: "Научные статьи"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-23T18:51:00+03:00
-lastmod: 2021-11-03T15:25:00+03:00
+lastmod: 2023-07-31T18:38:00+03:00
 tags: ["research"]
 categories: ["сиянс"]
 draft: false

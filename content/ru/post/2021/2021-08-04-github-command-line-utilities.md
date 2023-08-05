@@ -2,7 +2,7 @@
 title: "github: утилиты командной строки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-04T14:40:00+03:00
-lastmod: 2022-04-17T15:38:00+03:00
+lastmod: 2023-07-17T12:21:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -29,12 +29,10 @@ slug: "github-command-line-utilities"
 ### <span class="section-num">2.1</span> Linux {#linux}
 
 -   Gentoo:
-
     ```shell
     emerge dev-util/github-cli
     ```
 -   Fedora:
-
     ```shell
     sudo dnf install gh
     ```
@@ -43,7 +41,6 @@ slug: "github-command-line-utilities"
 ### <span class="section-num">2.2</span> Windows {#windows}
 
 -   Chocolatey
-
     ```shell
     choco install gh
     ```
@@ -55,7 +52,6 @@ slug: "github-command-line-utilities"
 ### <span class="section-num">3.1</span> Начало работы {#начало-работы}
 
 -   Для начала необходимо авторизоваться
-
     ```shell
     gh auth login
     ```
@@ -73,7 +69,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.1</span> Список релизов {#список-релизов}
 
 -   Команда:
-
     ```shell
     gh release list [flags]
     ```
@@ -84,7 +79,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.2</span> Информация о релизе {#информация-о-релизе}
 
 -   Команда:
-
     ```shell
     gh release view [<tag>] [flags]
     ```
@@ -98,7 +92,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.3</span> Создание релиза {#создание-релиза}
 
 -   Команда:
-
     ```shell
     gh release create <tag> [<files>...]
     ```
@@ -111,17 +104,14 @@ slug: "github-command-line-utilities"
     -   `-t`, `--title string`: задать название выпуска.
 -   Примеры:
     -   Интерактивное создание выпуска:
-
         ```shell
         gh release create v1.2.3
         ```
     -   Создание релиза в неинтерактивном режиме:
-
         ```shell
         gh release create v1.2.3 --notes "bugfix release"
         ```
     -   Использовать примечания к выпуску из файла:
-
         ```shell
         gh release create v1.2.3 -F CHANGELOG.md
         ```
@@ -130,7 +120,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.4</span> Загрузка ресурсов в выпуск {#загрузка-ресурсов-в-выпуск}
 
 -   Команда:
-
     ```shell
     gh release upload <tag> <files>... [flags]
     ```
@@ -141,12 +130,10 @@ slug: "github-command-line-utilities"
 
 -   Загрузить ресурсные файлы можно и при создании релиза.
     -   Загрузите все архивы из каталога как ресурсы выпуска:
-
         ```shell
         gh release create v1.2.3 ./dist/*.tar.gz
         ```
     -   Загрузить ресурс выпуска с отображаемой меткой:
-
         ```shell
         gh release create v1.2.3 '/path/to/asset.zip#My display label'
         ```
@@ -155,7 +142,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.5</span> Скачать ресурсы выпуска {#скачать-ресурсы-выпуска}
 
 -   Команда:
-
     ```shell
     gh release download [<tag>] [flags]
     ```
@@ -163,12 +149,10 @@ slug: "github-command-line-utilities"
     -   `-p`, `--pattern`: задать шаблон имени файла.
 -   Примеры.
     -   Скачать все ресурсы из определенного выпуска:
-
         ```shell
         gh release download v1.2.3
         ```
     -   Скачать файлы по шаблону из последнего релиза:
-
         ```shell
         gh release download -p '*.deb' -p '*.rpm'
         ```
@@ -177,7 +161,6 @@ slug: "github-command-line-utilities"
 #### <span class="section-num">4.1.6</span> Удаление выпуска {#удаление-выпуска}
 
 -   Команда:
-
     ```shell
     gh release delete <tag> [flags]
     ```

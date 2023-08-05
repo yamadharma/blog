@@ -2,7 +2,7 @@
 title: "Мышление письмом"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-22T20:29:00+03:00
-lastmod: 2023-06-25T17:59:00+03:00
+lastmod: 2023-07-20T13:05:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "thinking-writing"

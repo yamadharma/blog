@@ -2,8 +2,8 @@
 title: "Создание bib-файла с процитированными ссылками"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-20T19:44:00+03:00
-lastmod: 2023-07-02T15:49:00+03:00
-tags: ["tex"]
+lastmod: 2023-07-16T17:24:00+03:00
+tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
 slug: "bib-file-cited"

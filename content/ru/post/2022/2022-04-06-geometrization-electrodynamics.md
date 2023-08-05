@@ -2,8 +2,8 @@
 title: "Геометризация электродинамики"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T17:41:00+03:00
-lastmod: 2022-09-20T17:55:00+03:00
-tags: ["MOC", "geometrization", "physics"]
+lastmod: 2023-07-31T18:38:00+03:00
+tags: ["geometrization", "physics"]
 categories: ["science"]
 draft: false
 slug: "geometrization-electrodynamics"

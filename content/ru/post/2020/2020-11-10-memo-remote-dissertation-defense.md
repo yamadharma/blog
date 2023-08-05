@@ -1,7 +1,8 @@
 ---
 title: "Памятка при удалённой защите дисертации"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-11-10T19:26:00+03:00
-lastmod: 2021-02-17T17:05:00+03:00
+lastmod: 2023-07-28T16:56:00+03:00
 tags: ["sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -41,8 +42,3 @@ slug: "memo-remote-dissertation-defense"
 
 -   Камера должна быть включена в течении всего времени проведения защиты.
 -   Если Вы не говорите, то отключайте звук микрофона.
-
-
-## Backlinks {#backlinks}
-
--   [Диссертационный совет]({{< relref "2021-02-03-doctoral-committee" >}})

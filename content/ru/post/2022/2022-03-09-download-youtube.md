@@ -2,7 +2,7 @@
 title: "Закачка с youtube"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-09T17:38:00+03:00
-lastmod: 2023-06-30T10:48:00+03:00
+lastmod: 2023-07-16T17:03:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

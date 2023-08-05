@@ -2,7 +2,7 @@
 title: "Кадастровый номер"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T11:59:00+03:00
-lastmod: 2023-01-30T09:00:00+03:00
+lastmod: 2023-07-20T13:33:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false

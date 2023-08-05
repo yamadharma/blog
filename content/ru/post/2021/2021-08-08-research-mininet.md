@@ -2,7 +2,7 @@
 title: "Исследования. Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-08T16:18:00+03:00
-lastmod: 2022-02-23T19:21:00+03:00
+lastmod: 2023-07-31T18:41:00+03:00
 tags: ["research", "network"]
 categories: ["computer-science", "science"]
 draft: false
@@ -203,23 +203,19 @@ slug: "research-mininet"
     -   Скрипты написаны на _python2_, поэтому нам не подходит версия 2.3 (она на _python3_)
     -   Подключиться к виртуальной машине
     -   Обновить систему:
-
         ```shell
         sudo apt-get update
         sudo apt-get upgrade
         ```
     -   Установить необходимое дополнительное программное обеспечение:
-
         ```shell
         sudo apt-get install python-matplotlib
         ```
     -   Скачать скрипты:
-
         ```shell
         git clone https://github.com/rameshvarun/misbehaving-receiver.git
         ```
     -   Выполнить исследование:
-
         ```shell
         cd misbehaving-receiver
         sudo ./run-experiment.sh
@@ -244,7 +240,6 @@ slug: "research-mininet"
 
         -   Графики будут находиться в папке `graphs`.
         -   Скопируйте их на свой компьютер:
-
             ```shell
             scp -r graphs user@адрес_хоста:папка_назначения
             ```

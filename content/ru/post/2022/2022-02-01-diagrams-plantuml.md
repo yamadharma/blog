@@ -2,14 +2,15 @@
 title: "Диаграммы. PlantUML"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-01T19:06:00+03:00
-lastmod: 2023-07-10T14:21:00+03:00
+lastmod: 2023-07-20T13:04:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
 slug: "diagrams-plantuml"
 ---
 
-Язык рисования диаграмм PlantUML. PlantUML реализует концепцию _Diagram as Code_.
+-   Язык рисования диаграмм PlantUML.
+-   PlantUML реализует концепцию _Diagram as Code_.
 
 <!--more-->
 

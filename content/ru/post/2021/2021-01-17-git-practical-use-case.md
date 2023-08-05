@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2022-07-03T21:12:00+03:00
+lastmod: 2023-07-17T12:23:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -269,7 +269,7 @@ slug: "git-practical-use-case"
     ```js
     "config": {
         "commitizen": {
-    	"path": "cz-conventional-changelog"
+            "path": "cz-conventional-changelog"
         }
     }
     ```
@@ -284,9 +284,9 @@ slug: "git-practical-use-case"
         "author": "Name Surname <username@gmail.com>",
         "license": "CC-BY-4.0",
         "config": {
-    	"commitizen": {
-    	    "path": "cz-conventional-changelog"
-    	}
+            "commitizen": {
+                "path": "cz-conventional-changelog"
+            }
         }
     }
     ```
@@ -315,6 +315,10 @@ slug: "git-practical-use-case"
 -   Проверьте, что Вы на ветке `develop`:
     ```shell
     git branch
+    ```
+-   Загрузите весь репозиторий в хранилище:
+    ```shell
+    git push --all
     ```
 -   Установите внешнюю ветку как вышестоящую для этой ветки:
     ```shell

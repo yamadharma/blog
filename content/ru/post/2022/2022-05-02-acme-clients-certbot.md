@@ -2,7 +2,7 @@
 title: "Клиенты ACME. Certbot"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T16:54:00+03:00
-lastmod: 2022-05-02T16:59:00+03:00
+lastmod: 2023-07-16T17:13:00+03:00
 tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false
@@ -28,35 +28,29 @@ slug: "acme-clients-certbot"
 -   Установка _Snap_
     -   Centos
         -   Установите репозиторий _Epel_
-
             ```shell
             sudo dnf install epel-release
             sudo dnf upgrade
             ```
         -   Установите _Snap_
-
             ```shell
             sudo dnf -y install snapd
             ```
 -   Запустите _Snap_
-
     ```shell
     sudo systemctl enable --now snapd.socket
     sudo ln -s /var/lib/snapd/snap /snap
     ```
 -   Обновите _Snap_ (перед этим необходимо немного подождать, чтобы запустился snapd)
-
     ```shell
     sudo snap install core
     sudo snap refresh core
     ```
 -   Установка _certbot_
-
     ```shell
     sudo snap install --classic certbot
     ```
 -   Сделайте символьную ссылку для запуска:
-
     ```shell
     sudo ln -s /snap/bin/certbot /usr/local/bin/certbot
     ```
@@ -81,7 +75,6 @@ slug: "acme-clients-certbot"
 #### <span class="section-num">3.1.2</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 -   Установка плагина `certbot-dns-rfc2136` для _Snap_:
-
     ```shell
     snap set certbot trust-plugin-with-root=ok
     sudo snap install certbot-dns-rfc2136
@@ -92,31 +85,28 @@ slug: "acme-clients-certbot"
 #### <span class="section-num">3.1.3</span> Настройка BIND {#настройка-bind}
 
 -   Сгенерируйте секретный TSIG-ключ:
-
     ```shell
     tsig-keygen -a HMAC-SHA512 example-key
     ```
 
     -   Здесь `example-key` --- имя вашего ключа. Выбирается произвольно. Можно назвать по имени домена.
 -   Добавьте ключ в файл конфигурации _Bind_ `/etc/named.conf`:
-
     ```conf-unix
     // /etc/named.conf
 
     zone "domain.ltd" IN {
-    	// this is for certbot
-    	update-policy {
-    		grant example-key name _acme-challenge.domain.ltd. txt;
-    	};
+            // this is for certbot
+            update-policy {
+                    grant example-key name _acme-challenge.domain.ltd. txt;
+            };
     };
 
     key "example-key" {
-    	algorithm hmac-sha512;
-    	secret "секретный_ключ";
+            algorithm hmac-sha512;
+            secret "секретный_ключ";
     };
     ```
 -   Перезапустите _named_:
-
     ```shell
     systemctl restart named.service
     ```
@@ -125,7 +115,6 @@ slug: "acme-clients-certbot"
 #### <span class="section-num">3.1.4</span> Настройка certbot {#настройка-certbot}
 
 -   Сгенерируйте файл конфигурации для плагина _rfc2136_ `/etc/letsencrypt/rfc2136_domain.ltd.ini`:
-
     ```ini
     # Target DNS server
     dns_rfc2136_server = IP-адрес
@@ -139,7 +128,6 @@ slug: "acme-clients-certbot"
     dns_rfc2136_algorithm = HMAC-SHA512
     ```
 -   Поправьте права доступа:
-
     ```shell
     chmod 600 /etc/letsencrypt/rfc2136_domain.ltd.ini
     ```
@@ -148,16 +136,15 @@ slug: "acme-clients-certbot"
 #### <span class="section-num">3.1.5</span> Получение сертификата {#получение-сертификата}
 
 -   Выполните команду
-
     ```shell
     certbot certonly \
-    	--dns-rfc2136 --force-renewal \
-    	--dns-rfc2136-credentials /etc/letsencrypt/rfc2136_domain.ltd.ini \
-    	--server https://acme-v02.api.letsencrypt.org/directory \
-    	--email example@domain.ltd \
-    	--agree-tos --no-eff-email \
-    	--dns-rfc2136-propagation-seconds 60 \
-    	-d 'domain.ltd' -d '*.domain.ltd'
+            --dns-rfc2136 --force-renewal \
+            --dns-rfc2136-credentials /etc/letsencrypt/rfc2136_domain.ltd.ini \
+            --server https://acme-v02.api.letsencrypt.org/directory \
+            --email example@domain.ltd \
+            --agree-tos --no-eff-email \
+            --dns-rfc2136-propagation-seconds 60 \
+            -d 'domain.ltd' -d '*.domain.ltd'
     ```
 -   Сертификаты помещаются в каталог `/etc/letsencrypt/live/domain.ltd`.
 
@@ -170,17 +157,14 @@ slug: "acme-clients-certbot"
 -   Плагин `certbot-apache` предоставляет автоматическую настройку _Apache HTTP Server_.
 -   Он пытается найти конфигурацию каждого домена, а также добавляет рекомендованные для безопасности параметры, настройки использования сертификатов и пути к сертификатам Let's Encrypt.
 -   Первоначальная настройка виртуальных хостов:
-
     ```shell
     certbot --apache
     ```
 -   Обновление сертификатов:
-
     ```shell
     certbot renew
     ```
 -   Изменение сертификатов без изменения файлов конфигурации _apache_:
-
     ```shell
     certbot --apache certonly
     ```
@@ -191,17 +175,14 @@ slug: "acme-clients-certbot"
 -   Плагин `certbot-nginx` предоставляет автоматическую настройку _Nginx HTTP Server_.
 -   Он пытается найти конфигурацию каждого домена, а также добавляет рекомендованные для безопасности параметры, настройки использования сертификатов и пути к сертификатам Let's Encrypt.
 -   Первоначальная настройка виртуальных хостов:
-
     ```shell
     certbot --nginx
     ```
 -   Обновление сертификатов:
-
     ```shell
     certbot renew
     ```
 -   Изменение сертификатов без изменения файлов конфигурации _nginx_:
-
     ```shell
     certbot --nginx certonly
     ```

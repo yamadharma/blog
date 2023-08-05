@@ -2,7 +2,7 @@
 title: "Porteus Kiosk"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-15T11:36:00+03:00
-lastmod: 2022-02-15T12:26:00+03:00
+lastmod: 2023-07-21T18:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

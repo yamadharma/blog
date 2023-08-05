@@ -2,7 +2,7 @@
 title: "Загрузочная флешка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:46:00+03:00
-lastmod: 2023-07-13T12:15:00+03:00
+lastmod: 2023-07-18T20:07:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -20,12 +20,10 @@ slug: "bootable-usb-stick"
 
 ## <span class="section-num">1</span> Программный загрузчик {#программный-загрузчик}
 
-В качестве программного загрузчика был выбран Ventoy:
-
--   <https://www.ventoy.net/>
--   <https://github.com/ventoy/Ventoy>
-
-Он основан на загрузчике `grub2` (<https://ru.wikipedia.org/wiki/GNU_GRUB>).
+-   В качестве программного загрузчика был выбран Ventoy:
+    -   <https://www.ventoy.net/>
+    -   <https://github.com/ventoy/Ventoy>
+-   Основан на загрузчике `grub2` (<https://ru.wikipedia.org/wiki/GNU_GRUB>).
 
 
 ## <span class="section-num">2</span> Установка {#установка}
@@ -80,15 +78,14 @@ slug: "bootable-usb-stick"
 
 ### <span class="section-num">3.1</span> SystemRescue {#systemrescue}
 
-В качестве образа для администрирования системы обычно использую SystemRescue.
-
--   <https://www.system-rescue-cd.org/>
+-   В качестве образа для администрирования системы обычно использую SystemRescue.
+    -   <https://www.system-rescue-cd.org/>
 
 
 ### <span class="section-num">3.2</span> Windows {#windows}
 
-У нас имеется лицензия на Windows for Education. Поэтому я использую следующий образ:
-<https://www.microsoft.com/ru-ru/software-download/vlacademicwindows10iso>
+-   У нас имеется лицензия на Windows for Education. Поэтому я использую следующий образ:
+    -   <https://www.microsoft.com/ru-ru/software-download/vlacademicwindows10iso>
 
 
 ## <span class="section-num">4</span> Видезапись {#видезапись}

@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2023-07-07T17:55:00+03:00
+lastmod: 2023-07-31T17:38:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -153,6 +153,10 @@ slug: "install-texlive"
 -   Обновите пакеты TeXlive:
     ```shell
     tlmgr update --all
+    ```
+-   Установите символические ссылки на исполняемые файлы в системные каталоги (`/usr/local/bin`):
+    ```shell
+    tlmgr path add
     ```
 -   Можно пересоздать кэш _lualatex_ под пользователем:
     ```shell

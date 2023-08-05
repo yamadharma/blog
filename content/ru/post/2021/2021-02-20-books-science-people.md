@@ -2,7 +2,7 @@
 title: "Книги. Люди науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T17:17:00+03:00
-lastmod: 2023-07-07T17:57:00+03:00
+lastmod: 2023-07-18T20:13:00+03:00
 tags: ["science-people"]
 categories: ["book"]
 draft: false

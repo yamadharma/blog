@@ -1,9 +1,10 @@
 ---
 title: "Семантическое версионирование"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-12-11T19:17:00+03:00
-lastmod: 2021-03-09T20:38:00+03:00
-tags: ["programming"]
-categories: ["sysadmin"]
+lastmod: 2023-07-28T17:08:00+03:00
+tags: ["education", "programming"]
+categories: ["computer-science"]
 draft: false
 slug: "semantic-versioning"
 ---
@@ -41,24 +42,10 @@ slug: "semantic-versioning"
 
 ### <span class="section-num">2.1</span> Пакет Semantic-release {#пакет-semantic-release}
 
-Пакет [Semantic-release]({{< relref "2021-01-15-semantic-versioning-semantic-release" >}})
-автоматизирует весь рабочий процесс выпуска программного пакета.
+-   Пакет [Semantic-release]({{< relref "2021-01-15-semantic-versioning-semantic-release" >}}) автоматизирует весь рабочий процесс выпуска программного пакета.
 
 
 ### <span class="section-num">2.2</span> Пакет Conventional Changelog {#пакет-conventional-changelog}
 
-Пакет [Conventional Changelog]({{< relref "2021-01-16-semantic-versioning-conventional-changelog" >}}) является комплексным решением по управлению коммитами и генерации журнала изменений.
-Он содержит набор утилит, которые можно использовать по-отдельности.
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
-
-<!--listend-->
-
--   [Общепринятые коммиты]({{< relref "2020-12-11-conventional-commits" >}})
-
-<!--listend-->
-
--   [Практический сценарий использования git]({{< relref "2021-01-17-git-practical-use-case" >}})
+-   Пакет [Conventional Changelog]({{< relref "2021-01-16-semantic-versioning-conventional-changelog" >}}) является комплексным решением по управлению коммитами и генерации журнала изменений.
+-   Содержит набор утилит, которые можно использовать по-отдельности.

@@ -2,8 +2,8 @@
 title: "Работа с библиографией. Рабочий процесс"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-05T12:42:00+03:00
-lastmod: 2023-07-04T10:45:00+03:00
-tags: ["self-management"]
+lastmod: 2023-07-16T17:26:00+03:00
+tags: ["bib", "self-management"]
 categories: ["science"]
 draft: false
 slug: "bibliography-workflow"

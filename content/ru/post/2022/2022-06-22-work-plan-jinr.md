@@ -2,7 +2,7 @@
 title: "План работ в ОИЯИ"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-22T14:46:00+03:00
-lastmod: 2022-06-22T14:55:00+03:00
+lastmod: 2023-07-31T18:41:00+03:00
 tags: ["research", "jinr"]
 categories: ["science"]
 draft: false
