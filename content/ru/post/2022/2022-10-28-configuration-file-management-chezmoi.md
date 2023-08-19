@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Домашний каталог. Chezmoi"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-28T19:49:00+03:00
-lastmod: 2023-07-30T14:23:00+03:00
+lastmod: 2023-08-13T19:13:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -355,7 +355,11 @@ slug: "configuration-file-management-chezmoi"
 
 -   На второй машине инициализируйте `chezmoi` с вашим репозиторием `dotfiles`:
     ```shell
-    chezmoi init https://github.com/username/dotfiles.git
+    chezmoi init https://github.com/<username>/dotfiles.git
+    ```
+-   Или через ssh:
+    ```shell
+    chezmoi init git@github.com:<username>/dotfiles.git
     ```
 -   Проверьте, какие изменения внесёт `chezmoi` в домашний каталог, запустив:
     ```shell
@@ -383,7 +387,11 @@ slug: "configuration-file-management-chezmoi"
 
 -   Можно установить свои `dotfiles` на новый компьютер с помощью одной команды:
     ```shell
-    chezmoi init --apply https://github.com/username/dotfiles.git
+    chezmoi init --apply https://github.com/<username>/dotfiles.git
+    ```
+-   Через ssh:
+    ```shell
+    chezmoi init --apply git@github.com:<username>/dotfiles.git
     ```
 
 

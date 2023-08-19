@@ -2,7 +2,7 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2023-07-11T11:32:00+03:00
+lastmod: 2023-08-16T20:51:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,11 @@ slug: "using-vagrant"
 -   Бинарные сборки: <https://releases.hashicorp.com/vagrant> (на данный момент не доступно из России).
 -   Зеркало бинарных сборок:
     -   <https://hashicorp-releases.yandexcloud.net/vagrant/>
+-   Зеркало сборок из репозитория:
     -   <https://sourceforge.net/projects/vagrant.mirror/files/>
+
+
+### <span class="section-num">1.1</span> Лицензия {#лицензия}
 
 
 ## <span class="section-num">2</span> Подготовка образа {#подготовка-образа}
@@ -41,13 +45,12 @@ slug: "using-vagrant"
 -   После _Packer-1.5_ используется формат HCL2.
 
 
-## <span class="section-num">3</span> Операционные системы {#операционные-системы}
+## <span class="section-num">3</span> Запуск Vagrant в текущем каталоге для VirtualBox {#запуск-vagrant-в-текущем-каталоге-для-virtualbox}
+
+-   Если необходимо, чтобы все файлы находились в рабочем каталоге, то следует установить дополнительные переменные среды.
 
 
-### <span class="section-num">3.1</span> Windows {#windows}
-
-
-#### <span class="section-num">3.1.1</span> Запуск Vagrant под Windows в текущем каталоге {#запуск-vagrant-под-windows-в-текущем-каталоге}
+### <span class="section-num">3.1</span> Запуск Vagrant под Windows в текущем каталоге для VirtualBox {#запуск-vagrant-под-windows-в-текущем-каталоге-для-virtualbox}
 
 -   Следует задать переменные окружения
     ```shell
@@ -61,3 +64,20 @@ slug: "using-vagrant"
     -   Команда `setx` добавляет переменные в постоянный список переменных окружения.
     -   Модификатор `/M` добавляет переменные в системное окружение.
     -   Без этого модификатора переменные будут добавляться в окружение пользователя.
+
+
+### <span class="section-num">3.2</span> Запуск Vagrant под Linux в текущем каталоге для VirtualBox {#запуск-vagrant-под-linux-в-текущем-каталоге-для-virtualbox}
+
+
+## <span class="section-num">4</span> Установка дополнений {#установка-дополнений}
+
+-   Список дополнений: <https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins>
+-   Установка дополнения:
+    ```shell
+    vagrant plugin install <plugin-name>
+    ```
+-   Дополнение скачивается с сайта .
+-   Поскольку доступ из России блокируется, следует явно указать зеркало для загрузки дополнений:
+    ```shell
+    vagrant plugin install --plugin-clean-sources --plugin-source https://rubygems.org <plugin-name>
+    ```

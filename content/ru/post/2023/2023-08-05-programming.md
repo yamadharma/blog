@@ -2,7 +2,7 @@
 title: "Программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-05T20:23:00+03:00
-lastmod: 2023-08-05T20:25:00+03:00
+lastmod: 2023-08-13T13:37:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false

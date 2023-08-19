@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-08-05T20:29:00+03:00
+lastmod: 2023-08-19T21:11:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -28,12 +28,14 @@ slug: "tags-organizing"
 ## <span class="section-num">2</span> Категории и метки {#категории-и-метки}
 
 -   `@book`: [Прочитанные книги]({{< relref "2020-12-15-books" >}})
-    -   `science_people`[^fn:1]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
-    -   `culture`[^fn:2]: [Книги. Культура]({{< relref "2021-01-10-books-culture" >}})
-    -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
+    -   `culture`[^fn:1]: [Книги. Культура]({{< relref "2021-01-10-books-culture" >}})
+    -   `fiction`: [Книги. Художественная литература]({{< relref "2023-07-14-books-fiction" >}})
+    -   `geometry`: [Книги. Геометрия]({{< relref "2023-08-19-books-geometry" >}})
     -   `history`: [Книги. История]({{< relref "2023-05-06-books-history" >}})
     -   `physics`: [Книги. Физика]({{< relref "2023-07-01-books-physics" >}})
-    -   `fiction`: [Книги. Художественная литература]({{< relref "2023-07-14-books-fiction" >}})
+    -   `programming`: [Книги. Программирование]({{< relref "2021-01-10-books-programming" >}})
+    -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
+    -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
 -   `@computer_science`: Компьютерные науки
     -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
     -   `emacs`: [Emacs]({{< relref "2020-12-24-emacs" >}})
@@ -50,34 +52,36 @@ slug: "tags-organizing"
     -   `redhat`:
     -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
+    -   `vim`: [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
+    -   `wayland`: [Wayland]({{< relref "2023-08-14-wayland" >}})
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
 -   `@games`: [Компьютерные игры]({{< relref "2022-06-07-computer-games" >}})
+    -   `diablo`: [Игры. Diablo]({{< relref "2023-06-16-games-diablo" >}})
     -   `disciples`: [Disciples]({{< relref "2022-06-07-disciples-game" >}})
     -   `homm`: [Heroes of Might and Magic]({{< relref "2022-06-07-homm" >}})
     -   `mm`: [Might And Magic]({{< relref "2023-04-02-might-magic" >}})
-    -   `diablo`: [Игры. Diablo]({{< relref "2023-06-16-games-diablo" >}})
 -   `@job`: Работа
     -   `rudn`: [РУДН]({{< relref "2023-01-17-rudn" >}})
 -   `@life`: [Жизнь]({{< relref "2021-11-26-life" >}})
     -   `apartment`: [Квартира]({{< relref "2022-12-16-apartment" >}})
-    -   `recreation`: [Отдых]({{< relref "2023-01-17-recreation" >}})
+    -   `appliance` : [Бытовая техника]({{< relref "2023-05-14-household-appliances" >}})
     -   `health`: [Здоровье]({{< relref "2022-10-19-health" >}})
     -   `money`: [Взгляд обывателя на финансы]({{< relref "2023-02-18-philistine-view-finance" >}})
-    -   `appliance` : [Бытовая техника]({{< relref "2023-05-14-household-appliances" >}})
+    -   `recreation`: [Отдых]({{< relref "2023-01-17-recreation" >}})
 -   `@physics`:
-    -   `maxwell`
     -   `kinetic`
+    -   `maxwell`
 -   `@science`: [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})
     -   `education`: [Преподавание]({{< relref "2021-02-01-teaching" >}})
+    -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})
     -   `research`: [Научно-исследовательская деятельность]({{< relref "2021-02-01-research" >}})
     -   `sci_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
     -   `sci_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
     -   `sci_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
-    -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
+    -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})
     -   `gtd`: [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})
     -   `zettelkasten`: [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})
-    -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})
 -   `@thinking`: [Мысли]({{< relref "2021-12-14-reflections" >}})
     -   `sociology`: [Социологические заметки]({{< relref "2021-10-23-sociological-notes" >}})
 
@@ -104,6 +108,6 @@ slug: "tags-organizing"
 | tag      |               | `disciples`         | disciples        | disciples         |
 | tag      |               | `homm`              | homm             | homm              |
 
-[^fn:1]: Биографии учёных, мемуары учёных.
-[^fn:2]: Всё, что имеет отношение к культуре (культурология, литературоведение).
+[^fn:1]: Всё, что имеет отношение к культуре (культурология, литературоведение).
+[^fn:2]: Биографии учёных, мемуары учёных.
 [^fn:3]: Это мой основной дистрибутив Linux.

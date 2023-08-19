@@ -2,7 +2,7 @@
 title: "Стендовый доклад"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-06T18:24:00+03:00
-lastmod: 2023-07-10T14:08:00+03:00
+lastmod: 2023-08-07T19:32:00+03:00
 categories: ["science"]
 draft: false
 slug: "poster-presentation"

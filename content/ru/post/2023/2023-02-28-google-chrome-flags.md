@@ -2,7 +2,7 @@
 title: "Флаги запуска Google Chrome"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-28T15:31:00+03:00
-lastmod: 2023-02-28T15:57:00+03:00
+lastmod: 2023-08-14T16:29:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -36,4 +36,29 @@ slug: "google-chrome-flags"
     ## ~/.config/chrome-flags.conf
     # Cache in tmpfs
     --disk-cache-dir=$XDG_RUNTIME_DIR/google-chrome
+    ```
+
+
+### <span class="section-num">1.3</span> Модификация файла запуска Google Chrome {#модификация-файла-запуска-google-chrome}
+
+-   Добавим в файл запуска чтение файла конфигурации:
+    ```shell
+    XDG_CONFIG_HOME=${XDG_CONFIG_HOME:-~/.config}
+
+    # Allow users to override command-line options
+    if [[ -f $XDG_CONFIG_HOME/chrome-flags.conf ]]
+    then
+       CHROME_USER_FLAGS="$(cat $XDG_CONFIG_HOME/chrome-flags.conf | grep -v "#" | xargs)"
+       CHROME_USER_FLAGS=$(eval echo $CHROME_USER_FLAGS)
+    elif [[ -f /etc/chrome-flags.conf ]]
+    then
+       CHROME_USER_FLAGS="$(cat /etc/chrome-flags.conf | grep -v "#" | xargs)"
+       CHROME_USER_FLAGS=$(eval echo $CHROME_USER_FLAGS)
+    fi
+    ```
+-   Соответственно заменим и строку запуска:
+    ```shell
+    # Launch
+    # Note: exec -a below is a bashism.
+    exec -a "$0" "$HERE/chrome" $CHROME_USER_FLAGS "$@"
     ```

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-07-30T14:29:00+03:00
+lastmod: 2023-08-19T13:42:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -32,6 +32,14 @@ slug: "system-administration"
 -   [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
 -   [Тайловые оконные менеджеры]({{< relref "2023-06-19-tiling-window-manager" >}})
+
+
+### <span class="section-num">2.1</span> X11 {#x11}
+
+
+### <span class="section-num">2.2</span> Wayland {#wayland}
+
+-   [Wayland]({{< relref "2023-08-14-wayland" >}})
 
 
 ## <span class="section-num">3</span> Операционные системы {#операционные-системы}
@@ -226,6 +234,7 @@ slug: "system-administration"
 ### <span class="section-num">13.3</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
+-   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
 
 
 ### <span class="section-num">13.4</span> Мониторинг {#мониторинг}
@@ -268,3 +277,5 @@ slug: "system-administration"
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
 -   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})
+-   [Сервера на Донской]({{< relref "2022-09-15-servers-donskaya" >}})
+-   [Сеть на Донской]({{< relref "2023-08-13-network-donskaya" >}})

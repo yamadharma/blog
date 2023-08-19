@@ -2,7 +2,7 @@
 title: "Администрирование Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2023-07-10T14:13:00+03:00
+lastmod: 2023-08-10T13:21:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -31,3 +31,8 @@ slug: "windows-administration"
 ## <span class="section-num">3</span> Настройка операционной системы {#настройка-операционной-системы}
 
 -   [Windows. Синхронизация времени]({{< relref "2022-11-16-windows-time-synchronization" >}})
+
+
+## <span class="section-num">4</span> Интерфейс пользователя {#интерфейс-пользователя}
+
+-   [Window manager для Windows]({{< relref "2023-08-09-window-manager-windows" >}})

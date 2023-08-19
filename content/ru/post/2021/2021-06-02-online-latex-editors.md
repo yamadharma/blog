@@ -2,7 +2,7 @@
 title: "Онлайн редакторы LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-02T09:52:00+03:00
-lastmod: 2023-07-11T17:29:00+03:00
+lastmod: 2023-08-07T19:29:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

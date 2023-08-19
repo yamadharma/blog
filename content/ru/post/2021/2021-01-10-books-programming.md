@@ -2,7 +2,7 @@
 title: "Книги. Программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-10T15:01:00+03:00
-lastmod: 2023-07-14T13:12:00+03:00
+lastmod: 2023-08-06T17:44:00+03:00
 tags: ["programming"]
 categories: ["book"]
 draft: false
@@ -36,6 +36,11 @@ slug: "books-programming"
 ### <span class="section-num">3.1</span> Для начинающих {#для-начинающих}
 
 -   [Капаноглу, С. (2023): Кодер с улицы Правила нарушать рекомендуется]({{< relref "2023-07-14-kapanoglu_book_street-coder_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
+
+
+## <span class="section-num">4</span> Статьи по программированию {#статьи-по-программированию}
+
+-   [Литературное программирование]({{< relref "2023-08-05-literate-programming" >}})
 
 ## Литература
 

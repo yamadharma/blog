@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Домашний каталог. Репозиторий"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-30T14:24:00+03:00
-lastmod: 2023-07-30T16:01:00+03:00
+lastmod: 2023-08-13T19:13:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -51,7 +51,7 @@ slug: "configuration-file-management-repo"
 
 -   Инициализируйте `chezmoi` с вашим репозиторием `dotfiles`:
     ```shell
-    chezmoi init https://github.com/<username>/dotfiles.git
+    chezmoi init git@github.com:<username>/dotfiles.git
     ```
 -   Проверьте, какие изменения внесёт `chezmoi` в домашний каталог, запустив:
     ```shell

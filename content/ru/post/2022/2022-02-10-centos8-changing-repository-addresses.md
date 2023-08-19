@@ -2,8 +2,8 @@
 title: "CentOS 8. Изменение адресов репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T14:39:00+03:00
-lastmod: 2023-07-11T11:08:00+03:00
-tags: ["linux", "sysadmin"]
+lastmod: 2023-08-14T14:06:00+03:00
+tags: ["redhat", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "centos8-changing-repository-addresses"

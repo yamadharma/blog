@@ -2,7 +2,7 @@
 title: "Компанеец, А. С. (1967): Может ли окончиться физическая наука"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-01T20:09:34+03:00
-lastmod: 2023-07-04T20:13:00+03:00
+lastmod: 2023-08-13T13:37:00+03:00
 tags: ["physics"]
 categories: ["book"]
 draft: false

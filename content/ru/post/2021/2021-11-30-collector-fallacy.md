@@ -2,7 +2,7 @@
 title: "Заблуждение коллекционера"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-30T10:53:00+03:00
-lastmod: 2023-08-05T19:34:00+03:00
+lastmod: 2023-08-13T13:39:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "collector-fallacy"

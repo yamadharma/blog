@@ -2,7 +2,7 @@
 title: "Работа с 1С в РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-09T11:35:00+03:00
-lastmod: 2023-07-10T14:25:00+03:00
+lastmod: 2023-08-19T13:41:00+03:00
 tags: ["rudn", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -126,3 +126,13 @@ slug: "working-with-1c-rudn-university"
 #### <span class="section-num">2.4.3</span> Мобильное приложение {#мобильное-приложение}
 
 -   Google Play: <https://play.google.com/store/apps/details?id=ru.rudn.sed>
+
+
+#### <span class="section-num">2.4.4</span> Подключение извне сети Университета {#подключение-извне-сети-университета}
+
+-   Подключение извне корпоративной сети РУДН проводится с помощью VPN по протоколу Cisco AnyConnect (см. [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})).
+-   Клиента для Windows можно получить с сайта <https://vpn.rudn.ru:444/>.
+-   В настройках укажите в качестве шлюза `vpn.rudn.ru:444`.
+-   При первом подключении будет запрошен логин и пароль.
+-   Рекомендуется разрешить сохранение парольной информации для дальнейших сессий.
+-   DNS сервер РУДН не поддерживает DNSSEC, поэтому рекомендуется отключить его у локального кэширующего DNS-сервера.

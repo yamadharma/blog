@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2022-08-30T11:49:00+03:00
+lastmod: 2023-08-19T18:29:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -211,7 +211,7 @@ USE="emacs" emerge -v mu
     ```elisp
     (add-to-list
      'org-capture-templates '("M" "TODO from mail" entry (file org-default-notes-file)
-    			  "* TODO %:fromname: %:subject %?\nDEADLINE: %(org-insert-time-stamp (org-read-date nil t \"+2d\"))\n%a\n\n%i"))
+                              "* TODO %:fromname: %:subject %?\nDEADLINE: %(org-insert-time-stamp (org-read-date nil t \"+2d\"))\n%a\n\n%i"))
     ```
 
     -   Сообщение добавляется в список дел и устанавливается крайний срок для его обработки в течение двух дней.

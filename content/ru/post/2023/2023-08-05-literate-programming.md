@@ -2,8 +2,8 @@
 title: "Литературное программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-05T19:47:00+03:00
-lastmod: 2023-08-05T20:53:00+03:00
-tags: ["programming"]
+lastmod: 2023-08-13T13:37:00+03:00
+tags: ["article", "programming"]
 categories: ["computer-science"]
 draft: false
 slug: "literate-programming"
@@ -53,7 +53,9 @@ slug: "literate-programming"
 
 ## <span class="section-num">3</span> Статьи {#статьи}
 
--   [<a href="#citeproc_bib_item_1">1</a>–<a href="#citeproc_bib_item_3">3</a>]
+-   [Knuth, D. E. (1984): Literate Programming]({{< relref "2023-08-06-knuth_1984_literate-programming_en" >}}) [<a href="#citeproc_bib_item_2">2</a>]
+-   [Schulte, E. et al. (2012): A multi-language computing environment for literate programming and reproducible research]({{< relref "2023-08-06-schulte_2012_multi-language-literat-programming_en" >}}) [<a href="#citeproc_bib_item_3">3</a>]
+-   [Kery, M. B. et al. (2018): The story in the notebook]({{< relref "2023-08-07-kery_2018_story-notebook_en" >}}) [<a href="#citeproc_bib_item_1">1</a>]
 
 ## Литература
 
