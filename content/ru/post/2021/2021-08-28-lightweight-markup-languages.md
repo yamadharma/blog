@@ -2,7 +2,7 @@
 title: "Легковесные языки разметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T19:43:00+03:00
-lastmod: 2021-10-27T11:47:00+03:00
+lastmod: 2023-09-09T18:35:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "lightweight-markup-languages"

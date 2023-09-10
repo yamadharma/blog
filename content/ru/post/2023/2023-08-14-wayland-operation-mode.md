@@ -2,7 +2,7 @@
 title: "Wayland. Режим работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-14T11:27:00+03:00
-lastmod: 2023-08-14T11:35:00+03:00
+lastmod: 2023-09-02T18:38:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

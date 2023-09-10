@@ -2,7 +2,7 @@
 title: "Преобразование biblatex в bibitem"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-11T19:48:00+03:00
-lastmod: 2023-07-11T21:05:00+03:00
+lastmod: 2023-08-24T13:38:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -66,6 +66,6 @@ slug: "convert-biblatex-bibitem"
 
 ### <span class="section-num">4.2</span> Другие переопределяемые команды {#другие-переопределяемые-команды}
 
--   `\print@begin@thebibliography`: по умолчанию `\textbackslash begin\{thebibliography\}\{99\}`;
--   `\print@end@thebibliography`: по умолчанию `\textbackslash   end\{thebibliography\}`;
--   `\print@bibitem@command`: по умолчанию `\textbackslash bibitem`.
+-   `\print@begin@thebibliography`: по умолчанию `\begin{thebibliography}{99}`;
+-   `\print@end@thebibliography`: по умолчанию `\end{thebibliography}`;
+-   `\print@bibitem@command`: по умолчанию `\bibitem`.

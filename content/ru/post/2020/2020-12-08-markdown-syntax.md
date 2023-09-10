@@ -2,7 +2,7 @@
 title: "Синтаксис языка Markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-22T09:48:00+03:00
-lastmod: 2022-04-17T17:47:00+03:00
+lastmod: 2023-08-26T18:08:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -29,14 +29,12 @@ slug: "markdown-syntax"
 -   Видео youtube нельзя добавить напрямую.
 -   В некоторых особых случаях можно добавлять непосредственно ссылку (например, в системе Moodle).
 -   Можно добавить изображение со ссылкой на видео в виде `html`:
-
     ```html
     <a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank">
       <img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="alternative text for search engines" width="240" height="180" border="10" />
     </a>
     ```
 -   Можно добавить изображение со ссылкой на видео в виде `markdown` (см. [Миниатюры видео для youtube]({{< relref "2022-02-05-youtube-video-thumbnail" >}})):
-
     ```markdown
     [![alternative text for search engines](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
     ```
@@ -47,7 +45,6 @@ slug: "markdown-syntax"
 -   Идентификатор видео на _Rutube_ представляет собой шестнадцатеричное число.
 -   В адресе для миниатюры используются первые цифры идентификатора.
 -   Изображение со ссылкой на видео в виде `markdown`:
-
     ```markdown
     [![alternative text for search engines](https://pic.rutubelist.ru/video/12/34/RUTUBE_PIC_ID.jpg)](https://rutube.ru/video/RUTUBE_VIDEO_ID/)
     ```

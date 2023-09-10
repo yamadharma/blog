@@ -2,7 +2,7 @@
 title: "Научная лже-популяризация"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-22T17:18:00+03:00
-lastmod: 2022-06-22T17:47:00+03:00
+lastmod: 2023-08-27T18:17:00+03:00
 categories: ["science"]
 draft: false
 slug: "scientific-pseudo-popularization"

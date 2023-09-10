@@ -2,7 +2,7 @@
 title: "Почта. Кодировка папок IMAP"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T20:43:00+03:00
-lastmod: 2022-04-26T17:39:00+03:00
+lastmod: 2023-09-10T20:46:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -33,12 +33,10 @@ slug: "mail-imap-folder-encoding"
     -   `,` -&gt; `/`;
     -   UTF7 -&gt; Текст.
 -   Код (shell):
-
     ```shell
     echo '&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-' | sed 's/&\([^-]\)/+\1/g;s/&-/&/g;s/,/\//g' | iconv -f UTF7 -t UTF8
     ```
 -   В результате получаем:
-
     ```shell
     Отправленные
     ```

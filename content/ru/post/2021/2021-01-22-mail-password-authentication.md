@@ -1,7 +1,9 @@
 ---
 title: "Emacs. Почта. Парольная аутентификация"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2021-07-04T11:56:00+03:00
+lastmod: 2023-09-10T20:43:00+03:00
+tags: ["emacs", "sysadmin"]
 categories: ["blog"]
 draft: false
 slug: "mail-password-authentication"
@@ -17,12 +19,11 @@ slug: "mail-password-authentication"
 ## <span class="section-num">1</span> Описание {#описание}
 
 -   Библиотека `auth-source` для emacs создавалась для хранения паролей для gnus.
--   Документация: <https://www.gnu.org/software/emacs/manual/html%5Fmono/auth.html>
+-   Документация: <https://www.gnu.org/software/emacs/manual/html_mono/auth.html>
 -   Библиотека `auth-source` поддерживает несколько бэкэнд-хранилищ:
     -   бэкэнд _netrc_,
     -   файлы _json_,
         -   формат файла:
-
             ```js
             [{ "machine": "SERVER", "port": "PORT", "login": "USER", "password": "PASSWORD" }]
             ```
@@ -34,32 +35,26 @@ slug: "mail-password-authentication"
 
 -   Переменная `auth-sources`  задаёт источники аутентификации:
     -   устаревшая настройка по умолчанию (для _netrc_):
-
         ```elisp
         (setq auth-sources '((:source "~/.authinfo.gpg" :host t :port t)))
         ```
     -   то же самое, но короче (для _netrc_):
-
         ```elisp
         (setq auth-sources '((:source "~/.authinfo.gpg")))
         ```
     -   несколько источников (все варианты для _netrc_) (это является значением по умолчанию):
-
         ```elisp
         (setq auth-sources '("~/.authinfo.gpg" "~/.authinfo" "~/.netrc"))
         ```
     -   использование _Secrets API_:
-
         ```elisp
         (setq auth-sources '("secrets:Login"))
         ```
     -   использование _pass_:
-
         ```elisp
         (setq auth-sources '(password-store))
         ```
     -   использование _json_:
-
         ```elisp
         (setq auth-sources '("~/.authinfo.json.gpg"))
         ```
@@ -87,19 +82,16 @@ chmod 600 ~/.authinfo.gpg
 ### <span class="section-num">3.3</span> Формат файла паролей {#формат-файла-паролей}
 
 -   Файл имеет следующий формат:
-
     ```conf-unix
     machine HOST login NAME password VALUE port NUMBER
     ```
 
 -   Если имеется несколько учётных записей на одном сервере (например, на gmail), вместо имени хоста можно использовать имя профиля:
-
     ```conf-unix
     machine PROFILE login NAME password VALUE port NUMBER
     ```
 -   Учитывая, что с одним логином могут быть почтовые адреса на разных доменах, предлагается в качестве `PROFILE` использовать полный почтовый адрес (такой, как `account@domain`).
 -   Также можно использовать этот файл для указания клиентских сертификатов, которые будут использоваться при настройке TLS-соединений:
-
     ```conf-unix
     machine HOST port PORT key KEY cert CERT
     ```
@@ -110,18 +102,14 @@ chmod 600 ~/.authinfo.gpg
 Для безопасности следует зашифровать файл паролей (см. [Работа с PGP]({{< relref "2020-12-18-using-pgp" >}})).
 
 -   Зашифровать файл:
-
     ```shell
     gpg -c .authinfo
     ```
-
     или
-
     ```shell
     gpg --symmetric .authinfo
     ```
 -   Расшифровать файл:
-
     ```shell
     gpg --decrypt-files .authinfo.gpg
     ```

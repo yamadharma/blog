@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-08-19T21:11:00+03:00
+lastmod: 2023-08-20T16:48:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -34,6 +34,7 @@ slug: "tags-organizing"
     -   `history`: [Книги. История]({{< relref "2023-05-06-books-history" >}})
     -   `physics`: [Книги. Физика]({{< relref "2023-07-01-books-physics" >}})
     -   `programming`: [Книги. Программирование]({{< relref "2021-01-10-books-programming" >}})
+    -   `science_history`: [Книги. История науки]({{< relref "2023-08-20-books-science-history" >}})
     -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
     -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
 -   `@computer_science`: Компьютерные науки

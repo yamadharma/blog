@@ -2,7 +2,7 @@
 title: "Режим киоска"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-15T11:14:00+03:00
-lastmod: 2023-08-07T19:26:00+03:00
+lastmod: 2023-09-09T18:57:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

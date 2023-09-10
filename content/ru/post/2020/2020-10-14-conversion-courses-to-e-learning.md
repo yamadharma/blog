@@ -1,9 +1,10 @@
 ---
 title: "Преобразование учебных курсов в электронные курсы"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-10-14T21:04:00+03:00
-lastmod: 2021-01-16T13:21:00+03:00
-tags: ["education", "sci-admin"]
-categories: ["сиянс"]
+lastmod: 2023-08-26T18:06:00+03:00
+tags: ["education"]
+categories: ["science"]
 draft: false
 slug: "conversion-courses-to-e-learning"
 ---
@@ -638,21 +639,3 @@ slug: "conversion-courses-to-e-learning"
 
 -   Используемые платформы MOOC [Платформы MOOC]({{< relref "2020-10-17-mooc-platforms" >}})
 -   Трудоёмкость цифровизации [Трудоёмкость разработки цифрового курса]({{< relref "2020-10-29-complexity-developing-digital-course" >}})
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
-
-### <span class="section-num">6.1</span> [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}}) {#введение-в-научное-программирование}
-
-Электронные учебные курсы [Преобразование учебных курсов в электронные курсы]({{< relref "2020-10-14-conversion-courses-to-e-learning" >}})
-
-
-### <span class="section-num">6.2</span> [Курс Математические основы информационной безопасности]({{< relref "2020-10-21-course-mathsec" >}}) {#курс-математические-основы-информационной-безопасности}
-
-[Преобразование учебных курсов в электронные курсы]({{< relref "2020-10-14-conversion-courses-to-e-learning" >}})
-
-
-### <span class="section-num">6.3</span> [Комиссия Цифровая магистратура]({{< relref "2020-12-14-commission-digitalization-msc" >}}) {#комиссия-цифровая-магистратура}
-
-Электронные учебные курса [Преобразование учебных курсов в электронные курсы]({{< relref "2020-10-14-conversion-courses-to-e-learning" >}})

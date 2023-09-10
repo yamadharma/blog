@@ -2,7 +2,7 @@
 title: "Почта. Yahoo.com. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-26T17:01:00+03:00
-lastmod: 2022-04-26T18:20:00+03:00
+lastmod: 2023-09-10T20:46:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -79,7 +79,7 @@ slug: "mail-yahoo-com-configuring-mail-client"
 -   порт --- 995.
 
 
-## <span class="section-num">3</span> Парольные файлы для _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})) {#парольные-файлы-для-pass--см-dot-менеджер-паролей-pass--dot-dot-notes-20210428185000-менеджер-паролеи-pass-dot-md}
+## <span class="section-num">3</span> Парольные файлы для _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})) {#парольные-файлы-для-pass--см-dot-менеджер-паролей-pass-20210428185000-менеджер-паролеи-pass-dot-md}
 
 -   Для входа через web-интерфейс: `yahoo.com/account@yahoo.com.gpg`.
 -   Пароль приложения: `yahoo.com/account@yahoo.com@apppassword.gpg`.

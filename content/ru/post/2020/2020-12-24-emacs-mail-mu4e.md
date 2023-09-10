@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2023-08-19T18:29:00+03:00
+lastmod: 2023-09-02T18:36:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

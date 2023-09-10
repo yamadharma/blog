@@ -1,7 +1,9 @@
 ---
 title: "Принцип Арнольда"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-06T15:38:00+03:00
-lastmod: 2021-06-06T12:39:00+03:00
+lastmod: 2023-08-27T18:28:00+03:00
+tags: ["sci-being"]
 categories: ["сиянс"]
 draft: false
 slug: "arnold-principle"

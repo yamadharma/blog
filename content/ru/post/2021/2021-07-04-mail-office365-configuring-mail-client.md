@@ -1,7 +1,8 @@
 ---
 title: "Почта. Office365. Настройка почтового клиента"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T17:47:00+03:00
-lastmod: 2021-07-04T20:35:00+03:00
+lastmod: 2023-09-10T20:46:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

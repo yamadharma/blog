@@ -2,7 +2,7 @@
 title: "Тензор проницаемостей для локального линейного случая"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-20T17:51:00+03:00
-lastmod: 2022-11-27T19:13:00+03:00
+lastmod: 2023-09-02T18:50:00+03:00
 draft: false
 slug: "local-linear-case-constitutive-tensor"
 ---
@@ -20,7 +20,7 @@ slug: "local-linear-case-constitutive-tensor"
 
 ## <span class="section-num">1</span> Соглашения и обозначения {#соглашения-и-обозначения}
 
-1.  Будем использовать нотацию абстрактных индексов [<a href="#citeproc_bib_item_1">1</a>]. В данной нотации тензор как целостный объект обозначается просто индексом (например,  \\(x^{i}\\)), компоненты обозначаются подчёркнутым индексом (например,  \\(x^{\crd{i}}\\)).
+1.  Будем использовать нотацию абстрактных индексов [<a href="#citeproc_bib_item_4">4</a>]. В данной нотации тензор как целостный объект обозначается просто индексом (например,  \\(x^{i}\\)), компоненты обозначаются подчёркнутым индексом (например,  \\(x^{\crd{i}}\\)).
 
 2.  Будем придерживаться следующих соглашений. Греческие индексы (\\(\alpha\\), \\(\beta\\)) будут относиться к четырёхмерному пространству и в компонентном виде будут иметь следующие значения:  \\(\crd{\alpha} = \overline{0,3}\\). Латинские индексы из середины алфавита (\\(i\\), \\(j\\), \\(k\\)) будут относиться к трёхмерному  пространству и в компонентном виде будут иметь следующие значения:  \\(\crd{i} = \overline{1,3}\\).
 
@@ -28,7 +28,7 @@ slug: "local-linear-case-constitutive-tensor"
 
 4.  Запятой в индексе обозначается частная производная по соответствующей координате (\\(f\_{,i} := \partial\_{i} f\\)); точкой с запятой --- ковариантная производная (\\(f\_{;i} := \nabla\_{i}f\\)).
 
-5.  Для записи уравнений электродинамики в работе используется система СГС симметричная [<a href="#citeproc_bib_item_2">2</a>].
+5.  Для записи уравнений электродинамики в работе используется система СГС симметричная [<a href="#citeproc_bib_item_5">5</a>].
 
 
 ## <span class="section-num">2</span> Варианты физической среды {#варианты-физической-среды}
@@ -74,7 +74,7 @@ slug: "local-linear-case-constitutive-tensor"
     \lambda^{\alpha \beta \gamma \delta} F\_{\gamma \delta},
     \end{equation}
 
-    здесь \\(\lambda^{\alpha \beta \gamma \delta}\\) --- тензор проницаемостей, содержащий информацию как об диэлектрической и магнитной проницаемостях, так и об электромагнитной связи [<a href="#citeproc_bib_item_3">3</a>–<a href="#citeproc_bib_item_6">6</a>].
+    здесь \\(\lambda^{\alpha \beta \gamma \delta}\\) --- тензор проницаемостей, содержащий информацию как об диэлектрической и магнитной проницаемостях, так и об электромагнитной связи [<a href="#citeproc_bib_item_2">2</a>; <a href="#citeproc_bib_item_3">3</a>; <a href="#citeproc_bib_item_6">6</a>; <a href="#citeproc_bib_item_7">7</a>].
 -   Видно, что \\(\lambda^{\alpha \beta \gamma \delta}\\) имеет следующую симметрию:
     \\[\lambda^{\alpha \beta \gamma \delta} = \lambda^{[\alpha \beta] [\gamma \delta]}\\]
 -   Для уточнения симметрии, тензор \\(\lambda^{\alpha \beta \gamma \delta}\\) можно представить в следующем виде:
@@ -425,7 +425,7 @@ slug: "local-linear-case-constitutive-tensor"
 ### <span class="section-num">5.3</span> Биизотропные среды {#биизотропные-среды}
 
 -   Особые свойства этих сред обусловлены связью между электрическими и магнитными полями, которая может быть описана некоторыми определяющими соотношениями.
--   Биизотропные среды могут изменять поляризацию света либо при преломлении, либо при пропускании [<a href="#citeproc_bib_item_7">7</a>].
+-   Биизотропные среды могут изменять поляризацию света либо при преломлении, либо при пропускании [<a href="#citeproc_bib_item_1">1</a>].
 -   Эти среды подобны изотропным средам, однако перекрёстные члены не равны нулю.
 -   Уравнения связи имеют следующий вид:
 
@@ -517,27 +517,12 @@ slug: "local-linear-case-constitutive-tensor"
 
 ## Литература
 
-<style>.csl-left-margin{float: left; padding-right: 0em;}
- .csl-right-inline{margin: 0 0 0 1em;}</style><div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>
-    <div class="csl-left-margin">1.</div><div class="csl-right-inline">Пенроуз Р., Риндлер В. Спиноры и пространство-время: Два-спинорное исчисление и релятивистские поля. Москва: Мир, 1987. Vol. 1. 527 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>
-    <div class="csl-left-margin">2.</div><div class="csl-right-inline">Сивухин Д.В. <a href="https://doi.org/10.3367/UFNr.0129.197910h.0335">О международной системе физических величин</a> // Успехи физических наук. 1979. Vol. 129, № 10. P. 335–338.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>
-    <div class="csl-left-margin">3.</div><div class="csl-right-inline">Тамм И.Е. Кристаллооптика теории относительности в связи с геометрией биквадратичной формы // Журнал русского физико-химического общества. часть физическая. 1925. Vol. 57, № 3-4. P. 209–240.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>
-    <div class="csl-left-margin">4.</div><div class="csl-right-inline">Тамм И.Е. Электродинамика анизотропной среды в специальной теории относительности // Журнал русского физико-химического общества. часть физическая. 1924. Vol. 56, № 2-3. P. 248–262.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>
-    <div class="csl-left-margin">5.</div><div class="csl-right-inline">Мандельштам Л.И., Тамм И.Е. Электродинамика анизотропных сред в специальной теории относительности // Собрание научных трудов. Москва: Наука, 1975. Vol. 1. P. 62–67.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>
-    <div class="csl-left-margin">6.</div><div class="csl-right-inline">Ландау Л.Д., Лифшиц Е.М. Теоретическая физика: Электродинамика сплошных сред. 4-е изд. Москва: Физматлит, 2003. Vol. 8. 656 p.</div>
-  </div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>
-    <div class="csl-left-margin">7.</div><div class="csl-right-inline">Bolioli S. <a href="https://doi.org/10.1007/978-94-011-5734-6_3">Bi-isotropic and bi-anisotropic media</a> // Advances in complex electromagnetic materials / ed. by Priou A. et al. Springer Netherlands, 1997. Vol. 28. P. 33–51.</div>
-  </div>
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Bolioli S. <a href="https://doi.org/10.1007/978-94-011-5734-6_3">Bi-isotropic and bi-anisotropic media</a> / S. Bolioli // Advances in complex electromagnetic materials : Nato asi series / ред. A. Priou [и др.]. – Springer Netherlands, 1997. – Т. 28. – Сс. 33–51.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Ландау Л. Д. Теоретическая физика: Электродинамика сплошных сред : in 10 т. Т. 8. Теоретическая физика / Л. Д.  Ландау, Е. М.  Лифшиц. – 4-е. – Москва : Физматлит, 2003. – 656 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Мандельштам Л. И. Электродинамика анизотропных сред в специальной теории относительности / Л. И. Мандельштам, И. Е. Тамм // Собрание научных трудов : in 2 т. – Москва : Наука, 1975. – Т. 1. – Сс. 62–67.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Пенроуз Р. Спиноры и пространство-время: Два-спинорное исчисление и релятивистские поля : in 2 т. Т. 1. Спиноры и пространство-время / Р.  Пенроуз, В.  Риндлер. – Москва : Мир, 1987. – 527 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Сивухин Д. В. <a href="https://doi.org/10.3367/UFNr.0129.197910h.0335">О международной системе физических величин</a> / Д. В. Сивухин // Успехи физических наук. – 1979. – Т. 129. – № 10. – Сс. 335–338.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Тамм И. Е. Кристаллооптика теории относительности в связи с геометрией биквадратичной формы / И. Е. Тамм // Журнал русского физико-химического общества. часть физическая. – 1925. – Т. 57. – № 3-4. – Сс. 209–240.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Тамм И. Е. Электродинамика анизотропной среды в специальной теории относительности / И. Е. Тамм // Журнал русского физико-химического общества. часть физическая. – 1924. – Т. 56. – № 2-3. – Сс. 248–262.</div>
 </div>

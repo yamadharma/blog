@@ -2,14 +2,15 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2022-08-31T13:50:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-08-24T20:36:00+03:00
+tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "password-manager-pass"
 ---
 
-Менеджер паролей `pass` --- программа, сделанная в рамках идеологии Unix. Также носит название стандартного менеджера паролей для Unix (_The standard Unix password manager_).
+-   Менеджер паролей `pass` --- программа, сделанная в рамках идеологии Unix.
+-   Также носит название стандартного менеджера паролей для Unix (_The standard Unix password manager_).
 
 <!--more-->
 
@@ -408,6 +409,11 @@ slug: "password-manager-pass"
                 ```
                 Этот вариант помедленнее.
     -   Проверяет сразу все записи в базе паролей. Один пароль проверить нельзя.
+
+
+### <span class="section-num">8.2</span> Одноразовые пароли {#одноразовые-пароли}
+
+-   [Менеджер паролей pass. Одноразовые пароли]({{< relref "2023-08-24-password-manager-pass-one-time-passwords" >}})
 
 
 ## <span class="section-num">9</span> Интеграция с другими программами {#интеграция-с-другими-программами}

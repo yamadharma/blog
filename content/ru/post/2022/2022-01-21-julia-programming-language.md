@@ -2,8 +2,8 @@
 title: "Язык программирования Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T16:52:00+03:00
-lastmod: 2022-01-21T18:09:00+03:00
-tags: ["programming", "julia"]
+lastmod: 2023-09-09T18:57:00+03:00
+tags: ["julia", "programming"]
 categories: ["computer-science"]
 draft: false
 slug: "julia-programming-language"

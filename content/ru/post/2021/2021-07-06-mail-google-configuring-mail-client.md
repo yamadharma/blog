@@ -2,7 +2,7 @@
 title: "Почта. Google. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-06T14:27:00+03:00
-lastmod: 2021-08-28T18:46:00+03:00
+lastmod: 2023-09-10T20:44:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,6 @@ slug: "mail-google-configuring-mail-client"
 ### <span class="section-num">3.1</span> Размер почтового сообщения {#размер-почтового-сообщения}
 
 -   Размер сообщения:
-
     ```shell
     size:[size in bytes]
     ```
@@ -86,17 +85,14 @@ slug: "mail-google-configuring-mail-client"
     -   `smaller_than`.
 -   Примеры:
     -   Все электронные письма размером более 5 МБ, содержащие файловые вложения:
-
         ```shell
         size:5mb has:attachment
         ```
     -   Электронные письма размером более 10 МБ, вложения в формате `pdf`:
-
         ```shell
         size:10mb has:attachment filename:pdf
         ```
     -   Все электронные письма с размером вложений от 5 МБ до 8 МБ:
-
         ```shell
         larger_than:5m smaller_than:8M
         ```

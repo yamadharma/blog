@@ -2,7 +2,9 @@
 title: "Презентация в markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T15:33:00+03:00
-lastmod: 2021-11-01T15:37:00+03:00
+lastmod: 2023-08-27T18:40:00+03:00
+tags: ["education", "markdown"]
+categories: ["computer-science"]
 draft: false
 slug: "markdown-presentation"
 ---

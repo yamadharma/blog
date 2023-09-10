@@ -2,7 +2,7 @@
 title: "Научная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:00:00+03:00
-lastmod: 2023-07-15T20:36:00+03:00
+lastmod: 2023-08-30T14:12:00+03:00
 categories: ["science"]
 draft: false
 slug: "scientific-activity"
@@ -40,4 +40,5 @@ slug: "scientific-activity"
 ## <span class="section-num">4</span> Работа {#работа}
 
 -   [Научная должность]({{< relref "2022-10-29-position" >}})
--   [Университет дружбы народов]({{< relref "2021-06-27-peoples-friendship-university" >}})
+-   [Моя работа в Университете дружбы народов]({{< relref "2021-06-27-peoples-friendship-university" >}})
+-   [Преподавание в РУДН]({{< relref "2023-08-30-teaching-rudn-university" >}})

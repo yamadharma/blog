@@ -1,0 +1,35 @@
+{{/* VKVideo Shortcode for Wowchemy. */}}
+{{/* Load video from https://vk.com/video */}}
+
+{{/*
+Docs: https://vk.com/pages?oid=-1&p=video.get
+
+Parameters
+----------
+oid :
+owner_id
+id :
+video_id
+hd :
+hash
+
+Call
+----
+
+{{< vkvideo oid="606414976" id="456239563" hd="2" >}}
+
+  OR
+
+{{< vkvideo 606414976 456239563 2 >}}
+
+*/}}
+
+<div class="embed video-player">
+  <iframe
+    {{ if .IsNamedParams }}
+    src="https://vk.com/video_ext.php?oid={{ .Get "oid" }}&id={{ .Get "id" }}&hd={{ .Get "hd" }}"
+    {{ else }}
+    src="https://vk.com/video_ext.php?oid={{ index .Params 0 }}&id={{ index .Params 1 }}&hd={{ index .Params 2 }}"
+    {{ end }}
+    width="720" height="405" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+</div>

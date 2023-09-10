@@ -2,9 +2,9 @@
 title: "История науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:19:00+03:00
-lastmod: 2023-07-31T18:36:00+03:00
+lastmod: 2023-08-27T18:27:00+03:00
 tags: ["science-history"]
-categories: ["blog"]
+categories: ["science"]
 draft: false
 slug: "history-science"
 ---

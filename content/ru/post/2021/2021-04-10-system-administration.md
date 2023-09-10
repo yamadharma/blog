@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-08-19T13:42:00+03:00
+lastmod: 2023-09-05T09:53:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -88,8 +88,17 @@ slug: "system-administration"
 
 ## <span class="section-num">4</span> Файловые системы {#файловые-системы}
 
+
+### <span class="section-num">4.1</span> Локальные файловые системы {#локальные-файловые-системы}
+
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 -   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
+-   [Файловая система xfs]({{< relref "2023-08-26-xfs-file-system" >}})
+
+
+### <span class="section-num">4.2</span> Сетевые и распределённые файловые системы {#сетевые-и-распределённые-файловые-системы}
+
+-   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
 
 
 ## <span class="section-num">5</span> Форматы файлов {#форматы-файлов}
@@ -123,6 +132,17 @@ slug: "system-administration"
 -   [Open Journal Systems]({{< relref "2022-10-22-open-journal-systems" >}})
 
 
+### <span class="section-num">8.3</span> Ldap {#ldap}
+
+-   [Перенос Openldap на другую машину]({{< relref "2023-09-01-openldap-migration" >}})
+-   [Настройка Openldap]({{< relref "2023-09-02-configure-openldap-rocky-linux" >}})
+
+
+### <span class="section-num">8.4</span> Kerberos {#kerberos}
+
+-   [Перенос kerberos на другую машину]({{< relref "2023-09-03-kerberos-migration" >}})
+
+
 ## <span class="section-num">9</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
@@ -136,83 +156,96 @@ slug: "system-administration"
 ## <span class="section-num">11</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">11.1</span> Утилиты {#утилиты}
+### <span class="section-num">11.1</span> Работа с файлами {#работа-с-файлами}
+
+-   [Файловый менеджер Midnight Commander]({{< relref "2023-08-26-midnight-commander-file-manager" >}})
+
+
+### <span class="section-num">11.2</span> Утилиты {#утилиты}
 
 -   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
 -   [Локальные поисковики]({{< relref "2023-06-27-desktop-search" >}})
 
 
-### <span class="section-num">11.2</span> Обработка видео {#обработка-видео}
+### <span class="section-num">11.3</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">11.3</span> Виртуализация {#виртуализация}
+### <span class="section-num">11.4</span> Виртуализация {#виртуализация}
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 
 
-### <span class="section-num">11.4</span> Редакторы {#редакторы}
+### <span class="section-num">11.5</span> Редакторы {#редакторы}
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 -   [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
 
 
-### <span class="section-num">11.5</span> Офисные программы {#офисные-программы}
+### <span class="section-num">11.6</span> Офисные программы {#офисные-программы}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 -   [Альтернативы Microsoft Office]({{< relref "2023-03-19-microsoft-office-alternatives" >}})
 
 
-### <span class="section-num">11.6</span> Работа с дисками {#работа-с-дисками}
+### <span class="section-num">11.7</span> Работа с дисками {#работа-с-дисками}
 
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-### <span class="section-num">11.7</span> Вычисления {#вычисления}
+### <span class="section-num">11.8</span> Вычисления {#вычисления}
 
 -   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
 -   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
-### <span class="section-num">11.8</span> Квантовая химия {#квантовая-химия}
+### <span class="section-num">11.9</span> Квантовая химия {#квантовая-химия}
 
 -   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
 
 
-### <span class="section-num">11.9</span> Синхронизация файлов {#синхронизация-файлов}
+### <span class="section-num">11.10</span> Синхронизация файлов {#синхронизация-файлов}
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
 
 
-### <span class="section-num">11.10</span> Файлы конфигурации {#файлы-конфигурации}
+### <span class="section-num">11.11</span> Файлы конфигурации {#файлы-конфигурации}
 
 -   [Управление файлами конфигурации. Домашний каталог. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
 -   [Управление файлами конфигурации. Домашний каталог. Репозиторий]({{< relref "2023-07-30-configuration-file-management-repo" >}})
 
 
-### <span class="section-num">11.11</span> Сетевые клиенты {#сетевые-клиенты}
+### <span class="section-num">11.12</span> Сетевые клиенты {#сетевые-клиенты}
 
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 
 
-### <span class="section-num">11.12</span> Телеконференции {#телеконференции}
+### <span class="section-num">11.13</span> Телеконференции {#телеконференции}
 
 -   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
 
 
-### <span class="section-num">11.13</span> Наборы программ {#наборы-программ}
+### <span class="section-num">11.14</span> Наборы программ {#наборы-программ}
 
 -   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
 
 
 ## <span class="section-num">12</span> Безопасность {#безопасность}
 
+
+### <span class="section-num">12.1</span> Пароли {#пароли}
+
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
+-   [Одноразовые пароли]({{< relref "2023-08-24-one-time-passwords" >}})
+
+
+### <span class="section-num">12.2</span> Разное {#разное}
+
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
 -   [Сертификаты ACME]({{< relref "2022-04-30-acme-certificates" >}})
 -   [Механизм HSTS]({{< relref "2022-05-03-hsts-mechanism" >}})
@@ -226,33 +259,38 @@ slug: "system-administration"
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-### <span class="section-num">13.2</span> Протоколы {#протоколы}
+### <span class="section-num">13.2</span> Коммутаторы {#коммутаторы}
+
+-   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
+
+
+### <span class="section-num">13.3</span> Протоколы {#протоколы}
 
 -   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
-### <span class="section-num">13.3</span> VPN {#vpn}
+### <span class="section-num">13.4</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 -   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
 
 
-### <span class="section-num">13.4</span> Мониторинг {#мониторинг}
+### <span class="section-num">13.5</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Мониторинг пропускной способности и скорости сети]({{< relref "2023-06-16-bandwidth-network-speed-monitoring" >}})
 
 
-### <span class="section-num">13.5</span> Железо {#железо}
+### <span class="section-num">13.6</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
-### <span class="section-num">13.6</span> Сервисы {#сервисы}
+### <span class="section-num">13.7</span> Сервисы {#сервисы}
 
 
-#### <span class="section-num">13.6.1</span> DNS {#dns}
+#### <span class="section-num">13.7.1</span> DNS {#dns}
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
 -   [Общедоступные резольверы DNS]({{< relref "2023-05-26-public-dns-resolvers" >}})

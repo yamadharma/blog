@@ -2,7 +2,7 @@
 title: "Hugo. Видео во вкладках"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-26T18:46:00+03:00
-lastmod: 2023-07-01T17:35:00+03:00
+lastmod: 2023-08-24T19:03:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -73,9 +73,14 @@ slug: "hugo-video-tabs"
 -   Код:
     ```markdown
     {{</* tabs tabTotal="2" */>}}
-    {{</* rtab tabName="RuTube" */>}}
+    {{</* rtab tabName="Rutube" */>}}
 
     {{</* rutube 1bea1bcf9215678e8ccf797187cc52fd */>}}
+
+    {{</* /rtab */>}}
+    {{</* rtab tabName="VKvideo" */>}}
+
+    {{</* vkvideo oid="606414976" id="456239113" hd="2" */>}}
 
     {{</* /rtab */>}}
     {{</* rtab tabName="Youtube" */>}}
@@ -87,10 +92,15 @@ slug: "hugo-video-tabs"
     ```
 -   Отображение:
 
-    {{< tabs tabTotal="2" >}}
-    {{< rtab tabName="RuTube" >}}
+    {{< tabs tabTotal="3" >}}
+    {{< rtab tabName="Rutube" >}}
 
     {{< rutube 1bea1bcf9215678e8ccf797187cc52fd >}}
+
+    {{< /rtab >}}
+    {{< rtab tabName="VKvideo" >}}
+
+    {{< vkvideo oid="606414976" id="456239113" hd="2" >}}
 
     {{< /rtab >}}
     {{< rtab tabName="Youtube" >}}

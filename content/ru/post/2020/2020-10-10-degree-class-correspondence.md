@@ -2,9 +2,9 @@
 title: "Соответствие современных учёных степеней классным чинам"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-10T18:15:00+03:00
-lastmod: 2021-10-09T20:44:00+03:00
-tags: ["sci-admin"]
-categories: ["сиянс"]
+lastmod: 2023-09-02T18:56:00+03:00
+tags: ["sci-being", "sci-admin"]
+categories: ["science"]
 draft: false
 slug: "degree-class-correspondence"
 ---
@@ -16,7 +16,7 @@ slug: "degree-class-correspondence"
 {{< toc >}}
 
 
-## Соответствие учёных степеней классным чинам {#соответствие-учёных-степеней-классным-чинам}
+## <span class="section-num">1</span> Соответствие учёных степеней классным чинам {#соответствие-учёных-степеней-классным-чинам}
 
 -   Учёное звание добавляет дополнительные степени к чину:
     -   доцент -- одну степень;
@@ -32,7 +32,7 @@ slug: "degree-class-correspondence"
 
 <a id="table--degree-class-correspondence"></a>
 <div class="table-caption">
-  <span class="table-number"><a href="#table--degree-class-correspondence">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</a></span>:
+  <span class="table-number"><a href="#table--degree-class-correspondence">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</a>:</span>
   Соответствие учёных степеней классным чинам
 </div>
 
@@ -48,10 +48,10 @@ slug: "degree-class-correspondence"
 | бакалавр           | 14    | Коллежский регистратор | Младший лейтенант |
 
 
-## Внешние ссылки {#внешние-ссылки}
+## <span class="section-num">2</span> Внешние ссылки {#внешние-ссылки}
 
--   [Учёные степени в Российской империи](https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D1%91%D0%BD%D1%8B%D0%B5%5F%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8%5F%D0%B2%5F%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9%5F%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8)
--   [Присуждение учёных степеней в России в первой половине ХIХ века](https://www.mosgu.ru/nauchnaya/publications/professor.ru/Krivoruchenko%5FVK/)
+-   [Учёные степени в Российской империи](https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D1%91%D0%BD%D1%8B%D0%B5_%D1%81%D1%82%D0%B5%D0%BF%D0%B5%D0%BD%D0%B8_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%B8%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D0%B8)
+-   [Присуждение учёных степеней в России в первой половине ХIХ века](https://www.mosgu.ru/nauchnaya/publications/professor.ru/Krivoruchenko_VK/)
 -   [Диссертации о диссертациях](https://www.kommersant.ru/doc/4135345)
 -   [Записка по вопросам учёных степеней и званий](https://trv-science.ru/2020/03/zapiska-po-voprosam-uchenyx-stepenej-i-zvanij/)
 

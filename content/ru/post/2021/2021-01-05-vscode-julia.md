@@ -2,7 +2,7 @@
 title: "VSCode. Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-05T19:48:00+03:00
-lastmod: 2022-02-09T17:04:00+03:00
+lastmod: 2023-09-09T18:56:00+03:00
 tags: ["julia", "programming"]
 categories: ["computer-science"]
 draft: false

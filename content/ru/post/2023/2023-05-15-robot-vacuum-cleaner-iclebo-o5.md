@@ -2,7 +2,7 @@
 title: "Робот-пылесос iCLEBO O5"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-15T16:29:00+03:00
-lastmod: 2023-06-05T16:30:00+03:00
+lastmod: 2023-08-23T13:22:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -66,4 +66,5 @@ slug: "robot-vacuum-cleaner-iclebo-o5"
 
 ## <span class="section-num">5</span> Прошивки {#прошивки}
 
--   Версии прошивок: <https://iclebo.com.ru/blog/all-firmware>
+-   Версии прошивок и приложений: <https://iclebo.com.ru/blog/all-firmware>
+-   Приложение для Android: <https://apkpure.com/ru/iclebo-o5/com.yujinrobot.iclebo/versions>

@@ -2,7 +2,7 @@
 title: "Emacs. Org-mode для написания писем"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-27T15:53:00+03:00
-lastmod: 2022-08-28T19:21:00+03:00
+lastmod: 2023-08-26T18:11:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -125,8 +125,8 @@ slug: "emacs-org-mode-for-compose-emails"
     (add-hook 'org-ctrl-c-ctrl-c-hook 'htmlize-and-send t)
 
     (add-hook 'mu4e-compose-mode-hook
-    	  (defun do-compose-stuff ()
-    	    "My settings for message composition."
-    	    (org-mu4e-compose-org-mode)))
+              (defun do-compose-stuff ()
+                "My settings for message composition."
+                (org-mu4e-compose-org-mode)))
     ```
 -   Для преобразования используется пакет `org-mime`.

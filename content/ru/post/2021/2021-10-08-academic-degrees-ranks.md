@@ -2,7 +2,8 @@
 title: "Учёные степени и звания"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-08T18:44:00+03:00
-lastmod: 2021-10-09T20:45:00+03:00
+lastmod: 2023-09-02T18:48:00+03:00
+tags: ["sci-being"]
 categories: ["сиянс"]
 draft: false
 slug: "academic-degrees-ranks"

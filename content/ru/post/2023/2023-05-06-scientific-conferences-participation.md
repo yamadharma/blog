@@ -2,7 +2,7 @@
 title: "Участие в научных конференциях"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T19:37:00+03:00
-lastmod: 2023-07-08T18:51:00+03:00
+lastmod: 2023-08-25T13:40:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -59,3 +59,8 @@ slug: "scientific-conferences-participation"
 ## <span class="section-num">3</span> Saratov Fall Meeting (SFM) {#saratov-fall-meeting--sfm}
 
 -   [Конференция Saratov Fall Meeting]({{< relref "2023-07-05-conference-saratov-fall-meeting" >}})
+
+
+### <span class="section-num">3.1</span> 2023 {#2023}
+
+-   [Конференция Saratov Fall Meeting 2023]({{< relref "2023-08-25-conference-saratov-fall-meeting-2023" >}})

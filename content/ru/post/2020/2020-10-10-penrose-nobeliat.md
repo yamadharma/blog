@@ -1,7 +1,8 @@
 ---
 title: "Пенроуз - нобелиат"
+author: ["Dmitry S. Kulyabov"]
 date: 2020-10-10T18:04:00+03:00
-lastmod: 2021-01-10T18:38:00+03:00
+lastmod: 2023-08-27T18:27:00+03:00
 tags: ["science-people"]
 categories: ["сиянс"]
 draft: false

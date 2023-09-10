@@ -2,7 +2,9 @@
 title: "Почта. Удаление дубликатов сообщений из локальных почтовых ящиков"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-09T19:47:00+03:00
-lastmod: 2021-09-10T20:37:00+03:00
+lastmod: 2023-09-10T20:43:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "removing-duplicate-messages"
 ---
@@ -38,7 +40,6 @@ slug: "removing-duplicate-messages"
 -   Установка:
     -   Linux
         -   Gentoo
-
             ```shell
             emerge maildrop
             ```
@@ -47,7 +48,6 @@ slug: "removing-duplicate-messages"
 ### <span class="section-num">2.2</span> Предварительные сведения {#предварительные-сведения}
 
 -   Почтовый ящик `maildir` представляет собой дерево каталогов:
-
     ```shell
     Maildir/cur
     Maildir/new
@@ -55,12 +55,10 @@ slug: "removing-duplicate-messages"
     ```
 -   Программа `reformail` считывает сообщение со стандартного входа, обрабатывает его и записывает результат на стандартный вывод.
 -   Извлечение и печать содержимого заголовка:
-
     ```shell
     reformail -x
     ```
 -   Обнаружение повторяющихся сообщений
-
     ```shell
     reformail -D len filename
     ```
@@ -70,7 +68,6 @@ slug: "removing-duplicate-messages"
     -   Если сообщение имеет заголовок `Message-ID:`, который уже находится в файле кэша, повторное сообщение завершается с кодом выхода, равным 0.
     -   В противном случае повторное сообщение завершается с кодом выхода, установленным на 1.
     -   Например:
-
         ```shell
         formail -D $((1024*1024*10)) /tmp/idcache
         ```
@@ -88,12 +85,10 @@ slug: "removing-duplicate-messages"
 #### <span class="section-num">2.3.1</span> Удаление дубликатов {#удаление-дубликатов}
 
 -   Простейший однострочник:
-
     ```shell
     rm -f /tmp/idcache; for i in cur/*; do reformail -D $((1024*1024*10)) /tmp/idcache <$i && rm $i; done
     ```
 -   Скрипт, удаляющий дубликаты во всех ящиках, синхронизируемых с помощью _mbsync_ (см. [Почта. Синхронизация. mbsync]({{< relref "2021-01-22-mail-synchronization-mbsync" >}}))
-
     ```shell
     #!/bin/bash
     # NAME: dedup-mailbox
@@ -108,24 +103,24 @@ slug: "removing-duplicate-messages"
 
         for j in $list_imapdir
         do
-    	cd "${MAILDIR}/${i}/${j}"
+            cd "${MAILDIR}/${i}/${j}"
 
-    	messages_before=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | wc -l`
-    	messages_unique_before=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | sort -u | wc -l`
+            messages_before=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | wc -l`
+            messages_unique_before=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | sort -u | wc -l`
 
-    	rm -f /tmp/idcache
-    	for k in cur/*
-    	do
-    	    [[ -f $k ]] && reformail -D $((1024*1024*10)) /tmp/idcache <$k && rm $k
-    	done
+            rm -f /tmp/idcache
+            for k in cur/*
+            do
+                [[ -f $k ]] && reformail -D $((1024*1024*10)) /tmp/idcache <$k && rm $k
+            done
 
-    	messages_after=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | wc -l`
-    	messages_unique_after=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | sort -u | wc -l`
+            messages_after=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | wc -l`
+            messages_unique_after=`for k in cur/*; do [[ -f $k ]] && reformail -x Message-ID: <$k; done | sort -u | wc -l`
 
-    	echo "Number of messages in ${MAILDIR}/${i}/${j}"
-    	echo -e "\t" "Total" "\t" "Unique"
-    	echo -e "Before:\t" $messages_before "\t" $messages_unique_before
-    	echo -e "After:\t"  $messages_after  "\t" $messages_unique_after
+            echo "Number of messages in ${MAILDIR}/${i}/${j}"
+            echo -e "\t" "Total" "\t" "Unique"
+            echo -e "Before:\t" $messages_before "\t" $messages_unique_before
+            echo -e "After:\t"  $messages_after  "\t" $messages_unique_after
         done
 
     done
@@ -135,12 +130,10 @@ slug: "removing-duplicate-messages"
 #### <span class="section-num">2.3.2</span> Необязательные проверки {#необязательные-проверки}
 
 -   Перед и после удаления проверьте полное количество сообщений:
-
     ```shell
     for i in cur/*; do reformail -x Message-ID: <$i; done | wc -l
     ```
 -   Также проверьте количество уникальных сообщений:
-
     ```shell
     for i in cur/*; do reformail -x Message-ID: <$i; done | sort -u | wc -l
     ```
@@ -152,7 +145,6 @@ slug: "removing-duplicate-messages"
 #### <span class="section-num">2.4.1</span> Удаление дубликатов {#удаление-дубликатов}
 
 -   Скрипт, вызывающий программу обработки для каждого сообщения из _mbox_:
-
     ```shell
     #!/bin/sh
     # NAME: dedup-mbox
@@ -166,7 +158,6 @@ slug: "removing-duplicate-messages"
     cat $1 | reformail -s ./reformail-mbox.sh
     ```
 -   Основной скрипт для дедупликации:
-
     ```shell
     #!/bin/bash
     # NAME: reformail-mbox.sh
@@ -192,7 +183,7 @@ slug: "removing-duplicate-messages"
         # each mail shall have a message-id
         if grep -q -i '^message-id:' $TM
         then
-    	cat $TM >> nmbox
+            cat $TM >> nmbox
         fi
     fi
 

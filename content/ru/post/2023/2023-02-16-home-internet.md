@@ -2,7 +2,7 @@
 title: "Домашний интернет"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-16T15:17:00+03:00
-lastmod: 2023-07-04T18:44:00+03:00
+lastmod: 2023-08-23T14:45:00+03:00
 tags: ["apartment", "network"]
 categories: ["life"]
 draft: false
@@ -50,6 +50,11 @@ slug: "home-internet"
 -   Есть сеть ipv6.
     -   Адрес ipv6 можно получить, только в отсутствии внешнего ipv4 адреса.
 -   Провайдер заменён в связи со сменой места жительства.
+-   Для переоформления договора (или закрытия договора) необходимо ехать в офис.
+    -   Эти можно сделать в офисе МТС-Home.
+    -   Сайт: <https://moscow.mt-home.ru/>
+    -   Офисы обслуживания: <https://support.mts.ru/domashnii_internet_i_tv_instruktsiii/ofisi/ofisi-obsluzhivaniya>
+    -   Офисов мало, персонала мало, ждать приходится долго.
 
 
 #### <span class="section-num">1.4.1</span> Частичная блокировка интернета {#частичная-блокировка-интернета}

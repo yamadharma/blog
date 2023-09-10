@@ -2,7 +2,9 @@
 title: "Почта. Yandex. Пароли приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T21:09:00+03:00
-lastmod: 2021-11-27T15:34:00+03:00
+lastmod: 2023-09-10T20:45:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "mail-yandex-application-passwords"
 ---
@@ -56,7 +58,6 @@ slug: "mail-yandex-application-passwords"
 
 -   Пароли храню в хранилище _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
 -   Шаблон имени записи пароля:
-
     ```shell
     account@yandex.ru@apppassword@тип_учётной_записи
     ```

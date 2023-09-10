@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2023-08-15T14:34:00+03:00
+lastmod: 2023-08-25T13:06:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -297,14 +297,16 @@ Scopus h-index: 6. More than 80 publications indexed in international databases.
 -   Чулуунбаатар Очбадрах
 -   доктор физико-математических наук
 -   Объединенный институт ядерных исследований, заместитель директора Лаборатории информационных технологий
+-   Институт математики и цифровой технологии, Монгольская академия наук, Монголия
 -   Доктор физико-математических наук (2010), Действительный член Монгольской академии наук (2018). Заместитель директора Лаборатории информационных технологий ОИЯИ, руководитель национальной группы Монголии в ОИЯИ. С 2012 Член научно-технического совета ЛИТ ОИЯИ. Научные интересы: Вычислительная физика, математическое моделирование, вариационно-численные методы для исследования малочастичных квантовых систем.  Обладатель Государственной премии Монголии (2012), второй премии ОИЯИ за работу в области научно-методических исследований (2015).
 -   Автор и соавтор 200 научных работ, из них 120 — в изданиях, индексируемых в Web of Science и Scopus.
 -   Индекс Хирша по РИНЦ:  17; Индекс Хирша по Scopus: 16.
 -   <http://wwwinfo.jinr.ru/~chuka/>
 
-Doctor of Physical and Mathematical Sciences (2010), Member of the Mongolian Academy of Sciences (2018). Deputy JINR Information Technologies, Head of the National Group of Mongolia Mongolia Since 2012 Member of the Scientific and Technical Council of LIT JINR. Scientific interests: Computational physics, mathematical modeling, variational-numerical methods for the study of few-particle quantum systems. Winner of the State Prize of Mongolia (2012), the second JINR Prize for work in the field of scientific and methodological research (2015).
-Author of 200 scientific papers, 120 of which are in publications indexed in Web of Science and Scopus.
-H-index by RSCI: 17; H-index by Scopus: 16.
+-   Institute of mathematics and digital technology, Mongolian academy of sciences, Mongolia
+-   Doctor of Physical and Mathematical Sciences (2010), Member of the Mongolian Academy of Sciences (2018). Deputy JINR Information Technologies, Head of the National Group of Mongolia Mongolia Since 2012 Member of the Scientific and Technical Council of LIT JINR. Scientific interests: Computational physics, mathematical modeling, variational-numerical methods for the study of few-particle quantum systems. Winner of the State Prize of Mongolia (2012), the second JINR Prize for work in the field of scientific and methodological research (2015).
+-   Author of 200 scientific papers, 120 of which are in publications indexed in Web of Science and Scopus.
+-   H-index by RSCI: 17; H-index by Scopus: 16.
 
 
 ## <span class="section-num">2</span> Техническая информация {#техническая-информация}

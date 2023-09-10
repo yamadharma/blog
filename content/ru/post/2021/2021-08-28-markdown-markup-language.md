@@ -2,8 +2,8 @@
 title: "Язык разметки Markdown"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T19:51:00+03:00
-lastmod: 2023-04-13T19:07:00+03:00
-tags: ["markdown", "MOC"]
+lastmod: 2023-09-02T18:58:00+03:00
+tags: ["markdown"]
 categories: ["computer-science"]
 draft: false
 slug: "markdown-markup-language"

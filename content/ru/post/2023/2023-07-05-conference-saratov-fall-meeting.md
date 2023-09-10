@@ -2,7 +2,7 @@
 title: "Конференция Saratov Fall Meeting"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-05T14:47:00+03:00
-lastmod: 2023-07-10T21:25:00+03:00
+lastmod: 2023-08-25T13:40:00+03:00
 categories: ["science"]
 draft: false
 slug: "conference-saratov-fall-meeting"

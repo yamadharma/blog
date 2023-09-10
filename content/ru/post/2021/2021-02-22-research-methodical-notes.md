@@ -2,14 +2,15 @@
 title: "Научно-исследовательская деятельность. Методические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:05:00+03:00
-lastmod: 2023-07-31T18:37:00+03:00
+lastmod: 2023-08-27T18:40:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
 slug: "research-methodical-notes"
 ---
 
-Разрозненные мысли. Временный сборник.
+-   Разрозненные мысли.
+-   Временный сборник.
 
 <!--more-->
 

@@ -2,7 +2,7 @@
 title: "Julia. DifferentialEquations.jl. Callback functions"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-02T14:04:00+03:00
-lastmod: 2022-02-09T17:07:00+03:00
+lastmod: 2023-09-09T18:57:00+03:00
 tags: ["julia", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -27,12 +27,12 @@ slug: "julia-differentialequations-callback-functions"
 
 ```julia
 ContinuousCallback(condition,affect!,affect_neg!;
-		   initialize = INITIALIZE_DEFAULT,
-		   idxs = nothing,
-		   rootfind=true,
-		   save_positions=(true,true),
-		   interp_points=10,
-		   abstol=10eps(),reltol=0)
+                   initialize = INITIALIZE_DEFAULT,
+                   idxs = nothing,
+                   rootfind=true,
+                   save_positions=(true,true),
+                   interp_points=10,
+                   abstol=10eps(),reltol=0)
 ```
 
 
@@ -40,8 +40,8 @@ ContinuousCallback(condition,affect!,affect_neg!;
 
 ```julia
 DiscreteCallback(condition,affect!;
-		 initialize = INITIALIZE_DEFAULT,
-		 save_positions=(true,true))
+                 initialize = INITIALIZE_DEFAULT,
+                 save_positions=(true,true))
 ```
 
 -   `condition` - функция `condition(u,t,integrator)`, определяющая, когда следует использовать обратный вызов. Обратный вызов инициируется, если условие истинно (`true`).
@@ -60,23 +60,23 @@ DiscreteCallback(condition,affect!;
 
 ```julia
 VectorContinuousCallback(condition,affect!,affect_neg!,len;
-			 initialize = INITIALIZE_DEFAULT,
-			 idxs = nothing,
-			 rootfind=true,
-			 save_positions=(true,true),
-			 interp_points=10,
-			 abstol=10eps(),reltol=0)
+                         initialize = INITIALIZE_DEFAULT,
+                         idxs = nothing,
+                         rootfind=true,
+                         save_positions=(true,true),
+                         interp_points=10,
+                         abstol=10eps(),reltol=0)
 ```
 
 ```julia
 VectorContinuousCallback(condition,affect!,len;
-		   initialize = INITIALIZE_DEFAULT,
-		   idxs = nothing,
-		   rootfind=true,
-		   save_positions=(true,true),
-		   affect_neg! = affect!,
-		   interp_points=10,
-		   abstol=10eps(),reltol=0)
+                   initialize = INITIALIZE_DEFAULT,
+                   idxs = nothing,
+                   rootfind=true,
+                   save_positions=(true,true),
+                   affect_neg! = affect!,
+                   interp_points=10,
+                   abstol=10eps(),reltol=0)
 ```
 
 

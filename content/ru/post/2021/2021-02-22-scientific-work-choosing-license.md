@@ -1,14 +1,15 @@
 ---
 title: "Выбор лицензии для научной работы"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T15:24:00+03:00
-lastmod: 2021-02-22T16:15:00+03:00
+lastmod: 2023-09-09T18:35:00+03:00
 tags: ["research"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "scientific-work-choosing-license"
 ---
 
-Выбор лицензии для научной работы: статья, программы.
+Выбор лицензии для научной работы: статьи, программы.
 
 <!--more-->
 
@@ -39,12 +40,3 @@ slug: "scientific-work-choosing-license"
     -   Лицензионное условие **SA** (распространение на тех же условиях) часто конфликтует с другими лицензиями.
 
 В результате, будет логичным выбрать базовую лицензию **CC-BY-4.0**.
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Практический сценарий использования git]({{< relref "2021-01-17-git-practical-use-case" >}})
-
-<!--listend-->
-
--   [Научно-исследовательская деятельность. Методические заметки]({{< relref "2021-02-22-research-methodical-notes" >}})

@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-07-11T11:19:00+03:00
+lastmod: 2023-09-06T08:46:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -52,7 +52,7 @@ slug: "rudn-digital-resources"
     -   Сайт: <https://lk.rudn.ru/>.
     -   Приложение: <https://play.google.com/store/search?q=RUDN>
 -   Корпоративная почта РУДН: <https://outlook.office.com/>.
--   Антиплагиат РУДН: <https://antiplagiat.rudn.ru/>.
+-   Антиплагиат РУДН: <https://rudn.antiplagiat.ru/>.
 -   Репозиторий РУДН: <https://repository.rudn.ru/>.
 -   Клинико-диагностический центр (КДЦ) РУДН: <https://clinic.rudn.ru/>.
 -   Библиотека РУДН: <https://lib.rudn.ru/>.
@@ -76,3 +76,4 @@ slug: "rudn-digital-resources"
 ## <span class="section-num">5</span> Учебные ресурсы {#учебные-ресурсы}
 
 -   Учебный портал (ТУИС --- Телекоммуникационная учебно-информационная система): <https://esystem.rudn.ru/>.
+-   Портал обучения Дирекции по цифровизации РУДН: <https://digital-edu.rudn.ru/>.

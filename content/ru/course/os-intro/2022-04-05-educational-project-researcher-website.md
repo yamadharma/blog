@@ -2,7 +2,7 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2023-07-29T20:04:00+03:00
+lastmod: 2023-08-24T19:06:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false
@@ -126,17 +126,23 @@ menu:
 
 #### <span class="section-num">4.2.1</span> Видео {#видео}
 
-<!--list-separator-->
+{{< tabs tabTotal="3" >}}
+{{< rtab tabName="Rutube" >}}
 
-1.  Youtube
+{{< rutube 1bea1bcf9215678e8ccf797187cc52fd >}}
 
-    {{< youtube ysEdxhyYl8k >}}
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
 
-<!--list-separator-->
+{{< vkvideo oid="606414976" id="456239113" hd="2" >}}
 
-2.  Rutube
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
 
-    {{< rutube 1bea1bcf9215678e8ccf797187cc52fd >}}
+{{< youtube ysEdxhyYl8k >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
 
 
 ### <span class="section-num">4.3</span> Создание сайта на Hugo {#создание-сайта-на-hugo}
@@ -151,6 +157,7 @@ menu:
 
 -   [Синтаксис Markdown для генератора сайтов Hugo]({{< relref "2020-11-26-hugo-markdown" >}})
 -   [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})
+-   [Hugo shortcode. Видео на VK Video]({{< relref "2023-08-24-hugo-shortcode-vkvideo" >}})
 
 
 ### <span class="section-num">4.6</span> Org-mode для Hugo {#org-mode-для-hugo}

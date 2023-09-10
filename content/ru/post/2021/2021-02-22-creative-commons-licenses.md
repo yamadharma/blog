@@ -1,8 +1,9 @@
 ---
 title: "Лицензии Creative Commons"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T12:24:00+03:00
-lastmod: 2021-02-22T16:11:00+03:00
-categories: ["blog"]
+lastmod: 2023-09-04T17:15:00+03:00
+categories: ["computer-science", "science"]
 draft: false
 slug: "creative-commons-licenses"
 ---
@@ -67,8 +68,3 @@ slug: "creative-commons-licenses"
 -   [CC0](https://creativecommons.org/publicdomain/zero/1.0/deed.ru) --- Public Domain Dedication (передача в общественное достояние).
     -   Произведение можно: распространять, редактировать, брать за основу для других произведений, использовать в коммерческих целях.
     -   Условия использования: никаких.
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})

@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T12:16:00+03:00
-lastmod: 2021-11-01T21:34:00+03:00
+lastmod: 2023-09-10T20:45:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

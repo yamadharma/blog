@@ -2,7 +2,7 @@
 title: "Статья Аналитико-численная реализация алгебры поливекторов на языке Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-23T18:56:00+03:00
-lastmod: 2021-08-24T12:17:00+03:00
+lastmod: 2023-08-27T18:33:00+03:00
 tags: ["research"]
 categories: ["сиянс"]
 draft: false

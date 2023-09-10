@@ -2,7 +2,7 @@
 title: "Рабочий процесс Gitflow"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-18T20:14:00+03:00
-lastmod: 2023-07-21T18:13:00+03:00
+lastmod: 2023-09-09T18:58:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false

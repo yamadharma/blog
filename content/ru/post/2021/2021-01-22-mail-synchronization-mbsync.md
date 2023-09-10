@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2023-02-15T19:50:00+03:00
+lastmod: 2023-09-03T17:25:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

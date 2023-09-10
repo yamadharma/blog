@@ -2,7 +2,7 @@
 title: "Vim. Клавиатура. Броузеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-19T18:47:00+03:00
-lastmod: 2023-08-19T19:56:00+03:00
+lastmod: 2023-08-26T15:34:00+03:00
 tags: ["vim"]
 categories: ["computer-science"]
 draft: false
@@ -119,7 +119,10 @@ slug: "vim-keyboard-browsers"
 ## <span class="section-num">3</span> Расширения для броузеров {#расширения-для-броузеров}
 
 
-### <span class="section-num">3.1</span> Vimium {#vimium}
+### <span class="section-num">3.1</span> Расширения для Chrome {#расширения-для-chrome}
+
+
+#### <span class="section-num">3.1.1</span> Vimium {#vimium}
 
 -   Сайт: <https://vimium.github.io/>
 -   Репозиторий: <https://github.com/philc/vimium>
@@ -128,104 +131,122 @@ slug: "vim-keyboard-browsers"
 -   В настройках можно внести в список исключений сайты, на которых вы не хотите использовать сочетания клавиш _Vimium_.
 
 
-### <span class="section-num">3.2</span> Tridactyl {#tridactyl}
-
--   Репозиторий: <https://github.com/tridactyl/tridactyl>
--   Развитие Vimperator и Pentadactyl
-
-
-### <span class="section-num">3.3</span> Surfingkeys {#surfingkeys}
+#### <span class="section-num">3.1.2</span> Surfingkeys {#surfingkeys}
 
 -   Репозиторий: <https://github.com/brookhong/Surfingkeys>
+-   Расширение для Chrome: <https://chrome.google.com/webstore/detail/surfingkeys/gfbliohnnapiefjpjlpjnehglfpaknnc>
 
 
-### <span class="section-num">3.4</span> cVim {#cvim}
+#### <span class="section-num">3.1.3</span> cVim {#cvim}
 
 -   Репозиторий: <https://github.com/1995eaton/chromium-vim>
 
 
-### <span class="section-num">3.5</span> Vimari {#vimari}
-
--   Репозитоий: <https://github.com/televator-apps/vimari>
-
-
-### <span class="section-num">3.6</span> Vrome {#vrome}
+#### <span class="section-num">3.1.4</span> Vrome {#vrome}
 
 -   Репозиторий: <https://github.com/jinzhu/vrome>
+-   Разработка прекращена
 
 
-### <span class="section-num">3.7</span> Vim Vixen {#vim-vixen}
+#### <span class="section-num">3.1.5</span> Spotlink {#spotlink}
+
+-   Репозитоий: <https://github.com/reindert-vetter/spotlink/>
+
+
+### <span class="section-num">3.2</span> Расширения для Firefox {#расширения-для-firefox}
+
+
+#### <span class="section-num">3.2.1</span> Tridactyl {#tridactyl}
+
+-   Репозиторий: <https://github.com/tridactyl/tridactyl>
+-   Развитие Vimperator и Pentadactyl
+-   Расширение для Firefox: <https://addons.mozilla.org/en-US/firefox/addon/tridactyl-vim/>
+
+
+#### <span class="section-num">3.2.2</span> Vim Vixen {#vim-vixen}
 
 -   Репозиторий: <https://github.com/ueokande/vim-vixen>
 -   Разработка прекращена.
 -   Автор делает теперь _Vimmatic_.
 
 
-### <span class="section-num">3.8</span> Vimmatic {#vimmatic}
-
--   Репозиторий: <https://github.com/ueokande/vimmatic>
-
-
-### <span class="section-num">3.9</span> Homerow {#homerow}
-
--   Сайт: <https://www.homerow.app/>
-
-
-### <span class="section-num">3.10</span> Vieb {#vieb}
-
--   Репозиторий: <https://github.com/Jelmerro/Vieb>
-
-
-### <span class="section-num">3.11</span> Hunt-n-peck {#hunt-n-peck}
-
--   Репозиторий: <https://github.com/zsims/hunt-and-peck>
-
-
-### <span class="section-num">3.12</span> Vimium-C {#vimium-c}
-
--   Репозиторий: <https://github.com/gdh1995/vimium-c>
-
-
-### <span class="section-num">3.13</span> sVim {#svim}
-
--   Репозиторий: <https://github.com/flippidippi/sVim>
-
-
-### <span class="section-num">3.14</span> Spotlink {#spotlink}
-
--   Репозитоий: <https://github.com/reindert-vetter/spotlink/>
-
-
-### <span class="section-num">3.15</span> VimMotion {#vimmotion}
-
--   Репозитоий: <https://github.com/dwarvesf/VimMotionApp>
-
-
-### <span class="section-num">3.16</span> VimFx {#vimfx}
+#### <span class="section-num">3.2.3</span> VimFx {#vimfx}
 
 -   Репозиторий: <https://github.com/akhodakivskiy/VimFx>
 
 
-### <span class="section-num">3.17</span> Firevin {#firevin}
-
--   Репозитоий: <https://github.com/glacambre/firenvim>
-
-
-### <span class="section-num">3.18</span> Vimperator {#vimperator}
+#### <span class="section-num">3.2.4</span> Vimperator {#vimperator}
 
 -   Репозиторий: <https://github.com/vimperator/vimperator-labs>
 
 
-### <span class="section-num">3.19</span> Pentadactyl {#pentadactyl}
+#### <span class="section-num">3.2.5</span> Pentadactyl {#pentadactyl}
 
 -   Репозиторий: <https://github.com/5digits/dactyl>
 
 
-## <span class="section-num">4</span> Отдельные броузеры {#отдельные-броузеры}
+### <span class="section-num">3.3</span> Расширения для Safari {#расширения-для-safari}
 
 
-### <span class="section-num">4.1</span> Vimb {#vimb}
+#### <span class="section-num">3.3.1</span> Vimari {#vimari}
+
+-   Репозитоий: <https://github.com/televator-apps/vimari>
+
+
+#### <span class="section-num">3.3.2</span> sVim {#svim}
+
+-   Репозиторий: <https://github.com/flippidippi/sVim>
+
+
+### <span class="section-num">3.4</span> Расширения для Chrome и Firefox {#расширения-для-chrome-и-firefox}
+
+
+#### <span class="section-num">3.4.1</span> Vimmatic {#vimmatic}
+
+-   Репозиторий: <https://github.com/ueokande/vimmatic>
+
+
+#### <span class="section-num">3.4.2</span> Vimium-C {#vimium-c}
+
+-   Репозиторий: <https://github.com/gdh1995/vimium-c>
+
+
+#### <span class="section-num">3.4.3</span> Firevin {#firevin}
+
+-   Репозитоий: <https://github.com/glacambre/firenvim>
+
+
+## <span class="section-num">4</span> Интерфейс Windows {#интерфейс-windows}
+
+
+### <span class="section-num">4.1</span> Hunt-n-peck {#hunt-n-peck}
+
+-   Репозиторий: <https://github.com/zsims/hunt-and-peck>
+
+
+## <span class="section-num">5</span> Интерфейс MacOS {#интерфейс-macos}
+
+
+### <span class="section-num">5.1</span> VimMotion {#vimmotion}
+
+-   Репозитоий: <https://github.com/dwarvesf/VimMotionApp>
+
+
+### <span class="section-num">5.2</span> Homerow {#homerow}
+
+-   Сайт: <https://www.homerow.app/>
+
+
+## <span class="section-num">6</span> Отдельные броузеры {#отдельные-броузеры}
+
+
+### <span class="section-num">6.1</span> Vimb {#vimb}
 
 -   Сайт: <https://fanglingsu.github.io/vimb/>
 -   Репозиторий: <https://github.com/fanglingsu/vimb>
 -   На основе Webkit
+
+
+### <span class="section-num">6.2</span> Vieb {#vieb}
+
+-   Репозиторий: <https://github.com/Jelmerro/Vieb>

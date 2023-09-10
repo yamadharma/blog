@@ -2,7 +2,7 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2023-06-22T20:31:00+03:00
+lastmod: 2023-09-10T20:26:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -33,3 +33,18 @@ slug: "self-management"
 -   [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})
 -   [Использование org-roam]({{< relref "2020-10-05-use-org-roam" >}})
 -   [Мышление письмом]({{< relref "2023-06-22-thinking-writing" >}})
+
+
+## <span class="section-num">3</span> Чтение {#чтение}
+
+-   [Отложенное чтение. Pocket]({{< relref "2023-09-06-deferred-reading-pocket" >}})
+
+
+## <span class="section-num">4</span> Работа на компьютере {#работа-на-компьютере}
+
+-   [Слепой метод печати]({{< relref "2023-09-10-touch-typing" >}})
+
+
+## <span class="section-num">5</span> Аналоговые инструменты {#аналоговые-инструменты}
+
+-   [Инструменты для письма]({{< relref "2023-09-09-writing-tools" >}})

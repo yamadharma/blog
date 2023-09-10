@@ -2,9 +2,9 @@
 title: "Использование смартфона в качестве камеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-12T18:38:00+03:00
-lastmod: 2023-08-04T15:43:00+03:00
-tags: ["education"]
-categories: ["сиянс"]
+lastmod: 2023-08-27T18:22:00+03:00
+tags: ["sysadmin", "education"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "smartphone-as-camera"
 ---

@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-16T12:51:00+03:00
-lastmod: 2023-07-30T14:58:00+03:00
+lastmod: 2023-09-09T18:37:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

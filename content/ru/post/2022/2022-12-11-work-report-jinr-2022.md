@@ -2,7 +2,7 @@
 title: "Отчёт по работе в ОИЯИ за 2022"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-11T15:48:00+03:00
-lastmod: 2023-07-31T18:42:00+03:00
+lastmod: 2023-08-27T18:38:00+03:00
 tags: ["jinr"]
 categories: ["job"]
 draft: false

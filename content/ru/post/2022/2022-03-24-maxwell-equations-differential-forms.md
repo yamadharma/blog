@@ -2,7 +2,7 @@
 title: "Уравнения Максвелла. Дифференциальные формы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-24T19:24:00+03:00
-lastmod: 2022-04-27T16:24:00+03:00
+lastmod: 2023-08-27T18:30:00+03:00
 tags: ["geometrization", "physics"]
 categories: ["science"]
 draft: false
