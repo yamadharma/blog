@@ -2,9 +2,9 @@
 title: "Emacs. Почта. Парольная аутентификация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:20:00+03:00
-lastmod: 2023-09-10T20:43:00+03:00
+lastmod: 2023-09-16T17:53:00+03:00
 tags: ["emacs", "sysadmin"]
-categories: ["blog"]
+categories: ["computer-science"]
 draft: false
 slug: "mail-password-authentication"
 ---
@@ -117,4 +117,4 @@ chmod 600 ~/.authinfo.gpg
 
 ### <span class="section-num">3.5</span> Настройка подключения к Google {#настройка-подключения-к-google}
 
-[Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})
+-   [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})

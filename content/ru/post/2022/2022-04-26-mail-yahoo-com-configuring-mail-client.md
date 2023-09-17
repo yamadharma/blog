@@ -2,7 +2,7 @@
 title: "Почта. Yahoo.com. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-26T17:01:00+03:00
-lastmod: 2023-09-10T20:46:00+03:00
+lastmod: 2023-09-14T16:41:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

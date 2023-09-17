@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-09-05T09:53:00+03:00
+lastmod: 2023-09-16T19:51:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -292,8 +292,7 @@ slug: "system-administration"
 
 #### <span class="section-num">13.7.1</span> DNS {#dns}
 
--   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
--   [Общедоступные резольверы DNS]({{< relref "2023-05-26-public-dns-resolvers" >}})
+-   [Domain Name System (DNS)]({{< relref "2023-09-16-domain-name-system-dns" >}})
 
 
 ## <span class="section-num">14</span> Организация обучения {#организация-обучения}

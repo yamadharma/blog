@@ -2,8 +2,8 @@
 title: "Wayland. Режим работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-14T11:27:00+03:00
-lastmod: 2023-09-02T18:38:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-09-16T17:43:00+03:00
+tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "wayland-operation-mode"

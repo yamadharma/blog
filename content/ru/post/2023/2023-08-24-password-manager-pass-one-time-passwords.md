@@ -2,7 +2,9 @@
 title: "Менеджер паролей pass. Одноразовые пароли"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-24T20:29:00+03:00
-lastmod: 2023-08-24T21:46:00+03:00
+lastmod: 2023-09-16T17:40:00+03:00
+tags: ["security", "sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "password-manager-pass-one-time-passwords"
 ---

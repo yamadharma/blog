@@ -2,7 +2,7 @@
 title: "Почта. Google. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-06T14:27:00+03:00
-lastmod: 2023-09-10T20:44:00+03:00
+lastmod: 2023-09-11T16:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,8 @@
 title: "Подготовка диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-12T14:52:00+03:00
-lastmod: 2023-08-27T18:40:00+03:00
+lastmod: 2023-09-16T18:25:00+03:00
+tags: ["education"]
 categories: ["science"]
 draft: false
 slug: "thesis-preparation"

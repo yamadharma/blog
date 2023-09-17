@@ -2,7 +2,7 @@
 title: "SmartTV. Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:30:00+03:00
-lastmod: 2023-07-11T11:19:00+03:00
+lastmod: 2023-09-12T16:09:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -87,6 +87,8 @@ slug: "smarttv-operating-systems"
 ## <span class="section-num">8</span> VIDAA {#vidaa}
 
 -   Производители: Hisense, Toshiba.
+-   Марка Toshiba принадлежит Hisense.
+-   На Toshiba ставится также Android TV.
 -   Модифицикация GoogleTV.
 -   Поддерживает приложения для Android.
 -   Лишена Google Play Store.

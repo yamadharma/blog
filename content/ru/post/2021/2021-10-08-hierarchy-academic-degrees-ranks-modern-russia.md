@@ -2,16 +2,16 @@
 title: "Иерархия учёных степеней и званий в современной России"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-08T18:53:00+03:00
-lastmod: 2023-08-27T18:19:00+03:00
-tags: ["sci_admin", "science"]
-categories: ["сиянс"]
+lastmod: 2023-09-16T18:28:00+03:00
+tags: ["sci-being", "sci-admin", "science"]
+categories: ["science"]
 draft: false
 slug: "hierarchy-academic-degrees-ranks-modern-russia"
 ---
 
-<!--more-->
-
 Иерархия учёных степеней и званий в современной России.
+
+<!--more-->
 
 {{< toc >}}
 

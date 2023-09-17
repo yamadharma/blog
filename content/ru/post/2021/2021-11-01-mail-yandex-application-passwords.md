@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Пароли приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T21:09:00+03:00
-lastmod: 2023-09-10T20:45:00+03:00
+lastmod: 2023-09-11T16:33:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

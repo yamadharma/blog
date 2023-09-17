@@ -2,7 +2,7 @@
 title: "Рассылка автореферата"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-12T14:57:00+03:00
-lastmod: 2023-01-12T15:17:00+03:00
+lastmod: 2023-09-17T16:18:00+03:00
 categories: ["science"]
 draft: false
 slug: "sending-synopsis"

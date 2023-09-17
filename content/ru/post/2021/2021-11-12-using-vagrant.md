@@ -2,7 +2,7 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2023-08-20T19:05:00+03:00
+lastmod: 2023-09-13T09:01:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -23,6 +23,7 @@ slug: "using-vagrant"
 -   Бинарные сборки: <https://releases.hashicorp.com/vagrant> (на данный момент не доступно из России).
 -   Зеркало бинарных сборок:
     -   <https://hashicorp-releases.yandexcloud.net/vagrant/>
+    -   <https://hashicorp-releases.mcs.mail.ru/vagrant/>
 -   Зеркало сборок из репозитория:
     -   <https://sourceforge.net/projects/vagrant.mirror/files/>
 -   Репозиторий образов для Vagrant: <https://app.vagrantup.com/>

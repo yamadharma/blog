@@ -2,7 +2,7 @@
 title: "Почта. Кодировка папок IMAP"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T20:43:00+03:00
-lastmod: 2023-09-10T20:46:00+03:00
+lastmod: 2023-09-14T16:43:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -25,7 +25,24 @@ slug: "mail-imap-folder-encoding"
 ## <span class="section-num">2</span> Преобразование {#преобразование}
 
 
-### <span class="section-num">2.1</span> Декодирование {#декодирование}
+### <span class="section-num">2.1</span> Кодирование {#кодирование}
+
+-   Алгоритм кодирования имён папок:
+    -   Текст -&gt; UTF7;
+    -   `&` -&gt; `&-`;
+    -   `/` -&gt; `,`;
+    -   `+` -&gt; `&`.
+-   Код (shell):
+    ```shell
+    echo "Черновики" |  iconv -f UTF8 -t UTF7 | sed 's/&/&-/g;s/\//,/g;s/+/\&/g'
+    ```
+-   В результате получаем:
+    ```shell
+    &BCcENQRABD0EPgQyBDgEOgQ4
+    ```
+
+
+### <span class="section-num">2.2</span> Декодирование {#декодирование}
 
 -   Алгоритм декодирования имён папок:
     -   `&` -&gt; `+`;
