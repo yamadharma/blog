@@ -2,7 +2,9 @@
 title: "Файл подкачки на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-20T10:29:00+03:00
-lastmod: 2023-02-21T11:31:00+03:00
+lastmod: 2023-09-19T09:36:00+03:00
+tags: ["sysadmin", "btrfs"]
+categories: ["computer-science"]
 draft: false
 slug: "btrfs-swap-file"
 ---

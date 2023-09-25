@@ -2,9 +2,9 @@
 title: "Computer science"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-08T20:31:00+03:00
-lastmod: 2023-07-31T18:36:00+03:00
+lastmod: 2023-09-24T17:59:00+03:00
 tags: ["research"]
-categories: ["computer-science", "сиянс"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "computer-science"
 ---
@@ -15,6 +15,12 @@ slug: "computer-science"
 
 {{< toc >}}
 
+
+## <span class="section-num">1</span> Железо {#железо}
+
 -   [Процессор Apple M1]({{< relref "2021-02-08-chip-apple-m1" >}})
+
+
+## <span class="section-num">2</span> Разное {#разное}
+
 -   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
--   [Моноширинные шрифты]({{< relref "2021-05-21-monospace-fonts" >}})

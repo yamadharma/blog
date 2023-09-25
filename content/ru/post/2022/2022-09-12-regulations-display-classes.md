@@ -2,7 +2,9 @@
 title: "Регламент работы дисплейных классов"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-12T10:03:00+03:00
-lastmod: 2022-09-12T12:58:00+03:00
+lastmod: 2023-09-21T15:04:00+03:00
+tags: ["rudn", "sysadmin"]
+categories: ["computer-science", "job"]
 draft: false
 slug: "regulations-display-classes"
 ---

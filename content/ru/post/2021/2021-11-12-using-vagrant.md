@@ -2,7 +2,7 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2023-09-13T09:01:00+03:00
+lastmod: 2023-09-21T14:42:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -31,15 +31,23 @@ slug: "using-vagrant"
 
 ### <span class="section-num">1.1</span> Лицензия {#лицензия}
 
+-   [Смена лицензии HashiCorp]({{< relref "2023-09-21-hashicorp-changes-license" >}})
 
-### <span class="section-num">1.2</span> Основные понятия Vagrant {#основные-понятия-vagrant}
+
+### <span class="section-num">1.2</span> Ответвления {#ответвления}
+
+-   Смена лицензии привела к возникновению форка под лицензией MPL.
+-   Репозиторий: <https://github.com/viagrunts/viagrunts>
+
+
+### <span class="section-num">1.3</span> Основные понятия Vagrant {#основные-понятия-vagrant}
 
 -   провайдер (provider) --- система виртуализации, с которой работает Vagrant (например, VirtualBox, VMWare и т.п.);
 -   box-файл (или Vagrant Box) --- сохранённый образ виртуальной машины с развёрнутой в ней операционной системой; по сути, box-файл используется как основа для клонирования виртуальных машин с теми или иными настройками;
 -   Vagrantfile --- конфигурационный файл, написанный на языке Ruby, в котором указаны настройки запуска виртуальной машины.
 
 
-### <span class="section-num">1.3</span> Основные команды Vagrant {#основные-команды-vagrant}
+### <span class="section-num">1.4</span> Основные команды Vagrant {#основные-команды-vagrant}
 
 -   С Vagrant можно работать, используя следующие основные команды:
     -   `vagrant help` --- вызов справки по командам Vagrant;
@@ -54,7 +62,7 @@ slug: "using-vagrant"
     -   `vagrant ssh` --- подключение к виртуальной машине через ssh.
 
 
-### <span class="section-num">1.4</span> Пример конфигурации Vagrantfile {#пример-конфигурации-vagrantfile}
+### <span class="section-num">1.5</span> Пример конфигурации Vagrantfile {#пример-конфигурации-vagrantfile}
 
 -   Пример содержимого файла `Vagrantfile` для понимания принципов его синтаксиса.
 

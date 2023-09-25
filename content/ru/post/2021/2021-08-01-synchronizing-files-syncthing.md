@@ -2,7 +2,7 @@
 title: "Синхронизация файлов с помощью syncthing"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-01T15:58:00+03:00
-lastmod: 2023-07-11T11:13:00+03:00
+lastmod: 2023-09-19T10:59:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

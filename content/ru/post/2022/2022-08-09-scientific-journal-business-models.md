@@ -2,7 +2,7 @@
 title: "Бизнес-модели научных журналов"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-09T20:26:00+03:00
-lastmod: 2023-08-27T18:16:00+03:00
+lastmod: 2023-09-19T09:41:00+03:00
 tags: ["sci-being"]
 categories: ["science"]
 draft: false

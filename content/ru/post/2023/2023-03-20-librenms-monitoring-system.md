@@ -2,7 +2,7 @@
 title: "Система мониторинга LibreNMS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-20T15:07:00+03:00
-lastmod: 2023-03-29T14:38:00+03:00
+lastmod: 2023-09-24T17:43:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -34,10 +34,7 @@ slug: "librenms-monitoring-system"
 ### <span class="section-num">2.1</span> Необходимые пакеты {#необходимые-пакеты}
 
 -   Установка осуществляется на Rockylinux
--   Установите сервер (см. [[[../notes/public/20220812135700-rocky_linux_9_установка_сервера.md]({{< relref "2022-08-12-rockylinux-server-installation" >}})][Rocky Linux. Установка
-
-сервера]]).
-
+-   Установите сервер (см. [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})).
 -   Установите необходимое программное обеспечение:
     ```shell
     dnf -y install epel-release

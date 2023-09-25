@@ -2,7 +2,7 @@
 title: "Исследования. Mininet. Подготовка стенда"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-23T18:33:00+03:00
-lastmod: 2022-10-02T17:07:00+03:00
+lastmod: 2023-09-24T18:00:00+03:00
 tags: ["research", "network"]
 categories: ["computer-science", "science"]
 draft: false

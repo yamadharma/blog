@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-09-09T18:58:00+03:00
+lastmod: 2023-09-19T15:09:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -96,7 +96,31 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.2</span> Дополнительные репозитории {#дополнительные-репозитории}
+### <span class="section-num">3.2</span> Установка локализации {#установка-локализации}
+
+-   Проверьте текущую локализацию:
+    ```shell
+    localectl status
+    ```
+-   Посмотрите доступные локализации:
+    ```shell
+    localectl list-locales
+    ```
+-   Если нет необходимой, установите её:
+    ```shell
+    dnf -y install glibc-langpack-ru
+    ```
+-   Установите нужную локализацию:
+    ```shell
+    localectl set-locale ru_RU.UTF-8
+    ```
+-   Проверьте текущую локализацию:
+    ```shell
+    localectl status
+    ```
+
+
+### <span class="section-num">3.3</span> Дополнительные репозитории {#дополнительные-репозитории}
 
 -   Установим _EPEL_:
     ```shell
@@ -105,7 +129,7 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.3</span> Установка часового пояса {#установка-часового-пояса}
+### <span class="section-num">3.4</span> Установка часового пояса {#установка-часового-пояса}
 
 -   Просмотрите список всех часовых поясов:
     ```shell
@@ -117,7 +141,7 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.4</span> Синхронизация времени {#синхронизация-времени}
+### <span class="section-num">3.5</span> Синхронизация времени {#синхронизация-времени}
 
 -   Запустите демон:
     ```shell
@@ -137,27 +161,52 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.5</span> Повышение комфорта работы {#повышение-комфорта-работы}
+### <span class="section-num">3.6</span> Разрешение имён {#разрешение-имён}
+
+
+#### <span class="section-num">3.6.1</span> systemd-resolved {#systemd-resolved}
+
+-   Можно установить кеширующий локальный name-server `systemd-resolved`:
+    ```shell
+    dnf -y install systemd-resolved
+    ```
+-   Файл настройки: `/etc/systemd/resolved.conf`.
+-   Можно в нём ничего не менять.
+-   Запустим службу:
+    ```shell
+    systemctl enable --now systemd-resolved.service
+    ```
+-   Установите резольвер:
+    ```shell
+    ln -snf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+    ```
+-   Проверить работу можно командой:
+    ```shell
+    resolvectl
+    ```
+
+
+### <span class="section-num">3.7</span> Повышение комфорта работы {#повышение-комфорта-работы}
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf install tmux mc
+    dnf -y install tmux mc
     ```
 
 -   Программы мониторинга:
     ```shell
-    dnf install htop
+    dnf -y install htop
     ```
 -   Утилита для ssh:
     ```shell
-    dnf install mosh
+    dnf -y install mosh
     ```
 
 
-### <span class="section-num">3.6</span> Безопасность {#безопасность}
+### <span class="section-num">3.8</span> Безопасность {#безопасность}
 
 
-#### <span class="section-num">3.6.1</span> Fail2ban {#fail2ban}
+#### <span class="section-num">3.8.1</span> Fail2ban {#fail2ban}
 
 -   Защита от атак:
     ```shell
@@ -174,10 +223,10 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.7</span> Администрирование {#администрирование}
+### <span class="section-num">3.9</span> Администрирование {#администрирование}
 
 
-#### <span class="section-num">3.7.1</span> Автоматическое обновление {#автоматическое-обновление}
+#### <span class="section-num">3.9.1</span> Автоматическое обновление {#автоматическое-обновление}
 
 -   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
@@ -352,3 +401,4 @@ slug: "rockylinux-server-installation"
 ### <span class="section-num">4.7</span> DNS сервера {#dns-сервера}
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
+-

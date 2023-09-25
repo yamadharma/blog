@@ -2,12 +2,14 @@
 title: "Критерии выбора персонального компьютера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-21T20:17:00+03:00
-lastmod: 2023-07-11T11:06:00+03:00
+lastmod: 2023-09-19T10:57:00+03:00
 tags: ["hard", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "criteria-choosing-personal-computer"
 ---
+
+Критерии выбора персонального компьютера.
 
 <!--more-->
 

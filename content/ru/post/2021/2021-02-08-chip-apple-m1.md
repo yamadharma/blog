@@ -1,7 +1,8 @@
 ---
 title: "Процессор Apple M1"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-08T19:53:00+03:00
-lastmod: 2021-02-12T18:18:00+03:00
+lastmod: 2023-09-24T17:57:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -17,7 +18,7 @@ slug: "chip-apple-m1"
 
 ## <span class="section-num">1</span> Информация по Apple M1: {#информация-по-apple-m1}
 
--   <https://ru.wikipedia.org/wiki/Apple%5FM1>
+-   <https://ru.wikipedia.org/wiki/Apple_M1>
 -   <https://www.apple.com/ru/mac/m1/>
 
 
@@ -45,11 +46,3 @@ slug: "chip-apple-m1"
     -   Прямой перенос на Apple M1 не даст никакого преимущества. Вряд ли
         Apple будет делиться спецификацией контроллеров ли делать
         драйвера. А обратный инжиниринг --- не самая лучшая стратегия.
-
-
-## <span class="section-num">5</span> Backlinks {#backlinks}
-
-
-### <span class="section-num">5.1</span> [Computer science]({{< relref "2021-02-08-computer-science" >}}) {#computer-science}
-
-[Процессор Apple M1]({{< relref "2021-02-08-chip-apple-m1" >}})

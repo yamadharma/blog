@@ -2,12 +2,14 @@
 title: "Использование sfdisk"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-08T19:45:00+03:00
-lastmod: 2023-07-11T11:12:00+03:00
+lastmod: 2023-09-19T09:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "using-sfdisk"
 ---
+
+Использование _sfdisk_.
 
 <!--more-->
 

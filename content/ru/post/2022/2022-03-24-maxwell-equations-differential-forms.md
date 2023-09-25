@@ -2,13 +2,15 @@
 title: "Уравнения Максвелла. Дифференциальные формы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-24T19:24:00+03:00
-lastmod: 2023-08-27T18:30:00+03:00
+lastmod: 2023-09-19T09:39:00+03:00
 tags: ["geometrization", "physics"]
 categories: ["science"]
 draft: false
 slug: "maxwell-equations-differential-forms"
 projects: ["geometrization"]
 ---
+
+Уравнения Максвелла. Дифференциальные формы.
 
 <!--more-->
 

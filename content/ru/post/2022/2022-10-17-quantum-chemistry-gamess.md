@@ -2,7 +2,7 @@
 title: "Квантовая химия. Gamess"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-17T16:58:00+03:00
-lastmod: 2023-07-11T11:12:00+03:00
+lastmod: 2023-09-19T09:19:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false

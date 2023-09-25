@@ -1,10 +1,10 @@
 ---
-title: "Курс Научное программирование"
+title: "Подготовка курса Научное программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-21T18:08:00+03:00
-lastmod: 2021-11-01T14:14:00+03:00
+lastmod: 2023-09-24T16:39:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "scientific-programming"
 ---
@@ -16,6 +16,6 @@ slug: "scientific-programming"
 {{< toc >}}
 
 
-## Ссылки {#ссылки}
+## <span class="section-num">1</span> Ссылки {#ссылки}
 
--   Введение в научное программирование (предыдущий курс) [Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}})
+-   Введение в научное программирование (предыдущий курс) [Подготовка курса Введение в научное программирование]({{< relref "2020-10-11-introduction-scientific-programming" >}})

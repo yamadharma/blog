@@ -2,7 +2,7 @@
 title: "Emacs. Julia. Julia-repl"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T18:03:00+03:00
-lastmod: 2023-07-11T11:34:00+03:00
+lastmod: 2023-09-19T09:14:00+03:00
 tags: ["emacs", "julia", "programming"]
 categories: ["computer-science"]
 draft: false

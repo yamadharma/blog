@@ -2,9 +2,9 @@
 title: "Выбор дистрибутива Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-08T11:20:00+03:00
-lastmod: 2023-08-04T15:35:00+03:00
-tags: ["education", "sysadmin"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2023-09-21T15:12:00+03:00
+tags: ["linux", "education", "sysadmin"]
+categories: ["science", "computer-science"]
 draft: false
 slug: "choosing-linux-distribution"
 ---

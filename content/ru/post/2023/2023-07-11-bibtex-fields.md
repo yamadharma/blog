@@ -2,7 +2,7 @@
 title: "BibTeX. Поля"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-11T18:07:00+03:00
-lastmod: 2023-07-11T19:09:00+03:00
+lastmod: 2023-09-19T10:52:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

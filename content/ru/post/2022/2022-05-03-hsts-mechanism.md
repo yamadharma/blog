@@ -2,7 +2,7 @@
 title: "Механизм HSTS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-03T20:05:00+03:00
-lastmod: 2023-07-11T11:15:00+03:00
+lastmod: 2023-09-19T10:56:00+03:00
 tags: ["security", "network"]
 categories: ["computer-science"]
 draft: false

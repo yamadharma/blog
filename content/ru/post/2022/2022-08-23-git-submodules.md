@@ -2,7 +2,9 @@
 title: "git submodules"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-23T18:42:00+03:00
-lastmod: 2022-08-28T13:50:00+03:00
+lastmod: 2023-09-24T17:50:00+03:00
+tags: ["programming"]
+categories: ["computer-science"]
 draft: false
 slug: "git-submodules"
 ---
@@ -43,8 +45,8 @@ slug: "git-submodules"
 -   Создаётся файл `.gitmodules`. Это конфигурационный файл, в котором хранится соответствие между URL проекта и локальным подкаталогом:
     ```ini
     [submodule "DbConnector"]
-    	path = DbConnector
-    	url = https://github.com/chaconinc/DbConnector
+            path = DbConnector
+            url = https://github.com/chaconinc/DbConnector
     ```
 
 

@@ -2,7 +2,7 @@
 title: "Автообновление систем на базе деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-25T09:42:00+03:00
-lastmod: 2023-07-11T11:08:00+03:00
+lastmod: 2023-09-19T10:52:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false

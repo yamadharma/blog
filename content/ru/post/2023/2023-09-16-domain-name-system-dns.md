@@ -2,7 +2,7 @@
 title: "Domain Name System (DNS)"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-16T19:47:00+03:00
-lastmod: 2023-09-17T15:40:00+03:00
+lastmod: 2023-09-19T14:41:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -21,7 +21,7 @@ Domain Name System (DNS).
 
 ### <span class="section-num">1.1</span> Bind {#bind}
 
--   [DNS. Bind. DNSSEC]({{< relref "2023-09-16-dns-bind-dnssec" >}})
+-   [DNS. Bind]({{< relref "2023-09-19-dns-bind" >}})
 
 
 ### <span class="section-num">1.2</span> PowerDNS {#powerdns}

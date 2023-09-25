@@ -2,7 +2,7 @@
 title: "Emacs. Org-mode для написания писем"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-27T15:53:00+03:00
-lastmod: 2023-08-26T18:11:00+03:00
+lastmod: 2023-09-21T15:10:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

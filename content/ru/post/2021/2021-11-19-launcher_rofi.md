@@ -2,11 +2,13 @@
 title: "Запуск приложений. Rofi"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-19T20:00:00+03:00
-lastmod: 2023-08-04T13:10:00+03:00
+lastmod: 2023-09-21T15:14:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "launcher_rofi"
 ---
+
+Запуск приложений. Rofi.
 
 <!--more-->
 

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-09-16T19:51:00+03:00
+lastmod: 2023-09-23T16:00:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -48,6 +48,7 @@ slug: "system-administration"
 ### <span class="section-num">3.1</span> Windows {#windows}
 
 -   [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
+-   [MSYS2. Приложения Unix под Windows]({{< relref "2023-09-23-msys2-unix-applications-windows" >}})
 
 
 ### <span class="section-num">3.2</span> Linux {#linux}
@@ -232,6 +233,11 @@ slug: "system-administration"
 ### <span class="section-num">11.14</span> Наборы программ {#наборы-программ}
 
 -   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
+
+
+### <span class="section-num">11.15</span> Просмотрщики {#просмотрщики}
+
+-   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
 
 
 ## <span class="section-num">12</span> Безопасность {#безопасность}

@@ -2,7 +2,7 @@
 title: "Исследования. Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-08T16:18:00+03:00
-lastmod: 2023-07-31T18:41:00+03:00
+lastmod: 2023-09-24T19:36:00+03:00
 tags: ["research", "network"]
 categories: ["computer-science", "science"]
 draft: false
@@ -19,10 +19,8 @@ slug: "research-mininet"
 ## <span class="section-num">1</span> Что сделано {#что-сделано}
 
 -   Посмотрел научные публикации по mininet:
-    -   <https://github.com/mininet/mininet/wiki/Publications> --- список
-        избранных публикаций на сайте mininet.
-    -   <https://reproducingnetworkresearch.wordpress.com/> --- сайт с
-        материалами по воспроизводимым исследованиям сетей.
+    -   <https://github.com/mininet/mininet/wiki/Publications> --- список избранных публикаций на сайте mininet.
+    -   <https://reproducingnetworkresearch.wordpress.com/> --- сайт с материалами по воспроизводимым исследованиям сетей.
 
 -   Посмотрел дополнительный инструментарий для mininet:
     -   <https://github.com/mininet/mininet/wiki/Mininet-Apps-and-Tools>.
@@ -57,6 +55,8 @@ slug: "research-mininet"
 
 
 ### <span class="section-num">2.2</span> Сравнение натурного эксперимента (mininet), имитационной модели (ns-2, ns-3), математической модели {#сравнение-натурного-эксперимента--mininet--имитационной-модели--ns-2-ns-3--математической-модели}
+
+-   [Исследования. Натурный эксперимент (mininet) и имитационная модель (ns-2, ns-3)]({{< relref "2023-09-24-research-mininet-ns" >}})
 
 
 ## <span class="section-num">3</span> Инструментальные средства {#инструментальные-средства}

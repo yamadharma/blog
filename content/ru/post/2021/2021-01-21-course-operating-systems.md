@@ -2,7 +2,7 @@
 title: "Подготовка курса Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2023-07-30T15:36:00+03:00
+lastmod: 2023-09-21T14:56:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -218,7 +218,7 @@ slug: "course-operating-systems"
 #### <span class="section-num">5.2.3</span> Настройка рабочей среды {#настройка-рабочей-среды}
 
 -   [Лабораторная работа Настройка рабочей среды]({{< relref "2023-07-30-lab-work-environment-setup" >}})
--   Установка и настройка i3wm
+-   Установка и настройка тайлового менеджера окон: i3wm (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) или sway (см. [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})).
 
 
 #### <span class="section-num">5.2.4</span> Продвинутое использование git {#продвинутое-использование-git}

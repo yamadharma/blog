@@ -2,7 +2,7 @@
 title: "Анализатор протоколов Wireshark"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-18T18:29:00+03:00
-lastmod: 2022-08-29T14:43:00+03:00
+lastmod: 2023-09-19T16:42:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false
@@ -187,3 +187,58 @@ slug: "wireshark-protocol-analyzer"
 #### <span class="section-num">2.3.3</span> Установка на Fedora Linux {#установка-на-fedora-linux}
 
 {{< youtube NtAGouu6ncU >}}
+
+
+## <span class="section-num">3</span> Терминальный вариант Wireshark {#терминальный-вариант-wireshark}
+
+
+### <span class="section-num">3.1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://tshark.dev/>
+-   _TShark_ --- анализатор сетевых протоколов, терминальный вариант Wireshark.
+-   Без настроек _TShark_ будет работать так же, как tcpdump.
+-   Будет использовать библиотеку `pcap` для захвата трафика с первого доступного сетевого интерфейса и отображать сводную строку в стандартном выводе для каждого полученного пакета.
+
+
+### <span class="section-num">3.2</span> Пример использования {#пример-использования}
+
+-   Например, чтобы перехватить пакеты через указанный сетевой интерфейс и сохранить результаты, введите:
+    ```shell
+    tshark -i eth0 -w capture-eth0.pcap
+    ```
+-   Цветной вывод текста требуется терминал с поддержкой 24-битного цвета:
+    ```shell
+    tshark -i any --color
+    ```
+-   Показывать только типы файлов, начинающиеся с `test`:
+    ```shell
+    shark -Y 'http.content_type[0:4] == "text"'
+    ```
+-   Показать только _JavaScript_:
+    ```shell
+    tshark -Y tshark -i wlp2s0 -Y 'http.content_type contains "javascript"'
+    ```
+-   Показать все http с content-type="image/(gif|jpeg|png|etc)":
+    ```shell
+    tshark -Y 'http.content_type[0:5] == "image"'
+    ```
+-   Показать все http с content-type="image/gif":
+    ```shell
+    tshark -Y http.content_type == "image/gif"
+    ```
+-   Не показывать контент http, только заголовки:
+    ```shell
+    tshark -Y http.response !=0 || http.request.method != "TRACE"
+    ```
+-   Для сопоставления IP-адресов, заканчивающихся на 255, в блоке подсетей (от 172.16 до 172.31):
+    ```shell
+    tshark -Y string(ip.dst) matches r"^172\.(1[6-9]|2[0-9]|3[0-1])\.[0-9]{1,3}\.255
+    ```
+-   Для сопоставления нечетных номеров кадров:
+    ```shell
+    tshark -Y string(frame.number) matches "[13579]$"
+    ```
+-   Печать http-данных в вик дерева:
+    ```shell
+    tshark -q -i any -Y http -z http,tree
+    ```
