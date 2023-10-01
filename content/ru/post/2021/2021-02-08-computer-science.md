@@ -2,7 +2,7 @@
 title: "Computer science"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-08T20:31:00+03:00
-lastmod: 2023-09-24T17:59:00+03:00
+lastmod: 2023-09-28T16:21:00+03:00
 tags: ["research"]
 categories: ["computer-science", "science"]
 draft: false
@@ -24,3 +24,4 @@ slug: "computer-science"
 ## <span class="section-num">2</span> Разное {#разное}
 
 -   [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
+-   [Научное программирование]({{< relref "2021-08-26-scientific-programming" >}})

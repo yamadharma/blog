@@ -2,7 +2,7 @@
 title: "Web консоль Cockpit"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-18T17:23:00+03:00
-lastmod: 2023-07-11T11:10:00+03:00
+lastmod: 2023-09-28T20:31:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

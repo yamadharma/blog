@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-10T15:06:00+03:00
-lastmod: 2023-07-06T15:05:00+03:00
+lastmod: 2023-09-30T20:00:00+03:00
 tags: ["org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false

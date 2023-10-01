@@ -2,7 +2,7 @@
 title: "Создание сайта на Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-12T20:49:00+03:00
-lastmod: 2022-11-24T11:29:00+03:00
+lastmod: 2023-09-28T16:26:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -206,3 +206,5 @@ slug: "creating-hugo-site"
 
 
 ## <span class="section-num">6</span> Добавление контента {#добавление-контента}
+
+-   [Org-roam. Экспорт в Hugo]({{< relref "2022-11-23-org-roam-hugo-export" >}})

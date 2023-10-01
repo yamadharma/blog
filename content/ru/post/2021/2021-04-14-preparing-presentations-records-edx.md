@@ -1,9 +1,10 @@
 ---
 title: "Подготовка презентации к записи для edX"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-14T10:51:00+03:00
-lastmod: 2021-05-17T12:48:00+03:00
-tags: ["education", "sci-admin"]
-categories: ["сиянс"]
+lastmod: 2023-10-01T14:39:00+03:00
+tags: ["sci-admin", "education"]
+categories: ["science"]
 draft: false
 slug: "preparing-presentations-records-edx"
 ---
@@ -106,13 +107,4 @@ slug: "preparing-presentations-records-edx"
     -   На минуту – нужно подготовить 2 слайда
     -   Можно разделить один нагруженный текст на два
     -   Понятия вводятся только тогда, когда они актуальны и нужны
-    -   Рекомендуется темп речи спикера > 120 слов в минуту
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Курс Математические основы информационной безопасности]({{< relref "2020-10-21-course-mathsec" >}})
-
-<!--listend-->
-
--   [Комиссия Цифровая магистратура]({{< relref "2020-12-14-commission-digitalization-msc" >}})
+    -   Рекомендуется темп речи спикера &gt; 120 слов в минуту

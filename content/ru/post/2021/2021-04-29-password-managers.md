@@ -2,8 +2,8 @@
 title: "Менеджеры паролей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-29T11:56:00+03:00
-lastmod: 2023-07-11T11:15:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-09-29T19:44:00+03:00
+tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "password-managers"

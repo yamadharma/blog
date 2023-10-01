@@ -2,8 +2,8 @@
 title: "Обратные ссылки в Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-02T17:19:00+03:00
-lastmod: 2022-11-24T15:08:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-09-28T16:30:00+03:00
+tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "backlinks-hugo"
@@ -32,27 +32,27 @@ slug: "backlinks-hugo"
     (defun ecf/org-roam--backlinks-list (file)
       (with-temp-buffer
         (if-let* ((backlinks (org-roam--get-backlinks file))
-    	      (grouped-backlinks (--group-by (nth 0 it) backlinks)))
-    	(progn
-    	  (dolist (group grouped-backlinks)
-    	    (let ((file-from (car group))
-    		  (bls (cdr group)))
-    	      (insert (format "- [[file:%s][%s]]\n"
-    			      file-from
-    			      (org-roam-db--get-title file-from)))
-    	      (dolist (backlink bls)
-    		(pcase-let ((`(,file-from _ ,props) backlink))
-    		  (s-trim (s-replace "\n" " " (prin1-to-string (plist-get props :content))))
-    		  (insert "\n\n")))))))
+                  (grouped-backlinks (--group-by (nth 0 it) backlinks)))
+            (progn
+              (dolist (group grouped-backlinks)
+                (let ((file-from (car group))
+                      (bls (cdr group)))
+                  (insert (format "- [[file:%s][%s]]\n"
+                                  file-from
+                                  (org-roam-db--get-title file-from)))
+                  (dolist (backlink bls)
+                    (pcase-let ((`(,file-from _ ,props) backlink))
+                      (s-trim (s-replace "\n" " " (prin1-to-string (plist-get props :content))))
+                      (insert "\n\n")))))))
         (buffer-string)))
 
     (defun ecf/org-export-preprocessor (backend)
       (let (
-    	(links (ecf/org-roam--backlinks-list (buffer-file-name))))
+            (links (ecf/org-roam--backlinks-list (buffer-file-name))))
         (unless (string= links "")
           (save-excursion
-    	(goto-char (point-max))
-    	(insert (concat "\n* Backlinks\n") links)))))
+            (goto-char (point-max))
+            (insert (concat "\n* Backlinks\n") links)))))
 
     ;;; Export backlinks only for ox-hugo
     (defun ecf/org-export-preprocessor-hugo (backend)
@@ -117,7 +117,7 @@ slug: "backlinks-hugo"
         <div class="backlinks">
           <ul>
            {{ range $backlinks }}
-    	  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
            {{ end }}
          </ul>
         </div>
@@ -235,7 +235,7 @@ slug: "backlinks-hugo"
         footnotes_linking = []
 
         for key in footnote_links.keys():
-    	footnotes_linking.append((footnote_links[key], footnote_urls[footnote_links[key]]))
+            footnotes_linking.append((footnote_links[key], footnote_urls[footnote_links[key]]))
 
         return {'regular': links, 'footnotes': footnotes_linking}
 
@@ -247,10 +247,10 @@ slug: "backlinks-hugo"
         newmd = md
 
         for r in links['regular']:
-    	newmd = newmd.replace(r[1], f(r[1]))
+            newmd = newmd.replace(r[1], f(r[1]))
 
         for r in links['footnotes']:
-    	newmd = newmd.replace(r[1], f(r[1]))
+            newmd = newmd.replace(r[1], f(r[1]))
 
         return newmd
 
@@ -266,25 +266,25 @@ slug: "backlinks-hugo"
 
         links = find_md_links(filetext)
         for mdlink in links['regular']:
-    	fulllink = mdlink[1]
-    	isrelref = relref_re.match(fulllink)
-    	if isrelref:
-    	    linkpath = isrelref.group(1)
-    	else:
-    	    # drop extention
-    	    linkpath = os.path.splitext(fulllink)[0]
-    	# add extention
-    	md2org = linkpath + '.org'
-    	orgfile = os.path.expanduser(orgroamdir + md2org)
-    	if os.path.exists(orgfile):
-    	    orgfiletext =  open(orgfile).read()
-    	    export_file_name_text = export_file_name_re.findall(orgfiletext)
-    	    export_file_name_link = export_file_name_text[0].split()
-    	    hugolink = "{{</* relref \"" + export_file_name_link[1] + "\" */>}}"
-    	    if isrelref:
-    		filetext = filetext.replace("{{</* relref \"" + linkpath + "\" */>}}",hugolink)
-    	    else:
-    		filetext = filetext.replace(linkpath + '.md',hugolink)
+            fulllink = mdlink[1]
+            isrelref = relref_re.match(fulllink)
+            if isrelref:
+                linkpath = isrelref.group(1)
+            else:
+                # drop extention
+                linkpath = os.path.splitext(fulllink)[0]
+            # add extention
+            md2org = linkpath + '.org'
+            orgfile = os.path.expanduser(orgroamdir + md2org)
+            if os.path.exists(orgfile):
+                orgfiletext =  open(orgfile).read()
+                export_file_name_text = export_file_name_re.findall(orgfiletext)
+                export_file_name_link = export_file_name_text[0].split()
+                hugolink = "{{</* relref \"" + export_file_name_link[1] + "\" */>}}"
+                if isrelref:
+                    filetext = filetext.replace("{{</* relref \"" + linkpath + "\" */>}}",hugolink)
+                else:
+                    filetext = filetext.replace(linkpath + '.md',hugolink)
 
         fin.close()
         fin = open(filename, "wt")
@@ -296,11 +296,11 @@ slug: "backlinks-hugo"
     all:
 
     fixlinks:
-    	find . -name "*.md" -newer .fixlinks -exec ./org-roam-links '{}' \;
-    	touch .fixlinks
+            find . -name "*.md" -newer .fixlinks -exec ./org-roam-links '{}' \;
+            touch .fixlinks
 
     clean:
-    	find . -name "*~" -delete
+            find . -name "*~" -delete
     ```
 -   Запуск осуществляется следующим образом:
     ```shell

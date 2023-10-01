@@ -2,7 +2,7 @@
 title: "Emacs. Пакет cdlatex"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T15:47:00+03:00
-lastmod: 2022-09-29T16:07:00+03:00
+lastmod: 2023-09-30T20:21:00+03:00
 tags: ["emacs", "tex"]
 categories: ["computer-science"]
 draft: false

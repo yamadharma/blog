@@ -2,7 +2,7 @@
 title: "Установка загрузчика grub"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-19T13:58:00+03:00
-lastmod: 2023-07-11T11:07:00+03:00
+lastmod: 2023-09-29T19:46:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

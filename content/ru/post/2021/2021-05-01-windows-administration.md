@@ -2,7 +2,7 @@
 title: "Администрирование Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2023-08-10T13:21:00+03:00
+lastmod: 2023-10-01T18:55:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -26,6 +26,7 @@ slug: "windows-administration"
 
 -   [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})
 -   [Программное обеспечение, устанавливаемое на Windows]({{< relref "2021-05-01-software-installed-windows" >}})
+-   [Пакетный менеджер для Windows. WinGet]({{< relref "2023-10-01-package-manager-windows-winget" >}})
 
 
 ## <span class="section-num">3</span> Настройка операционной системы {#настройка-операционной-системы}

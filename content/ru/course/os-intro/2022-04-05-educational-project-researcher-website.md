@@ -2,13 +2,14 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2023-08-24T19:06:00+03:00
+lastmod: 2023-09-27T14:35:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 401
 toc: true
 type: "book"
+feedback: false
 slug: "educational-project-researcher-website"
 summary: "Сайт научника"
 menu:
@@ -106,9 +107,9 @@ menu:
 #### <span class="section-num">4.1.1</span> Генератор статических сайтов {#генератор-статических-сайтов}
 
 -   Для реализации сайта используется генератор статических сайтов _Hugo_.
+-   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
 -   Сайт: <https://gohugo.io/>
 -   Репозиторий: <https://github.com/gohugoio/hugo>
--   [Генератор статических сайтов Hugo]({{< relref "2020-12-07-hugo-site-generator" >}})
 
 
 ### <span class="section-num">4.2</span> Шаблон для сайта {#шаблон-для-сайта}

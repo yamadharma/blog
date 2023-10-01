@@ -2,7 +2,7 @@
 title: "Org-mode. Презентации. Beamer"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T20:46:00+03:00
-lastmod: 2023-07-06T15:02:00+03:00
+lastmod: 2023-09-30T20:06:00+03:00
 tags: ["emacs", "tex", "org-mode"]
 categories: ["computer-science"]
 draft: false

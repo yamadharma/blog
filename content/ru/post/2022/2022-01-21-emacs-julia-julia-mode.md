@@ -2,8 +2,8 @@
 title: "Emacs. Julia. Julia-mode"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T17:26:00+03:00
-lastmod: 2023-08-26T13:17:00+03:00
-tags: ["emacs", "programming", "julia"]
+lastmod: 2023-09-29T19:49:00+03:00
+tags: ["julia", "emacs", "programming"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-julia-julia-mode"

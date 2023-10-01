@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2023-07-29T19:59:00+03:00
+lastmod: 2023-09-28T16:35:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -508,11 +508,11 @@ menu:
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Robbins A. Bash pocket reference / A.  Robbins. – O’Reilly Media, 2016. – 156 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Colvin H. Virtualbox: An ultimate guide book on virtualization with virtualbox / H.  Colvin. – CreateSpace Independent Publishing Platform, 2015. – 70 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Dash P. Getting started with oracle vm virtualbox / P.  Dash. – Packt Publishing Ltd, 2013. – 86 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Vugt S. van. Red hat rhcsa/rhce 7 cert guide : Red hat enterprise linux 7 (ex200 and ex300) : Certification guide / S.  van Vugt. – Pearson IT Certification, 2016. – 1008 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Колисниченко Д. Н. Самоучитель системного администратора Linux : Системный администратор / Д. Н.  Колисниченко. – СПб. : БХВ-Петербург, 2011. – 544 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Немет Э. Unix и Linux: руководство системного администратора / Э.  Немет, Г.  Снайдер, Т. Р.  Хейн, Б.  Уэйли. – 4-е изд. – Вильямс, 2014. – 1312 pp.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Робачевский А. Операционная система unix / А.  Робачевский, С.  Немнюгин, О.  Стесик. – 2-е изд. – Санкт-Петербург : БХВ-Петербург, 2010. – 656 pp.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Robbins A. Bash pocket reference / A.  Robbins. – O’Reilly Media, 2016. – 156 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Colvin H. Virtualbox: An ultimate guide book on virtualization with virtualbox / H.  Colvin. – CreateSpace Independent Publishing Platform, 2015. – 70 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Dash P. Getting started with oracle vm virtualbox / P.  Dash. – Packt Publishing Ltd, 2013. – 86 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Vugt S. van. Red hat rhcsa/rhce 7 cert guide : Red hat enterprise linux 7 (ex200 and ex300) : Certification guide / S.  van Vugt. – Pearson IT Certification, 2016. – 1008 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Колисниченко Д. Н. Самоучитель системного администратора Linux : Системный администратор / Д. Н.  Колисниченко. – СПб. : БХВ-Петербург, 2011. – 544 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Немет Э. Unix и Linux: руководство системного администратора / Э.  Немет, Г.  Снайдер, Т. Р.  Хейн, Б.  Уэйли. – 4-е изд. – Вильямс, 2014. – 1312 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Робачевский А. Операционная система unix / А.  Робачевский, С.  Немнюгин, О.  Стесик. – 2-е изд. – Санкт-Петербург : БХВ-Петербург, 2010. – 656 сс.</div>
 </div>

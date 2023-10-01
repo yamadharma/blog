@@ -2,7 +2,7 @@
 title: "Алгоритм Random early detection"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-12T16:33:00+03:00
-lastmod: 2023-09-18T17:07:00+03:00
+lastmod: 2023-09-28T16:21:00+03:00
 tags: ["network", "research"]
 categories: ["computer-science", "science"]
 draft: false

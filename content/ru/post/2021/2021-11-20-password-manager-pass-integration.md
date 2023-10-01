@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2023-08-04T13:12:00+03:00
+lastmod: 2023-10-01T18:39:00+03:00
 tags: ["security"]
 categories: ["computer-science"]
 draft: false
@@ -19,17 +19,36 @@ slug: "password-manager-pass-integration"
 ## <span class="section-num">1</span> Launchers {#launchers}
 
 
-### <span class="section-num">1.1</span> rofi-pass {#rofi-pass}
+### <span class="section-num">1.1</span> Linux {#linux}
+
+
+#### <span class="section-num">1.1.1</span> rofi-pass {#rofi-pass}
 
 -   [rofi-pass]({{< relref "2022-04-03-rofi-pass" >}})
 -   Интеграция _pass_ с _rofi_ (см. [Запуск приложений. Rofi]({{< relref "2021-11-19-launcher_rofi" >}})).
 -   Работает в X11.
 
 
-### <span class="section-num">1.2</span> tessen {#tessen}
+#### <span class="section-num">1.1.2</span> tessen {#tessen}
 
 -   Репозиторий: <https://github.com/ayushnix/tessen>
 -   Работает в Wayland.
+
+
+### <span class="section-num">1.2</span> Windows {#windows}
+
+
+#### <span class="section-num">1.2.1</span> pass-winmenu {#pass-winmenu}
+
+-   Репозиторий: <https://github.com/geluk/pass-winmenu>
+-   Простой и удобный менеджер паролей для Windows.
+-   Содержит собственную реализацию _pass_.
+-   Установка (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+    ```shell
+    choco install pass-winmenu
+    ```
+
+    -   Страница: <https://chocolatey.org/packages/pass-winmenu>
 
 
 ## <span class="section-num">2</span> Настройка интерфейса с броузером {#настройка-интерфейса-с-броузером}

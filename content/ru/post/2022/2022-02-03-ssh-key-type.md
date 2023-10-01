@@ -2,7 +2,7 @@
 title: "Тип ключа ssh"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-03T14:48:00+03:00
-lastmod: 2023-07-11T11:15:00+03:00
+lastmod: 2023-09-29T19:51:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false

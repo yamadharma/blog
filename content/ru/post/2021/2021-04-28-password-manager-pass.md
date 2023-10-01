@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2023-08-24T20:36:00+03:00
+lastmod: 2023-10-01T18:35:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -56,7 +56,7 @@ slug: "password-manager-pass"
 ## <span class="section-num">3</span> Реализации {#реализации}
 
 
-### <span class="section-num">3.1</span> Утилиты командной строки: {#утилиты-командной-строки}
+### <span class="section-num">3.1</span> Утилиты командной строки {#утилиты-командной-строки}
 
 -   На данный момент существует 2 основных реализации:
     -   `pass` --- классическая реализация в виде shell-скриптов (<https://www.passwordstore.org/>);
@@ -64,10 +64,24 @@ slug: "password-manager-pass"
 -   Дальше в тексте будет использоваться программа `pass`, но всё то же самое можно сделать с помощью программы `gopass`.
 
 
-### <span class="section-num">3.2</span> Графические интерфейсы: {#графические-интерфейсы}
+### <span class="section-num">3.2</span> Графические интерфейсы {#графические-интерфейсы}
+
+
+#### <span class="section-num">3.2.1</span> qtpass {#qtpass}
 
 -   `qtpass` --- может работать как графический интерфейс к `pass`, так и как самостоятельная программа. В настройках можно переключаться между использованием `pass` и `gnupg`.
+
+
+#### <span class="section-num">3.2.2</span> gopass-ui {#gopass-ui}
+
 -   `gopass-ui` --- интерфейс к `gopass`.
+
+
+#### <span class="section-num">3.2.3</span> webpass {#webpass}
+
+-   Репозиторий: <https://github.com/emersion/webpass>
+-   Веб-интерфейс к pass.
+-   Написано на golang.
 
 
 ### <span class="section-num">3.3</span> Приложения для Android {#приложения-для-android}
@@ -344,6 +358,17 @@ slug: "password-manager-pass"
         ```shell
         ./lastpass2pass.rb lastpass_export.csv
         ```
+
+
+### <span class="section-num">7.3</span> Экспорт паролей {#экспорт-паролей}
+
+
+#### <span class="section-num">7.3.1</span> pass2csv {#pass2csv}
+
+-   Репозиторий: <https://github.com/reinefjord/pass2csv>
+-   Сайт: <https://pypi.org/project/pass2csv/>
+-   Экспортирует хранилище паролей pass в _csv_.
+-   Поддерживает задание шаблонов экспорта.
 
 
 ## <span class="section-num">8</span> Дополнительные возможности {#дополнительные-возможности}

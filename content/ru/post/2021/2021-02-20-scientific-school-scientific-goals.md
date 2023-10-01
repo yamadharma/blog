@@ -1,7 +1,8 @@
 ---
 title: "Научная школа. Научные задачи"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T17:56:00+03:00
-lastmod: 2021-02-21T20:03:00+03:00
+lastmod: 2023-09-30T20:23:00+03:00
 tags: ["research", "sci-admin"]
 categories: ["сиянс"]
 draft: false
@@ -31,8 +32,3 @@ slug: "scientific-school-scientific-goals"
 -   Миметические разностные схемы, отображающие непрерывные модели в дискретные с сохранением максимального количества свойств.
 -   Аналитические вычисление, использование пакетов компьютерной алгебры.
 -   Аналитико-численные вычисления.
-
-
-## <span class="section-num">2</span> Backlinks {#backlinks}
-
--   [Научная школа Математическое моделирование]({{< relref "2021-02-20-scientific-school-mathematical-modeling" >}})

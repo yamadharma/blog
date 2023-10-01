@@ -2,10 +2,14 @@
 title: "Машинное обучение в задачах электродинамики"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-20T11:52:00+03:00
-lastmod: 2023-09-20T16:40:00+03:00
+lastmod: 2023-09-25T12:16:00+03:00
+tags: ["modeling"]
+categories: ["science"]
 draft: false
 slug: "machine-learning-electrodynamics-problems"
 ---
+
+Машинное обучение в задачах электродинамики.
 
 <!--more-->
 

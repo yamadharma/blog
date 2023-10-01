@@ -2,7 +2,7 @@
 title: "Языки разметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-14T18:02:00+03:00
-lastmod: 2023-08-27T18:25:00+03:00
+lastmod: 2023-09-26T16:16:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false

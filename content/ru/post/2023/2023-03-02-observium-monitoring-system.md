@@ -2,7 +2,7 @@
 title: "Система мониторинга Observium"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-02T15:46:00+03:00
-lastmod: 2023-03-02T19:37:00+03:00
+lastmod: 2023-09-30T19:45:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

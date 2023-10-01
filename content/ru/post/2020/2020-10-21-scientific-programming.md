@@ -2,7 +2,7 @@
 title: "Подготовка курса Научное программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-21T18:08:00+03:00
-lastmod: 2023-09-24T16:39:00+03:00
+lastmod: 2023-09-28T16:19:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false

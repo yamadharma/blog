@@ -2,7 +2,8 @@
 title: "Смена лицензии HashiCorp"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-21T14:23:00+03:00
-lastmod: 2023-09-21T14:44:00+03:00
+lastmod: 2023-09-25T12:18:00+03:00
+categories: ["computer-science"]
 draft: false
 slug: "hashicorp-changes-license"
 ---

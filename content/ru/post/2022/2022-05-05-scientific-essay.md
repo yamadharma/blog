@@ -2,7 +2,7 @@
 title: "Научное эссе"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-05T17:57:00+03:00
-lastmod: 2022-05-05T18:21:00+03:00
+lastmod: 2023-09-28T16:23:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

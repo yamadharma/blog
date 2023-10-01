@@ -2,8 +2,8 @@
 title: "VPN. L2TP over IPsec. Подключение клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-05T13:35:00+03:00
-lastmod: 2023-03-20T14:57:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-09-27T13:47:00+03:00
+tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "l2tp-ipsec-vpn-client-setup"

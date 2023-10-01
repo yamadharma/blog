@@ -2,7 +2,7 @@
 title: "Регламент доступа к суперкомпьютеру РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T14:37:00+03:00
-lastmod: 2023-07-11T11:12:00+03:00
+lastmod: 2023-09-28T20:32:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

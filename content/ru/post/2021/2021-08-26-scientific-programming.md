@@ -2,7 +2,7 @@
 title: "Научное программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-26T16:44:00+03:00
-lastmod: 2023-09-24T17:55:00+03:00
+lastmod: 2023-09-28T16:20:00+03:00
 tags: ["programming"]
 categories: ["science", "computer-science"]
 draft: false

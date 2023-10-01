@@ -2,9 +2,9 @@
 title: "Комиссия по развитию электронной образовательной среды РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-16T10:14:00+03:00
-lastmod: 2023-07-06T14:54:00+03:00
-tags: ["sci-admin"]
-categories: ["сиянс"]
+lastmod: 2023-09-30T20:13:00+03:00
+tags: ["rudn", "education", "sci-admin"]
+categories: ["job", "science"]
 draft: false
 slug: "commission-development-electronic-educational-environment"
 ---
@@ -16,7 +16,7 @@ slug: "commission-development-electronic-educational-environment"
 {{< toc >}}
 
 
-## Описание {#описание}
+## <span class="section-num">1</span> Описание {#описание}
 
 Комиссия появилась во второй половине 2020 года.
 Цели комиссии темны и непонятны (по крайней мере для меня).
@@ -24,10 +24,10 @@ slug: "commission-development-electronic-educational-environment"
 В рамках данной комиссии получено поручение о создании цифровой магистратуры на факультете физ-мат (см. [Комиссия Цифровая магистратура]({{< relref "2020-12-14-commission-digitalization-msc" >}}))
 
 
-## Выступления на комиссии {#выступления-на-комиссии}
+## <span class="section-num">2</span> Выступления на комиссии {#выступления-на-комиссии}
 
 
-### <span class="timestamp-wrapper"><span class="timestamp">[2020-12-22 Вт] </span></span> Применение виртуальной реальности в образовательном процессе {#применение-виртуальной-реальности-в-образовательном-процессе}
+### <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2020-12-22 Вт] </span></span> Применение виртуальной реальности в образовательном процессе {#применение-виртуальной-реальности-в-образовательном-процессе}
 
 На 2020-12-22 назначено выступление по применению виртуальной реальности в образовательном процессе [Применение VR и AR в образовании]({{< relref "2020-11-02-vr-ar-in-education" >}})
 Заседание перенесено на январь.

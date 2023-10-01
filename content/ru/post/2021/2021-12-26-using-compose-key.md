@@ -2,7 +2,7 @@
 title: "Ввод с помощью Compose"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-26T13:33:00+03:00
-lastmod: 2023-07-11T11:07:00+03:00
+lastmod: 2023-09-28T20:35:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "using-compose-key"

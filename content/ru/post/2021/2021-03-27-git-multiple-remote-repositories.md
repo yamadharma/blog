@@ -2,7 +2,7 @@
 title: "git. Несколько удалённых репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2023-09-24T17:49:00+03:00
+lastmod: 2023-09-28T16:15:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false

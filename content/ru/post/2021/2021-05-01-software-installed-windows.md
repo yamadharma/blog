@@ -2,8 +2,8 @@
 title: "Программное обеспечение, устанавливаемое на Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:38:00+03:00
-lastmod: 2023-07-06T14:52:00+03:00
-tags: ["windows", "education"]
+lastmod: 2023-09-30T20:26:00+03:00
+tags: ["education", "windows"]
 categories: ["computer-science"]
 draft: false
 slug: "software-installed-windows"

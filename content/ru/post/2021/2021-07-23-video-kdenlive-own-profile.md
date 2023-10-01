@@ -2,7 +2,7 @@
 title: "Видео. KDEnlive. Собственный профиль"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-23T19:04:00+03:00
-lastmod: 2021-07-23T19:25:00+03:00
+lastmod: 2023-09-30T19:48:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-kdenlive-own-profile"

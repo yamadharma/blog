@@ -2,7 +2,7 @@
 title: "DNS. Bind. DNSSEC"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-16T19:52:00+03:00
-lastmod: 2023-09-16T21:44:00+03:00
+lastmod: 2023-09-26T11:59:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -46,7 +46,7 @@ slug: "dns-bind-dnssec"
 
 -   Создаём мастер-ключей (`KSK`):
     ```shell
-    dnssec-keygen -f KSK -a ECDSAP256SHA256 -b 4096 -n ZONE -r /dev/urandom example.com
+    dnssec-keygen -f KSK -a ECDSAP256SHA256 -b 4096 -n ZONE example.com
     ```
 
     -   `-f KSK`: создаётся мастер-ключ;
@@ -58,7 +58,7 @@ slug: "dns-bind-dnssec"
 
 -   Создаём ключ для зоны (`ZSK`):
     ```shell
-    dnssec-keygen -a ECDSAP256SHA256 -b 2048 -n ZONE -r /dev/urandom example.com
+    dnssec-keygen -a ECDSAP256SHA256 -b 2048 -n ZONE example.com
     ```
 -   Задаём владельца для сгенерированных файлов:
     -   Red Hat:
@@ -69,6 +69,15 @@ slug: "dns-bind-dnssec"
         ```shell
         chown -R bind:bind /etc/bind/keys
         ```
+
+
+### <span class="section-num">2.3</span> Права доступа {#права-доступа}
+
+-   Поправим права доступа:
+    ```shell
+    chown -R named:named /var/named/keys
+    chmod 640 /var/named/keys/*
+    ```
 
 
 ## <span class="section-num">3</span> Подпись зоны {#подпись-зоны}

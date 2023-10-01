@@ -2,7 +2,7 @@
 title: "MinGW. Приложения Unix под Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-22T13:22:00+03:00
-lastmod: 2023-09-23T15:53:00+03:00
+lastmod: 2023-09-28T16:19:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false

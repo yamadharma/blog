@@ -2,7 +2,7 @@
 title: "Disciples II. Моды. Мод Норвежской сёмги"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-17T09:39:00+03:00
-lastmod: 2022-06-18T20:40:00+03:00
+lastmod: 2023-09-30T20:09:00+03:00
 tags: ["disciples"]
 categories: ["games"]
 draft: false

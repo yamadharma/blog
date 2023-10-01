@@ -2,8 +2,8 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2023-06-21T18:40:00+03:00
-tags: ["gentoo", "sysadmin"]
+lastmod: 2023-10-01T14:32:00+03:00
+tags: ["wayland", "gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "migration-sway"
@@ -32,16 +32,15 @@ emerge -v gui-wm/sway
 
 ### <span class="section-num">2.1</span> Репозитории `gentoo` {#репозитории-gentoo}
 
-Программы для Wayland есть как в основном репозитории, так и
-дополнительных. Хочу порекомендовать для просмотра следующие
-репозитории:
-
--   [wayland-desktop](https://github.com/epsilon-0/wayland-desktop)
+-   Программы для Wayland есть как в основном репозитории, так и дополнительных.
+-   Хочу порекомендовать для просмотра следующие репозитории (см. [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
+    -   [wayland-desktop](https://github.com/epsilon-0/wayland-desktop)
 
 <!--listend-->
 
 ```shell
-layman -a wayland-desktop
+eselect repository enable wayland-desktop
+emaint sync --repo wayland-desktop
 ```
 
 -   [guru](https://wiki.gentoo.org/wiki/Project:GURU)
@@ -49,7 +48,9 @@ layman -a wayland-desktop
 <!--listend-->
 
 ```shell
-layman -a guru
+eselect repository enable guru
+emaint sync --repo guru
+
 ```
 
 
@@ -489,3 +490,25 @@ $ wl-paste --list-types | wl-copy
 
 -   Qt по умолчанию использует бэкэнд X11 вместо собственного бэкэнда Wayland. Чтобы использовать бэкэнд Wayland, установите `QT_QPA_PLATFORM=wayland`.
 -   Qt прорисовает оформление окон на стороне клиента. Чтобы отключить это, установите `QT_WAYLAND_DISABLE_WINDOWDECORATION="1"`.
+
+
+## <span class="section-num">7</span> Сводная таблица клавиатурных сочетаний {#сводная-таблица-клавиатурных-сочетаний}
+
+
+### <span class="section-num">7.1</span> Режимы и управление окнами {#режимы-и-управление-окнами}
+
+| Клавиатурная комбинация                         | Описание                                                                                    |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------|
+| `Mod+shift+space`                               | Переключение окна в плавающий режим и обратно                                               |
+| `Mod+shift+minus`                               | Отправка окна в блокнот (scratchpad)                                                        |
+| `Mod+minus`                                     | Сворачивание, вызов окна в блокноте (scratchpad)                                            |
+| `Mod+b`                                         | Горизонтальный сплит                                                                        |
+| `Mod+v`                                         | Вертикальный сплит                                                                          |
+| `Mod+e`                                         | Переключение сплита                                                                         |
+| `Mod+s`                                         | Режим стека                                                                                 |
+| `Mod+w`                                         | Режим вкладок                                                                               |
+| `Mod+r`                                         | И изменение размеров, используем `h`, `j`, `k` , `l` или ←,→,↑,↓, выход из режима --- `Esc` |
+| `Mod+{←,→,↑,↓}` или `Mod+{h,j,k,l}`             | Перемещение по окнам                                                                        |
+| `Mod+shift+{←,→,↑,↓}` или `Mod+shift+{h,j,k,l}` | Меняет позицию окна                                                                         |
+| `Mod+{1-9,0}`                                   | Переход на тег                                                                              |
+| `Mod+shift+{1-9,0}`                             | Отправка окна на тег                                                                        |

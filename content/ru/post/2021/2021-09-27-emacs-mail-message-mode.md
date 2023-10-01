@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Message-mode"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-27T19:00:00+03:00
-lastmod: 2021-12-27T15:42:00+03:00
+lastmod: 2023-09-30T20:18:00+03:00
 tags: ["sysadmin", "emacs"]
 categories: ["computer-science"]
 draft: false

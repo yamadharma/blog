@@ -2,7 +2,7 @@
 title: "Научное программное обеспечение"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-25T12:10:00+03:00
-lastmod: 2023-09-24T17:54:00+03:00
+lastmod: 2023-09-25T12:22:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science", "science"]
 draft: false

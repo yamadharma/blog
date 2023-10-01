@@ -2,7 +2,7 @@
 title: "Принципы работы на суперкомпьютере"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-22T10:51:00+03:00
-lastmod: 2023-07-11T11:12:00+03:00
+lastmod: 2023-09-29T19:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

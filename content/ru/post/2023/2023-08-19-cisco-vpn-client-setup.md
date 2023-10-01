@@ -2,7 +2,7 @@
 title: "Подключение к Cisco VPN"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-19T13:34:00+03:00
-lastmod: 2023-08-19T13:58:00+03:00
+lastmod: 2023-09-29T19:33:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

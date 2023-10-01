@@ -2,7 +2,7 @@
 title: "Исследования. Mininet"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-08T16:18:00+03:00
-lastmod: 2023-09-24T19:36:00+03:00
+lastmod: 2023-09-28T16:21:00+03:00
 tags: ["research", "network"]
 categories: ["computer-science", "science"]
 draft: false

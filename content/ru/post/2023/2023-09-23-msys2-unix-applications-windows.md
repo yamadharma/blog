@@ -2,7 +2,7 @@
 title: "MSYS2. Приложения Unix под Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-23T15:55:00+03:00
-lastmod: 2023-09-23T18:41:00+03:00
+lastmod: 2023-09-28T16:20:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false

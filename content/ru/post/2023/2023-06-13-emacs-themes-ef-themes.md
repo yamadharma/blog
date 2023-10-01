@@ -2,7 +2,7 @@
 title: "Emacs. Темы. Ef-themes"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-13T15:38:00+03:00
-lastmod: 2023-06-14T19:04:00+03:00
+lastmod: 2023-09-28T16:16:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

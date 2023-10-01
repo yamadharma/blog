@@ -2,7 +2,8 @@
 title: "Emacs. Основы. Кодировка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T12:22:00+03:00
-lastmod: 2021-08-24T17:04:00+03:00
+lastmod: 2023-09-30T20:20:00+03:00
+tags: ["emacs"]
 categories: ["blog"]
 draft: false
 slug: "emacs-basics-encoding"

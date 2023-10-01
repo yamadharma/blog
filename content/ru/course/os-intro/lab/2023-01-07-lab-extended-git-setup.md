@@ -2,7 +2,7 @@
 title: "Лабораторная работа Продвинутое использование git"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-07T17:50:00+03:00
-lastmod: 2023-07-30T20:37:00+03:00
+lastmod: 2023-09-25T13:24:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,8 @@ menu:
     parent: "os-intro-lab"
     weight: 220
 ---
+
+Лабораторная работа Продвинутое использование git.
 
 <!--more-->
 

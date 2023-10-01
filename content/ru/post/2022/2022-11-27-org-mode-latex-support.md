@@ -2,12 +2,14 @@
 title: "Org-mode. Поддержка LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-27T19:14:00+03:00
-lastmod: 2023-07-06T15:03:00+03:00
+lastmod: 2023-09-30T19:53:00+03:00
 tags: ["emacs", "org-mode", "tex"]
 categories: ["computer-science"]
 draft: false
 slug: "org-mode-latex-support"
 ---
+
+Org-mode. Поддержка LaTeX.
 
 <!--more-->
 

@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-09-19T15:09:00+03:00
+lastmod: 2023-09-27T16:45:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -401,4 +401,4 @@ slug: "rockylinux-server-installation"
 ### <span class="section-num">4.7</span> DNS сервера {#dns-сервера}
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
--
+-   [DNS. Bind]({{< relref "2023-09-19-dns-bind" >}})
