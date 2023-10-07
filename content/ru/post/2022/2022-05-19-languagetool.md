@@ -2,7 +2,7 @@
 title: "LanguageTool"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-19T19:35:00+03:00
-lastmod: 2023-09-30T20:03:00+03:00
+lastmod: 2023-10-05T20:03:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "languagetool"

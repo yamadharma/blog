@@ -2,7 +2,7 @@
 title: "Курс МОЗИиИБ. Лекции"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-11T18:32:00+03:00
-lastmod: 2021-10-19T19:05:00+03:00
+lastmod: 2023-10-06T20:20:00+03:00
 tags: ["education"]
 categories: ["computer-science", "сиянс"]
 draft: false

@@ -2,15 +2,15 @@
 title: "Программное средство Cisco Packet Tracer"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-18T20:39:00+03:00
-lastmod: 2022-05-07T15:44:00+03:00
-tags: ["network", "education"]
+lastmod: 2023-10-06T20:05:00+03:00
+tags: ["cisco", "network", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "cisco-packet-tracer-software"
 ---
 
-Симулятор сети _Cisco Packet Tracer_, выпускаемый фирмой Cisco Systems.
-Позволяет делать работоспособные модели сети, настраивать (командами Cisco IOS) маршрутизаторы и коммутаторы, взаимодействовать между несколькими пользователями (через облако).
+-   Симулятор сети _Cisco Packet Tracer_, выпускаемый фирмой Cisco Systems.
+-   Позволяет делать работоспособные модели сети, настраивать (командами Cisco IOS) маршрутизаторы и коммутаторы, взаимодействовать между несколькими пользователями (через облако).
 
 <!--more-->
 

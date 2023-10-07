@@ -2,14 +2,14 @@
 title: "Шаблон конференции для CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T20:06:00+03:00
-lastmod: 2021-09-18T21:26:00+03:00
+lastmod: 2023-10-06T17:09:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
 slug: "conference-template-ceur-ws"
 ---
 
-Подготовка материалов конференции для публикации в [репозитории конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}}).
+Подготовка материалов конференции для публикации в репозитории конференций CEUR-WS (см. [Репозиторий конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}})).
 
 <!--more-->
 
@@ -41,7 +41,6 @@ slug: "conference-template-ceur-ws"
 ### <span class="section-num">4.1</span> Быстрое действие {#быстрое-действие}
 
 -   Для получения результирующих двух архивов (самого сборника и авторских соглашений) следует выполнить:
-
     ```shell
     make
     ```
@@ -50,7 +49,6 @@ slug: "conference-template-ceur-ws"
 ### <span class="section-num">4.2</span> Пояснение работы по шагам {#пояснение-работы-по-шагам}
 
 -   Компиляция всех статей с автоматической расстановкой номеров страниц:
-
     ```shell
     make compile
     ```

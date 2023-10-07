@@ -2,12 +2,13 @@
 title: "Администрирование локальных сетей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-31T20:06:00+03:00
-lastmod: 2022-11-27T13:08:00+03:00
+lastmod: 2023-10-06T20:26:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
-toc: false
-type: "book"
+slug: "administration-local-networks"
+summary: "Администрирование локальных сетей"
+linktitle: "Администрирование локальных сетей"
 menu:
   "net-admin":
     weight: 0

@@ -2,15 +2,15 @@
 title: "Диаграммы. Mermaid"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2023-07-04T11:11:00+03:00
+lastmod: 2023-10-06T20:41:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
 slug: "diagrams-mermaid"
 ---
 
-Язык рисования диаграмм Mermaid.
-Mermaid реализует концепцию _Diagram as Code_.
+-   Язык рисования диаграмм Mermaid.
+-   Mermaid реализует концепцию _Diagram as Code_.
 
 <!--more-->
 

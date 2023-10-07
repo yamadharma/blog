@@ -1,8 +1,8 @@
 ---
-title: "Курс Моделирование сетей передачи данных"
+title: "Подготовка курса Моделирование сетей передачи данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-24T15:01:00+03:00
-lastmod: 2022-11-23T18:55:00+03:00
+lastmod: 2023-10-06T20:29:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science", "science"]
 draft: false

@@ -2,8 +2,8 @@
 title: "Cisco. Защита от широковещательного шторма"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T11:48:00+03:00
-lastmod: 2021-12-04T16:15:00+03:00
-tags: ["network", "sysadmin"]
+lastmod: 2023-10-06T17:07:00+03:00
+tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "cisco-storm-control"
@@ -38,7 +38,6 @@ slug: "cisco-storm-control"
 #### <span class="section-num">2.1.1</span> Однопороговый вариант {#однопороговый-вариант}
 
 -   Задаётся максимальный порог и действие по достижении этого порога:
-
     ```shell
     (config)# int f0/1
     (config-if)# storm-control broadcast level 30.00
@@ -52,7 +51,6 @@ slug: "cisco-storm-control"
 -   Указывается два порога.
 -   При достижении первого порога порт будет отключаться.
 -   При падении уровня трафика до второго порога порт будет включаться:
-
     ```shell
     (config-if)# storm-control broadcast level 30.00 10.00
     (config-if)# storm-control multicast level 30.00 10.00
@@ -63,7 +61,6 @@ slug: "cisco-storm-control"
 ### <span class="section-num">2.2</span> Реакция на шторм {#реакция-на-шторм}
 
 -   Необходимо задать действие при возникновении шторма
-
     ```shell
     (config)# int f0/1
     (config-if)# storm-control action shutdown
@@ -71,7 +68,6 @@ slug: "cisco-storm-control"
 -   Вторая команда указывает на то, какое действие должно быть совершено, когда лимит будет достигнут. В данном случае мы отключаем порт (`shutdown`).
 -   Если действие не указывать, то свитч будет просто фильтровать трафик, превышающий порог, и не отправлять никаких оповещений.
 -   Можно включить SNMP-трапы и сообщения в Syslog:
-
     ```shell
     (config-if)# storm-control action trap
     ```
@@ -80,7 +76,6 @@ slug: "cisco-storm-control"
 ### <span class="section-num">2.3</span> Восстановление портов {#восстановление-портов}
 
 -   Чтобы коммутатор автоматически восстанавливал порт через некоторое время после отключения, необходимо в глобальной конфигурации задать:
-
     ```shell
     (config)# errdisable recovery cause storm-control
     (config)# errdisable recovery interval 180
@@ -93,7 +88,6 @@ slug: "cisco-storm-control"
 -   У коммутаторов Cisco есть также штатное средство обнаружения петель, основанное на периодической отправке keepalive-сообщений.
 -   Эта опция обычно включена по умолчанию, и в случае срабатывания порт отключается.
 -   Для механизма keepalive можно также настроить автоматическое включение интерфейса:
-
     ```shell
     (config)# errdisable recovery cause loopback
     ```
@@ -102,7 +96,6 @@ slug: "cisco-storm-control"
 ### <span class="section-num">2.5</span> Настройка на все порты сразу {#настройка-на-все-порты-сразу}
 
 -   Для настройки параметров всех портов сразу используйте _диапазон портов_:
-
     ```shell
     (config)# interface range f0/1 - 24
     (config-if-range)# storm-control broadcast level 30.00 10.00

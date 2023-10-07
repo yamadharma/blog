@@ -2,7 +2,7 @@
 title: "Контроллер Cisco WLC. Обновление программного обеспечения"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-01T19:37:00+03:00
-lastmod: 2023-10-01T20:09:00+03:00
+lastmod: 2023-10-02T19:48:00+03:00
 tags: ["network", "sysadmin", "cisco"]
 categories: ["computer-science"]
 draft: false
@@ -103,7 +103,7 @@ slug: "cisco-wlc-firmware-upgrade"
     -   `save-config` указывает контроллерам сохранить текущую конфигурацию в загрузочную конфигурацию перед перезагрузкой, гарантируя, что все ожидающие изменения будут записаны до перезагрузки.
 
 
-### <span class="section-num">2.6</span> Удаление основного или вторичного образа из WLC {#удаление-основного-или-вторичного-образа-из-wlc}
+### <span class="section-num">2.6</span> Выбор образа для загрузки {#выбор-образа-для-загрузки}
 
 -   По умолчанию на контроллере WLC поддерживаются два образа: основной и резервный образы.
 -   Основной образ --- это активный образ, используемый контроллером WLC.
@@ -113,8 +113,24 @@ slug: "cisco-wlc-firmware-upgrade"
     ```shell
     show boot
     ```
--   Активный образ, используемый контроллером WLC при загрузке, можно изменить вручную:
+-   Выбрать какой образ будет активным (используемым контроллером WLC при загрузке):
     ```shell
-    config boot <primary/backup> <имя образа>
+    config boot <primary/backup>
     ```
 -   Чтобы контроллер WLC использовал новый активный образ, необходимо сохранить и перезагрузить его конфигурацию.
+
+
+## <span class="section-num">3</span> Проблемы {#проблемы}
+
+
+### <span class="section-num">3.1</span> Cisco Aironet 1700 {#cisco-aironet-1700}
+
+-   Меняли прошивку WLC c 8.0.115 на 8.3.150.
+-   После обновления точки доступа не скачивали образ.
+-   Писали, что не поддерживают и прочую ерунду.
+-   Нашли в сети следующее:
+
+    > Disable Network Time Protocol (NTP) on the WLC and manually set the WLC date/time to a date before December 2, 2022. The Cisco IOS AP will then be able to download and validate the image, install the new image, and join the controller. Once the AP has joined the controller, NTP can be re-enabled on the controller to assume the correct date and time.
+-   Отключили NTP.
+-   Откатили даты назад.
+-   Точки доступа стали загружать образ.

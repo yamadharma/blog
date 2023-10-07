@@ -2,8 +2,8 @@
 title: "Средства моделирования сетей для целей обучения"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-06T18:59:00+03:00
-lastmod: 2022-05-28T15:51:00+03:00
-tags: ["network", "education"]
+lastmod: 2023-10-06T17:02:00+03:00
+tags: ["modeling", "network", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "network-modeling-tools"

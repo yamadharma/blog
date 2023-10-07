@@ -2,12 +2,14 @@
 title: "Редактирование материалов в CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-07T18:57:00+03:00
-lastmod: 2021-10-08T18:37:00+03:00
+lastmod: 2023-10-06T16:57:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
 slug: "editing-submissions-ceur-ws"
 ---
+
+Редактирование материалов в CEUR-WS.
 
 <!--more-->
 
@@ -36,17 +38,14 @@ slug: "editing-submissions-ceur-ws"
 
 -   [ ] Материал размещён на сайте
     -   [ ] Создать новый каталог и перейти в него
-
         ```shell
         DIR=`new-vol-dir`; mkdir `new-vol-dir`; cd $DIR; echo $DIR
         ```
     -   [ ] Исправить права доступа
-
         ```shell
         chmod 644 *
         ```
     -   [ ] Заменить шаблоны на номер тома в файле `index.html`:
-
         ```shell
         set-vol-dir
         ```

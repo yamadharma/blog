@@ -2,13 +2,14 @@
 title: "GNS3 на Virtualbox"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-25T16:57:00+03:00
-lastmod: 2022-11-23T12:19:00+03:00
+lastmod: 2023-10-05T20:00:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 201
 toc: true
 type: "book"
+feedback: false
 slug: "gns3-virtualbox"
 summary: "GNS3 на Virtualbox"
 menu:
@@ -37,7 +38,7 @@ menu:
 
 #### <span class="section-num">1.1.2</span> Установка с помощью менеджера пакетов {#установка-с-помощью-менеджера-пакетов}
 
--   Используйте .
+-   Используйте [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}}).
 -   Установите VirtualBox:
     ```shell
     choco install virtualbox -y

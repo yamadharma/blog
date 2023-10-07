@@ -2,7 +2,7 @@
 title: "Сборка образа VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-06T16:38:00+03:00
-lastmod: 2023-07-17T17:21:00+03:00
+lastmod: 2023-10-06T19:57:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false
@@ -94,7 +94,7 @@ slug: "vyos-build"
 
 ### <span class="section-num">2.2</span> Контейнер со сборочным окружением {#контейнер-со-сборочным-окружением}
 
--   Контейнер можно создать вручную или загрузить готовый из DockerHub.
+-   Контейнер можно создать вручную или загрузить готовый из DockerHub (<https://hub.docker.com/>).
 
 
 #### <span class="section-num">2.2.1</span> Загрузка контейнера из DockerHub {#загрузка-контейнера-из-dockerhub}
@@ -108,13 +108,17 @@ slug: "vyos-build"
         ```shell
         docker pull vyos/vyos-build:equuleus
         ```
-    -   VyOS 1.4 (rolling release)
+    -   VyOS 1.4
+        ```shell
+        docker pull vyos/vyos-build:sagitta
+        ```
+    -   VyOS 1.5 (rolling release)
         ```shell
         docker pull vyos/vyos-build:current
         ```
 
 
-### <span class="section-num">2.3</span> Сборка ISO {#сборка-iso}
+### <span class="section-num">2.3</span> Подготовка среды сборки {#подготовка-среды-сборки}
 
 -   Загрузите сборочный код:
     -   VyOS 1.2
@@ -125,7 +129,11 @@ slug: "vyos-build"
         ```shell
         git clone -b equuleus --single-branch https://github.com/vyos/vyos-build
         ```
-    -   VyOS 1.4 (rolling release)
+    -   VyOS 1.4
+        ```shell
+        git clone -b sagitta --single-branch https://github.com/vyos/vyos-build
+        ```
+    -   VyOS 1.5 (rolling release)
         ```shell
         git clone -b current --single-branch https://github.com/vyos/vyos-build
         ```
@@ -142,7 +150,11 @@ slug: "vyos-build"
         ```shell
         docker run --rm -it --privileged -v $(pwd):/vyos -w /vyos vyos/vyos-build:equuleus bash
         ```
-    -   VyOS 1.4 (rolling release)
+    -   VyOS 1.4
+        ```shell
+        docker run --rm -it --privileged -v $(pwd):/vyos -w /vyos vyos/vyos-build:sagitta bash
+        ```
+    -   VyOS 1.5 (rolling release)
         ```shell
         docker run --rm -it --privileged -v $(pwd):/vyos -w /vyos vyos/vyos-build:current bash
         ```
@@ -151,22 +163,45 @@ slug: "vyos-build"
         ```shell
         ./configure --architecture amd64 --build-by "your@email"
         ```
-    -   Конкретный релиз (rolling release)
+    -   Конкретный релиз
         ```shell
-        ./configure --architecture amd64 --build-by "your@email" --build-type release --version 1.3.3
+        ./configure --architecture amd64 --build-by "your@email" --build-type release --version 1.3.4
         ```
+
+
+### <span class="section-num">2.4</span> Сборка ISO {#сборка-iso}
+
 -   Запустите сборку:
     ```shell
     sudo make iso
     ```
 
 
-### <span class="section-num">2.4</span> Образы для платформ виртуализации {#образы-для-платформ-виртуализации}
+### <span class="section-num">2.5</span> Образы для платформ виртуализации {#образы-для-платформ-виртуализации}
 
 
-#### <span class="section-num">2.4.1</span> QEMU {#qemu}
+### <span class="section-num">2.6</span> Конфигурация packer {#конфигурация-packer}
 
--   Запустите следующую команду после создания образа ISO:
+-   В файле `packer.json` заданы достаточно оптимистичные промежутки времени.
+-   При компиляции в виртуальной машине их не хватает.
+-   Увеличим их:
+    ```shell
+    sed -ie "s:wait3m:wait10m:g" scripts/packer.json
+    ```
+
+
+#### <span class="section-num">2.6.1</span> QEMU {#qemu}
+
+-   Запустите следующую команду после создания образа `qcow2`:
     ```shell
     make qemu
     ```
+
+
+#### <span class="section-num">2.6.2</span> Vagrant {#vagrant}
+
+-   Запустите следующую команду после создания образа для vagrant:
+    ```shell
+    make vagrant-libvirt
+    ```
+-   Для создания используется образ, созданный для Quemu.

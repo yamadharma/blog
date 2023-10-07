@@ -1,8 +1,8 @@
 ---
-title: "Курс Математическое моделирование"
+title: "Подготовка курса Математическое моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T11:13:00+03:00
-lastmod: 2023-01-29T20:50:00+03:00
+lastmod: 2023-10-06T20:12:00+03:00
 tags: ["modeling", "education"]
 categories: ["science"]
 draft: false

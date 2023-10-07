@@ -1,7 +1,8 @@
 ---
 title: "Calculus vs Analysis"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-05-06T20:38:00+03:00
-lastmod: 2021-05-06T21:39:00+03:00
+lastmod: 2023-10-06T20:33:00+03:00
 categories: ["сиянс"]
 draft: false
 slug: "calculus-vs-analysis"
@@ -36,8 +37,3 @@ slug: "calculus-vs-analysis"
     -   Abbott, Understanding Analysis (<https://www.amazon.com/Understanding-Analysis-Undergraduate-Texts-Mathematics/dp/1493927116/>)
     -   Ross, Elementary Analysis: The Theory of Calculus (<https://www.amazon.com/Elementary-Analysis-Calculus-Undergraduate-Mathematics/dp/1461462703/>)
     -   Pugh, Real Mathematical Analysis (<https://www.amazon.com/Mathematical-Analysis-Undergraduate-Texts-Mathematics/dp/3319177702/>)
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Преподавание. Методические заметки]({{< relref "2021-02-24-teaching-methodical-notes" >}})

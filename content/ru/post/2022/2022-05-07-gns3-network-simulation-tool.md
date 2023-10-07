@@ -2,8 +2,8 @@
 title: "Средство натурного моделирования сетей GNS3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:54:00+03:00
-lastmod: 2022-11-30T19:53:00+03:00
-tags: ["MOC", "network", "education"]
+lastmod: 2023-10-06T20:14:00+03:00
+tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "gns3-network-simulation-tool"

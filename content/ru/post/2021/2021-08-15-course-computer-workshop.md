@@ -1,15 +1,15 @@
 ---
-title: "Курс Компьютерный практикум"
+title: "Подготовка курса Компьютерный практикум"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-15T21:13:00+03:00
-lastmod: 2021-08-17T14:15:00+03:00
+lastmod: 2023-10-06T20:08:00+03:00
 tags: ["education", "modeling"]
-categories: ["сиянс", "computer-science"]
+categories: ["science", "computer-science"]
 draft: false
 slug: "course-computer-workshop"
 ---
 
-Курс _Компьютерный практикум_.
+Курс _Компьютерный практикум по математическому моделированию_.
 
 <!--more-->
 

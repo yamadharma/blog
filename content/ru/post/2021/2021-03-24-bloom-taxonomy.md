@@ -2,9 +2,9 @@
 title: "Таксономия Блума"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-24T12:27:00+03:00
-lastmod: 2023-07-06T15:13:00+03:00
+lastmod: 2023-10-05T20:12:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "bloom-taxonomy"
 ---

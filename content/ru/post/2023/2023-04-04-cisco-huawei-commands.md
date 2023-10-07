@@ -2,8 +2,8 @@
 title: "Сопоставление команд Cisco и Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-04T15:26:00+03:00
-lastmod: 2023-04-04T16:01:00+03:00
-tags: ["sysadmin", "network"]
+lastmod: 2023-10-06T20:35:00+03:00
+tags: ["cisco", "sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
 slug: "cisco-huawei-commands"

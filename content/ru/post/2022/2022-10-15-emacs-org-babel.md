@@ -2,7 +2,7 @@
 title: "Emacs. Org Babel"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-15T21:21:00+03:00
-lastmod: 2023-07-06T15:02:00+03:00
+lastmod: 2023-10-05T20:16:00+03:00
 tags: ["emacs", "org-mode"]
 categories: ["computer-science"]
 draft: false

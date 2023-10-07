@@ -2,7 +2,7 @@
 title: "Уровни финансовой свободы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-17T18:32:00+03:00
-lastmod: 2023-03-17T19:22:00+03:00
+lastmod: 2023-10-05T20:19:00+03:00
 tags: ["money"]
 categories: ["life"]
 draft: false

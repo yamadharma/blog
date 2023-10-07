@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2023-08-17T11:28:00+03:00
+lastmod: 2023-10-05T20:39:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false

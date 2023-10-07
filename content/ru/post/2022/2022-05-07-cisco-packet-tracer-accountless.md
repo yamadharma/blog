@@ -2,8 +2,8 @@
 title: "Работа без учётной записи в Cisco Packet Tracer"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:39:00+03:00
-lastmod: 2022-12-07T13:31:00+03:00
-tags: ["network", "education"]
+lastmod: 2023-10-06T20:10:00+03:00
+tags: ["cisco", "network", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "cisco-packet-tracer-accountless"

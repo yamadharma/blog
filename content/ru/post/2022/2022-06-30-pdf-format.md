@@ -2,7 +2,7 @@
 title: "Формат PDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-30T18:47:00+03:00
-lastmod: 2023-07-05T16:55:00+03:00
+lastmod: 2023-10-05T20:35:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "pdf-format"

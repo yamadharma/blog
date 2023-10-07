@@ -2,7 +2,7 @@
 title: "Сборка образа VyOS. Репозиторий"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-16T19:13:00+03:00
-lastmod: 2023-07-18T15:53:00+03:00
+lastmod: 2023-10-06T19:05:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false

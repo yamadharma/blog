@@ -2,12 +2,14 @@
 title: "Org-mode. Нумерация уравнений LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-27T19:16:00+03:00
-lastmod: 2023-09-30T19:52:00+03:00
+lastmod: 2023-10-05T20:02:00+03:00
 tags: ["emacs", "org-mode", "tex"]
 categories: ["computer-science"]
 draft: false
 slug: "org-mode-latex-equation-numbering"
 ---
+
+Org-mode. Нумерация уравнений LaTeX.
 
 <!--more-->
 

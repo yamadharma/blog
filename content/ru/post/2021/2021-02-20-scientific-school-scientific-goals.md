@@ -2,9 +2,9 @@
 title: "Научная школа. Научные задачи"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T17:56:00+03:00
-lastmod: 2023-09-30T20:23:00+03:00
-tags: ["research", "sci-admin"]
-categories: ["сиянс"]
+lastmod: 2023-10-02T16:47:00+03:00
+tags: ["modeling", "sci-school", "research", "sci-admin"]
+categories: ["science"]
 draft: false
 slug: "scientific-school-scientific-goals"
 ---

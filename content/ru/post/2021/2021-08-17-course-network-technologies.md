@@ -1,10 +1,10 @@
 ---
-title: "Курс Сетевые технологии"
+title: "Подготовка курса Сетевые технологии"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-17T14:10:00+03:00
-lastmod: 2021-08-31T19:59:00+03:00
+lastmod: 2023-10-06T20:16:00+03:00
 tags: ["education", "network"]
-categories: ["сиянс", "computer-science"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "course-network-technologies"
 ---
@@ -52,7 +52,7 @@ slug: "course-network-technologies"
     -   Исследование канального уровня с Wireshark
 -   Ресурсы:
     -   <https://www.youtube.com/watch?v=Cc5wi1bxmpc>
-    -   <https://www.youtube.com/watch?v=HsPurrcG%5F9Y>
+    -   <https://www.youtube.com/watch?v=HsPurrcG_9Y>
 
 
 ### <span class="section-num">1.4</span> Wireshark. Сетевой уровень {#wireshark-dot-сетевой-уровень}

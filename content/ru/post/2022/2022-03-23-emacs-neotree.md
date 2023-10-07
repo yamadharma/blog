@@ -2,7 +2,7 @@
 title: "Emacs. Neotree"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-23T18:52:00+03:00
-lastmod: 2022-03-23T19:46:00+03:00
+lastmod: 2023-10-06T17:19:00+03:00
 tags: ["emacs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -33,13 +33,12 @@ slug: "emacs-neotree"
 -   Значение по умолчанию `classic`.
 -   Используйте `nerd`, если хотите, чтобы он больше всего походил на NERDTree в VIM.
 -   Для настройки следует установить переменную `neo-theme`:
-
     ```emacs-lisp
     (setq neo-theme 'icons)
     ```
 
 <div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1</span>:
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
   Параметры темы NeoTree
 </div>
 
@@ -57,7 +56,7 @@ slug: "emacs-neotree"
 -   Сочетания работают только в буфере _NeoTree_
 
 <div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2</span>:
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
   Сочетания клавиш NeoTree
 </div>
 
@@ -81,7 +80,6 @@ slug: "emacs-neotree"
 ### <span class="section-num">2.3</span> Отслеживание каталога {#отслеживание-каталога}
 
 -   Каждый раз при открытии окна _neotree_ фокус переходит на текущий файл:
-
     ```emacs-lisp
     (setq neo-smart-open t)
     ```
@@ -90,19 +88,18 @@ slug: "emacs-neotree"
 ### <span class="section-num">2.4</span> Взаимодействие с _projectile_ {#взаимодействие-с-projectile}
 
 -   Переключение на корень проекта при открытии:
-
     ```emacs-lisp
     (defun neotree-project-dir ()
       "Open NeoTree using the git root."
       (interactive)
       (let ((project-dir (projectile-project-root))
-    	(file-name (buffer-file-name)))
+            (file-name (buffer-file-name)))
         (neotree-toggle)
         (if project-dir
-    	(if (neo-global--window-exists-p)
-    	    (progn
-    	      (neotree-dir project-dir)
-    	      (neotree-find file-name)))
+            (if (neo-global--window-exists-p)
+                (progn
+                  (neotree-dir project-dir)
+                  (neotree-find file-name)))
           (message "Could not find git project root."))))
     (global-set-key [f8] 'neotree-project-dir)
     ```

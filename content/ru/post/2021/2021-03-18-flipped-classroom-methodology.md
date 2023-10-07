@@ -1,7 +1,8 @@
 ---
 title: "Методика Перевёрнутый класс"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-18T19:03:00+03:00
-lastmod: 2021-03-18T19:09:00+03:00
+lastmod: 2023-10-06T20:34:00+03:00
 tags: ["education"]
 categories: ["сиянс"]
 draft: false
@@ -79,8 +80,3 @@ slug: "flipped-classroom-methodology"
 из интернет-ресурсов и созданы не учителем, а учащимися. Таким образом
 они демонстрируют свои знания и навыки. Это такая игра, в которой
 ученик берет на себя роль учителя, и цель её --- научить учителя.
-
-
-## <span class="section-num">2</span> Backlinks {#backlinks}
-
--   [Преподавание. Методические заметки]({{< relref "2021-02-24-teaching-methodical-notes" >}})

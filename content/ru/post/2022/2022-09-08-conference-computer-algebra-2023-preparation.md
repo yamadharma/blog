@@ -2,7 +2,7 @@
 title: "Подготовка конференции Компьютерная алгебра 2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-08T18:52:00+03:00
-lastmod: 2023-09-30T20:29:00+03:00
+lastmod: 2023-10-05T20:05:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

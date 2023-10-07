@@ -2,7 +2,7 @@
 title: "Emacs. Просмотр каталогов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-03T20:25:00+03:00
-lastmod: 2023-07-06T15:16:00+03:00
+lastmod: 2023-10-05T20:18:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Disciples"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-07T15:45:00+03:00
-lastmod: 2023-07-05T21:18:00+03:00
+lastmod: 2023-10-05T20:31:00+03:00
 tags: ["disciples"]
 categories: ["games"]
 draft: false

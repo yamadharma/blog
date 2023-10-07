@@ -2,7 +2,7 @@
 title: "Регламент доступа к суперкомпьютеру РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T14:37:00+03:00
-lastmod: 2023-09-28T20:32:00+03:00
+lastmod: 2023-10-02T16:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -14,6 +14,9 @@ slug: "regulations-access-supercomputer-rudn"
 <!--more-->
 
 {{< toc >}}
+
+
+## <span class="section-num">1</span> Регламент {#регламент}
 
 1.  Пользователь должен получить учётные записи:
     -   ЦКП «Суперкомпьютер»;
