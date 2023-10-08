@@ -1,18 +1,20 @@
 ---
-title: "Курс МОЗИиИБ. Структура лекций"
+title: "Структура лекций"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-18T18:27:00+03:00
-lastmod: 2021-03-18T19:36:00+03:00
-tags: ["education"]
-categories: ["сиянс"]
+lastmod: 2023-10-07T20:29:00+03:00
+tags: ["security", "education"]
+categories: ["science"]
 draft: false
 weight: 301
 toc: true
 type: "book"
+feedback: false
 summary: "Структура лекций"
 slug: "course-mathsec-lectures-structure"
 menu:
   mathsec:
-    identifier: "курс-мозиииб-dot-структура-лекций"
+    identifier: "структура-лекций"
     parent: "mathsec-method"
     weight: 301
 ---
@@ -75,8 +77,3 @@ menu:
     -   озвучивание следующей темы занятия;
     -   советы по самостоятельной работы по подготовке к следующему занятию.
 -   5 минут.
-
-
-## <span class="section-num">3</span> Backlinks {#backlinks}
-
--   [Курс МОЗИиИБ. Лекции]({{< relref "2021-03-11-course-mathsec-lections" >}})

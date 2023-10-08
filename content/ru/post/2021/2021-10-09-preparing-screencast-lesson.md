@@ -2,7 +2,7 @@
 title: "Подготовка скринкаста для занятия"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T17:35:00+03:00
-lastmod: 2023-07-16T17:15:00+03:00
+lastmod: 2023-10-08T18:43:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -48,7 +48,7 @@ slug: "preparing-screencast-lesson"
 
         for i in *.mkv
         do
-            HandBrakeCLI -Z "Matroska/H.264 MKV 2160p60" -i "${i}" -o ${OUTDIR}/"${i}"
+            HandBrakeCLI -Z "H.264 MKV 2160p60 4K" -i "${i}" -o ${OUTDIR}/"${i}"
         done
         ```
 -   Естественно, следует перекодировать также intro и outro.

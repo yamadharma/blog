@@ -2,7 +2,7 @@
 title: "Горобец Б. С. - Круг Ландау"
 author: ["Dmitry S. Kulyabov"]
 date: 2013-05-05T10:49:00+03:00
-lastmod: 2023-07-03T10:25:00+03:00
+lastmod: 2023-10-08T17:02:00+03:00
 tags: ["люди-науки"]
 categories: ["листая-страницы"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Средство натурного моделирования сетей GNS3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:54:00+03:00
-lastmod: 2023-10-06T20:14:00+03:00
+lastmod: 2023-10-08T18:16:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -43,6 +43,7 @@ slug: "gns3-network-simulation-tool"
 
 -   [GNS3 на Virtualbox]({{< relref "2022-06-25-gns3-virtualbox" >}})
 -   [GNS3 на Hyper-V]({{< relref "2022-11-29-gns3-hyperv" >}})
+-   [Отключение поддержки KVM в GNS3]({{< relref "2023-10-08-gns3-kvm-disable" >}})
 
 
 ## <span class="section-num">4</span> Оборудование {#оборудование}

@@ -2,7 +2,7 @@
 title: "GNS3 на Virtualbox"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-25T16:57:00+03:00
-lastmod: 2023-10-05T20:00:00+03:00
+lastmod: 2023-10-08T17:52:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -144,7 +144,22 @@ menu:
 -   Также убедитесь, что значение _KVM support available_ установлено в _True_. В противном случае убедитесь, что вложенная виртуализация включена.
 
 
-### <span class="section-num">2.4</span> Настройка GNS3 GUI с виртуальной машиной GNS3 VM Virtualbox {#настройка-gns3-gui-с-виртуальной-машиной-gns3-vm-virtualbox}
+### <span class="section-num">2.4</span> Настройка отображения свойств VirtualBox {#настройка-отображения-свойств-virtualbox}
+
+-   Gns3 получает параметры виртуальной, запрашивая свойства VirtualBox.
+-   Начиная с версии Virtualbox-7 эти свойства отображаются в текущей локали пользователя.
+-   Вы в этом можете убедиться, запустив:
+    ```shell
+    VBoxManage list systemproperties
+    ```
+-   Для корректной работы gns3 необходимо отображать эту информацию на английском.
+-   Поэтому следует задать кодировку для отображения свойств VirtualBox:
+    ```shell
+    VBoxManage setproperty language C
+    ```
+
+
+### <span class="section-num">2.5</span> Настройка GNS3 GUI с виртуальной машиной GNS3 VM Virtualbox {#настройка-gns3-gui-с-виртуальной-машиной-gns3-vm-virtualbox}
 
 -   Откройте приложение `gns3`.
 -   При первой загрузке запустится мастер настройки.
@@ -161,7 +176,7 @@ menu:
     -   Процессорные ядра: желательно не менее 2-х.
 
 
-### <span class="section-num">2.5</span> Видео: Установка GNS3 VM VirtualBox {#видео-установка-gns3-vm-virtualbox}
+### <span class="section-num">2.6</span> Видео: Установка GNS3 VM VirtualBox {#видео-установка-gns3-vm-virtualbox}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}

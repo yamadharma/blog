@@ -2,13 +2,14 @@
 title: "Calculus vs Analysis"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-06T20:38:00+03:00
-lastmod: 2023-10-06T20:33:00+03:00
-categories: ["сиянс"]
+lastmod: 2023-10-07T20:39:00+03:00
+categories: ["thinking", "science"]
 draft: false
 slug: "calculus-vs-analysis"
 ---
 
-При изучении математического анализа возникает два понятия: _Calculus_ и _Analysis_. В России обычно изучают математический анализ, в англосаксонской системе --- Calculus.
+-   При изучении математического анализа возникает два понятия: _Calculus_ и _Analysis_.
+-   В России обычно изучают математический анализ, в англосаксонской системе --- Calculus.
 
 <!--more-->
 

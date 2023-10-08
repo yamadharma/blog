@@ -2,7 +2,7 @@
 title: "Активности при преподавании предмета"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-02T17:50:00+03:00
-lastmod: 2023-04-02T20:56:00+03:00
+lastmod: 2023-10-07T20:37:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

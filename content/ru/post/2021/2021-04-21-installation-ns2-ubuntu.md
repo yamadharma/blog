@@ -1,7 +1,9 @@
 ---
 title: "Установка NS-2. Ubuntu"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-04-21T13:31:00+03:00
-lastmod: 2021-04-23T19:27:00+03:00
+lastmod: 2023-10-08T17:27:00+03:00
+tags: ["modeling"]
 categories: ["computer-science"]
 draft: false
 slug: "installation-ns2-ubuntu"
@@ -40,17 +42,14 @@ apt-get install build-essential linux-headers-`uname -r`
 -   В поле «Имя папки» введите `shared` (или любое имя, какое желаете).
 -   Снимите флажок «Только для чтения» и «Автоматическое монтирование» и установите флажок «Сделать постоянным».
 -   Создайте общий каталог в вашем домашнем каталоге:
-
     ```shell
     mkdir ~/shared
     ```
 -   Смонтируйте общую папку с хоста в ваш каталог:
-
     ```shell
     sudo mount -t vboxsf -o uid=`id -u`,gid=`id -g` shared ~/shared
     ```
 -   Можно добавить команду монтирования в файл `/etc/fstab`:
-
     ```conf-unix
     shared /home/<username>/shared vboxsf defaults,uid=<your_uid>,gid=<your_gid> 0 0
     ```
@@ -63,38 +62,31 @@ apt-get install build-essential linux-headers-`uname -r`
 Для компиляции NS-2 необходимо установить компилятор и библиотеки.
 
 -   Перейдём в режим суперпользователя:
-
     ```shell
     sudo -i
     ```
 
 -   Установим основные средства разработки:
-
     ```shell
     apt-get install build-essential
     ```
 -   Установим файловый менеджер `mc` (это не обязательно):
-
     ```shell
     apt-get install mc
     ```
 -   Установим `git`:
-
     ```shell
     apt-get install git
     ```
 -   Установим `cmake`:
-
     ```shell
     apt-get install cmake
     ```
 -   Установим `automake`:
-
     ```shell
     apt-get install automake
     ```
 -   Установим файлы для разработки под X11:
-
     ```shell
     apt-get install xorg-dev
     ```
@@ -103,18 +95,15 @@ apt-get install build-essential linux-headers-`uname -r`
 ## <span class="section-num">3</span> Компиляция NS-2 {#компиляция-ns-2}
 
 -   Создадим каталог для компиляции:
-
     ```shell
     mkdir ~/compile
     ```
 -   Скачаем исходники NS-2:
-
     ```shell
     cd ~/compile
     git clone https://github.com/yamadharma/ns-allinone.git
     ```
 -   Откомпилим исходные коды NS-2:
-
     ```shell
     cd ns-allinone
     ./install
@@ -122,8 +111,3 @@ apt-get install build-essential linux-headers-`uname -r`
 -   В результате получим исполняемые файлы в каталоге `~/compile/ns-allinone/bin`.
 
     {{< youtube yG-J5EdZyxU >}}
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Средство имитационного моделирования NS2]({{< relref "2021-04-21-ns2-network-simulator" >}})

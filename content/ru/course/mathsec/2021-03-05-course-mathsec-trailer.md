@@ -1,18 +1,20 @@
 ---
-title: "Курс МОЗИиИБ. Трейлер"
+title: "Трейлер"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-05T11:22:00+03:00
-lastmod: 2021-03-11T17:57:00+03:00
-tags: ["education"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2023-10-07T17:51:00+03:00
+tags: ["security", "education"]
+categories: ["computer-science", "science"]
 draft: false
 weight: 1
 slug: "course-mathsec-trailer"
 toc: true
 type: "book"
+feedback: false
 summary: "Математические основы защиты информации и информационной безопасности"
 menu:
   mathsec:
-    identifier: "курс-мозиииб-dot-трейлер"
+    identifier: "трейлер"
     weight: 1
     name: "trailer"
 ---
@@ -107,8 +109,3 @@ menu:
 -   Схема открытого распределения ключей.
 -   Аутентификация пользователей веб-систем.
 -   Управление пользователями и их правами доступа в ОС Linux.
-
-
-## <span class="section-num">4</span> Backlinks {#backlinks}
-
--   [Курс Математические основы информационной безопасности]({{< relref "2020-10-21-course-mathsec" >}})

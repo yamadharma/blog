@@ -1,14 +1,15 @@
 ---
-title: "Курс МОЗИиИБ. Лекции"
+title: "Лекции"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-11T18:32:00+03:00
-lastmod: 2023-10-06T20:20:00+03:00
+lastmod: 2023-10-07T20:31:00+03:00
 tags: ["education"]
-categories: ["computer-science", "сиянс"]
+categories: ["computer-science", "science"]
 draft: false
 weight: 2
 toc: true
 type: "book"
+feedback: false
 slug: "course-mathsec-lections"
 menu:
   mathsec:
@@ -19,8 +20,6 @@ menu:
 Лекции по курсу _Математические основы защиты информации и информационной безопасности (МОЗИиИБ)_.
 
 <!--more-->
-
-{{< toc >}}
 
 
 ## <span class="section-num">1</span> Формат лекционных занятий {#формат-лекционных-занятий}

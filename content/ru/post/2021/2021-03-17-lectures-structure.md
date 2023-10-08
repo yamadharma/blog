@@ -1,9 +1,10 @@
 ---
 title: "Структура лекционного занятия"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-03-17T11:50:00+03:00
-lastmod: 2021-03-18T19:13:00+03:00
+lastmod: 2023-10-08T17:31:00+03:00
 tags: ["education"]
-categories: ["сиянс"]
+categories: ["science"]
 draft: false
 slug: "lectures-structure"
 ---
@@ -270,8 +271,3 @@ slug: "lectures-structure"
         -   Задания для самостоятельной работы, определение способа их выполнения
 -   Оборудование
 -   Используемая литература
-
-
-## <span class="section-num">6</span> Backlinks {#backlinks}
-
--   [Лекционные занятия]({{< relref "2021-03-17-lectures" >}})

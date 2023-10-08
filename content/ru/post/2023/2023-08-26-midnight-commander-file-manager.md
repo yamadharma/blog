@@ -2,7 +2,7 @@
 title: "Файловый менеджер Midnight Commander"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-26T17:40:00+03:00
-lastmod: 2023-09-07T11:45:00+03:00
+lastmod: 2023-10-07T17:36:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -42,6 +42,9 @@ slug: "midnight-commander-file-manager"
 
 
 ## <span class="section-num">3</span> Горячие клавиши для файловых панелей {#горячие-клавиши-для-файловых-панелей}
+
+
+### <span class="section-num">3.1</span> Файлменеджер {#файлменеджер}
 
 -   `F3`: Просмотр файла
 -   `F4`: Редактирование файла
