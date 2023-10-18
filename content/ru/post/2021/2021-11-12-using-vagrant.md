@@ -2,7 +2,7 @@
 title: "Использование vagrant"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-12T12:11:00+03:00
-lastmod: 2023-09-21T14:42:00+03:00
+lastmod: 2023-10-11T16:21:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -95,22 +95,46 @@ end
 -   В конце идёт конструкция, определяющая параметры провайдера, а именно запуск виртуальной машины без графического интерфейса и с выделением 1 ГБ памяти.
 
 
-## <span class="section-num">2</span> Подготовка образа {#подготовка-образа}
+## <span class="section-num">2</span> Установка {#установка}
 
 
-### <span class="section-num">2.1</span> Общая информация {#общая-информация}
+### <span class="section-num">2.1</span> Linux {#linux}
+
+-   Gentoo:
+    ```shell
+    emerge app-emulation/vagrant
+    ```
+
+
+### <span class="section-num">2.2</span> Windows {#windows}
+
+-   Установка с помощью Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+    ```shell
+    choco install vagrant
+    ```
+
+
+## <span class="section-num">3</span> Принципы работы {#принципы-работы}
+
+-   [Сеть в vagrant]({{< relref "2023-10-11-vagrant-network" >}})
+
+
+## <span class="section-num">4</span> Подготовка образа {#подготовка-образа}
+
+
+### <span class="section-num">4.1</span> Общая информация {#общая-информация}
 
 -   Подготовка образа проводится с помощью _Packer_ (см. [Packer]({{< relref "2022-10-30-packer" >}})).
 -   Сайт: <https://www.packer.io/>
 
 
-### <span class="section-num">2.2</span> Описание установки {#описание-установки}
+### <span class="section-num">4.2</span> Описание установки {#описание-установки}
 
 -   Ранее использовался язык описания JSON.
 -   После _Packer-1.5_ используется формат HCL2.
 
 
-## <span class="section-num">3</span> Установка дополнений {#установка-дополнений}
+## <span class="section-num">5</span> Установка дополнений {#установка-дополнений}
 
 -   Список дополнений: <https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins>
 -   Установка дополнения:
@@ -124,11 +148,11 @@ end
     ```
 
 
-## <span class="section-num">4</span> Разные системы виртуализации {#разные-системы-виртуализации}
+## <span class="section-num">6</span> Разные системы виртуализации {#разные-системы-виртуализации}
 
 -   [Использование vagrant. Virtualbox]({{< relref "2023-08-20-using-vagrant-virtualbox" >}})
 
 
-## <span class="section-num">5</span> Конкретные примеры {#конкретные-примеры}
+## <span class="section-num">7</span> Конкретные примеры {#конкретные-примеры}
 
 -   [Использование vagrant. Установка Rocky Linux]({{< relref "2023-08-20-using-vagrant-install-rocky-linux" >}})

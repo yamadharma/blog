@@ -2,7 +2,7 @@
 title: "Пакетный менеджер для Windows. Chocolatey"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-18T11:23:00+03:00
-lastmod: 2023-07-13T12:02:00+03:00
+lastmod: 2023-10-09T10:06:00+03:00
 tags: ["windows", "sysadmin", "education"]
 categories: ["computer-science"]
 draft: false
@@ -39,7 +39,7 @@ slug: "package-manager-windows-chocolatey"
     ```shell
     choco feature enable -n=allowGlobalConfirmation
     ```
-    Обратно включить запрос подтверждения можно командой:
+-   Обратно включить запрос подтверждения можно командой:
     ```shell
     choco feature disable -n=allowGlobalConfirmation
     ```

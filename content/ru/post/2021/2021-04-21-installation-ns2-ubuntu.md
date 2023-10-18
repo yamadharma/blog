@@ -2,7 +2,7 @@
 title: "Установка NS-2. Ubuntu"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-21T13:31:00+03:00
-lastmod: 2023-10-08T17:27:00+03:00
+lastmod: 2023-10-09T09:59:00+03:00
 tags: ["modeling"]
 categories: ["computer-science"]
 draft: false

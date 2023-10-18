@@ -2,7 +2,7 @@
 title: "Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T21:19:00+03:00
-lastmod: 2023-10-07T20:35:00+03:00
+lastmod: 2023-10-11T11:11:00+03:00
 tags: ["network", "education"]
 categories: ["science", "computer-science"]
 draft: false

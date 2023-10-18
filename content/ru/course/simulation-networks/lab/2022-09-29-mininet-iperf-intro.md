@@ -2,7 +2,7 @@
 title: "Mininet. Введение в Iperf"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T21:11:00+03:00
-lastmod: 2022-11-25T16:51:00+03:00
+lastmod: 2023-10-12T20:08:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -510,11 +510,11 @@ menu:
     class SingleSwitchTopo( Topo ):
         "Single Switch Topology"
         def build( self, count=1 ):
-    	hosts = [ self.addHost( 'h%d' % i )
-    		  for i in range( 1, count + 1 ) ]
-    	s1 = self.addSwitch( 's1' )
-    	for h in hosts:
-    	    self.addLink( h, s1 )
+            hosts = [ self.addHost( 'h%d' % i )
+                      for i in range( 1, count + 1 ) ]
+            s1 = self.addSwitch( 's1' )
+            for h in hosts:
+                self.addLink( h, s1 )
 
     net = Mininet( topo=SingleSwitchTopo( 3 ) )
     net.start()
@@ -711,14 +711,14 @@ menu:
     all: iperf_result.json plot
 
     iperf_result.json:
-    	sudo python lab_iperf3.py
+            sudo python lab_iperf3.py
 
     plot: iperf_result.json
-    	plot_iperf.sh iperf_result.json
+            plot_iperf.sh iperf_result.json
 
     clean:
-    	-rm -f *.json *.csv
-    	-rm -rf results
+            -rm -f *.json *.csv
+            -rm -rf results
     ```
 
 

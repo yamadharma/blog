@@ -1,19 +1,20 @@
 ---
-title: "Курс МОЗИиИБ. Криптография с асимметричным ключом"
+title: "Криптография с асимметричным ключом"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-21T20:18:00+03:00
-lastmod: 2021-12-09T13:16:00+03:00
-tags: ["education"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2023-10-17T14:04:00+03:00
+tags: ["security", "education"]
+categories: ["science", "computer-science"]
 draft: false
 weight: 111
 toc: true
 type: "book"
+feedback: false
 summary: "Криптография с асимметричным ключом"
 slug: "course-mathsec-asymmetric-cryptography"
 menu:
   mathsec:
-    identifier: "курс-мозиииб-dot-криптография-с-асимметричным-ключом"
+    identifier: "криптография-с-асимметричным-ключом"
     parent: "mathsec-lections"
     weight: 111
 ---
@@ -21,8 +22,6 @@ menu:
 Лекция. Криптография с асимметричным ключом
 
 <!--more-->
-
-{{< toc >}}
 
 
 ## <span class="section-num">1</span> Видео {#видео}

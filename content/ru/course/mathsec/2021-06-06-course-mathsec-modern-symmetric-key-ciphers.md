@@ -2,7 +2,7 @@
 title: "Курс МОЗИиИБ. Современные шифры с симметричным ключом"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-06T16:09:00+03:00
-lastmod: 2021-12-06T15:38:00+03:00
+lastmod: 2023-10-11T11:23:00+03:00
 tags: ["education"]
 categories: ["сиянс", "computer-science"]
 draft: false

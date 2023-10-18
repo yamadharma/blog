@@ -2,7 +2,7 @@
 title: "Редактирование. Журнал Mathematics. 2021"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-24T20:19:00+03:00
-lastmod: 2023-09-30T19:51:00+03:00
+lastmod: 2023-10-14T17:19:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false

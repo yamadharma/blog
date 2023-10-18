@@ -1,19 +1,20 @@
 ---
-title: "Курс МОЗИиИБ. Установление подлинности объекта"
+title: "Установление подлинности объекта"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-16T17:10:00+03:00
-lastmod: 2021-12-10T20:16:00+03:00
-tags: ["education"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2023-10-12T20:14:00+03:00
+tags: ["security", "education"]
+categories: ["science", "computer-science"]
 draft: false
 weight: 115
 toc: true
 type: "book"
+feedback: false
 summary: "Установление подлинности объекта"
 slug: "course-mathsec-object-authentication"
 menu:
   mathsec:
-    identifier: "курс-мозиииб-dot-установление-подлинности-объекта"
+    identifier: "установление-подлинности-объекта"
     parent: "mathsec-lections"
     weight: 115
 ---
@@ -21,8 +22,6 @@ menu:
 Лекция. Установление подлинности объекта
 
 <!--more-->
-
-{{< toc >}}
 
 
 ## <span class="section-num">1</span> Видео к лекции {#видео-к-лекции}

@@ -2,7 +2,7 @@
 title: "Где размещать видео"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-17T17:51:00+03:00
-lastmod: 2023-07-04T11:05:00+03:00
+lastmod: 2023-10-09T09:35:00+03:00
 tags: ["blog"]
 categories: ["self-management"]
 draft: false
@@ -108,6 +108,8 @@ slug: "where-post-video"
 -   Ссылка: <https://vk.com/vktransfer>
 -   Запускать приложение нужно через веб-версию Вконтакте.
 -   Переносит видео и плейлисты.
+-   В сентябре 2023 года приложение перестало работать.
+-   Это снижает привлекательность данного хостера.
 
 
 ## <span class="section-num">5</span> Видео Мail {#видео-мail}

@@ -2,7 +2,7 @@
 title: "Отключение поддержки KVM в GNS3"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-08T18:13:00+03:00
-lastmod: 2023-10-08T19:24:00+03:00
+lastmod: 2023-10-09T09:59:00+03:00
 tags: ["education", "network"]
 categories: ["computer-science", "science"]
 draft: false

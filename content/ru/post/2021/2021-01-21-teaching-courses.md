@@ -2,7 +2,7 @@
 title: "Преподавание. Курсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2023-10-06T17:17:00+03:00
+lastmod: 2023-10-11T11:55:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

@@ -2,13 +2,14 @@
 title: "Курс МОЗИиИБ. Модульная арифметика"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-08T18:55:00+03:00
-lastmod: 2021-12-02T16:00:00+03:00
-tags: ["education"]
-categories: ["сиянс", "computer-science"]
+lastmod: 2023-10-12T20:04:00+03:00
+tags: ["security", "education"]
+categories: ["computer-science", "science"]
 draft: false
 weight: 103
 toc: true
 type: "book"
+feedback: false
 summary: "Модульная арифметика"
 slug: "course-mathsec-modular-arithmetic"
 menu:
@@ -18,7 +19,7 @@ menu:
     weight: 103
 ---
 
-Лекция. Модульная арифметика
+Лекция. Модульная арифметика.
 
 <!--more-->
 

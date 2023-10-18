@@ -2,7 +2,7 @@
 title: "Mininet. Использование netem (latency, jitter)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-08T21:33:00+03:00
-lastmod: 2022-11-25T16:51:00+03:00
+lastmod: 2023-10-12T20:16:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -426,14 +426,14 @@ Mininet. Использование netem. Задержки, джтиттер.
     all: ping.dat ping.png
 
     ping.dat:
-    	sudo python lab_netem_i.py
-    	sudo chown mininet:mininet ping.dat
+            sudo python lab_netem_i.py
+            sudo chown mininet:mininet ping.dat
 
     ping.png: ping.dat
-    	./ping_plot
+            ./ping_plot
 
     clean:
-    	-rm -f *.dat *.png
+            -rm -f *.dat *.png
     ```
 -   Выполним эксперимент:
     ```shell

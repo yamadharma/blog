@@ -1,19 +1,20 @@
 ---
-title: "Курс МОЗИиИБ. Управление ключами"
+title: "Управление ключами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-18T20:43:00+03:00
-lastmod: 2021-12-11T17:54:00+03:00
+lastmod: 2023-10-12T20:07:00+03:00
 tags: ["education"]
-categories: ["сиянс", "computer-science"]
+categories: ["science", "computer-science"]
 draft: false
 weight: 116
 toc: true
 type: "book"
+feedback: false
 summary: "Управление ключами"
 slug: "course-mathsec-key-management"
 menu:
   mathsec:
-    identifier: "курс-мозиииб-dot-управление-ключами"
+    identifier: "управление-ключами"
     parent: "mathsec-lections"
     weight: 116
 ---

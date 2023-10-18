@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-09-30T17:09:00+03:00
+lastmod: 2023-10-12T20:33:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -99,3 +99,19 @@ The discrete and continuous theories of elliptic oscillators are described by th
 -   Supervisor: Alexander Zeifman, D.Sc, professor, Department of Applied Mathematics, Vologda State University
 
 We present a report on the results of the dissertation work for the degree of Candidate of Sciences. The work is devoted to the study of a number of new queuing systems with features using a method based on the concept of the logarithmic norm. The report shows obtaining estimates of the rate of convergence to the limiting characteristics, stability estimates. In addition, the report provides examples of the application of the developed algorithms and programs using numerical methods to construct the limiting characteristics of the corresponding processes.
+
+
+#### <span class="section-num">1.2.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube ae187afb4347f8940232fe501d598c72 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube XJoEPhl_uo8 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

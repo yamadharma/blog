@@ -2,7 +2,7 @@
 title: "Citation Style Language (CSL)"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:22:00+03:00
-lastmod: 2023-07-20T13:35:00+03:00
+lastmod: 2023-10-17T13:23:00+03:00
 tags: ["bib"]
 categories: ["computer-science"]
 draft: false
@@ -25,6 +25,7 @@ slug: "citation-style-language"
     -   <https://www.zotero.org/styles>;
     -   <https://csl.mendeley.com/>.
 -   Спецификация: <https://docs.citationstyles.org/en/stable/specification.html>.
+-   Введение: <https://docs.citationstyles.org/en/stable/primer.html>
 
 
 ### <span class="section-num">1.1</span> История {#история}
@@ -47,7 +48,23 @@ slug: "citation-style-language"
 -   Pandoc (см. [Pandoc]({{< relref "2021-08-28-pandoc" >}})) поддерживает цитаты в форматах CSL, YAML и JSON и может отображать их с использованием стилей CSL.
 
 
-## <span class="section-num">3</span> Соответствие полей CSL и библиографических систем {#соответствие-полей-csl-и-библиографических-систем}
+## <span class="section-num">3</span> Использование CSL в LaTeX {#использование-csl-в-latex}
+
+
+### <span class="section-num">3.1</span> citeproc-lua {#citeproc-lua}
+
+-   Реализация процессора CSL v1.0.2 на Lua.
+-   Репозиторий: <https://github.com/zepinglee/citeproc-lua>
+-   CTAN: <https://ctan.org/pkg/citation-style-language>
+
+
+## <span class="section-num">4</span> Редактирование файлов CSL {#редактирование-файлов-csl}
+
+-   Для редактирования можно использовать онлайн-редактора CSL Editor.
+-   Адрес: <https://editor.citationstyles.org/visualEditor/>
+
+
+## <span class="section-num">5</span> Соответствие полей CSL и библиографических систем {#соответствие-полей-csl-и-библиографических-систем}
 
 <div class="table-caption">
   <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
@@ -78,9 +95,9 @@ slug: "citation-style-language"
 | article            | Working Paper          |
 
 
-## <span class="section-num">4</span> Стили CSL {#стили-csl}
+## <span class="section-num">6</span> Стили CSL {#стили-csl}
 
 
-### <span class="section-num">4.1</span> Стили CSL для библиографии ГОСТ {#стили-csl-для-библиографии-гост}
+### <span class="section-num">6.1</span> Стили CSL для библиографии ГОСТ {#стили-csl-для-библиографии-гост}
 
 -   [Библиография. CSL. ГОСТ]({{< relref "2022-12-15-csl-gost" >}})
