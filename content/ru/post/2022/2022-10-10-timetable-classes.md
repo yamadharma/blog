@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-09-27T13:44:00+03:00
+lastmod: 2023-10-31T11:56:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -19,55 +19,59 @@ slug: "timetable-classes"
 ## <span class="section-num">1</span> Расписание занятий {#расписание-занятий}
 
 
-### <span class="section-num">1.1</span> 2023--2024 учебный год {#2023-2024-учебный-год}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1</span> 2023--2024 учебный год, расписание занятий <code>[1/3]</code> {#2023-2024-учебный-год-расписание-занятий}
 
 
-#### <span class="section-num">1.1.1</span> Числитель/знаменатель {#числитель-знаменатель}
-
-<div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
-  1 семестр 2023/24 учебного года
-</div>
-
-| Числитель    | Знаменатель  |
-|--------------|--------------|
-| 01.09--02.09 | 04.09--09.09 |
-| 11.09--16.09 | 18.09--23.09 |
-| 25.09--30.09 | 02.10--07.10 |
-| 09.10--14.10 | 16.10--21.10 |
-| 23.10--28.10 | 30.10--04.11 |
-| 06.11--11.11 | 13.11--18.11 |
-| 20.11--25.11 | 27.11--02.12 |
-| 04.12--09.12 | 11.12--16.12 |
-| 18.12--23.12 | 25.12--30.12 |
-
-<div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
-  2 семестр 2023/24 учебного года
-</div>
-
-| Числитель    | Знаменатель  |
-|--------------|--------------|
-| 07.02--10.02 | 12.02--17.02 |
-| 19.02--24.02 | 26.02--03.03 |
-| 04.03--09.03 | 11.03--16.03 |
-| 18.03--23.03 | 25.03--30.03 |
-| 01.04--06.04 | 08.04--13.04 |
-| 15.04--20.04 | 22.04--27.04 |
-| 29.04--04.05 | 06.05--11.05 |
-| 13.05--18.05 | 20.05--25.05 |
-| 27.05--01.06 | 03.06--08.06 |
-
-
-#### <span class="section-num">1.1.2</span> 1 четверть {#1-четверть}
+#### <span class="section-num">1.1.1</span> Информация {#информация}
 
 <!--list-separator-->
 
-1.  Информационная безопасность (лабораторные работы)
+1.  Числитель/знаменатель
+
+    <div class="table-caption">
+      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
+      1 семестр 2023/24 учебного года
+    </div>
+
+    | Числитель    | Знаменатель  |
+    |--------------|--------------|
+    | 01.09--02.09 | 04.09--09.09 |
+    | 11.09--16.09 | 18.09--23.09 |
+    | 25.09--30.09 | 02.10--07.10 |
+    | 09.10--14.10 | 16.10--21.10 |
+    | 23.10--28.10 | 30.10--04.11 |
+    | 06.11--11.11 | 13.11--18.11 |
+    | 20.11--25.11 | 27.11--02.12 |
+    | 04.12--09.12 | 11.12--16.12 |
+    | 18.12--23.12 | 25.12--30.12 |
+
+    <div class="table-caption">
+      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
+      2 семестр 2023/24 учебного года
+    </div>
+
+    | Числитель    | Знаменатель  |
+    |--------------|--------------|
+    | 07.02--10.02 | 12.02--17.02 |
+    | 19.02--24.02 | 26.02--03.03 |
+    | 04.03--09.03 | 11.03--16.03 |
+    | 18.03--23.03 | 25.03--30.03 |
+    | 01.04--06.04 | 08.04--13.04 |
+    | 15.04--20.04 | 22.04--27.04 |
+    | 29.04--04.05 | 06.05--11.05 |
+    | 13.05--18.05 | 20.05--25.05 |
+    | 27.05--01.06 | 03.06--08.06 |
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
     <!--list-separator-->
 
-    1.  Информационная безопасность (лабораторные работы)
+    1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-296
         -   НКНбд-01-20
@@ -75,7 +79,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2.  Информационная безопасность (лабораторные работы)
+    2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-296
         -   НКНбд-01-20
@@ -83,7 +87,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    3.  Информационная безопасность (лабораторные работы)
+    3. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-298
         -   НПИбд-01-20
@@ -91,7 +95,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    4.  Информационная безопасность (лабораторные работы)
+    4. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-298
         -   НПИбд-01-20
@@ -99,45 +103,51 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2.  Информационная безопасность (лекция)
+2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лекция)
 
     -   Группы: НПМ-20, НКН-20, НФИ-20, НПИ-20, НБИ-20
     -   2023-09-07 Чт 09:00-10:20--2023-12-28 Чт 09:00-10:20
     -   Занятие проводится дистанционно
 
 
-#### <span class="section-num">1.1.3</span> 2 четверть {#2-четверть}
-
-
-#### <span class="section-num">1.1.4</span> 1 семестр {#1-семестр}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1.3</span> 2023--2024 учебный год, 2 четверть <code>[0/1]</code> {#2023-2024-учебный-год-2-четверть}
 
 <!--list-separator-->
 
-1.  Научное программирование
+1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лекция)
+
+    -
+
+
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1.4</span> 2023--2024 учебный год, 1 семестр <code>[0/5]</code> {#2023-2024-учебный-год-1-семестр}
+
+<!--list-separator-->
+
+1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
 
     -   ОРД-295, НПМмд-02-23
 
 <!--list-separator-->
 
-2.  МОЗИиИБ (лекция)
+2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
 
     -   ОРД-295, НПМмд-02-23, НФИмд-23
 
 <!--list-separator-->
 
-3.  МОЗИиИБ (лабораторная работа)
+3. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа)
 
     -   ОРД-295, НПМмд-02-23
 
 <!--list-separator-->
 
-4.  Основы администрирования ОС (лабораторные работы)
+4. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лабораторные работы)
 
     -   ОРД-295, ОРД-297; НПИбд-01,02-22
 
 <!--list-separator-->
 
-5.  Основы администрирования ОС (лекция)
+5. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
 
     -   ОРД-295, НПИбд-22
 
@@ -145,52 +155,54 @@ slug: "timetable-classes"
 ## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
 
 
-### <span class="org-todo todo STARTED">STARTED</span> <span class="section-num">2.1</span> 2023--2024 учебный год <code>[0/0]</code> {#2023-2024-учебный-год}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1</span> 2023--2024 учебный год, промежуточные аттестации <code>[0/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> Модуль 1 <code>[0/0]</code> {#модуль-1}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.1</span> Модуль 1 <code>[2/3]</code> {#модуль-1}
 
--
+-   2023-09-01 Пт--2023-11-05 Вс
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты
+1. <span class="org-todo done DONE">DONE</span>  Зачёты, Модуль 1 <code>[1/1]</code>
+
+    -   2023-10-23 Пн--2023-10-29 Вс
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (4 курс, зачёт)
+
+        <!--list-separator-->
+
+        1. <span class="org-todo done DONE">DONE</span>  01.03.02 Прикладная математика и информатика (НПМбд-02-19, зачёт)
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  Экзамены <code>[1/1]</code>
 
     -
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (4 курс, зачёт)
+    1. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность (4 курс) <code>[2/2]</code>
+
+        :ORDERED:  t
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  01.03.02 Прикладная математика и информатика (НПМбд-02-19)
-
-<!--list-separator-->
-
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены
-
-    -
-
-    <!--list-separator-->
-
-    1. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (4 курс)
-
-        <!--list-separator-->
-
-        1. <span class="org-todo todo TODO">TODO</span>  НКНбд-01-20, НФИбд-01-20, НФИбд-02-20
+        1. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность, НКНбд-01-20, НФИбд-01-20, НФИбд-02-20
 
             -
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  НПИбд-01-20, НБИбд-01-20
+        2. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность, НПИбд-01-20, НБИбд-01-20
 
             -
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации <code>[/]</code>
 
     <!--list-separator-->
 
@@ -205,7 +217,7 @@ slug: "timetable-classes"
         2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.2</span> Модуль 2 <code>[0/0]</code> {#модуль-2}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Модуль 2 <code>[0/0]</code> {#модуль-2}
 
 <!--list-separator-->
 
@@ -220,7 +232,9 @@ slug: "timetable-classes"
 3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.3</span> Семестр 1 <code>[0/0]</code> {#семестр-1}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.3</span> Семестр 1 <code>[0/0]</code> {#семестр-1}
+
+:ORDERED:  t
 
 <!--list-separator-->
 
@@ -736,7 +750,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-1.  CANCELLED Зачёты <span class="tag"><span class="CANCELLED">CANCELLED</span></span>
+1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 <!--list-separator-->
 
@@ -1163,3 +1177,21 @@ slug: "timetable-classes"
     -   13.04.2020--18.04.2020 --- экзаменационная сессия.
 -   Модуль 4: 20.04.2020--27.06.2020;
     -   15.06.2020-27.06.2020 --- экзаменационная сессия.
+
+
+## <span class="section-num">3</span> Соответствие специальностей и кодов групп {#соответствие-специальностей-и-кодов-групп}
+
+<div class="table-caption">
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 9:</span>
+  Соответствие специальностей и кодов групп
+</div>
+
+| Код специальности | Код группы | Старый код группы | Уровень  |
+|:------------------|------------|-------------------|----------|
+| 01.03.02          | НПМбд      | НП                | Бакалавр |
+| 02.03.01          | НКНбд      | НК                | Бакалавр |
+| 02.03.02          | НФИбд      | НИ                | Бакалавр |
+| 09.03.03          | НПИбд      | НТ                | Бакалавр |
+| 38.03.05          | НБИбд      | НБ                | Бакалавр |
+| 01.04.02          | НПМмд      | НП                | Магистр  |
+| 02.04.02          | НФИмд      | НИ                | Магистр  |

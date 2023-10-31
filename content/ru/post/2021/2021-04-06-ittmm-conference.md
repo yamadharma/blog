@@ -2,7 +2,7 @@
 title: "Конференция ITTMM"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-06T16:11:00+03:00
-lastmod: 2023-06-22T18:58:00+03:00
+lastmod: 2023-10-31T12:28:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -52,6 +52,11 @@ slug: "ittmm-conference"
 ### <span class="section-num">2.6</span> 2023 {#2023}
 
 -   <https://events.rudn.ru/e/conference/ittmm/2023>
+
+
+### <span class="section-num">2.7</span> 2024 {#2024}
+
+-   <https://events.rudn.ru/e/conference/ittmm/2024>
 
 
 ## <span class="section-num">3</span> Постерный формат секции (дистантное проведение) {#постерный-формат-секции--дистантное-проведение}

@@ -2,7 +2,7 @@
 title: "Программное обеспечение, устанавливаемое на Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:38:00+03:00
-lastmod: 2023-10-09T10:42:00+03:00
+lastmod: 2023-10-31T09:38:00+03:00
 tags: ["education", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -121,10 +121,23 @@ slug: "software-installed-windows"
     ```
 
 
-## <span class="section-num">8</span> Средства разработки {#средства-разработки}
+## <span class="section-num">8</span> Работа с pdf {#работа-с-pdf}
 
 
-### <span class="section-num">8.1</span> Средство управления версиями git {#средство-управления-версиями-git}
+### <span class="section-num">8.1</span> Xournal++ {#xournal-plus-plus}
+
+-   Сайт: <https://xournalpp.github.io/>
+-   Создание заметок в файлах pdf.
+-   Установить с Chocolatey:
+    ```shell
+    choco install xournalplusplus
+    ```
+
+
+## <span class="section-num">9</span> Средства разработки {#средства-разработки}
+
+
+### <span class="section-num">9.1</span> Средство управления версиями git {#средство-управления-версиями-git}
 
 -   Установим средство управления версиями git (см. [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})) через пакетный менеджер:
     ```shell
@@ -132,13 +145,13 @@ slug: "software-installed-windows"
     ```
 
 
-## <span class="section-num">9</span> Научное программное обеспечение {#научное-программное-обеспечение}
+## <span class="section-num">10</span> Научное программное обеспечение {#научное-программное-обеспечение}
 
 
-### <span class="section-num">9.1</span> Общие средства для отчётов по лабораторным работам {#общие-средства-для-отчётов-по-лабораторным-работам}
+### <span class="section-num">10.1</span> Общие средства для отчётов по лабораторным работам {#общие-средства-для-отчётов-по-лабораторным-работам}
 
 
-#### <span class="section-num">9.1.1</span> Работа с языком разметки Markdown {#работа-с-языком-разметки-markdown}
+#### <span class="section-num">10.1.1</span> Работа с языком разметки Markdown {#работа-с-языком-разметки-markdown}
 
 -   Средство `pandoc` для работы с языком разметки Markdown:
     -   Установка с помощью менеджера пакетов
@@ -158,7 +171,7 @@ slug: "software-installed-windows"
         -   Поместите их либо в каталог проекта, либо в каталог, который присутствует в переменной `%PATH%`.
 
 
-#### <span class="section-num">9.1.2</span> Работа с языком TeX {#работа-с-языком-tex}
+#### <span class="section-num">10.1.2</span> Работа с языком TeX {#работа-с-языком-tex}
 
 -   Для генерации формата `pdf` необходимо установить TeX. Будем устанавливать TeX Live:
     ```shell
@@ -166,10 +179,10 @@ slug: "software-installed-windows"
     ```
 
 
-### <span class="section-num">9.2</span> Средства моделирования {#средства-моделирования}
+### <span class="section-num">10.2</span> Средства моделирования {#средства-моделирования}
 
 
-#### <span class="section-num">9.2.1</span> Scilab {#scilab}
+#### <span class="section-num">10.2.1</span> Scilab {#scilab}
 
 -   Scilab --- открытая реализация языка MATLAB.
 -   Сайт: <https://www.scilab.org/>
@@ -180,7 +193,7 @@ slug: "software-installed-windows"
     ```
 
 
-#### <span class="section-num">9.2.2</span> Octave {#octave}
+#### <span class="section-num">10.2.2</span> Octave {#octave}
 
 -   Octave --- открытая реализация языка MATLAB.
 -   Сайт: <https://www.gnu.org/software/octave/>
@@ -194,7 +207,7 @@ slug: "software-installed-windows"
     {{< youtube LRjtS8cyrdM >}}
 
 
-#### <span class="section-num">9.2.3</span> OpenModelica {#openmodelica}
+#### <span class="section-num">10.2.3</span> OpenModelica {#openmodelica}
 
 -   Открытая реализация языка _Modelica_.
 -   <https://www.openmodelica.org/>
@@ -204,7 +217,7 @@ slug: "software-installed-windows"
     ```
 
 
-#### <span class="section-num">9.2.4</span> CPN Tools {#cpn-tools}
+#### <span class="section-num">10.2.4</span> CPN Tools {#cpn-tools}
 
 -   Работа с раскрашенными сетями Петри.
 -   <https://cpntools.org/>

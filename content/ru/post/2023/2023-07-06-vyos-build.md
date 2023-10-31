@@ -2,7 +2,7 @@
 title: "Сборка образа VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-06T16:38:00+03:00
-lastmod: 2023-10-06T19:57:00+03:00
+lastmod: 2023-10-26T17:40:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false
@@ -20,7 +20,7 @@ slug: "vyos-build"
 
 -   Из-за модели распространения VyOS становится оправданной самостоятельная сборка.
     -   VyOS является проектом с открытым исходным кодом, но ISO-образы могут быть получены только по подписке или путем внесения вклада в сообщество.
--   Текущая стабильная версия: 1.3.3 (<https://blog.vyos.io/vyos-1.3.3-lts-release>).
+-   Текущая стабильная версия: 1.3.4 (<https://blog.vyos.io/vyos-1.3.4-lts-release>).
 -   Описание сборки VyOS: <https://docs.vyos.io/en/equuleus/contributing/build-vyos.html>
 
 

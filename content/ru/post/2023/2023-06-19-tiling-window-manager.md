@@ -2,7 +2,7 @@
 title: "Тайловые оконные менеджеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-19T09:37:00+03:00
-lastmod: 2023-09-27T15:22:00+03:00
+lastmod: 2023-10-23T15:32:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -187,7 +187,12 @@ slug: "tiling-window-manager"
 -   Репозиторий: <https://github.com/ritschmaster/b3>
 
 
-### <span class="section-num">4.2</span> GlazeWM {#glazewm}
+### <span class="section-num">4.2</span> komorebi {#komorebi}
+
+-   Репозиторий: <https://github.com/LGUG2Z/komorebi>
+
+
+### <span class="section-num">4.3</span> GlazeWM {#glazewm}
 
 -   Вдохновлён i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) для Windows и Polybar.
 -   Репозиторий: <https://github.com/glazerdesktop/GlazeWM>
@@ -200,29 +205,29 @@ slug: "tiling-window-manager"
 -   Устанавливается в `%LOCALAPPDATA%\Microsoft\Winget\Packages\` по умолчанию.
 
 
-### <span class="section-num">4.3</span> bug.n {#bug-dot-n}
+### <span class="section-num">4.4</span> bug.n {#bug-dot-n}
 
 -   Репозиторий: <https://github.com/fuhsjr00/bug.n>
 -   Создан как скрипт AutoHotKey.
 
 
-### <span class="section-num">4.4</span> MaxTo {#maxto}
+### <span class="section-num">4.5</span> MaxTo {#maxto}
 
 -   Сайт: <https://maxto.net/>
 -   Триальная версия
 
 
-### <span class="section-num">4.5</span> Stack {#stack}
+### <span class="section-num">4.6</span> Stack {#stack}
 
 -   Сайт: <https://losttech.software/stack.html>
 
 
-### <span class="section-num">4.6</span> Plumb {#plumb}
+### <span class="section-num">4.7</span> Plumb {#plumb}
 
 -   Сайт: <http://palatialsoftware.com/>
 
 
-### <span class="section-num">4.7</span> workspacer {#workspacer}
+### <span class="section-num">4.8</span> workspacer {#workspacer}
 
 -   Сайт: <https://workspacer.org/>
 -   Репозиторий: <https://github.com/workspacer/workspacer>
@@ -233,7 +238,7 @@ slug: "tiling-window-manager"
         ```
 
 
-### <span class="section-num">4.8</span> dwm-win32 {#dwm-win32}
+### <span class="section-num">4.9</span> dwm-win32 {#dwm-win32}
 
 -   Сайт: <https://www.brain-dump.org/projects/dwm-win32/>
 -   Порт dwm на Windows.

@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-16T12:51:00+03:00
-lastmod: 2023-09-09T18:37:00+03:00
+lastmod: 2023-10-19T18:46:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -114,7 +114,7 @@ slug: "workspace-laboratory-work"
 -   Создайте необходимые каталоги:
     ```shell
     echo os-intro > COURSE
-    make
+    make prepare
     ```
 -   Отправьте файлы на сервер:
     ```shell

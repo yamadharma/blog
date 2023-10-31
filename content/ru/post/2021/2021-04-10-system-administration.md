@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-10-11T16:59:00+03:00
+lastmod: 2023-10-30T11:04:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -145,6 +145,11 @@ slug: "system-administration"
 -   [Перенос kerberos на другую машину]({{< relref "2023-09-03-kerberos-migration" >}})
 
 
+### <span class="section-num">8.5</span> Git {#git}
+
+-   [Хостинг git. gitea]({{< relref "2023-10-29-git-hosting-gitea" >}})
+
+
 ## <span class="section-num">9</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
@@ -257,6 +262,7 @@ slug: "system-administration"
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
 -   [Сертификаты ACME]({{< relref "2022-04-30-acme-certificates" >}})
 -   [Механизм HSTS]({{< relref "2022-05-03-hsts-mechanism" >}})
+-   [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})
 
 
 ## <span class="section-num">13</span> Сети {#сети}

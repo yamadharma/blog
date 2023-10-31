@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-10-12T20:33:00+03:00
+lastmod: 2023-10-26T13:21:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -17,7 +17,7 @@ slug: "workshop-mathematical-modeling-2023-2024"
 ## <span class="section-num">1</span> 2023 {#2023}
 
 
-### <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-09-28 Чт&gt; </span></span> М. М. Гамбарян, М. Д. Малых _Обратимые разностные схемы для классических нелинейных осцилляторов_ {#м-dot-м-dot-гамбарян-м-dot-д-dot-малых-обратимые-разностные-схемы-для-классических-нелинейных-осцилляторов}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-09-28 Чт&gt; </span></span> М. М. Гамбарян, М. Д. Малых _Обратимые разностные схемы для классических нелинейных осцилляторов_ {#м-dot-м-dot-гамбарян-м-dot-д-dot-малых-обратимые-разностные-схемы-для-классических-нелинейных-осцилляторов}
 
 
 #### <span class="section-num">1.1.1</span> Докладчик {#докладчик}
@@ -71,7 +71,7 @@ The discrete and continuous theories of elliptic oscillators are described by th
 {{< /tabs >}}
 
 
-### <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-10-12 Чт] </span></span> Ковалёв И. А. _Получение оценок и построение предельных характеристик для некоторых систем массового обслуживания с особенностями_ {#ковалёв-и-dot-а-dot-получение-оценок-и-построение-предельных-характеристик-для-некоторых-систем-массового-обслуживания-с-особенностями}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2023-10-12 Чт] </span></span> Ковалёв И. А. _Получение оценок и построение предельных характеристик для некоторых систем массового обслуживания с особенностями_ {#ковалёв-и-dot-а-dot-получение-оценок-и-построение-предельных-характеристик-для-некоторых-систем-массового-обслуживания-с-особенностями}
 
 
 #### <span class="section-num">1.2.1</span> Докладчик {#докладчик}
@@ -112,6 +112,51 @@ We present a report on the results of the dissertation work for the degree of Ca
 {{< rtab tabName="Youtube" >}}
 
 {{< youtube XJoEPhl_uo8 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-10-25 Ср&gt; </span></span> Э.Л. Андре, А.Н. Цирулев _Вычисление функций операторов в базисе Паули_ {#э-dot-л-dot-андре-а-dot-н-dot-цирулев-вычисление-функций-операторов-в-базисе-паули}
+
+
+#### <span class="section-num">1.3.1</span> Докладчик {#докладчик}
+
+-   А.Н. Цирулев
+-   Кафедра общей математики и математической физики, Математический факультет, Тверской государственный университет, Тверь
+
+
+#### <span class="section-num">1.3.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/239/>
+-   Вычисление функций операторов в базисе Паули
+-   Э.Л. Андре, А.Н. Цирулев
+-   Факультет естественных наук, Университет Агостиньо Нето, Луанда, Ангола
+-   Кафедра общей математики и математической физики, Математический факультет, Тверской государственный университет, Тверь
+
+Предлагаются новые алгоритмы аналитических (символьных) и высокоточных численных расчетов функций эрмитовых операторов в конечномерном гильбертовом пространстве. Оба эти метода основаны на представлении операторов в базисе Паули; они не обладают высокой универсальностью, но весьма полезны в квантовых вычислениях и при изучении моделей физики конденсированного состояния. Аналитический метод подходит для гамильтонианов, которые можно разложить в сумму частичных гамильтонианов, которые, вообще говоря, не являются чистыми операторами Паули, но удовлетворяют определенным (анти)коммутационным соотношениям.  В численном методе используется интегральная формула Коши, в которой сложность вычисления операторных резольвент быстро уменьшается с уменьшением числа операторов Паули.
+
+---
+
+-   Computing the functions of operators in Pauli basis
+-   E.L. Andre and A.N. Tsirulev
+-   Faculty of Sciences, Agostinho Neto University, Luanda, Angola
+-   Department of General Mathematics and Mathematical Physics, Faculty of Mathematics, Tver State University, Tver
+
+We propose new algorithms for analytical (symbolic) and high precision numerical calculations of the functions of Hermitian operators in a finite dimensional Hilbert space. Both these methods are based on the representation of operators in the Pauli basis; they do not obey a high universality, but are very useful in quantum computations and in studying the models of condensed matter physics. The analytical method is suitable for Hamiltonians that can be decomposed into a sum of partial Hamiltonians, which, in general, are not purely Pauli operators, but satisfy some (anti)commutation relations. In the numerical method we use the Cauchy integral formula, in which the complexity of computing operator resolvents fast decreases with decreasing the number of Pauli operators.
+
+
+#### <span class="section-num">1.3.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube f4b45d29d84a489d7b1b17fa37e585f5 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube KBcaWRrHMmQ >}}
 
 {{< /rtab >}}
 {{< /tabs >}}

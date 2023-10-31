@@ -2,7 +2,7 @@
 title: "BibLaTeX. Отображение кода EDN"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-18T16:16:00+03:00
-lastmod: 2023-10-18T16:47:00+03:00
+lastmod: 2023-10-19T19:45:00+03:00
 tags: ["tex", "bib"]
 categories: ["computer-science"]
 draft: false
@@ -28,7 +28,7 @@ BibLaTeX. Отображение кода EDN.
 
 -   Создаётся файл описания модели данных `edn.dbx`:
     ```latex
-    \ProvidesFile{kermit.dbx}[2023/10/18 add EDM field to biblatex]
+    \ProvidesFile{edn.dbx}[2023/10/18 add EDN field to biblatex]
 
     \DeclareDatamodelFields[type=field,datatype=verbatim]{edn}
     \DeclareDatamodelEntryfields{edn}

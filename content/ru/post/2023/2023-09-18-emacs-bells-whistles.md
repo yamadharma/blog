@@ -2,7 +2,7 @@
 title: "Emacs. Украшательства"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-18T16:22:00+03:00
-lastmod: 2023-09-18T16:35:00+03:00
+lastmod: 2023-10-24T12:09:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

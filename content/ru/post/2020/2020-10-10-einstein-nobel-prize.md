@@ -2,7 +2,7 @@
 title: "Эйнштейн и Нобелевская премия"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-10T18:15:00+03:00
-lastmod: 2023-09-17T15:45:00+03:00
+lastmod: 2023-10-26T17:26:00+03:00
 tags: ["science-people", "science-history"]
 categories: ["science"]
 draft: false

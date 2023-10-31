@@ -2,17 +2,20 @@
 title: "Курс Численные методы. Методические замечания"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-29T20:13:00+03:00
-lastmod: 2022-08-02T13:43:00+03:00
+lastmod: 2023-10-24T12:49:00+03:00
+tags: ["education"]
+categories: ["science"]
 draft: false
-weight: 800
+weight: 810
 toc: true
 type: "book"
+feedback: false
 slug: "numerical-methods-methodological"
 summary: "Методические замечания"
 menu:
   "numerical-methods-methodological":
-    parent: "numerical-methods"
-    weight: 800
+    parent: "numerical-methods-method"
+    weight: 8100
     identifier: "numerical-methods-methodological"
 ---
 

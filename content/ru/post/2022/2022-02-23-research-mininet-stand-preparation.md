@@ -2,7 +2,7 @@
 title: "Исследования. Mininet. Подготовка стенда"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-23T18:33:00+03:00
-lastmod: 2023-09-25T12:32:00+03:00
+lastmod: 2023-10-31T12:30:00+03:00
 tags: ["modeling", "research", "network"]
 categories: ["computer-science", "science"]
 draft: false
@@ -22,14 +22,14 @@ slug: "research-mininet-stand-preparation"
 -   Репозиторий _Mininet_: <https://github.com/mininet/mininet>
 -   Виртуальные машины:
     -   версия 2.2.2: <https://github.com/mininet/mininet/releases/tag/2.2.2>
-    -   версия 2.3: <https://github.com/mininet/mininet/releases/tag/2.3.0>
+    -   версия 2.3.0: <https://github.com/mininet/mininet/releases/tag/2.3.0>
 
 
 ## <span class="section-num">2</span> Выбор версии {#выбор-версии}
 
 -   Выбор версии зависит от необходимой версии python:
     -   mininet-2.2.2: python2;
-    -   mininet-2.2.3: python3.
+    -   mininet-2.3.0: python3.
 
 
 ## <span class="section-num">3</span> Настройка образа {#настройка-образа}

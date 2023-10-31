@@ -2,7 +2,7 @@
 title: "Подготовка грантов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T18:14:00+03:00
-lastmod: 2023-07-11T12:21:00+03:00
+lastmod: 2023-10-26T17:45:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -35,3 +35,8 @@ slug: "grants-preparation"
 ### <span class="section-num">1.3</span> 2022 {#2022}
 
 -   [Грант РНФ-80]({{< relref "2022-09-16-grant-rscf-80" >}})
+
+
+### <span class="section-num">1.4</span> 2023 {#2023}
+
+-   [Грант РУДН 021934-0-000]({{< relref "2023-07-15-grant-rudn-021934-0-000" >}})

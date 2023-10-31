@@ -2,7 +2,7 @@
 title: "GNS3. Образы оборудования"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:47:00+03:00
-lastmod: 2023-07-09T17:13:00+03:00
+lastmod: 2023-10-23T15:50:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -75,6 +75,13 @@ slug: "gns3-appliances"
 -   Виртуализация: docker.
 -   Архитектура: i386 и amd64.
 -   Система команд похожа на Cisco.
+
+
+### <span class="section-num">4.2</span> EXOS {#exos}
+
+-   Репозиторий: <https://github.com/extremenetworks/Virtual_EXOS>
+-   Как устанавливать на GNS3: <https://github.com/extremenetworks/Virtual_EXOS/blob/master/GNS3_EXOS-VM_Guide.md>
+-   Аналоги в других операционных системах для коммутаторов: <https://documentation.extremenetworks.com/CLI_X-Ref/1.0/CLI_X-Ref_Guide_1.0.pdf>
 
 
 ## <span class="section-num">5</span> Маршрутизаторы {#маршрутизаторы}

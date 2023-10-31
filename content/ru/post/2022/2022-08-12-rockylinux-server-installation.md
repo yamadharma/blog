@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-09-27T16:45:00+03:00
+lastmod: 2023-10-30T11:06:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -213,7 +213,7 @@ slug: "rockylinux-server-installation"
     dnf install fail2ban
     ```
 
--   Следует сконфигурировать и запустить:
+-   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})) и запустить:
     ```shell
     systemctl enable --now fail2ban.service
     ```
@@ -402,3 +402,14 @@ slug: "rockylinux-server-installation"
 
 -   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
 -   [DNS. Bind]({{< relref "2023-09-19-dns-bind" >}})
+
+
+### <span class="section-num">4.8</span> Контроль версий {#контроль-версий}
+
+
+#### <span class="section-num">4.8.1</span> git {#git}
+
+-   Установите `git`:
+    ```shell
+    dnf install git -y
+    ```

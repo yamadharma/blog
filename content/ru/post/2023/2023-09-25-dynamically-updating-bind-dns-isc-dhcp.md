@@ -2,7 +2,9 @@
 title: "Динамическое обновление DNS-сервера BIND при помощи ISC DHCP"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-25T13:26:00+03:00
-lastmod: 2023-09-27T14:28:00+03:00
+lastmod: 2023-10-28T19:26:00+03:00
+tags: ["sysadmin", "network"]
+categories: ["computer-science"]
 draft: false
 slug: "dynamically-updating-bind-dns-isc-dhcp"
 ---
