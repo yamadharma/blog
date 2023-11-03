@@ -2,7 +2,7 @@
 title: "Миграция с bitbucket на gitea"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-31T11:23:00+03:00
-lastmod: 2023-10-31T12:25:00+03:00
+lastmod: 2023-11-01T12:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -139,11 +139,31 @@ slug: "migration-bitbucket-gitea"
 
     change_remote
 
-    git pull bitbucket master
+    git remote get-url --all bitbucket &> /dev/null
+    if [[ $? == 0 ]]
+    then
+        is_bitbucket=1
+    fi
+
+    [[ $is_bitbucket == 1 ]] && git pull bitbucket master
     git pull
 
     git add .
     git commit -am "chore(main): $(date)"
-    git push
-    git push bitbucket
+    git push --all
+    [[ $is_bitbucket == 1 ]] && git push bitbucket
+
+    # Сжатие git
+    if [[ $1 == "compress" ]]
+        then
+        if [[ -d .git ]]
+        then
+            find . -type f -name "*Конфликтующая*" -delete
+            find . -type f -name "*conflicted*" -delete
+            find . -depth -path ./.stversions -prune -o -name ".syncthing.*.tmp"  -delete
+            git fsck
+            git gc --prune=now
+            git gc --aggressive --prune=now
+        fi
+    fi
     ```

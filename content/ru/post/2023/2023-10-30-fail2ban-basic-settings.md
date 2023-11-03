@@ -2,7 +2,7 @@
 title: "fail2ban. Основные настройки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-30T11:01:00+03:00
-lastmod: 2023-10-30T11:11:00+03:00
+lastmod: 2023-11-03T21:22:00+03:00
 tags: ["sysadmin", "security"]
 categories: ["computer-science"]
 draft: false
@@ -28,6 +28,9 @@ fail2ban. Основные настройки.
 
 ### <span class="section-num">2.1</span> Общие настройки {#общие-настройки}
 
+
+### <span class="section-num">2.2</span> Время блокирования {#время-блокирования}
+
 -   В файле `/etc/fail2ban/jail.d/50-default.conf` задайте время блокирования хостов:
     ```conf-unix
     [DEFAULT]
@@ -35,7 +38,23 @@ fail2ban. Основные настройки.
     ```
 
 
-### <span class="section-num">2.2</span> Защита ssh {#защита-ssh}
+#### <span class="section-num">2.2.1</span> Игнорирование избранных ip-адресов {#игнорирование-избранных-ip-адресов}
+
+-   Добавим игнорирование избранных ip-адресов в файле `/etc/fail2ban/jail.d/50-default.conf`:
+    ```conf-unix
+    # "ignoreself" specifies whether the local resp. own IP addresses should be ignored
+    # (default is true). Fail2ban will not ban a host which matches such addresses.
+    ignoreself = true
+
+    # "ignoreip" can be a list of IP addresses, CIDR masks or DNS hosts. Fail2ban
+    # will not ban a host which matches an address in this list. Several addresses
+    # can be defined using space (and/or comma) separator.
+    ignoreip = 127.0.0.1/8 ::1 10.128.0.0/9
+    ```
+-   Диапазон `10.128.0.0/9` добавлен для примера.
+
+
+### <span class="section-num">2.3</span> Защита ssh {#защита-ssh}
 
 -   В файле `/etc/fail2ban/jail.d/80-ssh.conf` активируйте защиту ssh:
     ```conf-unix
