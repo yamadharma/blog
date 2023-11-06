@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-19T17:57:00+03:00
-lastmod: 2023-10-21T18:27:00+03:00
+lastmod: 2023-11-06T12:50:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,7 @@ menu:
     identifier: "net-os-admin-workspace-laboratory-work"
 ---
 
-Рабочее пространство для лабораторной работы.
+При выполнении лабораторной работы следует придерживаться структуры рабочего пространства.
 
 <!--more-->
 

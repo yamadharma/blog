@@ -2,7 +2,7 @@
 title: "MSYS2. Приложения Unix под Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-23T15:55:00+03:00
-lastmod: 2023-09-28T16:20:00+03:00
+lastmod: 2023-11-06T14:39:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -91,10 +91,11 @@ MSYS2. Приложения Unix под Windows
 
 #### <span class="section-num">3.3.2</span> Импорт $PATH из переменной %Path% Windows {#импорт-path-из-переменной-path-windows}
 
--   Можно в скрипте msys2_shell.cmd раскомментировать строчку с переменной `MSYS2_PATH_TYPE`, в результате чего в $PATH будут наследоваться значения из системной переменной окружения %Path% Windows:
+-   Можно в ini-файле `msys2.ini` раскомментировать строчку с переменной `MSYS2_PATH_TYPE`, в результате чего в $PATH будут наследоваться значения из системной переменной окружения %Path% Windows:
     ```shell
     set MSYS2_PATH_TYPE=inherit
     ```
+-   То же самое нужно сделать для ini-файла запускаемого профиля, например, отредактировать файл `mingw64.ini`.
 
 
 ## <span class="section-num">4</span> Дополнительные пакеты {#дополнительные-пакеты}

@@ -2,7 +2,7 @@
 title: "Фильтры pandoc"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T20:00:00+03:00
-lastmod: 2023-07-15T20:40:00+03:00
+lastmod: 2023-11-05T19:06:00+03:00
 tags: ["pandoc", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -96,3 +96,8 @@ slug: "pandoc-filters"
 ### <span class="section-num">3.1</span> Включения других файлов в документ {#включения-других-файлов-в-документ}
 
 -   [Pandoc. Фильтры. Включение файлов]({{< relref "2023-03-23-pandoc-filters-include" >}})
+
+
+### <span class="section-num">3.2</span> Перекрёстные ссылки {#перекрёстные-ссылки}
+
+-   [Pandoc. Фильтры. Перекрёстные ссылки]({{< relref "2023-11-05-pandoc-filters-cross-referencing" >}})

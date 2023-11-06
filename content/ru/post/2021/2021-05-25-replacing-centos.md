@@ -2,7 +2,7 @@
 title: "Замена Centos"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-25T15:22:00+03:00
-lastmod: 2023-10-05T19:49:00+03:00
+lastmod: 2023-11-05T15:50:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -45,6 +45,13 @@ slug: "replacing-centos"
 -   Rocky Linux
     -   <https://rockylinux.org/news/2023-06-22-press-release/>
     -   Создании дополнительного репозитория <https://git.rockylinux.org/staging/src-rhel/rpms>, отслеживании рассинхронизированных обновлений.
+
+
+### <span class="section-num">2.1</span> OpenELA {#openela}
+
+-   <span class="timestamp-wrapper"><span class="timestamp">[2023-11-02 Чт]</span></span>Ассоциация OpenELA (Open Enterprise Linux Association)создала репозиторий OpenELA для замены репозитория `git.centos.org`.
+-   Репозиторий: <https://github.com/openela-main>
+-   Сообщение о создании репозитория: <https://openela.org/news/2023.11.02-governance_and_code_availability/>
 
 
 ## <span class="section-num">3</span> Альтернативы Centos {#альтернативы-centos}

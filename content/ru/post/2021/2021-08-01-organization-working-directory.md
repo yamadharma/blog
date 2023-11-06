@@ -2,7 +2,7 @@
 title: "Организация рабочего каталога"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-01T15:51:00+03:00
-lastmod: 2023-02-24T15:04:00+03:00
+lastmod: 2023-11-05T16:49:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "organization-working-directory"

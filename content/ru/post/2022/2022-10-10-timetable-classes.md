@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-02T16:17:00+03:00
+lastmod: 2023-11-06T15:34:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -116,7 +116,7 @@ slug: "timetable-classes"
 
 1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лекция)
 
-    -
+    -   2023-11-06 Пн 13:30-14:50--2023-12-25 Пн 13:30-14:50
 
 
 #### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1.4</span> 2023--2024 учебный год, 1 семестр <code>[0/5]</code> {#2023-2024-учебный-год-1-семестр}

@@ -2,7 +2,7 @@
 title: "Wayland. Аналоги приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T14:23:00+03:00
-lastmod: 2023-10-11T15:07:00+03:00
+lastmod: 2023-11-05T15:37:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false
@@ -21,31 +21,7 @@ slug: "wayland-applications"
 
 ### <span class="section-num">1.1</span> Снимки экрана {#снимки-экрана}
 
-Исходно использовался `scrot`.
-
-Для Wayland перешёл на связку [grim](https://github.com/emersion/grim) (получение снимка экрана) + [slurp](https://github.com/emersion/slurp) (выделение области экрана):
-
-```shell
-emerge -uv gui-apps/slurp gui-apps/grim
-```
-
-Настроим получение снимков экрана:
-
-```conf-unix
-# ~/.config/sway/config.d/80-screenshots.conf
-# Screenshot active display
-bindsym Print exec grim -t png "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
-
-# Screenshot current window
-bindsym $mod+Print exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"')" "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
-
-# Screenshot selected region
-bindsym $mod+Shift+Print exec grim -t png -g "$(slurp)" "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
-```
-
--   При нажатии клавиши `PrtScr` делается снимок всего экрана.
--   При нажатии `Mod4` + `PrtScr` делается снимок активного окна.
--   При нажатии `Mod4` + `Shift` + `PrtScr` предлагается выбрать область экрана, снимок которой следует сделать.
+-   [Sway. Скриншоты]({{< relref "2023-11-05-sway-screenshots" >}})
 
 
 ### <span class="section-num">1.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}

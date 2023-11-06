@@ -2,7 +2,7 @@
 title: "Планирование кухни"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-29T14:32:00+03:00
-lastmod: 2023-10-29T14:52:00+03:00
+lastmod: 2023-11-04T18:15:00+03:00
 tags: ["appliance", "apartment"]
 categories: ["life"]
 draft: false
@@ -60,3 +60,6 @@ slug: "kitchen-planning"
 -   HAIER HMX-BTG259W
     -   <https://haieronline.ru/catalog/built-in/microwaves_in/vstraivaemaya-mikrovolnovaya-pech-hmx-btg259w/>
     -   белая
+
+
+## <span class="section-num">2</span> Телевизор на кухню {#телевизор-на-кухню}
