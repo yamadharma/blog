@@ -2,7 +2,7 @@
 title: "Подтома btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:41:00+03:00
-lastmod: 2023-07-13T12:07:00+03:00
+lastmod: 2023-11-07T16:38:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false

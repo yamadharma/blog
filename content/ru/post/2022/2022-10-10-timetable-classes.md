@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-06T15:34:00+03:00
+lastmod: 2023-11-07T11:26:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -64,6 +64,8 @@ slug: "timetable-classes"
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
+
+-   2023-09-01 Пт--2023-11-05 Вс
 
 <!--list-separator-->
 
@@ -158,9 +160,7 @@ slug: "timetable-classes"
 ### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1</span> 2023--2024 учебный год, промежуточные аттестации <code>[0/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.1</span> Модуль 1 <code>[2/3]</code> {#модуль-1}
-
--   2023-09-01 Пт--2023-11-05 Вс
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.1</span> Сессия, модуль 1 <code>[2/3]</code> {#сессия-модуль-1}
 
 <!--list-separator-->
 
@@ -202,11 +202,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации <code>[/]</code>
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность
+    1. <span class="org-todo todo NEXT">NEXT</span>  Информационная безопасность
 
         <!--list-separator-->
 
@@ -217,7 +217,7 @@ slug: "timetable-classes"
         2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Модуль 2 <code>[0/0]</code> {#модуль-2}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Сессия, модуль 2 <code>[0/0]</code> {#сессия-модуль-2}
 
 <!--list-separator-->
 
@@ -232,7 +232,7 @@ slug: "timetable-classes"
 3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.3</span> Семестр 1 <code>[0/0]</code> {#семестр-1}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.3</span> Сессия, семестр 1 <code>[0/0]</code> {#сессия-семестр-1}
 
 :ORDERED:  t
 
@@ -290,7 +290,7 @@ slug: "timetable-classes"
         2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.4</span> Модуль 3 <code>[0/3]</code> {#модуль-3}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
 
 <!--list-separator-->
 
@@ -348,7 +348,7 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.5</span> Семестр 2 <code>[0/2]</code> {#семестр-2}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.5</span> Сессия, семестр 2 <code>[0/2]</code> {#сессия-семестр-2}
 
 <!--list-separator-->
 
@@ -618,7 +618,7 @@ slug: "timetable-classes"
                 -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.6</span> Модуль 4 <code>[0/0]</code> {#модуль-4}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.6</span> Сессия, модуль 4 <code>[0/0]</code> {#сессия-модуль-4}
 
 <!--list-separator-->
 

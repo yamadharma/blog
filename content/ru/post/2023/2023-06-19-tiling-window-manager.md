@@ -2,7 +2,7 @@
 title: "Тайловые оконные менеджеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-19T09:37:00+03:00
-lastmod: 2023-10-23T15:32:00+03:00
+lastmod: 2023-11-07T16:41:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

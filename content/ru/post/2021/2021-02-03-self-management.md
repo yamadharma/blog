@@ -2,7 +2,7 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2023-09-10T20:26:00+03:00
+lastmod: 2023-11-07T17:40:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -33,6 +33,7 @@ slug: "self-management"
 -   [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})
 -   [Использование org-roam]({{< relref "2020-10-05-use-org-roam" >}})
 -   [Мышление письмом]({{< relref "2023-06-22-thinking-writing" >}})
+-   [Emacs. Персональная база знаний]({{< relref "2023-11-07-emacs-personal-knowledge-base" >}})
 
 
 ## <span class="section-num">3</span> Чтение {#чтение}

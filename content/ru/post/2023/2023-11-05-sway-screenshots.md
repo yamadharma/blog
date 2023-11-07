@@ -2,7 +2,7 @@
 title: "Sway. Скриншоты"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-05T15:33:00+03:00
-lastmod: 2023-11-05T15:44:00+03:00
+lastmod: 2023-11-07T09:01:00+03:00
 tags: ["wayland"]
 categories: ["computer-science"]
 draft: false
