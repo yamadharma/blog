@@ -2,8 +2,8 @@
 title: "Хостинг git. gitea"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-29T18:54:00+03:00
-lastmod: 2023-10-31T11:26:00+03:00
-tags: ["sysadmin"]
+lastmod: 2023-11-11T20:36:00+03:00
+tags: ["git", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "git-hosting-gitea"
@@ -39,3 +39,8 @@ slug: "git-hosting-gitea"
 
 
 ## <span class="section-num">5</span> Использование {#использование}
+
+
+## <span class="section-num">6</span> Утилиты {#утилиты}
+
+-   [Взаимодействие с gitea из командной строки]({{< relref "2023-11-11-interacting-gitea-command-line" >}})

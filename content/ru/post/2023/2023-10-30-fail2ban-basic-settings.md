@@ -2,7 +2,7 @@
 title: "fail2ban. Основные настройки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-30T11:01:00+03:00
-lastmod: 2023-11-03T21:22:00+03:00
+lastmod: 2023-11-08T15:01:00+03:00
 tags: ["sysadmin", "security"]
 categories: ["computer-science"]
 draft: false
@@ -31,6 +31,10 @@ fail2ban. Основные настройки.
 
 ### <span class="section-num">2.2</span> Время блокирования {#время-блокирования}
 
+-   Создайте файл локальной конфигурации:
+    ```shell
+    mkdir -p /etc/fail2ban/jail.d/50-default.conf
+    ```
 -   В файле `/etc/fail2ban/jail.d/50-default.conf` задайте время блокирования хостов:
     ```conf-unix
     [DEFAULT]

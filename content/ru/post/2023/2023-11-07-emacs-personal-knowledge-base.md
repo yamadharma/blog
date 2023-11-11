@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2023-11-07T17:38:00+03:00
+lastmod: 2023-11-08T14:33:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -32,38 +32,6 @@ slug: "emacs-personal-knowledge-base"
 -   Имеет достаточно большое количество сопутствующих пакетов.
 
 
-#### <span class="section-num">1.1.1</span> Сопутствующие проекты Org-roam {#сопутствующие-проекты-org-roam}
-
-<!--list-separator-->
-
-1.  org-roam-ui
-
-    -   Репозиторий: <https://github.com/org-roam/org-roam-ui>.
-    -   Графический интерфейс, строящий граф для заметок org-roam.
-    -   Визуализация связей между заметками.
-
-<!--list-separator-->
-
-2.  org-roam-bibtex
-
-    -   Репозиторий: <https://github.com/org-roam/org-roam-bibtex>.
-    -   Интеграция org-roam с программным обеспечением для управления библиографией.
-
-<!--list-separator-->
-
-3.  zetteldesk.el
-
-    -   Репозиторий: <https://github.com/Vidianos-Giannitsis/zetteldesk.el>
-    -   Навигация по заметкам.
-
-<!--list-separator-->
-
-4.  vulpea
-
-    -   Репозиторий: <https://github.com/d12frosted/vulpea>
-    -   Библиотека для расширения возможности ведения заметок в org-roam.
-
-
 ### <span class="section-num">1.2</span> Gkroam {#gkroam}
 
 -   Репозиторий: <https://github.com/Kinneyzhang/gkroam>
@@ -90,7 +58,7 @@ slug: "emacs-personal-knowledge-base"
 -   Реализуются обратные ссылки.
 
 
-### <span class="section-num">3.1</span> Phi-notes {#phi-notes}
+### <span class="section-num">3.1</span> phi-notes {#phi-notes}
 
 -   Репозиторий: <https://github.com/brunocbr/phi-notes>
 -   Особенности:
@@ -108,8 +76,9 @@ slug: "emacs-personal-knowledge-base"
 -   Репозиторий: <https://github.com/localauthor/zk>
 
 
-### <span class="section-num">3.3</span> ekg (emacs knowledge graph) {#ekg--emacs-knowledge-graph}
+### <span class="section-num">3.3</span> ekg {#ekg}
 
+-   ekg (emacs knowledge graph)
 -   Репозиторий: <https://github.com/ahyatt/ekg>
 -   Данные хранятся в базе данных sqlite.
 -   Заметки организованы по тегам.
@@ -145,6 +114,7 @@ slug: "emacs-personal-knowledge-base"
 ### <span class="section-num">4.1</span> deft {#deft}
 
 -   Репозиторий: <https://github.com/jrblevin/deft>
+-   Документация: <https://jblevins.org/projects/deft/>
 -   Режим для быстрого просмотра, фильтрации и редактирования каталогов заметок.
 -   Проблемы с русским языком.
 -   Медленно работает при среднем количестве заметок (несколько тысяч).
@@ -153,5 +123,6 @@ slug: "emacs-personal-knowledge-base"
 ### <span class="section-num">4.2</span> notdeft {#notdeft}
 
 -   Репозиторий: <https://github.com/hasu/notdeft>
+-   Документация: <https://tero.hasu.is/notdeft/>
 -   Ответвление от Deft.
 -   Использует движок Xapian.

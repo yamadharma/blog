@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-10-30T11:06:00+03:00
+lastmod: 2023-11-08T15:06:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -192,7 +192,6 @@ slug: "rockylinux-server-installation"
     ```shell
     dnf -y install tmux mc
     ```
-
 -   Программы мониторинга:
     ```shell
     dnf -y install htop
@@ -203,14 +202,27 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.8</span> Безопасность {#безопасность}
+### <span class="section-num">3.8</span> Отключение графического интерфейса {#отключение-графического-интерфейса}
+
+-   Посмотрите, в каком режиме загружается сервер:
+    ```shell
+    systemctl get-default
+    ```
+-   Если результатом является `graphical.target`, то отключите загрузку графического интерфейса.
+-   Переключите на загрузку в терминальном многопользовательском режиме:
+    ```shell
+    systemctl set-default multi-user.target
+    ```
 
 
-#### <span class="section-num">3.8.1</span> Fail2ban {#fail2ban}
+### <span class="section-num">3.9</span> Безопасность {#безопасность}
+
+
+#### <span class="section-num">3.9.1</span> Fail2ban {#fail2ban}
 
 -   Защита от атак:
     ```shell
-    dnf install fail2ban
+    dnf -y install fail2ban
     ```
 
 -   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})) и запустить:
@@ -223,10 +235,10 @@ slug: "rockylinux-server-installation"
     ```
 
 
-### <span class="section-num">3.9</span> Администрирование {#администрирование}
+### <span class="section-num">3.10</span> Администрирование {#администрирование}
 
 
-#### <span class="section-num">3.9.1</span> Автоматическое обновление {#автоматическое-обновление}
+#### <span class="section-num">3.10.1</span> Автоматическое обновление {#автоматическое-обновление}
 
 -   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
@@ -411,5 +423,5 @@ slug: "rockylinux-server-installation"
 
 -   Установите `git`:
     ```shell
-    dnf install git -y
+    dnf -y install git
     ```

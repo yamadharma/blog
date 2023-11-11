@@ -2,7 +2,7 @@
 title: "Исследования. Протокол Vanet"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-07T14:56:00+03:00
-lastmod: 2023-10-07T17:10:00+03:00
+lastmod: 2023-11-08T13:36:00+03:00
 tags: ["research", "network"]
 categories: ["science"]
 draft: false
@@ -18,14 +18,14 @@ slug: "research-vanet-protocol"
 
 ## <span class="section-num">1</span> Обзор {#обзор}
 
--   Обзор применимости разных протоколов для сетей VANET [<a href="#citeproc_bib_item_2">2</a>; <a href="#citeproc_bib_item_6">6</a>].
+-   Обзор применимости разных протоколов для сетей VANET [<a href="#citeproc_bib_item_1">1</a>; <a href="#citeproc_bib_item_2">2</a>].
 
 -   Стандарт IEEE 1609.2 не ограничивает в использовании технологий для организации сетей VANET.
     -   В разных странах, например в США есть выделенный диапазон под DSRC(Dedicated Short Range Communications).
-    -   Это диапазон 5.850-5.925GHz [<a href="#citeproc_bib_item_1">1</a>]
+    -   Это диапазон 5.850-5.925GHz [<a href="#citeproc_bib_item_3">3</a>]
 
 -   Возможность совместного использования большими и малыми системами спектров  в 5,9 ГГц DSRC полосе.
--   Исследовалось два типа модели, стационарная и мобильная, а также использовались разные алгоритмы распределения спектра для определения эффективности совместного использования этого спектра [<a href="#citeproc_bib_item_3">3</a>]
+-   Исследовалось два типа модели, стационарная и мобильная, а также использовались разные алгоритмы распределения спектра для определения эффективности совместного использования этого спектра [<a href="#citeproc_bib_item_4">4</a>]
 
 -   Совместное использовании автоматической радиослужбы (АС) и быстрого интернета подвижного доступа (WiMAX) на полосе 5,9 ГГц.
 -   В статье проведено сравнение производительности обеих систем в общей среде.
@@ -41,20 +41,20 @@ slug: "research-vanet-protocol"
 
 -   Все эти элементы соединены в единую систему, которая позволяет автомобилям взаимодействовать друг с другом и с инфраструктурой Vanet.
 
--   Безопасность в инфраструктуры [<a href="#citeproc_bib_item_4">4</a>]
+-   Безопасность в инфраструктуры [<a href="#citeproc_bib_item_5">5</a>]
     -   Идея использовать для обеспечения безопасности и приватности данных (стандарт IEEE 1609.2) распределённую систему сертификатов.
     -   Статья предлагает эффективную децентрализованную инфраструктуру открытых ключей (PKI), используя концепции байесовской коалиционной игры (BCG) и обучающих автоматов (LA). Предполагается, что LA являются игроками в игре, координирующими информационный обмен друг с другом. Для сохранения конфиденциальности и целостности сообщений формулируется динамическая коалиция среди игроков игры с использованием шифрования симметричным ключом и аутентификации сообщений на основе хэша. Кроме того, в предложенную схему включены сохранение приватности и отзыв сертификатов для защиты от неправильно ведущих себя транспортных средств. Для каждого действия, выполняемого автоматом, его действие может быть вознаграждено/штрафовано окружающей средой, в которой он работает. LA обновляют свои матрицы вероятности действий, получая усиливающий сигнал от окружающей среды. Производительность предложенной схемы оценивается по различным метрикам в сравнении с другими современными существующими схемами. Полученные результаты доказывают превосходство предложенной схемы.
     -   Два вида узлов: RSU это станции, которые устанавливаются вдоль движения автомобилей. В зависимости от использования протокола - меняется и дальность взаимодействия между узлами в сети, а значит и будут отличаться требования к этим станциям. OBU - это передатчики, установленные на автомобилях, их задача получать данные от сенсоров автомобилей и общаться с RSU. Тут я видел разные подходы к этому, например, чтобы использовать в качестве поставщика данных для OBU обычный смартфон человека, который сидит в автомобиле.
 
--   Например по одной технологии (например wifi) общаются между собой автомобили, а с RSU они общаются по другой технологии (например RF, то есть радиочастотный модуль) [<a href="#citeproc_bib_item_5">5</a>]
+-   Например по одной технологии (например wifi) общаются между собой автомобили, а с RSU они общаются по другой технологии (например RF, то есть радиочастотный модуль) [<a href="#citeproc_bib_item_6">6</a>]
 
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Cheng B. <a href="https://www.winlab.rutgers.edu/~gruteser/papers/ITSWC2018%20Challenges%20of%20sharing%20the%20DSRC%20band%20in%20the%20U.S--BinCheng.pdf">Challenges of sharing the DSRC band in the U.S.</a> / B. Cheng, H. Lu, A. Rostami [и др.] // 25th ITS World Congress. – Copenhagen, Denmark, 2018. – Сс. 1–10.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Anwer M. S. <a href="https://doi.org/https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=3dcc7d5f5f88698dc256c8bff21a13570d902e17">A survey of VANET technologies</a> / M. S. Anwer, C. Guy // Journal of emerging trends in computing and information sciences. – 2014. – Т. 5. – № 9. – Сс. 661–671.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Kenney J. B. <a href="https://www.researchgate.net/publication/295080241_Spectrum_Sharing_in_the_59_GHz_DSRC_Band">Spectrum Sharing in the 5.9 GHz DSRC Band</a> / J. B. Kenney // 22 its world congress. – Bordeaux, 2015. – Сс. 1–12.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Kumar N. <a href="https://doi.org/10.1016/j.jcss.2014.12.016">An intelligent approach for building a secure decentralized public key infrastructure in VANET</a> / N. Kumar, R. Iqbal, S. Misra, J. J. P. C. Rodrigues // Journal of computer and system sciences. – 2015. – Т. 81. – № 6. – Сс. 1042–1058.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Sumayya P. A. <a href="https://doi.org/10.1016/j.procs.2015.01.030">VANET Based Vehicle Tracking Module for Safe and Efficient Road Transportation System</a> / P. A. Sumayya, P. S. Shefeena // Procedia computer science. – 2015. – Т. 46. – Сс. 1173–1180.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Tanuja K. <a href="https://doi.org/10.5120/21637-4965">A Survey on Vanet Technologies</a> / K. Tanuja, T. M. Sushma, M. Bharathi, K. H. Arun // International journal of computer applications. – 2015. – Т. 121. – № 18. – Сс. 1–9.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Tanuja, K. A Survey on Vanet Technologies / K. Tanuja, T.M. Sushma, M. Bharathi, K.H. Arun // International Journal of Computer Applications. – 2015. – Т. 121. – № 18. – Сс. 1–9. DOI: <a href="https://doi.org/10.5120/21637-4965">10.5120/21637-4965</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Anwer, M.S. A survey of VANET technologies / M.S. Anwer, C. Guy // Journal of Emerging Trends in Computing and Information Sciences. – 2014. – Т. 5. – № 9. – Сс. 661–671. DOI: <a href="https://doi.org/https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=3dcc7d5f5f88698dc256c8bff21a13570d902e17">https://citeseerx.ist.psu.edu/document?repid=rep1&#38;type=pdf&#38;doi=3dcc7d5f5f88698dc256c8bff21a13570d902e17</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Cheng, B. <a href="https://www.winlab.rutgers.edu/~gruteser/papers/ITSWC2018%20Challenges%20of%20sharing%20the%20DSRC%20band%20in%20the%20U.S--BinCheng.pdf">Challenges of sharing the DSRC band in the U.S.</a> / B. Cheng, H. Lu, A. Rostami и др. // 25th ITS World Congress. – Copenhagen, Denmark, 2018. – Сс. 1–10.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Kenney, J.B. <a href="https://www.researchgate.net/publication/295080241_Spectrum_Sharing_in_the_59_GHz_DSRC_Band">Spectrum Sharing in the 5.9 GHz DSRC Band</a> / J.B. Kenney // 22 ITS World Congress. – Bordeaux, 2015. – Сс. 1–12.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Kumar, N. An intelligent approach for building a secure decentralized public key infrastructure in VANET / N. Kumar, R. Iqbal, S. Misra, J.J.P.C. Rodrigues // Journal of Computer and System Sciences. – 2015. – Т. 81. – № 6. – Сс. 1042–1058. DOI: <a href="https://doi.org/10.1016/j.jcss.2014.12.016">10.1016/j.jcss.2014.12.016</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Sumayya, P.A. VANET Based Vehicle Tracking Module for Safe and Efficient Road Transportation System / P.A. Sumayya, P.S. Shefeena // Procedia Computer Science. – 2015. – Т. 46. – Сс. 1173–1180. DOI: <a href="https://doi.org/10.1016/j.procs.2015.01.030">10.1016/j.procs.2015.01.030</a>.</div>
 </div>

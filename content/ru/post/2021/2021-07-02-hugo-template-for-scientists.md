@@ -2,14 +2,16 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2023-07-03T10:41:00+03:00
+lastmod: 2023-11-11T22:34:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "hugo-template-for-scientists"
 ---
 
-Тема _Wowchemy_. Бывшая _Academic_.
+-   Тема _Hugo Academic CV Theme_.
+-   Бывшая тема _Wowchemy_.
+-   Бывшая тема _Academic_.
 
 <!--more-->
 
@@ -18,9 +20,10 @@ slug: "hugo-template-for-scientists"
 
 ## <span class="section-num">1</span> Информация {#информация}
 
--   Сайт: <https://wowchemy.com/>
--   Репозиторий: <https://github.com/wowchemy>
--   Репозиторий модуля темы: <https://github.com/wowchemy/wowchemy-hugo-modules>
+-   Сайт: <https://hugoblox.com/>
+-   Репозиторий темы: <https://github.com/HugoBlox/theme-academic-cv>
+-   Репозитории вариантов тем: <https://github.com/HugoBlox>
+-   Репозиторий модулей тем: <https://github.com/HugoBlox/hugo-blox-builder>
 
 
 ## <span class="section-num">2</span> Обновление шаблонов Wowchemy {#обновление-шаблонов-wowchemy}
@@ -72,30 +75,27 @@ slug: "hugo-template-for-scientists"
         -   версия сборки в ​​​​форме `v<dummy-version-number>-<date>-<build-number>`.
 -   Отредактируйте файл `go.mod`:
     ```conf-unix
-    module github.com/wowchemy/starter-hugo-academic
+    module my_website
 
     go 1.15
 
     require (
-      github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms main
-      github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify main
-      github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal main
-      github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5 main
+            github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.6
+            github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231108141515-0478cf6921f9
+            github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal v1.1.2
     )
     ```
 
     -   Вы настраиваете версию модуля в операторе `require`.
-    -   Вместо версии `main` можно задать конкретную версию модуля (в формате `v5.x.y`).
--   Обновите пути модулей в файле `config/_default/config.yaml`:
+    -   ~~Вместо версии `main` можно задать конкретную версию модуля (в формате `v5.x.y`).~~
+-   Обновите пути модулей в файле `config/_default/module.yaml`:
     ```yaml
-    module:
-      imports:
-    ​    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify-cms
-    ​    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-netlify
-    ​    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-plugin-reveal
-    ​    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy/v5
+    imports:
+    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
+    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
     ```
--   Обновите переменную `HUGO_VERSION` до рекомендованной (возите из примечания к выпуску <https://github.com/wowchemy/wowchemy-hugo-themes/releases>).
+-   Определите необходимую версию `hugo` (`HUGO_VERSION`) (возьмите из примечания к выпуску <https://github.com/HugoBlox/hugo-blox-builder/releases>).
 -   Проверьте, что локальная версия _Hugo Extended_ имеет необходимую версию.
 -   Последовательно примените любые критические изменения из соответствующих примечаний к выпуску. Если в релизе нет раздела _Breaking Changes_, то никаких изменений не требуется.
 -   Обновите модули темы:

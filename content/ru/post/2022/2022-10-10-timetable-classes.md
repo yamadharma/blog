@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-07T11:26:00+03:00
+lastmod: 2023-11-08T11:32:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -210,7 +210,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1
+        1. <span class="org-todo todo NEXT">NEXT</span>  Переаттестация № 1
 
         <!--list-separator-->
 
