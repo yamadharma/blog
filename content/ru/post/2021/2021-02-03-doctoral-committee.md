@@ -2,7 +2,7 @@
 title: "Диссертационный совет"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:46:00+03:00
-lastmod: 2023-09-28T16:17:00+03:00
+lastmod: 2023-11-16T19:19:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -59,7 +59,7 @@ slug: "doctoral-committee"
 
 ### <span class="section-num">3.1</span> Паспорта специальностей {#паспорта-специальностей}
 
--   Паспорта специальностей на сайте ВАК: <https://drive.google.com/drive/folders/1RNYkXhvAzaEF85GqxOH8HhbenJIoUMR7>.
+-   [Паспорт научной специальности]({{< relref "2023-11-16-passport-scientific-specialty" >}})
 
 
 ## <span class="section-num">4</span> Рабочая документация {#рабочая-документация}

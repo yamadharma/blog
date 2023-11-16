@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-08T11:32:00+03:00
+lastmod: 2023-11-16T18:25:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -202,19 +202,19 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации <code>[0/1]</code>
+3. <span class="org-todo todo NEXT">NEXT</span>  Переаттестации <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo NEXT">NEXT</span>  Информационная безопасность
+    1. <span class="org-todo todo NEXT">NEXT</span>  Переаттестации. Информационная безопасность <code>[1/2]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo NEXT">NEXT</span>  Переаттестация № 1
+        1. <span class="org-todo done DONE">DONE</span>  Переаттестация № 1. Информационная безопасность
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2
+        2. <span class="org-todo todo NEXT">NEXT</span>  Переаттестация № 2. Информационная безопасность
 
 
 #### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Сессия, модуль 2 <code>[0/0]</code> {#сессия-модуль-2}

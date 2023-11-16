@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2023-09-13T16:08:00+03:00
+lastmod: 2023-11-13T20:15:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

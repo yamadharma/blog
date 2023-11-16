@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-19T17:57:00+03:00
-lastmod: 2023-11-06T12:50:00+03:00
+lastmod: 2023-11-15T09:41:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -71,10 +71,15 @@ menu:
 
 ## <span class="section-num">4</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
+{{< tabs tabTotal="3" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube 20ca1a0b52e1e900445be6cab5c5a2ac >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKVideo" >}}
+
+{{< vkvideo oid="606414976" id="456239573" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}

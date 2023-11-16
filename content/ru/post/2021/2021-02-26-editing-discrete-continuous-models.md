@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2023-08-25T13:06:00+03:00
+lastmod: 2023-11-13T18:48:00+03:00
 tags: ["sci-admin"]
 categories: ["science"]
 draft: false
@@ -44,6 +44,11 @@ slug: "editing-discrete-continuous-models"
 
 
 ### <span class="section-num">1.2</span> Индексирование {#индексирование}
+
+
+#### <span class="section-num">1.2.1</span> Scopus {#scopus}
+
+-   Профиль журнала на Scopus: <https://www.scopus.com/sourceid/21101168860>
 
 
 ### <span class="section-num">1.3</span> Общий список индексирования {#общий-список-индексирования}

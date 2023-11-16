@@ -2,7 +2,7 @@
 title: "Миграция с bitbucket на gitea"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-31T11:23:00+03:00
-lastmod: 2023-11-11T20:43:00+03:00
+lastmod: 2023-11-14T18:53:00+03:00
 tags: ["git", "sysadmin"]
 categories: ["computer-science"]
 draft: false

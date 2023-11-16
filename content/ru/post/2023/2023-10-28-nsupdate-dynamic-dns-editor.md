@@ -2,7 +2,7 @@
 title: "nsupdate: динамический редактор зон DNS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-28T19:28:00+03:00
-lastmod: 2023-10-28T20:09:00+03:00
+lastmod: 2023-11-15T14:10:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -29,13 +29,13 @@ nsupdate: динамический редактор зон DNS.
 -   Создадим ключ для зоны `example.com`:
     ```shell
     mkdir -p /etc/named/keys
-    tsig-keygen -a HMAC-SHA512 example.com > /etc/named/keys/example.com.key
+    tsig-keygen -a HMAC-SHA256 example.com > /etc/named/keys/example.com.key
     ```
 -   Файл `/etc/named/keys/example.com.key` будет иметь следующий вид:
     ```conf-unix
-    key "user.net" {
-        algorithm hmac-md5;
-        secret "EgxIOyQglf4KAUF7lgu9yA==";
+    key "example.com" {
+        algorithm hmac-sha256;
+        secret "KbWuOipDOQ80ZoCiSWxhJmulLmaWSNgw43v9KkUQZBY=";
     };
     ```
 
@@ -66,6 +66,7 @@ nsupdate: динамический редактор зон DNS.
 -   Поправим права доступа:
     ```shell
     chown -R named:named /var/named
+    chown -R named:named /etc/named
     find /var/named -type d -exec chmod 770 {} \;
     find /var/named -type f -exec chmod 660 {} \;
     ```
@@ -161,3 +162,9 @@ nsupdate: динамический редактор зон DNS.
     ```shell
     echo -e "update add www.example.com 86400 a 192.168.1.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
     ```
+
+
+## <span class="section-num">4</span> Материалы {#материалы}
+
+-   Скрипт для упрощения использования nsupdate
+    -   Репозиторий: <https://github.com/perryflynn/nsupdate-interactive>

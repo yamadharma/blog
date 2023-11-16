@@ -2,7 +2,7 @@
 title: "Автоматизация установки операционных систем"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-23T13:04:00+03:00
-lastmod: 2023-10-23T13:29:00+03:00
+lastmod: 2023-11-15T09:53:00+03:00
 tags: ["sysadmin", "education"]
 categories: ["computer-science"]
 draft: false
@@ -29,10 +29,15 @@ menu:
 
 ### <span class="section-num">1.1</span> Packer: создание box файла {#packer-создание-box-файла}
 
-{{< tabs tabTotal="2" >}}
+{{< tabs tabTotal="3" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube 5ca02ddb70b62eb6ec824903ab2bff97 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKVideo" >}}
+
+{{< vkvideo oid="606414976" id="456239571" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}
@@ -45,10 +50,15 @@ menu:
 
 ### <span class="section-num">1.2</span> Vagrant: запуск виртуальной машины {#vagrant-запуск-виртуальной-машины}
 
-{{< tabs tabTotal="2" >}}
+{{< tabs tabTotal="3" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube 62fc8bdec2792bbd1dc146519da69689 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKVideo" >}}
+
+{{< vkvideo oid="606414976" id="456239572" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}

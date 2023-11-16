@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-10-26T13:21:00+03:00
+lastmod: 2023-11-14T19:08:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -160,3 +160,33 @@ We propose new algorithms for analytical (symbolic) and high precision numerical
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+## <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-11-23 Чт&gt; </span></span> Григорян О. А. _Моделирование эволюции охлаждения нейтронных звезд_ {#григорян-о-dot-а-dot-моделирование-эволюции-охлаждения-нейтронных-звезд}
+
+
+### <span class="section-num">2.1</span> Докладчик {#докладчик}
+
+-   Овик Александрович Григорян
+-   Лаборатория информационных технологий им. М. Г. Мещерякова, Объединенный институт ядерных исследований, Дубна, Россия
+-   Отдел вычислительной физики и ИТ, Национальная научная лаборатория им. А. И. Алиханяна (ЕрФИ), Ереван, Армения
+
+
+### <span class="section-num">2.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/240/>
+-   Моделирование эволюции охлаждения нейтронных звезд
+-   Овик Александрович Григорян
+-   Лаборатория информационных технологий им. М. Г. Мещерякова, Объединенный институт ядерных исследований, Дубна, Россия
+-   Отдел вычислительной физики и ИТ, Национальная научная лаборатория им. А. И. Алиханяна (ЕрФИ), Ереван, Армения
+
+Нейтронные звезды как релятивистские объекты описываются уравнениями общей теории относительности. Поэтому для моделирования их тепловой эволюции необходимо использовать уравнение состояния сверхплотной ядерной материи и её состава, а также модификации уравнения теплопереноса на случай релятивизма. Основными факторами охлаждения нейтронных звезд являются излучение нейтрино в ходе равновесных бета-процессов в горячей звездной среде: адронной материи во внутренней оболочке и возможной кварковой материи в ядре звезды. Особую роль в эволюции охлаждения играет сверхпроводящее состояние звездного вещества при высоких плотностях. Также важным аспектом является умение определять наборы параметров моделей, при которых моделирование температуры поверхности звезд будет удовлетворять известным современным данным наблюдений по температуре и возрасту десятков объектов. Нами был создан пакет программ, моделирующий эволюцию остывания нейтронных звезд для различных моделей ядерной материи с учетом модификаций средовых механизмов излучения нейтрино, сверхпроводящего состояния и свойств коры. Учтена возможность существования гиперонов, кварков, звезд-близнецов и темной материи внутри звезды. В программе также реализованы алгоритмы параллельных вычислений. Предложен метод извлечения модельно-зависимых вероятностей возможных значений масс наблюдаемых объектов на основе результатов эволюции охлаждения. Эти результаты можно использовать для валидации моделей ядерной материи в экстремальных условиях.
+
+---
+
+-   Modeling the evolution of cooling of neutron stars
+-   Hovik Grigorian
+-   Meshcheryakov Laboratory of Information Technologies, Joint Institute for Nuclear Research, Dubna, Russia
+-   Division of Computational Physics and IT, Alikhanyan National Science Laboratory (YerPhI), Yerevan, Armenia
+
+Neutron stars, as relativistic objects, are described by the equations of general relativity. Therefore, for modeling their thermal evolution, it is necessary to use the equation of state of superdense nuclear matter and its composition, as well as modifications of the heat transfer equation for relativistic cases. The primary cooling factors of neutron stars are neutrino emissions during equilibrium beta processes in the hot stellar environment: in the hadronic matter of the inner shell and the possible quark matter in the star's core. An essential role in the cooling evolution is played by the superconducting state of stellar matter at such high densities. Another important aspect is the ability to determine sets of model parameters under which the surface temperature modeling of stars will satisfy known contemporary observational data on the temperature and age of tens of objects. We have developed a software package that models the cooling evolution of neutron stars for various models of nuclear matter, taking into account modifications of neutrino emission mechanisms, superconducting states, and crust properties. The program accounts for the possibility of hyperons, quarks, twin stars and dark matter existing within the star.  Parallel computing algorithms are also implemented in the software. A method is proposed for extracting model-dependent probabilities of possible values of the masses of observed objects based on the results of the cooling evolution. All these results can be used to validate nuclear matter models under extreme conditions.

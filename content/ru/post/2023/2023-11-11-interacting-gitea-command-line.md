@@ -2,7 +2,7 @@
 title: "Взаимодействие с gitea из командной строки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-11T20:31:00+03:00
-lastmod: 2023-11-11T22:06:00+03:00
+lastmod: 2023-11-13T12:26:00+03:00
 tags: ["sysadmin", "git"]
 categories: ["computer-science"]
 draft: false
@@ -44,7 +44,7 @@ slug: "interacting-gitea-command-line"
     ```shell
     tea repos ls
     ```
--   Создать репозитоирий
+-   Создать репозиторий:
     ```shell
     tea repo create --name "Название репозитория"
     ```

@@ -2,7 +2,7 @@
 title: "DNS. Bind. DNSSEC"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-16T19:52:00+03:00
-lastmod: 2023-09-26T11:59:00+03:00
+lastmod: 2023-11-15T14:01:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false

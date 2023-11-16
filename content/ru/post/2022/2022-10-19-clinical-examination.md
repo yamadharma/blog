@@ -2,9 +2,9 @@
 title: "Диспансеризация"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-19T19:20:00+03:00
-lastmod: 2023-07-11T12:45:00+03:00
-tags: ["health"]
-categories: ["life"]
+lastmod: 2023-11-14T12:53:00+03:00
+tags: ["rudn", "health"]
+categories: ["job", "life"]
 draft: false
 slug: "clinical-examination"
 ---
