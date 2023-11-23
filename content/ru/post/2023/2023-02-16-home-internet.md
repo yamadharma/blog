@@ -2,7 +2,7 @@
 title: "Домашний интернет"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-16T15:17:00+03:00
-lastmod: 2023-08-23T14:45:00+03:00
+lastmod: 2023-11-19T19:28:00+03:00
 tags: ["apartment", "network"]
 categories: ["life"]
 draft: false
@@ -83,3 +83,14 @@ slug: "home-internet"
 -   Приложение для телефона: <https://play.google.com/store/apps/details?id=com.sevensky.app&hl=ru&gl=US>.
 -   Настройка:
     -   Интернет: <https://www.seven-sky.net/for_abonents/InternetTV/Nastrojki_podklyucheniya_k_seti_Internet>
+
+
+#### <span class="section-num">1.5.2</span> Рекомендации по подключению {#рекомендации-по-подключению}
+
+-   На сайте нужно вверху набрать свою улицу и дом, заказать звонок.
+-   Рекомендую тариф Можно - 500, с годовой оплатой.
+-   Маршрутизатор (если не осталось старого), можно купить у них.
+    -   Цены нормальные.
+    -   Рекомендую Wi-fi роутер Keenetic Speedster KN-12
+-   Если на телевизоре SMART, то телеприставка не обязательна.
+-   Посмотрите акции: <https://www.seven-sky.net/for_abonents/Akcii>

@@ -2,7 +2,7 @@
 title: "Emacs. Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T17:13:00+03:00
-lastmod: 2023-07-30T20:33:00+03:00
+lastmod: 2023-11-23T19:54:00+03:00
 tags: ["julia", "emacs", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -24,3 +24,4 @@ slug: "emacs-julia"
 ## <span class="section-num">2</span> Режим REPL {#режим-repl}
 
 -   [Emacs. Julia. Julia-repl]({{< relref "2022-01-21-emacs-julia-julia-repl" >}})
+-   [Emacs. Julia. Julia Snail]({{< relref "2023-11-23-emacs-julia-julia-snail" >}})

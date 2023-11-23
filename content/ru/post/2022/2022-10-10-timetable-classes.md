@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-16T18:25:00+03:00
+lastmod: 2023-11-23T18:35:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -157,10 +157,10 @@ slug: "timetable-classes"
 ## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1</span> 2023--2024 учебный год, промежуточные аттестации <code>[0/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1</span> 2023--2024 учебный год, промежуточные аттестации <code>[1/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.1</span> Сессия, модуль 1 <code>[2/3]</code> {#сессия-модуль-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
 
 <!--list-separator-->
 
@@ -202,11 +202,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo NEXT">NEXT</span>  Переаттестации <code>[0/1]</code>
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo NEXT">NEXT</span>  Переаттестации. Информационная безопасность <code>[1/2]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Переаттестации. Информационная безопасность <code>[2/2]</code>
 
         <!--list-separator-->
 
@@ -214,7 +214,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo NEXT">NEXT</span>  Переаттестация № 2. Информационная безопасность
+        2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
 #### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Сессия, модуль 2 <code>[0/0]</code> {#сессия-модуль-2}

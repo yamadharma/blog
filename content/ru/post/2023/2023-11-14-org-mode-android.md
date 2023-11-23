@@ -2,7 +2,7 @@
 title: "Org-mode. Приложения Android"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-14T19:46:00+03:00
-lastmod: 2023-11-14T20:08:00+03:00
+lastmod: 2023-11-21T17:56:00+03:00
 tags: ["org-mode"]
 categories: ["computer-science"]
 draft: false
@@ -35,5 +35,9 @@ Org-mode. Приложения для Android.
 
 ## <span class="section-num">2</span> Org Note {#org-note}
 
--   Репозиторий: <https://github.com/Artawower/orgnote>
 -   Для синхронизации заметок из org-roam с телефоном.
+-   Сайт: <https://about.org-note.com/>
+-   Online-вариант: <https://org-note.com/>
+-   Репозиторий: <https://github.com/Artawower/orgnote>
+-   Репозиторий (клиент): <https://github.com/Artawower/orgnote-client>
+-   GooglePlay: <https://play.google.com/store/apps/details?id=org.note.app>
