@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-11-23T18:03:00+03:00
+lastmod: 2023-11-27T12:06:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -206,3 +206,54 @@ Neutron stars, as relativistic objects, are described by the equations of genera
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-07 Чт&gt; </span></span> Цапко Е. Д. - Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений {#цапко-е-dot-д-dot-эффективные-стратегии-для-численного-решения-сингулярно-возмущенных-обыкновенных-дифференциальных-уравнений}
+
+
+#### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
+
+-   Цапко Екатерина Дмитриевна
+
+
+#### <span class="section-num">1.5.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/243/>
+-   Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений
+-   Цапко Екатерина Дмитриевна
+
+В докладе автор представит результаты своей диссертационной работы, посвященной разработке численных методов для решения сингулярно возмущенных начальных и краевых задач для систем дифференциальных уравнений. Центральная тема доклада - преодоление ограничений существующих численных методов, особенно при решении жестких задач, где традиционные подходы либо требуют значительного увеличения времени расчета, либо оказываются недостаточно эффективными. Автор предлагает модификацию метода продолжения решения по наилучшему аргументу, которая обеспечивает более высокую точность и эффективность в решении жестких и сверхжестких задач. В докладе рассмотрено математическое моделирование ряда тестовых и прикладных жестких задач. В качестве тестовых задач рассмотрены степенной и экспоненциальные тесты, предложенные в работах Н.Н. Калиткина и А.А. Белова. Вычислительный эксперимент показывает, что при степенной скорости роста наилучший аргумент, отсчитываемый по касательной вдоль интегральной кривой рассматриваемой задачи, эффективен. Однако при сверх степенной или экспоненциальной скорости роста он таковым не является. Предложенная автором модификация направлена на снижение жесткости таких задач. На тестовых задачах и прикладной задаче о сверхзвуковом течении в канале переменного сечения продемонстрированы преимущества и недостатки нового подхода. Особое внимание  уделено теоретическим аспектам метода, а именно анализу устойчивости явного метода Эйлера для задачи, преобразованной к модифицированному наилучшему аргументу. Это позволит глубже понять принципы работы метода и его применение в различных областях научного исследования.
+
+Разработанная вычислительная программа для ЭВМ получила государственную регистрацию: «Численное решение системы обыкновенных дифференциальных уравнений с помощью модифицированного наилучшего параметра». Свидетельство о государственной регистрации программы для ЭВМ № 2022610641, 13.01.2022г.
+
+Работа была поддержана аспирантским грантом РФФИ: № 20-31-90054 «Численные методы решения сингулярно возмущенных начальных и краевых задач, моделирующих механические и физические явления». Сроки 2020-2022 годы.
+
+Основные  публикации:
+
+1.  Кузнецов Е. Б., Леонов С. С., Цапко Е. Д. Параметризация задачи Коши длянелинейных дифференциальных уравнений с контрастными структурами // Вестник Мордовского университета. 2018. Т. 28. № 4. С. 486-510. (WoS, ВАК)
+2.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. A new numerical approach for solving initial value problems with exponential growth integral curves // IOP Conference Series: Materials Science and Engineering. 2020. Vol. 927. No. 1. (Scopus, ВАК)
+3.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Applying the Best Parameterization Method and Its Modifications for Numerical Solving of Some Classes of Singularly Perturbed Problems // Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies. Springer, Singapore. 2022. Vol. 274. Pp. 311-330. (Scopus, ВАК)
+4.  Цапко Е. Д. Численное решение сингулярно возмущенной краевой задачисверхзвукового течения, преобразованной к модифицированному наилучшему аргументу // Журнал Средневолжского математического общества. 2022. Т. 24. № 3.
+
+С. 304–316. (ВАК)
+
+1.  Кузнецов Е. Б., Леонов С. С., Цапко Е. Д. Оценка области абсолютной устойчивости численной схемы решения жестких задач Коши методом продолжения решения по параметру // Журнал вычислительной математики и математической физики, 2023, T. 63, № 4, стр. 557-572. (WoS, Scopus, RSCI, ВАК)
+
+---
+
+-   Efficient strategies for numerical solution of singularly perturbed ordinary differential equations
+-   Ekaterina Tsapko
+
+In the seminar the author will present the results of her dissertation work devoted to the development of numerical methods for solving singularly perturbed initial and boundary value problems for systems of differential equations. The central theme of the paper is overcoming the limitations of existing numerical methods, especially in solving stiff problems where traditional approaches either require a significant increase in computation time or prove to be insufficiently efficient. The author proposes a modification of the solution continuation method with respect to the best argument, which provides higher accuracy and efficiency in solving stiff and ultra-stiff problems. The work includes mathematical modeling of a number of test and applied stiff problems. As test problems the power-law and exponential growth tests proposed in the works by N.N. Kalitkin and A.A. Belov are considered. The computational experiment shows that at a power rate of growth the best argument, measured by the tangent along the integral curve of the considered problem, is effective. However, at the rate higher than the power rate of growth or exponential growth rate it is not. The modification proposed by the author is aimed at reducing the stiffness of such problems. The advantages and disadvantages of the new approach are shown on test problems and an applied problem of supersonic flow in a channel of variable cross-section. Particular attention is devoted to the theoretical aspects of the method, namely, the stability analysis of the explicit Euler method for the problem transformed to the best modified argument. This will provide a deeper understanding of the working principles of the method and its application in various fields of scientific research.
+
+The developed computational program has received state registration: "Numerical solution of the system of ordinary differential equations using the modified best parameter". Certificate of state registration of computer program No. 2022610641, 13.01.2022.
+
+The research was supported by the postgraduate grant of the Russian Foundation for Basic Research: No. 20-31-90054 "Numerical methods for solving singularly perturbed initial and boundary value problems modeling mechanical and physical phenomena". Terms 2020-2022.
+
+Key publications:
+
+1.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Parameterization of the Cauchy problem for nonlinear differential equations with contrast structures // Vestnik of Mordovian University. 2018. Т. 28. № 4. С. 486-510. (in Russian) (WoS, VAK)
+2.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. A new numerical approach for solving initial value problems with exponential growth integral curves // IOP Conference Series: Materials Science and Engineering. 2020. Vol. 927. No. 1. (Scopus, VAK)
+3.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Applying the Best Parameterization Method and Its Modifications for Numerical Solving of Some Classes of Singularly Perturbed Problems // Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies. Springer, Singapore. 2022. Vol. 274. Pp. 311-330. (Scopus, VAK)
+4.  Tsapko E. D. Numerical solution of the singularly perturbed boundary value problem of supersonic flow transformed to the best modified argument // Journal of the Middle Volga Mathematical Society. 2022. Т. 24. № 3. С. 304-316. (VAK)
+5.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Estimating the Domain of Absolute Stability of a Numerical Scheme Based on the Method of Solution Continuation with Respect to a Parameter for Solving Stiff Initial Value Problems // Computational Mathematics and Mathematical Physics, 2023, Vol. 63, No. 4, pp. 528–541. (WoS, Scopus, RSCI, VAK)

@@ -2,7 +2,7 @@
 title: "Наборы конфигураций Emacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-23T15:41:00+03:00
-lastmod: 2023-07-31T20:21:00+03:00
+lastmod: 2023-11-29T15:51:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -20,3 +20,8 @@ slug: "emacs-configuration-sets"
 
 
 ## <span class="section-num">2</span> Doom-emacs {#doom-emacs}
+
+
+## <span class="section-num">3</span> Разрозненные конфигурации {#разрозненные-конфигурации}
+
+-   <https://config.phundrak.com/emacs.html>

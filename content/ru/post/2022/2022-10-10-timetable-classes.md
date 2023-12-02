@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-11-23T18:35:00+03:00
+lastmod: 2023-12-01T17:03:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -63,7 +63,7 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.2</span> 2023--2024 учебный год, 1 четверть <code>[2/3]</code> {#2023-2024-учебный-год-1-четверть}
 
 -   2023-09-01 Пт--2023-11-05 Вс
 
@@ -234,31 +234,29 @@ slug: "timetable-classes"
 
 #### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.3</span> Сессия, семестр 1 <code>[0/0]</code> {#сессия-семестр-1}
 
-:ORDERED:  t
-
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты
+1. <span class="org-todo todo TODO">TODO</span>  Зачёты <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
+    1. <span class="org-todo todo TODO">TODO</span>  Научное программирование <code>[0/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  НПМмд-02-22
+        1. <span class="org-todo todo TODO">TODO</span>  Научное программирование, НПМмд-02-22
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены
+2. <span class="org-todo todo TODO">TODO</span>  Экзамены <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности
+    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности <code>[0/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  НПМмд-02-22, НФИмд-01-22, НФИмд-02-22
+        1. <span class="org-todo todo TODO">TODO</span>  НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
 
 <!--list-separator-->
 

@@ -2,7 +2,7 @@
 title: "Org-mode. Приложения Android"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-14T19:46:00+03:00
-lastmod: 2023-11-21T17:56:00+03:00
+lastmod: 2023-11-30T15:45:00+03:00
 tags: ["org-mode"]
 categories: ["computer-science"]
 draft: false
@@ -30,7 +30,9 @@ Org-mode. Приложения для Android.
 ### <span class="section-num">1.1</span> Orgzly Revived {#orgzly-revived}
 
 -   Репозиторий: <https://github.com/orgzly-revived/orgzly-android-revived>
+-   FDroid: <https://f-droid.org/packages/com.orgzlyrevived>
 -   Версия Orgzly, поддерживаемая сообществом.
+-   Синхронизация с WebDav и локальной папкой.
 
 
 ## <span class="section-num">2</span> Org Note {#org-note}

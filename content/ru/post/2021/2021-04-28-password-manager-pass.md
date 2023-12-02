@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2023-10-01T18:35:00+03:00
+lastmod: 2023-12-02T14:09:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -111,6 +111,7 @@ slug: "password-manager-pass"
 #### <span class="section-num">3.4.1</span> pass {#pass}
 
 -   Основной режим для управления хранилищем и редактирования записей.
+-   [Emacs. Пакет pass]({{< relref "2023-12-02-emacs-pass" >}})
 -   Репозиторий: <https://github.com/NicolasPetton/pass>
 -   Позволяет редактировать базу данных паролей.
 -   Запуск:

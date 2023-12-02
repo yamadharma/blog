@@ -2,7 +2,7 @@
 title: "Ремонт квартиры в новостройке"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-13T11:08:00+03:00
-lastmod: 2023-07-08T18:51:00+03:00
+lastmod: 2023-11-26T22:31:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false

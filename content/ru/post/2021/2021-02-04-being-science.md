@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2023-08-27T18:23:00+03:00
+lastmod: 2023-11-24T20:40:00+03:00
 tags: ["sci-being"]
 categories: ["science"]
 draft: false
@@ -60,3 +60,6 @@ _Бытие науки_. Разрозненные мысли.
 -   [Квартили списка ВАК]({{< relref "2023-05-18-hac-list-quartiles" >}})
 -   [Список журналов ВАК]({{< relref "2023-05-18-hac-list" >}})
 -   [Белый список журналов Минобрнауки]({{< relref "2023-05-18-white-list-journals" >}})
+-   [Научные журналы. Типология. Россия]({{< relref "2023-11-24-scientific-journals-typology-russia" >}})
+-   [Выбор научного журнала для публикации]({{< relref "2022-03-03-selecting-scientific-journal" >}})
+-   [Бизнес-модели научных журналов]({{< relref "2022-08-09-scientific-journal-business-models" >}})

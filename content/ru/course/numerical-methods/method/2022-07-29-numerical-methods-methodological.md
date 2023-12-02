@@ -2,7 +2,7 @@
 title: "Курс Численные методы. Методические замечания"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-29T20:13:00+03:00
-lastmod: 2023-10-24T12:49:00+03:00
+lastmod: 2023-12-02T13:24:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Загрузочный сервер PXE"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-08T14:42:00+03:00
-lastmod: 2023-11-22T09:01:00+03:00
+lastmod: 2023-11-29T11:19:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -89,19 +89,24 @@ slug: "pxe-server"
 
     require {
             type httpd_t;
+            type cobbler_var_lib_t;
             type tftpdir_rw_t;
             class dir read;
             class file { getattr open read };
+            class lnk_file read;
     }
 
     #============= httpd_t ==============
 
     #!!!! This avc is allowed in the current policy
+    allow httpd_t cobbler_var_lib_t:dir read;
+
+    #!!!! This avc is allowed in the current policy
     allow httpd_t tftpdir_rw_t:dir read;
 
     #!!!! This avc is allowed in the current policy
-    allow httpd_t tftpdir_rw_t:file { getattr read };
-    allow httpd_t tftpdir_rw_t:file open;
+    allow httpd_t tftpdir_rw_t:file { getattr open read };
+    allow httpd_t tftpdir_rw_t:lnk_file read;
     ```
 -   Применим его:
     ```shell

@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2023-11-08T14:33:00+03:00
+lastmod: 2023-11-28T16:30:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -30,6 +30,38 @@ slug: "emacs-personal-knowledge-base"
 -   [Org-roam]({{< relref "2022-11-23-org-roam" >}})
 -   Самый известный проект в области системе типа Zettelkasten на Emacs.
 -   Имеет достаточно большое количество сопутствующих пакетов.
+
+
+#### <span class="section-num">1.1.1</span> Сопутствующие проекты Org-roam {#сопутствующие-проекты-org-roam}
+
+<!--list-separator-->
+
+1.  org-roam-ui
+
+    -   Репозиторий: <https://github.com/org-roam/org-roam-ui>.
+    -   Графический интерфейс, строящий граф для заметок org-roam.
+    -   Визуализация связей между заметками.
+
+<!--list-separator-->
+
+2.  org-roam-bibtex
+
+    -   Репозиторий: <https://github.com/org-roam/org-roam-bibtex>.
+    -   Интеграция org-roam с программным обеспечением для управления библиографией.
+
+<!--list-separator-->
+
+3.  zetteldesk.el
+
+    -   Репозиторий: <https://github.com/Vidianos-Giannitsis/zetteldesk.el>
+    -   Навигация по заметкам.
+
+<!--list-separator-->
+
+4.  vulpea
+
+    -   Репозиторий: <https://github.com/d12frosted/vulpea>
+    -   Библиотека для расширения возможности ведения заметок в org-roam.
 
 
 ### <span class="section-num">1.2</span> Gkroam {#gkroam}
