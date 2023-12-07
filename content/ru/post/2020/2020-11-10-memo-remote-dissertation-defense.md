@@ -3,7 +3,7 @@ title: "Памятка при удалённой защите диссертац
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-10T19:26:00+03:00
 lastmod: 2023-09-26T16:33:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "memo-remote-dissertation-defense"

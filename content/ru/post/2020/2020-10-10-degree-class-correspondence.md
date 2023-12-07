@@ -3,7 +3,7 @@ title: "Соответствие современных учёных степе�
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-10T18:15:00+03:00
 lastmod: 2023-09-02T18:56:00+03:00
-tags: ["sci-being", "sci-admin"]
+tags: ["science-being", "science-admin"]
 categories: ["science"]
 draft: false
 slug: "degree-class-correspondence"

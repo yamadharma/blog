@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Одноразовые пароли"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-24T20:29:00+03:00
-lastmod: 2023-10-09T09:34:00+03:00
+lastmod: 2023-12-07T17:18:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -43,7 +43,7 @@ slug: "password-manager-pass-one-time-passwords"
         ```
 -   Например, URL для github имеет вид:
     ```yaml
-    tpauth://totp/GitHub:<username>?secret=<secret>&issuer=GitHub
+    otpauth://totp/GitHub:<username>?secret=<secret>&issuer=GitHub
     ```
 
 
@@ -96,9 +96,9 @@ slug: "password-manager-pass-one-time-passwords"
 
 -   Сгенерировать код 2FA, используя токен:
     ```shell
-    pass otp totp-secret
+    pass otp <totp-secret>
     ```
 -   Отобразить QR-код для токена OTP:
     ```shell
-    pass otp uri -q totp-secret
+    pass otp uri -q <totp-secret>
     ```

@@ -3,7 +3,7 @@ title: "Студенческие публикации"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-01T15:44:00+03:00
 lastmod: 2023-07-16T17:10:00+03:00
-tags: ["sci-being"]
+tags: ["science-being"]
 categories: ["science"]
 draft: false
 slug: "student-publications"

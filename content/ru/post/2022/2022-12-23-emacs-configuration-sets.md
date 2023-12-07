@@ -2,7 +2,7 @@
 title: "Наборы конфигураций Emacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-23T15:41:00+03:00
-lastmod: 2023-11-29T15:51:00+03:00
+lastmod: 2023-12-02T20:45:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -25,3 +25,5 @@ slug: "emacs-configuration-sets"
 ## <span class="section-num">3</span> Разрозненные конфигурации {#разрозненные-конфигурации}
 
 -   <https://config.phundrak.com/emacs.html>
+-   <https://tecosaur.github.io/emacs-config/config.html>
+-   <https://qua.name/mrb/an-org-babel-based-emacs-configuration>

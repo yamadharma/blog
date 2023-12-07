@@ -3,7 +3,7 @@ title: "Комиссия по развитию электронной образ
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-16T10:14:00+03:00
 lastmod: 2023-09-30T20:13:00+03:00
-tags: ["rudn", "education", "sci-admin"]
+tags: ["rudn", "education", "science-admin"]
 categories: ["job", "science"]
 draft: false
 slug: "commission-development-electronic-educational-environment"

@@ -3,7 +3,7 @@ title: "Семестры vs. модули"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-09T13:16:00+03:00
 lastmod: 2023-10-06T17:03:00+03:00
-tags: ["rudn", "sci-admin", "education"]
+tags: ["rudn", "science-admin", "education"]
 categories: ["job", "science"]
 draft: false
 slug: "semesters-vs-modules"

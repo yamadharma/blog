@@ -2,7 +2,7 @@
 title: "Средства Microsoft для цифрового обучения"
 date: 2020-10-17T18:16:00+03:00
 lastmod: 2021-01-11T11:07:00+03:00
-tags: ["education", "sci-admin"]
+tags: ["education", "science-admin"]
 categories: ["сиянс"]
 draft: false
 slug: "microsoft-digital-learning-tools"

@@ -3,7 +3,7 @@ title: "Подготовка грантов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T18:14:00+03:00
 lastmod: 2023-11-15T11:37:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "grants-preparation"

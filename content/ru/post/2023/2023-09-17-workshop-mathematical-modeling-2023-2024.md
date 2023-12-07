@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-11-27T12:06:00+03:00
+lastmod: 2023-12-07T18:03:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -208,7 +208,7 @@ Neutron stars, as relativistic objects, are described by the equations of genera
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-07 Чт&gt; </span></span> Цапко Е. Д. - Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений {#цапко-е-dot-д-dot-эффективные-стратегии-для-численного-решения-сингулярно-возмущенных-обыкновенных-дифференциальных-уравнений}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-07 Чт&gt; </span></span> Цапко Е. Д. - Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений {#цапко-е-dot-д-dot-эффективные-стратегии-для-численного-решения-сингулярно-возмущенных-обыкновенных-дифференциальных-уравнений}
 
 
 #### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
@@ -257,3 +257,19 @@ Key publications:
 3.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Applying the Best Parameterization Method and Its Modifications for Numerical Solving of Some Classes of Singularly Perturbed Problems // Advances in Theory and Practice of Computational Mechanics. Smart Innovation, Systems and Technologies. Springer, Singapore. 2022. Vol. 274. Pp. 311-330. (Scopus, VAK)
 4.  Tsapko E. D. Numerical solution of the singularly perturbed boundary value problem of supersonic flow transformed to the best modified argument // Journal of the Middle Volga Mathematical Society. 2022. Т. 24. № 3. С. 304-316. (VAK)
 5.  Kuznetsov E. B., Leonov S. S., Tsapko E. D. Estimating the Domain of Absolute Stability of a Numerical Scheme Based on the Method of Solution Continuation with Respect to a Parameter for Solving Stiff Initial Value Problems // Computational Mathematics and Mathematical Physics, 2023, Vol. 63, No. 4, pp. 528–541. (WoS, Scopus, RSCI, VAK)
+
+
+#### <span class="section-num">1.5.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube e2efc6d6bd3b096729421e9abe4e14d4 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube kjJ6bYxfWdg >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

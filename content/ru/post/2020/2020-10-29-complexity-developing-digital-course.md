@@ -3,7 +3,7 @@ title: "Трудоёмкость разработки цифрового кур�
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-29T19:15:00+03:00
 lastmod: 2023-09-16T17:56:00+03:00
-tags: ["sci-admin", "education"]
+tags: ["science-admin", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "complexity-developing-digital-course"

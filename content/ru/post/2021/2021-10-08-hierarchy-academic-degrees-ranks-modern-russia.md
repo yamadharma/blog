@@ -3,7 +3,7 @@ title: "Иерархия учёных степеней и званий в сов
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-08T18:53:00+03:00
 lastmod: 2023-09-16T18:28:00+03:00
-tags: ["sci-being", "sci-admin", "science"]
+tags: ["science-being", "science-admin", "science"]
 categories: ["science"]
 draft: false
 slug: "hierarchy-academic-degrees-ranks-modern-russia"

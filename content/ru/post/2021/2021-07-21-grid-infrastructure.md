@@ -3,7 +3,7 @@ title: "Инфраструктура GRID"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-21T12:39:00+03:00
 lastmod: 2023-08-29T21:51:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["сиянс"]
 draft: false
 slug: "grid-infrastructure"

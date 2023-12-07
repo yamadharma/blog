@@ -3,7 +3,7 @@ title: "Белый список журналов Минобрнауки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T21:07:00+03:00
 lastmod: 2023-06-02T12:57:00+03:00
-tags: ["seedling", "sci-being"]
+tags: ["seedling", "science-being"]
 categories: ["science"]
 draft: false
 slug: "white-list-journals"

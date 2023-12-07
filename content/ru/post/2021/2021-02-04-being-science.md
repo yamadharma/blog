@@ -3,7 +3,7 @@ title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
 lastmod: 2023-11-24T20:40:00+03:00
-tags: ["sci-being"]
+tags: ["science-being"]
 categories: ["science"]
 draft: false
 slug: "being-science"

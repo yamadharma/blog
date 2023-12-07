@@ -3,7 +3,7 @@ title: "Научные журналы. Типология. Россия"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-24T20:35:00+03:00
 lastmod: 2023-11-24T21:01:00+03:00
-tags: ["sci-being"]
+tags: ["science-being"]
 categories: ["science"]
 draft: false
 slug: "scientific-journals-typology-russia"

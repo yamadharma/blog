@@ -3,7 +3,7 @@ title: "Научный семинар Математическое модели�
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-18T15:26:00+03:00
 lastmod: 2023-09-17T17:59:00+03:00
-tags: ["sci-admin", "research"]
+tags: ["science-admin", "research"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling"

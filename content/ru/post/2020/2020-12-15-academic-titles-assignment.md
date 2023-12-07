@@ -3,7 +3,7 @@ title: "О порядке присвоения учёных званий"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-15T18:08:00+03:00
 lastmod: 2023-09-17T17:55:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "academic-titles-assignment"

@@ -3,7 +3,7 @@ title: "Пенроуз — нобелиат"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-10T18:04:00+03:00
 lastmod: 2023-09-16T18:19:00+03:00
-tags: ["science-people", "sci-being"]
+tags: ["science-people", "science-being"]
 categories: ["science"]
 draft: false
 slug: "penrose-nobeliat"

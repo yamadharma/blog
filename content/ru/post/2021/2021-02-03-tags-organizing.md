@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2023-11-11T20:42:00+03:00
+lastmod: 2023-12-07T20:45:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -34,6 +34,7 @@ slug: "tags-organizing"
     -   `history`: [Книги. История]({{< relref "2023-05-06-books-history" >}})
     -   `physics`: [Книги. Физика]({{< relref "2023-07-01-books-physics" >}})
     -   `programming`: [Книги. Программирование]({{< relref "2021-01-10-books-programming" >}})
+    -   `science_admin`: [Книги. Научно-административная деятельность]({{< relref "2023-12-07-book-scientific-administrative" >}})
     -   `science_history`: [Книги. История науки]({{< relref "2023-08-20-books-science-history" >}})
     -   `science_people`[^fn:2]: [Книги. Люди науки]({{< relref "2021-02-20-books-science-people" >}})
     -   `science_philosophy`: [Книги. Философия науки]({{< relref "2021-01-06-books-science-philosophy" >}})
@@ -77,38 +78,40 @@ slug: "tags-organizing"
     -   `education`: [Преподавание]({{< relref "2021-02-01-teaching" >}})
     -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})
     -   `research`: [Научно-исследовательская деятельность]({{< relref "2021-02-01-research" >}})
-    -   `sci_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
-    -   `sci_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
-    -   `sci_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
+    -   `science_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
+    -   `science_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
+    -   `science_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
     -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})
     -   `gtd`: [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})
     -   `zettelkasten`: [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})
+    -   `read`: [Чтение]({{< relref "2023-12-05-read" >}})
+
 -   `@thinking`: [Мысли]({{< relref "2021-12-14-reflections" >}})
     -   `sociology`: [Социологические заметки]({{< relref "2021-10-23-sociological-notes" >}})
 
-| Уровень  | org-mode todo | org-roam            | blog (ru)        | blog (en)         |
-|----------|---------------|---------------------|------------------|-------------------|
-| category |               | `@computer_science` | computer-science | computer-science  |
-| tag      |               | `hard`              |                  |                   |
-| tag      |               | `soft`              |                  |                   |
-| tags     |               | `gentoo`            |                  |                   |
-| category | `@science`    | `@science`          | `сиянс`          | `science`         |
-| tag      | `education`   | `education`         | `education`      | `education`       |
-| tag      | `research`    | `research`          | `research`       | `research`        |
-| tag      | `sci_admin`   | `sci_admin`         | `sci-admin`      | `sci-admin`       |
-| tag      | `sci_being`   | `sci_being`         | `sci-being`      | `sci-being`       |
-| tag      | `sci_writing` | `sci_writing`       | `sci-writing`    | `sci-writing`     |
-| category |               | `@book`             | листая-страницы  | through-the-pages |
-| tag      |               | `science_people`    | люди-науки       | science-people    |
-| tag      |               | `culture`           | культура         | culture           |
-| category |               | `@self_management`  | self-management  | self-management   |
-| tag      |               | `gtd`               | gtd              | gtd               |
-| category |               | `@life`             | жизнь            | life              |
-| category |               | `@reflections`      | мысли            | reflections       |
-| category |               | `@games`            | games            | games             |
-| tag      |               | `disciples`         | disciples        | disciples         |
-| tag      |               | `homm`              | homm             | homm              |
+| Уровень  | org-mode todo     | org-roam            | blog (ru)         | blog (en)         |
+|----------|-------------------|---------------------|-------------------|-------------------|
+| category |                   | `@computer_science` | computer-science  | computer-science  |
+| tag      |                   | `hard`              |                   |                   |
+| tag      |                   | `soft`              |                   |                   |
+| tags     |                   | `gentoo`            |                   |                   |
+| category | `@science`        | `@science`          | `сиянс`           | `science`         |
+| tag      | `education`       | `education`         | `education`       | `education`       |
+| tag      | `research`        | `research`          | `research`        | `research`        |
+| tag      | `science_admin`   | `science_admin`     | `science-admin`   | `science-admin`   |
+| tag      | `science_being`   | `science_being`     | `science-being`   | `science-being`   |
+| tag      | `science_writing` | `science_writing`   | `science-writing` | `science-writing` |
+| category |                   | `@book`             | листая-страницы   | through-the-pages |
+| tag      |                   | `science_people`    | люди-науки        | science-people    |
+| tag      |                   | `culture`           | культура          | culture           |
+| category |                   | `@self_management`  | self-management   | self-management   |
+| tag      |                   | `gtd`               | gtd               | gtd               |
+| category |                   | `@life`             | жизнь             | life              |
+| category |                   | `@reflections`      | мысли             | reflections       |
+| category |                   | `@games`            | games             | games             |
+| tag      |                   | `disciples`         | disciples         | disciples         |
+| tag      |                   | `homm`              | homm              | homm              |
 
 [^fn:1]: Всё, что имеет отношение к культуре (культурология, литературоведение).
 [^fn:2]: Биографии учёных, мемуары учёных.

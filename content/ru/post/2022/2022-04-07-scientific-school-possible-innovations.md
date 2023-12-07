@@ -3,7 +3,7 @@ title: "Научная школа. Возможные инновации"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-07T13:18:00+03:00
 lastmod: 2023-10-01T14:41:00+03:00
-tags: ["sci-school", "sysadmin", "sci-admin"]
+tags: ["sci-school", "sysadmin", "science-admin"]
 categories: ["science"]
 draft: false
 slug: "scientific-school-possible-innovations"

@@ -3,7 +3,7 @@ title: "Редактирование материалов в CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-07T18:57:00+03:00
 lastmod: 2023-10-06T16:57:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "editing-submissions-ceur-ws"

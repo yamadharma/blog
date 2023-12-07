@@ -3,7 +3,7 @@ title: "Применение VR и AR в образовании"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-02T11:19:00+03:00
 lastmod: 2023-10-17T14:02:00+03:00
-tags: ["sci-admin", "education"]
+tags: ["science-admin", "education"]
 categories: ["science"]
 draft: false
 slug: "vr-ar-in-education"

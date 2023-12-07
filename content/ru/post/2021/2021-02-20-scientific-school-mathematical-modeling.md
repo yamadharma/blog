@@ -3,7 +3,7 @@ title: "Научная школа Математическое моделиро�
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T20:17:00+03:00
 lastmod: 2023-09-30T20:24:00+03:00
-tags: ["sci-school", "sci-admin"]
+tags: ["sci-school", "science-admin"]
 categories: ["science"]
 draft: false
 slug: "scientific-school-mathematical-modeling"

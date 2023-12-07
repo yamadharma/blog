@@ -3,7 +3,7 @@ title: "Меморандум ОИЯИ-РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-16T18:18:00+03:00
 lastmod: 2023-07-17T21:45:00+03:00
-tags: ["research", "sci-admin"]
+tags: ["research", "science-admin"]
 categories: ["science"]
 draft: false
 slug: "jinr-rudn-memorandum"

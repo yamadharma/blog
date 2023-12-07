@@ -3,7 +3,7 @@ title: "Junior, Middle, Senior"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-08T17:00:00+03:00
 lastmod: 2023-07-08T18:48:00+03:00
-tags: ["sci-being"]
+tags: ["science-being"]
 categories: ["science"]
 draft: false
 slug: "junior-middle-senior"

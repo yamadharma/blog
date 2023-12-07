@@ -3,7 +3,7 @@ title: "Учёные звания в Российской империи"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T20:30:00+03:00
 lastmod: 2023-07-09T16:49:00+03:00
-tags: ["sci-admin"]
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "academic-ranks-russian-empire"

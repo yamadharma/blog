@@ -3,7 +3,7 @@ title: "Повышение квалификации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-20T10:24:00+03:00
 lastmod: 2023-10-26T15:22:00+03:00
-tags: ["rudn", "sci-admin"]
+tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
 slug: "professional-development"

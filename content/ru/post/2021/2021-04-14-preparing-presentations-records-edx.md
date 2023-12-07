@@ -3,7 +3,7 @@ title: "Подготовка презентации к записи для edX"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-14T10:51:00+03:00
 lastmod: 2023-10-01T14:39:00+03:00
-tags: ["sci-admin", "education"]
+tags: ["science-admin", "education"]
 categories: ["science"]
 draft: false
 slug: "preparing-presentations-records-edx"

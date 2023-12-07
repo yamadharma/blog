@@ -2,8 +2,8 @@
 title: "Диссертационный совет"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:46:00+03:00
-lastmod: 2023-11-16T19:19:00+03:00
-tags: ["sci-admin"]
+lastmod: 2023-12-07T16:26:00+03:00
+tags: ["science-admin"]
 categories: ["science"]
 draft: false
 slug: "doctoral-committee"
@@ -70,6 +70,7 @@ slug: "doctoral-committee"
 ## <span class="section-num">5</span> Процедурные вопросы {#процедурные-вопросы}
 
 -   [Процедура защиты диссертации]({{< relref "2023-06-18-thesis-defense-procedure" >}})
+-   [Аристер, Н. И., Резник, С. Д. (2011): Управление диссертационным советом Практическое пособие]({{< relref "2023-12-07-arister_book_dissertation-council-management_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
 
 
 ## <span class="section-num">6</span> Чек-лист подготовки документов {#чек-лист-подготовки-документов}
@@ -168,3 +169,9 @@ slug: "doctoral-committee"
     -   RuTube: <https://rutube.ru/plst/141990/>
     -   Youtube: <https://www.youtube.com/playlist?list=PLhyPdV6jkp-QZjeLE06ts1Ucvafhz1CD->
     -   VK Видео: <https://vk.com/video/playlist/606414976_2>
+
+## Литература
+
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Аристер, Н.И. <a href="https://libgen.li/ads.php?md5=a9b42870f8e70d75919951754197f61c">Управление диссертационным советом: Практическое пособие</a> : Менеджмент в науке. Управление диссертационным советом / Н.И. Аристер, С.Д. Резник; Ф.И. Шамхалов ред. . – 4. – М. : ИНФРА-М, 2011. – 319 сс.</div>
+</div>

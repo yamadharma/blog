@@ -3,7 +3,7 @@ title: "Комиссия Цифровая магистратура"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-14T12:27:00+03:00
 lastmod: 2023-09-30T19:57:00+03:00
-tags: ["education", "rudn", "sci-admin"]
+tags: ["education", "rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
 slug: "commission-digitalization-msc"

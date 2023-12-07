@@ -3,7 +3,7 @@ title: "Диаграммы как код"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-01T19:33:00+03:00
 lastmod: 2023-07-04T11:12:00+03:00
-tags: ["sci-writing"]
+tags: ["science-writing"]
 categories: ["computer-science"]
 draft: false
 slug: "diagram-as-code"
