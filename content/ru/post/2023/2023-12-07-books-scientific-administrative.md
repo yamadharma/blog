@@ -2,11 +2,11 @@
 title: "Книги. Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-07T16:12:00+03:00
-lastmod: 2023-12-07T16:24:00+03:00
+lastmod: 2023-12-09T15:59:00+03:00
 tags: ["science-admin"]
 categories: ["book"]
 draft: false
-slug: "book-scientific-administrative"
+slug: "books-scientific-administrative"
 ---
 
 Книги. Научно-административная деятельность.

@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2023-10-19T10:14:00+03:00
+lastmod: 2023-12-08T19:06:00+03:00
 tags: ["wayland", "gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -10,7 +10,7 @@ slug: "migration-sway"
 project: ["misc-utils"]
 ---
 
-Решил попробовать [Wayland](https://wayland.freedesktop.org/). По этой причине пришлось [перейти](http://way-cooler.org/blog/2020/01/09/way-cooler-post-mortem.html) с [awesome](https://awesomewm.org/) на [swlay](https://swaywm.org/).
+Решил попробовать [Wayland](https://wayland.freedesktop.org/). По этой причине пришлось [перейти](http://way-cooler.org/blog/2020/01/09/way-cooler-post-mortem.html) с [awesome](https://awesomewm.org/) на [sway](https://swaywm.org/).
 
 <!--more-->
 
@@ -174,6 +174,7 @@ emaint sync --repo guru
 ## <span class="section-num">6</span> Замена приложений {#замена-приложений}
 
 -   [Wayland. Аналоги приложений]({{< relref "2023-10-11-wayland-applications" >}})
+-   [Sway. Интеграция systemd]({{< relref "2023-12-08-sway-systemd-integration" >}})
 
 
 ## <span class="section-num">7</span> Совместимость приложений {#совместимость-приложений}
