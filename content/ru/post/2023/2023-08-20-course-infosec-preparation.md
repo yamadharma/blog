@@ -2,7 +2,7 @@
 title: "Подготовка курса Информационная безопасность"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-20T18:03:00+03:00
-lastmod: 2023-08-24T13:42:00+03:00
+lastmod: 2023-12-10T19:46:00+03:00
 tags: ["education", "security"]
 categories: ["computer-science", "science"]
 draft: false
@@ -214,3 +214,6 @@ slug: "course-infosec-preparation"
 #### <span class="section-num">3.8.1</span> Цель работы {#цель-работы}
 
 -   Освоить на практике применение режима однократного гаммирования на примере кодирования различных исходных текстов одним ключом.
+
+
+## <span class="section-num">4</span> Новые лабораторные работы {#новые-лабораторные-работы}

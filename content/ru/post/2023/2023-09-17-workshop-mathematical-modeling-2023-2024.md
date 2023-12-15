@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-12-07T18:03:00+03:00
+lastmod: 2023-12-13T15:15:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -273,3 +273,44 @@ Key publications:
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-21 Чт&gt; </span></span> Айриян А. - Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии {#айриян-а-dot-конструкции-кварк-адронного-фазового-перехода-и-байесовский-анализа-моделей-уравнения-состояния-на-основе-данных-многоканальной-астрономии}
+
+
+#### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
+
+-   Александр Айриян
+    -   Лаборатория им. Мещерякова (ОИЯИ),
+    -   Лаборатория им. Алиханяна (ЕрФИ),
+    -   Государственный университет «Дубна»
+
+
+#### <span class="section-num">1.6.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/244/>
+-   Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии
+-   Александр Айриян
+    -   Лаборатория им. Мещерякова (ОИЯИ),
+    -   Лаборатория им. Алиханяна (ЕрФИ),
+    -   Государственный университет «Дубна»
+
+В исследовании ядерного вещества особенно увлекательными являются изучение возможного кварк-адронного фазового перехода при высоких плотностях, особенно в контексте астрофизических явлений, таких как пульсары. Потенциальное наличие таких фазовых переходов внутри пульсаров порождает концепцию гибридных структур нейтронных звезд, которое проявляется в возникновении звезд с идентичными массами, но различными радиусами (звёзд-близнецов). Для исследования этого явления полезно формулировать и применять упрощенные модели фазовых переходов в недрах компактных звёзд.
+
+В данной докладе будут представлены различные подходы к двум отдельным сценариям возможных фазовых переходов. Валидация моделей уравнения состояния и конструкций фазовых переходов основана на соответствии результатов известным наблюдательным данным по компактным звездам. Одним из методов валидации является байесовский вывод, который является мощным статистическим инструментом для анализа при редких и неопределенных данных, особенно в оценке моделей уравнения состояния с использованием данных многоканальной астрономии. Основная цель такого анализа – установить количественную меру различных физических моделей звездного вещества, для изучение физических параметров в пределах реалистичных моделей уравнения состояния.
+
+Доклад направлен на всестороннего обсуждения деталей, связанных с построением фазовых переходов и применением байесовским вывода для изучения звездного ядерного вещества.
+
+---
+
+-   Quark-hadron phase transition construction and Bayesian Inference for analysis of EoS models based on multi-messenger astronomy data
+-   Alexander Ayriyan
+    -   Meshcheryakov Lab (JINR),
+    -   Alikhanian Lab (YerPhI),
+    -   Dubna State University
+
+Particularly exciting in nuclear matter research is the study of possible quark-hadron phase transitions at high densities, especially in the context of astrophysical phenomena such as pulsars. The potential presence of such phase transitions inside pulsars gives rise to the concept of hybrid structures of neutron stars, which manifests itself in the emergence of stars with identical masses but different radii (twin stars). In order to study this phenomenon, it is useful to formulate and apply simplified models of phase transitions in the interiors of compact stars.
+
+This talk will present different approaches to two distinct scenarios of possible phase transitions. Validation of equation of state models and phase transition constructions is based on the consistency of the results with known observational data on compact stars. One of the validation methods is Bayesian Inference, which is a powerful statistical tool for analysis when data are rare and uncertain, especially in estimating equation of state models using multi-messenger astronomy data. The main goal of such an analysis is to establish a quantitative measure of various physical models of stellar matter, for the study of physical parameters within realistic models of the equation of state.
+
+The talk aims to provide a comprehensive discussion of the details associated with the construction of phase transitions and the application of Bayesian Inference to the study of stellar nuclear matter.

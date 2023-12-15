@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2023-09-06T08:46:00+03:00
+lastmod: 2023-12-15T15:00:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -39,6 +39,14 @@ slug: "rudn-digital-resources"
 
 -   Медицинский факультет: <https://med.rudn.ru/>.
 -   Институт физических исследований и технологий: <http://applphys.rudn.ru/>.
+
+
+### <span class="section-num">2.2</span> Страницы по выпуску РУДН {#страницы-по-выпуску-рудн}
+
+-   2020: <https://prom-2020.rudn.ru/>
+-   2021: <https://prom-2021.rudn.ru/>
+-   2022: <https://prom-2022.rudn.ru/>
+-   2023: <https://prom-2023.rudn.ru/>
 
 
 ## <span class="section-num">3</span> Рабочие ресурсы {#рабочие-ресурсы}
