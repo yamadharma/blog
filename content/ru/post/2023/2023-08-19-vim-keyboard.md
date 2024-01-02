@@ -2,7 +2,7 @@
 title: "Vim. Клавиатура"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-19T18:51:00+03:00
-lastmod: 2023-08-19T18:54:00+03:00
+lastmod: 2024-01-02T20:31:00+03:00
 tags: ["vim"]
 categories: ["computer-science"]
 draft: false

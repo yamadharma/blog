@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2023-10-06T17:10:00+03:00
+lastmod: 2023-12-19T14:21:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -235,7 +235,15 @@ slug: "initial-cisco-switch-configuration"
     ```
 
 
-### <span class="section-num">2.14</span> Безопасность {#безопасность}
+### <span class="section-num">2.14</span> Настройка lldp {#настройка-lldp}
+
+-   Если в сети присутствует не только оборудование Cisco, то есть смысл подключить поддержку протокола lldp:
+    ```shell
+    sw-103-1(config)#lldp run
+    ```
+
+
+### <span class="section-num">2.15</span> Безопасность {#безопасность}
 
 -   Отключим сервер http:
     ```shell
@@ -244,7 +252,18 @@ slug: "initial-cisco-switch-configuration"
     ```
 
 
-### <span class="section-num">2.15</span> Сохранение конфигурации {#сохранение-конфигурации}
+### <span class="section-num">2.16</span> Настройка других портов {#настройка-других-портов}
+
+-   Настроим другие порты для подключения клиентских устройств:
+    ```shell
+    sw-103-1(config)#interface range GigabitEthernet1/0/1 - 46
+    sw-103-1(config-if-range)#switchport mode access
+    sw-103-1(config-if-range)#switchport access vlan 100
+    sw-103-1(config-if-range)#exit
+    ```
+
+
+### <span class="section-num">2.17</span> Сохранение конфигурации {#сохранение-конфигурации}
 
 -   Сохраните конфигурацию:
     ```shell
@@ -252,7 +271,21 @@ slug: "initial-cisco-switch-configuration"
     ```
 
 
-## <span class="section-num">3</span> Подключение к Observium {#подключение-к-observium}
+## <span class="section-num">3</span> Добавление в DNS {#добавление-в-dns}
+
+-   Необходимо добавить коммутатор в DNS.
+
+
+### <span class="section-num">3.1</span> nsupdate {#nsupdate}
+
+-   [nsupdate: динамический редактор зон DNS]({{< relref "2023-10-28-nsupdate-dynamic-dns-editor" >}})
+-   Добавьте адрес коммутатора в DNS:
+    ```shell
+    echo -e "update add sw-103-1.example.com 86400 a 192.168.0.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
+    ```
+
+
+## <span class="section-num">4</span> Подключение к системе мониторинга {#подключение-к-системе-мониторинга}
 
 -   Настройте доступ к SMTP.
 -   Пусть сервер мониторинга имеет адрес: 192.168.0.5.
@@ -261,13 +294,26 @@ slug: "initial-cisco-switch-configuration"
     sw-103-1(config)#access-list 90 permit 192.168.0.5
     sw-103-1(config)#snmp-server community rocom RO 90
     ```
-
 -   Добавьте коммутатор в свой DNS.
+
+
+### <span class="section-num">4.1</span> Подключение к Observium {#подключение-к-observium}
+
 -   Подключитесь к Observium.
 -   Добавьте коммутатор в список наблюдения в Observium:
     ```shell
     [root@observium ~]# /opt/observium/add_device.php sw-103-1 rocom
     [root@observium ~]# /opt/observium/discovery.php -h sw-103-1; /opt/observium/poller.php -h sw-103-1
+    ```
+
+
+### <span class="section-num">4.2</span> Подключение к Librenms {#подключение-к-librenms}
+
+-   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
+-   Добавьте коммутатор в список наблюдения в Librenms:
+    ```shell
+    [root@librenms ~]# /opt/librenms/addhost.php sw-103-1 rocom
+    [root@librenms ~]# /opt/librenms/discovery.php -h sw-103-1; /opt/librenms/poller.php -h sw-103-1
     ```
 
 [^fn:1]: Установка пароля может быть выполнена двумя командами `password` и `secret`. В первом случае пароль хранится в конфигурационном файле в открытом виде, а во втором в зашифрованном. Если использовалась команда `password`, необходимо зашифровать пароли, хранящиеся в устройстве в открытом виде с помощью команды `service password-encryption` в режиме глобальной конфигурации.

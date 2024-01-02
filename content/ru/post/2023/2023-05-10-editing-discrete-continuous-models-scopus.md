@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models. Scopus"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-10T10:32:00+03:00
-lastmod: 2023-07-08T18:50:00+03:00
+lastmod: 2023-12-25T16:23:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false

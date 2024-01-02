@@ -2,7 +2,7 @@
 title: "Алгоритм Random early detection"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-12T16:33:00+03:00
-lastmod: 2023-10-23T14:28:00+03:00
+lastmod: 2023-12-24T18:38:00+03:00
 tags: ["network", "research"]
 categories: ["computer-science", "science"]
 draft: false
@@ -81,6 +81,6 @@ slug: "random-early-detection"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Floyd S. <a href="https://doi.org/10.1109/90.251892">Random early detection gateways for congestion avoidance</a> / S. Floyd, V. Jacobson // Ieee/acm transactions on networking. – 1993. – Т. 1. – № 4. – Сс. 397–413.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	May M. <a href="https://doi.org/10.1109/iwqos.1999.766502">Reasons not to deploy RED</a> / M. May, J. Bolot, C. Diot, B. Lyles // 1999 seventh international workshop on quality of service. iwqos’99. (cat. no.98ex354). – IEEE, 1999. – Сс. 260–262.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Floyd, S. Random early detection gateways for congestion avoidance / S. Floyd, V. Jacobson // IEEE/ACM Transactions on Networking. – 1993. – Т. 1. – № 4. – Сс. 397–413. DOI: <a href="https://doi.org/10.1109/90.251892">10.1109/90.251892</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	May, M. <a href="https://doi.org/10.1109/iwqos.1999.766502">Reasons not to deploy RED</a> / M. May, J. Bolot, C. Diot, B. Lyles // 1999 Seventh International Workshop on Quality of Service. IWQoS’99. (Cat. No.98EX354). – IEEE, 1999. – Сс. 260–262.</div>
 </div>

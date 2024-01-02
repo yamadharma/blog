@@ -2,7 +2,7 @@
 title: "Org-mode. Приложения Android"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-14T19:46:00+03:00
-lastmod: 2023-11-30T15:45:00+03:00
+lastmod: 2023-12-26T13:18:00+03:00
 tags: ["org-mode"]
 categories: ["computer-science"]
 draft: false

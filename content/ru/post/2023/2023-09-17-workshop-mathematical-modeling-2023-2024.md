@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-12-13T15:15:00+03:00
+lastmod: 2023-12-21T18:19:00+03:00
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -275,7 +275,7 @@ Key publications:
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-21 Чт&gt; </span></span> Айриян А. - Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии {#айриян-а-dot-конструкции-кварк-адронного-фазового-перехода-и-байесовский-анализа-моделей-уравнения-состояния-на-основе-данных-многоканальной-астрономии}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-21 Чт&gt; </span></span> Айриян А. - Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии {#айриян-а-dot-конструкции-кварк-адронного-фазового-перехода-и-байесовский-анализа-моделей-уравнения-состояния-на-основе-данных-многоканальной-астрономии}
 
 
 #### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
@@ -314,3 +314,19 @@ Particularly exciting in nuclear matter research is the study of possible quark-
 This talk will present different approaches to two distinct scenarios of possible phase transitions. Validation of equation of state models and phase transition constructions is based on the consistency of the results with known observational data on compact stars. One of the validation methods is Bayesian Inference, which is a powerful statistical tool for analysis when data are rare and uncertain, especially in estimating equation of state models using multi-messenger astronomy data. The main goal of such an analysis is to establish a quantitative measure of various physical models of stellar matter, for the study of physical parameters within realistic models of the equation of state.
 
 The talk aims to provide a comprehensive discussion of the details associated with the construction of phase transitions and the application of Bayesian Inference to the study of stellar nuclear matter.
+
+
+#### <span class="section-num">1.6.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 543ef9c5f544b6eabd5c41cadab26b4f >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube Kkxl26aOhn4 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

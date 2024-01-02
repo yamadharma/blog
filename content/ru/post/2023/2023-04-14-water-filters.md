@@ -2,7 +2,7 @@
 title: "Фильтры воды"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-14T17:43:00+03:00
-lastmod: 2023-07-21T17:57:00+03:00
+lastmod: 2023-12-24T21:49:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false
@@ -313,10 +313,65 @@ slug: "water-filters"
 
 2.  ПРОФИ Осмо
 
+    -   ПРОФИ Осмо 600
+        -   Без бака
     -   ПРОФИ Осмо 100 М
         -   <https://www.barrier.ru/product/protochnye-filtry/pod-mojku/filtry-obratniy-osmos/profi-osmo-m/>
         -   Шестиступенчатый фильтр.
+        -   Минерализатор.
+        -   Способ замены картриджей: с ключом 30 минут
+        -   Типы фильтроэлементов в комплекте: Slime Line
     -   ПРОФИ Осмо 100 Boost М
         -   <https://www.barrier.ru/product/protochnye-filtry/pod-mojku/filtry-obratniy-osmos/profi-osmo-100-boost-m/>
         -   Шестиступенчатый фильтр.
+        -   Минерализатор.
+        -   Способ замены картриджей: с ключом 30 минут
+        -   Типы фильтроэлементов в комплекте: Slime Line
         -   Насос для повышения давления.
+
+
+#### <span class="section-num">4.2.2</span> Аквафор {#аквафор}
+
+<!--list-separator-->
+
+1.  Аквафор DWM-102S Pro
+
+    -   <https://msk.shop.aquaphor.ru/reverse-osmosis/dwm-102s-pro.html>
+    -   Минерализация
+    -   Число ступеней очистки: 6
+
+<!--list-separator-->
+
+2.  Аквафор DWM-202S
+
+    -   <https://msk.shop.aquaphor.ru/reverse-osmosis/dwm-202s.html>
+
+<!--list-separator-->
+
+3.  Аквафор DWM-206S
+
+    -   <https://msk.shop.aquaphor.ru/reverse-osmosis/dwm-206s.html>
+
+
+#### <span class="section-num">4.2.3</span> Гейзер {#гейзер}
+
+<!--list-separator-->
+
+1.  Гейзер Престиж ПМ
+
+    -   <https://msk.shop.geizer.com/catalog/obratnyy_osmos/geyzer_prestizh_pm_s_pompoy_i_mineralizatorom_bak_12_l/>
+    -   Минерализатор
+    -   Помпа
+
+<!--list-separator-->
+
+2.  Гейзер Премиум
+
+    -   <https://msk.shop.geizer.com/catalog/obratnyy_osmos/filtr_geyzer_premium/>
+
+
+## <span class="section-num">5</span> Магазины {#магазины}
+
+-   <https://filter-price.ru/>
+-   <https://filtercity.ru/>
+-   <https://www.filterh2o.ru/>

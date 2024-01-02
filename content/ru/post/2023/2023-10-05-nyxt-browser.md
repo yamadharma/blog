@@ -2,7 +2,7 @@
 title: "Броузер Nyxt"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-05T20:43:00+03:00
-lastmod: 2023-12-14T19:06:00+03:00
+lastmod: 2023-12-21T16:27:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -470,3 +470,18 @@ slug: "nyxt-browser"
 -   Репозиторий: <https://github.com/aartaka/nx-dark-reader>
 -   Интеграция с Dark Reader.
 -   Dark Reader (<https://darkreader.org/>) позволяет включить тёмную тему на любом сайте.
+
+
+## <span class="section-num">4</span> Материалы {#материалы}
+
+
+### <span class="section-num">4.1</span> Конфигурации {#конфигурации}
+
+-   <https://github.com/aartaka/nyxt-config>
+-   <https://github.com/Gavinok/dotnyxt>
+-   <https://github.com/ericdrgn/drgn.nyxt>
+
+
+### <span class="section-num">4.2</span> Дискуссии {#дискуссии}
+
+-   <https://discourse.atlas.engineer/>

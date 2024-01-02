@@ -2,7 +2,7 @@
 title: "Система мониторинга LibreNMS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-20T15:07:00+03:00
-lastmod: 2023-09-24T17:43:00+03:00
+lastmod: 2023-12-30T20:08:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Перенос Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2023-11-28T16:26:00+03:00
+lastmod: 2023-12-30T20:15:00+03:00
 tags: ["btrfs", "sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false

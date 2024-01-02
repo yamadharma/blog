@@ -2,7 +2,7 @@
 title: "Паспорт научной специальности"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-16T19:15:00+03:00
-lastmod: 2023-12-03T19:04:00+03:00
+lastmod: 2023-12-24T18:38:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false

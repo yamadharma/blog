@@ -2,7 +2,7 @@
 title: "Pdf. Обработка. pdfcpu"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-02T18:01:00+03:00
-lastmod: 2023-12-02T18:54:00+03:00
+lastmod: 2023-12-26T13:34:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "pdf-processing-pdfcpu"

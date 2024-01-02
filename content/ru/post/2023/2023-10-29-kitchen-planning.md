@@ -2,7 +2,7 @@
 title: "Планирование кухни"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-29T14:32:00+03:00
-lastmod: 2023-11-04T18:15:00+03:00
+lastmod: 2023-12-25T12:40:00+03:00
 tags: ["appliance", "apartment"]
 categories: ["life"]
 draft: false
@@ -46,6 +46,14 @@ slug: "kitchen-planning"
     -   <https://haieronline.ru/catalog/built-in/glass-ceramic-cove/HHY-Y64FFVW/>
     -   белая
     -   слайдерное управление
+    -   габариты
+        -   размеры ниши для встраивания (ШхГ) (см): 56 x 49
+        -   размер продукта (ШхГхВ) (см): 59 x 52 x 5.5
+        -   размеры упаковки (ШхГхВ) (см): 65 х 56 х 11.5
+        -   вес, нетто (кг): 8.7
+        -   вес, брутто (кг): 9.9
+    -   Информация:
+        -   <https://www.ixbt.com/home/haier-hhy-y64bfvb-review.html>
 
 
 ### <span class="section-num">1.5</span> Вытяжка {#вытяжка}

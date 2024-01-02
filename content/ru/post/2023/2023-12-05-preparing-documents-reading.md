@@ -2,7 +2,7 @@
 title: "Подготовка документов для чтения"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-05T10:09:00+03:00
-lastmod: 2023-12-07T19:41:00+03:00
+lastmod: 2023-12-20T11:35:00+03:00
 tags: ["read"]
 categories: ["self-management"]
 draft: false

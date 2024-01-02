@@ -2,7 +2,7 @@
 title: "Sway. Интеграция systemd"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-08T19:03:00+03:00
-lastmod: 2023-12-09T20:56:00+03:00
+lastmod: 2023-12-23T19:04:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

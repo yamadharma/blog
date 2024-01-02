@@ -2,7 +2,7 @@
 title: "Альтернативы Microsoft Office"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-19T17:13:00+03:00
-lastmod: 2023-03-25T15:38:00+03:00
+lastmod: 2023-12-30T20:14:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

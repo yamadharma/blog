@@ -2,7 +2,7 @@
 title: "Флаги запуска Google Chrome"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-28T15:31:00+03:00
-lastmod: 2023-08-14T16:29:00+03:00
+lastmod: 2023-12-30T20:07:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

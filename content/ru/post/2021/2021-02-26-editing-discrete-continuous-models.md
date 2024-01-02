@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2023-11-13T18:48:00+03:00
+lastmod: 2023-12-25T16:33:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false
@@ -51,7 +51,12 @@ slug: "editing-discrete-continuous-models"
 -   Профиль журнала на Scopus: <https://www.scopus.com/sourceid/21101168860>
 
 
-### <span class="section-num">1.3</span> Общий список индексирования {#общий-список-индексирования}
+#### <span class="section-num">1.2.2</span> eLibrary {#elibrary}
+
+-   Профиль журнала в eLibrary: <https://www.elibrary.ru/title_about_new.asp?id=73749>
+
+
+#### <span class="section-num">1.2.3</span> Общий список индексирования {#общий-список-индексирования}
 
 -   РИНЦ <https://elibrary.ru/title_about_new.asp?id=73749>
 -   ВАК
@@ -68,21 +73,22 @@ slug: "editing-discrete-continuous-models"
 -   Research4Life
 -   JournalTOCs
 
+<!--list-separator-->
 
-#### <span class="section-num">1.3.1</span> Scopus {#scopus}
+1.  Scopus
 
--   [Редактирование. Discrete and Continuous Models. Scopus]({{< relref "2023-05-10-editing-discrete-continuous-models-scopus" >}})
-
-
-### <span class="section-num">1.4</span> Индексы по годам {#индексы-по-годам}
+    -   [Редактирование. Discrete and Continuous Models. Scopus]({{< relref "2023-05-10-editing-discrete-continuous-models-scopus" >}})
 
 
-#### <span class="section-num">1.4.1</span> 2023 {#2023}
+### <span class="section-num">1.3</span> Индексы по годам {#индексы-по-годам}
+
+
+#### <span class="section-num">1.3.1</span> 2023 {#2023}
 
 -   ВАК: К2.
 
 
-### <span class="section-num">1.5</span> Варианты названия в пристатейных ссылках, встречающиеся в Scopus {#варианты-названия-в-пристатейных-ссылках-встречающиеся-в-scopus}
+### <span class="section-num">1.4</span> Варианты названия в пристатейных ссылках, встречающиеся в Scopus {#варианты-названия-в-пристатейных-ссылках-встречающиеся-в-scopus}
 
 -   Discrete and Continuous Models and Applied Computational Science
 -   Discrete Continuous Models Appl Comput Sci
@@ -114,10 +120,10 @@ slug: "editing-discrete-continuous-models"
 -   RUDN J. Mathematics, Information Science and Physics Ser
 
 
-### <span class="section-num">1.6</span> Редколлегия {#редколлегия}
+### <span class="section-num">1.5</span> Редколлегия {#редколлегия}
 
 
-#### <span class="section-num">1.6.1</span> Рыбаков Юрий Петрович {#рыбаков-юрий-петрович}
+#### <span class="section-num">1.5.1</span> Рыбаков Юрий Петрович {#рыбаков-юрий-петрович}
 
 -   Рыбаков Юрий Петрович
 -   Доктор физико-математических наук, профессор
@@ -134,7 +140,7 @@ Author of more than 200 scientific papers, more than 60 of which are published i
 H-index by RSCI:  12; H-index by WoS: 6; H-index by Scopus: 9.
 
 
-#### <span class="section-num">1.6.2</span> Кулябов Дмитрий Сергеевич {#кулябов-дмитрий-сергеевич}
+#### <span class="section-num">1.5.2</span> Кулябов Дмитрий Сергеевич {#кулябов-дмитрий-сергеевич}
 
 -   Кулябов Дмитрий Сергеевич
 -   Доктор физико-математических наук, профессор
@@ -148,7 +154,7 @@ Doctor of Physical and Mathematical Sciences (2017), Associate Professor (2005).
 H-index by RSCI: 12; H-index by WoS: 5; H-index by Scopus: 8.
 
 
-#### <span class="section-num">1.6.3</span> Севастьянов Леонид Антонович {#севастьянов-леонид-антонович}
+#### <span class="section-num">1.5.3</span> Севастьянов Леонид Антонович {#севастьянов-леонид-антонович}
 
 -   Севастьянов Леонид Антонович
 -   Доктор физико-математических наук, профессор
@@ -167,7 +173,7 @@ Scientific interests: Numerical solution of problems of waveguide optics, modeli
 H-index by RSCI: 13 H-index by WoS: 7; H-index by Scopus: 10.
 
 
-#### <span class="section-num">1.6.4</span> Беляков Глеб {#беляков-глеб}
+#### <span class="section-num">1.5.4</span> Беляков Глеб {#беляков-глеб}
 
 -   Беляков Глеб
 -   Кандидат физико-математических наук, профессор
@@ -184,7 +190,7 @@ H-index by WoS: 29; H-index by Scopus: 35.
 More than 200 publications indexed in international databases.
 
 
-#### <span class="section-num">1.6.5</span> Гайдамака Юлия Васильевна {#гайдамака-юлия-васильевна}
+#### <span class="section-num">1.5.5</span> Гайдамака Юлия Васильевна {#гайдамака-юлия-васильевна}
 
 -   Гайдамака Юлия Васильевна
 -   Доктор физико-математических наук, профессор
@@ -196,7 +202,7 @@ More than 200 publications indexed in international databases.
 Doctor of Physical and Mathematical Sciences (2017), Associate Professor (2009), Professor of the Department of Applied Informatics and Probability Theory of RUDN University. The main area of ​​scientific activity of Associate Professor Gaydamak Yulia Vasilievna is the mathematical theory of teletraffic of multiservice networks, 4G and 5G wireless networks, analysis of the quality of service provision in LTE networks, machine-to-machine interaction (machine-to-machine, M2M), direct device interaction (device-to-device , D2D), Internet of Things (Internet of Things, IoT). Based on the results of her work, she repeatedly made presentations at Russian and international conferences. Based on the results of the research, more than 200 scientific articles have been published, 5 monographs have been published. H-index by RSCI: 16; H-index by WoS: 7; H-index by Scopus: 14.
 
 
-#### <span class="section-num">1.6.6</span> Гнатич Михал {#гнатич-михал}
+#### <span class="section-num">1.5.6</span> Гнатич Михал {#гнатич-михал}
 
 -   Гнатич Михал
 -   DrSc., профессор
@@ -213,7 +219,7 @@ Author of more than 100 scientific papers published in journals indexed in Scopu
 H-index by RSCI: 17; H-index by WoS: 4; H-index by Scopus: 17
 
 
-#### <span class="section-num">1.6.7</span> Мартикайнен Олли Эркки {#мартикайнен-олли-эркки}
+#### <span class="section-num">1.5.7</span> Мартикайнен Олли Эркки {#мартикайнен-олли-эркки}
 
 -   Мартикайнен Олли Эркки
 -   Ph.D.
@@ -224,7 +230,7 @@ H-index by RSCI: 17; H-index by WoS: 4; H-index by Scopus: 17
 Ph.D., Research Fellow, Finnish Economic Research Institute (ETLA, Helsinki). Scientific interests - mathematical theory of teletraffic, queuing theory, multiservice network. Scopus h-index: 5. More than 30 publications indexed in international databases.
 
 
-#### <span class="section-num">1.6.8</span> Медведев Михаил Викторович {#медведев-михаил-викторович}
+#### <span class="section-num">1.5.8</span> Медведев Михаил Викторович {#медведев-михаил-викторович}
 
 -   Медведев Михаил Викторович
 -   доктор физико-математических наук
@@ -237,7 +243,7 @@ Doctor of Physical and Mathematical Sciences, Professor in the Department of Phy
 Author of more than 100 scientific papers published in journals indexed in Scopus and WoS. H-index by Scopus: 25. H-index by WoS: 25.
 
 
-#### <span class="section-num">1.6.9</span> Самуйлов Константин Евгеньевич {#самуйлов-константин-евгеньевич}
+#### <span class="section-num">1.5.9</span> Самуйлов Константин Евгеньевич {#самуйлов-константин-евгеньевич}
 
 -   Самуйлов Константин Евгеньевич
 -   Доктор технических наук, профессор
@@ -257,7 +263,7 @@ Samuilov K.E. is a member of the Working Group "Intelligent Networks" of the Int
 Author of more than 400 scientific papers, more than 240 of which are published in publications indexed in Scopus and WoS, 4 monographs and more than 20 certificates of state registration of computer programs in the field of teletraffic theory, mathematical methods of analysis and calculation of digital communication networks, analysis methods and calculation of quality indicators of multiservice networks. H-index by: RSCI - 22, Scopus - 21, WoS - 16.
 
 
-#### <span class="section-num">1.6.10</span> Субхашиш Датта Гупта {#субхашиш-датта-гупта}
+#### <span class="section-num">1.5.10</span> Субхашиш Датта Гупта {#субхашиш-датта-гупта}
 
 -   Субхашиш Датта Гупта
 -   кандидат физико-математических наук, профессор
@@ -271,7 +277,7 @@ Candidate of Physical and Mathematical Sciences, Professor. Professor at the Uni
 Author of more than 90 scientific papers published in journals indexed in Scopus and WoS. H-index by 24.
 
 
-#### <span class="section-num">1.6.11</span> Саха Биджан {#саха-биджан}
+#### <span class="section-num">1.5.11</span> Саха Биджан {#саха-биджан}
 
 -   Саха Биджан
 -   доктор физико-математических наук
@@ -285,7 +291,7 @@ He has over 160 published papers, including 100 in peer-reviewed journals, as we
 H-index by RSCI: 11; H-index by WoS: 24. H-index by Scopus: 23.
 
 
-#### <span class="section-num">1.6.12</span> Рамирез Инестроза Рафаэль Орландо {#рамирез-инестроза-рафаэль-орландо}
+#### <span class="section-num">1.5.12</span> Рамирез Инестроза Рафаэль Орландо {#рамирез-инестроза-рафаэль-орландо}
 
 -   Рамирез Инестроза Рафаэль Орландо
 -   PhD
@@ -297,7 +303,7 @@ PhD, Professor at the University of Rovira and Virgil, Tarragona, Catalonia. Sci
 Scopus h-index: 6. More than 80 publications indexed in international databases.
 
 
-#### <span class="section-num">1.6.13</span> Чулуунбаатар Очбадрах {#чулуунбаатар-очбадрах}
+#### <span class="section-num">1.5.13</span> Чулуунбаатар Очбадрах {#чулуунбаатар-очбадрах}
 
 -   Чулуунбаатар Очбадрах
 -   доктор физико-математических наук
@@ -348,3 +354,8 @@ Scopus h-index: 6. More than 80 publications indexed in international databases.
     -   от 10 и более страниц;
     -   от 5 и более рисунков;
     -   80 ссылок.
+
+
+## <span class="section-num">3</span> Текущая работа по журналу {#текущая-работа-по-журналу}
+
+-   [Редактирование. Discrete and Continuous Models. Текущая работа]({{< relref "2022-02-18-editing-discrete-continuous-models-current-work" >}})

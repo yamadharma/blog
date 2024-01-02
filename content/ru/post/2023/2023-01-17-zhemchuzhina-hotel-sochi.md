@@ -2,7 +2,7 @@
 title: "Гостиница Жемчужина, Сочи"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-17T18:42:00+03:00
-lastmod: 2023-08-24T13:33:00+03:00
+lastmod: 2023-12-16T11:53:00+03:00
 tags: ["recreation"]
 categories: ["life"]
 draft: false
@@ -148,6 +148,7 @@ slug: "zhemchuzhina-hotel-sochi"
 
 -   Отличается оформлением.
 -   Двери в туалет из прозрачного стекла.
+-   Размещение: с 1 по 4 этаж.
 
 
 #### <span class="section-num">4.2.5</span> Люкс Морской {#люкс-морской}

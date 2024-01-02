@@ -2,7 +2,7 @@
 title: "Ширах, Р. (2014): Ночь физиков Гейзенберг, Ган, Вайцзеккер и немецкая бомба"
 author: ["Dmitry S. Kulyabov"]
 date: 2015-04-16T10:54:00+03:00
-lastmod: 2023-09-17T20:33:00+03:00
+lastmod: 2023-12-30T20:06:00+03:00
 tags: ["science-people", "science-history"]
 categories: ["book"]
 draft: false
@@ -27,5 +27,5 @@ slug: "schirach_book_nacht-physiker_ru"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Ширах ф. Рихард. <a href="http://libgen.li/ads.php?md5=b0eb45a4720b6a56c3eb13381c70e017">Ночь физиков: Гейзенберг, ган, вайцзеккер и немецкая бомба</a> : Letterra.org+035. Ночь физиков / ф.  Ширах Рихард; пер. О.  Никифоров. – Москва : Логос, 2014. – 224 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Ширах, ф. Рихард. <a href="http://libgen.li/ads.php?md5=b0eb45a4720b6a56c3eb13381c70e017">Ночь физиков: Гейзенберг, Ган, Вайцзеккер и немецкая бомба</a> : letterra.org+035. Ночь физиков / ф. Ширах Рихард; О. Никифоров пер. . – М. : Логос, 2014. – 224 сс.</div>
 </div>

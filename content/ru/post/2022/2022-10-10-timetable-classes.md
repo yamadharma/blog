@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-12-13T11:21:00+03:00
+lastmod: 2023-12-29T21:43:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "timetable-classes"
 ## <span class="section-num">1</span> Расписание занятий {#расписание-занятий}
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1</span> 2023--2024 учебный год, расписание занятий <code>[1/3]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1</span> 2023--2024 учебный год, расписание занятий <code>[3/3]</code> {#2023-2024-учебный-год-расписание-занятий}
 
 
 #### <span class="section-num">1.1.1</span> Информация {#информация}
@@ -112,44 +112,44 @@ slug: "timetable-classes"
     -   Занятие проводится дистанционно
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1.3</span> 2023--2024 учебный год, 2 четверть <code>[0/1]</code> {#2023-2024-учебный-год-2-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.3</span> 2023--2024 учебный год, 2 четверть <code>[1/1]</code> {#2023-2024-учебный-год-2-четверть}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лекция)
+1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных (лекция)
 
     -   2023-11-06 Пн 13:30-14:50--2023-12-25 Пн 13:30-14:50
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1.4</span> 2023--2024 учебный год, 1 семестр <code>[0/5]</code> {#2023-2024-учебный-год-1-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.4</span> 2023--2024 учебный год, 1 семестр <code>[5/5]</code> {#2023-2024-учебный-год-1-семестр}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
+1. <span class="org-todo done DONE">DONE</span>  Научное программирование
 
     -   ОРД-295, НПМмд-02-23
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
+2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лекция)
 
     -   ОРД-295, НПМмд-02-23, НФИмд-23
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа)
+3. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лабораторная работа)
 
     -   ОРД-295, НПМмд-02-23
 
 <!--list-separator-->
 
-4. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лабораторные работы)
+4. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лабораторные работы)
 
     -   ОРД-295, ОРД-297; НПИбд-01,02-22
 
 <!--list-separator-->
 
-5. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
+5. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лекция)
 
     -   ОРД-295, НПИбд-22
 
@@ -157,10 +157,15 @@ slug: "timetable-classes"
 ## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1</span> 2023--2024 учебный год, промежуточные аттестации <code>[1/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="section-num">2.1</span> Информация {#информация}
+
+-   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[2/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
 
 <!--list-separator-->
 
@@ -217,34 +222,34 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.2</span> Сессия, модуль 2 <code>[0/0]</code> {#сессия-модуль-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Сессия, модуль 2 <code>[3/3]</code> {#сессия-модуль-2}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты
+1. <span class="org-todo done DONE">DONE</span>  Зачёты
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены
+2. <span class="org-todo done DONE">DONE</span>  Экзамены
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.1.3</span> Сессия, семестр 1 <code>[0/0]</code> {#сессия-семестр-1}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[1/3]</code> {#сессия-семестр-1}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты <code>[0/1]</code>
+1. <span class="org-todo done DONE">DONE</span>  Сессия, семестр 1. Зачёты <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Научное программирование <code>[0/1]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Научное программирование (зачёт) <code>[1/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Научное программирование, НПМмд-02-22
+        1. <span class="org-todo done DONE">DONE</span>  Научное программирование (зачёт), НПМмд-02-22
 
 <!--list-separator-->
 
@@ -252,11 +257,11 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности <code>[0/1]</code>
+    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (экзамен) <code>[0/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
+        1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (экзамен), НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
 
 <!--list-separator-->
 
@@ -264,31 +269,30 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности
+    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (переаттестация)
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1
-
-            <div class="table-caption">
-              <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 3:</span>
-              Список на пересдачу. Математические основы защиты информации и информационной безопасности. Переаттестация № 1
-            </div>
-
-            | № | Поток | № студбилета |
-            |---|-------|--------------|
-            | 1 | НФИмд | 1032220653   |
-            | 2 | НФИмд | 1032220893   |
-            | 3 | НФИмд | 1132223467   |
-            | 4 | НФИмд | 1032225486   |
-            | 5 | НФИмд | 1132223460   |
+        1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 1
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2
+        2. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 2
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Научное программирование (переаттестация)
+
+        <!--list-separator-->
+
+        1. <span class="org-todo todo TODO">TODO</span>  Научное программирование. Переаттестация № 1
+
+        <!--list-separator-->
+
+        2. <span class="org-todo todo TODO">TODO</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
 
 <!--list-separator-->
 
@@ -346,7 +350,7 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.5</span> Сессия, семестр 2 <code>[0/2]</code> {#сессия-семестр-2}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.5</span> Сессия, семестр 2 <code>[0/2]</code> {#сессия-семестр-2}
 
 <!--list-separator-->
 
@@ -420,7 +424,7 @@ slug: "timetable-classes"
                 -   На переаттестацию приглашаются студенты:
 
                 <div class="table-caption">
-                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 4:</span>
+                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 3:</span>
                   Список на пересдачу. Операционные системы. Переаттестация № 1
                 </div>
 
@@ -530,7 +534,7 @@ slug: "timetable-classes"
                 -   На переаттестацию приглашаются студенты:
 
                 <div class="table-caption">
-                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 5:</span>
+                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 4:</span>
                   Список на пересдачу. Операционные системы. Переаттестация № 2
                 </div>
 
@@ -616,17 +620,17 @@ slug: "timetable-classes"
                 -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.6</span> Сессия, модуль 4 <code>[0/0]</code> {#сессия-модуль-4}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, модуль 4 <code>[0/0]</code> {#сессия-модуль-4}
 
 <!--list-separator-->
 
 1. <span class="org-todo todo TODO">TODO</span>  Зачёты
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> 2022--2023 учебный год <code>[6/6]</code> {#2022-2023-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> 2022--2023 учебный год, промежуточные аттестации <code>[6/6]</code> {#2022-2023-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Модуль 1 <code>[3/3]</code> {#модуль-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.1</span> Модуль 1 <code>[3/3]</code> {#модуль-1}
 
 <!--list-separator-->
 
@@ -673,7 +677,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Модуль 2 <code>[3/3]</code> {#модуль-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.2</span> Модуль 2 <code>[3/3]</code> {#модуль-2}
 
 <!--list-separator-->
 
@@ -688,7 +692,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> Семестр 1 <code>[3/3]</code> {#семестр-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.3</span> Семестр 1 <code>[3/3]</code> {#семестр-1}
 
 <!--list-separator-->
 
@@ -727,7 +731,7 @@ slug: "timetable-classes"
         1. <span class="org-todo done DONE">DONE</span>  Переаттестация № 1
 
             <div class="table-caption">
-              <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 6:</span>
+              <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 5:</span>
               Список на пересдачу. Математические основы защиты информации и информационной безопасности. Переаттестация № 1
             </div>
 
@@ -744,7 +748,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.4</span> Модуль 3 <code>[3/3]</code> {#модуль-3}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.4</span> Модуль 3 <code>[3/3]</code> {#модуль-3}
 
 <!--list-separator-->
 
@@ -802,7 +806,7 @@ slug: "timetable-classes"
     2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.5</span> Семестр 2 <code>[2/2]</code> {#семестр-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.5</span> Семестр 2 <code>[2/2]</code> {#семестр-2}
 
 <!--list-separator-->
 
@@ -876,7 +880,7 @@ slug: "timetable-classes"
                 -   На переаттестацию приглашаются студенты:
 
                 <div class="table-caption">
-                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 7:</span>
+                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 6:</span>
                   Список на пересдачу. Операционные системы. Переаттестация № 1
                 </div>
 
@@ -986,7 +990,7 @@ slug: "timetable-classes"
                 -   На переаттестацию приглашаются студенты:
 
                 <div class="table-caption">
-                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 8:</span>
+                  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 7:</span>
                   Список на пересдачу. Операционные системы. Переаттестация № 2
                 </div>
 
@@ -1072,7 +1076,7 @@ slug: "timetable-classes"
                 -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.6</span> Модуль 4 <code>[1/1]</code> {#модуль-4}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.6</span> Модуль 4 <code>[1/1]</code> {#модуль-4}
 
 <!--list-separator-->
 
@@ -1091,7 +1095,7 @@ slug: "timetable-classes"
         2.  02.03.02
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> Модули на 2021--2022 учебный год {#модули-на-2021-2022-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> Модули на 2021--2022 учебный год {#модули-на-2021-2022-учебный-год}
 
 -   Модуль 1
     -   01.09.2021--31.10.2021
@@ -1122,7 +1126,7 @@ slug: "timetable-classes"
                 -   НФИмд-02-21, 12:00, MS Teams
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> Модули на 2020--2021 учебный год {#модули-на-2020-2021-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.5</span> Модули на 2020--2021 учебный год {#модули-на-2020-2021-учебный-год}
 
 -   Расписание экзаменов:
     <https://esystem.rudn.ru/faculty/ffmien/raspisanie>
@@ -1166,7 +1170,7 @@ slug: "timetable-classes"
             -   НБИбд-01-20
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.5</span> Модули на 2019--2020 учебный год {#модули-на-2019-2020-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.6</span> Модули на 2019--2020 учебный год {#модули-на-2019-2020-учебный-год}
 
 -   Модуль 1: 5.11-9.11.19 (1 неделя)
 -   Модуль 2: 13.01-24.01.20 (2 недели)
@@ -1180,7 +1184,7 @@ slug: "timetable-classes"
 ## <span class="section-num">3</span> Соответствие специальностей и кодов групп {#соответствие-специальностей-и-кодов-групп}
 
 <div class="table-caption">
-  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 9:</span>
+  <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 8:</span>
   Соответствие специальностей и кодов групп
 </div>
 

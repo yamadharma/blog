@@ -2,7 +2,7 @@
 title: "Window manager i3"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-14T11:32:00+03:00
-lastmod: 2023-09-19T09:11:00+03:00
+lastmod: 2023-12-30T20:11:00+03:00
 tags: ["gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
