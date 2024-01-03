@@ -2,7 +2,7 @@
 title: "CEUR-WS conference repository"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2023-12-26T16:12:00+03:00
+lastmod: 2024-01-03T19:31:00+03:00
 tags: ["science-admin"]
 categories: ["computer-science", "science"]
 draft: false
@@ -22,7 +22,7 @@ CEUR-WS conference repository.
 -   Blog: <https://ceurws.wordpress.com/>
 
 
-### <span class="section-num">1.1</span> Fundamentals {#fundamentals}
+## <span class="section-num">2</span> Fundamentals {#fundamentals}
 
 -   CEUR-WS focuses on:
     -   workshops (rather not conferences);
@@ -30,7 +30,7 @@ CEUR-WS conference repository.
 -   CEUR-WS.org publishes computer science proceedings.
 
 
-#### <span class="section-num">1.1.1</span> Computer science {#computer-science}
+### <span class="section-num">2.1</span> Computer science {#computer-science}
 
 -   A computer science workshop proceedings is characterized as follows:
     -   The organizers and program committee members come overwhelmingly from computer-science departments and have a degree in computer science (or a related discipline such as information systems, business informatics).
@@ -39,7 +39,7 @@ CEUR-WS conference repository.
     -   It is not sufficient to use computer programs for conducting the research while applying research methods from another discipline such as material science.
 
 
-#### <span class="section-num">1.1.2</span> English {#english}
+### <span class="section-num">2.2</span> English {#english}
 
 -   The majority (50% or more) of the papers in a volume must be in English.
     -   English is the de facto standard when you want to target an international audience.
@@ -49,3 +49,10 @@ CEUR-WS conference repository.
     -   Therefore, for papers written in a language different than English, we require that you provide an English translation of the paper titles in the index file and additional English abstracts in the papers.
     -   This is not just to be able to verify the scientific character of a paper, but also to make the content of these papers accessible to the international scientific community.
     -   An English abstract and title allows any scientist to decide whether the contribution of a paper is relevant to his or her research.
+
+
+## <span class="section-num">3</span> Conference Compliance Checklist {#conference-compliance-checklist}
+
+-   [ ] Is this WS located to the well-known conference?
+-   [ ] What about the PC? Are there different names and people with a good dblp footprint?
+-   [ ] Editors and author footprint also high?
