@@ -2,7 +2,7 @@
 title: "Emacs. Табы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-13T16:22:00+03:00
-lastmod: 2023-12-13T16:28:00+03:00
+lastmod: 2024-01-08T20:21:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -16,13 +16,17 @@ slug: "emacs-tabs"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> tab-bar-mode {#tab-bar-mode}
+## <span class="section-num">1</span> Centaur tabs {#centaur-tabs}
+
+
+## <span class="section-num">2</span> Tab bar {#tab-bar}
 
 -   Включено в Emacs 27.
--   В рамках фрейма, в каждом табе --- окно.
+-   Область действия --- в рамках фрейма, в каждом табе --- окно.
 
 
-## <span class="section-num">2</span> tab-line-mode {#tab-line-mode}
+## <span class="section-num">3</span> Tab line {#tab-line}
 
+-   [Emacs. Пакет tab-line]({{< relref "2024-01-08-emacs-tab-line" >}})
 -   Включено в Emacs 27.
--   В рамках окна, в каждом табе --- буфер.
+-   Область действия --- в рамках окна, в каждом табе --- буфер.

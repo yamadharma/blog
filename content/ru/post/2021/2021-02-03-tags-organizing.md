@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2024-01-01T21:10:00+03:00
+lastmod: 2024-01-08T19:17:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -73,9 +73,12 @@ slug: "tags-organizing"
     -   `health`: [Здоровье]({{< relref "2022-10-19-health" >}})
     -   `money`: [Взгляд обывателя на финансы]({{< relref "2023-02-18-philistine-view-finance" >}})
     -   `recreation`: [Отдых]({{< relref "2023-01-17-recreation" >}})
--   `@physics`:
-    -   `kinetic`
-    -   `maxwell`
+-   `@physics`: [Физика]({{< relref "2024-01-07-physics" >}})
+    -   `geometrization`: [Геометризация]({{< relref "2024-01-08-geometrization" >}})
+    -   `kinetic`:
+    -   `maxwell`: [Электродинамика]({{< relref "2024-01-08-electrodynamics" >}})
+    -   `relatyvity`: [Теория относительности]({{< relref "2024-01-07-relativity" >}})
+
 -   `@science`: [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})
     -   `education`: [Преподавание]({{< relref "2021-02-01-teaching" >}})
     -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})

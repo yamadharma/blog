@@ -2,7 +2,7 @@
 title: "Книги. Физика"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-01T20:19:00+03:00
-lastmod: 2023-11-14T20:33:00+03:00
+lastmod: 2024-01-07T16:25:00+03:00
 tags: ["physics"]
 categories: ["book"]
 draft: false
@@ -25,7 +25,7 @@ slug: "books-physics"
 -   <span class="timestamp-wrapper"><span class="timestamp">[2023-11-14 Вт 20:15] </span></span> [Станюкович, К. П., Колесников, С. М. (1964): Гравитация]({{< relref "2023-11-14-stanyukovich_book_gravity_ru" >}}) [<a href="#citeproc_bib_item_2">2</a>]
 
 
-## <span class="section-num">2</span> Список по тематике {#список-по-тематике}
+## <span class="section-num">2</span> Темы {#темы}
 
 
 ### <span class="section-num">2.1</span> Научно-популярные книги {#научно-популярные-книги}
@@ -36,6 +36,9 @@ slug: "books-physics"
 ### <span class="section-num">2.2</span> Гравитация {#гравитация}
 
 -   [Станюкович, К. П., Колесников, С. М. (1964): Гравитация]({{< relref "2023-11-14-stanyukovich_book_gravity_ru" >}}) [<a href="#citeproc_bib_item_2">2</a>]
+
+
+## <span class="section-num">3</span> Библиография {#библиография}
 
 ## Литература
 

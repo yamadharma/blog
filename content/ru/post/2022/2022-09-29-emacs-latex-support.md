@@ -2,7 +2,7 @@
 title: "Emacs. Поддержка LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T15:45:00+03:00
-lastmod: 2023-09-24T18:54:00+03:00
+lastmod: 2024-01-06T19:56:00+03:00
 tags: ["emacs", "tex"]
 categories: ["computer-science"]
 draft: false

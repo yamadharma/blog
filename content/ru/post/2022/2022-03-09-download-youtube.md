@@ -2,7 +2,7 @@
 title: "Закачка с youtube"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-09T17:38:00+03:00
-lastmod: 2023-07-16T17:03:00+03:00
+lastmod: 2024-01-06T18:06:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,10 @@ slug: "download-youtube"
 -   Просто указывается линк на скачиваемое видео:
     ```shell
     yt-dlp <url>
+    ```
+-   Загрузите лучшее видео с лучшим кодеком, но не лучше, чем `h264`; разрешение не выше, чем 1080 строк:
+    ```shell
+    yt-dlp -S "codec:h264,height:1080" <url>
     ```
 
 

@@ -2,9 +2,9 @@
 title: "Геометризация электродинамики"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T17:41:00+03:00
-lastmod: 2023-08-27T18:30:00+03:00
-tags: ["geometrization", "physics"]
-categories: ["science"]
+lastmod: 2024-01-07T17:47:00+03:00
+tags: ["maxwell", "geometrization"]
+categories: ["science", "physics"]
 draft: false
 slug: "geometrization-electrodynamics"
 projects: ["geometrization"]

@@ -2,7 +2,7 @@
 title: "Книги. Программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-10T15:01:00+03:00
-lastmod: 2023-12-12T14:29:00+03:00
+lastmod: 2024-01-07T16:24:00+03:00
 tags: ["programming"]
 categories: ["book"]
 draft: false
@@ -24,33 +24,36 @@ slug: "books-programming"
 -   [Фарли, Д. (2023): Современная программная инженерия ПО в эпоху эджайла и непрерывного развертывания]({{< relref "2023-12-10-farley_book_modern-software-engineering_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
 
 
-## <span class="section-num">2</span> Языки программирования {#языки-программирования}
+## <span class="section-num">2</span> Темы {#темы}
 
 
-### <span class="section-num">2.1</span> Modelica {#modelica}
-
--   <span class="timestamp-wrapper"><span class="timestamp">[2021-01-09 Сб 21:39] </span></span> [Tiller M. M. - Modelica by Example]({{< relref "2021-01-10-tiller-modelica-by-example" >}})
+### <span class="section-num">2.1</span> Разработка программного обеспечения {#разработка-программного-обеспечения}
 
 
-## <span class="section-num">3</span> Разработка программного обеспечения {#разработка-программного-обеспечения}
-
-
-### <span class="section-num">3.1</span> Для начинающих {#для-начинающих}
+#### <span class="section-num">2.1.1</span> Для начинающих {#для-начинающих}
 
 -   [Капаноглу, С. (2023): Кодер с улицы Правила нарушать рекомендуется]({{< relref "2023-07-14-kapanoglu_book_street-coder_ru" >}}) [<a href="#citeproc_bib_item_2">2</a>]
 
 
-### <span class="section-num">3.2</span> Программная инженерия {#программная-инженерия}
+#### <span class="section-num">2.1.2</span> Программная инженерия {#программная-инженерия}
 
 -   [Фарли, Д. (2023): Современная программная инженерия ПО в эпоху эджайла и непрерывного развертывания]({{< relref "2023-12-10-farley_book_modern-software-engineering_ru" >}}) [<a href="#citeproc_bib_item_1">1</a>]
 
 
-## <span class="section-num">4</span> Статьи по программированию {#статьи-по-программированию}
+### <span class="section-num">2.2</span> Языки программирования {#языки-программирования}
+
+
+#### <span class="section-num">2.2.1</span> Modelica {#modelica}
+
+-   <span class="timestamp-wrapper"><span class="timestamp">[2021-01-09 Сб 21:39] </span></span> [Tiller M. M. - Modelica by Example]({{< relref "2021-01-10-tiller-modelica-by-example" >}})
+
+
+### <span class="section-num">2.3</span> Статьи по программированию {#статьи-по-программированию}
 
 -   [Литературное программирование]({{< relref "2023-08-05-literate-programming" >}})
 
 
-## <span class="section-num">5</span> Библиография {#библиография}
+## <span class="section-num">3</span> Библиография {#библиография}
 
 ## Литература
 

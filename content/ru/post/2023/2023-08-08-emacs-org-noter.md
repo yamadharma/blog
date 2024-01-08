@@ -2,7 +2,7 @@
 title: "Emacs. Org-noter"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-08T20:31:00+03:00
-lastmod: 2023-08-19T21:27:00+03:00
+lastmod: 2024-01-08T19:43:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
