@@ -2,7 +2,7 @@
 title: "Репозиторий конференций CEUR-WS"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2024-01-03T19:34:00+03:00
+lastmod: 2024-01-10T13:29:00+03:00
 tags: ["science-admin"]
 categories: ["computer-science", "science"]
 draft: false
@@ -65,12 +65,20 @@ slug: "ceur-ws-conference-repository"
 -   [ ] Показатели редакторов и авторов в DBLP.
 
 
-## <span class="section-num">4</span> Подготовка публикаций {#подготовка-публикаций}
+## <span class="section-num">4</span> Почему конференция может быть отклонена {#почему-конференция-может-быть-отклонена}
+
+-   Практически все работы написаны аспирантами одного вуза.
+-   Все члены программного комитета представляют один университет.
+-   На воркшоп поступило много заявок, все были приняты.
+-   Воркшоп не аффилирован ни с какой международной конференцией.
+
+
+## <span class="section-num">5</span> Подготовка публикаций {#подготовка-публикаций}
 
 -   [LaTeX. Стиль CEURART]({{< relref "2021-09-18-latex-ceurart-style" >}})
 -   [Шаблон конференции для CEUR-WS]({{< relref "2021-09-18-conference-template-ceur-ws" >}})
 
 
-## <span class="section-num">5</span> Редакторская работа {#редакторская-работа}
+## <span class="section-num">6</span> Редакторская работа {#редакторская-работа}
 
 -   [Редактирование материалов в CEUR-WS]({{< relref "2021-10-07-editing-submissions-ceur-ws" >}})

@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2024-01-08T18:48:00+03:00
+lastmod: 2024-01-11T20:46:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -40,8 +40,8 @@ menu:
     -   Intel Core i3-550 3.2 GHz, 4 GB оперативной памяти, 80 GB свободного места на жёстком диске;
     -   ОС Linux Gentoo (<http://www.gentoo.ru/>);
     -   VirtualBox версии 7.0 или новее.
--   Для установки в виртуальную машину используется дистрибутив Linux Fedora (<https://getfedora.org>), вариант с менеджером окон _i3_ (<https://spins.fedoraproject.org/i3/>).
--   При выполнении лабораторной работы на своей технике вам необходимо скачать необходимый образ операционной системы (<https://spins.fedoraproject.org/i3/download/index.html>).
+-   Для установки в виртуальную машину используется дистрибутив Linux Fedora (<https://getfedora.org>), вариант с менеджером окон _sway_ (<https://fedoraproject.org/spins/sway/>).
+-   При выполнении лабораторной работы на своей технике вам необходимо скачать необходимый образ операционной системы (<https://fedoraproject.org/spins/sway/download/index.html>).
 
 
 ### <span class="section-num">2.2</span> Соглашения об именовании {#соглашения-об-именовании}
@@ -504,6 +504,9 @@ menu:
 5.  Как удалить зависший процесс?
 
 При ответах на контрольные вопросы рекомендуется ознакомиться с информацией из  [<a href="#citeproc_bib_item_1">1</a>; <a href="#citeproc_bib_item_1">1</a>–<a href="#citeproc_bib_item_7">7</a>].
+
+
+## <span class="section-num">7</span> Библиография {#библиография}
 
 ## Литература
 

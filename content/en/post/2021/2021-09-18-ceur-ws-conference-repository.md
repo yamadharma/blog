@@ -2,7 +2,7 @@
 title: "CEUR-WS conference repository"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2024-01-03T19:31:00+03:00
+lastmod: 2024-01-10T13:27:00+03:00
 tags: ["science-admin"]
 categories: ["computer-science", "science"]
 draft: false
@@ -56,3 +56,11 @@ CEUR-WS conference repository.
 -   [ ] Is this WS located to the well-known conference?
 -   [ ] What about the PC? Are there different names and people with a good dblp footprint?
 -   [ ] Editors and author footprint also high?
+
+
+## <span class="section-num">4</span> Why a workshop might be rejected {#why-a-workshop-might-be-rejected}
+
+-   Virtually all papers are by PhD students of a single university.
+-   All PC members are from a single university.
+-   The PhD symposium has many submissions, all were accepted.
+-   The symposium was not affiliated to an international conference.

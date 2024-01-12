@@ -2,7 +2,7 @@
 title: "Пакетный менеджер для Windows. WinGet"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-01T18:53:00+03:00
-lastmod: 2023-10-01T19:33:00+03:00
+lastmod: 2024-01-12T19:00:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false

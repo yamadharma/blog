@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2023-12-29T21:43:00+03:00
+lastmod: 2024-01-09T14:11:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -237,7 +237,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[1/3]</code> {#сессия-семестр-1}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[2/3]</code> {#сессия-семестр-1}
 
 <!--list-separator-->
 
@@ -253,15 +253,15 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены <code>[0/1]</code>
+2. <span class="org-todo done DONE">DONE</span>  Экзамены <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (экзамен) <code>[0/1]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (экзамен) <code>[1/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (экзамен), НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
+        1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (экзамен), НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
 
 <!--list-separator-->
 
