@@ -2,7 +2,7 @@
 title: "Книги. Люди науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-20T17:17:00+03:00
-lastmod: 2024-01-12T20:37:00+03:00
+lastmod: 2024-01-13T19:35:00+03:00
 tags: ["science-people"]
 categories: ["book"]
 draft: false
@@ -39,8 +39,6 @@ slug: "books-science-people"
 #### <span class="section-num">2.1.1</span> Ландау Лев Давидович {#ландау-лев-давидович}
 
 -   [Горобец, Б. С. (2009): Круг Ландау]({{< relref "2013-05-05-gorobets_book-mv_landau-entourage_ru" >}}) [<a href="#citeproc_bib_item_2">2</a>]
-    -   Наверное самая фундаментальная на сегодняшний день книга о Ландау.
-    -   Начинайте читать про Ландау с этой книги.
 -   [Каганов, М. И. (1998): Школа Ландау: что я о ней думаю]({{< relref "2015-12-13-kaganov_book_landau-school_ru" >}}) [<a href="#citeproc_bib_item_3">3</a>].
 
 

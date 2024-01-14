@@ -2,7 +2,7 @@
 title: "Tectonic Typesetting System как реализация TeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-04T12:44:00+03:00
-lastmod: 2023-10-04T14:32:00+03:00
+lastmod: 2024-01-13T18:24:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Структура аннотации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:38:00+03:00
-lastmod: 2023-07-09T18:30:00+03:00
+lastmod: 2024-01-14T20:18:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Закачка с youtube"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-03-09T17:38:00+03:00
-lastmod: 2024-01-06T18:06:00+03:00
+lastmod: 2024-01-14T17:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -50,7 +50,7 @@ slug: "download-youtube"
 ## <span class="section-num">3</span> Примеры использования {#примеры-использования}
 
 
-### <span class="section-num">3.1</span> Скачавание видео с Youtube {#скачавание-видео-с-youtube}
+### <span class="section-num">3.1</span> Скачивание видео с Youtube {#скачивание-видео-с-youtube}
 
 -   Просто указывается линк на скачиваемое видео:
     ```shell

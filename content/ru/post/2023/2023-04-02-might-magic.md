@@ -2,14 +2,14 @@
 title: "Серия игр Might And Magic"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-02T18:34:00+03:00
-lastmod: 2023-10-05T20:21:00+03:00
+lastmod: 2024-01-14T15:17:00+03:00
 tags: ["mm"]
 categories: ["games"]
 draft: false
 slug: "might-magic"
 ---
 
-Might And Magic.
+Серия игр Might And Magic.
 
 <!--more-->
 

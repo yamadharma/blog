@@ -2,7 +2,7 @@
 title: "Институт компьютерных наук и телекоммуникаций"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-03T11:31:00+03:00
-lastmod: 2023-10-03T11:48:00+03:00
+lastmod: 2024-01-13T18:23:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false

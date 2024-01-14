@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2024-01-08T19:17:00+03:00
+lastmod: 2024-01-12T20:54:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -86,6 +86,8 @@ slug: "tags-organizing"
     -   `science_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
     -   `science_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
     -   `science_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
+    -   `science_people`: [Люди науки]({{< relref "2024-01-12-science-people" >}})
+
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
     -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})
     -   `gtd`: [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})

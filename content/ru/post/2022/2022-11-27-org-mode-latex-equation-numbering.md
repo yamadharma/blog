@@ -2,7 +2,7 @@
 title: "Org-mode. Нумерация уравнений LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-27T19:16:00+03:00
-lastmod: 2023-10-05T20:02:00+03:00
+lastmod: 2024-01-14T15:22:00+03:00
 tags: ["emacs", "org-mode", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,7 @@ Org-mode. Нумерация уравнений LaTeX.
 
 ## <span class="section-num">2</span> Проблема {#проблема}
 
--   При использовании выключенных уравнений _LaTeX_ в _org-mode_ каждый фрагмент создаётся изолированно.
+-   При использовании выключенных уравнений _LaTeX_ в _org-mode_ (см. [Org-mode. Предпросмотр TeX]({{< relref "2024-01-06-org-mode-latex-preview" >}})) каждый фрагмент создаётся изолированно.
 -   Каждое пронумерованное уравнение имеет номер `(1)`.
 
 
