@@ -2,7 +2,7 @@
 title: "Взгляд обывателя на финансы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-18T20:34:00+03:00
-lastmod: 2023-07-20T13:25:00+03:00
+lastmod: 2024-01-20T19:34:00+03:00
 tags: ["money"]
 categories: ["life"]
 draft: false
@@ -20,6 +20,7 @@ slug: "philistine-view-finance"
 
 -   [Сбербанк]({{< relref "2023-07-20-sberbank" >}})
 -   [Тинькофф]({{< relref "2023-07-20-tinkoff-bank" >}})
+-   [Банки. Премиальные программы]({{< relref "2024-01-20-banks-premium-programs" >}})
 
 
 ## <span class="section-num">2</span> Размышления {#размышления}

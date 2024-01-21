@@ -2,7 +2,7 @@
 title: "Emacs. Рабочее пространство"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-14T15:44:00+03:00
-lastmod: 2024-01-14T17:52:00+03:00
+lastmod: 2024-01-15T10:15:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -81,3 +81,11 @@ slug: "emacs-workspaces"
 
 -   Репозиторий: <https://github.com/mclear-tools/tabspaces>
 -   Использует `tab-bar.el` и `project.el` для создания изолированных от буфера рабочих пространств (_пространств вкладок_).
+
+
+### <span class="section-num">1.10</span> IBuffer {#ibuffer}
+
+-   Информация: <https://www.emacswiki.org/emacs/IbufferMode>
+-   В составе Emacs начиная с версии 22.
+-   Замена встроенной команды `list-buffer`.
+-   Позволяет программно группировать буферы.

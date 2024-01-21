@@ -2,7 +2,7 @@
 title: "Wayland. Аналоги приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T14:23:00+03:00
-lastmod: 2023-11-05T15:37:00+03:00
+lastmod: 2024-01-20T20:36:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false

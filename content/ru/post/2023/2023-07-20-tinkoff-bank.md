@@ -2,7 +2,7 @@
 title: "Тинькофф"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-20T13:22:00+03:00
-lastmod: 2023-08-29T13:25:00+03:00
+lastmod: 2024-01-20T19:33:00+03:00
 tags: ["money"]
 categories: ["life"]
 draft: false
@@ -21,23 +21,31 @@ slug: "tinkoff-bank"
 -   Сайт: <https://www.tinkoff.ru/>
 
 
-## <span class="section-num">2</span> Премиальные программы {#премиальные-программы}
+## <span class="section-num">2</span> Тарифы {#тарифы}
 
 
-### <span class="section-num">2.1</span> Подписка Tinkoff Pro {#подписка-tinkoff-pro}
+### <span class="section-num">2.1</span> Расширенные программа {#расширенные-программа}
+
+
+#### <span class="section-num">2.1.1</span> Подписка Tinkoff Pro {#подписка-tinkoff-pro}
 
 -   Страница: <https://www.tinkoff.ru/pro/>
 -   Стоимость составляет 199 рублей в месяц.
 -   То, что раньше было в базовом пакете, переехало в пакет Tinkoff Pro.
 
 
-### <span class="section-num">2.2</span> Тинькофф Премиум {#тинькофф-премиум}
+### <span class="section-num">2.2</span> Премиальные программы {#премиальные-программы}
+
+-   [Банки. Премиальные программы]({{< relref "2024-01-20-banks-premium-programs" >}})
+
+
+#### <span class="section-num">2.2.1</span> Тинькофф Премиум {#тинькофф-премиум}
 
 -   Страница: <https://www.tinkoff.ru/tinkoff-premium/>
 -   Можно перейти на программу самому.
 -   Обслуживание: 1990 ₽ в месяц
 -   Страховка в поездках по России и миру
-    -   На 5 человек, до 100 000 $ на каждого. Для активного отдыха. Включает стоматологию
+    -   На 5 человек, до 100 000 $ на каждого. Для активного отдыха. Включает стоматологию.
 -   Доступ в бизнес-залы
     -   Партнёры Every Lounge и Grey Wall
     -   Компенсируется от 2 проходов в месяц
@@ -46,7 +54,10 @@ slug: "tinkoff-bank"
     -   Интернет-трафик оплачивается
 
 
-### <span class="section-num">2.3</span> Tinkoff Private {#tinkoff-private}
+### <span class="section-num">2.3</span> Частные программы {#частные-программы}
+
+
+#### <span class="section-num">2.3.1</span> Tinkoff Private {#tinkoff-private}
 
 -   Страница: <https://www.tinkoff.ru/private/>
 -   Программу предлагает сам банк.

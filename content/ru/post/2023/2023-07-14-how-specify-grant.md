@@ -2,7 +2,7 @@
 title: "Как ссылаться на грант"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-14T20:31:00+03:00
-lastmod: 2023-07-14T21:10:00+03:00
+lastmod: 2024-01-21T18:56:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

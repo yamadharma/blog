@@ -2,8 +2,8 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2024-01-11T20:46:00+03:00
-tags: ["education"]
+lastmod: 2024-01-20T20:56:00+03:00
+tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 201
@@ -432,7 +432,7 @@ menu:
 
 -   Установим дистрибутив TeXlive (см. [Установка TeX Live]({{< relref "2021-04-23-install-texlive" >}})):
     ```shell
-    dnf -y install texlive texlive-\*
+    dnf -y install texlive-scheme-full
     ```
 
 
