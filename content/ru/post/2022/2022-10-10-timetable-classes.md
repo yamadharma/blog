@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-01-09T14:11:00+03:00
+lastmod: 2024-01-24T12:21:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -19,10 +19,15 @@ slug: "timetable-classes"
 ## <span class="section-num">1</span> Расписание занятий {#расписание-занятий}
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.1</span> 2023--2024 учебный год, расписание занятий <code>[3/3]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="section-num">1.1</span> Информация {#информация}
+
+-   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-#### <span class="section-num">1.1.1</span> Информация {#информация}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[3/6]</code> {#2023-2024-учебный-год-расписание-занятий}
+
+
+#### <span class="section-num">1.2.1</span> Информация {#информация}
 
 <!--list-separator-->
 
@@ -63,7 +68,7 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.2</span> 2023--2024 учебный год, 1 четверть <code>[2/3]</code> {#2023-2024-учебный-год-1-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.2</span> 2023--2024 учебный год, 1 четверть <code>[2/3]</code> {#2023-2024-учебный-год-1-четверть}
 
 -   2023-09-01 Пт--2023-11-05 Вс
 
@@ -112,7 +117,7 @@ slug: "timetable-classes"
     -   Занятие проводится дистанционно
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.3</span> 2023--2024 учебный год, 2 четверть <code>[1/1]</code> {#2023-2024-учебный-год-2-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.3</span> 2023--2024 учебный год, 2 четверть <code>[1/1]</code> {#2023-2024-учебный-год-2-четверть}
 
 <!--list-separator-->
 
@@ -121,7 +126,7 @@ slug: "timetable-classes"
     -   2023-11-06 Пн 13:30-14:50--2023-12-25 Пн 13:30-14:50
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1.4</span> 2023--2024 учебный год, 1 семестр <code>[5/5]</code> {#2023-2024-учебный-год-1-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.4</span> 2023--2024 учебный год, 1 семестр <code>[5/6]</code> {#2023-2024-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -152,6 +157,51 @@ slug: "timetable-classes"
 5. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лекция)
 
     -   ОРД-295, НПИбд-22
+
+
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.5</span> 2023--2024 учебный год, 3 четверть <code>[0/0]</code> {#2023-2024-учебный-год-3-четверть}
+
+<!--list-separator-->
+
+1. <span class="org-todo todo NEXT">NEXT</span>  Математическое моделирование (лекция, дистанционно)
+
+    -
+    -   02.03.01 Математика и компьютерные науки
+        -   НКНбд-01-21
+    -   02.03.02 Фундаментальная информатика и информационные технологии
+        -   НФИбд-01-21, НФИбд-02-21
+    -   09.03.03 Прикладная информатика
+        -   НПИбд-01-21, НПИбд-02-21
+
+
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
+
+
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.7</span> 2023--2024 учебный год, 2 семестр <code>[0/2]</code> {#2023-2024-учебный-год-2-семестр}
+
+<!--list-separator-->
+
+1. <span class="org-todo todo NEXT">NEXT</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
+
+    -
+    -   02.03.00 Компьютерные и информационные науки
+        -   НКАбд-01-23, НКАбд-02-23, НКАбд-03-23, НКАбд-04-23, НКАбд-05-23, НКАбд-06-23
+    -   09.03.03 Прикладная информатика
+        -   НПИбд-01-23, НПИбд-02-23, НПИбд-03-23
+    -   38.03.05 Бизнес-информатика
+        -   НБИбд-01-23, НБИбд-02-23, НБИбд-03-23
+
+<!--list-separator-->
+
+2. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лекция, дистанционно)
+
+    -
+    -   02.03.00 Компьютерные и информационные науки
+        -   НКАбд-01-22, НКАбд-02-22, НКАбд-03-22, НКАбд-04-22, НКАбд-05-22
+    -   09.03.03 Прикладная информатика
+        -   НПИбд-01-22, НПИбд-02-22
+    -   38.03.05 Бизнес-информатика
+        -   НБИбд-01-22, НБИбд-02-22, НБИбд-03-22
 
 
 ## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
