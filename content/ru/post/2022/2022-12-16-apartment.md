@@ -2,7 +2,7 @@
 title: "Квартира"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-16T19:18:00+03:00
-lastmod: 2023-10-29T14:37:00+03:00
+lastmod: 2024-01-25T20:43:00+03:00
 tags: ["apartment"]
 categories: ["life"]
 draft: false
@@ -43,8 +43,7 @@ slug: "apartment"
 
 ## <span class="section-num">5</span> Домашняя техника {#домашняя-техника}
 
--   [Критерии выбора робота-пылесоса]({{< relref "2023-05-09-criteria-choosing-robot-cleaner" >}})
--   [Робот-пылесос iCLEBO O5]({{< relref "2023-05-15-robot-vacuum-cleaner-iclebo-o5" >}})
+-   [Бытовая техника]({{< relref "2023-05-14-household-appliances" >}})
 
 
 ## <span class="section-num">6</span> Кухня {#кухня}

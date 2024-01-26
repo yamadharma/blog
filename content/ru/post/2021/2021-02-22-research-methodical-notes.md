@@ -2,7 +2,7 @@
 title: "Научно-исследовательская деятельность. Методические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:05:00+03:00
-lastmod: 2024-01-21T20:58:00+03:00
+lastmod: 2024-01-26T19:44:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -37,3 +37,5 @@ slug: "research-methodical-notes"
 -   [Оформление диссертации]({{< relref "2021-04-20-making-thesis" >}})
 -   [Процедура защиты диссертации]({{< relref "2023-06-18-thesis-defense-procedure" >}})
 -   [Требования к документам для защиты диссертации в РУДН]({{< relref "2023-05-18-requirements-documents-defending-thesis-rudn" >}})
+-   [Кандидатская диссертация]({{< relref "2024-01-26-phd-thesis" >}})
+-   [Докторская диссертация]({{< relref "2024-01-26-doctoral-thesis" >}})

@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-01-24T12:21:00+03:00
+lastmod: 2024-01-25T21:12:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -202,6 +202,38 @@ slug: "timetable-classes"
         -   НПИбд-01-22, НПИбд-02-22
     -   38.03.05 Бизнес-информатика
         -   НБИбд-01-22, НБИбд-02-22, НБИбд-03-22
+
+<!--list-separator-->
+
+3. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лабораторные)
+
+    -
+    -   НПИбд-02-22
+    -   ОРД-297, ОРД-295
+
+<!--list-separator-->
+
+4. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лабораторные)
+
+    -
+    -   НКАбд-03-22
+    -   ОРД-297
+
+<!--list-separator-->
+
+5. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лабораторные)
+
+    -
+    -   НКАбд-02-22
+    -   ОРД-297
+
+<!--list-separator-->
+
+6. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лабораторные)
+
+    -
+    -   НКАбд-01-22
+    -   ОРД-297
 
 
 ## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
