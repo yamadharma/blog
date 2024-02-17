@@ -2,7 +2,7 @@
 title: "Выбор научного руководителя"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-01T10:52:00+03:00
-lastmod: 2023-07-08T18:49:00+03:00
+lastmod: 2024-02-12T16:02:00+03:00
 tags: ["science-being"]
 categories: ["science"]
 draft: false

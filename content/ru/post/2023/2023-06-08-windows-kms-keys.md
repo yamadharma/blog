@@ -2,7 +2,7 @@
 title: "Windows. Ключи KMS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-08T15:36:00+03:00
-lastmod: 2023-07-18T19:56:00+03:00
+lastmod: 2024-01-28T20:08:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Система виртуализации VirtualBox"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-17T11:35:00+03:00
-lastmod: 2023-07-11T11:11:00+03:00
+lastmod: 2024-02-15T20:06:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -80,10 +80,15 @@ slug: "virtualbox-virtualization-system"
     ```
 
 
-## <span class="section-num">3</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
+## <span class="section-num">3</span> Использование {#использование}
+
+-   [VirtualBox. Использование без монитора]({{< relref "2024-02-15-virtualbox-headless" >}})
 
 
-### <span class="section-num">3.1</span> MacOS {#macos}
+## <span class="section-num">4</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
+
+
+### <span class="section-num">4.1</span> MacOS {#macos}
 
 -   Начиная с версии MacOS 10.13 требуется ряд новых полномочий для программного обеспечения.
 -   После установки кнопка с запросом разрешений находится в панели "Системные настройки", раздел "Безопасность и конфиденциальность".

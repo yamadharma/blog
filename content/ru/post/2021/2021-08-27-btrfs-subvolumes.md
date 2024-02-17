@@ -2,7 +2,7 @@
 title: "Подтома btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:41:00+03:00
-lastmod: 2023-11-07T16:38:00+03:00
+lastmod: 2024-01-29T08:23:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -71,6 +71,7 @@ slug: "btrfs-subvolumes"
         btrfs subvol create @portage_local
         btrfs subvol create @portage_com
         btrfs subvol create @libvirt
+        btrfs subvol create @home
         ```
 
 

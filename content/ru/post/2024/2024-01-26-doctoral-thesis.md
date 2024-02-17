@@ -2,7 +2,9 @@
 title: "Докторская диссертация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-26T19:42:00+03:00
-lastmod: 2024-01-26T19:52:00+03:00
+lastmod: 2024-01-27T19:21:00+03:00
+tags: ["research"]
+categories: ["science"]
 draft: false
 slug: "doctoral-thesis"
 ---

@@ -2,7 +2,7 @@
 title: "Создание bib-файла с процитированными ссылками"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-20T19:44:00+03:00
-lastmod: 2023-11-12T17:36:00+03:00
+lastmod: 2024-02-17T20:54:00+03:00
 tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -32,6 +32,10 @@ slug: "bib-file-cited"
 -   Работает с полями bibtex, не поддерживает biblatex (см. [bibtex vs biblatex]({{< relref "2022-09-11-bibtex-biblatex" >}})).
 -   Можно добавить свои поля.
 -   Не совместим с _biber_.
+
+
+#### <span class="section-num">2.1.1</span> Использование {#использование}
+
 -   Использование:
     ```shell
     bibexport -o extracted.bib myarticle.aux
@@ -45,7 +49,30 @@ slug: "bib-file-cited"
     ```
 
 
-### <span class="section-num">2.2</span> Jabref {#jabref}
+### <span class="section-num">2.2</span> biber {#biber}
+
+-   Сайт: <https://biblatex-biber.sourceforge.net/>
+-   Репозиторий: <https://github.com/plk/biber>
+-   Программа библиографической обработки информации в формате BibLaTeX.
+-   Написан на языке Perl.
+
+
+#### <span class="section-num">2.2.1</span> Использование {#использование}
+
+-   Использование:
+    ```shell
+    biber --output-format=bibtex myarticle.bcf -O extracted.bib
+    ```
+
+    -   `extracted.bib` : имя, которое вы хотите дать своему новому bib-файлу.
+-   Если используется централизованная база библиографии, то необходимо добавить в компилируемый файл эту библиографическую базу:
+    ```latex
+    \addbibresource{~/work/bib/bib/main.bib}
+    ```
+-   После этого можно использовать предыдущую команду.
+
+
+### <span class="section-num">2.3</span> Jabref {#jabref}
 
 -   Сайт: <https://www.jabref.org/>
 -   Работает также с _biblatex_ и _biber_.
@@ -70,7 +97,7 @@ slug: "bib-file-cited"
     -   В результате получается подбаза данных, содержащая только записи, используемые в файле `.tex`.
 
 
-### <span class="section-num">2.3</span> bibtool {#bibtool}
+### <span class="section-num">2.4</span> bibtool {#bibtool}
 
 -   Сайт: <http://www.gerd-neugebauer.de/software/TeX/BibTool/en/>
 -   CTAN: <https://www.ctan.org/pkg/bibtool>

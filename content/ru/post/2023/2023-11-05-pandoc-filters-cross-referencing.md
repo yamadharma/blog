@@ -2,7 +2,7 @@
 title: "Pandoc. Фильтры. Перекрёстные ссылки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-05T19:04:00+03:00
-lastmod: 2023-11-05T20:09:00+03:00
+lastmod: 2024-02-17T20:19:00+03:00
 tags: ["pandoc", "markdown"]
 categories: ["computer-science"]
 draft: false

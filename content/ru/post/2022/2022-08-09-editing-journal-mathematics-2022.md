@@ -2,7 +2,7 @@
 title: "Редактирование. Журнал Mathematics. 2022"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-09T19:37:00+03:00
-lastmod: 2023-09-30T20:05:00+03:00
+lastmod: 2024-01-30T10:03:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "editing-journal-mathematics-2022"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Сайт: <https://www.mdpi.com/journal/mathematics/special_issues/6R6A4N9HLW>.
+-   Сайт: <https://www.mdpi.com/si/mathematics/6R6A4N9HLW>.
 -   Приём материалов: до 30 апреля 2023.
 
 

@@ -2,7 +2,7 @@
 title: "Квартили списка ВАК"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T20:12:00+03:00
-lastmod: 2023-12-26T20:58:00+03:00
+lastmod: 2024-01-27T21:12:00+03:00
 tags: ["science-being"]
 categories: ["science"]
 draft: false
@@ -62,4 +62,5 @@ slug: "hac-list-quartiles"
 
 ## <span class="section-num">3</span> Перечень по квартилям {#перечень-по-квартилям}
 
+-   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-26 Пт]</span></span><https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92685697002&f=21725>
 -   <span class="timestamp-wrapper"><span class="timestamp">[2022-12-06 Вт] </span></span> <https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92263438002&f=14239>

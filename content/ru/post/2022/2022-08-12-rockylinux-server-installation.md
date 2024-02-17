@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2023-11-08T15:06:00+03:00
+lastmod: 2024-01-31T13:56:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -424,4 +424,20 @@ slug: "rockylinux-server-installation"
 -   Установите `git`:
     ```shell
     dnf -y install git
+    ```
+
+
+#### <span class="section-num">4.8.2</span> cvs {#cvs}
+
+-   Установите `cvs`:
+    ```shell
+    dnf -y install cvs
+    ```
+
+
+### <span class="section-num">4.9</span> Средства разработки {#средства-разработки}
+
+-   Установим группу средств разработки:
+    ```shell
+    dnf group install "Development Tools"
     ```

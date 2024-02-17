@@ -2,7 +2,7 @@
 title: "Установка gitea"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-29T20:10:00+03:00
-lastmod: 2023-11-13T19:50:00+03:00
+lastmod: 2024-01-31T17:49:00+03:00
 tags: ["git", "sysadmin"]
 categories: ["computer-science"]
 draft: false

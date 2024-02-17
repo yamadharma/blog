@@ -2,7 +2,9 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2023-12-21T18:19:00+03:00
+lastmod: 2024-02-14T19:38:00+03:00
+tags: ["modeling", "science-admin"]
+categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2023-2024"
 ---
@@ -208,7 +210,7 @@ Neutron stars, as relativistic objects, are described by the equations of genera
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-07 Чт&gt; </span></span> Цапко Е. Д. - Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений {#цапко-е-dot-д-dot-эффективные-стратегии-для-численного-решения-сингулярно-возмущенных-обыкновенных-дифференциальных-уравнений}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-07 Чт&gt; </span></span> Цапко Е. Д. _Эффективные стратегии для численного решения сингулярно возмущенных обыкновенных дифференциальных уравнений_ {#цапко-е-dot-д-dot-эффективные-стратегии-для-численного-решения-сингулярно-возмущенных-обыкновенных-дифференциальных-уравнений}
 
 
 #### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
@@ -275,7 +277,7 @@ Key publications:
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-21 Чт&gt; </span></span> Айриян А. - Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии {#айриян-а-dot-конструкции-кварк-адронного-фазового-перехода-и-байесовский-анализа-моделей-уравнения-состояния-на-основе-данных-многоканальной-астрономии}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-12-21 Чт&gt; </span></span> Айриян А. _Конструкции кварк-адронного фазового перехода и байесовский анализа моделей уравнения состояния на основе данных многоканальной астрономии_ {#айриян-а-dot-конструкции-кварк-адронного-фазового-перехода-и-байесовский-анализа-моделей-уравнения-состояния-на-основе-данных-многоканальной-астрономии}
 
 
 #### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
@@ -327,6 +329,98 @@ The talk aims to provide a comprehensive discussion of the details associated wi
 {{< rtab tabName="Youtube" >}}
 
 {{< youtube Kkxl26aOhn4 >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+## <span class="section-num">2</span> 2024 {#2024}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-31 Ср&gt; </span></span> Ловецкий К. П. _Методы решения ОДУ, основанные на чебышевской интерполяции_ {#ловецкий-к-dot-п-dot-методы-решения-оду-основанные-на-чебышевской-интерполяции}
+
+
+#### <span class="section-num">2.1.1</span> Докладчик {#докладчик}
+
+-   Ловецкий Константин Петрович
+    -   Кафедра математического моделирования и искусственного интеллекта, РУДН
+
+
+#### <span class="section-num">2.1.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/245/>
+-   Методы решения ОДУ, основанные на чебышевской интерполяции, интегрирующих множителях, матрицах спектрального дифференцирования и интегрирования
+-   Ловецкий Константин Петрович
+    -   Кафедра математического моделирования и искусственного интеллекта, РУДН
+
+В докладе рассматривается метод чебышевской полиномиальной интерполяции в базисе из полиномов Чебышева 1-го рода. Основное внимание уделяется методу интерполяции на сетке Гаусса-Лобатто. Использование дискретной ортогональности чебышевских полиномов позволяет вычислять коэффициенты спектрального разложения с минимальными затратами, сводя процедуру решения к системе линейных уравнений с диагональной положительно определенной матрицей.
+Такой метод почти оптимальной аппроксимации совместно с алгоритмом интегрирующих множителей и использованием матриц спектрального интегрирования привел к созданию многоэтапных метода решения различных задач. Приводятся примеры решения «задачи Коши» с заданием начальных/конечных или промежуточных условий для ОДУ первого и второго порядков, методы вычисления определенных интегралов, метод интегрирования быстроосциллирующих функций.
+
+---
+
+-   Methods for solving ODEs based on Chebyshev interpolation, integrating factors, spectral differentiation and integration matrices
+-   K. P. Lovetskiy
+    -   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+
+The report discusses the method of Chebyshev polynomial interpolation in a basis of Chebyshev polynomials of the 1st kind. The focus is on the interpolation method on the Gauss-Lobatto grid. The use of discrete orthogonality of Chebyshev polynomials allows one to calculate the coefficients of spectral decomposition with minimal costs, reducing the solution procedure to a system of linear equations with a diagonal positive definite matrix.
+This approach of almost optimal approximation, together with the method of integrating factors and the use of spectral integration matrices, led to the creation of multi-stage methods for solving various problems. Examples are given of solving the “Cauchy problem” with setting initial/final or intermediate conditions for first- and second-order ODEs, methods for calculating definite integrals, and a method for integrating rapidly oscillating functions.
+
+
+#### <span class="section-num">2.1.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 5ac8901d39746d86cd4a2170671ecbf6 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube J_Tag6W2ioE >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-14 Ср&gt; </span></span> Чинь Ф. Т. _Вариационный подход к дискретизации по времени уравнений Биркгофа для бесконечномерных систем_ {#чинь-ф-dot-т-dot-вариационный-подход-к-дискретизации-по-времени-уравнений-биркгофа-для-бесконечномерных-систем}
+
+
+#### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
+
+-   Чинь Фыок Тоан
+-   аспирант
+    -   Математический институт им. С. М. Никольского, РУДН
+
+
+#### <span class="section-num">2.2.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/246/>
+-   Вариационный подход к дискретизации по времени уравнений Биркгофа для бесконечномерных систем
+-   Чинь Ф.Т
+    -   Математический институт им. С. М. Никольского, РУДН
+
+Для численного решения задач механики физики широко используются разностные методы. При построении дискретных аналогов важно сохранить основные свойства исходной дифференциальной задачи. Основная цель данной работы --- дискретизация системы уравнений вида \\(C(x,t,u)u\_{t} + E\left( x,t,u\_{\alpha} \right) = 0\\) на основе её функционала --- действия по Гамильтону. Получены необходимые и достаточные условия её потенциальности относительно заданной билинейной формы. Построено действие по Гамильтону для данной системы и получено её представление в виде уравнений Биркгофа для бесконечномерных систем.  Аппроксимируя построенный функционал его разностным аналогом, на основе вариационного принципа получен дискретный по времени аналог уравнений Биркгофа. Теоретические результаты проиллюстрированы на примере волнового уравнения с осевой симметрией.
+
+---
+
+-   The variational approach to time discretization of Birkhoff equations for infinite-dimensional systems
+-   P. T. Trinh
+    -   S.M. Nikol'skii Mathematical Institute, RUDN University
+
+Difference methods are widely used for the numerical solution of problems in mechanics and physics. When constructing discrete analogs, it is important to preserve the basic properties of the original differential problem. The main goal of this work is to discretize a system of equations \\(C(x,t,u)u\_{t} + E\left( x,t,u\_{\alpha} \right) = 0\\) based on its functional --- the Hamiltonian action. Necessary and sufficient conditions for potentiality with respect to a given bilinear form are obtained. The Hamiltonian action for this system is constructed and its representation in the form of Birkhoff equations for infinite-dimensional systems is obtained. By approximating the constructed functional with its discrete analog, a discrete-time analog of Birkhoff equations is obtained based on the variational principle.  Theoretical results are illustrated by the example of a wave equation with axial symmetry.
+
+
+#### <span class="section-num">2.2.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 3b811b6363ae73b6876c06934625cb3d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube SK-do3WY4W8 >}}
 
 {{< /rtab >}}
 {{< /tabs >}}

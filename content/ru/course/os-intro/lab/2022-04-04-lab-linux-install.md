@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2024-01-20T20:56:00+03:00
+lastmod: 2024-02-15T15:41:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
@@ -42,6 +42,7 @@ menu:
     -   VirtualBox версии 7.0 или новее.
 -   Для установки в виртуальную машину используется дистрибутив Linux Fedora (<https://getfedora.org>), вариант с менеджером окон _sway_ (<https://fedoraproject.org/spins/sway/>).
 -   При выполнении лабораторной работы на своей технике вам необходимо скачать необходимый образ операционной системы (<https://fedoraproject.org/spins/sway/download/index.html>).
+-   В дисплейных классах можно воспользоваться образом в каталоге `/afs/dk.sci.pfu.edu.ru/common/files/iso`.
 
 
 ### <span class="section-num">2.2</span> Соглашения об именовании {#соглашения-об-именовании}
@@ -109,9 +110,32 @@ menu:
 
     3.  Командная строка
 
+        -   Зададим отображение информации о настройках VirtualBox на английском.
+        -   Поэтому следует задать кодировку для отображения свойств VirtualBox:
+            ```shell
+            vboxmanage setproperty language C
+            ```
         -   Установим папку для виртуальных машине в `/var/tmp/имя_пользователя`:
             ```shell
-            VBoxManage setproperty machinefolder /var/tmp/имя_пользователя
+            vboxmanage setproperty machinefolder /var/tmp/$(id -un)
+            ```
+        -   Поверьте, что папка виртуальных машин по умолчанию изменена:
+            ```shell
+            vboxmanage list systemproperties | grep "Default machine folder:"
+            ```
+        -   Следующая команда выдаст только каталог:
+            ```shell
+            vboxmanage list systemproperties | grep "Default machine folder:" | cut -d":" -f2 | tr -d ' '
+            ```
+
+    <!--list-separator-->
+
+    4.  Установочный образ
+
+        -   Перенесите установочный образ в папку `/var/tmp/имя_пользователя/iso`:
+            ```shell
+            mkdir -p "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso"
+            mv Fedora-Sway-Live-x86_64-39-1.5.iso "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso"
             ```
 
 
@@ -150,17 +174,68 @@ menu:
 
 ### <span class="section-num">3.2</span> Создание виртуальной машины {#создание-виртуальной-машины}
 
--   Запустите менеджер виртуальных машин, введя в командной строке:
+-   Для использования графического интерфейса запустите менеджер виртуальных машин, введя в командной строке:
     ```shell
     VirtualBox &
     ```
--   Создайте новую виртуальную машину.
+-   Создайте новую виртуальную машину в графическом интерфейсе или в командной строке.
+    -   В командной строке:
+        ```shell
+        vboxmanage createvm --name "$(id -un)_os-intro" --ostype Fedora_64 --register
+        ```
 -   Укажите имя виртуальной машины (ваш логин в дисплейном классе), тип операционной системы --- Linux, Fedora.
 -   Укажите размер основной памяти виртуальной машины --- от 2048 МБ.
+    -   В командной строке:
+        ```shell
+        vboxmanage modifyvm "$(id -un)_os-intro" --memory 2048 --acpi on --nic1 nat
+        ```
+
 -   Задайте конфигурацию жёсткого диска --- загрузочный, VDI (VirtualBox Disk Image), динамический виртуальный диск.
--   Задайте размер диска --- 80 ГБ (или больше), его расположение --- в данном случае `/var/tmp/имя_пользователя/fedora.vdi`.
+-   Задайте размер диска --- 80 ГБ (или больше), его расположение --- в данном случае `/var/tmp/имя_пользователя/имя_машины/имя_машины.vdi`.
+    -   В командной строке:
+        ```shell
+        vboxmanage createhd --filename "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/$(id -un)_os-intro/$(id -un)_os-intro.vdi" --size 80000
+        ```
 -   Выберите в VirtualBox Вашей виртуальной машины. Добавьте новый привод оптических дисков и выберите образ.
+    -   В командной строке:
+        -   Подключите загрузку с DVD:
+            ```shell
+            vboxmanage modifyvm "$(id -un)_os-intro" --boot1 dvd
+            ```
+        -   Добавьте IDE-контроллер:
+            ```shell
+            vboxmanage storagectl "$(id -un)_os-intro" --name "IDE Controller" --add ide --controller PIIX4
+            ```
+        -   Установите созданный вами файл VDI в качестве первого виртуального жесткого диска новой виртуальной машины:
+            ```shell
+            vboxmanage storageattach "$(id -un)_os-intro" --storagectl "IDE Controller" --port 0 --device 0 --type hdd --medium "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/$(id -un)_os-intro/$(id -un)_os-intro.vdi"
+            ```
+        -   Подключите к виртуальной машине ISO-файл:
+            ```shell
+            vboxmanage storageattach "$(id -un)_os-intro" --storagectl "IDE Controller" --port 0 --device 1 --type dvddrive --medium "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso/Fedora-Sway-Live-x86_64-39-1.5.iso"
+            ```
 -   При установке на собственной технике используйте скачанный образ операционной системы Fedora.
+-   В качестве графического контроллера поставьте VMSVGA.
+    -   В командной строке:
+        ```shell
+        vboxmanage modifyvm "$(id -un)_os-intro" --graphicscontroller=vmsvga
+        ```
+-   Включите ускорение 3D.
+    -   В командной строке:
+        ```shell
+        vboxmanage modifyvm "$(id -un)_os-intro" --accelerate-3d=on
+        ```
+-   Если есть проблемы при отображении, загрузитесь в режиме базовой графики.
+-   Включите общий буфер обмена и перетаскивание объектов между хостом и гостевой ОС.
+    -   В командной строке:
+        ```shell
+        vboxmanage modifyvm "$(id -un)_os-intro" --clipboard-mode=bidirectional --drag-and-drop=bidirectional
+        ```
+-   Включите поддержку UEFI.
+    -   В командной строке:
+        ```shell
+        vboxmanage modifyvm "$(id -un)_os-intro" --firmware=efi
+        ```
 
 
 #### <span class="section-num">3.2.1</span> Видео: Создание виртуальной машины {#видео-создание-виртуальной-машины}
@@ -244,7 +319,7 @@ menu:
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf install tmux mc
+    dnf -y install tmux mc
     ```
 
 
@@ -292,6 +367,10 @@ menu:
     ```shell
     sudo -i
     ```
+-   Установите средства разработки:
+    ```shell
+    dnf -y group install "Development Tools"
+    ```
 -   Установите пакет _DKMS_:
     ```shell
     dnf -y install dkms
@@ -318,6 +397,14 @@ menu:
 -   Запустите терминальный мультиплексор _tmux_:
     ```shell
     tmux
+    ```
+-   Создайте конфигурационный файл `~/.config/sway/config.d/95-system-keyboard-config.conf`:
+    ```shell
+    touch ~/.config/sway/config.d/95-system-keyboard-config.conf
+    ```
+-   Отредактируйте конфигурационный файл `~/.config/sway/config.d/95-system-keyboard-config.conf`:
+    ```conf-unix
+    exec_always /usr/libexec/sway-systemd/locale1-xkb-config --oneshot
     ```
 -   Переключитесь на роль супер-пользователя:
     ```shell
@@ -403,7 +490,24 @@ menu:
 {{< /tabs >}}
 
 
-### <span class="section-num">3.8</span> Установка программного обеспечения для создания документации {#установка-программного-обеспечения-для-создания-документации}
+### <span class="section-num">3.8</span> Подключение общей папки {#подключение-общей-папки}
+
+-   Внутри виртуальной машины добавьте своего пользователя в группу `vboxsf` (вместо `username` укажите ваш логин):
+    ```shell
+    gpasswd -a username vboxsf
+    ```
+-   В хостовой системе подключите разделяемую папку:
+    ```shell
+    vboxmanage sharedfolder add "$(id -un)_os-intro" --name=work --hostpath=work --automount
+    ```
+-   Перегрузите виртуальную машину:
+    ```shell
+    reboot
+    ```
+-   Папка будет монтироваться в `/media/sf_work`.
+
+
+### <span class="section-num">3.9</span> Установка программного обеспечения для создания документации {#установка-программного-обеспечения-для-создания-документации}
 
 -   Нажмите комбинацию _Win+Enter_ для запуска терминала.
 -   Запустите терминальный мультиплексор _tmux_:
@@ -416,19 +520,27 @@ menu:
     ```
 
 
-#### <span class="section-num">3.8.1</span> pandoc {#pandoc}
+#### <span class="section-num">3.9.1</span> Работа с языком разметки Markdown {#работа-с-языком-разметки-markdown}
 
--   Установим `pandoc`:
+-   Средство `pandoc` для работы с языком разметки Markdown.
+-   Установка с помощью менеджера пакетов:
     ```shell
     dnf -y install pandoc
     ```
--   Установите необходимые расширения:
-    ```shell
-    pip install pandoc-fignos pandoc-eqnos pandoc-tablenos pandoc-secnos --user
-    ```
+-   Для работы с перекрёстными ссылками мы используем пакет `pandoc-crossref`.
+    -   Пакет `pandoc-crossref` в стандартном репозитории отсутствует.
+    -   Придётся ставить вручную, скачав с сайта <https://github.com/lierdakil/pandoc-crossref>.
+    -   При установке `pandoc-crossref` следует обращать внимание, для какой версии `pandoc` он скомпилён.
+-   Лучше установить `pandoc` и `pandoc-crossref` вручную.
+    -   Скачайте необходимую версию `pandoc-crossref` (<https://github.com/lierdakil/pandoc-crossref/releases>).
+    -   Посмотрите, для какой версии откомпилён `pandoc-crossref`.
+    -   Скачайте соответствующую версию `pandoc` (<https://github.com/jgm/pandoc/releases>).
+    -   Распакуйте архивы.
+    -   Обе программы собраны в виде статически-линкованных бинарных файлов.
+    -   Поместите их в каталог `/usr/local/bin`.
 
 
-#### <span class="section-num">3.8.2</span> texlive {#texlive}
+#### <span class="section-num">3.9.2</span> texlive {#texlive}
 
 -   Установим дистрибутив TeXlive (см. [Установка TeX Live]({{< relref "2021-04-23-install-texlive" >}})):
     ```shell
@@ -436,7 +548,7 @@ menu:
     ```
 
 
-#### <span class="section-num">3.8.3</span> Видео: Установка TeX {#видео-установка-tex}
+#### <span class="section-num">3.9.3</span> Видео: Установка TeX {#видео-установка-tex}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}

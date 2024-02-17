@@ -2,7 +2,7 @@
 title: "Синтаксис, семантика, прагматика"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-08T16:32:00+03:00
-lastmod: 2023-07-08T18:49:00+03:00
+lastmod: 2024-02-15T18:42:00+03:00
 categories: ["thinking"]
 draft: false
 slug: "syntax-semantics-pragmatics"

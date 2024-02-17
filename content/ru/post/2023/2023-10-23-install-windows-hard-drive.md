@@ -2,7 +2,7 @@
 title: "Установка Windows с жёсткого диска"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-23T15:51:00+03:00
-lastmod: 2023-10-23T16:24:00+03:00
+lastmod: 2024-02-08T20:18:00+03:00
 tags: ["windows", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -22,7 +22,31 @@ slug: "install-windows-hard-drive"
     -   UEFI + GPT + файловая система FAT32.
     -   BIOS + MBR + NTFS.
         -   Максимальный размер раздела составляет 2 ТБ.
+
+
+### <span class="section-num">1.1</span> Ограничения {#ограничения}
+
+-   В зависимости от размера файла `sources\install.wim` может потребоваться один раздел FAT32 или один раздел FAT32 и раздел NTFS.
+-   Если размер `sources\install.wim` превышает 4 ГБ, необходимо использовать раздел FAT32 + NTFS, поскольку файловая система FAT32 не поддерживает файлы размером более 4 ГБ.
+
+
+### <span class="section-num">1.2</span> UEFI {#uefi}
+
 -   Рассматриваем вариант с UEFI.
+
+
+#### <span class="section-num">1.2.1</span> Стандартный UEFI {#стандартный-uefi}
+
+-   Стандартный UEFI видит только партиции с файловой системой FAT32.
+-   Поэтому содержимое образа необходимо скопировать на партицию с NTFS.
+-   А на партицию с FAT32 поместить файлы для начальной загрузки установщика Windows.
+
+
+#### <span class="section-num">1.2.2</span> Сторонние загрузчики UEFI {#сторонние-загрузчики-uefi}
+
+-   Некоторые загрузчики UEFI поддерживают файловую систему NTFS (см. [Загрузчик rEFInd]({{< relref "2024-01-29-refind-boot-manager" >}})).
+-   В этом случае можно ограничиться партицией с файловой системой NTFS.
+-   Содержимое образа необходимо скопировать на партицию с NTFS.
 
 
 ## <span class="section-num">2</span> Разделы диска {#разделы-диска}
@@ -39,9 +63,6 @@ slug: "install-windows-hard-drive"
 | Windows (C:)                             | &gt;60 ГБ | NTFS             |
 | Образ восстановления (необязательно)     | 10 ГБ     | NTFS             |
 
--   В зависимости от размера файла `sources\install.wim` может потребоваться один раздел FAT32 или один раздел FAT32 и раздел NTFS.
--   Если размер `sources\install.wim` превышает 4 ГБ, необходимо использовать раздел FAT32 + NTFS, поскольку файловая система FAT32 не поддерживает файлы размером более 4 ГБ.
-
 <div class="table-caption">
   <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
   Структура разделов для размещения файлов установщика Windows
@@ -54,6 +75,30 @@ slug: "install-windows-hard-drive"
 
 -   Установочный раздел нужно разместить после раздела Windows и образа восстановления.
 -   Установочный раздел также можно создать на другом жестком диске или внешнем USB-накопителе.
+
+
+### <span class="section-num">2.1</span> Разбивка диска под Linux {#разбивка-диска-под-linux}
+
+-   Создадим на диске партиции:
+    ```shell
+    partprobe /dev/sda
+    sgdisk --zap-all /dev/sda
+
+    ## ef00 EFI system partition
+    sgdisk -n 0:0:+512M -t 0:ef00 -c 0:EFI /dev/sda
+    ## 0c01 Microsoft reserved
+    sgdisk -n 0:0:+128M -t 0:0c01 /dev/sda
+    ## 0700 Microsoft basic data
+    sgdisk -n 0:0:+60G -t 0:0700 -c 0:windows /dev/sda
+    sgdisk -n 0:0:+8G -t 0:0700 /dev/sda
+    sgdisk -n 0:0:+10M -t 0:0700 /dev/sda
+    ```
+-   Отформатируем диски:
+    ```shell
+    mkfs.ntfs -f -L windows /dev/sda3
+    mkfs.vfat -n fat -F32 /dev/sda4
+    mkfs.ntfs -f -L windistro /dev/sda5
+    ```
 
 
 ## <span class="section-num">3</span> Подготовка файлов {#подготовка-файлов}
@@ -89,10 +134,22 @@ slug: "install-windows-hard-drive"
     -   диск ISO установщика Win 10 смонтирован в `/media/cdrom/`;
     -   раздел FAT32 монтируется в `/mnt/fat/`;
     -   раздел NTFS монтируется в `/mnt/ntfs/`.
--   Скопируйте файлы:
+-   Смонтируйте диски:
+    ```shell
+    mkdir -p /mnt/{fat,ntfs}
+    mount /dev/sr0 /media/cdrom/
+    mount /dev/sda4 /mnt/fat
+    mount /dev/sda5 /mnt/ntfs
+    ```
+
+-   Скопируйте файлы на раздел NTFS:
+    ```shell
+    rsync -ai /media/cdrom/ /mnt/ntfs/
+    ```
+
+-   Скопируйте необходимые файлы на раздел FAT32 (не нужно при наличии загрузчика типа refind):
     ```shell
     rsync -ai --exclude='sources/' /media/cdrom/ /mnt/fat/
     mkdir /mnt/fat/sources
     cp /media/cdrom/sources/boot.wim /mnt/fat/sources/
-    rsync -ai /media/cdrom/ /mnt/ntfs/
     ```

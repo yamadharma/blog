@@ -2,7 +2,7 @@
 title: "Файловая система btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:33:00+03:00
-lastmod: 2023-07-21T16:59:00+03:00
+lastmod: 2024-02-10T16:53:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -34,23 +34,35 @@ slug: "btrfs-file-system"
 -   Поддержка дисков SSD.
 
 
-## <span class="section-num">2</span> Разное {#разное}
+## <span class="section-num">2</span> Опции монтирования {#опции-монтирования}
+
+
+### <span class="section-num">2.1</span> SSD TRIM {#ssd-trim}
+
+-   Файловая система Btrfs может освобождать неиспользуемые блоки с SSD диска, поддерживающего команду TRIM.
+-   Поддерживается асинхронный discard, который доступен в виде опции монтирования `discard=async`.
+    -   Включено по умолчанию начиная с linux 6.2.
+    -   Незанятые экстенты не освобождаются сразу, а группируются и освобождаются позже в отдельном потоке, что улучшает задержки при записи на диск.
+    -   Асинхронный discard можно безопасно использовать вместе с периодическим TRIM.
+
+
+## <span class="section-num">3</span> Разное {#разное}
 
 -   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 -   [Подтома btrfs]({{< relref "2021-08-27-btrfs-subvolumes" >}})
 
 
-## <span class="section-num">3</span> Обслуживание btrfs {#обслуживание-btrfs}
+## <span class="section-num">4</span> Обслуживание btrfs {#обслуживание-btrfs}
 
 -   [Обслуживание btrfs]({{< relref "2021-09-23-btrfs-maintenence" >}})
 -   [Дедупликация файловой системы btrfs]({{< relref "2022-05-26-deduplication-btrfs-filesystem" >}})
 -   [Восстановление btrfs]({{< relref "2023-07-21-btrfs-recovery" >}})
 
 
-## <span class="section-num">4</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
+## <span class="section-num">5</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
 
 
-### <span class="section-num">4.1</span> btrfs-progs {#btrfs-progs}
+### <span class="section-num">5.1</span> btrfs-progs {#btrfs-progs}
 
 -   Утилиты для работы с _btrfs_.
 -   Установка
@@ -60,7 +72,7 @@ slug: "btrfs-file-system"
         ```
 
 
-### <span class="section-num">4.2</span> btrfsmaintenance {#btrfsmaintenance}
+### <span class="section-num">5.2</span> btrfsmaintenance {#btrfsmaintenance}
 
 -   Скрипт для регулярного обслуживания файловой системы _btrfs_
 -   Установка
@@ -70,7 +82,7 @@ slug: "btrfs-file-system"
         ```
 
 
-### <span class="section-num">4.3</span> snapper {#snapper}
+### <span class="section-num">5.3</span> snapper {#snapper}
 
 -   Управление снапшотами
 -   Установка
@@ -78,3 +90,8 @@ slug: "btrfs-file-system"
         ```shell
         emerge app-backup/snapper
         ```
+
+
+## <span class="section-num">6</span> Ресурсы {#ресурсы}
+
+-   Документация: <https://btrfs.readthedocs.io/>

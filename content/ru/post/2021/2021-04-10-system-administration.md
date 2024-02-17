@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2023-10-30T11:04:00+03:00
+lastmod: 2024-01-31T21:20:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -88,6 +88,11 @@ slug: "system-administration"
 -   [Утилита module]({{< relref "2022-07-24-module-utility" >}})
 
 
+### <span class="section-num">3.8</span> Загрузчики {#загрузчики}
+
+-   [Загрузчик rEFInd]({{< relref "2024-01-29-refind-boot-manager" >}})
+
+
 ## <span class="section-num">4</span> Файловые системы {#файловые-системы}
 
 
@@ -101,6 +106,11 @@ slug: "system-administration"
 ### <span class="section-num">4.2</span> Сетевые и распределённые файловые системы {#сетевые-и-распределённые-файловые-системы}
 
 -   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
+
+
+### <span class="section-num">4.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}
+
+-   [Файловая система mergerfs]({{< relref "2024-01-28-mergerfs" >}})
 
 
 ## <span class="section-num">5</span> Форматы файлов {#форматы-файлов}
@@ -283,6 +293,11 @@ slug: "system-administration"
 -   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
+#### <span class="section-num">13.3.1</span> Bittorrent {#bittorrent}
+
+-   [bittorrent. Трекер opentracker]({{< relref "2024-01-31-bittorrent-opentracker" >}})
+
+
 ### <span class="section-num">13.4</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
@@ -317,6 +332,7 @@ slug: "system-administration"
 ## <span class="section-num">15</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
+-   [Тест Лимончелли]({{< relref "2024-01-27-limoncelli-test" >}})
 
 
 ## <span class="section-num">16</span> DevOps {#devops}

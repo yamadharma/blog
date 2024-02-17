@@ -2,7 +2,7 @@
 title: "Математическое моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-21T16:33:00+03:00
-lastmod: 2023-06-28T17:33:00+03:00
+lastmod: 2024-02-17T21:23:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -21,6 +21,9 @@ slug: "mathematical-modeling"
 -   [Подходы к моделированию]({{< relref "2021-02-21-modeling-approaches" >}})
 -   [Математическое моделирование. Вычислительные подходы]({{< relref "2021-02-21-mathematical-modeling-computational-approaches" >}})
 -   [Структура математической модели]({{< relref "2021-10-12-structure-mathematical-model" >}})
+-   [Математическое моделирование по Самарскому]({{< relref "2024-01-27-mathematical-modeling-samarsky" >}})
+-   [Структура диссертации по математическому моделированию]({{< relref "2024-01-27-thesis-structure-mathematical-modeling" >}})
+-   [Методы машинного обучения]({{< relref "2024-02-17-machine-learning-methods" >}})
 
 
 ## <span class="section-num">2</span> Реализации методов математического моделирования {#реализации-методов-математического-моделирования}

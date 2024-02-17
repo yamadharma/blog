@@ -2,8 +2,8 @@
 title: "Подготовка диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-12T14:52:00+03:00
-lastmod: 2023-09-16T18:25:00+03:00
-tags: ["education"]
+lastmod: 2024-01-27T19:32:00+03:00
+tags: ["research", "education"]
 categories: ["science"]
 draft: false
 slug: "thesis-preparation"
@@ -82,9 +82,13 @@ slug: "thesis-preparation"
 
 ## <span class="section-num">2</span> Диссертация {#диссертация}
 
+-   [Структура диссертации]({{< relref "2024-01-14-dissertation-structure" >}})
+-   [Кандидатская диссертация]({{< relref "2024-01-26-phd-thesis" >}})
+-   [Докторская диссертация]({{< relref "2024-01-26-doctoral-thesis" >}})
 -   [Оформление диссертации]({{< relref "2021-04-20-making-thesis" >}})
 
 
 ## <span class="section-num">3</span> Автореферат {#автореферат}
 
+-   [Автореферат диссертации]({{< relref "2024-01-27-thesis-synopsis" >}})
 -   [Рассылка автореферата]({{< relref "2023-01-12-sending-synopsis" >}})

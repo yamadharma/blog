@@ -2,7 +2,7 @@
 title: "nsupdate: динамический редактор зон DNS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-28T19:28:00+03:00
-lastmod: 2023-11-15T14:10:00+03:00
+lastmod: 2024-01-31T13:42:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
