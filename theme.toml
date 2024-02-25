@@ -1,9 +1,9 @@
 name = "Academic"
 license = "MIT"
-licenselink = "https://github.com/wowchemy/starter-academic/blob/master/LICENSE.md"
-description = "Use the website builder to personalize your academic resumé with widgets and deploy with one click! Fully customize your site with themes, plugins, and language packs."
-homepage = "https://wowchemy.com"
-min_version = "0.101.0"
+licenselink = "https://github.com/HugoBlox/theme-academic-cv/blob/main/LICENSE.md"
+description = "Use the no-code website framework to easily build your site. Choose from 50+ widgets and deploy with one click! Fully personalize your site with themes, plugins, and language packs."
+homepage = "https://github.com/HugoBlox/theme-academic-cv"
+demosite = "https://hugoblox.com/templates/"
 tags = ["widgets",
         "resume",
         "portfolio",
@@ -36,7 +36,7 @@ tags = ["widgets",
         "slide"
         ]
 features = ["page builder", "widgets", "themes", "search", "research publication system", "filterable portfolio",
-            "blog", "create course", "talks", "events", "slides", "gallery", "contact form"]
+            "blog", "create courses", "talks", "events", "slides", "gallery", "contact form"]
 
 [author]
   name = "George Cushen"

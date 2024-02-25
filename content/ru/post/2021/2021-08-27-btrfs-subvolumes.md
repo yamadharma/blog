@@ -2,7 +2,7 @@
 title: "Подтома btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:41:00+03:00
-lastmod: 2024-01-29T08:23:00+03:00
+lastmod: 2024-02-19T17:01:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -28,22 +28,23 @@ slug: "btrfs-subvolumes"
   Возможные наименования подтомов btrfs
 </div>
 
-| Подтом                | Точка монтирования                           | Описание                                                                                                                                                |
-|-----------------------|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `@`                   | `/`                                          | Корневой каталог (системные файлы)                                                                                                                      |
-| `@home`               | `/home`                                      | Домашний каталог с пользовательскими данными                                                                                                            |
-| `@snapshots`          | ‒                                            | Корневой подтом для снапшотов                                                                                                                           |
-| `@snapshots/root`     | `/.snapshots`                                | Содержит снапшоты корня, которые создает `snapper`                                                                                                      |
-| `@snapshots/home`     | `/home/.snapshots`                           | Содержит снапшоты домашнего каталога, которые создает `snapper`                                                                                         |
-| `@machines`           | `/var/lib/machines`                          | Если не существует, то создаст systemd                                                                                                                  |
-| `@portables`          | `/var/lib/portables`                         | Если не существует, то создаст systemd                                                                                                                  |
-| `@docker`             | `/var/lib/docker`                            | Докер создаёт подтома в `./btrfs/subvolumes` либо в `./XXX/btrfs/subvolumes`                                                                            |
-| `@var`                | `/var`                                       | Аналогично выше описанному                                                                                                                              |
-| `@var_lib`            | `/var/lib`                                   | Вместо создания `@machines`, `@portables`, `@docker` можно создать только этот, если в `/var/lib` не будет храниться чего-то важного                    |
-| `@var_tmp`            | `/var/tmp`                                   | Содержит временные файлы. Должен монтироваться с `nodatacow`                                                                                            |
-| `@var_log` или `@log` | `/var/log`                                   | Содержит большое количество файлов, которые пишутся маленькими частями. Должен монтироваться с `nodatacow`                                              |
+| Подтом                | Точка монтирования                           | Описание                                                                                                                                                                |
+|-----------------------|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `@`                   | `/`                                          | Корневой каталог (системные файлы)                                                                                                                                      |
+| `@home`               | `/home`                                      | Домашний каталог с пользовательскими данными                                                                                                                            |
+| `@root`               | `/root`                                      | Домашний каталог пользователя `root`                                                                                                                                    |
+| `@snapshots`          | ‒                                            | Корневой подтом для снапшотов                                                                                                                                           |
+| `@snapshots@root`     | `/.snapshots`                                | Содержит снапшоты корня, которые создает `snapper`                                                                                                                      |
+| `@snapshots@home`     | `/home/.snapshots`                           | Содержит снапшоты домашнего каталога, которые создает `snapper`                                                                                                         |
+| `@machines`           | `/var/lib/machines`                          | Если не существует, то создаст systemd                                                                                                                                  |
+| `@portables`          | `/var/lib/portables`                         | Если не существует, то создаст systemd                                                                                                                                  |
+| `@docker`             | `/var/lib/docker`                            | Докер создаёт подтома в `./btrfs/subvolumes` либо в `./XXX/btrfs/subvolumes`                                                                                            |
+| `@var`                | `/var`                                       | Аналогично выше описанному                                                                                                                                              |
+| `@var@lib`            | `/var/lib`                                   | Вместо создания `@machines`, `@portables`, `@docker` можно создать только этот, если в `/var/lib` не будет храниться чего-то важного                                    |
+| `@var@tmp`            | `/var/tmp`                                   | Содержит временные файлы. Должен монтироваться с `nodatacow`                                                                                                            |
+| `@var@log` или `@log` | `/var/log`                                   | Содержит большое количество файлов, которые пишутся маленькими частями. Должен монтироваться с `nodatacow`                                                              |
 | `@swap`               | `/swap` или `/var/swap`, или `/var/lib/swap` | Подтом для файла подкачки. Должен монтироваться с `nodatacow` (см. [Файл подкачки на btrfs]({{< relref "2022-05-20-btrfs-swap-file" >}})) |
-| `@libvirt`            | `/var/lib/libvirt/images`                    | Образы для _libvirt_. Должен монтироваться с `nodatacow`                                                                                                |
+| `@libvirt`            | `/var/lib/libvirt/images`                    | Образы для _libvirt_. Должен монтироваться с `nodatacow`                                                                                                                |
 
 
 ### <span class="section-num">1.2</span> Минимально рекомендуемый набор подтомов {#минимально-рекомендуемый-набор-подтомов}
@@ -57,19 +58,19 @@ slug: "btrfs-subvolumes"
     -   Подмонтируем раздел с btrfs:
         ```shell
         mkdir /mnt/gentoo
-        mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9 /dev/sda4 /mnt/gentoo/
+        mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9 /dev/sdc2 /mnt/gentoo/
         ```
     -   Создадим подтома на btrfs:
         ```shell
         cd /mnt/gentoo/
         btrfs subvol create @
         btrfs subvol create @var
-        btrfs subvol create @var_tmp
-        btrfs subvol create @var_log
+        btrfs subvol create @var@tmp
+        btrfs subvol create @var@log
         btrfs subvol create @vm
         btrfs subvol create @portage
-        btrfs subvol create @portage_local
-        btrfs subvol create @portage_com
+        btrfs subvol create @portage@local
+        btrfs subvol create @portage@com
         btrfs subvol create @libvirt
         btrfs subvol create @home
         ```
@@ -81,10 +82,10 @@ slug: "btrfs-subvolumes"
 -   Так же стоит отключить _CoW_ для часто изменяемых файлов (например, журналов).
 -   Подмонтируем файловую систему `btrfs`:
     ```shell
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sda4 /mnt/gentoo/var/vm
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sda4 /mnt/gentoo/var/lib/libvirt/images
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var_log /dev/sda4 /mnt/gentoo/var/log
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var_tmp /dev/sda4 /mnt/gentoo/var/tmp
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sdc2 /mnt/gentoo/var/vm
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sdc2 /mnt/gentoo/var/lib/libvirt/images
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var@log /dev/sdc2 /mnt/gentoo/var/log
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var@tmp /dev/sdc2 /mnt/gentoo/var/tmp
     ```
 -   Отключим для этого подтома CoW:
     -   Для `/var/vm`
@@ -131,7 +132,7 @@ slug: "btrfs-subvolumes"
     ```
 -   Идентификатор файловой системы можно узнать следующим образом:
     ```shell
-    blkid /dev/sda4
+    blkid /dev/sdc2
     ```
 
 

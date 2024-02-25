@@ -2,7 +2,7 @@
 title: "VirtualBox. Использование без монитора"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-02-15T20:05:00+03:00
-lastmod: 2024-02-15T20:39:00+03:00
+lastmod: 2024-02-18T21:21:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -76,4 +76,9 @@ VirtualBox. Использование без монитора.
     ```shell
     vboxheadless --startvm "Windows"
     ```
+-   Команда запускается и занимает консоль.
 -   На клиентском компьютере запустите средство просмотра RDP и подключитесь к серверу.
+-   Остановить виртуальную машину можно, запустив на другой консоли:
+    ```shell
+    vboxmanage controlvm "Windows" poweroff
+    ```

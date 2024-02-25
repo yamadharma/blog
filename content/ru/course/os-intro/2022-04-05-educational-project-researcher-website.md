@@ -2,7 +2,7 @@
 title: "Учебный проект Сайт научника"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-05T18:20:00+03:00
-lastmod: 2023-09-27T14:35:00+03:00
+lastmod: 2024-02-21T20:54:00+03:00
 tags: ["hugo", "education"]
 categories: ["computer-science"]
 draft: false
@@ -69,13 +69,15 @@ menu:
         -   Язык разметки Markdown.
 
 4.  Добавить к сайту ссылки на научные и библиометрические ресурсы.
-    -   Зарегистрироваться на соответствующих ресурсах и разместить на них ссылки на сайте:
-        -   eLibrary : <https://elibrary.ru/>;
-        -   Google Scholar : <https://scholar.google.com/>;
+    -   Зарегистрироваться на соответствующих ресурсах и разместить на них ссылки на сайте.
+    -   Научные идентификаторы (см. [Научные идентификаторы]({{< relref "2024-02-21-scientific-identifiers" >}})):
         -   ORCID : <https://orcid.org/>;
-        -   Mendeley : <https://www.mendeley.com/>;
+        -   eLibrary : <https://elibrary.ru/>.
+    -   Научные социальные сети:
+        -   Google Scholar : <https://scholar.google.com/>;
         -   ResearchGate : <https://www.researchgate.net/>;
-        -   Academia.edu : <https://www.academia.edu/>;
+        -   Academia.edu : <https://www.academia.edu/>.
+    -   Репозитории препринтов и кода:
         -   arXiv : <https://arxiv.org/>;
         -   github : <https://github.com/>.
     -   Сделать пост по прошедшей неделе.

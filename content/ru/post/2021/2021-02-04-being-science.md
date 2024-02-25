@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2024-01-24T11:05:00+03:00
+lastmod: 2024-02-21T20:51:00+03:00
 tags: ["science-being"]
 categories: ["science"]
 draft: false
@@ -30,6 +30,7 @@ _Бытие науки_. Разрозненные мысли.
 ### <span class="section-num">1.3</span> Наука как социальный институт {#наука-как-социальный-институт}
 
 -   [Учёные степени и звания]({{< relref "2021-10-08-academic-degrees-ranks" >}})
+-   [Научные идентификаторы]({{< relref "2024-02-21-scientific-identifiers" >}})
 -   [Научная лже-популяризация]({{< relref "2022-06-22-scientific-pseudo-popularization" >}})
 
 

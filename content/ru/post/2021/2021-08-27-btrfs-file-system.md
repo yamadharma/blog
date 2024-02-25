@@ -2,7 +2,7 @@
 title: "Файловая система btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-27T11:33:00+03:00
-lastmod: 2024-02-10T16:53:00+03:00
+lastmod: 2024-02-19T15:46:00+03:00
 tags: ["btrfs", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -50,6 +50,7 @@ slug: "btrfs-file-system"
 
 -   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 -   [Подтома btrfs]({{< relref "2021-08-27-btrfs-subvolumes" >}})
+-   [btrfs. Контрольные суммы]({{< relref "2024-02-19-btrfs-checksumming" >}})
 
 
 ## <span class="section-num">4</span> Обслуживание btrfs {#обслуживание-btrfs}

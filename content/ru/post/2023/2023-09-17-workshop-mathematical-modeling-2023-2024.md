@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-02-14T19:38:00+03:00
+lastmod: 2024-02-24T16:11:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -424,3 +424,43 @@ Difference methods are widely used for the numerical solution of problems in mec
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-13 Ср] </span></span> Белов А. А. - Разностные схемы с экспоненциальной сходимостью {#белов-а-dot-а-dot-разностные-схемы-с-экспоненциальной-сходимостью}
+
+
+#### <span class="section-num">2.3.1</span> Докладчик {#докладчик}
+
+-   Белов Александр Александрович
+    -   д.ф.-м.н.
+    -   кафедра математического моделирования и искусственного интеллекта, РУДН
+
+
+#### <span class="section-num">2.3.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/247/>
+-   Разностные схемы с экспоненциальной сходимостью
+-   Белов Александр Александрович
+-   Кафедра математического моделирования и искусственного интеллекта, РУДН
+
+Традиционные методы численного анализа основаны на полиномиальной интерполяции сеточной функции. Например, классические формулы разделенных разностей основаны на интерполяционном полиноме Ньютона, квадратура трапеций - на линейной интерполяции, квадратура Симпсона - на интерполяции параболой и т.п. В общем случае для гладких непериодических функций погрешность указанных сеточных формул убывает как некоторая степень шага. Такую сходимость называют степенной.
+
+Полиномиальная интерполяция используется при составлении классических разностных схем для уравнений математической физики. Например, в методе конечных разностей непосредственно заменяют производные и интегралы соответствующими разностными формулами. В методе конечных элементов приближают решение линейной комбинацией кусочно-полиномиальных финитных функций. Поэтому для достаточно гладких непериодических решений сходимость классических разностных методов также является степенной.
+
+В данной работе предлагается принципиально новый класс разностных методов, обладающих не степенной, а экспоненциальной сходимостью. При уменьшении шага сетки вдвое число верных знаков в решении примерно удваивается. Такая сходимость кардинально быстрее традиционной степенной. Типичный выигрыш по точности составляет от 2-3 порядков для плохо обусловленных задач до 10 порядков для хорошо обусловленных.
+
+Предлагаемый подход основан на представлении искомой функции, ее производных и первообразных интегралами Коши по замкнутому контуру на комплексной плоскости. Для этих интегралов записывается сеточная квадратура трапеций. В силу  периодичности подынтегральной функции такая квадратура сходится по экспоненциальному закону. То же верно для разностных схем на ее основе. Описанный подход реализован для важнейших классов задач математической физики. Среди них краевые задачи и задачи на собственные значения для ОДУ, задачи Коши для систем ОДУ, краевые задачи для эллиптических уравнений, начально-краевые задачи для параболических и гиперболических уравнений.
+
+---
+
+-   Finite-difference schemes with exponential convergence
+-   Belov A. A.
+-   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+
+Traditional methods of numerical analysis are based on polynomial interpolation of the grid function. For example, the classical formulas of divided differences are based on the Newton interpolation polynomial, the quadrature of trapezoids is based on linear interpolation, the Simpson quadrature is based on parabola interpolation, etc. In the general case, for smooth non-periodic functions, the error of these grid formulas decreases as a certain degree of mesh step. This convergence is called a power convergence.
+
+Polynomial interpolation is used in constructing of classical difference schemes for equations of mathematical physics. For example, in the finite difference method, derivatives and integrals are directly replaced by the corresponding difference formulas. In the finite element method, the solution is approximated by a linear combination of piecewise polynomial finite functions. Therefore, for sufficiently smooth non-periodic solutions, the convergence of classical difference methods is also power-law.
+
+We propose a fundamentally new class of difference methods with exponential rather than power-law convergence. When the grid step is halved, the number of correct decimal digits in the solution approximately doubles. Such convergence is dramatically faster than the traditional power-law one. The typical accuracy gain ranges from 2-3 orders of magnitude for poorly conditioned tasks to 10 orders of magnitude for well-conditioned ones.
+
+The proposed approach is based on the representation of the desired function, its derivatives and primitive by the Cauchy integrals along a closed contour on the complex plane. The grid quadrature of trapezoids is written for these integrals. Due to the periodicity of the integrand, such a quadrature converges exponentially. The same is true for difference schemes based on it. The described approach is implemented for the most important classes of mathematical physics problems. Among them are boundary value problems and eigenvalue problems for ODEs, Cauchy problems for ODE systems, boundary value problems for elliptic equations, initial boundary value problems for parabolic and hyperbolic equations.

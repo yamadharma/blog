@@ -8,6 +8,21 @@ baseURL: 'https://yamadharma.github.io/' # Website URL
 copyright: '&copy; {year} Dmitry S. Kulyabov'
 
 ############################
+## LANGUAGE
+############################
+
+defaultContentLanguage: en
+hasCJKLanguage: false
+defaultContentLanguageInSubdir: true
+removePathAccents: true
+
+languages:
+  ru:
+    params:
+      date_format: "2006-01-02"
+      address_format: zh
+
+############################
 ## PAGE OPTIONS
 ############################
 
@@ -36,22 +51,6 @@ cascade:
       navbar:
         enable: true
 
-
-############################
-## LANGUAGE
-############################
-
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: true
-removePathAccents: true
-
-languages:
-  ru:
-    params:
-      date_format: "2006-01-02"
-      address_format: zh
-
 ############################
 ## ADVANCED
 ############################
@@ -60,12 +59,14 @@ enableGitInfo: false
 summaryLength: 30
 paginate: 20
 enableEmoji: true
+enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 
 permalinks:
   post: '/post/:year/:month/:day/:slug'
   authors: '/author/:slug/'
+  event: '/talk/:slug/'
   tags: '/tag/:slug/'
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'

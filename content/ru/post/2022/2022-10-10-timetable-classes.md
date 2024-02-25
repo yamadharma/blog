@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-02-16T11:17:00+03:00
+lastmod: 2024-02-22T20:03:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -255,9 +255,8 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo NEXT">NEXT</span>  Основы информационной безопасности (лабораторные)
+3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
-    -
     -   НПИбд-02-22
     -   ОРД-297, ОРД-295
 
@@ -291,7 +290,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[2/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[3/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
@@ -366,7 +365,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[2/3]</code> {#сессия-семестр-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[3/3]</code> {#сессия-семестр-1}
 
 <!--list-separator-->
 
@@ -394,11 +393,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации <code>[2/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (переаттестация)
+    1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (переаттестация)
 
         <!--list-separator-->
 
@@ -406,11 +405,11 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 2
+        2. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 2
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Научное программирование (переаттестация)
+    2. <span class="org-todo done DONE">DONE</span>  Научное программирование (переаттестация)
 
         <!--list-separator-->
 
@@ -418,7 +417,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Научное программирование. Переаттестация № 2
+        2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
