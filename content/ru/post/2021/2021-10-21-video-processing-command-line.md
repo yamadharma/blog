@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2023-07-13T12:18:00+03:00
+lastmod: 2024-03-02T15:07:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
@@ -75,3 +75,19 @@ slug: "video-processing-command-line"
     -   `--default-language rus` : задаём язык по умолчанию для дорожек;
     -   `--language 1:rus` : меняем язык аудио-дорожки в исходном файле;
     -   `--default-track 0:1` : ставим новую звуковую дорожку дорожкой по умолчанию.
+
+
+### <span class="section-num">2.2</span> Объединить несколько файлов `mp4` {#объединить-несколько-файлов-mp4}
+
+-   Дано: набор файлов вида `video1.mp4`, расположенных в алфавитном порядке.
+-   Создадим файл `input.txt` с названиями видео-файлов:
+    ```shell
+    for i in $(ls *.mp4 | sort)
+    do
+        echo file \'$(readlink -f "${i}")\' >>input.txt
+    done
+    ```
+-   Соединим видеофайлы:
+    ```shell
+    ffmpeg -f concat -safe 0 -i input.txt -c copy output.mp4
+    ```

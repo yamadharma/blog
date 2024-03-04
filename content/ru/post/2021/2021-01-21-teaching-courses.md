@@ -2,7 +2,7 @@
 title: "Преподавание. Курсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2023-10-19T17:34:00+03:00
+lastmod: 2024-02-28T09:44:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -61,6 +61,7 @@ slug: "teaching-courses"
 #### Администрирование сетевых подсистем {#администрирование-сетевых-подсистем}
 
 -   [Курс Администрирование сетевых подсистем]({{< relref "course/net-os-admin" >}})
+-   [Подготовка курса Администрирование сетевых подсистем]({{< relref "2024-02-28-course-administration-network-subsystems-preparation" >}})
 
 
 ### 4 курс {#4-курс}

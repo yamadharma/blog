@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-02-24T16:11:00+03:00
+lastmod: 2024-02-29T10:57:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false

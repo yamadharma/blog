@@ -2,7 +2,7 @@
 title: "Biblatex. Препринты"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-24T16:02:00+03:00
-lastmod: 2023-10-18T15:43:00+03:00
+lastmod: 2024-02-29T21:24:00+03:00
 tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -28,8 +28,7 @@ slug: "biblatex-eprints"
 -   Рекомендуется использовать следующие поля для ссылки на ArXiv:
     ```bibtex
     archivePrefix = "arXiv",
-    eprint        = "0707.3168",
-    primaryClass  = "hep-th",
+    eprint        = "hep-th/0707.3168",
     ```
 -   В _biblatex_ используются другие названия полей (см. [bibtex vs biblatex]({{< relref "2022-09-11-bibtex-biblatex" >}})):
 
@@ -38,12 +37,24 @@ slug: "biblatex-eprints"
       Соответствие полей BibTeX и biblatex для препринтов
     </div>
 
-    | BibTeX        | biblatex    |
-    |---------------|-------------|
-    | archivePrefix | eprinttype  |
-    | primaryClass  | eprintclass |
-    | eprint        | eprint      |
--   Следует заметить, что указатель секции `primaryClass` на данный момент не используется в _arXiv_.
+    | BibTeX          | biblatex      |
+    |-----------------|---------------|
+    | `archivePrefix` | `eprinttype`  |
+    | `primaryClass`  | `eprintclass` |
+    | `eprint`        | `eprint`      |
+-   Секция `primaryClass` (`eprintclass`) используется для нового стиля идентификаторов _arXiv_ (начиная с апреля 2007 года):
+    ```bibtex
+    @Misc{wassenberg,
+      hyphenation = {american},
+      author      = {Wassenberg, Jan and Sanders, Peter},
+      title       = {Faster Radix Sort via Virtual Memory and Write-Combining},
+      version     = {1},
+      date        = {2010-08-17},
+      eprinttype  = {arxiv},
+      eprintclass = {cs.DS},
+      eprint      = {1008.2849v1}
+    }
+    ```
 -   Пример ссылки на статью, имеющую также вариант на arxiv.org в формате _bibtex_:
     ```bibtex
     @Article{Beneke:1997hv,
@@ -54,8 +65,7 @@ slug: "biblatex-eprints"
          year          = "1997",
          pages         = "132-142",
          archivePrefix = "arXiv",
-         eprint        = "0707.3168",
-         primaryClass  = "hep-th"
+         eprint        = "hep-th/0707.3168",
     }
     ```
 -   Пример ссылки на статью, имеющую также вариант на arxiv.org в формате _biblatex_:
@@ -68,8 +78,7 @@ slug: "biblatex-eprints"
          year          = "1997",
          pages         = "132-142",
          eprinttype    = "arXiv",
-         eprint        = "0707.3168",
-         eprintlass    = "hep-th"
+         eprint        = "hep-th/0707.3168",
     }
     ```
 
@@ -84,22 +93,70 @@ slug: "biblatex-eprints"
 ## <span class="section-num">3</span> Архивы препринтов {#архивы-препринтов}
 
 
-### <span class="section-num">3.1</span> medRxiv {#medrxiv}
+### <span class="section-num">3.1</span> Google Books {#google-books}
+
+-   Масштабный проект компании Google, направленный на оцифровку и публикацию в интернете миллионов печатных произведений.
+-   Основная идея заключалась в том, чтобы сделать все когда-либо напечатанные книги доступными для чтения и поиска в интернете, обеспечив пользователям неограниченный доступ к знаниям.
+-   Запущен в 2004 году.
+-   В 2005 году Гильдия Авторов и ряд других издателей подали коллективный иск против Google.
+-   Остаётся неясным, продолжает ли компания оцифровывать библиотечные издания.
+-   Сайт: <https://books.google.com/>
+-   Гиперссылка: <http://books.google.com/books?id=XXu4AkRVBBoC>
+
+
+#### <span class="section-num">3.1.1</span> Цитирование {#цитирование}
+
+-   Формат цитирования:
+    ```bibtex
+    eprint = {XXu4AkRVBBoC},
+    eprinttype = {googlebooks},
+    ```
+-   Отображение в ссылке:
+    ```tex
+    Google Books: XXu4AkRVBBoC
+    ```
+
+
+### <span class="section-num">3.2</span> JSTOR {#jstor}
+
+-   Сайт: <https://www.jstor.org/>
+-   JSTOR: сокращение от англ. Journal STORage.
+-   Цифровая база данных полнотекстовых научных журналов (на различных европейских языках), а также книг (гуманитарные науки, только на английском языке).
+-   Доступ к базе данных платный, индивидуальный или корпоративный.
+-   Корпоративные подписчики JSTOR --- преимущественно библиотеки и издательства.
+-   - Идентификатор: `number` (число).
+-   Гиперссылка: <http://www.jstor.org/stable/number>
+
+
+#### <span class="section-num">3.2.1</span> Цитирование {#цитирование}
+
+-   Формат цитирования:
+    ```bibtex
+    eprint = {number},
+    eprinttype = {jstor},
+    ```
+-   Отображение в ссылке:
+    ```tex
+    JSTOR: number
+    ```
+
+
+### <span class="section-num">3.3</span> medRxiv {#medrxiv}
 
 -   Сайт: <https://www.medrxiv.org/>.
 
 
-### <span class="section-num">3.2</span> bioRxiv {#biorxiv}
+### <span class="section-num">3.4</span> bioRxiv {#biorxiv}
 
 -   Сайт: <https://www.biorxiv.org/>.
 
 
-### <span class="section-num">3.3</span> ChemRxiv {#chemrxiv}
+### <span class="section-num">3.5</span> ChemRxiv {#chemrxiv}
 
 -   Сайт: <https://chemrxiv.org/>.
 
 
-### <span class="section-num">3.4</span> Pubmed Central {#pubmed-central}
+### <span class="section-num">3.6</span> Pubmed Central {#pubmed-central}
 
 -   Идентификатор: `PMCID`.
 -   Ссылка на бесплатный полный текст статьи.
@@ -118,7 +175,20 @@ slug: "biblatex-eprints"
 -   Содержание ссылки: <http://www.ncbi.nlm.nih.gov/pubmed/20708976>.
 
 
-### <span class="section-num">4.2</span> Mathematical Reviews {#mathematical-reviews}
+### <span class="section-num">4.2</span> Цитирование {#цитирование}
+
+-   Формат цитирования:
+    ```bibtex
+    eprint = {pmid},
+    eprinttype = {pubmed},
+    ```
+-   Отображение в ссылке:
+    ```tex
+    PMID: pmid
+    ```
+
+
+### <span class="section-num">4.3</span> Mathematical Reviews {#mathematical-reviews}
 
 -   Реферативный математический журнал, издаваемый Американским математическим обществом с 1940 года.
 -   Электронная база данных (MathSciNet).
@@ -129,7 +199,7 @@ slug: "biblatex-eprints"
 -   Содержание ссылки: <http://www.ams.org/mathscinet-getitem?mr=MR2355127>.
 
 
-### <span class="section-num">4.3</span> Zentralblatt MATH {#zentralblatt-math}
+### <span class="section-num">4.4</span> Zentralblatt MATH {#zentralblatt-math}
 
 -   Реферативный математический журнал, основанный издательством «Шпрингер»
 -   Электронная база данных «ZBMATH --- The database Zentralblatt MATH».

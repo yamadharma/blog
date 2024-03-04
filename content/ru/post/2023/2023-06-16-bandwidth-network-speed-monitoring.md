@@ -2,7 +2,7 @@
 title: "Мониторинг пропускной способности и скорости сети"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-16T11:34:00+03:00
-lastmod: 2023-06-16T18:52:00+03:00
+lastmod: 2024-03-02T20:54:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false

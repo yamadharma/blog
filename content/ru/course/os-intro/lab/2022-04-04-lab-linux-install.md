@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2024-02-15T15:41:00+03:00
+lastmod: 2024-02-28T19:20:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
@@ -400,6 +400,7 @@ menu:
     ```
 -   Создайте конфигурационный файл `~/.config/sway/config.d/95-system-keyboard-config.conf`:
     ```shell
+    mkdir -p ~/.config/sway
     touch ~/.config/sway/config.d/95-system-keyboard-config.conf
     ```
 -   Отредактируйте конфигурационный файл `~/.config/sway/config.d/95-system-keyboard-config.conf`:

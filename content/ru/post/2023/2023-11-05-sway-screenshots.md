@@ -2,7 +2,7 @@
 title: "Sway. Скриншоты"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-05T15:33:00+03:00
-lastmod: 2024-01-20T20:16:00+03:00
+lastmod: 2024-02-29T20:26:00+03:00
 tags: ["wayland"]
 categories: ["computer-science"]
 draft: false
@@ -80,7 +80,7 @@ bindsym Alt+Control+Print exec grim -t png -g "$(slurp)" - | wl-copy
 <!--listend-->
 
 ```shell
-emerge -uv gui-apps/swappy
+emerge gui-apps/swappy
 ```
 
 
@@ -96,6 +96,47 @@ emerge -uv gui-apps/swappy
 
 ## Screenshot selected region and send to editor tool
 bindsym $mod+Print exec grim -t png -g "$(slurp)" - | swappy -f -
+```
+
+-   При нажатии `Mod + PrtScr` делается снимок области экрана и изображение открывается в редакторе скриншотов.
+
+
+## <span class="section-num">3</span> Satty {#satty}
+
+-   Инструмент для аннотаций скриншотов, вдохновленный Swappy и Flameshot .
+-   Репозиторий: <https://github.com/gabm/Satty>
+-   Улучшения по сравнению с существующими инструментами аннотирования скриншотов:
+    -   простой и понятный набор инструментов;
+    -   полноэкранный режим аннотаций и обрезка кадров после съемки;
+    -   работа с композиторами на базе wlroots (Sway, Hyprland, River).
+
+
+### <span class="section-num">3.1</span> Установка {#установка}
+
+-   Gentoo:
+    -   присутствует в оверлее `guru` (см. [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
+
+<!--listend-->
+
+```shell
+eselect repository enable guru
+emerge --sync guru
+emerge satty
+```
+
+
+### <span class="section-num">3.2</span> Настройка {#настройка}
+
+-   Настроим получение снимков экрана:
+
+<!--listend-->
+
+```conf-unix
+# ~/.config/sway/config.d/80-screenshots.conf
+### Screenshot
+
+## Screenshot selected region and send to editor tool
+bindsym $mod+Print exec grim -g "$(slurp -o -r -c '#ff0000ff')" - | satty --filename - --fullscreen --output-filename "$(xdg-user-dir PICTURES)"/$(date +%Y-%m-%d_%H-%M-%S).png
 ```
 
 -   При нажатии `Mod + PrtScr` делается снимок области экрана и изображение открывается в редакторе скриншотов.

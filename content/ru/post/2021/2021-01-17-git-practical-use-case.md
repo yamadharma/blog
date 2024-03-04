@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2023-08-07T19:27:00+03:00
+lastmod: 2024-02-28T19:44:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -32,22 +32,37 @@ slug: "git-practical-use-case"
 
 ### <span class="section-num">2.1</span> Установка Node.js {#установка-node-dot-js}
 
-На Node.js базируется программное обеспечение для семантического версионирования и общепринятых коммитов.
-
+-   На Node.js базируется программное обеспечение для семантического версионирования и общепринятых коммитов.
+-   Для управления пакетами лучше использовать `pnpm`, но можно и `yarn`.
 -   Gentoo
-    ```shell
-    emerge nodejs
-    ```
+    -   Node.js:
+        ```shell
+        emerge nodejs
+        emerge yarn
+        ```
+    -   pnpm ставим из оверлея `guru` (см. [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
+        ```shell
+        eselect repository enable guru
+        emerge --sync guru
+        emerge pnpm-bin
+        ```
 -   Ubuntu
     ```shell
     apt-get install nodejs
     apt-get install yarn
     ```
--   Windows
+-   Fedora
     ```shell
-    choco install nodejs
-    choco install yarn
+    dnf install nodejs
+    apt-get install pnpm
     ```
+-   Windows
+    -   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+        ```shell
+        choco install nodejs
+        choco install yarn
+        choco install pnpm
+        ```
 -   MacOS
     ```shell
     brew install node
@@ -56,13 +71,23 @@ slug: "git-practical-use-case"
 
 ### <span class="section-num">2.2</span> Настройка Node.js {#настройка-node-dot-js}
 
-Для работы с Node.js добавим каталог с исполняемыми файлами, устанавливаемыми `yarn`, в переменную `PATH`.
+Для работы с Node.js добавим каталог с исполняемыми файлами, устанавливаемыми пакетным менеджером, в переменную `PATH`.
 
 -   Linux
-    В файле `~/.bashrc` добавьте к переменной `PATH`:
-    ```conf-unix
-    PATH=~/.yarn/bin:$PATH
-    ```
+    -   `pnpm`
+        -   Запустите:
+            ```shell
+            pnpm setup
+            ```
+        -   Перелогиньтесь, или выполните:
+            ```shell
+            source ~/.bashrc
+            ```
+    -   `yarn`
+        -   В файле `~/.bashrc` добавьте к переменной `PATH`:
+            ```conf-unix
+            PATH=~/.yarn/bin:$PATH
+            ```
 
 
 ### <span class="section-num">2.3</span> Установка git-flow {#установка-git-flow}

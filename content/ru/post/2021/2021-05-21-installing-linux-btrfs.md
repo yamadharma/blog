@@ -2,7 +2,7 @@
 title: "Перенос Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2024-02-19T17:18:00+03:00
+lastmod: 2024-03-04T14:09:00+03:00
 tags: ["btrfs", "sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,7 @@ slug: "installing-linux-btrfs"
         ```
 
 
-### <span class="section-num">2.2</span> Всё на btrfs {#всё-на-btrfs}
+### <span class="section-num">2.2</span> Все разделы на файловой системе btrfs {#все-разделы-на-файловой-системе-btrfs}
 
 -   Разобьём на партиции:
     -   p1 --- 1024M, для `EFI`.
@@ -103,12 +103,12 @@ slug: "installing-linux-btrfs"
 
 -   Подмонтируем раздел с btrfs:
     ```shell
-    mkdir /mnt/gentoo
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9 /dev/sdc2 /mnt/gentoo/
+    mkdir /mnt/to
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9 /dev/sdc2 /mnt/to/
     ```
 -   Создадим подтома на btrfs (см. [Подтома btrfs]({{< relref "2021-08-27-btrfs-subvolumes" >}})):
     ```shell
-    cd /mnt/gentoo/
+    cd /mnt/to/
     btrfs subvol create @
     btrfs subvol create @var
     btrfs subvol create @var@tmp
@@ -116,18 +116,20 @@ slug: "installing-linux-btrfs"
     btrfs subvol create @vm
     btrfs subvol create @home
     btrfs subvol create @root
+    btrfs subvol create @boot
+    btrfs subvol create @libvirt
     ```
 -   Подтома для _Gentoo Linux_.
 -   Используется, если _portage_ размещается локально:
     ```shell
-    cd /mnt/gentoo/
+    cd /mnt/to/
     btrfs subvol create @portage
     btrfs subvol create @portage@local
     btrfs subvol create @portage@com
     ```
 -   Если используется файл подкачки на файловой системе, то создадим для него подтом:
     ```shell
-    cd /mnt/gentoo/
+    cd /mnt/to/
     btrfs subvol create @swap
     ```
 
@@ -144,13 +146,13 @@ slug: "installing-linux-btrfs"
 -   Подмонтируем и скопируем root-партицию:
     ```shell
     mount /dev/vgs/root /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@
+    rsync -av -HS --delete /mnt/from/ /mnt/to/@
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `/var`:
     ```shell
     mount /dev/vgs/var /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@var
+    rsync -av -HS --delete /mnt/from/ /mnt/to/@var
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `/boot`:
@@ -165,67 +167,154 @@ slug: "installing-linux-btrfs"
 -   Подмонтируем и скопируем `portage`:
     ```shell
     mount /dev/vgs/portage /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage
+    rsync -av -HS --delete /mnt/from/ /mnt/to/@portage
     umount /mnt/from/
     ```
 -   Подмонтируем и скопируем `portage_local`:
     ```shell
     mount /dev/vgs/portage_local /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage_local
+    rsync -av -HS --delete /mnt/from/ /mnt/to/@portage_local
     umount /mnt/from/
     ```
 
 
 ### <span class="section-num">4.2</span> Система на btrfs {#система-на-btrfs}
 
--   Создадим точку монтирования:
+
+#### <span class="section-num">4.2.1</span> Подготовка к копированию {#подготовка-к-копированию}
+
+-   Создадим точки монтирования:
     ```shell
-    mkdir /mnt/from
+    mkdir -p /mnt/from
     ```
 -   Подмонтируем исходную файловую систему btrfs:
     ```shell
     mount /dev/sda4 /mnt/from/
     ```
+
+
+#### <span class="section-num">4.2.2</span> Копирование основных файловых систем {#копирование-основных-файловых-систем}
+
 -   Скопируем root-партицию:
     ```shell
-    rsync -av -HS -AX --delete /mnt/from/@ /mnt/gentoo/@
+    rsync -av -HS -AX --delete /mnt/from/@/* /mnt/to/@
     ```
 -   Скопируем `/var`:
     ```shell
-    rsync -av -HS -AX --delete /mnt/from/@var/* /mnt/gentoo/@var
+    rsync -av -HS -AX --delete /mnt/from/@var/* /mnt/to/@var
     ```
 -   Подмонтируем и скопируем `/boot`:
     ```shell
-    mkdir /mnt/to/
-    mount /dev/sdc2 /mnt/to
-    mount /dev/sdb2 /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/to/
-    umount /mnt/to
-    umount /mnt/from
+    mkdir /mnt/boot
+    mount /dev/sda2 /mnt/boot
+    rsync -av -HS --delete /mnt/boot/* /mnt/to/@boot
+    umount /mnt/boot
     ```
--   Подмонтируем и скопируем `portage`:
+
+
+#### <span class="section-num">4.2.3</span> Копируем portage {#копируем-portage}
+
+-   Если `portage` размещён локально, то его тоже надо скопировать.
+-   Скопируем `@portage`:
+
+<!--listend-->
+
+```shell
+rsync -av -HS --delete /mnt/from/@portage/* /mnt/to/@portage
+```
+
+-   Скопируем `@portage@local`:
+
+<!--listend-->
+
+```shell
+rsync -av -HS --delete /mnt/from/@portage@local/* /mnt/to/@portage@local
+```
+
+
+#### <span class="section-num">4.2.4</span> Копируем системы с отключением CoW {#копируем-системы-с-отключением-cow}
+
+-   Для файловых систем с образами виртуальных машин следует отключить CoW (copy-on-write) (см. [Подтома btrfs]({{< relref "2021-08-27-btrfs-subvolumes" >}})).
+-   Так же стоит отключить _CoW_ для часто изменяемых файлов (например, журналов).
+-   Подмонтируем файловую систему `btrfs`:
     ```shell
-    mount /dev/vgs/portage /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage
-    umount /mnt/from/
+    mkdir -p /mnt/gentoo
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@ /dev/sdc2 /mnt/gentoo/
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@var /dev/sdc2 /mnt/gentoo/var
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@var@tmp /dev/sdc2 /mnt/gentoo/var/tmp
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@vm /dev/sdc2 /mnt/gentoo/var/vm
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sdc2 /mnt/gentoo/var/lib/libvirt/images
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@var@log /dev/sdc2 /mnt/gentoo/var/log
     ```
--   Подмонтируем и скопируем `portage_local`:
-    ```shell
-    mount /dev/vgs/portage_local /mnt/from/
-    rsync -av -HS --delete /mnt/from/ /mnt/gentoo/@portage_local
-    umount /mnt/from/
-    ```
+
+<!--list-separator-->
+
+1.  Копирование `/var/vm`
+
+    -   Отключим для этого подтома CoW:
+        ```shell
+        cd /mnt/gentoo/var/
+        chattr +C vm
+        ```
+    -   Скопируем `/var/vm`:
+        ```shell
+        rsync -av -HS -AX --delete /mnt/from/@vm/* /mnt/to/@vm
+        ```
+
+<!--list-separator-->
+
+2.  Копирование `/var/lib/libvirt/images`
+
+    -   Отключим для подтома `/var/lib/libvirt/images` CoW:
+        ```shell
+        cd /mnt/gentoo/var/lib/libvirt/
+        chattr +C images
+        ```
+    -   Скопируем `/var/lib/libvirt/images`:
+        ```shell
+        rsync -av -HS -AX --delete /mnt/from/@libvirt/* /mnt/to/@libvirt
+        ```
+
+<!--list-separator-->
+
+3.  Копирование `/var/log`
+
+    -   Для `/var/log`
+    -   Отключим для подтома `/var/log` CoW:
+        ```shell
+        cd /mnt/gentoo/var/
+        chattr +C log
+        ```
+    -   Скопируем `/var/log`:
+        ```shell
+        rsync -av -HS -AX --delete /mnt/from/@var@log/* /mnt/to/@var@log
+        ```
+
+<!--list-separator-->
+
+4.  Настройки `/var/tmp`
+
+    -   Для `/var/tmp`
+        ```shell
+        cd /mnt/gentoo/var/
+        chattr +C tmp
+        ```
+    -   Посмотреть результат можно командой:
+        ```shell
+        lsattr -a /mnt/gentoo/var/
+        lsattr -a /mnt/gentoo/var/lib/libvirt/
+        ```
 
 
 ## <span class="section-num">5</span> Установка загрузчика {#установка-загрузчика}
 
 -   Перемонтируем файловую систему `btrfs`:
     ```shell
-    umount /mnt/gentoo
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@ /dev/sdc2 /mnt/gentoo/
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var /dev/sdc2 /mnt/gentoo/var
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var_tmp /dev/sdc2 /mnt/gentoo/var/tmp
-    mount /dev/sdc2 /mnt/gentoo/boot/
+    mkdir -p /mnt/gentoo
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@ /dev/sdc2 /mnt/gentoo/
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@var /dev/sdc2 /mnt/gentoo/var
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@var@tmp /dev/sdc2 /mnt/gentoo/var/tmp
+    mount -tbtrfs -orelatime,discard=async,autodefrag,compress=zstd:9,subvol=@boot /dev/sdc2 /mnt/gentoo/boot
     mount /dev/sdc1 /mnt/gentoo/boot/efi
     ```
 -   Подмонтируем псевдо-файловые системы:
@@ -240,7 +329,7 @@ slug: "installing-linux-btrfs"
     ```shell
     cd /mnt/gentoo/
     chroot /mnt/gentoo/ /bin/bash
-    grub-install /boot/
+    grub-install /boot
     grub-mkconfig -o /boot/grub/grub.cfg
     ```
 
@@ -255,72 +344,34 @@ slug: "installing-linux-btrfs"
     ```shell
     UUID="<uuid_number>"
     ```
--   Создадим файл `/mnt/gentoo/etc/fstab`:
+-   Создадим файл `/mnt/to/etc/fstab`:
     ```conf-unix
-    LABEL="boot"					/boot		ext4	relatime,discard					1 1
-    LABEL="EFI"						/boot/efi	vfat	defaults,discard,flush,tz=UTC				0 0
+    LABEL="boot"					/boot		ext4	relatime,discard=async					1 1
+    LABEL="EFI"						/boot/efi	vfat	defaults,discard=async,flush,tz=UTC				0 0
     LABEL="swap"					none		swap	sw							0 0
-    UUID="<uuid_number>"	/		btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@	0 0
-    UUID="<uuid_number>"	/var		btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@var	0 0
-    UUID="<uuid_number>"	/var/tmp	btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@var_tmp	0 0
-    UUID="<uuid_number>"	/var/vm		btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@vm		0 0
-    UUID="<uuid_number>"	/home		btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@home	0 0
-    UUID="<uuid_number>"	/usr/portage	btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@portage	0 0
-    UUID="<uuid_number>"	/usr/local/share/portage	btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@portage_local	0 0
-    UUID="<uuid_number>"	/com/lib/portage	btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@portage_com	0 0
+    UUID="<uuid_number>"	/		btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@	0 0
+    UUID="<uuid_number>"	/var		btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@var	0 0
+    UUID="<uuid_number>"	/var/tmp	btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@var_tmp	0 0
+    UUID="<uuid_number>"	/var/vm		btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@vm		0 0
+    UUID="<uuid_number>"	/home		btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@home	0 0
+    UUID="<uuid_number>"	/usr/portage	btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@portage	0 0
+    UUID="<uuid_number>"	/usr/local/share/portage	btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@portage_local	0 0
+    UUID="<uuid_number>"	/com/lib/portage	btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@portage_com	0 0
     ```
--   Если используется файл подкачки, то вместо отдельной партиции следует подключить этот файл в `/mnt/gentoo/etc/fstab`:
+-   Если используется файл подкачки, то вместо отдельной партиции следует подключить этот файл в `/mnt/to/etc/fstab`:
     ```conf-unix
-    UUID="<uuid_number>"	/swap		btrfs	relatime,discard,autodefrag,compress=zstd:9,subvol=@swap	0 0
+    UUID="<uuid_number>"	/swap		btrfs	relatime,discard=async,autodefrag,compress=zstd:9,subvol=@swap	0 0
     /swap/swapfile		none		swap    sw								0 0
     ```
 
 
-## <span class="section-num">7</span> Отключение CoW {#отключение-cow}
-
--   Для файловых систем с образами виртуальных машин следует отключить CoW (copy-on-write).
--   Так же стоит отключить _CoW_ для часто изменяемых файлов (например, журналов).
--   Подмонтируем файловую систему `btrfs`:
-    ```shell
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@vm /dev/sdc2 /mnt/gentoo/var/vm
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@libvirt /dev/sdc2 /mnt/gentoo/var/lib/libvirt/images
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var@log /dev/sdc2 /mnt/gentoo/var/log
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@var@tmp /dev/sdc2 /mnt/gentoo/var/tmp
-    ```
--   Отключим для этого подтома CoW:
-    -   Для `/var/vm`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C vm
-        ```
-    -   Для `/var/lib/libvirt/images`
-        ```shell
-        cd /mnt/gentoo/var/lib/libvirt/
-        chattr +C images
-        ```
-    -   Для `/var/log`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C log
-        ```
-    -   Для `/var/tmp`
-        ```shell
-        cd /mnt/gentoo/var/
-        chattr +C tmp
-        ```
--   Посмотреть результат можно командой:
-    ```shell
-    lsattr -a /mnt/gentoo/var/
-    lsattr -a /mnt/gentoo/var/lib/libvirt/
-    ```
-
-
-## <span class="section-num">8</span> Файл подкачки на файловой системе btrfs {#файл-подкачки-на-файловой-системе-btrfs}
+## <span class="section-num">7</span> Файл подкачки на файловой системе btrfs {#файл-подкачки-на-файловой-системе-btrfs}
 
 -   Для раздела файла подкачки следует отключить CoW (copy-on-write).
 -   Подмонтируем файловую систему `btrfs`:
     ```shell
-    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@ /dev/sda4 /mnt/gentoo/
+    mkdir -p /mnt/gentoo/
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@ /dev/sdc2 /mnt/gentoo/
     ```
 -   Создадим точку монтирования:
     ```shell

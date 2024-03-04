@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2024-01-24T15:16:00+03:00
+lastmod: 2024-03-02T17:26:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -64,6 +64,7 @@ slug: "rudn-digital-resources"
 -   Репозиторий РУДН: <https://repository.rudn.ru/>.
 -   Клинико-диагностический центр (КДЦ) РУДН: <https://clinic.rudn.ru/>.
 -   Библиотека РУДН: <https://lib.rudn.ru/>.
+-   Внутренняя база знаний Университета: <https://wiki.rudn.ru/>.
 
 
 ## <span class="section-num">4</span> Научные ресурсы {#научные-ресурсы}
