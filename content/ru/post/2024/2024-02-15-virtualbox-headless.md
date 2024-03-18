@@ -2,7 +2,7 @@
 title: "VirtualBox. Использование без монитора"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-02-15T20:05:00+03:00
-lastmod: 2024-02-18T21:21:00+03:00
+lastmod: 2024-03-06T19:56:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -71,6 +71,9 @@ VirtualBox. Использование без монитора.
     ```shell
     vboxmanage modifyvm "Windows" --firmware=efi
     ```
+
+
+## <span class="section-num">3</span> Управление виртуальной машиной {#управление-виртуальной-машиной}
 
 -   Запустите виртуальную машину:
     ```shell

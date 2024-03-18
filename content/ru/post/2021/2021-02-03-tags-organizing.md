@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2024-01-24T18:51:00+03:00
+lastmod: 2024-03-07T09:33:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -42,6 +42,7 @@ slug: "tags-organizing"
 -   `@computer_science`: Компьютерные науки
     -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
     -   `emacs`: [Emacs]({{< relref "2020-12-24-emacs" >}})
+    -   `font`: [Шрифты]({{< relref "2024-03-07-font" >}})
     -   `gentoo`[^fn:3]: [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
     -   `git`: [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
     -   `hard`:
@@ -58,6 +59,7 @@ slug: "tags-organizing"
     -   `redhat`:
     -   `sysadmin`: [Системное администрирование]({{< relref "2021-04-10-system-administration" >}})
     -   `tex`: [Система TeX]({{< relref "2021-04-23-tex" >}})
+    -   `typography`: [Типографика]({{< relref "2024-03-07-typography" >}})
     -   `vim`: [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
     -   `wayland`: [Wayland]({{< relref "2023-08-14-wayland" >}})
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})

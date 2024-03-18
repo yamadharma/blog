@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-02-29T10:13:00+03:00
+lastmod: 2024-03-17T18:07:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -262,7 +262,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
+4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные) <span class="tag"><span class="_errand">@errand</span></span>
 
     -   НКАбд-03-22
     -   ОРД-297
@@ -420,43 +420,31 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  CANCELLED Зачёты <span class="tag"><span class="CANCELLED">CANCELLED</span></span>
-
-<!--list-separator-->
-
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены
+1. <span class="org-todo todo NEXT">NEXT</span>  Экзамены, модуль 3 <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс)
+    1. <span class="org-todo todo NEXT">NEXT</span>  Математическое моделирование (3 курс), экзамен <code>[0/3]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.01
-
-            -   НКНбд-01-20, ауд. 296
+        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.01, экзамен
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.02
-
-            -   НФИбд-01-20, ауд. 295
-            -   НФИбд-02-20, ауд. 297
+        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.02, экзамен
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 09.03.03
-
-            -   НПИбд-01-20, ауд. 299
-            -   НПИбд-02-20, ауд. 298
+        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 09.03.03, экзамен
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
+2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, модуль 3 <code>[0/2]</code>
 
     <!--list-separator-->
 

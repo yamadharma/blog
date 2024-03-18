@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2023-10-01T18:39:00+03:00
+lastmod: 2024-03-05T16:52:00+03:00
 tags: ["security"]
 categories: ["computer-science"]
 draft: false
@@ -76,6 +76,13 @@ slug: "password-manager-pass-integration"
         ```shell
         apt-get install webext-browserpass
         ```
+    -   Fedora
+        ```shell
+        dnf copr enable maximbaz/browserpass
+        dnf install browserpass
+        dnf install browserpass-chromium
+        dnf install browserpass-firefox
+        ```
 
 
 #### <span class="section-num">2.1.2</span> Плагин chrome-pass {#плагин-chrome-pass}
@@ -118,6 +125,10 @@ slug: "password-manager-pass-integration"
     -   Gentoo
         ```shell
         emerge app-admin/gopass-jsonapi
+        ```
+    -   Fedora
+        ```shell
+        dnf install gopass-jsonapi
         ```
 -   Для связки плагина с `gopass` необходимо создать вспомогательный скрипт и манифест:
     ```shell

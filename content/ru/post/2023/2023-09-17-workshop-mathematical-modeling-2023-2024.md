@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-02-29T10:57:00+03:00
+lastmod: 2024-03-13T16:30:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -337,7 +337,7 @@ The talk aims to provide a comprehensive discussion of the details associated wi
 ## <span class="section-num">2</span> 2024 {#2024}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-31 Ср&gt; </span></span> Ловецкий К. П. _Методы решения ОДУ, основанные на чебышевской интерполяции_ {#ловецкий-к-dot-п-dot-методы-решения-оду-основанные-на-чебышевской-интерполяции}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-31 Ср] </span></span> Ловецкий К. П. _Методы решения ОДУ, основанные на чебышевской интерполяции_ {#ловецкий-к-dot-п-dot-методы-решения-оду-основанные-на-чебышевской-интерполяции}
 
 
 #### <span class="section-num">2.1.1</span> Докладчик {#докладчик}
@@ -382,7 +382,7 @@ This approach of almost optimal approximation, together with the method of integ
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-02-14 Ср&gt; </span></span> Чинь Ф. Т. _Вариационный подход к дискретизации по времени уравнений Биркгофа для бесконечномерных систем_ {#чинь-ф-dot-т-dot-вариационный-подход-к-дискретизации-по-времени-уравнений-биркгофа-для-бесконечномерных-систем}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-02-14 Ср] </span></span> Чинь Ф. Т. _Вариационный подход к дискретизации по времени уравнений Биркгофа для бесконечномерных систем_ {#чинь-ф-dot-т-dot-вариационный-подход-к-дискретизации-по-времени-уравнений-биркгофа-для-бесконечномерных-систем}
 
 
 #### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
@@ -464,3 +464,31 @@ Polynomial interpolation is used in constructing of classical difference schemes
 We propose a fundamentally new class of difference methods with exponential rather than power-law convergence. When the grid step is halved, the number of correct decimal digits in the solution approximately doubles. Such convergence is dramatically faster than the traditional power-law one. The typical accuracy gain ranges from 2-3 orders of magnitude for poorly conditioned tasks to 10 orders of magnitude for well-conditioned ones.
 
 The proposed approach is based on the representation of the desired function, its derivatives and primitive by the Cauchy integrals along a closed contour on the complex plane. The grid quadrature of trapezoids is written for these integrals. Due to the periodicity of the integrand, such a quadrature converges exponentially. The same is true for difference schemes based on it. The described approach is implemented for the most important classes of mathematical physics problems. Among them are boundary value problems and eigenvalue problems for ODEs, Cauchy problems for ODE systems, boundary value problems for elliptic equations, initial boundary value problems for parabolic and hyperbolic equations.
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-26 Вт] </span></span> Орлов Ю. Н. - Линейное квантование динамических систем и принцип соответствия {#орлов-ю-dot-н-dot-линейное-квантование-динамических-систем-и-принцип-соответствия}
+
+
+#### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
+
+-   Орлов Юрий Николаевич
+-   д.ф.-м.н.
+-   ИПМ им. М.В. Келдыша РАН
+
+
+#### <span class="section-num">2.4.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/250/>
+-   Линейное квантование динамических систем и принцип соответствия
+-   Орлов Юрий Николаевич
+-   ИПМ им. М.В. Келдыша РАН
+
+Будет получено уравнение эволюции функции Вигнера для произвольных невырожденных гамильтоновых систем и показана его зависимость от правила квантования. Будет обсуждено соответствие между классической и квантовой статистикой: можно ли по одной из них построить другую с помощью некоторого преобразования в подходящем пространстве. Будет также рассмотрен алгоритм приближенного вычисления динамики и статистики с помощью конечнократных аппроксимаций по теореме Чернова о сходимости определенного итерационного процесса к полугруппе.
+
+---
+
+-   Linear Quantization of Dynamical Systems and Classical Limit Principle
+-   Yu. N. Orlov
+-   Keldysh Institute of Applied Mathematics
+
+The equation of the evolution of the Wigner function for arbitrary non-degenerate Hamiltonian systems will be obtained and its dependence on the quantization rule will be shown. The correspondence between classical and quantum statistics will be discussed: is it possible to construct the other from one of them using some transformation in a suitable space. An algorithm for approximate calculation of dynamics and statistics using finite-fold approximations according to Chernov's theorem on the convergence of a certain iterative process to a semigroup will also be considered.

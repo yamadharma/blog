@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Домашний каталог. Репозиторий"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-30T14:24:00+03:00
-lastmod: 2023-08-13T19:13:00+03:00
+lastmod: 2024-03-05T17:56:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

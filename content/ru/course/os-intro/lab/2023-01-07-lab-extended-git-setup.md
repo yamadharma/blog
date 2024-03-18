@@ -2,7 +2,7 @@
 title: "Лабораторная работа Продвинутое использование git"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-07T17:50:00+03:00
-lastmod: 2024-02-28T19:45:00+03:00
+lastmod: 2024-03-06T13:08:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -304,7 +304,7 @@ menu:
 -   Fedora
     ```shell
     dnf install nodejs
-    apt-get install pnpm
+    dnf install pnpm
     ```
 
 

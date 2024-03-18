@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-02-19T10:17:00+03:00
+lastmod: 2024-03-16T17:13:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -41,6 +41,7 @@ slug: "system-administration"
 ### <span class="section-num">2.2</span> Wayland {#wayland}
 
 -   [Wayland]({{< relref "2023-08-14-wayland" >}})
+-   [Linux. Приложения. Индикатор прогресса wob]({{< relref "2024-03-06-linux-applications-progress-indicator-wob" >}})
 
 
 ## <span class="section-num">3</span> Операционные системы {#операционные-системы}
@@ -181,6 +182,7 @@ slug: "system-administration"
 ### <span class="section-num">11.2</span> Работа с терминалом {#работа-с-терминалом}
 
 -   [Терминальный мультиплексор tmux]({{< relref "2024-02-19-terminal-multiplexer-tmux" >}})
+-   [Эмулятор терминала kitty]({{< relref "2024-03-16-kitty-terminal-emulator" >}})
 
 
 ### <span class="section-num">11.3</span> Утилиты {#утилиты}
@@ -262,17 +264,22 @@ slug: "system-administration"
 -   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
 
 
-## <span class="section-num">12</span> Безопасность {#безопасность}
+## <span class="section-num">12</span> Конфигурации {#конфигурации}
+
+-   [Моя конфигурация программного обеспечения]({{< relref "2024-03-06-my-software-configuration" >}})
 
 
-### <span class="section-num">12.1</span> Пароли {#пароли}
+## <span class="section-num">13</span> Безопасность {#безопасность}
+
+
+### <span class="section-num">13.1</span> Пароли {#пароли}
 
 -   [Менеджеры паролей]({{< relref "2021-04-29-password-managers" >}})
 -   [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})
 -   [Одноразовые пароли]({{< relref "2023-08-24-one-time-passwords" >}})
 
 
-### <span class="section-num">12.2</span> Разное {#разное}
+### <span class="section-num">13.2</span> Разное {#разное}
 
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
 -   [Сертификаты ACME]({{< relref "2022-04-30-acme-certificates" >}})
@@ -280,72 +287,72 @@ slug: "system-administration"
 -   [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})
 
 
-## <span class="section-num">13</span> Сети {#сети}
+## <span class="section-num">14</span> Сети {#сети}
 
 
-### <span class="section-num">13.1</span> Cisco {#cisco}
+### <span class="section-num">14.1</span> Cisco {#cisco}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 
 
-### <span class="section-num">13.2</span> Коммутаторы {#коммутаторы}
+### <span class="section-num">14.2</span> Коммутаторы {#коммутаторы}
 
 -   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
 
 
-### <span class="section-num">13.3</span> Протоколы {#протоколы}
+### <span class="section-num">14.3</span> Протоколы {#протоколы}
 
 -   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
-#### <span class="section-num">13.3.1</span> Bittorrent {#bittorrent}
+#### <span class="section-num">14.3.1</span> Bittorrent {#bittorrent}
 
 -   [bittorrent. Трекер opentracker]({{< relref "2024-01-31-bittorrent-opentracker" >}})
 
 
-### <span class="section-num">13.4</span> VPN {#vpn}
+### <span class="section-num">14.4</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 -   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
 
 
-### <span class="section-num">13.5</span> Мониторинг {#мониторинг}
+### <span class="section-num">14.5</span> Мониторинг {#мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Мониторинг пропускной способности и скорости сети]({{< relref "2023-06-16-bandwidth-network-speed-monitoring" >}})
 
 
-### <span class="section-num">13.6</span> Железо {#железо}
+### <span class="section-num">14.6</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
-### <span class="section-num">13.7</span> Сервисы {#сервисы}
+### <span class="section-num">14.7</span> Сервисы {#сервисы}
 
 
-#### <span class="section-num">13.7.1</span> DNS {#dns}
+#### <span class="section-num">14.7.1</span> DNS {#dns}
 
 -   [Domain Name System (DNS)]({{< relref "2023-09-16-domain-name-system-dns" >}})
 
 
-## <span class="section-num">14</span> Организация обучения {#организация-обучения}
+## <span class="section-num">15</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
 
 
-## <span class="section-num">15</span> Профессиональные требования {#профессиональные-требования}
+## <span class="section-num">16</span> Профессиональные требования {#профессиональные-требования}
 
 -   [Профессия Системный администратор]({{< relref "2021-07-02-profession-system-administrator" >}})
 -   [Тест Лимончелли]({{< relref "2024-01-27-limoncelli-test" >}})
 
 
-## <span class="section-num">16</span> DevOps {#devops}
+## <span class="section-num">17</span> DevOps {#devops}
 
 -   [Непрерывная интеграция. GitHub Actions]({{< relref "2023-07-16-continuous-integration-github-actions" >}})
 
 
-## <span class="section-num">17</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
+## <span class="section-num">18</span> Инфраструктура в РУДН {#инфраструктура-в-рудн}
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
 -   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})

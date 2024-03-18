@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2023-12-02T14:09:00+03:00
+lastmod: 2024-03-05T16:56:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -159,6 +159,16 @@ slug: "password-manager-pass"
                 ```shell
                 emerge app-admin/gopass-ui
                 ```
+    -   Fedora
+        -   `pass`
+            ```shell
+            dnf install pass pass-otp
+            ```
+
+            -   `gopass`
+                ```shell
+                dnf install gopass
+                ```
 
 -   Macintosh
     ```shell
@@ -237,6 +247,22 @@ slug: "password-manager-pass"
 -   Для синхронизации выполняется следующая команда:
     ```shell
     gopass sync
+    ```
+
+
+#### <span class="section-num">5.3.2</span> Прямые изменения {#прямые-изменения}
+
+-   Следует заметить, что отслеживаются только изменения, сделанные через сам `gopass` (или `pass`).
+-   Если изменения сделаны непосредственно на файловой системе, необходимо вручную закоммитить и выложить изменения:
+    ```shell
+    cd ~/.password-store/
+    git add .
+    git commit -am 'edit manually'
+    git push
+    ```
+-   Проверить статус синхронизации модно командой
+    ```shell
+    gopass git status
     ```
 
 

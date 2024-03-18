@@ -2,7 +2,7 @@
 title: "Перенос Linux на btrfs"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T20:38:00+03:00
-lastmod: 2024-03-04T14:09:00+03:00
+lastmod: 2024-03-12T14:09:00+03:00
 tags: ["btrfs", "sysadmin", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -334,8 +334,9 @@ rsync -av -HS --delete /mnt/from/@portage@local/* /mnt/to/@portage@local
     ```
 
 
-## <span class="section-num">6</span> Создадим файл монтирования fstab {#создадим-файл-монтирования-fstab}
+## <span class="section-num">6</span> Файл монтирования fstab {#файл-монтирования-fstab}
 
+-   Создадим файл монтирования fstab.
 -   Узнаем идентификатор партиции с файловой системой btrfs:
     ```shell
     blkid /dev/sdc2
@@ -367,6 +368,9 @@ rsync -av -HS --delete /mnt/from/@portage@local/* /mnt/to/@portage@local
 
 ## <span class="section-num">7</span> Файл подкачки на файловой системе btrfs {#файл-подкачки-на-файловой-системе-btrfs}
 
+
+### <span class="section-num">7.1</span> Подготовка к созданию файла подкачки {#подготовка-к-созданию-файла-подкачки}
+
 -   Для раздела файла подкачки следует отключить CoW (copy-on-write).
 -   Подмонтируем файловую систему `btrfs`:
     ```shell
@@ -379,12 +383,19 @@ rsync -av -HS --delete /mnt/from/@portage@local/* /mnt/to/@portage@local
     ```
 -   Подмонтируем подтом `@swap`:
     ```shell
-    mount -o subvol=@swap /dev/sda4 /mnt/gentoo/swap
+    mount -tbtrfs -orelatime,discard,autodefrag,compress=zstd:9,subvol=@swap /dev/sdc2 /mnt/gentoo/swap
     ```
 -   Отключим для этого подтома CoW:
     ```shell
     chattr +C /mnt/gentoo/swap
     ```
+
+
+### <span class="section-num">7.2</span> Создание файла подкачки {#создание-файла-подкачки}
+
+
+#### <span class="section-num">7.2.1</span> Старый подход {#старый-подход}
+
 -   Создадим файл подкачки:
     ```shell
     truncate -s 0 /mnt/gentoo/swap/swapfile
@@ -401,6 +412,23 @@ rsync -av -HS --delete /mnt/from/@portage@local/* /mnt/to/@portage@local
     ```shell
     mkswap /mnt/gentoo/swap/swapfile
     ```
+
+
+#### <span class="section-num">7.2.2</span> Новый подход {#новый-подход}
+
+-   Работает начиная с версии утилит 6.1.
+-   Создадим файл подкачки размером 8ГБ:
+    ```shell
+    btrfs filesystem mkswapfile --size 4g --uuid clear /mnt/gentooswap/swapfile
+    ```
+-   Создадим файл подкачки исходя из размера оперативной памяти:
+    ```shell
+    btrfs filesystem mkswapfile --size $(free -h --si | awk 'NR == 2 {print $2}') --uuid clear /mnt/gentoo/swap/swapfile
+    ```
+
+
+### <span class="section-num">7.3</span> Активация файла подкачки {#активация-файла-подкачки}
+
 -   Активируем файл подкачки:
     ```shell
     swapon /mnt/gentoo/swap/swapfile
