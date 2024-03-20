@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-03-17T18:07:00+03:00
+lastmod: 2024-03-19T14:50:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -262,7 +262,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные) <span class="tag"><span class="_errand">@errand</span></span>
+4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
     -   НКАбд-03-22
     -   ОРД-297
