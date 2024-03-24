@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2023-07-11T11:32:00+03:00
+lastmod: 2024-03-23T21:02:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -16,31 +16,25 @@ slug: "linux-administration"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Файловые системы {#файловые-системы}
-
--   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
--   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
+## <span class="section-num">1</span> Дистрибутивы Linux {#дистрибутивы-linux}
 
 
-## <span class="section-num">2</span> Дистрибутивы Linux {#дистрибутивы-linux}
+### <span class="section-num">1.1</span> Общая информация {#общая-информация}
 
 
-### <span class="section-num">2.1</span> Общая информация {#общая-информация}
-
-
-### <span class="section-num">2.2</span> Режим киоска {#режим-киоска}
+### <span class="section-num">1.2</span> Режим киоска {#режим-киоска}
 
 -   Данные дистрибутивы созданы для организации режима киоска (см. [Режим киоска]({{< relref "2022-02-15-kiosk-mode" >}})).
 -   [Porteus Kiosk]({{< relref "2022-02-15-porteus-kiosk" >}})
 -   [Linutop Kiosk]({{< relref "2022-02-15-linutop-kiosk" >}})
 
 
-### <span class="section-num">2.3</span> Дистрибутивы общего назначения {#дистрибутивы-общего-назначения}
+### <span class="section-num">1.3</span> Дистрибутивы общего назначения {#дистрибутивы-общего-назначения}
 
 -   [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
 
 
-## <span class="section-num">3</span> Файловые системы {#файловые-системы}
+## <span class="section-num">2</span> Файловые системы {#файловые-системы}
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 -   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})

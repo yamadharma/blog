@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2023-09-03T17:25:00+03:00
+lastmod: 2024-03-24T17:07:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -107,7 +107,10 @@ slug: "mail-synchronization-mbsync"
 -   <https://www.google.com/intl/ru/gmail/about/>
 -   [Почта. Google. Настройка почтового клиента]({{< relref "2021-07-06-mail-google-configuring-mail-client" >}})
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
--   Папка "Отправленные" не синхронизируется потому, что Google сохраняет всю электронную почту в папке "Все сообщения", и в результате мы получим локально дубликаты.
+-   Синхронизацию папки `Отправленные` можно отключить. Google сохраняет всю электронную почту в папке `Все сообщения`. В результате можно получить локальные дубликаты.
+-   Рекомендуется на сайте Gmail настроить в пункте `Settings` &gt; `Forwarding and POP/IMAP` &gt; `IMAP Access`:
+    -   отметить `Turn Auto Expunge Off`;
+    -   отметить `Move Message to the Trash`.
 -   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
     ```conf-unix
     # IMAPAccount (gmail)
@@ -182,12 +185,22 @@ slug: "mail-synchronization-mbsync"
     Expunge Both
     SyncState *
 
+    Channel account@gmail.com-sent
+    # Far :account@gmail.com-remote:"[Gmail]/Sent"
+    Far :account@gmail.com-remote:"[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
+    Near :account@gmail.com-local:"Sent"
+    CopyArrivalDate yes
+    Create Both
+    Expunge Both
+    SyncState *
+
     Group account@gmail.com
     Channel account@gmail.com-inbox
     Channel account@gmail.com-trash
     Channel account@gmail.com-all
     Channel account@gmail.com-spam
     Channel account@gmail.com-drafts
+    Channel account@gmail.com-sent
     ```
 
 

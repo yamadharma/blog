@@ -2,7 +2,7 @@
 title: "Почта. Кодировка папок IMAP"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T20:43:00+03:00
-lastmod: 2023-09-14T16:43:00+03:00
+lastmod: 2024-03-24T16:51:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

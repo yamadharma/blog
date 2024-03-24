@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-03-13T16:30:00+03:00
+lastmod: 2024-03-23T16:14:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -426,7 +426,7 @@ Difference methods are widely used for the numerical solution of problems in mec
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-13 Ср] </span></span> Белов А. А. - Разностные схемы с экспоненциальной сходимостью {#белов-а-dot-а-dot-разностные-схемы-с-экспоненциальной-сходимостью}
+### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-13 Ср] </span></span> Белов А. А. - Разностные схемы с экспоненциальной сходимостью <span class="tag"><span class="CNCL">CNCL</span></span> {#белов-а-dot-а-dot-разностные-схемы-с-экспоненциальной-сходимостью}
 
 
 #### <span class="section-num">2.3.1</span> Докладчик {#докладчик}
