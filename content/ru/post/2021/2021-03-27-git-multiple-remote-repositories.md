@@ -2,7 +2,7 @@
 title: "git. Несколько удалённых репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2023-09-28T16:15:00+03:00
+lastmod: 2024-03-30T21:49:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -49,9 +49,9 @@ slug: "git-multiple-remote-repositories"
     ```
 -   Для отправки кода в репозиторий необходимо указать его имя:
     ```shell
-    git push github
-    git push gitlab
-    git push bitbucket
+    git push github master
+    git push gitlab master
+    git push bitbucket master
     ```
 
 

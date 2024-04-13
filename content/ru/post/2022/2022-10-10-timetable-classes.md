@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-03-21T09:23:00+03:00
+lastmod: 2024-04-12T10:43:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[3/6]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[4/6]</code> {#2023-2024-учебный-год-расписание-занятий}
 
 
 #### <span class="section-num">1.2.1</span> Информация {#информация}
@@ -68,7 +68,7 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.2</span> 2023--2024 учебный год, 1 четверть <code>[2/3]</code> {#2023-2024-учебный-год-1-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
 
 -   2023-09-01 Пт--2023-11-05 Вс
 
@@ -126,7 +126,7 @@ slug: "timetable-classes"
     -   2023-11-06 Пн 13:30-14:50--2023-12-25 Пн 13:30-14:50
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.4</span> 2023--2024 учебный год, 1 семестр <code>[5/6]</code> {#2023-2024-учебный-год-1-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.4</span> 2023--2024 учебный год, 1 семестр <code>[5/5]</code> {#2023-2024-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -159,11 +159,11 @@ slug: "timetable-classes"
     -   ОРД-295, НПИбд-22
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.5</span> 2023--2024 учебный год, 3 четверть <code>[0/1]</code> {#2023-2024-учебный-год-3-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.5</span> 2023--2024 учебный год, 3 четверть <code>[1/1]</code> {#2023-2024-учебный-год-3-четверть}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лекция, дистанционно)
+1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лекция, дистанционно)
 
     <!--list-separator-->
 
@@ -424,23 +424,23 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-1. <span class="org-todo todo NEXT">NEXT</span>  Экзамены, модуль 3 <code>[0/1]</code>
+1. <span class="org-todo todo NEXT">NEXT</span>  Экзамены, модуль 3 <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo NEXT">NEXT</span>  Математическое моделирование (3 курс), экзамен <code>[0/3]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс), экзамен <code>[3/3]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.01, экзамен
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.01, экзамен
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.02, экзамен
+        2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.02, экзамен
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 09.03.03, экзамен
+        3. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 09.03.03, экзамен
 
 <!--list-separator-->
 

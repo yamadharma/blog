@@ -2,7 +2,7 @@
 title: "Computer science"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-08T20:31:00+03:00
-lastmod: 2023-09-28T16:21:00+03:00
+lastmod: 2024-04-12T15:57:00+03:00
 tags: ["research"]
 categories: ["computer-science", "science"]
 draft: false

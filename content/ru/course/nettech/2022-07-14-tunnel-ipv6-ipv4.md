@@ -2,7 +2,7 @@
 title: "Туннель ipv6-ipv4"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-14T16:27:00+03:00
-lastmod: 2022-08-15T20:02:00+03:00
+lastmod: 2024-04-10T11:37:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false

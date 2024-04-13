@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Домашний каталог. Репозиторий"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-30T14:24:00+03:00
-lastmod: 2024-03-05T17:56:00+03:00
+lastmod: 2024-03-25T15:33:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -61,3 +61,9 @@ slug: "configuration-file-management-repo"
     ```shell
     chezmoi apply -v
     ```
+
+
+## <span class="section-num">3</span> Ресурсы {#ресурсы}
+
+-   Awesome Dotfiles : <https://github.com/webpro/awesome-dotfiles>
+-   Your unofficial guide to dotfiles on GitHub : <https://dotfiles.github.io/>

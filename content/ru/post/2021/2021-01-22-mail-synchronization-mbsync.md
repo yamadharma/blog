@@ -2,7 +2,7 @@
 title: "Почта. Синхронизация. mbsync"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2024-03-24T17:07:00+03:00
+lastmod: 2024-04-13T18:34:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -100,6 +100,7 @@ slug: "mail-synchronization-mbsync"
     ```
 
 -   Вместо `pass` можно использовать `gopass`. При последовательном запуске нескольких `pass` утилита может не находить ключ _pgp_.
+-   Папки IMAP можно получить либо через web-интерфейс, либо в командной строке (см. [Запросы по протоколу imap из командной строки]({{< relref "2024-04-13-imap-queries-command-line" >}}))
 
 
 #### <span class="section-num">3.4.1</span> Gmail {#gmail}
@@ -108,9 +109,10 @@ slug: "mail-synchronization-mbsync"
 -   [Почта. Google. Настройка почтового клиента]({{< relref "2021-07-06-mail-google-configuring-mail-client" >}})
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
 -   Синхронизацию папки `Отправленные` можно отключить. Google сохраняет всю электронную почту в папке `Все сообщения`. В результате можно получить локальные дубликаты.
--   Рекомендуется на сайте Gmail настроить в пункте `Settings` &gt; `Forwarding and POP/IMAP` &gt; `IMAP Access`:
-    -   отметить `Turn Auto Expunge Off`;
-    -   отметить `Move Message to the Trash`.
+-   Рекомендуется на сайте Gmail настроить в пункте `Настройки > Пересылка и POP/IMAP > Доступ по протоколу IMAP` (`Settings` &gt; `Forwarding and POP/IMAP` &gt; `IMAP Access`):
+    -   отметить `Автоматическое стирание выключено (ожидать, пока клиент не обновит данные на сервере) (==Turn Auto Expunge Off`);
+    -   отметить `Отправить письмо в корзину` (`Send email to trash`).
+    -   ~~отметить `Архивировать сообщение (по умолчанию)` (`Archive message (default)`)~~.
 -   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
     ```conf-unix
     # IMAPAccount (gmail)
@@ -642,7 +644,7 @@ slug: "mail-synchronization-mbsync"
     SyncState *
 
     Channel account@yahoo.com-spam
-    Far :account@yahoo.com-remote:"Bulk Mail"
+    Far :account@yahoo.com-remote:"Bulk"
     Near :account@yahoo.com-local:"Spam"
     CopyArrivalDate yes
     Create Both

@@ -2,7 +2,7 @@
 title: "Участие в научных конференциях"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-06T19:37:00+03:00
-lastmod: 2023-12-15T14:43:00+03:00
+lastmod: 2024-03-27T13:28:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -78,22 +78,27 @@ slug: "scientific-conferences-participation"
 -   Выступление: Апреутесей А. М. Ю.
 
 
-## <span class="section-num">4</span> Saratov Fall Meeting (SFM) {#saratov-fall-meeting--sfm}
+## <span class="section-num">4</span> Курышкинские чтения {#курышкинские-чтения}
+
+-   [Курышкинские чтения]({{< relref "2024-03-27-kuryshkin-readings" >}})
+
+
+## <span class="section-num">5</span> Saratov Fall Meeting (SFM) {#saratov-fall-meeting--sfm}
 
 -   [Конференция Saratov Fall Meeting]({{< relref "2023-07-05-conference-saratov-fall-meeting" >}})
 
 
-### <span class="section-num">4.1</span> 2023 {#2023}
+### <span class="section-num">5.1</span> 2023 {#2023}
 
 -   [Конференция Saratov Fall Meeting 2023]({{< relref "2023-08-25-conference-saratov-fall-meeting-2023" >}})
 
 
-## <span class="section-num">5</span> Информационные технологии и нанотехнологии (ИТНТ) [International Conference on Information Technology and Nanotechnology (ITNT)] {#информационные-технологии-и-нанотехнологии--итнт--international-conference-on-information-technology-and-nanotechnology--itnt}
+## <span class="section-num">6</span> Информационные технологии и нанотехнологии (ИТНТ) [International Conference on Information Technology and Nanotechnology (ITNT)] {#информационные-технологии-и-нанотехнологии--итнт--international-conference-on-information-technology-and-nanotechnology--itnt}
 
 -   <http://itnt-conf.org/>
 
 
-### <span class="section-num">5.1</span> 2022 {#2022}
+### <span class="section-num">6.1</span> 2022 {#2022}
 
 -   VIII International Conference on Information Technology and Nanotechnology (ITNT)
 -   May 23--27, 2022
@@ -102,26 +107,26 @@ slug: "scientific-conferences-participation"
 -   Выступление: Ловецкий К. П.
 
 
-## <span class="section-num">6</span> Компьютерная алгебра [Computer Algebra] {#компьютерная-алгебра-computer-algebra}
+## <span class="section-num">7</span> Компьютерная алгебра [Computer Algebra] {#компьютерная-алгебра-computer-algebra}
 
 -   [Конференция Computer Algebra]({{< relref "2021-06-28-conference-computer-algebra" >}})
 
 
-### <span class="section-num">6.1</span> 2021 {#2021}
+### <span class="section-num">7.1</span> 2021 {#2021}
 
 -   Gevorkyan, Migran Nelsonovich and Kulyabov, Dmitry Sergeevich and Korolkova, Anna Vladislavovna and Demidova, Anastasia Vyacheslavovna and Velieva, Tatiana Refatovna (2021). "Symbolic implementation of multivector algebra in Julia language". In: , "Computer algebra: 4th International Conference Materials". LCC MAKS Press. 57-60. [<a href="#citeproc_bib_item_15">15</a>]
     -   Выступал Геворкян М. Н.
 
 
-## <span class="section-num">7</span> Библиография {#библиография}
+## <span class="section-num">8</span> Библиография {#библиография}
 
 ## Литература
 
 <div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Shchetinin, E.Y. <a href="https://doi.org/10.1007/978-3-030-66471-8_28">Deep Neural Networks for Emotion Recognition</a> / E.Y. Shchetinin, L.A. Sevastianov, D.S. Kulyabov и др. // Distributed Computer and Communication Networks. DCCN 2020 : Lecture Notes в Computer Science / V.M. Vishnevskiy и др. ред. . – Cham : Springer Nature Switzerland AG, 2020. – Т. 12563. – Сс. 365–379.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Shchetinin, E.Y. <a href="https://doi.org/10.25728/dccn.2020.006">Paralinguistic model for emotions recognition with deep neural networks</a> / E.Y. Shchetinin, L.A. Sevastianov, D.S. Kulyabov и др. // Распределенные компьютерные и телекоммуникационные сети: управление, вычисление, связь (DCCN-2020) / В.М. Вишневский, К.Е. Самуйлов ред. . – М. : Институт проблем управления им. В.А. Трапезникова РАН, 2020. – Сс. 42–50.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Shchetinin, E.Y. <a href="https://doi.org/10.25728/dccn.2020.006">Paralinguistic model for emotions recognition with deep neural networks</a> / E.Y. Shchetinin, L.A. Sevastianov, D.S. Kulyabov и др. // Распределенные компьютерные и телекоммуникационные сети: управление, вычисление, связь (DCCN-2020) / В.М. Вишневский, К.Е. Самуйлов ред. . – Москва : Институт проблем управления им. В.А. Трапезникова РАН, 2020. – Сс. 42–50.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Korolkova, A.V. <a href="https://doi.org/10.1007/978-3-030-66471-8_40">Practical Application of the Multi-model Approach in the Study of Complex Systems</a> / A.V. Korolkova, D.S. Kulyabov, M. Hnatič // Distributed Computer and Communication Networks. DCCN 2020 : Lecture Notes в Computer Science / V.M. Vishnevskiy и др. ред. . – Cham : Springer Nature Switzerland AG, 2020. – Т. 12563. – Сс. 526–537.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Korolkova, A.V. <a href="https://doi.org/10.25728/dccn.2020.053">The multi-model approach to the study of complex systems using the example of the RED active queue management algorithm</a> / A.V. Korolkova, D.S. Kulyabov, M. Hnatič // Распределенные компьютерные и телекоммуникационные сети: управление, вычисление, связь (DCCN-2020) / В.М. Вишневский, К.Е. Самуйлов ред. . – М. : Институт проблем управления им. В.А. Трапезникова РАН, 2020. – Сс. 418–425.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Korolkova, A.V. <a href="https://doi.org/10.25728/dccn.2020.053">The multi-model approach to the study of complex systems using the example of the RED active queue management algorithm</a> / A.V. Korolkova, D.S. Kulyabov, M. Hnatič // Распределенные компьютерные и телекоммуникационные сети: управление, вычисление, связь (DCCN-2020) / В.М. Вишневский, К.Е. Самуйлов ред. . – Москва : Институт проблем управления им. В.А. Трапезникова РАН, 2020. – Сс. 418–425.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Sevastianov, L.A. <a href="https://doi.org/10.1007/978-3-030-50417-5_3">An Effective Stable Numerical Method for Integrating Highly Oscillating Functions with a Linear Phase</a> / L.A. Sevastianov, K.P. Lovetskiy, D.S. Kulyabov // Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics) : Lecture Notes в Computer Science (including subseries Lecture Notes в Artificial Intelligence и Lecture Notes в Bioinformatics) / V.V. Krzhizhanovskaya и др. ред. . – Cham : Springer International Publishing, 2020. – Т. 12138. – Сс. 29–43.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_6"></a>6.	Shchetinin, E.Y. <a href="https://doi.org/10.1007/978-3-030-66242-4_33">Melanoma Detection Computer System Development with Deep Neural Networks</a> / E.Y. Shchetinin, L.A. Sevastianov, D.S. Kulyabov и др. // Distributed Computer and Communication Networks: Control, Computation, Communications : Communications в Computer и Information Science / V.M. Vishnevskiy и др. ред. . – Cham : Springer, 2020. – Т. 1337. – Сс. 422–434.</div>
   <div class="csl-entry"><a id="citeproc_bib_item_7"></a>7.	Fedorov, A.V. <a href="https://doi.org/10.1088/1742-6596/1694/1/012026">Application of a numerical-analytical approach in the process of modeling differential equations in the Julia language</a> / A.V. Fedorov, A.O. Masolova, A.V. Korolkova, D.S. Kulyabov // Information Technology, Telecommunications and Control Systems (ITTCS), 2020 : Journal of Physics: Conference Series. – Innopolis : IOP Publishing, 2020. – Т. 1694. – Сс. 012026.1–8.</div>

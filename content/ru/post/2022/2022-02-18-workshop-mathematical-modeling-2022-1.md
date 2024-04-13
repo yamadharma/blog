@@ -2,8 +2,8 @@
 title: "Семинар Математическое моделирование, 2021-2022"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-18T15:23:00+03:00
-lastmod: 2023-09-21T14:56:00+03:00
-tags: ["research"]
+lastmod: 2024-04-04T19:56:00+03:00
+tags: ["modeling", "research"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2022-1"

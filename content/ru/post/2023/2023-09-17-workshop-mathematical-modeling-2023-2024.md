@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-03-23T16:14:00+03:00
+lastmod: 2024-03-27T13:16:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -466,7 +466,7 @@ We propose a fundamentally new class of difference methods with exponential rath
 The proposed approach is based on the representation of the desired function, its derivatives and primitive by the Cauchy integrals along a closed contour on the complex plane. The grid quadrature of trapezoids is written for these integrals. Due to the periodicity of the integrand, such a quadrature converges exponentially. The same is true for difference schemes based on it. The described approach is implemented for the most important classes of mathematical physics problems. Among them are boundary value problems and eigenvalue problems for ODEs, Cauchy problems for ODE systems, boundary value problems for elliptic equations, initial boundary value problems for parabolic and hyperbolic equations.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-26 Вт] </span></span> Орлов Ю. Н. - Линейное квантование динамических систем и принцип соответствия {#орлов-ю-dot-н-dot-линейное-квантование-динамических-систем-и-принцип-соответствия}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-03-26 Вт] </span></span> Орлов Ю. Н. - Линейное квантование динамических систем и принцип соответствия {#орлов-ю-dot-н-dot-линейное-квантование-динамических-систем-и-принцип-соответствия}
 
 
 #### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
@@ -492,3 +492,19 @@ The proposed approach is based on the representation of the desired function, it
 -   Keldysh Institute of Applied Mathematics
 
 The equation of the evolution of the Wigner function for arbitrary non-degenerate Hamiltonian systems will be obtained and its dependence on the quantization rule will be shown. The correspondence between classical and quantum statistics will be discussed: is it possible to construct the other from one of them using some transformation in a suitable space. An algorithm for approximate calculation of dynamics and statistics using finite-fold approximations according to Chernov's theorem on the convergence of a certain iterative process to a semigroup will also be considered.
+
+
+#### <span class="section-num">2.4.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube f427b5e9205e620a5ed374e6eb3bbfe7 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube LsM56c3LIIE >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

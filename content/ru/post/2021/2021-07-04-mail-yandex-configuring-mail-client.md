@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T12:16:00+03:00
-lastmod: 2024-03-20T18:15:00+03:00
+lastmod: 2024-04-13T17:10:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -27,6 +27,8 @@ slug: "mail-yandex-configuring-mail-client"
     -   `Spam`;
     -   `Drafts`;
     -   `Sent`.
+-   Нежелательные письма (_папка Spam_) удаляются через 10 дней.
+-   Удалённые письма (_папка Trash_ ) удаляются через 31 день.
 
 
 ## <span class="section-num">2</span> Включение доступа к почтовому ящику {#включение-доступа-к-почтовому-ящику}
