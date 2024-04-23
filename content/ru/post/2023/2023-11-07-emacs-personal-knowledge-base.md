@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2023-11-28T16:30:00+03:00
+lastmod: 2024-04-15T16:14:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -145,11 +145,12 @@ slug: "emacs-personal-knowledge-base"
 
 ### <span class="section-num">4.1</span> deft {#deft}
 
+-   [Emacs. Пакет Deft]({{< relref "2024-04-15-emacs-deft" >}})
 -   Репозиторий: <https://github.com/jrblevin/deft>
 -   Документация: <https://jblevins.org/projects/deft/>
 -   Режим для быстрого просмотра, фильтрации и редактирования каталогов заметок.
--   Проблемы с русским языком.
 -   Медленно работает при среднем количестве заметок (несколько тысяч).
+-   Можно использовать с другими режимами.
 
 
 ### <span class="section-num">4.2</span> notdeft {#notdeft}

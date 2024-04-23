@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Настройка почтового клиента"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-04T12:16:00+03:00
-lastmod: 2024-04-13T17:10:00+03:00
+lastmod: 2024-04-23T15:57:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -47,7 +47,8 @@ slug: "mail-yandex-configuring-mail-client"
 
 -   login --- почтовый адрес `name@domain.ru` на Яндексе (где `name` --- это имя почтового ящика, а `domain.ru` --- имя домена);
 -   при имени ящика вида `name@yandex.ru`, логином является часть адреса до знака `@`;
--   password --- пароль от почтового ящика домена на Яндексе;
+-   password :
+    -   пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
 -   адрес почтового сервера --- `smtp.yandex.ru`;
 -   защита соединения --- SSL/TLS;
 -   порт --- 465.
@@ -57,7 +58,9 @@ slug: "mail-yandex-configuring-mail-client"
 
 -   login --- почтовый адрес `name@domain.ru` на Яндексе (где `name` --- это имя почтового ящика, а `domain.ru` --- имя домена);
 -   при имени ящика вида `name@yandex.ru`, логином является часть адреса до знака `@`;
--   password --- пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}}));
+-   password :
+    -   пароль от Яндекс ID (единый аккаунт на Яндексе) (OAuth2) или;
+    -   пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
 -   адрес почтового сервера --- `imap.yandex.ru`;
 -   защита соединения --- SSL/TLS;
 -   порт --- 993.
@@ -67,7 +70,9 @@ slug: "mail-yandex-configuring-mail-client"
 
 -   login --- почтовый адрес `name@domain.ru` на Яндексе (где `name` --- это имя почтового ящика, а `domain.ru` --- имя домена);
 -   при имени ящика вида `name@yandex.ru`, логином является часть адреса до знака `@`;
--   password --- пароль от вашего почтового ящика домена на Яндексе;
+-   password :
+    -   пароль от Яндекс ID (единый аккаунт на Яндексе) (OAuth2) или;
+    -   пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
 -   адрес почтового сервера --- `pop.yandex.ru`;
 -   защита соединения --- SSL;
 -   порт --- 995.
@@ -78,5 +83,18 @@ slug: "mail-yandex-configuring-mail-client"
 -   Используйте для адресной книги формат CardDAV.
 -   login --- почтовый адрес `name@domain.ru` на Яндексе (где `name` --- это имя почтового ящика, а `domain.ru` --- имя домена);
 -   при имени ящика вида `name@yandex.ru`, логином является `name@yandex.ru`;
--   password --- пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}}));
+-   password :
+    -   пароль от Яндекс ID (единый аккаунт на Яндексе) (OAuth2) или;
+    -   пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
 -   адрес сервера: `carddav.yandex.ru`.
+
+
+## <span class="section-num">5</span> Синхронизация календаря {#синхронизация-календаря}
+
+-   Используйте для адресной книги формат CalDAV.
+-   login --- почтовый адрес `name@domain.ru` на Яндексе (где `name` --- это имя почтового ящика, а `domain.ru` --- имя домена);
+-   при имени ящика вида `name@yandex.ru`, логином является `name@yandex.ru`;
+-   password :
+    -   пароль от Яндекс ID (единый аккаунт на Яндексе) (OAuth2) или;
+    -   пароль для почтового приложения (см. [Почта. Yandex. Пароли приложений]({{< relref "2021-11-01-mail-yandex-application-passwords" >}})).
+-   адрес сервера: `caldav.yandex.ru` (<https://caldav.yandex.ru>).

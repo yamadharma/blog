@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-04-12T10:43:00+03:00
+lastmod: 2024-04-23T16:18:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -290,7 +290,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[3/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[4/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
@@ -420,11 +420,11 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[0/3]</code> {#сессия-модуль-3}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[2/2]</code> {#сессия-модуль-3}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo NEXT">NEXT</span>  Экзамены, модуль 3 <code>[1/1]</code>
+1. <span class="org-todo done DONE">DONE</span>  Экзамены, модуль 3 <code>[1/1]</code>
 
     <!--list-separator-->
 
@@ -444,13 +444,13 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, модуль 3 <code>[0/2]</code>
+2. <span class="org-todo done DONE">DONE</span>  Переаттестации, модуль 3 <code>[2/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 1
+    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 1
 
-        -   До <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-04-15 Пн&gt; </span></span> включительно необходимо выложить материалы на ТУИС.
+        -   До <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-04-13 Сб&gt; </span></span> включительно необходимо выложить материалы на ТУИС.
         -   Материалы для переаттестации выкладываются на ТУИС.
         -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
             -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
@@ -463,7 +463,18 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 2
+    2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 2
+
+        -   До <span class="timestamp-wrapper"><span class="timestamp">[2024-04-20 Сб] </span></span> включительно необходимо выложить материалы на ТУИС.
+        -   Материалы для переаттестации выкладываются на ТУИС.
+        -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
+            -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
+            -   скринкасты презентаций защит выполненных лабораторных работ.
+        -   На переаттестацию представляется ссылка на репозиторий на <https://github.com>, содержащий:
+            -   отчёты о выполнении работ во всех необходимых форматах;
+            -   презентации защит выполненных лабораторных работ;
+            -   код и промежуточные вычисления, если это необходимо.
+        -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.5</span> Сессия, модуль 4 <code>[0/0]</code> {#сессия-модуль-4}

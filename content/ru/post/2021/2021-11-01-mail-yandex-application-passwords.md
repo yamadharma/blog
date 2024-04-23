@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Пароли приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T21:09:00+03:00
-lastmod: 2024-04-13T16:11:00+03:00
+lastmod: 2024-04-22T11:32:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -53,16 +53,17 @@ slug: "mail-yandex-application-passwords"
 -   После этого каждый нужный вам пароль нужно создать заново.
 
 
-## <span class="section-num">5</span> Мои имена паролей {#мои-имена-паролей}
+## <span class="section-num">5</span> Имена файлов паролей паролей для pass {#имена-файлов-паролей-паролей-для-pass}
 
 -   Пароли храню в хранилище _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}})).
--   Шаблон имени записи пароля:
+-   Шаблон имени файла пароля:
     ```shell
-    account@yandex.ru@apppassword@тип_учётной_записи
+    account@yandex.ru@server
     ```
--   `тип_учётной_записи`:
-    -   `mail`: почта;
-    -   `webdav`: WebDAV;
-    -   `carddav`: CardDAV;
-    -   `caldav`: CalDAV;
-    -   `jabber`: Jabber-клиент.
+-   Список серверов
+    -   IMAP: `imap.yandex.ru`;
+    -   POP3: `pop.yandex.ru`;
+    -   SMTP: `smtp.yandex.ru`;
+    -   WebDAV: `webdav.yandex.ru`;
+    -   CardDAV: `carddav.yandex.ru`;
+    -   CalDAV: `caldav.yandex.ru`.

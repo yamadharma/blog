@@ -2,7 +2,7 @@
 title: "Pdf. Просмотр. Zathura"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-20T13:12:00+03:00
-lastmod: 2023-10-08T17:23:00+03:00
+lastmod: 2024-04-19T15:42:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,9 @@ Zathura --- программа просмотра pdf-файлов.
 | DjVu               | zathura-djvu        | djvulibre                 |
 | PostScript         | zathura-ps          | libspectre                |
 | Comic Book Archive | zathura-cb          | libarchive                |
+
+-   Не поддерживается работа с pdf-формами.
+-   Не поддерживается работа с аннотированием pdf.
 
 
 ## <span class="section-num">2</span> Комбинации клавиш {#комбинации-клавиш}
