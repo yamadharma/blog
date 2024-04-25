@@ -2,7 +2,7 @@
 title: "Формат PDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-30T18:47:00+03:00
-lastmod: 2023-12-02T18:21:00+03:00
+lastmod: 2024-04-24T12:44:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "pdf-format"
@@ -54,6 +54,7 @@ slug: "pdf-format"
 
 -   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
 -   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
+-   [Pdf. Просмотр. Sioyek]({{< relref "2024-04-24-pdf-viewer-sioyek" >}})
 
 
 ## <span class="section-num">5</span> Использование в LaTeX {#использование-в-latex}

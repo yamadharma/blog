@@ -2,7 +2,7 @@
 title: "Gentoo. Дополнительные репозитории"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-01T13:41:00+03:00
-lastmod: 2023-10-01T14:23:00+03:00
+lastmod: 2024-04-24T12:51:00+03:00
 tags: ["linux", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -126,7 +126,7 @@ Gentoo. Дополнительные репозитории.
 
     -   Синтаксис:
         ```shell
-        add <название> <метод-синхронизации> <адрес-синхронизации>
+        eselect repository add <название> <метод-синхронизации> <адрес-синхронизации>
         ```
 
 
