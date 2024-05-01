@@ -2,7 +2,7 @@
 title: "Подготовка программы Кибербезопасность и Интернет вещей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-24T17:12:00+03:00
-lastmod: 2023-05-08T16:15:00+03:00
+lastmod: 2024-04-30T10:31:00+03:00
 tags: ["security", "education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -871,3 +871,11 @@ slug: "mathematical-disciplines-specialty-cybersecurity"
 -   Формат: интерактивные вебинары + практические задания
 -   Домашние задания: с проверкой
 -   Документ об окончании: сертификат
+
+
+## <span class="section-num">7</span> Активности {#активности}
+
+
+### <span class="section-num">7.1</span> Дипломные работы {#дипломные-работы}
+
+-   [Безопасность. Темы дипломных работ]({{< relref "2024-04-30-security-topics-theses" >}})

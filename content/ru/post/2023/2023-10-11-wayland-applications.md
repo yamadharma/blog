@@ -2,7 +2,7 @@
 title: "Wayland. Аналоги приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T14:23:00+03:00
-lastmod: 2024-01-20T20:36:00+03:00
+lastmod: 2024-05-01T18:48:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false
@@ -19,17 +19,25 @@ slug: "wayland-applications"
 ## <span class="section-num">1</span> Аналоги приложений {#аналоги-приложений}
 
 
-### <span class="section-num">1.1</span> Снимки экрана {#снимки-экрана}
+### <span class="section-num">1.1</span> Просмотр изображений {#просмотр-изображений}
+
+-   [Wayland. Просмотрщик изображений Swayimg]({{< relref "2024-05-01-wayland-swayimg-image-viewer" >}})
+    -   Легковесный просмотрщик изображений.
+    -   Управляется с клавиатуры.
+    -   По умолчанию раскладка клавиатуры vi-подобная.
+
+
+### <span class="section-num">1.2</span> Снимки экрана {#снимки-экрана}
 
 -   [Sway. Скриншоты]({{< relref "2023-11-05-sway-screenshots" >}})
 
 
-### <span class="section-num">1.2</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
+### <span class="section-num">1.3</span> Видеозапись экрана (скринкаст) {#видеозапись-экрана--скринкаст}
 
 Ранее использовался [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
 
-#### <span class="section-num">1.2.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
+#### <span class="section-num">1.3.1</span> Видеозапись экрана -- командная строка {#видеозапись-экрана-командная-строка}
 
 Для записи из командной строки используем [wf-recorder](https://github.com/ammen99/wf-recorder):
 
@@ -75,12 +83,12 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/
 ```
 
 
-#### <span class="section-num">1.2.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
+#### <span class="section-num">1.3.2</span> Видеозапись экрана -- графическое приложение {#видеозапись-экрана-графическое-приложение}
 
 Для захвата десктопа в Wayland используется плагин [wlrobs](https://hg.sr.ht/~scoopta/wlrobs).
 
 
-### <span class="section-num">1.3</span> Строка состояний {#строка-состояний}
+### <span class="section-num">1.4</span> Строка состояний {#строка-состояний}
 
 Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
 
@@ -127,7 +135,7 @@ for_window [app_id="waybar" floating] {
 Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
 
 
-### <span class="section-num">1.4</span> Уведомления {#уведомления}
+### <span class="section-num">1.5</span> Уведомления {#уведомления}
 
 Используется [mako](https://github.com/emersion/mako).
 
@@ -147,7 +155,7 @@ exec_always mako --font 'Source Code Pro 10' --background-color '#fdf6e3' --text
 ```
 
 
-### <span class="section-num">1.5</span> Настройка вывода {#настройка-вывода}
+### <span class="section-num">1.6</span> Настройка вывода {#настройка-вывода}
 
 В XWindow используется программа `xrandr` (с её помощью можно изменять параметры вывода изображения RandR). В `sway` можно управлять с помощью `swaymsg output` или с помощью утилиты [wlr-randr](https://github.com/emersion/wlr-randr).
 
@@ -156,7 +164,7 @@ emerge -v gui-apps/wlr-randr
 ```
 
 
-### <span class="section-num">1.6</span> Меню программ (launcher) {#меню-программ--launcher}
+### <span class="section-num">1.7</span> Меню программ (launcher) {#меню-программ--launcher}
 
 Для запуска программы используется `dmenu`. Если не нравится, можно заменить.
 
@@ -208,7 +216,7 @@ bindsym $mod+d exec $menu
 ```
 
 
-### <span class="section-num">1.7</span> Буфер обмена {#буфер-обмена}
+### <span class="section-num">1.8</span> Буфер обмена {#буфер-обмена}
 
 Предлагается использовать [wl-clipboard](https://github.com/bugaevc/wl-clipboard).
 
@@ -244,10 +252,10 @@ $ wl-paste --list-types | wl-copy
 ```
 
 
-### <span class="section-num">1.8</span> Блокировка экрана {#блокировка-экрана}
+### <span class="section-num">1.9</span> Блокировка экрана {#блокировка-экрана}
 
 
-#### <span class="section-num">1.8.1</span> swaylock {#swaylock}
+#### <span class="section-num">1.9.1</span> swaylock {#swaylock}
 
 <!--list-separator-->
 
@@ -320,17 +328,17 @@ $ wl-paste --list-types | wl-copy
         ```
 
 
-#### <span class="section-num">1.8.2</span> swaylock-effects {#swaylock-effects}
+#### <span class="section-num">1.9.2</span> swaylock-effects {#swaylock-effects}
 
 -   _swaylock-effects_ является форком _swaylock_:
     -   Репозиторий: <https://github.com/mortie/swaylock-effects>
     -   Добавляет встроенные скриншоты и эффекты манипулирования изображениями, такие как размытие.
 
 
-### <span class="section-num">1.9</span> Демонстрация нажатия клавиш {#демонстрация-нажатия-клавиш}
+### <span class="section-num">1.10</span> Демонстрация нажатия клавиш {#демонстрация-нажатия-клавиш}
 
 
-#### <span class="section-num">1.9.1</span> Show Me The Key {#show-me-the-key}
+#### <span class="section-num">1.10.1</span> Show Me The Key {#show-me-the-key}
 
 -   Страница: <https://showmethekey.alynx.one/>
 -   Репозиторий: <https://github.com/AlynxZhou/showmethekey>

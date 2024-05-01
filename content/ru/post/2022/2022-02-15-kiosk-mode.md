@@ -2,7 +2,7 @@
 title: "Режим киоска"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-15T11:14:00+03:00
-lastmod: 2023-09-09T18:57:00+03:00
+lastmod: 2024-04-28T17:29:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -32,3 +32,10 @@ slug: "kiosk-mode"
 -   Удалённое обновление программного обеспечения и/или контента.
 -   Удалённое управление киоском.
 -   Отключение экрана по расписанию.
+
+
+## <span class="section-num">2</span> Инструментарий для создания дистрибутива {#инструментарий-для-создания-дистрибутива}
+
+-   Chromium kiosk: <https://github.com/Salamek/chromium-kiosk>
+    -   qiosk: <https://github.com/Salamek/qiosk>
+-   Kiosk installer for Debian based Linux distros: <https://github.com/josfaber/debian-kiosk-installer>

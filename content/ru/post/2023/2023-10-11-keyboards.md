@@ -2,7 +2,7 @@
 title: "Клавиатуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T16:49:00+03:00
-lastmod: 2024-03-27T21:33:00+03:00
+lastmod: 2024-05-01T21:23:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -40,3 +40,9 @@ slug: "keyboards"
 
 -   Клававики: <https://klava.wiki/>
     -   Вики про эргономичные клавиатуры и раскладки, технологии их создания и улучшения.
+
+
+## <span class="section-num">5</span> Тренажёры {#тренажёры}
+
+-   <https://monkeytype.com/>
+    -   Один из самых популярных тренажёров.
