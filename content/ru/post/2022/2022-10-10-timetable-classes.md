@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-04-30T09:55:00+03:00
+lastmod: 2024-05-21T08:41:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[4/6]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[5/6]</code> {#2023-2024-учебный-год-расписание-занятий}
 
 
 #### <span class="section-num">1.2.1</span> Информация {#информация}
@@ -190,14 +190,14 @@ slug: "timetable-classes"
             -   НПИбд-01-21, НПИбд-02-21
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.7</span> 2023--2024 учебный год, 2 семестр <code>[0/6]</code> {#2023-2024-учебный-год-2-семестр}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.7</span> 2023--2024 учебный год, 2 семестр <code>[1/6]</code> {#2023-2024-учебный-год-2-семестр}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
+1. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
 
     <!--list-separator-->
 
@@ -290,10 +290,10 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[4/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[5/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1 <code>[3/3]</code> {#сессия-модуль-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2023--2024 <code>[3/3]</code> {#сессия-модуль-1-2023-2024}
 
 <!--list-separator-->
 
@@ -350,7 +350,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Сессия, модуль 2 <code>[3/3]</code> {#сессия-модуль-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2023--2024 <code>[3/3]</code> {#сессия-модуль-2-2023-2024}
 
 <!--list-separator-->
 
@@ -365,7 +365,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> Сессия, семестр 1 <code>[3/3]</code> {#сессия-семестр-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2023--2024 <code>[3/3]</code> {#сессия-семестр-1-2023-2024}
 
 <!--list-separator-->
 
@@ -420,7 +420,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.4</span> Сессия, модуль 3 <code>[2/2]</code> {#сессия-модуль-3}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.4</span> Сессия, модуль 3, 2023--2024 <code>[2/2]</code> {#сессия-модуль-3-2023-2024}
 
 <!--list-separator-->
 
@@ -477,65 +477,77 @@ slug: "timetable-classes"
         -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.5</span> Сессия, модуль 4 <code>[0/0]</code> {#сессия-модуль-4}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.5</span> Сессия, модуль 4, 2023--2024 <code>[1/1]</code> {#сессия-модуль-4-2023-2024}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты
+1. <span class="org-todo done DONE">DONE</span>  Зачёты
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2 <code>[0/2]</code> {#сессия-семестр-2}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2023--2024 <code>[0/3]</code> {#сессия-семестр-2-2023-2024}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Экзамены
+1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2023--2024
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Операционные системы
+    1. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2023--2024, Операционные системы
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Компьютерные науки и технология программирования
+        1. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2023--2024, Компьютерные науки и технология программирования
 
-            -   НММбд-01-22, ауд. 295
-            -   НММбд-02-22, ауд. 297
-            -   НММбд-03-22, ауд. 298
-
-        <!--list-separator-->
-
-        2. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы
-
-            -   НКАбд-01-22, ауд. 295
-            -   НКАбд-02-22, ауд. 297
-            -   НКАбд-03-22, ауд. 298
+            -   01.03.00 Математика и механика
+            -   НММбд-01-23, ауд. 299
+            -   НММбд-02-23, ауд. 298
+            -   НММбд-03-23, ауд. 297
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы
+        2. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2023--2024, Архитектура компьютеров и операционные системы
 
-            -   НФИбд-04-22, ауд. 295
-            -   НФИбд-05-22, ауд. 297
-            -   НПИбд-01-22, ауд. 298
-
-        <!--list-separator-->
-
-        4. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы
-
-            -   НПИбд-02-22, ауд. 295
-            -   НБИбд-01-22, ауд. 297
-            -   НБИбд-02-22, ауд. 298
+            -   02.03.00 Компьютерные и информационные науки
+            -   НКАбд-01-23, ауд. 299
+            -   НКАбд-02-23, ауд. 298
+            -   НКАбд-03-23, ауд. 297
+            -   НКАбд-04-23, ауд. 299
+            -   НКАбд-05-23, ауд. 298
+            -   НКАбд-06-23, ауд. 297
 
         <!--list-separator-->
 
-        5. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы
+        3. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2023--2024, Архитектура компьютеров и операционные системы
 
-            -   НБИбд-03-22, ауд. 295
-            -   НБИбд-04-22, ауд. 297
+            -   09.03.03 Прикладная информатика
+            -   НПИбд-01-23, ауд. 299
+            -   НПИбд-02-23, ауд. 297
+            -   НПИбд-03-23, ауд. 298
+
+        <!--list-separator-->
+
+        4. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2023--2024, Архитектура компьютеров и операционные системы
+
+            -   38.03.05 Бизнес-информатика
+            -   НБИбд-01-23, ауд. 299
+            -   НБИбд-02-23, ауд. 298
+            -   НБИбд-03-23, ауд. 297
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Переаттестации
+2. <span class="org-todo todo NEXT">NEXT</span>  Дифзачёты, семестр 2, 2023--2024
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo NEXT">NEXT</span>  Дифзачёт, 2023--2024, Основы информационной безопасности
+
+        -   02.03.00 Компьютерные и информационные науки
+        -   09.03.03 Прикладная информатика
+        -   38.03.05 Бизнес-информатика
+
+<!--list-separator-->
+
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации
 
     <!--list-separator-->
 

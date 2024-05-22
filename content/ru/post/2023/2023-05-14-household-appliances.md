@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2024-01-26T13:33:00+03:00
+lastmod: 2024-05-18T16:10:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -115,3 +115,11 @@ slug: "household-appliances"
     -   Сайт: <https://www.kawai-global.com/product/pianoremote/>
     -   Документация: <https://www2.kawai.co.jp/emi-web/pianoremote-docs/en/>
     -   Google play: <https://play.google.com/store/apps/details?id=jp.co.kawai.denshi.PianoRemote>
+
+
+## <span class="section-num">5</span> Компьютерная техника {#компьютерная-техника}
+
+
+### <span class="section-num">5.1</span> Монитор {#монитор}
+
+-   [Монитор]({{< relref "2024-05-18-monitor" >}})

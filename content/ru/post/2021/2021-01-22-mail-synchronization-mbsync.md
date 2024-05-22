@@ -1,8 +1,7 @@
 ---
 title: "Почта. Синхронизация. mbsync"
-author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2024-04-13T18:34:00+03:00
+lastmod: 2024-05-15T21:03:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -98,7 +97,6 @@ slug: "mail-synchronization-mbsync"
     # Increase timeout
     Timeout 120
     ```
-
 -   Вместо `pass` можно использовать `gopass`. При последовательном запуске нескольких `pass` утилита может не находить ключ _pgp_.
 -   Папки IMAP можно получить либо через web-интерфейс, либо в командной строке (см. [Запросы по протоколу imap из командной строки]({{< relref "2024-04-13-imap-queries-command-line" >}}))
 
@@ -111,8 +109,8 @@ slug: "mail-synchronization-mbsync"
 -   Синхронизацию папки `Отправленные` можно отключить. Google сохраняет всю электронную почту в папке `Все сообщения`. В результате можно получить локальные дубликаты.
 -   Рекомендуется на сайте Gmail настроить в пункте `Настройки > Пересылка и POP/IMAP > Доступ по протоколу IMAP` (`Settings` &gt; `Forwarding and POP/IMAP` &gt; `IMAP Access`):
     -   отметить `Автоматическое стирание выключено (ожидать, пока клиент не обновит данные на сервере) (==Turn Auto Expunge Off`);
-    -   отметить `Отправить письмо в корзину` (`Send email to trash`).
-    -   ~~отметить `Архивировать сообщение (по умолчанию)` (`Archive message (default)`)~~.
+    -   отметить `Архивировать сообщение (по умолчанию)` (`Archive message (default)`).
+    -   ~~отметить `Отправить письмо в корзину` (`Send email to trash`)~~.
 -   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
     ```conf-unix
     # IMAPAccount (gmail)
@@ -188,7 +186,7 @@ slug: "mail-synchronization-mbsync"
     SyncState *
 
     Channel account@gmail.com-sent
-    # Far :account@gmail.com-remote:"[Gmail]/Sent"
+    # Far :account@gmail.com-remote:"[Gmail]/Sent Mail"
     Far :account@gmail.com-remote:"[Gmail]/&BB4EQgQ,BEAEMAQyBDsENQQ9BD0ESwQ1-"
     Near :account@gmail.com-local:"Sent"
     CopyArrivalDate yes

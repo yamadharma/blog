@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-04-28T20:30:00+03:00
+lastmod: 2024-05-05T13:59:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -255,15 +255,26 @@ $ openssl pkcs12 -export -in cert.pem -out cert.pfx
 Libreoffice также может подписывать PDF-файлы. [8]
 
 
-## <span class="section-num">13</span> Удаление аннотаций из PDF-файла {#удаление-аннотаций-из-pdf-файла}
+## <span class="section-num">13</span> Аннотации {#аннотации}
 
-С pdftk [9] :
 
-$ pdftk in.pdf вывод — распаковка | sed '/^\\/Annots/d' | pdftk — сжатие вывода в формате .pdf
-С perl-cam-pdf AUR :
+### <span class="section-num">13.1</span> Удаление аннотаций из PDF-файла {#удаление-аннотаций-из-pdf-файла}
 
-$ rewritepdf.pl -C in.pdf out.pdf
-См. <https://superuser.com/a/1051543> для получения дополнительной информации.
+
+#### <span class="section-num">13.1.1</span> pdftk {#pdftk}
+
+-   Удалить все аннотации:
+    ```shell
+    pdftk in.pdf output - uncompress | sed '/^\/Annots/d' | pdftk - output out.pdf compress
+    ```
+
+
+#### <span class="section-num">13.1.2</span> perl-cam-pdf {#perl-cam-pdf}
+
+-   Удалить все аннотации:
+    ```shell
+    rewritepdf.pl -C in.pdf out.pdf
+    ```
 
 
 ## <span class="section-num">14</span> Добавьте номера страниц {#добавьте-номера-страниц}
@@ -324,18 +335,29 @@ pdftk book.pdf update_info_utf8 Metadata.txt выходная книга-с-ме
 Подробнее см . в этом вопросе SuperUser .
 
 
-## <span class="section-num">16</span> Извлечь закладки {#извлечь-закладки}
-
-С pdftk:
-
-$ pdftk file.pdf dump_data_utf8 | grep '^Закладка'
-С qpdf:
-
-$ qpdf --json --json-key=файл контуров.pdf
-См. <https://unix.stackexchange.com/questions/143886/how-to-extract-bookmarks-from-a-pdf-file> для получения дополнительной информации.
+## <span class="section-num">16</span> Закладки {#закладки}
 
 
-## <span class="section-num">17</span> Добавить закладки {#добавить-закладки}
+### <span class="section-num">16.1</span> Извлечь закладки {#извлечь-закладки}
+
+
+#### <span class="section-num">16.1.1</span> pdftk {#pdftk}
+
+-   Найти все закладки:
+    ```shell
+    pdftk file.pdf dump_data_utf8 | grep '^Bookmark'
+    ```
+
+
+#### <span class="section-num">16.1.2</span> qpdf {#qpdf}
+
+-   Найти все закладки:
+    ```shell
+    qpdf --json --json-key=outlines file.pdf
+    ```
+
+
+### <span class="section-num">16.2</span> Добавить закладки {#добавить-закладки}
 
 С pdftk
 Создайте текстовый файл bookmark_definitions.txtс определениями закладок в следующем формате:
@@ -419,44 +441,70 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 
 Для сценария необходимы pdftk , nawk и Ghostscript .
 
-Найдите шрифты, используемые в PDF-файле
-Команду pdffonts (1) (из poppler ) можно использовать, чтобы узнать, какие шрифты используются в PDF-файле и встроены ли они в него или нет:
 
-$ файл pdffonts .pdf
-имя типа кодировка emb sub uni идентификатор объекта
------------------------------------- -------------- --- ---------------- --- --- --- ---------
-Times-Roman Type 1 Пользовательский нет нет нет 8 0
-Times-Italic Type 1 Стандартный нет нет нет 9 0
-Times-Bold Type 1 Стандартный нет нет нет 7 0
-Helvetica Тип 1 Стандартный нет нет нет 34 0
-Helvetica-Bold Type 1 Стандартный нет нет нет 35 0
-Это можно использовать при возникновении проблем с правильным отображением текста в PDF-файле, чтобы определить, нужно ли устанавливать отсутствующие шрифты или их метрически-совместимый эквивалент .
+## <span class="section-num">17</span> Шрифты {#шрифты}
 
 
-## <span class="section-num">18</span> Восстановить поврежденный PDF-файл {#восстановить-поврежденный-pdf-файл}
-
-С помощью скрипта-призрака :
-
-$ gs -o отремонтированный.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/препресс поврежден.pdf
-С попплером :
-
-$ pdftocairo -pdf поврежден.pdf  восстановлен.pdf
-С помощью инструментов mupdf :
-
-$ mutool очистить поврежденный.pdf  восстановленный.pdf
-Ссылка: <https://superuser.com/q/278562>
+### <span class="section-num">17.1</span> Шрифты, используемые в PDF-файле {#шрифты-используемые-в-pdf-файле}
 
 
-## <span class="section-num">19</span> Конвертируйте PDF в стандарт PDF/A {#конвертируйте-pdf-в-стандарт-pdf-a}
+#### <span class="section-num">17.1.1</span> poppler {#poppler}
 
-С помощью скрипта-призрака :
+-   Используем команду `pdffonts` чтобы узнать, какие шрифты используются в PDF-файле и встроены ли они в него или нет:
+    ```shell
+    pdffonts file.pdf
+    ```
 
-$ gs -dPDFA -dBATCH -dNOPAUSE -sColorConversionStrategy=UseDeviceIndependentColor -sDEVICE=pdfwrite -dPDFACompatibilityPolicy=2 -sOutputFile= document_pdfa.pdf  document.pdf
-Ссылка: <https://stackoverflow.com/a/56459053>
+
+## <span class="section-num">18</span> Восстановить повреждённый PDF-файл {#восстановить-повреждённый-pdf-файл}
 
 
-## <span class="section-num">20</span> Проверка соответствия PDF/A {#проверка-соответствия-pdf-a}
+### <span class="section-num">18.1</span> ghostscript {#ghostscript}
 
-Используя verapdf AUR, вы можете проверить соответствие вашего PDF различным вариантам стандарта PDF/A:
+-   Отремонтировать файл:
+    ```shell
+    gs -o repaired.pdf -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress corrupted.pdf
+    ```
 
-$ verapdf --flavour 1a --формат текстового документа.pdf
+
+### <span class="section-num">18.2</span> poppler {#poppler}
+
+-   Отремонтировать файл:
+    ```shell
+    pdftocairo -pdf corrupted.pdf repaired.pdf
+    ```
+
+
+### <span class="section-num">18.3</span> mupdf {#mupdf}
+
+-   Отремонтировать файл:
+    ```shell
+    mutool clean corrupted.pdf repaired.pdf
+    ```
+
+
+## <span class="section-num">19</span> Стандарт PDF/A {#стандарт-pdf-a}
+
+-   [Стандарт PDF/A]({{< relref "2021-07-30-pdf-a-standard" >}})
+
+
+### <span class="section-num">19.1</span> Преобразование PDF в стандарт PDF/A {#преобразование-pdf-в-стандарт-pdf-a}
+
+
+#### <span class="section-num">19.1.1</span> ghostscript {#ghostscript}
+
+-   Конвертация:
+    ```shell
+    gs -dPDFA -dBATCH -dNOPAUSE -sColorConversionStrategy=UseDeviceIndependentColor -sDEVICE=pdfwrite -dPDFACompatibilityPolicy=2 -sOutputFile=document_pdfa.pdf document.pdf
+    ```
+
+
+### <span class="section-num">19.2</span> Проверка соответствия PDF/A {#проверка-соответствия-pdf-a}
+
+
+#### <span class="section-num">19.2.1</span> verapdf {#verapdf}
+
+-   Проверить соответствие PDF различным вариантам стандарта PDF/A:
+    ```shell
+    verapdf --flavour 1a --format text document.pdf
+    ```

@@ -2,7 +2,7 @@
 title: "Использование vagrant. Установка Rocky Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-20T19:00:00+03:00
-lastmod: 2023-12-12T14:02:00+03:00
+lastmod: 2024-05-19T18:26:00+03:00
 tags: ["sysadmin", "redhat"]
 categories: ["computer-science"]
 draft: false

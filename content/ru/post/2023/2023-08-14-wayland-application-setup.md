@@ -2,7 +2,7 @@
 title: "Wayland. Настройка приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-14T13:59:00+03:00
-lastmod: 2023-08-14T20:57:00+03:00
+lastmod: 2024-05-18T21:20:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false

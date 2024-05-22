@@ -2,7 +2,7 @@
 title: "Файловая система afs"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-28T10:04:00+03:00
-lastmod: 2023-09-09T18:36:00+03:00
+lastmod: 2024-05-19T18:25:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

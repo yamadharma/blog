@@ -1,8 +1,7 @@
 ---
 title: "Почта. Google. Настройка почтового клиента"
-author: ["Dmitry S. Kulyabov"]
 date: 2021-07-06T14:27:00+03:00
-lastmod: 2023-09-11T16:37:00+03:00
+lastmod: 2024-05-15T21:05:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -71,10 +70,21 @@ slug: "mail-google-configuring-mail-client"
 -   порт --- 995.
 
 
-## <span class="section-num">3</span> Поисковые запросы в Web-интерфейсе Gmail {#поисковые-запросы-в-web-интерфейсе-gmail}
+## <span class="section-num">3</span> Имена почтовых ящиков {#имена-почтовых-ящиков}
+
+-   Можно  получить информацию по именам почтовых ящиков с помощью консольного запроса (см. [Запросы по протоколу imap из командной строки]({{< relref "2024-04-13-imap-queries-command-line" >}})).
+-   В предположении, что используется парольный менеджер _pass_ (см. [Менеджер паролей pass]({{< relref "2021-04-28-password-manager-pass" >}}), [Почта. Google. Настройка почтового клиента]({{< relref "2021-07-06-mail-google-configuring-mail-client" >}})):
+    ```shell
+    curl --insecure --url "imaps://imap.gmail.com/" --user "username:$(gopass -o mail/google.com/username@gmail.com@imap.gmail.com)"
+    ```
+-   Имена ящиков будут на том языке, который установлен для интерфейса Gmail.
+-   Имена на других языках можно перевести (см. [Почта. Кодировка папок IMAP]({{< relref "2021-07-04-mail-imap-folder-encoding" >}})).
 
 
-### <span class="section-num">3.1</span> Размер почтового сообщения {#размер-почтового-сообщения}
+## <span class="section-num">4</span> Поисковые запросы в Web-интерфейсе Gmail {#поисковые-запросы-в-web-интерфейсе-gmail}
+
+
+### <span class="section-num">4.1</span> Размер почтового сообщения {#размер-почтового-сообщения}
 
 -   Размер сообщения:
     ```shell

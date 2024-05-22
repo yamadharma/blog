@@ -2,7 +2,7 @@
 title: "XDG. Приложения MIME"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-02T13:39:00+03:00
-lastmod: 2024-05-01T19:06:00+03:00
+lastmod: 2024-05-18T21:21:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

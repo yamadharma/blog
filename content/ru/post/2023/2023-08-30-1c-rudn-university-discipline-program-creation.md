@@ -2,7 +2,7 @@
 title: "1С в РУДН. Создание программы дисциплины (РПД)"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-30T13:14:00+03:00
-lastmod: 2023-09-09T18:36:00+03:00
+lastmod: 2024-05-16T14:10:00+03:00
 tags: ["education", "rudn"]
 categories: ["job"]
 draft: false

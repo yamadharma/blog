@@ -2,7 +2,7 @@
 title: "Emacs. Клавиатура"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-19T19:18:00+03:00
-lastmod: 2023-11-11T10:41:00+03:00
+lastmod: 2024-05-17T19:40:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

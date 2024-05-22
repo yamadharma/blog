@@ -2,7 +2,7 @@
 title: "Преподавание в РУДН"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-30T14:09:00+03:00
-lastmod: 2023-08-30T14:13:00+03:00
+lastmod: 2024-05-19T18:25:00+03:00
 tags: ["rudn", "education"]
 categories: ["job"]
 draft: false

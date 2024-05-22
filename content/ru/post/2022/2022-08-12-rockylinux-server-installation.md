@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-01-31T13:56:00+03:00
+lastmod: 2024-05-20T13:53:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -199,6 +199,14 @@ slug: "rockylinux-server-installation"
 -   Утилита для ssh:
     ```shell
     dnf -y install mosh
+    ```
+-   Удобство работы с bash:
+    ```shell
+    dnf -y install bash-completion bash-color-prompt
+    ```
+-   Разные утилиты:
+    ```shell
+    dnf -y install wget tar zstd p7zip
     ```
 
 
@@ -439,5 +447,5 @@ slug: "rockylinux-server-installation"
 
 -   Установим группу средств разработки:
     ```shell
-    dnf group install "Development Tools"
+    dnf -y group install "Development Tools"
     ```

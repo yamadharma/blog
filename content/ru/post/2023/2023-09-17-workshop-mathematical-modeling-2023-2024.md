@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-04-17T13:39:00+03:00
+lastmod: 2024-05-08T23:15:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "workshop-mathematical-modeling-2023-2024"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> 2023 {#2023}
+## <span class="section-num">1</span> Семинар Математическое моделирование, 2023 {#семинар-математическое-моделирование-2023}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-09-28 Чт&gt; </span></span> М. М. Гамбарян, М. Д. Малых _Обратимые разностные схемы для классических нелинейных осцилляторов_ {#м-dot-м-dot-гамбарян-м-dot-д-dot-малых-обратимые-разностные-схемы-для-классических-нелинейных-осцилляторов}
@@ -334,7 +334,7 @@ The talk aims to provide a comprehensive discussion of the details associated wi
 {{< /tabs >}}
 
 
-## <span class="section-num">2</span> 2024 {#2024}
+## <span class="section-num">2</span> Семинар Математическое моделирование, 2024 {#семинар-математическое-моделирование-2024}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-31 Ср] </span></span> Ловецкий К. П. _Методы решения ОДУ, основанные на чебышевской интерполяции_ {#ловецкий-к-dot-п-dot-методы-решения-оду-основанные-на-чебышевской-интерполяции}
@@ -470,7 +470,7 @@ The equation of the evolution of the Wigner function for arbitrary non-degenerat
 {{< /tabs >}}
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-05-08 Ср&gt; </span></span> Белов А. А. - Разностные схемы с экспоненциальной сходимостью {#белов-а-dot-а-dot-разностные-схемы-с-экспоненциальной-сходимостью}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-05-08 Ср&gt; </span></span> Белов А. А. - Разностные схемы с экспоненциальной сходимостью {#белов-а-dot-а-dot-разностные-схемы-с-экспоненциальной-сходимостью}
 
 
 #### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
@@ -508,3 +508,19 @@ Polynomial interpolation is used in constructing of classical difference schemes
 We propose a fundamentally new class of difference methods with exponential rather than power-law convergence. When the grid step is halved, the number of correct decimal digits in the solution approximately doubles. Such convergence is dramatically faster than the traditional power-law one. The typical accuracy gain ranges from 2-3 orders of magnitude for poorly conditioned tasks to 10 orders of magnitude for well-conditioned ones.
 
 The proposed approach is based on the representation of the desired function, its derivatives and primitive by the Cauchy integrals along a closed contour on the complex plane. The grid quadrature of trapezoids is written for these integrals. Due to the periodicity of the integrand, such a quadrature converges exponentially. The same is true for difference schemes based on it. The described approach is implemented for the most important classes of mathematical physics problems. Among them are boundary value problems and eigenvalue problems for ODEs, Cauchy problems for ODE systems, boundary value problems for elliptic equations, initial boundary value problems for parabolic and hyperbolic equations.
+
+
+#### <span class="section-num">2.4.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 5c653f50e67a9086dcca973687c0f8ad >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube dXFp0ZMGJdc >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

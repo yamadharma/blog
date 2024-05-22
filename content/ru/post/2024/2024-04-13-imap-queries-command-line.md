@@ -1,9 +1,8 @@
 ---
 title: "Запросы по протоколу imap из командной строки"
-author: ["Dmitry S. Kulyabov"]
 date: 2024-04-13T17:27:00+03:00
-lastmod: 2024-04-13T18:29:00+03:00
-tags: ["network"]
+lastmod: 2024-05-15T17:21:00+03:00
+tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
 slug: "imap-queries-command-line"
@@ -46,10 +45,10 @@ slug: "imap-queries-command-line"
     curl --url "imap://mail.example.com/" --user "user:password"
     ```
 -   При запросе через SSL можно дополнительно указать опцию `insecure`:
--   Если не указать пароль в аргументе `--user`, `curl` запросит пароль перед выполнением запроса.
     ```shell
     curl --insecure --url "imaps://mail.example.com/" --user "user:password"
     ```
+-   Если не указать пароль в аргументе `--user`, `curl` запросит пароль перед выполнением запроса.
 -   Получим список почтовых ящиков:
     ```shell
     ​* LIST (\HasNoChildren \Unmarked) "|" Archive

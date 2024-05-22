@@ -2,7 +2,7 @@
 title: "Linux. Дистрибутив Gentoo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-17T13:18:00+03:00
-lastmod: 2023-10-01T13:44:00+03:00
+lastmod: 2024-05-16T15:21:00+03:00
 tags: ["linux", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -23,3 +23,4 @@ slug: "linux-gentoo-distribution"
 
 -   [Стандартные каталоги Gentoo]({{< relref "2022-09-17-gentoo-standard-directories" >}})
 -   [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})
+-   [Gentoo. Компиляция системы clang]({{< relref "2024-05-16-gentoo-compiling-clang" >}})
