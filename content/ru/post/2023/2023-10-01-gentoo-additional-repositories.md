@@ -2,7 +2,7 @@
 title: "Gentoo. Дополнительные репозитории"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-01T13:41:00+03:00
-lastmod: 2024-04-24T12:51:00+03:00
+lastmod: 2024-05-26T13:54:00+03:00
 tags: ["linux", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -20,6 +20,9 @@ Gentoo. Дополнительные репозитории.
 
 -   Ранее использовалась утилита `layman`.
 -   Сейчас рекомендуется использовать модуль _eselect_ `eselect-repository`.
+-   Документация:
+    -   <https://wiki.gentoo.org/wiki/Eselect/Repository/ru>
+    -   <https://wiki.gentoo.org/wiki/Handbook:AMD64/Portage/CustomTree/ru>
 
 
 ## <span class="section-num">2</span> Установка {#установка}
@@ -166,3 +169,26 @@ Gentoo. Дополнительные репозитории.
         ```shell
         create <название> [<путь>]
         ```
+
+
+## <span class="section-num">5</span> Настройки репозиториев {#настройки-репозиториев}
+
+
+### <span class="section-num">5.1</span> Приоритет репозиториев {#приоритет-репозиториев}
+
+-   По умолчанию пакеты в оверлейных репозиториях имеют преимущество перед пакетами в репозитории `gentoo`.
+-   Кроме того, можно управлять приоритетами дополнительных репозиториев.
+-   Добавьте параметр приоритета в файл описания репозиториев `/etc/portage/repos.conf/eselect-repo.conf`:
+    ```toml
+    [local]
+    location = /var/db/repos/local
+    priority = 100
+    ```
+
+
+## <span class="section-num">6</span> Списки полезных репозиториев {#списки-полезных-репозиториев}
+
+
+### <span class="section-num">6.1</span> Karma {#karma}
+
+-   [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})

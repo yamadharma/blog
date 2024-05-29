@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-05-20T13:53:00+03:00
+lastmod: 2024-05-22T12:43:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -194,7 +194,7 @@ slug: "rockylinux-server-installation"
     ```
 -   Программы мониторинга:
     ```shell
-    dnf -y install htop
+    dnf -y install htop lsof
     ```
 -   Утилита для ssh:
     ```shell

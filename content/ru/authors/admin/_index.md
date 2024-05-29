@@ -4,55 +4,54 @@ title: Дмитрий Сергеевич Кулябов
 
 # Username (this should match the folder name)
 authors:
-- admin
+  - admin
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Профессор кафедры прикладной информатики и теории вероятностей
+role: Профессор кафедры теории вероятностей и кибербезопасности
 
 # Organizations/Affiliations
 organizations:
-- name: Российский университет дружбы народов
-  url: "http://www.rudn.ru/"
+  - name: Российский университет дружбы народов
+    url: "http://www.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
 #bio: My research interests include distributed robotics, mobile computing and programmable matter.
 bio: Мои научные интересы включают физику, администрирование Unix и сетей.
 
 Interests:
-- Теория относительности
-- Геометризация физики
-- Электродинамика и оптика
-- История физики
-- Философия физики
-- LaTeX
-
-
+  - Теория относительности
+  - Геометризация физики
+  - Электродинамика и оптика
+  - История физики
+  - Философия физики
+  - LaTeX
+  
 education:
   courses:
-  - course: Профессор по специальности
-    institution: Российский университет дружбы народов, г. Москва
-    year: 2022
-  - course: Доктор физико-математических наук
-    institution: Российский университет дружбы народов, г. Москва
-    year: 2017
-  - course: Доцент по кафедре
-    institution: Российский университет дружбы народов, г. Москва
-    year: 2005	
-  - course: Кандидат физико-математических наук
-    institution: Российский университет дружбы народов, г. Москва
-    year: 2000
-  - course: Магистр физики
-    institution: Российский университет дружбы народов, г. Москва
-    year: 1995
-  - course: Бакалавр физики
-    institution: Российский университет дружбы народов, г. Москва
-    year: 1993
-  - course: Среднее образование
-    institution: ФМШ № 31, г. Челябинск
-    year: 1987
+    - course: Профессор по специальности
+      institution: Российский университет дружбы народов, г. Москва
+      year: 2022
+    - course: Доктор физико-математических наук
+      institution: Российский университет дружбы народов, г. Москва
+      year: 2017
+    - course: Доцент по кафедре
+      institution: Российский университет дружбы народов, г. Москва
+      year: 2005	
+    - course: Кандидат физико-математических наук
+      institution: Российский университет дружбы народов, г. Москва
+      year: 2000
+    - course: Магистр физики
+      institution: Российский университет дружбы народов, г. Москва
+      year: 1995
+    - course: Бакалавр физики
+      institution: Российский университет дружбы народов, г. Москва
+      year: 1993
+    - course: Среднее образование
+      institution: ФМШ № 31, г. Челябинск
+      year: 1987
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -62,9 +61,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/dskulyabov
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/dskulyabov
 - icon: youtube
   icon_pack: fab
   link: https://www.youtube.com/c/DmitryKulyabov
@@ -104,9 +103,9 @@ social:
 - icon: osf
   icon_pack: ai
   link: https://osf.io/5ya7v/
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/dmitry-kulyabov
+# - icon: linkedin
+#   icon_pack: fab
+#   link: https://www.linkedin.com/in/dmitry-kulyabov
 
 - icon: arxiv
   icon_pack: ai
@@ -141,8 +140,5 @@ highlight_name: true
 #- Visitors
 ---
 
-Кулябов Дмитрий Сергеевич работает профессором на кафедре прикладной
-информатики и теории вероятностей Российского университета дружбы
-народов. Его научные интересы относятся к области теоретической физики
-и математического моделирования.
+Кулябов Дмитрий Сергеевич работает профессором на кафедре прикладной информатики и теории вероятностей Российского университета дружбы народов. Его научные интересы относятся к области теоретической физики и математического моделирования.
 

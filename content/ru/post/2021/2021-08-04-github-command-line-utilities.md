@@ -2,7 +2,7 @@
 title: "github: утилиты командной строки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-04T14:40:00+03:00
-lastmod: 2024-03-30T21:44:00+03:00
+lastmod: 2024-05-27T16:23:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false

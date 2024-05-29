@@ -4,13 +4,13 @@ title: Dmitry S. Kulyabov
 
 # Username (this should match the folder name)
 authors:
-- admin
+  - admin
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of the Department of Applied Informatics and Probability Theory
+role: Professor of the Department of Probability Theory and Cybersecurity
 
 # Organizations/Affiliations
 organizations:
@@ -21,12 +21,12 @@ organizations:
 bio: My research interests include physics, Unix administration, and networking.
 
 Interests:
-- Relativity
-- Geometrization 
-- Electrodynamics and optics
-- History of Physics
-- Philosophy of Physics
-- LaTeX
+  - Relativity
+  - Geometrization 
+  - Electrodynamics and optics
+  - History of Physics
+  - Philosophy of Physics
+  - LaTeX
 
 education:
   courses:
@@ -57,9 +57,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/dskulyabov
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/dskulyabov
 - icon: youtube
   icon_pack: fab
   link: https://www.youtube.com/c/DmitryKulyabov
@@ -96,9 +96,9 @@ social:
 - icon: osf
   icon_pack: ai
   link: https://osf.io/5ya7v/
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/in/dmitry-kulyabov
+# - icon: linkedin
+#   icon_pack: fab
+#   link: https://www.linkedin.com/in/dmitry-kulyabov
 
 - icon: arxiv
   icon_pack: ai

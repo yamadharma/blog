@@ -2,7 +2,7 @@
 title: "DHCP. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-07T11:39:00+03:00
-lastmod: 2024-05-22T10:22:00+03:00
+lastmod: 2024-05-26T14:55:00+03:00
 tags: ["network", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -486,3 +486,44 @@ slug: "dhcp-server-installation"
     ```shell
     systemctl enable --now kea-dhcp-ddns.service
     ```
+
+
+## <span class="section-num">8</span> Утилиты {#утилиты}
+
+
+### <span class="section-num">8.1</span> Просмотр арендованных адресов {#просмотр-арендованных-адресов}
+
+-   Арендованные адреса можно смотреть в базе данных.
+-   Для разных баз данных существуют конкретные утилиты.
+
+
+#### <span class="section-num">8.1.1</span> Postgres {#postgres}
+
+<!--list-separator-->
+
+1.  kea-list-leases
+
+    -   Репозиторий: <https://git.sr.ht/~cstrotm/kea-list-leases>
+    -   В репозитории скрипт и конфигурационный файл.
+
+    <!--list-separator-->
+
+    1.  Пререквизиты
+
+        -   Нужно установить драйвер PostgreSQL для python : psycopg (<https://www.psycopg.org/>):
+            ```shell
+            dnf -y install python3-psycopg2
+            ```
+
+    <!--list-separator-->
+
+    2.  Настройка
+
+        -   Задайте конфигурационный файл `kea-list-leases.conf` (в том же каталоге, что и скрипт):
+            ```toml
+            [postgresql]
+            host=127.0.0.1
+            database=kea_lease_db
+            user=kea
+            password=password
+            ```
