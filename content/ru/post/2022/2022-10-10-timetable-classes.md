@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-05-28T11:02:00+03:00
+lastmod: 2024-06-01T12:22:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[5/6]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2</span> 2023--2024 учебный год, расписание занятий <code>[6/6]</code> {#2023-2024-учебный-год-расписание-занятий}
 
 
 #### <span class="section-num">1.2.1</span> Информация {#информация}
@@ -193,7 +193,7 @@ slug: "timetable-classes"
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.7</span> 2023--2024 учебный год, 2 семестр <code>[6/6]</code> {#2023-2024-учебный-год-2-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.7</span> 2023--2024 учебный год, 2 семестр <code>[6/6]</code> {#2023-2024-учебный-год-2-семестр}
 
 <!--list-separator-->
 

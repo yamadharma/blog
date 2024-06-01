@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2024-03-23T21:02:00+03:00
+lastmod: 2024-05-30T16:18:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -38,3 +38,9 @@ slug: "linux-administration"
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 -   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
+
+
+## <span class="section-num">3</span> Установка {#установка}
+
+-   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
+-   [Установка Linux в WSL]({{< relref "2024-05-30-linux-wsl-install" >}})

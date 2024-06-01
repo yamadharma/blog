@@ -2,7 +2,7 @@
 title: "Администрирование Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-01T16:28:00+03:00
-lastmod: 2023-10-23T15:54:00+03:00
+lastmod: 2024-05-29T19:49:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -21,6 +21,7 @@ slug: "windows-administration"
 -   [Windows. Ключи KMS]({{< relref "2023-06-08-windows-kms-keys" >}})
 -   [Windows. Автоустановка. Простой файл ответов]({{< relref "2023-06-08-windows-unattended-simple-autounattend" >}})
 -   [Установка Windows с жёсткого диска]({{< relref "2023-10-23-install-windows-hard-drive" >}})
+-   [Windows. Установка в kvm]({{< relref "2024-05-29-windows-install-kvm" >}})
 
 
 ## <span class="section-num">2</span> Управление программным обеспечением {#управление-программным-обеспечением}
