@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2024-04-28T18:09:00+03:00
+lastmod: 2024-06-02T20:23:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -84,13 +84,14 @@ slug: "tags-organizing"
     -   `relatyvity`: [Теория относительности]({{< relref "2024-01-07-relativity" >}})
 
 -   `@science`: [Научная деятельность]({{< relref "2021-02-01-scientific-activity" >}})
-    -   `education`: [Преподавание]({{< relref "2021-02-01-teaching" >}})
+    -   `education`: [Образование]({{< relref "2024-06-02-education" >}})
     -   `modeling`: [Математическое моделирование]({{< relref "2021-02-21-mathematical-modeling" >}})
     -   `research`: [Научно-исследовательская деятельность]({{< relref "2021-02-01-research" >}})
     -   `science_admin`: [Научно-административная деятельность]({{< relref "2021-02-01-scientific-administrative" >}})
     -   `science_being`: [Бытие науки]({{< relref "2021-02-04-being-science" >}})
-    -   `science_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
     -   `science_people`: [Люди науки]({{< relref "2024-01-12-science-people" >}})
+    -   `science_writing`: [Научная писанина]({{< relref "2022-08-25-scientific-writing" >}})
+    -   `teaching`: [Преподавание]({{< relref "2021-02-01-teaching" >}})
 
 -   `@self_management`: Информация по самоорганизации, управлением временем, организации дел.
     -   `blog`: [Ведение блога]({{< relref "2023-03-17-blogging" >}})

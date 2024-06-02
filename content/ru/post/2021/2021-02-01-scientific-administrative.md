@@ -2,7 +2,7 @@
 title: "Научно-административная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:13:00+03:00
-lastmod: 2024-01-24T19:15:00+03:00
+lastmod: 2024-06-02T20:29:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false
@@ -32,15 +32,10 @@ slug: "scientific-administrative"
 -   [Разовый диссертационный совет. РУДН]({{< relref "2024-01-24-one-time-dissertation-committee-rudn-university" >}})
 
 
-## <span class="section-num">3</span> Аспирантура {#аспирантура}
-
--   [Поступление в аспирантуру студентов]({{< relref "2021-02-07-admission-postgraduate-students" >}})
+## <span class="section-num">3</span> Редакторская деятельность {#редакторская-деятельность}
 
 
-## <span class="section-num">4</span> Редакторская деятельность {#редакторская-деятельность}
-
-
-### <span class="section-num">4.1</span> Discrete and Continuous Models and Applied Computational Science {#discrete-and-continuous-models-and-applied-computational-science}
+### <span class="section-num">3.1</span> Discrete and Continuous Models and Applied Computational Science {#discrete-and-continuous-models-and-applied-computational-science}
 
 -   [Журнал Discrete and Continuous Models]({{< relref "2021-02-26-editing-discrete-continuous-models" >}})
 -   Заместитель главного редактора
@@ -48,14 +43,14 @@ slug: "scientific-administrative"
 -   <https://journals.rudn.ru/miph>
 
 
-### <span class="section-num">4.2</span> Mathematical Modelling and Geometry {#mathematical-modelling-and-geometry}
+### <span class="section-num">3.2</span> Mathematical Modelling and Geometry {#mathematical-modelling-and-geometry}
 
 -   Член редакционной коллегии
 -   <https://elibrary.ru/title_about_new.asp?id=55385>
 -   <https://mmg.tversu.ru/>
 
 
-### <span class="section-num">4.3</span> CEUR Workshop Proceedings {#ceur-workshop-proceedings}
+### <span class="section-num">3.3</span> CEUR Workshop Proceedings {#ceur-workshop-proceedings}
 
 -   [Репозиторий конференций CEUR-WS]({{< relref "2021-09-18-ceur-ws-conference-repository" >}})
 -   CEUR Workshop Proceedings (CEUR-WS.org). Free Open-Access Proceedings for Computer Science Workshops
@@ -64,7 +59,7 @@ slug: "scientific-administrative"
     -   <http://ceur-ws.org/CEURWS-TEAM.html>
 
 
-### <span class="section-num">4.4</span> Журнал Mathematics {#журнал-mathematics}
+### <span class="section-num">3.4</span> Журнал Mathematics {#журнал-mathematics}
 
 -   [Журнал Mathematics]({{< relref "2021-07-15-journal-mathematics" >}})
 -   Приглашённый редактор
@@ -72,12 +67,12 @@ slug: "scientific-administrative"
     -   [Редактирование. Журнал Mathematics. 2022]({{< relref "2022-08-09-editing-journal-mathematics-2022" >}})
 
 
-## <span class="section-num">5</span> Научная школа {#научная-школа}
+## <span class="section-num">4</span> Научная школа {#научная-школа}
 
 -   [Научная школа Математическое моделирование]({{< relref "2021-02-20-scientific-school-mathematical-modeling" >}})
 
 
-## <span class="section-num">6</span> Конференции {#конференции}
+## <span class="section-num">5</span> Конференции {#конференции}
 
 Это конференции, в организации которых я принимал какое-либо участие.
 
