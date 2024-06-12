@@ -2,12 +2,17 @@
 title: "Скачать фотографии с google photo"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-01T16:42:00+03:00
-lastmod: 2024-06-01T18:01:00+03:00
+lastmod: 2024-06-12T17:58:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
 slug: "google-photo-download"
 ---
+
+-
+-
+-
+-
 
 Скачать фотографии с google photo.
 
@@ -68,6 +73,14 @@ slug: "google-photo-download"
     jhead -n%Y%m%d-%H%M%S *.jpg
     jhead -n%Y%m%d-%H%M%S *.jpeg
     jhead -n%Y%m%d-%H%M%S *.jpe
+    exiftool "-filename<createdate" -globaltimeshift "-0:0:1 0:0:0" -d %Y%m%d-%H%M%S.%%e .
+    ```
+-   Также можно переименовать файлы на основе времени создания:
+    ```shell
+    for i in *.png; do mv -n "$i" "$(date -r "$i" +"%Y%m%d-%H%M%S").png"; done
+    for i in *.gif; do mv -n "$i" "$(date -r "$i" +"%Y%m%d-%H%M%S").gif"; done
+    for i in *.mp4; do mv -n "$i" "$(date -r "$i" +"%Y%m%d-%H%M%S").mp4"; done
+    for i in *.avi; do mv -n "$i" "$(date -r "$i" +"%Y%m%d-%H%M%S").avi"; done
     ```
 
 
@@ -90,5 +103,13 @@ slug: "google-photo-download"
         ```
     -   Скопируем (или перенесём) файлы на телефон:
         ```shell
-        mv ~/work-local/google-photo/phone/* ~/n/mtp/google-photo/
+        rsync -aiv ~/work-local/google-photo/phone/* ~/n/mtp/google-photo/
+        ```
+    -   Можно удалять файлы по мере копирования:
+        ```shell
+        rsync -aiv --remove-source-files ~/work-local/google-photo/phone/* ~/n/mtp/google-photo/
+        ```
+    -   Вы можете потом поправить время создания файлов:
+        ```shell
+        jhead -ft *.jpg
         ```

@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2024-05-30T16:18:00+03:00
+lastmod: 2024-06-04T10:43:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -32,6 +32,9 @@ slug: "linux-administration"
 ### <span class="section-num">1.3</span> Дистрибутивы общего назначения {#дистрибутивы-общего-назначения}
 
 -   [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
+
+
+### <span class="section-num">1.4</span> Виртуальные машины {#виртуальные-машины}
 
 
 ## <span class="section-num">2</span> Файловые системы {#файловые-системы}

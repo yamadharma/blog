@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-05-05T13:59:00+03:00
+lastmod: 2024-06-07T21:05:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -177,7 +177,23 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
     -   `-sOutputFile=output.pdf` : указывает имя выходного файла.
 
 
-### <span class="section-num">9.2</span> exiftool {#exiftool}
+## <span class="section-num">10</span> Уменьшить размер pdf-файла (оптимизация) {#уменьшить-размер-pdf-файла--оптимизация}
+
+
+### <span class="section-num">10.1</span> qpdf {#qpdf}
+
+-   Команда qpdf:
+    ```shell
+    qpdf --compress-streams=y --object-streams=generate --recompress-flate --optimize-images document.pdf qpdf_compressed.pdf
+    ```
+
+    -   `--compress-streams=y` : указывает `qpdf` сжимать потоки контента в файле PDF. Потоки контента содержат фактические данные, такие как текст и изображения, в документе PDF;
+    -   `--object-streams=generate` : определяет обработку объектных потоков в файле PDF. Опция генерации указывает qpdf генерировать новые потоки объектов во время процесса оптимизации;
+    -   `document.pdf` : входной файл для оптимизации;
+    -   `qpdf_compressed.pdf` : выходной или оптимизированный файл.
+
+
+### <span class="section-num">10.2</span> exiftool {#exiftool}
 
 -   Файлы PDF могут содержать метаданные, такие как имена авторов, даты создания и другую информацию, которая может влиять на размер файла.
 -   Можно удалить эти метаданные, чтобы уменьшить размер PDF-файла:
@@ -186,22 +202,6 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
     ```
 
     -   `-all:all=` : указывает имя тега, который нужно изменить.
-
-
-## <span class="section-num">10</span> Уменьшить размер pdf-файла (оптимизация) {#уменьшить-размер-pdf-файла--оптимизация}
-
-
-### <span class="section-num">10.1</span> qpdf {#qpdf}
-
--   Команда qpdf:
-    ```shell
-    qpdf --compress-streams=y --object-streams=generate document.pdf qpdf_compressed.pdf
-    ```
-
-    -   `--compress-streams=y` : указывает `qpdf` сжимать потоки контента в файле PDF. Потоки контента содержат фактические данные, такие как текст и изображения, в документе PDF;
-    -   `--object-streams=generate` : определяет обработку объектных потоков в файле PDF. Опция генерации указывает qpdf генерировать новые потоки объектов во время процесса оптимизации;
-    -   `document.pdf` : входной файл для оптимизации;
-    -   `qpdf_compressed.pdf` : выходной или оптимизированный файл.
 
 
 ## <span class="section-num">11</span> Растеризовать PDF-файл {#растеризовать-pdf-файл}

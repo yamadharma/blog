@@ -2,7 +2,7 @@
 title: "Подготовка документов для чтения"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-05T10:09:00+03:00
-lastmod: 2023-12-20T11:35:00+03:00
+lastmod: 2024-06-07T21:09:00+03:00
 tags: ["read"]
 categories: ["self-management"]
 draft: false
@@ -68,6 +68,7 @@ slug: "preparing-documents-reading"
 
 -   Репозиторий: <https://github.com/ocrmypdf/OCRmyPDF>
 -   Сайт: <https://ocrmypdf.readthedocs.io/>
+-   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
 
 
 ### <span class="section-num">2.2</span> pdfsandwich {#pdfsandwich}

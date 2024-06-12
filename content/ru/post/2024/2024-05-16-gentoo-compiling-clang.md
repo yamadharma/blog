@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-05-26T16:49:00+03:00
+lastmod: 2024-06-07T20:49:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -128,7 +128,8 @@ slug: "gentoo-compiling-clang"
     #sys-boot/syslinux               compiler-gcc    # 'stdarg.h' file not found
     #sys-libs/db                     compiler-gcc    # build fails with USE="cxx"
     #sys-process/tini                compiler-gcc    # ld.lld error
-    #sys-apps/systemd			compiler-gcc
+    sys-apps/systemd			compiler-gcc
+    dev-libs/libgudev			compiler-gcc
     #net-dialup/ppp				compiler-gcc
     #media-libs/audiofile			compiler-gcc
     #app-crypt/chntpw			compiler-gcc
@@ -137,8 +138,6 @@ slug: "gentoo-compiling-clang"
     sci-libs/djbfft				compiler-gcc
     sci-visualization/gnuplot		compiler-gcc
     =dev-db/sqlite-3.45*			compiler-gcc
-    #dev-lang/R				compiler-gcc
-    #dev-lang/R				compiler-clang-lto
     app-editors/emacs			compiler-gcc	# gcc-jit
     sys-libs/talloc				compiler-gcc
     sys-libs/tevent				compiler-gcc
@@ -147,16 +146,16 @@ slug: "gentoo-compiling-clang"
     sci-mathematics/gretl			compiler-gcc
     #sci-mathematics/octave			compiler-gcc
     dev-java/openjdk:8			compiler-gcc
+    dev-java/openjdk:17			compiler-clang-mold
+    dev-java/openjdk:21			compiler-clang-mold
+    dev-java/commons-daemon			compiler-gcc
     =dev-perl/PDL-2.63*			compiler-gcc
-    dev-python/scipy			compiler-clang-no-lto
+    dev-python/scipy			compiler-clang-mold
     dev-python/pygame			compiler-gcc
     dev-games/openscenegraph		compiler-gcc
     #dev-util/intel-graphics-compiler	compiler-gcc
     #dev-libs/intel-compute-runtime		compiler-gcc
-    dev-util/intel-graphics-compiler	compiler-clang-no-lto
-    dev-libs/intel-compute-runtime		compiler-clang-no-lto
     dev-libs/libdnet			compiler-gcc
-    #=kde-frameworks/breeze-icons-6.2*	compiler-gcc
     sys-devel/llvm:15			compiler-gcc
     sys-devel/clang:15			compiler-gcc
     sys-devel/lld:15			compiler-gcc
@@ -175,10 +174,49 @@ slug: "gentoo-compiling-clang"
     x11-libs/motif				compiler-clang-lto
     sys-boot/gnu-efi			compiler-clang-binutils
     sys-apps/memtest86+			compiler-gcc
-    sys-apps/fwupd-efi			compiler-clang-binutils
+    #sys-apps/fwupd-efi			compiler-clang-binutils
+    sys-apps/fwupd-efi			compiler-gcc
     sys-apps/flashrom			compiler-gcc
-    kde-apps/cantor				compiler-clang-no-lto
-
+    media-libs/mesa				compiler-clang-lto
+    app-text/zathura-pdf-mupdf		compiler-clang-mold
+    sys-libs/ldb				compiler-clang-mold
+    sys-libs/tdb				compiler-clang-mold
+    dev-db/cdb				compiler-gcc
+    sys-auth/sssd				compiler-clang-mold
+    =sci-libs/coinor-osi-0.108.6		compiler-gcc		# bug: #919825
+    media-gfx/blender:4.0			compiler-gcc
+    dev-debug/systemtap			compiler-gcc
+    x11-misc/virtualgl			compiler-clang-mold
+    dev-libs/libphonenumber			compiler-clang-mold
+    dev-libs/ffcall				compiler-gcc
+    dev-util/yacc				compiler-gcc
+    dev-libs/libbpf				compiler-clang-mold
+    dev-perl/OpenGL				compiler-clang-mold
+    dev-libs/xmlrpc-c			compiler-gcc
+    dev-libs/liboil				compiler-gcc
+    dev-libs/liblouis			compiler-gcc
+    dev-java/snappy				compiler-gcc
+    dev-libs/libcdio			compiler-gcc
+    net-fs/samba				compiler-clang-mold
+    dev-lang/gprolog			compiler-clang-mold
+    dev-libs/log4cpp			compiler-gcc
+    dev-db/libiodbc				compiler-clang-mold
+    dev-debug/ddd				compiler-gcc
+    dev-libs/totem-pl-parser		compiler-clang-mold
+    dev-lisp/ecl				compiler-gcc
+    dev-db/mariadb				compiler-gcc
+    dev-perl/PGPLOT				compiler-clang-mold
+    net-analyzer/rrdtool			compiler-clang-mold
+    dev-lang/harbour			compiler-gcc
+    media-libs/avidemux-core		compiler-gcc
+    media-video/avidemux			compiler-gcc
+    media-libs/avidemux-plugins		compiler-gcc
+    net-nds/openldap			compiler-clang-mold
+    net-libs/serf				compiler-clang-mold
+    sci-mathematics/pari			compiler-gcc		# needs fix makefiles
+    dev-python/cysignals			compiler-gcc
+    app-accessibility/brltty		compiler-clang-mold
+    media-video/ffmpeg			compiler-clang-mold
 
     ```
 -   Нужно задать конфигурации для разных компиляторов.
@@ -216,7 +254,7 @@ slug: "gentoo-compiling-clang"
 
     # No need to set this, clang-common can handle this based on chosen USE flags
     # LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
-    LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+    # LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
 
     ```
 

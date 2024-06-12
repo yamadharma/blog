@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-06-01T12:22:00+03:00
+lastmod: 2024-06-05T15:56:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -484,11 +484,23 @@ slug: "timetable-classes"
 1. <span class="org-todo done DONE">DONE</span>  Зачёты
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2023--2024 <code>[0/3]</code> {#сессия-семестр-2-2023-2024}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2023--2024 <code>[1/3]</code> {#сессия-семестр-2-2023-2024}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2023--2024
+1. <span class="org-todo done DONE">DONE</span>  Дифзачёты, семестр 2, 2023--2024
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  Дифзачёт, 2023--2024, Основы информационной безопасности
+
+        -   02.03.00 Компьютерные и информационные науки
+        -   09.03.03 Прикладная информатика
+        -   38.03.05 Бизнес-информатика
+
+<!--list-separator-->
+
+2. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2023--2024
 
     <!--list-separator-->
 
@@ -532,18 +544,6 @@ slug: "timetable-classes"
             -   НБИбд-01-23, ауд. 299
             -   НБИбд-02-23, ауд. 298
             -   НБИбд-03-23, ауд. 297
-
-<!--list-separator-->
-
-2. <span class="org-todo todo NEXT">NEXT</span>  Дифзачёты, семестр 2, 2023--2024
-
-    <!--list-separator-->
-
-    1. <span class="org-todo todo NEXT">NEXT</span>  Дифзачёт, 2023--2024, Основы информационной безопасности
-
-        -   02.03.00 Компьютерные и информационные науки
-        -   09.03.03 Прикладная информатика
-        -   38.03.05 Бизнес-информатика
 
 <!--list-separator-->
 
