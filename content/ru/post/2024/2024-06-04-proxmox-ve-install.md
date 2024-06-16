@@ -2,7 +2,9 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2024-06-12T19:31:00+03:00
+lastmod: 2024-06-16T20:07:00+03:00
+tags: ["sysadmin", "linux"]
+categories: ["computer-science"]
 draft: false
 slug: "proxmox-ve-install"
 ---

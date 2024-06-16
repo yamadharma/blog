@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2023-12-08T19:06:00+03:00
+lastmod: 2024-06-12T20:05:00+03:00
 tags: ["wayland", "gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -227,3 +227,8 @@ emaint sync --repo guru
 
 -   Qt по умолчанию использует бэкэнд X11 вместо собственного бэкэнда Wayland. Чтобы использовать бэкэнд Wayland, установите `QT_QPA_PLATFORM=wayland`.
 -   Qt прорисовает оформление окон на стороне клиента. Чтобы отключить это, установите `QT_WAYLAND_DISABLE_WINDOWDECORATION="1"`.
+
+
+## <span class="section-num">8</span> Конфигурация {#конфигурация}
+
+-   [Sway. Конфигурация]({{< relref "2024-06-12-sway-configuration" >}})

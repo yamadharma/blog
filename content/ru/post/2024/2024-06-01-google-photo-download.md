@@ -2,17 +2,12 @@
 title: "Скачать фотографии с google photo"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-01T16:42:00+03:00
-lastmod: 2024-06-12T17:58:00+03:00
+lastmod: 2024-06-14T12:01:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
 slug: "google-photo-download"
 ---
-
--
--
--
--
 
 Скачать фотографии с google photo.
 
@@ -54,6 +49,10 @@ slug: "google-photo-download"
     ```shell
     cd ~/work-local/google-photo/sync
     rclone sync google-photo:media/by-month .
+    ```
+-   Если будет ошибка о превышении квоты на скорость чтения, поставьте ограничение (10 запросов в секунду):
+    ```shell
+    rclone sync --tpslimit 10 google-photo:media/by-month .
     ```
 
 

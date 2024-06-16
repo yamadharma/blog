@@ -2,7 +2,7 @@
 title: "fail2ban. Основные настройки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-30T11:01:00+03:00
-lastmod: 2023-11-08T15:01:00+03:00
+lastmod: 2024-06-14T17:50:00+03:00
 tags: ["sysadmin", "security"]
 categories: ["computer-science"]
 draft: false
@@ -33,7 +33,7 @@ fail2ban. Основные настройки.
 
 -   Создайте файл локальной конфигурации:
     ```shell
-    mkdir -p /etc/fail2ban/jail.d/50-default.conf
+    touch /etc/fail2ban/jail.d/50-default.conf
     ```
 -   В файле `/etc/fail2ban/jail.d/50-default.conf` задайте время блокирования хостов:
     ```conf-unix
@@ -60,6 +60,10 @@ fail2ban. Основные настройки.
 
 ### <span class="section-num">2.3</span> Защита ssh {#защита-ssh}
 
+-   Создадим файл для локальной конфигурации ssh:
+    ```shell
+    touch /etc/fail2ban/jail.d/80-ssh.conf
+    ```
 -   В файле `/etc/fail2ban/jail.d/80-ssh.conf` активируйте защиту ssh:
     ```conf-unix
     [sshd]
@@ -78,4 +82,27 @@ fail2ban. Основные настройки.
 
     port     = ssh
     logpath  = %(auditd_log)s
+    ```
+
+
+## <span class="section-num">3</span> Основные операции {#основные-операции}
+
+
+### <span class="section-num">3.1</span> Удалить все записи из списков блокировки {#удалить-все-записи-из-списков-блокировки}
+
+-   Для удаления всех записей из списков блокировки выполните скрипт:
+    ```shell
+    !/bin/bash
+
+    for JAIL in $(fail2ban-client status | grep 'Jail list:' | awk 'BEGIN {FS="\t"} {print $2}' | sed 's/, / /g')
+    do
+      for IP in $(fail2ban-client status ${JAIL} | grep 'Banned IP list:' | awk 'BEGIN {FS="\t"} {print $2}' | sed 's/ /\n/g')
+      do
+        fail2ban-client set ${JAIL} unbanip ${IP}
+      done
+    done
+
+    unset JAIL IP
+
+    exit 0
     ```

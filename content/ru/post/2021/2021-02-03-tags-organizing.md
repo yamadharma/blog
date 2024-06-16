@@ -2,7 +2,7 @@
 title: "Организация меток для записей"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:21:00+03:00
-lastmod: 2024-06-02T20:23:00+03:00
+lastmod: 2024-06-12T20:15:00+03:00
 tags: ["emacs", "hugo"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -41,6 +41,7 @@ slug: "tags-organizing"
     -   `sysadmin`: [Книги. Системное администрирование]({{< relref "2024-01-24-books-sysadmin" >}})
 -   `@computer_science`: Компьютерные науки
     -   `cisco`: [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
+    -   `configuration`: [Конфигурации]({{< relref "2024-06-12-configuration" >}})
     -   `emacs`: [Emacs]({{< relref "2020-12-24-emacs" >}})
     -   `font`: [Шрифты]({{< relref "2024-03-07-font" >}})
     -   `gentoo`[^fn:3]: [Linux. Дистрибутив Gentoo]({{< relref "2022-09-17-linux-gentoo-distribution" >}})
@@ -64,6 +65,7 @@ slug: "tags-organizing"
     -   `vim`: [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
     -   `wayland`: [Wayland]({{< relref "2023-08-14-wayland" >}})
     -   `windows`: [Администрирование Windows]({{< relref "2021-05-01-windows-administration" >}})
+
 -   `@games`: [Компьютерные игры]({{< relref "2022-06-07-computer-games" >}})
     -   `diablo`: [Игры. Diablo]({{< relref "2023-06-16-games-diablo" >}})
     -   `disciples`: [Disciples]({{< relref "2022-06-07-disciples-game" >}})
