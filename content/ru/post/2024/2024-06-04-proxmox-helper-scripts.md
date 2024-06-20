@@ -2,7 +2,7 @@
 title: "Proxmox. Вспомогательные скрипты"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T13:34:00+03:00
-lastmod: 2024-06-04T13:49:00+03:00
+lastmod: 2024-06-17T11:56:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -42,7 +42,7 @@ slug: "proxmox-helper-scripts"
 
 ### <span class="section-num">2.2</span> Proxmox VE Processor Microcode {#proxmox-ve-processor-microcode}
 
--   Обновления микрокода процессора.
+-   Добавление пакета для загрузки микрокода процессора:
     ```shell
     bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/microcode.sh)"
     ```

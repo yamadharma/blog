@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-06-04T13:55:00+03:00
+lastmod: 2024-06-18T07:58:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -190,7 +190,7 @@ slug: "rockylinux-server-installation"
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf -y install tmux mc
+    dnf -y install tmux perl-DateTime-HiRes mc kitty-terminfo
     ```
 -   Программы мониторинга:
     ```shell
@@ -206,7 +206,7 @@ slug: "rockylinux-server-installation"
     ```
 -   Разные утилиты:
     ```shell
-    dnf -y install wget tar zstd p7zip
+    dnf -y install wget git tar zstd p7zip
     ```
 
 

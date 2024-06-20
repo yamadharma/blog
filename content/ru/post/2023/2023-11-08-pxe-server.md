@@ -2,7 +2,7 @@
 title: "Загрузочный сервер PXE"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-08T14:42:00+03:00
-lastmod: 2023-11-29T11:19:00+03:00
+lastmod: 2024-06-18T16:54:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -124,6 +124,9 @@ slug: "pxe-server"
 
 ### <span class="section-num">2.3</span> Настройки DHCP-сервера {#настройки-dhcp-сервера}
 
+
+#### <span class="section-num">2.3.1</span> Настройки сервера ISC DHCP {#настройки-сервера-isc-dhcp}
+
 -   Настройки для сервера ISC DHCP.
 -   Файл конфигурации `/etc/dhcp/dhcpd.conf`.
 -   Настройка основных опций:
@@ -147,6 +150,21 @@ slug: "pxe-server"
 -   Необходимо также настроить `next_server`, который должен указывать на tftp-сервер:
     ```shell
     next-server     10.100.0.1;
+    ```
+
+
+#### <span class="section-num">2.3.2</span> Настройки сервера ISC Kea DHCP {#настройки-сервера-isc-kea-dhcp}
+
+-   Настройки для сервера ISC Kea DHCP.
+-   Файл конфигурации `/etc/kea/kea-dhcp4.conf`.
+-   Необходимо также настроить `next_server`, который должен указывать на tftp-сервер:
+    ```shell
+    {
+        "Dhcp4": {
+            "next-server": "10.100.0.1",
+            ...
+        }
+    }
     ```
 
 
@@ -188,26 +206,57 @@ slug: "pxe-server"
 
 #### <span class="section-num">3.1.3</span> Настройки DHCP-сервера {#настройки-dhcp-сервера}
 
--   Настройки для сервера ISC DHCP.
--   Файл конфигурации `/etc/dhcp/dhcpd.conf`.
--   Настройка файлов загрузки:
-    ```shell
-    option architecture-type code 93 = unsigned integer 16;
-    class "pxeclients" {
-        match if substring (option vendor-class-identifier, 0, 9) = "PXEClient";
-        if option architecture-type = 00:00 {
-                filename "/boot/pxelinux/bios/lpxelinux.0";
-            } elsif option architecture-type = 00:09 {
-                filename "/boot/pxelinux/efi64/syslinux.efi";
-            } elsif option architecture-type = 00:07 {
-                filename "/boot/pxelinux/efi64/syslinux.efi";
-            } elsif option architecture-type = 00:06 {
-                filename "/boot/pxelinux/efi32/syslinux.efi";
-            } else {
-                filename "/boot/pxelinux/bios/lpxelinux.0";
+<!--list-separator-->
+
+1.  Настройки сервера ISC DHCP
+
+    -   Настройки для сервера ISC DHCP.
+    -   Файл конфигурации `/etc/dhcp/dhcpd.conf`.
+    -   Настройка файлов загрузки:
+        ```shell
+        option architecture-type code 93 = unsigned integer 16;
+        class "pxeclients" {
+            match if substring (option vendor-class-identifier, 0, 9) = "PXEClient";
+            if option architecture-type = 00:00 {
+                    filename "/boot/pxelinux/bios/lpxelinux.0";
+                } elsif option architecture-type = 00:09 {
+                    filename "/boot/pxelinux/efi64/syslinux.efi";
+                } elsif option architecture-type = 00:07 {
+                    filename "/boot/pxelinux/efi64/syslinux.efi";
+                } elsif option architecture-type = 00:06 {
+                    filename "/boot/pxelinux/efi32/syslinux.efi";
+                } else {
+                    filename "/boot/pxelinux/bios/lpxelinux.0";
+                }
+        }
+        ```
+
+<!--list-separator-->
+
+2.  Настройки сервера ISC Kea DHCP
+
+    -   Настройки для сервера ISC Kea DHCP.
+    -   Файл конфигурации `/etc/kea/kea-dhcp4.conf`.
+    -   Настройка файлов загрузки:
+        ```shell
+        {
+            "Dhcp4": {
+                "client-classes": [
+                    {
+                        "name": "pxe-legacy",
+                        "test": "option[93].hex == 0x0000",
+                        "boot-file-name": "/boot/pxelinux/bios/lpxelinux.0"
+                    },
+                    {
+                        "name": "pxe-uefi",
+                        "test": "option[93].hex == 0x0009 or option[93].hex == 0x0007",
+                        "boot-file-name": "/boot/pxelinux/efi64/syslinux.efi"
+                    }
+                ],
+                ...
             }
-    }
-    ```
+        }
+        ```
 
 
 #### <span class="section-num">3.1.4</span> Файл конфигурации pxelinux {#файл-конфигурации-pxelinux}

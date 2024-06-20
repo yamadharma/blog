@@ -2,7 +2,7 @@
 title: "fail2ban. Основные настройки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-30T11:01:00+03:00
-lastmod: 2024-06-14T17:50:00+03:00
+lastmod: 2024-06-17T16:48:00+03:00
 tags: ["sysadmin", "security"]
 categories: ["computer-science"]
 draft: false
@@ -53,9 +53,9 @@ fail2ban. Основные настройки.
     # "ignoreip" can be a list of IP addresses, CIDR masks or DNS hosts. Fail2ban
     # will not ban a host which matches an address in this list. Several addresses
     # can be defined using space (and/or comma) separator.
-    ignoreip = 127.0.0.1/8 ::1 10.128.0.0/9
+    ignoreip = 127.0.0.1/8 ::1 10.128.0.0/8
     ```
--   Диапазон `10.128.0.0/9` добавлен для примера.
+-   Диапазон `10.128.0.0/8` добавлен для примера.
 
 
 ### <span class="section-num">2.3</span> Защита ssh {#защита-ssh}

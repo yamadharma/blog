@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-05-22T10:23:00+03:00
+lastmod: 2024-06-19T18:12:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -217,6 +217,7 @@ slug: "system-administration"
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
+-   [Скачать фотографии с google photo]({{< relref "2024-06-01-google-photo-download" >}})
 
 
 ### <span class="section-num">10.12</span> Файлы конфигурации {#файлы-конфигурации}
@@ -315,11 +316,12 @@ slug: "system-administration"
 -   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
 
 
-### <span class="section-num">14.6</span> Мониторинг {#мониторинг}
+### <span class="section-num">14.6</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Мониторинг пропускной способности и скорости сети]({{< relref "2023-06-16-bandwidth-network-speed-monitoring" >}})
+-   [Система управления сетью NetBox]({{< relref "2024-06-19-netbox" >}})
 
 
 ### <span class="section-num">14.7</span> Протоколы {#протоколы}
@@ -342,7 +344,11 @@ slug: "system-administration"
 
 #### <span class="section-num">14.8.2</span> DHCP {#dhcp}
 
--   [DHCP. Установка сервера]({{< relref "2024-05-07-dhcp-server-installation" >}})
+-   [Сервер DHCP Kea]({{< relref "2024-06-18-dhcp-kea-server" >}})
+-   [Сервер ISC DHCP]({{< relref "2024-06-19-server-isc-dhcp" >}})
+-   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
+-   [Адресация IPv4 и IPv6. Настройка DHCP для IPv4]({{< relref "2022-08-15-configuring-dhcp-ipv4" >}})
+-   [Адресация IPv4 и IPv6. Настройка DHCPv6 для IPv6]({{< relref "2022-08-17-configuring-dhcpv6-ipv6" >}})
 
 
 #### <span class="section-num">14.8.3</span> Почта {#почта}

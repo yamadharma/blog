@@ -1,8 +1,8 @@
 ---
-title: "DHCP. Установка сервера"
+title: "DHCP. Установка сервера DHCP Kea"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-07T11:39:00+03:00
-lastmod: 2024-05-26T14:55:00+03:00
+lastmod: 2024-06-19T16:03:00+03:00
 tags: ["network", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -198,7 +198,32 @@ slug: "dhcp-server-installation"
 
 ### <span class="section-num">3.2</span> Репозиторий ISC {#репозиторий-isc}
 
--   Текущая стабильная версия в репозитории: 2.4.x.
+-   Текущая стабильная версия в репозитории: 2.6.x.
+
+
+#### <span class="section-num">3.2.1</span> Kea-2.6 {#kea-2-dot-6}
+
+-   Подключаем репозиторий:
+    ```shell
+    curl -1sLf 'https://dl.cloudsmith.io/public/isc/kea-2-6/setup.rpm.sh' | sudo -E bash
+    ```
+-   Отключите старые репозитории, если они были установлены:
+    ```shell
+    dnf config-manager --disable isc-kea-2-4 isc-kea-2-4-noarch isc-kea-2-4-source
+    dnf clean all
+    ```
+-   Проверьте, что репозитории отключены:
+    ```shell
+    dnf repolist
+    ```
+-   Устанавливаем сервер _Kea_:
+    ```shell
+    dnf -y install isc-kea isc-kea-hooks
+    ```
+
+
+#### <span class="section-num">3.2.2</span> Kea-2.4 {#kea-2-dot-4}
+
 -   Подключаем репозиторий:
     ```shell
     curl -1sLf 'https://dl.cloudsmith.io/public/isc/kea-2-4/setup.rpm.sh' | sudo -E bash
@@ -527,3 +552,8 @@ slug: "dhcp-server-installation"
             user=kea
             password=password
             ```
+
+
+## <span class="section-num">9</span> После установки {#после-установки}
+
+-   Настройте DDNS (см. [Динамическое обновление DNS-сервера BIND при помощи Kea DHCP]({{< relref "2024-06-18-dynamically-updating-bind-dns-kea-dhcp" >}}))
