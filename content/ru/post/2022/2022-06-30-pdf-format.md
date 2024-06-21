@@ -2,7 +2,8 @@
 title: "Формат PDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-30T18:47:00+03:00
-lastmod: 2024-04-24T12:44:00+03:00
+lastmod: 2024-06-21T20:56:00+03:00
+tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
 slug: "pdf-format"
@@ -57,6 +58,14 @@ slug: "pdf-format"
 -   [Pdf. Просмотр. Sioyek]({{< relref "2024-04-24-pdf-viewer-sioyek" >}})
 
 
-## <span class="section-num">5</span> Использование в LaTeX {#использование-в-latex}
+## <span class="section-num">5</span> Оглавление в PDF {#оглавление-в-pdf}
+
+-   [Pdf. Оглавление. pdf-toc]({{< relref "2024-06-21-pdf-toc-pdf-toc" >}})
+    -   Позволяет копировать оглавление в текстовый файл и обратно загружать в pdf-файл.
+-   [Pdf. Оглавление. pdf.tocgen]({{< relref "2024-06-21-pdf-toc-pdf-tocgen" >}})
+    -   Позволяет создавать оглавление на основе шаблона заголовков.
+
+
+## <span class="section-num">6</span> Использование в LaTeX {#использование-в-latex}
 
 -   [LaTeX. Пакет pdfx]({{< relref "2021-07-30-latex-packages-pdfx" >}})

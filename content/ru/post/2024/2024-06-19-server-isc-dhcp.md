@@ -2,7 +2,7 @@
 title: "Сервер ISC DHCP"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-19T15:26:00+03:00
-lastmod: 2024-06-19T15:36:00+03:00
+lastmod: 2024-06-21T20:54:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -27,4 +27,4 @@ slug: "server-isc-dhcp"
 
 ## <span class="section-num">2</span> Управление {#управление}
 
-[Динамическое обновление DNS-сервера BIND при помощи ISC DHCP]({{< relref "2023-09-25-dynamically-updating-bind-dns-isc-dhcp" >}})
+-   [Динамическое обновление DNS-сервера BIND при помощи ISC DHCP]({{< relref "2023-09-25-dynamically-updating-bind-dns-isc-dhcp" >}})
