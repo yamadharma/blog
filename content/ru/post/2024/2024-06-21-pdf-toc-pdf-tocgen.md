@@ -2,7 +2,7 @@
 title: "Pdf. Оглавление. pdf.tocgen"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-21T20:36:00+03:00
-lastmod: 2024-06-21T21:11:00+03:00
+lastmod: 2024-06-22T16:37:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -26,7 +26,7 @@ Pdf. Оглавление. pdf.tocgen.
 
 -   Устанавливается как python-пакет:
     ```shell
-    pip install -U --user pdf.tocgen
+    pipx install pdf.tocgen
     ```
 
 
@@ -101,4 +101,97 @@ Pdf. Оглавление. pdf.tocgen.
     ```shell
     pdftocgen in.pdf < recipe.toml > toc
     pdftocio in.pdf < toc
+    ```
+
+
+## <span class="section-num">4</span> Примеры  использования {#примеры-использования}
+
+
+### <span class="section-num">4.1</span> pdftocio {#pdftocio}
+
+-   Отобразить существующее оглавление PDF-файла в stdout:
+    ```shell
+    pdftocio doc.pdf
+    ```
+
+-   Записать существующее оглавление PDF-файла в файл с именем toc:
+    ```shell
+    pdftocio doc.pdf > toc
+    ```
+
+-   Записать оглавление из toc-файла в doc.pdf:
+    ```shell
+    pdftocio doc.pdf < toc
+    ```
+
+-   Указать имя выходного PDF-файла:
+    ```shell
+    pdftocio -o out.pdf doc.pdf < toc
+    ```
+
+-   Скопировать оглавление из doc1.pdf в doc2.pdf:
+    ```shell
+    pdftocio -v doc1.pdf | pdftocio doc2.pdf
+    ```
+
+    -   Флаг `-v` помогает сохранить вертикальные позиции заголовков при копировании.
+-   Вывести оглавление для чтения:
+    ```shell
+    pdftocio -H doc.pdf
+    ```
+
+
+### <span class="section-num">4.2</span> pdftocgen {#pdftocgen}
+
+-   Применить существующий рецепт `rcp.toml` к файлу `doc.pdf` (результат дублируется в `stdout`):
+    ```shell
+    pdftocgen doc.pdf < rcp.toml
+    ```
+
+-   Вывести оглавление в файл с именем `toc`:
+    ```shell
+    pdftocgen doc.pdf < rcp.toml > toc
+    ```
+
+-   Импортировать созданное оглавление в файл PDF и вывести в doc_out.pdf:
+    ```shell
+    pdftocgen doc.pdf < rcp.toml | pdftocio -o doc_out.pdf doc.pdf
+    ```
+
+-   Вывести сгенерированное оглавление для чтения:
+    ```shell
+    pdftocgen -H doc.pdf < rcp.toml
+    ```
+
+-   Если вы хотите включить вертикальное положение на странице для каждого заголовка, используйте флаг `-v`:
+    ```shell
+    pdftocgen -v doc.pdf < rcp.toml
+    ```
+
+
+### <span class="section-num">4.3</span> pdfxmeta {#pdfxmeta}
+
+-   Искать слово `Anaphoric` во всем PDF:
+    ```shell
+    pdfxmeta onlisp.pdf "Anaphoric"
+    ```
+
+-   Вывести результат в виде фильтра заголовков с автоматическими настройками:
+    ```shell
+    pdfxmeta -a 1 onlisp.pdf "Anaphoric"
+    ```
+
+-   Поиск без учета регистра `Anaphoric` во всем PDF:
+    ```shell
+    pdfxmeta -i onlisp.pdf "Anaphoric"
+    ```
+
+-   Использование регулярного выражения для поиска без учета регистра `Anaphoric` в PDF-файле:
+    ```shell
+    pdfxmeta onlisp.pdf "[Aa]naphoric"
+    ```
+
+-   Поиск только на странице 203:
+    ```shell
+    pdfxmeta -p 203 onlisp.pdf "anaphoric"
     ```

@@ -2,7 +2,7 @@
 title: "Sway. Совместимость приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-20T21:26:00+03:00
-lastmod: 2024-06-21T20:53:00+03:00
+lastmod: 2024-06-23T16:29:00+03:00
 tags: ["wayland", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -63,3 +63,16 @@ Sway. Совместимость приложений.
 
 -   Qt по умолчанию использует бэкэнд X11 вместо собственного бэкэнда Wayland. Чтобы использовать бэкэнд Wayland, установите `QT_QPA_PLATFORM=wayland`.
 -   Qt прорисовает оформление окон на стороне клиента. Чтобы отключить это, установите `QT_WAYLAND_DISABLE_WINDOWDECORATION="1"`.
+
+
+## <span class="section-num">4</span> Avidemux {#avidemux}
+
+-   При запуске Avidemux под Wayland не отображается окно просмотра.
+-   Следует установить переменную окружения `QT_QPA_PLATFORM=xcb` или `WAYLAND_DISPLAY=0`:
+    ```shell
+    QT_QPA_PLATFORM=xcb avidemux3_qt5
+    ```
+-   Альтернативно можно задать опцию `--platform 'xcb'`:
+    ```shell
+    avidemux3_qt5 --platform 'xcb'
+    ```

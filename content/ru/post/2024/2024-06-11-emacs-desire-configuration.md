@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-06-11T20:02:00+03:00
+lastmod: 2024-06-22T21:09:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -177,7 +177,7 @@ slug: "emacs-desire-configuration"
 
     ;;{{{ UI
 
-    (desire 'ligature)
+    ;; (desire 'ligature)
 
     ;; (desire 'all-the-icons)
     (desire 'nerd-icons)
@@ -537,6 +537,7 @@ slug: "emacs-desire-configuration"
     ;;;}}}
     ;;; Miscellaneous {{{
 
+    (desire 'ebuku)
     (desire-old 'graphviz-dot-mode nil "graphviz-dot-mode")
     ;; (desire-old 'abbrev)
     ;; (desire-old 'bibtex)
@@ -608,8 +609,6 @@ slug: "emacs-desire-configuration"
     ;; (desire 'doom-themes)
 
     ;; (desire 'zenburn-theme)
-    (desire 'modus-themes)
-    ;; (desire 'ef-themes)
     ;; (desire 'lambda-themes :recipe '(:fetcher github :repo "Lambda-Emacs/lambda-themes" :branch "main"))
     ;; (desire 'tao-theme)
 
@@ -618,6 +617,32 @@ slug: "emacs-desire-configuration"
 
     ;;; Increase the padding/spacing of frames and windows
     ;; (desire 'spacious-padding)
+
+    ```
+
+
+#### <span class="section-num">4.2.1</span> Modus-themes {#modus-themes}
+
+-   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
+-   Подключаем темы в файле `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'modus-themes)
+    ```
+
+
+#### <span class="section-num">4.2.2</span> Ef-themes {#ef-themes}
+
+-   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
+-   Подключаем темы в файле `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'ef-themes)
+    ```
+
+
+#### <span class="section-num">4.2.3</span> Финализирование {#финализирование}
+
+-   Финализируем раздел в `rc.packages.el`:
+    ```emacs-lisp
 
     ;;;}}}
     ```

@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2024-06-07T21:26:00+03:00
+lastmod: 2024-06-22T18:08:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -46,5 +46,5 @@ slug: "pdf-ocr-ocrmypdf"
     ```
 -   Задать метаданные PDF-файла:
     ```shell
-    ocrmypdf --title "{{title}}" --author "{{author}}" --subject "{{subject}}" --keywords "{{keyword; key phrase; ...}}" input_file.pdf output.pdf
+    ocrmypdf --title "<title>" --author "<author>" --subject "<subject>" --keywords "<keyword; key phrase; ...>" input_file.pdf output.pdf
     ```

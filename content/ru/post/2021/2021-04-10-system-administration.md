@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-06-19T18:12:00+03:00
+lastmod: 2024-06-22T20:47:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -170,6 +170,7 @@ slug: "system-administration"
 -   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
 -   [Локальные поисковики]({{< relref "2023-06-27-desktop-search" >}})
 -   [Linux. Архивирование]({{< relref "2024-03-22-linux-archiving" >}})
+-   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
 
 
 ### <span class="section-num">10.4</span> Обработка видео {#обработка-видео}

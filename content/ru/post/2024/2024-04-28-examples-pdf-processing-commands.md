@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-06-07T21:05:00+03:00
+lastmod: 2024-06-23T16:19:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -508,3 +508,9 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```shell
     verapdf --flavour 1a --format text document.pdf
     ```
+
+
+## <span class="section-num">20</span> Оглавление в PDF {#оглавление-в-pdf}
+
+-   [Pdf. Оглавление. pdf.tocgen]({{< relref "2024-06-21-pdf-toc-pdf-tocgen" >}})
+-   [Pdf. Оглавление. pdf-toc]({{< relref "2024-06-21-pdf-toc-pdf-toc" >}})
