@@ -2,7 +2,7 @@
 title: "Sway. Загрузка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-20T21:29:00+03:00
-lastmod: 2024-06-20T21:51:00+03:00
+lastmod: 2024-06-26T11:51:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false
@@ -159,7 +159,9 @@ slug: "sway-loading"
     ```shell
 
     ## Qt tuning
-    QT_QPA_PLATFORM=wayland
+    # QT_QPA_PLATFORM=wayland
+    QT_QPA_PLATFORM=xcb
     QT_QPA_PLATFORMTHEME=qt6ct
     QT_WAYLAND_DISABLE_WINDOWDECORATION=1
+    QT_WAYLAND_FORCE_DPI=physical
     ```

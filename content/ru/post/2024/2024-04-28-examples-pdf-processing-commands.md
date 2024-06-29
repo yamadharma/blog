@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-06-23T16:19:00+03:00
+lastmod: 2024-06-26T20:39:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -124,7 +124,10 @@ $ pdfjam --nup строк x столбцов  input.pdf --outfile output.pdf
 $ pdfsak --input-file input.pdf --output output.pdf --nup rows  columns
 
 
-## <span class="section-num">8</span> Проверка метаданных {#проверка-метаданных}
+## <span class="section-num">8</span> Метаданные {#метаданные}
+
+
+### <span class="section-num">8.1</span> Проверка метаданных {#проверка-метаданных}
 
 С помощью ExifTool :
 
@@ -147,6 +150,20 @@ $ qpdf --линеаризовать /tmp/temp.pdf input.pdf
 Обратите внимание, что объекты внутри PDF-файла могут иметь свои собственные отдельные потоки метаданных XMP, и эта команда не удаляет их. Он удаляет только поток XMP на уровне документа PDF.
 
 $ pdftk input.pdf drop_xmp вывод output.pdf
+
+
+### <span class="section-num">8.2</span> Записать метаданные {#записать-метаданные}
+
+
+#### <span class="section-num">8.2.1</span> exiftool {#exiftool}
+
+-   Обновить метаданные:
+    ```shell
+    exiftool -Title="This is the Title" -Author="Author" -Subject="Subject" file.pdf
+    ```
+-   При просмотре в evince тема оказывается в поле ключевых слов метаданных файла PDF.
+-   Adobe Acrobat и PDF-XChange показывают правильно.
+-   `pdfinfo` показывает правильно.
 
 
 ## <span class="section-num">9</span> Уменьшить размер pdf-файла (сжатие) {#уменьшить-размер-pdf-файла--сжатие}
@@ -184,7 +201,7 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
 
 -   Команда qpdf:
     ```shell
-    qpdf --compress-streams=y --object-streams=generate --recompress-flate --optimize-images document.pdf qpdf_compressed.pdf
+    qpdf --compress-streams=y --object-streams=generate --recompress-flate --optimize-images --linearize document.pdf qpdf_compressed.pdf
     ```
 
     -   `--compress-streams=y` : указывает `qpdf` сжимать потоки контента в файле PDF. Потоки контента содержат фактические данные, такие как текст и изображения, в документе PDF;
@@ -424,15 +441,15 @@ filename="\\){filename%.\*}"
 PAGES=$(pdfinfo "$IN" | grep ^Pages: | tr -dc '0-9')
 
 non_blank() {
-	для я в $(seq 1 \\(PAGES); делать
-		PERCENT=\\)(gs -o - -dFirstPage=\\({i} -dLastPage=\\){i} -sDEVICE=ink_cov "$IN" | grep CMYK | nawk 'BEGIN { sum=0; } {sum += $1 + $2 + $3 + $4;} END { printf "%.5f\n", sum } ')
-		if [ $(echo "$PERCENT &gt; 0,001" | bc) -eq 1 ]; затем
-			эхо $i
-			#echo $i 1&gt;&amp;2
-		быть
-		эхо -н. 1&gt;&amp;2
-	сделано | тройник "$filename.tmp"
-	эхо 1&gt;&amp;2
+        для я в $(seq 1 \\(PAGES); делать
+                PERCENT=\\)(gs -o - -dFirstPage=\\({i} -dLastPage=\\){i} -sDEVICE=ink_cov "$IN" | grep CMYK | nawk 'BEGIN { sum=0; } {sum += $1 + $2 + $3 + $4;} END { printf "%.5f\n", sum } ')
+                if [ $(echo "$PERCENT &gt; 0,001" | bc) -eq 1 ]; затем
+                        эхо $i
+                        #echo $i 1&gt;&amp;2
+                быть
+                эхо -н. 1&gt;&amp;2
+        сделано | тройник "$filename.tmp"
+        эхо 1&gt;&amp;2
 }
 
 установить +х
@@ -489,6 +506,8 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 
 
 ### <span class="section-num">19.1</span> Преобразование PDF в стандарт PDF/A {#преобразование-pdf-в-стандарт-pdf-a}
+
+-   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
 
 
 #### <span class="section-num">19.1.1</span> ghostscript {#ghostscript}

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-06-22T20:47:00+03:00
+lastmod: 2024-06-25T17:03:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -56,6 +56,7 @@ slug: "system-administration"
 -   [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
 -   [Тайловые оконные менеджеры]({{< relref "2023-06-19-tiling-window-manager" >}})
+-   [Консоль linux. Kmscon]({{< relref "2024-06-25-linux-console-kmscon" >}})
 
 
 ### <span class="section-num">4.2</span> Wayland {#wayland}
@@ -375,6 +376,7 @@ slug: "system-administration"
 ### <span class="section-num">16.2</span> Сетевые и распределённые файловые системы {#сетевые-и-распределённые-файловые-системы}
 
 -   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
+-   [Использование Яндекс-диска]({{< relref "2024-06-25-using-yandex-disk" >}})
 
 
 ### <span class="section-num">16.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}

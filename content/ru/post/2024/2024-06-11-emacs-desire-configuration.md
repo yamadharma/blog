@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-06-22T21:09:00+03:00
+lastmod: 2024-06-28T13:05:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -22,7 +22,7 @@ slug: "emacs-desire-configuration"
 ## <span class="section-num">2</span> Установка переменных {#установка-переменных}
 
 
-## <span class="section-num">3</span> Список пакетов {#список-пакетов}
+## <span class="section-num">3</span> Конфигурационные файлы {#конфигурационные-файлы}
 
 -   В файле `rc.packages.el` находится список используемых пакетов:
     ```emacs-lisp
@@ -174,8 +174,19 @@ slug: "emacs-desire-configuration"
     (desire 'alert)
 
     (desire 'rg :precondition-system-executable "rg")
+    ```
 
-    ;;{{{ UI
+-   В файле используется фолдинг по тройной скобке.
+
+
+## <span class="section-num">4</span> Конфигурация пакетов {#конфигурация-пакетов}
+
+
+### <span class="section-num">4.1</span> Оформление интерфейса {#оформление-интерфейса}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; UI {{{
 
     ;; (desire 'ligature)
 
@@ -203,15 +214,132 @@ slug: "emacs-desire-configuration"
     (desire 'tab-bar)
     (desire 'tab-line)
 
-    ;;}}}
+    ;;;}}}
+    ```
+
+
+### <span class="section-num">4.2</span> Поддержка LSP {#поддержка-lsp}
+
+-   [Emacs. Поддержка LSP]({{< relref "2024-01-14-emacs-lsp" >}})
+
+
+#### <span class="section-num">4.2.1</span> Начало {#начало}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
     ;;; LSP mode {{{
 
     (desired 'emacs-lsp-booster :precondition-system-executable "emacs-lsp-booster")
+    ```
 
+
+#### <span class="section-num">4.2.2</span> Eglog {#eglog}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
     (desire 'eglot)
+    ```
+
+
+#### <span class="section-num">4.2.3</span> Lsp-mode {#lsp-mode}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
     ;; (desire 'lsp-mode)
+    ```
+
+
+#### <span class="section-num">4.2.4</span> Конец {#конец}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
 
     ;;; }}}
+    ```
+
+
+### <span class="section-num">4.3</span> Автодополнение в минибуфере {#автодополнение-в-минибуфере}
+
+
+#### <span class="section-num">4.3.1</span> Начало {#начало}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Minibuffer completion {{{
+
+    ```
+
+
+#### <span class="section-num">4.3.2</span> Ido {#ido}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'ido)
+    ```
+
+
+#### <span class="section-num">4.3.3</span> Helm {#helm}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'helm-posframe)
+    ;; (desire 'helm)
+    ```
+
+
+#### <span class="section-num">4.3.4</span> Ivy {#ivy}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'ivy)
+    ```
+
+
+#### <span class="section-num">4.3.5</span> Selectrum {#selectrum}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'selectrum)
+    ```
+
+
+#### <span class="section-num">4.3.6</span> Vertico {#vertico}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'vertico)
+    ```
+
+
+#### <span class="section-num">4.3.7</span> Конец {#конец}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+
+    ;;;}}}
+    ```
+
+
+### <span class="section-num">4.4</span> Автодополнение {#автодополнение}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Completion {{{
+
+    ;; (desire 'company)
+    (desire 'corfu)
+
+    ;;;}}}
+    ```
+
+
+### <span class="section-num">4.5</span> Org-mode {#org-mode}
+
+
+### <span class="section-num">4.6</span> Остальное {#остальное}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
     ;;
 
     ;; (desire 'tree-sitter)
@@ -236,28 +364,6 @@ slug: "emacs-desire-configuration"
 
 
     ;; (desire-old 'toolbar)
-
-
-    ;; ----------------------------------------------------------------------
-
-    (desire 'flycheck)
-
-    ;;{{{ Minibuffer completion
-
-    (desire 'vertico)
-    ;; (desire 'ido)
-    ;; (desire 'helm-posframe)
-    ;; (desire 'helm)
-    ;; (desire 'ivy)
-    ;; (desire 'selectrum)
-
-    ;;}}}
-    ;;{{{ Minibuffer completion
-
-    ;; (desire 'company)
-    (desire 'corfu)
-
-    ;;}}}
 
     ;; Parentesis
     (desire 'smartparens)
@@ -581,16 +687,8 @@ slug: "emacs-desire-configuration"
     ;; (require 'discography) ; variant of BibTeX mode for discographies.
     ```
 
--   В файле используется фолдинг по тройной скобке.
 
-
-## <span class="section-num">4</span> Конфигурация пакетов {#конфигурация-пакетов}
-
-
-### <span class="section-num">4.1</span> Org-mode {#org-mode}
-
-
-### <span class="section-num">4.2</span> Темы {#темы}
+### <span class="section-num">4.7</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -621,7 +719,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.2.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.7.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -630,7 +728,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.2.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.7.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -639,7 +737,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.2.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.7.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp

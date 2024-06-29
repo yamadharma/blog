@@ -2,7 +2,7 @@
 title: "fail2ban. Основные настройки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-30T11:01:00+03:00
-lastmod: 2024-06-17T16:48:00+03:00
+lastmod: 2024-06-28T17:52:00+03:00
 tags: ["sysadmin", "security"]
 categories: ["computer-science"]
 draft: false
@@ -92,7 +92,7 @@ fail2ban. Основные настройки.
 
 -   Для удаления всех записей из списков блокировки выполните скрипт:
     ```shell
-    !/bin/bash
+    #!/bin/bash
 
     for JAIL in $(fail2ban-client status | grep 'Jail list:' | awk 'BEGIN {FS="\t"} {print $2}' | sed 's/, / /g')
     do

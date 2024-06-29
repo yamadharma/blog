@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2024-06-22T18:08:00+03:00
+lastmod: 2024-06-26T20:10:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -44,7 +44,19 @@ slug: "pdf-ocr-ocrmypdf"
     ```shell
     ocrmypdf --clean --deskew --rotate-pages input.pdf output.pdf
     ```
+-   Убрать фон:
+    ```shell
+    ocrmypdf --clean --remove-background input.pdf output.pdf
+    ```
+-   Разделить сдвоенные страницы:
+    ```shell
+    ocrmypdf --clean --clean-final --unpaper-args '--layout double' input.pdf output.pdf
+    ```
+-   Контролируем оптимизацию:
+    ```shell
+    ocrmypdf --optimize 3 --jbig2-lossy input.pdf output.pdf
+    ```
 -   Задать метаданные PDF-файла:
     ```shell
-    ocrmypdf --title "<title>" --author "<author>" --subject "<subject>" --keywords "<keyword; key phrase; ...>" input_file.pdf output.pdf
+    ocrmypdf --skip-text --title "<title>" --author "<author>" --subject "<subject>" --keywords "<keyword; key phrase; ...>" input_file.pdf output.pdf
     ```

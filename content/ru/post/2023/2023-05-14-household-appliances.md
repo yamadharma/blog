@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2024-05-18T16:10:00+03:00
+lastmod: 2024-06-29T13:21:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -25,6 +25,7 @@ slug: "household-appliances"
 
 -   [Критерии выбора робота-пылесоса]({{< relref "2023-05-09-criteria-choosing-robot-cleaner" >}})
 -   [Робот-пылесос iCLEBO O5]({{< relref "2023-05-15-robot-vacuum-cleaner-iclebo-o5" >}})
+-   [Вертикальный пылесос]({{< relref "2024-06-29-vertical-vacuum-cleaner" >}})
 
 
 ## <span class="section-num">3</span> Офисная техника {#офисная-техника}

@@ -2,8 +2,8 @@
 title: "Белый список журналов Минобрнауки"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T21:07:00+03:00
-lastmod: 2023-06-02T12:57:00+03:00
-tags: ["seedling", "science-being"]
+lastmod: 2024-06-28T12:35:00+03:00
+tags: ["science-being"]
 categories: ["science"]
 draft: false
 slug: "white-list-journals"
@@ -23,6 +23,7 @@ slug: "white-list-journals"
 -   Сайт: <https://journalrank.rcsi.science/ru/>.
 -   О методике ранжирования: <https://www.minobrnauki.gov.ru/press-center/news/nauka/68029/>.
 -   Файл с методикой оценки и ранжирования: <https://www.minobrnauki.gov.ru/%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D1%83%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F.pdf>.
+-   Похоже, что идея данного списка неработоспособна.
 
 
 ## <span class="section-num">2</span> Критерии {#критерии}
