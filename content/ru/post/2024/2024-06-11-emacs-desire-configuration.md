@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-06-28T13:05:00+03:00
+lastmod: 2024-07-01T09:17:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -258,19 +258,31 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.3</span> Автодополнение в минибуфере {#автодополнение-в-минибуфере}
+### <span class="section-num">4.3</span> Автодополнение {#автодополнение}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Completion {{{
+
+    ;; (desire 'company)
+    (desire 'corfu)
+
+    ;;;}}}
+    ```
 
 
-#### <span class="section-num">4.3.1</span> Начало {#начало}
+### <span class="section-num">4.4</span> Автодополнение в минибуфере {#автодополнение-в-минибуфере}
+
+
+#### <span class="section-num">4.4.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     ;;; Minibuffer completion {{{
-
     ```
 
 
-#### <span class="section-num">4.3.2</span> Ido {#ido}
+#### <span class="section-num">4.4.2</span> Ido {#ido}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -278,7 +290,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.3.3</span> Helm {#helm}
+#### <span class="section-num">4.4.3</span> Helm {#helm}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -287,7 +299,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.3.4</span> Ivy {#ivy}
+#### <span class="section-num">4.4.4</span> Ivy {#ivy}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -295,7 +307,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.3.5</span> Selectrum {#selectrum}
+#### <span class="section-num">4.4.5</span> Selectrum {#selectrum}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -303,7 +315,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.3.6</span> Vertico {#vertico}
+#### <span class="section-num">4.4.6</span> Vertico {#vertico}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -311,23 +323,10 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.3.7</span> Конец {#конец}
+#### <span class="section-num">4.4.7</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
-
-    ;;;}}}
-    ```
-
-
-### <span class="section-num">4.4</span> Автодополнение {#автодополнение}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    ;;; Completion {{{
-
-    ;; (desire 'company)
-    (desire 'corfu)
 
     ;;;}}}
     ```

@@ -2,7 +2,7 @@
 title: "Администрирование Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-16T12:38:00+03:00
-lastmod: 2023-10-05T20:24:00+03:00
+lastmod: 2024-07-03T12:05:00+03:00
 tags: ["cisco", "sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -27,3 +27,4 @@ slug: "cisco-administration"
 ## <span class="section-num">2</span> Обслуживание {#обслуживание}
 
 -   [Сброс пароля на коммутаторах Catalyst]({{< relref "2021-10-06-password-reset-catalyst-switches" >}})
+-   [Перепрошивка точки доступа Cisco Aironet]({{< relref "2024-07-03-flashing-cisco-aironet" >}})
