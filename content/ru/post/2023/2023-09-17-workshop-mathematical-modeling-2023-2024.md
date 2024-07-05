@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2023-2024"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-17T17:58:00+03:00
-lastmod: 2024-06-19T13:50:00+03:00
+lastmod: 2024-07-05T18:10:00+03:00
 tags: ["modeling", "science-admin"]
 categories: ["science"]
 draft: false
@@ -526,7 +526,7 @@ The proposed approach is based on the representation of the desired function, it
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-05 Пт&gt; </span></span> Сытова С. Н. - Моделирование нелинейной динамики электромагнитного излучения {#сытова-с-dot-н-dot-моделирование-нелинейной-динамики-электромагнитного-излучения}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-07-05 Пт&gt; </span></span> Сытова С. Н. - Моделирование нелинейной динамики электромагнитного излучения {#сытова-с-dot-н-dot-моделирование-нелинейной-динамики-электромагнитного-излучения}
 
 
 #### <span class="section-num">2.5.1</span> Докладчик {#докладчик}
@@ -571,3 +571,19 @@ Mathematical models describing the nonlinear stage are systems of nonlinear inte
 
 It is clear that the solution of the stated problems can only be carried out using numerical methods, since it is impossible to obtain solutions to such systems of equations analytically. Such modeling can facilitate and simplify full-fledged, expensive physical experiments, as well as clarify the initial phenomenological models of physical processes, verify and systematize the results of experimental studies.
 The report presents formulated generalized systems of equations that describe various variants of VFEL, difference schemes proposed for solving these systems, and a computer code VOLC (Volume Code) for express-simulation of VFEL operation. The simulation of processes of generation and amplification of electromagnetic radiation in various geometries and types of VFEL in the spectral range from X-ray to millimeter and a wide range of parameters confirmed all the basic physical laws and operating principles of VFEL. It is shown that for efficient generation there is an optimal set of system parameters, and by changing the parameters it is possible to obtain significantly larger values ​​of electromagnetic field amplitudes and fundamentally different operating modes. For the first time, it was shown that the VFEL is a dynamic chaotic system. Its spatio-temporal and phase dynamics were studied, and various dynamic operating modes with their complex transformation were modeled.
+
+
+#### <span class="section-num">2.5.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 04838a2f4133ab500bed7a3a7f1a494d >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube LSehypfgofY >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-06-26T20:39:00+03:00
+lastmod: 2024-07-05T20:08:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -462,7 +462,7 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 ## <span class="section-num">17</span> Шрифты {#шрифты}
 
 
-### <span class="section-num">17.1</span> Шрифты, используемые в PDF-файле {#шрифты-используемые-в-pdf-файле}
+### <span class="section-num">17.1</span> Список шрифтов {#список-шрифтов}
 
 
 #### <span class="section-num">17.1.1</span> poppler {#poppler}
@@ -470,6 +470,17 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 -   Используем команду `pdffonts` чтобы узнать, какие шрифты используются в PDF-файле и встроены ли они в него или нет:
     ```shell
     pdffonts file.pdf
+    ```
+
+
+### <span class="section-num">17.2</span> Внедрить шрифты в файл {#внедрить-шрифты-в-файл}
+
+
+#### <span class="section-num">17.2.1</span> ghostscript {#ghostscript}
+
+-   Перегенерим файл с помощью ghostscript:
+    ```shell
+    gs -q -dNOPAUSE -dBATCH -dPDFSETTINGS=/prepress -sDEVICE=pdfwrite -dEmbedAllFonts=true -sOutputFile=<outfile.pdf> <infile.pdf>
     ```
 
 
