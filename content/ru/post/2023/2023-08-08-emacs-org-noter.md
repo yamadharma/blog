@@ -2,7 +2,7 @@
 title: "Emacs. Org-noter"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-08T20:31:00+03:00
-lastmod: 2024-01-08T19:43:00+03:00
+lastmod: 2024-07-10T17:22:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,8 @@ Emacs. Пакет org-noter.
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Репозиторий: <https://github.com/org-noter/org-noter>
+-   Предыдущие варианты:
+    -   <https://github.com/weirdNox/org-noter>
 -   Позволяет создавать заметки, которые синхронизируются при прокрутке документа, но являются внешними по отношению к нему.
 -   Заметки сохраняются в файле org-mode.
 -   Совместим с DocView , PDF Tools , Nov.el и DJVU-image-mode.
