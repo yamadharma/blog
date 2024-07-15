@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-07-01T09:17:00+03:00
+lastmod: 2024-07-15T13:09:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -341,7 +341,7 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;
 
-    ;; (desire 'tree-sitter)
+    (desire 'tree-sitter)
 
     (desire 'hydra)
 
