@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-07-15T13:09:00+03:00
+lastmod: 2024-07-16T18:34:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -442,20 +442,6 @@ slug: "emacs-desire-configuration"
     ;; (desire 'hammy)
 
     ;;;}}}
-    ;;; Dired {{{
-
-    (desire 'mouse3 :recipe '(:fetcher github :repo "emacsmirror/mouse3" :branch "master" :files ("*.el")))
-
-    (desire 'dired)
-    (desire 'dired+ :recipe '(:fetcher github :repo "emacsmirror/dired-plus" :branch "master" :files ("*.el")))
-
-    ;; (desire 'ranger)
-    ;; (desire 'efar)
-    ;; (desire 'sunrise-commander :recipe '(:fetcher github :repo "sunrise-commander/sunrise-commander"))
-    (desire 'dirvish)
-    ;; (desire 'diredc)
-
-    ;;; }}}
     ;;; LaTeX {{{
 
     ;; (desire 'xenops)
@@ -666,9 +652,6 @@ slug: "emacs-desire-configuration"
 
     (desire 'multiple-cursors)
 
-    (desire 'neotree)
-    ;; (desire 'treemacs)
-
     (desire 'telega)
     (desire 'pocket-reader)
 
@@ -687,7 +670,50 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.7</span> Темы {#темы}
+### <span class="section-num">4.7</span> Навигация по файлам {#навигация-по-файлам}
+
+-   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
+
+
+#### <span class="section-num">4.7.1</span> Dired {#dired}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Dired {{{
+
+    (desire 'mouse3 :recipe '(:fetcher github :repo "emacsmirror/mouse3" :branch "master" :files ("*.el")))
+
+    (desire 'dired)
+    (desire 'dired+ :recipe '(:fetcher github :repo "emacsmirror/dired-plus" :branch "master" :files ("*.el")))
+
+    ;; (desire 'ranger)
+    ;; (desire 'efar)
+    ;; (desire 'sunrise-commander :recipe '(:fetcher github :repo "sunrise-commander/sunrise-commander"))
+    (desire 'dirvish)
+    ;; (desire 'diredc)
+
+    ;;;}}}
+    ```
+
+
+#### <span class="section-num">4.7.2</span> Neotree {#neotree}
+
+-   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'neotree)
+    ```
+
+
+#### <span class="section-num">4.7.3</span> Treemacs {#treemacs}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'treemacs)
+    ```
+
+
+### <span class="section-num">4.8</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -718,7 +744,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.8.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -727,7 +753,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.8.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -736,7 +762,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.8.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp

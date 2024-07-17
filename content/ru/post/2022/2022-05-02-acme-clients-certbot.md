@@ -2,7 +2,7 @@
 title: "Клиенты ACME. Certbot"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T16:54:00+03:00
-lastmod: 2023-07-16T17:13:00+03:00
+lastmod: 2024-07-17T19:42:00+03:00
 tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false
@@ -23,46 +23,13 @@ slug: "acme-clients-certbot"
 -   Сайт: <https://certbot.eff.org/>
 
 
-## <span class="section-num">2</span> Установка реализации _snap certbot_ {#установка-реализации-snap-certbot}
-
--   Установка _Snap_
-    -   Centos
-        -   Установите репозиторий _Epel_
-            ```shell
-            sudo dnf install epel-release
-            sudo dnf upgrade
-            ```
-        -   Установите _Snap_
-            ```shell
-            sudo dnf -y install snapd
-            ```
--   Запустите _Snap_
-    ```shell
-    sudo systemctl enable --now snapd.socket
-    sudo ln -s /var/lib/snapd/snap /snap
-    ```
--   Обновите _Snap_ (перед этим необходимо немного подождать, чтобы запустился snapd)
-    ```shell
-    sudo snap install core
-    sudo snap refresh core
-    ```
--   Установка _certbot_
-    ```shell
-    sudo snap install --classic certbot
-    ```
--   Сделайте символьную ссылку для запуска:
-    ```shell
-    sudo ln -s /snap/bin/certbot /usr/local/bin/certbot
-    ```
+## <span class="section-num">2</span> Получение сертификатов {#получение-сертификатов}
 
 
-## <span class="section-num">3</span> Получение сертификатов {#получение-сертификатов}
+### <span class="section-num">2.1</span> Сертификаты DNS {#сертификаты-dns}
 
 
-### <span class="section-num">3.1</span> Сертификаты DNS {#сертификаты-dns}
-
-
-#### <span class="section-num">3.1.1</span> Общая информация {#общая-информация}
+#### <span class="section-num">2.1.1</span> Общая информация {#общая-информация}
 
 -   Для выпуска wildcard-сертификата необходимо выполнить _DNS challenge request_, используя протокол ACMEv2.
 -   _DNS challenge_ представляет собой запись TXT, предоставленную клиентом _certbot_, которую необходимо установить вручную в DNS.
@@ -72,7 +39,7 @@ slug: "acme-clients-certbot"
 -   Документация: <https://certbot-dns-rfc2136.readthedocs.io/>
 
 
-#### <span class="section-num">3.1.2</span> Установка программного обеспечения {#установка-программного-обеспечения}
+#### <span class="section-num">2.1.2</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 -   Установка плагина `certbot-dns-rfc2136` для _Snap_:
     ```shell
@@ -82,7 +49,7 @@ slug: "acme-clients-certbot"
 -   Сам _Certbot_ может находиться на произвольном сервере.
 
 
-#### <span class="section-num">3.1.3</span> Настройка BIND {#настройка-bind}
+#### <span class="section-num">2.1.3</span> Настройка BIND {#настройка-bind}
 
 -   Сгенерируйте секретный TSIG-ключ:
     ```shell
@@ -112,7 +79,7 @@ slug: "acme-clients-certbot"
     ```
 
 
-#### <span class="section-num">3.1.4</span> Настройка certbot {#настройка-certbot}
+#### <span class="section-num">2.1.4</span> Настройка certbot {#настройка-certbot}
 
 -   Сгенерируйте файл конфигурации для плагина _rfc2136_ `/etc/letsencrypt/rfc2136_domain.ltd.ini`:
     ```ini
@@ -133,7 +100,7 @@ slug: "acme-clients-certbot"
     ```
 
 
-#### <span class="section-num">3.1.5</span> Получение сертификата {#получение-сертификата}
+#### <span class="section-num">2.1.5</span> Получение сертификата {#получение-сертификата}
 
 -   Выполните команду
     ```shell
@@ -149,10 +116,10 @@ slug: "acme-clients-certbot"
 -   Сертификаты помещаются в каталог `/etc/letsencrypt/live/domain.ltd`.
 
 
-### <span class="section-num">3.2</span> Сертификаты HTTP {#сертификаты-http}
+### <span class="section-num">2.2</span> Сертификаты HTTP {#сертификаты-http}
 
 
-#### <span class="section-num">3.2.1</span> Сервер _Apache_ {#сервер-apache}
+#### <span class="section-num">2.2.1</span> Сервер _Apache_ {#сервер-apache}
 
 -   Плагин `certbot-apache` предоставляет автоматическую настройку _Apache HTTP Server_.
 -   Он пытается найти конфигурацию каждого домена, а также добавляет рекомендованные для безопасности параметры, настройки использования сертификатов и пути к сертификатам Let's Encrypt.
@@ -170,7 +137,7 @@ slug: "acme-clients-certbot"
     ```
 
 
-#### <span class="section-num">3.2.2</span> Сервер _Nginx_ {#сервер-nginx}
+#### <span class="section-num">2.2.2</span> Сервер _Nginx_ {#сервер-nginx}
 
 -   Плагин `certbot-nginx` предоставляет автоматическую настройку _Nginx HTTP Server_.
 -   Он пытается найти конфигурацию каждого домена, а также добавляет рекомендованные для безопасности параметры, настройки использования сертификатов и пути к сертификатам Let's Encrypt.
@@ -185,4 +152,64 @@ slug: "acme-clients-certbot"
 -   Изменение сертификатов без изменения файлов конфигурации _nginx_:
     ```shell
     certbot --nginx certonly
+    ```
+
+
+## <span class="section-num">3</span> Установка {#установка}
+
+
+### <span class="section-num">3.1</span> Установка _certbot_ {#установка-certbot}
+
+-   Проверьте, что установлен репозитории EPEL:
+    ```shell
+    dnf -y install epel-release
+    ```
+-   Установите _certbot_:
+    ```shell
+    dnf -y install certbot
+    ```
+-   Для веб-сервера Apache:
+    ```shell
+    dnf -y install python3-certbot-apache
+    ```
+-   Для веб-сервера Nginx:
+    ```shell
+    dnf -y install python3-certbot-nginx
+    ```
+-   Для сертификата DNS:
+    ```shell
+    dnf -y install python3-certbot-dns-rfc2136
+    ```
+
+
+### <span class="section-num">3.2</span> Установка реализации _snap certbot_ {#установка-реализации-snap-certbot}
+
+-   Установка _Snap_
+    -   Centos
+        -   Установите репозиторий _Epel_
+            ```shell
+            sudo dnf install epel-release
+            sudo dnf upgrade
+            ```
+        -   Установите _Snap_
+            ```shell
+            sudo dnf -y install snapd
+            ```
+-   Запустите _Snap_
+    ```shell
+    sudo systemctl enable --now snapd.socket
+    sudo ln -s /var/lib/snapd/snap /snap
+    ```
+-   Обновите _Snap_ (перед этим необходимо немного подождать, чтобы запустился snapd)
+    ```shell
+    sudo snap install core
+    sudo snap refresh core
+    ```
+-   Установка _certbot_
+    ```shell
+    sudo snap install --classic certbot
+    ```
+-   Сделайте символьную ссылку для запуска:
+    ```shell
+    sudo ln -s /snap/bin/certbot /usr/local/bin/certbot
     ```

@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-06-07T20:49:00+03:00
+lastmod: 2024-07-17T18:43:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -74,13 +74,12 @@ slug: "gentoo-compiling-clang"
     # this sources the PORTDIR_OVERLAY variable defined by layman. however, the variable expanded by layman was empty
     # source /var/db/repos/gentoo/local/layman/make.conf
 
-    #CFLAGS="${CFLAGS} -flto=thin"
+    ## This is added to make options by linux-mod.eclass
+    BUILD_FIXES="LLVM=1 LLVM_IAS=1"
+
     CFLAGS="${CFLAGS} -flto=thin"
     #CFLAGS="${CFLAGS} -mllvm -extra-vectorizer-passes -mllvm -enable-cond-stores-vec -mllvm -slp-vectorize-hor-store -mllvm -enable-loopinterchange -mllvm -enable-loop-distribute -mllvm -enable-unroll-and-jam -mllvm -enable-loop-flatten -mllvm -interleave-small-loop-scalar-reduction -mllvm -unroll-runtime-multi-exit -mllvm -aggressive-ext-opt -fno-math-errno -fno-trapping-math -falign-functions=32 -funroll-loops -fno-semantic-interposition -fcf-protection=none -mharden-sls=none -fomit-frame-pointer -mprefer-vector-width=256 -flto"
     CXXFLAGS="${CFLAGS} ${CXXFLAGS}"
-    # -O2 in LDFLAGS refers to binary size optimization during linking, it is NOT related to the -O levels of the compiler
-      #LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version -mllvm -extra-vectorizer-passes -mllvm -enable-cond-stores-vec -mllvm -slp-vectorize-hor-store -mllvm -enable-loopinterchange -mllvm -enable-loop-distribute -mllvm -enable-unroll-and-jam -mllvm -enable-loop-flatten -mllvm -interleave-small-loop-scalar-reduction -mllvm -unroll-runtime-multi-exit -mllvm -aggressive-ext-opt -flto"
-
 
     CC="clang"
     CPP="clang-cpp" # necessary for xorg-server and possibly other packages
@@ -91,10 +90,11 @@ slug: "gentoo-compiling-clang"
 
     # No need to set this, clang-common can handle this based on chosen USE flags
     #LDFLAGS="${LDFLAGS} -fuse-ld=lld"
-    LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
-    LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
-    LDFLAGS="${LDFLAGS} -fuse-ld=mold"
+    #LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
+    #LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
+    #LDFLAGS="${LDFLAGS} -fuse-ld=mold"
     LDFLAGS="${LDFLAGS} -flto"
+
     ```
 
 
@@ -128,11 +128,11 @@ slug: "gentoo-compiling-clang"
     #sys-boot/syslinux               compiler-gcc    # 'stdarg.h' file not found
     #sys-libs/db                     compiler-gcc    # build fails with USE="cxx"
     #sys-process/tini                compiler-gcc    # ld.lld error
-    sys-apps/systemd			compiler-gcc
-    dev-libs/libgudev			compiler-gcc
-    #net-dialup/ppp				compiler-gcc
-    #media-libs/audiofile			compiler-gcc
-    #app-crypt/chntpw			compiler-gcc
+    sys-apps/systemd				compiler-gcc
+    dev-libs/libgudev				compiler-gcc
+    #net-dialup/ppp					compiler-gcc
+    #media-libs/audiofile				compiler-gcc
+    #app-crypt/chntpw				compiler-gcc
     media-gfx/exact-image			compiler-gcc
     media-libs/libfpx			compiler-gcc
     sci-libs/djbfft				compiler-gcc
@@ -144,8 +144,8 @@ slug: "gentoo-compiling-clang"
     #app-text/freelib			compiler-gcc
     app-editors/wily			compiler-gcc
     sci-mathematics/gretl			compiler-gcc
-    #sci-mathematics/octave			compiler-gcc
     dev-java/openjdk:8			compiler-gcc
+    dev-java/openjdk:11			compiler-gcc
     dev-java/openjdk:17			compiler-clang-mold
     dev-java/openjdk:21			compiler-clang-mold
     dev-java/commons-daemon			compiler-gcc
@@ -160,6 +160,7 @@ slug: "gentoo-compiling-clang"
     sys-devel/clang:15			compiler-gcc
     sys-devel/lld:15			compiler-gcc
     dev-libs/opencl-clang:15		compiler-gcc
+    dev-libs/opencl-clang			compiler-clang-mold
     dev-util/spirv-llvm-translator:15	compiler-gcc
     dev-debug/lldb				compiler-clang-lto
     media-video/vlc				compiler-clang-no-lto
@@ -172,7 +173,7 @@ slug: "gentoo-compiling-clang"
     x11-libs/agg				compiler-gcc
     x11-libs/fox				compiler-gcc
     x11-libs/motif				compiler-clang-lto
-    sys-boot/gnu-efi			compiler-clang-binutils
+    sys-boot/gnu-efi			compiler-gcc
     sys-apps/memtest86+			compiler-gcc
     #sys-apps/fwupd-efi			compiler-clang-binutils
     sys-apps/fwupd-efi			compiler-gcc
@@ -217,6 +218,61 @@ slug: "gentoo-compiling-clang"
     dev-python/cysignals			compiler-gcc
     app-accessibility/brltty		compiler-clang-mold
     media-video/ffmpeg			compiler-clang-mold
+    app-office/dia				compiler-gcc
+    app-text/tesseract			compiler-clang-mold
+    dev-perl/PDL				compiler-clang-mold
+    dev-perl/OpenGL-GLUT			compiler-clang-mold
+    net-misc/openssh-contrib		compiler-gcc
+    dev-haskell/network			compiler-gcc
+    dev-haskell/old-time				compiler-gcc
+    dev-haskell/resolv				compiler-gcc
+    net-proxy/dante					compiler-gcc
+    sys-apps/keyutils				compiler-clang-mold
+    net-libs/libnftnl				compiler-clang-mold
+    media-sound/sox					compiler-clang-mold
+    media-libs/libgphoto2				compiler-clang-mold
+    net-dns/bind-tools				compiler-clang-mold
+    media-gfx/sane-backends				compiler-gcc
+    app-text/paper-clip				compiler-gcc
+    app-i18n/scim					compiler-gcc
+    =sci-mathematics/octave-8*			compiler-gcc
+    =sci-mathematics/octave-9*			compiler-gcc
+    #sci-mathematics/octave				compiler-clang-mold
+    dev-libs/libgamin				compiler-clang-mold
+    x11-misc/redshift				compiler-gcc
+    #sci-visualization/scidavis			compiler-gcc
+    sys-cluster/glusterfs				compiler-clang-mold
+    media-libs/exempi				compiler-gcc
+    media-libs/urt					compiler-gcc
+    media-libs/libopenraw				compiler-gcc
+    media-libs/libsidplay				compiler-gcc
+    media-libs/libdc1394				compiler-gcc
+    media-gfx/autopano-sift-C			compiler-gcc
+    media-libs/libdv				compiler-gcc
+    media-video/gpac				compiler-gcc
+    media-gfx/povray				compiler-gcc
+    media-libs/openglide				compiler-gcc
+    media-sound/audacity				compiler-clang-mold
+    net-firewall/ipset				compiler-clang-mold
+    media-gfx/graphicsmagick			compiler-clang-mold
+    dev-libs/libayatana-appindicator		compiler-clang-mold
+    net-libs/gtk-vnc				compiler-clang-mold
+    net-misc/omniORB				compiler-gcc
+    media-gfx/inkscape				compiler-clang-mold
+    net-print/gutenprint				compiler-gcc
+    net-misc/netkit-telnetd				compiler-gcc
+    net-fs/autofs					compiler-gcc
+    net-fs/openafs					compiler-gcc
+    #media-libs/libva-intel-media-driver		compiler-gcc
+    #sci-geosciences/liblas				compiler-gcc
+    dev-lang/openmodelica				compiler-gcc
+    dev-db/sqlite					compiler-gcc	## Bug #928745
+    media-video/mpv					compiler-clang-mold
+    app-emulation/dosemu				compiler-gcc
+    app-arch/lha					compiler-gcc
+    app-arch/arj					compiler-gcc
+    app-text/fbreader				compiler-gcc
+    app-cdr/cdrtools				compiler-gcc
 
     ```
 -   Нужно задать конфигурации для разных компиляторов.
@@ -234,8 +290,8 @@ slug: "gentoo-compiling-clang"
     NM="nm"
     RANLIB="ranlib"
     OBJCOPY="objcopy"
+    STRIP="strip"
     LD="ld"
-
 
     ```
 -   Конфигурация для компилятора _clang_ без _LTO_ в файле `/etc/portage/env/compiler-clang-no-lto`:

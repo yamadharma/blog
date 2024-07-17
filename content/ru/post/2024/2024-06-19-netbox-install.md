@@ -2,7 +2,7 @@
 title: "NetBox. Установка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-19T18:13:00+03:00
-lastmod: 2024-06-20T17:15:00+03:00
+lastmod: 2024-07-17T20:29:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -345,4 +345,58 @@ slug: "netbox-install"
 -   Запустим nginx:
     ```shell
     systemctl enable --now nginx
+    ```
+
+
+### <span class="section-num">3.7</span> Установка https-сертификата LetsEncrypt {#установка-https-сертификата-letsencrypt}
+
+-   [Клиенты ACME. Certbot]({{< relref "2022-05-02-acme-clients-certbot" >}})
+
+
+#### <span class="section-num">3.7.1</span> Установка _certbot_ {#установка-certbot}
+
+-   Проверьте, что установлен репозитории EPEL:
+    ```shell
+    dnf -y install epel-release
+    ```
+-   Установите _certbot_:
+    ```shell
+    dnf -y install certbot
+    ```
+-   Для веб-сервера Apache:
+    ```shell
+    dnf -y install python3-certbot-apache
+    ```
+-   Для веб-сервера Nginx:
+    ```shell
+    dnf -y install python3-certbot-nginx
+    ```
+
+
+#### <span class="section-num">3.7.2</span> Сервер _Nginx_ {#сервер-nginx}
+
+-   Плагин `certbot-nginx` предоставляет автоматическую настройку _Nginx HTTP Server_.
+-   Он пытается найти конфигурацию каждого домена, а также добавляет рекомендованные для безопасности параметры, настройки использования сертификатов и пути к сертификатам Let's Encrypt.
+-   Первоначальная настройка виртуальных хостов:
+    ```shell
+    certbot --nginx
+    ```
+-   Обновление сертификатов:
+    ```shell
+    certbot renew
+    ```
+-   Изменение сертификатов без изменения файлов конфигурации _nginx_:
+    ```shell
+    certbot --nginx certonly
+    ```
+
+
+#### <span class="section-num">3.7.3</span> Конфигурационный файл _Nginx_ {#конфигурационный-файл-nginx}
+
+-   В файле `/etc/nginx/conf.d/netbox.conf` должны быть следующие записи:
+    ```conf-unix
+    ssl_certificate /etc/letsencrypt/live/yourwebsite.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/yourwebsite.com/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
     ```

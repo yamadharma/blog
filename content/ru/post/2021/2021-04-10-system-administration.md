@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-06-25T17:03:00+03:00
+lastmod: 2024-07-17T18:57:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -232,6 +232,7 @@ slug: "system-administration"
 
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 -   [Броузер Nyxt]({{< relref "2023-10-05-nyxt-browser" >}})
+-   [Почтовый клиент aerc]({{< relref "2024-07-17-email-client-aerc" >}})
 
 
 ### <span class="section-num">10.14</span> Телеконференции {#телеконференции}

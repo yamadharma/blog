@@ -2,7 +2,7 @@
 title: "Установка LibreNMS"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-26T11:32:00+03:00
-lastmod: 2024-04-26T11:34:00+03:00
+lastmod: 2024-07-17T20:52:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -133,7 +133,127 @@ slug: "librenms-installation"
     ```
 
 
-## <span class="section-num">9</span> Настроить веб-сервер {#настроить-веб-сервер}
+## <span class="section-num">9</span> HTTP-сервер {#http-сервер}
+
+
+### <span class="section-num">9.1</span> Nginx {#nginx}
+
+
+#### <span class="section-num">9.1.1</span> Установка {#установка}
+
+-   Установим nginx.
+-   Выберем нужный модуль:
+    ```shell
+    dnf module list nginx
+    dnf module switch-to nginx:1.24
+    dnf -y install nginx
+    ```
+
+
+#### <span class="section-num">9.1.2</span> Конфигурация {#конфигурация}
+
+-   Создайте librenms.conf:
+    ```shell
+    touch /etc/nginx/conf.d/librenms.conf
+    ```
+-   Добавьте следующую конфигурацию, отредактируйте `server_name` по мере необходимости:
+    ```conf-unix
+    server {
+     listen      80;
+     server_name librenms.example.com;
+     root        /opt/librenms/html;
+     index       index.php;
+
+     charset utf-8;
+     gzip on;
+     gzip_types text/css application/javascript text/javascript application/x-javascript image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon;
+     location / {
+      try_files $uri $uri/ /index.php?$query_string;
+     }
+     location ~ [^/]\.php(/|$) {
+      fastcgi_pass unix:/run/php-fpm-librenms.sock;
+      fastcgi_split_path_info ^(.+\.php)(/.+)$;
+      include fastcgi.conf;
+     }
+     location ~ /\.(?!well-known).* {
+      deny all;
+     }
+    }
+    ```
+
+
+#### <span class="section-num">9.1.3</span> Конфигурация SSL {#конфигурация-ssl}
+
+-   Будем использовать сертификат Lets' Encrypt.
+-   [Клиенты ACME. Certbot]({{< relref "2022-05-02-acme-clients-certbot" >}})
+
+-   Создайте librenms.conf:
+    ```shell
+    touch /etc/nginx/conf.d/librenms.conf
+    ```
+-   Добавьте следующую конфигурацию, отредактируйте `server_name` по мере необходимости:
+    ```conf-unix
+    server {
+         listen              443 ssl http2;
+         listen              [::]:443 ssl http2;
+         server_name example.com;
+         ssl_certificate /etc/letsencrypt/live/yourwebsite.com/fullchain.pem;
+         ssl_certificate_key /etc/letsencrypt/live/yourwebsite.com/privkey.pem;
+         include /etc/letsencrypt/options-ssl-nginx.conf;
+         ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+         root        /opt/librenms/html;
+         index       index.php;
+         access_log  /opt/librenms/logs/access_log;
+         error_log   /opt/librenms/logs/error_log;
+
+         charset utf-8;
+         gzip on;
+         gzip_types text/css application/javascript text/javascript application/x-javascript image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon;
+
+         proxy_read_timeout 300;
+         proxy_connect_timeout 300;
+         proxy_send_timeout 300;
+
+         location / {
+                 try_files $uri $uri/ /index.php?$query_string;
+         }
+         location /api/v0 {
+                  try_files $uri $uri/ /api_v0.php?$query_string;
+         }
+         location ~.php {
+                  include fastcgi.conf;
+                  fastcgi_split_path_info ^(.+.php)(/.+)$;
+                  fastcgi_pass unix:/run/php-fpm/librenms.sock;
+         }
+         location ~ /.ht {
+                  deny all;
+         }
+    }
+
+    server {
+            listen         80;
+            listen         [::]:80;
+            server_name    example.com;
+            return         301 https://$server_name$request_uri;
+    }
+    ```
+
+
+#### <span class="section-num">9.1.4</span> Запуск http-сервера {#запуск-http-сервера}
+
+-   Запустим nginx:
+    ```shell
+    systemctl enable --now php-fpm
+    systemctl enable --now nginx
+    ```
+
+
+### <span class="section-num">9.2</span> Apache {#apache}
+
+-   Можно использовать Apache.
+
+
+#### <span class="section-num">9.2.1</span> Конфигурация {#конфигурация}
 
 -   Создайте librenms.conf:
     ```shell
@@ -147,18 +267,18 @@ slug: "librenms-installation"
 
       AllowEncodedSlashes NoDecode
       <Directory "/opt/librenms/html/">
-        Require all granted
-        AllowOverride All
-        Options FollowSymLinks MultiViews
+            Require all granted
+            AllowOverride All
+            Options FollowSymLinks MultiViews
       </Directory>
 
       # Enable http authorization headers
       <IfModule setenvif_module>
-        SetEnvIfNoCase ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
+            SetEnvIfNoCase ^Authorization$ "(.+)" HTTP_AUTHORIZATION=$1
       </IfModule>
 
       <FilesMatch ".+\.php$">
-        SetHandler "proxy:unix:/run/php-fpm-librenms.sock|fcgi://localhost"
+            SetHandler "proxy:unix:/run/php-fpm-librenms.sock|fcgi://localhost"
       </FilesMatch>
     </VirtualHost>
     ```
@@ -170,6 +290,24 @@ slug: "librenms-installation"
     ```shell
     systemctl enable --now httpd
     systemctl enable --now php-fpm
+    ```
+
+
+### <span class="section-num">9.3</span> SELinux {#selinux}
+
+-   Настройте политики SELinux:
+    ```shell
+    setsebool httpd_can_network_connect 1
+    setsebool -P httpd_can_network_connect 1
+    ```
+
+
+### <span class="section-num">9.4</span> Брандмауэр {#брандмауэр}
+
+-   Настроим брандмауэр:
+    ```shell
+    firewall-cmd --add-servic={http,https} --permanent
+    firewall-cmd --reload
     ```
 
 

@@ -2,7 +2,7 @@
 title: "Шрифт. Iosevka"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-11T19:15:00+03:00
-lastmod: 2024-04-11T19:26:00+03:00
+lastmod: 2024-07-17T18:53:00+03:00
 tags: ["font"]
 categories: ["computer-science"]
 draft: false
@@ -69,3 +69,10 @@ slug: "font-iosevka"
 -   Репозиторий:
     -   <https://github.com/protesilaos/iosevka-comfy>
     -   <https://gitlab.com/protesilaos/iosevka-comfy>
+
+
+### <span class="section-num">5.2</span> Sarasa-Gothic {#sarasa-gothic}
+
+-   На основе шрифтов Inter, Iosevka, Source Han Sans.
+-   Основное свойство --- наличие символов CJK.
+-   Репозиторий: <https://github.com/be5invis/Sarasa-Gothic>
