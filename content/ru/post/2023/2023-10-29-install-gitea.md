@@ -2,7 +2,7 @@
 title: "Установка gitea"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-29T20:10:00+03:00
-lastmod: 2024-01-31T17:49:00+03:00
+lastmod: 2024-07-20T16:15:00+03:00
 tags: ["git", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -39,25 +39,25 @@ slug: "install-gitea"
     -   Ubuntu/Debian:
         ```shell
         adduser \
-            --system \
-            --shell /bin/bash \
-            --gecos 'Git Version Control' \
-            --group \
-            --disabled-password \
-            --home /home/git \
-            git
+                  --system \
+                  --shell /bin/bash \
+                  --gecos 'Git Version Control' \
+                  --group \
+                  --disabled-password \
+                  --home /home/git \
+                  git
         ```
     -   Fedora/RHEL/CentOS:
         ```shell
         groupadd --system git
         adduser \
-            --system \
-            --shell /bin/bash \
-            --comment 'Git Version Control' \
-            --gid git \
-            --home-dir /home/git \
-            --create-home \
-            git
+                  --system \
+                  --shell /bin/bash \
+                  --comment 'Git Version Control' \
+                  --gid git \
+                  --home-dir /home/git \
+                  --create-home \
+                  git
         ```
 
 
@@ -236,9 +236,9 @@ slug: "install-gitea"
 
 ### <span class="section-num">4.2</span> Брандмауэр {#брандмауэр}
 
--   Разрешим работать сервису `http`:
+-   Настроим брандмауэр:
     ```shell
-    firewall-cmd --permanent --zone=public --add-service=http
+    firewall-cmd --add-servic={http,https} --permanent
     firewall-cmd --reload
     ```
 
@@ -252,21 +252,21 @@ slug: "install-gitea"
     ```
 
 
-### <span class="section-num">4.4</span> Конфигурация nginx: {#конфигурация-nginx}
+### <span class="section-num">4.4</span> Конфигурация nginx {#конфигурация-nginx}
 
 -   В файле `/etc/nginx/conf.d/gitea.conf` опишем конфигурацию для перенаправления:
     ```conf-unix
     server {
-        server_name hub.example.com;
+            server_name hub.example.com;
 
-        location / {
-            client_max_body_size 512M;
-            proxy_pass http://localhost:3000;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-            proxy_set_header X-Forwarded-Proto $scheme;
-        }
+            location / {
+                client_max_body_size 512M;
+                proxy_pass http://localhost:3000;
+                proxy_set_header Host $host;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_set_header X-Forwarded-Proto $scheme;
+            }
     }
     ```
 
@@ -278,6 +278,54 @@ slug: "install-gitea"
     [security]
     REVERSE_PROXY_LIMIT = 1
     REVERSE_PROXY_TRUSTED_PROXIES = 127.0.0.1/8
+    ```
+
+
+### <span class="section-num">4.6</span> Настройка SSL {#настройка-ssl}
+
+-   Установите _certbot_ (см. [Клиенты ACME. Certbot]({{< relref "2022-05-02-acme-clients-certbot" >}}))
+-   Создайте сертификат.
+-   Конфигурационный файл _Nginx_ будет иметь вид:
+    ```conf-unix
+    server {
+        listen              443 ssl http2;
+        listen              [::]:443 ssl http2;
+
+        server_name hub.example.com;
+
+        ssl_certificate /etc/letsencrypt/live/hub.example.com/fullchain.pem;
+        ssl_certificate_key /etc/letsencrypt/live/hub.example.com/privkey.pem;
+        include /etc/letsencrypt/options-ssl-nginx.conf;
+        ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+         charset utf-8;
+         gzip on;
+         gzip_types text/css application/javascript text/javascript application/x-javascript image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon;
+
+         proxy_read_timeout 300;
+         proxy_connect_timeout 300;
+         proxy_send_timeout 300;
+
+
+        location / {
+            client_max_body_size 512M;
+            proxy_pass http://localhost:3000;
+            proxy_set_header Connection $http_connection;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+
+    server {
+        # Redirect HTTP traffic to HTTPS
+        listen         80;
+        listen         [::]:80;
+        server_name hub.example.com;
+        return         301 https://$server_name$request_uri;
+    }
     ```
 
 

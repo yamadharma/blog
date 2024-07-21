@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2024-03-02T17:26:00+03:00
+lastmod: 2024-07-19T14:53:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -33,6 +33,7 @@ slug: "rudn-digital-resources"
 -   Основной портал: <https://www.rudn.ru/>.
 -   Приёмная комиссия: <https://admission.rudn.ru/>.
 -   Система управления качеством РУДН: <http://quality.rudn.ru/>.
+-   Телефонная книга: <https://phonebook.rudn.ru/>.
 
 
 ### <span class="section-num">2.1</span> Подразделения {#подразделения}

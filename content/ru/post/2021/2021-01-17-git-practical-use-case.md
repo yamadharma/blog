@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2024-02-28T19:44:00+03:00
+lastmod: 2024-07-19T18:46:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -137,18 +137,28 @@ slug: "git-practical-use-case"
 #### <span class="section-num">2.4.1</span> commitizen {#commitizen}
 
 -   Данная программа используется для помощи в форматировании коммитов.
-    ```shell
-    yarn global add commitizen
-    ```
+    -   pnpm:
+        ```shell
+        pnpm add -g commitizen
+        ```
+    -   yarn:
+        ```shell
+        yarn global add commitizen
+        ```
 -   При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
 
 
 #### <span class="section-num">2.4.2</span> standard-version {#standard-version}
 
 -   Данная программа автоматизирует изменение номера версии.
-    ```shell
-    yarn global add standard-version
-    ```
+    -   pnpm:
+        ```shell
+        pnpm add -g standard-version
+        ```
+    -   yarn:
+        ```shell
+        yarn global add standard-version
+        ```
 
 
 ## <span class="section-num">3</span> Настройка git {#настройка-git}
@@ -294,26 +304,26 @@ slug: "git-practical-use-case"
 -   Сконфигурим формат коммитов. Для этого добавим в файл `package.json` команду для формирования коммитов:
     ```js
     "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
+            "commitizen": {
+                "path": "cz-conventional-changelog"
+            }
     }
     ```
     Таким образом, файл `package.json` приобретает вид:
     ```js
     {
-        "name": "test-repo",
-        "version": "1.0.0",
-        "description": "Git repo for educational purposes",
-        "main": "index.js",
-        "repository": "git@github.com:username/test-repo.git",
-        "author": "Name Surname <username@gmail.com>",
-        "license": "CC-BY-4.0",
-        "config": {
-            "commitizen": {
-                "path": "cz-conventional-changelog"
+            "name": "test-repo",
+            "version": "1.0.0",
+            "description": "Git repo for educational purposes",
+            "main": "index.js",
+            "repository": "git@github.com:username/test-repo.git",
+            "author": "Name Surname <username@gmail.com>",
+            "license": "CC-BY-4.0",
+            "config": {
+                "commitizen": {
+                    "path": "cz-conventional-changelog"
+                }
             }
-        }
     }
     ```
 
@@ -344,11 +354,7 @@ slug: "git-practical-use-case"
     ```
 -   Загрузите весь репозиторий в хранилище:
     ```shell
-    git push --all
-    ```
--   Установите внешнюю ветку как вышестоящую для этой ветки:
-    ```shell
-    git branch --set-upstream-to=origin/develop develop
+    git push -u --all
     ```
 -   Создадим релиз с версией 1.0.0
     ```shell

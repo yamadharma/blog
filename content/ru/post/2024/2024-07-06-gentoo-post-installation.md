@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2024-07-09T17:27:00+03:00
+lastmod: 2024-07-21T17:03:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -66,6 +66,35 @@ slug: "gentoo-post-installation"
     ```
 
 
+### <span class="section-num">2.4</span> Дополнительные оверлеи {#дополнительные-оверлеи}
+
+-   [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})
+
+
+#### <span class="section-num">2.4.1</span> guru {#guru}
+
+-   Добавление репозитория guru:
+    ```shell
+    eselect repository enable guru
+    ```
+
+
+#### <span class="section-num">2.4.2</span> gentoo-zh {#gentoo-zh}
+
+-   Добавление репозитория gentoo-zh:
+    ```shell
+    eselect repository enable gentoo-zh
+    ```
+
+
+#### <span class="section-num">2.4.3</span> science {#science}
+
+-   Добавление репозитория science:
+    ```shell
+    eselect repository enable science
+    ```
+
+
 ## <span class="section-num">3</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 
@@ -96,3 +125,43 @@ slug: "gentoo-post-installation"
     ```shell
     emerge kde-apps/kde-apps-meta
     ```
+
+
+#### <span class="section-num">3.2.2</span> Gnome {#gnome}
+
+
+### <span class="section-num">3.3</span> Редакторы {#редакторы}
+
+-   Для установки всего необходимого для работы в консоли необходимо использовать файл `edit.sh`:
+    ```shell
+    #!/bin/sh
+    ```
+
+
+#### <span class="section-num">3.3.1</span> Zed {#zed}
+
+-   Установка редактора _Zed_ (оверлей `gentoo-zh`):
+    ```shell
+    ## Установка редактора Zed
+    # emerge app-editors/zed
+    ```
+
+
+#### <span class="section-num">3.3.2</span> VScode {#vscode}
+
+-   Установка редактора _VSCode_:
+    ```shell
+    ## Установка редактора VSCode
+    emerge app-editors/vscode
+    ```
+
+-   Установка редактора набора LSP-серверов для _VSCode_ (оверлей `guru`):
+    ```shell
+    emerge dev-util/vscode-langservers-extracted
+    ```
+
+
+#### <span class="section-num">3.3.3</span> Emacs {#emacs}
+
+
+#### <span class="section-num">3.3.4</span> Vim {#vim}
