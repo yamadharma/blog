@@ -2,7 +2,7 @@
 title: "Подготовка документов для чтения"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-12-05T10:09:00+03:00
-lastmod: 2024-06-22T18:10:00+03:00
+lastmod: 2024-07-26T18:56:00+03:00
 tags: ["read"]
 categories: ["self-management"]
 draft: false
@@ -16,10 +16,15 @@ slug: "preparing-documents-reading"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Чистка документа {#чистка-документа}
+## <span class="section-num">1</span> Преобразование формата {#преобразование-формата}
+
+-   [Преобразование djvu в pdf]({{< relref "20240726185400-преобразование_djvu_в_pdf.md" >}})
 
 
-### <span class="section-num">1.1</span> Удалить текстовый слой {#удалить-текстовый-слой}
+## <span class="section-num">2</span> Чистка документа {#чистка-документа}
+
+
+### <span class="section-num">2.1</span> Удалить текстовый слой {#удалить-текстовый-слой}
 
 -   Ghostscript поддерживает параметры, которые позволяют удалить из PDF-файла либо весь текст, либо все изображения, либо все векторные элементы.
 -   Удалить весь текст из входного PDF-файла:
@@ -46,7 +51,7 @@ slug: "preparing-documents-reading"
     ```
 
 
-### <span class="section-num">1.2</span> unpaper {#unpaper}
+### <span class="section-num">2.2</span> unpaper {#unpaper}
 
 -   Репозиторий: <https://github.com/Flameeyes/unpaper>
 -   Сайт: <https://www.flameeyes.com/projects/unpaper>
@@ -54,32 +59,32 @@ slug: "preparing-documents-reading"
 -   Основная цель --- сделать отсканированные страницы книги более читабельными.
 
 
-### <span class="section-num">1.3</span> ScanTailor {#scantailor}
+### <span class="section-num">2.3</span> ScanTailor {#scantailor}
 
 -   Сайт: <https://scantailor.org/>
 -   Репозиторий: <https://github.com/4lex4/scantailor-advanced>
 -   ScanTailor Advanced объединяет функции версий ScanTailor Featured и ScanTailor Enhanced.
 
 
-## <span class="section-num">2</span> Распознавание документа {#распознавание-документа}
+## <span class="section-num">3</span> Распознавание документа {#распознавание-документа}
 
 
-### <span class="section-num">2.1</span> OCRmyPDF {#ocrmypdf}
+### <span class="section-num">3.1</span> OCRmyPDF {#ocrmypdf}
 
--   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
+-   [Распознавание pdf. OCRmyPDF]({{< relref "20240607210700-распознавание_pdf_ocrmypdf.md" >}})
 -   Репозиторий: <https://github.com/ocrmypdf/OCRmyPDF>
 -   Сайт: <https://ocrmypdf.readthedocs.io/>
 
 
-### <span class="section-num">2.2</span> pdfsandwich {#pdfsandwich}
+### <span class="section-num">3.2</span> pdfsandwich {#pdfsandwich}
 
 -   Сайт: <http://www.tobias-elze.de/pdfsandwich/>
 
 
-## <span class="section-num">3</span> Создание оглавления {#создание-оглавления}
+## <span class="section-num">4</span> Создание оглавления {#создание-оглавления}
 
 
-### <span class="section-num">3.1</span> Общая информация {#общая-информация}
+### <span class="section-num">4.1</span> Общая информация {#общая-информация}
 
 -   Оглавление упрощает ориентацию в книге.
 -   Оглавление позволяет:
@@ -88,12 +93,12 @@ slug: "preparing-documents-reading"
     -   структурировать заметки к книге.
 
 
-### <span class="section-num">3.2</span> Ссылки {#ссылки}
+### <span class="section-num">4.2</span> Ссылки {#ссылки}
 
 -   <https://commons.wikimedia.org/wiki/Help:Creating_an_outline_for_PDF_and_DjVu/ru>
 
 
-### <span class="section-num">3.3</span> HandyOutliner for DjVu / PDF {#handyoutliner-for-djvu-pdf}
+### <span class="section-num">4.3</span> HandyOutliner for DjVu / PDF {#handyoutliner-for-djvu-pdf}
 
 -   Сайт: <https://handyoutlinerfo.sourceforge.net/index_ru.htm>
 -   Sourceforge: <https://sourceforge.net/projects/handyoutlinerfo/>
@@ -101,13 +106,13 @@ slug: "preparing-documents-reading"
 -   Под Linux работает под mono.
 
 
-### <span class="section-num">3.4</span> Pdf &amp; Djvu Bookmarker {#pdf-and-djvu-bookmarker}
+### <span class="section-num">4.4</span> Pdf &amp; Djvu Bookmarker {#pdf-and-djvu-bookmarker}
 
 -   Сайт: <https://sourceforge.net/projects/djvubookmarker/>
 -   Создание оглавление производится с одновременным просмотром самого документа.
 
 
-### <span class="section-num">3.5</span> jpdfbookmarks {#jpdfbookmarks}
+### <span class="section-num">4.5</span> jpdfbookmarks {#jpdfbookmarks}
 
 -   Репозиторий: <https://github.com/SemanticBeeng/jpdfbookmarks>
 -   Сайт: <https://sourceforge.net/projects/jpdfbookmarks/>

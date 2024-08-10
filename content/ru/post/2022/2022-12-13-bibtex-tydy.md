@@ -2,8 +2,8 @@
 title: "Bibtex. Пакет bibtex-tydy"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-13T17:27:00+03:00
-lastmod: 2023-07-12T18:27:00+03:00
-tags: ["tex"]
+lastmod: 2024-08-05T18:47:00+03:00
+tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
 slug: "bibtex-tydy"
@@ -26,11 +26,11 @@ slug: "bibtex-tydy"
 ## <span class="section-num">2</span> Установка {#установка}
 
 
-### <span class="section-num">2.1</span> npm {#npm}
+### <span class="section-num">2.1</span> pnpm {#pnpm}
 
 -   Установка:
     ```shell
-    npm install -g bibtex-tidy
+    pnpm add -g bibtex-tidy
     ```
 
 
@@ -39,6 +39,14 @@ slug: "bibtex-tydy"
 -   Установка:
     ```shell
     yarn global add bibtex-tidy
+    ```
+
+
+### <span class="section-num">2.3</span> npm {#npm}
+
+-   Установка:
+    ```shell
+    npm install -g bibtex-tidy
     ```
 
 

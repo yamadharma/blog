@@ -2,7 +2,7 @@
 title: "Почтовый клиент aerc"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-17T18:55:00+03:00
-lastmod: 2024-07-17T19:25:00+03:00
+lastmod: 2024-08-08T20:30:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,9 @@ slug: "email-client-aerc"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Сайт: <https://aerc-mail.org/>
--   Репозиторий: <https://git.sr.ht/~rjarry/aerc>
+-   Репозиторий:
+    -   <https://git.sr.ht/~rjarry/aerc>
+    -   <https://github.com/rjarry/aerc>
 -   Сочетания клавиш в стиле Vim.
 -   Поддержка нескольких учетных записей: IMAP, Maildir, Notmuch, Mbox и JMAP.
 -   Протоколы передачи: IMAP, JMAP, SMTP, sendmail.

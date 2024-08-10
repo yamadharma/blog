@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-19T17:57:00+03:00
-lastmod: 2023-11-15T09:41:00+03:00
+lastmod: 2024-07-26T14:04:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -26,21 +26,21 @@ menu:
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Описание построено на рекомендациях [Рабочее пространство для лабораторной работы]({{< relref "2021-01-16-workspace-laboratory-work" >}}).
+-   Описание построено на рекомендациях [Рабочее пространство для лабораторной работы]({{< relref "20210116125100-рабочее_пространство_для_лабораторнои_работы.md" >}}).
 -   Репозиторий: <https://github.com/yamadharma/course-directory-student-template>.
 -   Репозиторий с примерами кода: <https://github.com/yamadharma/net-os-admin-lab-code>
 -   Аббревиатура курса: `net-os-admin`
--   Учебный год: 2023--2024
+-   Учебный год: 2024--2025
 
 
 ## <span class="section-num">2</span> Создание репозитория для курса Администрирование сетевых подсистем {#создание-репозитория-для-курса-администрирование-сетевых-подсистем}
 
--   Создадим репозиторий с помощью утилит командной строки gh (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})):
+-   Создадим репозиторий с помощью утилит командной строки gh (см. [github: утилиты командной строки]({{< relref "20210804144000-github_утилиты_команднои_строки.md" >}})):
     ```shell
-    mkdir -p ~/work/study/2023-2024/"Администрирование сетевых подсистем"
-    cd ~/work/study/2023-2024/"Администрирование сетевых подсистем"
-    gh repo create study_2023-2024_net-os-admin --template=yamadharma/course-directory-student-template --public
-    git clone --recursive git@github.com:<owner>/study_2023-2024_net-os-admin.git net-os-admin
+    mkdir -p ~/work/study/2024-2025/"Администрирование сетевых подсистем"
+    cd ~/work/study/2024-2025/"Администрирование сетевых подсистем"
+    gh repo create study_2024-2025_net-os-admin --template=yamadharma/course-directory-student-template --public
+    git clone --recursive git@github.com:<owner>/study_2024-2025_net-os-admin.git net-os-admin
     ```
 
 
@@ -51,7 +51,7 @@ menu:
     -   каталог курса называется как аббревиатура курса.
 -   Перейдите в каталог курса:
     ```shell
-    cd ~/work/study/2023-2024/"Администрирование сетевых подсистем"/net-os-admin
+    cd ~/work/study/2024-2025/"Администрирование сетевых подсистем"/net-os-admin
     ```
 -   Удалите лишние файлы:
     ```shell
