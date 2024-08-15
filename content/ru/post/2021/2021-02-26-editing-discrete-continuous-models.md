@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2024-04-13T20:19:00+03:00
+lastmod: 2024-08-11T08:47:00+03:00
 tags: ["science-admin"]
 categories: ["science"]
 draft: false
@@ -366,3 +366,8 @@ Scopus h-index: 6. More than 80 publications indexed in international databases.
 ## <span class="section-num">3</span> Текущая работа по журналу {#текущая-работа-по-журналу}
 
 -   [Редактирование. Discrete and Continuous Models. Текущая работа]({{< relref "2022-02-18-editing-discrete-continuous-models-current-work" >}})
+
+
+## <span class="section-num">4</span> Правила {#правила}
+
+-   [DCM. Авторская этика]({{< relref "2024-08-10-dcm-author-ethics" >}})

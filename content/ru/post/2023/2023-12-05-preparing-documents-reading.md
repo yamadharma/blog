@@ -18,7 +18,7 @@ slug: "preparing-documents-reading"
 
 ## <span class="section-num">1</span> Преобразование формата {#преобразование-формата}
 
--   [Преобразование djvu в pdf]({{< relref "20240726185400-преобразование_djvu_в_pdf.md" >}})
+-   [Преобразование djvu в pdf]({{< relref "2024-07-26-convert-djvu-pdf" >}})
 
 
 ## <span class="section-num">2</span> Чистка документа {#чистка-документа}
@@ -71,7 +71,7 @@ slug: "preparing-documents-reading"
 
 ### <span class="section-num">3.1</span> OCRmyPDF {#ocrmypdf}
 
--   [Распознавание pdf. OCRmyPDF]({{< relref "20240607210700-распознавание_pdf_ocrmypdf.md" >}})
+-   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
 -   Репозиторий: <https://github.com/ocrmypdf/OCRmyPDF>
 -   Сайт: <https://ocrmypdf.readthedocs.io/>
 

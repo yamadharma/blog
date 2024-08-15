@@ -2,7 +2,7 @@
 title: "Клавиатуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T16:49:00+03:00
-lastmod: 2024-05-01T21:23:00+03:00
+lastmod: 2024-08-11T09:01:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -33,7 +33,10 @@ slug: "keyboards"
 
 -   <https://keychron-russia.com/>
 -   <https://geekboards.ru/>
--   <https://ru.ergohaven.xyz/>
+-   [Клавиатуры. Ergohaven]({{< relref "2024-08-11-keyboards-ergohaven" >}})
+    -   Российские производители.
+    -   Делают кастомные клавиатуры своей разработки.
+    -   Выпускают малыми партиями.
 
 
 ## <span class="section-num">4</span> Ресурсы {#ресурсы}

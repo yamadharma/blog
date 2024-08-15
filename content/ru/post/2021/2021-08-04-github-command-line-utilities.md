@@ -2,7 +2,7 @@
 title: "github: утилиты командной строки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-04T14:40:00+03:00
-lastmod: 2024-05-27T16:23:00+03:00
+lastmod: 2024-08-14T22:06:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -222,3 +222,25 @@ slug: "github-command-line-utilities"
     ```shell
     gh repo create my-project --private --source=. --remote=upstream
     ```
+
+
+### <span class="section-num">4.4</span> Управление ключами ssh {#управление-ключами-ssh}
+
+-   Список ключей ssh в учётной записи GitHub:
+    ```shell
+    gh ssh-key list
+    ```
+-   Удалить ключ ssh из учётной записи GitHub:
+    ```shell
+    gh ssh-key delete <id>
+    ```
+-   Добавить ключ ssh в учётную запись GitHub:
+    ```shell
+    gh ssh-key add [<key-file>] [flags]
+    ```
+
+    -   Флаги:
+        -   `-t`, `--title <string>` : название нового ключа;
+        -   `--type <string>` : тип ssh-ключа:
+            -   `authentication` (значение по умолчанию);
+            -   `signing`.

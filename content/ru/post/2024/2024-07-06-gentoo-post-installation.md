@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2024-08-05T18:43:00+03:00
+lastmod: 2024-08-14T12:02:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,7 @@ slug: "gentoo-post-installation"
 
 ## <span class="section-num">2</span> Настройка репозиториев {#настройка-репозиториев}
 
--   Настройка репозиториев исходит из того, что я использую свой репозиторий с конфигурациями (см. [Gentoo. Репозиторий karma]({{< relref "../notes/public/20240525205200-gentoo_репозитории_karma.md" >}})).
+-   Настройка репозиториев исходит из того, что я использую свой репозиторий с конфигурациями (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})).
 
 
 ### <span class="section-num">2.1</span> Репозиторий gentoo {#репозиторий-gentoo}
@@ -37,7 +37,7 @@ slug: "gentoo-post-installation"
 
 ### <span class="section-num">2.2</span> Репозитории karma {#репозитории-karma}
 
--   Установите репозитории с настройками (см. [Gentoo. Репозиторий karma]({{< relref "../notes/public/20240525205200-gentoo_репозитории_karma.md" >}}))
+-   Установите репозитории с настройками (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}}))
 -   Добавьте репозиторий `karma`:
     ```shell
     eselect repository add karma git https://github.com/yamadharma/karma.git
@@ -68,7 +68,7 @@ slug: "gentoo-post-installation"
 
 ### <span class="section-num">2.4</span> Дополнительные оверлеи {#дополнительные-оверлеи}
 
--   [Gentoo. Дополнительные репозитории]({{< relref "../notes/public/20231001134100-gentoo_дополнительные_репозитории.md" >}})
+-   [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})
 
 
 #### <span class="section-num">2.4.1</span> guru {#guru}
@@ -102,13 +102,13 @@ slug: "gentoo-post-installation"
 
 -   Для установки всего необходимого для работы в консоли необходимо использовать файл `term.sh`:
     ```shell
-    #!/bin/sh
+    ### Terminal
     ```
 
 
 #### <span class="section-num">3.1.1</span> Файловый менеджер mc {#файловый-менеджер-mc}
 
--   [Файловый менеджер Midnight Commander]({{< relref "../notes/public/20230826174000-фаиловыи_менеджер_midnight_commander.md" >}})
+-   [Файловый менеджер Midnight Commander]({{< relref "2023-08-26-midnight-commander-file-manager" >}})
 -   Установка файлового менеджера mc:
     ```shell
     ## Установка файлового менеджера mc
@@ -121,23 +121,64 @@ slug: "gentoo-post-installation"
 
 #### <span class="section-num">3.2.1</span> KDE {#kde}
 
+-   Для установки KDE необходимо использовать файл `kde.sh`:
+    ```shell
+    ### KDE
+    ```
+
 -   Установим все программы KDE:
     ```shell
+    ## Install all KDE programs
     emerge kde-apps/kde-apps-meta
     ```
 
 
 #### <span class="section-num">3.2.2</span> Gnome {#gnome}
 
+-   Для установки Gnome необходимо использовать файл `gnome.sh`:
+    ```shell
+    ### Gnome
+    ```
+
 
 #### <span class="section-num">3.2.3</span> Sway {#sway}
+
+-   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
+-   Для установки Gnome необходимо использовать файл `sway.sh`:
+    ```shell
+    ### Sway
+    ```
+
+<!--list-separator-->
+
+1.  Sway
+
+    -   Установим собственно Sway:
+        ```shell
+        emerge gui-wm/sway
+        ```
+
+<!--list-separator-->
+
+2.  Работа с буфером обмена
+
+    -   Общие программы для работы с буфером обмена:
+        ```shell
+        ## Wayland clipboard
+        emerge gui-apps/wl-clipboard
+        ```
+
+    -   Установим `cliphist` (репозиторий `guru`):
+        ```shell
+        emerge app-misc/cliphist
+        ```
 
 
 ### <span class="section-num">3.3</span> Средства разработки {#средства-разработки}
 
 -   Для установки всего необходимого для работы в консоли необходимо использовать файл `dev.sh`:
     ```shell
-    #!/bin/sh
+    ### Dev tools
     ```
 
 
@@ -155,7 +196,7 @@ slug: "gentoo-post-installation"
         ```shell
         ## Gitea
         ```
-    -   Утилита командной строки для работы с сервером Gitea (см. [Взаимодействие с gitea из командной строки]({{< relref "../notes/public/20231111203100-взаимодеиствие_с_gitea_из_команднои_строки.md" >}})):
+    -   Утилита командной строки для работы с сервером Gitea (см. [Взаимодействие с gitea из командной строки]({{< relref "2023-11-11-interacting-gitea-command-line" >}})):
         ```shell
         emerge dev-util/tea
         ```
@@ -189,7 +230,7 @@ slug: "gentoo-post-installation"
 
 1.  pnpm
 
-    -   Управление пакетами Node.js (оверлей `karma`, см. [Gentoo. Репозиторий karma]({{< relref "../notes/public/20240525205200-gentoo_репозитории_karma.md" >}})):
+    -   Управление пакетами Node.js (оверлей `karma`, см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
         ```shell
         emerge sys-apps/pnpm-bin
         ```
@@ -208,7 +249,7 @@ slug: "gentoo-post-installation"
 
 -   Для установки редакторов необходимо использовать файл `edit.sh`:
     ```shell
-    #!/bin/sh
+    ### Edit
     ```
 
 
@@ -243,10 +284,15 @@ slug: "gentoo-post-installation"
 
 ### <span class="section-num">3.5</span> Обслуживание системы {#обслуживание-системы}
 
+-   Для установки системных утилит необходимо использовать файл `sys.sh`:
+    ```shell
+    ### System tools
+    ```
+
 
 #### <span class="section-num">3.5.1</span> Дедупликация файлов {#дедупликация-файлов}
 
--   Установим _jdupes_ (см. [Дедупликация файлов. jdupes]({{< relref "../notes/public/20240223180800-дедупликация_фаилов_jdupes.md" >}})):
+-   Установим _jdupes_ (см. [Дедупликация файлов. jdupes]({{< relref "2024-02-23-file-deduplication-jdupes" >}})):
     ```shell
     emerge jdupes
     ```
@@ -256,13 +302,13 @@ slug: "gentoo-post-installation"
 
 -   Для установки пользовательских утилит необходимо использовать файл `user.sh`:
     ```shell
-    #!/bin/sh
+    ### User utils
     ```
 
 
 #### <span class="section-num">3.6.1</span> Менеджер закладок buku {#менеджер-закладок-buku}
 
--   [Менеджер закладок buku]({{< relref "../notes/public/20240622204300-менеджер_закладок_buku.md" >}})
+-   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
 -   Установим менеджер закладок:
     ```shell
     ## Buku

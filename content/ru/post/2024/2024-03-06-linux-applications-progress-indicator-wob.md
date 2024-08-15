@@ -23,7 +23,7 @@ slug: "linux-applications-progress-indicator-wob"
 
 ## <span class="section-num">2</span> Установка {#установка}
 
--   Gentoo (оверлей `guru`) (см. [Gentoo. Дополнительные репозитории]({{< relref "../notes/public/20231001134100-gentoo_дополнительные_репозитории.md" >}})):
+-   Gentoo (оверлей `guru`) (см. [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
     ```shell
     emerge gui-apps/wob
     ```
