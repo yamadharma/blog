@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2024-08-14T12:02:00+03:00
+lastmod: 2024-08-19T13:53:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -98,54 +98,71 @@ slug: "gentoo-post-installation"
 ## <span class="section-num">3</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
 
-### <span class="section-num">3.1</span> Работа в консоли {#работа-в-консоли}
+### <span class="section-num">3.1</span> Общая конфигурация {#общая-конфигурация}
+
+-   Зададим флаги emerge:
+    ```shell
+    ### Emerge
+    ```
+-   Зададим флаги emerge:
+    ```shell
+    ## Verbose output
+    EMERGE_FLAGS=-v
+    ```
+
+
+### <span class="section-num">3.2</span> Работа в консоли {#работа-в-консоли}
 
 -   Для установки всего необходимого для работы в консоли необходимо использовать файл `term.sh`:
     ```shell
+    . ./config.sh
     ### Terminal
     ```
 
 
-#### <span class="section-num">3.1.1</span> Файловый менеджер mc {#файловый-менеджер-mc}
+#### <span class="section-num">3.2.1</span> Файловый менеджер mc {#файловый-менеджер-mc}
 
 -   [Файловый менеджер Midnight Commander]({{< relref "2023-08-26-midnight-commander-file-manager" >}})
 -   Установка файлового менеджера mc:
     ```shell
     ## Установка файлового менеджера mc
-    emerge app-misc/mc
+    emerge ${EMERGE_FLAGS} app-misc/mc
     ```
 
 
-### <span class="section-num">3.2</span> Графическое окружение {#графическое-окружение}
+### <span class="section-num">3.3</span> Графическое окружение {#графическое-окружение}
 
 
-#### <span class="section-num">3.2.1</span> KDE {#kde}
+#### <span class="section-num">3.3.1</span> KDE {#kde}
 
 -   Для установки KDE необходимо использовать файл `kde.sh`:
     ```shell
+    . ./config.sh
     ### KDE
     ```
 
 -   Установим все программы KDE:
     ```shell
     ## Install all KDE programs
-    emerge kde-apps/kde-apps-meta
+    emerge ${EMERGE_FLAGS} kde-apps/kde-apps-meta
     ```
 
 
-#### <span class="section-num">3.2.2</span> Gnome {#gnome}
+#### <span class="section-num">3.3.2</span> Gnome {#gnome}
 
 -   Для установки Gnome необходимо использовать файл `gnome.sh`:
     ```shell
+    . ./config.sh
     ### Gnome
     ```
 
 
-#### <span class="section-num">3.2.3</span> Sway {#sway}
+#### <span class="section-num">3.3.3</span> Sway {#sway}
 
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
 -   Для установки Gnome необходимо использовать файл `sway.sh`:
     ```shell
+    . ./config.sh
     ### Sway
     ```
 
@@ -155,7 +172,7 @@ slug: "gentoo-post-installation"
 
     -   Установим собственно Sway:
         ```shell
-        emerge gui-wm/sway
+        emerge ${EMERGE_FLAGS} gui-wm/sway
         ```
 
 <!--list-separator-->
@@ -165,24 +182,25 @@ slug: "gentoo-post-installation"
     -   Общие программы для работы с буфером обмена:
         ```shell
         ## Wayland clipboard
-        emerge gui-apps/wl-clipboard
+        emerge ${EMERGE_FLAGS} gui-apps/wl-clipboard
         ```
 
     -   Установим `cliphist` (репозиторий `guru`):
         ```shell
-        emerge app-misc/cliphist
+        emerge ${EMERGE_FLAGS} app-misc/cliphist
         ```
 
 
-### <span class="section-num">3.3</span> Средства разработки {#средства-разработки}
+### <span class="section-num">3.4</span> Средства разработки {#средства-разработки}
 
 -   Для установки всего необходимого для работы в консоли необходимо использовать файл `dev.sh`:
     ```shell
+    . ./config.sh
     ### Dev tools
     ```
 
 
-#### <span class="section-num">3.3.1</span> git {#git}
+#### <span class="section-num">3.4.1</span> git {#git}
 
 <!--list-separator-->
 
@@ -198,11 +216,11 @@ slug: "gentoo-post-installation"
         ```
     -   Утилита командной строки для работы с сервером Gitea (см. [Взаимодействие с gitea из командной строки]({{< relref "2023-11-11-interacting-gitea-command-line" >}})):
         ```shell
-        emerge dev-util/tea
+        emerge ${EMERGE_FLAGS} dev-util/tea
         ```
 
 
-#### <span class="section-num">3.3.2</span> python {#python}
+#### <span class="section-num">3.4.2</span> python {#python}
 
 -   Утилиты для работы с python.
     ```shell
@@ -215,11 +233,11 @@ slug: "gentoo-post-installation"
 
     -   Установка пакетов python:
         ```shell
-        emerge dev-python/pipx
+        emerge ${EMERGE_FLAGS} dev-python/pipx
         ```
 
 
-#### <span class="section-num">3.3.3</span> Node.js {#node-dot-js}
+#### <span class="section-num">3.4.3</span> Node.js {#node-dot-js}
 
 -   Утилиты для работы с Node.js.
     ```shell
@@ -232,7 +250,7 @@ slug: "gentoo-post-installation"
 
     -   Управление пакетами Node.js (оверлей `karma`, см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
         ```shell
-        emerge sys-apps/pnpm-bin
+        emerge ${EMERGE_FLAGS} sys-apps/pnpm-bin
         ```
 
 <!--list-separator-->
@@ -241,80 +259,92 @@ slug: "gentoo-post-installation"
 
     -   Управление пакетами Node.js:
         ```shell
-        emerge sys-apps/yarn
+        emerge ${EMERGE_FLAGS} sys-apps/yarn
         ```
 
 
-### <span class="section-num">3.4</span> Редакторы {#редакторы}
+### <span class="section-num">3.5</span> Редакторы {#редакторы}
 
 -   Для установки редакторов необходимо использовать файл `edit.sh`:
     ```shell
+    . ./config.sh
     ### Edit
     ```
 
 
-#### <span class="section-num">3.4.1</span> Zed {#zed}
+#### <span class="section-num">3.5.1</span> Zed {#zed}
 
 -   Установка редактора _Zed_ (оверлей `gentoo-zh`):
     ```shell
     ## Установка редактора Zed
-    # emerge app-editors/zed
+    # emerge ${EMERGE_FLAGS} app-editors/zed
     ```
 
 
-#### <span class="section-num">3.4.2</span> VScode {#vscode}
+#### <span class="section-num">3.5.2</span> VScode {#vscode}
 
 -   Установка редактора _VSCode_:
     ```shell
     ## Установка редактора VSCode
-    emerge app-editors/vscode
+    emerge ${EMERGE_FLAGS} app-editors/vscode
     ```
 
 -   Установка редактора набора LSP-серверов для _VSCode_ (оверлей `guru`):
     ```shell
-    emerge dev-util/vscode-langservers-extracted
+    emerge ${EMERGE_FLAGS} dev-util/vscode-langservers-extracted
     ```
 
 
-#### <span class="section-num">3.4.3</span> Emacs {#emacs}
+#### <span class="section-num">3.5.3</span> Emacs {#emacs}
 
 
-#### <span class="section-num">3.4.4</span> Vim {#vim}
+#### <span class="section-num">3.5.4</span> Vim {#vim}
 
 
-### <span class="section-num">3.5</span> Обслуживание системы {#обслуживание-системы}
+### <span class="section-num">3.6</span> Обслуживание системы {#обслуживание-системы}
 
 -   Для установки системных утилит необходимо использовать файл `sys.sh`:
     ```shell
+    . ./config.sh
     ### System tools
     ```
 
 
-#### <span class="section-num">3.5.1</span> Дедупликация файлов {#дедупликация-файлов}
+#### <span class="section-num">3.6.1</span> Дедупликация файлов {#дедупликация-файлов}
 
 -   Установим _jdupes_ (см. [Дедупликация файлов. jdupes]({{< relref "2024-02-23-file-deduplication-jdupes" >}})):
     ```shell
-    emerge jdupes
+    emerge ${EMERGE_FLAGS} jdupes
     ```
 
 
-### <span class="section-num">3.6</span> Утилиты пользователя {#утилиты-пользователя}
+### <span class="section-num">3.7</span> Утилиты пользователя {#утилиты-пользователя}
 
 -   Для установки пользовательских утилит необходимо использовать файл `user.sh`:
     ```shell
+    . ./config.sh
     ### User utils
     ```
 
 
-#### <span class="section-num">3.6.1</span> Менеджер закладок buku {#менеджер-закладок-buku}
+#### <span class="section-num">3.7.1</span> Менеджер закладок buku {#менеджер-закладок-buku}
 
 -   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
 -   Установим менеджер закладок:
     ```shell
     ## Buku
-    emerge www-misc/buku
+    emerge ${EMERGE_FLAGS} www-misc/buku
     ```
 -   Установим интерфейс к броузеру:
     ```shell
-    emerge www-misc/bukubrow-bin
+    emerge ${EMERGE_FLAGS} www-misc/bukubrow-bin
+    ```
+
+
+#### <span class="section-num">3.7.2</span> Управление ключами {#управление-ключами}
+
+-   Установим демон управления ключами:
+    ```shell
+    ## Keys
+    # emerge ${EMERGE_FLAGS} net-misc/keychain
     ```

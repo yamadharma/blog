@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2024-06-20T21:31:00+03:00
+lastmod: 2024-08-21T21:20:00+03:00
 tags: ["wayland", "gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -88,7 +88,7 @@ emaint sync --repo guru
 -   Идентификатор устройства используется в файле конфигурации:
     ```conf-unix
     input <identifier> {
-        # ...config options...
+    # ...config options...
     }
     ```
 -   Можно иметь несколько конфигураций для разных устройств:
@@ -115,9 +115,9 @@ emaint sync --repo guru
     ```conf-unix
     # or input <identifier>
     input "type:keyboard" {
-        xkb_layout us,de
-        xkb_variant ,nodeadkeys
-        xkb_options grp:alt_shift_toggle
+    xkb_layout us,de
+    xkb_variant ,nodeadkeys
+    xkb_options grp:alt_shift_toggle
     }
     ```
 -   Настройка модификаций доступна через `xkb_options`.
@@ -171,18 +171,6 @@ emaint sync --repo guru
 | `Mod + Shift + e`       | Выйти из `sway`                                 |
 
 
-## <span class="section-num">6</span> Замена приложений {#замена-приложений}
-
--   [Wayland. Аналоги приложений]({{< relref "2023-10-11-wayland-applications" >}})
--   [Sway. Интеграция systemd]({{< relref "2023-12-08-sway-systemd-integration" >}})
-
-
-## <span class="section-num">7</span> Совместимость приложений {#совместимость-приложений}
+## <span class="section-num">6</span> Совместимость приложений {#совместимость-приложений}
 
 -   [Sway. Совместимость приложений]({{< relref "2024-06-20-sway-application-compatibility" >}})
-
-
-## <span class="section-num">8</span> Конфигурация {#конфигурация}
-
--   [Sway. Конфигурация]({{< relref "2024-06-12-sway-configuration" >}})
--   [Sway. Загрузка]({{< relref "2024-06-20-sway-loading" >}})
