@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-08-11T12:03:00+03:00
+lastmod: 2024-08-22T14:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -41,9 +41,7 @@ slug: "system-administration"
 
 ## <span class="section-num">3</span> Гаджеты {#гаджеты}
 
--   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
--   [Телефон. Программы]({{< relref "2024-04-18-phone-applications" >}})
--   [Планшет. Программы]({{< relref "2024-04-18-tablet-applications" >}})
+-   [Гаджеты]({{< relref "2024-08-22-gadget" >}})
 
 
 ## <span class="section-num">4</span> Графическое окружение {#графическое-окружение}

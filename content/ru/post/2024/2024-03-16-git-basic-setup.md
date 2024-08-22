@@ -2,7 +2,7 @@
 title: "Базовая настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-03-16T17:34:00+03:00
-lastmod: 2024-03-16T17:39:00+03:00
+lastmod: 2024-08-22T15:19:00+03:00
 tags: ["sysadmin", "git"]
 categories: ["computer-science"]
 draft: false
@@ -27,7 +27,7 @@ slug: "git-basic-setup"
     ```shell
     git config --global core.quotepath false
     ```
--   Настройте верификацию и подписание коммитов git (см. [Верификация коммитов git с помощью GPG]({{< relref "2021-01-28-verifying-git-commits-gpg" >}})).
+-   Настройте верификацию и подписание коммитов git (см. [Подпись коммитов git]({{< relref "2024-08-22-verifying-git-commits" >}})).
 -   Зададим имя начальной ветки (будем называть её `master`):
     ```shell
     git config --global init.defaultBranch master

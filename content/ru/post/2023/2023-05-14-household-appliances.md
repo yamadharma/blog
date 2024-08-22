@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2024-06-29T13:21:00+03:00
+lastmod: 2024-08-22T14:38:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -124,3 +124,8 @@ slug: "household-appliances"
 ### <span class="section-num">5.1</span> Монитор {#монитор}
 
 -   [Монитор]({{< relref "2024-05-18-monitor" >}})
+
+
+## <span class="section-num">6</span> Гаджеты {#гаджеты}
+
+-   [Гаджеты]({{< relref "2024-08-22-gadget" >}})

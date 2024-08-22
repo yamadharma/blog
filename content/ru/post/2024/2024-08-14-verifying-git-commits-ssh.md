@@ -2,7 +2,7 @@
 title: "Подпись коммитов git ключом ssh"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-14T22:08:00+03:00
-lastmod: 2024-08-15T16:18:00+03:00
+lastmod: 2024-08-22T15:12:00+03:00
 tags: ["sysadmin", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -29,7 +29,7 @@ slug: "verifying-git-commits-ssh"
     git config --global gpg.format ssh
     ```
 
--   Получим список ключей:
+-   Получим список ключей (используя агент хранения ключей, [Агенты для хранения ключей]({{< relref "2024-08-22-key-storage-agent" >}})):
     ```shell
     ssh-add -L
     ```
@@ -74,11 +74,11 @@ slug: "verifying-git-commits-ssh"
 -   В файле `~/config/git/config` должно будет появиться следующее:
     ```toml
     [gpg]
-            format = ssh
+        format = ssh
     [gpg "ssh"]
-            allowedSignersFile = ~/.ssh/allowed_signers
+        allowedSignersFile = ~/.ssh/allowed_signers
     [user]
-            signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGXySeykoPLO4ChvQuGVrveXJ+m0rxQEJFl1XQ0OKF2Y
+        signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGXySeykoPLO4ChvQuGVrveXJ+m0rxQEJFl1XQ0OKF2Y
     ```
 
 ---

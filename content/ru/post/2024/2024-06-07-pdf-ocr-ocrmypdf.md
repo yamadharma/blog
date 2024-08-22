@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2024-07-25T18:56:00+03:00
+lastmod: 2024-08-22T13:53:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -64,4 +64,21 @@ slug: "pdf-ocr-ocrmypdf"
 -   Задать метаданные PDF-файла:
     ```shell
     ocrmypdf --skip-text --title "<title>" --author "<author>" --subject "<subject>" --keywords "<keyword; key phrase; ...>" input_file.pdf output.pdf
+    ```
+-   Не распознавать pdf-файл
+
+    -   При установке параметра `--tesseract-timeout 0`  OCRmyPDF будет обрабатывать изображения без выполнения OCR.
+
+    <!--listend-->
+
+    ```shell
+    ocrmypdf --tesseract-timeout=0 --remove-background input.pdf output.pdf
+    ```
+-   Удалить весь распознанный текст из pdf-файла:
+    ```shell
+    ocrmypdf --tesseract-timeout 0 --force-ocr input.pdf output.pdf
+    ```
+-   Оптимизация изображений без выполнения распознавания:
+    ```shell
+    ocrmypdf --tesseract-timeout=0 --optimize 3 --skip-text input.pdf output.pdf
     ```
