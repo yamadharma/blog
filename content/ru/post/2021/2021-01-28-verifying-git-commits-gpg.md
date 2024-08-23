@@ -2,7 +2,7 @@
 title: "Верификация коммитов git с помощью GPG"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-28T18:47:00+03:00
-lastmod: 2024-08-22T15:18:00+03:00
+lastmod: 2024-08-23T16:07:00+03:00
 tags: ["sysadmin", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -83,7 +83,7 @@ slug: "verifying-git-commits-gpg"
     ```shell
     git config --global user.signingkey <PGP Fingerprint>
     git config --global commit.gpgsign true
-    git config --global gpg.program $(which gpg2)
+    git config --global gpg.program $(which gpg)
     ```
 
 

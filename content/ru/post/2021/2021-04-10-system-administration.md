@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-08-22T14:43:00+03:00
+lastmod: 2024-08-23T20:38:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -154,48 +154,44 @@ slug: "system-administration"
 ## <span class="section-num">10</span> Пользовательские программы {#пользовательские-программы}
 
 
-### <span class="section-num">10.1</span> Работа с файлами {#работа-с-файлами}
+### <span class="section-num">10.1</span> Виртуализация {#виртуализация}
 
--   [Файловый менеджер Midnight Commander]({{< relref "2023-08-26-midnight-commander-file-manager" >}})
-
-
-### <span class="section-num">10.2</span> Работа с терминалом {#работа-с-терминалом}
-
--   [Терминальный мультиплексор tmux]({{< relref "2024-02-19-terminal-multiplexer-tmux" >}})
--   [Эмулятор терминала kitty]({{< relref "2024-03-16-kitty-terminal-emulator" >}})
+-   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
+-   [Система виртуализации VMware]({{< relref "2024-05-16-vmware-virtualization-system" >}})
 
 
-### <span class="section-num">10.3</span> Утилиты {#утилиты}
+### <span class="section-num">10.2</span> Вычисления {#вычисления}
 
--   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
--   [Локальные поисковики]({{< relref "2023-06-27-desktop-search" >}})
--   [Linux. Архивирование]({{< relref "2024-03-22-linux-archiving" >}})
--   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
+-   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
+-   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
 
 
-### <span class="section-num">10.4</span> Обработка видео {#обработка-видео}
+### <span class="section-num">10.3</span> Квантовая химия {#квантовая-химия}
+
+-   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
+
+
+### <span class="section-num">10.4</span> Наборы программ {#наборы-программ}
+
+-   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
+
+
+### <span class="section-num">10.5</span> Обработка видео {#обработка-видео}
 
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
 
 
-### <span class="section-num">10.5</span> Виртуализация {#виртуализация}
-
--   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
--   [Система виртуализации VMware]({{< relref "2024-05-16-vmware-virtualization-system" >}})
-
-
-### <span class="section-num">10.6</span> Редакторы {#редакторы}
-
--   [Emacs]({{< relref "2020-12-24-emacs" >}})
--   [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
-
-
-### <span class="section-num">10.7</span> Офисные программы {#офисные-программы}
+### <span class="section-num">10.6</span> Офисные программы {#офисные-программы}
 
 -   [Настройка LibreOffice]({{< relref "2022-01-27-libreoffice-tuning" >}})
 -   [Альтернативы Microsoft Office]({{< relref "2023-03-19-microsoft-office-alternatives" >}})
+
+
+### <span class="section-num">10.7</span> Просмотрщики {#просмотрщики}
+
+-   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
 
 
 ### <span class="section-num">10.8</span> Работа с дисками {#работа-с-дисками}
@@ -203,35 +199,42 @@ slug: "system-administration"
 -   [Использование sfdisk]({{< relref "2022-03-08-using-sfdisk" >}})
 
 
-### <span class="section-num">10.9</span> Вычисления {#вычисления}
+### <span class="section-num">10.9</span> Работа с терминалом {#работа-с-терминалом}
 
--   [Принципы работы на суперкомпьютере]({{< relref "2022-07-22-principles-using-supercomputer" >}})
--   [Регламент доступа к суперкомпьютеру РУДН]({{< relref "2022-09-07-regulations-access-supercomputer-rudn" >}})
-
-
-### <span class="section-num">10.10</span> Квантовая химия {#квантовая-химия}
-
--   [Квантовая химия. Gamess]({{< relref "2022-10-17-quantum-chemistry-gamess" >}})
+-   [Терминальный мультиплексор tmux]({{< relref "2024-02-19-terminal-multiplexer-tmux" >}})
+-   [Эмулятор терминала kitty]({{< relref "2024-03-16-kitty-terminal-emulator" >}})
 
 
-### <span class="section-num">10.11</span> Синхронизация файлов {#синхронизация-файлов}
+### <span class="section-num">10.10</span> Работа с файлами {#работа-с-файлами}
+
+-   [Файловый менеджер Midnight Commander]({{< relref "2023-08-26-midnight-commander-file-manager" >}})
+
+
+### <span class="section-num">10.11</span> Редакторы {#редакторы}
+
+-   [Emacs]({{< relref "2020-12-24-emacs" >}})
+-   [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
+
+
+### <span class="section-num">10.12</span> Сетевые клиенты {#сетевые-клиенты}
+
+-   [Почтовый клиент aerc]({{< relref "2024-07-17-email-client-aerc" >}})
+
+
+#### <span class="section-num">10.12.1</span> Броузеры {#броузеры}
+
+-   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
+-   [Броузер Nyxt]({{< relref "2023-10-05-nyxt-browser" >}})
+-   [Firefox. Расширения]({{< relref "2006-12-24-firefox-extention" >}})
+-   [Vim. Клавиатура. Броузеры]({{< relref "2023-08-19-vim-keyboard-browsers" >}})
+-   [Emacs. Клавиатура. Броузеры]({{< relref "2023-08-19-emacs-keyboard-browsers" >}})
+
+
+### <span class="section-num">10.13</span> Синхронизация файлов {#синхронизация-файлов}
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
 -   [Скачать фотографии с google photo]({{< relref "2024-06-01-google-photo-download" >}})
-
-
-### <span class="section-num">10.12</span> Файлы конфигурации {#файлы-конфигурации}
-
--   [Управление файлами конфигурации. Домашний каталог. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
--   [Управление файлами конфигурации. Домашний каталог. Репозиторий]({{< relref "2023-07-30-configuration-file-management-repo" >}})
-
-
-### <span class="section-num">10.13</span> Сетевые клиенты {#сетевые-клиенты}
-
--   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
--   [Броузер Nyxt]({{< relref "2023-10-05-nyxt-browser" >}})
--   [Почтовый клиент aerc]({{< relref "2024-07-17-email-client-aerc" >}})
 
 
 ### <span class="section-num">10.14</span> Телеконференции {#телеконференции}
@@ -239,14 +242,18 @@ slug: "system-administration"
 -   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
 
 
-### <span class="section-num">10.15</span> Наборы программ {#наборы-программ}
+### <span class="section-num">10.15</span> Утилиты {#утилиты}
 
--   [Программы на Android]({{< relref "2023-06-26-android-apps" >}})
+-   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
+-   [Локальные поисковики]({{< relref "2023-06-27-desktop-search" >}})
+-   [Linux. Архивирование]({{< relref "2024-03-22-linux-archiving" >}})
+-   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
 
 
-### <span class="section-num">10.16</span> Просмотрщики {#просмотрщики}
+### <span class="section-num">10.16</span> Файлы конфигурации {#файлы-конфигурации}
 
--   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
+-   [Управление файлами конфигурации. Домашний каталог. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
+-   [Управление файлами конфигурации. Домашний каталог. Репозиторий]({{< relref "2023-07-30-configuration-file-management-repo" >}})
 
 
 ## <span class="section-num">11</span> Профессиональные требования {#профессиональные-требования}
