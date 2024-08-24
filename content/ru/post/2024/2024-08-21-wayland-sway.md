@@ -2,7 +2,7 @@
 title: "Wayland. Менеджер окон Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-21T21:14:00+03:00
-lastmod: 2024-08-21T21:20:00+03:00
+lastmod: 2024-08-24T21:06:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -36,5 +36,6 @@ slug: "wayland-sway"
 
 ## <span class="section-num">4</span> Конфигурация {#конфигурация}
 
+-   [Sway. Сочетания клавиш]({{< relref "2024-08-24-sway-keybindings" >}})
 -   [Sway. Конфигурация]({{< relref "2024-06-12-sway-configuration" >}})
 -   [Sway. Загрузка]({{< relref "2024-06-20-sway-loading" >}})
