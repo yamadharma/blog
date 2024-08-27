@@ -2,7 +2,7 @@
 title: "Сервер DHCP Kea"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-18T11:07:00+03:00
-lastmod: 2024-06-19T15:45:00+03:00
+lastmod: 2024-08-26T14:29:00+03:00
 tags: ["linux", "sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -48,3 +48,8 @@ slug: "dhcp-kea-server"
 ## <span class="section-num">3</span> Настройка {#настройка}
 
 -   [Динамическое обновление DNS-сервера BIND при помощи Kea DHCP]({{< relref "2024-06-18-dynamically-updating-bind-dns-kea-dhcp" >}})
+
+
+## <span class="section-num">4</span> Дополнения {#дополнения}
+
+-   [NetBox. Плагин netbox-kea]({{< relref "2024-07-22-netbox-plugin-netbox-kea" >}})

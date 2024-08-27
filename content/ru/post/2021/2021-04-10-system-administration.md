@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-08-23T20:38:00+03:00
+lastmod: 2024-08-27T20:29:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -116,6 +116,8 @@ slug: "system-administration"
 -   [Перенос Linux на btrfs]({{< relref "2021-05-21-installing-linux-btrfs" >}})
 -   [Установка загрузчика grub]({{< relref "2021-09-19-installing-grub-bootloader" >}})
 -   [Использование vagrant]({{< relref "2021-11-12-using-vagrant" >}})
+-   [Система установки SALI]({{< relref "2024-08-27-sali-automatic-linux-installer" >}})
+-   [Система установки SALII]({{< relref "2024-08-27-salii-installer" >}})
 
 
 ### <span class="section-num">8.4</span> Серверные системы {#серверные-системы}
@@ -368,6 +370,8 @@ slug: "system-administration"
 ## <span class="section-num">15</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
+-   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
+-   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 
 
 ## <span class="section-num">16</span> Файловые системы {#файловые-системы}

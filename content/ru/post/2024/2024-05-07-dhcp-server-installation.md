@@ -2,7 +2,7 @@
 title: "DHCP. Установка сервера DHCP Kea"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-07T11:39:00+03:00
-lastmod: 2024-06-19T16:03:00+03:00
+lastmod: 2024-08-26T15:01:00+03:00
 tags: ["network", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -497,7 +497,72 @@ slug: "dhcp-server-installation"
     ```
 
 
-## <span class="section-num">7</span> Запуск {#запуск}
+## <span class="section-num">7</span> Управляющий агент kea-ctrl-agent {#управляющий-агент-kea-ctrl-agent}
+
+
+### <span class="section-num">7.1</span> По умолчанию {#по-умолчанию}
+
+-   По умолчанию агент устанавливает unix-сокеты и доступ по сети для локального хоста.
+-   Если ничего другого не надо, то дополнительной настройки не требуется.
+
+
+### <span class="section-num">7.2</span> Доступ по сети {#доступ-по-сети}
+
+-   Для доступа к управляющему агенту из вне необходимо настроить сетевой доступ.
+-   Например, это может понадобиться для интеграции с Netbox (см. [NetBox. Плагин netbox-kea]({{< relref "2024-07-22-netbox-plugin-netbox-kea" >}})).
+
+
+#### <span class="section-num">7.2.1</span> Брандмауэр {#брандмауэр}
+
+-   Сконфигурируем брандмауэр:
+    ```shell
+    firewall-cmd --add-port=8000/tcp --permanent
+    firewall-cmd --reload
+    ```
+
+
+#### <span class="section-num">7.2.2</span> Сертификаты {#сертификаты}
+
+-   В качестве сертификатов можно использовать сертификаты ACME.
+-   Если сертификаты не установлены, то используется протокол `http`.
+
+
+#### <span class="section-num">7.2.3</span> Конфигурационный файл {#конфигурационный-файл}
+
+-   Конфигурация в файле будет будет иметь вид:
+    ```js-json
+    {
+        "Control-agent": {
+            "http-host": "10.20.30.40",
+            "http-port": 8000,
+            "trust-anchor": "/path/to/the/ca-cert.pem",
+            "cert-file": "/path/to/the/agent-cert.pem",
+            "key-file": "/path/to/the/agent-key.pem",
+            "cert-required": true,
+            "authentication": {
+                "type": "basic",
+                "realm": "kea-control-agent",
+                "clients": [
+                    {
+                        "user": "admin",
+                        "password": "1234"
+                    }
+                ]
+            },
+            ...
+        }
+    ```
+
+
+#### <span class="section-num">7.2.4</span> Пример запроса {#пример-запроса}
+
+-   Пример запроса с использованием RESTful API:
+    ```shell
+    curl -u admin:1234 -X POST -H "Content-Type: application/json" -d '{ "command": "config-get", "service": [ "dhcp4" ] }' http://10.20.30.40:8000/
+    ```
+
+
+## <span class="section-num">8</span> Запуск {#запуск}
 
 -   Запуск управляющего агента:
     ```shell
@@ -513,16 +578,16 @@ slug: "dhcp-server-installation"
     ```
 
 
-## <span class="section-num">8</span> Утилиты {#утилиты}
+## <span class="section-num">9</span> Утилиты {#утилиты}
 
 
-### <span class="section-num">8.1</span> Просмотр арендованных адресов {#просмотр-арендованных-адресов}
+### <span class="section-num">9.1</span> Просмотр арендованных адресов {#просмотр-арендованных-адресов}
 
 -   Арендованные адреса можно смотреть в базе данных.
 -   Для разных баз данных существуют конкретные утилиты.
 
 
-#### <span class="section-num">8.1.1</span> Postgres {#postgres}
+#### <span class="section-num">9.1.1</span> Postgres {#postgres}
 
 <!--list-separator-->
 
@@ -554,6 +619,6 @@ slug: "dhcp-server-installation"
             ```
 
 
-## <span class="section-num">9</span> После установки {#после-установки}
+## <span class="section-num">10</span> После установки {#после-установки}
 
 -   Настройте DDNS (см. [Динамическое обновление DNS-сервера BIND при помощи Kea DHCP]({{< relref "2024-06-18-dynamically-updating-bind-dns-kea-dhcp" >}}))

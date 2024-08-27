@@ -2,7 +2,7 @@
 title: "Sway. Сочетания клавиш"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-24T20:35:00+03:00
-lastmod: 2024-08-24T21:15:00+03:00
+lastmod: 2024-08-27T12:26:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -48,54 +48,54 @@ Sway. Сочетания клавиш.
   Сочетания клаыиш для Sway
 </div>
 
-| Действие                                   | Сочетание клавиш                  | Описание           |
-|--------------------------------------------|-----------------------------------|--------------------|
-| Launch - Application                       | `◆ Super`  Space                  |                    |
-| Launch - Browser                           | `◆ Super` `Shift`  Enter          |                    |
-| Launch - Command                           | `◆ Super` `Shift`  Space          |                    |
-| Launch - File Browser                      | `◆ Super` `Shift`  n              |                    |
-| Launch - File Search                       | `◆ Super` `Alt`  Space            |                    |
-| Launch - Notification Viewer               | `◆ Super`  n                      |                    |
-| Launch - Terminal                          | `◆ Super` `Enter`                 | Запустить терминал |
-| Launch - This Dialog                       | `◆ Super` `Shift`  ?              |                    |
-| Modify - Bluetooth Settings                | `◆ Super`  b                      |                    |
-| Modify - Carry Window to Workspace 1 - 10  | `◆ Super` `Alt`  0..9             |                    |
-| Modify - Carry Window to Workspace 11 - 19 | `◆ Super` `Alt` `Ctrl`  1..9      |                    |
-| Modify - Containing Workspace              | `◆ Super` `Ctrl` `Shift`  ↑ ↓ ← → |                    |
-| Modify - Display Settings                  | `◆ Super`  d                      |                    |
-| Modify - Load Window Layout                | `◆ Super`  .                      |                    |
-| Modify - Move Window to Workspace 1 - 10   | `◆ Super` `Shift`  0..9           |                    |
-| Modify - Move Window to Workspace 11 - 19  | `◆ Super` `Ctrl` `Shift`  1..9    |                    |
-| Modify - Move to Scratchpad                | `◆ Super` `Ctrl`  m               |                    |
-| Modify - Next Window Orientation           | `◆ Super`  Backspace              |                    |
-| Modify - Save Window Layout                | `◆ Super`  ,                      |                    |
-| Modify - Settings                          | `◆ Super`  c                      |                    |
-| Modify - Tile/Float Focus Toggle           | `◆ Super` `Shift`  t              |                    |
-| Modify - Toggle Bar                        | `◆ Super`  i                      |                    |
-| Modify - Wifi Settings                     | `◆ Super`  w                      |                    |
-| Modify - Window Floating Toggle            | `◆ Super` `Shift`  f              |                    |
-| Modify - Window Fullscreen Toggle          | `◆ Super`  f                      |                    |
-| Modify - Window Layout Mode                | `◆ Super`  t                      |                    |
-| Modify - Window Position                   | `◆ Super` `Shift`  k j h l        |                    |
-| Modify - Window Position                   | `◆ Super` `Shift`  ↑ ↓ ← →        |                    |
-| Navigate - Next Workspace                  | `◆ Super`  Tab                    |                    |
-| Navigate - Next Workspace                  | `◆ Super` `Alt`  →                |                    |
-| Navigate - Previous Workspace              | `◆ Super` `Alt`  ←                |                    |
-| Navigate - Previous Workspace              | `◆ Super` `Shift`  Tab            |                    |
-| Navigate - Relative Window                 | `◆ Super`  k j h l                |                    |
-| Navigate - Relative Window                 | `◆ Super`  ↑ ↓ ← →                |                    |
-| Navigate - Scratchpad                      | `◆ Super` `Ctrl`  a               |                    |
-| Navigate - Window by Name                  | `◆ Super` `Ctrl`  Space           |                    |
-| Navigate - Workspace 11-19                 | `◆ Super` `Ctrl`  1..9            |                    |
-| Navigate - Workspaces 1-10                 | `◆ Super`  0..9                   |                    |
-| Resize - Enter Resize Mode                 | `◆ Super`  r                      |                    |
-| Session - Exit App                         | `◆ Super` `Shift`  q              |                    |
-| Session - Lock Screen                      | `◆ Super`  Escape                 |                    |
-| Session - Logout                           | `◆ Super` `Shift`  e              |                    |
-| Session - Power Down                       | `◆ Super` `Shift`  p              |                    |
-| Session - Reboot                           | `◆ Super` `Shift`  b              |                    |
-| Session - Refresh Session                  | `◆ Super` `Shift`  r              |                    |
-| Session - Reload Config                    | `◆ Super` `Shift`  c              |                    |
-| Session - Restart                          | `◆ Super` `Ctrl`  r               |                    |
-| Session - Sleep                            | `◆ Super` `Shift`  s              |                    |
-| Session - Terminate App                    | `◆ Super` `Alt`  q                |                    |
+| Действие                                   | Сочетание клавиш                             | Описание           |
+|--------------------------------------------|----------------------------------------------|--------------------|
+| Launch - Application                       | `◆ Super` `Space`                            |                    |
+| Launch - Browser                           | `◆ Super` `⇧ Shift`  Enter                   |                    |
+| Launch - Command                           | `◆ Super` `⇧ Shift`  Space                   |                    |
+| Launch - File Browser                      | `◆ Super` `⇧ Shift`  n                       |                    |
+| Launch - File Search                       | `◆ Super` `⎇ Alt` `Space`                    |                    |
+| Launch - Notification Viewer               | `◆ Super` `n`                                |                    |
+| Launch - Terminal                          | `◆ Super` `Enter`                            | Запустить терминал |
+| Launch - This Dialog                       | `◆ Super` `⇧ Shift`  ?                       |                    |
+| Modify - Bluetooth Settings                | `◆ Super`  b                                 |                    |
+| Modify - Carry Window to Workspace 1 - 10  | `◆ Super` `⎇ Alt` `0` .. `9`                 |                    |
+| Modify - Carry Window to Workspace 11 - 19 | `◆ Super` `⎇ Alt` `⎈ Ctrl`  1..9             |                    |
+| Modify - Containing Workspace              | `◆ Super` `⎈ Ctrl` `⇧ Shift` `↑` `↓` `←` `→` |                    |
+| Modify - Display Settings                  | `◆ Super`  d                                 |                    |
+| Modify - Load Window Layout                | `◆ Super`  .                                 |                    |
+| Modify - Move Window to Workspace 1 - 10   | `◆ Super` `⇧ Shift`  0..9                    |                    |
+| Modify - Move Window to Workspace 11 - 19  | `◆ Super` `⎈ Ctrl` `⇧ Shift`  1..9           |                    |
+| Modify - Move to Scratchpad                | `◆ Super` `⎈ Ctrl`  m                        |                    |
+| Modify - Next Window Orientation           | `◆ Super`  Backspace                         |                    |
+| Modify - Save Window Layout                | `◆ Super`  ,                                 |                    |
+| Modify - Settings                          | `◆ Super`  c                                 |                    |
+| Modify - Tile/Float Focus Toggle           | `◆ Super` `⇧ Shift`  t                       |                    |
+| Modify - Toggle Bar                        | `◆ Super`  i                                 |                    |
+| Modify - Wifi Settings                     | `◆ Super`  w                                 |                    |
+| Modify - Window Floating Toggle            | `◆ Super` `⇧ Shift`  f                       |                    |
+| Modify - Window Fullscreen Toggle          | `◆ Super`  f                                 |                    |
+| Modify - Window Layout Mode                | `◆ Super`  t                                 |                    |
+| Modify - Window Position                   | `◆ Super` `⇧ Shift`  k j h l                 |                    |
+| Modify - Window Position                   | `◆ Super` `⇧ Shift`  ↑ ↓ ← →                 |                    |
+| Navigate - Next Workspace                  | `◆ Super`  Tab                               |                    |
+| Navigate - Next Workspace                  | `◆ Super` `⎇ Alt`  →                         |                    |
+| Navigate - Previous Workspace              | `◆ Super` `⎇ Alt`  ←                         |                    |
+| Navigate - Previous Workspace              | `◆ Super` `⇧ Shift`  Tab                     |                    |
+| Navigate - Relative Window                 | `◆ Super`  k j h l                           |                    |
+| Navigate - Relative Window                 | `◆ Super`  ↑ ↓ ← →                           |                    |
+| Navigate - Scratchpad                      | `◆ Super` `⎈ Ctrl`  a                        |                    |
+| Navigate - Window by Name                  | `◆ Super` `⎈ Ctrl`  Space                    |                    |
+| Navigate - Workspace 11-19                 | `◆ Super` `⎈ Ctrl`  1..9                     |                    |
+| Navigate - Workspaces 1-10                 | `◆ Super`  0..9                              |                    |
+| Resize - Enter Resize Mode                 | `◆ Super`  r                                 |                    |
+| Session - Exit App                         | `◆ Super` `⇧ Shift`  q                       |                    |
+| Session - Lock Screen                      | `◆ Super`  Escape                            |                    |
+| Session - Logout                           | `◆ Super` `⇧ Shift`  e                       |                    |
+| Session - Power Down                       | `◆ Super` `⇧ Shift`  p                       |                    |
+| Session - Reboot                           | `◆ Super` `⇧ Shift`  b                       |                    |
+| Session - Refresh Session                  | `◆ Super` `⇧ Shift`  r                       |                    |
+| Session - Reload Config                    | `◆ Super` `⇧ Shift`  c                       |                    |
+| Session - Restart                          | `◆ Super` `⎈ Ctrl`  r                        |                    |
+| Session - Sleep                            | `◆ Super` `⇧ Shift` `s`                      |                    |
+| Session - Terminate App                    | `◆ Super` `⎇ Alt` `q`                        |                    |

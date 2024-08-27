@@ -2,7 +2,7 @@
 title: "NetBox. Плагин netbox-kea"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-22T18:34:00+03:00
-lastmod: 2024-07-22T20:45:00+03:00
+lastmod: 2024-08-26T16:06:00+03:00
 draft: false
 slug: "netbox-plugin-netbox-kea"
 ---
@@ -55,9 +55,27 @@ slug: "netbox-plugin-netbox-kea"
     ```
 
 
-## <span class="section-num">3</span> Настройка {#настройка}
+## <span class="section-num">3</span> Настройка сервера kea {#настройка-сервера-kea}
+
+-   На сервере Kea должен быть подключён доступ по сети к агенту (см. [DHCP. Установка сервера DHCP Kea]({{< relref "2024-05-07-dhcp-server-installation" >}})).
+-   В файле конфигурации `kea-dhcp4.conf` добавьте хук:
+    ```js-json
+    {
+        "Dhcp4": {
+            ...
+                "hooks-libraries": [
+                    {
+                        "library": "/usr/lib64/kea/hooks/libdhcp_lease_cmds.so"
+                    }
+                ],
+            ...
+    ```
+
+
+## <span class="section-num">4</span> Настройка Netbox {#настройка-netbox}
 
 -   Настраивается плагин из web-интерфейса: <https://netbox.example.com/plugins/kea/servers/add/>
 -   Обязательно задать:
     -   имя;
-    -   адрес или доменное имя : <https://kea.example.com>.
+    -   адрес или доменное имя + порт : <http://kea.example.com:8000>;
+    -   пользователь и пароль.
