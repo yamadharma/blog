@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-07-16T18:34:00+03:00
+lastmod: 2024-08-28T21:09:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -335,7 +335,7 @@ slug: "emacs-desire-configuration"
 ### <span class="section-num">4.5</span> Org-mode {#org-mode}
 
 
-### <span class="section-num">4.6</span> Остальное {#остальное}
+### <span class="section-num">4.6</span> Разное {#разное}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -670,12 +670,93 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.7</span> Навигация по файлам {#навигация-по-файлам}
+### <span class="section-num">4.7</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
+
+-   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
+
+
+#### <span class="section-num">4.7.1</span> Начало {#начало}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Edit text areas in browsers {{{
+    ```
+
+
+#### <span class="section-num">4.7.2</span> Edit with Emacs {#edit-with-emacs}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'edit-server)
+    ```
+-   Файл `packages/edit-server.ecf`:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; A Chromium/Firefox "clone" of It's All Text for spawning an editor to edit text areas in browsers. Based on David Hilley's original Chromium extension.
+    ;;; https://github.com/stsquad/emacs_chrome
+
+    (require 'edit-server)
+
+    (setq edit-server-new-frame nil)
+    (edit-server-start)
+
+    (setq edit-server-url-major-mode-alist
+          '(("github\\.com" . markdown-mode)))
+
+    ;;;
+    ```
+
+
+#### <span class="section-num">4.7.3</span> Ghost Text {#ghost-text}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'atomic-chrome)
+    ```
+-   Файл `packages/atomic-chrome.ecf`:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Edit text area on Chrome with Emacs using Atomic Chrome
+    ;;; https://github.com/alpha22jp/atomic-chrome
+
+    (require 'atomic-chrome)
+    (atomic-chrome-start-server)
+
+    ;;; Atomic Chrome for Emacs automatically reflects modifications to the browser by default
+    (setq atomic-chrome-enable-auto-update t)
+
+    ;;; The default major mode of editing buffer is `text-mode`. You can change the major mode manually
+    (setq atomic-chrome-default-major-mode 'markdown-mode)
+
+    ;;; Choose the major mode for a specific website
+    (setq atomic-chrome-url-major-mode-alist
+          '(("github\\.com" . gfm-mode)
+            ("redmine" . textile-mode)))
+
+    ;;; Select editing buffer style
+    ;;; full: Open in the selected window.
+    ;;; split: Open in the new window by splitting the selected window (default).
+    ;;; frame: Create a new frame and window in it.
+    ;; (setq atomic-chrome-buffer-open-style split)
+
+    ;;;
+    ```
+
+
+#### <span class="section-num">4.7.4</span> Конец {#конец}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;;}}}
+    ```
+
+
+### <span class="section-num">4.8</span> Навигация по файлам {#навигация-по-файлам}
 
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">4.7.1</span> Dired {#dired}
+#### <span class="section-num">4.8.1</span> Dired {#dired}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -696,7 +777,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.2</span> Neotree {#neotree}
+#### <span class="section-num">4.8.2</span> Neotree {#neotree}
 
 -   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   Файл `rc.packages.el`:
@@ -705,7 +786,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.3</span> Treemacs {#treemacs}
+#### <span class="section-num">4.8.3</span> Treemacs {#treemacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -713,7 +794,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.8</span> Темы {#темы}
+### <span class="section-num">4.9</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -744,7 +825,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.9.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -753,7 +834,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.9.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -762,7 +843,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.9.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp
