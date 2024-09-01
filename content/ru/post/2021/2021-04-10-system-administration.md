@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-08-27T20:29:00+03:00
+lastmod: 2024-08-30T20:30:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -388,6 +388,7 @@ slug: "system-administration"
 
 -   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
 -   [Использование Яндекс-диска]({{< relref "2024-06-25-using-yandex-disk" >}})
+-   [Файловая система ipfs]({{< relref "2024-08-30-ipfs-file-system" >}})
 
 
 ### <span class="section-num">16.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}

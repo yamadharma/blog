@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-08-28T21:09:00+03:00
+lastmod: 2024-09-01T15:40:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -332,10 +332,13 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.5</span> Org-mode {#org-mode}
+### <span class="section-num">4.5</span> Общие настройки мод {#общие-настройки-мод}
 
 
-### <span class="section-num">4.6</span> Разное {#разное}
+### <span class="section-num">4.6</span> Org-mode {#org-mode}
+
+
+### <span class="section-num">4.7</span> Разное {#разное}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -670,12 +673,12 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.7</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
+### <span class="section-num">4.8</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
 
 -   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
 
 
-#### <span class="section-num">4.7.1</span> Начало {#начало}
+#### <span class="section-num">4.8.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -683,7 +686,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.2</span> Edit with Emacs {#edit-with-emacs}
+#### <span class="section-num">4.8.2</span> Edit with Emacs {#edit-with-emacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -707,7 +710,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.3</span> Ghost Text {#ghost-text}
+#### <span class="section-num">4.8.3</span> Ghost Text {#ghost-text}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -743,7 +746,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.7.4</span> Конец {#конец}
+#### <span class="section-num">4.8.4</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -751,12 +754,12 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.8</span> Навигация по файлам {#навигация-по-файлам}
+### <span class="section-num">4.9</span> Навигация по файлам {#навигация-по-файлам}
 
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">4.8.1</span> Dired {#dired}
+#### <span class="section-num">4.9.1</span> Dired {#dired}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -777,7 +780,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.2</span> Neotree {#neotree}
+#### <span class="section-num">4.9.2</span> Neotree {#neotree}
 
 -   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   Файл `rc.packages.el`:
@@ -786,7 +789,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.3</span> Treemacs {#treemacs}
+#### <span class="section-num">4.9.3</span> Treemacs {#treemacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -794,7 +797,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.9</span> Темы {#темы}
+### <span class="section-num">4.10</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -825,7 +828,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.10.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -834,7 +837,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.10.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -843,7 +846,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.10.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp
