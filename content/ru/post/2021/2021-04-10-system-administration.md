@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-08-30T20:30:00+03:00
+lastmod: 2024-09-06T15:37:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -301,9 +301,10 @@ slug: "system-administration"
 ## <span class="section-num">14</span> Сети {#сети}
 
 
-### <span class="section-num">14.1</span> Cisco {#cisco}
+### <span class="section-num">14.1</span> Оборудование {#оборудование}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
+-   [Администрирование Huawei]({{< relref "2024-09-06-huawei-administration" >}})
 
 
 ### <span class="section-num">14.2</span> VLAN {#vlan}

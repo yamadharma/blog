@@ -2,7 +2,9 @@
 title: "Wayland. Удалённый доступ. Waypipe"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-01T19:22:00+03:00
-lastmod: 2024-09-01T19:41:00+03:00
+lastmod: 2024-09-07T16:46:00+03:00
+tags: ["sysadmin", "wayland"]
+categories: ["computer-science"]
 draft: false
 slug: "wayland-remote-desktop-waypipe"
 ---

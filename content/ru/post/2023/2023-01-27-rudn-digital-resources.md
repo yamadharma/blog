@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2024-07-19T14:53:00+03:00
+lastmod: 2024-09-07T16:40:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -72,6 +72,9 @@ slug: "rudn-digital-resources"
 
 -   Портал [ScienceAdmin](https://www.scienceadmin.ru/): <https://scienceadmin.rudn.ru/>.
     -   Публикационная активность работника РУДН.
+-   Список публикаций в системе 1С.Бит.Наука: <https://eisweb.rudn.ru/NIR_RUDN/ru_RU/?N=external&P=client>
+    -   Только для чтения.
+    -   Требуется при переизбрании и т. д.
 -   [Суперкомпьютер РУДН]({{< relref "2023-02-12-supercomputer-rudn" >}})
 
 

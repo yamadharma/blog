@@ -2,7 +2,7 @@
 title: "NetBox. Первоначальная настройка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-03T19:19:00+03:00
-lastmod: 2024-09-03T20:26:00+03:00
+lastmod: 2024-09-04T11:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

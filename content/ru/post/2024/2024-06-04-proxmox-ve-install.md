@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2024-06-18T07:59:00+03:00
+lastmod: 2024-09-05T20:12:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -82,6 +82,18 @@ slug: "proxmox-ve-install"
 -   Proxmox VE Processor Microcode
     ```shell
     bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/microcode.sh)"
+    ```
+
+
+### <span class="section-num">3.3</span> Безопасность {#безопасность}
+
+-   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})):
+    ```shell
+    apt install fail2ban
+    ```
+-   После настройки запустите его:
+    ```shell
+    systemctl enable --now fail2ban
     ```
 
 

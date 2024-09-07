@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-09-01T15:40:00+03:00
+lastmod: 2024-09-04T11:32:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -673,12 +673,79 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.8</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
+### <span class="section-num">4.8</span> Программные режимы {#программные-режимы}
+
+
+#### <span class="section-num">4.8.1</span> Работа с CSV {#работа-с-csv}
+
+<!--list-separator-->
+
+1.  Начало
+
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;; CSV files {{{
+        ```
+
+<!--list-separator-->
+
+2.  Пакет csv-mode
+
+    -   [Emacs. cvs-mode]({{< relref "2024-09-04-emacs-cvs-mode" >}})
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        (desire 'csv-mode)
+        ```
+    -   Установим вызов `cvs-mode` для расширения `.cvs`.
+        -   Файл `packages/csv-mode/loaddefs.ecf`:
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Major mode for editing comma/char separated values
+            ;;; https://elpa.gnu.org/packages/csv-mode.html
+
+            (add-to-list 'auto-mode-alist '("\\.[Cc][Ss][Vv]\\'" . csv-mode))
+
+            ;;;
+            ```
+    -   Загружаем пакет при необходимости.
+        -   Файл `packages/csv-mode/desire.ecf`:
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Major mode for editing comma/char separated values
+            ;;; https://elpa.gnu.org/packages/csv-mode.html
+
+            (require 'csv-mode)
+            ```
+    -   Подключим режим визуального выравнивания полей.
+        -   Файл `packages/csv-mode/desire.ecf`:
+            ```emacs-lisp
+            ;;; Keeps fields visually aligned, on-the-fly
+            (add-hook 'csv-mode-hook 'csv-align-mode)
+            ```
+    -   Настроим визуально представление длинных строк.
+        -   Файл `packages/csv-mode/desire.ecf`:
+            ```emacs-lisp
+            (add-hook 'csv-mode-hook '(lambda () (interactive) (toggle-truncate-lines nil)))
+
+            ;;;
+            ```
+
+<!--list-separator-->
+
+3.  Конец
+
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;;}}}
+        ```
+
+
+### <span class="section-num">4.9</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
 
 -   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
 
 
-#### <span class="section-num">4.8.1</span> Начало {#начало}
+#### <span class="section-num">4.9.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -686,7 +753,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.2</span> Edit with Emacs {#edit-with-emacs}
+#### <span class="section-num">4.9.2</span> Edit with Emacs {#edit-with-emacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -710,7 +777,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.3</span> Ghost Text {#ghost-text}
+#### <span class="section-num">4.9.3</span> Ghost Text {#ghost-text}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -746,7 +813,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.8.4</span> Конец {#конец}
+#### <span class="section-num">4.9.4</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -754,12 +821,12 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.9</span> Навигация по файлам {#навигация-по-файлам}
+### <span class="section-num">4.10</span> Навигация по файлам {#навигация-по-файлам}
 
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">4.9.1</span> Dired {#dired}
+#### <span class="section-num">4.10.1</span> Dired {#dired}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -780,7 +847,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.2</span> Neotree {#neotree}
+#### <span class="section-num">4.10.2</span> Neotree {#neotree}
 
 -   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   Файл `rc.packages.el`:
@@ -789,7 +856,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.3</span> Treemacs {#treemacs}
+#### <span class="section-num">4.10.3</span> Treemacs {#treemacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -797,7 +864,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.10</span> Темы {#темы}
+### <span class="section-num">4.11</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -828,7 +895,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.10.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.11.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -837,7 +904,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.10.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.11.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -846,7 +913,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.10.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.11.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp

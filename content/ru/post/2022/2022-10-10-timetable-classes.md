@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-09-02T14:49:00+03:00
+lastmod: 2024-09-05T10:47:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -68,7 +68,7 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.2</span> 2024--2025 учебный год, 1 четверть <code>[2/2]</code> {#2024-2025-учебный-год-1-четверть}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.2</span> 2024--2025 учебный год, 1 четверть <code>[0/2]</code> {#2024-2025-учебный-год-1-четверть}
 
 -   2024-09-01 Пт--2024-11-05 Вс
 

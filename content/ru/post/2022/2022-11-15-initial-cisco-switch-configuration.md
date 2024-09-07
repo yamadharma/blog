@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2023-12-19T14:21:00+03:00
+lastmod: 2024-09-06T15:48:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -287,7 +287,7 @@ slug: "initial-cisco-switch-configuration"
 
 ## <span class="section-num">4</span> Подключение к системе мониторинга {#подключение-к-системе-мониторинга}
 
--   Настройте доступ к SMTP.
+-   Настройте доступ к SNMP.
 -   Пусть сервер мониторинга имеет адрес: 192.168.0.5.
 -   Имя коммьюнити для чтения: rocom.
     ```shell
