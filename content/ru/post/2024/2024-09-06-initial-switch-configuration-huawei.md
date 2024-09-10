@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T15:31:00+03:00
-lastmod: 2024-09-06T19:09:00+03:00
+lastmod: 2024-09-10T19:53:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -86,10 +86,126 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-## <span class="section-num">3</span> Подключение к системе мониторинга {#подключение-к-системе-мониторинга}
+### <span class="section-num">2.4</span> Настройка ssh {#настройка-ssh}
+
+-   Включим ssh:
+    ```shell
+    [sw-103-1]stelnet server enable
+    [sw-103-1]ssh server-source all-interface
+    [sw-103-1]ssh authentication-type default password
+    ```
+-   Создадим ключ (необходимо, чтобы было настроено имя домена):
+    ```shell
+    [sw-103-1]rsa local-key-pair create
+    ```
+-   Задаём алгоритмы ssh:
+    ```shell
+    [sw-103-1]ssh server cipher aes256_ctr aes128_ctr
+    [sw-103-1]ssh server hmac sha2_256
+    [sw-103-1]ssh server key-exchange dh_group16_sha512 dh_group15_sha512 dh_group14_sha256 dh_group_exchange_sha256
+    [sw-103-1]ssh client cipher aes256_ctr aes128_ctr
+    [sw-103-1]ssh client hmac sha2_256
+    [sw-103-1]ssh client key-exchange dh_group16_sha512 dh_group15_sha512 dh_group14_sha256 dh_group_exchange_sha256
+    [sw-103-1]ssh server dh-exchange min-len 2048
+    [sw-103-1]ssh server publickey rsa_sha2_512 rsa_sha2_256 ecc rsa
+    ```
+-   Задаём протокол для подключения:
+    ```shell
+    [sw-103-1]user-interface vty 0 4
+    [sw-103-1-ui-vty0-4]authentication-mode aaa
+    [sw-103-1-ui-vty0-4]protocol inbound ssh
+    [sw-103-1-ui-vty0-4]quit
+    ```
 
 
-### <span class="section-num">3.1</span> Настройка SNMP {#настройка-snmp}
+### <span class="section-num">2.5</span> DHCP snooping {#dhcp-snooping}
+
+-   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
+-   Для использования DHCP snooping нам потребуется включить на коммутаторе глобально DHCP и DHCP snooping:
+    ```shell
+    [sw-103-1]dhcp enable
+    [sw-103-1]dhcp snooping enable
+    ```
+
+
+### <span class="section-num">2.6</span> Uplink интерфейс {#uplink-интерфейс}
+
+-   Сделаем последний порт транковым:
+    ```shell
+    [sw-103-1]interface GigabitEthernet1/0/48
+    [sw-103-1-GigabitEthernet0/0/48]port link-type trunk
+    [sw-103-1-GigabitEthernet0/0/48]port trunk allow-pass vlan all
+    [sw-103-1-GigabitEthernet0/0/48]dhcp snooping trusted
+    [sw-103-1-GigabitEthernet0/0/48]quit
+    ```
+-   Сделали порт доверенным для _DHCP snooping_.
+
+
+### <span class="section-num">2.7</span> Сетевые настройки {#сетевые-настройки}
+
+-   Зададим адрес 192.168.0.1/24,
+    ```shell
+    [sw-103-1]interface Vlanif 2
+    [sw-103-1-Vlanif10]ip address 192.168.1.10 24
+    [sw-103-1-Vlanif10]quit
+    ```
+-   Зададим шлюз 192.168.0.254:
+    ```shell
+    [sw-103-1]ip route-static 0.0.0.0 0.0.0.0 192.168.0.254
+    ```
+
+
+### <span class="section-num">2.8</span> Настройка lldp {#настройка-lldp}
+
+-   Подключим поддержку протокола lldp:
+    ```shell
+    [sw-103-1]lldp enable
+    ```
+-   Подключим cdp на все порты:
+    ```shell
+    [sw-103-1]interface range GigabitEthernet 0/0/1 to GigabitEthernet 0/0/48
+    [sw-103-1-port-group]lldp compliance cdp receive
+    [sw-103-1-port-group]quit
+    ```
+
+
+### <span class="section-num">2.9</span> Настройка других портов {#настройка-других-портов}
+
+-   Настроим другие порты для подключения клиентских устройств:
+    ```shell
+    [sw-103-1]interface range GigabitEthernet 0/0/1 to GigabitEthernet 0/0/46
+    [sw-103-1-port-group]port link-type access
+    [sw-103-1-port-group]port default vlan 100
+    [sw-103-1-port-group]quit
+    ```
+
+
+### <span class="section-num">2.10</span> Сохранение конфигурации {#сохранение-конфигурации}
+
+-   Сохраните конфигурацию:
+    ```shell
+    <sw-103-1>save
+    ```
+
+
+## <span class="section-num">3</span> Добавление в DNS {#добавление-в-dns}
+
+-   Необходимо добавить коммутатор в DNS.
+
+
+### <span class="section-num">3.1</span> nsupdate {#nsupdate}
+
+-   [nsupdate: динамический редактор зон DNS]({{< relref "2023-10-28-nsupdate-dynamic-dns-editor" >}})
+-   Добавьте адрес коммутатора в DNS:
+    ```shell
+    echo -e "update add sw-103-1.example.com 86400 a 192.168.0.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
+    ```
+
+
+## <span class="section-num">4</span> Подключение к системе мониторинга {#подключение-к-системе-мониторинга}
+
+
+### <span class="section-num">4.1</span> Настройка SNMP {#настройка-snmp}
 
 -   Посмотреть статус SNMP:
     ```shell
@@ -128,7 +244,7 @@ slug: "initial-switch-configuration-huawei"
 -   Добавьте коммутатор в свой DNS.
 
 
-### <span class="section-num">3.2</span> Пользователь для бекапа конфига {#пользователь-для-бекапа-конфига}
+### <span class="section-num">4.2</span> Пользователь для бекапа конфига {#пользователь-для-бекапа-конфига}
 
 -   Добавим пользователя для бекапа конфига:
     ```shell
@@ -146,7 +262,7 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-### <span class="section-num">3.3</span> Подключение к Observium {#подключение-к-observium}
+### <span class="section-num">4.3</span> Подключение к Observium {#подключение-к-observium}
 
 -   Подключитесь к Observium.
 -   Добавьте коммутатор в список наблюдения в Observium:
@@ -156,7 +272,7 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-### <span class="section-num">3.4</span> Подключение к Librenms {#подключение-к-librenms}
+### <span class="section-num">4.4</span> Подключение к Librenms {#подключение-к-librenms}
 
 -   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:

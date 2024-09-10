@@ -2,7 +2,7 @@
 title: "Перенос виртуальной машины на Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-04T16:58:00+03:00
-lastmod: 2024-09-07T16:43:00+03:00
+lastmod: 2024-09-09T08:28:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -37,10 +37,11 @@ slug: "migrating-virtual-machine-proxmox"
 -   Рекомендуется использовать на всех виртуальных машинах _qemu agent_, для обеспечения взаимодействия между гипервизором и виртуальной машиной (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).
 -   Создадим виртуальную машину:
     ```shell
-    qm create 111 --bootdisk scsi0 --net0 virtio,bridge=vmbr0,firewall=1,mtu=1,tag=100 --agent enabled=1
+    qm create 111 --name vm111 --bootdisk scsi0 --net0 virtio,bridge=vmbr0,firewall=1,mtu=1,tag=100 --agent enabled=1 --scsihw virtio-scsi-pci
     ```
 
-    -   Здесь у нас используется VLAN=100.
+    -   здесь у нас используется VLAN=100;
+    -   `mtu=1` : установить MTU таким же, как у родительского интерфейса (`vmbr0`).
 
 
 ### <span class="section-num">1.2</span> Копирование образа диска {#копирование-образа-диска}

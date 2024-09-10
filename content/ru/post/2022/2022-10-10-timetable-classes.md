@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-09-05T10:47:00+03:00
+lastmod: 2024-09-10T13:14:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -151,6 +151,7 @@ slug: "timetable-classes"
     -   ОРД-295
     -   НПМмд-02-24
     -   Ср 21:00-22:20
+    -   Ср 15:00-16:20
 
 <!--list-separator-->
 
@@ -160,7 +161,8 @@ slug: "timetable-classes"
     -   НПМмд-02-24
     -   НФИмд-00-24
     -   НПИмд-01-23
-    -   Ср 19:30-20:50
+    -   ~~Ср 19:30-20:50~~
+    -   Ср 9:00-10:20, дистанционно
 
 <!--list-separator-->
 
@@ -172,7 +174,8 @@ slug: "timetable-classes"
     -   НПМмд-02-24
     -   НФИмд-00-24
     -   НПИмд-01-23
-    -   Ср 19:30-20:50
+    -   ~~Ср 19:30-20:50~~
+    -   Ср 16:30-17:50
 
 <!--list-separator-->
 
@@ -577,7 +580,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[5/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> 2023--2024 учебный год, промежуточные аттестации <code>[6/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2023--2024 <code>[3/3]</code> {#сессия-модуль-1-2023-2024}
@@ -771,7 +774,7 @@ slug: "timetable-classes"
 1. <span class="org-todo done DONE">DONE</span>  Зачёты
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2023--2024 <code>[2/3]</code> {#сессия-семестр-2-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2023--2024 <code>[3/3]</code> {#сессия-семестр-2-2023-2024}
 
 <!--list-separator-->
 
@@ -834,7 +837,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2023--2024  <code>[1/2]</code>
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации, семестр 2, 2023--2024  <code>[2/2]</code>
 
     <!--list-separator-->
 
@@ -902,11 +905,11 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2, семестр 2, 2023--2024 <code>[/]</code>
+    2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2, семестр 2, 2023--2024 <code>[1/1]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Операционные системы, Переаттестация № 2, семестр 2, 2023--2024
+        1. <span class="org-todo done DONE">DONE</span>  Операционные системы, Переаттестация № 2, семестр 2, 2023--2024
 
             <!--list-separator-->
 

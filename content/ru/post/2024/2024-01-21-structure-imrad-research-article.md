@@ -2,7 +2,7 @@
 title: "Структура исследовательской статьи по IMRAD"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-21T18:37:00+03:00
-lastmod: 2024-01-21T20:10:00+03:00
+lastmod: 2024-09-09T13:21:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
