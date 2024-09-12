@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-09-06T15:37:00+03:00
+lastmod: 2024-09-12T14:17:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -126,6 +126,7 @@ slug: "system-administration"
 -   [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
 -   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
 -   [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})
+-   [Обновление деривативов RedHat]({{< relref "2024-09-12-redhat-derivatives-update" >}})
 
 
 ### <span class="section-num">8.5</span> Управление программным обеспечением {#управление-программным-обеспечением}

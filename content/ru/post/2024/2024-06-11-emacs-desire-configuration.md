@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-09-04T11:32:00+03:00
+lastmod: 2024-09-11T13:21:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -864,7 +864,54 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.11</span> Темы {#темы}
+### <span class="section-num">4.11</span> Навигация по тексту {#навигация-по-тексту}
+
+
+#### <span class="section-num">4.11.1</span> Начало {#начало}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Text navigation {{{
+    ```
+
+
+#### <span class="section-num">4.11.2</span> line-reminder {#line-reminder}
+
+-   Line annotation for changed and saved lines: <https://github.com/emacs-vs/line-reminder>
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Line annotation for changed and saved lines
+    (desire 'line-reminder)
+    ```
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Line annotation for changed and saved lines
+    ;;; https://github.com/emacs-vs/line-reminder
+
+    ;;; Enable for all buffers
+    (global-line-reminder-mode t)
+
+    ;;; Display Annotation
+    ;;; linum | indicators
+    (setq line-reminder-show-option 'linum)
+
+    ;;; Display thumbnail
+    (setq line-reminder-thumbnail t)
+
+    ;;;
+    ```
+
+
+#### <span class="section-num">4.11.3</span> Конец {#конец}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;;}}}
+    ```
+
+
+### <span class="section-num">4.12</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -895,7 +942,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.12.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -904,7 +951,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.12.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -913,7 +960,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.12.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp
