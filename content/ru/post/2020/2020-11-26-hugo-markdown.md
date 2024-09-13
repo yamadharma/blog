@@ -2,7 +2,7 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2023-09-16T17:50:00+03:00
+lastmod: 2024-09-13T14:21:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -186,10 +186,8 @@ gallery_item:
 
 ### <span class="section-num">2.3</span> Диаграммы {#диаграммы}
 
-Как обычно для Markdown поддерживается расширение для рисования
-диаграмм [mermaid](https://mermaid-js.github.io/mermaid/) (см. [Диаграммы. Mermaid]({{< relref "2021-01-03-diagrams-mermaid" >}})). Для использования нужно
-включить эту функцию в файле `params.toml` или добавив `diagram: true`
-в преамбуле страницы.
+-   Для Markdown поддерживается расширение для рисования диаграмм [mermaid](https://mermaid-js.github.io/mermaid/) (см. [Диаграммы. Mermaid]({{< relref "2021-01-03-diagrams-mermaid" >}})).
+-   Для использования нужно включить эту функцию в файле `params.toml` или добавив `diagram: true` в преамбуле страницы.
 
 Например, следующий код
 
