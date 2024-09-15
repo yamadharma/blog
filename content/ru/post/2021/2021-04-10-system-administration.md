@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-09-12T14:17:00+03:00
+lastmod: 2024-09-14T17:01:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -152,6 +152,7 @@ slug: "system-administration"
 ## <span class="section-num">9</span> Организация обучения {#организация-обучения}
 
 -   [Дисплейные классы]({{< relref "2021-09-26-computer-classes" >}})
+-   [Системы управления обучением]({{< relref "2024-09-14-learning-management-systems" >}})
 
 
 ## <span class="section-num">10</span> Пользовательские программы {#пользовательские-программы}

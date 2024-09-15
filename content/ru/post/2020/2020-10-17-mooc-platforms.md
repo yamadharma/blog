@@ -2,9 +2,9 @@
 title: "Платформы MOOC"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-17T18:11:00+03:00
-lastmod: 2023-09-16T17:37:00+03:00
-tags: ["science-admin", "education"]
-categories: ["science"]
+lastmod: 2024-09-14T17:00:00+03:00
+tags: ["education", "science-admin"]
+categories: ["science", "computer-science"]
 draft: false
 slug: "mooc-platforms"
 ---
