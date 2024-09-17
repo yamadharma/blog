@@ -2,7 +2,7 @@
 title: "Использование Яндекс-диска"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-25T15:32:00+03:00
-lastmod: 2024-09-07T15:01:00+03:00
+lastmod: 2024-09-16T13:52:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

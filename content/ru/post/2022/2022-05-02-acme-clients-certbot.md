@@ -2,7 +2,7 @@
 title: "Клиенты ACME. Certbot"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-02T16:54:00+03:00
-lastmod: 2024-07-17T19:42:00+03:00
+lastmod: 2024-09-16T13:06:00+03:00
 tags: ["sysadmin", "network", "security"]
 categories: ["computer-science"]
 draft: false
@@ -41,12 +41,25 @@ slug: "acme-clients-certbot"
 
 #### <span class="section-num">2.1.2</span> Установка программного обеспечения {#установка-программного-обеспечения}
 
--   Установка плагина `certbot-dns-rfc2136` для _Snap_:
-    ```shell
-    snap set certbot trust-plugin-with-root=ok
-    sudo snap install certbot-dns-rfc2136
-    ```
--   Сам _Certbot_ может находиться на произвольном сервере.
+<!--list-separator-->
+
+1.  Snap
+
+    -   Установка плагина `certbot-dns-rfc2136` для _Snap_:
+        ```shell
+        snap set certbot trust-plugin-with-root=ok
+        sudo snap install certbot-dns-rfc2136
+        ```
+    -   Сам _Certbot_ может находиться на произвольном сервере.
+
+<!--list-separator-->
+
+2.  Пакетный менеджер
+
+    -   Rocky Linux:
+        ```shell
+        sudo dnf -y install certbot python3-certbot-dns-rfc2136
+        ```
 
 
 #### <span class="section-num">2.1.3</span> Настройка BIND {#настройка-bind}
@@ -104,14 +117,7 @@ slug: "acme-clients-certbot"
 
 -   Выполните команду
     ```shell
-    certbot certonly \
-            --dns-rfc2136 --force-renewal \
-            --dns-rfc2136-credentials /etc/letsencrypt/rfc2136_domain.ltd.ini \
-            --server https://acme-v02.api.letsencrypt.org/directory \
-            --email example@domain.ltd \
-            --agree-tos --no-eff-email \
-            --dns-rfc2136-propagation-seconds 60 \
-            -d 'domain.ltd' -d '*.domain.ltd'
+    certbot certonly --dns-rfc2136 --force-renewal --dns-rfc2136-credentials /etc/letsencrypt/rfc2136_domain.ltd.ini --server https://acme-v02.api.letsencrypt.org/directory --email admin@domain.ltd --agree-tos --no-eff-email --dns-rfc2136-propagation-seconds 60 -d 'domain.ltd' -d '*.domain.ltd' --non-interactive --quiet
     ```
 -   Сертификаты помещаются в каталог `/etc/letsencrypt/live/domain.ltd`.
 

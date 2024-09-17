@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T15:31:00+03:00
-lastmod: 2024-09-10T19:53:00+03:00
+lastmod: 2024-09-17T13:27:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -277,7 +277,6 @@ slug: "initial-switch-configuration-huawei"
 -   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:
     ```shell
-    su - librenms
-    lnms device:add sw-103-1 -c rocom
-    lnms device:poll sw-103-1
+    sudo -u librenms /usr/local/bin/lnms device:add sw-103-1 -c rocom
+    sudo -u librenms /usr/local/bin/lnms device:poll sw-103-1
     ```
