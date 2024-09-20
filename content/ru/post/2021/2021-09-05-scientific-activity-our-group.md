@@ -2,7 +2,7 @@
 title: "Научная деятельность нашей группы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-05T15:53:00+03:00
-lastmod: 2023-10-27T16:29:00+03:00
+lastmod: 2024-09-20T15:56:00+03:00
 tags: ["science-admin", "research", "education"]
 categories: ["science"]
 draft: false
@@ -205,3 +205,8 @@ slug: "scientific-activity-our-group"
 -   Моделирование компьютерных сетей
 -   Обработка больших данных на языке Julia
 -   Аналитико-численное моделирование стохастических систем
+
+
+## <span class="section-num">4</span> Студенты {#студенты}
+
+-   [Темы исследований студентов]({{< relref "2024-09-20-student-research-topics" >}})

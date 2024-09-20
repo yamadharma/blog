@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-09-16T15:15:00+03:00
+lastmod: 2024-09-20T13:53:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -142,7 +142,7 @@ slug: "timetable-classes"
     -   2024-11-06 Пн 13:30-14:50--2024-12-25 Пн 13:30-14:50
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[1/5]</code> {#2024-2025-учебный-год-1-семестр}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[1/6]</code> {#2024-2025-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -189,6 +189,12 @@ slug: "timetable-classes"
 
     -   ОРД-559
     -   НПИбд-00-23
+
+<!--list-separator-->
+
+6. <span class="org-todo todo TODO">TODO</span>  Спецдисциплина для аспирантов
+
+    -   [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmRjYmUwNGUtMWY3MS00ZWZjLTk5YjEtYTkxZGM1ODU3ZjBi%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%2296135d12-2269-4589-add7-7eca251a8b13%22%7d)
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.5</span> 2024--2025 учебный год, 3 четверть <code>[1/1]</code> {#2024-2025-учебный-год-3-четверть}

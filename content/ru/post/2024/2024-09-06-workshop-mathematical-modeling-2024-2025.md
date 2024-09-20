@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-09-07T14:01:00+03:00
+lastmod: 2024-09-18T16:28:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "workshop-mathematical-modeling-2024-2025"
 ## <span class="section-num">1</span> Семинар Математическое моделирование, 2024 {#семинар-математическое-моделирование-2024}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-18 Ср&gt; </span></span> Лисица Ю. Т. - О числах больших и малых (топологические поля чисел Конвея и их пополнения) {#лисица-ю-dot-т-dot-о-числах-больших-и-малых--топологические-поля-чисел-конвея-и-их-пополнения}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-18 Ср&gt; </span></span> Лисица Ю. Т. - О числах больших и малых (топологические поля чисел Конвея и их пополнения) {#лисица-ю-dot-т-dot-о-числах-больших-и-малых--топологические-поля-чисел-конвея-и-их-пополнения}
 
 
 #### <span class="section-num">1.1.1</span> Докладчик {#докладчик}

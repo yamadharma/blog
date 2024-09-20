@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-09-14T17:01:00+03:00
+lastmod: 2024-09-20T20:18:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -90,10 +90,18 @@ slug: "system-administration"
 
 ## <span class="section-num">7</span> Оборудование {#оборудование}
 
+
+### <span class="section-num">7.1</span> Подбор компьютера {#подбор-компьютера}
+
 -   [Критерии выбора ноутбука]({{< relref "2022-04-30-criteria-choosing-laptop" >}})
 -   [Критерии выбора персонального компьютера]({{< relref "2022-07-21-criteria-choosing-personal-computer" >}})
 -   [Набор вещей для системного администратора]({{< relref "2022-09-11-system-administrator-tools" >}})
 -   [Клавиатуры]({{< relref "2023-10-11-keyboards" >}})
+
+
+### <span class="section-num">7.2</span> Процессоры {#процессоры}
+
+-   [Варианты микроархитектуры x86]({{< relref "2024-09-20-microarchitecture-level-x86-64" >}})
 
 
 ## <span class="section-num">8</span> Операционные системы {#операционные-системы}
