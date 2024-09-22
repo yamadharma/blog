@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T15:31:00+03:00
-lastmod: 2024-09-17T13:27:00+03:00
+lastmod: 2024-09-21T13:27:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -155,7 +155,18 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-### <span class="section-num">2.8</span> Настройка lldp {#настройка-lldp}
+### <span class="section-num">2.8</span> Настройка VCMP {#настройка-vcmp}
+
+-   [Huawei. Протокол VCMP]({{< relref "2024-09-21-huawei-vcmp" >}})
+-   Подключаем как клиента:
+    ```shell
+    [sw-103-1]vcmp role client
+    [sw-103-1]vcmp domain <domain>
+    [sw-103-1]vcmp authentication sha2-256 password <пароль>
+    ```
+
+
+### <span class="section-num">2.9</span> Настройка lldp {#настройка-lldp}
 
 -   Подключим поддержку протокола lldp:
     ```shell
@@ -169,7 +180,7 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-### <span class="section-num">2.9</span> Настройка других портов {#настройка-других-портов}
+### <span class="section-num">2.10</span> Настройка других портов {#настройка-других-портов}
 
 -   Настроим другие порты для подключения клиентских устройств:
     ```shell
@@ -180,7 +191,7 @@ slug: "initial-switch-configuration-huawei"
     ```
 
 
-### <span class="section-num">2.10</span> Сохранение конфигурации {#сохранение-конфигурации}
+### <span class="section-num">2.11</span> Сохранение конфигурации {#сохранение-конфигурации}
 
 -   Сохраните конфигурацию:
     ```shell
