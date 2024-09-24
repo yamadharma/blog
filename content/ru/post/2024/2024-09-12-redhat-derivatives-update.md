@@ -2,7 +2,7 @@
 title: "Обновление деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-12T12:48:00+03:00
-lastmod: 2024-09-14T20:59:00+03:00
+lastmod: 2024-09-24T14:42:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -29,6 +29,14 @@ slug: "redhat-derivatives-update"
     -   обновление Scientific Linux 7 до AlmaLinux 8;
     -   обновление с 8.x до 9.x в том же дистрибутиве;
     -   миграция на Oracle Linux 9 доступна с утилитой Oracle Leapp.
+
+
+### <span class="section-num">1.2</span> Предварительные действия {#предварительные-действия}
+
+-   Определите версию операционной системы:
+    ```shell
+    cat /etc/os-release
+    ```
 
 
 ## <span class="section-num">2</span> 7 → 8 {#7-8}
@@ -266,19 +274,23 @@ slug: "redhat-derivatives-update"
         ```shell
         sudo leapp answer --section check_vdo.no_vdo_devices=True
         ```
+    -   Удалите неподдерживаемые модули ядра:
+        ```shell
+        sudo rmmod ip_set
+        ```
 -   После исправления запустите утилиту опять. И так до устранения основных недостатков.
 
 
 #### <span class="section-num">3.2.3</span> Обновление {#обновление}
 
--   После подготовки сделайте обновление:
-    ```shell
-    sudo leapp upgrade
-    ```
 -   Обычно пакеты `make-devel` и `rocky-logos` приводят к сбою обновления. Удалите их:
     ```shell
     dnf remove make-devel
     dnf remove rocky-logos
+    ```
+-   После подготовки сделайте обновление:
+    ```shell
+    sudo leapp upgrade
     ```
 -   После скачивания необходимых пакетов будет предложено перегрузить машину.
 -   После перезагрузки начнётся процесс обновления.
@@ -293,6 +305,7 @@ slug: "redhat-derivatives-update"
 -   Выполните последующие действия либо обновляйте до следующей версии.
 -   Установите внешние репозитории:
     ```shell
+    sudo dnf config-manager --set-enabled crb
     sudo dnf install epel-release
     ```
 -   Обновите необновлённые пакеты:

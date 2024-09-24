@@ -2,7 +2,7 @@
 title: "KVM. QEMU Guest Agent"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-05T16:18:00+03:00
-lastmod: 2024-09-07T16:43:00+03:00
+lastmod: 2024-09-22T20:57:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -29,11 +29,11 @@ KVM. QEMU Guest Agent.
 
 -   Установка:
     ```shell
-    dnf -y install qemu-guest-agent
+    sudo dnf -y install qemu-guest-agent
     ```
 -   Включите службу:
     ```shell
-    systemctl enable --now qemu-guest-agent
+    sudo systemctl enable --now qemu-guest-agent
     ```
 
 

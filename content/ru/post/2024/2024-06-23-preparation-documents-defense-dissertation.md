@@ -2,7 +2,7 @@
 title: "Подготовка документов для защиты диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-23T15:51:00+03:00
-lastmod: 2024-09-22T20:23:00+03:00
+lastmod: 2024-09-24T17:50:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -22,9 +22,9 @@ slug: "preparation-documents-defense-dissertation"
 -   При этом правила защиты РУДН постоянно гармонизируют с правилами ВАК.
 
 
-## <span class="section-num">2</span> Общая схема подготовки документов {#общая-схема-подготовки-документов}
+## <span class="section-num">2</span> Общая схема этапов {#общая-схема-этапов}
 
-{{< figure src="/ox-hugo/20240623155100-general.svg" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Общая схема подготовки документов" >}}
+{{< figure src="/ox-hugo/20240623155100-general.svg" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 1.: </span>Общая схема этапов" >}}
 
 {{< figure src="/ox-hugo/20240623155100-general-gantt.svg" caption="<span class=\"figure-number\">&#1056;&#1080;&#1089;. 2.: </span>Общая схема подготовки документов (диаграмма Ганта), в неделях" >}}
 
