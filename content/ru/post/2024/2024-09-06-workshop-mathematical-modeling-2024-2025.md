@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-09-18T16:28:00+03:00
+lastmod: 2024-09-27T12:01:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -191,3 +191,50 @@ The main references
 1.  John H. Conway, On Numbers and Games, London Mathematical Society Monographs, No. 6, Academic Press, London-New-San Francisco, 1976.
 
 2.  Ju. T. Lisica, On all numbers great and small (topological fiels of Conway's numbers and their completions) [Читай статью on all numbers great and small (topological fields of conway's numbers and their completions) на архив орг (arxivorg.ru)](https://arxivorg.ru/mathematics/aeromekhanika/20240520000000000001/)
+
+
+#### <span class="section-num">1.1.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube e9eef2a7d551fee5fda1a3f204c45f4b >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube 4ilRtoJ-vuY >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-10 Чт&gt; </span></span> Блинков Ю.А. - Представление PyGinv. Установка. Полиномиальный случай {#блинков-ю-dot-а-dot-представление-pyginv-dot-установка-dot-полиномиальный-случай}
+
+
+#### <span class="section-num">1.2.1</span> Докладчик {#докладчик}
+
+-   Блинков Ю.А.
+-   доктор физико-математических наук
+-   зав. каф. СГУ
+
+
+#### <span class="section-num">1.2.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/263/>
+-   Представление PyGinv. Установка. Полиномиальный случай
+-   Блинков Ю.А.
+-   д.ф.м.-н., зав. каф. СГУ
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+PyGInv представляет собой «легковесную» версию GIinv (сокращение от Gröbner INVolutive), библиотеки на C++ разработаную для исследования и решения систем алгебраических, дифференциальных и разностных уравнений полиномиального типа. Написана на «чистом» Python и использует систему компьютерной алгебры SymPy для работы с параметрами. Полностью платформ-независимая библиотека и удобная для использования в учебном процессе.
+В полиномиальном случае в докладе будет рассмотрена установка, работа с мономами, полиномами и модулями. Построение дерева Janet, его визуализация и использование для программирования различных инволюционных делений. Вычисление размерностного полинома Гильберта, построение факторкольца и матричное представление элементов фактора полиномиального кольца по нульмерному идеалу.
+
+---
+
+-   Presentation of PyGInv. Installation. Polynomial case
+-   Blinkov Yu.A., Doctor of Physics and Mathematics
+-   Head. department SSU
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+PyGInv is a “lightweight” version of GIinv (an abbreviation for Gröbner INVolutive), a C++ library developed to investigate and solve systems of algebraic, differential, and difference equations of polynomial type. It was written in “pure” Python and uses the computer algebra system SymPy to work with parameters. This fully platform-independent library is convenient for use in educational process. In the polynomial case, the report will consider installation, working with monomials, polynomials, and modules. Construction of Janet tree, its visualization, and usage for programming various involutory divisions. Calculating Hilbert dimension polynomial, constructing factor ring, and matrix representation of elements of factor polynomial ring over zero-dimensional ideal.
