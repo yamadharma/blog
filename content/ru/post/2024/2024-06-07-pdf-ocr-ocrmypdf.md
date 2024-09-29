@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2024-08-22T13:53:00+03:00
+lastmod: 2024-09-29T18:32:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -76,7 +76,7 @@ slug: "pdf-ocr-ocrmypdf"
     ```
 -   Удалить весь распознанный текст из pdf-файла:
     ```shell
-    ocrmypdf --tesseract-timeout 0 --force-ocr input.pdf output.pdf
+    ocrmypdf --tesseract-timeout 0 --optimize 3 --force-ocr input.pdf output.pdf
     ```
 -   Оптимизация изображений без выполнения распознавания:
     ```shell
