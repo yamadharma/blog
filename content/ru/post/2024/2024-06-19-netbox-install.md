@@ -2,7 +2,7 @@
 title: "NetBox. Установка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-19T18:13:00+03:00
-lastmod: 2024-07-17T20:29:00+03:00
+lastmod: 2024-10-01T16:26:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -36,8 +36,8 @@ slug: "netbox-install"
     ```
 -   Добавим варианты python в список альтернатив:
     ```shell
-    alternatives --install /usr/bin/python python /usr/bin/python3.9 1
-    alternatives --install /usr/bin/python python /usr/bin/python3.12 2
+    alternatives --remove python /usr/bin/python3.9
+    alternatives --install /usr/bin/python python /usr/bin/python3.12 1
     ```
 -   Выберем необходимую версию python:
     ```shell
