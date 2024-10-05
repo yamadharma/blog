@@ -2,7 +2,7 @@
 title: "Менеджеры библиографии"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-04T19:20:00+03:00
-lastmod: 2024-10-04T19:29:00+03:00
+lastmod: 2024-10-05T18:56:00+03:00
 tags: ["bib"]
 categories: ["computer-science", "science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2024-09-06T15:48:00+03:00
+lastmod: 2024-10-05T11:35:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -312,8 +312,8 @@ slug: "initial-cisco-switch-configuration"
 -   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:
     ```shell
-    [root@librenms ~]# /opt/librenms/addhost.php sw-103-1 rocom
-    [root@librenms ~]# /opt/librenms/discovery.php -h sw-103-1; /opt/librenms/poller.php -h sw-103-1
+    sudo -u librenms /usr/local/bin/lnms device:add sw-103-1 -c rocom
+    sudo -u librenms /usr/local/bin/lnms device:poll sw-103-1
     ```
 
 [^fn:1]: Установка пароля может быть выполнена двумя командами `password` и `secret`. В первом случае пароль хранится в конфигурационном файле в открытом виде, а во втором в зашифрованном. Если использовалась команда `password`, необходимо зашифровать пароли, хранящиеся в устройстве в открытом виде с помощью команды `service password-encryption` в режиме глобальной конфигурации.
