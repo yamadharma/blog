@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-09-11T13:21:00+03:00
+lastmod: 2024-10-06T18:26:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -447,7 +447,7 @@ slug: "emacs-desire-configuration"
     ;;;}}}
     ;;; LaTeX {{{
 
-    ;; (desire 'xenops)
+    (desire 'xenops)
     ;; (desire 'lsp-latex :precondition-system-executable "texlab")
 
     (desire 'cdlatex)

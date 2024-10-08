@@ -2,7 +2,7 @@
 title: "BibLaTeX. Ссылка на программный продукт"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-05T18:49:00+03:00
-lastmod: 2024-10-05T20:39:00+03:00
+lastmod: 2024-10-06T12:44:00+03:00
 tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -251,24 +251,23 @@ BibLaTeX. Ссылка на программный продукт.
       crossref = {parmap-1.1.1}
     }
     ```
-
-    -   Можно использовать только одну запись:
-        ```bibtex
-        @codefragment {simplemapper-condensed,
-          title = {The Parmap library},
-          author = {Di Cosmo, Roberto and Marco Danelutto},
-          date = {2020},
-          institution = {{Inria} and {University of Paris} and {University of Pisa}},
-          license = {LGPL-2.0},
-          url = {https://rdicosmo.github.io/parmap/},
-          repository= {https://github.com/rdicosmo/parmap},
-          version = {1.1.1},
-          subtitle = {Core mapping routine},
-          swhid = {swh:1:cnt:43a6b232768017b03da934ba22d9cc3f2726a6c5;
-             origin=https://github.com/rdicosmo/parmap;
-             visit=swh:1:snp:2a6c348c53eb77d458f24c9cbcecaf92e3c45615;
-             anchor=swh:1:rel:373e2604d96de4ab1d505190b654c5c4045db773;
-             path=/src/parmap.ml;
-             lines=192-228}
-        }
-        ```
+-   Можно использовать только одну запись:
+    ```bibtex
+    @codefragment {simplemapper-condensed,
+      title = {The Parmap library},
+      author = {Di Cosmo, Roberto and Marco Danelutto},
+      date = {2020},
+      institution = {{Inria} and {University of Paris} and {University of Pisa}},
+      license = {LGPL-2.0},
+      url = {https://rdicosmo.github.io/parmap/},
+      repository= {https://github.com/rdicosmo/parmap},
+      version = {1.1.1},
+      subtitle = {Core mapping routine},
+      swhid = {swh:1:cnt:43a6b232768017b03da934ba22d9cc3f2726a6c5;
+         origin=https://github.com/rdicosmo/parmap;
+         visit=swh:1:snp:2a6c348c53eb77d458f24c9cbcecaf92e3c45615;
+         anchor=swh:1:rel:373e2604d96de4ab1d505190b654c5c4045db773;
+         path=/src/parmap.ml;
+         lines=192-228}
+    }
+    ```
