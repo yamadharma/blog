@@ -2,7 +2,7 @@
 title: "Эмулятор терминала kitty"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-03-16T17:07:00+03:00
-lastmod: 2024-10-08T20:04:00+03:00
+lastmod: 2024-10-09T11:00:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -74,11 +74,7 @@ slug: "kitty-terminal-emulator"
 -   В списке можно выбрать тему.
 -   Конфигурация темы будет добавлена в `~/.config/kitty/current-theme.conf`.
 -   В свою очередь этот файл будет подключён к конфигурации `kitty.conf`.
--   Можно вручную перегрузить тему во всех терминалах:
-    ```shell
-    kitten themes --reload-in=all
-    ```
--   А можно в командной строке задать и тему (например, _Dimmed Monokai_):
+-   Можно вручную перегрузить тему во всех терминалах (например, задав тему _Dimmed Monokai_):
     ```shell
     kitten themes --reload-in=all Dimmed Monokai
     ```

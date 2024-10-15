@@ -2,7 +2,7 @@
 title: "Pdf. Оглавление. pdf.tocgen"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-21T20:36:00+03:00
-lastmod: 2024-06-22T16:37:00+03:00
+lastmod: 2024-10-10T17:42:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false

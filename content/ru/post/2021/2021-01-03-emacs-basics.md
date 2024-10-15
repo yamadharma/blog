@@ -2,7 +2,7 @@
 title: "Emacs. Основы работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T12:35:00+03:00
-lastmod: 2023-09-30T20:20:00+03:00
+lastmod: 2024-10-15T16:01:00+03:00
 tags: ["programming", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -19,4 +19,9 @@ slug: "emacs-basics"
 ## <span class="section-num">1</span> Основы работы {#основы-работы}
 
 -   [Emacs. Основы. Кодировка]({{< relref "2021-01-03-emacs-basics-encoding" >}})
+
+
+## <span class="section-num">2</span> Навигация {#навигация}
+
 -   [Emacs. Основы навигации]({{< relref "2023-03-12-emacs-navigation-basics" >}})
+-   [Emacs. Окна]({{< relref "2024-10-15-emacs-window" >}})

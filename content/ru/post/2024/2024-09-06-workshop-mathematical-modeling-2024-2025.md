@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-09-27T12:01:00+03:00
+lastmod: 2024-10-10T16:48:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -209,7 +209,7 @@ The main references
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-10 Чт&gt; </span></span> Блинков Ю.А. - Представление PyGinv. Установка. Полиномиальный случай {#блинков-ю-dot-а-dot-представление-pyginv-dot-установка-dot-полиномиальный-случай}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-10-10 Чт&gt; </span></span> Блинков Ю.А. - Представление PyGinv. Установка. Полиномиальный случай {#блинков-ю-dot-а-dot-представление-pyginv-dot-установка-dot-полиномиальный-случай}
 
 
 #### <span class="section-num">1.2.1</span> Докладчик {#докладчик}

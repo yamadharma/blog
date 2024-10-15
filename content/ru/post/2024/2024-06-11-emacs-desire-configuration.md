@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-10-06T18:26:00+03:00
+lastmod: 2024-10-14T17:20:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -24,28 +24,40 @@ slug: "emacs-desire-configuration"
 
 ## <span class="section-num">3</span> Конфигурационные файлы {#конфигурационные-файлы}
 
--   В файле `rc.packages.el` находится список используемых пакетов:
+-   В файле `rc.packages.el` находится список используемых пакетов.
+-   Заголовок файла:
+
+<!--listend-->
+
+```emacs-lisp
+;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; origami-fold-style: triple-braces; -*-
+;;; rc.packages.el
+
+;;; Commentary:
+
+;;
+;;  File id
+;;
+;;      Copyright (C)  2002-2024 Dmitry S. Kulyabov
+;;      Keywords:      rc.packages
+;;      Author:        Dmitry S. Kulyabov <yamadharma@gmail.com>
+;;      Maintainer:    Dmitry S. Kulyabov <yamadharma@gmail.com>
+;;
+;;      This code is free software in terms of GNU Gen. pub. Lic. v3 or later
+;;
+;;  Description
+;;
+;;
+
+;;; Change Log:
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+  rc.packages.el
+</div>
+
+-   Файл:
     ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; origami-fold-style: triple-braces; -*-
-    ;;; rc.packages.el
-
-    ;;; Commentary:
-
-    ;;
-    ;;  File id
-    ;;
-    ;;      Copyright (C)  2002-2024 Dmitry S. Kulyabov
-    ;;      Keywords:      rc.packages
-    ;;      Author:        Dmitry S. Kulyabov <yamadharma@gmail.com>
-    ;;      Maintainer:    Dmitry S. Kulyabov <yamadharma@gmail.com>
-    ;;
-    ;;      This code is free software in terms of GNU Gen. pub. Lic. v3 or later
-    ;;
-    ;;  Description
-    ;;
-    ;;
-
-    ;;; Change Log:
 
     ;;; Code:
 
@@ -90,10 +102,10 @@ slug: "emacs-desire-configuration"
         ()
       (progn
         (desire-old 'window-system)
-    ;    (desire-old  'faces)
-    ;    (desire-old  'multi-frame)
+                                          ;    (desire-old  'faces)
+                                          ;    (desire-old  'multi-frame)
+        )
       )
-    )
 
 
     ;; (if (null window-system)
@@ -175,7 +187,6 @@ slug: "emacs-desire-configuration"
 
     (desire 'rg :precondition-system-executable "rg")
     ```
-
 -   В файле используется фолдинг по тройной скобке.
 
 
@@ -218,47 +229,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.2</span> Поддержка LSP {#поддержка-lsp}
-
--   [Emacs. Поддержка LSP]({{< relref "2024-01-14-emacs-lsp" >}})
-
-
-#### <span class="section-num">4.2.1</span> Начало {#начало}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    ;;; LSP mode {{{
-
-    (desired 'emacs-lsp-booster :precondition-system-executable "emacs-lsp-booster")
-    ```
-
-
-#### <span class="section-num">4.2.2</span> Eglog {#eglog}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    (desire 'eglot)
-    ```
-
-
-#### <span class="section-num">4.2.3</span> Lsp-mode {#lsp-mode}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    ;; (desire 'lsp-mode)
-    ```
-
-
-#### <span class="section-num">4.2.4</span> Конец {#конец}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-
-    ;;; }}}
-    ```
-
-
-### <span class="section-num">4.3</span> Автодополнение {#автодополнение}
+### <span class="section-num">4.2</span> Автодополнение {#автодополнение}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -271,10 +242,10 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.4</span> Автодополнение в минибуфере {#автодополнение-в-минибуфере}
+### <span class="section-num">4.3</span> Автодополнение в минибуфере {#автодополнение-в-минибуфере}
 
 
-#### <span class="section-num">4.4.1</span> Начало {#начало}
+#### <span class="section-num">4.3.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -282,7 +253,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.2</span> Ido {#ido}
+#### <span class="section-num">4.3.2</span> Ido {#ido}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -290,7 +261,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.3</span> Helm {#helm}
+#### <span class="section-num">4.3.3</span> Helm {#helm}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -299,7 +270,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.4</span> Ivy {#ivy}
+#### <span class="section-num">4.3.4</span> Ivy {#ivy}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -307,7 +278,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.5</span> Selectrum {#selectrum}
+#### <span class="section-num">4.3.5</span> Selectrum {#selectrum}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -315,7 +286,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.6</span> Vertico {#vertico}
+#### <span class="section-num">4.3.6</span> Vertico {#vertico}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -323,7 +294,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.4.7</span> Конец {#конец}
+#### <span class="section-num">4.3.7</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -332,351 +303,565 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.5</span> Общие настройки мод {#общие-настройки-мод}
+### <span class="section-num">4.4</span> Общие настройки мод {#общие-настройки-мод}
 
 
-### <span class="section-num">4.6</span> Org-mode {#org-mode}
+### <span class="section-num">4.5</span> Поддержка LSP {#поддержка-lsp}
+
+-   [Emacs. Поддержка LSP]({{< relref "2024-01-14-emacs-lsp" >}})
 
 
-### <span class="section-num">4.7</span> Разное {#разное}
+#### <span class="section-num">4.5.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
-    ;;
+    ;;; LSP mode {{{
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      rc.packages.el
+    </div>
 
-    (desire 'tree-sitter)
-
-    (desire 'hydra)
-
-    (desire 'bicycle)
-    (desire 'hideshow)
-
-    (desire-old 'show-paren)
-    ;; (desire-old 'folding)
-    ;; (desire-old 'outline)
-
-
-    (desire 'origami)
-
-    ;;
-
-    (desire 'imenu)
-
-    (desire 'ace-window)
+-   Включаем поддержку `emacs-lsp-booster`:
+    ```emacs-lisp
+    (desired 'emacs-lsp-booster :precondition-system-executable "emacs-lsp-booster")
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      rc.packages.el
+    </div>
 
 
-    ;; (desire-old 'toolbar)
+#### <span class="section-num">4.5.2</span> Eglog {#eglog}
 
-    ;; Parentesis
-    (desire 'smartparens)
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'eglot)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+      rc.packages.el
+    </div>
+-   Начальная загрузка:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; A client for Language Server Protocol servers
+    ;;; https://github.com/joaotavora/eglot
 
-    ;;; Spell {{{
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+      packages/eglot/loaddefs.ecf
+    </div>
+-   Загрузка самого пакета:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; A client for Language Server Protocol servers
+    ;;; https://github.com/joaotavora/eglot
 
-    ;; (desire-old 'spell)
-    (desire 'ispell)
-    (desire 'flyspell)
-    ;;(desire-old 'speck)
-    ;;(desire-old 'wcheck)
+    (require 'eglot)
 
-    ;; (desire 'flycheck-languagetool)
-    ;; (desire 'langtool)
+    ;;; Control blocking of LSP connection attempts
+    (setq eglot-sync-connect nil)
 
-    ;; (desire 'lsp-ltex :recipe '(:fetcher github :repo "emacs-languagetool/lsp-ltex" :branch "master" :files ("*.el")))
-    ;; (desire 'eglot-ltex :recipe '(:fetcher github :repo "emacs-languagetool/eglot-ltex" :branch "master" :files ("*.el")))
+    (setq eglot-connect-timeout 10)
+    (setq eglot-autoshutdown t)
+    (setq eglot-send-changes-idle-time 0.5)
 
-    ;;;}}}
-    ;;; Adress book {{{
+    ;;; Disable `eglot-auto-display-help-buffer` because :select t in its popup rule causes eglot to steal focus too often.
+    (setq eglot-auto-display-help-buffer nil)
 
-    (desired 'vcard)
-    (desire 'khardel :precondition-system-executable "khard")
-    (desire 'khalel :precondition-system-executable "khal")
-    ;; (desire 'org-vcard)
-    ;; (desire 'vdirel)
-    ;; (desire 'bbdb)
+    ;;; Disable any debug logging and may speed things up
+    (setq eglot-events-buffer-size 0)
 
-    ;;;}}}
-    ;;; Bibliography {{{
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      packages/eglot/desire.ecf
+    </div>
+-   Загрузка `emacs-lsp-booster`:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Boost eglot using lsp-booster
+    ;;; https://github.com/jdtsmith/eglot-booster
 
-    (desire 'biblio)
-    (desire 'bibtex)
+    (desire 'eglot-booster :recipe '(:fetcher github :repo "jdtsmith/eglot-booster" :branch "main" :files ("*.el")))
+    (require 'eglot-booster)
+    (eglot-booster-mode)
 
-    ;;;}}}
-    ;;; Projects {{{
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+      packages/eglot/emacs-lsp-booster.ecf
+    </div>
 
-    ;; (desire 'project)
-    (desire 'projectile)
 
-    ;;;}}}
+#### <span class="section-num">4.5.3</span> Lsp-mode {#lsp-mode}
 
-    ;;(desire-old 'yasnippet)
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;; (desire 'lsp-mode)
+    ```
 
-    ;;; Text {{{
 
-    (desire 'texfrag)
+#### <span class="section-num">4.5.4</span> Конец {#конец}
 
-    ;; (desire 'adaptive-wrap)
-    (desired 'visual-line-mode)
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
 
-    ;; (desired 'prettify-symbols-mode)
-    ;; (desire 'pretty-mode)
-    ;; (desire 'prettify-math)
-    ;; (desire 'math-preview)
+    ;;; }}}
+    ```
 
-    (desire 'pandoc-mode)
 
-    (desire' mermaid-mode :precondition-system-executable "mmdc")
+### <span class="section-num">4.6</span> Разное {#разное}
 
-    (desire-old 'text)
-    (desire-old 'markdown-mode nil "markdown-mode" t)
+-   Файл `rc.packages.el`:
 
-    (desire 'plantuml-mode)
+<!--listend-->
 
-    (desire 'pdf-tools)
-    (desire 'nov)
-    (desire 'fb2-reader)
+```emacs-lisp
+;;
 
-    ;; (desire 'valign)
+(desire 'tree-sitter)
 
-    ;;;}}}
-    ;;; Time management {{{
+(desire 'hydra)
 
-    (desire 'pomm)
-    (desire 'org-pomodoro)
-    ;; (desire 'hammy)
+(desire 'bicycle)
+(desire 'hideshow)
 
-    ;;;}}}
-    ;;; LaTeX {{{
+(desire-old 'show-paren)
+;; (desire-old 'folding)
+;; (desire-old 'outline)
 
-    (desire 'xenops)
-    ;; (desire 'lsp-latex :precondition-system-executable "texlab")
 
-    (desire 'cdlatex)
+(desire 'origami)
 
-    (desire-old 'xdvi nil "xdvi-search")
-    (desired 'reftex)
-    ;; (desire-old 'tex)
-    (desired 'preview-latex)
-    (desire 'auctex)
-    ;; (desire 'auctex :initname "latex")
-    ;; (desire 'auctex :initname "latex" :precondition-lisp-library "tex-site")
+;;
 
-    ;;;}}}
-    ;;; Org-mode {{{
+(desire 'imenu)
 
-    ;; (desire 'org-ql)
+(desire 'ace-window)
 
-    (desire 'org-appear)
-    (desire 'org-fragtog)
-    (desire 'org-custom-cookies)
-    ;; (desire 'svg-tag-mode)
-    (desire 'org-superstar)
-    ;; (desire 'org-modern-indent :recipe '(:fetcher github :repo "jdtsmith/org-modern-indent" :branch "main" :files ("*.el")))
-    (desire 'org-modern)
-    ;; (desire 'org-contacts)
-    ;; (desire 'google-contacts)
-    (desire 'org-edna)
-    (desire 'org-ref)
-    (desire 'org-tree-slide)
 
-    ;;; Agenda
-    (desire 'org-super-agenda)
+;; (desire-old 'toolbar)
 
-    ;;(if (desiredp 'org-ql)
-    ;; (desire 'org-agenda-files-track-ql)
-    (desire 'org-agenda-files-track)
-    ;;)
+;; Parentesis
+(desire 'smartparens)
 
-    ;;(if (desiredp 'org-ql)
-    ;; (desire 'org-agenda-files-track-ql :recipe '(:fetcher github :repo "nicolas-graves/org-agenda-files-track" :branch "master" :files ("org-agenda-files-track-ql.el")))
-    ;; (desire 'org-agenda-files-track :recipe '(:fetcher github :repo "nicolas-graves/org-agenda-files-track" :branch "master" :files ("org-agenda-files-track.el")))
-    ;;)
+;;; Spell {{{
 
-    ;;; Literate
-    (desire 'org-tanglesync)
+;; (desire-old 'spell)
+(desire 'ispell)
+(desire 'flyspell)
+;;(desire-old 'speck)
+;;(desire-old 'wcheck)
 
-    ;; (desire 'org-gcal)
-    (desire 'org-journal)
+;; (desire 'flycheck-languagetool)
+;; (desire 'langtool)
 
-    (desire 'org-noter)
-    ;; (desire 'org-noter :recipe '(:fetcher github :repo "org-noter/org-noter" :branch "feature/org-roam-integration" :files ("*.el" "modules/*.el")))
+;; (desire 'lsp-ltex :recipe '(:fetcher github :repo "emacs-languagetool/lsp-ltex" :branch "master" :files ("*.el")))
+;; (desire 'eglot-ltex :recipe '(:fetcher github :repo "emacs-languagetool/eglot-ltex" :branch "master" :files ("*.el")))
 
-    (desire 'org-transclusion)
+;;;}}}
+;;; Adress book {{{
+
+(desired 'vcard)
+(desire 'khardel :precondition-system-executable "khard")
+(desire 'khalel :precondition-system-executable "khal")
+;; (desire 'org-vcard)
+;; (desire 'vdirel)
+;; (desire 'bbdb)
+
+;;;}}}
+;;; Bibliography {{{
+
+(desire 'biblio)
+(desire 'bibtex)
+
+;;;}}}
+;;; Projects {{{
+
+;; (desire 'project)
+(desire 'projectile)
+
+;;;}}}
+
+;;(desire-old 'yasnippet)
+
+;;; Text {{{
+
+(desire 'texfrag)
+
+;; (desire 'adaptive-wrap)
+(desired 'visual-line-mode)
+
+;; (desired 'prettify-symbols-mode)
+;; (desire 'pretty-mode)
+;; (desire 'prettify-math)
+;; (desire 'math-preview)
+
+(desire 'pandoc-mode)
+
+(desire' mermaid-mode :precondition-system-executable "mmdc")
+
+(desire-old 'text)
+(desire-old 'markdown-mode nil "markdown-mode" t)
+
+(desire 'plantuml-mode)
+
+(desire 'pdf-tools)
+(desire 'nov)
+(desire 'fb2-reader)
+
+;; (desire 'valign)
+
+;;;}}}
+;;; Time management {{{
+
+(desire 'pomm)
+(desire 'org-pomodoro)
+;; (desire 'hammy)
+
+;;;}}}
+;;; LaTeX {{{
+
+(desire 'xenops)
+;; (desire 'lsp-latex :precondition-system-executable "texlab")
+
+(desire 'cdlatex)
+
+(desire-old 'xdvi nil "xdvi-search")
+(desired 'reftex)
+;; (desire-old 'tex)
+(desired 'preview-latex)
+(desire 'auctex)
+;; (desire 'auctex :initname "latex")
+;; (desire 'auctex :initname "latex" :precondition-lisp-library "tex-site")
+
+;;;}}}
+```
+
+
+### <span class="section-num">4.7</span> Org-mode {#org-mode}
+
+-   [Org-mode]({{< relref "2021-10-14-org-mode" >}})
+-   Конфигурация для `org-mode`:
+
+<!--listend-->
+
+```emacs-lisp
+;;; Org-mode {{{
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+  rc.packages.el
+</div>
+
+-   Разное:
+
+<!--listend-->
+
+```emacs-lisp
+;; (desire 'org-ql)
+
+(desire 'org-appear)
+(desire 'org-fragtog)
+(desire 'org-custom-cookies)
+;; (desire 'svg-tag-mode)
+(desire 'org-superstar)
+;; (desire 'org-modern-indent :recipe '(:fetcher github :repo "jdtsmith/org-modern-indent" :branch "main" :files ("*.el")))
+(desire 'org-modern)
+;; (desire 'org-contacts)
+;; (desire 'google-contacts)
+(desire 'org-edna)
+(desire 'org-ref)
+(desire 'org-tree-slide)
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+  rc.packages.el
+</div>
+
+
+#### <span class="section-num">4.7.1</span> Повестка дня {#повестка-дня}
+
+-   Конфигурация повестки дня:
+
+<!--listend-->
+
+```emacs-lisp
+;;; Agenda
+(desire 'org-super-agenda)
+
+;;(if (desiredp 'org-ql)
+;; (desire 'org-agenda-files-track-ql)
+(desire 'org-agenda-files-track)
+;;)
+
+;;(if (desiredp 'org-ql)
+;; (desire 'org-agenda-files-track-ql :recipe '(:fetcher github :repo "nicolas-graves/org-agenda-files-track" :branch "master" :files ("org-agenda-files-track-ql.el")))
+;; (desire 'org-agenda-files-track :recipe '(:fetcher github :repo "nicolas-graves/org-agenda-files-track" :branch "master" :files ("org-agenda-files-track.el")))
+;;)
+
+;;; Literate
+(desire 'org-tanglesync)
+
+;; (desire 'org-gcal)
+(desire 'org-journal)
+
+(desire 'org-noter)
+;; (desire 'org-noter :recipe '(:fetcher github :repo "org-noter/org-noter" :branch "feature/org-roam-integration" :files ("*.el" "modules/*.el")))
+
+(desire 'org-transclusion)
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
+  rc.packages.el
+</div>
+
+
+#### <span class="section-num">4.7.2</span> org-gtd {#org-gtd}
+
+-   [Emacs. Пакеты. Org-gtd]({{< relref "2023-07-31-emacs-packages-org-gtd" >}})
+-   Подключение для загрузки:
+    ```emacs-lisp
+    ;;; GTD
     (desire 'org-gtd)
-
-    (desired 'mobileorg)
-    (desire 'org)
-
-    ;;; For messaging
-    ;; (desire 'org-msg)
-
-    ;;;}}}
-    ;;; Org-roam {{{
-
-    (desire 'emacsql)
-
-    ;; (desire 'delve :recipe '(:fetcher github :repo "publicimageltd/delve" :branch "main"))
-    (desire 'zetteldesk)
-
-    ;; (desire 'org-roam-server)
-    ;; (desire 'org-roam-ui :recipe '(:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
-    ;; (desire 'org-roam-ui :recipe '(:fetcher github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
-    (desire 'org-roam-ui)
-
-
-    (desire 'magit-section)
-    (desire 'org-roam)
-
-    ;;;}}}
-    ;;; Notes {{{
-
-    (desire 'deft)
-    ;; (desire-old 'zetteldeft nil "zetteldeft" t)
-
-    (desire 'denote)
-
-    ;;}}}
-    ;; XML, XHTML, HTML {{{
-
-    ;;(desire-old 'nxml nil "rng-auto")
-    ; (desire-old 'psgml)
-
-    ;;;}}}
-    ;;;{{{ Palm pilot support
-
-    ;(desire-old 'palm)
-
-    ;;;}}}
-    ;;; Desktop {{{
-
-    ;; (desire-old 'desktop)
-    (desire-old 'session nil "session")
-    (desire-old 'saveplace nil "saveplace")
-
-    (desire 'ibuffer)
-    ;; (desire 'persp-mode)
-    ;; (desire 'perspective)
-    ;; (desire 'bufler)
-    ;; (desire 'tabspaces)
-
-    ;;}}}
-    ;;; Appointments, diary, calendar {{{
-
-    ;; Use "M-x calendar RET" to display the calendar and start
-    ;; appointment warnings.
-
-    ;; (desire-old 'appt)
-    (desire 'calendar)
-    ;; (desire-old 'todo-mode)
-    ;; (desire-old 'diary "diary-lib")
-
-    ;;;}}}
-    ;;; These provide options for the various message handling packages {{{
-
-    (desire 'browse-url)
-    ;; (desire-old 'mailcrypt)
-    ;; (desire 'supercite)
-
-    ;;;}}}
-    ;;; Message {{{
-
-    (desire 'smtpmail)
-    ;; (desire 'gnus)
-    (desire 'message)
-    ;; (desire-old 'vm)
-    ;; (desire 'wl :ensurename 'wanderlust)
-    ;; (desire-old 'sendmail)
-    ;; (desire 'mu4e-dashboard :recipe '(:fetcher github :repo "rougier/mu4e-dashboard"))
-    (desire 'mu4e :precondition-system-executable "mu")
-
-    ;;;}}}
-    ;;; Programming {{{
-
-    (desire 'speedbar)
-    ;; (desire-old 'semantic nil "semantic")
-
-    ;; (desire-old 'cedet nil "cedet")
-    ;; (desire-old 'ecb nil "ecb")
-
-    ;; (desire-old 'php-mode nil "php-mode")
-    ;; (desire-old 'eiffel-mode nil "eiffel-mode")
-
-    (desire 'ebib)
-
-    (desire 'lua-mode)
-
-    ;;; Julia
-    ;;; Code completion and syntax checking
-    ;(desire 'eglot-jl)
-    ;;; REPL integration
-    (desire 'julia-snail)
-    ;; (desire 'julia-repl)
-    ;;; Syntax highlighting and latex symbols
-    (desire 'julia-mode)
-
-
-    (desire 'yaml-mode)
-    (desire 'ini-mode)
-    (desire 'hcl-mode)
-
-    (desire 'magit-gitflow)
-    (desire 'magit)
-
-    ;;;}}}
-    ;;; Blogs {{{
-
-    ;; (desire-old 'hexo nil "hexo")
-    ;; (desire-old 'blog-admin nil "blog-admin") ;; Blog admin for emacs with hexo/org-page supported
-    (desire-old 'easy-hugo  nil "easy-hugo" t) ;; Emacs major mode for managing hugo
-
-    ;;;}}}
-    ;;; Miscellaneous {{{
-
-    (desire 'ebuku)
-    (desire-old 'graphviz-dot-mode nil "graphviz-dot-mode")
-    ;; (desire-old 'abbrev)
-    ;; (desire-old 'bibtex)
-    ;; (desire-old 'calc)
-    ;; (desire-old 'eiffel-mode)
-    ;; (desire-old 'filladapt)
-    ;; (desire-old 'hugs-mode)
-    ;; (desire-old 'html-helper-mode)
-    ;; (desire-old 'lispdir)
-    ;; (desire-old 'php-mode)
-    ;; (desire-old 'ps-print)
-    ;; (desire-old 'sh-script)
-    ;; (desire-old 'shell)
-    ;; (desire-old 'sql-mode)
-    ;; (desire-old 'w3)
-    (desire 'web-mode)
-    (desire 'gnuplot)
-
-    (desire 'pass)
-
-
-    (desire 'multiple-cursors)
-
-    (desire 'telega)
-    (desire 'pocket-reader)
-
-    ;;;}}}
-
-    ;; (desire 'grammarly)
-
-    ;; (desire 'flycheck-grammarly)
-
-    (desire 'dashboard)
-
-    ;; PERSONAL
-
-    ;; (require 'chord-mode)  ; edit guitar music.
-    ;; (require 'discography) ; variant of BibTeX mode for discographies.
     ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
+      rc.packages.el
+    </div>
+
+<!--list-separator-->
+
+1.  Клавиатурные сочетания
 
 
-### <span class="section-num">4.8</span> Программные режимы {#программные-режимы}
+#### <span class="section-num">4.7.3</span> mobileorg {#mobileorg}
+
+```emacs-lisp
+(desired 'mobileorg)
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+  rc.packages.el
+</div>
 
 
-#### <span class="section-num">4.8.1</span> Работа с CSV {#работа-с-csv}
+#### <span class="section-num">4.7.4</span> org-mode {#org-mode}
+
+```emacs-lisp
+(desire 'org)
+
+;;; For messaging
+;; (desire 'org-msg)
+
+;;;}}}
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
+  rc.packages.el
+</div>
+
+
+### <span class="section-num">4.8</span> Заметочники {#заметочники}
+
+-   [Emacs. Персональная база знаний]({{< relref "2023-11-07-emacs-personal-knowledge-base" >}})
+-   Разные заметочники:
+    ```emacs-lisp
+    ;;; Notes {{{
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
+      rc.packages.el
+    </div>
+
+
+#### <span class="section-num">4.8.1</span> Org-roam {#org-roam}
+
+```emacs-lisp
+;;; Org-roam {{{
+
+(desire 'emacsql)
+
+;; (desire 'delve :recipe '(:fetcher github :repo "publicimageltd/delve" :branch "main"))
+(desire 'zetteldesk)
+
+;; (desire 'org-roam-server)
+;; (desire 'org-roam-ui :recipe '(:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
+;; (desire 'org-roam-ui :recipe '(:fetcher github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
+(desire 'org-roam-ui)
+
+
+(desire 'magit-section)
+(desire 'org-roam)
+
+;;;}}}
+```
+
+
+#### <span class="section-num">4.8.2</span> Denote {#denote}
+
+```emacs-lisp
+
+(desire 'deft)
+;; (desire-old 'zetteldeft nil "zetteldeft" t)
+
+(desire 'denote)
+
+;;}}}
+```
+
+
+### <span class="section-num">4.9</span> Разное {#разное}
+
+```emacs-lisp
+;; XML, XHTML, HTML {{{
+
+;;(desire-old 'nxml nil "rng-auto")
+                                        ; (desire-old 'psgml)
+
+;;;}}}
+;;;{{{ Palm pilot support
+
+                                        ;(desire-old 'palm)
+
+;;;}}}
+;;; Desktop {{{
+
+;; (desire-old 'desktop)
+(desire-old 'session nil "session")
+(desire-old 'saveplace nil "saveplace")
+
+(desire 'ibuffer)
+;; (desire 'persp-mode)
+;; (desire 'perspective)
+;; (desire 'bufler)
+;; (desire 'tabspaces)
+
+;;}}}
+;;; Appointments, diary, calendar {{{
+
+;; Use "M-x calendar RET" to display the calendar and start
+;; appointment warnings.
+
+;; (desire-old 'appt)
+(desire 'calendar)
+;; (desire-old 'todo-mode)
+;; (desire-old 'diary "diary-lib")
+
+;;;}}}
+;;; These provide options for the various message handling packages {{{
+
+(desire 'browse-url)
+;; (desire-old 'mailcrypt)
+;; (desire 'supercite)
+
+;;;}}}
+;;; Message {{{
+
+(desire 'smtpmail)
+;; (desire 'gnus)
+(desire 'message)
+;; (desire-old 'vm)
+;; (desire 'wl :ensurename 'wanderlust)
+;; (desire-old 'sendmail)
+;; (desire 'mu4e-dashboard :recipe '(:fetcher github :repo "rougier/mu4e-dashboard"))
+(desire 'mu4e :precondition-system-executable "mu")
+
+;;;}}}
+;;; Programming {{{
+
+(desire 'speedbar)
+;; (desire-old 'semantic nil "semantic")
+
+;; (desire-old 'cedet nil "cedet")
+;; (desire-old 'ecb nil "ecb")
+
+;; (desire-old 'php-mode nil "php-mode")
+;; (desire-old 'eiffel-mode nil "eiffel-mode")
+
+(desire 'ebib)
+
+(desire 'lua-mode)
+
+;;; Julia
+;;; Code completion and syntax checking
+                                        ;(desire 'eglot-jl)
+;;; REPL integration
+(desire 'julia-snail)
+;; (desire 'julia-repl)
+;;; Syntax highlighting and latex symbols
+(desire 'julia-mode)
+
+
+(desire 'yaml-mode)
+(desire 'ini-mode)
+(desire 'hcl-mode)
+
+(desire 'magit-gitflow)
+(desire 'magit)
+
+;;;}}}
+;;; Blogs {{{
+
+;; (desire-old 'hexo nil "hexo")
+;; (desire-old 'blog-admin nil "blog-admin") ;; Blog admin for emacs with hexo/org-page supported
+(desire-old 'easy-hugo  nil "easy-hugo" t) ;; Emacs major mode for managing hugo
+
+;;;}}}
+;;; Miscellaneous {{{
+
+(desire 'ebuku)
+(desire-old 'graphviz-dot-mode nil "graphviz-dot-mode")
+;; (desire-old 'abbrev)
+;; (desire-old 'bibtex)
+;; (desire-old 'calc)
+;; (desire-old 'eiffel-mode)
+;; (desire-old 'filladapt)
+;; (desire-old 'hugs-mode)
+;; (desire-old 'html-helper-mode)
+;; (desire-old 'lispdir)
+;; (desire-old 'php-mode)
+;; (desire-old 'ps-print)
+;; (desire-old 'sh-script)
+;; (desire-old 'shell)
+;; (desire-old 'sql-mode)
+;; (desire-old 'w3)
+(desire 'web-mode)
+(desire 'gnuplot)
+
+(desire 'pass)
+
+
+(desire 'multiple-cursors)
+
+(desire 'telega)
+(desire 'pocket-reader)
+
+;;;}}}
+
+;; (desire 'grammarly)
+
+;; (desire 'flycheck-grammarly)
+
+(desire 'dashboard)
+
+;; PERSONAL
+
+;; (require 'chord-mode)  ; edit guitar music.
+;; (require 'discography) ; variant of BibTeX mode for discographies.
+```
+
+
+### <span class="section-num">4.10</span> Программные режимы {#программные-режимы}
+
+
+#### <span class="section-num">4.10.1</span> Работа с CSV {#работа-с-csv}
 
 <!--list-separator-->
 
@@ -740,12 +925,12 @@ slug: "emacs-desire-configuration"
         ```
 
 
-### <span class="section-num">4.9</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
+### <span class="section-num">4.11</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
 
 -   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
 
 
-#### <span class="section-num">4.9.1</span> Начало {#начало}
+#### <span class="section-num">4.11.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -753,7 +938,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.2</span> Edit with Emacs {#edit-with-emacs}
+#### <span class="section-num">4.11.2</span> Edit with Emacs {#edit-with-emacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -777,7 +962,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.3</span> Ghost Text {#ghost-text}
+#### <span class="section-num">4.11.3</span> Ghost Text {#ghost-text}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -813,7 +998,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.9.4</span> Конец {#конец}
+#### <span class="section-num">4.11.4</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -821,12 +1006,12 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.10</span> Навигация по файлам {#навигация-по-файлам}
+### <span class="section-num">4.12</span> Навигация по файлам {#навигация-по-файлам}
 
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">4.10.1</span> Dired {#dired}
+#### <span class="section-num">4.12.1</span> Dired {#dired}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -847,7 +1032,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.10.2</span> Neotree {#neotree}
+#### <span class="section-num">4.12.2</span> Neotree {#neotree}
 
 -   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   Файл `rc.packages.el`:
@@ -856,7 +1041,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.10.3</span> Treemacs {#treemacs}
+#### <span class="section-num">4.12.3</span> Treemacs {#treemacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -864,10 +1049,10 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.11</span> Навигация по тексту {#навигация-по-тексту}
+### <span class="section-num">4.13</span> Навигация по тексту {#навигация-по-тексту}
 
 
-#### <span class="section-num">4.11.1</span> Начало {#начало}
+#### <span class="section-num">4.13.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -875,7 +1060,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.2</span> line-reminder {#line-reminder}
+#### <span class="section-num">4.13.2</span> line-reminder {#line-reminder}
 
 -   Line annotation for changed and saved lines: <https://github.com/emacs-vs/line-reminder>
 -   Файл `rc.packages.el`:
@@ -903,7 +1088,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.3</span> Конец {#конец}
+#### <span class="section-num">4.13.3</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -911,7 +1096,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.12</span> Темы {#темы}
+### <span class="section-num">4.14</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -942,7 +1127,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.12.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.14.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -951,7 +1136,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.12.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.14.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -960,7 +1145,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.12.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.14.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp
