@@ -2,7 +2,9 @@
 title: "Emacs. Проблема мизинца"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-17T11:06:00+03:00
-lastmod: 2024-10-17T11:27:00+03:00
+lastmod: 2024-10-20T19:19:00+03:00
+tags: ["hard", "emacs"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-pinki-problem"
 ---
@@ -17,7 +19,7 @@ slug: "emacs-pinki-problem"
 -   На клавиатурах для LISP-машин клавиша `Ctrl` размещалась там, где сейчас `Alt`.
 -   Сейчас подобную раскладку имеет Mac.
 -   А там, где сейчас `Ctrl`, находилась клавиша `Meta`.
--   В этом случае `Ctrl` зажимался большим пальцем.
+-   В этом случае `Ctrl` обычно нажимался большим пальцем.
 -   Сейчас `Ctrl` приходится нажимать мизинцем.
 -   Это породило мем среди пользователей emacs: _pinki problem_.
 

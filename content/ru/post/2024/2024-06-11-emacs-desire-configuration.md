@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-10-14T17:20:00+03:00
+lastmod: 2024-10-20T19:12:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -303,22 +303,112 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.4</span> Общие настройки мод {#общие-настройки-мод}
+### <span class="section-num">4.4</span> Навигация по окнам {#навигация-по-окнам}
+
+-   [Emacs. Окна]({{< relref "2024-10-15-emacs-window" >}})
 
 
-### <span class="section-num">4.5</span> Поддержка LSP {#поддержка-lsp}
+#### <span class="section-num">4.4.1</span> Начало {#начало}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Window navigation {{{
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      rc.packages.el
+    </div>
+
+
+#### <span class="section-num">4.4.2</span> Windmove {#windmove}
+
+-   [Emacs. Окна. Windmove]({{< relref "2024-10-20-emacs-window-windmove" >}})
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    (desire 'windmove)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      rc.packages.el
+    </div>
+-   Настройка пакета:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Directional window-selection routinesdirectional window-selection routines
+    ;;; https://www.emacswiki.org/emacs/WindMove
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+      packages/windmove.ecf
+    </div>
+
+-   По умолчанию используется комбинация `Shift` + стрелки. Но это конфликтует с _org-mode_:
+    ```emacs-lisp
+    ;;; Shifted arrow keys
+    ;; (windmove-default-keybindings)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+      packages/windmove.ecf
+    </div>
+-   Будем использовать  `Ctrl` + стрелки:
+    ```emacs-lisp
+    ;;; Ctrl + arrow keys
+    (windmove-default-keybindings 'ctrl)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      packages/windmove.ecf
+    </div>
+
+-   Что-то делает:
+    ```emacs-lisp
+    ;;; Wrap around at edges
+    (setq windmove-wrap-around t)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+      packages/windmove.ecf
+    </div>
+
+-   Завершим файл:
+    ```emacs-lisp
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+      packages/windmove.ecf
+    </div>
+
+
+#### <span class="section-num">4.4.3</span> Конец {#конец}
+
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;;}}}
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+      rc.packages.el
+    </div>
+
+
+### <span class="section-num">4.5</span> Общие настройки мод {#общие-настройки-мод}
+
+
+### <span class="section-num">4.6</span> Поддержка LSP {#поддержка-lsp}
 
 -   [Emacs. Поддержка LSP]({{< relref "2024-01-14-emacs-lsp" >}})
 
 
-#### <span class="section-num">4.5.1</span> Начало {#начало}
+#### <span class="section-num">4.6.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     ;;; LSP mode {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
       rc.packages.el
     </div>
 
@@ -327,19 +417,19 @@ slug: "emacs-desire-configuration"
     (desired 'emacs-lsp-booster :precondition-system-executable "emacs-lsp-booster")
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
       rc.packages.el
     </div>
 
 
-#### <span class="section-num">4.5.2</span> Eglog {#eglog}
+#### <span class="section-num">4.6.2</span> Eglog {#eglog}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     (desire 'eglot)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
       rc.packages.el
     </div>
 -   Начальная загрузка:
@@ -351,7 +441,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
       packages/eglot/loaddefs.ecf
     </div>
 -   Загрузка самого пакета:
@@ -378,7 +468,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
       packages/eglot/desire.ecf
     </div>
 -   Загрузка `emacs-lsp-booster`:
@@ -394,12 +484,12 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 15:</span>
       packages/eglot/emacs-lsp-booster.ecf
     </div>
 
 
-#### <span class="section-num">4.5.3</span> Lsp-mode {#lsp-mode}
+#### <span class="section-num">4.6.3</span> Lsp-mode {#lsp-mode}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -407,7 +497,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.5.4</span> Конец {#конец}
+#### <span class="section-num">4.6.4</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -416,7 +506,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.6</span> Разное {#разное}
+### <span class="section-num">4.7</span> Разное {#разное}
 
 -   Файл `rc.packages.el`:
 
@@ -545,7 +635,7 @@ slug: "emacs-desire-configuration"
 ```
 
 
-### <span class="section-num">4.7</span> Org-mode {#org-mode}
+### <span class="section-num">4.8</span> Org-mode {#org-mode}
 
 -   [Org-mode]({{< relref "2021-10-14-org-mode" >}})
 -   Конфигурация для `org-mode`:
@@ -556,7 +646,7 @@ slug: "emacs-desire-configuration"
 ;;; Org-mode {{{
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 16:</span>
   rc.packages.el
 </div>
 
@@ -581,12 +671,12 @@ slug: "emacs-desire-configuration"
 (desire 'org-tree-slide)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 17:</span>
   rc.packages.el
 </div>
 
 
-#### <span class="section-num">4.7.1</span> Повестка дня {#повестка-дня}
+#### <span class="section-num">4.8.1</span> Повестка дня {#повестка-дня}
 
 -   Конфигурация повестки дня:
 
@@ -618,12 +708,12 @@ slug: "emacs-desire-configuration"
 (desire 'org-transclusion)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 18:</span>
   rc.packages.el
 </div>
 
 
-#### <span class="section-num">4.7.2</span> org-gtd {#org-gtd}
+#### <span class="section-num">4.8.2</span> org-gtd {#org-gtd}
 
 -   [Emacs. Пакеты. Org-gtd]({{< relref "2023-07-31-emacs-packages-org-gtd" >}})
 -   Подключение для загрузки:
@@ -632,7 +722,7 @@ slug: "emacs-desire-configuration"
     (desire 'org-gtd)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 19:</span>
       rc.packages.el
     </div>
 
@@ -641,18 +731,18 @@ slug: "emacs-desire-configuration"
 1.  Клавиатурные сочетания
 
 
-#### <span class="section-num">4.7.3</span> mobileorg {#mobileorg}
+#### <span class="section-num">4.8.3</span> mobileorg {#mobileorg}
 
 ```emacs-lisp
 (desired 'mobileorg)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 20:</span>
   rc.packages.el
 </div>
 
 
-#### <span class="section-num">4.7.4</span> org-mode {#org-mode}
+#### <span class="section-num">4.8.4</span> org-mode {#org-mode}
 
 ```emacs-lisp
 (desire 'org)
@@ -663,12 +753,12 @@ slug: "emacs-desire-configuration"
 ;;;}}}
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 21:</span>
   rc.packages.el
 </div>
 
 
-### <span class="section-num">4.8</span> Заметочники {#заметочники}
+### <span class="section-num">4.9</span> Заметочники {#заметочники}
 
 -   [Emacs. Персональная база знаний]({{< relref "2023-11-07-emacs-personal-knowledge-base" >}})
 -   Разные заметочники:
@@ -676,12 +766,12 @@ slug: "emacs-desire-configuration"
     ;;; Notes {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 22:</span>
       rc.packages.el
     </div>
 
 
-#### <span class="section-num">4.8.1</span> Org-roam {#org-roam}
+#### <span class="section-num">4.9.1</span> Org-roam {#org-roam}
 
 ```emacs-lisp
 ;;; Org-roam {{{
@@ -704,7 +794,7 @@ slug: "emacs-desire-configuration"
 ```
 
 
-#### <span class="section-num">4.8.2</span> Denote {#denote}
+#### <span class="section-num">4.9.2</span> Denote {#denote}
 
 ```emacs-lisp
 
@@ -717,18 +807,18 @@ slug: "emacs-desire-configuration"
 ```
 
 
-### <span class="section-num">4.9</span> Разное {#разное}
+### <span class="section-num">4.10</span> Разное {#разное}
 
 ```emacs-lisp
 ;; XML, XHTML, HTML {{{
 
 ;;(desire-old 'nxml nil "rng-auto")
-                                        ; (desire-old 'psgml)
+                                      ; (desire-old 'psgml)
 
 ;;;}}}
 ;;;{{{ Palm pilot support
 
-                                        ;(desire-old 'palm)
+                                      ;(desire-old 'palm)
 
 ;;;}}}
 ;;; Desktop {{{
@@ -791,7 +881,7 @@ slug: "emacs-desire-configuration"
 
 ;;; Julia
 ;;; Code completion and syntax checking
-                                        ;(desire 'eglot-jl)
+                                      ;(desire 'eglot-jl)
 ;;; REPL integration
 (desire 'julia-snail)
 ;; (desire 'julia-repl)
@@ -858,10 +948,10 @@ slug: "emacs-desire-configuration"
 ```
 
 
-### <span class="section-num">4.10</span> Программные режимы {#программные-режимы}
+### <span class="section-num">4.11</span> Программные режимы {#программные-режимы}
 
 
-#### <span class="section-num">4.10.1</span> Работа с CSV {#работа-с-csv}
+#### <span class="section-num">4.11.1</span> Работа с CSV {#работа-с-csv}
 
 <!--list-separator-->
 
@@ -925,12 +1015,12 @@ slug: "emacs-desire-configuration"
         ```
 
 
-### <span class="section-num">4.11</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
+### <span class="section-num">4.12</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
 
 -   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
 
 
-#### <span class="section-num">4.11.1</span> Начало {#начало}
+#### <span class="section-num">4.12.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -938,7 +1028,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.2</span> Edit with Emacs {#edit-with-emacs}
+#### <span class="section-num">4.12.2</span> Edit with Emacs {#edit-with-emacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -962,7 +1052,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.3</span> Ghost Text {#ghost-text}
+#### <span class="section-num">4.12.3</span> Ghost Text {#ghost-text}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -998,7 +1088,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.11.4</span> Конец {#конец}
+#### <span class="section-num">4.12.4</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -1006,12 +1096,12 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.12</span> Навигация по файлам {#навигация-по-файлам}
+### <span class="section-num">4.13</span> Навигация по файлам {#навигация-по-файлам}
 
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">4.12.1</span> Dired {#dired}
+#### <span class="section-num">4.13.1</span> Dired {#dired}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -1032,7 +1122,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.12.2</span> Neotree {#neotree}
+#### <span class="section-num">4.13.2</span> Neotree {#neotree}
 
 -   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
 -   Файл `rc.packages.el`:
@@ -1041,7 +1131,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.12.3</span> Treemacs {#treemacs}
+#### <span class="section-num">4.13.3</span> Treemacs {#treemacs}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -1049,10 +1139,10 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.13</span> Навигация по тексту {#навигация-по-тексту}
+### <span class="section-num">4.14</span> Навигация по тексту {#навигация-по-тексту}
 
 
-#### <span class="section-num">4.13.1</span> Начало {#начало}
+#### <span class="section-num">4.14.1</span> Начало {#начало}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -1060,7 +1150,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.13.2</span> line-reminder {#line-reminder}
+#### <span class="section-num">4.14.2</span> line-reminder {#line-reminder}
 
 -   Line annotation for changed and saved lines: <https://github.com/emacs-vs/line-reminder>
 -   Файл `rc.packages.el`:
@@ -1088,7 +1178,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.13.3</span> Конец {#конец}
+#### <span class="section-num">4.14.3</span> Конец {#конец}
 
 -   Файл `rc.packages.el`:
     ```emacs-lisp
@@ -1096,7 +1186,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-### <span class="section-num">4.14</span> Темы {#темы}
+### <span class="section-num">4.15</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -1127,7 +1217,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.14.1</span> Modus-themes {#modus-themes}
+#### <span class="section-num">4.15.1</span> Modus-themes {#modus-themes}
 
 -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -1136,7 +1226,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.14.2</span> Ef-themes {#ef-themes}
+#### <span class="section-num">4.15.2</span> Ef-themes {#ef-themes}
 
 -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
 -   Подключаем темы в файле `rc.packages.el`:
@@ -1145,7 +1235,7 @@ slug: "emacs-desire-configuration"
     ```
 
 
-#### <span class="section-num">4.14.3</span> Финализирование {#финализирование}
+#### <span class="section-num">4.15.3</span> Финализирование {#финализирование}
 
 -   Финализируем раздел в `rc.packages.el`:
     ```emacs-lisp

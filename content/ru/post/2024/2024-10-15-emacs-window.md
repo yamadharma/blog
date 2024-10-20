@@ -2,7 +2,9 @@
 title: "Emacs. Окна"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-15T15:58:00+03:00
-lastmod: 2024-10-15T16:13:00+03:00
+lastmod: 2024-10-20T19:18:00+03:00
+tags: ["emacs"]
+categories: ["computer-science"]
 draft: false
 slug: "emacs-window"
 ---
@@ -41,8 +43,4 @@ slug: "emacs-window"
 
 ## <span class="section-num">3</span> Режим Windmove {#режим-windmove}
 
--   В режиме Windmove можно задать перемещение по окнам с помощью стрелок.
--   Активируем режим:
-    ```emacs-lisp
-    (windmove-default-keybindings)
-    ```
+-   [Emacs. Окна. Windmove]({{< relref "2024-10-20-emacs-window-windmove" >}})

@@ -2,7 +2,7 @@
 title: "Специальность 1.2.2. Где публиковаться"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-22T11:39:00+03:00
-lastmod: 2024-10-14T10:02:00+03:00
+lastmod: 2024-10-20T16:47:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -35,6 +35,8 @@ slug: "specialty-1_2_2-where-publish"
 -   Сайт: <https://mmi.sgu.ru/>
 -   Правила для авторов: <https://mmi.sgu.ru/ru/pravila-dlya-avtorov>
 -   Стилевой файл: <https://mmi.sgu.ru/sites/mmi.sgu.ru/files/doc/zip/mmi07-07-2023.zip>
+-   Почта редакции: mmi@sgu.ru
+-   Контактное лицо: Юлия Владиславовна Шевцова, ответственный секретарь журнала
 
 
 #### <span class="section-num">1.2.1</span> Лицензионный договор {#лицензионный-договор}
@@ -50,6 +52,7 @@ slug: "specialty-1_2_2-where-publish"
 #### <span class="section-num">1.2.2</span> Экспертное заключение {#экспертное-заключение}
 
 -   Для публикации требуется экспертное заключение.
+-   Необходимо выслать скан на электропочту.
 
 
 #### <span class="section-num">1.2.3</span> Индексация {#индексация}

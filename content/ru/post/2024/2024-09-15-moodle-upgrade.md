@@ -2,7 +2,7 @@
 title: "Moodle. Обновление"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-15T16:37:00+03:00
-lastmod: 2024-09-15T19:13:00+03:00
+lastmod: 2024-10-20T15:28:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["science", "computer-science"]
 draft: false
@@ -135,7 +135,7 @@ Moodle. Обновление.
 
 -   Перейдём в каталог с moodle:
     ```shell
-    cd /var/www/moodle/web
+    cd /var/www/moodle/web-git
     ```
 -   Обновите git:
     ```shell
@@ -152,12 +152,12 @@ Moodle. Обновление.
     ```
 -   Исправьте разрешения:
     ```shell
-    chown -R apache:apache /var/www/moodle/web
+    chown -R apache:apache /var/www/moodle/
     restorecon -vR /var/www/
     ```
 -   Обновите установку:
     ```shell
-    sudo -u apache /usr/bin/php admin/cli/upgrade.php
+    sudo -u apache /usr/bin/php /var/www/moodle/web-git/admin/cli/upgrade.php
     ```
 
 

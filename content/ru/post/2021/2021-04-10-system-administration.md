@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-10-07T16:31:00+03:00
+lastmod: 2024-10-19T18:23:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -50,6 +50,7 @@ slug: "system-administration"
 ### <span class="section-num">4.1</span> Linux {#linux}
 
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
+-   [XDG. Каталоги]({{< relref "2024-10-19-xdg-directories" >}})
 -   [XDG. Пользовательские каталоги]({{< relref "2021-09-16-xdg-user-directories" >}})
 -   [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})
 -   [Ввод с помощью Compose]({{< relref "2021-12-26-using-compose-key" >}})
@@ -315,7 +316,7 @@ slug: "system-administration"
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 -   [Администрирование Huawei]({{< relref "2024-09-06-huawei-administration" >}})
--   [Mesh-системы]({{< relref "2024-10-07-mesh-systems" >}})
+-
 
 
 ### <span class="section-num">14.2</span> VLAN {#vlan}

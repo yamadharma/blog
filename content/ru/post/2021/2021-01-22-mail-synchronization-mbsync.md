@@ -1,7 +1,8 @@
 ---
 title: "Почта. Синхронизация. mbsync"
+author: ["Dmitry S. Kulyabov"]
 date: 2021-01-22T15:10:00+03:00
-lastmod: 2024-05-15T21:03:00+03:00
+lastmod: 2024-10-19T16:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -17,10 +18,10 @@ slug: "mail-synchronization-mbsync"
 
 ## <span class="section-num">1</span> Описание {#описание}
 
+-   Домашняя страница: <https://isync.sourceforge.io/>.
+-   Репозиторий: <https://sourceforge.net/p/isync/isync/ci/master/tree/>
 -   `isync` / `mbsync` --- программа для синхронизации IMAP и локальных почтовых файлов.
 -   `isync` --- старое название (для совместимости).
-
-Домашняя страница: <https://isync.sourceforge.io/>.
 
 
 ## <span class="section-num">2</span> Установка {#установка}
@@ -48,16 +49,21 @@ slug: "mail-synchronization-mbsync"
     ```conf-unix
     mkdir -p ~/Maildir/account@domain
     ```
--   Можно создать каталоги все скопом из конфигурационного файла `~/.mbsyncrc`:
+-   Можно создать каталоги все скопом из конфигурационного файла `~/.config/isyncrc`:
     ```shell
     #!/bin/sh
 
     MAILDIR=~/Maildir
 
-    # make mailbox directories
-    grep -e "^IMAPAccount" ~/.mbsyncrc | cut -d" " -f2 | xargs -I {} -n 1 mkdir -p "${MAILDIR}/{}"
+    ## Make mailbox directories
+    grep -e "^IMAPAccount" ~/.config/isyncrc | cut -d" " -f2 | xargs -I {} -n 1 mkdir -p "${MAILDIR}/{}"
+    mbsync -a
     ```
--   Делаем конфигурационный файл для _mbsync_. Файл называется `~/.mbsyncrc`.
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      Файл ~/bin/mbsync-mkdir
+    </div>
+-   Делаем конфигурационный файл для _mbsync_. Файл называется `~/.config/isyncrc`.
 -   Чтобы не хранить пароли в конфигурационном файле (оператор `Pass`) будем использовать хранение пароля, совместимое с _emacs_ (с использованием оператора `PassCmd`):
     -   в файле `~/.authinfo.gpg` (см. [Emacs. Почта. Парольная аутентификация]({{< relref "2021-01-22-mail-password-authentication" >}})):
         -   структура команды:
@@ -108,7 +114,8 @@ slug: "mail-synchronization-mbsync"
 -   Из-за структуры тегов Gmail необходимо явно задавать названия почтовых ящиков в директивах `Far` и `Near`.
 -   Синхронизацию папки `Отправленные` можно отключить. Google сохраняет всю электронную почту в папке `Все сообщения`. В результате можно получить локальные дубликаты.
 -   Рекомендуется на сайте Gmail настроить в пункте `Настройки > Пересылка и POP/IMAP > Доступ по протоколу IMAP` (`Settings` &gt; `Forwarding and POP/IMAP` &gt; `IMAP Access`):
-    -   отметить `Автоматическое стирание выключено (ожидать, пока клиент не обновит данные на сервере) (==Turn Auto Expunge Off`);
+    -   отметить `Автоматическое стирание включено (немедленно обновлять данные на сервере; по умолчанию)` `Auto-Expunge on - Immediately update the server. (default)`;
+    -   ~~отметить `Автоматическое стирание выключено (ожидать, пока клиент не обновит данные на сервере)` (`Turn Auto Expunge Off`)~~;
     -   отметить `Архивировать сообщение (по умолчанию)` (`Archive message (default)`).
     -   ~~отметить `Отправить письмо в корзину` (`Send email to trash`)~~.
 -   При использовании двуфакторной аутентификации (2FA) необходимо использовать _пароль приложения_ (см. [Почта. Подключение к Google]({{< relref "2020-12-25-mail-google-connect" >}})).
@@ -124,9 +131,9 @@ slug: "mail-synchronization-mbsync"
     # PassCmd "pass email/google.com/account@gmail.com@apppassword"
     PassCmd "pass email/google.com/account@gmail.com"
     Port 993
-    SSLType IMAPS
+    TLSType IMAPS
     AuthMechs LOGIN
-    SSLVersions TLSv1.2
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -216,8 +223,8 @@ slug: "mail-synchronization-mbsync"
     User account@icloud.com
     PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@icloud.com/ {print $6}'"
     AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
+    TLSType IMAPS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -265,8 +272,8 @@ slug: "mail-synchronization-mbsync"
     User account@gmx.com
     PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@gmx.com/ {print $6}'"
     AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
+    TLSType IMAPS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -303,8 +310,8 @@ slug: "mail-synchronization-mbsync"
     User account@protonmail.com
     PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@protonmail.com/ {print $6}'"
     AuthMechs LOGIN
-    SSLType STARTTLS
-    SSLVersion TLSv1.2
+    TLSType STARTTLS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -349,8 +356,8 @@ slug: "mail-synchronization-mbsync"
     # PassCmd "pass email/yandex.ru/account@yandex.ru@apppassword@mail"
     PassCmd "pass email/yandex.ru/account@yandex.ru"
     AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
+    TLSType IMAPS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -393,8 +400,8 @@ slug: "mail-synchronization-mbsync"
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@mail.ru@apppassword@mail/ {print $6}'"
     PassCmd "pass email/mail.ru/account@mail.ru@apppassword@mail"
     AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
+    TLSType IMAPS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
 
@@ -485,8 +492,8 @@ slug: "mail-synchronization-mbsync"
         # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
         PassCmd "pass email/example.com/account@example.com"
         AuthMechs LOGIN
-        SSLType IMAPS
-        SSLVersion TLSv1.2
+        TLSType IMAPS
+        TLSVersions +1.2 +1.3
         # Increase timeout
         Timeout 120
         PipelineDepth 50
@@ -582,7 +589,7 @@ slug: "mail-synchronization-mbsync"
         # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@example.com/ {print $6}'"
         PassCmd "pass email/example.com/account@example.com"
         AuthMechs LOGIN
-        SSLType None
+        TLSType None
         ## Increase timeout
         Timeout 120
         PipelineDepth 50
@@ -611,8 +618,8 @@ slug: "mail-synchronization-mbsync"
     # PassCmd "gpg -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine account@yahoo.com/ {print $6}'"
     PassCmd "gopass email/yahoo.com/account@yahoo.com@apppassword"
     AuthMechs LOGIN
-    SSLType IMAPS
-    SSLVersion TLSv1.2
+    TLSType IMAPS
+    TLSVersions +1.2 +1.3
     # Increase timeout
     Timeout 120
     PipelineDepth 50

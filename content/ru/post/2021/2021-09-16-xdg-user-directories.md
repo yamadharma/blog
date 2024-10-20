@@ -2,7 +2,7 @@
 title: "XDG. Пользовательские каталоги"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-16T20:15:00+03:00
-lastmod: 2023-08-02T19:42:00+03:00
+lastmod: 2024-10-19T18:22:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "xdg-user-directories"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Стандарт XDG задаёт стандартные имена для пользовательских каталогов.
+-   Стандарт XDG задаёт стандартные имена для пользовательских каталогов (см. [XDG. Каталоги]({{< relref "2024-10-19-xdg-directories" >}})).
 
 
 ## <span class="section-num">2</span> Программы {#программы}

@@ -2,7 +2,7 @@
 title: "Emacs. Почта. Mu4e"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-24T15:32:00+03:00
-lastmod: 2023-09-02T18:36:00+03:00
+lastmod: 2024-10-19T13:51:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -60,7 +60,7 @@ USE="emacs" emerge -v mu
     ```shell
     #!/bin/sh
 
-    list_imap=$(grep -e "^IMAPAccount" ~/.mbsyncrc | cut -d" " -f2 | xargs -I {} -n 1 echo "--my-address="{})
+    list_imap=$(grep -e "^IMAPAccount" ~/.config/isyncrc | cut -d" " -f2 | xargs -I {} -n 1 echo "--my-address="{})
     mu init --maildir=~/Maildir $list_imap
     ```
 -   Я использую скрипт, поскольку у меня кэш находится на временной файловой системе, и не сохраняется при перезагрузке.
