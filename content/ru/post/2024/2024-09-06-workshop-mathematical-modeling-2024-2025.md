@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-10-10T16:48:00+03:00
+lastmod: 2024-10-22T11:49:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -238,3 +238,31 @@ PyGInv представляет собой «легковесную» верси
 -   <https://github.com/blinkovua/GInv/tree/master/pyginv>
 
 PyGInv is a “lightweight” version of GIinv (an abbreviation for Gröbner INVolutive), a C++ library developed to investigate and solve systems of algebraic, differential, and difference equations of polynomial type. It was written in “pure” Python and uses the computer algebra system SymPy to work with parameters. This fully platform-independent library is convenient for use in educational process. In the polynomial case, the report will consider installation, working with monomials, polynomials, and modules. Construction of Janet tree, its visualization, and usage for programming various involutory divisions. Calculating Hilbert dimension polynomial, constructing factor ring, and matrix representation of elements of factor polynomial ring over zero-dimensional ideal.
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-11-21 Чт&gt; </span></span> Цирулев А.Н. - Вычисление экспонент от операторов с помощью интеграла Данфорда-Коши {#цирулев-а-dot-н-dot-вычисление-экспонент-от-операторов-с-помощью-интеграла-данфорда-коши}
+
+
+#### <span class="section-num">1.3.1</span> Докладчик {#докладчик}
+
+-   Цирулев А.Н.
+-   доктор физико-математических наук
+-   профессор кафедры общей математики и математической физики Тверской государственный университет
+
+
+#### <span class="section-num">1.3.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/267/>
+-   Вычисление экспонент от операторов с помощью интеграла Данфорда-Коши
+-   Цирулев А.Н.
+-   д.ф.м.-н., профессор кафедры общей математики и математической физики, Тверской государственный университет
+
+Предложен новый алгоритм для вычисления экспонент операторов в базисе Паули. Алгоритм основан на представлении операторной экспоненты интегралом Данфорда-Коши и применим для гамильтонианов, разреженных в базисе Паули. Практическая эффективность алгоритма демонстрируется двумя иллюстративными примерами.
+
+---
+
+-   Computation of operator exponentials using Danford-Cauchy integral
+-   Alexander Tsirulev
+-   Professor of Department of General Mathematics and Mathematical Physics, Tver State University, Tver, Russia
+
+A new algorithm for classical computing operator exponentials in the Pauli basis is proposed. The algorithm is based on the representation of the operator exponential by the Dunford-Cauchy integral and is suitable for Hamiltonians that sparse in the Pauli basis. The practical efficiency of the algorithm is demonstrated by two illustrative examples.

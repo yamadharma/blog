@@ -2,7 +2,7 @@
 title: "Pdf. Просмотр. Sioyek"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-24T12:41:00+03:00
-lastmod: 2024-05-29T19:31:00+03:00
+lastmod: 2024-10-21T11:49:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "pdf-viewer-sioyek"

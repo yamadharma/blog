@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-10-18T15:03:00+03:00
+lastmod: 2024-10-21T19:12:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -78,7 +78,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-299
         -   НФИбд-01-21
@@ -86,7 +86,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-299
         -   НФИбд-01-21
@@ -94,7 +94,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    3. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    3. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-298
         -   НФИбд-02-21
@@ -102,7 +102,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    4. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    4. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-298
         -   НФИбд-02-21
