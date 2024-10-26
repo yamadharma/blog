@@ -73,8 +73,26 @@ permalinks:
 
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  section: [HTML, RSS]
+  home:
+    - html
+    - rss
+    - json
+    - WebAppManifest
+    - headers
+    - redirects
+  page:
+    - html
+  rss:
+    - rss
+  section:
+    - html
+    - rss
+  taxonomy:
+    - html
+    - rss
+  term:
+    - html
+    - rss
 imaging:
   resampleFilter: lanczos
   quality: 75
@@ -141,5 +159,4 @@ outputFormats:
   WebAppManifest:
     mediaType: application/manifest+json
     rel: manifest
-
-
+    

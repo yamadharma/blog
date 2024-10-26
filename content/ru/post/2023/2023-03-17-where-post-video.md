@@ -2,7 +2,7 @@
 title: "Где размещать видео"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-17T17:51:00+03:00
-lastmod: 2023-12-06T12:21:00+03:00
+lastmod: 2024-10-23T15:46:00+03:00
 tags: ["blog"]
 categories: ["self-management"]
 draft: false
@@ -20,6 +20,7 @@ slug: "where-post-video"
 
 -   YouTube: <https://www.youtube.com/>
 -   RuTube: <https://rutube.ru/>
+-   Платформа: <https://plvideo.ru/>
 -   VK Видео: <https://vk.com/video>
 -   Дзен Видео: <https://dzen.ru/video>
 -   Видео Мail: <https://my.mail.ru/video>
@@ -45,7 +46,12 @@ slug: "where-post-video"
 ## <span class="section-num">3</span> Rutube {#rutube}
 
 
-### <span class="section-num">3.1</span> Техническая информация {#техническая-информация}
+### <span class="section-num">3.1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://rutube.ru/>
+
+
+### <span class="section-num">3.2</span> Техническая информация {#техническая-информация}
 
 -   Размер: не более 10 Гб
 -   Длительность: не более 300 минут
@@ -58,28 +64,47 @@ slug: "where-post-video"
 -   Для каналов с верификацией выборочная постмодерация
 
 
-### <span class="section-num">3.2</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
+### <span class="section-num">3.3</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
 
--   Пакетный перенос отсутствует.
--   Необходимо скачать видео с Youtube (см. [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})) и вручную перезалить на Rutube.
+-   ~~Пакетный перенос отсутствует.~~
+-   Есть сервис пакетного переноса видео с Youtube.
+    -   Однако, при переносе не контролируется, есть ли такое же видео на Вашем канале.
+    -   Плейлисты не переносятся.
+-   Можно также скачать видео с Youtube (см. [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})) и вручную перезалить на Rutube.
 
 
-### <span class="section-num">3.3</span> Подключение к блогу {#подключение-к-блогу}
+### <span class="section-num">3.4</span> Подключение к блогу {#подключение-к-блогу}
 
 -   [Сокращение для видео Rutube для Hugo]({{< relref "2022-04-04-shortcode-video-rutube-hugo" >}})
 
 
-## <span class="section-num">4</span> VK Video {#vk-video}
+## <span class="section-num">4</span> Платформа {#платформа}
 
 
 ### <span class="section-num">4.1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://plvideo.ru/>
+
+
+### <span class="section-num">4.2</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
+
+-   Есть сервис пакетного переноса видео с Youtube.
+    -   Однако, при переносе не контролируется, есть ли такое же видео на Вашем канале.
+    -   Плейлисты не переносятся.
+-   Можно также скачать видео с Youtube (см. [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})) и вручную перезалить на Платформу.
+
+
+## <span class="section-num">5</span> VK Video {#vk-video}
+
+
+### <span class="section-num">5.1</span> Общая информация {#общая-информация}
 
 -   Сайт: [[<https://vk.com/video>]]
 -   Не позиционирует себя как хостинг виде.
 -   Много параметров для вставки видео в свою страницу.
 
 
-### <span class="section-num">4.2</span> Техническая информация {#техническая-информация}
+### <span class="section-num">5.2</span> Техническая информация {#техническая-информация}
 
 -   Размер: не более 5 Гб
 -   Длительность: ограничена объемом
@@ -93,16 +118,16 @@ slug: "where-post-video"
 -   Модерация есть для всех пользователей.
 
 
-### <span class="section-num">4.3</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
+### <span class="section-num">5.3</span> Перенос видео с Youtube {#перенос-видео-с-youtube}
 
 
-#### <span class="section-num">4.3.1</span> Перенос видео с Youtube вручную {#перенос-видео-с-youtube-вручную}
+#### <span class="section-num">5.3.1</span> Перенос видео с Youtube вручную {#перенос-видео-с-youtube-вручную}
 
 1.  Скопируйте ссылку на ролик с YouTube, откройте Видео → Добавить видео (в левом верхнем углу) → Добавить с другого сайта → вставьте ссылку и нажмите на → Сохранить.
 2.  Под видеороликами на YouTube нажмите на Поделиться → кнопка ВКонтакте → поставьте галочку Добавить в Мои Видео и нажмите Отправить.
 
 
-#### <span class="section-num">4.3.2</span> Пакетный перенос видео из Youtube {#пакетный-перенос-видео-из-youtube}
+#### <span class="section-num">5.3.2</span> Пакетный перенос видео из Youtube {#пакетный-перенос-видео-из-youtube}
 
 -   Пакетный перенос можно сделать с помощью приложение VK Transfer Video.
 -   Ссылка: <https://vk.com/vktransfer>
@@ -118,23 +143,23 @@ slug: "where-post-video"
     -   В ноябре 2023 года приложение починили (на небольшое время).
 
 
-## <span class="section-num">5</span> Видео Мail {#видео-мail}
+## <span class="section-num">6</span> Видео Мail {#видео-мail}
 
 
-### <span class="section-num">5.1</span> Общая информация {#общая-информация}
+### <span class="section-num">6.1</span> Общая информация {#общая-информация}
 
 -   Ощущение, что не развивается.
 
 
-### <span class="section-num">5.2</span> Техническая информация {#техническая-информация}
+### <span class="section-num">6.2</span> Техническая информация {#техническая-информация}
 
 -   Размер: не более 5 Гб
 
 
-## <span class="section-num">6</span> Дзен Видео {#дзен-видео}
+## <span class="section-num">7</span> Дзен Видео {#дзен-видео}
 
 
-### <span class="section-num">6.1</span> Техническая информация {#техническая-информация}
+### <span class="section-num">7.1</span> Техническая информация {#техническая-информация}
 
 -   Размер: не более 10 Гб
 -   Пропорции: горизонтальная, вертикальная, квадрат.
@@ -143,10 +168,10 @@ slug: "where-post-video"
 -   Обязательная реклама в видео.
 
 
-## <span class="section-num">7</span> Одноклассники {#одноклассники}
+## <span class="section-num">8</span> Одноклассники {#одноклассники}
 
 
-### <span class="section-num">7.1</span> Техническая информация {#техническая-информация}
+### <span class="section-num">8.1</span> Техническая информация {#техническая-информация}
 
 -   Размер: не более 32 Гб
 -   Премодерация.

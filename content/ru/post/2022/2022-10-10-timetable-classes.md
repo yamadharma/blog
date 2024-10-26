@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-10-21T19:12:00+03:00
+lastmod: 2024-10-25T12:18:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[0/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[1/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация {#информация}
@@ -68,13 +68,13 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.2</span> 2024--2025 учебный год, 1 четверть <code>[0/2]</code> {#2024-2025-учебный-год-1-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.2</span> 2024--2025 учебный год, 1 четверть <code>[2/2]</code> {#2024-2025-учебный-год-1-четверть}
 
 -   2024-09-01 Пт--2024-11-05 Вс
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы) <code>[6/6]</code>
 
     <!--list-separator-->
 
@@ -110,7 +110,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    5. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    5. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-297
         -   НБИбд-01-21
@@ -118,7 +118,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    6. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лабораторные работы)
+    6. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
 
         -   ОРД-297
         -   НБИбд-01-21
@@ -126,23 +126,33 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Информационная безопасность (лекция)
+2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лекция)
 
     -   Группы: НПМ-21, НКН-21, НФИ-21, НПИ-21, НБИ-21
     -   По четвергам, 09:00-10:20
     -   Занятие проводится дистанционно
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.3</span> 2024--2025 учебный год, 2 четверть <code>[1/1]</code> {#2024-2025-учебный-год-2-четверть}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.3</span> 2024--2025 учебный год, 2 четверть <code>[0/2]</code> {#2024-2025-учебный-год-2-четверть}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лекция)
+1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/2]</code>
 
-    -   2024-11-06 Пн 13:30-14:50--2024-12-25 Пн 13:30-14:50
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+
+<!--list-separator-->
+
+2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/1]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[2/6]</code> {#2024-2025-учебный-год-1-семестр}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[1/4]</code> {#2024-2025-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -155,44 +165,52 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
+2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ <code>[0/2]</code>
 
-    -   ОРД-295
-    -   НПМмд-02-24
-    -   НФИмд-00-24
-    -   НПИмд-01-23
-    -   ~~Ср 19:30-20:50~~
-    -   Ср 9:00-10:20, дистанционно
+    <!--list-separator-->
 
-<!--list-separator-->
+    1. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
 
-3. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа)
+        -   ОРД-295
+        -   НПМмд-02-24
+        -   НФИмд-00-24
+        -   НПИмд-01-23
+        -   ~~Ср 19:30-20:50~~
+        -   Ср 9:00-10:20, дистанционно
 
-    -   ОРД-295
-    -   ОРД-297
-    -   ОРД-298
-    -   НПМмд-02-24
-    -   НФИмд-00-24
-    -   НПИмд-01-23
-    -   ~~Ср 19:30-20:50~~
-    -   Ср 16:30-17:50
+    <!--list-separator-->
 
-<!--list-separator-->
+    2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа)
 
-4. <span class="org-todo done CNCL">CNCL</span>  Основы администрирования ОС (лабораторные работы) <span class="tag"><span class="CNCL">CNCL</span></span>
-
-    -   ОРД-295, ОРД-297; НПИбд-01,02-22
+        -   ОРД-295
+        -   ОРД-297
+        -   ОРД-298
+        -   НПМмд-02-24
+        -   НФИмд-00-24
+        -   НПИмд-01-23
+        -   ~~Ср 19:30-20:50~~
+        -   Ср 16:30-17:50
 
 <!--list-separator-->
 
-5. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
+3. <span class="org-todo todo NEXT">NEXT</span>  Основы администрирования ОС <code>[1/2]</code>
 
-    -   ОРД-559
-    -   НПИбд-00-23
+    <!--list-separator-->
+
+    1. <span class="org-todo done CNCL">CNCL</span>  Основы администрирования ОС (лабораторные работы) <span class="tag"><span class="CNCL">CNCL</span></span>
+
+        -   ОРД-295, ОРД-297; НПИбд-01,02-22
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
+
+        -   ОРД-559
+        -   НПИбд-00-23
 
 <!--list-separator-->
 
-6. <span class="org-todo done DONE">DONE</span>  Спецдисциплина для аспирантов
+4. <span class="org-todo done DONE">DONE</span>  Спецдисциплина для аспирантов
 
     -   [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmRjYmUwNGUtMWY3MS00ZWZjLTk5YjEtYTkxZGM1ODU3ZjBi%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%2296135d12-2269-4589-add7-7eca251a8b13%22%7d)
 

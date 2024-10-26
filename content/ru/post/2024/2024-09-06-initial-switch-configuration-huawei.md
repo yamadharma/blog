@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T15:31:00+03:00
-lastmod: 2024-09-21T13:27:00+03:00
+lastmod: 2024-10-26T13:53:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -290,4 +290,9 @@ slug: "initial-switch-configuration-huawei"
     ```shell
     sudo -u librenms /usr/local/bin/lnms device:add sw-103-1 -c rocom
     sudo -u librenms /usr/local/bin/lnms device:poll sw-103-1
+    ```
+
+-   Если есть в базе данное устройство, но под другим именем, то можно его переименовать:
+    ```shell
+    sudo -u librenms /usr/local/bin/lnms device:rename <old hostname> <new hostname>
     ```

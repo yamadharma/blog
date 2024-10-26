@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2024-10-05T11:35:00+03:00
+lastmod: 2024-10-26T14:21:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -314,6 +314,10 @@ slug: "initial-cisco-switch-configuration"
     ```shell
     sudo -u librenms /usr/local/bin/lnms device:add sw-103-1 -c rocom
     sudo -u librenms /usr/local/bin/lnms device:poll sw-103-1
+    ```
+-   Если есть в базе данное устройство, но под другим именем, то можно его переименовать:
+    ```shell
+    sudo -u librenms /usr/local/bin/lnms device:rename <old hostname> <new hostname>
     ```
 
 [^fn:1]: Установка пароля может быть выполнена двумя командами `password` и `secret`. В первом случае пароль хранится в конфигурационном файле в открытом виде, а во втором в зашифрованном. Если использовалась команда `password`, необходимо зашифровать пароли, хранящиеся в устройстве в открытом виде с помощью команды `service password-encryption` в режиме глобальной конфигурации.

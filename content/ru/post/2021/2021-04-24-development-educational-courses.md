@@ -2,7 +2,7 @@
 title: "Разработка учебных курсов"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-24T17:14:00+03:00
-lastmod: 2024-09-03T16:34:00+03:00
+lastmod: 2024-10-25T19:11:00+03:00
 tags: ["education"]
 categories: ["job", "science"]
 draft: false
@@ -25,4 +25,7 @@ slug: "development-educational-courses"
 
 ## <span class="section-num">2</span> Программы подготовки {#программы-подготовки}
 
+-   [Программа обучения по компьютерным наукам в РУДН]({{< relref "2024-07-08-computer-science-program-rudn" >}})
 -   [Подготовка программы Кибербезопасность и Интернет вещей]({{< relref "2021-04-24-mathematical-disciplines-specialty-cybersecurity" >}})
+-   [Магистратура Кибербезопасность и теория вероятностей]({{< relref "2024-10-25-magistracy-cybersecurity-probability-theory" >}})
+-   [Магистратура Data Science]({{< relref "2020-12-14-msc-data-science" >}})

@@ -2,7 +2,7 @@
 title: "Магистратура Data Science"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-14T12:40:00+03:00
-lastmod: 2023-10-02T17:02:00+03:00
+lastmod: 2024-10-25T17:42:00+03:00
 tags: ["education", "science-admin"]
 categories: ["science"]
 draft: false

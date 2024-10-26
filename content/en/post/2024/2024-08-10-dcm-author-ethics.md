@@ -2,7 +2,7 @@
 title: "DCM. Author's Ethics"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-10T21:32:00+03:00
-lastmod: 2024-10-15T21:25:00+03:00
+lastmod: 2024-10-25T13:28:00+03:00
 tags: ["science-being", "science-admin"]
 categories: ["science"]
 draft: false
@@ -32,14 +32,14 @@ Author Ethics.
 ## <span class="section-num">2</span> Author contributions {#author-contributions}
 
 -   Researchers always face the problem of authorship [<a href="#citeproc_bib_item_1">1</a>]:
-    -   the right people are not included in the list of authors;
+    -   the list of authors includes very different people from those who have made a principled contribution to the work;
     -   people are added against their wishes or without their knowledge;
     -   the order does not reflect the contribution of each author.
 -   Contribution to authorship is determined by the overall involvement of the research participant in the study.
 -   The Committee on Publication Ethics (COPE) draws attention to the problem of authorship [<a href="#citeproc_bib_item_2">2</a>].
 -   The CRediT system (<https://credit.niso.org/>) is proposed to formalize author roles.
 -   The CRediT (Contributor Roles Taxonomy) offers 14 possible author roles [<a href="#citeproc_bib_item_3">3</a>] (cite. [Contributor Roles]({{< relref "2024-01-21-contributor-roles" >}})).
--   Some roles are autonomous and some are not.
+-   This is not really a taxonomy, but a faceted classification. Author roles are not always independent in themselves.
 
 
 ### <span class="section-num">2.1</span> Contributor Roles {#contributor-roles}

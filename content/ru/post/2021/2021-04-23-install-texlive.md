@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2024-03-17T17:28:00+03:00
+lastmod: 2024-10-24T19:47:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -107,17 +107,21 @@ slug: "install-texlive"
 -   Для обновления используем на клиенте скрипт:
     ```shell
     #!/bin/bash
-    # /etc/cron.weekly/texlive-update
 
     if [[ -d /com/lib/portage/extras/texlive ]]
     then
-        tlmgr update --repository=/com/lib/portage/extras/texlive --self
-        tlmgr update --repository=/com/lib/portage/extras/texlive --all
+            tlmgr update --repository=/com/lib/portage/extras/texlive --self
+            tlmgr update --repository=/com/lib/portage/extras/texlive --all
     else
-        tlmgr update --self
-        tlmgr update --all
+            tlmgr update --self
+            tlmgr update --all
     fi
+    tlmgr path add
     ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      /etc/cron.weekly/texlive-update
+    </div>
 
 
 ## <span class="section-num">5</span> Обновление до следующей версии TeXlive {#обновление-до-следующей-версии-texlive}
