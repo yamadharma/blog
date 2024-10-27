@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-10-20T19:12:00+03:00
+lastmod: 2024-10-27T20:30:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -1013,6 +1013,70 @@ slug: "emacs-desire-configuration"
         ```emacs-lisp
         ;;;}}}
         ```
+
+
+#### <span class="section-num">4.11.2</span> Поддержка ebuild-файлов {#поддержка-ebuild-файлов}
+
+-   Сайт: <https://wiki.gentoo.org/wiki/Project:Emacs>
+-   Файл `rc.packages.el`:
+    ```emacs-lisp
+    ;;; Ebuild files
+    (desire 'ebuild-mode :recipe '(:fetcher github :repo "emacsmirror/ebuild-mode" :branch "master"))
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+      rc.packages.el
+    </div>
+-   Настроим загрузку
+
+    ```text
+
+    ```
+
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Edit ebuild and eclass files
+    ;;; https://wiki.gentoo.org/wiki/Project:Emacs
+    ;;; https://github.com/emacsmirror/ebuild-mode
+
+    (add-to-list 'load-path "/usr/share/emacs/site-lisp/ebuild-mode")
+    (autoload 'ebuild-mode "ebuild-mode"
+      "Major mode for Gentoo .ebuild files." t)
+    (autoload 'ebuild-eclass-mode "ebuild-mode"
+      "Major mode for Gentoo .eclass files." t)
+    (autoload 'ebuild-repo-mode "ebuild-mode"
+      "Minor mode for files in an ebuild repository." t)
+    (autoload 'ebuild-repo-mode-maybe-enable "ebuild-mode")
+    (autoload 'devbook-mode "devbook-mode"
+      "Major mode for editing the Gentoo Devmanual." t)
+    (autoload 'gentoo-newsitem-mode "gentoo-newsitem-mode"
+      "Major mode for Gentoo GLEP 42 news items." t)
+    (autoload 'glep-mode "glep-mode"
+      "Major mode for Gentoo Linux Enhancement Proposals." t)
+
+    (add-to-list 'auto-mode-alist '("\\.ebuild\\'" . ebuild-mode))
+    (add-to-list 'auto-mode-alist '("\\.eclass\\'" . ebuild-eclass-mode))
+    (add-to-list 'auto-mode-alist '("/devmanual.*\\.xml\\'" . devbook-mode))
+    (add-to-list 'auto-mode-alist
+                 '("/[0-9]\\{4\\}-[01][0-9]-[0-3][0-9]-.+\\.[a-z]\\{2\\}\\.txt\\'"
+                   . gentoo-newsitem-mode))
+    (add-to-list 'auto-mode-alist '("/glep.*\\.rst\\'" . glep-mode))
+    (add-to-list 'auto-mode-alist
+                 '("/\\(package\\.\\(mask\\|unmask\\|use\\|env\
+    \\|license\\|properties\\|accept_\\(keywords\\|restrict\\)\\)\
+    \\|\\(package\\.\\)?use.\\(stable\\.\\)?\\(force\\|mask\\)\\)\\'"
+                   . conf-space-mode))
+    (add-to-list 'auto-mode-alist
+                 '("/make\\.\\(conf\\|defaults\\)\\'" . conf-unix-mode))
+    (add-to-list 'interpreter-mode-alist '("openrc-run" . sh-mode))
+    (add-to-list 'interpreter-mode-alist '("runscript" . sh-mode))
+    (add-hook 'find-file-hook #'ebuild-repo-mode-maybe-enable)
+    (modify-coding-system-alist 'file "\\.\\(ebuild\\|eclass\\)\\'" 'utf-8)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+      packages/ebuild-mode/loaddefs.ecf
+    </div>
 
 
 ### <span class="section-num">4.12</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}

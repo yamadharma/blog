@@ -2,7 +2,7 @@
 title: "Магистратура Data Science"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-14T12:40:00+03:00
-lastmod: 2024-10-25T17:42:00+03:00
+lastmod: 2024-10-27T19:34:00+03:00
 tags: ["education", "science-admin"]
 categories: ["science"]
 draft: false
@@ -82,7 +82,7 @@ slug: "msc-data-science"
 ### <span class="section-num">1.2</span> Задачи специалиста по Data Science {#задачи-специалиста-по-data-science}
 
 
-#### <span class="section-num">1.2.1</span> Выяснение требований заказчика- Профессия --- _Data Analist_. {#выяснение-требований-заказчика-профессия-data-analist-dot}
+#### <span class="section-num">1.2.1</span> Выяснение требований заказчика- Профессия --- _Data Analist_ {#выяснение-требований-заказчика-профессия-data-analist}
 
 -   Общается с бизнесом.
 -   Собирает требования.

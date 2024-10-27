@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2024-07-19T18:46:00+03:00
+lastmod: 2024-10-27T19:59:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -272,6 +272,10 @@ slug: "git-practical-use-case"
 -   Добавим файл лицензии. В данном случае мы выбираем лицензию `CC-BY-4.0` (см. [Выбор лицензии для научной работы]({{< relref "2021-02-22-scientific-work-choosing-license" >}})):
     ```shell
     wget https://creativecommons.org/licenses/by/4.0/legalcode.txt -O LICENSE
+    ```
+-   Если выбирается лицензия `CC-BY-SA-4.0`, то нужно выполнить:
+    ```shell
+    wget https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt -O LICENSE
     ```
 -   Инициализируем системы git:
     ```shell
