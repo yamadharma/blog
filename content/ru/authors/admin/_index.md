@@ -2,6 +2,10 @@
 # Display name
 title: Дмитрий Сергеевич Кулябов
 
+# Full name (for SEO)
+first_name: Дмитрий
+last_name: Кулябов
+
 # Username (this should match the folder name)
 authors:
   - admin
@@ -14,7 +18,7 @@ role: Профессор кафедры теории вероятностей и
 
 # Organizations/Affiliations
 organizations:
-  - name: Российский университет дружбы народов
+  - name: Российский университет дружбы народов им. Патриса Лумумбы
     url: "http://www.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
@@ -120,12 +124,15 @@ social:
 - icon: gitlab
   icon_pack: fab
   link: https://gitlab.com/yamadharma
-
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+# - icon: at-symbol
+#   link: mailto:kulyabov-ds@rudn.ru
+#   label: E-mail   
+# - icon: academicons/cv
+#   url: uploads/resume.pdf
+#   label: Download my resume
+- icon: rss
+  link: /ru/post/index.xml
+  label: RSS feed блога
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "yamadharma@gmail.com"
@@ -140,5 +147,5 @@ highlight_name: true
 #- Visitors
 ---
 
-Кулябов Дмитрий Сергеевич работает профессором на кафедре прикладной информатики и теории вероятностей Российского университета дружбы народов. Его научные интересы относятся к области теоретической физики и математического моделирования.
+Кулябов Дмитрий Сергеевич работает профессором на кафедре теории вероятностей и кибербезопасности Российского университета дружбы народов им. Патриса Лумумбы. Его научные интересы относятся к области теоретической физики и математического моделирования.
 

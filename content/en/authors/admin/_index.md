@@ -2,6 +2,10 @@
 # Display name
 title: Dmitry S. Kulyabov
 
+# Full name (for SEO)
+first_name: Dmitry
+last_name: Kulyabov
+
 # Username (this should match the folder name)
 authors:
   - admin
@@ -14,7 +18,7 @@ role: Professor of the Department of Probability Theory and Cybersecurity
 
 # Organizations/Affiliations
 organizations:
-- name: Peoples' Friendship University of Russia (RUDN University)
+- name: RUDN University
   url: "http://www.rudn.ru/en"
 
 # Short bio (displayed in user profile at end of posts)
@@ -113,12 +117,15 @@ social:
 - icon: gitlab
   icon_pack: fab
   link: https://gitlab.com/yamadharma
-
-# Link to a PDF of your resume/CV from the About widget.
-# To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+# - icon: at-symbol
+#   link: mailto:kulyabov-ds@rudn.ru
+#   label: E-mail Me  
+# - icon: academicons/cv
+#   url: uploads/resume.pdf
+#   label: Download my resume
+- icon: rss
+  link: /en/post/index.xml
+  label: Subscribe to my blog via RSS feed
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "yamadharma@gmail.com"
@@ -134,8 +141,5 @@ highlight_name: true
 ---
 
 
-Dmitry S. Kulyabov works as a professor at the Department of
-Applied Informatics and Probability Theory of Peoples' Friendship
-University of Russia. His research interests are in the field of
-theoretical physics and mathematical modeling.
+Dmitry S. Kulyabov works as a professor at the Department of Probability Theory and Cybersecurity RUDN University. His research interests are in the field of theoretical physics and mathematical modeling.
 

@@ -3,8 +3,10 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: 'Dmitry S. Kulyabov' # Website name
-baseURL: 'https://yamadharma.github.io/' # Website URL
+# Website name
+title: 'Dmitry S. Kulyabov'
+# Website URL
+baseURL: 'https://yamadharma.github.io/'
 copyright: '&copy; {year} Dmitry S. Kulyabov'
 
 ############################
@@ -55,9 +57,15 @@ cascade:
 ## ADVANCED
 ############################
 
+build:
+  writeStats: true
+
 enableGitInfo: false
 summaryLength: 30
-paginate: 20
+
+pagination:
+  pagerSize: 20
+
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
@@ -72,30 +80,18 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 
 disableAliases: true
+
 outputs:
-  home:
-    - html
-    - rss
-    - json
-    - WebAppManifest
-    - headers
-    - redirects
-  page:
-    - html
-  rss:
-    - rss
-  section:
-    - html
-    - rss
-  taxonomy:
-    - html
-    - rss
-  term:
-    - html
-    - rss
+  home: [HTML, RSS, headers, redirects, backlinks, json, WebAppManifest]
+  page: [HTML, RSS]
+  rss: [RSS]
+  section: [HTML, RSS]
+  taxonomy: [HTML, RSS]
+  term: [HTML, RSS]
+
 imaging:
   resampleFilter: lanczos
-  quality: 75
+  quality: 85
   anchor: smart
 timeout: 600000
 
