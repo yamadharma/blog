@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-10-25T12:18:00+03:00
+lastmod: 2024-10-30T19:09:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -607,19 +607,19 @@ slug: "timetable-classes"
 ### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[0/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[0/3]</code> {#сессия-модуль-1-2024-2025}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[1/3]</code> {#сессия-модуль-1-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты, модуль 1, 2024--2025 <code>[0/1]</code>
+1. <span class="org-todo done DONE">DONE</span>  Зачёты, модуль 1, 2024--2025 <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (4 курс, зачёт)
+    1. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (4 курс, зачёт)
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  01.03.02 Прикладная математика и информатика (НПМбд-02-21, зачёт)
+        1. <span class="org-todo done DONE">DONE</span>  01.03.02 Прикладная математика и информатика (НПМбд-02-21, зачёт)
 
             -   ауд. 299
 
