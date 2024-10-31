@@ -2,7 +2,7 @@
 title: "Mesh-системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-07T16:27:00+03:00
-lastmod: 2024-10-07T16:39:00+03:00
+lastmod: 2024-10-31T20:29:00+03:00
 tags: ["network", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -37,3 +37,22 @@ Mesh-системы.
 -   Скорость портов : 1 Гбит/с.
 -   Количество портов Ethernet : 2.
 -   Стандарты Wi-Fi : — 802.11a/b/g/n/ac.
+
+
+### <span class="section-num">2.2</span> Huawei Wi-Fi Mesh 3 WS8100 {#huawei-wi-fi-mesh-3-ws8100}
+
+
+#### <span class="section-num">2.2.1</span> Общая информация {#общая-информация}
+
+-   Описание на сайте производителя: <https://consumer.huawei.com/ru/routers/wifi-mesh3/>
+-   Обзор: <https://www.ixbt.com/nw/huawei-wifi-mesh-3-review.html>
+
+
+#### <span class="section-num">2.2.2</span> Характеристики {#характеристики}
+
+-   Входной интерфейс: 10/100/1000BASE-T
+-   Частоты Wi-Fi: 2.4 ГГц, 5 ГГц
+-   Стандарты Wi-Fi 802.11: a/ b/ g/ n/ ac/ ax
+-   Класс Wi-Fi: AX3000
+-   Порты: 10/100BASE-TX х 3, 10/100/1000BASE-TX х 3
+-   Антенны: 4х внутренние

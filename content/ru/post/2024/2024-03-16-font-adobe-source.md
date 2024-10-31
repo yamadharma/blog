@@ -2,7 +2,7 @@
 title: "Шрифт. Adobe Source"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-03-16T18:01:00+03:00
-lastmod: 2024-03-16T18:24:00+03:00
+lastmod: 2024-10-31T20:43:00+03:00
 tags: ["font", "tex", "latex"]
 categories: ["computer-science"]
 draft: false
@@ -62,3 +62,81 @@ slug: "font-adobe-source"
 
 -   Source Han Mono
 -   Репозиторий: <https://github.com/adobe-fonts/source-han-mono>
+
+
+## <span class="section-num">3</span> Поддержка LaTeX {#поддержка-latex}
+
+
+### <span class="section-num">3.1</span> latex-sourceserifpro {#latex-sourceserifpro}
+
+-   Репозиторий: <https://github.com/silkeh/latex-sourceserifpro>
+-   В составе TeXlive.
+
+
+#### <span class="section-num">3.1.1</span> Опции пакета {#опции-пакета}
+
+-   `oldstyle, osf` : цифры старого стиля;
+-   `lining, nf` : цифры в линию;
+-   `tabular` : цифры фиксированной ширины;
+-   `proportional` : обычные числа;
+-   `black`: `\bfseries` черный;
+-   `semibold`: `\bfseries`  является полужирным;
+-   `bold`: `\bfseries`  является жизным;
+-   `light`: `\mdseries` тонкий;
+-   `extralight`: `\mdseries` очень тонкий;
+-   `regular`: `\mdseries` обычный;
+-   `scale, scaled`: установить масштаб шрифта, например: `scale=.5`;
+-   `default` : Source Serif Pro установлен в качестве семейства шрифтов по умолчанию;
+-   `normdefault` : Source Serif Pro не установлен как основной шрифт с засечками;
+-   `type1, t1` : загрузить семейство шрифтов Type1;
+-   `opentype, otf` : загрузить семейство шрифтов OpenType.
+
+
+### <span class="section-num">3.2</span> latex-sourcesanspro {#latex-sourcesanspro}
+
+-   Репозиторий: <https://github.com/silkeh/latex-sourcesanspro>
+-   В составе TeXlive.
+
+
+#### <span class="section-num">3.2.1</span> Опции пакета {#опции-пакета}
+
+-   `oldstyle, osf` : цифры старого стиля;
+-   `lining, nf` : цифры в линию;
+-   `tabular` : цифры фиксированной ширины;
+-   `proportional` : обычные числа;
+-   `black`: `\bfseries` черный;
+-   `semibold`: `\bfseries`  является полужирным;
+-   `bold`: `\bfseries`  является жизным;
+-   `light`: `\mdseries` тонкий;
+-   `extralight`: `\mdseries` очень тонкий;
+-   `regular`: `\mdseries` обычный;
+-   `scale, scaled`: установить масштаб шрифта, например: `scale=.5`;
+-   `default` : Source Sans Pro установлен в качестве семейства шрифтов по умолчанию;
+-   `nosfdefault` : Source Sans Pro не установлен как основной шрифт без засечек;
+-   `type1, t1` : загрузить семейство шрифтов Type1;
+-   `opentype, otf` : загрузить семейство шрифтов OpenType.
+
+
+### <span class="section-num">3.3</span> latex-sourcecodepro {#latex-sourcecodepro}
+
+-   Репозиторий: <https://github.com/silkeh/latex-sourcecodepro>
+-   В составе TeXlive.
+
+
+#### <span class="section-num">3.3.1</span> Опции пакета {#опции-пакета}
+
+-   `oldstyle, osf` : цифры старого стиля;
+-   `lining, nf` : цифры в линию;
+-   `tabular` : цифры фиксированной ширины;
+-   `proportional` : обычные числа;
+-   `black`: `\bfseries` черный;
+-   `semibold`: `\bfseries`  является полужирным;
+-   `bold`: `\bfseries`  является жизным;
+-   `light`: `\mdseries` тонкий;
+-   `extralight`: `\mdseries` очень тонкий;
+-   `regular`: `\mdseries` обычный;
+-   `scale, scaled`: установить масштаб шрифта, например: `scale=.5`;
+-   `default` : Source Code Pro установлен в качестве семейства шрифтов по умолчанию;
+-   `nottdefault` : Source Code Pro не установлен как основной шрифт без засечек;
+-   `type1, t1` : загрузить семейство шрифтов Type1;
+-   `opentype, otf` : загрузить семейство шрифтов OpenType.

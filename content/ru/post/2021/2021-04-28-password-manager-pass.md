@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2024-03-05T16:56:00+03:00
+lastmod: 2024-10-31T20:56:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -94,7 +94,19 @@ slug: "password-manager-pass"
 -   Документация: <https://android-password-store.github.io/docs/>
 -   Для синхронизации с git необходимо импортировать ssh-ключи.
 -   Поддерживает разблокировку по биометрическим данным.
--   Для работы требует наличия _OpenKeychain: Easy PGP_.
+-   Версия 1.x для работы требует наличия _OpenKeychain: Easy PGP_.
+
+<!--list-separator-->
+
+1.  История
+
+    <!--list-separator-->
+
+    1.  <span class="timestamp-wrapper"><span class="timestamp">[2024-10-15 Вт]</span></span>
+
+        -   Репозиторий <https://github.com/android-password-store/Android-Password-Store> переведён в режим read-only.
+        -   Сообщение: <https://github.com/android-password-store/Android-Password-Store/discussions/3260>
+        -   Текущий ментейнер сообщил, что далее не может работать над проектом и готов отдать его другому сопровождающему.
 
 
 #### <span class="section-num">3.3.2</span> OpenKeychain: Easy PGP {#openkeychain-easy-pgp}
@@ -111,7 +123,7 @@ slug: "password-manager-pass"
 #### <span class="section-num">3.4.1</span> pass {#pass}
 
 -   Основной режим для управления хранилищем и редактирования записей.
--   [Emacs. Пакет pass]({{< relref "2023-12-02-emacs-pass" >}})
+-   [Emacs. Пакет pass]({{< relref "../notes/public/20231202140700-emacs_пакет_pass.md" >}})
 -   Репозиторий: <https://github.com/NicolasPetton/pass>
 -   Позволяет редактировать базу данных паролей.
 -   Запуск:
@@ -403,7 +415,7 @@ slug: "password-manager-pass"
 
 ### <span class="section-num">8.1</span> Проверка утечки пароля {#проверка-утечки-пароля}
 
--   Проверка утечки пароля производится с помощью сервиса <https://haveibeenpwned.com/> (см. [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})).
+-   Проверка утечки пароля производится с помощью сервиса <https://haveibeenpwned.com/> (см. [Have I Been Pwned (HIBP)]({{< relref "../notes/public/20210503152100-have_i_been_pwned_hibp.md" >}})).
 
 
 #### <span class="section-num">8.1.1</span> pass {#pass}
@@ -465,9 +477,9 @@ slug: "password-manager-pass"
 
 ### <span class="section-num">8.2</span> Одноразовые пароли {#одноразовые-пароли}
 
--   [Менеджер паролей pass. Одноразовые пароли]({{< relref "2023-08-24-password-manager-pass-one-time-passwords" >}})
+-   [Менеджер паролей pass. Одноразовые пароли]({{< relref "../notes/public/20230824202900-менеджер_паролеи_pass_одноразовые_пароли.md" >}})
 
 
 ## <span class="section-num">9</span> Интеграция с другими программами {#интеграция-с-другими-программами}
 
--   [Менеджер паролей pass. Интеграция с другими программами]({{< relref "2021-11-20-password-manager-pass-integration" >}})
+-   [Менеджер паролей pass. Интеграция с другими программами]({{< relref "../notes/public/20211120214700-менеджер_паролеи_pass_интеграция_с_другими_программами.md" >}})
