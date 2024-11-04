@@ -2,7 +2,7 @@
 title: "Люди науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-12T20:50:00+03:00
-lastmod: 2024-07-04T14:54:00+03:00
+lastmod: 2024-11-04T19:45:00+03:00
 tags: ["science-people"]
 categories: ["science"]
 draft: false
@@ -20,6 +20,7 @@ slug: "science-people"
 
 -   [Ландау, Лев Давидович]({{< relref "2024-01-13-landau-lev-davidovich" >}})
 -   [Эйнштейн, Альберт]({{< relref "2024-01-13-einstein-albert" >}})
+-   [Кляйн, Феликс Христиан]({{< relref "2024-11-04-klein-felix-christian" >}})
 
 
 ## <span class="section-num">2</span> РУДН {#рудн}

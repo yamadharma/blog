@@ -123,7 +123,7 @@ slug: "password-manager-pass"
 #### <span class="section-num">3.4.1</span> pass {#pass}
 
 -   Основной режим для управления хранилищем и редактирования записей.
--   [Emacs. Пакет pass]({{< relref "../notes/public/20231202140700-emacs_пакет_pass.md" >}})
+-   [Emacs. Пакет pass]({{< relref "2023-12-02-emacs-pass" >}})
 -   Репозиторий: <https://github.com/NicolasPetton/pass>
 -   Позволяет редактировать базу данных паролей.
 -   Запуск:
@@ -415,7 +415,7 @@ slug: "password-manager-pass"
 
 ### <span class="section-num">8.1</span> Проверка утечки пароля {#проверка-утечки-пароля}
 
--   Проверка утечки пароля производится с помощью сервиса <https://haveibeenpwned.com/> (см. [Have I Been Pwned (HIBP)]({{< relref "../notes/public/20210503152100-have_i_been_pwned_hibp.md" >}})).
+-   Проверка утечки пароля производится с помощью сервиса <https://haveibeenpwned.com/> (см. [Have I Been Pwned (HIBP)]({{< relref "2021-05-03-have-i-been-pwned-hibp" >}})).
 
 
 #### <span class="section-num">8.1.1</span> pass {#pass}
@@ -477,9 +477,9 @@ slug: "password-manager-pass"
 
 ### <span class="section-num">8.2</span> Одноразовые пароли {#одноразовые-пароли}
 
--   [Менеджер паролей pass. Одноразовые пароли]({{< relref "../notes/public/20230824202900-менеджер_паролеи_pass_одноразовые_пароли.md" >}})
+-   [Менеджер паролей pass. Одноразовые пароли]({{< relref "2023-08-24-password-manager-pass-one-time-passwords" >}})
 
 
 ## <span class="section-num">9</span> Интеграция с другими программами {#интеграция-с-другими-программами}
 
--   [Менеджер паролей pass. Интеграция с другими программами]({{< relref "../notes/public/20211120214700-менеджер_паролеи_pass_интеграция_с_другими_программами.md" >}})
+-   [Менеджер паролей pass. Интеграция с другими программами]({{< relref "2021-11-20-password-manager-pass-integration" >}})
