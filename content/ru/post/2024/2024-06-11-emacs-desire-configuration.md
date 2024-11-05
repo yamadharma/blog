@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-11-04T14:15:00+03:00
+lastmod: 2024-11-05T20:14:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -777,6 +777,103 @@ slug: "emacs-desire-configuration"
   rc.packages.el
 </div>
 
+<!--list-separator-->
+
+1.  Предпросмотр LaTeX
+
+    -   [Org-mode. Предпросмотр TeX]({{< relref "2024-01-06-org-mode-latex-preview" >}})
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Previewing LaTeX fragments
+        ;;; https://orgmode.org/manual/Previewing-LaTeX-fragments.html
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+    -   Зададим каталог для создаваемых изображений (по умолчанию они создаются в рабочем каталоге):
+        ```emacs-lisp
+        ;;; LaTeX image directory
+        (setq org-preview-latex-image-directory (concat home-cache-path "org-latex/"))
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+    -   Зададим опции создания изображений:
+        ```emacs-lisp
+        ;;; Output format
+        (setq org-format-latex-options (plist-put org-format-latex-options :scale 1.0))
+        (setq org-format-latex-options (plist-put org-format-latex-options :density 600))
+        (setq org-format-latex-options (plist-put org-format-latex-options :background "Transparent"))
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+    -   Зададим формат изображений. В данном случае это формат `svg`:
+        ```emacs-lisp
+        (setq org-latex-create-formula-image-program 'dvisvgm)
+        (setq org-preview-latex-process-alist
+              '((dvipng :programs
+                        ("lualatex" "dvipng")
+                        :description "dvi > png" :message "you need to install the programs: latex and dvipng." :image-input-type "dvi" :image-output-type "png" :image-size-adjust
+                        (1.0 . 1.0)
+                        :latex-compiler
+                        ("lualatex -output-format dvi -interaction nonstopmode -output-directory %o %f")
+                        :image-converter
+                        ("dvipng -D %D -T tight -o %O %f"))
+                (dvisvgm :programs
+                         ("latex" "dvisvgm")
+                         :description "dvi > svg" :message "you need to install the programs: latex and dvisvgm." :use-xcolor t :image-input-type "xdv" :image-output-type "svg" :image-size-adjust
+                         (1.7 . 1.5)
+                         :latex-compiler
+                         ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+                         :image-converter
+                         ("dvisvgm %f -n -b min -c %S -o %O"))
+                (imagemagick :programs
+                             ("latex" "convert")
+                             :description "pdf > png" :message "you need to install the programs: latex and imagemagick." :use-xcolor t :image-input-type "pdf" :image-output-type "png" :image-size-adjust
+                             (1.0 . 1.0)
+                             :latex-compiler
+                             ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+                             :image-converter
+                             ("convert -density %D -trim -antialias %f -quality 100 %O"))))
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+    -   Теперь зададим настройки для LaTeX:
+        ```emacs-lisp
+        ;;; Configure latex
+        (setq org-latex-inputenc-alist '(("utf8" . "utf8x")))
+        ;;; Default position for LaTeX figures
+        (setq org-latex-default-figure-position "!htbp")
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+    -   Опишем используемые пакеты:
+        ```emacs-lisp
+        ;;; Unicode fonts
+        (add-to-list 'org-latex-packages-alist '("" "unicode-math") t)
+        ;;; Physics2 package
+        ;; (add-to-list 'org-latex-packages-alist '("" "physics2") t)
+        ;;; Math
+        (add-to-list 'org-latex-packages-alist '("" "amsmath") t)
+        (add-to-list 'org-latex-packages-alist '("" "mathtools") t)
+        ;;; Local definitions
+        ;; (add-to-list 'org-latex-packages-alist '("" "local-define") t)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 28:</span>
+          packages/org/desire.ecd/preview-latex.ecf
+        </div>
+
 
 ### <span class="section-num">4.9</span> Заметочники {#заметочники}
 
@@ -786,7 +883,7 @@ slug: "emacs-desire-configuration"
     ;;; Notes {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 29:</span>
       rc.packages.el
     </div>
 
@@ -1044,7 +1141,7 @@ slug: "emacs-desire-configuration"
     (desire 'ebuild-mode :recipe '(:fetcher github :repo "emacsmirror/ebuild-mode" :branch "master"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 30:</span>
       rc.packages.el
     </div>
 -   Настроим загрузку
@@ -1094,7 +1191,7 @@ slug: "emacs-desire-configuration"
     (modify-coding-system-alist 'file "\\.\\(ebuild\\|eclass\\)\\'" 'utf-8)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 31:</span>
       packages/ebuild-mode/loaddefs.ecf
     </div>
 
