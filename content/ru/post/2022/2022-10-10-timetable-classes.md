@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-11-04T11:35:00+03:00
+lastmod: 2024-11-07T17:11:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -607,7 +607,7 @@ slug: "timetable-classes"
 ### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[0/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[1/3]</code> {#сессия-модуль-1-2024-2025}
+#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[2/3]</code> {#сессия-модуль-1-2024-2025}
 
 <!--list-separator-->
 
@@ -625,15 +625,21 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены, модуль 1, 2024--2025 <code>[0/1]</code>
+2. <span class="org-todo done DONE">DONE</span>  Экзамены, модуль 1, 2024--2025 <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Экзамен, Информационная безопасность (4 курс) <code>[0/2]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность (4 курс) <code>[3/3]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Экзамен, Информационная безопасность, НКНбд-01-21, НФИбд-01-20, НФИбд-02-21
+        1. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность, НБИбд-01-21
+
+            -   НБИбд-01-21, ауд. 297
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность, НКНбд-01-21, НФИбд-01-20, НФИбд-02-21
 
             -   НКНбд-01-21, ауд. 297
             -   НФИбд-01-21, ауд. 296
@@ -641,16 +647,10 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Экзамен, Информационная безопасность, НПИбд-01-21, НПИбд-02-21
+        3. <span class="org-todo done DONE">DONE</span>  Экзамен, Информационная безопасность, НПИбд-01-21, НПИбд-02-21
 
             -   НПИбд-01-21, ауд. 297
             -   НПИбд-02-21, ауд. 298
-
-        <!--list-separator-->
-
-        3. <span class="org-todo todo TODO">TODO</span>  Экзамен, Информационная безопасность, НБИбд-01-21
-
-            -   НБИбд-01-21, ауд. 297
 
 <!--list-separator-->
 

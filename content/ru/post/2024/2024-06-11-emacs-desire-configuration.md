@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2024-11-05T20:14:00+03:00
+lastmod: 2024-11-06T11:42:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -653,24 +653,6 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">4.8.1</span> Babel {#babel}
 
-<!--list-separator-->
-
-1.  Поддержка Asymptote
-
-    -   Репозиторий: <https://github.com/hurrja/ob-asymptote>
-    -   Необходимо установить программу Asymptote: <http://asymptote.sourceforge.net/>
-
-    <!--listend-->
-
-    ```emacs-lisp
-    ;;; Org Babel functions for Asymptote evaluation
-    (desire 'ob-asymptote)
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 17:</span>
-      rc.packages.el
-    </div>
-
 
 #### <span class="section-num">4.8.2</span> Разное {#разное}
 
@@ -691,7 +673,7 @@ slug: "emacs-desire-configuration"
 (desire 'org-tree-slide)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 18:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 17:</span>
   rc.packages.el
 </div>
 
@@ -728,7 +710,7 @@ slug: "emacs-desire-configuration"
 (desire 'org-transclusion)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 19:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 18:</span>
   rc.packages.el
 </div>
 
@@ -742,7 +724,7 @@ slug: "emacs-desire-configuration"
     (desire 'org-gtd)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 20:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 19:</span>
       rc.packages.el
     </div>
 
@@ -757,7 +739,7 @@ slug: "emacs-desire-configuration"
 (desired 'mobileorg)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 21:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 20:</span>
   rc.packages.el
 </div>
 
@@ -773,7 +755,7 @@ slug: "emacs-desire-configuration"
 ;;;}}}
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 22:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 21:</span>
   rc.packages.el
 </div>
 
@@ -788,7 +770,7 @@ slug: "emacs-desire-configuration"
         ;;; https://orgmode.org/manual/Previewing-LaTeX-fragments.html
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 22:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
     -   Зададим каталог для создаваемых изображений (по умолчанию они создаются в рабочем каталоге):
@@ -797,7 +779,7 @@ slug: "emacs-desire-configuration"
         (setq org-preview-latex-image-directory (concat home-cache-path "org-latex/"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
     -   Зададим опции создания изображений:
@@ -808,7 +790,7 @@ slug: "emacs-desire-configuration"
         (setq org-format-latex-options (plist-put org-format-latex-options :background "Transparent"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
     -   Зададим формат изображений. В данном случае это формат `svg`:
@@ -816,32 +798,32 @@ slug: "emacs-desire-configuration"
         (setq org-latex-create-formula-image-program 'dvisvgm)
         (setq org-preview-latex-process-alist
               '((dvipng :programs
-                        ("lualatex" "dvipng")
-                        :description "dvi > png" :message "you need to install the programs: latex and dvipng." :image-input-type "dvi" :image-output-type "png" :image-size-adjust
-                        (1.0 . 1.0)
-                        :latex-compiler
-                        ("lualatex -output-format dvi -interaction nonstopmode -output-directory %o %f")
-                        :image-converter
-                        ("dvipng -D %D -T tight -o %O %f"))
-                (dvisvgm :programs
-                         ("latex" "dvisvgm")
-                         :description "dvi > svg" :message "you need to install the programs: latex and dvisvgm." :use-xcolor t :image-input-type "xdv" :image-output-type "svg" :image-size-adjust
-                         (1.7 . 1.5)
-                         :latex-compiler
-                         ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
-                         :image-converter
-                         ("dvisvgm %f -n -b min -c %S -o %O"))
-                (imagemagick :programs
-                             ("latex" "convert")
-                             :description "pdf > png" :message "you need to install the programs: latex and imagemagick." :use-xcolor t :image-input-type "pdf" :image-output-type "png" :image-size-adjust
-                             (1.0 . 1.0)
-                             :latex-compiler
-                             ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
-                             :image-converter
-                             ("convert -density %D -trim -antialias %f -quality 100 %O"))))
+                      ("lualatex" "dvipng")
+                      :description "dvi > png" :message "you need to install the programs: latex and dvipng." :image-input-type "dvi" :image-output-type "png" :image-size-adjust
+                      (1.0 . 1.0)
+                      :latex-compiler
+                      ("lualatex -output-format dvi -interaction nonstopmode -output-directory %o %f")
+                      :image-converter
+                      ("dvipng -D %D -T tight -o %O %f"))
+              (dvisvgm :programs
+                       ("latex" "dvisvgm")
+                       :description "dvi > svg" :message "you need to install the programs: latex and dvisvgm." :use-xcolor t :image-input-type "xdv" :image-output-type "svg" :image-size-adjust
+                       (1.7 . 1.5)
+                       :latex-compiler
+                       ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+                       :image-converter
+                       ("dvisvgm %f -n -b min -c %S -o %O"))
+              (imagemagick :programs
+                           ("latex" "convert")
+                           :description "pdf > png" :message "you need to install the programs: latex and imagemagick." :use-xcolor t :image-input-type "pdf" :image-output-type "png" :image-size-adjust
+                           (1.0 . 1.0)
+                           :latex-compiler
+                           ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+                           :image-converter
+                           ("convert -density %D -trim -antialias %f -quality 100 %O"))))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
     -   Теперь зададим настройки для LaTeX:
@@ -852,7 +834,7 @@ slug: "emacs-desire-configuration"
         (setq org-latex-default-figure-position "!htbp")
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
     -   Опишем используемые пакеты:
@@ -870,7 +852,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 28:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
           packages/org/desire.ecd/preview-latex.ecf
         </div>
 
@@ -883,7 +865,7 @@ slug: "emacs-desire-configuration"
     ;;; Notes {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 29:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 28:</span>
       rc.packages.el
     </div>
 
@@ -1141,15 +1123,10 @@ slug: "emacs-desire-configuration"
     (desire 'ebuild-mode :recipe '(:fetcher github :repo "emacsmirror/ebuild-mode" :branch "master"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 30:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 29:</span>
       rc.packages.el
     </div>
--   Настроим загрузку
-
-    ```text
-
-    ```
-
+-   Настроим загрузку:
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Edit ebuild and eclass files
@@ -1175,24 +1152,85 @@ slug: "emacs-desire-configuration"
     (add-to-list 'auto-mode-alist '("\\.eclass\\'" . ebuild-eclass-mode))
     (add-to-list 'auto-mode-alist '("/devmanual.*\\.xml\\'" . devbook-mode))
     (add-to-list 'auto-mode-alist
-                 '("/[0-9]\\{4\\}-[01][0-9]-[0-3][0-9]-.+\\.[a-z]\\{2\\}\\.txt\\'"
-                   . gentoo-newsitem-mode))
+             '("/[0-9]\\{4\\}-[01][0-9]-[0-3][0-9]-.+\\.[a-z]\\{2\\}\\.txt\\'"
+               . gentoo-newsitem-mode))
     (add-to-list 'auto-mode-alist '("/glep.*\\.rst\\'" . glep-mode))
     (add-to-list 'auto-mode-alist
-                 '("/\\(package\\.\\(mask\\|unmask\\|use\\|env\
+             '("/\\(package\\.\\(mask\\|unmask\\|use\\|env\
     \\|license\\|properties\\|accept_\\(keywords\\|restrict\\)\\)\
     \\|\\(package\\.\\)?use.\\(stable\\.\\)?\\(force\\|mask\\)\\)\\'"
-                   . conf-space-mode))
+               . conf-space-mode))
     (add-to-list 'auto-mode-alist
-                 '("/make\\.\\(conf\\|defaults\\)\\'" . conf-unix-mode))
+             '("/make\\.\\(conf\\|defaults\\)\\'" . conf-unix-mode))
     (add-to-list 'interpreter-mode-alist '("openrc-run" . sh-mode))
     (add-to-list 'interpreter-mode-alist '("runscript" . sh-mode))
     (add-hook 'find-file-hook #'ebuild-repo-mode-maybe-enable)
     (modify-coding-system-alist 'file "\\.\\(ebuild\\|eclass\\)\\'" 'utf-8)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 31:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 30:</span>
       packages/ebuild-mode/loaddefs.ecf
+    </div>
+
+
+#### <span class="section-num">4.11.3</span> Asymptote {#asymptote}
+
+-   <https://asymptote.sourceforge.io/>
+
+<!--list-separator-->
+
+1.  Редактирование файлов Asymptote
+
+    -   Поддержка редактирования файлов Asymptote.
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;; Asymptote
+        (desire 'asy-mode :recipe '(:fetcher github :repo "vectorgraphics/asymptote" :branch "master" :files ("base/asy-mode.el")))
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 31:</span>
+          rc.packages.el
+        </div>
+    -   Конфигурационный файл:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; 2D & 3D TeX-Aware Vector Graphics Language
+        ;;; https://github.com/vectorgraphics/asymptote
+
+        (autoload 'asy-mode "asy-mode.el" "Asymptote major mode." t)
+        (autoload 'lasy-mode "asy-mode.el" "hybrid Asymptote/Latex major mode." t)
+        (autoload 'asy-insinuate-latex "asy-mode.el" "Asymptote insinuate LaTeX." t)
+        (add-to-list 'auto-mode-alist '("\\.asy$" . asy-mode))
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 32:</span>
+          packages/asy-mode.ecf
+        </div>
+
+<!--list-separator-->
+
+2.  Поддержка Asymptote в Babel
+
+    -   Репозиторий: <https://github.com/hurrja/ob-asymptote>
+    -   Необходимо установить программу Asymptote: <http://asymptote.sourceforge.net/>
+
+    <!--listend-->
+
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Org-Babel support for evaluating asymptote
+    ;;; https://github.com/hurrja/ob-asymptote
+
+    (desire 'ob-asymptote)
+    (require 'ob-asymptote)
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 33:</span>
+      packages/org/desire.ecd/ob-asymptote.ecf
     </div>
 
 

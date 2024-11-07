@@ -2,7 +2,7 @@
 title: "Установочный образ Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-22T14:08:00+03:00
-lastmod: 2024-10-22T17:06:00+03:00
+lastmod: 2024-11-06T15:01:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -105,7 +105,7 @@ slug: "windows-installation-image"
     ```
 -   Очистите корзину:
     ```shell
-    Clear-RecycleBin -Force Clear-RecycleBin -Force
+    powershell.exe -NoProfile -Command "Clear-RecycleBin -Force"
     ```
 
 
