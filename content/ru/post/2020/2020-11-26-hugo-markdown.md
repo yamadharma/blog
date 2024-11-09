@@ -2,7 +2,7 @@
 title: "Синтаксис Markdown для генератора сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-11-26T18:06:00+03:00
-lastmod: 2024-09-13T14:21:00+03:00
+lastmod: 2024-11-09T20:16:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -288,7 +288,15 @@ Crash --> [*]
     ````
 
 
-#### <span class="section-num">3.2.5</span> VK Video {#vk-video}
+#### <span class="section-num">3.2.5</span> Платформа {#платформа}
+
+-   Видео, размещённое на _Платформа_ (см. [Сокращение для видео Платформа для Hugo]({{< relref "2024-11-09-shortcode-video-plvideo-hugo" >}})):
+    ````markdown
+    {{</* plvideo 1SW2MCtcggzo */>}}
+    ````
+
+
+#### <span class="section-num">3.2.6</span> VK Video {#vk-video}
 
 -   Видео, размещённое на _VK Video_ (см. [Hugo shortcode. Видео на VK Video]({{< relref "2023-08-24-hugo-shortcode-vkvideo" >}})).
 -   Для вставки видео _VK Video_ используется следующая конструкция (с именованными параметрами):
@@ -301,7 +309,7 @@ Crash --> [*]
     ````
 
 
-#### <span class="section-num">3.2.6</span> Размещение видео во вкладках {#размещение-видео-во-вкладках}
+#### <span class="section-num">3.2.7</span> Размещение видео во вкладках {#размещение-видео-во-вкладках}
 
 -   Одно и то же видео, размещённое на разных хостингах, удобно размещать во вкладках.
 -   [Hugo. Видео во вкладках]({{< relref "2022-06-26-hugo-video-tabs" >}})

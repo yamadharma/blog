@@ -2,7 +2,7 @@
 title: "Подготовка курса Основы администрирования операционных систем"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-03T16:32:00+03:00
-lastmod: 2024-09-03T17:04:00+03:00
+lastmod: 2024-11-09T17:52:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -27,10 +27,54 @@ slug: "course-operating-systems-2"
 -   Внешний курс даёт дополнительные баллы к курсу.
 
 
-#### <span class="section-num">1.1.2</span> Курс {#курс}
+#### <span class="section-num">1.1.2</span> Курс 1 {#курс-1}
 
--   Основы Linux: <https://stepik.org/course/762>
--   Литература: <http://rus-linux.net/MyLDP/BOOKS/Linux_Foundations/toc.html%EF%BB%BF>
+<!--list-separator-->
+
+1.  Курс
+
+    -   Основы Linux: <https://stepik.org/course/114923>
+    -   Литература: <http://rus-linux.net/MyLDP/BOOKS/Linux_Foundations/toc.html%EF%BB%BF>
+    -   Курс закрыт авторами.
+
+<!--list-separator-->
+
+2.  Разделы курса
+
+    -   Программа: <https://stepik.org/course/114923/promo#toc>
+    -   Раздел 1
+        -   Коротко о главном
+        -   Основные команды
+    -   Раздел 2
+        -   Продвинутые команды
+        -   Работа с SSH
+
+<!--list-separator-->
+
+3.  Курс 2
+
+    -   Альтернативно можно пройти другой курс.
+
+    <!--list-separator-->
+
+    1.  Курс
+
+        -   Организация администрирования компьютерных сетей: <https://stepik.org/course/83555>
+
+    <!--list-separator-->
+
+    2.  Разделы курса
+
+        -   Программа: <https://stepik.org/course/83555/promo#toc>
+        -   Раздел 1
+            -   Введение
+            -   Сервисы сетевой инфраструктуры
+            -   Веб-службы
+        -   Раздел 2
+            -   Централизованная авторизация в сети
+            -   Маршрутизация в локальных сетях
+            -   Сервисы электронной почты
+            -   Итоговая анкета
 
 
 #### <span class="section-num">1.1.3</span> Необходимо для прохождения {#необходимо-для-прохождения}
@@ -65,18 +109,7 @@ slug: "course-operating-systems-2"
 -   Ссылка на проект на собственном сайте научно-инженерного работника (см. [Учебный проект Сайт научника]({{< relref "2022-04-05-educational-project-researcher-website" >}})), оформленная в виде проекта с подробным описанием прохождения.
 
 
-#### <span class="section-num">1.1.6</span> Разделы курса {#разделы-курса}
-
--   Программа: <https://stepik.org/course/114923/promo#toc>
--   Раздел 1
-    -   Коротко о главном
-    -   Основные команды
--   Раздел 2
-    -   Продвинутые команды
-    -   Работа с SSH
-
-
-#### <span class="section-num">1.1.7</span> Критерии оценки {#критерии-оценки}
+#### <span class="section-num">1.1.6</span> Критерии оценки {#критерии-оценки}
 
 -   Максимальная оценка за внешний курс --- 16 баллов.
 

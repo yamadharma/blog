@@ -2,9 +2,9 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2024-08-11T08:47:00+03:00
-tags: ["science-admin"]
-categories: ["science"]
+lastmod: 2024-11-09T19:38:00+03:00
+tags: ["rudn", "science-admin"]
+categories: ["job", "science"]
 draft: false
 slug: "editing-discrete-continuous-models"
 ---
