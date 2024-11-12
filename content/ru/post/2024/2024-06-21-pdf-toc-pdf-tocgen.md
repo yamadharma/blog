@@ -2,7 +2,7 @@
 title: "Pdf. Оглавление. pdf.tocgen"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-21T20:36:00+03:00
-lastmod: 2024-10-10T17:42:00+03:00
+lastmod: 2024-11-11T15:58:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -143,29 +143,29 @@ Pdf. Оглавление. pdf.tocgen.
 
 ### <span class="section-num">4.2</span> pdftocgen {#pdftocgen}
 
--   Применить существующий рецепт `rcp.toml` к файлу `doc.pdf` (результат дублируется в `stdout`):
+-   Применить существующий рецепт `recipe.toml` к файлу `doc.pdf` (результат дублируется в `stdout`):
     ```shell
-    pdftocgen doc.pdf < rcp.toml
+    pdftocgen doc.pdf < recipe.toml
     ```
 
 -   Вывести оглавление в файл с именем `toc`:
     ```shell
-    pdftocgen doc.pdf < rcp.toml > toc
+    pdftocgen doc.pdf < recipe.toml > toc
     ```
 
 -   Импортировать созданное оглавление в файл PDF и вывести в doc_out.pdf:
     ```shell
-    pdftocgen doc.pdf < rcp.toml | pdftocio -o doc_out.pdf doc.pdf
+    pdftocgen doc.pdf < recipe.toml | pdftocio -o doc_out.pdf doc.pdf
     ```
 
 -   Вывести сгенерированное оглавление для чтения:
     ```shell
-    pdftocgen -H doc.pdf < rcp.toml
+    pdftocgen -H doc.pdf < recipe.toml
     ```
 
 -   Если вы хотите включить вертикальное положение на странице для каждого заголовка, используйте флаг `-v`:
     ```shell
-    pdftocgen -v doc.pdf < rcp.toml
+    pdftocgen -v doc.pdf < recipe.toml
     ```
 
 

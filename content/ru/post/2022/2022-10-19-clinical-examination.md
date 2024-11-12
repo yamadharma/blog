@@ -2,7 +2,7 @@
 title: "Диспансеризация"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-19T19:20:00+03:00
-lastmod: 2024-10-08T11:49:00+03:00
+lastmod: 2024-11-12T15:28:00+03:00
 tags: ["rudn", "health"]
 categories: ["job", "life"]
 draft: false

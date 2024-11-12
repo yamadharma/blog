@@ -2,7 +2,9 @@
 title: "Hugo shortcode. Видео на VK Video"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-24T18:35:00+03:00
-lastmod: 2023-08-24T18:43:00+03:00
+lastmod: 2024-11-10T15:21:00+03:00
+tags: ["hugo"]
+categories: ["computer-science"]
 draft: false
 slug: "hugo-shortcode-vkvideo"
 ---
@@ -25,13 +27,14 @@ Shortcode для видео _VK Video_ для Hugo.
 -   Добавьте в структуру сайта Hugo файл `layouts/shortcodes/vkvideo.html`:
     ```html
     <div class="embed video-player">
-      <iframe
+      <iframe class="vkvideo-player" type="text/html"
         {{ if .IsNamedParams }}
-        src="https://vk.com/video_ext.php?oid={{ .Get "oid" }}&id={{ .Get "id" }}&hd={{ .Get "hd" }}"
+        src="https://vk.ru/video_ext.php?oid={{ .Get "oid" }}&id={{ .Get "id" }}&hd={{ .Get "hd" }}"
         {{ else }}
-        src="https://vk.com/video_ext.php?oid={{ index .Params 0 }}&id={{ index .Params 1 }}&hd={{ index .Params 2 }}"
+        src="https://vk.ru/video_ext.php?oid={{ index .Params 0 }}&id={{ index .Params 1 }}&hd={{ index .Params 2 }}"
         {{ end }}
-        width="720" height="405" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+        width="720" height="405" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen>
+      </iframe>
     </div>
     ```
 

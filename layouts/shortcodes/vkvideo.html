@@ -25,11 +25,12 @@ Call
 */}}
 
 <div class="embed video-player">
-  <iframe
+  <iframe class="vkvideo-player" type="text/html"
     {{ if .IsNamedParams }}
-    src="https://vk.com/video_ext.php?oid={{ .Get "oid" }}&id={{ .Get "id" }}&hd={{ .Get "hd" }}"
+    src="https://vk.ru/video_ext.php?oid={{ .Get "oid" }}&id={{ .Get "id" }}&hd={{ .Get "hd" }}"
     {{ else }}
-    src="https://vk.com/video_ext.php?oid={{ index .Params 0 }}&id={{ index .Params 1 }}&hd={{ index .Params 2 }}"
+    src="https://vk.ru/video_ext.php?oid={{ index .Params 0 }}&id={{ index .Params 1 }}&hd={{ index .Params 2 }}"
     {{ end }}
-    width="720" height="405" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>
+    width="720" height="405" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen>
+  </iframe>
 </div>

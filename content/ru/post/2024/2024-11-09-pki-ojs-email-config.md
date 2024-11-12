@@ -2,7 +2,7 @@
 title: "PKI OJS. Конфигурация e-mail"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-09T19:30:00+03:00
-lastmod: 2024-11-09T20:47:00+03:00
+lastmod: 2024-11-10T15:19:00+03:00
 tags: ["sysadmin", "rudn"]
 categories: ["job", "computer-science"]
 draft: false
@@ -37,7 +37,7 @@ PKI OJS. Конфигурация e-mail.
 
 ### <span class="section-num">2.1</span> Видео {#видео}
 
-{{< tabs tabTotal="3" >}}
+{{< tabs tabTotal="4" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube dce7cc393ac83d782fafe466152e98a8 >}}
@@ -46,6 +46,11 @@ PKI OJS. Конфигурация e-mail.
 {{< rtab tabName="Платформа" >}}
 
 {{< plvideo 1SW2MCtcggzo >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
+
+{{< vkvideo oid="606414976" id="456239647" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}
@@ -59,7 +64,8 @@ PKI OJS. Конфигурация e-mail.
 ## <span class="section-num">3</span> Настройка сайта OJS {#настройка-сайта-ojs}
 
 -   Адрес сайта: <https://journals.rudn.ru/>.
--   Настройка почты делается на странице <https://journals.rudn.ru/miph/manager/setup/1>
+-   Настройка почты делается на странице `https://journals.rudn.ru/<журнал>/manager/setup/1`
+-   Для журнала _Discrete and Continuous Models and Applied Computational Science_ --- <https://journals.rudn.ru/miph/manager/setup/1>.
 -   SMTP Yandex:
     -   адрес почтового сервера --- `smtp.yandex.ru`;
     -   защита соединения --- SSL/TLS;
@@ -68,7 +74,7 @@ PKI OJS. Конфигурация e-mail.
 
 ### <span class="section-num">3.1</span> Видео {#видео}
 
-{{< tabs tabTotal="3" >}}
+{{< tabs tabTotal="4" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube 00fc8ad12e1098ffe54a6efb077d8d43 >}}
@@ -77,6 +83,11 @@ PKI OJS. Конфигурация e-mail.
 {{< rtab tabName="Платформа" >}}
 
 {{< plvideo yksiH_JHQRLf >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
+
+{{< vkvideo oid="606414976" id="456239646" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}

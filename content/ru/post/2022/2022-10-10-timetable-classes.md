@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-11-09T18:01:00+03:00
+lastmod: 2024-11-11T17:25:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -137,19 +137,66 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/2]</code>
+1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/3]</code>
 
     <!--list-separator-->
 
     1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
 
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
+    <!--list-separator-->
+
+    3. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/1]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/2]</code>
 
     <!--list-separator-->
 
     1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-299
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-299
 
 
 #### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[1/4]</code> {#2024-2025-учебный-год-1-семестр}

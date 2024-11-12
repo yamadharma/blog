@@ -2,7 +2,7 @@
 title: "Почта. Yandex. Пароли приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-01T21:09:00+03:00
-lastmod: 2024-11-09T20:45:00+03:00
+lastmod: 2024-11-10T15:16:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -46,7 +46,7 @@ slug: "mail-yandex-application-passwords"
 
 ### <span class="section-num">3.1</span> Видео {#видео}
 
-{{< tabs tabTotal="3" >}}
+{{< tabs tabTotal="4" >}}
 {{< rtab tabName="RuTube" >}}
 
 {{< rutube dce7cc393ac83d782fafe466152e98a8 >}}
@@ -55,6 +55,11 @@ slug: "mail-yandex-application-passwords"
 {{< rtab tabName="Платформа" >}}
 
 {{< plvideo 1SW2MCtcggzo >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
+
+{{< vkvideo oid="606414976" id="456239647" hd="2" >}}
 
 {{< /rtab >}}
 {{< rtab tabName="Youtube" >}}
