@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-07-17T18:43:00+03:00
+lastmod: 2024-11-13T10:42:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -167,7 +167,6 @@ slug: "gentoo-compiling-clang"
     dev-libs/intel-vc-intrinsics		compiler-gcc
     app-misc/ddcutil			compiler-gcc
     mail-client/thunderbird			compiler-gcc
-    #www-client/chromium			compiler-gcc
     dev-vcs/cvs				compiler-gcc
     dev-vcs/darcs				compiler-clang-binutils	# need ld
     x11-libs/agg				compiler-gcc
@@ -175,7 +174,6 @@ slug: "gentoo-compiling-clang"
     x11-libs/motif				compiler-clang-lto
     sys-boot/gnu-efi			compiler-gcc
     sys-apps/memtest86+			compiler-gcc
-    #sys-apps/fwupd-efi			compiler-clang-binutils
     sys-apps/fwupd-efi			compiler-gcc
     sys-apps/flashrom			compiler-gcc
     media-libs/mesa				compiler-clang-lto
@@ -237,10 +235,8 @@ slug: "gentoo-compiling-clang"
     app-i18n/scim					compiler-gcc
     =sci-mathematics/octave-8*			compiler-gcc
     =sci-mathematics/octave-9*			compiler-gcc
-    #sci-mathematics/octave				compiler-clang-mold
     dev-libs/libgamin				compiler-clang-mold
     x11-misc/redshift				compiler-gcc
-    #sci-visualization/scidavis			compiler-gcc
     sys-cluster/glusterfs				compiler-clang-mold
     media-libs/exempi				compiler-gcc
     media-libs/urt					compiler-gcc
@@ -273,9 +269,16 @@ slug: "gentoo-compiling-clang"
     app-arch/arj					compiler-gcc
     app-text/fbreader				compiler-gcc
     app-cdr/cdrtools				compiler-gcc
-
     ```
+
+
+### <span class="section-num">4.3</span> Конфигурация специальных окружений {#конфигурация-специальных-окружений}
+
 -   Нужно задать конфигурации для разных компиляторов.
+
+
+#### <span class="section-num">4.3.1</span> gcc {#gcc}
+
 -   Конфигурация для компилятора _gcc_ в файле `/etc/portage/env/compiler-gcc`:
     ```conf-unix
     COMMON_FLAGS="-O2 -march=native"
@@ -292,8 +295,15 @@ slug: "gentoo-compiling-clang"
     OBJCOPY="objcopy"
     STRIP="strip"
     LD="ld"
-
     ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      /etc/portage/env/compiler-gcc
+    </div>
+
+
+#### <span class="section-num">4.3.2</span> clang без LTO {#clang-без-lto}
+
 -   Конфигурация для компилятора _clang_ без _LTO_ в файле `/etc/portage/env/compiler-clang-no-lto`:
     ```conf-unix
     # Normal settings here
@@ -311,8 +321,66 @@ slug: "gentoo-compiling-clang"
     # No need to set this, clang-common can handle this based on chosen USE flags
     # LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
     # LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
-
     ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      /etc/portage/env/compiler-clang-no-lto
+    </div>
+
+
+#### <span class="section-num">4.3.3</span> clang + mold {#clang-plus-mold}
+
+```conf-unix
+# Normal settings here
+COMMON_FLAGS="-O2 -march=native"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+CLANG_NO_DEFAULT_CONFIG=1
+
+CC="clang"
+CPP="clang-cpp" # necessary for xorg-server and possibly other packages
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+OBJCOPY="llvm-objcopy"
+LD="mold"
+
+
+#LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
+#LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
+LDFLAGS="${LDFLAGS} -fuse-ld=mold"
+#LDFLAGS="${LDFLAGS} -flto"
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+  /etc/portage/env/compiler-clang-mold
+</div>
+
+
+#### <span class="section-num">4.3.4</span> clang-18 + mold {#clang-18-plus-mold}
+
+```conf-unix
+# Normal settings here
+COMMON_FLAGS="-O2 -march=native"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+CLANG_NO_DEFAULT_CONFIG=1
+
+CC="clang-18"
+CPP="clang-cpp-18"
+CXX="clang++-18"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+OBJCOPY="llvm-objcopy"
+LD="mold"
+LDFLAGS="${LDFLAGS} -fuse-ld=mold"
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+  /etc/portage/env/compiler-clang-mold-18
+</div>
 
 
 ## <span class="section-num">5</span> Компиляция ядра {#компиляция-ядра}

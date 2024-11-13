@@ -2,7 +2,7 @@
 title: "Программное управление раскладкой клавиатуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-03-27T21:28:00+03:00
-lastmod: 2024-10-26T18:39:00+03:00
+lastmod: 2024-11-13T14:44:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -19,8 +19,9 @@ slug: "software-keymap-control"
 ## <span class="section-num">1</span> Программные пакеты {#программные-пакеты}
 
 
-### <span class="section-num">1.1</span> Kanata {#kanata}
+### <span class="section-num">1.1</span> kanata {#kanata}
 
+-   [Раскладка клавиатуры. kanata]({{< relref "2024-11-13-keymap-control-kanata" >}})
 -   Репозиторий: <https://github.com/jtroo/kanata>
 -   Поддержка ОС: Linux, Windows, MacOS.
 -   Язык реализации: Rust.
