@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-10-19T18:23:00+03:00
+lastmod: 2024-11-14T19:48:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -309,38 +309,43 @@ slug: "system-administration"
 -   [Хостинг git. gitea]({{< relref "2023-10-29-git-hosting-gitea" >}})
 
 
-## <span class="section-num">14</span> Сети {#сети}
+## <span class="section-num">14</span> Разное {#разное}
+
+-   [Сайт The Movie Database]({{< relref "2024-11-14-the-movie-database" >}})
 
 
-### <span class="section-num">14.1</span> Оборудование {#оборудование}
+## <span class="section-num">15</span> Сети {#сети}
+
+
+### <span class="section-num">15.1</span> Оборудование {#оборудование}
 
 -   [Администрирование Cisco]({{< relref "2021-06-16-cisco-administration" >}})
 -   [Администрирование Huawei]({{< relref "2024-09-06-huawei-administration" >}})
--
+-   [Mesh-системы]({{< relref "2024-10-07-mesh-systems" >}})
 
 
-### <span class="section-num">14.2</span> VLAN {#vlan}
+### <span class="section-num">15.2</span> VLAN {#vlan}
 
 -   [Linux. Настройка vlan]({{< relref "2024-05-13-linux-vlan-configuration" >}})
 
 
-### <span class="section-num">14.3</span> VPN {#vpn}
+### <span class="section-num">15.3</span> VPN {#vpn}
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 -   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
 
 
-### <span class="section-num">14.4</span> Железо {#железо}
+### <span class="section-num">15.4</span> Железо {#железо}
 
 -   [Формат Small Form-factor Pluggable (SFP)]({{< relref "2023-03-19-small-form-factor-pluggable" >}})
 
 
-### <span class="section-num">14.5</span> Коммутаторы {#коммутаторы}
+### <span class="section-num">15.5</span> Коммутаторы {#коммутаторы}
 
 -   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
 
 
-### <span class="section-num">14.6</span> Управление и мониторинг {#управление-и-мониторинг}
+### <span class="section-num">15.6</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
@@ -348,25 +353,25 @@ slug: "system-administration"
 -   [Система управления сетью NetBox]({{< relref "2024-06-19-netbox" >}})
 
 
-### <span class="section-num">14.7</span> Протоколы {#протоколы}
+### <span class="section-num">15.7</span> Протоколы {#протоколы}
 
 -   [Протокол IPv6]({{< relref "2023-06-26-ipv6-protocol" >}})
 
 
-#### <span class="section-num">14.7.1</span> Bittorrent {#bittorrent}
+#### <span class="section-num">15.7.1</span> Bittorrent {#bittorrent}
 
 -   [bittorrent. Трекер opentracker]({{< relref "2024-01-31-bittorrent-opentracker" >}})
 
 
-### <span class="section-num">14.8</span> Сетевые сервисы {#сетевые-сервисы}
+### <span class="section-num">15.8</span> Сетевые сервисы {#сетевые-сервисы}
 
 
-#### <span class="section-num">14.8.1</span> DNS {#dns}
+#### <span class="section-num">15.8.1</span> DNS {#dns}
 
 -   [Domain Name System (DNS)]({{< relref "2023-09-16-domain-name-system-dns" >}})
 
 
-#### <span class="section-num">14.8.2</span> DHCP {#dhcp}
+#### <span class="section-num">15.8.2</span> DHCP {#dhcp}
 
 -   [Сервер DHCP Kea]({{< relref "2024-06-18-dhcp-kea-server" >}})
 -   [Сервер ISC DHCP]({{< relref "2024-06-19-server-isc-dhcp" >}})
@@ -375,64 +380,64 @@ slug: "system-administration"
 -   [Адресация IPv4 и IPv6. Настройка DHCPv6 для IPv6]({{< relref "2022-08-17-configuring-dhcpv6-ipv6" >}})
 
 
-#### <span class="section-num">14.8.3</span> Почта {#почта}
+#### <span class="section-num">15.8.3</span> Почта {#почта}
 
 -   [Запросы по протоколу imap из командной строки]({{< relref "2024-04-13-imap-queries-command-line" >}})
 
 
-## <span class="section-num">15</span> Управление и мониторинг {#управление-и-мониторинг}
+## <span class="section-num">16</span> Управление и мониторинг {#управление-и-мониторинг}
 
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
 
 
-## <span class="section-num">16</span> Файловые системы {#файловые-системы}
+## <span class="section-num">17</span> Файловые системы {#файловые-системы}
 
 
-### <span class="section-num">16.1</span> Локальные файловые системы {#локальные-файловые-системы}
+### <span class="section-num">17.1</span> Локальные файловые системы {#локальные-файловые-системы}
 
 -   [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})
 -   [Дедупликация данных]({{< relref "2022-05-26-data-deduplication" >}})
 -   [Файловая система xfs]({{< relref "2023-08-26-xfs-file-system" >}})
 
 
-### <span class="section-num">16.2</span> Сетевые и распределённые файловые системы {#сетевые-и-распределённые-файловые-системы}
+### <span class="section-num">17.2</span> Сетевые и распределённые файловые системы {#сетевые-и-распределённые-файловые-системы}
 
 -   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
 -   [Использование Яндекс-диска]({{< relref "2024-06-25-using-yandex-disk" >}})
 -   [Файловая система ipfs]({{< relref "2024-08-30-ipfs-file-system" >}})
 
 
-### <span class="section-num">16.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}
+### <span class="section-num">17.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}
 
 -   [Файловая система mergerfs]({{< relref "2024-01-28-mergerfs" >}})
 
 
-## <span class="section-num">17</span> Форматы файлов {#форматы-файлов}
+## <span class="section-num">18</span> Форматы файлов {#форматы-файлов}
 
 
-### <span class="section-num">17.1</span> csv {#csv}
+### <span class="section-num">18.1</span> csv {#csv}
 
 -   [Формат CSV. csvkit]({{< relref "2023-07-06-csv-csvkit" >}})
 
 
-## <span class="section-num">18</span> Шрифты {#шрифты}
+## <span class="section-num">19</span> Шрифты {#шрифты}
 
 -   [Шрифты в Linux]({{< relref "2021-10-27-linux-fonts" >}})
 
 
-## <span class="section-num">19</span> Языки программирования {#языки-программирования}
+## <span class="section-num">20</span> Языки программирования {#языки-программирования}
 
 -   [Язык программирования HCL]({{< relref "2022-11-05-hcl-programming-language" >}})
 
 
-## <span class="section-num">20</span> Ресурсы {#ресурсы}
+## <span class="section-num">21</span> Ресурсы {#ресурсы}
 
 -   Awesome Sysadmin: <https://github.com/awesome-foss/awesome-sysadmin>
 
 
-## <span class="section-num">21</span> Серверы приложений {#серверы-приложений}
+## <span class="section-num">22</span> Серверы приложений {#серверы-приложений}
 
 -   [Система управления событиями Indico]({{< relref "2024-09-24-indico-event-organisation" >}})
 -   [Система управления обучением Moodle]({{< relref "2024-09-15-moodle-learning-management-system" >}})

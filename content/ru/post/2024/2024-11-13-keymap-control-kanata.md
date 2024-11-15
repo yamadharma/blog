@@ -2,7 +2,7 @@
 title: "Раскладка клавиатуры. kanata"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-13T14:42:00+03:00
-lastmod: 2024-11-13T15:51:00+03:00
+lastmod: 2024-11-15T17:26:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -19,8 +19,15 @@ slug: "keymap-control-kanata"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Репозиторий: <https://github.com/jtroo/kanata>
+-   Документация: <https://github.com/jtroo/kanata/blob/main/docs/config.adoc>
 -   Поддержка ОС: Linux, Windows, MacOS.
 -   Язык реализации: Rust.
+
+
+### <span class="section-num">1.1</span> Сервисы {#сервисы}
+
+-   Онлайн симулятор kanata: <https://jtroo.github.io/>.
+-   Можно загрузить свою конфигурацию и проверить.
 
 
 ## <span class="section-num">2</span> Установка {#установка}

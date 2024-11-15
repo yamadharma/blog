@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-11-13T10:42:00+03:00
+lastmod: 2024-11-14T11:11:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -261,7 +261,7 @@ slug: "gentoo-compiling-clang"
     net-fs/openafs					compiler-gcc
     #media-libs/libva-intel-media-driver		compiler-gcc
     #sci-geosciences/liblas				compiler-gcc
-    dev-lang/openmodelica				compiler-gcc
+    sci-physics/openmodelica			compiler-gcc
     dev-db/sqlite					compiler-gcc	## Bug #928745
     media-video/mpv					compiler-clang-mold
     app-emulation/dosemu				compiler-gcc
