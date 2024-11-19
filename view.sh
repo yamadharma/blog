@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-rm public/ltximg/*
+rm static/ltximg/*
 
 hugo server --disableFastRender
