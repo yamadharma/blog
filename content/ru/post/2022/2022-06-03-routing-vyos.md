@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2023-07-17T17:28:00+03:00
+lastmod: 2024-11-17T19:02:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -34,6 +34,7 @@ slug: "routing-vyos"
 -   Подсистема маршрутизации основывается на проекте FRRouting (см. [Маршрутизация. FRRouting]({{< relref "2022-06-02-routing-frrouting" >}})).
 -   Можно купить аппаратную платформу, на которой возможно развернуть маршрутизатор:
     -   <https://aliexpress.ru/popular/vyos-router.html>
+    -   <https://aliexpress.ru/item/1005003378019857.html>
 
 
 ## <span class="section-num">2</span> Модель распространения {#модель-распространения}

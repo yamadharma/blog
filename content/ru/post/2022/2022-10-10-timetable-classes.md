@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-11-13T15:56:00+03:00
+lastmod: 2024-11-19T11:17:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -651,10 +651,10 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[0/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[1/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[2/3]</code> {#сессия-модуль-1-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
 
 <!--list-separator-->
 
@@ -701,19 +701,19 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации <code>[0/1]</code>
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации <code>[1/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Переаттестации. Информационная безопасность <code>[0/2]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Переаттестации. Информационная безопасность <code>[2/2]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1. Информационная безопасность
+        1. <span class="org-todo done DONE">DONE</span>  Переаттестация № 1. Информационная безопасность
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2. Информационная безопасность
+        2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[3/3]</code> {#сессия-модуль-2-2024-2025}

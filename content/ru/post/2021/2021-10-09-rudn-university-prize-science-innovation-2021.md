@@ -2,9 +2,9 @@
 title: "Премия РУДН в области науки и инноваций 2021"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-09T18:23:00+03:00
-lastmod: 2023-07-11T12:24:00+03:00
-tags: ["science-admin"]
-categories: ["science"]
+lastmod: 2024-11-19T19:08:00+03:00
+tags: ["rudn", "science-admin"]
+categories: ["job", "science"]
 draft: false
 slug: "rudn-university-prize-science-innovation-2021"
 ---

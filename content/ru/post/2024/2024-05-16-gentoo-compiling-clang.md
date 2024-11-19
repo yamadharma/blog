@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-11-14T11:11:00+03:00
+lastmod: 2024-11-16T15:35:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -94,7 +94,6 @@ slug: "gentoo-compiling-clang"
     #LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
     #LDFLAGS="${LDFLAGS} -fuse-ld=mold"
     LDFLAGS="${LDFLAGS} -flto"
-
     ```
 
 
@@ -258,9 +257,8 @@ slug: "gentoo-compiling-clang"
     net-print/gutenprint				compiler-gcc
     net-misc/netkit-telnetd				compiler-gcc
     net-fs/autofs					compiler-gcc
-    net-fs/openafs					compiler-gcc
+    #net-fs/openafs					compiler-gcc
     #media-libs/libva-intel-media-driver		compiler-gcc
-    #sci-geosciences/liblas				compiler-gcc
     sci-physics/openmodelica			compiler-gcc
     dev-db/sqlite					compiler-gcc	## Bug #928745
     media-video/mpv					compiler-clang-mold
@@ -269,6 +267,9 @@ slug: "gentoo-compiling-clang"
     app-arch/arj					compiler-gcc
     app-text/fbreader				compiler-gcc
     app-cdr/cdrtools				compiler-gcc
+    dev-libs/libpqxx				compiler-clang-mold-18
+    sci-libs/vtk					compiler-clang-mold-18
+    sci-visualization/paraview			compiler-clang-mold-18
     ```
 
 

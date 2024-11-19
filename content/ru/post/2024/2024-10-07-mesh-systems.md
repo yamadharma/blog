@@ -2,7 +2,7 @@
 title: "Mesh-системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-07T16:27:00+03:00
-lastmod: 2024-11-03T13:29:00+03:00
+lastmod: 2024-11-16T13:06:00+03:00
 tags: ["network", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -45,7 +45,9 @@ Mesh-системы.
 #### <span class="section-num">2.2.1</span> Общая информация {#общая-информация}
 
 -   Описание на сайте производителя: <https://consumer.huawei.com/ru/routers/wifi-mesh3/>
+-   Инструкция: <https://manuals.plus/ru/huawei/ws8100-wifi-mesh-3-manual>
 -   Обзор: <https://www.ixbt.com/nw/huawei-wifi-mesh-3-review.html>
+-   4pda: <https://4pda.to/forum/index.php?showtopic=1043380>
 
 
 #### <span class="section-num">2.2.2</span> Характеристики {#характеристики}

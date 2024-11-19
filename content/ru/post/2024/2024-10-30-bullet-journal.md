@@ -2,7 +2,7 @@
 title: "Методика Bullet journal"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-30T15:56:00+03:00
-lastmod: 2024-10-30T16:47:00+03:00
+lastmod: 2024-11-17T13:40:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "bullet-journal"
