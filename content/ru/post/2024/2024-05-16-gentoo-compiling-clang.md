@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-11-16T15:35:00+03:00
+lastmod: 2024-11-21T13:19:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -108,10 +108,8 @@ slug: "gentoo-compiling-clang"
     dev-debug/gdb				compiler-gcc	# gcc itself
     =dev-util/gengetopt-2.23*		compiler-gcc	#
     sys-devel/bin86				compiler-gcc    # error: ISO C99
-    #media-video/obs-studio			compiler-gcc	# cef plugin
-    #media-video/obs-studio			compiler-clang-no-lto
-    app-emulation/virtualbox		compiler-gcc    # ld.lld error
-    app-emulation/virtualbox-kvm		compiler-gcc    # ld.lld error
+    =app-emulation/virtualbox-7.0*		compiler-gcc    # ld.lld error
+    =app-emulation/virtualbox-kvm-7.0*	compiler-gcc    # ld.lld error
     #app-emulation/qemu              compiler-gcc    # ERROR: sizeof(size_t) doesn't match
     #dev-lang/mono                   compiler-gcc    # ld.lld error
     #app-cdr/cdrtools                compiler-gcc    # configure error
@@ -233,7 +231,6 @@ slug: "gentoo-compiling-clang"
     app-text/paper-clip				compiler-gcc
     app-i18n/scim					compiler-gcc
     =sci-mathematics/octave-8*			compiler-gcc
-    =sci-mathematics/octave-9*			compiler-gcc
     dev-libs/libgamin				compiler-clang-mold
     x11-misc/redshift				compiler-gcc
     sys-cluster/glusterfs				compiler-clang-mold
@@ -257,8 +254,6 @@ slug: "gentoo-compiling-clang"
     net-print/gutenprint				compiler-gcc
     net-misc/netkit-telnetd				compiler-gcc
     net-fs/autofs					compiler-gcc
-    #net-fs/openafs					compiler-gcc
-    #media-libs/libva-intel-media-driver		compiler-gcc
     sci-physics/openmodelica			compiler-gcc
     dev-db/sqlite					compiler-gcc	## Bug #928745
     media-video/mpv					compiler-clang-mold

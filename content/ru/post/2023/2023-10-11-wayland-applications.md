@@ -2,7 +2,7 @@
 title: "Wayland. Аналоги приложений"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-11T14:23:00+03:00
-lastmod: 2024-05-01T18:48:00+03:00
+lastmod: 2024-11-21T15:52:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false
@@ -90,49 +90,10 @@ wf-recorder --audio -f $(date +%Y-%m-%d_%H-%M-%S).mkv -c h264_vaapi -d /dev/dri/
 
 ### <span class="section-num">1.4</span> Строка состояний {#строка-состояний}
 
-Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
-
-Попробуем использовать более продвинутый вариант -- [waybar](https://github.com/Alexays/Waybar)
-
-```shell
-emerge -v gui-apps/waybar
-```
-
-Конфигурация:
-
-```conf-unix
-## sway-bar
-# Read `man 5 sway-bar` for more information about this section.
-
-# bar {
-#     position top
-
-#     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
-#     status_command while date +'%Y-%m-%d %H:%M:%S'; do sleep 1; done
-
-#     colors {
-#         statusline #ffffff
-#         background #323232
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-# }
-
-## Waybar
-# <https://github.com/Alexays/Waybar>
-
-exec_always ~/.config/sway/scripts/waybar.sh
-
-# Waybar Tooltips don't steel focus
-
-no_focus [app_id="waybar"]
-for_window [app_id="waybar" floating] {
-    move position cursor
-    move down 60px # adjust if some menus still don't fit
-}
-```
-
-Конфигурацию `waybar` поместил в `~/.config/sway/other/waybar`.
+-   Swaybar
+    -   Sway поддерживает свою строку состояний `sway-bar`. Удобное и минималистическое приложение. Однако, удручает, что иконки в трее не активны.
+-   Waybar
+    -   [Wayland. Панель Waybar]({{< relref "2024-11-21-wayland-waybar" >}})
 
 
 ### <span class="section-num">1.5</span> Уведомления {#уведомления}
