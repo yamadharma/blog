@@ -80,8 +80,8 @@ locale:
 
 features:
   syntax_highlighter:
-    theme_light: github-light
-    theme_dark: dracula
+    # theme_light: gruvbox-light
+    # theme_dark: gruvbox
     enable: true
     extra_languages:
       - r
@@ -157,7 +157,7 @@ local_business_type: ""
 sharing_image: ""
 
 reading_time: true
-section_pager: false
+section_pager: true
 docs_section_pager: true
 sharing: true
 highlight_superuser: false

@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-06-18T07:58:00+03:00
+lastmod: 2024-11-27T08:27:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -372,9 +372,16 @@ slug: "rockylinux-server-installation"
 
 #### <span class="section-num">4.4.2</span> PHP {#php}
 
--   Установим php:
+-   Определим, какие версии php возможно установить:
     ```shell
+    sudo dnf module list php
+    ```
+-   Установим php-8.2:
+    ```shell
+    sudo dnf module reset php
+    sudo dnf module enable php:8.2
     dnf install php
+    sudo dnf -y update
     ```
 
 

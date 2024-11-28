@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-11-14T19:48:00+03:00
+lastmod: 2024-11-26T14:52:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -171,6 +171,9 @@ slug: "system-administration"
 
 -   [Система виртуализации VirtualBox]({{< relref "2021-09-17-virtualbox-virtualization-system" >}})
 -   [Система виртуализации VMware]({{< relref "2024-05-16-vmware-virtualization-system" >}})
+-   [Виртуализация. Libvirt]({{< relref "2024-11-26-virtualization-libvirt" >}})
+    -   [Виртуализация. Virt-manager]({{< relref "2024-11-26-virtualization-virt-manager" >}})
+    -   [Виртуализация. Virtiofs]({{< relref "2024-11-26-virtualization-virtiofs" >}})
 
 
 ### <span class="section-num">10.2</span> Вычисления {#вычисления}

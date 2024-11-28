@@ -2,7 +2,7 @@
 title: "Wayland. Панель Waybar"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-21T15:11:00+03:00
-lastmod: 2024-11-21T19:21:00+03:00
+lastmod: 2024-11-24T19:25:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -93,7 +93,6 @@ Wayland. Панель Waybar
     "network",
     "backlight",
     "wireplumber",
-    // "clock#9",
     "clock",
     "sway/language",
     "keyboard-state",
@@ -111,291 +110,319 @@ Wayland. Панель Waybar
 
 <!--list-separator-->
 
-1.  Отображение времени
+1.  Информационные модули
 
-    ```js-json
+    <!--list-separator-->
 
-    // Module Config
-    "clock#1": {
-        //"format": "{:%a}",
-        "tooltip": true,
-        "interval": 1,
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%a %Y-%m-%d %T %Z}"
-    },
-    "clock#2": {
-        "format": "{:%H:%M}",
-        "tooltip": false
-    },
-    "clock#3": {
-        "format": "{:%m-%d}",
-        "tooltip": false
-    },
-    "clock#4": {
-        "format": "{:%a %d/%m %H:%M}",
-        "tooltip": false
-    },
+    1.  Память
 
-    "clock#0": {
-        "interval": 60,
-        "format": " {:%H:%M}",
-        "tooltip": true,
-        "tooltip-format": "{:%a %d/%m %H:%M}"
-    },
+        ```js-json
+        // Memory
+        "memory": {
+            "interval": 30,
+            "format": " {used:0.1f}G/{total:0.1f}G {}%",
+            "tooltip": true,
+            "tooltip-format": "Free {avail:0.1f}G",
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+          config
+        </div>
 
-    "clock": {
-        "format": " {:%H:%M  %F, %a} ",
-        "format-alt": " {:%A, %B %d, %Y (%R)}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode"          : "year",
-            "mode-mon-col"  : 3,
-            "weeks-pos"     : "right",
-            "on-scroll"     : 1,
-            "format": {
-                "months":     "<span color='#ffead3'><b>{}</b></span>",
-                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+    <!--list-separator-->
+
+    2.  Процессор
+
+        ```js-json
+        // Cpu
+        "cpu": {
+            "interval": 10,
+            "format": " {usage}% {icon}",
+            "max-length": 10,
+            "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+          config
+        </div>
+
+    <!--list-separator-->
+
+    3.  Батарея
+
+        ```js-json
+        // Battery
+        "battery": {
+            "bat": "BAT0",
+            "states": {
+              "full": 100,
+              "good": 95,
+              "warning": 30,
+              "critical": 15
+            },
+            "format": "{icon}  {capacity}% ({time})",
+            "format-charging": " {icon}  {capacity}% ({time})",
+            "format-full": " {icon}  Full",
+            "format-time": "{H}h{M}m",
+            "interval": 30,
+            "on-click": "gnome-power-statistics",
+            "format-icons": [
+              " ",
+              " ",
+              " ",
+              " ",
+              " "
+            ]
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+          config
+        </div>
+
+    <!--list-separator-->
+
+    4.  Температура подсистем
+
+        -   Задаётся для температурных зон `/sys/class/thermal/` или для показаний сенсоров `/sys/class/hwmon/hwmon*/temp*_input`.
+        -   Просмотреть все типы температурных зон:
+            ```bash
+            for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
+            ```
+        -   Если нет тепловой зоны, можно использовать сенсоры (`sensors`), чтобы найти предпочтительный источник температуры:
+            ```bash
+            for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+            ```
+        -   Сама конфигурация выглядит следующим образом:
+
+        <!--listend-->
+
+        ```js-json
+        // Themperature
+        "temperature": {
+            "critical-threshold": 80,
+            "interval": 5,
+            "thermal-zone": 1,
+            "format": "{icon} {temperatureC}°C",
+            "format-icons": [
+                "", // Icon: temperature-empty
+                "", // Icon: temperature-quarter
+                "", // Icon: temperature-half
+                "", // Icon: temperature-three-quarters
+                ""  // Icon: temperature-full
+            ],
+            "tooltip": true
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+          config
+        </div>
+
+    <!--list-separator-->
+
+    5.  Отображение времени
+
+        ```js-json
+        // Clock
+        "clock": {
+            "format": " {:%H:%M  %F, %a} ",
+            "format-alt": " {:%A, %B %d, %Y (%R)}",
+            "tooltip-format": "<tt><small>{calendar}</small></tt>",
+            "calendar": {
+                "mode"          : "year",
+                "mode-mon-col"  : 3,
+                "weeks-pos"     : "right",
+                "on-scroll"     : 1,
+                "format": {
+                    "months":     "<span color='#ffead3'><b>{}</b></span>",
+                    "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                    "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                    "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                    "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                }
+            },
+            "actions":  {
+                "on-click-right": "mode",
+                "on-scroll-up": "tz_up",
+                "on-scroll-down": "tz_down",
+                "on-scroll-up": "shift_up",
+                "on-scroll-down": "shift_down"
             }
         },
-        "actions":  {
-            "on-click-right": "mode",
-            "on-scroll-up": "tz_up",
-            "on-scroll-down": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
-    },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+          config
+        </div>
 
-    "clock#9": {
-        "format": " {:%F}",
-        "format-alt": " {:%A, %B %d, %Y}",
-        "tooltip-format": "<tt><small>{calendar}</small></tt>",
-        "calendar": {
-            "mode"          : "year",
-            "mode-mon-col"  : 3,
-            "weeks-pos"     : "right",
-            "on-scroll"     : 1,
-            "on-click-right": "mode",
-            "format": {
-                "months":     "<span><b>{}</b></span>",
-                "days":       "<span>{}</span>",
-                "weeks":      "<span color='#99ffdd'><b>W{:%W}</b></span>",
-                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                "today":      "<span color='#ff6699'><b>{}</b></span>"
+    <!--list-separator-->
+
+    6.  Состояние клавиатуры
+
+        ```js-json
+        // Keyboard
+        "keyboard-state": {
+            "numlock": true,
+            "capslock": true,
+            "format": " {name} {icon}",
+            "format-icons": {
+                "locked": " ",
+                "unlocked": " "
             }
         },
-        "actions":  {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
-      config
-    </div>
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+          config
+        </div>
 
-<!--list-separator-->
+    <!--list-separator-->
 
-2.  Звук
+    7.  Сеть
 
-    ```js-json
-
-    "pulseaudio": {
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": "{icon}  {volume}% {format_source}",
-        "format-bluetooth-muted": "󰝟  {format_source}",
-        "format-muted": "󰝟 {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " ",
-        "format-icons": {
-          "headphone": " ",
-          "hands-free": " ",
-          "headset": "󰋎 ",
-          "phone": " ",
-          "portable": " ",
-          "car": " ",
-          "default": [
-              "",
-              " ",
-              " "
-          ]
+        ```js-json
+        // Network
+        "network": {
+            "format": "{ifname}",
+            "format-wifi": " {essid}",
+            "format-ethernet": " {ifname}",
+            "format-disconnected": "", //An empty format will hide the module.
+            "tooltip-format": "{ipaddr}/{cidr} via {gwaddr}",
+            "tooltip-format-wifi": " {essid} ({signalStrength}%)",
+            "tooltip-format-ethernet": "󰩠 {ipaddr}/{cidr} via {gwaddr}",
+            "tooltip-format-disconnected": "󰲛 Disconnected",
+            "max-length": 50,
+            "on-click": "nm-connection-editor"
         },
-        "scroll-step": 5,
-        "on-click": "pavucontrol",
-        "on-click-right": "blueman-manager"
-    },
-
-    "wireplumber": {
-        "format": "{icon}{volume}%",
-        "format-muted": " ",
-        // "on-click": "helvum",
-        "on-click": "pavucontrol",
-        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "format-icons": ["", " ", " "],
-        "max-volume": 200,
-        // "scroll-step": 0.2,
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
-      config
-    </div>
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
+          config
+        </div>
 
 <!--list-separator-->
 
-3.  Память
+2.  Управляемые модули
 
-    ```js-json
+    <!--list-separator-->
 
-    "memory": {
-        "interval": 30,
-        "format": " {used:0.1f}G/{total:0.1f}G",
-        "tooltip": true,
-        "tooltip-format": "Free {avail:0.1f}G",
-    },
-    //    "memory": {
-    //	"interval": 5,
-    //	"format": "Mem {}%"
-    //    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
-      config
-    </div>
+    1.  Звук
 
-<!--list-separator-->
+        <!--list-separator-->
 
-4.  Процессор
+        1.  Pulseaudio
 
-    ```js-json
-    "cpu": {
-        "interval": 10,
-        "format": " {usage}% {icon}",
-        "max-length": 10,
-        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    },
+            ```js-json
+            // Sound (pulseaudio)
+            "pulseaudio": {
+                "format": "{icon} {volume}% {format_source}",
+                "format-bluetooth": "{icon}  {volume}% {format_source}",
+                "format-bluetooth-muted": "󰝟  {format_source}",
+                "format-muted": "󰝟 {format_source}",
+                "format-source": " {volume}%",
+                "format-source-muted": " ",
+                "format-icons": {
+                    "headphone": " ",
+                    "hands-free": " ",
+                    "headset": "󰋎 ",
+                    "phone": " ",
+                    "portable": " ",
+                    "car": " ",
+                    "default": [
+                        "",
+                        " ",
+                        " "
+                    ]
+                },
+                "scroll-step": 5,
+                "on-click": "pavucontrol",
+                "on-click-right": "blueman-manager"
+            },
+            ```
+            <div class="src-block-caption">
+              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
+              config
+            </div>
 
-    // "cpu": {
-    //    "interval": 10,
-    //    "format": "{}%  {icon0} {icon1} {icon2} {icon3} {icon4} {icon5} {icon6} {icon7}",
-    //    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-    // },
-    // "cpu": {
-    //    "interval": 5,
-    //    "format": "CPU {usage:2}%"
-    // },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
-      config
-    </div>
+        <!--list-separator-->
 
-<!--list-separator-->
+        2.  Pipewire
 
-5.  Батарея
+            ```js-json
+            // Sound (pipewire)
+            "wireplumber": {
+                "format": "{icon}{volume}%",
+                "format-muted": " ",
+                // "on-click": "helvum",
+                "on-click": "pavucontrol",
+                "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+                "format-icons": ["", " ", " "],
+                "max-volume": 200,
+                // "scroll-step": 0.2,
+            },
+            ```
+            <div class="src-block-caption">
+              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+              config
+            </div>
 
-    ```js-json
-    "battery": {
-        "bat": "BAT0",
-        "states": {
-          "full": 100,
-          "good": 95,
-          "warning": 30,
-          "critical": 15
+    <!--list-separator-->
+
+    2.  Трей
+
+        ```js-json
+        // Tray
+        "tray": {
+            "icon-size": 20,
+            "spacing": 10
         },
-        "format": "{icon}  {capacity}% ({time})",
-        "format-charging": " {icon}  {capacity}% ({time})",
-        "format-full": " {icon}  Full",
-        "format-time": "{H}h{M}m",
-        "interval": 30,
-        "on-click": "gnome-power-statistics",
-        "format-icons": [
-          " ",
-          " ",
-          " ",
-          " ",
-          " "
-        ]
-    },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
+          config
+        </div>
 
-    "battery#bat1": {
-        "bat": "BAT1",
-        "states": {
-          "full": 100,
-          "good": 95,
-          "warning": 30,
-          "critical": 15
+    <!--list-separator-->
+
+    3.  Отключение засыпания экрана
+
+        ```js-json
+        // Idle inhibitor
+        "idle_inhibitor": {
+            "format": "{icon}",
+            "format-icons": {
+              "activated": "  ",
+              "deactivated": "  "
+            }
         },
-        "format": "{icon} {capacity}% ({time})",
-        "format-charging": " {icon} {capacity}% ({time})",
-        "format-full": " {icon} Full",
-        "format-time": "{H}h{M}m",
-        "interval": 30,
-        "on-click": "gnome-power-statistics",
-        "format-icons": [
-          " ",
-          " ",
-          " ",
-          " ",
-          " "
-        ]
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
-      config
-    </div>
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
+          config
+        </div>
+
+    <!--list-separator-->
+
+    4.  Подсветка экрана
+
+        ```js-json
+        "backlight": {
+            "device": "intel_backlight",
+            "format": "{icon} {percent}% ",
+            "format-icons": [" ", " "],
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 15:</span>
+          config
+        </div>
 
 <!--list-separator-->
 
-6.  Трей
-
-    ```js-json
-
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-7.  Сеть
-
-    ```js-json
-    "network": {
-        "format": "{ifname}",
-        "format-wifi": " {essid}",
-        "format-ethernet": " {ifname}",
-        "format-disconnected": "", //An empty format will hide the module.
-        "tooltip-format": "{ipaddr}/{cidr} via {gwaddr}",
-        "tooltip-format-wifi": " {essid} ({signalStrength}%)",
-        "tooltip-format-ethernet": "󰩠 {ipaddr}/{cidr} via {gwaddr}",
-        "tooltip-format-disconnected": "󰲛 Disconnected",
-        "max-length": 50,
-        "on-click": "nm-connection-editor"
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-8.  Модули _Sway_
-
+3.  Модули _Sway_
 
     <!--list-separator-->
 
@@ -407,6 +434,10 @@ Wayland. Панель Waybar
             "max-length": 40
         },
         ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 16:</span>
+          config
+        </div>
 
     <!--list-separator-->
 
@@ -418,6 +449,10 @@ Wayland. Панель Waybar
             "max-length": 50
         },
         ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 17:</span>
+          config
+        </div>
 
     <!--list-separator-->
 
@@ -432,7 +467,7 @@ Wayland. Панель Waybar
         },
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 18:</span>
           config
         </div>
 
@@ -447,246 +482,125 @@ Wayland. Панель Waybar
         },
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 19:</span>
           config
         </div>
 
 <!--list-separator-->
 
-9.  Состояние клавиатуры
+4.  Самописные модули
 
-    ```js-json
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": " {name} {icon}",
-        "format-icons": {
-            "locked": " ",
-            "unlocked": " "
-        }
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
-      config
-    </div>
+    <!--list-separator-->
 
-<!--list-separator-->
+    1.  Погода
 
-10.  Буфер обмена
-
-    ```js-json
-    "custom/clipboard": {
-        "format": " ",
-        "interval": "once",
-        "return-type": "json",
-        "on-click": "swaymsg -q exec '$clipboard'; pkill -RTMIN+9 waybar",
-        "on-click-right": "swaymsg -q exec '$clipboard-del'; pkill -RTMIN+9 waybar",
-        "on-click-middle": "swaymsg -q exec '$clipboard-del-all'",
-        "exec": "printf '{\"tooltip\":\"%s\"}' $(cliphist list | wc -l)",
-        "exec-if": "[ -x \"$(command -v cliphist)\" ] && [ $(cliphist list | wc -l) -gt 0 ]",
-        "signal": 9
-    },
-
-    //  "custom/arch-updates": {
-    //    "format": " {}",
-    //    "interval": "3600",
-    //    "exec": "yay -Qu | wc -l",
-    //    "signal": 8,
-    //    "on-click": "pamac-manager",
-    //    "on-click-right": "yay -Qu | wc -l",
-    //    "tooltip": false
-    //  },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-11.  Погода
-
-    ```js-json
-    "custom/weather": {
-        "format": "{icon}{} ",
-        "tooltip": true,
-        "interval": 3600,
-        // accepts -c/--city <city> -t/--temperature <C/F> -d/--distance <km/miles>
-        "exec": "~/.config/sway/scripts/weather.py",
-        "return-type": "json",
-        "format-icons": {
-            "Unknown": " ",
-            "Cloudy": "󰖐 ",
-            "Fog": " ",
-            "HeavyRain": " ",
-            "HeavyShowers": " ",
-            "HeavySnow": " ",
-            "HeavySnowShowers": "󰜗 ",
-            "LightRain": " ",
-            "LightShowers": " ",
-            "LightSleet": " ",
-            "LightSleetShowers": " ",
-            "LightSnow": " ",
-            "LightSnowShowers": "󰙿 ",
-            "PartlyCloudy": " ",
-            "Sunny": " ",
-            "ThunderyHeavyRain": "󰙾 ",
-            "ThunderyShowers": " ",
-            "ThunderySnowShowers": " ",
-            "VeryCloudy": " "
-        }
-    },
-
-    // "custom/weather": {
-    //    "interval": "1800",
-    //    "exec": "~/.config/sway/other/blocks/weather.sh $WEATHER_LOC",
-    //    "on-click": "xdg-open https://wttr.in/$WEATHER_LOC"
-    // },
-
-    // "custom/weather": {
-    //     "format": "{}",
-    //     //"format-alt": "{alt}: {}",
-    //     //"format-alt-click": "click-left",
-    //     "interval": 300,
-    //     "return-type": "json",
-    //     "exec": "curl -s 'https://wttr.in/?format=1' |jq --unbuffered --compact-output -M -R '{text:.}'",
-    //     "exec-if": "ping wttr.in -c1",
-    //     "on-click-right": "kitty --start-as fullscreen bash -ci ~/bin/wttr"
-    //     // "on-click-right": "alacritty -e bash -ci ~/bin/wttr"
-    // },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 15:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-12.  Скратчпад
-
-    ```js-json
-    "custom/scratchpad": {
-        "interval": "once",
-        "escape": true,
-        "return-type": "json",
-        "format": "{icon}",
-        "format-icons": {
-            "one": "󰖯 ",
-            "many": "󰖲 "
+        ```js-json
+        // Weather
+        "custom/weather": {
+            "format": "{icon}{} ",
+            "tooltip": true,
+            "interval": 3600,
+            // accepts -c/--city <city> -t/--temperature <C/F> -d/--distance <km/miles>
+            "exec": "~/.config/sway/scripts/weather.py",
+            "return-type": "json",
+            "format-icons": {
+                "Unknown": " ",
+                "Cloudy": "󰖐 ",
+                "Fog": " ",
+                "HeavyRain": " ",
+                "HeavyShowers": " ",
+                "HeavySnow": " ",
+                "HeavySnowShowers": "󰜗 ",
+                "LightRain": " ",
+                "LightShowers": " ",
+                "LightSleet": " ",
+                "LightSleetShowers": " ",
+                "LightSnow": " ",
+                "LightSnowShowers": "󰙿 ",
+                "PartlyCloudy": " ",
+                "Sunny": " ",
+                "ThunderyHeavyRain": "󰙾 ",
+                "ThunderyShowers": " ",
+                "ThunderySnowShowers": " ",
+                "VeryCloudy": " "
+            }
         },
-        "exec": "/bin/sh ~/.config/sway/scripts/scratchpad.sh",
-        "on-click": "swaymsg 'scratchpad show'",
-        "signal": 7
-    },
-
-    // "custom/scratchpad": {
-    //    "format": "Scratchpad: {}",
-    //    "escape": true,
-    //    "interval": 1,
-    //    "exec": "swaymsg -t get_tree | jq '.nodes[].nodes[] | select(.name==\"__i3_scratch\").floating_nodes | length'",
-    //    "exec-if": "swaymsg -t get_tree | jq '.nodes[].nodes[] | select(.name==\"__i3_scratch\").floating_nodes | length' | grep -v '^0$'"
-    // },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 16:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-13.  Отключение засыпания экрана
-
-    ```js-json
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-          "activated": "  ",
-          "deactivated": "  "
-        }
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 17:</span>
-      config
-    </div>
-
-<!--list-separator-->
-
-14.  Температура подсистем
-
-    -   Задаётся для температурных зон `/sys/class/thermal/` или для показаний сенсоров `/sys/class/hwmon/hwmon*/temp*_input`.
-    -   Просмотреть все типы температурных зон:
-        ```bash
-        for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
         ```
-    -   Если нет тепловой зоны, можно использовать сенсоры (`sensors`), чтобы найти предпочтительный источник температуры:
-        ```bash
-        for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 20:</span>
+          config
+        </div>
+
+    <!--list-separator-->
+
+    2.  Скратчпад
+
+        ```js-json
+        // Scratchpad
+        "custom/scratchpad": {
+            "interval": "once",
+            "escape": true,
+            "return-type": "json",
+            "format": "{icon}",
+            "format-icons": {
+                "one": "󰖯 ",
+                "many": "󰖲 "
+            },
+            "exec": "/bin/sh ~/.config/sway/scripts/scratchpad.sh",
+            "on-click": "swaymsg 'scratchpad show'",
+            "signal": 7
+        },
         ```
-    -   Сама конфигурация выглядит следующим образом:
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 21:</span>
+          config
+        </div>
 
-    <!--listend-->
+    <!--list-separator-->
 
-    ```js-json
-    "temperature": {
-        "critical-threshold": 80,
-        "interval": 5,
-        "thermal-zone": 1,
-        "format": "{icon} {temperatureC}°C",
-        "format-icons": [
-            "", // Icon: temperature-empty
-            "", // Icon: temperature-quarter
-            "", // Icon: temperature-half
-            "", // Icon: temperature-three-quarters
-            ""  // Icon: temperature-full
-        ],
-        "tooltip": true
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 18:</span>
-      config
-    </div>
+    3.  Отключение машины
 
-<!--list-separator-->
+        ```js-json
+        "custom/power": {
+            "format" : "⏻ ",
+            "tooltip": false,
+            "menu": "on-click",
+            "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+            "menu-actions": {
+              "shutdown": "shutdown",
+              "reboot": "reboot",
+              "suspend": "systemctl suspend",
+              "hibernate": "systemctl hibernate"
+            }
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 22:</span>
+          config
+        </div>
 
-15.  Подсветка экрана
+    <!--list-separator-->
 
-    ```js-json
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}% ",
-        "format-icons": [" ", " "],
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 19:</span>
-      config
-    </div>
+    4.  Буфер обмена
 
-<!--list-separator-->
-
-16.  Отключение машины
-
-    ```js-json
-    "custom/power": {
-        "format" : "⏻ ",
-        "tooltip": false,
-        "menu": "on-click",
-        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-        "menu-actions": {
-          "shutdown": "shutdown",
-          "reboot": "reboot",
-          "suspend": "systemctl suspend",
-          "hibernate": "systemctl hibernate"
-        }
-    },
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 20:</span>
-      config
-    </div>
+        ```js-json
+        // Clipboard
+        "custom/clipboard": {
+            "format": " ",
+            "interval": "once",
+            "return-type": "json",
+            "on-click": "swaymsg -q exec '$clipboard'; pkill -RTMIN+9 waybar",
+            "on-click-right": "swaymsg -q exec '$clipboard-del'; pkill -RTMIN+9 waybar",
+            "on-click-middle": "swaymsg -q exec '$clipboard-del-all'",
+            "exec": "printf '{\"tooltip\":\"%s\"}' $(cliphist list | wc -l)",
+            "exec-if": "[ -x \"$(command -v cliphist)\" ] && [ $(cliphist list | wc -l) -gt 0 ]",
+            "signal": 9
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+          config
+        </div>
 
 
 #### <span class="section-num">2.2.5</span> Конец {#конец}
@@ -695,7 +609,7 @@ Wayland. Панель Waybar
 }
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 21:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
   config
 </div>
 
@@ -905,7 +819,7 @@ window#waybar {
 }
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 22:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
   style.css
 </div>
 
@@ -932,7 +846,7 @@ window#waybar {
     restart_waybar
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 23:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
       waybar.sh
     </div>
 
@@ -970,6 +884,6 @@ window#waybar {
 </interface>
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
   power_menu.xml
 </div>

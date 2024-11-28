@@ -2,7 +2,7 @@
 title: "Установка Windows с жёсткого диска"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-23T15:51:00+03:00
-lastmod: 2024-02-08T20:18:00+03:00
+lastmod: 2024-11-27T11:57:00+03:00
 tags: ["windows", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,19 @@ slug: "install-windows-hard-drive"
 -   Установочный раздел также можно создать на другом жестком диске или внешнем USB-накопителе.
 
 
-### <span class="section-num">2.1</span> Разбивка диска под Linux {#разбивка-диска-под-linux}
+### <span class="section-num">2.1</span> Разбивка диска {#разбивка-диска}
+
+
+#### <span class="section-num">2.1.1</span> Инструментарий {#инструментарий}
+
+<!--list-separator-->
+
+1.  sgdisk
+
+    -   Сайт: <https://www.rodsbooks.com/gdisk/>
+
+
+#### <span class="section-num">2.1.2</span> Консоль Linux {#консоль-linux}
 
 -   Создадим на диске партиции:
     ```shell
@@ -90,14 +102,19 @@ slug: "install-windows-hard-drive"
     sgdisk -n 0:0:+128M -t 0:0c01 /dev/sda
     ## 0700 Microsoft basic data
     sgdisk -n 0:0:+60G -t 0:0700 -c 0:windows /dev/sda
+    ## 2700 Windows recovery partition
+    sgdisk -n 0:0:+10G -t 0:2700 ${DISK0}
+    ## 0700 Microsoft basic data
     sgdisk -n 0:0:+8G -t 0:0700 /dev/sda
     sgdisk -n 0:0:+10M -t 0:0700 /dev/sda
+
+    partprobe /dev/sda
     ```
 -   Отформатируем диски:
     ```shell
     mkfs.ntfs -f -L windows /dev/sda3
-    mkfs.vfat -n fat -F32 /dev/sda4
-    mkfs.ntfs -f -L windistro /dev/sda5
+    mkfs.vfat -n fat -F32 /dev/sda5
+    mkfs.ntfs -f -L windistro /dev/sda6
     ```
 
 
@@ -138,8 +155,8 @@ slug: "install-windows-hard-drive"
     ```shell
     mkdir -p /mnt/{fat,ntfs}
     mount /dev/sr0 /media/cdrom/
-    mount /dev/sda4 /mnt/fat
-    mount /dev/sda5 /mnt/ntfs
+    mount /dev/sda5 /mnt/fat
+    mount /dev/sda6 /mnt/ntfs
     ```
 
 -   Скопируйте файлы на раздел NTFS:
