@@ -2,7 +2,7 @@
 title: "Wayland. Панель Waybar"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-21T15:11:00+03:00
-lastmod: 2024-11-24T19:25:00+03:00
+lastmod: 2024-11-30T12:58:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -626,6 +626,7 @@ Wayland. Панель Waybar
     -   `~/.config/waybar/`;
     -   `~/waybar/`;
     -   `/etc/xdg/waybar/`.
+-   Можно указывать не конкретные цвета, а цвета из GTK-темы (<https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss>).
 
 
 ### <span class="section-num">3.2</span> Стилевой файл {#стилевой-файл}
@@ -672,12 +673,12 @@ Wayland. Панель Waybar
 
 /* The whole bar */
 window#waybar {
-    /* background: @theme_base_color; */
-    background: #323232;
+    background: @theme_fg_color;
+    /* background: #323232; */
     border-bottom: 1px solid @unfocused_borders;
-    /* color: @theme_text_color; */
+    color: @theme_text_color;
     /* color: black; */
-    color: white;
+    /* color: white; */
 }
 
 /* Each module */

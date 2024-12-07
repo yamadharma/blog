@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Одноразовые пароли"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-24T20:29:00+03:00
-lastmod: 2023-12-07T17:18:00+03:00
+lastmod: 2024-12-01T14:41:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -16,7 +16,12 @@ slug: "password-manager-pass-one-time-passwords"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Формат файла {#формат-файла}
+## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   [Одноразовые пароли]({{< relref "2023-08-24-one-time-passwords" >}})
+
+
+## <span class="section-num">2</span> Формат файла {#формат-файла}
 
 -   Токен можно хранить как в основном файле с паролем, так и в отдельном файле.
 -   Хранение в том же файле: `git-passwordstore/website/yourLogin`.
@@ -28,7 +33,9 @@ slug: "password-manager-pass-one-time-passwords"
         url: https://website.com
         totp: YourOtpTokenBase32Encoded
         ```
-    -   Можно хранить и в виде указателя на URL:
+
+        -   Формат `totp:` поддерживается не всеми программами работы с паролями.
+    -   Можно хранить и в виде указателя на URL (этот формат является предпочтительным):
         ```yaml
         yourPassword
         ---
@@ -47,19 +54,19 @@ slug: "password-manager-pass-one-time-passwords"
     ```
 
 
-## <span class="section-num">2</span> Аппаратный токен {#аппаратный-токен}
+## <span class="section-num">3</span> Аппаратный токен {#аппаратный-токен}
 
 -   В идеале секретный ключ, способный расшифровать ваши секреты OTP, должен храниться на аппаратном токене, для расшифровки которого требуется какое-то взаимодействие с пользователем.
 -   Это достигается путем настройки второго хранилища без использования тех же открытых ключей, что и для основного хранилища паролей.
 -   Открытые ключи, используемые для вашего хранилища OTP, в идеале должны храниться только на аппаратных токенах.
 
 
-## <span class="section-num">3</span> pass-otp {#pass-otp}
+## <span class="section-num">4</span> pass-otp {#pass-otp}
 
 -   Репозиторий: <https://github.com/tadfisher/pass-otp>
 
 
-## <span class="section-num">4</span> Добавить токен в запись {#добавить-токен-в-запись}
+## <span class="section-num">5</span> Добавить токен в запись {#добавить-токен-в-запись}
 
 -   Ввести токен с терминала (скрывая ввод):
     ```shell
@@ -92,7 +99,7 @@ slug: "password-manager-pass-one-time-passwords"
     ```
 
 
-## <span class="section-num">5</span> Использование токена {#использование-токена}
+## <span class="section-num">6</span> Использование токена {#использование-токена}
 
 -   Сгенерировать код 2FA, используя токен:
     ```shell

@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass. Интеграция с другими программами"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-11-20T21:47:00+03:00
-lastmod: 2024-03-05T16:52:00+03:00
+lastmod: 2024-12-01T18:58:00+03:00
 tags: ["security"]
 categories: ["computer-science"]
 draft: false
@@ -31,6 +31,7 @@ slug: "password-manager-pass-integration"
 
 #### <span class="section-num">1.1.2</span> tessen {#tessen}
 
+-   [Менеджер паролей pass. Tessen]({{< relref "2024-12-01-password-manager-pass-tessen" >}})
 -   Репозиторий: <https://github.com/ayushnix/tessen>
 -   Работает в Wayland.
 

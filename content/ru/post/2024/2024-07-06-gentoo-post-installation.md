@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2024-08-19T13:53:00+03:00
+lastmod: 2024-12-01T13:51:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -188,6 +188,17 @@ slug: "gentoo-post-installation"
     -   Установим `cliphist` (репозиторий `guru`):
         ```shell
         emerge ${EMERGE_FLAGS} app-misc/cliphist
+        ```
+
+<!--list-separator-->
+
+3.  Пароли
+
+    -   Работа с паролями (репозиторий `guru`):
+        ```shell
+        ;;; Pass
+        emerge ${EMERGE_FLAGS} app-admin/gopass gui-apps/wtype gui-apps/wl-clipboard x11-misc/xdg-utils x11-libs/libnotify app-admin/pass app-admin/pass-otp
+        emerge ${EMERGE_FLAGS} gui-apps/tessen
         ```
 
 

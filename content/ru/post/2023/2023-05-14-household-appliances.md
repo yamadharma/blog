@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2024-11-10T18:36:00+03:00
+lastmod: 2024-12-03T15:50:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -129,6 +129,7 @@ slug: "household-appliances"
 ### <span class="section-num">5.2</span> Сетевое оборудование {#сетевое-оборудование}
 
 -   [Mesh-системы]({{< relref "2024-10-07-mesh-systems" >}})
+-   [Домашний маршрутизатор]({{< relref "2024-12-03-home-router" >}})
 
 
 ### <span class="section-num">5.3</span> Хранение {#хранение}

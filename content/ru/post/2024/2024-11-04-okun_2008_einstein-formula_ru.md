@@ -2,7 +2,7 @@
 title: "Окунь, Л. Б. (2008) Формула Эйнштейна: E0 = mc2. «Не смеётся ли Господь Бог»?"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-04T20:26:00+03:00
-lastmod: 2024-11-19T19:14:00+03:00
+lastmod: 2024-12-01T18:37:00+03:00
 tags: ["relativity"]
 categories: ["science"]
 draft: false

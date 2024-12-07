@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-11-28T15:30:00+03:00
+lastmod: 2024-12-07T20:20:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -76,10 +76,16 @@ slug: "gentoo-compiling-clang"
 
     ## This is added to make options by linux-mod.eclass
     BUILD_FIXES="LLVM=1 LLVM_IAS=1"
+    CLANG_NO_DEFAULT_CONFIG=1
 
-    CFLAGS="${CFLAGS} -flto=thin"
-    #CFLAGS="${CFLAGS} -mllvm -extra-vectorizer-passes -mllvm -enable-cond-stores-vec -mllvm -slp-vectorize-hor-store -mllvm -enable-loopinterchange -mllvm -enable-loop-distribute -mllvm -enable-unroll-and-jam -mllvm -enable-loop-flatten -mllvm -interleave-small-loop-scalar-reduction -mllvm -unroll-runtime-multi-exit -mllvm -aggressive-ext-opt -fno-math-errno -fno-trapping-math -falign-functions=32 -funroll-loops -fno-semantic-interposition -fcf-protection=none -mharden-sls=none -fomit-frame-pointer -mprefer-vector-width=256 -flto"
+    COMMON_FLAGS="-O2 -march=native"
+    CFLAGS="${COMMON_FLAGS}"
+    CXXFLAGS="${COMMON_FLAGS}"
+
+    # CFLAGS="${CFLAGS} -flto=thin"
     CXXFLAGS="${CFLAGS} ${CXXFLAGS}"
+    #CFLAGS="${CFLAGS} -mllvm -extra-vectorizer-passes -mllvm -enable-cond-stores-vec -mllvm -slp-vectorize-hor-store -mllvm -enable-loopinterchange -mllvm -enable-loop-distribute -mllvm -enable-unroll-and-jam -mllvm -enable-loop-flatten -mllvm -interleave-small-loop-scalar-reduction -mllvm -unroll-runtime-multi-exit -mllvm -aggressive-ext-opt -fno-math-errno -fno-trapping-math -falign-functions=32 -funroll-loops -fno-semantic-interposition -fcf-protection=none -mharden-sls=none -fomit-frame-pointer -mprefer-vector-width=256 -flto"
+
 
     CC="clang"
     CPP="clang-cpp" # necessary for xorg-server and possibly other packages
@@ -87,17 +93,19 @@ slug: "gentoo-compiling-clang"
     AR="llvm-ar"
     NM="llvm-nm"
     RANLIB="llvm-ranlib"
+    OBJCOPY="llvm-objcopy"
+    LD="mold"
 
-    # No need to set this, clang-common can handle this based on chosen USE flags
-    #LDFLAGS="${LDFLAGS} -fuse-ld=lld"
-    #LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
-    #LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
-    #LDFLAGS="${LDFLAGS} -fuse-ld=mold"
-    LDFLAGS="${LDFLAGS} -flto"
+    ## No need to set this, clang-common can handle this based on chosen USE flags
+    # LDFLAGS="${LDFLAGS} -fuse-ld=lld"
+    # LDFLAGS="${LDFLAGS} -fuse-ld=mold"
+    # LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
+    # LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
+    # LDFLAGS="${LDFLAGS} -flto"
     ```
 
 
-### <span class="section-num">4.2</span> Конфигурация для каждого пакета {#конфигурация-для-каждого-пакета}
+### <span class="section-num">4.2</span> Конфигурация окружения для каждого пакета {#конфигурация-окружения-для-каждого-пакета}
 
 -   Можно задать компилятор для каждого пакета в отдельности в файле `/etc/portage/package.env`:
     ```conf-unix
@@ -243,7 +251,15 @@ slug: "gentoo-compiling-clang"
     sci-libs/vtk					compiler-clang-mold-18
     sci-visualization/paraview			compiler-clang-mold-18
     sci-libs/pdal					compiler-clang-mold-18
-    app-text/doxygen				compiler-clang-mold
+    dev-lang/rust					compiler-gcc
+    dev-qt/qttools					compiler-clang-mold-18
+    dev-util/kdevelop				compiler-clang-mold-18
+    dev-qt/qtwebengine				compiler-clang-mold-18
+    kde-apps/step					compiler-clang-mold-18
+    sci-mathematics/singular			compiler-gcc
+    media-libs/tg_owt				compiler-gcc
+    media-gfx/asymptote				compiler-gcc
+    gui-libs/gtk:4					compiler-clang
     ```
 
 
@@ -281,21 +297,14 @@ slug: "gentoo-compiling-clang"
 
 -   Конфигурация для компилятора _clang_ без _LTO_ в файле `/etc/portage/env/compiler-clang-no-lto`:
     ```conf-unix
-    # Normal settings here
-    COMMON_FLAGS="-O2 -march=native"
-    CFLAGS="${COMMON_FLAGS}"
-    CXXFLAGS="${COMMON_FLAGS}"
-
     CC="clang"
-    CPP="clang-cpp" # necessary for xorg-server and possibly other packages
+    CPP="clang-cpp"
     CXX="clang++"
     AR="llvm-ar"
     NM="llvm-nm"
     RANLIB="llvm-ranlib"
-
-    # No need to set this, clang-common can handle this based on chosen USE flags
-    # LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
-    # LDFLAGS="-fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
+    OBJCOPY="llvm-objcopy"
+    LD="lld"
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
@@ -303,7 +312,26 @@ slug: "gentoo-compiling-clang"
     </div>
 
 
-#### <span class="section-num">4.3.3</span> clang + mold {#clang-plus-mold}
+#### <span class="section-num">4.3.3</span> clang {#clang}
+
+-   Конфигурация для компилятора /clang/в файле `/etc/portage/env/compiler-clang`:
+    ```conf-unix
+    CC="clang"
+    CPP="clang-cpp"
+    CXX="clang++"
+    AR="llvm-ar"
+    NM="llvm-nm"
+    RANLIB="llvm-ranlib"
+    OBJCOPY="llvm-objcopy"
+    LD="lld"
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      /etc/portage/env/compiler-clang
+    </div>
+
+
+#### <span class="section-num">4.3.4</span> clang + mold {#clang-plus-mold}
 
 ```conf-unix
 # Normal settings here
@@ -321,19 +349,15 @@ RANLIB="llvm-ranlib"
 OBJCOPY="llvm-objcopy"
 LD="mold"
 
-
-#LDFLAGS="${LDFLAGS} -Wl,-O2 -Wl,--as-needed -Wl,--undefined-version"
-#LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
-#LDFLAGS="${LDFLAGS} -flto"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
   /etc/portage/env/compiler-clang-mold
 </div>
 
 
-#### <span class="section-num">4.3.4</span> clang-18 + mold {#clang-18-plus-mold}
+#### <span class="section-num">4.3.5</span> clang-18 + mold {#clang-18-plus-mold}
 
 ```conf-unix
 # Normal settings here
@@ -353,7 +377,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
   /etc/portage/env/compiler-clang-mold-18
 </div>
 

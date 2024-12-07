@@ -2,7 +2,7 @@
 title: "Sway. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-12T20:02:00+03:00
-lastmod: 2024-11-21T15:51:00+03:00
+lastmod: 2024-12-01T19:46:00+03:00
 tags: ["configuration", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -64,7 +64,12 @@ emerge -v gui-apps/waybar
 ## <span class="section-num">3</span> Конфигурация Sway {#конфигурация-sway}
 
 
-### <span class="section-num">3.1</span> Статусные панели {#статусные-панели}
+### <span class="section-num">3.1</span> Сочетания клавиш {#сочетания-клавиш}
+
+-   [Sway. Сочетания клавиш]({{< relref "2024-08-24-sway-keybindings" >}})
+
+
+### <span class="section-num">3.2</span> Статусные панели {#статусные-панели}
 
 ```conf-unix
 ## Status Bar
@@ -75,7 +80,7 @@ emerge -v gui-apps/waybar
 </div>
 
 
-#### <span class="section-num">3.1.1</span> Sway-bar {#sway-bar}
+#### <span class="section-num">3.2.1</span> Sway-bar {#sway-bar}
 
 -   Sway-bar идёт в составе Sway.
 
@@ -108,7 +113,7 @@ emerge -v gui-apps/waybar
 </div>
 
 
-#### <span class="section-num">3.1.2</span> Waybar {#waybar}
+#### <span class="section-num">3.2.2</span> Waybar {#waybar}
 
 -   [Wayland. Панель Waybar]({{< relref "2024-11-21-wayland-waybar" >}})
 
@@ -154,7 +159,7 @@ emerge -v gui-apps/waybar
     -   При этом после перезапуска _Sway_ waybar не перезапускается, а запускает новый экземпляр.
 
 
-#### <span class="section-num">3.1.3</span> Nwg-panel {#nwg-panel}
+#### <span class="section-num">3.2.3</span> Nwg-panel {#nwg-panel}
 
 ```conf-unix
 ### nwg-panel
@@ -170,7 +175,7 @@ emerge -v gui-apps/waybar
 </div>
 
 
-#### <span class="section-num">3.1.4</span> Yambar {#yambar}
+#### <span class="section-num">3.2.4</span> Yambar {#yambar}
 
 -   <https://codeberg.org/dnkl/yambar>
 
@@ -185,4 +190,26 @@ emerge -v gui-apps/waybar
 <div class="src-block-caption">
   <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
   config.d/80-bar.conf
+</div>
+
+
+### <span class="section-num">3.3</span> Менеджер паролей {#менеджер-паролей}
+
+
+#### <span class="section-num">3.3.1</span> Tessen {#tessen}
+
+-   [Менеджер паролей pass. Tessen]({{< relref "2024-12-01-password-manager-pass-tessen" >}})
+
+<!--listend-->
+
+```conf-unix
+## A bash script to handle Simple Password Store in a convenient way using rofi
+## https://github.com/ayushnix/tessen
+
+## Dmenu // Password Manager // ◆ Super ⎈ Ctrl p ##
+$bindsym $mod+Ctrl+p exec "tessen"
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+  config.d/80-pass.conf
 </div>

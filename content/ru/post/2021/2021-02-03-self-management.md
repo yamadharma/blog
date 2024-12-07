@@ -2,7 +2,7 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2024-10-30T15:58:00+03:00
+lastmod: 2024-12-05T12:02:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -39,7 +39,11 @@ slug: "self-management"
 
 ## <span class="section-num">3</span> Чтение {#чтение}
 
+
+### <span class="section-num">3.1</span> Отложенное чтение {#отложенное-чтение}
+
 -   [Отложенное чтение. Pocket]({{< relref "2023-09-06-deferred-reading-pocket" >}})
+-   [Отложенное чтение. Wallabag]({{< relref "2024-12-05-read-it-later-wallabag" >}})
 
 
 ## <span class="section-num">4</span> Работа на компьютере {#работа-на-компьютере}

@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-11-26T14:52:00+03:00
+lastmod: 2024-12-05T13:41:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -174,6 +174,7 @@ slug: "system-administration"
 -   [Виртуализация. Libvirt]({{< relref "2024-11-26-virtualization-libvirt" >}})
     -   [Виртуализация. Virt-manager]({{< relref "2024-11-26-virtualization-virt-manager" >}})
     -   [Виртуализация. Virtiofs]({{< relref "2024-11-26-virtualization-virtiofs" >}})
+-   [Контейнеры. podman]({{< relref "2024-12-04-containers-podman" >}})
 
 
 ### <span class="section-num">10.2</span> Вычисления {#вычисления}
@@ -241,6 +242,7 @@ slug: "system-administration"
 
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 -   [Броузер Nyxt]({{< relref "2023-10-05-nyxt-browser" >}})
+-   [Броузер Qutebrowser]({{< relref "2024-12-01-qutebrowser-browser" >}})
 -   [Firefox. Расширения]({{< relref "2006-12-24-firefox-extention" >}})
 -   [Vim. Клавиатура. Броузеры]({{< relref "2023-08-19-vim-keyboard-browsers" >}})
 -   [Emacs. Клавиатура. Броузеры]({{< relref "2023-08-19-emacs-keyboard-browsers" >}})
@@ -386,6 +388,11 @@ slug: "system-administration"
 #### <span class="section-num">15.8.3</span> Почта {#почта}
 
 -   [Запросы по протоколу imap из командной строки]({{< relref "2024-04-13-imap-queries-command-line" >}})
+
+
+#### <span class="section-num">15.8.4</span> HTTP {#http}
+
+-   [Web-сервер Nginx]({{< relref "2024-12-05-web-server-nginx" >}})
 
 
 ## <span class="section-num">16</span> Управление и мониторинг {#управление-и-мониторинг}

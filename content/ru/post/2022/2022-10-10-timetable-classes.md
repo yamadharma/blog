@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-11-27T17:09:00+03:00
+lastmod: 2024-12-07T19:29:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "timetable-classes"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Расписание занятий {#расписание-занятий}
+## <span class="section-num">1</span> Расписание занятий <code>[/]</code> {#расписание-занятий}
 
 
 ### <span class="section-num">1.1</span> Информация {#информация}
@@ -643,7 +643,7 @@ slug: "timetable-classes"
     -   ОРД-297
 
 
-## <span class="section-num">2</span> Промежуточные аттестации {#промежуточные-аттестации}
+## <span class="section-num">2</span> Промежуточные аттестации <code>[/]</code> {#промежуточные-аттестации}
 
 
 ### <span class="section-num">2.1</span> Информация {#информация}
@@ -716,50 +716,74 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[3/3]</code> {#сессия-модуль-2-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[0/3]</code> {#сессия-модуль-2-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Зачёты
-
-<!--list-separator-->
-
-2. <span class="org-todo done DONE">DONE</span>  Экзамены
-
-<!--list-separator-->
-
-3. <span class="org-todo done DONE">DONE</span>  Переаттестации
-
-
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[3/3]</code> {#сессия-семестр-1-2024-2025}
-
-<!--list-separator-->
-
-1. <span class="org-todo done DONE">DONE</span>  Сессия, семестр 1. Зачёты <code>[1/1]</code>
+1. <span class="org-todo todo TODO">TODO</span>  Зачёты - 2024-2025, модуль 2 <code>[0/1]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Научное программирование (зачёт) <code>[1/1]</code>
-
-        <!--list-separator-->
-
-        1. <span class="org-todo done DONE">DONE</span>  Научное программирование (зачёт), НПМмд-02-22
+    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  Экзамены <code>[1/1]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Экзамены - 2024-2025, модуль 2 <code>[0/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (экзамен) <code>[1/1]</code>
-
-        <!--list-separator-->
-
-        1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (экзамен), НПМмд-02-23, НФИмд-01-23, НФИмд-02-23
+    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
 
 <!--list-separator-->
 
-3. <span class="org-todo done DONE">DONE</span>  Переаттестации <code>[2/2]</code>
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации - 2024-2025, модуль 2 <code>[0/2]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1 - 2024-2025, модуль 2
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2 - 2024-2025, модуль 2
+
+
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[0/3]</code> {#сессия-семестр-1-2024-2025}
+
+<!--list-separator-->
+
+1. <span class="org-todo todo TODO">TODO</span>  Зачёты - 2024-2025, семестр 1 <code>[0/4]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования операционных систем
+
+    <!--list-separator-->
+
+    3. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем
+
+    <!--list-separator-->
+
+    4. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии
+
+<!--list-separator-->
+
+2. <span class="org-todo todo TODO">TODO</span>  Экзамены - 2024-2025, семестр 1 <code>[1/1]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности
+
+        -   НПМмд-02-24, 10:00, ауд. 297
+        -   НФИмд-01-24, 10:00, ауд. 299
+        -   НПИмд-01-23, 10:00, ауд. 297
+
+<!--list-separator-->
+
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации - 2024-2025, семестр 1 <code>[2/2]</code>
 
     <!--list-separator-->
 

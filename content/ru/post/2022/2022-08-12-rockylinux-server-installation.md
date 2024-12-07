@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-11-27T08:27:00+03:00
+lastmod: 2024-12-04T20:16:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -456,3 +456,8 @@ slug: "rockylinux-server-installation"
     ```shell
     dnf -y group install "Development Tools"
     ```
+
+
+### <span class="section-num">4.10</span> Виртуализация и контейнеры {#виртуализация-и-контейнеры}
+
+-   [Контейнеры. podman]({{< relref "2024-12-04-containers-podman" >}})
