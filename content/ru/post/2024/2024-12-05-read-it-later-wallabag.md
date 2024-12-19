@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2024-12-06T16:25:00+03:00
+lastmod: 2024-12-10T08:45:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -188,6 +188,7 @@ slug: "read-it-later-wallabag"
 
         [Container]
         Image=wallabag
+        ContainerName=wallabag
         PublishPort=40401:80
 
         [Service]

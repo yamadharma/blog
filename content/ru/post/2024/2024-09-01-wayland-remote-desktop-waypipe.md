@@ -2,7 +2,7 @@
 title: "Wayland. Удалённый доступ. Waypipe"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-01T19:22:00+03:00
-lastmod: 2024-09-07T16:46:00+03:00
+lastmod: 2024-12-19T12:31:00+03:00
 tags: ["sysadmin", "wayland"]
 categories: ["computer-science"]
 draft: false
@@ -28,7 +28,7 @@ Wayland. Удалённый доступ. Waypipe.
 
 ## <span class="section-num">2</span> Использование {#использование}
 
--   Для запуска программы weston-terminal с другого хоста и отображения интерфейса на текущей системе достаточно выполнить команду:
+-   Для запуска программы `weston-terminal` с другого хоста и отображения интерфейса на текущей системе достаточно выполнить команду:
     ```shell
     waypipe ssh -C user@server weston-terminal
     ```

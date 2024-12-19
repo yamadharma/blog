@@ -2,7 +2,7 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2024-12-05T12:02:00+03:00
+lastmod: 2024-12-10T16:46:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -28,6 +28,9 @@ slug: "self-management"
 
 ## <span class="section-num">2</span> Ведение заметок {#ведение-заметок}
 
+
+### <span class="section-num">2.1</span> Организация заметок {#организация-заметок}
+
 -   [Организация меток для записей]({{< relref "2021-02-03-tags-organizing" >}})
 -   [Вечнозелёные заметки]({{< relref "2023-06-01-evergreen-notes" >}})
 -   [Метод Zettelkasten]({{< relref "2021-02-18-zettelkasten-method" >}})
@@ -35,6 +38,11 @@ slug: "self-management"
 -   [Мышление письмом]({{< relref "2023-06-22-thinking-writing" >}})
 -   [Emacs. Персональная база знаний]({{< relref "2023-11-07-emacs-personal-knowledge-base" >}})
 -   [Методика Bullet journal]({{< relref "2024-10-30-bullet-journal" >}})
+
+
+### <span class="section-num">2.2</span> Диаграммы {#диаграммы}
+
+-   [Диаграммы Ганта]({{< relref "2024-12-10-gantt-charts" >}})
 
 
 ## <span class="section-num">3</span> Чтение {#чтение}

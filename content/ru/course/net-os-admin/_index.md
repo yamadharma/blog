@@ -22,4 +22,4 @@ menu:
 
 <!--more-->
 
-{{< list_children >}}
+<!--{{< list_children >}}-->

@@ -2,7 +2,7 @@
 title: "Контейнеры. podman"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-04T20:13:00+03:00
-lastmod: 2024-12-06T10:31:00+03:00
+lastmod: 2024-12-10T08:44:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -82,6 +82,8 @@ slug: "containers-podman"
     Image=nextcloud
     PublishPort=8080:80
     ```
+-   По умолчанию контейнер podman имеет то же имя, что и модуль, но с префиксом `systemd-`.
+-   Опция `ContainerName`  позволяет переопределить это имя по умолчанию на имя, предоставленное пользователем.
 -   Запустим генератор и сообщим systemd о запуске новой службы:
     ```shell
     systemctl --user daemon-reload

@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models. Текущая работа"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-18T16:10:00+03:00
-lastmod: 2024-11-09T19:38:00+03:00
+lastmod: 2024-12-12T16:25:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false

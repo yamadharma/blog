@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2023-11-11T22:34:00+03:00
+lastmod: 2024-12-19T19:08:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -24,6 +24,18 @@ slug: "hugo-template-for-scientists"
 -   Репозиторий темы: <https://github.com/HugoBlox/theme-academic-cv>
 -   Репозитории вариантов тем: <https://github.com/HugoBlox>
 -   Репозиторий модулей тем: <https://github.com/HugoBlox/hugo-blox-builder>
+
+
+### <span class="section-num">1.1</span> На основе bootstrap {#на-основе-bootstrap}
+
+-   До 2023 года включительно.
+-   Документация по сайту на bootstrap: <https://bootstrap.hugoblox.com/>
+
+
+### <span class="section-num">1.2</span> На основе tailwind {#на-основе-tailwind}
+
+-   С 2024 года.
+-   Документация: <https://docs.hugoblox.com/>
 
 
 ## <span class="section-num">2</span> Обновление шаблонов Wowchemy {#обновление-шаблонов-wowchemy}
@@ -109,6 +121,40 @@ slug: "hugo-template-for-scientists"
         ```
 -   После этого `main` в `go.mod` будет заменена на конкретную версию.
 -   Если Вы обновляете совсем старую версию, Вам может быть проще создать новый сайт и перенести папку `content`.
+
+
+### <span class="section-num">2.3</span> Миграция на tailwind {#миграция-на-tailwind}
+
+
+#### <span class="section-num">2.3.1</span> Общая информация {#общая-информация}
+
+-   Последний релиз на bootstrap вышел 2023-11-14.
+-   Далее релиз стал базироваться на tailwind.
+-   Сайт tailwind:
+    -   <https://tailwindcss.com/>
+    -   <https://tailwindcss.ru/>
+
+
+#### <span class="section-num">2.3.2</span> Основные изменения {#основные-изменения}
+
+<!--list-separator-->
+
+1.  Первая страница
+
+    -   Вместо отдельных файлов-блоков в каталоге `content/home` осуществлён переход к страницам типа `landing`:
+        -   `content/_index.md`;
+        -   `content/experience.md`;
+        -   `content/projects.md`.
+
+<!--list-separator-->
+
+2.  Публикации типа book
+
+    -   Убран шорткод:
+        ```text
+        {{< list_children >}}
+        ```
+    -   Список подузлов теперь создаётся автоматически.
 
 
 ## <span class="section-num">3</span> Устранение проблем {#устранение-проблем}

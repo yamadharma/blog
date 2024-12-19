@@ -1,22 +1,23 @@
 main:
-  - name: Home
-    url: '#about'
+  - name: Bio
+    url: /
     weight: 10
   - name: Posts
-    url: '#posts'
+    url: /#news
+    weight: 15
+  - name: Papers
+    url: /#papers
     weight: 20
+  - name: Experience
+    url: experience/
+    weight: 25
   - name: Projects
-    url: '#projects'
+    url: 'projects/'
     weight: 30
   - name: Talks
-    url: '#talks'
+    url: '/#talks'
     weight: 40    
-  - name: Publications
-    url: '#featured'
-    weight: 40
   - name: Courses
-    url: course/
+    url: /course
     weight: 50
-  - name: Contact
-    url: '#contact'
-    weight: 60
+

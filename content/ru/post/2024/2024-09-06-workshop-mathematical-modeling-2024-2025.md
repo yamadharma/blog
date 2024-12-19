@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-12-05T10:17:00+03:00
+lastmod: 2024-12-12T16:56:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -330,17 +330,63 @@ A new algorithm for classical computing operator exponentials in the Pauli basis
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-12 Чт&gt; </span></span> Блинков Ю. А. - PyGinv. Случай дифференциальных уравнений {#блинков-ю-dot-а-dot-pyginv-dot-случай-дифференциальных-уравнений}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-11 Ср&gt; </span></span> Кадров В. М. - Изучение дискретных многообразий на примере решения уравнений вращения твердого тела в случае Ковалевской {#кадров-в-dot-м-dot-изучение-дискретных-многообразий-на-примере-решения-уравнений-вращения-твердого-тела-в-случае-ковалевской}
 
 
 #### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
+
+-   Кадров Виктор Максимович
+-   студент 3 курса бакалавриата
+-   кафедра Математического моделирования и искусственного интеллекта РУДН
+
+
+#### <span class="section-num">1.5.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/271/>
+-   Изучение дискретных многообразий на примере решения уравнений вращения твердого тела в случае Ковалевской
+-   Кадров Виктор Максимович
+-   студент 3 курса бакалавриата
+-   кафедра Математического моделирования и искусственного интеллекта РУДН
+
+В работе рассматриваются особенности и форма многообразий, которые получаются при решении уравнений вращения твердого тела в случае Ковалевской с использованием обратимой разностной схемы. Для определения количественных различий таких многообразий был использован метод расчета корреляционной размерности. В ходе исследования была выявлена зависимость качественной структуры решения от шага по времени и малых колебаний параметров системы.
+
+---
+
+-   The study of discrete manifolds through the example of solving the equations of rotation of a rigid body in the Kovalevskaya case
+-   Viktor Maksimovich Kadrov
+-   3rd year undergraduate student
+-   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+
+This paper examines the characteristics and shapes of manifolds obtained by solving the rotation equations of a rigid body in the Kovalevskaya case using a reversible finite difference method. To quantify the differences between these manifolds, we employed the method of correlation dimension calculation. The investigation revealed a dependence of the qualitative nature of the solution on the time step and minor fluctuations in system parameters.
+
+
+#### <span class="section-num">1.5.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 2ed8ca8f44bad68f879964ff5d0e5654 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube lGz-x5ycKdc >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-12 Чт&gt; </span></span> Блинков Ю. А. - PyGinv. Случай дифференциальных уравнений {#блинков-ю-dot-а-dot-pyginv-dot-случай-дифференциальных-уравнений}
+
+
+#### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
 
 -   Блинков Ю.А.
 -   доктор физико-математических наук
 -   зав. каф. СГУ
 
 
-#### <span class="section-num">1.5.2</span> Информация {#информация}
+#### <span class="section-num">1.6.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/270/>
 -   PyGinv. Случай дифференциальных уравнений
@@ -365,31 +411,17 @@ The report considers the case of finding solutions to linear differential equati
 The calculation of symmetries for nonlinear differential equations of polynomial type is also considered. Symmetry equations and their solutions are constructed exclusively using Gröbner bases, which allows us to almost completely automate the computational process.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-12-11 Ср&gt; </span></span> Кадров В. М. - Изучение дискретных многообразий на примере решения уравнений вращения твердого тела в случае Ковалевской {#кадров-в-dot-м-dot-изучение-дискретных-многообразий-на-примере-решения-уравнений-вращения-твердого-тела-в-случае-ковалевской}
+#### <span class="section-num">1.6.3</span> Видео {#видео}
 
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
 
-#### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
+{{< rutube 2841bae6e0a3d3dc8b0a3cf27497fcbb >}}
 
--   Кадров Виктор Максимович
--   студент 3 курса бакалавриата
--   кафедра Математического моделирования и искусственного интеллекта РУДН
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
 
+{{< youtube pQ-nel9miyM >}}
 
-#### <span class="section-num">1.6.2</span> Информация {#информация}
-
--   <https://events.rudn.ru/event/271/>
--   Изучение дискретных многообразий на примере решения уравнений вращения твердого тела в случае Ковалевской
--   Кадров Виктор Максимович
--   студент 3 курса бакалавриата
--   кафедра Математического моделирования и искусственного интеллекта РУДН
-
-В работе рассматриваются особенности и форма многообразий, которые получаются при решении уравнений вращения твердого тела в случае Ковалевской с использованием обратимой разностной схемы. Для определения количественных различий таких многообразий был использован метод расчета корреляционной размерности. В ходе исследования была выявлена зависимость качественной структуры решения от шага по времени и малых колебаний параметров системы.
-
----
-
--   The study of discrete manifolds through the example of solving the equations of rotation of a rigid body in the Kovalevskaya case
--   Viktor Maksimovich Kadrov
--   3rd year undergraduate student
--   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
-
-This paper examines the characteristics and shapes of manifolds obtained by solving the rotation equations of a rigid body in the Kovalevskaya case using a reversible finite difference method. To quantify the differences between these manifolds, we employed the method of correlation dimension calculation. The investigation revealed a dependence of the qualitative nature of the solution on the time step and minor fluctuations in system parameters.
+{{< /rtab >}}
+{{< /tabs >}}

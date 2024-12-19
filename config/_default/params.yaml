@@ -6,13 +6,13 @@
 ## Appearance
 appearance:
   mode: system
-  # color: emerald
-  theme_day: minimal
-  theme_night: minimal
-  font: native
-  font_size: M
+  color: emerald
+  # theme_day: minimal
+  # theme_night: minimal
+  # font: native
+  # font_size: M
 
-## SEO
+## seo
 
 marketing:
   seo:

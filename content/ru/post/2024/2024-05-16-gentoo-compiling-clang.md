@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-12-07T20:20:00+03:00
+lastmod: 2024-12-17T17:20:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -73,7 +73,38 @@ slug: "gentoo-compiling-clang"
     ```conf-unix
     # this sources the PORTDIR_OVERLAY variable defined by layman. however, the variable expanded by layman was empty
     # source /var/db/repos/gentoo/local/layman/make.conf
-
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      /etc/portage/make.conf
+    </div>
+-   Выбор формата бинарных пакетов:
+    ```conf-unix
+    ## binpkg
+    BINPKG_FORMAT="gpkg"
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      /etc/portage/make.conf
+    </div>
+-   Выбор формата сжатия бинарных пакетов:
+    ```conf-unix
+    BINPKG_COMPRESS="zstd"
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      /etc/portage/make.conf
+    </div>
+-   Формат каталога пакетов:
+    ```conf-unix
+    FEATURES=binpkg-multi-instance
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+      /etc/portage/make.conf
+    </div>
+-   Опции для ядерных модулей:
+    ```conf-unix
     ## This is added to make options by linux-mod.eclass
     BUILD_FIXES="LLVM=1 LLVM_IAS=1"
     CLANG_NO_DEFAULT_CONFIG=1
@@ -103,6 +134,10 @@ slug: "gentoo-compiling-clang"
     # LDFLAGS="${LDFLAGS} -rtlib=compiler-rt -unwindlib=libunwind"
     # LDFLAGS="${LDFLAGS} -flto"
     ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+      /etc/portage/make.conf
+    </div>
 
 
 ### <span class="section-num">4.2</span> Конфигурация окружения для каждого пакета {#конфигурация-окружения-для-каждого-пакета}
@@ -128,7 +163,7 @@ slug: "gentoo-compiling-clang"
     sys-libs/talloc					compiler-gcc
     sys-libs/tevent					compiler-gcc
     app-editors/wily				compiler-gcc
-    sci-mathematics/gretl				compiler-gcc
+    # sci-mathematics/gretl				compiler-gcc
     dev-java/openjdk:8				compiler-gcc
     dev-java/openjdk:11				compiler-gcc
     dev-java/openjdk:17				compiler-clang-mold
@@ -145,8 +180,8 @@ slug: "gentoo-compiling-clang"
     dev-libs/opencl-clang:15			compiler-gcc
     dev-libs/opencl-clang				compiler-clang-mold
     dev-util/spirv-llvm-translator:15		compiler-gcc
-    dev-debug/lldb					compiler-clang-lto
-    media-video/vlc					compiler-clang-no-lto
+    llvm-core/lldb					compiler-clang
+    # media-video/vlc					compiler-clang
     dev-libs/intel-vc-intrinsics			compiler-gcc
     app-misc/ddcutil				compiler-gcc
     mail-client/thunderbird				compiler-gcc
@@ -254,12 +289,25 @@ slug: "gentoo-compiling-clang"
     dev-lang/rust					compiler-gcc
     dev-qt/qttools					compiler-clang-mold-18
     dev-util/kdevelop				compiler-clang-mold-18
-    dev-qt/qtwebengine				compiler-clang-mold-18
+    dev-qt/qtwebengine:5				compiler-clang-mold-18
+    dev-qt/qtwebengine:6				compiler-clang-mold-18
     kde-apps/step					compiler-clang-mold-18
     sci-mathematics/singular			compiler-gcc
     media-libs/tg_owt				compiler-gcc
     media-gfx/asymptote				compiler-gcc
     gui-libs/gtk:4					compiler-clang
+    www-client/chromium				compiler-clang
+    net-libs/webkit-gtk				compiler-clang-mold-18
+    sci-mathematics/giac				compiler-gcc
+    net-vpn/networkmanager-vpnc			compiler-gcc
+    dev-libs/cereal					compiler-clang-mold-18
+    dev-libs/olm					compiler-gcc
+    dev-libs/efl					compiler-clang-mold-18
+    dev-tex/tectonic				compiler-gcc
+    media-gfx/openvdb				compiler-clang-mold-18
+    media-libs/libquvi				compiler-gcc
+    media-libs/intel-mediasdk			compiler-gcc
+    app-editors/wily				compiler-gcc
     ```
 
 
@@ -288,7 +336,7 @@ slug: "gentoo-compiling-clang"
     LD="ld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
       /etc/portage/env/compiler-gcc
     </div>
 
@@ -307,7 +355,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
       /etc/portage/env/compiler-clang-no-lto
     </div>
 
@@ -326,7 +374,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
       /etc/portage/env/compiler-clang
     </div>
 
@@ -352,7 +400,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
   /etc/portage/env/compiler-clang-mold
 </div>
 
@@ -377,7 +425,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
   /etc/portage/env/compiler-clang-mold-18
 </div>
 

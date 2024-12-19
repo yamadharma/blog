@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-12-05T13:41:00+03:00
+lastmod: 2024-12-13T21:02:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -31,7 +31,12 @@ slug: "system-administration"
 -   [Одноразовые пароли]({{< relref "2023-08-24-one-time-passwords" >}})
 
 
-### <span class="section-num">2.2</span> Разное {#разное}
+### <span class="section-num">2.2</span> PKI {#pki}
+
+-   [Конвертация сертификатов PKCS12 в PEM]({{< relref "2024-12-13-convert-pkcs12-pem" >}})
+
+
+### <span class="section-num">2.3</span> Разное {#разное}
 
 -   [Тип ключа ssh]({{< relref "2022-02-03-ssh-key-type" >}})
 -   [Сертификаты ACME]({{< relref "2022-04-30-acme-certificates" >}})
@@ -233,12 +238,20 @@ slug: "system-administration"
 -   [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
 
 
-### <span class="section-num">10.12</span> Сетевые клиенты {#сетевые-клиенты}
+### <span class="section-num">10.12</span> Видео {#видео}
+
+
+#### <span class="section-num">10.12.1</span> Просмотр {#просмотр}
+
+-   [Проигрывание видеофайлов]({{< relref "2024-12-12-playing-videos" >}})
+
+
+### <span class="section-num">10.13</span> Сетевые клиенты {#сетевые-клиенты}
 
 -   [Почтовый клиент aerc]({{< relref "2024-07-17-email-client-aerc" >}})
 
 
-#### <span class="section-num">10.12.1</span> Броузеры {#броузеры}
+#### <span class="section-num">10.13.1</span> Броузеры {#броузеры}
 
 -   [Флаги запуска google chrome]({{< relref "2023-02-28-google-chrome-flags" >}})
 -   [Броузер Nyxt]({{< relref "2023-10-05-nyxt-browser" >}})
@@ -248,19 +261,19 @@ slug: "system-administration"
 -   [Emacs. Клавиатура. Броузеры]({{< relref "2023-08-19-emacs-keyboard-browsers" >}})
 
 
-### <span class="section-num">10.13</span> Синхронизация файлов {#синхронизация-файлов}
+### <span class="section-num">10.14</span> Синхронизация файлов {#синхронизация-файлов}
 
 -   [rclone]({{< relref "2022-10-27-rclone" >}})
 -   [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})
 -   [Скачать фотографии с google photo]({{< relref "2024-06-01-google-photo-download" >}})
 
 
-### <span class="section-num">10.14</span> Телеконференции {#телеконференции}
+### <span class="section-num">10.15</span> Телеконференции {#телеконференции}
 
 -   [Аналоги программ для видеоконференций]({{< relref "2023-03-23-video-conferencing-software-analogues" >}})
 
 
-### <span class="section-num">10.15</span> Утилиты {#утилиты}
+### <span class="section-num">10.16</span> Утилиты {#утилиты}
 
 -   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
 -   [Локальные поисковики]({{< relref "2023-06-27-desktop-search" >}})
@@ -268,7 +281,7 @@ slug: "system-administration"
 -   [Менеджер закладок buku]({{< relref "2024-06-22-buku-bookmark-manager" >}})
 
 
-### <span class="section-num">10.16</span> Файлы конфигурации {#файлы-конфигурации}
+### <span class="section-num">10.17</span> Файлы конфигурации {#файлы-конфигурации}
 
 -   [Управление файлами конфигурации. Домашний каталог. Chezmoi]({{< relref "2022-10-28-configuration-file-management-chezmoi" >}})
 -   [Управление файлами конфигурации. Домашний каталог. Репозиторий]({{< relref "2023-07-30-configuration-file-management-repo" >}})

@@ -2,7 +2,7 @@
 title: "Программное средство Cisco Packet Tracer"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-18T20:39:00+03:00
-lastmod: 2023-10-06T20:05:00+03:00
+lastmod: 2024-12-14T18:16:00+03:00
 tags: ["cisco", "network", "education"]
 categories: ["computer-science"]
 draft: false
@@ -22,7 +22,8 @@ slug: "cisco-packet-tracer-software"
 -   Разработчик: Cisco Systems
 -   Сайт: <https://www.netacad.com/courses/packet-tracer>
 -   Доступность: Cisco Packet Tracer доступен бесплатно для участников Программы Сетевой Академии Cisco.
--   Ссылки для скачки (не официальные): <https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html>
+-   Ссылки для скачки (не официальные):
+    -   <https://www.computernetworkingnotes.com/ccna-study-guide/download-packet-tracer-for-windows-and-linux.html>
 
 
 ## <span class="section-num">2</span> Регистрация в Сетевой академии Cisco {#регистрация-в-сетевой-академии-cisco}

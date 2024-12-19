@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-12-07T19:29:00+03:00
+lastmod: 2024-12-18T15:48:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "timetable-classes"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Расписание занятий <code>[/]</code> {#расписание-занятий}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">1</span> Расписание занятий <code>[1/2]</code> {#расписание-занятий}
 
 
 ### <span class="section-num">1.1</span> Информация {#информация}
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[1/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[1/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация {#информация}
@@ -199,11 +199,11 @@ slug: "timetable-classes"
         -   ОРД-299
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[1/4]</code> {#2024-2025-учебный-год-1-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[3/4]</code> {#2024-2025-учебный-год-1-семестр}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
+1. <span class="org-todo done DONE">DONE</span>  Научное программирование
 
     -   ОРД-295
     -   НПМмд-02-24
@@ -212,11 +212,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ <code>[0/2]</code>
+2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ <code>[2/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
+    1. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лекция)
 
         -   ОРД-295
         -   НПМмд-02-24
@@ -227,7 +227,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа)
+    2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лабораторная работа)
 
         -   ОРД-295
         -   ОРД-297

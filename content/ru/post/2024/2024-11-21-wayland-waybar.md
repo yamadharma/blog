@@ -2,7 +2,7 @@
 title: "Wayland. Панель Waybar"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-21T15:11:00+03:00
-lastmod: 2024-11-30T12:58:00+03:00
+lastmod: 2024-12-17T21:04:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -673,7 +673,8 @@ Wayland. Панель Waybar
 
 /* The whole bar */
 window#waybar {
-    background: @theme_fg_color;
+    /* background: @theme_fg_color; */
+    background: @theme_base_color;
     /* background: #323232; */
     border-bottom: 1px solid @unfocused_borders;
     color: @theme_text_color;

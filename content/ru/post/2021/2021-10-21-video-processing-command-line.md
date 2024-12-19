@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2024-03-02T15:07:00+03:00
+lastmod: 2024-12-18T15:45:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
@@ -84,10 +84,18 @@ slug: "video-processing-command-line"
     ```shell
     for i in $(ls *.mp4 | sort)
     do
-        echo file \'$(readlink -f "${i}")\' >>input.txt
+            echo file \'$(readlink -f "${i}")\' >>input.txt
     done
     ```
 -   Соединим видеофайлы:
     ```shell
     ffmpeg -f concat -safe 0 -i input.txt -c copy output.mp4
+    ```
+
+
+### <span class="section-num">2.3</span> Объединить несколько файлов webm {#объединить-несколько-файлов-webm}
+
+-   Можно объединить несколько файлов:
+    ```shell
+    mkvmerge -o output.webm -w file1.webm + file2.webm
     ```
