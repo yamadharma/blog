@@ -2,7 +2,7 @@
 title: "Подготовка курса Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2024-11-18T12:59:00+03:00
+lastmod: 2024-12-25T16:08:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false

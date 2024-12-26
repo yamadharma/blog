@@ -2,7 +2,7 @@
 title: "Gentoo. Дополнительные репозитории"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-01T13:41:00+03:00
-lastmod: 2024-05-26T13:54:00+03:00
+lastmod: 2024-12-20T17:35:00+03:00
 tags: ["linux", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -192,3 +192,29 @@ Gentoo. Дополнительные репозитории.
 ### <span class="section-num">6.1</span> Karma {#karma}
 
 -   [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})
+
+
+### <span class="section-num">6.2</span> guru {#guru}
+
+-   Страница: <https://wiki.gentoo.org/wiki/Project:GURU>
+-   Репозиторий: <https://github.com/gentoo-mirror/guru>
+-   Добавление репозитория:
+    ```shell
+    eselect repository enable guru
+    ```
+-   Синхронизация репозитория:
+    ```shell
+    emaint sync -r guru
+    ```
+
+
+### <span class="section-num">6.3</span> haskell {#haskell}
+
+-   Добавление репозитория:
+    ```shell
+    eselect repository enable haskell
+    ```
+-   Синхронизация репозитория:
+    ```shell
+    emaint sync -r haskell
+    ```

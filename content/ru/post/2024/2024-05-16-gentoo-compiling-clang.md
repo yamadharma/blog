@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-12-17T17:20:00+03:00
+lastmod: 2024-12-24T16:16:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -78,13 +78,21 @@ slug: "gentoo-compiling-clang"
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
       /etc/portage/make.conf
     </div>
+-   Подключение настроек конкретного хоста:
+    ```conf-unix
+    source /etc/portage/make.profile/make.conf
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      /etc/portage/make.conf
+    </div>
 -   Выбор формата бинарных пакетов:
     ```conf-unix
     ## binpkg
     BINPKG_FORMAT="gpkg"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
       /etc/portage/make.conf
     </div>
 -   Выбор формата сжатия бинарных пакетов:
@@ -92,7 +100,7 @@ slug: "gentoo-compiling-clang"
     BINPKG_COMPRESS="zstd"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
       /etc/portage/make.conf
     </div>
 -   Формат каталога пакетов:
@@ -100,7 +108,7 @@ slug: "gentoo-compiling-clang"
     FEATURES=binpkg-multi-instance
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 4:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
       /etc/portage/make.conf
     </div>
 -   Опции для ядерных модулей:
@@ -135,7 +143,7 @@ slug: "gentoo-compiling-clang"
     # LDFLAGS="${LDFLAGS} -flto"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
       /etc/portage/make.conf
     </div>
 
@@ -144,170 +152,173 @@ slug: "gentoo-compiling-clang"
 
 -   Можно задать компилятор для каждого пакета в отдельности в файле `/etc/portage/package.env`:
     ```conf-unix
-    sys-devel/gcc					compiler-gcc	# gcc itself
-    sys-devel/binutils				compiler-gcc	# gcc itself	# configure: error: AR
-    sys-libs/binutils-libs				compiler-gcc	# gcc itself
-    dev-util/mingw64-toolchain			compiler-gcc	# gcc itself
-    dev-debug/gdb					compiler-gcc	# gcc itself
-    =dev-util/gengetopt-2.23*			compiler-gcc	#
-    sys-devel/bin86					compiler-gcc    # error: ISO C99
+    # dev-haskell/network				compiler-gcc
+    # dev-haskell/old-time				compiler-gcc
+    # dev-util/spirv-llvm-translator:15		compiler-gcc
+    # dev-vcs/darcs					compiler-clang-binutils	# need ld
+    # sys-devel/clang:15				compiler-gcc
+    # sys-devel/lld:15				compiler-gcc
+    # sys-devel/llvm:15				compiler-gcc
     =app-emulation/virtualbox-7.0*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.0*		compiler-gcc    # ld.lld error
-    sys-apps/systemd				compiler-gcc
-    dev-libs/libgudev				compiler-gcc
-    media-gfx/exact-image				compiler-gcc
-    media-libs/libfpx				compiler-gcc
-    sci-libs/djbfft					compiler-gcc
-    sci-visualization/gnuplot			compiler-gcc
+    =app-emulation/virtualbox-kvm-7.1*		compiler-gcc    # ld.lld error
+    =dev-perl/PDL-2.63*				compiler-gcc
+    =dev-util/gengetopt-2.23*			compiler-gcc	#
+    =sci-libs/coinor-osi-0.108.6			compiler-gcc		# bug: #919825
+    =sci-mathematics/octave-8*			compiler-gcc
+    app-accessibility/brltty			compiler-clang-mold
+    app-arch/arj					compiler-gcc
+    app-arch/lha					compiler-gcc
+    app-cdr/cdrtools				compiler-gcc
     app-editors/emacs				compiler-gcc	# gcc-jit
-    sys-libs/talloc					compiler-gcc
-    sys-libs/tevent					compiler-gcc
     app-editors/wily				compiler-gcc
-    # sci-mathematics/gretl				compiler-gcc
-    dev-java/openjdk:8				compiler-gcc
+    app-editors/wily				compiler-gcc
+    app-emulation/dosemu				compiler-gcc
+    app-i18n/scim					compiler-gcc
+    app-misc/ddcutil				compiler-gcc
+    app-office/dia					compiler-gcc
+    app-text/fbreader				compiler-gcc
+    app-text/paper-clip				compiler-gcc
+    app-text/tesseract				compiler-clang-mold
+    app-text/zathura-pdf-mupdf			compiler-clang-mold
+    dev-db/cdb					compiler-gcc
+    dev-db/libiodbc					compiler-clang-mold
+    dev-db/mariadb					compiler-gcc
+    dev-debug/ddd					compiler-gcc
+    dev-debug/gdb					compiler-gcc	# gcc itself
+    dev-debug/systemtap				compiler-gcc
+    dev-games/openscenegraph			compiler-gcc
+    dev-haskell/network				compiler-clang
+    dev-haskell/old-time				compiler-clang
+    dev-haskell/resolv				compiler-gcc
+    dev-java/commons-daemon				compiler-gcc
     dev-java/openjdk:11				compiler-gcc
     dev-java/openjdk:17				compiler-clang-mold
     dev-java/openjdk:21				compiler-clang-mold
-    dev-java/commons-daemon				compiler-gcc
-    =dev-perl/PDL-2.63*				compiler-gcc
-    dev-python/scipy				compiler-clang-mold
-    dev-python/pygame				compiler-gcc
-    dev-games/openscenegraph			compiler-gcc
-    dev-libs/libdnet				compiler-gcc
-    sys-devel/llvm:15				compiler-gcc
-    sys-devel/clang:15				compiler-gcc
-    sys-devel/lld:15				compiler-gcc
-    dev-libs/opencl-clang:15			compiler-gcc
-    dev-libs/opencl-clang				compiler-clang-mold
-    dev-util/spirv-llvm-translator:15		compiler-gcc
-    llvm-core/lldb					compiler-clang
-    # media-video/vlc					compiler-clang
+    dev-java/openjdk:8				compiler-gcc
+    dev-java/snappy					compiler-gcc
+    dev-lang/gprolog				compiler-clang-mold
+    dev-lang/harbour				compiler-gcc
+    dev-lang/rust					compiler-gcc
+    dev-libs/cereal					compiler-clang-mold-18
+    dev-libs/efl					compiler-clang-mold-18
+    dev-libs/ffcall					compiler-gcc
     dev-libs/intel-vc-intrinsics			compiler-gcc
-    app-misc/ddcutil				compiler-gcc
-    mail-client/thunderbird				compiler-gcc
+    dev-libs/libayatana-appindicator		compiler-clang-mold
+    dev-libs/libbpf					compiler-clang-mold
+    dev-libs/libcdio				compiler-gcc
+    dev-libs/libdnet				compiler-gcc
+    dev-libs/libgamin				compiler-clang-mold
+    dev-libs/libgudev				compiler-gcc
+    dev-libs/liblouis				compiler-gcc
+    dev-libs/liboil					compiler-gcc
+    dev-libs/libphonenumber				compiler-clang-mold
+    dev-libs/libpqxx				compiler-clang-mold-18
+    dev-libs/log4cpp				compiler-gcc
+    dev-libs/olm					compiler-gcc
+    dev-libs/opencl-clang				compiler-clang-mold
+    dev-libs/opencl-clang:15			compiler-gcc
+    dev-libs/totem-pl-parser			compiler-clang-mold
+    dev-libs/xmlrpc-c				compiler-gcc
+    dev-lisp/ecl					compiler-gcc
+    dev-perl/OpenGL					compiler-clang-mold
+    dev-perl/OpenGL-GLUT				compiler-clang-mold
+    dev-perl/PDL					compiler-clang-mold
+    dev-perl/PGPLOT					compiler-clang-mold
+    dev-python/cysignals				compiler-gcc
+    dev-python/pygame				compiler-gcc
+    dev-python/scipy				compiler-clang-mold
+    dev-qt/qttools					compiler-clang-mold-18
+    dev-qt/qtwebengine:5				compiler-clang-mold-18
+    dev-qt/qtwebengine:6				compiler-clang-mold-18
+    dev-tex/tectonic				compiler-gcc
+    dev-util/kdevelop				compiler-clang-mold-18
+    dev-util/mingw64-toolchain			compiler-gcc	# gcc itself
+    dev-util/yacc					compiler-gcc
     dev-vcs/cvs					compiler-gcc
-    dev-vcs/darcs					compiler-clang-binutils	# need ld
+    dev-vcs/darcs					compiler-clang
+    gui-libs/gtk:4					compiler-clang
+    kde-apps/step					compiler-clang-mold-18
+    llvm-core/lldb					compiler-clang
+    mail-client/thunderbird				compiler-gcc
+    media-gfx/asymptote				compiler-gcc
+    media-gfx/autopano-sift-C			compiler-gcc
+    media-gfx/blender:4.0				compiler-gcc
+    media-gfx/exact-image				compiler-gcc
+    media-gfx/graphicsmagick			compiler-clang-mold
+    media-gfx/inkscape				compiler-clang-mold
+    media-gfx/openvdb				compiler-clang-mold-18
+    media-gfx/povray				compiler-gcc
+    media-gfx/sane-backends				compiler-gcc
+    media-libs/avidemux-core			compiler-gcc
+    media-libs/avidemux-plugins			compiler-gcc
+    media-libs/exempi				compiler-gcc
+    media-libs/intel-mediasdk			compiler-gcc
+    media-libs/libdc1394				compiler-gcc
+    media-libs/libdv				compiler-gcc
+    media-libs/libfpx				compiler-gcc
+    media-libs/libgphoto2				compiler-clang-mold
+    media-libs/libopenraw				compiler-gcc
+    media-libs/libquvi				compiler-gcc
+    media-libs/libsidplay				compiler-gcc
+    media-libs/mesa					compiler-clang-lto
+    media-libs/openglide				compiler-gcc
+    media-libs/tg_owt				compiler-gcc
+    media-libs/urt					compiler-gcc
+    media-sound/audacity				compiler-clang-mold
+    media-sound/sox					compiler-clang-mold
+    media-video/avidemux				compiler-gcc
+    media-video/ffmpeg				compiler-clang-mold
+    media-video/gpac				compiler-gcc
+    media-video/mpv					compiler-clang-mold
+    net-analyzer/rrdtool				compiler-clang-mold
+    net-dns/bind-tools				compiler-clang-mold
+    net-firewall/ipset				compiler-clang-mold
+    net-fs/autofs					compiler-gcc
+    net-fs/openafs					compiler-gcc
+    net-fs/samba					compiler-clang-mold
+    net-libs/gtk-vnc				compiler-clang-mold
+    net-libs/libnftnl				compiler-clang-mold
+    net-libs/serf					compiler-clang-mold
+    net-libs/webkit-gtk				compiler-clang-mold-18
+    net-misc/netkit-telnetd				compiler-gcc
+    net-misc/omniORB				compiler-gcc
+    net-misc/openssh-contrib			compiler-gcc
+    net-nds/openldap				compiler-clang-mold
+    net-print/gutenprint				compiler-gcc
+    net-proxy/dante					compiler-gcc
+    net-vpn/networkmanager-vpnc			compiler-gcc
+    sci-libs/djbfft					compiler-gcc
+    sci-libs/pdal					compiler-clang-mold-18
+    sci-libs/vtk					compiler-clang-mold-18
+    sci-mathematics/giac				compiler-gcc
+    sci-mathematics/pari				compiler-gcc		# needs fix makefiles
+    sci-mathematics/singular			compiler-gcc
+    sci-physics/openmodelica			compiler-gcc
+    sci-visualization/gnuplot			compiler-gcc
+    sci-visualization/paraview			compiler-clang-mold-18
+    sys-apps/flashrom				compiler-gcc
+    sys-apps/fwupd-efi				compiler-gcc
+    sys-apps/keyutils				compiler-clang-mold
+    sys-apps/memtest86+				compiler-gcc
+    sys-apps/systemd				compiler-gcc
+    sys-auth/sssd					compiler-clang-mold
+    sys-boot/gnu-efi				compiler-gcc
+    sys-cluster/glusterfs				compiler-clang-mold
+    sys-devel/bin86					compiler-gcc    # error: ISO C99
+    sys-devel/binutils				compiler-gcc	# gcc itself	# configure: error: AR
+    sys-devel/gcc					compiler-gcc	# gcc itself
+    sys-libs/binutils-libs				compiler-gcc	# gcc itself
+    sys-libs/ldb					compiler-clang-mold
+    sys-libs/talloc					compiler-gcc
+    sys-libs/tdb					compiler-clang-mold
+    sys-libs/tevent					compiler-gcc
+    www-client/chromium				compiler-clang
     x11-libs/agg					compiler-gcc
     x11-libs/fox					compiler-gcc
     x11-libs/motif					compiler-clang-lto
-    sys-boot/gnu-efi				compiler-gcc
-    sys-apps/memtest86+				compiler-gcc
-    sys-apps/fwupd-efi				compiler-gcc
-    sys-apps/flashrom				compiler-gcc
-    media-libs/mesa					compiler-clang-lto
-    app-text/zathura-pdf-mupdf			compiler-clang-mold
-    sys-libs/ldb					compiler-clang-mold
-    sys-libs/tdb					compiler-clang-mold
-    dev-db/cdb					compiler-gcc
-    sys-auth/sssd					compiler-clang-mold
-    =sci-libs/coinor-osi-0.108.6			compiler-gcc		# bug: #919825
-    media-gfx/blender:4.0				compiler-gcc
-    dev-debug/systemtap				compiler-gcc
-    x11-misc/virtualgl				compiler-clang-mold
-    dev-libs/libphonenumber				compiler-clang-mold
-    dev-libs/ffcall					compiler-gcc
-    dev-util/yacc					compiler-gcc
-    dev-libs/libbpf					compiler-clang-mold
-    dev-perl/OpenGL					compiler-clang-mold
-    dev-libs/xmlrpc-c				compiler-gcc
-    dev-libs/liboil					compiler-gcc
-    dev-libs/liblouis				compiler-gcc
-    dev-java/snappy					compiler-gcc
-    dev-libs/libcdio				compiler-gcc
-    net-fs/samba					compiler-clang-mold
-    dev-lang/gprolog				compiler-clang-mold
-    dev-libs/log4cpp				compiler-gcc
-    dev-db/libiodbc					compiler-clang-mold
-    dev-debug/ddd					compiler-gcc
-    dev-libs/totem-pl-parser			compiler-clang-mold
-    dev-lisp/ecl					compiler-gcc
-    dev-db/mariadb					compiler-gcc
-    dev-perl/PGPLOT					compiler-clang-mold
-    net-analyzer/rrdtool				compiler-clang-mold
-    dev-lang/harbour				compiler-gcc
-    media-libs/avidemux-core			compiler-gcc
-    media-video/avidemux				compiler-gcc
-    media-libs/avidemux-plugins			compiler-gcc
-    net-nds/openldap				compiler-clang-mold
-    net-libs/serf					compiler-clang-mold
-    sci-mathematics/pari				compiler-gcc		# needs fix makefiles
-    dev-python/cysignals				compiler-gcc
-    app-accessibility/brltty			compiler-clang-mold
-    media-video/ffmpeg				compiler-clang-mold
-    app-office/dia					compiler-gcc
-    app-text/tesseract				compiler-clang-mold
-    dev-perl/PDL					compiler-clang-mold
-    dev-perl/OpenGL-GLUT				compiler-clang-mold
-    net-misc/openssh-contrib			compiler-gcc
-    dev-haskell/network				compiler-gcc
-    dev-haskell/old-time				compiler-gcc
-    dev-haskell/resolv				compiler-gcc
-    net-proxy/dante					compiler-gcc
-    sys-apps/keyutils				compiler-clang-mold
-    net-libs/libnftnl				compiler-clang-mold
-    media-sound/sox					compiler-clang-mold
-    media-libs/libgphoto2				compiler-clang-mold
-    net-dns/bind-tools				compiler-clang-mold
-    media-gfx/sane-backends				compiler-gcc
-    app-text/paper-clip				compiler-gcc
-    app-i18n/scim					compiler-gcc
-    =sci-mathematics/octave-8*			compiler-gcc
-    dev-libs/libgamin				compiler-clang-mold
     x11-misc/redshift				compiler-gcc
-    sys-cluster/glusterfs				compiler-clang-mold
-    media-libs/exempi				compiler-gcc
-    media-libs/urt					compiler-gcc
-    media-libs/libopenraw				compiler-gcc
-    media-libs/libsidplay				compiler-gcc
-    media-libs/libdc1394				compiler-gcc
-    media-gfx/autopano-sift-C			compiler-gcc
-    media-libs/libdv				compiler-gcc
-    media-video/gpac				compiler-gcc
-    media-gfx/povray				compiler-gcc
-    media-libs/openglide				compiler-gcc
-    media-sound/audacity				compiler-clang-mold
-    net-firewall/ipset				compiler-clang-mold
-    media-gfx/graphicsmagick			compiler-clang-mold
-    dev-libs/libayatana-appindicator		compiler-clang-mold
-    net-libs/gtk-vnc				compiler-clang-mold
-    net-misc/omniORB				compiler-gcc
-    media-gfx/inkscape				compiler-clang-mold
-    net-print/gutenprint				compiler-gcc
-    net-misc/netkit-telnetd				compiler-gcc
-    net-fs/autofs					compiler-gcc
-    sci-physics/openmodelica			compiler-gcc
-    media-video/mpv					compiler-clang-mold
-    app-emulation/dosemu				compiler-gcc
-    app-arch/lha					compiler-gcc
-    app-arch/arj					compiler-gcc
-    app-text/fbreader				compiler-gcc
-    app-cdr/cdrtools				compiler-gcc
-    dev-libs/libpqxx				compiler-clang-mold-18
-    sci-libs/vtk					compiler-clang-mold-18
-    sci-visualization/paraview			compiler-clang-mold-18
-    sci-libs/pdal					compiler-clang-mold-18
-    dev-lang/rust					compiler-gcc
-    dev-qt/qttools					compiler-clang-mold-18
-    dev-util/kdevelop				compiler-clang-mold-18
-    dev-qt/qtwebengine:5				compiler-clang-mold-18
-    dev-qt/qtwebengine:6				compiler-clang-mold-18
-    kde-apps/step					compiler-clang-mold-18
-    sci-mathematics/singular			compiler-gcc
-    media-libs/tg_owt				compiler-gcc
-    media-gfx/asymptote				compiler-gcc
-    gui-libs/gtk:4					compiler-clang
-    www-client/chromium				compiler-clang
-    net-libs/webkit-gtk				compiler-clang-mold-18
-    sci-mathematics/giac				compiler-gcc
-    net-vpn/networkmanager-vpnc			compiler-gcc
-    dev-libs/cereal					compiler-clang-mold-18
-    dev-libs/olm					compiler-gcc
-    dev-libs/efl					compiler-clang-mold-18
-    dev-tex/tectonic				compiler-gcc
-    media-gfx/openvdb				compiler-clang-mold-18
-    media-libs/libquvi				compiler-gcc
-    media-libs/intel-mediasdk			compiler-gcc
-    app-editors/wily				compiler-gcc
+    x11-misc/virtualgl				compiler-clang-mold
     ```
 
 
@@ -336,7 +347,7 @@ slug: "gentoo-compiling-clang"
     LD="ld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
       /etc/portage/env/compiler-gcc
     </div>
 
@@ -355,7 +366,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
       /etc/portage/env/compiler-clang-no-lto
     </div>
 
@@ -374,7 +385,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
       /etc/portage/env/compiler-clang
     </div>
 
@@ -400,7 +411,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
   /etc/portage/env/compiler-clang-mold
 </div>
 
@@ -425,9 +436,29 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
   /etc/portage/env/compiler-clang-mold-18
 </div>
+
+
+#### <span class="section-num">4.3.6</span> clang + binutils {#clang-plus-binutils}
+
+-   Конфигурация для компилятора /clang/в файле `/etc/portage/env/compiler-clang-binutils`:
+    ```conf-unix
+    CC="clang"
+    CPP="clang-cpp"
+    CXX="clang++"
+    AR="ar"
+    NM="nm"
+    RANLIB="ranlib"
+    OBJCOPY="objcopy"
+    STRIP="strip"
+    LD="ld"
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+      /etc/portage/env/compiler-clang-binutils
+    </div>
 
 
 ## <span class="section-num">5</span> Компиляция ядра {#компиляция-ядра}

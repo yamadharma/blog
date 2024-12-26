@@ -35,7 +35,6 @@ organizations:
     url: "http://www.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
-#bio: My research interests include distributed robotics, mobile computing and programmable matter.
 bio: Мои научные интересы включают физику, администрирование Unix и сетей.
 
 interests:
@@ -51,6 +50,8 @@ languages:
     percent: 80
   - name: Французский
     percent: 50
+  - name: Немецкий
+    percent: 35
   - name: Английский
     percent: 25
 
@@ -60,7 +61,7 @@ languages:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: 'Аттестат о присвоении учёного звания профессора'
-    awarder: 'Министерство образования Российской Федерации'
+    awarder: 'Министерство науки и высшего образования Российской Федерации (Минобрнауки России)'
     url: 'https://www.minobrnauki.gov.ru/'
     # certificate_url: ""
     # icon: coursera
@@ -69,7 +70,7 @@ awards:
       Учёное звание профессора по специальности «Математическое моделирование, численные методы и комплексы программ».
 
   - title: 'Диплом доктора наук'
-    awarder: 'Министерство образования Российской Федерации'
+    awarder: 'Министерство образования и науки Российской Федерации'
     url: 'https://www.minobrnauki.gov.ru/'
     # certificate_url: ''
     # icon: coursera
@@ -78,7 +79,7 @@ awards:
       Доктор физико-математических наук, специальность 05.13.18 --- Математическое моделирование, численные методы и комплексы программ.
 
   - title: 'Аттестат о присвоении учёного звания доцента'
-    awarder: 'Министерство образования Российской Федерации'
+    awarder: 'Министерство образования и науки Российской Федерации'
     url: 'https://www.minobrnauki.gov.ru/'
     # certificate_url: ''
     # icon: coursera
@@ -168,38 +169,6 @@ education:
     date_end: '1987-06-30'
     # year: 1987
 
-  # - area: PhD Artificial Intelligence
-  #   institution: Stanford University
-  #   date_start: 2016-01-01
-  #   date_end: 2020-12-31
-  #   summary: |
-  #     Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-  #   button:
-  #     text: 'Read Thesis'
-  #     url: 'https://example.com'
-  # - area: MEng Artificial Intelligence
-  #   institution: Massachusetts Institute of Technology
-  #   date_start: 2016-01-01
-  #   date_end: 2020-12-31
-  #   summary: |
-  #     GPA: 3.8/4.0
-
-  #     Courses included:
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  # - area: BSc Artificial Intelligence
-  #   institution: Massachusetts Institute of Technology
-  #   date_start: 2016-01-01
-  #   date_end: 2020-12-31
-  #   summary: |
-  #     GPA: 3.4/4.0
-
-  #     Courses included:
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  #     - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
 work:
   - position: "Профессор"
     company_name: "Российский университет дружбы народов"
@@ -230,7 +199,7 @@ work:
     company_url:  'https://niigazekonomika.gazprom.ru/'
     company_logo: 'gazprom'
     location: 'Москва, Российская Федерация'
-    date_start: 1997-05-01
+    date_start: '1997-05-01'
     date_end: '2001-06-30'
 
 
@@ -302,13 +271,6 @@ profiles:
   - icon: rss
     link: /ru/post/index.xml
     label: RSS feed блога
-
-
-# Organizational groups that you belong to (for People widget)
-#   Set this to `[]` or comment out if you are not using People widget.
-#user_groups:
-#- Researchers
-#- Visitors
 ---
 
 ## Обо мне

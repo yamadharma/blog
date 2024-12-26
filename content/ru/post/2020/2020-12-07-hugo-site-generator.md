@@ -2,7 +2,7 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2023-10-05T20:37:00+03:00
+lastmod: 2024-12-19T19:30:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -51,3 +51,9 @@ slug: "hugo-site-generator"
 ## <span class="section-num">6</span> Создание статического сайта {#создание-статического-сайта}
 
 -   [Создание сайта на Hugo]({{< relref "2022-04-12-creating-hugo-site" >}})
+
+
+## <span class="section-num">7</span> Ресурсы {#ресурсы}
+
+-   Учебные материалы:
+    -   <https://hugo-mini-course.netlify.app/ru/>

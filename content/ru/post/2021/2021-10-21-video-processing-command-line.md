@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2024-12-18T15:45:00+03:00
+lastmod: 2024-12-26T19:25:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
@@ -93,9 +93,18 @@ slug: "video-processing-command-line"
     ```
 
 
-### <span class="section-num">2.3</span> Объединить несколько файлов webm {#объединить-несколько-файлов-webm}
+### <span class="section-num">2.3</span> Объединить несколько файлов `webm` {#объединить-несколько-файлов-webm}
 
 -   Можно объединить несколько файлов:
     ```shell
     mkvmerge -o output.webm -w file1.webm + file2.webm
     ```
+
+
+### <span class="section-num">2.4</span> Объединить несколько файлов `mkv` {#объединить-несколько-файлов-mkv}
+
+-   Можно объединить несколько файлов:
+    ```shell
+    mkvmerge --language "1:ru" --title "Title" --generate-chapters when-appending -o output.mkv file1.mkv + file2.mkv
+    ```
+-   Кроме объединения, мы задали язык звуковой дорожки (русский) и каждый файл обозначили как главу.

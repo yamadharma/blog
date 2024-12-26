@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-12-13T21:02:00+03:00
+lastmod: 2024-12-20T18:20:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -464,3 +464,8 @@ slug: "system-administration"
 
 -   [Система управления событиями Indico]({{< relref "2024-09-24-indico-event-organisation" >}})
 -   [Система управления обучением Moodle]({{< relref "2024-09-15-moodle-learning-management-system" >}})
+
+
+## <span class="section-num">23</span> Репозитории программного обеспечения {#репозитории-программного-обеспечения}
+
+-   [Репозиторий программного обеспечения Entware]({{< relref "2024-12-20--entware-software-repository" >}})

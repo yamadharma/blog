@@ -2,7 +2,7 @@
 title: "Hugo. Вкладки"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-26T18:11:00+03:00
-lastmod: 2024-02-25T16:44:00+03:00
+lastmod: 2024-12-26T15:32:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -41,30 +41,30 @@ slug: "hugo-tabbed-view"
 -   Файл `tabs.html` (bootstrap 4):
     ```html
     <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                    {{ $tabTotal := .Get "tabTotal" }} {{ $tabRightAlign
-                    := .Get "tabRightAlign" }} {{ $tabName := .Scratch.Get
-                    "tabName" }} {{ $tabID := .Scratch.Get "tabID" }}
+                        {{ $tabTotal := .Get "tabTotal" }} {{ $tabRightAlign
+                        := .Get "tabRightAlign" }} {{ $tabName := .Scratch.Get
+                        "tabName" }} {{ $tabID := .Scratch.Get "tabID" }}
 
-                    {{ range $i, $sequence := (seq $tabTotal) }}
+                        {{ range $i, $sequence := (seq $tabTotal) }}
 
-                    <a class="nav-item nav-link {{ if eq $i 0 }} active {{
-                       end }}{{ if in $tabRightAlign (add 1 $i) }} ml-auto
-                       {{ end }}" id="nav-{{ (index $tabID $i) }}"
-                       data-toggle="tab" href="#{{ (index $tabID $i) }}"
-                       role="tab" aria-controls="nav-home"
-                       aria-selected="true">{{ (replaceRE "(\\s)" ""
-                       (index $tabName $i)) }}</a>
+                        <a class="nav-item nav-link {{ if eq $i 0 }} active {{
+                           end }}{{ if in $tabRightAlign (add 1 $i) }} ml-auto
+                           {{ end }}" id="nav-{{ (index $tabID $i) }}"
+                           data-toggle="tab" href="#{{ (index $tabID $i) }}"
+                           role="tab" aria-controls="nav-home"
+                           aria-selected="true">{{ (replaceRE "(\\s)" ""
+                           (index $tabName $i)) }}</a>
 
-                    {{ end }}
+                        {{ end }}
 
-            </div>
+                </div>
     </nav>
 
     <div class="tab-content" id="nav-tab-content">
 
-            {{ .Inner }}
+                {{ .Inner }}
 
     </div>
     ```
@@ -72,27 +72,27 @@ slug: "hugo-tabbed-view"
 -   Файл `tabs.html` (bootstrap 5):
     ```html
     <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                    {{ $tabTotal := .Get "tabTotal" }}
-                    {{ $tabRightAlign := .Get "tabRightAlign" }}
-                    {{ $tabName := .Scratch.Get "tabName" }}
-                    {{ $tabID := .Scratch.Get "tabID" }}
+                        {{ $tabTotal := .Get "tabTotal" }}
+                        {{ $tabRightAlign := .Get "tabRightAlign" }}
+                        {{ $tabName := .Scratch.Get "tabName" }}
+                        {{ $tabID := .Scratch.Get "tabID" }}
 
-                    {{ range $i, $sequence := (seq $tabTotal) }}
+                        {{ range $i, $sequence := (seq $tabTotal) }}
 
-                    <a class="nav-link {{ if eq $i 0 }} active {{ end }}{{ if in $tabRightAlign (add 1 $i) }} ms-auto {{ end }}"
-                       id="{{ (index $tabID $i) }}-tab" data-bs-toggle="tab" data-bs-target="#{{ (index $tabID $i) }}"
-                       type="button" role="tab" aria-controls="nav-home" aria-selected="true">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
+                        <a class="nav-link {{ if eq $i 0 }} active {{ end }}{{ if in $tabRightAlign (add 1 $i) }} ms-auto {{ end }}"
+                           id="{{ (index $tabID $i) }}-tab" data-bs-toggle="tab" data-bs-target="#{{ (index $tabID $i) }}"
+                           type="button" role="tab" aria-controls="nav-home" aria-selected="true">{{ (replaceRE "(\\s)" "" (index $tabName $i)) }}</a>
 
-                    {{ end }}
+                        {{ end }}
 
-            </div>
+                </div>
     </nav>
 
     <div class="tab-content" id="nav-tab-content">
 
-            {{ .Inner }}
+                {{ .Inner }}
 
     </div>
     ```
@@ -112,7 +112,7 @@ slug: "hugo-tabbed-view"
     ```
 
 
-## <span class="section-num">3</span> Использование {#использование}
+### <span class="section-num">2.2</span> Использование {#использование}
 
 -   Одна вкладка.
     -   Код:

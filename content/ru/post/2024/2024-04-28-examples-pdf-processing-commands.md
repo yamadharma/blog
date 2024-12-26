@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-12-16T14:55:00+03:00
+lastmod: 2024-12-25T16:50:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -201,7 +201,7 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
 
 -   Команда qpdf:
     ```shell
-    qpdf --compress-streams=y --object-streams=generate --recompress-flate --optimize-images --linearize document.pdf qpdf_compressed.pdfs
+    qpdf --compress-streams=y --object-streams=generate --recompress-flate --optimize-images --linearize document.pdf qpdf_compressed.pdf
     ```
 
     -   `--compress-streams=y` : указывает `qpdf` сжимать потоки контента в файле PDF. Потоки контента содержат фактические данные, такие как текст и изображения, в документе PDF;

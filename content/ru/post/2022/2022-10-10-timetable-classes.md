@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-12-18T15:48:00+03:00
+lastmod: 2024-12-25T15:49:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[1/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[2/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация {#информация}
@@ -199,7 +199,7 @@ slug: "timetable-classes"
         -   ОРД-299
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[3/4]</code> {#2024-2025-учебный-год-1-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[4/4]</code> {#2024-2025-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -240,7 +240,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo NEXT">NEXT</span>  Основы администрирования ОС <code>[1/2]</code>
+3. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС <code>[2/2]</code>
 
     <!--list-separator-->
 
@@ -250,7 +250,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
+    2. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лекция)
 
         -   ОРД-559
         -   НПИбд-00-23
@@ -643,7 +643,7 @@ slug: "timetable-classes"
     -   ОРД-297
 
 
-## <span class="section-num">2</span> Промежуточные аттестации <code>[/]</code> {#промежуточные-аттестации}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Промежуточные аттестации <code>[5/6]</code> {#промежуточные-аттестации}
 
 
 ### <span class="section-num">2.1</span> Информация {#информация}
@@ -651,7 +651,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[1/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[1/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -724,7 +724,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
+    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных (зачёт)
 
 <!--list-separator-->
 
@@ -732,7 +732,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (экзамен)
 
 <!--list-separator-->
 
@@ -747,27 +747,27 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2 - 2024-2025, модуль 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[0/3]</code> {#сессия-семестр-1-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[1/3]</code> {#сессия-семестр-1-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Зачёты - 2024-2025, семестр 1 <code>[0/4]</code>
+1. <span class="org-todo done DONE">DONE</span>  Зачёты - 2024-2025, семестр 1 <code>[4/4]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Научное программирование
+    1. <span class="org-todo done DONE">DONE</span>  Научное программирование (зачёт)
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования операционных систем
+    2. <span class="org-todo done DONE">DONE</span>  Основы администрирования операционных систем (зачёт)
 
     <!--list-separator-->
 
-    3. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем
+    3. <span class="org-todo done DONE">DONE</span>  Администрирование сетевых подсистем (зачёт)
 
     <!--list-separator-->
 
-    4. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии
+    4. <span class="org-todo done DONE">DONE</span>  Сетевые технологии (зачёт)
 
 <!--list-separator-->
 

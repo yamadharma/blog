@@ -2,7 +2,7 @@
 title: "NAS. TerraMaster"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-10T18:35:00+03:00
-lastmod: 2024-12-19T11:15:00+03:00
+lastmod: 2024-12-21T21:36:00+03:00
 tags: ["sysadmin", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -115,10 +115,81 @@ NAS. TerraMaster.
 ## <span class="section-num">4</span> Программное обеспечение {#программное-обеспечение}
 
 
-## <span class="section-num">5</span> Стандартные операции {#стандартные-операции}
+### <span class="section-num">4.1</span> qBittorrent {#qbittorrent}
+
+-   В стандартном репозитории.
+-   Более новые версии в репозитории сообщества: <https://tmnascommunity.eu/download/qbittorrent/>.
+-   Учётные данные при запуске:
+    -   username: admin
+    -   password: adminadmin
 
 
-### <span class="section-num">5.1</span> Увеличение количества жёстких дисков {#увеличение-количества-жёстких-дисков}
+### <span class="section-num">4.2</span> Plex Media Server {#plex-media-server}
+
+-   В стандартном репозитории.
+
+
+## <span class="section-num">5</span> Entware {#entware}
+
+-   [Репозиторий программного обеспечения Entware]({{< relref "2024-12-20--entware-software-repository" >}})
+
+
+### <span class="section-num">5.1</span> Установка {#установка}
+
+-   Подключиться по ssh.
+-   Создать каталог для установки:
+    ```shell
+    mkdir -p /Volume1/@entware/opt
+    ```
+-   Подключить каталог `/opt`:
+    ```shell
+    ln -s /Volume1/@entware/opt /opt
+    ```
+-   Скачать и запустить установщик:
+    ```shell
+    wget -O - http://bin.entware.net/x64-k3.2/installer/generic.sh | /bin/sh
+    ```
+-   Сделать ссылку на менеджер пакетов:
+    ```shell
+    ln -s /opt/bin/opkg /usr/bin/opkg
+    ```
+-   Отредактировать `/etc/profile`, добавив к `PATH` `/opt/bin:/opt/sbin`:
+    ```shell
+    export PATH=$PATH:/opt/bin:/opt/sbin
+    ```
+-   Перечитайте `/etc/profile`:
+    ```shell
+    source /etc/profile
+    ```
+-   Обновите список пакетов:
+    ```shell
+    opkg update
+    ```
+
+
+### <span class="section-num">5.2</span> Программное обеспечение {#программное-обеспечение}
+
+
+#### <span class="section-num">5.2.1</span> Syncthing {#syncthing}
+
+-   Установить:
+    ```shell
+    opkg install syncthing
+    ```
+-   Запустить:
+    ```shell
+    /opt/etc/init.d/S92syncthing start
+    ```
+-   Сконфигурируйте через броузер:
+    ```shell
+    http://<your device ip>:8384/
+    ```
+
+
+## <span class="section-num">6</span> Стандартные операции {#стандартные-операции}
+
+
+### <span class="section-num">6.1</span> Увеличение количества жёстких дисков {#увеличение-количества-жёстких-дисков}
 
 -   Информация: <https://www.terra-master.com/ru/terramaster-traid>
 -   Не выключая TNAS, вставьте новый жесткий диск.
@@ -126,7 +197,7 @@ NAS. TerraMaster.
 -   Выберите _Добавить жёсткие диски в RAID_.
 
 
-### <span class="section-num">5.2</span> Замена жёсткого диска {#замена-жёсткого-диска}
+### <span class="section-num">6.2</span> Замена жёсткого диска {#замена-жёсткого-диска}
 
 -   Информация: <https://www.terra-master.com/ru/terramaster-traid>
 -   Ёмкость вновь добавленного диска должна быть как минимум такой же, как и диск наименьшей емкости в TRAID.
@@ -135,22 +206,36 @@ NAS. TerraMaster.
 -   Выберите «Восстановить».
 
 
-### <span class="section-num">5.3</span> Миграция пула носителей {#миграция-пула-носителей}
+### <span class="section-num">6.3</span> Миграция пула носителей {#миграция-пула-носителей}
 
 -   Информация: <https://www.terra-master.com/ru/storage-pool-migration>
 
 
-## <span class="section-num">6</span> Опыт использования {#опыт-использования}
+## <span class="section-num">7</span> Опыт использования {#опыт-использования}
 
 
-### <span class="section-num">6.1</span> TerraMaster F6-424 {#terramaster-f6-424}
+### <span class="section-num">7.1</span> TerraMaster F6-424 {#terramaster-f6-424}
 
 
-#### <span class="section-num">6.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
+#### <span class="section-num">7.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
 
 <!--list-separator-->
 
 1.  Plex Media Server
+
+    -   В стандартном репозитории.
+
+    <!--list-separator-->
+
+    1.  Права на файловую систему
+
+        -   Установим права на файловую систему:
+            ```shell
+            setfacl -m u:plex:r-x /Volume1/data
+            setfacl -d -m u:plex:r-x /Volume1/data
+            setfacl -R -m u:plex:rwx /Volume1/data/{tvshow,movie,music}
+            setfacl -R -d -m u:plex:rwx /Volume1/data/{tvshow,movie,music}
+            ```
 
 <!--list-separator-->
 
@@ -169,7 +254,7 @@ NAS. TerraMaster.
     -   В стандартном репозитории.
 
 
-#### <span class="section-num">6.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
+#### <span class="section-num">7.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
 
 -   В консоли не смог залогиниться.
 -   Посмотрел ip-адрес (на сервере DHCP, но можно было и в консоли).
@@ -200,7 +285,7 @@ NAS. TerraMaster.
 -   Установил BTRFS (см. [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})).
 
 
-#### <span class="section-num">6.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
+#### <span class="section-num">7.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
 
 -   Купил 2 жёстких диска.
 -   Жесткий диск 18TB SATA 6Gb/s Seagate ST18000NM000J
@@ -214,7 +299,7 @@ NAS. TerraMaster.
 -   Размер хранилища остался 3.63TB.
 
 
-#### <span class="section-num">6.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
+#### <span class="section-num">7.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
 
 -   Перешёл в меню _Панель управления &gt; Жёсткий диск &gt; Жёсткий диск_.
 -   Выбрал диск на 4TB.
@@ -237,7 +322,7 @@ NAS. TerraMaster.
 -   Запустил перестройку RAID.
 
 
-#### <span class="section-num">6.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
+#### <span class="section-num">7.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
 
 -   Синхронизация RAID закончилась.
 -   Перешёл в меню _Панель управления &gt; Том &gt; Том 1_.
