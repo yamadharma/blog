@@ -1,11 +1,14 @@
-# IDEs
+## IDEs
 .idea/
 
-# Hugo
+## Hugo
 resources/
-#public/
+public/
 
 *~
 
 ## Ox-hugo
 static/ltximg/
+
+## Search index
+static/pagefind/
