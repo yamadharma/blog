@@ -199,7 +199,6 @@ outputFormats:
     baseName: backlinks
     isPlainText: true
     notAlternative: true
-    weight: 1
   WebAppManifest:
     mediaType: application/manifest+json
     rel: manifest

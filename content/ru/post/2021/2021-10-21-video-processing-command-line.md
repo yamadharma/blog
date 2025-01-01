@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2024-12-26T19:25:00+03:00
+lastmod: 2024-12-28T18:14:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
@@ -84,7 +84,7 @@ slug: "video-processing-command-line"
     ```shell
     for i in $(ls *.mp4 | sort)
     do
-            echo file \'$(readlink -f "${i}")\' >>input.txt
+    echo file \'$(readlink -f "${i}")\' >>input.txt
     done
     ```
 -   Соединим видеофайлы:

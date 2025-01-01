@@ -2,7 +2,7 @@
 title: "Общедоступные резольверы DNS"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-26T12:14:00+03:00
-lastmod: 2024-04-11T15:03:00+03:00
+lastmod: 2024-12-28T11:46:00+03:00
 tags: ["network"]
 categories: ["computer-science"]
 draft: false
@@ -203,3 +203,38 @@ slug: "public-dns-resolvers"
 -   94.140.15.16
 -   2a10:50c0::bad1:ff
 -   2a10:50c0::bad2:ff
+
+
+## <span class="section-num">15</span> Comss.one DNS {#comss-dot-one-dns}
+
+
+### <span class="section-num">15.1</span> Общая информация {#общая-информация}
+
+-   Сайт: <https://www.comss.ru/page.php?id=7315>
+-   Как настраивать: <https://www.comss.ru/page.php?id=15310>
+-   Также предоставляет доступ к популярным сайтам и сервисам.
+    -   В частности, вы можете пользоваться ИИ-сервисами (ChatGPT и Sora, Microsoft Copilot, GitHub Copilot, Google Gemini и Google ImageFX, Claude AI), или устанавливать обновления антивирусов, инсайдерские сборки и обновления Windows, а также играть в Brawl Stars в России.
+
+
+### <span class="section-num">15.2</span> Стандартные серверы {#стандартные-серверы}
+
+-   IPv4-адреса:
+    -   83.220.169.155
+    -   195.133.25.16
+-   IPv6-адреса:
+    -   2a01:230:4:915::2
+    -   2a03:6f00:a::3f24
+
+
+### <span class="section-num">15.3</span> Серверы с шифрованием {#серверы-с-шифрованием}
+
+-   DNS-over-HTTPS (DoH)
+    -   <https://dns.comss.one/dns-query>
+-   DNS-over-TLS (DoT)
+    -   dns.comss.one
+    -   tls://dns.comss.one
+-   DNS-over-HTTPS (DoH) – для MikroTik
+    -   <https://dns.comss.one/mikrotik>
+    -   IP: 195.133.25.16
+-   DNS-over-QUIC (DoQ)
+    -   quic://dns.comss.one

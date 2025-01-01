@@ -2,7 +2,7 @@
 title: "Умный дом. Яндекс. Алиса"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-19T12:45:00+03:00
-lastmod: 2024-12-26T20:51:00+03:00
+lastmod: 2025-01-01T16:05:00+03:00
 tags: ["appliance"]
 categories: ["life", "computer-science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "smart-home-yandex-alice"
 ## <span class="section-num">1</span> Опыт использования {#опыт-использования}
 
 
-### <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-19 Чт]</span></span> {#6e3b3d}
+### <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-19 Чт] </span></span> Розетки {#розетки}
 
 -   Купил две розетки Яндекс с Алисой (YNDX-00540WHT).
 -   Каждая по 1317.00₽.
@@ -31,7 +31,7 @@ slug: "smart-home-yandex-alice"
 -   Подключить розетку к колонке в детской, находясь при этом на кухне, не получилось.
 
 
-### <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-20 Пт]</span></span> {#f256a3}
+### <span class="section-num">1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-20 Пт] </span></span> Хаб Zigbee {#хаб-zigbee}
 
 -   Купил Хаб Zigbee White, белый.
 -   4281₽
@@ -44,7 +44,7 @@ slug: "smart-home-yandex-alice"
     -   переключение каналов.
 
 
-### <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-26 Чт]</span></span> {#02978c}
+### <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-26 Чт] </span></span> Выключатели проводные, Zigbee {#выключатели-проводные-zigbee}
 
 -   Купил два выключателя Яндекс YNDX-00531.
 -   По 2799 ₽.

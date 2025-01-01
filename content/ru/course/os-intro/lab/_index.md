@@ -2,7 +2,7 @@
 title: "Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-27T13:30:00+03:00
-lastmod: 2023-09-25T13:23:00+03:00
+lastmod: 2024-12-29T19:03:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -23,5 +23,3 @@ menu:
 Лабораторные работы по курсу Операционные системы.
 
 <!--more-->
-
-{{< list_children >}}

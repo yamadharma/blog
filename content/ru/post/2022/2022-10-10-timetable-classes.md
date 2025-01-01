@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-12-25T15:49:00+03:00
+lastmod: 2024-12-30T10:15:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,10 +24,10 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[2/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[3/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация {#информация}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация <code>[0/1]</code> {#информация}
 
 <!--list-separator-->
 
@@ -133,15 +133,15 @@ slug: "timetable-classes"
     -   Занятие проводится дистанционно
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.3</span> 2024--2025 учебный год, 2 четверть <code>[0/2]</code> {#2024-2025-учебный-год-2-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.3</span> 2024--2025 учебный год, 2 четверть <code>[2/2]</code> {#2024-2025-учебный-год-2-четверть}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/3]</code>
+1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных <code>[3/3]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+    1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
 
         -   НКНбд-01-21
         -   НФИбд-01-21
@@ -152,7 +152,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+    2. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
 
         -   НКНбд-01-21
         -   НФИбд-01-21
@@ -163,7 +163,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    3. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных
+    3. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
 
         -   НКНбд-01-21
         -   НФИбд-01-21
@@ -174,11 +174,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/2]</code>
+2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных <code>[2/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
+    1. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
 
         -   НКНбд-01-21
         -   НФИбд-01-21
@@ -189,7 +189,7 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных
+    2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
 
         -   НКНбд-01-21
         -   НФИбд-01-21

@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-12-24T16:16:00+03:00
+lastmod: 2024-12-28T19:54:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -228,7 +228,7 @@ slug: "gentoo-compiling-clang"
     dev-python/cysignals				compiler-gcc
     dev-python/pygame				compiler-gcc
     dev-python/scipy				compiler-clang-mold
-    dev-qt/qttools					compiler-clang-mold-18
+    # dev-qt/qttools					compiler-clang-mold-18
     dev-qt/qtwebengine:5				compiler-clang-mold-18
     dev-qt/qtwebengine:6				compiler-clang-mold-18
     dev-tex/tectonic				compiler-gcc
@@ -319,6 +319,7 @@ slug: "gentoo-compiling-clang"
     x11-libs/motif					compiler-clang-lto
     x11-misc/redshift				compiler-gcc
     x11-misc/virtualgl				compiler-clang-mold
+    # app-emulation/libguestfs        compiler-gcc
     ```
 
 

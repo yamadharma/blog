@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2024-06-04T10:43:00+03:00
+lastmod: 2024-12-28T18:29:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -36,6 +36,8 @@ slug: "linux-administration"
 
 ### <span class="section-num">1.4</span> Виртуальные машины {#виртуальные-машины}
 
+-   [Linux. Дистрибутив Proxmox]({{< relref "2024-06-04-linux-proxmox-distribution" >}})
+
 
 ## <span class="section-num">2</span> Файловые системы {#файловые-системы}
 
@@ -47,3 +49,4 @@ slug: "linux-administration"
 
 -   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
 -   [Установка Linux в WSL]({{< relref "2024-05-30-linux-wsl-install" >}})
+-   [Linux. Установка в kvm]({{< relref "2024-12-28--linux-installation-kvm" >}})

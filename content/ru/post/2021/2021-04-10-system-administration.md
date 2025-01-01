@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2024-12-20T18:20:00+03:00
+lastmod: 2025-01-01T16:09:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -225,6 +225,7 @@ slug: "system-administration"
 
 -   [Терминальный мультиплексор tmux]({{< relref "2024-02-19-terminal-multiplexer-tmux" >}})
 -   [Эмулятор терминала kitty]({{< relref "2024-03-16-kitty-terminal-emulator" >}})
+-   [Командные оболочки Unix]({{< relref "2025-01-01--unix-shells" >}})
 
 
 ### <span class="section-num">10.10</span> Работа с файлами {#работа-с-файлами}
