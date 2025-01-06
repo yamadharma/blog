@@ -31,7 +31,7 @@ languages:
 cascade:
   # Blog post options
   - _target:
-      path: /post/**
+      path: post/**
     editable: false
     reading_time: true
     commentable: false
@@ -43,7 +43,7 @@ cascade:
       navbar:
         enable: true
   - _target:
-      path: /course/**
+      path: teaching/**
     editable: false
     reading_time: true
     commentable: false
@@ -51,6 +51,7 @@ cascade:
     show_breadcrumb: true
     share: false
     backlinks: true
+    invert_pager: false
     header:
       navbar:
         enable: true

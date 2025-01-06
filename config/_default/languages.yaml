@@ -28,12 +28,12 @@ ru:
         weight: 20
       - name: Опыт
         url: experience/
-        weight: 25        
+        weight: 25
       - name: Проекты
         url: 'projects/'
         weight: 30
-      - name: Курсы
-        url: course/
+      - name: Преподавание
+        url: teaching/
         weight: 50
       # - name: Контакты
       #   url: '#contact'

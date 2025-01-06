@@ -2,7 +2,7 @@
 title: "Pdf. Просмотр. Zathura"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-20T13:12:00+03:00
-lastmod: 2024-11-04T19:29:00+03:00
+lastmod: 2025-01-05T21:48:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -370,7 +370,7 @@ Zathura --- программа просмотра pdf-файлов.
 
 ### <span class="section-num">3.1</span> Установка как приложения по умолчанию {#установка-как-приложения-по-умолчанию}
 
--   Приложение по умолчанию устанавливается с помощью _xdg-utils_ (см. [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})):
+-   Приложение по умолчанию устанавливается с помощью _xdg-utils_ (см. [XDG. Приложения MIME]({{< relref "../notes/public/20230402133900-xdg_mime_applications.md" >}})):
     ```shell
     xdg-mime default org.pwmt.zathura.desktop application/pdf
     xdg-mime default org.pwmt.zathura.desktop image/vnd.djvu+multipage
@@ -391,44 +391,6 @@ Zathura --- программа просмотра pdf-файлов.
     # -*- mode: conf-unix -*-
     ## Zathura configuration file
     ## See man `man zathurarc'
-
-    ## Open document in fit-width mode by default
-    set adjust-open "best-fit"
-
-    ## One page per row by default
-    set pages-per-row 1
-
-    ## Stop at page boundries
-    set scroll-page-aware "true"
-    set smooth-scroll "true"
-    set scroll-full-overlap 0.01
-    set scroll-step 100
-
-    ## Zoom settings
-    set zoom-min 10
-    set zoom-step 3
-    set guioptions ""
-
-    # keep several lines of text when
-    # scrolling a screenful
-    set scroll-full-overlap 0.2
-
-    # see documentation for details
-    set scroll-page-aware true
-    set window-title-basename true
-    set adjust-open width
-    set statusbar-home-tilde true
-    set vertical-center true
-    set synctex true
-    # large bold font easier on the eyes in index mode
-    # status bar can be disabled with A-s
-    set font "Iosevka 12"
-
-    set render-loading "false"
-    set scroll-step 50
-    unmap f
-    map f toggle_fullscreen
-    map [fullscreen] f toggle_fullscreen
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
@@ -436,7 +398,61 @@ Zathura --- программа просмотра pdf-файлов.
     </div>
 
 
-### <span class="section-num">4.1</span> Буфер обмена {#буфер-обмена}
+### <span class="section-num">4.1</span> Настройка графического интерфейса {#настройка-графического-интерфейса}
+
+-   Показывает или скрывает элементы графического интерфейса:
+    -   `c` : командная строка;
+    -   `s` : панель состояния;
+    -   `v` : вертикальная полоса прокрутки;
+    -   `h` : горизонтальная полоса прокрутки.
+        ```conf-unix
+        set guioptions shv
+        ```
+
+
+### <span class="section-num">4.2</span> Общие настройки {#общие-настройки}
+
+```conf-unix
+## Open document in fit-width mode by default
+set adjust-open "best-fit"
+
+## One page per row by default
+set pages-per-row 1
+
+## Stop at page boundries
+set scroll-page-aware "true"
+set smooth-scroll "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+## Zoom settings
+set zoom-min 10
+set zoom-step 3
+
+# keep several lines of text when
+# scrolling a screenful
+set scroll-full-overlap 0.2
+
+# see documentation for details
+set scroll-page-aware true
+set window-title-basename true
+set adjust-open width
+set statusbar-home-tilde true
+set vertical-center true
+set synctex true
+# large bold font easier on the eyes in index mode
+# status bar can be disabled with A-s
+set font "Iosevka 12"
+
+set render-loading "false"
+set scroll-step 50
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+```
+
+
+### <span class="section-num">4.3</span> Буфер обмена {#буфер-обмена}
 
 -   Выделение мышью копируется в буфер обмена, а не в _x11 primary selection_.
     ```conf-unix
@@ -449,7 +465,7 @@ Zathura --- программа просмотра pdf-файлов.
     </div>
 
 
-### <span class="section-num">4.2</span> Разное {#разное}
+### <span class="section-num">4.4</span> Разное {#разное}
 
 ```conf-unix
 ## Enable incremental search
@@ -468,10 +484,10 @@ map <C-o> zoom out
 </div>
 
 
-### <span class="section-num">4.3</span> Режимы {#режимы}
+### <span class="section-num">4.5</span> Комбинации клавиш {#комбинации-клавиш}
 
 
-#### <span class="section-num">4.3.1</span> Нормальный режим {#нормальный-режим}
+#### <span class="section-num">4.5.1</span> Нормальный режим {#нормальный-режим}
 
 <div class="table-caption">
   <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 6:</span>
@@ -584,7 +600,7 @@ map <C-o> zoom out
     </div>
 
 
-#### <span class="section-num">4.3.2</span> Полноэкранный режим {#полноэкранный-режим}
+#### <span class="section-num">4.5.2</span> Полноэкранный режим {#полноэкранный-режим}
 
 ```conf-unix
 map [fullscreen] j toggle_fullscreen
@@ -655,7 +671,7 @@ map [fullscreen] = zoom in
 </div>
 
 
-#### <span class="section-num">4.3.3</span> Режим работы с оглавлением {#режим-работы-с-оглавлением}
+#### <span class="section-num">4.5.3</span> Режим работы с оглавлением {#режим-работы-с-оглавлением}
 
 ```conf-unix
 # status bar will obscure last item in index mode
@@ -695,7 +711,7 @@ map [index] <C-c> toggle_index
 </div>
 
 
-#### <span class="section-num">4.3.4</span> Режим презентации {#режим-презентации}
+#### <span class="section-num">4.5.4</span> Режим презентации {#режим-презентации}
 
 ```conf-unix
 map [presentation] i toggle_index

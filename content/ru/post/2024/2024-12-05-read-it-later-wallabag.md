@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2024-12-10T08:45:00+03:00
+lastmod: 2025-01-03T14:39:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -40,6 +40,7 @@ slug: "read-it-later-wallabag"
 -   Ссылки по экосистеме: <https://github.com/wallabag/wallabag/wiki/wallabag-ecosystem>
 -   Emacs:
     -   wallabag.el:
+        -   [Emacs. Отложенное чтение. wallabag.el]({{< relref "2025-01-03--emacs-wallabagel" >}})
         -   Репозиторий: <https://github.com/chenyanming/wallabag.el>
     -   wombag:
         -   Репозиторий: <https://github.com/karthink/wombag>

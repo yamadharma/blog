@@ -2,7 +2,7 @@
 title: "Подготовка курса Основы администрирования операционных систем"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-03T16:32:00+03:00
-lastmod: 2024-11-09T17:52:00+03:00
+lastmod: 2025-01-03T22:43:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false

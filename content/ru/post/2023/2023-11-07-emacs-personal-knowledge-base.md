@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2024-09-20T17:27:00+03:00
+lastmod: 2025-01-03T17:04:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -113,6 +113,7 @@ slug: "emacs-personal-knowledge-base"
 
 ### <span class="section-num">3.8</span> denote {#denote}
 
+-   [Emacs. Пакет denote]({{< relref "2025-01-03--emacs-denote" >}})
 -   Репозиторий: <https://github.com/protesilaos/denote>
 -   Документация: <https://protesilaos.com/emacs/denote>
 -   Поддерживает любые текстовые форматы файлов.

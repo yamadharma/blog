@@ -2,7 +2,7 @@
 title: "Подготовка курса Сетевые технологии"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-17T14:10:00+03:00
-lastmod: 2023-10-06T20:16:00+03:00
+lastmod: 2025-01-03T22:44:00+03:00
 tags: ["education", "network"]
 categories: ["computer-science", "science"]
 draft: false

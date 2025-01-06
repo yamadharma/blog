@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-01-01T19:50:00+03:00
+lastmod: 2025-01-03T14:26:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -2311,25 +2311,43 @@ slug: "emacs-desire-configuration"
 -   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
 
 
-#### <span class="section-num">3.31.1</span> Dired {#dired}
+#### <span class="section-num">3.31.1</span> dired {#dired}
 
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    ;;; Dired {{{
+<!--list-separator-->
 
-    (desire 'mouse3 :recipe '(:fetcher github :repo "emacsmirror/mouse3" :branch "master" :files ("*.el")))
+1.  dired
 
-    (desire 'dired)
-    (desire 'dired+ :recipe '(:fetcher github :repo "emacsmirror/dired-plus" :branch "master" :files ("*.el")))
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;; Dired {{{
 
-    ;; (desire 'ranger)
-    ;; (desire 'efar)
-    ;; (desire 'sunrise-commander :recipe '(:fetcher github :repo "sunrise-commander/sunrise-commander"))
-    (desire 'dirvish)
-    ;; (desire 'diredc)
+        (desire 'mouse3 :recipe '(:fetcher github :repo "emacsmirror/mouse3" :branch "master" :files ("*.el")))
 
-    ;;;}}}
-    ```
+        (desire 'dired)
+        (desire 'dired+ :recipe '(:fetcher github :repo "emacsmirror/dired-plus" :branch "master" :files ("*.el")))
+
+        ;; (desire 'ranger)
+        ;; (desire 'efar)
+        ;; (desire 'sunrise-commander :recipe '(:fetcher github :repo "sunrise-commander/sunrise-commander"))
+        (desire 'dirvish)
+        ;;;}}}
+        ```
+
+<!--list-separator-->
+
+2.  diredc
+
+    -   Репозиторий: <https://github.com/Boruch-Baum/emacs-diredc>
+    -   Двупанельный (как в midnight commander) режим.
+    -   Подключение:
+        ```emacs-lisp
+        ;;; Midnight Commander features (plus) for emacs dired-mode
+        ;; (desire 'diredc)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 86:</span>
+          rc.packages.el
+        </div>
 
 
 #### <span class="section-num">3.31.2</span> Neotree {#neotree}
@@ -2406,7 +2424,7 @@ slug: "emacs-desire-configuration"
     ;;; Modeline {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 86:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 87:</span>
       rc.packages.el
     </div>
 
@@ -2418,7 +2436,7 @@ slug: "emacs-desire-configuration"
     (desire-conf 'modeline)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 87:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 88:</span>
       rc.packages.el
     </div>
 
@@ -2428,7 +2446,7 @@ slug: "emacs-desire-configuration"
     ;;; Configure modeline
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 88:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 89:</span>
       packages/modeline.ecf
     </div>
 -   Показывать столбец, в котором находится курсор (<https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-line-or-column.html>):
@@ -2437,7 +2455,7 @@ slug: "emacs-desire-configuration"
     (setq column-number-mode t)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 89:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 90:</span>
       packages/modeline.ecf
     </div>
 -   Задаём 24-часовой формат времени:
@@ -2447,7 +2465,7 @@ slug: "emacs-desire-configuration"
     (setq display-time-24hr-format t)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 90:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 91:</span>
       packages/modeline.ecf
     </div>
 -   Мы можем захотеть видеть и секунды:
@@ -2461,7 +2479,7 @@ slug: "emacs-desire-configuration"
     (setq display-time-interval 1)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 91:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 92:</span>
       packages/modeline.ecf
     </div>
 
@@ -2473,7 +2491,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 92:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 93:</span>
       packages/modeline.ecf
     </div>
 
@@ -2485,7 +2503,7 @@ slug: "emacs-desire-configuration"
     ;;;}}}
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 93:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 94:</span>
       rc.packages.el
     </div>
 

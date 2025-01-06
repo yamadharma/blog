@@ -2,7 +2,7 @@
 title: "Подготовка курса Операционные системы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T14:00:00+03:00
-lastmod: 2024-12-25T16:08:00+03:00
+lastmod: 2025-01-03T22:55:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -48,7 +48,7 @@ slug: "course-operating-systems"
 
 ## <span class="section-num">4</span> Методические материалы {#методические-материалы}
 
--   [Операционные системы. Лабораторные работы. Методические замечания]({{< relref "course/os-intro/lab/method" >}})
+-   [Операционные системы. Лабораторные работы. Методические замечания]({{< relref "teaching/os-intro/lab/method" >}})
 
 
 ### <span class="section-num">4.1</span> БРС {#брс}
@@ -195,7 +195,7 @@ slug: "course-operating-systems"
 
 ### <span class="section-num">5.2</span> Лабораторные работы {#лабораторные-работы}
 
--   [Операционные системы. Лабораторные работы]({{< relref "course/os-intro/lab" >}})
+-   [Операционные системы. Лабораторные работы]({{< relref "teaching/os-intro/lab" >}})
 
 
 #### <span class="section-num">5.2.1</span> Установка ОС Linux {#установка-ос-linux}

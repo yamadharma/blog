@@ -2,7 +2,7 @@
 title: "Подготовка курса Моделирование сетей передачи данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-24T15:01:00+03:00
-lastmod: 2023-10-06T20:29:00+03:00
+lastmod: 2025-01-03T22:57:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -74,7 +74,7 @@ slug: "course-simulation-data-networks"
 
 ## <span class="section-num">4</span> Лабораторные работы {#лабораторные-работы}
 
--   [Mininet. Лабораторные работы]({{< relref "course/simulation-networks/lab" >}})
+-   [Mininet. Лабораторные работы]({{< relref "teaching/simulation-networks/lab" >}})
 
 
 ## <span class="section-num">5</span> Лекции {#лекции}
