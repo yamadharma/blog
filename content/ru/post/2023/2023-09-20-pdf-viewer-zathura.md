@@ -370,7 +370,7 @@ Zathura --- программа просмотра pdf-файлов.
 
 ### <span class="section-num">3.1</span> Установка как приложения по умолчанию {#установка-как-приложения-по-умолчанию}
 
--   Приложение по умолчанию устанавливается с помощью _xdg-utils_ (см. [XDG. Приложения MIME]({{< relref "../notes/public/20230402133900-xdg_mime_applications.md" >}})):
+-   Приложение по умолчанию устанавливается с помощью _xdg-utils_ (см. [XDG. Приложения MIME]({{< relref "2023-04-02-xdg-mime-applications" >}})):
     ```shell
     xdg-mime default org.pwmt.zathura.desktop application/pdf
     xdg-mime default org.pwmt.zathura.desktop image/vnd.djvu+multipage

@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2025-01-05T20:06:00+03:00
+lastmod: 2025-01-06T14:30:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -150,6 +150,7 @@ slug: "hugo-template-for-scientists"
 
 2.  Публикации типа book
 
+    -   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
     -   Тип публикации `book` отсутствует.
     -   Вместо него следует использовать тип `docs`:
         ```yaml
@@ -217,7 +218,7 @@ slug: "hugo-template-for-scientists"
 
 ## <span class="section-num">5</span> Типы контента Wowchemy {#типы-контента-wowchemy}
 
--   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
+-   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
 
 
 ## <span class="section-num">6</span> Полезные скрипты {#полезные-скрипты}
