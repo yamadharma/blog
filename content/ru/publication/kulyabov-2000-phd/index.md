@@ -1,12 +1,12 @@
 ---
-title: "Применение 2-спинорного исчисления в некоторых моделях теории поля"
-date: 2000-01-01
-publishDate: 2020-03-30T13:58:06.819894Z
-authors: ["Дмитрий Сергеевич Кулябов"]
-publication_types: ["7"]
-abstract: ""
-featured: false
-publication: ""
-tags: ["rinc", "rinc"]
+title: Применение 2-спинорного исчисления в некоторых моделях теории поля
+authors:
+- Дмитрий Сергеевич Кулябов
+date: '2000-01-01'
+publishDate: '2025-01-08T11:15:39.097178Z'
+publication_types:
+- thesis
+tags:
+- mine
+- index:rinc
 ---
-

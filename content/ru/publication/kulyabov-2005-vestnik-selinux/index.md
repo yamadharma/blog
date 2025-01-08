@@ -1,12 +1,16 @@
 ---
-title: "Адаптация системы работы с файлами устройств для SELinux"
-date: 2005-01-01
-publishDate: 2020-03-30T13:58:06.700652Z
-authors: ["Анна Владиславовна Королькова", "Дмитрий Сергеевич Кулябов"]
-publication_types: ["2"]
-abstract: ""
-featured: false
-publication: "*Вестник РУДН. Серия «Прикладная и компьютерная математика»*"
-tags: ["rinc", "vak", "rinc"]
+title: Адаптация системы работы с файлами устройств для SELinux
+authors:
+- Анна Владиславовна Королькова
+- Дмитрий Сергеевич Кулябов
+date: '2005-01-01'
+publishDate: '2025-01-08T11:15:39.143448Z'
+publication_types:
+- article-journal
+publication: '*Вестник РУДН. Серия «Прикладная и компьютерная математика»*'
+tags:
+- mine
+- index:rinc
+- index:vak
+- index:rinc
 ---
-
