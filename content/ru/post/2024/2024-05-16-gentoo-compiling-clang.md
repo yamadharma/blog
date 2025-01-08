@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2024-12-28T19:54:00+03:00
+lastmod: 2025-01-07T13:01:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -69,6 +69,9 @@ slug: "gentoo-compiling-clang"
 
 ### <span class="section-num">4.1</span> Основная системная конфигурация {#основная-системная-конфигурация}
 
+
+#### <span class="section-num">4.1.1</span> Общие настройки {#общие-настройки}
+
 -   Файл `/etc/portage/make.conf`:
     ```conf-unix
     # this sources the PORTDIR_OVERLAY variable defined by layman. however, the variable expanded by layman was empty
@@ -86,6 +89,10 @@ slug: "gentoo-compiling-clang"
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 2:</span>
       /etc/portage/make.conf
     </div>
+
+
+#### <span class="section-num">4.1.2</span> Настройка portage {#настройка-portage}
+
 -   Выбор формата бинарных пакетов:
     ```conf-unix
     ## binpkg
@@ -111,6 +118,24 @@ slug: "gentoo-compiling-clang"
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 5:</span>
       /etc/portage/make.conf
     </div>
+-   Управление приоритетом:
+    ```conf-unix
+    ## https://wiki.gentoo.org/wiki/Portage_niceness
+    ## Extremely low priority (per above)
+    PORTAGE_SCHEDULING_POLICY="idle"
+    ## Lowest priority
+    PORTAGE_NICENESS="19"
+    PORTAGE_IONICE_COMMAND="ionice -c 3 -p \${PID}"
+
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      /etc/portage/make.conf
+    </div>
+
+
+#### <span class="section-num">4.1.3</span> Настройка clang {#настройка-clang}
+
 -   Опции для ядерных модулей:
     ```conf-unix
     ## This is added to make options by linux-mod.eclass
@@ -143,7 +168,7 @@ slug: "gentoo-compiling-clang"
     # LDFLAGS="${LDFLAGS} -flto"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 6:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
       /etc/portage/make.conf
     </div>
 
@@ -348,7 +373,7 @@ slug: "gentoo-compiling-clang"
     LD="ld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 7:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
       /etc/portage/env/compiler-gcc
     </div>
 
@@ -367,7 +392,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 8:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
       /etc/portage/env/compiler-clang-no-lto
     </div>
 
@@ -386,7 +411,7 @@ slug: "gentoo-compiling-clang"
     LD="lld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 9:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
       /etc/portage/env/compiler-clang
     </div>
 
@@ -412,7 +437,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 10:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
   /etc/portage/env/compiler-clang-mold
 </div>
 
@@ -437,7 +462,7 @@ LD="mold"
 LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 11:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
   /etc/portage/env/compiler-clang-mold-18
 </div>
 
@@ -457,7 +482,7 @@ LDFLAGS="${LDFLAGS} -fuse-ld=mold"
     LD="ld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 12:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
       /etc/portage/env/compiler-clang-binutils
     </div>
 
