@@ -2,7 +2,7 @@
 title: "NAS. TerraMaster"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-10T18:35:00+03:00
-lastmod: 2025-01-06T20:25:00+03:00
+lastmod: 2025-01-10T13:29:00+03:00
 tags: ["sysadmin", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -110,6 +110,12 @@ NAS. TerraMaster.
 | 12 ГБ   | 1280                |
 | 16 ГБ   | 1600                |
 | 32 ГБ   | 3200                |
+
+
+### <span class="section-num">3.4</span> TFSS {#tfss}
+
+-   Страница: <https://www.terra-master.com/ru/tfss>
+-   Создание снепшотов btrfs.
 
 
 ## <span class="section-num">4</span> Программное обеспечение {#программное-обеспечение}
@@ -268,13 +274,18 @@ NAS. TerraMaster.
 -   Информация: <https://www.terra-master.com/ru/storage-pool-migration>
 
 
-## <span class="section-num">9</span> Опыт использования {#опыт-использования}
+## <span class="section-num">9</span> Ресурсы {#ресурсы}
+
+-   Сайт по сравнению NAS: <https://nascompares.com/tag/terramaster-nas/>
 
 
-### <span class="section-num">9.1</span> TerraMaster F6-424 {#terramaster-f6-424}
+## <span class="section-num">10</span> Опыт использования {#опыт-использования}
 
 
-#### <span class="section-num">9.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
+### <span class="section-num">10.1</span> TerraMaster F6-424 {#terramaster-f6-424}
+
+
+#### <span class="section-num">10.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
 
 <!--list-separator-->
 
@@ -311,7 +322,7 @@ NAS. TerraMaster.
     -   В стандартном репозитории.
 
 
-#### <span class="section-num">9.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
+#### <span class="section-num">10.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
 
 -   В консоли не смог залогиниться.
 -   Посмотрел ip-адрес (на сервере DHCP, но можно было и в консоли).
@@ -342,7 +353,7 @@ NAS. TerraMaster.
 -   Установил BTRFS (см. [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})).
 
 
-#### <span class="section-num">9.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
+#### <span class="section-num">10.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
 
 -   Купил 2 жёстких диска.
 -   Жесткий диск 18TB SATA 6Gb/s Seagate ST18000NM000J
@@ -356,7 +367,7 @@ NAS. TerraMaster.
 -   Размер хранилища остался 3.63TB.
 
 
-#### <span class="section-num">9.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
+#### <span class="section-num">10.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
 
 -   Перешёл в меню _Панель управления &gt; Жёсткий диск &gt; Жёсткий диск_.
 -   Выбрал диск на 4TB.
@@ -379,7 +390,7 @@ NAS. TerraMaster.
 -   Запустил перестройку RAID.
 
 
-#### <span class="section-num">9.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
+#### <span class="section-num">10.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
 
 -   Синхронизация RAID закончилась.
 -   Перешёл в меню _Панель управления &gt; Том &gt; Том 1_.

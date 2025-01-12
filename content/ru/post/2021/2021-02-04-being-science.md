@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2024-11-02T19:49:00+03:00
+lastmod: 2025-01-11T21:04:00+03:00
 tags: ["science-being"]
 categories: ["science"]
 draft: false
@@ -66,3 +66,5 @@ _Бытие науки_. Разрозненные мысли.
 -   [Бизнес-модели научных журналов]({{< relref "2022-08-09-scientific-journal-business-models" >}})
 -   [Портал Math-Net.ru]({{< relref "2024-01-24-math-net-ru" >}})
 -   [Репозитории для научных исследований]({{< relref "2024-11-02-research-repositories" >}})
+-   [Требования к рецензиям]({{< relref "2025-01-11--review-requirements" >}})
+-   [Требования к рецензентам]({{< relref "2025-01-11--requirements-reviewers" >}})

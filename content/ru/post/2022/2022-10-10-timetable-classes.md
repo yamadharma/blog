@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2024-12-30T10:15:00+03:00
+lastmod: 2025-01-12T13:37:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,14 +24,14 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[3/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[6/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация <code>[0/1]</code> {#информация}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.1</span> Информация <code>[1/1]</code> {#информация}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Числитель/знаменатель
+1. <span class="org-todo done DONE">DONE</span>  Числитель/знаменатель
 
     <div class="table-caption">
       <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
@@ -262,41 +262,13 @@ slug: "timetable-classes"
     -   [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmRjYmUwNGUtMWY3MS00ZWZjLTk5YjEtYTkxZGM1ODU3ZjBi%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%2296135d12-2269-4589-add7-7eca251a8b13%22%7d)
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.5</span> 2024--2025 учебный год, 3 четверть <code>[1/1]</code> {#2024-2025-учебный-год-3-четверть}
-
-<!--list-separator-->
-
-1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лекция, дистанционно)
-
-    <!--list-separator-->
-
-    1.  Даты
-
-        -
-        -
-        -
-        -
-        -
-        -
-        -
-        -
-
-    <!--list-separator-->
-
-    2.  Группы
-
-        -   02.03.01 Математика и компьютерные науки
-            -   НКНбд-01-21
-        -   02.03.02 Фундаментальная информатика и информационные технологии
-            -   НФИбд-01-21, НФИбд-02-21
-        -   09.03.03 Прикладная информатика
-            -   НПИбд-01-21, НПИбд-02-21
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.5</span> 2024--2025 учебный год, 3 четверть <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-3-четверть}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> {#2024-2025-учебный-год-4-четверть}
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-4-четверть}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[6/6]</code> {#2024-2025-учебный-год-2-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[0/17]</code> {#2024-2025-учебный-год-2-семестр}
 
 <!--list-separator-->
 
@@ -360,29 +332,111 @@ slug: "timetable-classes"
 
 3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
-    -   НПИбд-02-22
-    -   ОРД-297, ОРД-295
+    -   ОРД-295
+    -   НКАбд-03-23
 
 <!--list-separator-->
 
 4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
-    -   НКАбд-03-22
-    -   ОРД-297
+    -   ОРД-295
+    -   НКАбд-04-23
 
 <!--list-separator-->
 
 5. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
-    -   НКАбд-02-22
-    -   ОРД-297
+    -   ОРД-295
+    -   НКАбд-02-23
 
 <!--list-separator-->
 
 6. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
 
-    -   НКАбд-01-22
-    -   ОРД-297
+    -   ОРД-295
+    -   НКАбд-01-23
+
+<!--list-separator-->
+
+7. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НБИбд-01-23
+
+<!--list-separator-->
+
+8. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НБИбд-02-23
+
+<!--list-separator-->
+
+9. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование (лабораторные)
+
+    -   НФИбд-01-22
+        -   ОРД-297
+    -   НКНбд-01-22
+        -   ОРД-295
+
+<!--list-separator-->
+
+10. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование (лабораторные)
+
+    -   НФИбд-01-22
+        -   ОРД-297
+    -   НКНбд-01-22
+        -   ОРД-295
+
+<!--list-separator-->
+
+11. <span class="org-todo todo TODO">TODO</span>  Администрирование локальных сетей (лекция, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+12. <span class="org-todo todo TODO">TODO</span>  Администрирование локальных сетей (лабораторные, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+13. <span class="org-todo todo TODO">TODO</span>  Администрирование локальных сетей (лабораторные, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+14. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лекция, дистанционно)
+
+    -   НКН-22
+    -   НФИ-22
+    -   НПИбд-22
+
+<!--list-separator-->
+
+15. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НКНбд-01-22
+
+<!--list-separator-->
+
+16. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НФИбд-02-22
+
+<!--list-separator-->
+
+17. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НФИбд-01-22
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3</span> 2023--2024 учебный год, расписание занятий <code>[7/7]</code> {#2023-2024-учебный-год-расписание-занятий}
@@ -651,7 +705,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[1/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[3/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -810,68 +864,22 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.4</span> Сессия, модуль 3, 2024--2025 <code>[2/2]</code> {#сессия-модуль-3-2024-2025}
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.4</span> Сессия, модуль 3, 2024--2025 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-3-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Экзамены, модуль 3 <code>[1/1]</code>
-
-    <!--list-separator-->
-
-    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс), экзамен <code>[3/3]</code>
-
-        <!--list-separator-->
-
-        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.01, экзамен
-
-        <!--list-separator-->
-
-        2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.02, экзамен
-
-        <!--list-separator-->
-
-        3. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 09.03.03, экзамен
+1. <span class="org-todo done CNCL">CNCL</span>  Экзамены, модуль 3 <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span>
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  Переаттестации, модуль 3 <code>[2/2]</code>
-
-    <!--list-separator-->
-
-    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 1
-
-        -   До <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-13 Вс&gt; </span></span> включительно необходимо выложить материалы на ТУИС.
-        -   Материалы для переаттестации выкладываются на ТУИС.
-        -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
-            -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
-            -   скринкасты презентаций защит выполненных лабораторных работ.
-        -   На переаттестацию представляется ссылка на репозиторий на <https://github.com>, содержащий:
-            -   отчёты о выполнении работ во всех необходимых форматах;
-            -   презентации защит выполненных лаборrаторных работ;
-            -   код и промежуточные вычисления, если это необходимо.
-        -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
-
-    <!--list-separator-->
-
-    2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 2
-
-        -   До <span class="timestamp-wrapper"><span class="timestamp">[2025-04-20 Вс] </span></span> включительно необходимо выложить материалы на ТУИС.
-        -   Материалы для переаттестации выкладываются на ТУИС.
-        -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
-            -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
-            -   скринкасты презентаций защит выполненных лабораторных работ.
-        -   На переаттестацию представляется ссылка на репозиторий на <https://github.com>, содержащий:
-            -   отчёты о выполнении работ во всех необходимых форматах;
-            -   презентации защит выполненных лабораторных работ;
-            -   код и промежуточные вычисления, если это необходимо.
-        -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
+2. <span class="org-todo done CNCL">CNCL</span>  Переаттестации, модуль 3 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.5</span> Сессия, модуль 4, 2024--2025 <code>[1/1]</code> {#сессия-модуль-4-2024-2025}
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.5</span> Сессия, модуль 4, 2024--2025 <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-4-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Зачёты
+1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[3/3]</code> {#сессия-семестр-2-2024-2025}
@@ -894,7 +902,23 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Экзамен, 2024--2025, Операционные системы <code>[4/4]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс), экзамен <code>[3/3]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.01, экзамен
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 02.03.02, экзамен
+
+        <!--list-separator-->
+
+        3. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 09.03.03, экзамен
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  Экзамен, 2024--2025, Операционные системы <code>[4/4]</code>
 
         <!--list-separator-->
 
@@ -945,7 +969,22 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        1. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, Переаттестация № 1, семестр 2, 2024--2025
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 1
+
+            -   До <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-13 Вс&gt; </span></span> включительно необходимо выложить материалы на ТУИС.
+            -   Материалы для переаттестации выкладываются на ТУИС.
+            -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
+                -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
+                -   скринкасты презентаций защит выполненных лабораторных работ.
+            -   На переаттестацию представляется ссылка на репозиторий на <https://github.com>, содержащий:
+                -   отчёты о выполнении работ во всех необходимых форматах;
+                -   презентации защит выполненных лаборrаторных работ;
+                -   код и промежуточные вычисления, если это необходимо.
+            -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, Переаттестация № 1, семестр 2, 2024--2025
 
             <!--list-separator-->
 
@@ -969,7 +1008,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo done DONE">DONE</span>  Операционные системы, Переаттестация № 1, семестр 2, 2024--2025
+        3. <span class="org-todo done DONE">DONE</span>  Операционные системы, Переаттестация № 1, семестр 2, 2024--2025
 
             <!--list-separator-->
 
@@ -1009,7 +1048,22 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        1. <span class="org-todo done DONE">DONE</span>  Операционные системы, Переаттестация № 2, семестр 2, 2024--2025
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 2
+
+            -   До <span class="timestamp-wrapper"><span class="timestamp">[2025-04-20 Вс] </span></span> включительно необходимо выложить материалы на ТУИС.
+            -   Материалы для переаттестации выкладываются на ТУИС.
+            -   На переаттестацию представляется ссылка на **плейлисты** на <https://youtube.com> и <https://rutube.ru/>, содержащие:
+                -   скринкасты выполнения лабораторных работ, с фиксацией лица видеокамерой и записью пояснений голосом;
+                -   скринкасты презентаций защит выполненных лабораторных работ.
+            -   На переаттестацию представляется ссылка на репозиторий на <https://github.com>, содержащий:
+                -   отчёты о выполнении работ во всех необходимых форматах;
+                -   презентации защит выполненных лабораторных работ;
+                -   код и промежуточные вычисления, если это необходимо.
+            -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done DONE">DONE</span>  Операционные системы, Переаттестация № 2, семестр 2, 2024--2025
 
             <!--list-separator-->
 

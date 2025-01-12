@@ -2,7 +2,7 @@
 title: "Biblatex. Препринты"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-24T16:02:00+03:00
-lastmod: 2024-02-29T21:24:00+03:00
+lastmod: 2025-01-11T20:16:00+03:00
 tags: ["bib", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -45,16 +45,19 @@ slug: "biblatex-eprints"
 -   Секция `primaryClass` (`eprintclass`) используется для нового стиля идентификаторов _arXiv_ (начиная с апреля 2007 года):
     ```bibtex
     @Misc{wassenberg,
-      hyphenation = {american},
-      author      = {Wassenberg, Jan and Sanders, Peter},
-      title       = {Faster Radix Sort via Virtual Memory and Write-Combining},
-      version     = {1},
-      date        = {2010-08-17},
-      eprinttype  = {arxiv},
-      eprintclass = {cs.DS},
-      eprint      = {1008.2849v1}
+      hyphenation	  = {american},
+      author	  = {Wassenberg, Jan and Sanders, Peter},
+      title		  = {Faster Radix Sort via Virtual Memory and Write-Combining},
+      version	  = 1,
+      date		  = {2010-08-17},
+      eprinttype	  = {arxiv},
+      archiveprefix	  = {arXiv},
+      eprintclass	  = {cs.DS},
+      eprint	  = {1008.2849v1}
     }
     ```
+
+    -   Здесь поле `archiveprefix = {arXiv}` необязательно (даже излишне), но без него некоторые классы неправильно форматируют адрес препринта.
 -   Пример ссылки на статью, имеющую также вариант на arxiv.org в формате _bibtex_:
     ```bibtex
     @Article{Beneke:1997hv,

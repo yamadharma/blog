@@ -2,7 +2,7 @@
 title: "Emacs. Поддержка LaTeX"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-29T15:45:00+03:00
-lastmod: 2024-01-06T19:56:00+03:00
+lastmod: 2025-01-09T13:13:00+03:00
 tags: ["emacs", "tex"]
 categories: ["computer-science"]
 draft: false
@@ -24,3 +24,9 @@ Emacs. Поддержка LaTeX.
 ## <span class="section-num">2</span> Перекрёстные ссылки {#перекрёстные-ссылки}
 
 -   [Emacs. Пакет RefTeX]({{< relref "2023-09-24-emacs-reftex" >}})
+
+
+## <span class="section-num">3</span> Моды {#моды}
+
+
+## <span class="section-num">4</span> Lsp {#lsp}
