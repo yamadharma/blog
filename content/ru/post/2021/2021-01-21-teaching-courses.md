@@ -2,7 +2,7 @@
 title: "Преподавание. Курсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2025-01-03T23:01:00+03:00
+lastmod: 2025-01-16T09:43:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -68,6 +68,12 @@ slug: "teaching-courses"
 
 -   [Курс Администрирование сетевых подсистем]({{< relref "teaching/net-os-admin" >}})
 -   [Подготовка курса Администрирование сетевых подсистем]({{< relref "2024-02-28-course-administration-network-subsystems-preparation" >}})
+
+
+#### Защита сетей и кибербезопасность {#защита-сетей-и-кибербезопасность}
+
+-   Этот курс я не преподаю, но курирую всё направление по кибербезопасности.
+-   [Подготовка курса Защита сетей и кибербезопасность]({{< relref "2025-01-16--course-preparation-network-protection-cybersecurity" >}})
 
 
 ### 4 курс {#4-курс}

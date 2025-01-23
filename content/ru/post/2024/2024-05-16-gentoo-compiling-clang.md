@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-01-07T13:01:00+03:00
+lastmod: 2025-01-22T15:18:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -185,6 +185,7 @@ slug: "gentoo-compiling-clang"
     # sys-devel/lld:15				compiler-gcc
     # sys-devel/llvm:15				compiler-gcc
     =app-emulation/virtualbox-7.0*			compiler-gcc    # ld.lld error
+    =app-emulation/virtualbox-7.1*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.0*		compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.1*		compiler-gcc    # ld.lld error
     =dev-perl/PDL-2.63*				compiler-gcc
@@ -286,7 +287,7 @@ slug: "gentoo-compiling-clang"
     media-libs/libopenraw				compiler-gcc
     media-libs/libquvi				compiler-gcc
     media-libs/libsidplay				compiler-gcc
-    media-libs/mesa					compiler-clang-lto
+    # media-libs/mesa					compiler-clang-lto
     media-libs/openglide				compiler-gcc
     media-libs/tg_owt				compiler-gcc
     media-libs/urt					compiler-gcc
@@ -341,10 +342,11 @@ slug: "gentoo-compiling-clang"
     www-client/chromium				compiler-clang
     x11-libs/agg					compiler-gcc
     x11-libs/fox					compiler-gcc
-    x11-libs/motif					compiler-clang-lto
+    # x11-libs/motif					compiler-clang-lto
     x11-misc/redshift				compiler-gcc
     x11-misc/virtualgl				compiler-clang-mold
-    # app-emulation/libguestfs        compiler-gcc
+    app-text/texlive-core				compiler-gcc
+    dev-db/sqlite					compiler-gcc
     ```
 
 

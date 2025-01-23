@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2024-12-29T19:50:00+03:00
+lastmod: 2025-01-16T19:30:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -425,3 +425,34 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
+
+
+#### <span class="section-num">1.7.1</span> Докладчик {#докладчик}
+
+-   Блинков Ю.А.
+-   доктор физико-математических наук
+-   зав. каф. СГУ
+
+
+#### <span class="section-num">1.7.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/275/>
+-   PyGInv. Генерация и исследование разностных схем
+-   Блинков Ю. А.
+-   д.ф.м.-н., зав. каф. СГУ
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+Современные системы компьютерной алгебры обладают встроенными функциями для построения базисов Грёбнера для систем полиномиальных уравнений. Однако в случае дифференциальных уравнений и разностных схем реализация алгоритмов построения таких базисов обычно отсутствует. В докладе будут представлены алгоритмы генерации известных разностных схем и алгоритмы построения консервативных разностных схем. Один из алгоритмических подходов к исследованию разностных схем заключается в построении первого дифференциального приближения. Для этого будут использоваться базисы Грёбнера для работы с формальными рядами Тейлора. На многочисленных примерах будет показано применение первого дифференциального приближения для исследования разностных схем на точных решениях исходной системы дифференциальных уравнений и численных решений с оценкой локальной и глобальной погрешностей.
+
+---
+
+-   PyGInv. Generation and investigation of difference schemes
+-   Blinkov, Yu. A.
+-   Doctor of Physics and Mathematics
+-   Head. department SSU
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+Modern computer algebra systems have built-in functions for constructing Gröbner bases for systems of polynomial equations. However, in the case of differential equations and difference schemes, the implementation of algorithms for building such bases is usually absent. The presentation will cover algorithms for generating well-known difference schemes and algorithms for constructing conservative difference schemes. One algorithmic approach to investigating difference schemes involves constructing the first differential approximation. For this purpose, Gröbner bases will be used to work with formal Taylor series. Numerous examples will demonstrate the application of the first differential approximation to study difference schemes on exact solutions of the original system of differential equations and numerical solutions with estimates of local and global errors.
