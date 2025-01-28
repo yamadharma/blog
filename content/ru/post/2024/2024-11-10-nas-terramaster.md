@@ -2,7 +2,7 @@
 title: "NAS. TerraMaster"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-10T18:35:00+03:00
-lastmod: 2025-01-10T13:29:00+03:00
+lastmod: 2025-01-27T12:15:00+03:00
 tags: ["sysadmin", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -132,6 +132,7 @@ NAS. TerraMaster.
 
 ### <span class="section-num">4.2</span> Plex Media Server {#plex-media-server}
 
+-   [Plex Media Server]({{< relref "2025-01-27--plex-media-server" >}})
 -   В стандартном репозитории.
 
 
@@ -159,7 +160,7 @@ NAS. TerraMaster.
     ```shell
     ln -s /opt/bin/opkg /usr/bin/opkg
     ```
--   Отредактировать `/etc/profile`, добавив к `PATH` `/opt/bin:/opt/sbin`:
+-   Отредактировать `/root/.bashrc`, добавив к `PATH` `/opt/bin:/opt/sbin`:
     ```shell
     export PATH=$PATH:/opt/bin:/opt/sbin
     ```

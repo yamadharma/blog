@@ -2,7 +2,7 @@
 title: "Linux. Дистрибутив Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T10:45:00+03:00
-lastmod: 2024-09-04T17:01:00+03:00
+lastmod: 2025-01-27T19:21:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -37,3 +37,13 @@ slug: "linux-proxmox-distribution"
 -   [Linux. Установка Proxmox VE]({{< relref "2024-06-04-proxmox-ve-install" >}})
 -   [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})
 -   [Перенос виртуальной машины на Proxmox]({{< relref "2024-09-04-migrating-virtual-machine-proxmox" >}})
+
+
+## <span class="section-num">3</span> Дистрибутивы для установки {#дистрибутивы-для-установки}
+
+-   [Linux. Дистрибутив Turnkey]({{< relref "2025-01-26--linux-distro-turnkey" >}})
+
+
+## <span class="section-num">4</span> Установка виртуальных машин {#установка-виртуальных-машин}
+
+-   [Proxmox. Установка OpenVPN в LXC]({{< relref "2025-01-27--proxmox-installing-openvpn-lxc" >}})

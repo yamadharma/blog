@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2024-12-25T16:50:00+03:00
+lastmod: 2025-01-28T20:28:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -124,10 +124,26 @@ $ pdfjam --nup строк x столбцов  input.pdf --outfile output.pdf
 $ pdfsak --input-file input.pdf --output output.pdf --nup rows  columns
 
 
-## <span class="section-num">8</span> Метаданные {#метаданные}
+## <span class="section-num">8</span> Разделить страницы {#разделить-страницы}
 
 
-### <span class="section-num">8.1</span> Проверка метаданных {#проверка-метаданных}
+### <span class="section-num">8.1</span> mutool {#mutool}
+
+-   Являются частью mupdf (<https://www.mupdf.com/>).
+-   Разделение по горизонтали:
+    ```shell
+    mutool poster -x 2 input.pdf output.pdf
+    ```
+-   Разделение по вертикали:
+    ```shell
+    mutool poster -y 2 input.pdf output.pdf
+    ```
+
+
+## <span class="section-num">9</span> Метаданные {#метаданные}
+
+
+### <span class="section-num">9.1</span> Проверка метаданных {#проверка-метаданных}
 
 С помощью ExifTool :
 
@@ -152,10 +168,10 @@ $ qpdf --линеаризовать /tmp/temp.pdf input.pdf
 $ pdftk input.pdf drop_xmp вывод output.pdf
 
 
-### <span class="section-num">8.2</span> Записать метаданные {#записать-метаданные}
+### <span class="section-num">9.2</span> Записать метаданные {#записать-метаданные}
 
 
-#### <span class="section-num">8.2.1</span> exiftool {#exiftool}
+#### <span class="section-num">9.2.1</span> exiftool {#exiftool}
 
 -   Обновить метаданные:
     ```shell
@@ -166,10 +182,10 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
 -   `pdfinfo` показывает правильно.
 
 
-## <span class="section-num">9</span> Уменьшить размер pdf-файла (сжатие) {#уменьшить-размер-pdf-файла--сжатие}
+## <span class="section-num">10</span> Уменьшить размер pdf-файла (сжатие) {#уменьшить-размер-pdf-файла--сжатие}
 
 
-### <span class="section-num">9.1</span> Ghostscript {#ghostscript}
+### <span class="section-num">10.1</span> Ghostscript {#ghostscript}
 
 -   Скрипт ps2pdf:
     ```shell
@@ -194,10 +210,10 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
     -   `-sOutputFile=output.pdf` : указывает имя выходного файла.
 
 
-## <span class="section-num">10</span> Уменьшить размер pdf-файла (оптимизация) {#уменьшить-размер-pdf-файла--оптимизация}
+## <span class="section-num">11</span> Уменьшить размер pdf-файла (оптимизация) {#уменьшить-размер-pdf-файла--оптимизация}
 
 
-### <span class="section-num">10.1</span> qpdf {#qpdf}
+### <span class="section-num">11.1</span> qpdf {#qpdf}
 
 -   Команда qpdf:
     ```shell
@@ -210,7 +226,7 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
     -   `qpdf_compressed.pdf` : выходной или оптимизированный файл.
 
 
-### <span class="section-num">10.2</span> exiftool {#exiftool}
+### <span class="section-num">11.2</span> exiftool {#exiftool}
 
 -   Файлы PDF могут содержать метаданные, такие как имена авторов, даты создания и другую информацию, которая может влиять на размер файла.
 -   Можно удалить эти метаданные, чтобы уменьшить размер PDF-файла:
@@ -221,7 +237,7 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
     -   `-all:all=` : указывает имя тега, который нужно изменить.
 
 
-## <span class="section-num">11</span> Растеризовать PDF-файл {#растеризовать-pdf-файл}
+## <span class="section-num">12</span> Растеризовать PDF-файл {#растеризовать-pdf-файл}
 
 Эти команды преобразуют ваш PDF-файл в изображения.
 
@@ -257,7 +273,7 @@ $ mutool плакат -y 2 in.pdf out.pdf
 Подробности об этих и других решениях можно найти на StackExchange .
 
 
-## <span class="section-num">12</span> Добавить цифровую подпись в PDF {#добавить-цифровую-подпись-в-pdf}
+## <span class="section-num">13</span> Добавить цифровую подпись в PDF {#добавить-цифровую-подпись-в-pdf}
 
 jsignpdf AUR может подписывать PDF-файлы цифровой подписью с помощью сертификатов X.509 в графическом интерфейсе пользователя и интерфейсе командной строки.
 
@@ -272,13 +288,13 @@ $ openssl pkcs12 -export -in cert.pem -out cert.pfx
 Libreoffice также может подписывать PDF-файлы. [8]
 
 
-## <span class="section-num">13</span> Аннотации {#аннотации}
+## <span class="section-num">14</span> Аннотации {#аннотации}
 
 
-### <span class="section-num">13.1</span> Удаление аннотаций из PDF-файла {#удаление-аннотаций-из-pdf-файла}
+### <span class="section-num">14.1</span> Удаление аннотаций из PDF-файла {#удаление-аннотаций-из-pdf-файла}
 
 
-#### <span class="section-num">13.1.1</span> pdftk {#pdftk}
+#### <span class="section-num">14.1.1</span> pdftk {#pdftk}
 
 -   Удалить все аннотации:
     ```shell
@@ -286,7 +302,7 @@ Libreoffice также может подписывать PDF-файлы. [8]
     ```
 
 
-#### <span class="section-num">13.1.2</span> perl-cam-pdf {#perl-cam-pdf}
+#### <span class="section-num">14.1.2</span> perl-cam-pdf {#perl-cam-pdf}
 
 -   Удалить все аннотации:
     ```shell
@@ -294,14 +310,14 @@ Libreoffice также может подписывать PDF-файлы. [8]
     ```
 
 
-## <span class="section-num">14</span> Добавьте номера страниц {#добавьте-номера-страниц}
+## <span class="section-num">15</span> Добавьте номера страниц {#добавьте-номера-страниц}
 
 С pdfsak :
 
 $ pdfsak --input-file input.pdf --output output.pdf --text "\large \\$page/\\$pages" br 0.99 0.99 --latex-engine xelatex --font "Noto Regular"
 
 
-## <span class="section-num">15</span> Добавить метки страниц {#добавить-метки-страниц}
+## <span class="section-num">16</span> Добавить метки страниц {#добавить-метки-страниц}
 
 Метки страниц — это логические номера страниц, отображаемые на панели навигации программы чтения PDF-файлов. Они полезны, например, если первые страницы PDF-файла представляют собой индексы, пронумерованные римскими цифрами (I, II и т. д.), а страница с номером «1» соответствует странице PDF-файла с номером больше 1, и вы хотите, чтобы номер страницы отображался на панели навигации соответствует номеру страницы, указанному на физической странице.
 
@@ -352,13 +368,13 @@ pdftk book.pdf update_info_utf8 Metadata.txt выходная книга-с-ме
 Подробнее см . в этом вопросе SuperUser .
 
 
-## <span class="section-num">16</span> Закладки {#закладки}
+## <span class="section-num">17</span> Закладки {#закладки}
 
 
-### <span class="section-num">16.1</span> Извлечь закладки {#извлечь-закладки}
+### <span class="section-num">17.1</span> Извлечь закладки {#извлечь-закладки}
 
 
-#### <span class="section-num">16.1.1</span> pdftk {#pdftk}
+#### <span class="section-num">17.1.1</span> pdftk {#pdftk}
 
 -   Найти все закладки:
     ```shell
@@ -366,7 +382,7 @@ pdftk book.pdf update_info_utf8 Metadata.txt выходная книга-с-ме
     ```
 
 
-#### <span class="section-num">16.1.2</span> qpdf {#qpdf}
+#### <span class="section-num">17.1.2</span> qpdf {#qpdf}
 
 -   Найти все закладки:
     ```shell
@@ -374,7 +390,7 @@ pdftk book.pdf update_info_utf8 Metadata.txt выходная книга-с-ме
     ```
 
 
-### <span class="section-num">16.2</span> Добавить закладки {#добавить-закладки}
+### <span class="section-num">17.2</span> Добавить закладки {#добавить-закладки}
 
 С pdftk
 Создайте текстовый файл bookmark_definitions.txtс определениями закладок в следующем формате:
@@ -459,13 +475,13 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 Для сценария необходимы pdftk , nawk и Ghostscript .
 
 
-## <span class="section-num">17</span> Шрифты {#шрифты}
+## <span class="section-num">18</span> Шрифты {#шрифты}
 
 
-### <span class="section-num">17.1</span> Список шрифтов {#список-шрифтов}
+### <span class="section-num">18.1</span> Список шрифтов {#список-шрифтов}
 
 
-#### <span class="section-num">17.1.1</span> poppler {#poppler}
+#### <span class="section-num">18.1.1</span> poppler {#poppler}
 
 -   Используем команду `pdffonts` чтобы узнать, какие шрифты используются в PDF-файле и встроены ли они в него или нет:
     ```shell
@@ -473,10 +489,10 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-### <span class="section-num">17.2</span> Внедрить шрифты в файл {#внедрить-шрифты-в-файл}
+### <span class="section-num">18.2</span> Внедрить шрифты в файл {#внедрить-шрифты-в-файл}
 
 
-#### <span class="section-num">17.2.1</span> ghostscript {#ghostscript}
+#### <span class="section-num">18.2.1</span> ghostscript {#ghostscript}
 
 -   Перегенерим файл с помощью ghostscript:
     ```shell
@@ -484,10 +500,10 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-## <span class="section-num">18</span> Восстановить повреждённый PDF-файл {#восстановить-повреждённый-pdf-файл}
+## <span class="section-num">19</span> Восстановить повреждённый PDF-файл {#восстановить-повреждённый-pdf-файл}
 
 
-### <span class="section-num">18.1</span> ghostscript {#ghostscript}
+### <span class="section-num">19.1</span> ghostscript {#ghostscript}
 
 -   Отремонтировать файл:
     ```shell
@@ -495,7 +511,7 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-### <span class="section-num">18.2</span> poppler {#poppler}
+### <span class="section-num">19.2</span> poppler {#poppler}
 
 -   Отремонтировать файл:
     ```shell
@@ -503,7 +519,7 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-### <span class="section-num">18.3</span> mupdf {#mupdf}
+### <span class="section-num">19.3</span> mupdf {#mupdf}
 
 -   Отремонтировать файл:
     ```shell
@@ -511,17 +527,17 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-## <span class="section-num">19</span> Стандарт PDF/A {#стандарт-pdf-a}
+## <span class="section-num">20</span> Стандарт PDF/A {#стандарт-pdf-a}
 
 -   [Стандарт PDF/A]({{< relref "2021-07-30-pdf-a-standard" >}})
 
 
-### <span class="section-num">19.1</span> Преобразование PDF в стандарт PDF/A {#преобразование-pdf-в-стандарт-pdf-a}
+### <span class="section-num">20.1</span> Преобразование PDF в стандарт PDF/A {#преобразование-pdf-в-стандарт-pdf-a}
 
 -   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
 
 
-#### <span class="section-num">19.1.1</span> ghostscript {#ghostscript}
+#### <span class="section-num">20.1.1</span> ghostscript {#ghostscript}
 
 -   Конвертация:
     ```shell
@@ -529,10 +545,10 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-### <span class="section-num">19.2</span> Проверка соответствия PDF/A {#проверка-соответствия-pdf-a}
+### <span class="section-num">20.2</span> Проверка соответствия PDF/A {#проверка-соответствия-pdf-a}
 
 
-#### <span class="section-num">19.2.1</span> verapdf {#verapdf}
+#### <span class="section-num">20.2.1</span> verapdf {#verapdf}
 
 -   Проверить соответствие PDF различным вариантам стандарта PDF/A:
     ```shell
@@ -540,12 +556,12 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
     ```
 
 
-## <span class="section-num">20</span> Оглавление в PDF {#оглавление-в-pdf}
+## <span class="section-num">21</span> Оглавление в PDF {#оглавление-в-pdf}
 
 -   [Pdf. Оглавление. pdf.tocgen]({{< relref "2024-06-21-pdf-toc-pdf-tocgen" >}})
 -   [Pdf. Оглавление. pdf-toc]({{< relref "2024-06-21-pdf-toc-pdf-toc" >}})
 
 
-## <span class="section-num">21</span> Преобразование djvu в pdf {#преобразование-djvu-в-pdf}
+## <span class="section-num">22</span> Преобразование djvu в pdf {#преобразование-djvu-в-pdf}
 
 -   [Преобразование djvu в pdf]({{< relref "2024-07-26-convert-djvu-pdf" >}})

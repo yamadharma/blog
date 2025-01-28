@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2024-09-29T18:32:00+03:00
+lastmod: 2025-01-24T15:50:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -50,7 +50,7 @@ slug: "pdf-ocr-ocrmypdf"
     ```
 -   Разделить сдвоенные страницы:
     ```shell
-    ocrmypdf --clean --clean-final --unpaper-args '--layout double' input.pdf output.pdf
+    ocrmypdf -l rus+eng --clean --clean-final --unpaper-args '--layout double' input.pdf output.pdf
     ```
 -   Контролируем оптимизацию:
     ```shell

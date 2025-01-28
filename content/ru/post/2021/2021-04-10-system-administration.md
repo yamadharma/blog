@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-01-01T16:09:00+03:00
+lastmod: 2025-01-28T19:25:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -237,6 +237,7 @@ slug: "system-administration"
 
 -   [Emacs]({{< relref "2020-12-24-emacs" >}})
 -   [Редактор vim]({{< relref "2023-07-04-vim-editor" >}})
+-   [Семейство редакторов vi]({{< relref "2025-01-28--vi-editor-family" >}})
 
 
 ### <span class="section-num">10.12</span> Видео {#видео}
@@ -245,6 +246,11 @@ slug: "system-administration"
 #### <span class="section-num">10.12.1</span> Просмотр {#просмотр}
 
 -   [Проигрывание видеофайлов]({{< relref "2024-12-12-playing-videos" >}})
+
+
+#### <span class="section-num">10.12.2</span> Видео-серверы {#видео-серверы}
+
+-   [Plex Media Server]({{< relref "2025-01-27--plex-media-server" >}})
 
 
 ### <span class="section-num">10.13</span> Сетевые клиенты {#сетевые-клиенты}

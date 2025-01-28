@@ -2,14 +2,14 @@
 title: "DCM. Авторская этика"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-10T21:32:00+03:00
-lastmod: 2024-10-25T13:30:00+03:00
+lastmod: 2025-01-25T13:37:00+03:00
 tags: ["science-being", "science-admin"]
 categories: ["science"]
 draft: false
 slug: "dcm-author-ethics"
 ---
 
-Авторская этика.
+Авторская этика [<a href="#citeproc_bib_item_1">1</a>].
 
 <!--more-->
 
@@ -31,14 +31,14 @@ slug: "dcm-author-ethics"
 
 ## <span class="section-num">2</span> Авторство и вклад авторов (Author contributions) {#авторство-и-вклад-авторов--author-contributions}
 
--   Исследователи всегда сталкиваются с проблемой авторства [<a href="#citeproc_bib_item_1">1</a>]:
+-   Исследователи всегда сталкиваются с проблемой авторства [<a href="#citeproc_bib_item_2">2</a>]:
     -   в список авторов включаются совсем не те люди, которые внесли принципиальный вклад в работу;
     -   люди добавляются против их желания или без их ведома;
     -   порядок не отражает вклад каждого автора.
 -   Вклад в авторство определяется общей вовлеченностью участника исследования в его реализацию.
--   Комитет по этике публикаций (COPE) обращает внимание на проблему авторства [<a href="#citeproc_bib_item_2">2</a>].
+-   Комитет по этике публикаций (COPE) обращает внимание на проблему авторства [<a href="#citeproc_bib_item_3">3</a>].
 -   Для формализации ролей авторов предлагается использовать систему CRediT (<https://credit.niso.org/>).
--   «Таксономия» CRediT (Contributor Roles Taxonomy) предлагает 14 возможных авторских ролей [<a href="#citeproc_bib_item_3">3</a>; <a href="#citeproc_bib_item_4">4</a>] (см. [Роли авторов научной работы]({{< relref "2024-01-21-contributor-roles" >}})).
+-   «Таксономия» CRediT (Contributor Roles Taxonomy) предлагает 14 возможных авторских ролей [<a href="#citeproc_bib_item_4">4</a>; <a href="#citeproc_bib_item_5">5</a>] (см. [Роли авторов научной работы]({{< relref "2024-01-21-contributor-roles" >}})).
 -   На самом деле это не таксономия, а фасетная классификация. Авторские роли не всегда являются самостоятельными сами по себе.
 
 
@@ -139,8 +139,9 @@ slug: "dcm-author-ethics"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Politzer, D. Nobel Lecture: The dilemma of attribution / D. Politzer // Reviews of Modern Physics. – 2005. – Т. 77. – Nobel Lecture. – № 3. – Сс. 851–856. DOI: <a href="https://doi.org/10.1103/revmodphys.77.851">10.1103/revmodphys.77.851</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	<a href="https://doi.org/10.24318/cope.2019.3.3">COPE Council. COPE Discussion Document: Authorship</a>. COPE Council. COPE Discussion Document. – 2. – Committee on Publication Ethics, 2019.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Мекеко, Н.М. Описание авторского вклада при подаче рукописи: система CREDIT / Н.М. Мекеко, Е.В. Тихонова // Журнал Работа и Карьера. – 2022. – Т. 1. – Описание авторского вклада при подаче рукописи. – № 4. – Сс. 5–7. DOI: <a href="https://doi.org/10.56414/jeac.2022.24">10.56414/jeac.2022.24</a>.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Холкомб, А.О. Определение авторства по вкладу в науку: использование таксономии CRediT / А.О. Холкомб // Научный редактор и издатель. – 2020. – Т. 5. – Определение авторства по вкладу в науку. – № 2. – Сс. 123–134. DOI: <a href="https://doi.org/10.24069/2542-0267-2020-2-123-134">10.24069/2542-0267-2020-2-123-134</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Kulyabov, D.S. Author’s ethics / D.S. Kulyabov, L.A. Sevastianov // Discrete and Continuous Models and Applied Computational Science. – 2024. – Т. 32. – № 2. – Сс. 135–139. DOI: <a href="https://doi.org/10.22363/2658-4670-2024-32-2-135–139">10.22363/2658-4670-2024-32-2-135–139</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Politzer, D. Nobel Lecture: The dilemma of attribution / D. Politzer // Reviews of Modern Physics. – 2005. – Т. 77. – Nobel Lecture. – № 3. – Сс. 851–856. DOI: <a href="https://doi.org/10.1103/revmodphys.77.851">10.1103/revmodphys.77.851</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	<a href="https://doi.org/10.24318/cope.2019.3.3">COPE Council. COPE Discussion Document: Authorship</a>. COPE Council. COPE Discussion Document. – 2. – Committee on Publication Ethics, 2019.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>4.	Мекеко, Н.М. Описание авторского вклада при подаче рукописи: система CREDIT / Н.М. Мекеко, Е.В. Тихонова // Журнал Работа и Карьера. – 2022. – Т. 1. – Описание авторского вклада при подаче рукописи. – № 4. – Сс. 5–7. DOI: <a href="https://doi.org/10.56414/jeac.2022.24">10.56414/jeac.2022.24</a>.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>5.	Холкомб, А.О. Определение авторства по вкладу в науку: использование таксономии CRediT / А.О. Холкомб // Научный редактор и издатель. – 2020. – Т. 5. – Определение авторства по вкладу в науку. – № 2. – Сс. 123–134. DOI: <a href="https://doi.org/10.24069/2542-0267-2020-2-123-134">10.24069/2542-0267-2020-2-123-134</a>.</div>
 </div>

@@ -2,7 +2,7 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2024-12-28T18:29:00+03:00
+lastmod: 2025-01-26T19:50:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -37,6 +37,7 @@ slug: "linux-administration"
 ### <span class="section-num">1.4</span> Виртуальные машины {#виртуальные-машины}
 
 -   [Linux. Дистрибутив Proxmox]({{< relref "2024-06-04-linux-proxmox-distribution" >}})
+-   [Linux. Дистрибутив Turnkey]({{< relref "2025-01-26--linux-distro-turnkey" >}})
 
 
 ## <span class="section-num">2</span> Файловые системы {#файловые-системы}
