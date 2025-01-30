@@ -2,7 +2,7 @@
 title: "NeoVim. Конфигурирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-28T19:34:00+03:00
-lastmod: 2025-01-28T20:36:00+03:00
+lastmod: 2025-01-29T20:37:00+03:00
 tags: ["vim", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -43,3 +43,11 @@ NeoVim. Конфигурирование.
 
 -   Репозиторий: <https://github.com/NormalNvim/NormalNvim>
 -   Сайт: <https://normalnvim.github.io/>
+
+
+### <span class="section-num">1.5</span> LazyVim {#lazyvim}
+
+-   [NeoVim. Конфигурация LazyVim]({{< relref "2025-01-29--neovim-configuration-lazyvim" >}})
+-   Сайт: <http://www.lazyvim.org/>
+-   Репозиторий: <https://github.com/LazyVim/LazyVim>
+-   Стартовый шаблон: <https://github.com/LazyVim/starter>

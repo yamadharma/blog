@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-01-16T19:30:00+03:00
+lastmod: 2025-01-30T18:16:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "workshop-mathematical-modeling-2024-2025"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Семинар Математическое моделирование, 2024 {#семинар-математическое-моделирование-2024}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">1</span> Семинар Математическое моделирование, 2024 <code>[7/7]</code> {#семинар-математическое-моделирование-2024}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-18 Ср&gt; </span></span> Лисица Ю. Т. - О числах больших и малых (топологические поля чисел Конвея и их пополнения) {#лисица-ю-dot-т-dot-о-числах-больших-и-малых--топологические-поля-чисел-конвея-и-их-пополнения}
@@ -427,7 +427,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
 
 
 #### <span class="section-num">1.7.1</span> Докладчик {#докладчик}
@@ -456,3 +456,19 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 -   <https://github.com/blinkovua/GInv/tree/master/pyginv>
 
 Modern computer algebra systems have built-in functions for constructing Gröbner bases for systems of polynomial equations. However, in the case of differential equations and difference schemes, the implementation of algorithms for building such bases is usually absent. The presentation will cover algorithms for generating well-known difference schemes and algorithms for constructing conservative difference schemes. One algorithmic approach to investigating difference schemes involves constructing the first differential approximation. For this purpose, Gröbner bases will be used to work with formal Taylor series. Numerous examples will demonstrate the application of the first differential approximation to study difference schemes on exact solutions of the original system of differential equations and numerical solutions with estimates of local and global errors.
+
+
+#### <span class="section-num">1.7.3</span> Видео {#видео}
+
+{{< tabs tabTotal="2" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 8e39e354a82f6e990f4cf9a985a88665 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube lWr4kpYUFHA >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

@@ -154,7 +154,7 @@ markup:
     guessSyntax: true
     anchorLineNos: true
     lineNoStart: 1
-    lineNos: true    
+    lineNos: false
   tableOfContents:
     startLevel: 2
     endLevel: 4
