@@ -2,7 +2,7 @@
 title: "Wayland. Панель Waybar"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-21T15:11:00+03:00
-lastmod: 2024-12-17T21:04:00+03:00
+lastmod: 2025-02-03T19:18:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -80,6 +80,7 @@ Wayland. Панель Waybar
 ],
 "modules-center": [
     "sway/mode",
+    "custom/pomm",
     "custom/weather",
     "custom/clipboard",
     "idle_inhibitor",
@@ -120,9 +121,9 @@ Wayland. Панель Waybar
         // Memory
         "memory": {
             "interval": 30,
-            "format": " {used:0.1f}G/{total:0.1f}G {}%",
+            "format": " {used:0.1f}G/{total:0.1f}G",
             "tooltip": true,
-            "tooltip-format": "Free {avail:0.1f}G",
+            "tooltip-format": "Free {avail:0.1f}G\nUsed: {percentage}%\nSwap: {swapPercentage}%",
         },
         ```
         <div class="src-block-caption">
@@ -325,17 +326,17 @@ Wayland. Панель Waybar
                 "format-source": " {volume}%",
                 "format-source-muted": " ",
                 "format-icons": {
-                    "headphone": " ",
-                    "hands-free": " ",
-                    "headset": "󰋎 ",
-                    "phone": " ",
-                    "portable": " ",
-                    "car": " ",
-                    "default": [
+                  "headphone": " ",
+                  "hands-free": " ",
+                  "headset": "󰋎 ",
+                  "phone": " ",
+                  "portable": " ",
+                  "car": " ",
+                  "default": [
                         "",
                         " ",
                         " "
-                    ]
+                  ]
                 },
                 "scroll-step": 5,
                 "on-click": "pavucontrol",
@@ -497,32 +498,32 @@ Wayland. Панель Waybar
         ```js-json
         // Weather
         "custom/weather": {
-            "format": "{icon}{} ",
+            "format": "{icon} {text}",
             "tooltip": true,
             "interval": 3600,
             // accepts -c/--city <city> -t/--temperature <C/F> -d/--distance <km/miles>
             "exec": "~/.config/sway/scripts/weather.py",
             "return-type": "json",
             "format-icons": {
-                "Unknown": " ",
-                "Cloudy": "󰖐 ",
-                "Fog": " ",
-                "HeavyRain": " ",
-                "HeavyShowers": " ",
-                "HeavySnow": " ",
-                "HeavySnowShowers": "󰜗 ",
-                "LightRain": " ",
-                "LightShowers": " ",
-                "LightSleet": " ",
-                "LightSleetShowers": " ",
-                "LightSnow": " ",
-                "LightSnowShowers": "󰙿 ",
-                "PartlyCloudy": " ",
-                "Sunny": " ",
-                "ThunderyHeavyRain": "󰙾 ",
-                "ThunderyShowers": " ",
-                "ThunderySnowShowers": " ",
-                "VeryCloudy": " "
+                "Unknown": "",
+                "Cloudy": "󰖐",
+                "Fog": "",
+                "HeavyRain": "",
+                "HeavyShowers": "",
+                "HeavySnow": "",
+                "HeavySnowShowers": "󰜗",
+                "LightRain": "",
+                "LightShowers": "",
+                "LightSleet": "",
+                "LightSleetShowers": "",
+                "LightSnow": "",
+                "LightSnowShowers": "󰙿",
+                "PartlyCloudy": "",
+                "Sunny": "",
+                "ThunderyHeavyRain": "󰙾",
+                "ThunderyShowers": "",
+                "ThunderySnowShowers": "",
+                "VeryCloudy": ""
             }
         },
         ```
@@ -602,6 +603,23 @@ Wayland. Панель Waybar
           config
         </div>
 
+    <!--list-separator-->
+
+    5.  Мониторинг `pomm`
+
+        ```js-json
+        // pomm pomodoro timer
+        "custom/pomm": {
+            "interval": 1,
+            "format": " {text}",
+            "exec": "/bin/sh ~/.config/waybar/script/pomm.sh"
+        },
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+          config
+        </div>
+
 
 #### <span class="section-num">2.2.5</span> Конец {#конец}
 
@@ -609,7 +627,7 @@ Wayland. Панель Waybar
 }
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
   config
 </div>
 
@@ -821,7 +839,7 @@ window#waybar {
 }
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 25:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
   style.css
 </div>
 
@@ -833,7 +851,7 @@ window#waybar {
 
 -   Для перезапуска можно использовать скрипт:
     ```shell
-    #!/usr/bin/env bash
+    ## Restart waybar
 
     run_waybar() {
         waybar
@@ -848,7 +866,7 @@ window#waybar {
     restart_waybar
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 26:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
       waybar.sh
     </div>
 
@@ -861,17 +879,17 @@ window#waybar {
   <object class="GtkMenu" id="menu">
     <child>
       <object class="GtkMenuItem" id="suspend">
-        <property name="label">Suspend</property>
+      <property name="label">Suspend</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="hibernate">
-        <property name="label">Hibernate</property>
+      <property name="label">Hibernate</property>
       </object>
     </child>
     <child>
       <object class="GtkMenuItem" id="shutdown">
-        <property name="label">Shutdown</property>
+      <property name="label">Shutdown</property>
       </object>
     </child>
     <child>
@@ -879,13 +897,36 @@ window#waybar {
     </child>
     <child>
       <object class="GtkMenuItem" id="reboot">
-        <property name="label">Reboot</property>
+      <property name="label">Reboot</property>
       </object>
     </child>
   </object>
 </interface>
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 27:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 28:</span>
   power_menu.xml
 </div>
+
+
+### <span class="section-num">4.3</span> Мониторинг pomm {#мониторинг-pomm}
+
+-   Для мониторинга `pomm` можно использовать скрипт:
+    ```shell
+    ## Interface to pomm.el
+
+    if ps -e | grep emacs >> /dev/null
+    then
+        emacsclient --eval "(if (boundp 'pomm-current-mode-line-string) pomm-current-mode-line-string \"\") " | xargs echo -e
+    fi
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 29:</span>
+      pomm.sh
+    </div>
+
+
+## <span class="section-num">5</span> Ресурсы {#ресурсы}
+
+-   Дополнительные модули:
+    -   <https://github.com/LawnGnome/waybar-custom-modules>

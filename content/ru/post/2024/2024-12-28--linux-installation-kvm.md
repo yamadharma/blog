@@ -2,7 +2,7 @@
 title: "Linux. Установка в kvm"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-28T18:27:00+03:00
-lastmod: 2024-12-30T16:44:00+03:00
+lastmod: 2025-02-01T21:01:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -73,8 +73,9 @@ Linux. Установка в kvm.
         -device virtio-balloon \
         -device virtio-serial \
         -chardev spicevmc,id=vdagent,debug=0,name=vdagent \
-        -device virtserialport,chardev=vdagent,name=com.redhat.spice.0 \
-        -chardev qemu-vdagent,id=vdagent0,name=vdagent,clipboard=on,mouse=on \
+        -device virtio-serial,packed=on,ioeventfd=on \
+        -device virtserialport,name=com.redhat.spice.0,chardev=vdagent0 \
+        -chardev qemu-vdagent,id=vdagent0,name=vdagent,clipboard=on,mouse=off \
         -display default,show-cursor=on \
         -vga none -device virtio-gpu-pci
     ```

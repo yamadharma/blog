@@ -2,7 +2,7 @@
 title: "Турдаков, Д. Ю. et al. (2022) Доверенный искусственный интеллект: вызовы и перспективные решения"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-30T17:05:00+03:00
-lastmod: 2025-01-30T17:28:00+03:00
+lastmod: 2025-02-03T20:21:00+03:00
 draft: false
 slug: "turdakov_2022_trusted-artificial-intelligence_ru"
 ---
