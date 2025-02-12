@@ -2,7 +2,7 @@
 title: "Emacs. Метод pomodoro"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-16T17:30:00+03:00
-lastmod: 2025-01-16T17:49:00+03:00
+lastmod: 2025-02-08T17:32:00+03:00
 tags: ["emacs"]
 categories: ["self-management", "computer-science"]
 draft: false
@@ -29,6 +29,7 @@ Emacs. Реализации метода pomodoro (см. [Метод pomodoro]({
 
 ## <span class="section-num">3</span> pomm {#pomm}
 
+-   [Emacs. Пакет pomm]({{< relref "2025-02-08--emacs-pomm" >}})
 -   Страница: <https://sqrtminusone.xyz/packages/pomm/>
 -   Репозиторий: <https://github.com/SqrtMinusOne/pomm.el>
 -   Реализация техник _Pomodoro_ и _Third Time_.

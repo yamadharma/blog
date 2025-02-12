@@ -2,7 +2,7 @@
 title: "Wayland. Панель Waybar"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-21T15:11:00+03:00
-lastmod: 2025-02-03T19:18:00+03:00
+lastmod: 2025-02-08T17:55:00+03:00
 tags: ["wayland", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -77,9 +77,9 @@ Wayland. Панель Waybar
 "modules-left": [
     "sway/workspaces",
     "custom/scratchpad",
+    "sway/mode",
 ],
 "modules-center": [
-    "sway/mode",
     "custom/pomm",
     "custom/weather",
     "custom/clipboard",
@@ -607,18 +607,19 @@ Wayland. Панель Waybar
 
     5.  Мониторинг `pomm`
 
-        ```js-json
-        // pomm pomodoro timer
-        "custom/pomm": {
-            "interval": 1,
-            "format": " {text}",
-            "exec": "/bin/sh ~/.config/waybar/script/pomm.sh"
-        },
-        ```
-        <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
-          config
-        </div>
+        -   [Emacs. Пакет pomm]({{< relref "2025-02-08--emacs-pomm" >}})
+            ```js-json
+            // pomm pomodoro timer
+            "custom/pomm": {
+                "interval": 1,
+                "format": " {text}",
+                "exec": "/bin/sh ~/.config/waybar/script/pomm.sh"
+            },
+            ```
+            <div class="src-block-caption">
+              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 24:</span>
+              config
+            </div>
 
 
 #### <span class="section-num">2.2.5</span> Конец {#конец}
@@ -911,6 +912,7 @@ window#waybar {
 
 ### <span class="section-num">4.3</span> Мониторинг pomm {#мониторинг-pomm}
 
+-   [Emacs. Пакет pomm]({{< relref "2025-02-08--emacs-pomm" >}})
 -   Для мониторинга `pomm` можно использовать скрипт:
     ```shell
     ## Interface to pomm.el

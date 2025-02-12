@@ -2,7 +2,7 @@
 title: "Принципы Zettelkasten"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-05T21:20:00+03:00
-lastmod: 2023-07-07T20:34:00+03:00
+lastmod: 2025-02-08T16:16:00+03:00
 tags: ["zettelkasten"]
 categories: ["self-management"]
 draft: false

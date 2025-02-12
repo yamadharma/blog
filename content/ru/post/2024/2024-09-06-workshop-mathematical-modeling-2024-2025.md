@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-01-30T18:16:00+03:00
+lastmod: 2025-02-12T20:49:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "workshop-mathematical-modeling-2024-2025"
 {{< toc >}}
 
 
-## <span class="org-todo done DONE">DONE</span> <span class="section-num">1</span> Семинар Математическое моделирование, 2024 <code>[7/7]</code> {#семинар-математическое-моделирование-2024}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">1</span> Семинар Математическое моделирование, 2024 <code>[7/8]</code> {#семинар-математическое-моделирование-2024}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-18 Ср&gt; </span></span> Лисица Ю. Т. - О числах больших и малых (топологические поля чисел Конвея и их пополнения) {#лисица-ю-dot-т-dot-о-числах-больших-и-малых--топологические-поля-чисел-конвея-и-их-пополнения}
@@ -472,3 +472,39 @@ Modern computer algebra systems have built-in functions for constructing Gröbne
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.8</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Чт&gt; </span></span> Смирнов-Мальцев Е. Д., Дужин В. С. - Некоторые геометрические свойства диаграмм Юнга максимальных размерностей {#смирнов-мальцев-е-dot-д-dot-дужин-в-dot-с-dot-некоторые-геометрические-свойства-диаграмм-юнга-максимальных-размерностей}
+
+
+#### <span class="section-num">1.8.1</span> Докладчик {#докладчик}
+
+-   Егор Д. Смирнов-Мальцев
+    -   студент 4 курса бакалавриата
+    -   кафедра Математического моделирования и искусственного интеллекта РУДН
+
+
+#### <span class="section-num">1.8.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/278/>
+-   Некоторые геометрические свойства диаграмм Юнга максимальных размерностей
+-   Егор Д. Смирнов-Мальцев
+    -   студент 4 курса бакалавриата
+    -   кафедра Математического моделирования и искусственного интеллекта РУДН
+-   Дужин Василий Сергеевич
+    -   кандидат физ-мат наук
+    -   ассистент кафедры алгоритмической математики факультета компьютерных технологий и информатики СПбГЭТУ «ЛЭТИ»
+
+Работа посвящена задаче поиска диаграмм Юнга с максимальными размерностями, т.е. обладающих наибольшим количеством таблиц Юнга среди всех диаграмм из заданного количества клеток. Предложен алгоритм, позволяющий преобразовать исходную диаграмму, отличающуюся от симметричной не более чем на одну клетку в каждой строке и каждом столбце, в другую диаграмму того же размера, но с большей или равной размерностью. Сформулирована гипотеза, обобщающая указанный выше факт на случай произвольных диаграмм Юнга. Это геометрическое свойство использовано при создании алгоритма поиска диаграмм Юнга, который позволил получить новые, неизвестные ранее диаграммы Юнга с большими и максимальными размерностями.
+
+---
+
+-   Some geometric properties of Young diagrams of maximum dimensions
+    -   Egor Smirnov-Maltsev
+    -   4th year undergraduate student
+    -   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+-   Vasilii S. Duzhin
+    -   Candidate of Physical and Mathematical Sciences
+    -   Assistant of the Department of Algorithmic Mathematics of the Faculty of Computer Technology and Informatics of St. Petersburg Electrotechnical University "LETI"
+
+We study the problem of finding Young diagrams of maximum dimensions, i.e., those that have the largest number of Young tableaux among all diagrams with a given number of boxes.  We consider a diagram that differs from the symmetrical one by no more than one box in each row and each column. We propose an algorithm that transforms such a diagram into another one of the same size but with a greater or equal dimension.  We formulate a conjecture that generalizes this result to arbitrary Young diagrams. This geometric property is used in an algorithm for finding Young diagrams with maximum dimensions. Using this algorithm, we obtained new, previously unknown Young diagrams with large and maximum numbers of Young tableaux.

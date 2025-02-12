@@ -2,7 +2,7 @@
 title: "Критериальное оценивание докладов"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-08T09:06:00+03:00
-lastmod: 2025-01-31T14:56:00+03:00
+lastmod: 2025-02-06T16:08:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

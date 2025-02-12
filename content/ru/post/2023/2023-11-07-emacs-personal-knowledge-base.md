@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2025-01-03T17:04:00+03:00
+lastmod: 2025-02-08T16:33:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -87,8 +87,10 @@ slug: "emacs-personal-knowledge-base"
 
 ### <span class="section-num">3.4</span> denote {#denote}
 
+-   [Emacs. Пакет denote]({{< relref "2025-01-03--emacs-denote" >}})
 -   Репозиторий: <https://github.com/protesilaos/denote>
 -   Большое внимание уделяется схеме именования файлов.
+-   Поддерживает реализацию цепочек заметок (Folgezettel, см. [Нумерация Folgezettel]({{< relref "2025-02-08--folgezettel-numbering" >}})) (см. [Denote. Соглашение об именовании]({{< relref "2025-01-03--denote-naming-convention" >}}))
 
 
 ### <span class="section-num">3.5</span> howm {#howm}

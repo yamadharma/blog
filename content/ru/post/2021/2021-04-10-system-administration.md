@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-01-28T19:25:00+03:00
+lastmod: 2025-02-05T18:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -358,6 +358,7 @@ slug: "system-administration"
 
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 -   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
+-   [Настройка vpn-клиента Континент АП]({{< relref "2025-02-05--configuring-continent-ap-vpn-client" >}})
 
 
 ### <span class="section-num">15.4</span> Железо {#железо}

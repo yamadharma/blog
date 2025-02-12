@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-01-22T13:21:00+03:00
+lastmod: 2025-02-12T11:26:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -24,10 +24,10 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[5/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[6/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.1</span> Информация <code>[1/2]</code> {#информация}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.1</span> Информация <code>[2/2]</code> {#информация}
 
 <!--list-separator-->
 
@@ -69,7 +69,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo NEXT">NEXT</span>  Изменения <span class="timestamp-wrapper"><span class="timestamp">[2025-01-22 Ср]</span></span>
+2. <span class="org-todo done DONE">DONE</span>  Изменения <span class="timestamp-wrapper"><span class="timestamp">[2025-01-22 Ср]</span></span>
 
     -   В связи с проведением праздничных мероприятий, посвященных 65-летию РУДН, 7 и 8 февраля 2025 года объявлены днями самостоятельной работы.
     -   Неделя с 10 по 17 февраля 2025 года считается верхней в общеуниверситетском расписании занятий.
@@ -712,7 +712,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[3/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[4/6]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -777,7 +777,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[2/3]</code> {#сессия-модуль-2-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[3/3]</code> {#сессия-модуль-2-2024-2025}
 
 <!--list-separator-->
 
@@ -797,15 +797,15 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации - 2024-2025, модуль 2 <code>[0/2]</code>
+3. <span class="org-todo done DONE">DONE</span>  Переаттестации - 2024-2025, модуль 2 <code>[2/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1 - 2024-2025, модуль 2
+    1. <span class="org-todo done DONE">DONE</span>  Переаттестация № 1 - 2024-2025, модуль 2
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2 - 2024-2025, модуль 2
+    2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2 - 2024-2025, модуль 2
 
 
 #### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[2/3]</code> {#сессия-семестр-1-2024-2025}
@@ -844,11 +844,11 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации - 2024-2025, семестр 1 <code>[2/2]</code>
+3. <span class="org-todo todo TODO">TODO</span>  Переаттестации - 2024-2025, семестр 1 <code>[2/5]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности (переаттестация)
+    1. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности (переаттестация) <code>[1/2]</code>
 
         <!--list-separator-->
 
@@ -856,11 +856,11 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo done DONE">DONE</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 2
+        2. <span class="org-todo todo TODO">TODO</span>  Математические основы защиты информации и информационной безопасности. Переаттестация № 2
 
     <!--list-separator-->
 
-    2. <span class="org-todo done DONE">DONE</span>  Научное программирование (переаттестация)
+    2. <span class="org-todo todo TODO">TODO</span>  Научное программирование (переаттестация) <code>[1/2]</code>
 
         <!--list-separator-->
 
@@ -868,7 +868,43 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
+        2. <span class="org-todo todo TODO">TODO</span>  Научное программирование. Переаттестация № 2
+
+    <!--list-separator-->
+
+    3. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных (переаттестация) <code>[2/2]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных. Переаттестация № 1
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done CNCL">CNCL</span>  0Компьютерный практикум по статистическому анализу данных. Переаттестация № 2 <span class="tag"><span class="CNCL">CNCL</span></span>
+
+    <!--list-separator-->
+
+    4. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных (переаттестация) <code>[2/2]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных. Переаттестация № 1
+
+        <!--list-separator-->
+
+        2. <span class="org-todo done CNCL">CNCL</span>  Моделирование сетей передачи данных. Переаттестация № 2 <span class="tag"><span class="CNCL">CNCL</span></span>
+
+    <!--list-separator-->
+
+    5. <span class="org-todo todo TODO">TODO</span>  Основы администрирования операционных систем (переаттестация) <code>[1/2]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo done DONE">DONE</span>  Основы администрирования операционных систем. Переаттестация № 1
+
+        <!--list-separator-->
+
+        2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования операционных систем. Переаттестация № 2
 
 
 #### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.4</span> Сессия, модуль 3, 2024--2025 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-3-2024-2025}

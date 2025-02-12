@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2024-12-01T13:51:00+03:00
+lastmod: 2025-02-07T18:59:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -127,6 +127,18 @@ slug: "gentoo-post-installation"
     ```shell
     ## Установка файлового менеджера mc
     emerge ${EMERGE_FLAGS} app-misc/mc
+    ```
+
+
+#### <span class="section-num">3.2.2</span> Монтирование в терминале {#монтирование-в-терминале}
+
+-   Установим udisks2:
+    ```shell
+    emerge sys-fs/udisks
+    ```
+-   Установим udiskie (<https://github.com/coldfix/udiskie>):
+    ```shell
+    emerge sys-fs/udiskie
     ```
 
 

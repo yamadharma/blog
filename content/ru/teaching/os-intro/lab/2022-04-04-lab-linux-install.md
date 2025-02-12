@@ -2,13 +2,13 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2024-12-30T16:45:00+03:00
+lastmod: 2025-02-09T16:01:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 201
 toc: true
-type: docs
+type: "docs"
 feedback: false
 slug: "lab-linux-install"
 summary: "Установка ОС Linux"
@@ -570,11 +570,11 @@ menu:
 -   Отредактируйте конфигурационный файл `/etc/X11/xorg.conf.d/00-keyboard.conf`:
     ```conf-unix
     Section "InputClass"
-        Identifier "system-keyboard"
-        MatchIsKeyboard "on"
-        Option "XkbLayout" "us,ru"
-        Option "XkbVariant" ",winkeys"
-        Option "XkbOptions" "grp:rctrl_toggle,compose:ralt,terminate:ctrl_alt_bksp"
+                Identifier "system-keyboard"
+                MatchIsKeyboard "on"
+                Option "XkbLayout" "us,ru"
+                Option "XkbVariant" ",winkeys"
+                Option "XkbOptions" "grp:rctrl_toggle,compose:ralt,terminate:ctrl_alt_bksp"
     EndSection
     ```
 -   Для этого можно использовать файловый менеджер `mc` и его встроенный редактор.
