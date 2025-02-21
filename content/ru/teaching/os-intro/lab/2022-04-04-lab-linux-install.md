@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2025-02-09T16:01:00+03:00
+lastmod: 2025-02-19T15:15:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
@@ -406,7 +406,7 @@ menu:
             ```
         -   Установите средства разработки:
             ```shell
-            dnf -y group install "Development Tools"
+            dnf -y group install development-tools
             ```
         -   Установите пакет _DKMS_:
             ```shell
@@ -500,9 +500,13 @@ menu:
 
 #### <span class="section-num">3.3.1</span> Обновления {#обновления}
 
+-   Установите средства разработки:
+    ```shell
+    sudo dnf -y group install development-tools
+    ```
 -   Обновить все пакеты
     ```shell
-    dnf -y update
+    sudo dnf -y update
     ```
 
 
@@ -510,7 +514,11 @@ menu:
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf -y install tmux mc
+    sudo dnf -y install tmux mc
+    ```
+-   Другой вариант консоли:
+    ```shell
+    sudo dnf -y install kitty
     ```
 
 
@@ -519,12 +527,12 @@ menu:
 -   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
     ```shell
-    dnf install dnf-automatic
+    sudo dnf -y install dnf-automatic
     ```
 -   Задаёте необходимую конфигурацию в файле `/etc/dnf/automatic.conf`.
 -   Запустите таймер:
     ```shell
-    systemctl enable --now dnf-automatic.timer
+    sudo systemctl enable --now dnf-automatic.timer
     ```
 
 
@@ -542,7 +550,7 @@ menu:
     ```
 -   Перегрузите виртуальную машину:
     ```shell
-    reboot
+    sudo systemctl reboot
     ```
 
 
@@ -580,7 +588,7 @@ menu:
 -   Для этого можно использовать файловый менеджер `mc` и его встроенный редактор.
 -   Перегрузите виртуальную машину:
     ```shell
-    reboot
+    sudo systemctl reboot
     ```
 
 
@@ -665,7 +673,7 @@ menu:
 -   Средство `pandoc` для работы с языком разметки Markdown.
 -   Установка с помощью менеджера пакетов:
     ```shell
-    dnf -y install pandoc
+    sudo dnf -y install pandoc
     ```
 -   Для работы с перекрёстными ссылками мы используем пакет `pandoc-crossref`.
     -   Пакет `pandoc-crossref` в стандартном репозитории отсутствует.
@@ -684,7 +692,7 @@ menu:
 
 -   Установим дистрибутив TeXlive (см. [Установка TeX Live]({{< relref "2021-04-23-install-texlive" >}})):
     ```shell
-    dnf -y install texlive-scheme-full
+    sudo dnf -y install texlive-scheme-full
     ```
 
 
@@ -699,6 +707,32 @@ menu:
 {{< rtab tabName="Youtube" >}}
 
 {{< youtube 65yj0KvKZGM >}}
+
+{{< /rtab >}}
+{{< /tabs >}}
+
+
+#### <span class="section-num">3.6.4</span> Видео: После установки Linux {#видео-после-установки-linux}
+
+{{< tabs tabTotal="4" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 4a71b855759392e4135cda667f30e86f >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Платформа" >}}
+
+{{< plvideo SwKzG-swMcwg >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
+
+{{< vkvideo 606414976 456239705 2 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube lhdLoxZ6T9c >}}
 
 {{< /rtab >}}
 {{< /tabs >}}

@@ -2,7 +2,7 @@
 title: "Система виртуализации VirtualBox"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-17T11:35:00+03:00
-lastmod: 2024-02-15T20:06:00+03:00
+lastmod: 2025-02-17T12:59:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "virtualbox-virtualization-system"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Сайт: <https://www.virtualbox.org/>.
--   Лицензия: 	GNU GPL-2 + проприетарная (<https://www.virtualbox.org/wiki/VirtualBox_PUEL>).
+-   Лицензия:     GNU GPL-2 + проприетарная (<https://www.virtualbox.org/wiki/VirtualBox_PUEL>).
 
 
 ## <span class="section-num">2</span> Настойка параметров {#настойка-параметров}
@@ -80,15 +80,34 @@ slug: "virtualbox-virtualization-system"
     ```
 
 
-## <span class="section-num">3</span> Использование {#использование}
+## <span class="section-num">3</span> Установка из OVA-файла {#установка-из-ova-файла}
+
+-   Файл OVA --- это полный архив со всей информацией для создания виртуальной машины VirtualBox.
+-   Можно развернуть следующим образом:
+    ```shell
+    vboxmanage import test.ova
+    ```
+-   Это создаст виртуальную машину в вашем местоположении для виртуальных машин по умолчанию, с теми же настройками, что и исходная виртуальная машина.
+-   Вы можете изменить настройки, используя параметр `--vsys`.
+-   Например, измените имя виртуальной машины:
+    ```shell
+    vboxmanage import test.ova --vsys 0 --vmname <vm-name>
+    ```
+-   Далее запустите виртуальную машину:
+    ```shell
+    vboxmanage startvm <vm-name>
+    ```
+
+
+## <span class="section-num">4</span> Использование {#использование}
 
 -   [VirtualBox. Использование без монитора]({{< relref "2024-02-15-virtualbox-headless" >}})
 
 
-## <span class="section-num">4</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
+## <span class="section-num">5</span> Ошибки при эксплуатации {#ошибки-при-эксплуатации}
 
 
-### <span class="section-num">4.1</span> MacOS {#macos}
+### <span class="section-num">5.1</span> MacOS {#macos}
 
 -   Начиная с версии MacOS 10.13 требуется ряд новых полномочий для программного обеспечения.
 -   После установки кнопка с запросом разрешений находится в панели "Системные настройки", раздел "Безопасность и конфиденциальность".

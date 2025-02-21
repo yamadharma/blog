@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-02-12T20:49:00+03:00
+lastmod: 2025-02-21T14:29:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "workshop-mathematical-modeling-2024-2025"
 {{< toc >}}
 
 
-## <span class="org-todo todo TODO">TODO</span> <span class="section-num">1</span> Семинар Математическое моделирование, 2024 <code>[7/8]</code> {#семинар-математическое-моделирование-2024}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">1</span> Семинар Математическое моделирование, 2024-2 <code>[6/6]</code> {#семинар-математическое-моделирование-2024-2}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-09-18 Ср&gt; </span></span> Лисица Ю. Т. - О числах больших и малых (топологические поля чисел Конвея и их пополнения) {#лисица-ю-dot-т-dot-о-числах-больших-и-малых--топологические-поля-чисел-конвея-и-их-пополнения}
@@ -427,17 +427,20 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.7</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[2/3]</code> {#семинар-математическое-моделирование-2025-1}
 
 
-#### <span class="section-num">1.7.1</span> Докладчик {#докладчик}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
+
+
+#### <span class="section-num">2.1.1</span> Докладчик {#докладчик}
 
 -   Блинков Ю.А.
 -   доктор физико-математических наук
 -   зав. каф. СГУ
 
 
-#### <span class="section-num">1.7.2</span> Информация {#информация}
+#### <span class="section-num">2.1.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/275/>
 -   PyGInv. Генерация и исследование разностных схем
@@ -458,7 +461,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 Modern computer algebra systems have built-in functions for constructing Gröbner bases for systems of polynomial equations. However, in the case of differential equations and difference schemes, the implementation of algorithms for building such bases is usually absent. The presentation will cover algorithms for generating well-known difference schemes and algorithms for constructing conservative difference schemes. One algorithmic approach to investigating difference schemes involves constructing the first differential approximation. For this purpose, Gröbner bases will be used to work with formal Taylor series. Numerous examples will demonstrate the application of the first differential approximation to study difference schemes on exact solutions of the original system of differential equations and numerical solutions with estimates of local and global errors.
 
 
-#### <span class="section-num">1.7.3</span> Видео {#видео}
+#### <span class="section-num">2.1.3</span> Видео {#видео}
 
 {{< tabs tabTotal="2" >}}
 {{< rtab tabName="RuTube" >}}
@@ -474,17 +477,17 @@ Modern computer algebra systems have built-in functions for constructing Gröbne
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.8</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Чт&gt; </span></span> Смирнов-Мальцев Е. Д., Дужин В. С. - Некоторые геометрические свойства диаграмм Юнга максимальных размерностей {#смирнов-мальцев-е-dot-д-dot-дужин-в-dot-с-dot-некоторые-геометрические-свойства-диаграмм-юнга-максимальных-размерностей}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Чт&gt; </span></span> Смирнов-Мальцев Е. Д., Дужин В. С. - Некоторые геометрические свойства диаграмм Юнга максимальных размерностей {#смирнов-мальцев-е-dot-д-dot-дужин-в-dot-с-dot-некоторые-геометрические-свойства-диаграмм-юнга-максимальных-размерностей}
 
 
-#### <span class="section-num">1.8.1</span> Докладчик {#докладчик}
+#### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
 
 -   Егор Д. Смирнов-Мальцев
     -   студент 4 курса бакалавриата
     -   кафедра Математического моделирования и искусственного интеллекта РУДН
 
 
-#### <span class="section-num">1.8.2</span> Информация {#информация}
+#### <span class="section-num">2.2.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/278/>
 -   Некоторые геометрические свойства диаграмм Юнга максимальных размерностей
@@ -508,3 +511,30 @@ Modern computer algebra systems have built-in functions for constructing Gröbne
     -   Assistant of the Department of Algorithmic Mathematics of the Faculty of Computer Technology and Informatics of St. Petersburg Electrotechnical University "LETI"
 
 We study the problem of finding Young diagrams of maximum dimensions, i.e., those that have the largest number of Young tableaux among all diagrams with a given number of boxes.  We consider a diagram that differs from the symmetrical one by no more than one box in each row and each column. We propose an algorithm that transforms such a diagram into another one of the same size but with a greater or equal dimension.  We formulate a conjecture that generalizes this result to arbitrary Young diagrams. This geometric property is used in an algorithm for finding Young diagrams with maximum dimensions. Using this algorithm, we obtained new, previously unknown Young diagrams with large and maximum numbers of Young tableaux.
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-26 Ср&gt; </span></span> Васильева И. И. - Построение, стохастизация и компьютерное исследование многомерных миграционно-популяционных моделей с конкуренцией {#васильева-и-dot-и-dot-построение-стохастизация-и-компьютерное-исследование-многомерных-миграционно-популяционных-моделей-с-конкуренцией}
+
+
+#### <span class="section-num">2.3.1</span> Докладчик {#докладчик}
+
+-   Васильева Ирина Ивановна
+    -   Аспирант, старший преподаватель кафедры математического моделирования, компьютерных технологий и информационной безопасности, Елецкий государственный университет им. И.А. Бунина
+
+
+#### <span class="section-num">2.3.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/282/>
+-   Построение, стохастизация и компьютерное исследование многомерных миграционно-популяционных моделей с конкуренцией
+-   Васильева Ирина Ивановна
+    -   Аспирант, старший преподаватель кафедры математического моделирования, компьютерных технологий и информационной безопасности, Елецкий государственный университет им. И.А. Бунина
+
+При изучении детерминированных и стохастических популяционных моделей высокой размерности важной задачей является формализация процессов с учетом новых факторов, возникающих вследствие взаимодействия между видами, а также разработка вычислительных подходов к исследованию таких систем. В докладе рассматриваются многомерные миграционно-популяционные модели с учетом конкуренции видов. На основе дифференциальной эволюции и других метаэвристических алгоритмов глобальной оптимизации решена задача параметрической идентификации с учетом критериев оптимальности, обеспечивающих совместное существование популяций в условиях межвидовой конкуренции в пределах основного ареала обитания, а также существование вида в ареале миграции. Проведены серии численных экспериментов, исследованы траектории динамики системы, получены проекции фазовых портретов на плоскости и в неотрицательном ортанте пространства. Выявлены характерные особенности и проведен сравнительный анализ результатов для различных модификаций рассматриваемых моделей. Получены условия существования положительных состояний равновесия. Исследована устойчивость в смысле Ляпунова. Выполнена стохастизация, проведен сравнительный анализ детерминированного и стохастического случаев. Разработаны алгоритмы и создан программный комплекс для исследования миграционно-популяционных моделей. Результаты исследования могут найти применение в задачах прогнозирования динамики развития экосистем и социально-экономических структур, а также для моделирования физико-химических процессов.
+
+---
+
+-   Construction, stochastization, and computer research of multidimensional migration and population models with competition
+-   Vasilyeva, Irina Ivanovna
+    -   Postgraduate, Senior Lecturer of the Postgraduate Department of Mathematical Modeling, Computer Technologies and Information Security, Bunin Yelets State University
+
+When studying deterministic and stochastic population models of high dimension, an important problem is to formalize processes taking into account new factors arising from interactions between species, as well as to develop computational approaches to the study of such systems. The report examines multidimensional migration and population models taking into account the competition of species. Based on differential evolution and other metaheuristic algorithms of global optimization, the problem of parametric identification is solved taking into account the criteria of optimality ensuring the co-existence of populations in conditions of interspecific competition within the main habitat, as well as the existence of a species in the area of migration. A series of numerical experiments is carried out, the trajectories of the system dynamics are investigated, and projections of phase portraits on the plane and in the non-negative orthant of space are obtained. The characteristic features are revealed and a comparative analysis of the results for various modifications of the models under consideration is carried out. The conditions for the existence of positive equilibrium states are obtained. Stability in the Lyapunov sense is investigated. Stochastization is performed, a comparative analysis of deterministic and stochastic cases is carried out. Algorithms are developed and a software package is created for the study of migration and population models. The results of the research can be used in forecasting the dynamics of ecosystem development and socio-economic structures, as well as for modeling physics and chemical processes.

@@ -2,7 +2,7 @@
 title: "Командная оболочка fish"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-01T16:09:00+03:00
-lastmod: 2025-01-01T19:20:00+03:00
+lastmod: 2025-02-14T21:39:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -135,3 +135,32 @@ slug: "fish-shell"
     ```shell
     fish_config
     ```
+
+
+## <span class="section-num">6</span> Менеджеры плагинов {#менеджеры-плагинов}
+
+-   [Fish. Полезные плагины]({{< relref "2025-02-14--fish-useful-plugins" >}})
+
+
+### <span class="section-num">6.1</span> Oh My Fish {#oh-my-fish}
+
+-   Фреймворк расширения Fish.
+-   Репозиторий: <https://github.com/oh-my-fish/oh-my-fish>
+
+
+### <span class="section-num">6.2</span> Fisher {#fisher}
+
+-   [Fish. Менеджер плагинов Fisher]({{< relref "2025-02-14--fish-plugin-manager-fisher" >}})
+-   Менеджер плагинов.
+-   Репозиторий: <https://github.com/jorgebucaran/fisher>
+
+
+### <span class="section-num">6.3</span> Fundle {#fundle}
+
+-   Менеджер пакетов для Fish.
+-   Репозиторий:  <https://github.com/danhper/fundle>
+
+
+## <span class="section-num">7</span> Ресурсы {#ресурсы}
+
+-   <https://github.com/jorgebucaran/awsm.fish>

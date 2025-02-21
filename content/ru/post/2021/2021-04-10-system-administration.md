@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-02-05T18:35:00+03:00
+lastmod: 2025-02-20T11:44:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -203,6 +203,8 @@ slug: "system-administration"
 -   [Видео. KDEnlive]({{< relref "2021-07-23-video-kdenlive" >}})
 -   [Обработка видео. Командная строка]({{< relref "2021-10-21-video-processing-command-line" >}})
 -   [Закачка с youtube]({{< relref "2022-03-09-download-youtube" >}})
+-   [OBS Studio]({{< relref "2025-02-20--obs-studio" >}})
+-   [OBS Studio. Стриминг]({{< relref "2025-02-16--obs-studio-streaming" >}})
 
 
 ### <span class="section-num">10.6</span> Офисные программы {#офисные-программы}

@@ -2,7 +2,7 @@
 title: "Proxmox. Установка OpenVPN в LXC"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-27T19:16:00+03:00
-lastmod: 2025-02-09T20:55:00+03:00
+lastmod: 2025-02-16T20:45:00+03:00
 draft: false
 slug: "proxmox-installing-openvpn-lxc"
 ---
@@ -92,6 +92,42 @@ Proxmox. Установка OpenVPN в LXC.
 
 
 ## <span class="section-num">5</span> Настройки {#настройки}
+
+
+### <span class="section-num">5.1</span> HMAC authentication {#hmac-authentication}
+
+-   В утилите `openvpn-addclient` жёстко зашит алгоритм `AES-256-GCM` для HMAC authentication.
+-   В конфигурации сервера данная настройка отсутствует.
+-   Я добавил в файл `/etc/openvpn/server.conf`:
+    ```conf-unix
+    # TLS Security
+    cipher AES-256-GCM
+    tls-version-min 1.2
+    tls-cipher TLS-DHE-RSA-WITH-AES-256-GCM-SHA384:TLS-DHE-RSA-WITH-AES-256-CBC-SHA256:TLS-DHE-RSA-WITH-AES-128-GCM-SHA256:TLS-DHE-RSA-WITH-AES-128-CBC-SHA256
+    auth SHA512
+    auth-nocache
+    ```
+-   Перестартуйте сервер:
+    ```shell
+    systemctl restart openvpn@server.service
+    ```
+
+
+### <span class="section-num">5.2</span> Использование одного ключа несколькими клиентами {#использование-одного-ключа-несколькими-клиентами}
+
+-   Удобно использовать один ключ на учебную группу.
+-   Я добавил в файл `/etc/openvpn/server.conf`:
+    ```conf-unix
+    # Enable multiple client to connect with same Certificate key
+    duplicate-cn
+    ```
+-   Перестартуйте сервер:
+    ```shell
+    systemctl restart openvpn@server.service
+    ```
+
+
+### <span class="section-num">5.3</span> Временная зона {#временная-зона}
 
 -   Некоторые клиенты требуют, чтобы ключи создавались в той же временной зоне, что и на клиенте.
 -   Можно изменить временную зону:

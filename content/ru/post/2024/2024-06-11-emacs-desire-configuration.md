@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-02-03T20:03:00+03:00
+lastmod: 2025-02-19T19:01:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

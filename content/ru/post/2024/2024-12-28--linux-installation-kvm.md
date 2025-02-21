@@ -2,7 +2,7 @@
 title: "Linux. Установка в kvm"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-28T18:27:00+03:00
-lastmod: 2025-02-09T15:21:00+03:00
+lastmod: 2025-02-19T15:16:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -41,7 +41,7 @@ Linux. Установка в kvm.
         -bios /usr/share/edk2-ovmf/OVMF_CODE.fd \
         -enable-kvm -machine q35 -device intel-iommu \
         -device virtio-balloon \
-        -chardev qemu-vdagent,id=vdagent0,name=vdagent,clipboard=on \
+        -chardev qemu-vdagent,id=vdagent0,name=vdagent,clipboard=on,mouse=off \
         -display default,show-cursor=on \
         -vga none -device virtio-gpu-pci
     ```

@@ -2,13 +2,13 @@
 title: "Лабораторная работа Первоначальна настройка git"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-06T18:06:00+03:00
-lastmod: 2024-08-23T17:11:00+03:00
+lastmod: 2025-02-20T08:02:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
 weight: 205
 toc: true
-type: docs
+type: "docs"
 feedback: false
 slug: "lab-initial-git-setup"
 summary: "Первоначальна настройка git"
@@ -450,7 +450,20 @@ menu:
 ### <span class="section-num">2.5</span> Верификация коммитов {#верификация-коммитов}
 
 
-#### <span class="section-num">2.5.1</span> Верификация коммитов с помощью _PGP_ {#верификация-коммитов-с-помощью-pgp}
+#### <span class="section-num">2.5.1</span> Проверка коммитов в Git {#проверка-коммитов-в-git}
+
+-   GitHub и GitLab будут показывать значок _Verified_ рядом с вашими новыми коммитами.
+
+<!--list-separator-->
+
+1.  Режим бдительности (vigilant mode)
+
+    -   На GitHub есть настройка [vigilant mode](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits).
+    -   Все неподписанные коммиты будут явно помечены как _Unverified_.
+    -   Включается это в настройках в разделе _SSH and GPG keys_. Установите метку на _Flag unsigned commits as unverified_.
+
+
+#### <span class="section-num">2.5.2</span> Верификация коммитов с помощью _PGP_ {#верификация-коммитов-с-помощью-pgp}
 
 -   Как настроить PGP-подпись коммитов с помощью `gpg`.
 
@@ -539,19 +552,6 @@ menu:
         ```
 
 
-#### <span class="section-num">2.5.2</span> Проверка коммитов в Git {#проверка-коммитов-в-git}
-
--   GitHub и GitLab будут показывать значок _Verified_ рядом с вашими новыми коммитами.
-
-<!--list-separator-->
-
-1.  Режим бдительности (vigilant mode)
-
-    -   На GitHub есть настройка [vigilant mode](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/displaying-verification-statuses-for-all-of-your-commits).
-    -   Все неподписанные коммиты будут явно помечены как _Unverified_.
-    -   Включается это в настройках в разделе _SSH and GPG keys_. Установите метку на _Flag unsigned commits as unverified_.
-
-
 ## <span class="section-num">3</span> Задание {#задание}
 
 -   Создать базовую конфигурацию для работы с git.
@@ -565,26 +565,23 @@ menu:
 ## <span class="section-num">4</span> Последовательность выполнения работы {#последовательность-выполнения-работы}
 
 
-### <span class="section-num">4.1</span> Установка программного обеспечения {#установка-программного-обеспечения}
-
-
-#### <span class="section-num">4.1.1</span> Установка git {#установка-git}
+### <span class="section-num">4.1</span> Установка git {#установка-git}
 
 -   Установим _git_:
     ```shell
-    dnf install git
+    sudo dnf -y install git
     ```
 
 
-#### <span class="section-num">4.1.2</span> Установка gh {#установка-gh}
+### <span class="section-num">4.2</span> Установка gh {#установка-gh}
 
--   Fedora:
+-   Установим интерфейс командной строки к github (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})):
     ```shell
-    dnf install gh
+    sudo dnf -y install gh
     ```
 
 
-### <span class="section-num">4.2</span> Базовая настройка git {#базовая-настройка-git}
+### <span class="section-num">4.3</span> Базовая настройка git {#базовая-настройка-git}
 
 -   Зададим имя и email владельца репозитория:
     ```shell
@@ -611,13 +608,13 @@ menu:
     ```
 
 
-### <span class="section-num">4.3</span> Настройка github {#настройка-github}
+### <span class="section-num">4.4</span> Настройка github {#настройка-github}
 
 -   Создайте учётную запись на <https://github.com>.
 -   Заполните основные данные на <https://github.com>.
 
 
-### <span class="section-num">4.4</span> Настройка gh {#настройка-gh}
+### <span class="section-num">4.5</span> Настройка gh {#настройка-gh}
 
 -   Для начала необходимо авторизоваться
     ```shell
@@ -627,9 +624,9 @@ menu:
 -   Авторизоваться можно через броузер.
 
 
-### <span class="section-num">4.5</span> Создайте ключ для подписи {#создайте-ключ-для-подписи}
+### <span class="section-num">4.6</span> Создайте ключ SSH {#создайте-ключ-ssh}
 
--   Создадим ключ для подписи коммитов:
+-   Создадим ключ для доступа к github и подписи коммитов:
     ```shell
     ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519-git -C "your_email@example.com"
     ```
@@ -644,36 +641,7 @@ menu:
     ```
 
 
-### <span class="section-num">4.6</span> Создайте ключи _ssh_ {#создайте-ключи-ssh}
-
--   по алгоритму _rsa_ с ключём размером 4096 бит:
-    ```shell
-    ssh-keygen -t rsa -b 4096
-    ```
--   по алгоритму _ed25519_:
-    ```shell
-    ssh-keygen -t ed25519
-    ```
-
-
-### <span class="section-num">4.7</span> Создайте ключи _pgp_ {#создайте-ключи-pgp}
-
--   Генерируем ключ
-    ```shell
-    gpg --full-generate-key
-    ```
--   Из предложенных опций выбираем:
-    -   тип _RSA and RSA_;
-    -   размер 4096;
-    -   выберите срок действия; значение по умолчанию --- 0 (срок действия не истекает никогда).
--   GPG запросит личную информацию, которая сохранится в ключе:
-    -   Имя (не менее 5 символов).
-    -   Адрес электронной почты.
-        -   При вводе email убедитесь, что он соответствует адресу, используемому на GitHub.
-    -   Комментарий. Можно ввести что угодно или нажать клавишу ввода, чтобы оставить это поле пустым.
-
-
-### <span class="section-num">4.8</span> Настройка подписи ключом ssh {#настройка-подписи-ключом-ssh}
+### <span class="section-num">4.7</span> Настройка подписи ключом ssh {#настройка-подписи-ключом-ssh}
 
 -   Настроим подписывание в git:
     ```shell
@@ -695,29 +663,29 @@ menu:
     ```
 
 
-### <span class="section-num">4.9</span> Шаблон для рабочего пространства {#шаблон-для-рабочего-пространства}
+### <span class="section-num">4.8</span> Шаблон для рабочего пространства {#шаблон-для-рабочего-пространства}
 
 -   [Рабочее пространство для лабораторной работы]({{< relref "2021-01-16-workspace-laboratory-work" >}})
 -   Репозиторий: <https://github.com/yamadharma/course-directory-student-template>.
 
 
-#### <span class="section-num">4.9.1</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
+### <span class="section-num">4.9</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
 
 -   Необходимо создать шаблон рабочего пространства (см. [Рабочее пространство для лабораторной работы]({{< relref "2021-01-16-workspace-laboratory-work" >}})).
--   Например, для 2022--2023 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
+-   Например, для 2024-2025 учебного года и предмета «Операционные системы» (код предмета `os-intro`) создание репозитория примет следующий вид:
     ```shell
-    mkdir -p ~/work/study/2022-2023/"Операционные системы"
-    cd ~/work/study/2022-2023/"Операционные системы"
-    gh repo create study_2022-2023_os-intro --template=yamadharma/course-directory-student-template --public
-    git clone --recursive git@github.com:<owner>/study_2022-2023_os-intro.git os-intro
+    mkdir -p ~/work/study/2024-2025/"Операционные системы"
+    cd ~/work/study/2024-2025/"Операционные системы"
+    gh repo create study_2024-2025_os-intro --template=yamadharma/course-directory-student-template --public
+    git clone --recursive git@github.com:<owner>/study_2024-2025_os-intro.git os-intro
     ```
 
 
-#### <span class="section-num">4.9.2</span> Настройка каталога курса {#настройка-каталога-курса}
+### <span class="section-num">4.10</span> Настройка каталога курса {#настройка-каталога-курса}
 
 -   Перейдите в каталог курса:
     ```shell
-    cd ~/work/study/2022-2023/"Операционные системы"/os-intro
+    cd ~/work/study/2024-2025/"Операционные системы"/os-intro
     ```
 -   Удалите лишние файлы:
     ```shell

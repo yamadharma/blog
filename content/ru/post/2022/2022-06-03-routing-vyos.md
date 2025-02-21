@@ -2,7 +2,7 @@
 title: "Маршрутизация. VyOS"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-03T12:24:00+03:00
-lastmod: 2024-11-17T19:02:00+03:00
+lastmod: 2025-02-20T14:14:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -45,7 +45,8 @@ slug: "routing-vyos"
 -   Образы для rolling релизов можно скачивать бесплатно.
 -   Rolling релизы:
     -   <https://vyos.net/get/?dir=rolling/current/amd64>;
-    -   <https://community.vyos.net/get/>.
+    -   <https://community.vyos.net/get/>;
+    -   <https://vyos.net/get/stream/>.
 -   Блокируются российский ip-адреса.
 
 
