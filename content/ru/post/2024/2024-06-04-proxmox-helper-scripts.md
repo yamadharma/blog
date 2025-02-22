@@ -2,7 +2,7 @@
 title: "Proxmox. Вспомогательные скрипты"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T13:34:00+03:00
-lastmod: 2024-06-17T11:56:00+03:00
+lastmod: 2025-02-22T18:08:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -20,7 +20,7 @@ slug: "proxmox-helper-scripts"
 
 -   Proxmox VE Helper-Scripts
 -   Сайт: <https://helper-scripts.com/>
--   Репозиторий: <https://github.com/tteck/Proxmox>
+-   Репозиторий: <https://github.com/community-scripts/ProxmoxVE>
 -   Сборник скриптов для Proxmov VE.
 
 
@@ -36,7 +36,7 @@ slug: "proxmox-helper-scripts"
 -   Отключение подписки nag.
 -   Обновление Proxmox VE.
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"
     ```
 
 
@@ -44,7 +44,7 @@ slug: "proxmox-helper-scripts"
 
 -   Добавление пакета для загрузки микрокода процессора:
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/microcode.sh)"
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/microcode.sh)"
     ```
 
 
@@ -52,7 +52,7 @@ slug: "proxmox-helper-scripts"
 
 -   Частота CPU регулируется в зависимости от рабочей нагрузки.
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/scaling-governor.sh)"
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/scaling-governor.sh)"
     ```
 
 
@@ -60,5 +60,13 @@ slug: "proxmox-helper-scripts"
 
 -   Удаление неиспользуемых образов ядра.
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/kernel-clean.sh)"
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/kernel-clean.sh)"
+    ```
+
+
+### <span class="section-num">2.5</span> Proxmox Update Repositories {#proxmox-update-repositories}
+
+-   Переписать ссылки в контейнерах LXC для нового репозиторий скриптов:
+    ```shell
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/update-repo.sh)"
     ```

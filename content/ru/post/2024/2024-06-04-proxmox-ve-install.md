@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2024-09-05T20:12:00+03:00
+lastmod: 2025-02-22T18:20:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -72,20 +72,30 @@ slug: "proxmox-ve-install"
     ```
 
 
-### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
+### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты--dot-dot-notes-public-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
 
 -   Proxmox VE Post Install
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh)"
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"
     ```
 
 -   Proxmox VE Processor Microcode
     ```shell
-    bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/misc/microcode.sh)"
+    apt -y install iucode-tool
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/microcode.sh)"
     ```
 
 
-### <span class="section-num">3.3</span> Безопасность {#безопасность}
+### <span class="section-num">3.3</span> Обновление {#обновление}
+
+-   Обновите систему:
+    ```shell
+    apt update
+    apt -y upgrade
+    ```
+
+
+### <span class="section-num">3.4</span> Безопасность {#безопасность}
 
 -   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})):
     ```shell

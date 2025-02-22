@@ -2,7 +2,7 @@
 title: "Структура аннотации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:38:00+03:00
-lastmod: 2024-05-20T13:18:00+03:00
+lastmod: 2025-02-22T17:03:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -45,7 +45,7 @@ slug: "annotation-structure"
 
 ## <span class="section-num">3</span> Структура аннотации {#структура-аннотации}
 
--   Аннотация следует определённой структуре:
+-   Аннотация следует определённой структуре [1] (см. [Gibson, B. F. (2011) Editorial: Structured abstracts: A key to enhanced information transfer]({{< relref "2025-02-22--gibson_2011_structured-abstracts_en" >}})):
     -   Background (Предпосылки);
     -   Purpose (Цель);
     -   Method (Методы);

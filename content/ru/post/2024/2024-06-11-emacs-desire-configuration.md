@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-02-19T19:01:00+03:00
+lastmod: 2025-02-22T14:09:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -4171,7 +4171,7 @@ slug: "emacs-desire-configuration"
 -   <https://github.com/tumashu/posframe>
 -   Подключение:
     ```emacs-lisp
-    (desire 'posframe)
+    ;; (desire 'posframe)
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 172:</span>
@@ -4181,7 +4181,9 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Pop a posframe (just a child-frame) at point
-    ;;;; https://github.com/tumashu/posframe
+    ;; https://github.com/tumashu/posframe
+
+    ;;; Code:
 
     (require 'posframe)
 
@@ -4195,7 +4197,7 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Pop a posframe (just a child-frame) at point
-    ;;;; https://github.com/tumashu/posframe
+    ;; https://github.com/tumashu/posframe
 
     ;;;
     ```
@@ -4207,7 +4209,7 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Vertico-posframe is an vertico extension, which lets vertico use posframe to show its candidate menu
-    ;;;; https://github.com/tumashu/vertico-posframe
+    ;; https://github.com/tumashu/vertico-posframe
 
     (desire 'vertico-posframe)
 

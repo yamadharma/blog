@@ -2,7 +2,7 @@
 title: "Научно-исследовательская деятельность. Методические заметки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:05:00+03:00
-lastmod: 2024-02-21T20:48:00+03:00
+lastmod: 2025-02-22T16:09:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -23,6 +23,7 @@ slug: "research-methodical-notes"
 -   [Структура IMRAD]({{< relref "2024-01-05-imrad-structure" >}})
 -   [Структура исследовательской статьи по IMRAD]({{< relref "2024-01-21-structure-imrad-research-article" >}})
 -   [Роли авторов научной работы]({{< relref "2024-01-21-contributor-roles" >}})
+-   [Метаданные статьи]({{< relref "2025-02-22--article-metadata" >}})
 
 
 ## <span class="section-num">2</span> Представление научных работ {#представление-научных-работ}
