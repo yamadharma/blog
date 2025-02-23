@@ -2,7 +2,7 @@
 title: "Proxmox. Установка Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-22T19:20:00+03:00
-lastmod: 2025-02-22T20:34:00+03:00
+lastmod: 2025-02-23T18:16:00+03:00
 tags: ["windows"]
 categories: ["computer-science"]
 draft: false
@@ -20,6 +20,10 @@ Proxmox. Установка Windows.
 
 -   Устанавливается виртуальная машина Windows на kvm (см. [Windows. Установка в kvm]({{< relref "2024-05-29-windows-install-kvm" >}}))
 -   В качестве реализации управления виртуальными машинами используется Proxmox (см. [Linux. Дистрибутив Proxmox]({{< relref "2024-06-04-linux-proxmox-distribution" >}}))
+-   Информация:
+    -   <https://pve.proxmox.com/wiki/Windows_2022_guest_best_practices>
+    -   <https://pve.proxmox.com/wiki/Windows_10_guest_best_practices>
+    -   <https://pve.proxmox.com/wiki/Windows_VirtIO_Drivers>
 
 
 ## <span class="section-num">2</span> Подготовка {#подготовка}
@@ -36,14 +40,51 @@ Proxmox. Установка Windows.
 
 -   Создадим виртуальную машину:
     ```shell
-    qm create 200 --name pdc2 --memory 16000 --cores 4 --sockets 1 --net0 virtio,bridge=vmbr1,firewall=1,mtu=1,tag=100 --agent enabled=1
+    qm create 200 --name pdc2 --memory 16000 --cores 4 --sockets 1 --net0 virtio,bridge=vmbr1,firewall=1,mtu=1,tag=180 --agent enabled=1
     ```
 
     -   `tag` задаёт используемый vlan.
 -   Установим тип операционной системы.
--   Можно выбрать из списка: win11, win10, win8, win7, w2k22, w2k19, w2k16, w2k12, w2k8.
+-   Можно выбрать из списка: wxp, w2k, w2k3, w2k8, wvista, win7, win8, win10, win11.
     ```shell
-    qm set 200 --ostype w2k19
+    qm set 200 --ostype win10
+    ```
+-   Подключим QEMU Guest Agent (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})):
+    ```shell
+    qm set 200 --agent enabled=1,fstrim_cloned_disks=1
+    ```
+-   Создадим диск (160GB):
+    ```shell
+    pvesm alloc local-lvm 200 vm-200-disk-0 160G
+    ```
+-   Зададим драйвер диска:
+    ```shell
+    qm set 200 --scsihw virtio-scsi-single
+    ```
+-   Подключим диск:
+    ```shell
+    qm set 200 --virtio0 local-lvm:vm-200-disk-0
+    ```
+-   Подключим CDROM:
+    ```shell
+    qm set 200 --ide2 local:iso/windows-server-2019.iso,media=cdrom
+    ```
+-   Подключим диск с драйверами VirtIO:
+    ```shell
+    qm set 200 --ide3 local:iso/virtio-win.iso,media=cdrom
+    ```
+-   Зададим порядок загрузки (CD-ROM, затем диск)
+    ```shell
+    qm set 200 --boot c --bootdisk virtio0
+    qm set 200 --boot order='ide2;ide3;virtio0'
+    ```
+-   Зададим тип CPU:
+    ```shell
+    qm set 200 --cpu cputype=host
+    ```
+-   Подключим для мышки:
+    ```shell
+    qm set 200 --tablet 1
     ```
 
 
@@ -65,7 +106,7 @@ Proxmox. Установка Windows.
     ISO_STORAGE="/mnt/pve/nfs/template/iso"           # Storage location for ISOs
     WIN_ISO="Win11_23H2_x64v2_auto.iso"         # Windows ISO filename
     VIRTIO_ISO="virtio-win.iso"   # VirtIO drivers ISO filename
-    OS_TYPE="w2k19"               # Options: win11, win10, win8, win7, w2k22, w2k19, w2k16, w2k12, w2k8
+    OS_TYPE="win10"               # Options: wxp, w2k, w2k3, w2k8, wvista, win7, win8, win10, win11
 
     # Function to check if VM ID already exists
     check_vmid() {
