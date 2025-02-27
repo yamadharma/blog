@@ -2,7 +2,7 @@
 title: "Fish. Полезные плагины"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-14T21:29:00+03:00
-lastmod: 2025-02-27T16:00:00+03:00
+lastmod: 2025-02-27T17:33:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -80,8 +80,7 @@ Fish. Полезные плагины.
 ### <span class="section-num">4.1</span> PatrickF1/fzf.fish {#patrickf1-fzf-dot-fish}
 
 -   Репозиторий: <https://github.com/PatrickF1/fzf.fish>
--   [Fish. Плагин PatrickF1/fzf.fish]({{< relref "2025-02-27--fish_плагин_patrickf1_fzf_fish" >}})
-
+-   [Fish. Плагин PatrickF1/fzf.fish]({{< relref "2025-02-27--fish-plugins-patrickf1-fzf-fish" >}})
 -   Установка пререквизитов:
     ```shell
     emerge app-shells/fish

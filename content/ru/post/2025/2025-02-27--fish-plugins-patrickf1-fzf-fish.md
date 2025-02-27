@@ -2,11 +2,11 @@
 title: "Fish. Плагин PatrickF1/fzf.fish"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-27T15:56:00+03:00
-lastmod: 2025-02-27T15:58:00+03:00
+lastmod: 2025-02-27T17:33:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
-slug: "fish_плагин_patrickf1_fzf_fish"
+slug: "fish-plugins-patrickf1-fzf-fish"
 ---
 
 Fish. Плагин PatrickF1/fzf.fish.
