@@ -2,7 +2,7 @@
 title: "NAS. TerraMaster"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-10T18:35:00+03:00
-lastmod: 2025-01-27T12:15:00+03:00
+lastmod: 2025-03-01T12:22:00+03:00
 tags: ["sysadmin", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -171,6 +171,10 @@ NAS. TerraMaster.
 -   Обновите список пакетов:
     ```shell
     opkg update
+    ```
+-   Обновите пакеты:
+    ```shell
+    opkg upgrade
     ```
 
 

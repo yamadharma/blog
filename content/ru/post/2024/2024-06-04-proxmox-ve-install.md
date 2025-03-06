@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2025-02-23T20:34:00+03:00
+lastmod: 2025-03-02T21:02:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -43,7 +43,7 @@ slug: "proxmox-ve-install"
 
 ### <span class="section-num">2.3</span> Выбор файловой системы {#выбор-файловой-системы}
 
--   Если у вас железный RAID, то выбирайте ext4 или xfs (наверное, лучше).
+-   Если у вас железный RAID, то выбирайте ext4 или xfs (наверное, лучше, но может посыпаться без ИБП).
 -   Поверх этих систем будет установлен LVM.
 -   Если у вас несколько дисков и вы желаете сделать софтовый RAID, то выбирайте RAID на ZFS.
 -   Построение RAID на основе mdadm дистрибутив не поддерживает.
@@ -139,3 +139,46 @@ slug: "proxmox-ve-install"
 -   Для создания VLAN для самого сервера создаём _OVSIntPort_.
 -   После настроек нажимаем _Apply Configuration_ в графическом интерфейсе.
 -   Виртуальные машины прикрепляем на созданный мост, настройках сети устанавливаем нужный _VLAN Tag_.
+
+
+## <span class="section-num">5</span> Дисковая подсистема {#дисковая-подсистема}
+
+
+### <span class="section-num">5.1</span> local-lvm {#local-lvm}
+
+-   Установщик выделяет два логических раздела: `local` и `local-lvm`.
+-   На разделе `local-lvm` можно выделить дополнительный раздел.
+
+
+### <span class="section-num">5.2</span> Создание дополнительного раздел на lvm-thin {#создание-дополнительного-раздел-на-lvm-thin}
+
+-   Смотрим уже существующие VG:
+    ```shell
+    vgs
+    ```
+-   Смотрим существующие LV:
+    ```shell
+    lvs
+    ```
+-   Видим, что раздел `data` является lvm-thin (атрибут `t`).
+-   Создаём на нем раздел:
+    ```shell
+    lvcreate -V100G -T pve/data -n newdisk
+    ```
+-   Проверяем:
+    ```shell
+    lvs
+    ```
+-   Форматируем раздел:
+    ```shell
+    mkfs.ext4 /dev/pve/newdisk
+    ```
+-   Можно подмонтировать:
+    ```shell
+    mkdir /mnt/newdisk
+    mount /dev/pve/newdisk /mnt/newdisk
+    ```
+-   Можно по необходимости удалить раздел:
+    ```shell
+    vlmremove /dev/pve/newdisk
+    ```

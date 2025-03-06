@@ -2,7 +2,7 @@
 title: "Proxmox. Вспомогательные скрипты"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T13:34:00+03:00
-lastmod: 2025-02-22T18:08:00+03:00
+lastmod: 2025-03-04T15:46:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,7 @@ slug: "proxmox-helper-scripts"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Proxmox VE Helper-Scripts
--   Сайт: <https://helper-scripts.com/>
+-   Сайт: <https://community-scripts.github.io/ProxmoxVE/>
 -   Репозиторий: <https://github.com/community-scripts/ProxmoxVE>
 -   Сборник скриптов для Proxmov VE.
 
@@ -69,4 +69,16 @@ slug: "proxmox-helper-scripts"
 -   Переписать ссылки в контейнерах LXC для нового репозиторий скриптов:
     ```shell
     bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/update-repo.sh)"
+    ```
+
+
+### <span class="section-num">2.6</span> Proxmox Backup Server Post Install {#proxmox-backup-server-post-install}
+
+-   Отключение Enterprise Repo.
+-   Добавление или исправление источников PVE.
+-   Включение No-Subscription Repo.
+-   Добавление тестового репозитория.
+-   Отключение подписки nag.
+    ```shell
+    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pbs-install.sh)"
     ```

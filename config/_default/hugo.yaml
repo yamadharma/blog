@@ -85,7 +85,7 @@ permalinks:
 disableAliases: true
 
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks, WebAppManifest]
+  home: [HTML, RSS, headers, redirects, backlinks]
   page: [HTML, RSS]
   rss: [RSS]
   section: [HTML, RSS]
@@ -231,4 +231,4 @@ mediaTypes:
   application/manifest+json:
     suffixes:
       - webmanifest
-    
+

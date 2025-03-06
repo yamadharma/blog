@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2025-01-03T14:39:00+03:00
+lastmod: 2025-03-05T18:31:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -141,10 +141,25 @@ slug: "read-it-later-wallabag"
                   interval: 1m
                   timeout: 3s
             ```
+        -   Запуск будет выполняться следующим образом:
+            ```shell
+            podman compose --file wallabag-sqlite.yaml up --detach
+            ```
 
 <!--list-separator-->
 
-4.  Nginx
+4.  Обновление
+
+    -   Обновление контейнера:
+        ```shell
+        podman pull wallabag/wallabag
+        podman stop wallabag
+        podman compose --file wallabag-sqlite.yaml up --detach
+        ```
+
+<!--list-separator-->
+
+5.  Nginx
 
     -   Настройте _nginx_:
         ```conf-unix
@@ -180,7 +195,7 @@ slug: "read-it-later-wallabag"
 
 <!--list-separator-->
 
-5.  Скрипт systemd
+6.  Скрипт systemd
 
     -   Создаём файл сервиса `/etc/containers/systemd/wallabag.container`:
         ```conf-unix
@@ -211,7 +226,7 @@ slug: "read-it-later-wallabag"
 
 <!--list-separator-->
 
-6.  Импорт Omnivore
+7.  Импорт Omnivore
 
     -   Экспортировал записи с Omnivore.
     -   Скачал архив с большим количеством файлов json (более 600).

@@ -2,7 +2,7 @@
 title: "Linux. Дистрибутив Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T10:45:00+03:00
-lastmod: 2025-02-22T19:29:00+03:00
+lastmod: 2025-03-04T14:03:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -48,3 +48,8 @@ slug: "linux-proxmox-distribution"
 
 -   [Proxmox. Установка OpenVPN в LXC]({{< relref "2025-01-27--proxmox-installing-openvpn-lxc" >}})
 -   [Proxmox. Установка Windows]({{< relref "2025-02-22--proxmox-windows-install" >}})
+
+
+## <span class="section-num">5</span> Дополнительный функционал {#дополнительный-функционал}
+
+-   [Proxmox Backup Server]({{< relref "2025-03-04--proxmox-backup-server" >}})
