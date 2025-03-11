@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-02-23T19:36:00+03:00
+lastmod: 2025-03-09T16:23:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -177,13 +177,6 @@ slug: "gentoo-compiling-clang"
 
 -   Можно задать компилятор для каждого пакета в отдельности в файле `/etc/portage/package.env`:
     ```conf-unix
-    # dev-haskell/network				compiler-gcc
-    # dev-haskell/old-time				compiler-gcc
-    # dev-util/spirv-llvm-translator:15		compiler-gcc
-    # dev-vcs/darcs					compiler-clang-binutils	# need ld
-    # sys-devel/clang:15				compiler-gcc
-    # sys-devel/lld:15				compiler-gcc
-    # sys-devel/llvm:15				compiler-gcc
     =app-emulation/virtualbox-7.0*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-7.1*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.0*		compiler-gcc    # ld.lld error

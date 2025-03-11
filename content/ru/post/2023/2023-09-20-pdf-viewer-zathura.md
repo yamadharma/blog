@@ -2,7 +2,7 @@
 title: "Pdf. Просмотр. Zathura"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-20T13:12:00+03:00
-lastmod: 2025-01-05T21:48:00+03:00
+lastmod: 2025-03-11T09:30:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -454,7 +454,7 @@ map [fullscreen] f toggle_fullscreen
 
 ### <span class="section-num">4.3</span> Буфер обмена {#буфер-обмена}
 
--   Выделение мышью копируется в буфер обмена, а не в _x11 primary selection_.
+-   Устанавливаем режим, при котором выделение мышью копируется в буфер обмена, а не в _x11 primary selection_ (см. [Буфер обмена]({{< relref "2025-03-11--clipboard" >}})).
     ```conf-unix
     ## Enable copy to clipboard when selecting text with mouse
     set selection-clipboard clipboard
@@ -467,10 +467,19 @@ map [fullscreen] f toggle_fullscreen
 
 ### <span class="section-num">4.4</span> Разное {#разное}
 
-```conf-unix
-## Enable incremental search
-set incremental-search true
+-   Инкрементальный поиск:
+    ```conf-unix
+    ## Enable incremental search
+    set incremental-search true
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
+      ~/.config/zathura/zathurarc
+    </div>
 
+<!--listend-->
+
+```conf-unix
 ## Disable sandbox
 set sandbox none
 
@@ -478,10 +487,6 @@ set sandbox none
 map <C-i> zoom in
 map <C-o> zoom out
 ```
-<div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 3:</span>
-  ~/.config/zathura/zathurarc
-</div>
 
 
 ### <span class="section-num">4.5</span> Комбинации клавиш {#комбинации-клавиш}

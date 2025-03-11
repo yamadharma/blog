@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-02-27T17:11:00+03:00
+lastmod: 2025-03-08T12:57:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -427,7 +427,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-## <span class="org-todo done DONE">DONE</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[3/3]</code> {#семинар-математическое-моделирование-2025-1}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[3/4]</code> {#семинар-математическое-моделирование-2025-1}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
@@ -590,3 +590,35 @@ When studying deterministic and stochastic population models of high dimension, 
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-20 Чт&gt; </span></span> Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами в задачах социально-экономической динамики {#степанцов-м-dot-е-dot-метод-замены-дифференциальных-уравнений-клеточными-автоматами-в-задачах-социально-экономической-динамики}
+
+
+#### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
+
+-   Степанцов Михаил Евгеньевич
+    -   старший научный сотрудник, к.ф.-м.н, доцент
+    -   Институт прикладной математики им. М.В. Келдыша РАН
+
+
+#### <span class="section-num">2.4.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/285/>
+-   Метод замены дифференциальных уравнений клеточными автоматами в задачах социально-экономической динамики
+-   Степанцов Михаил Евгеньевич
+    -   старший научный сотрудник, к.ф.-м.н, доцент
+    -   Институт прикладной математики им. М.В. Келдыша РАН
+
+Доклад посвящен представлению диссертации на соискание учёной степени доктора наук, посвящённой разработке и использованию метода замены дифференциальных уравнений клеточными автоматами в определённом классе задач.
+В задачах социально-экономической динамики моделируемая реальность существенно дискретна, поэтому моделирование таких процессов уместно осуществлять при помощи дискретных моделей, в частности –клеточных автоматов. В то же время при моделировании социально-экономических процессов уже широко используются созданные по аналогии с физикой модели на основе дифференциальных уравнений. В докладе предложен общий метод замены дифференциальных уравнений клеточными автоматами в моделях, сводимых к задачам Коши для обыкновенных дифференциальных уравнений, что позволяет расширить область применимости исходных моделей и повысить эффективность вычислений. Изложена теорема о сходимости решения, полученного при помощи клеточного автомата, к решению исходной задачи и следствие из неё. Представлена апробация этого метода на шести математических моделях социально-экономической динамики и решения соответствующих прикладных задач, которые было затруднительно либо вообще невозможно получить аналитически или численно на основе исходных непрерывных моделей.
+
+---
+
+-   Method of replacing differential equations with cellular automata in problems of socio-economic dynamics
+-   Stepantsov Mikhail Evgenievich
+    -   Senior Researcher, PhD, Associate Professor
+    -   Keldysh Institute of Applied Mathematics, Russian Academy of Sciences
+
+The report is the presentation of a doctoral thesis considering the method of replacing differential equations with cellular automata in a certain class of problems.
+When we study socio-economic dynamics, the modeled reality is essentially discrete, therefore such processes should be described using discrete models, in particular, cellular automata. On the other hand a lot of socio-economic processes are widely modeled basing on differential equations by analogy with physical processes. The report proposes a general method for replacing differential equations with cellular automata in models that can be reduced to Cauchy problems for ordinary differential equations. This allows expanding the applicability of the original models and increasing the efficiency of calculations. A theorem on the convergence of a solution obtained with a cellular automaton to a solution to the original problem is presented as well as its corollary. Report also includes presentation of approbation of this method on six mathematical models of socio-economic dynamics. Solutions are obtained to corresponding applied problems that were difficult or even impossible to obtain analytically or numerically while using classical approach.

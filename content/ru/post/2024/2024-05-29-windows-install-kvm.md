@@ -2,7 +2,7 @@
 title: "Windows. Установка в kvm"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-29T19:46:00+03:00
-lastmod: 2025-03-06T17:08:00+03:00
+lastmod: 2025-03-07T17:49:00+03:00
 tags: ["windows", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,6 +18,12 @@ slug: "windows-install-kvm"
 
 ## <span class="section-num">1</span> Пререквизиты {#пререквизиты}
 
+-   Необходимо иметь установленный libvirt (см. [Виртуализация. Libvirt]({{< relref "2024-11-26-virtualization-libvirt" >}})).
+-   Можно устанавливать с помощью какого-либо графического интерфейса управления qemu, например с помощью virt-manager:
+-   Gentoo:
+    ```shell
+    emerge app-emulation/virt-manager
+    ```
 -   Рекомендуется использовать драйвера Virtio для Windows.
 -   Работа через устройства Virtio осуществляется быстрее, чем через эмуляцию SCSI и т.д.
 -   Gentoo:
@@ -35,26 +41,80 @@ slug: "windows-install-kvm"
 
 ## <span class="section-num">2</span> Установка Windows {#установка-windows}
 
--   Можно устанавливать с помощью какого-либо графического интерфейса управления qemu, например с помощью virt-manager:
--   Gentoo:
-    ```shell
-    emerge app-emulation/virt-manager
-    ```
 -   При установке следует выбрать пункт о дополнительной конфигурации перед установкой.
 -   На этом этапе следует добавить второй виртуальный cdrom с драйверами virtio-win.
 -   У жёсткого диска установите шину VirtIO.
+-   В разделе _Обзор_ убедитесь, что для чипсета выбрано значение Q35, а для прошивки --- UEFI.
+-   Для запуска Windows 11 под QEMU KVM необходимы Secureboot и TPM, в файле конфигураций это выглядит так:
+    ```xml
+    <os>
+      <type arch="x86_64" machine="q35">hvm</type>
+      <loader readonly="yes" type="pflash">/usr/share/edk2/ovmf/OVMF_CODE.secboot.fd</loader>
+      <nvram template="/usr/share/edk2/ovmf/OVMF_VARS.secboot.fd"/>
+      <boot dev="hd"/>
+    </os>
+
+    ...
+
+    <tpm model="tpm-tis">
+      <backend type="emulator" version="2.0"/>
+    </tpm>
+    ```
 
 
-## <span class="section-num">3</span> После установки {#после-установки}
+## <span class="section-num">3</span> Использование virt-install {#использование-virt-install}
+
+-   Конфигурацию можно создать с помощью virt-install:
+    ```shell
+    virt-install \
+        --connect qemu:///system \
+        --disk /var/lib/libvirt/images/Win11_24H2_Russian_x64.iso,device=cdrom \
+        --disk /var/lib/libvirt/images/virtio-win.iso,device=cdrom \
+        --disk pool=default,size=120,bus=virtio,format=qcow2 \
+        --name windows11 \
+        --os-variant=win11 \
+        --machine q35 \
+        --ram 4096 \
+        --memballoon driver.iommu=on \
+        --vcpus=2 \
+        --network network=default,model=virtio \
+        --graphics spice \
+        --channel spicevmc \
+        --hvm \
+        --virt-type=kvm \
+        --features kvm_hidden=on,smm=on \
+        --tpm backend.type=emulator,backend.version=2.0,model=tpm-tis \
+        --boot uefi \
+        --check path_in_use=off \
+        --boot cdrom,hd,menu=on
+    ```
+
+    -   `--name windows11` : название виртуальной машины;
+    -   `--os-type=win11` : тип ОС;
+    -   `--cdrom /var/lib/libvirt/images/Win11_24H2_Russian_x64.iso` : путь к ISO-образу установочного диска ОС;
+    -   `--graphics spice` : графическая консоль;
+    -   `--disk pool=default,size=160,bus=virtio,format=qcow2` : хранилище;
+        -   образ виртуальной машины будет создана в пространстве хранения объёмом 160 ГБ, которое автоматически выделяется из пула хранилищ default;
+        -   образ диска для этой виртуальной машины будет создан в формате qcow2;
+    -   `--ram 4096` : объём оперативной памяти;
+    -   `--vcpus=2` : количество процессоров;
+    -   `--network network=default` : виртуальная сеть default;
+    -   `--hvm` : полностью виртуализированная система;
+    -   `--virt-type=kvm` : использовать модуль ядра KVM, который задействует аппаратные возможности виртуализации процессора.
+-   В качестве видео-интерфейса ставим QXL.
+-   После установки драйверов следует перевести в Virtio.
+
+
+## <span class="section-num">4</span> После установки {#после-установки}
 
 -   Поменяйте в настройках типы устройств:
     -   сетевую карту на Virtio;
-    -   видео: QXL.
+    -   видео на Virtio.
 -   Установите сертификат RedHat с CD-диска.
 -   Установите драйвера Virtio.
 
 
-## <span class="section-num">4</span> Общая папка {#общая-папка}
+## <span class="section-num">5</span> Общая папка {#общая-папка}
 
 -   Будем использовать встроенный метод создания общей папки с помощью _virt-manager_.
 -   Нажмите на значок с надписью _Показать виртуальное оборудование_ (_Show virtual hardware details_) на панели инструментов.
@@ -70,7 +130,7 @@ slug: "windows-install-kvm"
     -   Можно скачать с сайта <https://github.com/winfsp/winfsp/releases/>.
     -   Можно установить с Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
         ```shell
-        choco install winsfp
+        choco install winfsp
         ```
 -   Установите `virtio-win-guest-tools.exe`.
     -   Возьмите из комплекта `virtio-win.iso` или скачайте напрямую из <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/>.
@@ -86,7 +146,12 @@ slug: "windows-install-kvm"
 -   После запуска службы откройте Проводник, и вы должны увидеть метку монтирования, которую вы создали в первом шаге выше, и которая должна быть отображена как диск `Z:`.
 
 
-## <span class="section-num">5</span> Буфер обмена {#буфер-обмена}
+## <span class="section-num">6</span> Буфер обмена {#буфер-обмена}
 
+-   Должно работать само после установки драйверов virtio.
 -   Проверьте, что есть Канал (spice) типа `spicevmc`.
 -   Установите в Windows _SPICE Guest Tools_ : <https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe>.
+-   Можно установить с помощью Chocolatey:
+    ```shell
+    choco install spice-agent
+    ```

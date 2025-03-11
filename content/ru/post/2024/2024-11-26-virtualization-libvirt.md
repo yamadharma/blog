@@ -2,7 +2,7 @@
 title: "Виртуализация. Libvirt"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-26T13:39:00+03:00
-lastmod: 2024-11-26T18:53:00+03:00
+lastmod: 2025-03-07T10:26:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -58,7 +58,12 @@ slug: "virtualization-libvirt"
 
 -   Чтобы запустить virt-manager от имени обычного пользователя, убедитесь, что пользователь добавлен в группу `libvirt`:
     ```shell
-    usermod -a -G libvirt <user>
+    sudo usermod -a -G kvm,libvirt <user>
+    ```
+-   Необходимы следующие права доступа к файлу устройства:
+    ```shell
+    sudo chown root:kvm /dev/kvm
+    sudo chmod 660 /dev/kvm
     ```
 -   Раскомментируйте следующие строки из файла конфигурации `/etc/libvirt/libvirtd.conf`:
     ```conf-unix

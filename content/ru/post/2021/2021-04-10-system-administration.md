@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-02-20T11:44:00+03:00
+lastmod: 2025-03-11T16:34:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -44,6 +44,12 @@ slug: "system-administration"
 -   [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})
 
 
+### <span class="section-num">2.4</span> Резервное копирование {#резервное-копирование}
+
+-   [Ротирование бэкапов]({{< relref "2025-03-11--backup-rotation" >}})
+-   [Proxmox Backup Server]({{< relref "2025-03-04--proxmox-backup-server" >}})
+
+
 ## <span class="section-num">3</span> Гаджеты {#гаджеты}
 
 -   [Гаджеты]({{< relref "2024-08-22-gadget" >}})
@@ -52,7 +58,12 @@ slug: "system-administration"
 ## <span class="section-num">4</span> Графическое окружение {#графическое-окружение}
 
 
-### <span class="section-num">4.1</span> Linux {#linux}
+### <span class="section-num">4.1</span> Общее {#общее}
+
+-   [Буфер обмена]({{< relref "2025-03-11--clipboard" >}})
+
+
+### <span class="section-num">4.2</span> Linux {#linux}
 
 -   [Мультимедиа сервер PipeWire]({{< relref "2021-04-28-pipewire-multimedia-server" >}})
 -   [XDG. Каталоги]({{< relref "2024-10-19-xdg-directories" >}})
@@ -64,19 +75,19 @@ slug: "system-administration"
 -   [Лаунчеры]({{< relref "2024-08-11-launcher" >}})
 
 
-### <span class="section-num">4.2</span> Wayland {#wayland}
+### <span class="section-num">4.3</span> Wayland {#wayland}
 
 -   [Wayland]({{< relref "2023-08-14-wayland" >}})
 -   [Linux. Приложения. Индикатор прогресса wob]({{< relref "2024-03-06-linux-applications-progress-indicator-wob" >}})
 -   [Переход на Sway]({{< relref "2020-09-10-migration-sway" >}})
 
 
-### <span class="section-num">4.3</span> X11 {#x11}
+### <span class="section-num">4.4</span> X11 {#x11}
 
 -   [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})
 
 
-### <span class="section-num">4.4</span> Темы оформления {#темы-оформления}
+### <span class="section-num">4.5</span> Темы оформления {#темы-оформления}
 
 -   [Linux. Темы оформления]({{< relref "2024-05-07-linux-themes" >}})
 
@@ -85,7 +96,7 @@ slug: "system-administration"
 
 -   [Переход на домен pfur.ru]({{< relref "2023-04-20-switching-domain-pfur" >}})
 -   [Спецификации компьютеров]({{< relref "2023-06-11-computer-specifications" >}})
--   [Сервера на Донской]({{< relref "2022-09-15-servers-donskaya" >}})
+-   [Серверы на Донской]({{< relref "2022-09-15-servers-donskaya" >}})
 -   [Сеть на Донской]({{< relref "2023-08-13-network-donskaya" >}})
 
 
