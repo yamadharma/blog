@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-03-11T12:38:00+03:00
+lastmod: 2025-03-12T14:31:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -841,6 +841,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.8.1</span> xclip {#xclip}
 
+-   [Emacs. xclip]({{< relref "2025-03-12--emacs-xclip" >}})
 -   Подключение:
     ```emacs-lisp
     (desire 'xclip)

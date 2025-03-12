@@ -2,7 +2,7 @@
 title: "Буфер обмена"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-11T09:03:00+03:00
-lastmod: 2025-03-11T09:30:00+03:00
+lastmod: 2025-03-12T14:32:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -54,3 +54,8 @@ slug: "clipboard"
 
 
 ## <span class="section-num">4</span> Менеджеры {#менеджеры}
+
+
+## <span class="section-num">5</span> Приложения {#приложения}
+
+-   [Emacs. xclip]({{< relref "2025-03-12--emacs-xclip" >}})
