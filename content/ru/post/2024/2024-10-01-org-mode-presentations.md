@@ -2,7 +2,7 @@
 title: "Org-mode. Текстовые презентации"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-01T18:50:00+03:00
-lastmod: 2024-10-01T19:03:00+03:00
+lastmod: 2025-03-23T20:08:00+03:00
 tags: ["org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false

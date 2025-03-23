@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-03-09T16:23:00+03:00
+lastmod: 2025-03-21T15:56:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -199,10 +199,12 @@ slug: "gentoo-compiling-clang"
     app-text/fbreader				compiler-gcc
     app-text/paper-clip				compiler-gcc
     app-text/tesseract				compiler-clang-mold
+    app-text/texlive-core				compiler-gcc
     app-text/zathura-pdf-mupdf			compiler-clang-mold
     dev-db/cdb					compiler-gcc
     dev-db/libiodbc					compiler-clang-mold
     dev-db/mariadb					compiler-gcc
+    dev-db/sqlite					compiler-gcc
     dev-debug/ddd					compiler-gcc
     dev-debug/gdb					compiler-gcc	# gcc itself
     dev-debug/systemtap				compiler-gcc
@@ -247,7 +249,7 @@ slug: "gentoo-compiling-clang"
     dev-python/cysignals				compiler-gcc
     dev-python/pygame				compiler-gcc
     dev-python/scipy				compiler-clang-mold
-    # dev-qt/qttools					compiler-clang-mold-18
+    dev-python/zstandard				compiler-gcc
     dev-qt/qtwebengine:5				compiler-clang-mold-18
     dev-qt/qtwebengine:6				compiler-clang-mold-18
     dev-tex/tectonic				compiler-gcc
@@ -280,7 +282,6 @@ slug: "gentoo-compiling-clang"
     media-libs/libopenraw				compiler-gcc
     media-libs/libquvi				compiler-gcc
     media-libs/libsidplay				compiler-gcc
-    # media-libs/mesa					compiler-clang-lto
     media-libs/openglide				compiler-gcc
     media-libs/tg_owt				compiler-gcc
     media-libs/urt					compiler-gcc
@@ -327,6 +328,7 @@ slug: "gentoo-compiling-clang"
     sys-devel/bin86					compiler-gcc    # error: ISO C99
     sys-devel/binutils				compiler-gcc	# gcc itself	# configure: error: AR
     sys-devel/gcc					compiler-gcc	# gcc itself
+    sys-fs/duperemove				compiler-gcc
     sys-libs/binutils-libs				compiler-gcc	# gcc itself
     sys-libs/ldb					compiler-clang-mold
     sys-libs/talloc					compiler-gcc
@@ -335,12 +337,9 @@ slug: "gentoo-compiling-clang"
     www-client/chromium				compiler-clang
     x11-libs/agg					compiler-gcc
     x11-libs/fox					compiler-gcc
-    # x11-libs/motif					compiler-clang-lto
     x11-misc/redshift				compiler-gcc
     x11-misc/virtualgl				compiler-clang-mold
-    app-text/texlive-core				compiler-gcc
-    dev-db/sqlite					compiler-gcc
-    sys-fs/duperemove				compiler-gcc
+    dev-util/android-tools				compiler-gcc
     ```
 
 

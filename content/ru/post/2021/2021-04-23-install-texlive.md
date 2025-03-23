@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2024-12-03T17:36:00+03:00
+lastmod: 2025-03-20T14:08:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -135,24 +135,23 @@ slug: "install-texlive"
     ```
 -   Перенесите весь каталог TeXlive так, чтобы он соответствовал новой версии, например:
     ```shell
-    mv /usr/local/texlive/2023/ /usr/local/texlive/2024
+    mv /usr/local/texlive/2024/ /usr/local/texlive/2025
     ```
 -   Удалите бекапы пакетов:
     ```shell
-    rm /usr/local/texlive/2024/tlpkg/backups/*
+    rm /usr/local/texlive/2025/tlpkg/backups/*
     ```
 -   Создайте ссылки на исполняемые файлы:
     ```shell
-    /usr/local/texlive/2024/bin/x86_64-linux/tlmgr path add
+    /usr/local/texlive/2025/bin/x86_64-linux/tlmgr path add
     ```
 -   Загрузите последнюю версию скрипта `update-tlmgr-latest.sh`:
     ```shell
-    cd /tmp
-    wget https://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh
+    wget https://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh -O /tmp/update-tlmgr-latest.sh
     ```
 -   Запустите скрипт:
     ```shell
-    sh ./update-tlmgr-latest.sh -- upgrade
+    sh /tmp/update-tlmgr-latest.sh -- upgrade
     ```
 -   Если вы не хотите использовать репозиторий по умолчанию для загрузки новых файлов, то замените его:
     ```shell
@@ -172,7 +171,7 @@ slug: "install-texlive"
     ```
 -   Можно пересоздать кэш _lualatex_ под пользователем:
     ```shell
-    rm -rvf ~/.texlive2023
+    rm -rvf ~/.texlive2024
     luaotfload-tool -fu
     ```
 

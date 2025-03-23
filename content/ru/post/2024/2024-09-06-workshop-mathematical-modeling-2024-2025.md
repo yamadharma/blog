@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-03-08T12:57:00+03:00
+lastmod: 2025-03-22T13:53:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -427,7 +427,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[3/4]</code> {#семинар-математическое-моделирование-2025-1}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[4/4]</code> {#семинар-математическое-моделирование-2025-1}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
@@ -477,7 +477,7 @@ Modern computer algebra systems have built-in functions for constructing Gröbne
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-20 Чт&gt; </span></span> Смирнов-Мальцев Е. Д., Дужин В. С. - Некоторые геометрические свойства диаграмм Юнга максимальных размерностей {#смирнов-мальцев-е-dot-д-dot-дужин-в-dot-с-dot-некоторые-геометрические-свойства-диаграмм-юнга-максимальных-размерностей}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-02-20 Чт] </span></span> Смирнов-Мальцев Е. Д., Дужин В. С. - Некоторые геометрические свойства диаграмм Юнга максимальных размерностей {#смирнов-мальцев-е-dot-д-dot-дужин-в-dot-с-dot-некоторые-геометрические-свойства-диаграмм-юнга-максимальных-размерностей}
 
 
 #### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
@@ -539,7 +539,7 @@ We study the problem of finding Young diagrams of maximum dimensions, i.e., thos
 {{< /tabs >}}
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-02-26 Ср&gt; </span></span> Васильева И. И. - Построение, стохастизация и компьютерное исследование многомерных миграционно-популяционных моделей с конкуренцией {#васильева-и-dot-и-dot-построение-стохастизация-и-компьютерное-исследование-многомерных-миграционно-популяционных-моделей-с-конкуренцией}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-02-26 Ср] </span></span> Васильева И. И. - Построение, стохастизация и компьютерное исследование многомерных миграционно-популяционных моделей с конкуренцией {#васильева-и-dot-и-dot-построение-стохастизация-и-компьютерное-исследование-многомерных-миграционно-популяционных-моделей-с-конкуренцией}
 
 
 #### <span class="section-num">2.3.1</span> Докладчик {#докладчик}
@@ -592,7 +592,7 @@ When studying deterministic and stochastic population models of high dimension, 
 {{< /tabs >}}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-20 Чт&gt; </span></span> Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами в задачах социально-экономической динамики {#степанцов-м-dot-е-dot-метод-замены-дифференциальных-уравнений-клеточными-автоматами-в-задачах-социально-экономической-динамики}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-03-20 Чт] </span></span> Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами в задачах социально-экономической динамики {#степанцов-м-dot-е-dot-метод-замены-дифференциальных-уравнений-клеточными-автоматами-в-задачах-социально-экономической-динамики}
 
 
 #### <span class="section-num">2.4.1</span> Докладчик {#докладчик}
@@ -622,3 +622,29 @@ When studying deterministic and stochastic population models of high dimension, 
 
 The report is the presentation of a doctoral thesis considering the method of replacing differential equations with cellular automata in a certain class of problems.
 When we study socio-economic dynamics, the modeled reality is essentially discrete, therefore such processes should be described using discrete models, in particular, cellular automata. On the other hand a lot of socio-economic processes are widely modeled basing on differential equations by analogy with physical processes. The report proposes a general method for replacing differential equations with cellular automata in models that can be reduced to Cauchy problems for ordinary differential equations. This allows expanding the applicability of the original models and increasing the efficiency of calculations. A theorem on the convergence of a solution obtained with a cellular automaton to a solution to the original problem is presented as well as its corollary. Report also includes presentation of approbation of this method on six mathematical models of socio-economic dynamics. Solutions are obtained to corresponding applied problems that were difficult or even impossible to obtain analytically or numerically while using classical approach.
+
+
+#### <span class="section-num">2.4.3</span> Видео {#видео}
+
+{{< tabs tabTotal="4" >}}
+{{< rtab tabName="RuTube" >}}
+
+{{< rutube 0bc3e9764a7da962e37a4e1a6ddae361 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Платформа" >}}
+
+{{< plvideo PPAyw6cLiua2 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="VKvideo" >}}
+
+{{< vkvideo 606414976 456239715 2 >}}
+
+{{< /rtab >}}
+{{< rtab tabName="Youtube" >}}
+
+{{< youtube X32YD-o0k4o >}}
+
+{{< /rtab >}}
+{{< /tabs >}}

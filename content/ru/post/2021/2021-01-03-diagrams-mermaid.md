@@ -2,7 +2,7 @@
 title: "Диаграммы. Mermaid"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2023-10-06T20:41:00+03:00
+lastmod: 2025-03-23T22:08:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -88,8 +88,15 @@ slug: "diagrams-mermaid"
 ### <span class="section-num">1.5</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
 
 -   Необходимо установить программу `mmdc` из проекта <https://github.com/mermaid-js/mermaid-cli>.
+-   С помощью yarn:
     ````shell
     yarn global add @mermaid-js/mermaid-cli
+    ````
+-   С помощью pnpn:
+    ````shell
+    pnpm approve-builds
+    pnpm install -g @mermaid-js/mermaid-cli
+    npx puppeteer browsers install chrome-headless-shell
     ````
 
 

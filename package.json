@@ -7,8 +7,11 @@
     "author": "Dmitry S. Kulyabov <yamadharma@gmail.com>",
     "license": "CC-BY-4.0",
     "config": {
-	"commitizen": {
-	    "path": "cz-conventional-changelog"
-	}
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "dependencies": {
+        "mermaid": "^11.5.0"
     }
 }

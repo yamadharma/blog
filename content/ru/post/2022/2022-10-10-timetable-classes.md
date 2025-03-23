@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-03-12T10:56:00+03:00
+lastmod: 2025-03-20T10:25:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "CEUR-WS conference repository"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-09-18T19:47:00+03:00
-lastmod: 2025-01-08T13:12:00+03:00
+lastmod: 2025-03-15T12:44:00+03:00
 tags: ["science-admin"]
 categories: ["computer-science", "science"]
 draft: false
@@ -81,6 +81,9 @@ CEUR-WS conference repository.
 -   [ ] Is this WS located to the well-known conference?
 -   [ ] What about the PC? Are there different names and people with a good dblp footprint?
 -   [ ] Editors and author footprint also high?
+-   [ ] No university/institution contributes more than 25% of  the papers in a submitted volume, regardless whether the author is the first author or a  co-author.
+-   [ ] No organizer have more than 1 paper in a submitted volume.
+-   [ ] No  university/institution contributes more than 25% of the members of the program committee.
 
 
 ## <span class="section-num">4</span> Why a workshop might be rejected {#why-a-workshop-might-be-rejected}

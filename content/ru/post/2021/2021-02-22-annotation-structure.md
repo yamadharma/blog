@@ -2,7 +2,7 @@
 title: "Структура аннотации"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-22T16:38:00+03:00
-lastmod: 2025-02-22T17:03:00+03:00
+lastmod: 2025-03-16T19:44:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -20,6 +20,10 @@ slug: "annotation-structure"
 
 -   В аннотации кратко излагаются основные результаты исследования без общих фраз.
 -   Аннотация должна отражать содержание статьи.
+-   Аннотация должна быть скорее определяющей, чем описательной.
+-   Аннотация должна приводить факты, а не говорить, о чем статья.
+-   Аннотация должна передавать саму информацию, а не обещать её.
+-   Аннотация должна быть обособленной, то есть завершённой сама по себе.
 
 
 ## <span class="section-num">2</span> Требования {#требования}
@@ -66,10 +70,20 @@ slug: "annotation-structure"
     -   Значение или область применения полученных результатов.
 
 
-## <span class="section-num">4</span> Английская аннотация {#английская-аннотация}
+## <span class="section-num">4</span> Чего аннотация не должна содержать {#чего-аннотация-не-должна-содержать}
+
+-   Сокращения и аббревиатуры, только если они не являются общепринятыми или им даны пояснения.
+-   Ссылки на таблицы и рисунки.
+-   Цитаты и ссылки на литературу.
+-   Любую информацию или заключения, которых нет в статье.
+-   Общие заявления.
+-   Сложные, громоздкие, многословные предложения.
 
 
-### <span class="section-num">4.1</span> Какие времена использовать {#какие-времена-использовать}
+## <span class="section-num">5</span> Английская аннотация {#английская-аннотация}
+
+
+### <span class="section-num">5.1</span> Какие времена использовать {#какие-времена-использовать}
 
 -   Обычно используют настоящее и прошедшее время (Present и Past Tenses).
 -   Приоритет при написании аннотации на английском языке у Present Tense.
@@ -81,7 +95,7 @@ slug: "annotation-structure"
 -   Если в предложении идет речь об опытах или результатах, которые вы наблюдали во время исследования, нужно использовать Past Tense: Mice in the second group developed…
 
 
-### <span class="section-num">4.2</span> Какие местоимения использовать {#какие-местоимения-использовать}
+### <span class="section-num">5.2</span> Какие местоимения использовать {#какие-местоимения-использовать}
 
 -   В русской научной литературе не рекомендуется использовать местоимения _я_ и _мы_.
 -   Считается, что их использование в научных работах выглядит слишком эгоистично.
@@ -90,10 +104,10 @@ slug: "annotation-structure"
 -   Однако в последнее время при написании аннотации англоязычной статьи допускается (и даже рекомендуется) использование местоимения первого лица --- _I_, _we_.
 
 
-### <span class="section-num">4.3</span> Клише и шаблонные фразы для составления аннотации на английском языке {#клише-и-шаблонные-фразы-для-составления-аннотации-на-английском-языке}
+### <span class="section-num">5.3</span> Клише и шаблонные фразы для составления аннотации на английском языке {#клише-и-шаблонные-фразы-для-составления-аннотации-на-английском-языке}
 
 
-#### <span class="section-num">4.3.1</span> Предпосылки {#предпосылки}
+#### <span class="section-num">5.3.1</span> Предпосылки {#предпосылки}
 
 -   The paper/article discusses/deals with/analyses/considers/explains/describes/establishes/introduces…
 -   develops/presents/provides/studies/represents/features/contains/concentrates on…
@@ -103,7 +117,7 @@ slug: "annotation-structure"
 -   serves as an introduction to…
 
 
-#### <span class="section-num">4.3.2</span> Цель {#цель}
+#### <span class="section-num">5.3.2</span> Цель {#цель}
 
 -   The main objective/goal/purpose of the paper/article is…
 -   Our aim with this paper was…
@@ -111,14 +125,14 @@ slug: "annotation-structure"
 -   Much attention is given to…
 
 
-#### <span class="section-num">4.3.3</span> Результаты {#результаты}
+#### <span class="section-num">5.3.3</span> Результаты {#результаты}
 
 -   It has been found that …
 -   The results show that …
 -   The results thus obtained are compatible with …
 
 
-#### <span class="section-num">4.3.4</span> Выводы {#выводы}
+#### <span class="section-num">5.3.4</span> Выводы {#выводы}
 
 -   In conclusion…
 -   The following conclusions are drawn…

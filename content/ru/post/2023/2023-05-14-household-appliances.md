@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2024-12-19T12:44:00+03:00
+lastmod: 2025-03-18T10:15:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -142,3 +142,8 @@ slug: "household-appliances"
 
 -   [Гаджеты]({{< relref "2024-08-22-gadget" >}})
 -   [Умный дом]({{< relref "2024-12-19--smart-home" >}})
+
+
+## <span class="section-num">7</span> Разное {#разное}
+
+-   [Замок KALE]({{< relref "2025-03-18--lock-kale" >}})
