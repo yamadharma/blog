@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-03-23T22:09:00+03:00
+lastmod: 2025-03-24T11:28:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
