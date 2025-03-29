@@ -2,7 +2,7 @@
 title: "NetBox. Плагины"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-22T17:45:00+03:00
-lastmod: 2024-07-22T18:33:00+03:00
+lastmod: 2025-03-26T13:58:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -63,7 +63,7 @@ slug: "netbox-plugins"
 
 ### <span class="section-num">2.3</span> Настройте плагин {#настройте-плагин}
 
--   Если плагин требует какой-либо настройки, задайте её в `configuration.py` в параметре `PLUGINS_CONFIG`:
+-   Если плагин требует какой-либо настройки, задайте её в `/opt/netbox/netbox/netbox/configuration.py` в параметре `PLUGINS_CONFIG`:
     ```yaml
     PLUGINS_CONFIG = {
         'plugin_name': {

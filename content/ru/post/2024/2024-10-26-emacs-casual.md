@@ -2,7 +2,7 @@
 title: "Emacs. Пакет casual"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-26T17:35:00+03:00
-lastmod: 2025-03-08T20:31:00+03:00
+lastmod: 2025-03-24T15:04:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -90,19 +90,29 @@ Emacs. Пакет casual.
 -   Библиотека elisp: `casual-ibuffer`.
 
 
-### <span class="section-num">3.7</span> Info {#info}
+### <span class="section-num">3.7</span> Image {#image}
+
+-   Библиотека: `casual-image`.
+
+
+### <span class="section-num">3.8</span> Info {#info}
 
 -   Библиотека elisp: `casual-info`.
 -   Интерфейс для системы документации Info.
 
 
-### <span class="section-num">3.8</span> I-Search {#i-search}
+### <span class="section-num">3.9</span> I-Search {#i-search}
 
 -   Библиотека elisp: `casual-isearch`.
 -   Интерфейс для команд I-Search.
 
 
-### <span class="section-num">3.9</span> Re-Builder {#re-builder}
+### <span class="section-num">3.10</span> Make {#make}
+
+-   Библиотека: `casual-make`.
+
+
+### <span class="section-num">3.11</span> Re-Builder {#re-builder}
 
 -   Библиотека elisp: `casual-re-builder`.
 -   Интерфейс для регулярных выражений Emacs.

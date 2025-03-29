@@ -2,7 +2,7 @@
 title: "NetBox. Установка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-19T18:13:00+03:00
-lastmod: 2024-10-01T16:26:00+03:00
+lastmod: 2025-03-26T13:52:00+03:00
 tags: ["sysadmin", "network"]
 categories: ["computer-science"]
 draft: false
@@ -399,4 +399,52 @@ slug: "netbox-install"
     ssl_certificate_key /etc/letsencrypt/live/yourwebsite.com/privkey.pem;
     include /etc/letsencrypt/options-ssl-nginx.conf;
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    ```
+
+
+## <span class="section-num">4</span> Обновление {#обновление}
+
+
+### <span class="section-num">4.1</span> Пререквизиты {#пререквизиты}
+
+-   Проверьте, что все компоненты соответствуют необходимым версиям.
+
+
+### <span class="section-num">4.2</span> Скачайте релиз Git {#скачайте-релиз-git}
+
+-   Сначала определите последнюю версию, посетив страницу (<https://github.com/netbox-community/netbox/releases>) или выполнив следующее команды:
+    ```shell
+    cd /opt/netbox
+    sudo -u netbox git fetch --tags
+    sudo -u netbox git describe --tags $(git rev-list --tags --max-count=1)
+    ```
+-   Установите нужный релиз, указав его тег:
+    ```shell
+    sudo -u netbox git checkout v4.2.6
+    ```
+
+
+### <span class="section-num">4.3</span> Запустите скрипт обновления {#запустите-скрипт-обновления}
+
+-   Проверьте, что все необходимые дополнительные пакеты Python перечислены в `local_requirements.txt`.
+-   Запустите скрипт обновления:
+    ```shell
+    sudo -u netbox PYTHON=/usr/bin/python3.12 ./upgrade.sh
+    ```
+-   Этот скрипт выполняет следующие действия:
+    -   Уничтожает и восстанавливает виртуальную среду Python.
+    -   Устанавливает все необходимые пакеты Python (перечислены в `requirements.txt` )
+    -   Устанавливает любые дополнительные пакеты из `local_requirements.txt`
+    -   Применяет все миграции базы данных, которые были включены в релиз
+    -   Создает документацию локально (для использования в автономном режиме)
+    -   Собирает все статические файлы, которые будут обслуживаться службой HTTP.
+    -   Удаляет устаревшие типы контента из базы данных
+    -   Удаляет все просроченные сеансы пользователей из базы данных
+
+
+### <span class="section-num">4.4</span> Перезапустите службы NetBox {#перезапустите-службы-netbox}
+
+-   Перезапустите службы gunicorn и RQ:
+    ```shell
+    sudo systemctl restart netbox netbox-rq
     ```

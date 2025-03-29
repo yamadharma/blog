@@ -2,7 +2,7 @@
 title: "Диаграммы. Mermaid"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T14:19:00+03:00
-lastmod: 2025-03-23T22:08:00+03:00
+lastmod: 2025-03-24T14:56:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -85,7 +85,7 @@ slug: "diagrams-mermaid"
 -   Круговые диаграммы (Pie chart)
 
 
-### <span class="section-num">1.5</span> Необходимое программное обеспечение {#необходимое-программное-обеспечение}
+## <span class="section-num">2</span> Установка {#установка}
 
 -   Необходимо установить программу `mmdc` из проекта <https://github.com/mermaid-js/mermaid-cli>.
 -   С помощью yarn:
@@ -94,26 +94,24 @@ slug: "diagrams-mermaid"
     ````
 -   С помощью pnpn:
     ````shell
-    pnpm approve-builds
     pnpm install -g @mermaid-js/mermaid-cli
-    npx puppeteer browsers install chrome-headless-shell
     ````
 
 
-## <span class="section-num">2</span> Синтаксис {#синтаксис}
+## <span class="section-num">3</span> Синтаксис {#синтаксис}
 
 -   `%%`: комментарий в коде.
 
 
-## <span class="section-num">3</span> Типы диаграмм {#типы-диаграмм}
+## <span class="section-num">4</span> Типы диаграмм {#типы-диаграмм}
 
 
-### <span class="section-num">3.1</span> Блок-схемы (Flowchart) {#блок-схемы--flowchart}
+### <span class="section-num">4.1</span> Блок-схемы (Flowchart) {#блок-схемы--flowchart}
 
 -   Один из вариантов представления блок-схем.
 
 
-#### <span class="section-num">3.1.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.1.1</span> Синтаксис {#синтаксис}
 
 -   Ключевое слово: `flowchart` и аббревиатуры для указания направления.
 -   `subgraph <имя>`: задаёт поддиаграммы.
@@ -156,7 +154,7 @@ slug: "diagrams-mermaid"
         -   `:::` указывает класс после имени узла.
 
 
-#### <span class="section-num">3.1.2</span> Примеры {#примеры}
+#### <span class="section-num">4.1.2</span> Примеры {#примеры}
 
 -   Блок
 
@@ -334,39 +332,39 @@ slug: "diagrams-mermaid"
     ````
 
 
-### <span class="section-num">3.2</span> Диаграммы состояния (Sequence diagram) {#диаграммы-состояния--sequence-diagram}
+### <span class="section-num">4.2</span> Диаграммы состояния (Sequence diagram) {#диаграммы-состояния--sequence-diagram}
 
 
-#### <span class="section-num">3.2.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.2.1</span> Синтаксис {#синтаксис}
 
 
-#### <span class="section-num">3.2.2</span> Примеры {#примеры}
+#### <span class="section-num">4.2.2</span> Примеры {#примеры}
 
 
-### <span class="section-num">3.3</span> Диаграммы Ганта (Gantt diagram) {#диаграммы-ганта--gantt-diagram}
+### <span class="section-num">4.3</span> Диаграммы Ганта (Gantt diagram) {#диаграммы-ганта--gantt-diagram}
 
 
-#### <span class="section-num">3.3.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.3.1</span> Синтаксис {#синтаксис}
 
 
-#### <span class="section-num">3.3.2</span> Примеры {#примеры}
+#### <span class="section-num">4.3.2</span> Примеры {#примеры}
 
 
-### <span class="section-num">3.4</span> UML-диаграммы классов (Class diagram) {#uml-диаграммы-классов--class-diagram}
+### <span class="section-num">4.4</span> UML-диаграммы классов (Class diagram) {#uml-диаграммы-классов--class-diagram}
 
 
-#### <span class="section-num">3.4.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.4.1</span> Синтаксис {#синтаксис}
 
 
-#### <span class="section-num">3.4.2</span> Примеры {#примеры}
+#### <span class="section-num">4.4.2</span> Примеры {#примеры}
 
 
-### <span class="section-num">3.5</span> Графы git (Git graph) {#графы-git--git-graph}
+### <span class="section-num">4.5</span> Графы git (Git graph) {#графы-git--git-graph}
 
 -   Описание стратегии ветвления _git_.
 
 
-#### <span class="section-num">3.5.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.5.1</span> Синтаксис {#синтаксис}
 
 -   Ключевое слово: `gitGraph`.
 -   `options`: задаёт параметры отображения.
@@ -376,7 +374,7 @@ slug: "diagrams-mermaid"
 -   `merge <branch>`: сливает ветки.
 
 
-#### <span class="section-num">3.5.2</span> Примеры {#примеры}
+#### <span class="section-num">4.5.2</span> Примеры {#примеры}
 
 -   Простое ветвление
 
@@ -419,22 +417,22 @@ slug: "diagrams-mermaid"
     ````
 
 
-### <span class="section-num">3.6</span> ER-диаграммы (Entity Relationship Diagram) {#er-диаграммы--entity-relationship-diagram}
+### <span class="section-num">4.6</span> ER-диаграммы (Entity Relationship Diagram) {#er-диаграммы--entity-relationship-diagram}
 
 
-#### <span class="section-num">3.6.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.6.1</span> Синтаксис {#синтаксис}
 
 
-#### <span class="section-num">3.6.2</span> Примеры {#примеры}
+#### <span class="section-num">4.6.2</span> Примеры {#примеры}
 
 
-### <span class="section-num">3.7</span> Диаграммы пользовательского пути (User Journey Diagram) {#диаграммы-пользовательского-пути--user-journey-diagram}
+### <span class="section-num">4.7</span> Диаграммы пользовательского пути (User Journey Diagram) {#диаграммы-пользовательского-пути--user-journey-diagram}
 
 -   С помощью диаграммы пользовательского пути можно продемонстрировать процесс использования или реализации чего-либо.
 -   Указывается набор пользователей и их удовлетворение процессом.
 
 
-#### <span class="section-num">3.7.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.7.1</span> Синтаксис {#синтаксис}
 
 -   `journey`: начинает диаграмму.
 -   `title`: название диаграммы.
@@ -443,7 +441,7 @@ slug: "diagrams-mermaid"
     -   `:` разделитель полей.
 
 
-#### <span class="section-num">3.7.2</span> Примеры {#примеры}
+#### <span class="section-num">4.7.2</span> Примеры {#примеры}
 
 -   Простая диаграмма пользовательского пути
 
@@ -482,21 +480,21 @@ slug: "diagrams-mermaid"
     ````
 
 
-### <span class="section-num">3.8</span> Диаграммы последовательности (Sequence diagrams) {#диаграммы-последовательности--sequence-diagrams}
+### <span class="section-num">4.8</span> Диаграммы последовательности (Sequence diagrams) {#диаграммы-последовательности--sequence-diagrams}
 
 
-#### <span class="section-num">3.8.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.8.1</span> Синтаксис {#синтаксис}
 
 
-#### <span class="section-num">3.8.2</span> Примеры {#примеры}
+#### <span class="section-num">4.8.2</span> Примеры {#примеры}
 
 
-### <span class="section-num">3.9</span> Круговые диаграммы (Pie chart) {#круговые-диаграммы--pie-chart}
+### <span class="section-num">4.9</span> Круговые диаграммы (Pie chart) {#круговые-диаграммы--pie-chart}
 
 -   Показывает, какую часть от общего числа занимает отдельные части.
 
 
-#### <span class="section-num">3.9.1</span> Синтаксис {#синтаксис}
+#### <span class="section-num">4.9.1</span> Синтаксис {#синтаксис}
 
 -   Ключевое слово: `pie`.
 -   Оператор `title` позволяет задать название диаграммы.
@@ -508,7 +506,7 @@ slug: "diagrams-mermaid"
         -   положительное числовое значение (поддерживается до двух знаков после запятой).
 
 
-#### <span class="section-num">3.9.2</span> Примеры {#примеры}
+#### <span class="section-num">4.9.2</span> Примеры {#примеры}
 
 -   Домашние животные
 

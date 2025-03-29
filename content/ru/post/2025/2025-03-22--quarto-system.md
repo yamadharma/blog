@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-03-24T11:28:00+03:00
+lastmod: 2025-03-28T22:08:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -60,3 +60,5 @@ flowchart LR
 -   [Quarto. Оформление метаданных]({{< relref "2025-03-23--quarto-metadata-formatting" >}})
 -   [Quarto. Цитирование]({{< relref "2025-03-23--quarto-citations" >}})
 -   [Quarto. Перекрёстные ссылки]({{< relref "2025-03-23--quarto-cross-references" >}})
+-   [Quarto. Структура для книги]({{< relref "2025-03-27--quarto-book-structure" >}})
+-   [Quarto. Формат pdf]({{< relref "2025-03-27--quarto-pdf-format" >}})
