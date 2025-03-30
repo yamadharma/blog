@@ -2,7 +2,7 @@
 title: "Проверка документов в CEURART"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2024-10-29T19:43:00+03:00
+lastmod: 2025-03-30T20:13:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -38,3 +38,15 @@ slug: "ceurart-check"
     -   Проверка дублирования pdf-файлов.
 -   `check-index-errors`:
     -   Проверяет файл `index.html`.
+
+
+## <span class="section-num">3</span> Проверка {#проверка}
+
+-   Проверьте pdf-файлы:
+    ```shell
+    check-pdf-errors
+    ```
+-   Проверьте `index.html`:
+    ```shell
+    check-index-errors
+    ```
