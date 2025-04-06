@@ -2,7 +2,7 @@
 title: "Vim. Клавиатура. Броузеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-19T18:47:00+03:00
-lastmod: 2023-08-26T15:34:00+03:00
+lastmod: 2025-04-06T14:03:00+03:00
 tags: ["vim"]
 categories: ["computer-science"]
 draft: false
@@ -208,6 +208,7 @@ slug: "vim-keyboard-browsers"
 
 #### <span class="section-num">3.4.2</span> Vimium-C {#vimium-c}
 
+-   [Броузер. Расширение Vimium-c]({{< relref "2025-04-06--browser-plugin-vimiumc" >}})
 -   Репозиторий: <https://github.com/gdh1995/vimium-c>
 
 

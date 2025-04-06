@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-03-28T22:08:00+03:00
+lastmod: 2025-04-01T11:24:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -30,9 +30,45 @@ slug: "quarto-system"
 
 ## <span class="section-num">2</span> Установка {#установка}
 
+
+### <span class="section-num">2.1</span> Gentoo {#gentoo}
+
 -   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
     ```shell
     emerge quarto
+    ```
+
+
+### <span class="section-num">2.2</span> Linux {#linux}
+
+-   Установка с помощью скрипта:
+    ```shell
+    #!/bin/bash
+
+    ## Система
+    TARGET=/opt
+    TARGET_BIN=/usr/local/bin
+    ## Домашний каталог
+    # TARGET=~/opt
+    # TARGET_BIN=~/.local/bin
+
+
+    ## Получить тег
+    TAG=`basename $(curl -sL -o /dev/null -w %{url_effective} https://github.com/quarto-dev/quarto-cli/releases/latest)`
+    TAG=${TAG/v/}
+
+    ## Скачать
+    cd /tmp
+    wget https://github.com/quarto-dev/quarto-cli/releases/download/v${TAG}/quarto-${TAG}-linux-amd64.tar.gz
+
+    ## Распаковать
+    mkdir -p ${TARGET}
+    tar -C ${TARGET} -xvzf /tmp/quarto-${TAG}-linux-amd64.tar.gz
+    mv ${TARGET}/quarto-${TAG} ${TARGET}/quarto
+
+    ## Симлинк на исполняемый файл
+    mkdir -p ${TARGET_BIN}
+    ln -s ${TARGET}/quarto/bin/quarto ${TARGET_BIN}/quarto
     ```
 
 

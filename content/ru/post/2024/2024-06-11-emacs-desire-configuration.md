@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-03-26T18:44:00+03:00
+lastmod: 2025-04-04T07:57:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -1193,31 +1193,7 @@ slug: "emacs-desire-configuration"
             </div>
 
 
-#### <span class="section-num">3.9.2</span> Шрифты {#шрифты}
-
-```emacs-lisp
-;; (desire 'mixed-pitch)
-
-(desire-conf 'fontset)
-(desire-conf 'font-lock)
-(desire-conf 'font-lock-jit)
-;; (desire-conf 'font-lock-lazy)
-;; (desire-conf 'font-lock-fast)
-;; (desire-conf 'faces)
-;; (desire-conf 'color-theme nil "color-theme")
-;; (desire-conf 'fira-code-mode nil "fira-code-mode" t) ;; Simple minor mode for Fira Code ligatures
-
-(desire 'unicode-fonts)
-
-;; (desire 'ligature)
-
-;; (desire-conf 'theme)
-
-;; (desire 'zoom)
-```
-
-
-#### <span class="section-num">3.9.3</span> Табы {#табы}
+#### <span class="section-num">3.9.2</span> Табы {#табы}
 
 ```emacs-lisp
 ;;; Tabs
@@ -1305,7 +1281,7 @@ slug: "emacs-desire-configuration"
         </div>
 
 
-#### <span class="section-num">3.9.4</span> Нумерация строк {#нумерация-строк}
+#### <span class="section-num">3.9.3</span> Нумерация строк {#нумерация-строк}
 
 -   [Emacs. Нумерация строк]({{< relref "2024-11-28-emacs-line-numbering" >}})
 
@@ -1411,7 +1387,7 @@ slug: "emacs-desire-configuration"
         </div>
 
 
-#### <span class="section-num">3.9.5</span> Завершение {#завершение}
+#### <span class="section-num">3.9.4</span> Завершение {#завершение}
 
 ```emacs-lisp
 ;;;}}}
@@ -4513,14 +4489,11 @@ slug: "emacs-desire-configuration"
     </div>
 
 
-### <span class="section-num">3.41</span> Modeline {#modeline}
+### <span class="section-num">3.41</span> UI {#ui}
 
-
-#### <span class="section-num">3.41.1</span> Начало {#начало}
-
--   Файл `rc.packages.el`:
+-   Раздел:
     ```emacs-lisp
-    ;;; Modeline {{{
+    ;;;; UI
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 195:</span>
@@ -4528,86 +4501,391 @@ slug: "emacs-desire-configuration"
     </div>
 
 
-#### <span class="section-num">3.41.2</span> Общие настройки modeline {#общие-настройки-modeline}
+#### <span class="section-num">3.41.1</span> Шрифты {#шрифты}
 
--   Загрузим только конфигурационный файл:
+-   [Emacs. Шрифты]({{< relref "2025-04-01--emacs-fonts" >}})
+-   Раздел:
     ```emacs-lisp
-    (desire-conf 'modeline)
+    ;;;;; Fonts
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 196:</span>
       rc.packages.el
     </div>
 
--   Заголовок файла:
+<!--list-separator-->
+
+1.  Выбор шрифта
+
+    Подключение:
+
     ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Configure modeline
+    (desired 'iosevka)
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 197:</span>
-      packages/modeline.ecf
-    </div>
--   Показывать столбец, в котором находится курсор (<https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-line-or-column.html>):
-    ```emacs-lisp
-    ;;; Show column number
-    (setq column-number-mode t)
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 198:</span>
-      packages/modeline.ecf
-    </div>
--   Задаём 24-часовой формат времени:
-    ```emacs-lisp
-    ;;; Time in 24 hour format, plus day and date.
-    (setq display-time-day-and-date t)
-    (setq display-time-24hr-format t)
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 199:</span>
-      packages/modeline.ecf
-    </div>
--   Мы можем захотеть видеть и секунды:
-    ```emacs-lisp
-    ;;; Display time in seconds in the mode line
-    ;;; %H is the hour on a 24-hour clock, %I is on a 12-hour clock,
-    ;;; %k is like %H only blank-padded, %l is like %I blank-padded.
-    ;;; %p is the locale's equivalent of either AM or PM.
-    ;;; %M is the minute, %S is the second.
-    (setq display-time-format "%H:%M:%S")
-    (setq display-time-interval 1)
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 200:</span>
-      packages/modeline.ecf
-    </div>
-
--   Разрешим показывать время в модлайн:
-    ```emacs-lisp
-    ;;; Enable the display of time and CPU load average in the modeline
-    (display-time-mode 1)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 201:</span>
-      packages/modeline.ecf
-    </div>
-
-
-#### <span class="section-num">3.41.3</span> Конец {#конец}
-
--   Файл `rc.packages.el`:
-    ```emacs-lisp
-    ;;;}}}
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 202:</span>
       rc.packages.el
     </div>
 
+<!--list-separator-->
 
-### <span class="section-num">3.42</span> Темы {#темы}
+2.  Fontset
+
+    -   Подключение:
+        ```emacs-lisp
+        (desire 'fontset)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 198:</span>
+          rc.packages.el
+        </div>
+    -   Загрузка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Set fontset
+        ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Modifying-Fontsets.html
+
+        ;;; Code:
+
+        ;;; Set default font
+        ;; (cl-loop for font in '("SF Mono" "Hack" "Source Code Pro" "Fira Code"
+        ;; 		       "Menlo" "Monaco" "DejaVu Sans Mono" "Consolas")
+        ;; 	 when (font-installed-p font)
+        ;; 	 return (set-face-attribute 'default nil
+        ;; 				    :font font
+        ;; 				    :height (cond (sys/mac-x-p 130)
+        ;; 						  (sys/win32p 110)
+        ;; 						  (t 100))))
+
+        ;; ;;; Specify font for all unicode characters
+        ;; (cl-loop for font in '("Apple Color Emoji" "Segoe UI Symbol" "Symbola" "Symbol")
+        ;; 	 when (font-installed-p font)
+        ;; 	 return (set-fontset-font t 'unicode font nil 'prepend))
+
+        ;;; Specify font for Chinese characters
+        ;; (cl-loop for font in '("WenQuanYi Micro Hei" "Microsoft Yahei")
+        ;; 	 when (font-installed-p font)
+        ;; 	 return (set-fontset-font t '(#x4e00 . #x9fff) font)))
+
+        ;; (cond
+        ;;  ((find-font (font-spec :name "Iosevka"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Iosevka-12" ))
+        ;;   (set-face-attribute 'default t :font "Iosevka-12" ))
+        ;;  ((find-font (font-spec :name "Hack"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Hack-12" ))
+        ;;   (set-face-attribute 'default t :font "Hack-12" ))
+        ;;  ((find-font (font-spec :name "IBM Plex Mono"))
+        ;;   (add-to-list 'default-frame-alist '(font . "IBM Plex Mono-12" ))
+        ;;   (set-face-attribute 'default t :font "IBM Plex Mono-12" ))
+        ;;  ((find-font (font-spec :name "Source Code Pro"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Source Code Pro-12" ))
+        ;;   (set-face-attribute 'default t :font "Source Code Pro-12" ))
+        ;;  ((find-font (font-spec :name "AnonymousPro"))
+        ;;   (add-to-list 'default-frame-alist '(font . "AnonymousPro-12" ))
+        ;;   (set-face-attribute 'default t :font "AnonymousPro-12" ))
+        ;;  ((find-font (font-spec :name "Victor Mono"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Victor Mono-12" ))
+        ;;   (set-face-attribute 'default t :font "Victor Mono-12" ))
+        ;;  ((find-font (font-spec :name "Hermit"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Hermit-12" ))
+        ;;   (set-face-attribute 'default t :font "Hermit-12" ))
+        ;;  ((find-font (font-spec :name "Fira Code"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Fira Code-12" ))
+        ;;   (set-face-attribute 'default t :font "Fira Code-12" ))
+        ;;  ((find-font (font-spec :name "Inconsolata"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Inconsolata-12" ))
+        ;;   (set-face-attribute 'default t :font "Inconsolata-12" ))
+        ;;  ((find-font (font-spec :name "DejaVu Sans Mono"))
+        ;;   (add-to-list 'default-frame-alist '(font . "DejaVu Sans Mono-12" ))
+        ;;   (set-face-attribute 'default t :font "DejaVu Sans Mono-12" ))
+        ;;  ((find-font (font-spec :name "Lucida Console"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Lucida Console-12" ))
+        ;;   (set-face-attribute 'default t :font "Lucida Console-12" ))
+        ;;  ((find-font (font-spec :name "Courier"))
+        ;;   (add-to-list 'default-frame-alist '(font . "Courier-12" ))
+        ;;   (set-face-attribute 'default t :font "Courier-12" ))
+        ;;  )
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 199:</span>
+          packages/fontset/loaddefs.ecf
+        </div>
+    -   Эмодзи:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Set emoji
+
+        ;;; Code:
+
+        ;;;; Use "Noto Color Emoji" for the emoji script (this is the default).
+        (set-fontset-font "fontset-default" 'emoji
+                          '("Noto Color Emoji" . "iso10646-1")
+                          nil 'prepend)
+
+        ;;;; Display the "heart" character using a color font.
+        (set-fontset-font "fontset-default"
+                          #x2764 "Noto Color Emoji")
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 200:</span>
+          packages/fontset/desire.ecd/emoji.ecf
+        </div>
+    -   Unicode:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Font for all unicode characters
+
+        ;;; Code:
+
+        (set-fontset-font "fontset-default" 'unicode
+                          (font-spec :family "Symbola")
+                          nil 'prepend)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 201:</span>
+          packages/fontset/desire.ecd/unicode.ecf
+        </div>
+    -   Шрифты
+        -   Iosevka
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Set Iosevka font
+            ;; https://be5invis.github.io/Iosevka/
+
+            ;;; Code:
+
+            ;;;; Set default font
+
+            (add-to-list 'default-frame-alist '(font . "Iosevka Term-12" ))
+            (add-to-list 'initial-frame-alist '(font . "Iosevka Term-12" ))
+            (set-face-attribute 'default nil :font "Iosevka Term-12" )
+
+            ;;;; Set font
+            (dolist (charset '(latin cyrillic greek))
+              (set-fontset-font "fontset-default" charset
+                                (font-spec :family "Iosevka Term" :size 12)
+                                nil 'prepend))
+
+            ;;;
+            ```
+            <div class="src-block-caption">
+              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 202:</span>
+              packages/fontset/iosevka.ecf
+            </div>
+
+<!--list-separator-->
+
+3.  Разное
+
+    ```emacs-lisp
+    ;; (desire 'mixed-pitch)
+    ;; (desire-conf 'font-lock)
+    ;; (desire-conf 'font-lock-jit)
+    ;; (desire-conf 'font-lock-lazy)
+    ;; (desire-conf 'font-lock-fast)
+    ;; (desire-conf 'faces)
+    ;; (desire-conf 'color-theme nil "color-theme")
+    ;; (desire-conf 'fira-code-mode nil "fira-code-mode" t) ;; Simple minor mode for Fira Code ligatures
+    ```
+
+<!--list-separator-->
+
+4.  Лигатуры
+
+    ```emacs-lisp
+    ;; (desire 'ligature)
+    ```
+
+<!--list-separator-->
+
+5.  unicode-fonts
+
+    ```emacs-lisp
+    (desire 'unicode-fonts)
+    ```
+
+    -   Загрузка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Configure Unicode fonts for Emacs
+        ;; https://github.com/rolandwalker/unicode-fonts
+
+        ;;; Code:
+
+        ;;;; Requires font-utils
+        (desire 'font-utils)
+
+        ;;;; Requires ucs-utils
+        (desire 'ucs-utils)
+
+        ;;;; Uses if present
+        (desire 'persistent-soft)
+
+        ;;;; Load package
+        (require 'unicode-fonts)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 203:</span>
+          packages/unicode-fonts/loaddefs.ecf
+        </div>
+    -   Настройка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Configure Unicode fonts for Emacs
+        ;; https://github.com/rolandwalker/unicode-fonts
+
+        ;;; Code:
+
+        ;;; ligature support
+        (setq unicode-fonts-enable-ligatures t)
+
+        ;;; By default ligatures will be enabled in all programing modes.
+        (setq unicode-fonts-ligature-modes '(prog-mode))
+
+        ;;; You can enable ligatures for specific modes.
+        ;; (setq unicode-fonts-ligature-modes '(php-mode js-mode))
+
+        ;;; To enable only for text modes you can use text-mode
+        ;; (setq unicode-fonts-ligature-modes '(text-mode))
+
+        ;;; Configure the ligature set
+        (setq unicode-fonts-ligature-set '("|||>" "<|||" "<==>" "<!--" "####" "~~>" "***" "||=" "||>"
+                                           ":::" "::=" "=:=" "===" "==>" "=!=" "=>>" "=<<" "=/=" "!=="
+                                           "!!." ">=>" ">>=" ">>>" ">>-" ">->" "->>" "-->" "---" "-<<"
+                                           "<~~" "<~>" "<*>" "<||" "<|>" "<$>" "<==" "<=>" "<=<" "<->"
+                                           "<--" "<-<" "<<=" "<<-" "<<<" "<+>" "</>" "###" "#_(" "..<"
+                                           "..." "+++" "/==" "///" "_|_" "www" "&&" "^=" "~~" "~@" "~="
+                                           "~>" "~-" "**" "*>" "*/" "||" "|}" "|]" "|=" "|>" "|-" "{|"
+                                           "[|" "]#" "::" ":=" ":>" ":<" "$>" "==" "=>" "!=" "!!" ">:"
+                                           ">=" ">>" ">-" "-~" "-|" "->" "-<" "<~" "<*" "<|" "<:" "<$"
+                                           "<=" "<>" "<-" "<<" "<+" "</" "#{" "#[" "#:" "#=" "#!" "##"
+                                           "#(" "#?" "#_" "%%" ".=" ".-" ".." ".?" "+>" "++" "?:" "?="
+                                           "?." "??" ";;" "/*" "/**" "/=" "/>" "__" "~~" "(*" "*)"
+                                           "://"))
+
+        (setq ecf-unicode-font (font-spec :family "Iosevka" :size 12))
+
+        (when ecf-unicode-font
+          (let ((ecf-unicode-font-family (plist-get (font-face-attributes ecf-unicode-font) :family)))
+            (dolist (unicode-block unicode-fonts-block-font-mapping)
+              (push ecf-unicode-font-family (cadr unicode-block)))))
+
+        (unicode-fonts-setup)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 204:</span>
+          packages/unicode-fonts/desire.ecf
+        </div>
+
+
+#### <span class="section-num">3.41.2</span> Modeline {#modeline}
+
+<!--list-separator-->
+
+1.  Начало
+
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;; Modeline {{{
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 205:</span>
+          rc.packages.el
+        </div>
+
+<!--list-separator-->
+
+2.  Общие настройки modeline
+
+    -   Загрузим только конфигурационный файл:
+        ```emacs-lisp
+        (desire-conf 'modeline)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 206:</span>
+          rc.packages.el
+        </div>
+
+    -   Заголовок файла:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Configure modeline
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 207:</span>
+          packages/modeline.ecf
+        </div>
+    -   Показывать столбец, в котором находится курсор (<https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-line-or-column.html>):
+        ```emacs-lisp
+        ;;; Show column number
+        (setq column-number-mode t)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 208:</span>
+          packages/modeline.ecf
+        </div>
+    -   Задаём 24-часовой формат времени:
+        ```emacs-lisp
+        ;;; Time in 24 hour format, plus day and date.
+        (setq display-time-day-and-date t)
+        (setq display-time-24hr-format t)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 209:</span>
+          packages/modeline.ecf
+        </div>
+    -   Мы можем захотеть видеть и секунды:
+        ```emacs-lisp
+        ;;; Display time in seconds in the mode line
+        ;;; %H is the hour on a 24-hour clock, %I is on a 12-hour clock,
+        ;;; %k is like %H only blank-padded, %l is like %I blank-padded.
+        ;;; %p is the locale's equivalent of either AM or PM.
+        ;;; %M is the minute, %S is the second.
+        (setq display-time-format "%H:%M:%S")
+        (setq display-time-interval 1)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 210:</span>
+          packages/modeline.ecf
+        </div>
+
+    -   Разрешим показывать время в модлайн:
+        ```emacs-lisp
+        ;;; Enable the display of time and CPU load average in the modeline
+        (display-time-mode 1)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 211:</span>
+          packages/modeline.ecf
+        </div>
+
+<!--list-separator-->
+
+3.  Конец
+
+    -   Файл `rc.packages.el`:
+        ```emacs-lisp
+        ;;;}}}
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 212:</span>
+          rc.packages.el
+        </div>
+
+
+#### <span class="section-num">3.41.3</span> Темы {#темы}
 
 -   Подключаем темы в файле `rc.packages.el`:
     ```emacs-lisp
@@ -4637,202 +4915,214 @@ slug: "emacs-desire-configuration"
 
     ```
 
+<!--list-separator-->
 
-#### <span class="section-num">3.42.1</span> Modus-themes {#modus-themes}
+1.  Modus-themes
 
--   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
--   Подключаем темы в файле `rc.packages.el`:
+    -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
+    -   Подключаем темы в файле `rc.packages.el`:
+        ```emacs-lisp
+        ;; (desire 'modus-themes)
+        ```
+
+<!--list-separator-->
+
+2.  Ef-themes
+
+    -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
+    -   Подключаем темы в файле `rc.packages.el`:
+        ```emacs-lisp
+        (desire 'ef-themes)
+        ```
+
+<!--list-separator-->
+
+3.  Финализирование
+
+    -   Финализируем раздел в `rc.packages.el`:
+        ```emacs-lisp
+
+        ;;;}}}
+        ```
+
+
+#### <span class="section-num">3.41.4</span> Внешний вид {#внешний-вид}
+
+<!--list-separator-->
+
+1.  Posframe
+
+    -   Дочерний фрейм в точке.
+    -   <https://github.com/tumashu/posframe>
+    -   Подключение:
+        ```emacs-lisp
+        ;; (desire 'posframe)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 213:</span>
+          rc.packages.el
+        </div>
+    -   Загрузка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Pop a posframe (just a child-frame) at point
+        ;; https://github.com/tumashu/posframe
+
+        ;;; Code:
+
+        (require 'posframe)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 214:</span>
+          packages/posframe/loaddefs.ecf
+        </div>
+    -   Настройка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Pop a posframe (just a child-frame) at point
+        ;; https://github.com/tumashu/posframe
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 215:</span>
+          packages/posframe/desire.ecf
+        </div>
+    -   Поддержка _vertico_:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Vertico-posframe is an vertico extension, which lets vertico use posframe to show its candidate menu
+        ;; https://github.com/tumashu/vertico-posframe
+
+        (desire 'vertico-posframe)
+
+        (require 'vertico-posframe)
+        ;; (vertico-posframe-mode 1)
+
+        (setq vertico-multiform-commands
+              '((consult-line
+                 posframe
+                 (vertico-posframe-poshandler . posframe-poshandler-frame-top-center)
+                 (vertico-posframe-border-width . 10)
+                 ;; NOTE: This is useful when emacs is used in both in X and
+                 ;; terminal, for posframe do not work well in terminal, so
+                 ;; vertico-buffer-mode will be used as fallback at the
+                 ;; moment.
+                 (vertico-posframe-fallback-mode . vertico-buffer-mode))
+                (t posframe)))
+        (vertico-multiform-mode 1)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 216:</span>
+          packages/posframe/vertico.ecf
+        </div>
+
+<!--list-separator-->
+
+2.  Nova
+
+    -   Репозиторий: <https://github.com/thisisran/nova>
+    -   Прорисовка дочерних фреймов с помощью SVG.
+    -   Подключение:
+        ```emacs-lisp
+        (desire 'eldoc-box)
+        ;; (desire 'nova :recipe '(:fetcher github :repo "thisisran/nova" :branch "main"))
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 217:</span>
+          rc.packages.el
+        </div>
+    -   Загрузка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs SVG Child Frames
+        ;;;; https://github.com/thisisran/nova
+
+        (require 'nova)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 218:</span>
+          packages/nova/loaddefs.ecf
+        </div>
+    -   Настройка:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs SVG Child Frames
+        ;;;; https://github.com/thisisran/nova
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 219:</span>
+          packages/nova/desire.ecf
+        </div>
+    -   Поддержка _vertico_:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs SVG Child Frames
+        ;;;; https://github.com/thisisran/nova
+
+        (require 'nova-vertico)
+        (nova-vertico-mode 1)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 220:</span>
+          packages/nova/vertico.ecf
+        </div>
+    -   Поддержка _corfu_:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs SVG Child Frames
+        ;;;; https://github.com/thisisran/nova
+
+        (require 'nova-corfu)
+        (require 'nova-corfu-popupinfo)
+
+        (nova-corfu-mode 1)
+        (nova-corfu-popupinfo-mode 1)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 221:</span>
+          packages/nova/corfu.ecf
+        </div>
+    -   Поддержка _eldoc-box_:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs SVG Child Frames
+        ;;;; https://github.com/thisisran/nova
+
+        ;; (require 'nova-eldoc)
+        ;; (nova-eldoc-mode 1)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 222:</span>
+          packages/nova/eldoc-box.ecf
+        </div>
+
+<!--list-separator-->
+
+3.  Zoom
+
     ```emacs-lisp
-    ;; (desire 'modus-themes)
+    ;; (desire 'zoom)
     ```
 
 
-#### <span class="section-num">3.42.2</span> Ef-themes {#ef-themes}
-
--   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
--   Подключаем темы в файле `rc.packages.el`:
-    ```emacs-lisp
-    (desire 'ef-themes)
-    ```
-
-
-#### <span class="section-num">3.42.3</span> Финализирование {#финализирование}
-
--   Финализируем раздел в `rc.packages.el`:
-    ```emacs-lisp
-
-    ;;;}}}
-    ```
-
-
-### <span class="section-num">3.43</span> Внешний вид {#внешний-вид}
-
-
-#### <span class="section-num">3.43.1</span> Posframe {#posframe}
-
--   Дочерний фрейм в точке.
--   <https://github.com/tumashu/posframe>
--   Подключение:
-    ```emacs-lisp
-    ;; (desire 'posframe)
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 203:</span>
-      rc.packages.el
-    </div>
--   Загрузка:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Pop a posframe (just a child-frame) at point
-    ;; https://github.com/tumashu/posframe
-
-    ;;; Code:
-
-    (require 'posframe)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 204:</span>
-      packages/posframe/loaddefs.ecf
-    </div>
--   Настройка:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Pop a posframe (just a child-frame) at point
-    ;; https://github.com/tumashu/posframe
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 205:</span>
-      packages/posframe/desire.ecf
-    </div>
--   Поддержка _vertico_:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Vertico-posframe is an vertico extension, which lets vertico use posframe to show its candidate menu
-    ;; https://github.com/tumashu/vertico-posframe
-
-    (desire 'vertico-posframe)
-
-    (require 'vertico-posframe)
-    ;; (vertico-posframe-mode 1)
-
-    (setq vertico-multiform-commands
-          '((consult-line
-             posframe
-             (vertico-posframe-poshandler . posframe-poshandler-frame-top-center)
-             (vertico-posframe-border-width . 10)
-             ;; NOTE: This is useful when emacs is used in both in X and
-             ;; terminal, for posframe do not work well in terminal, so
-             ;; vertico-buffer-mode will be used as fallback at the
-             ;; moment.
-             (vertico-posframe-fallback-mode . vertico-buffer-mode))
-            (t posframe)))
-    (vertico-multiform-mode 1)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 206:</span>
-      packages/posframe/vertico.ecf
-    </div>
-
-
-#### <span class="section-num">3.43.2</span> Nova {#nova}
-
--   Репозиторий: <https://github.com/thisisran/nova>
--   Прорисовка дочерних фреймов с помощью SVG.
--   Подключение:
-    ```emacs-lisp
-    (desire 'eldoc-box)
-    ;; (desire 'nova :recipe '(:fetcher github :repo "thisisran/nova" :branch "main"))
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 207:</span>
-      rc.packages.el
-    </div>
--   Загрузка:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Emacs SVG Child Frames
-    ;;;; https://github.com/thisisran/nova
-
-    (require 'nova)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 208:</span>
-      packages/nova/loaddefs.ecf
-    </div>
--   Настройка:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Emacs SVG Child Frames
-    ;;;; https://github.com/thisisran/nova
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 209:</span>
-      packages/nova/desire.ecf
-    </div>
--   Поддержка _vertico_:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Emacs SVG Child Frames
-    ;;;; https://github.com/thisisran/nova
-
-    (require 'nova-vertico)
-    (nova-vertico-mode 1)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 210:</span>
-      packages/nova/vertico.ecf
-    </div>
--   Поддержка _corfu_:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Emacs SVG Child Frames
-    ;;;; https://github.com/thisisran/nova
-
-    (require 'nova-corfu)
-    (require 'nova-corfu-popupinfo)
-
-    (nova-corfu-mode 1)
-    (nova-corfu-popupinfo-mode 1)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 211:</span>
-      packages/nova/corfu.ecf
-    </div>
--   Поддержка _eldoc-box_:
-    ```emacs-lisp
-    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
-    ;;; Emacs SVG Child Frames
-    ;;;; https://github.com/thisisran/nova
-
-    ;; (require 'nova-eldoc)
-    ;; (nova-eldoc-mode 1)
-
-    ;;;
-    ```
-    <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 212:</span>
-      packages/nova/eldoc-box.ecf
-    </div>
-
-
-### <span class="section-num">3.44</span> Финализирование {#финализирование}
+### <span class="section-num">3.42</span> Финализирование {#финализирование}
 
 -   Финализируем файл `rc.packages.el`:
     ```emacs-lisp
-
     ;;; rc.packages.el ends here
     ```

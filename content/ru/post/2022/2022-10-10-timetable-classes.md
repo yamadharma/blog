@@ -2,8 +2,8 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-03-28T10:18:00+03:00
-tags: ["rudn", "education"]
+lastmod: 2025-04-03T17:02:00+03:00
+tags: ["seedling", "rudn", "education"]
 categories: ["job", "science"]
 draft: false
 slug: "timetable-classes"
@@ -477,6 +477,9 @@ slug: "timetable-classes"
     <!--list-separator-->
 
     1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        :LOGBOOK:
+        nil:END:
 
         -   ОРД-296
         -   НКНбд-01-20

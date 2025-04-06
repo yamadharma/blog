@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-03-22T13:53:00+03:00
+lastmod: 2025-04-05T13:23:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -247,7 +247,7 @@ PyGInv is a “lightweight” version of GIinv (an abbreviation for Gröbner IN
 
 -   Кулябов Дмитрий Сергеевич
 -   доктор физико-математических наук
--   Кафедра теории вероятностей и кибербезопасности РУДН
+-   кафедра теории вероятностей и кибербезопасности РУДН
 
 
 #### <span class="section-num">1.3.2</span> Информация {#информация}
@@ -427,7 +427,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-## <span class="org-todo done DONE">DONE</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[4/4]</code> {#семинар-математическое-моделирование-2025-1}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[4/5]</code> {#семинар-математическое-моделирование-2025-1}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
@@ -648,3 +648,63 @@ When we study socio-economic dynamics, the modeled reality is essentially discre
 
 {{< /rtab >}}
 {{< /tabs >}}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-03-31 Пн&gt; </span></span> Ловецкий К. П. - История развития вычислительной техники {#ловецкий-к-dot-п-dot-история-развития-вычислительной-техники}
+
+
+#### <span class="section-num">2.5.1</span> Докладчик {#докладчик}
+
+-   Ловецкий Константин Петрович
+    -   доцент, к.ф.-м.н, доцент
+    -   кафедра математического моделирования и искусственного интеллекта, РУДН
+
+
+#### <span class="section-num">2.5.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/287/>
+-   История развития вычислительной техники
+-   Ловецкий Константин Петрович
+    -   доцент, к.ф.-м.н, доцент
+    -   кафедра математического моделирования и искусственного интеллекта, РУДН
+
+Даётся очерк развития вычислительной техники с древних времён до появления компьютерных клубов.  Рассказ об истории развития вычислительной техники. Об этапах трансформации счётных палочек, абака - простейших устройств, облегчающих элементарные вычисления - к современным компьютерам, которые позволяют не только решать сложные математические и физические задачи, но и позволяют организовать взаимодействие людей на основе информационных технологий. Речь пойдет и о первом детском компьютерном клубе на Рождественском бульваре, созданным братьями Степаном и Георгием Пачиковыми и Антоном Чижовым при участии и поддержке многих энтузиастов.  И о детском летнем компьютерном центре Института Программных Систем РАН, основанным родоначальником компьютерного образования в России Академиком Е. П. Велиховым. И о первых успехах отечественных программистов в области распознавания рукописных текстов (наладонник «Ньютон» - фирма Параграф), создания игр («Тетрис» - Пажитнов), русификатор операционной системы IBM PC (Чижов).
+
+---
+
+-   History of development of computer technology
+-   K. P. Lovetskiy
+    -   Docent, PhD, Associate Professor
+    -   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+
+A story about the history of computer technology development. About the stages of transformation of counting sticks, abacus - the simplest devices that facilitate elementary calculations - to modern computers that allow not only to solve complex mathematical and physical problems, but also to organize interaction between people based on information technology. We will also talk about the first children's computer club on Rozhdestvensky Boulevard, created by brothers Stepan and Georgy Pachikov and Anton Chizhov with the participation and support of many enthusiasts. And about the children's summer computer center of the Institute of Program Systems of the Russian Academy of Sciences, founded by the founder of computer education in Russia, Academician E. P. Velikhov. And about the first successes of domestic programmers in the field of handwriting recognition (the Newton palmtop - Paragraph company), game creation (Tetris - Pajitnov), the Russifier of the IBM PC operating system (Chizhov).
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-04-17 Чт&gt; </span></span> Геворкян М. Н. - Применение алгебры винтов и бикватернионов для вычисления конечного винтового движения точек, прямых и плоскостей {#геворкян-м-dot-н-dot-применение-алгебры-винтов-и-бикватернионов-для-вычисления-конечного-винтового-движения-точек-прямых-и-плоскостей}
+
+
+#### <span class="section-num">2.6.1</span> Докладчик {#докладчик}
+
+-   Геворкян Мигран Нельсонович
+    -   доцент, к.ф.-м.н, доцент
+    -   кафедра теории вероятностей и кибербезопасности РУДН
+
+
+#### <span class="section-num">2.6.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/287/>
+-   Применение алгебры винтов и бикватернионов для вычисления конечного винтового движения точек, прямых и плоскостей
+-   Геворкян Мигран Нельсонович
+    -   доцент, к.ф.-м.н, доцент
+    -   кафедра теории вероятностей и кибербезопасности РУДН
+
+В данном докладе представлено применение алгебры винтов и бикватернионов для вычисления винтового движения аффинных точек, свободных векторов, прямых и плоскостей. Алгебра винтов была разработана еще в конце 19 начале 20 веков, однако в настоящее время мало известна, хотя представляет собой весьма удобный и эффективный способ описания винтового движения. Особое внимание в докладе уделяется принципу перенесения Котельникова--Штуди, упоминания которого, судя по всему, практически не встречается в современных западных источниках. Доклад в целом носит методологический характер и призван устранить данный пробел, дав не только представления об основах математического аппарата перечисленных алгебр, но и проиллюстрировав применение данного аппарата на конкретных наглядных геометрических примерах.
+
+---
+
+-   Application of the screw algebra and dual quaternions algebra for screw motion of points, lines and planes
+-   Gevorkyan, Migran Nelsonovich
+    -   Docent, PhD, Associate Professor
+    -   Department of Probability Theory and Cybersecurity, RUDN University
+
+We present the application of the screw algebra and dual quaternions algebra for screw motion of affine points, free vectors, lines and planes. The screw algebra was developed in the late 19th and early 20th centuries, but is currently little known, although it is a very convenient and effective way to describe screw motion. Special attention in the report is given to the principle of Kotelnikov--Study transfer, which, apparently, is practically not mentioned in modern Western sources. The report as a whole is methodological in nature and is intended to eliminate this gap, giving not only an idea of the basics of the mathematical apparatus of the listed algebras, but also illustrating the application of this apparatus with concrete illustrative geometric examples.
