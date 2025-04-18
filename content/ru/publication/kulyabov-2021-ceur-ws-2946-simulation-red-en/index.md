@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2021-04-01'
-publishDate: '2025-01-08T11:15:40.444934Z'
+publishDate: '2025-04-07T11:49:45.258514Z'
 publication_types:
 - paper-conference
 publication: '*Workshop on information technology and scientific computing in the

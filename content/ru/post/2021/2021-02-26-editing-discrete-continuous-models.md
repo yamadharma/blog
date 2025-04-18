@@ -2,7 +2,7 @@
 title: "Редактирование. Discrete and Continuous Models"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-26T11:41:00+03:00
-lastmod: 2025-03-05T12:47:00+03:00
+lastmod: 2025-04-07T11:10:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
@@ -87,12 +87,37 @@ slug: "editing-discrete-continuous-models"
 #### <span class="section-num">1.3.1</span> 2023 {#2023}
 
 -   ВАК: К2.
--   SJR: Q4.
+
+<!--list-separator-->
+
+1.  SJR
+
+    -   SJR: Q4.
+
+    | Category                              | Quartile |
+    |---------------------------------------|----------|
+    | Computer Science (miscellaneous)      | Q4       |
+    | Modeling and Simulation               | Q4       |
+    | Physics and Astronomy (miscellaneous) | Q4       |
+    | Theoretical Computer Science          | Q4       |
 
 
 #### <span class="section-num">1.3.2</span> 2024 {#2024}
 
 -   ВАК: К2.
+
+<!--list-separator-->
+
+1.  SJR
+
+    -   SJR: Q3.
+
+    | Category                              | Quartile |
+    |---------------------------------------|----------|
+    | Computer Science (miscellaneous)      | Q3       |
+    | Modeling and Simulation               | Q4       |
+    | Physics and Astronomy (miscellaneous) | Q3       |
+    | Theoretical Computer Science          | Q4       |
 
 
 ### <span class="section-num">1.4</span> Варианты названия в пристатейных ссылках, встречающиеся в Scopus {#варианты-названия-в-пристатейных-ссылках-встречающиеся-в-scopus}

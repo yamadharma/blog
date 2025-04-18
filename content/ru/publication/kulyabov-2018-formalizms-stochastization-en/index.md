@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2018-01-01'
-publishDate: '2025-01-08T11:15:40.099382Z'
+publishDate: '2025-04-07T11:49:44.818405Z'
 publication_types:
 - article-journal
 publication: '*Physics of Atomic Nuclei*'

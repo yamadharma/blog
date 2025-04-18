@@ -8,7 +8,7 @@ authors:
 - Ekaterina Gennadyevna Eferina
 - Leonid Antonovich Sevastianov
 date: '2018-01-01'
-publishDate: '2025-01-08T11:15:40.014003Z'
+publishDate: '2025-04-07T11:49:44.697468Z'
 publication_types:
 - chapter
 publication: '*DepCoS-RELCOMEX 2017. Advances in Intelligent Systems and Computing*'

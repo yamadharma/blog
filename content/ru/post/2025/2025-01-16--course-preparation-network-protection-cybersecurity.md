@@ -2,7 +2,7 @@
 title: "Подготовка курса Защита сетей и кибербезопасность"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-16T09:39:00+03:00
-lastmod: 2025-02-04T16:56:00+03:00
+lastmod: 2025-04-09T12:12:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -17,6 +17,8 @@ slug: "course-preparation-network-protection-cybersecurity"
 
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
+
+-   Для практических занятий используется киберполигон Ampire (см. [Киберполигон Ampire]({{< relref "2025-04-09--ampire-training-ground" >}})).
 
 
 ## <span class="section-num">2</span> Методические материалы {#методические-материалы}

@@ -3,7 +3,7 @@ title: Using two Types of Computer Algebra Systems to Solve Maxwell Optics Probl
 authors:
 - Dmitry Sergeevich Kulyabov
 date: '2016-01-01'
-publishDate: '2025-01-08T11:15:39.798255Z'
+publishDate: '2025-04-07T11:49:44.412346Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

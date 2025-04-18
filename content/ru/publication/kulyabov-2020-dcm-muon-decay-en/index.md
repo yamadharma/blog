@@ -6,7 +6,7 @@ authors:
 - Anastasia Vyacheslavovna Demidova
 - Dmitry Sergeevich Kulyabov
 date: '2020-12-01'
-publishDate: '2025-01-08T11:15:40.350750Z'
+publishDate: '2025-04-07T11:49:45.150032Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

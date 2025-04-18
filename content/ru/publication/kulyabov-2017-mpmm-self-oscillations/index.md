@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Ivan Sergeevich Zaryadov
 date: '2017-05-01'
-publishDate: '2025-01-08T11:15:39.966050Z'
+publishDate: '2025-04-07T11:49:44.632845Z'
 publication_types:
 - paper-conference
 publication: "*6th International conference ``Problems of Mathematical Phisics and

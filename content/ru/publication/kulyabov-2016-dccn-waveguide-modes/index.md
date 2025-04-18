@@ -8,7 +8,7 @@ authors:
 - Anton Leonidovich Sevastianov
 - Leonid Antonovich Sevastianov
 date: '2016-11-01'
-publishDate: '2025-01-08T11:15:39.743214Z'
+publishDate: '2025-04-07T11:49:44.349419Z'
 publication_types:
 - paper-conference
 publication: '*Distributed computer and communication networks: control, computation,

@@ -5,7 +5,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Анна Владиславовна Королькова
 date: '2013-01-01'
-publishDate: '2025-01-08T11:15:39.411646Z'
+publishDate: '2025-04-07T11:49:43.959465Z'
 publication_types:
 - article-journal
 publication: '*T-Comm - Телекоммуникации и транспорт*'

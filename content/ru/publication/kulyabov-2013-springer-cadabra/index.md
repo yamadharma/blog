@@ -5,7 +5,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevast'yanov
 date: '2013-01-01'
-publishDate: '2025-01-08T11:15:39.405741Z'
+publishDate: '2025-04-07T11:49:43.952936Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

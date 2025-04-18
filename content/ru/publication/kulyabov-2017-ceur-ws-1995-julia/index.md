@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2017-04-01'
-publishDate: '2025-01-08T11:15:39.866138Z'
+publishDate: '2025-04-07T11:49:44.494277Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 7th International Conference

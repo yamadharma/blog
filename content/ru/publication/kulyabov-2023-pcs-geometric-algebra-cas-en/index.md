@@ -7,7 +7,7 @@ authors:
 - Anastasia Vyacheslavovna Demidova
 - Tatiana Refatovna Velieva
 date: '2023-01-01'
-publishDate: '2025-01-08T11:15:40.642235Z'
+publishDate: '2025-04-07T11:49:45.506328Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

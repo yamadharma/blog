@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-03-11T16:34:00+03:00
+lastmod: 2025-04-12T13:18:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -347,6 +347,11 @@ slug: "system-administration"
 -   [Хостинг git. gitea]({{< relref "2023-10-29-git-hosting-gitea" >}})
 
 
+### <span class="section-num">13.6</span> Хранилища {#хранилища}
+
+-   [Файловое хранилище Seafile]({{< relref "2025-04-08--seafile-file-server" >}})
+
+
 ## <span class="section-num">14</span> Разное {#разное}
 
 -   [Сайт The Movie Database]({{< relref "2024-11-14-the-movie-database" >}})
@@ -427,6 +432,7 @@ slug: "system-administration"
 #### <span class="section-num">15.8.4</span> HTTP {#http}
 
 -   [Web-сервер Nginx]({{< relref "2024-12-05-web-server-nginx" >}})
+-   [Обратный прокси-сервер Nginx Proxy Manager]({{< relref "2025-04-12--nginx-proxy-manager" >}})
 
 
 ## <span class="section-num">16</span> Управление и мониторинг {#управление-и-мониторинг}

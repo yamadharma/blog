@@ -4,7 +4,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Anna Vladislavovna Korol'kova
 date: '2021-03-01'
-publishDate: '2025-01-08T11:15:40.470171Z'
+publishDate: '2025-04-07T11:49:45.291701Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'
@@ -34,4 +34,7 @@ tags:
 - index-rank:scopus:sjr:q3
 - index:wos
 - index:rinc
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2108.12301
 ---

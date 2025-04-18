@@ -8,7 +8,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Imrikh Pokorny
 date: '2019-09-01'
-publishDate: '2025-01-08T11:15:40.219823Z'
+publishDate: '2025-04-07T11:49:44.976501Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the 27th Symposium on Nuclear Electronics and Computing

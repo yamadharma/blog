@@ -6,7 +6,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Фёдоров Арсений Витальевич
 date: '2022-05-13'
-publishDate: '2025-01-08T11:15:40.494379Z'
+publishDate: '2025-04-07T11:49:45.317641Z'
 publication_types:
 - patent
 abstract: Программа применяется для численного моделирования поведения стохастической
@@ -19,4 +19,5 @@ tags:
 - mine
 - type:patent
 - index:rinc
+- project:kinetic
 ---

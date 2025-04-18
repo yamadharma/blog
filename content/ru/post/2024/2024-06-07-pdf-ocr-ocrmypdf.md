@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2025-03-10T09:54:00+03:00
+lastmod: 2025-04-13T19:33:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false

@@ -7,7 +7,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Anastasiya Vyacheslavovna Demidova
 date: '2017-01-01'
-publishDate: '2025-01-08T11:15:39.989497Z'
+publishDate: '2025-04-07T11:49:44.663096Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics

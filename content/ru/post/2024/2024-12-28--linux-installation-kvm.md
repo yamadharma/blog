@@ -2,7 +2,7 @@
 title: "Linux. Установка в kvm"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-28T18:27:00+03:00
-lastmod: 2025-02-19T15:16:00+03:00
+lastmod: 2025-04-17T14:37:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,9 +18,15 @@ Linux. Установка в kvm.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Для примера будем устанавливать дистрибутив Fedora Sway:
-    -   `Fedora-Sway-Live-x86_64-41-1.4.iso`
--   Будем устанавливать в каталог `/var/vm/fedora-sway`.
+-   Будем устанавливать (для определённости) в каталог `/var/vm/fedora-sway`:
+    ```shell
+    mkdir -p /var/vm/fedora-sway
+    ```
+-   Для примера будем устанавливать дистрибутив Fedora Sway (`Fedora-Sway-Live-x86_64-42-1.1.iso`):
+    ```shell
+    cd /var/vm/fedora-sway
+    wget https://download.fedoraproject.org/pub/fedora/linux/releases/42/Spins/x86_64/iso/Fedora-Sway-Live-x86_64-42-1.1.iso
+    ```
 
 
 ## <span class="section-num">2</span> Установка Linux на qemu {#установка-linux-на-qemu}
@@ -28,15 +34,15 @@ Linux. Установка в kvm.
 
 ### <span class="section-num">2.1</span> Создание образа {#создание-образа}
 
--   Создадим образ виртуального диска: `60GB`, формат `qcow2`:
+-   Создадим образ виртуального диска: `80GB`, формат `qcow2`:
     ```shell
-    qemu-img create -f qcow2 fedora-sway.qcow2 60G
+    qemu-img create -f qcow2 fedora-sway.qcow2 80G
     ```
 
 -   Запустите виртуальную машину:
     ```shell
     qemu-system-x86_64 -boot menu=on -m 2048 -cpu max -smp 2 \
-        -cdrom Fedora-Sway-Live-x86_64-41-1.4.iso \
+        -cdrom Fedora-Sway-Live-x86_64-42-1.1.iso \
         -drive file=fedora-sway.qcow2,format=qcow2,if=virtio,aio=native,cache=none \
         -bios /usr/share/edk2-ovmf/OVMF_CODE.fd \
         -enable-kvm -machine q35 -device intel-iommu \
@@ -47,11 +53,15 @@ Linux. Установка в kvm.
     ```
 
     -   Видео-устройств подключено на видеокарту компьютера.
--   Выберите `Start Fedora-Sway-Live 41`.
+-   Выберите `Start Fedora-Sway-Live 42`.
 -   Загрузится графический режим.
 -   Если вы запускаете из-под Sway, включите `Passthrough mode`.
 -   Также можно использовать режим захвата, переключая его по комбинации `Ctrl+Alt+g`.
 -   Установите систему.
+-   После установке остановите систему:
+    ```shell
+    sudo systemctl halt
+    ```
 
 
 ### <span class="section-num">2.2</span> Запуск системы {#запуск-системы}
@@ -87,27 +97,27 @@ Linux. Установка в kvm.
 
 ### <span class="section-num">2.3</span> Видео: Установка Linux на qemu {#видео-установка-linux-на-qemu}
 
-{{< tabs tabTotal="4" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Установка Linux на qemu" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 50903a2181f564a0a207ace60067ad3d >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Платформа" >}}
+{{< /tab >}}
+{{< tab "Платформа" >}}
 
 {{< plvideo W5741K4QRBi1 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="VKvideo" >}}
+{{< /tab >}}
+{{< tab "VKvideo" >}}
 
 {{< vkvideo 606414976 456239663 2 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube zdGOCVWmnWo >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 

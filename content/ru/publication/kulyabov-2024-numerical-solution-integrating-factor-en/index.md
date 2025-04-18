@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Stepan Viktorovich Sergeev
 date: '2024-01-01'
-publishDate: '2025-01-08T11:15:40.696104Z'
+publishDate: '2025-04-07T11:49:45.602048Z'
 publication_types:
 - article-journal
 publication: '*Izvestiya of Saratov University. Mathematics. Mechanics. Informatics*'
@@ -27,4 +27,6 @@ tags:
 - index:rinc
 - index:rinc-core
 - index-rank:scopus:sjr:q4
+url_pdf: 
+  https://mmi.sgu.ru/system/files_force/text-pdf/2024/11/512-525-sevastianov_et_al.pdf
 ---

@@ -4,7 +4,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - A G Ul'yanova
 date: '2009-01-01'
-publishDate: '2025-01-08T11:15:39.269126Z'
+publishDate: '2025-04-07T11:49:43.773716Z'
 publication_types:
 - article-journal
 publication: '*Physics of Particles and Nuclei Letters*'

@@ -2,7 +2,7 @@
 title: "MSYS2. Приложения Unix под Windows"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-09-23T15:55:00+03:00
-lastmod: 2023-11-06T14:39:00+03:00
+lastmod: 2025-04-17T12:57:00+03:00
 tags: ["sysadmin", "windows"]
 categories: ["computer-science"]
 draft: false
@@ -35,7 +35,7 @@ MSYS2. Приложения Unix под Windows
 
 -   Установка с помощью Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
     ```shell
-    choco install msys2
+    choco install msys2 -y
     ```
 -   Далее, возможно, придётся перелогиниться или перегрузиться.
 -   Запустите `msys2` (через ярлык или через поиск).

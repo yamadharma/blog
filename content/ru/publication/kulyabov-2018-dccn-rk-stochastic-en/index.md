@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2018-01-01'
-publishDate: '2025-01-08T11:15:40.069697Z'
+publishDate: '2025-04-07T11:49:44.779858Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks*'

@@ -2,7 +2,7 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2024-12-19T19:30:00+03:00
+lastmod: 2025-04-16T14:23:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -55,5 +55,26 @@ slug: "hugo-site-generator"
 
 ## <span class="section-num">7</span> Ресурсы {#ресурсы}
 
+
+### <span class="section-num">7.1</span> Учебные материалы {#учебные-материалы}
+
 -   Учебные материалы:
     -   <https://hugo-mini-course.netlify.app/ru/>
+
+
+### <span class="section-num">7.2</span> Модули {#модули}
+
+
+#### <span class="section-num">7.2.1</span> hugo-modules {#hugo-modules}
+
+-   Репозиторий: <https://github.com/gethugothemes/hugo-modules>
+-   Сайт: <https://gethugothemes.com/hugo-modules>
+
+
+### <span class="section-num">7.3</span> Темы {#темы}
+
+
+#### <span class="section-num">7.3.1</span> hugobricks {#hugobricks}
+
+-   Сайт: <https://www.hugobricks.preview.usecue.com>
+-   Репозитоирий: <https://github.com/jhvanderschee/hugobricks>

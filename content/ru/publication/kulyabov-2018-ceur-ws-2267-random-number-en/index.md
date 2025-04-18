@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Ivan Mikhailovich Gostev
 date: '2018-09-01'
-publishDate: '2025-01-08T11:15:40.057694Z'
+publishDate: '2025-04-07T11:49:44.757694Z'
 publication_types:
 - paper-conference
 publication: '*Selected Papers of the 8th International Conference \"Distributed Computing

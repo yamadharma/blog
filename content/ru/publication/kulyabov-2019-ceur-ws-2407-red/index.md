@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2019-04-01'
-publishDate: '2025-01-08T11:15:40.207713Z'
+publishDate: '2025-04-07T11:49:44.962181Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 9th International Conference

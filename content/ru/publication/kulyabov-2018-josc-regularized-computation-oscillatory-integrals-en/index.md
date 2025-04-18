@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Nikolai E. Nikolaev
 date: '2018-01-01'
-publishDate: '2025-01-08T11:15:40.122889Z'
+publishDate: '2025-04-07T11:49:44.852067Z'
 publication_types:
 - article-journal
 publication: '*Journal of Computational Science*'

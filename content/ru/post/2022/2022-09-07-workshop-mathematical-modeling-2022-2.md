@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2022-2023"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-07T11:32:00+03:00
-lastmod: 2023-07-11T11:17:00+03:00
+lastmod: 2025-04-17T14:44:00+03:00
 tags: ["rudn"]
 categories: ["job", "science"]
 draft: false
@@ -46,17 +46,17 @@ slug: "workshop-mathematical-modeling-2022-2"
 
 #### <span class="section-num">1.1.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Баддур Али - Исследование консервативных разностных схем в моделях движения многих тел" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube f7d75003d50aa5e709633110b0b5d9c7 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube IEECvsD2euU >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -92,17 +92,17 @@ The layered design and corresponding corrections in the method of synthesis of h
 
 #### <span class="section-num">1.2.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Черник В. В. - Эффективные методы синтеза голограмм с комбинированной структурой" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 0c7263b8593f593522a49870b0ba4ed0 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube -juRU1me0gI >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -133,17 +133,17 @@ The layered design and corresponding corrections in the method of synthesis of h
 
 #### <span class="section-num">1.3.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Блинков Ю. А. - Построение первого дифференциального приближения для методов Рунге-Кутты" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube b824a2e9865ad01e880934cf8d84163d >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube fdzu_1MazKs >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -186,17 +186,17 @@ The spectral problem of the mathematical theory of waveguides is reduced to the 
 
 #### <span class="section-num">1.4.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Кройтор О. К. - Компьютерное моделирование некоторых задач математической физики" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 2d71e04f0de7b7bf0a97713fb4ef7df5 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube aopm_DvZHIk >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -232,17 +232,17 @@ Based on this hypothesis, a heuristic method is proposed that allows one to dete
 
 #### <span class="section-num">1.5.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Еднерал В. Ф. - Об интегрируемости автономной системы ОДУ с зависящей от параметров полиномиальной правой частью" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube b87041a417fb9f0010afd8175735c6ec >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube KJeAf94Ct4w >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -298,17 +298,17 @@ The report considers a simulation model of a system that satisfies the set condi
 
 #### <span class="section-num">1.6.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Гостев И. М. - Управление заданиями в больших вычислительных системах на основе элементов ИИ" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 85894a3a2839290a40f5fc99892908f3 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube Ya8QeP_xeYs >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -367,17 +367,17 @@ In the dissertation, new algorithms of the FDM for the following classes of prob
 
 #### <span class="section-num">1.7.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Белов А. А. - Обобщение метода конечных разностей на задачи с особенностями в решении" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 15e6fb22b481d8b6f472deb1f5a77c76 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube yPcgNQ1X9eU >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -425,17 +425,17 @@ A numerical method for constructing a dispersion curve based on this formulation
 
 #### <span class="section-num">2.1.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Кройтор О. К. - Распространение монохроматических поляризованных волн оптического диапазона в направляющих структурах" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 18091c13a857b73d9cf4d73a6b6afbb4 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube JEgZWwc1Qkg >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -482,17 +482,17 @@ The novelty of the approach is to first select a class (set) of functions that s
 
 #### <span class="section-num">2.2.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Ловецкий К. П. - Численный спектральный метод коллокаций решения обыкновенных дифференциальных уравнений первого порядка" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 852d0a89ef938333551793d4d559673d >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube ACK-S6l8C0k >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -527,17 +527,17 @@ This report is devoted to tidal forces near strongly gravitating objects at the 
 
 #### <span class="section-num">2.3.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Цирулёв А. Н. - Математические модели событий приливного разрушения звезд в центрах галактик" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube cff63e50f0c3a0eb358225162775683f >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube 2K9ku8JPaBE >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -576,17 +576,17 @@ The report uses a large number of drawings created programmatically using the la
 
 #### <span class="section-num">2.4.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Геворкян М. Н. - Применение проективной геометрии в компьютерной графике" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 64f02cc05dd23470ce6fedcd47c59b1c >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube 3HthH8R8jfE >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -627,17 +627,17 @@ The report uses a large number of drawings created programmatically using the la
 
 #### <span class="section-num">2.5.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Чулуунбаатар Галмандах - Вычислительные схемы решения квантовомеханических задач" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube f5a2947658011cf55e9cb5cb881eccc2 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube UKzt7cVteZ4 >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -672,17 +672,17 @@ In the course of studying the eikonal equation the reporter was faced to with th
 
 #### <span class="section-num">2.6.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Фёдоров А. В. - Вывод уравнения эйконала" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube b19f5a4c6e95235c51b10aefd1876aea >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube xEN667AoPU8 >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}
 
 
@@ -721,15 +721,15 @@ In the course of studying the eikonal equation the reporter was faced to with th
 
 #### <span class="section-num">2.7.3</span> Видео {#видео}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Чулуунбаатар Галмандах - Вычислительные схемы решения квантовомеханических задач. Предзащита" >}}
+{{< tab "RuTube" >}}
 
 {{< rutube 54e1ad23ed1d80c9e5bb75eab68d1fa3 >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< /tab >}}
+{{< tab "Youtube" >}}
 
 {{< youtube BeBUC1oMQIs >}}
 
-{{< /rtab >}}
+{{< /tab >}}
 {{< /tabs >}}

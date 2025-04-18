@@ -2,7 +2,7 @@
 title: "Emacs. Персональная база знаний"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-11-07T15:54:00+03:00
-lastmod: 2025-02-08T16:33:00+03:00
+lastmod: 2025-04-15T17:21:00+03:00
 tags: ["emacs", "zettelkasten"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -146,3 +146,34 @@ slug: "emacs-personal-knowledge-base"
 -   Документация: <https://tero.hasu.is/notdeft/>
 -   Ответвление от Deft.
 -   Использует движок Xapian.
+
+
+## <span class="section-num">5</span> Ссылки {#ссылки}
+
+
+### <span class="section-num">5.1</span> org-super-links {#org-super-links}
+
+-   Репозиторий: <https://github.com/toshism/org-super-links>
+-   Создание ссылок с автоматическими обратными ссылками.
+-   Пример:
+    ```org
+    ​* TODO Test heading target
+      :PROPERTIES:
+      :ID:       02a5da87-46e5-4ae0-85c1-ee63a570270a
+      :END:
+      :BACKLINKS:
+      [2020-04-11 Sat 00:26] <- [[id:3835d3d0-931a-4a45-a015-a3d6a0baa99a][This has a link]]
+      :END:
+
+    This has a backlink as you can see from the BACKLINKS drawer above.
+
+    * TODO This has a link
+      :PROPERTIES:
+      :ID:       3835d3d0-931a-4a45-a015-a3d6a0baa99a
+      :END:
+
+    This has a link pointing to the heading above
+
+    [[id:02a5da87-46e5-4ae0-85c1-ee63a570270a][Test heading target]]
+    ```
+-   Для поиска использует org-ql.

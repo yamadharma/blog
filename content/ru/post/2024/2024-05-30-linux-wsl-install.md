@@ -2,7 +2,7 @@
 title: "Установка Linux в WSL"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-30T16:16:00+03:00
-lastmod: 2024-05-31T14:23:00+03:00
+lastmod: 2025-04-16T11:08:00+03:00
 tags: ["windows", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -38,7 +38,7 @@ slug: "linux-wsl-install"
 
 -   Установите wsl:
     ```shell
-    wsl --install
+    wsl --install ubuntu
     ```
 
     -   включает дополнительные компоненты WSL и платформы виртуальных машин;

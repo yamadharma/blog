@@ -7,3 +7,4 @@ require (
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.3.2
 )
 
+require github.com/gethugothemes/hugo-modules/tab v0.0.0-20250409040650-2f989f5e8ea1 // indirect

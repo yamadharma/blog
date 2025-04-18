@@ -5,7 +5,7 @@ authors:
 - Анна Владиславовна Королькова
 - Иван Сергеевич Зарядов
 date: '2012-01-01'
-publishDate: '2025-01-08T11:15:39.354854Z'
+publishDate: '2025-04-07T11:49:43.892979Z'
 publication_types:
 - article-journal
 publication: '*T Comm — Telecommunications and Transport*'

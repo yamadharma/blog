@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Tatyana Refatovna Velieva
 date: '2018-04-01'
-publishDate: '2025-01-08T11:15:40.147999Z'
+publishDate: '2025-04-07T11:49:44.886601Z'
 publication_types:
 - paper-conference
 publication: '*Saratov Fall Meeting 2017: Laser Physics and Photonics XVIII; and Computational

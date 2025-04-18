@@ -5,7 +5,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Anna Vladislavovna Korolkova
 date: '2018-04-01'
-publishDate: '2025-01-08T11:15:40.045803Z'
+publishDate: '2025-04-07T11:49:44.739427Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 8th International Conference

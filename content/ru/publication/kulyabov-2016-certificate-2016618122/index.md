@@ -7,7 +7,7 @@ authors:
 - Мигран Нельсонович Геворкян
 - Анна Владиславовна Королькова
 date: '2016-06-01'
-publishDate: '2025-01-08T11:15:39.640989Z'
+publishDate: '2025-04-07T11:49:44.230484Z'
 publication_types:
 - patent
 tags:

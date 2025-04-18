@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - А В Ульянов
 date: '2004-01-01'
-publishDate: '2025-01-08T11:15:39.122974Z'
+publishDate: '2025-04-07T11:49:43.601216Z'
 publication_types:
 - paper-conference
 publication: '*Труды XL Всероссийской научной конференции по проблемам математики,

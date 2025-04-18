@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2025-03-02T21:02:00+03:00
+lastmod: 2025-04-08T10:54:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -55,6 +55,10 @@ slug: "proxmox-ve-install"
 
 ### <span class="section-num">3.1</span> Повышение комфорта работы {#повышение-комфорта-работы}
 
+-   Обновите репозитории:
+    ```shell
+    apt update
+    ```
 -   Программы для удобства работы в консоли:
     ```shell
     apt -y install tmux mc

@@ -27,7 +27,7 @@ marketing:
     baidu_tongji: ''
     plausible: ''
     fathom: ''
-    pirsch: ''    
+    pirsch: ''
   verification:
     google: ''
     baidu: ''
@@ -142,7 +142,7 @@ extensions:
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
-    
+
 ###
 
 show_related:

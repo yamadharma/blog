@@ -2,7 +2,7 @@
 title: "Каталогизатор книг Calibre"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-04T19:09:00+03:00
-lastmod: 2025-02-04T20:04:00+03:00
+lastmod: 2025-04-15T16:07:00+03:00
 tags: ["book"]
 categories: ["self-management", "computer-science"]
 draft: false
@@ -50,6 +50,13 @@ slug: "calibre-book-cataloger"
 -   Предоставляет доступ к Calibre-библиотеке, размещённой в Nextcloud через OPDS.
 
 
+### <span class="section-num">3.4</span> rdr {#rdr}
+
+-   Репозиторий: <https://github.com/michaelmrose/rdr>
+-   Утилита командной строки для поиска и открытия книг из библиотеки Calibre.
+-   Написано на Clojure.
+
+
 ## <span class="section-num">4</span> Интерфейс Emacs {#интерфейс-emacs}
 
 -   Информация:
@@ -58,6 +65,7 @@ slug: "calibre-book-cataloger"
 
 ### <span class="section-num">4.1</span> calibredb.el {#calibredb-dot-el}
 
+-   [Emacs. calibredb.el]({{< relref "2025-04-09--emacs-calibredbel" >}})
 -   Emacs-клиент для  Calibre.
 -   Репозиторий: <https://github.com/chenyanming/calibredb.el>
 

@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Анна Владиславовна Королькова
 date: '2021-01-01'
-publishDate: '2025-01-08T11:15:40.476182Z'
+publishDate: '2025-04-07T11:49:45.298412Z'
 publication_types:
 - article-journal
 publication: '*Программирование*'
@@ -30,4 +30,8 @@ tags:
 - index:vak
 - index:rinc
 - index:rinc-core
+- project:julia
+links:
+- name: arXiv
+  url: https://arxiv.org/abs/2108.12301
 ---

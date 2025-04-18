@@ -5,7 +5,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Eugeny Yurievich Shchetinin
 date: '2020-04-01'
-publishDate: '2025-01-08T11:15:40.323767Z'
+publishDate: '2025-04-07T11:49:45.130292Z'
 publication_types:
 - paper-conference
 publication: '*Workshop on information technology and scientific computing in the

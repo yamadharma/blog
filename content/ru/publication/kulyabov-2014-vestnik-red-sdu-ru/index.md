@@ -6,7 +6,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Б. А. Сантуш
 date: '2014-01-01'
-publishDate: '2025-01-08T11:15:39.518315Z'
+publishDate: '2025-04-07T11:49:44.092457Z'
 publication_types:
 - article-journal
 publication: '*Вестник РУДН. Серия «Математика. Информатика. Физика»*'

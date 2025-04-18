@@ -7,7 +7,7 @@ authors:
 - Edik Artashevich Ayrjan
 - Anastasia Vyacheslavovna Demidova
 date: '2020-01-01'
-publishDate: '2025-01-08T11:15:40.386429Z'
+publishDate: '2025-04-07T11:49:45.191431Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks. DCCN 2020*'

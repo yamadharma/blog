@@ -8,7 +8,7 @@ authors:
 - Tatiana Aleksandrovna Milovanova
 - Vladimir Tsurlukov
 date: '2017-01-01'
-publishDate: '2025-01-08T11:15:39.903169Z'
+publishDate: '2025-04-07T11:49:44.548717Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks. DCCN 2017. Communications

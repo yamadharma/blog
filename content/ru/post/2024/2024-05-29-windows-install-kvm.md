@@ -2,7 +2,7 @@
 title: "Windows. Установка в kvm"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-29T19:46:00+03:00
-lastmod: 2025-03-07T17:49:00+03:00
+lastmod: 2025-04-18T18:12:00+03:00
 tags: ["windows", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -34,6 +34,7 @@ slug: "windows-install-kvm"
     -   <https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md>
 -   Скачаем драйвера для qemu:
     ```shell
+    cd /var/lib/libvirt/images
     wget https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso
     ```
 -   Проще всего использовать образ iso-диска и подмонтировать его как второй cdrom.
@@ -68,7 +69,7 @@ slug: "windows-install-kvm"
     ```shell
     virt-install \
         --connect qemu:///system \
-        --disk /var/lib/libvirt/images/Win11_24H2_Russian_x64.iso,device=cdrom \
+        --disk /var/lib/libvirt/images/win11.iso,device=cdrom \
         --disk /var/lib/libvirt/images/virtio-win.iso,device=cdrom \
         --disk pool=default,size=120,bus=virtio,format=qcow2 \
         --name windows11 \
@@ -91,7 +92,7 @@ slug: "windows-install-kvm"
 
     -   `--name windows11` : название виртуальной машины;
     -   `--os-type=win11` : тип ОС;
-    -   `--cdrom /var/lib/libvirt/images/Win11_24H2_Russian_x64.iso` : путь к ISO-образу установочного диска ОС;
+    -   `--cdrom /var/lib/libvirt/images/win11.iso` : путь к ISO-образу установочного диска ОС;
     -   `--graphics spice` : графическая консоль;
     -   `--disk pool=default,size=160,bus=virtio,format=qcow2` : хранилище;
         -   образ виртуальной машины будет создана в пространстве хранения объёмом 160 ГБ, которое автоматически выделяется из пула хранилищ default;
@@ -102,19 +103,40 @@ slug: "windows-install-kvm"
     -   `--hvm` : полностью виртуализированная система;
     -   `--virt-type=kvm` : использовать модуль ядра KVM, который задействует аппаратные возможности виртуализации процессора.
 -   В качестве видео-интерфейса ставим QXL.
--   После установки драйверов следует перевести в Virtio.
+    -   После установки драйверов следует перевести в Virtio.
 
 
-## <span class="section-num">4</span> После установки {#после-установки}
+## <span class="section-num">4</span> Установка {#установка}
 
--   Поменяйте в настройках типы устройств:
-    -   сетевую карту на Virtio;
-    -   видео на Virtio.
--   Установите сертификат RedHat с CD-диска.
--   Установите драйвера Virtio.
+-   Вначале Windows не видит диск.
+-   Необходимо установить драйвер диска из папки `e:\amd64\w11`.
+-   Далее, для подключения к сети потребуется установить драйвер.
+-   Для этого выберите весь диск с драйверами `e:\`.
 
 
-## <span class="section-num">5</span> Общая папка {#общая-папка}
+## <span class="section-num">5</span> После установки {#после-установки}
+
+-   Для загрузки используйте `virt-manager`.
+-   Установите сертификат RedHat с CD-диска:
+    ```shell
+    e:\cert\Virtio_Win_Red_Hat_CA.cer
+    ```
+-   После загрузки установите необходимые драйвера Virtio:
+    ```shell
+    e:\wirtio-win-gt-x64.msi
+    ```
+-   Установите гостевые утилиты:
+    ```shell
+    e:\virtio-win-guest-tools.exe
+    ```
+-   Отмонтируйте установочный диск Windows.
+-   Поменяйте в настройках virt-manager типы устройств:
+    -   видео на Virtio + 3D;
+    -   в разделе Spice добавьте OpenGL.
+-   Возможно, следует отключить масштабирование экрана в меню (Вид -&gt; Масштабирование экрана -&gt; Никогда) (чтобы шрифты не смазывались).
+
+
+## <span class="section-num">6</span> Общая папка {#общая-папка}
 
 -   Будем использовать встроенный метод создания общей папки с помощью _virt-manager_.
 -   Нажмите на значок с надписью _Показать виртуальное оборудование_ (_Show virtual hardware details_) на панели инструментов.
@@ -124,15 +146,15 @@ slug: "windows-install-kvm"
 -   Внизу нажмите _Добавить оборудование_ (_Add hardware_).
     -   Выберите _Файловая система_ (_File system_) на левой панели в окне добавления нового оборудования.
     -   Затем выберите _Driver=virtiofs_ на вкладке Подробности.
-    -   Нажмите на _browse &gt; browse local_ и выберите путь к хосту из вашей системы Linux.
-    -   В целевом пути укажите любое имя.
+    -   Нажмите на _browse &gt; browse local_ и выберите путь к хосту из вашей системы Linux, например `/home`.
+    -   В целевом пути укажите любое имя, например `home`.
 -   Установите в системе Windows WinFSP (FUSE для Windows).
     -   Можно скачать с сайта <https://github.com/winfsp/winfsp/releases/>.
     -   Можно установить с Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
         ```shell
-        choco install winfsp
+        choco install winfsp -y
         ```
--   Установите `virtio-win-guest-tools.exe`.
+-   Установите `virtio-win-guest-tools.exe` (уже установили).
     -   Возьмите из комплекта `virtio-win.iso` или скачайте напрямую из <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/>.
     -   После завершения установки перезагрузите виртуальную машину Windows.
 -   Откройте меню "Пуск" и найдите "Службы".
@@ -146,12 +168,40 @@ slug: "windows-install-kvm"
 -   После запуска службы откройте Проводник, и вы должны увидеть метку монтирования, которую вы создали в первом шаге выше, и которая должна быть отображена как диск `Z:`.
 
 
-## <span class="section-num">6</span> Буфер обмена {#буфер-обмена}
+## <span class="section-num">7</span> Буфер обмена {#буфер-обмена}
 
 -   Должно работать само после установки драйверов virtio.
 -   Проверьте, что есть Канал (spice) типа `spicevmc`.
--   Установите в Windows _SPICE Guest Tools_ : <https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe>.
--   Можно установить с помощью Chocolatey:
-    ```shell
-    choco install spice-agent
-    ```
+-   Установите в Windows _SPICE Guest Tools_ (возможно установить из следующих источников):
+    -   установите `virtio-win-guest-tools.exe` (уже установили).
+    -   <https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe>.
+    -   Можно установить с помощью Chocolatey:
+        ```shell
+        choco install spice-agent
+        ```
+
+
+## <span class="section-num">8</span> Видео {#видео}
+
+{{< tabs "Установка Windows на KVM" >}}
+{{< tab "RuTube" >}}
+
+{{< rutube 46f95eeb6c0c8e5bbf51b2fe0851e76d >}}
+
+{{< /tab >}}
+{{< tab "Платформа" >}}
+
+{{< plvideo coo_ngzPjq8D >}}
+
+{{< /tab >}}
+{{< tab "VKvideo" >}}
+
+{{< vkvideo -230024722 456239026 2 >}}
+
+{{< /tab >}}
+{{< tab "Youtube" >}}
+
+{{< youtube pZla1y1aPhI >}}
+
+{{< /tab >}}
+{{< /tabs >}}

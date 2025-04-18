@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2017-01-01'
-publishDate: '2025-01-08T11:15:39.921389Z'
+publishDate: '2025-04-07T11:49:44.574262Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'

@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastyanov
 date: '2016-01-01'
-publishDate: '2025-01-08T11:15:39.804158Z'
+publishDate: '2025-04-07T11:49:44.419067Z'
 publication_types:
 - chapter
 publication: '*Dependability Engineering and Complex Systems*'
