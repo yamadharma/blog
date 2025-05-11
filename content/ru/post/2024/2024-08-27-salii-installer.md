@@ -2,7 +2,7 @@
 title: "Система установки SALII"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-08-27T19:25:00+03:00
-lastmod: 2024-12-17T17:55:00+03:00
+lastmod: 2025-05-05T11:17:00+03:00
 draft: false
 slug: "salii-installer"
 ---

@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2024-12-28T18:14:00+03:00
+lastmod: 2025-04-29T10:08:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"
@@ -84,7 +84,7 @@ slug: "video-processing-command-line"
     ```shell
     for i in $(ls *.mp4 | sort)
     do
-    echo file \'$(readlink -f "${i}")\' >>input.txt
+            echo file \'$(readlink -f "${i}")\' >>input.txt
     done
     ```
 -   Соединим видеофайлы:
@@ -108,3 +108,47 @@ slug: "video-processing-command-line"
     mkvmerge --language "1:ru" --title "Title" --generate-chapters when-appending -o output.mkv file1.mkv + file2.mkv
     ```
 -   Кроме объединения, мы задали язык звуковой дорожки (русский) и каждый файл обозначили как главу.
+
+
+### <span class="section-num">2.5</span> Замена аудио-дорожки в видеофайле {#замена-аудио-дорожки-в-видеофайле}
+
+-   Заменит аудио-дорожку в видеофайле:
+    ```shell
+    ffmpeg -i video.mp4 -i audio.wav -map 0:v -map 1:a -c:v copy -shortest output.mp4
+    ```
+
+    -   `-map` : выбрать поток;
+    -   `-c:v copy` : потоковое копирование видео (не происходит повторного кодирования видео);
+        -   если формат входного аудио совместим с выходным, можно изменить `-c:v copy` на `-c copy` для потокового копирования видео и аудио;
+    -   `-shortest` : сделать выходной файл такой же продолжительности, как и самый короткий входной.
+
+
+### <span class="section-num">2.6</span> Добавить аудио к видео {#добавить-аудио-к-видео}
+
+-   Добавим дополнительную аудио-дорожку к видео:
+    ```shell
+    ffmpeg -i video.mkv -i audio.mp3 -map 0 -map 1:a -c:v copy -shortest output.mkv
+    ```
+
+    -   `-map` : выбрать поток;
+    -   `-c:v copy` : потоковое копирование видео (не происходит повторного кодирования видео);
+        -   если формат входного аудио совместим с выходным, можно изменить `-c:v copy` на `-c copy` для потокового копирования видео и аудио;
+    -   `-shortest` : сделать выходной файл такой же продолжительности, как и самый короткий входной.
+
+
+### <span class="section-num">2.7</span> Добавить беззвучную звуковую дорожку {#добавить-беззвучную-звуковую-дорожку}
+
+-   Можно использовать фильтр `anullsrc` для создания беззвучного аудиопотока.
+-   Фильтр позволяет выбрать желаемое расположение каналов (моно, стерео, 5.1 и т. д.) и частоту дискретизации.
+    ```shell
+    ffmpeg -i video.mp4 -f lavfi -i anullsrc=channel_layout=stereo:sample_rate=44100 -c:v copy -shortest output.mp4
+    ```
+
+
+### <span class="section-num">2.8</span> Смикшировать два аудиопотока в один {#смикшировать-два-аудиопотока-в-один}
+
+-   Используем видео из файла video.mkv.
+-   Смешаем аудио из файлов video.mkv и audio.m4a с помощью фильтра `amerge`:
+    ```shell
+    ffmpeg -i video.mkv -i audio.m4a -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 0:v -map "[a]" -c:v copy -ac 2 -shortest output.mkv
+    ```

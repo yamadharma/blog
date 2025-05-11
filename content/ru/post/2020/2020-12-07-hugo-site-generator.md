@@ -2,7 +2,7 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2025-04-16T14:23:00+03:00
+lastmod: 2025-05-09T13:12:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -53,28 +53,52 @@ slug: "hugo-site-generator"
 -   [Создание сайта на Hugo]({{< relref "2022-04-12-creating-hugo-site" >}})
 
 
-## <span class="section-num">7</span> Ресурсы {#ресурсы}
+## <span class="section-num">7</span> Варианты программы {#варианты-программы}
 
 
-### <span class="section-num">7.1</span> Учебные материалы {#учебные-материалы}
+### <span class="section-num">7.1</span> deploy {#deploy}
+
+-   Свойство `deploy` в Hugo --- это команда CLI, позволяющая напрямую развертывать статический сайт в облачных хранилищах: Amazon S3, Azure Blob Storage или Google Cloud Storage.
+-   Требуется расширенная версия Hugo (Hugo extended/deploy edition).
+-   Основные особенности:
+    -   Конфигурация целей развёртывания
+        -   В файле конфигурации сайта (например, `hugo.yaml`) указываются параметры цели: имя и URL бакета с регионом (например, `s3://my_bucket?region=us-west-1`).
+    -   Синхронизация файлов
+        -   Команда `hugo deploy` синхронизирует содержимое локальной папки `public` с удалённым бакетом, сравнивая имена файлов, их размеры и MD5-хеши.
+        -   Изменённые или отсутствующие файлы перезаписываются, а лишние удаляются (с ограничением на удаление не более 256 файлов по умолчанию).
+    -   Дополнительные флаги
+        -   `--force` : принудительная перезапись всех файлов;
+        -   `--dryRun` : предпросмотр изменений без применения;
+        -   `--maxDeletes` : изменение лимита на удаление файлов.
+
+-   Перед использованием необходимо:
+    -   Настроить аутентификацию через CLI выбранного облачного провайдера (AWS, Azure, Google Cloud);
+    -   Создать бакет с публичным доступом для статического сайта.
+-   Документация: <https://gohugo.io/host-and-deploy/deploy-with-hugo-deploy/>
+
+
+## <span class="section-num">8</span> Ресурсы {#ресурсы}
+
+
+### <span class="section-num">8.1</span> Учебные материалы {#учебные-материалы}
 
 -   Учебные материалы:
     -   <https://hugo-mini-course.netlify.app/ru/>
 
 
-### <span class="section-num">7.2</span> Модули {#модули}
+### <span class="section-num">8.2</span> Модули {#модули}
 
 
-#### <span class="section-num">7.2.1</span> hugo-modules {#hugo-modules}
+#### <span class="section-num">8.2.1</span> hugo-modules {#hugo-modules}
 
 -   Репозиторий: <https://github.com/gethugothemes/hugo-modules>
 -   Сайт: <https://gethugothemes.com/hugo-modules>
 
 
-### <span class="section-num">7.3</span> Темы {#темы}
+### <span class="section-num">8.3</span> Темы {#темы}
 
 
-#### <span class="section-num">7.3.1</span> hugobricks {#hugobricks}
+#### <span class="section-num">8.3.1</span> hugobricks {#hugobricks}
 
 -   Сайт: <https://www.hugobricks.preview.usecue.com>
 -   Репозитоирий: <https://github.com/jhvanderschee/hugobricks>

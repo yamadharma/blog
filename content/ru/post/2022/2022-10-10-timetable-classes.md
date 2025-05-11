@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-04-17T12:57:00+03:00
+lastmod: 2025-05-09T12:21:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -901,59 +901,120 @@ slug: "timetable-classes"
 1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[0/3]</code> {#сессия-семестр-2-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[0/2]</code> {#сессия-семестр-2-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Дифзачёты, семестр 2, 2024--2025
+1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2024--2025 <code>[0/4]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Дифзачёт, 2024--2025, Основы информационной безопасности
+    1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен <code>[0/3]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НКНбд
+
+            -   НКНбд-01-22, 10:00, ауд. 297
+
+        <!--list-separator-->
+
+        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НФИбд
+
+            -   НФИбд-01-22, 11:00, ауд. 295
+            -   НФИбд-02-22, 10:00, ауд. 297
+
+        <!--list-separator-->
+
+        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НПИбд
+
+            -   НПИбд-01-22, 12:00, ауд. 295
+            -   НПИбд-02-22, 12:00, ауд. 297
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, экзамен  <code>[0/4]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo todo TODO">TODO</span>  Компьютерные науки и технология программирования, 2024--2025, экзамен, НММбд
+
+            -   НММбд-01-24, 10:00, ауд. 295
+            -   НММбд-02-24, 10:00, ауд. 297
+            -   НММбд-03-24, 11:00, ауд. 295
+            -   НММбд-04-43, 11:00, ауд. 297
+
+        <!--list-separator-->
+
+        2. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НБИбд
+
+            -   НБИбд-01-24, 12:00, ауд. 295
+            -   НБИбд-02-24, 12:00, ауд. 297
+            -   НБИбд-03-24, 13:00, ауд. 295
+
+        <!--list-separator-->
+
+        3. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НКАбд
+
+            -   НКАбд-01-24, 10:00, ауд. 295
+            -   НКАбд-02-24, 10:00, ауд. 297
+            -   НКАбд-03-24, 11:00, ауд. 295
+            -   НКАбд-04-24, 11:00, ауд. 297
+            -   НКАбд-05-24, 12:00, ауд. 295
+
+        <!--list-separator-->
+
+        4. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НПИбд
+
+            -   НПИбд-01-24, 12:00, ауд. 297
+            -   НПИбд-02-24, 13:00, ауд. 295
+            -   НПИбд-03-24, 13:00, ауд. 297
+
+    <!--list-separator-->
+
+    3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен <code>[0/3]</code>
+
+        <!--list-separator-->
+
+        1. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НКАбд
+
+            -   НКАбд-01-23, 10:00, ауд. 295
+            -   НКАбд-02-23, 10:00, ауд. 297
+            -   НКАбд-03-23, 11:00, ауд. 295
+            -   НКАбд-04-23, 11:00, ауд. 297
+
+        <!--list-separator-->
+
+        2. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НПИбд
+
+            -   НПИбд-01-23, 12:00, ауд. 295
+            -   НПИбд-02-23, 12:00, ауд. 297
+            -   НПИбд-03-23, 13:00, ауд. 295
+
+        <!--list-separator-->
+
+        3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НБИбд
+
+            -   НБИбд-01-23, 13:00, ауд. 297
+            -   НБИбд-02-23, 14:00, ауд. 295
+
+    <!--list-separator-->
+
+    4. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, экзамен <code>[/]</code>
+
+        <!--list-separator-->
+
+        1.  Имитационное моделирование, 2024--2025, экзамен
+
+            -   НКНбд-01-22, 10:00, ауд. 299
+            -   НФИбд-01-22, 10:00, ауд. 298
+            -   НФИбд-02-22, 11:00, ауд. 299
+            -   НПИбд-01-22, 10:00, ауд. 214
+            -   НПИбд-02-22, 10:00, ауд. 214
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2024--2025 <code>[0/2]</code>
-
-    <!--list-separator-->
-
-    1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс), экзамен <code>[0/3]</code>
-
-        <!--list-separator-->
-
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.01, экзамен
-
-        <!--list-separator-->
-
-        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 02.03.02, экзамен
-
-        <!--list-separator-->
-
-        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 09.03.03, экзамен
-
-    <!--list-separator-->
-
-    2. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2024--2025, Операционные системы <code>[0/4]</code>
-
-        <!--list-separator-->
-
-        1. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2024--2025, Компьютерные науки и технология программирования
-
-        <!--list-separator-->
-
-        2. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2024--2025, Архитектура компьютеров и операционные системы
-
-        <!--list-separator-->
-
-        3. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2024--2025, Архитектура компьютеров и операционные системы
-
-        <!--list-separator-->
-
-        4. <span class="org-todo todo TODO">TODO</span>  Экзамен, 2024--2025, Архитектура компьютеров и операционные системы
-
-<!--list-separator-->
-
-3. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2024--2025  <code>[0/2]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2024--2025  <code>[0/2]</code>
 
     <!--list-separator-->
 

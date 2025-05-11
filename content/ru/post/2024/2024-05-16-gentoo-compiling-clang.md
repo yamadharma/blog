@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-03-30T20:00:00+03:00
+lastmod: 2025-04-29T14:17:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -221,6 +221,7 @@ slug: "gentoo-compiling-clang"
     dev-lang/gprolog				compiler-clang-mold
     dev-lang/harbour				compiler-gcc
     dev-lang/rust					compiler-gcc
+    # dev-lang/rust					compiler-clang-mold-19
     dev-libs/cereal					compiler-clang-mold-18
     dev-libs/efl					compiler-clang-mold-18
     dev-libs/ffcall					compiler-gcc
@@ -340,6 +341,7 @@ slug: "gentoo-compiling-clang"
     x11-misc/redshift				compiler-gcc
     x11-misc/virtualgl				compiler-clang-mold
     dev-util/android-tools				compiler-gcc
+    net-misc/remmina				compiler-gcc
     ```
 
 
@@ -462,7 +464,32 @@ LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 </div>
 
 
-#### <span class="section-num">4.3.6</span> clang + binutils {#clang-plus-binutils}
+#### <span class="section-num">4.3.6</span> clang-19 + mold {#clang-19-plus-mold}
+
+```conf-unix
+# Normal settings here
+COMMON_FLAGS="-O2 -march=native"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+CLANG_NO_DEFAULT_CONFIG=1
+
+CC="clang-19"
+CPP="clang-cpp-19"
+CXX="clang++-19"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+OBJCOPY="llvm-objcopy"
+LD="mold"
+LDFLAGS="${LDFLAGS} -fuse-ld=mold"
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
+  /etc/portage/env/compiler-clang-mold-19
+</div>
+
+
+#### <span class="section-num">4.3.7</span> clang + binutils {#clang-plus-binutils}
 
 -   Конфигурация для компилятора /clang/в файле `/etc/portage/env/compiler-clang-binutils`:
     ```conf-unix
@@ -477,7 +504,7 @@ LDFLAGS="${LDFLAGS} -fuse-ld=mold"
     LD="ld"
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 13:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 14:</span>
       /etc/portage/env/compiler-clang-binutils
     </div>
 

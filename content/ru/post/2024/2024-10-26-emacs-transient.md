@@ -2,14 +2,15 @@
 title: "Emacs. Пакет transient"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-26T17:24:00+03:00
-lastmod: 2024-10-26T17:36:00+03:00
+lastmod: 2025-04-24T16:27:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-transient"
 ---
 
-Emacs. Пакет transient.
+-   Emacs. Пакет transient.
+-   Реализация концепции transient menu (см. [Интерфейс. Transient menu]({{< relref "2025-04-24--transient-menu-interface" >}}))
 
 <!--more-->
 

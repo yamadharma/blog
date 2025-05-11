@@ -2,7 +2,7 @@
 title: "Переход на Sway"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-09-10T10:33:15+03:00
-lastmod: 2024-08-21T21:20:00+03:00
+lastmod: 2025-04-23T18:32:00+03:00
 tags: ["wayland", "gentoo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -88,7 +88,7 @@ emaint sync --repo guru
 -   Идентификатор устройства используется в файле конфигурации:
     ```conf-unix
     input <identifier> {
-    # ...config options...
+            # ...config options...
     }
     ```
 -   Можно иметь несколько конфигураций для разных устройств:
@@ -115,9 +115,9 @@ emaint sync --repo guru
     ```conf-unix
     # or input <identifier>
     input "type:keyboard" {
-    xkb_layout us,de
-    xkb_variant ,nodeadkeys
-    xkb_options grp:alt_shift_toggle
+            xkb_layout us,de
+            xkb_variant ,nodeadkeys
+            xkb_options grp:alt_shift_toggle
     }
     ```
 -   Настройка модификаций доступна через `xkb_options`.
@@ -129,6 +129,7 @@ emaint sync --repo guru
 
 #### <span class="section-num">4.2.1</span> Примеры модификации {#примеры-модификации}
 
+-   [Клавиатура. xkb]({{< relref "2025-04-22--keyboard-xkb" >}})
 -   _Caps Lock_ работает как _Escape_: `xkb_options caps:escape`.
 -   Поменять местами _Escape_ и _Caps Lock_: `xkb_options caps:swapescape`.
 -   _Caps Lock_ меняется с _Control_: `xkb_options ctrl:nocaps`.

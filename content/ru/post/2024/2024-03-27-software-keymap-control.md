@@ -2,7 +2,7 @@
 title: "Программное управление раскладкой клавиатуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-03-27T21:28:00+03:00
-lastmod: 2024-11-13T14:44:00+03:00
+lastmod: 2025-04-22T14:20:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -100,3 +100,8 @@ slug: "software-keymap-control"
 
 -   Репозиторий: <https://github.com/TeXitoi/keyberon>
 -   Язык реализации: Rust.
+
+
+## <span class="section-num">3</span> Логическое управление раскладкой {#логическое-управление-раскладкой}
+
+-   [Клавиатура. xkb]({{< relref "2025-04-22--keyboard-xkb" >}})

@@ -2,7 +2,7 @@
 title: "Pdf. Оглавление. pdf.tocgen"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-21T20:36:00+03:00
-lastmod: 2024-11-11T15:58:00+03:00
+lastmod: 2025-05-10T16:57:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -194,4 +194,60 @@ Pdf. Оглавление. pdf.tocgen.
 -   Поиск только на странице 203:
     ```shell
     pdfxmeta -p 203 onlisp.pdf "anaphoric"
+    ```
+
+
+## <span class="section-num">5</span> Исправление номеров страниц {#исправление-номеров-страниц}
+
+-   Возможно несовпадения номеров страниц книги и pdf-файла.
+-   Возможно сдвинуть все номера страниц на некоторую величину.
+-   Скрипт изменяет номера страниц в конце строк:
+    ```shell
+    #!/bin/bash
+
+    if [ $# -ne 2 ]; then
+        echo "Использование: $0 <файл> <инкремент>"
+        exit 1
+    fi
+
+    file="$1"
+    increment="$2"
+
+    cp "$file" "${file}.bak"
+
+    awk -v inc="$increment" '
+    {
+        # Сохраняем оригинальные отступы
+        match($0, /^ */)
+        leading_space = substr($0, 1, RLENGTH)
+        content = substr($0, RLENGTH+1)
+
+        # Ищем номер страницы в формате: пробел+число(или диапазон) в конце строки
+        if (match(content, /([0-9]+(-[0-9]+)?)[[:space:]]*$/)) {
+            prefix = substr(content, 1, RSTART-1)
+            split(substr(content, RSTART, RLENGTH), parts, "-")
+
+            # Обрабатываем числа
+            new_nums = ""
+            for(i in parts) {
+                parts[i] += inc
+                new_nums = (i>1 ? new_nums "-" : "") parts[i]
+            }
+
+            # Собираем новую строку
+            $0 = leading_space prefix new_nums
+        }
+        print
+    }' "$file" > tmp && mv tmp "$file"
+
+    echo "Номера страниц увеличены на $increment. Резервная копия: ${file}.bak"
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 1:</span>
+      increment_page.sh
+    </div>
+
+-   Пример использования:
+    ```shell
+    ./increment.sh toc 1
     ```

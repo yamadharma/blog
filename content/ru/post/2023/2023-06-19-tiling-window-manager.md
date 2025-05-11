@@ -2,7 +2,7 @@
 title: "Тайловые оконные менеджеры"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-19T09:37:00+03:00
-lastmod: 2023-11-07T16:41:00+03:00
+lastmod: 2025-04-26T20:40:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -181,18 +181,7 @@ slug: "tiling-window-manager"
 ## <span class="section-num">4</span> Тайловые оконные менеджеры для Windows {#тайловые-оконные-менеджеры-для-windows}
 
 
-### <span class="section-num">4.1</span> b3 {#b3}
-
--   Вариант i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) для Windows.
--   Репозиторий: <https://github.com/ritschmaster/b3>
-
-
-### <span class="section-num">4.2</span> komorebi {#komorebi}
-
--   Репозиторий: <https://github.com/LGUG2Z/komorebi>
-
-
-### <span class="section-num">4.3</span> GlazeWM {#glazewm}
+### <span class="section-num">4.1</span> GlazeWM {#glazewm}
 
 -   Вдохновлён i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) для Windows и Polybar.
 -   Репозиторий: <https://github.com/glazerdesktop/GlazeWM>
@@ -202,7 +191,22 @@ slug: "tiling-window-manager"
         ```shell
         winget install GlazeWM
         ```
+    -   Cocolatey:
+        ```shell
+        choco install glazewm
+        ```
 -   Устанавливается в `%LOCALAPPDATA%\Microsoft\Winget\Packages\` по умолчанию.
+
+
+### <span class="section-num">4.2</span> b3 {#b3}
+
+-   Вариант i3 (см. [Window manager i3]({{< relref "2021-05-14-window-manager-i3" >}})) для Windows.
+-   Репозиторий: <https://github.com/ritschmaster/b3>
+
+
+### <span class="section-num">4.3</span> komorebi {#komorebi}
+
+-   Репозиторий: <https://github.com/LGUG2Z/komorebi>
 
 
 ### <span class="section-num">4.4</span> bug.n {#bug-dot-n}

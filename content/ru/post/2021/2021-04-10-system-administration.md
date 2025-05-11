@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-04-12T13:18:00+03:00
+lastmod: 2025-04-24T16:56:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -61,6 +61,8 @@ slug: "system-administration"
 ### <span class="section-num">4.1</span> Общее {#общее}
 
 -   [Буфер обмена]({{< relref "2025-03-11--clipboard" >}})
+-   [Интерфейс. Transient menu]({{< relref "2025-04-24--transient-menu-interface" >}})
+-   [Броузер. Реализация transient menu]({{< relref "2025-04-24--browser-transient-menu" >}})
 
 
 ### <span class="section-num">4.2</span> Linux {#linux}

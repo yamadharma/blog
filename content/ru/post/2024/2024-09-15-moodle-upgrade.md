@@ -2,7 +2,7 @@
 title: "Moodle. Обновление"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-15T16:37:00+03:00
-lastmod: 2024-10-20T15:28:00+03:00
+lastmod: 2025-05-01T16:46:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["science", "computer-science"]
 draft: false
@@ -139,25 +139,25 @@ Moodle. Обновление.
     ```
 -   Обновите git:
     ```shell
-    git pull
+    sudo -u nginx git pull
     ```
 -   Посмотрим ветки:
     ```shell
-    git branch -a
+    sudo -u nginx git branch -a
     ```
 -   Выберите нужную ветвь:
     ```shell
-    git branch --track MOODLE_405_STABLE origin/MOODLE_405_STABLE
-    git checkout MOODLE_405_STABLE
+    sudo -u nginx git branch --track MOODLE_500_STABLE origin/MOODLE_500_STABLE
+    sudo -u nginx git checkout MOODLE_500_STABLE
     ```
 -   Исправьте разрешения:
     ```shell
-    chown -R apache:apache /var/www/moodle/
+    chown -R nginx:nginx /var/www/moodle/
     restorecon -vR /var/www/
     ```
 -   Обновите установку:
     ```shell
-    sudo -u apache /usr/bin/php /var/www/moodle/web-git/admin/cli/upgrade.php
+    sudo -u nginx /usr/bin/php /var/www/moodle/web-git/admin/cli/upgrade.php
     ```
 
 

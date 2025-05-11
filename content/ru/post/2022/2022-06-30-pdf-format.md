@@ -2,7 +2,7 @@
 title: "Формат PDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-30T18:47:00+03:00
-lastmod: 2025-01-06T14:24:00+03:00
+lastmod: 2025-04-29T16:32:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -49,21 +49,24 @@ slug: "pdf-format"
 ## <span class="section-num">3</span> Обработка PDF {#обработка-pdf}
 
 -   [Pdf. Обработка. pdfcpu]({{< relref "2023-12-02-pdf-processing-pdfcpu" >}})
+-   [Конвертация djvu в pdf. dpsprep]({{< relref "2025-04-29--convert-djvu-pdf-dpsprep" >}})
+-   [Примеры команд для обработки pdf]({{< relref "2024-04-28-examples-pdf-processing-commands" >}})
+-   [Распознавание pdf]({{< relref "2024-08-21-pdf-ocr" >}})
 
 
-## <span class="section-num">4</span> Просмотр PDF {#просмотр-pdf}
-
--   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
--   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
--   [Pdf. Просмотр. Sioyek]({{< relref "2024-04-24-pdf-viewer-sioyek" >}})
-
-
-## <span class="section-num">5</span> Оглавление в PDF {#оглавление-в-pdf}
+## <span class="section-num">4</span> Оглавление в PDF {#оглавление-в-pdf}
 
 -   [Pdf. Оглавление. pdf-toc]({{< relref "2024-06-21-pdf-toc-pdf-toc" >}})
     -   Позволяет копировать оглавление в текстовый файл и обратно загружать в pdf-файл.
 -   [Pdf. Оглавление. pdf.tocgen]({{< relref "2024-06-21-pdf-toc-pdf-tocgen" >}})
     -   Позволяет создавать оглавление на основе шаблона заголовков.
+
+
+## <span class="section-num">5</span> Просмотр PDF {#просмотр-pdf}
+
+-   [Pdf. Просмотр. Zathura]({{< relref "2023-09-20-pdf-viewer-zathura" >}})
+-   [Pdf. Поиск подстроки]({{< relref "2023-06-27-pdf-grep" >}})
+-   [Pdf. Просмотр. Sioyek]({{< relref "2024-04-24-pdf-viewer-sioyek" >}})
 
 
 ## <span class="section-num">6</span> Использование в LaTeX {#использование-в-latex}

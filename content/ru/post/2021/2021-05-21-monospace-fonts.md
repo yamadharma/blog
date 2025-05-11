@@ -2,7 +2,7 @@
 title: "Моноширинные шрифты"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-05-21T13:25:00+03:00
-lastmod: 2024-04-13T17:36:00+03:00
+lastmod: 2025-04-20T17:11:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -46,10 +46,6 @@ slug: "monospace-fonts"
 ### <span class="section-num">4.1</span> LaTeX {#latex}
 
 -   При использовании LuaTeX и XeTeX лигатуры включаются опцией `Contextuals=Alternate` пакета `fontspec`:
-    ```latex
-    \usepackage{fontspec}
-    \setmonofont{FontName}[Contextuals=Alternate]
-    ```
 
 
 ## <span class="section-num">5</span> Шрифты с лигатурами {#шрифты-с-лигатурами}
@@ -106,6 +102,7 @@ slug: "monospace-fonts"
 
 ### <span class="section-num">5.4</span> JuliaMono {#juliamono}
 
+-   [LaTeX. Шрифт JuliaMono]({{< relref "2025-04-20--latex-juliamono-font" >}})
 -   Достаточно полный набор математических символов:
     -   <https://mono-math.netlify.app/#JuliaMono>
     -   <https://coding-fonts.css-tricks.com/fonts/juliamono/?language=charmap>
@@ -115,27 +112,6 @@ slug: "monospace-fonts"
     -   Лицензия: SIL Open Font licence
     -   Лигатуры: есть
     -   Курсив: нет
--   LaTeX
-    -   Использование в LuaLaTeX и XeLaTeX:
-        ```latex
-        \usepackage{fontspec}
-
-        \newfontfamily\JuliaMono{JuliaMono}[
-        Path=./fonts/,
-        UprightFont=*-Regular,
-        BoldFont=*-Bold,
-        Extension=.ttf]
-        \newfontface\JuliaMonoRegular{JuliaMono-Regular}
-        \newfontface\JuliaMonoBold{JuliaMono-Bold}
-        \setmonofont{JuliaMono-Medium}[
-        Contextuals=Alternate,
-        Scale=0.8]
-        ```
-
-        -   Здесь шрифты расположены в локальном каталоге `./fonts`.
-        -   В зависимости от гарнитуры основного текста для кода можно использовать вместо гарнитуры `JuliaMono-Medium` гарнитуру `JuliaMono-Light`.
-    -   Стиль для `listings`:
-        -   <https://github.com/mossr/julia-mono-listings>
 
 
 ### <span class="section-num">5.5</span> Hasklig {#hasklig}
