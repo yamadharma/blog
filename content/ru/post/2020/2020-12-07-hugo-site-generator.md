@@ -2,8 +2,8 @@
 title: "Генератор статических сайтов Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-07T14:06:00+03:00
-lastmod: 2025-05-09T13:12:00+03:00
-tags: ["hugo", "sysadmin"]
+lastmod: 2025-05-21T16:49:00+03:00
+tags: ["hugo", "MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "hugo-site-generator"
@@ -102,3 +102,9 @@ slug: "hugo-site-generator"
 
 -   Сайт: <https://www.hugobricks.preview.usecue.com>
 -   Репозитоирий: <https://github.com/jhvanderschee/hugobricks>
+
+
+#### <span class="section-num">8.3.2</span> Dot Org Theme {#dot-org-theme}
+
+-   Репозиторий: <https://github.com/cncf/dot-org-hugo-theme>
+-   Сайт: <https://dot-org-hugo-theme-demo.netlify.app/>

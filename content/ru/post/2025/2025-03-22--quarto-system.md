@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-04-01T11:24:00+03:00
+lastmod: 2025-05-19T09:37:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -31,15 +31,18 @@ slug: "quarto-system"
 ## <span class="section-num">2</span> Установка {#установка}
 
 
-### <span class="section-num">2.1</span> Gentoo {#gentoo}
+### <span class="section-num">2.1</span> Windows {#windows}
 
--   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+-   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
     ```shell
-    emerge quarto
+    choco install quarto
     ```
 
 
 ### <span class="section-num">2.2</span> Linux {#linux}
+
+
+#### <span class="section-num">2.2.1</span> Linux в общем {#linux-в-общем}
 
 -   Установка с помощью скрипта:
     ```shell
@@ -72,6 +75,26 @@ slug: "quarto-system"
     ```
 
 
+#### <span class="section-num">2.2.2</span> Gentoo {#gentoo}
+
+-   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+    ```shell
+    emerge quarto
+    ```
+
+
+#### <span class="section-num">2.2.3</span> Arch {#arch}
+
+-   Arch linux:
+    ```shell
+    pacman -S quarto-cli-bin
+    ```
+-   Manjaro linux:
+    ```shell
+    pamac install quarto-cli-bin
+    ```
+
+
 ## <span class="section-num">3</span> Общий алгоритм работы {#общий-алгоритм-работы}
 
 ```mermaid
@@ -98,3 +121,5 @@ flowchart LR
 -   [Quarto. Перекрёстные ссылки]({{< relref "2025-03-23--quarto-cross-references" >}})
 -   [Quarto. Структура для книги]({{< relref "2025-03-27--quarto-book-structure" >}})
 -   [Quarto. Формат pdf]({{< relref "2025-03-27--quarto-pdf-format" >}})
+-   [Quarto. Листинги]({{< relref "2025-05-13--quarto-code-listing" >}})
+-   [Quarto. Таблицы]({{< relref "2025-05-17--quarto-table" >}})

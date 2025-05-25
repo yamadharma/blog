@@ -2,7 +2,8 @@
 title: "Мысли"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-14T17:33:00+03:00
-lastmod: 2023-07-14T17:59:00+03:00
+lastmod: 2025-05-25T21:08:00+03:00
+tags: ["MOC"]
 categories: ["thinking"]
 draft: false
 slug: "reflections"
@@ -31,3 +32,4 @@ slug: "reflections"
 -   [Синтаксис, семантика, прагматика]({{< relref "2023-05-08-syntax-semantics-pragmatics" >}})
 -   [Junior, Middle, Senior]({{< relref "2023-05-08-junior-middle-senior" >}})
 -   [Учёный и инженер]({{< relref "2023-05-09-scientist-engineer" >}})
+-   [Высокий и низкий контекст]({{< relref "2025-05-25--high-context-low-context" >}})

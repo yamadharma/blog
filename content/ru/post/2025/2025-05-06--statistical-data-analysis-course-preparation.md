@@ -2,7 +2,7 @@
 title: "Подготовка курса Компьютерный практикум по статистическому анализу данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-05-06T13:06:00+03:00
-lastmod: 2025-05-08T15:31:00+03:00
+lastmod: 2025-05-12T11:51:00+03:00
 draft: false
 slug: "statistical-data-analysis-course-preparation"
 ---

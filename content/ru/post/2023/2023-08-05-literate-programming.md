@@ -2,7 +2,7 @@
 title: "Литературное программирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-05T19:47:00+03:00
-lastmod: 2024-10-01T18:48:00+03:00
+lastmod: 2025-05-12T14:19:00+03:00
 tags: ["article", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -53,26 +53,7 @@ slug: "literate-programming"
 
 ## <span class="section-num">3</span> Реализации для разных языков программирования {#реализации-для-разных-языков-программирования}
 
-
-### <span class="section-num">3.1</span> Julia {#julia}
-
-
-#### <span class="section-num">3.1.1</span> Literate.jl {#literate-dot-jl}
-
--   Репозиторий: <https://github.com/fredrikekre/Literate.jl>
--   Документация: <https://fredrikekre.github.io/Literate.jl>
-
-
-#### <span class="section-num">3.1.2</span> Weave.jl {#weave-dot-jl}
-
--   Репозиторий: <https://github.com/JunoLab/Weave.jl>
--   Документация: <https://weavejl.mpastell.com>
-
-
-#### <span class="section-num">3.1.3</span> Documenter.jl {#documenter-dot-jl}
-
--   Репозиторий: <https://github.com/JuliaDocs/Documenter.jl>
--   Документация: <https://documenter.juliadocs.org>
+-   [Julia. Литературное программирование]({{< relref "2025-05-12--julia-literate-programming" >}})
 
 
 ## <span class="section-num">4</span> Утилиты для литературного программирования {#утилиты-для-литературного-программирования}

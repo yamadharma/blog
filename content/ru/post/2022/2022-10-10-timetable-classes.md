@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-05-09T12:21:00+03:00
+lastmod: 2025-05-23T10:44:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -275,11 +275,11 @@ slug: "timetable-classes"
 #### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-4-четверть}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[0/17]</code> {#2024-2025-учебный-год-2-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[1/17]</code> {#2024-2025-учебный-год-2-семестр}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
+1. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
 
     <!--list-separator-->
 

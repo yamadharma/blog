@@ -2,7 +2,9 @@
 title: "Формат CSV. csvkit"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-06T18:29:00+03:00
-lastmod: 2023-07-06T20:40:00+03:00
+lastmod: 2025-05-24T18:38:00+03:00
+tags: ["programming"]
+categories: ["computer-science"]
 draft: false
 slug: "csv-csvkit"
 ---
@@ -23,7 +25,15 @@ slug: "csv-csvkit"
 -   Имеет встроенную поддержку для чтения входных файлов, сжатых в gzip, bz2 и xz (LZMA). Сжатие автоматически определяется на основе расширения файла и не требует добавления дополнительных опций.
 
 
-## <span class="section-num">2</span> Примеры {#примеры}
+## <span class="section-num">2</span> Установка {#установка}
+
+-   Установка с помощью pipx:
+    ```shell
+    pipx install csvkit
+    ```
+
+
+## <span class="section-num">3</span> Примеры {#примеры}
 
 -   Конвертировать Excel в CSV:
     ```shell
@@ -71,7 +81,7 @@ slug: "csv-csvkit"
     ```
 
 
-## <span class="section-num">3</span> Список утилит {#список-утилит}
+## <span class="section-num">4</span> Список утилит {#список-утилит}
 
 -   `in2csv`: преобразует различные форматы табличных данных в CSV (dbf, fixed, geojson, json, ndjson, xls, xlsx).
 -   `csvstat`: выводит описательную статистику для всех столбцов в файле CSV. Определяет тип каждого столбца, а затем выводит статистику (диапазоны для дат, среднее значение и медиана для целых чисел и т. д.).
@@ -91,7 +101,7 @@ slug: "csv-csvkit"
 -   `csvpy`: загружает CSV-файл в объект agate.csv.Reader, а затем переходит в оболочку Python, чтобы пользователь мог просматривать данные так, как считает нужным.
 
 
-## <span class="section-num">4</span> Общие ключи {#общие-ключи}
+## <span class="section-num">5</span> Общие ключи {#общие-ключи}
 
 -   `-d DELIMITER`, `--delimiter DELIMITER`: символ-разделитель входного CSV-файла.
 -   `-t`, `--tabs`: указывает, что входной файл CSV разделен табуляцией. Переопределяет `-d`.
@@ -117,15 +127,15 @@ slug: "csv-csvkit"
 -   `--zero`: при интерпретации или отображении номеров столбцов используйте нумерацию, начинающуюся с нуля, вместо нумерации по умолчанию, начинающуюся с 1.
 
 
-## <span class="section-num">5</span> Отдельные утилиты {#отдельные-утилиты}
+## <span class="section-num">6</span> Отдельные утилиты {#отдельные-утилиты}
 
 
-### <span class="section-num">5.1</span> in2csv {#in2csv}
+### <span class="section-num">6.1</span> in2csv {#in2csv}
 
 -   Преобразование данных в CSV.
 
 
-#### <span class="section-num">5.1.1</span> Примеры {#примеры}
+#### <span class="section-num">6.1.1</span> Примеры {#примеры}
 
 -   Посмотрим файл Excell через csvkit:
     ```shell
@@ -140,7 +150,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.1.2</span> Параметры утилиты in2csv {#параметры-утилиты-in2csv}
+#### <span class="section-num">6.1.2</span> Параметры утилиты in2csv {#параметры-утилиты-in2csv}
 
 -   `-f {csv,dbf,fixed,geojson,json,ndjson,xls,xlsx}`: формат входного файла. Если не указано, будет определяться из типа файла.
 -   `-s SCHEMA`, `--schema SCHEMA`: файл схемы в формате CSV для преобразования файлов фиксированной ширины.
@@ -151,12 +161,12 @@ slug: "csv-csvkit"
 -   `--encoding-xls ENCODING_XLS`: кодировка входного XLS-файла.
 
 
-### <span class="section-num">5.2</span> csvlook {#csvlook}
+### <span class="section-num">6.2</span> csvlook {#csvlook}
 
 -   Удобный просмотр CSV-данных.
 
 
-#### <span class="section-num">5.2.1</span> Примеры {#примеры}
+#### <span class="section-num">6.2.1</span> Примеры {#примеры}
 
 -   Просмотр файла:
     ```shell
@@ -164,19 +174,19 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.2.2</span> Параметры утилиты csvlook {#параметры-утилиты-csvlook}
+#### <span class="section-num">6.2.2</span> Параметры утилиты csvlook {#параметры-утилиты-csvlook}
 
 -   `--max-rows MAX_ROWS`: максимальное количество отображаемых строк перед усечением данных.
 -   `--max-columns MAX_COLUMNS`: максимальное количество столбцов для отображения до усечения данных.
 -   `--max-column-width MAX_COLUMN_WIDTH`: обрезать все столбцы не более чем до этой ширины. Остаток будет заменен многоточием.
 
 
-### <span class="section-num">5.3</span> csvcut {#csvcut}
+### <span class="section-num">6.3</span> csvcut {#csvcut}
 
 -   Просмотр определенных столбцов CSV.
 
 
-#### <span class="section-num">5.3.1</span> Примеры {#примеры}
+#### <span class="section-num">6.3.1</span> Примеры {#примеры}
 
 -   Набор данных состоит из четырнадцати столбцов. Посмотрим только на столбцы 2, 5 и 6, тем самым сократим выходные данные всего до трех столбцов:
     ```shell
@@ -192,7 +202,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.3.2</span> Параметры утилиты csvcut {#параметры-утилиты-csvcut}
+#### <span class="section-num">6.3.2</span> Параметры утилиты csvcut {#параметры-утилиты-csvcut}
 
 -   `-n`, `--names`: выводит имена столбцов и индексы из входного CSV-файла и выходит.
 -   `-c COLUMNS`, `--columns COLUMNS`: разделенный запятыми список индексов столбцов, имен или диапазонов, подлежащих извлечению, например "1,id,3-5". По умолчанию все столбцы.
@@ -200,12 +210,12 @@ slug: "csv-csvkit"
 -   `-x`, `--delete-empty-rows`: после вырезания удаляет полностью пустые строки
 
 
-### <span class="section-num">5.4</span> csvstat {#csvstat}
+### <span class="section-num">6.4</span> csvstat {#csvstat}
 
 -   Статистика.
 
 
-#### <span class="section-num">5.4.1</span> Примеры {#примеры}
+#### <span class="section-num">6.4.1</span> Примеры {#примеры}
 
 -   Рассмотрим сводную статистику для нескольких столбцов из набора данных:
     ```shell
@@ -216,7 +226,7 @@ slug: "csv-csvkit"
     -   Конкретная вычисляемая статистика зависит от типа столбца (числа, текст, даты и т.д.).
 
 
-#### <span class="section-num">5.4.2</span> Параметры CLI утилиты csvstat: {#параметры-cli-утилиты-csvstat}
+#### <span class="section-num">6.4.2</span> Параметры CLI утилиты csvstat: {#параметры-cli-утилиты-csvstat}
 
 -   `--csv`: выводить результаты в формате CSV, а не в виде текста.
 -   `-n`, `--names`: показать имена столбцов и индексы из входного CSV и выйти.
@@ -238,12 +248,12 @@ slug: "csv-csvkit"
 -   `-G`, `--no-grouping-separator`: не использует группирующие разделители в десятичных числах.
 
 
-### <span class="section-num">5.5</span> csvgrep {#csvgrep}
+### <span class="section-num">6.5</span> csvgrep {#csvgrep}
 
 -   Поиск данных.
 
 
-#### <span class="section-num">5.5.1</span> Примеры {#примеры}
+#### <span class="section-num">6.5.1</span> Примеры {#примеры}
 
 -   Поиск подстроки среди столбцов/строк.
 -   Дополнительно используем csvcut, чтобы просмотреть интересующие столбцы, и csvlook для форматирования вывода:
@@ -252,7 +262,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.5.2</span> Параметры утилиты csvgrep {#параметры-утилиты-csvgrep}
+#### <span class="section-num">6.5.2</span> Параметры утилиты csvgrep {#параметры-утилиты-csvgrep}
 
 -   `-n`, `--names`: отображение имен столбцов и индексов из входного CSV.
 -   `-c COLUMNS`, `--columns COLUMNS`: разделенный запятыми список индексов столбцов, имен или диапазонов для поиска, например. '1,id,3-5'.
@@ -263,12 +273,12 @@ slug: "csv-csvkit"
 -   `-a`, `--any-match`: выбирает строки, в которых соответствует любой столбец, а не все столбцы
 
 
-### <span class="section-num">5.6</span> csvsort {#csvsort}
+### <span class="section-num">6.6</span> csvsort {#csvsort}
 
 -   Сортировка данных.
 
 
-#### <span class="section-num">5.6.1</span> Примеры {#примеры}
+#### <span class="section-num">6.6.1</span> Примеры {#примеры}
 
 -   Сортировка строк по столбцу `total_cost` в обратном (убывающем) порядке:
     ```shell
@@ -276,7 +286,7 @@ slug: "csv-csvkit"
     ```
 
 
-### <span class="section-num">5.7</span> csvjoin {#csvjoin}
+### <span class="section-num">6.7</span> csvjoin {#csvjoin}
 
 -   Объединение связанных данных.
 -   Позволяет взять два набора данных и объединить их, как с запросом SQL `JOIN`.
@@ -285,7 +295,7 @@ slug: "csv-csvkit"
 -   Операция соединения требует чтения всех файлов в память.
 
 
-#### <span class="section-num">5.7.1</span> Примеры {#примеры}
+#### <span class="section-num">6.7.1</span> Примеры {#примеры}
 
 -   Например:
     ```shell
@@ -302,7 +312,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.7.2</span> Параметры утилиты csvjoin {#параметры-утилиты-csvjoin}
+#### <span class="section-num">6.7.2</span> Параметры утилиты csvjoin {#параметры-утилиты-csvjoin}
 
 -   `-c COLUMNS`, `--columns COLUMNS`: имена столбцов, к которым необходимо присоединиться. Должно быть либо одно имя (или индекс), либо список, разделенный запятыми, с одним именем (или индексом) для каждого файла в том же порядке, в котором файлы были указаны. Если не указано, два файла будут соединены последовательно без сопоставления.
 -   `--outer`: выполняет полное внешнее соединение, а не внутреннее соединение по умолчанию.
@@ -311,12 +321,12 @@ slug: "csv-csvkit"
 -   `-I`, `--no-inference`: отключает определение типа при анализе CSV.
 
 
-### <span class="section-num">5.8</span> csvstack {#csvstack}
+### <span class="section-num">6.8</span> csvstack {#csvstack}
 
 -   Объединение подмножеств.
 
 
-#### <span class="section-num">5.8.1</span> Примеры {#примеры}
+#### <span class="section-num">6.8.1</span> Примеры {#примеры}
 
 -   Соединить строки из CSV-файлов с одинаковыми столбцами (и одинаковыми именами столбцов):
     ```shell
@@ -333,19 +343,19 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.8.2</span> Параметры утилиты csvstack {#параметры-утилиты-csvstack}
+#### <span class="section-num">6.8.2</span> Параметры утилиты csvstack {#параметры-утилиты-csvstack}
 
 -   `-g GROUPS`, `--groups GROUPS`: список значений, разделенных запятыми, для добавления в качестве "факторов группировки", по одному для каждого складываемого CSV-файла. Они добавляются к выходным данным как новый столбец. Можно указать имя для нового столбца, используя флаг `-n`.
 -   `-n GROUP_NAME`, `--group-name GROUP_NAME`: имя столбца группировки, например. 'year'. Используется только при указании `-g`.
 -   `--filenames`: использует имя файла каждого входного файла в качестве значения его группировки. Если указано, `-g` будет игнорироваться.
 
 
-### <span class="section-num">5.9</span> csvsql {#csvsql}
+### <span class="section-num">6.9</span> csvsql {#csvsql}
 
 -   Создание базы данных из CSV-файла.
 
 
-#### <span class="section-num">5.9.1</span> Примеры {#примеры}
+#### <span class="section-num">6.9.1</span> Примеры {#примеры}
 
 -   По умолчанию `csvsql` сгенерирует SQL-код для создания таблицы для данных в CSV-файле.
 -   Можно указать желаемую базу данных (для которой генерируется код создания таблицы) с флагом `-i`:
@@ -363,7 +373,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.9.2</span> Параметры утилиты csvsql {#параметры-утилиты-csvsql}
+#### <span class="section-num">6.9.2</span> Параметры утилиты csvsql {#параметры-утилиты-csvsql}
 
 -   `-i {firebird,mssql,mysql,oracle,postgresql,sqlite,sybase,crate}`: диалект SQL для генерации. Не может использоваться с `--db`.
 -   `--db CONNECTION_STRING`: строка подключения, используемая для непосредственного выполнения сгенерированного SQL в базе данных.
@@ -383,12 +393,12 @@ slug: "csv-csvkit"
 -   `--chunk-size CHUNK_SIZE`: размер данных для пакетной вставки в таблицу. Требует `--insert`.
 
 
-### <span class="section-num">5.10</span> sql2csv {#sql2csv}
+### <span class="section-num">6.10</span> sql2csv {#sql2csv}
 
 -   Запросы к базам данных.
 
 
-#### <span class="section-num">5.10.1</span> Примеры {#примеры}
+#### <span class="section-num">6.10.1</span> Примеры {#примеры}
 
 -   Проверить, что данные были успешно импортированы:
     ```shell
@@ -400,7 +410,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.10.2</span> Параметры утилиты sql2csv {#параметры-утилиты-sql2csv}
+#### <span class="section-num">6.10.2</span> Параметры утилиты sql2csv {#параметры-утилиты-sql2csv}
 
 -   `--db CONNECTION_STRING`: cтрока подключения к базе данных (как в sqlalchemy).
 -   `--query QUERY`: SQL-запрос для выполнения. Переопределяет FILE и STDIN.
@@ -408,14 +418,14 @@ slug: "csv-csvkit"
 -   `-H`, `--no-header-row`: не выводить имена столбцов.
 
 
-### <span class="section-num">5.11</span> csvjson {#csvjson}
+### <span class="section-num">6.11</span> csvjson {#csvjson}
 
 -   Преобразование CSV-данных в JSON.
 -   Очень часто одним из последних шагов в любом анализе данных является размещение данных в Интернете для отображения в виде таблицы, карты или диаграммы.
 -   Для этого, чаще всего нужен JSON.
 
 
-#### <span class="section-num">5.11.1</span> Примеры {#примеры}
+#### <span class="section-num">6.11.1</span> Примеры {#примеры}
 
 -   Воспользуемся `csvcut` и `csvgrep` для преобразования небольшого фрагмента данных:
     ```shell
@@ -423,7 +433,7 @@ slug: "csv-csvkit"
     ```
 
 
-#### <span class="section-num">5.11.2</span> Параметры утилиты csvjson {#параметры-утилиты-csvjson}
+#### <span class="section-num">6.11.2</span> Параметры утилиты csvjson {#параметры-утилиты-csvjson}
 
 -   `-i INDENT`, `--indent INDENT`: отступ в выходном JSON на это количество пробелов. Отключено по умолчанию.
 -   `-k KEY`, `--key KEY`: выводит JSON как объект, обозначенный заданным столбцом KEY, а не как массив. Все значения столбцов должны быть уникальными.

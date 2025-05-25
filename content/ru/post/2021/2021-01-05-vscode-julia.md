@@ -2,7 +2,7 @@
 title: "VSCode. Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-05T19:48:00+03:00
-lastmod: 2023-09-11T16:43:00+03:00
+lastmod: 2025-05-12T09:00:00+03:00
 tags: ["julia", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -25,7 +25,15 @@ slug: "vscode-julia"
 -   <https://github.com/julia-vscode/julia-vscode>
 
 
-#### <span class="section-num">1.1.1</span> Сочетания клавиш для REPL {#сочетания-клавиш-для-repl}
+#### <span class="section-num">1.1.1</span> Установка {#установка}
+
+-   Запустите в терминале:
+    ```shell
+    code --install-extension julialang.language-julia
+    ```
+
+
+#### <span class="section-num">1.1.2</span> Сочетания клавиш для REPL {#сочетания-клавиш-для-repl}
 
 <!--list-separator-->
 

@@ -2,7 +2,7 @@
 title: "Клавиатура. xkb"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-22T14:17:00+03:00
-lastmod: 2025-04-22T15:41:00+03:00
+lastmod: 2025-05-21T10:34:00+03:00
 tags: ["linux", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -16,7 +16,10 @@ slug: "keyboard-xkb"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Переключение раскладок {#переключение-раскладок}
+## <span class="section-num">1</span> Общая инфорация {#общая-инфорация}
+
+
+## <span class="section-num">2</span> Переключение раскладок {#переключение-раскладок}
 
 -   Клавиши-модификаторы:
     -   `grp:alt_shift_toggle` --- Alt + Shift;
@@ -41,7 +44,7 @@ slug: "keyboard-xkb"
     -   `grp_led:num` --- Индикация через Num Lock LED
 
 
-## <span class="section-num">2</span> Третий уровень символов (level3) {#третий-уровень-символов--level3}
+## <span class="section-num">3</span> Третий уровень символов (level3) {#третий-уровень-символов--level3}
 
 -   Активация:
     -   `lv3:ralt_switch` --- Правый Alt (AltGr);
@@ -53,7 +56,7 @@ slug: "keyboard-xkb"
     -   `lv3:lsgt_switch` --- Клавиша "&lt; &gt; |" (удерживать)
 
 
-## <span class="section-num">3</span> Compose Key {#compose-key}
+## <span class="section-num">4</span> Compose Key {#compose-key}
 
 -   `compose:ralt` --- Правый Alt;
 -   `compose:rwin` --- Правая Win;
@@ -63,7 +66,7 @@ slug: "keyboard-xkb"
 -   `compose:prsc` --- Print Screen
 
 
-## <span class="section-num">4</span> Переназначение клавиш {#переназначение-клавиш}
+## <span class="section-num">5</span> Переназначение клавиш {#переназначение-клавиш}
 
 -   `ctrl:nocaps` --- Caps Lock → Ctrl;
 -   `ctrl:swapcaps` --- Поменять местами Caps Lock и Ctrl;
@@ -72,7 +75,7 @@ slug: "keyboard-xkb"
 -   `caps:swapescape` --- Caps Lock ↔ Esc
 
 
-## <span class="section-num">5</span> Управление из командной строки {#управление-из-командной-строки}
+## <span class="section-num">6</span> Управление из командной строки {#управление-из-командной-строки}
 
 -   Просмотр всех доступных параметров:
     ```shell
@@ -80,7 +83,7 @@ slug: "keyboard-xkb"
     ```
 
 
-### <span class="section-num">5.1</span> Настройки в x11 {#настройки-в-x11}
+### <span class="section-num">6.1</span> Настройки в x11 {#настройки-в-x11}
 
 -   Переключение раскладок через Caps Lock + Shift с индикацией через Scroll Lock LED:
     ```shell
@@ -98,7 +101,7 @@ slug: "keyboard-xkb"
     ```
 
 
-### <span class="section-num">5.2</span> Настройки в sway {#настройки-в-sway}
+### <span class="section-num">6.2</span> Настройки в sway {#настройки-в-sway}
 
 -   Переключить на английский:
     ```shell

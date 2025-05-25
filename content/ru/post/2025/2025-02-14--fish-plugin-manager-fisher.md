@@ -2,7 +2,7 @@
 title: "Fish. Менеджер плагинов Fisher"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-14T21:10:00+03:00
-lastmod: 2025-02-14T21:28:00+03:00
+lastmod: 2025-05-24T13:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -71,3 +71,8 @@ Fish. Менеджер плагинов Fisher.
     ```shell
     fisher remove <user_name>/<repo_name>
     ```
+
+
+## <span class="section-num">4</span> Ресурсы {#ресурсы}
+
+-   Fish Awesome: <https://github.com/jorgebucaran/awsm.fish>

@@ -1,15 +1,15 @@
 ---
-title: "kanata. Пример конфигурации"
+title: "Пример конфигурации раскладки клавиатуры"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-23T18:33:00+03:00
-lastmod: 2025-05-09T17:27:00+03:00
+lastmod: 2025-05-21T16:51:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
 slug: "kanata-configuration-example"
 ---
 
-Kantata. Моя конфигурация.
+Моя раскладка клавиатуры.
 
 <!--more-->
 
@@ -22,7 +22,12 @@ Kantata. Моя конфигурация.
 -   Сделана на основе Kenkyo (см. [Клавиатура. Раскладка Kenkyo]({{< relref "2025-05-07--keyboard-layout-kenkyo" >}})).
 
 
-### <span class="section-num">1.1</span> Общие настройки {#общие-настройки}
+### <span class="section-num">1.1</span> Настройка на основе kanata {#настройка-на-основе-kanata}
+
+-   [Раскладка клавиатуры. kanata]({{< relref "2024-11-13-keymap-control-kanata" >}})
+
+
+#### <span class="section-num">1.1.1</span> Общие настройки {#общие-настройки}
 
 -   Базовая конфигурация.
 -   Разрешаем использование команд оболочки.
@@ -45,7 +50,7 @@ Kantata. Моя конфигурация.
     ```
 
 
-### <span class="section-num">1.2</span> Структура раскладки {#структура-раскладки}
+#### <span class="section-num">1.1.2</span> Структура раскладки {#структура-раскладки}
 
 -   Структура раскладки:
     ```lisp
@@ -59,7 +64,7 @@ Kantata. Моя конфигурация.
     ```
 
 
-### <span class="section-num">1.3</span> Шаблон модификаторов {#шаблон-модификаторов}
+#### <span class="section-num">1.1.3</span> Шаблон модификаторов {#шаблон-модификаторов}
 
 -   Цель: реализация Tap-Hold модификаторов (клавиша работает как символ при коротком нажатии и как модификатор при удержании).
 -   Задаём шаблон:
@@ -80,221 +85,253 @@ Kantata. Моя конфигурация.
             -   `$hold-timeout` : таймаут (мс) для возврата к символу, если модификатор не использован.
 
 
-### <span class="section-num">1.4</span> Слой main {#слой-main}
-
-
-#### <span class="section-num">1.4.1</span> Виртуальные клавиши {#виртуальные-клавиши}
-
--   Зададим виртуальные клавиши.
-
-<!--listend-->
-
-```lisp
-(defvirtualkeys
-```
+#### <span class="section-num">1.1.4</span> Слой main {#слой-main}
 
 <!--list-separator-->
 
-1.  Виртуальная клавиша shift
+1.  Виртуальные клавиши
 
-    -   Позволяет временно переключиться на базовый слой и активировать `Shift` для ввода заглавных букв/символов.
-    -   `shift` --— аналог включения `Caps Lock`.
+    -   Зададим виртуальные клавиши.
 
     <!--listend-->
 
     ```lisp
-    shift (multi (layer-switch main) lsft)
+    (defvirtualkeys
     ```
 
-    -   `(layer-switch main)` : активирует слой main (базовый слой) при нажатии клавиши `shift`.
-    -   `lsft` : при удержании даёт левый Shift.
+    <!--list-separator-->
 
-<!--list-separator-->
+    1.  Виртуальная клавиша shift
 
-2.  Клавиша сброса
+        -   Позволяет временно переключиться на базовый слой и активировать `Shift` для ввода заглавных букв/символов.
+        -   `shift` --— аналог включения `Caps Lock`.
 
-    -   Сбрасывает состояние:
-        -   Отключает `shift` (если он активен).
-        -   Гарантирует, что после использования `shift`  система вернётся к базовому слою без «залипания» модификаторов.
-    -   `clear` --— аналог выключения `Caps Lock`.
+        <!--listend-->
 
-    <!--listend-->
-
-    ```lisp
-    clear (multi (layer-switch main) (on-press release-virtualkey shift))
-    )
-    ```
-
-    -   При нажатии клавиши `clear`:
-        -   `(layer-switch main)` : возвращает на базовый слой;
-    -   `(on-press release-virtualkey shift)` : отпускает виртуальную клавишу `shift` (если она была нажата).
-
-
-#### <span class="section-num">1.4.2</span> Аккорды основного слоя {#аккорды-основного-слоя}
-
--   `w` + `e`: `Esc`
-    ```lisp
-    (defchords mtl $chord-timeout
-      (w  ) w
-      (  e) e
-      (w e) esc
-      )
-    ```
-
--   `i` + `o`: `BackSpace`
-    ```lisp
-    (defchords mtr $chord-timeout
-      (i  ) i
-      (  o) o
-      (i o) bspc
-      )
-    ```
-
--   `x` + `c`: `Tab`
--   `x` при удержании : `AltGr`
-    ```lisp
-    (defchords mbl $chord-timeout
-      (x  ) (t! charmod x ralt)
-      (  c) c
-      (x c) tab
-      )
-    ```
-
--   `,` + `.`: `Enter`
--   `.` при удержании : `AltGr`
-    ```lisp
-    (defchords mbr $chord-timeout
-      (,  ) ,
-      (  .) (t! charmod . ralt)
-      (, .) ret
-      )
-    ```
-
-
-#### <span class="section-num">1.4.3</span> Карта слоя {#карта-слоя}
-
--   Зададим уровень `main` через `deflayermap`.
--   Подключим ранее определённые аккорды:
-
-<!--listend-->
-
-```lisp
-(deflayermap (main)
-    w (chord mtl w)
-    e (chord mtl e)
-    i (chord mtr i)
-    o (chord mtr o)
-    x (chord mbl x)
-    c (chord mbl c)
-    , (chord mbr ,)
-    . (chord mbr .)
-```
-
-<!--list-separator-->
-
-1.  Home Row Mods
-
-    -   [kanata. Настройка Home Row Mods]({{< relref "2025-05-01--kanata-home-row-mods" >}})
-    -   Используется макет `GACS` / `◆⎇⎈⇧`.
-    -   Добавим описание Home Row Mods:
-
-    <!--listend-->
-
-    ```lisp
-    a (t! charmod a lmet)
-    s (t! charmod s lalt)
-    d (t! charmod d lctl)
-    f (t! charmod f lsft)
-    j (t! charmod j rsft)
-    k (t! charmod k rctl)
-    l (t! charmod l lalt)
-    ; (t! charmod ; rmet)
-    ```
-
-<!--list-separator-->
-
-2.  Дополнительные управляющие клавиши
-
-    ```lisp
-    z (t! charmod z lctl)
-    / (t! charmod / rctl)
-    ```
-
-<!--list-separator-->
-
-3.  Переключение на слой fumbol
-
-    ```lisp
-    v (t! charmod v (layer-while-held fumbol))
-    m (t! charmod m (layer-while-held fumbol))
-    ```
-
-<!--list-separator-->
-
-4.  Замена `Caps Lock` на `Ctrl` и `Escape`
-
-    -   [kanata. Клавиша Caps Lock]({{< relref "2025-05-06--kanata-capslock" >}})
-    -   Заменим `Caps Lock` на комбинацию:
-        -   простое нажатие: `Escape`;
-        -   долгое нажатие `Caps Lock` или `Caps Lock` + другая клавиша: `Ctrl`.
-            ```lisp
-            ;;;; CapsLock -> Esc, Ctrl
-            ;; caps (t! charmod esc lctl)
-            caps (tap-hold-press $tt $ht esc lctl)
-            ```
-
-<!--list-separator-->
-
-5.  Использование XKB для переключения раскладок
-
-    -   Один из подходов --- использование XKB для переключения раскладок (см. [Клавиатура. xkb]({{< relref "2025-04-22--keyboard-xkb" >}})).
-    -   Несколько команд объединяются с помощью функции `multi`.
-    -   Переключаем с помощью команд оболочки (для Sway).
         ```lisp
-        ;; Switch language
-        ralt (tap-hold-press $tt $ht (cmd swaymsg input 'type:keyboard' xkb_layout ru) ralt)
-        lalt (tap-hold-press $tt $ht (cmd swaymsg input 'type:keyboard' xkb_layout us) lalt)
+        shift (multi (layer-switch main) lsft)
+        ```
+
+        -   `(layer-switch main)` : активирует слой main (базовый слой) при нажатии клавиши `shift`.
+        -   `lsft` : при удержании даёт левый Shift.
+
+    <!--list-separator-->
+
+    2.  Клавиша сброса
+
+        -   Сбрасывает состояние:
+            -   Отключает `shift` (если он активен).
+            -   Гарантирует, что после использования `shift`  система вернётся к базовому слою без «залипания» модификаторов.
+        -   `clear` --— аналог выключения `Caps Lock`.
+
+        <!--listend-->
+
+        ```lisp
+        clear (multi (layer-switch main) (on-press release-virtualkey shift))
+        )
+        ```
+
+        -   При нажатии клавиши `clear`:
+            -   `(layer-switch main)` : возвращает на базовый слой;
+        -   `(on-press release-virtualkey shift)` : отпускает виртуальную клавишу `shift` (если она была нажата).
+
+<!--list-separator-->
+
+2.  Аккорды основного слоя
+
+    -   `w` + `e`: `Esc`
+        ```lisp
+        (defchords mtl $chord-timeout
+          (w  ) w
+          (  e) e
+          (w e) esc
+          )
+        ```
+
+    -   `i` + `o`: `BackSpace`
+        ```lisp
+        (defchords mtr $chord-timeout
+          (i  ) i
+          (  o) o
+          (i o) bspc
+          )
+        ```
+
+    -   `x` + `c`: `Tab`
+    -   `x` при удержании : `AltGr`
+        ```lisp
+        (defchords mbl $chord-timeout
+          (x  ) (t! charmod x ralt)
+          (  c) c
+          (x c) tab
+          )
+        ```
+
+    -   `,` + `.`: `Enter`
+    -   `.` при удержании : `AltGr`
+        ```lisp
+        (defchords mbr $chord-timeout
+          (,  ) ,
+          (  .) (t! charmod . ralt)
+          (, .) ret
+          )
         ```
 
 <!--list-separator-->
 
-6.  Использование пробела для переключения уровней
+3.  Карта слоя
 
-    -   Определяем поведение клавиши пробела (`spc`) с использованием Tap-Hold модификатора.
+    -   Зададим уровень `main` через `deflayermap`.
+    -   Подключим ранее определённые аккорды:
 
     <!--listend-->
 
     ```lisp
-    spc (t! charmod spc (multi (layer-switch extend) (on-release tap-virtualkey clear)))
+    (deflayermap (main)
+        w (chord mtl w)
+        e (chord mtl e)
+        i (chord mtr i)
+        o (chord mtr o)
+        x (chord mbl x)
+        c (chord mbl c)
+        , (chord mbr ,)
+        . (chord mbr .)
     ```
 
-    -   `t! charmod` --- Tap-Hold модификатор:
-        -   Короткое нажатие (tap) → отправляет `spc` (пробел).
-        -   Удержание (hold) → активирует слой `extend`.
-    -   `multi` --- выполняет несколько действий последовательно:
-        -   `(layer-switch extend)` --- переключает на слой `extend` при удержании.
-        -   `(on-release tap-virtualkey clear)` --- при отпускании клавиши отправляет виртуальную клавишу `clear`:
-            -   возвращает слой к `main`;
-            -   Отпускает все активные модификаторы (например, `Shift`).
-    -   Пример:
-        -   Удерживаете пробел → попадаете на слой `extend`, где клавиши `HJKL` могут работать как стрелки (←↓↑→).
-        -   Отпускаете пробел → автоматически возвращаетесь на базовый слой `main`, и модификаторы (вроде Shift) сбрасываются.
-    -   Преимущества:
-        -   Пробел становится многофункциональной клавишей:
-            -   Не занимает дополнительные клавиши для переключения слоёв.
-            -   Избегает залипания слоя `extend` после использования.
-        -   Подходит для навигации в тексте/коде без смещения рук с домашнего ряда.
+    <!--list-separator-->
 
-<!--list-separator-->
+    1.  Home Row Mods
 
-7.  Завершение
+        -   [kanata. Настройка Home Row Mods]({{< relref "2025-05-01--kanata-home-row-mods" >}})
+        -   Используется макет `GACS` / `◆⎇⎈⇧`.
+        -   Добавим описание Home Row Mods:
 
-    ```lisp
-    )
-    ```
+        <!--listend-->
+
+        ```lisp
+        a (t! charmod a lmet)
+        s (t! charmod s lalt)
+        d (t! charmod d lctl)
+        f (t! charmod f lsft)
+        j (t! charmod j rsft)
+        k (t! charmod k rctl)
+        l (t! charmod l lalt)
+        ; (t! charmod ; rmet)
+        ```
+
+    <!--list-separator-->
+
+    2.  Дополнительные управляющие клавиши
+
+        ```lisp
+        z (t! charmod z lctl)
+        / (t! charmod / rctl)
+        ```
+
+    <!--list-separator-->
+
+    3.  Переключение на слой fumbol
+
+        ```lisp
+        v (t! charmod v (layer-while-held fumbol))
+        m (t! charmod m (layer-while-held fumbol))
+        ```
+
+    <!--list-separator-->
+
+    4.  Замена `Caps Lock` на `Ctrl` и `Escape`
+
+        -   [kanata. Клавиша Caps Lock]({{< relref "2025-05-06--kanata-capslock" >}})
+        -   Заменим `Caps Lock` на комбинацию:
+            -   простое нажатие: `Escape`;
+            -   долгое нажатие `Caps Lock` или `Caps Lock` + другая клавиша: `Ctrl`.
+                ```lisp
+                ;;;; CapsLock -> Esc, Ctrl
+                ;; caps (t! charmod esc lctl)
+                caps (tap-hold-press $tt $ht esc lctl)
+                ```
+
+    <!--list-separator-->
+
+    5.  Использование XKB для переключения раскладок
+
+        -   [kanata. Русская раскладка]({{< relref "2025-04-21--kanata-russian-layout" >}})
+        -   Используется XKB для переключения раскладок (см. [Клавиатура. xkb]({{< relref "2025-04-22--keyboard-xkb" >}})).
+        -   Несколько команд объединяются с помощью функции `multi`.
+        -   Для переключения на английский используем правый `Alt`.
+        -   Для переключения на русский язык используется левый `Alt`.
+            ```lisp
+            ;;; Switch language
+            ;;;; ralt -> RU; lalt -> EN
+            ```
+
+        <!--list-separator-->
+
+        1.  Переключение с помощью команды оболочки
+
+            -   Переключаем с помощью команд оболочки (для Sway).
+                ```lisp
+                ;; ralt (tap-hold-press $tt $ht (cmd swaymsg input 'type:keyboard' xkb_layout ru) ralt)
+                ;; lalt (tap-hold-press $tt $ht (cmd swaymsg input 'type:keyboard' xkb_layout us) lalt)
+                ```
+            -   При этом перестаёт работать переключение языка на уровне окна (<https://github.com/artemsen/swaykbdd>).
+
+        <!--list-separator-->
+
+        2.  Переключение путём отправки комбинации клавиш
+
+            -   Установим опцию xkb:
+                ```conf-unix
+                xkb_layout "us,ru"
+                xkb_options "grp:lctrl_lwin_rctrl_menu"
+                ```
+            -   Комбинация `Ctrl+Left Win` переключает на первую раскладку.
+            -   Комбинация `Ctrl+Menu` переключает на вторую раскладку.
+            -   Переключаем путём отправки комбинации клавиш:
+                ```lisp
+                ralt (tap-hold-press $tt $ht (multi rctl menu) ralt)
+                lalt (tap-hold-press $tt $ht (multi lctl lmeta) lalt)
+                ```
+
+    <!--list-separator-->
+
+    6.  Использование пробела для переключения уровней
+
+        -   Определяем поведение клавиши пробела (`spc`) с использованием Tap-Hold модификатора.
+
+        <!--listend-->
+
+        ```lisp
+        spc (t! charmod spc (multi (layer-switch extend) (on-release tap-virtualkey clear)))
+        ```
+
+        -   `t! charmod` --- Tap-Hold модификатор:
+            -   Короткое нажатие (tap) → отправляет `spc` (пробел).
+            -   Удержание (hold) → активирует слой `extend`.
+        -   `multi` --- выполняет несколько действий последовательно:
+            -   `(layer-switch extend)` --- переключает на слой `extend` при удержании.
+            -   `(on-release tap-virtualkey clear)` --- при отпускании клавиши отправляет виртуальную клавишу `clear`:
+                -   возвращает слой к `main`;
+                -   Отпускает все активные модификаторы (например, `Shift`).
+        -   Пример:
+            -   Удерживаете пробел → попадаете на слой `extend`, где клавиши `HJKL` могут работать как стрелки (←↓↑→).
+            -   Отпускаете пробел → автоматически возвращаетесь на базовый слой `main`, и модификаторы (вроде Shift) сбрасываются.
+        -   Преимущества:
+            -   Пробел становится многофункциональной клавишей:
+                -   Не занимает дополнительные клавиши для переключения слоёв.
+                -   Избегает залипания слоя `extend` после использования.
+            -   Подходит для навигации в тексте/коде без смещения рук с домашнего ряда.
+
+    <!--list-separator-->
+
+    7.  Завершение
+
+        ```lisp
+        )
+        ```
 
 
-#### <span class="section-num">1.4.4</span> Слой extend {#слой-extend}
+#### <span class="section-num">1.1.5</span> Слой extend {#слой-extend}
 
 ```lisp
 (deflayermap (extend)
@@ -328,7 +365,7 @@ Kantata. Моя конфигурация.
 ```
 
 
-#### <span class="section-num">1.4.5</span> Слой fumbol {#слой-fumbol}
+#### <span class="section-num">1.1.6</span> Слой fumbol {#слой-fumbol}
 
 <!--list-separator-->
 
