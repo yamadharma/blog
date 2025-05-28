@@ -8,8 +8,7 @@ public/
 *~
 
 ## Ox-hugo
-/static/ltximg/
+static/ltximg/
 
 ## Search index
-/static/pagefind/
-/static/pagefind/*
+static/pagefind/
