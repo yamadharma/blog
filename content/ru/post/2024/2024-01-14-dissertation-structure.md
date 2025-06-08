@@ -2,7 +2,7 @@
 title: "Структура диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-14T20:14:00+03:00
-lastmod: 2025-05-28T16:24:00+03:00
+lastmod: 2025-05-30T11:54:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false

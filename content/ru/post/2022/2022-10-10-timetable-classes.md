@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-05-27T16:31:00+03:00
+lastmod: 2025-06-07T18:42:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -16,7 +16,7 @@ slug: "timetable-classes"
 {{< toc >}}
 
 
-## <span class="org-todo todo TODO">TODO</span> <span class="section-num">1</span> Расписание занятий <code>[1/2]</code> {#расписание-занятий}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">1</span> Расписание занятий <code>[2/2]</code> {#расписание-занятий}
 
 
 ### <span class="section-num">1.1</span> Информация {#информация}
@@ -24,7 +24,7 @@ slug: "timetable-classes"
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[6/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[7/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.1</span> Информация <code>[2/2]</code> {#информация}
@@ -275,7 +275,7 @@ slug: "timetable-classes"
 #### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-4-четверть}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[10/17]</code> {#2024-2025-учебный-год-2-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[17/17]</code> {#2024-2025-учебный-год-2-семестр}
 
 <!--list-separator-->
 
@@ -309,7 +309,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лекция, дистанционно)
+2. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лекция, дистанционно)
 
 <!--list-separator-->
 
@@ -341,14 +341,14 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-7. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
+7. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
 
     -   ОРД-295
     -   НБИбд-01-23
 
 <!--list-separator-->
 
-8. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности (лабораторные)
+8. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
 
     -   ОРД-295
     -   НБИбд-02-23
@@ -394,7 +394,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-14. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лекция, дистанционно)
+14. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лекция, дистанционно)
 
     -   НКН-22
     -   НФИ-22
@@ -402,21 +402,21 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-15. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+15. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
 
     -   ОРД-295
     -   НКНбд-01-22
 
 <!--list-separator-->
 
-16. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+16. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
 
     -   ОРД-295
     -   НФИбд-02-22
 
 <!--list-separator-->
 
-17. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (лабораторные)
+17. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
 
     -   ОРД-295
     -   НФИбд-01-22
@@ -688,7 +688,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[5/8]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[5/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -1045,11 +1045,15 @@ slug: "timetable-classes"
         2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, Переаттестация № 2, семестр 2, 2024--2025
 
 
-#### <span class="org-todo todo NEXT">NEXT</span> <span class="section-num">2.2.7</span> Государственные экзамены, 2024--2025 <code>[/]</code> {#государственные-экзамены-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.7</span> Государственные экзамены, 2024--2025 <code>[0/2]</code> {#государственные-экзамены-2024-2025}
 
 <!--list-separator-->
 
 1. <span class="org-todo todo NEXT">NEXT</span>  Защиты, бакалавры, НФИбд, НКНбд
+
+<!--list-separator-->
+
+2. <span class="org-todo todo NEXT">NEXT</span>  Защиты, магистры
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> 2023--2024 учебный год, промежуточные аттестации <code>[6/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}

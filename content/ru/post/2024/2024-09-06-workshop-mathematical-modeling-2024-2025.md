@@ -2,8 +2,8 @@
 title: "Семинар Математическое моделирование, 2024-2025"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T10:56:00+03:00
-lastmod: 2025-05-22T17:19:00+03:00
-tags: ["rudn", "science-admin"]
+lastmod: 2025-06-05T15:57:00+03:00
+tags: ["seedling", "rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false
 slug: "workshop-mathematical-modeling-2024-2025"
@@ -427,7 +427,7 @@ The calculation of symmetries for nonlinear differential equations of polynomial
 {{< /tabs >}}
 
 
-## <span class="org-todo done DONE">DONE</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[7/7]</code> {#семинар-математическое-моделирование-2025-1}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">2</span> Семинар Математическое моделирование, 2025-1 <code>[8/8]</code> {#семинар-математическое-моделирование-2025-1}
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-01-30 Чт] </span></span> Блинков Ю. А. - PyGInv. Генерация и исследование разностных схем {#блинков-ю-dot-а-dot-pyginv-dot-генерация-и-исследование-разностных-схем}
@@ -764,3 +764,33 @@ We present the application of the screw algebra and dual quaternions algebra for
     -   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
 
 The eigenfunction expansions are important part of mathematical modeling. There is a need for both summation of series in finite form and acceleration of convergence. We consider trigonometric Fourier series with rational functions of the harmonic number in coefficients. Standard finite expressions for these series used in computer algebra systems contain higher transcendental functions. At the same time, in some cases, these series allow expression in finite form of piecewise elementary functions of a real variable. Sufficient conditions for the representability of these series in elementary functions and algorithm for obtaining the elementary representation based on the theory of generalized functions are are given. The obtained results are used to work with series, the acceleration of convergence of which is based on the method of A.N. Krylov is impossible and it is impossible to obtain other expressions except in special functions. A significant part of the proposed constructions allows generalization to expansions in systems of eigenfunctions other than trigonometric.
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.8</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-06-05 Чт&gt; </span></span> Сергеев С. В. - Спектральная реализация модифицированного метода Чебышевской коллокации {#сергеев-с-dot-в-dot-спектральная-реализация-модифицированного-метода-чебышевской-коллокации}
+
+
+#### <span class="section-num">2.8.1</span> Докладчик {#докладчик}
+
+-   Сергеев, Степан Викторович
+    -   аспирант
+    -   кафедра математического моделирования и искусственного интеллекта, РУДН
+
+
+#### <span class="section-num">2.8.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/293/>
+-   Спектральная реализация модифицированного метода Чебышевской коллокации решения двухточечных задач для ЛОДУ второго порядка с использованием спектральных матриц дифференцирования и интегрирования
+-   Сергеев, Степан Викторович
+    -   аспирант
+    -   кафедра математического моделирования и искусственного интеллекта, РУДН
+
+Реализуется алгоритм численного решения граничных задач для обыкновенных дифференциальных уравнений, основанный на методе коллокации и представлении решения в виде разложения по полиномам Чебышева. Предлагается вместо традиционного подхода - слияния всех условий (дифференциальных и граничных) в одну систему линейных алгебраических уравнений (СЛАУ) - перейти к методике решения задачи в несколько отдельных этапов. Вначале определяются выделяются спектральные коэффициенты, описывающие «общее» решение исходной задачи. Возможны спектральные реализации метода Чебышевских коллокаций с помощью спектральных матриц дифференцирования и спектральных матриц интегрирования. Матрица формируемой во втором случае СЛАУ оказывается хорошо обусловленной даже при больших размерностях системы. Высокая точность решения достигается при достаточно малом количестве точек коллокации. Метод на основе матриц интегрирования следует выбирать в случаях, когда имеется запрос на высокую точность и устойчивость решения задачи. На втором этапе учет граничных условий выделяет «частное» искомое решение, однозначно доопределяя недостающие коэффициенты искомого разложения.
+
+---
+
+-   Spectral implementation of the modified Chebyshev collocation method for solving two-point problems for second-order LODEs using spectral matrices of differentiation and integration
+-   Sergeev Stepan Viktorovich
+    -   PhD student
+    -   Department of Mathematical Modeling and Artificial Intelligence, RUDN University
+
+An algorithm for numerically solving boundary value problems for ordinary differential equations is implemented, based on the collocation method and representation of the solution in the form of an expansion in Chebyshev polynomials. Instead of the traditional approach - merging all conditions (differential and boundary) into one system of linear algebraic equations (SLAE) - it is proposed to move to a method for solving the problem in several separate stages. First, spectral coefficients are determined that describe the "general" solution of the original problem. Spectral implementations of the Chebyshev collocation method are possible using spectral matrices of differentiation and spectral matrices of integration. The matrix of the SLAE formed in the second case turns out to be well-conditioned even for large dimensions of the system. High accuracy of the solution is achieved with a sufficiently small number of collocation points. The method based on integration matrices should be chosen in cases where there is a request for high accuracy and stability of the solution to the problem. At the second stage, taking into account the boundary conditions identifies a "particular" desired solution, uniquely determining the missing coefficients of the desired expansion.

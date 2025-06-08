@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2024-10-31T20:56:00+03:00
+lastmod: 2025-06-02T15:44:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -89,16 +89,29 @@ slug: "password-manager-pass"
 
 #### <span class="section-num">3.3.1</span> Password Store {#password-store}
 
--   URL: <https://play.google.com/store/apps/details?id=dev.msfjarvis.aps>
--   Репозиторий с кодом: <https://github.com/android-password-store/Android-Password-Store>
--   Документация: <https://android-password-store.github.io/docs/>
--   Для синхронизации с git необходимо импортировать ssh-ключи.
--   Поддерживает разблокировку по биометрическим данным.
--   Версия 1.x для работы требует наличия _OpenKeychain: Easy PGP_.
+<!--list-separator-->
+
+1.  android-password-store/Android-Password-Store
+
+    -   URL: <https://play.google.com/store/apps/details?id=dev.msfjarvis.aps>
+    -   Репозиторий с кодом: <https://github.com/android-password-store/Android-Password-Store>
+    -   Документация: <https://android-password-store.github.io/docs/>
+    -   Для синхронизации с git необходимо импортировать ssh-ключи.
+    -   Поддерживает разблокировку по биометрическим данным.
+    -   Версия 1.x для работы требует наличия _OpenKeychain: Easy PGP_.
+    -   Репозиторий переведён в режим только для чтения <span class="timestamp-wrapper"><span class="timestamp">[2025-10-15 Ср]</span></span>
+        -   <https://github.com/android-password-store/Android-Password-Store/discussions/3260>
 
 <!--list-separator-->
 
-1.  История
+2.  buckley-w-david/Android-Password-Store
+
+    -   Репозиторий с кодом: <https://github.com/android-password-store/Android-Password-Store>
+    -   Форк от основного репозитория.
+
+<!--list-separator-->
+
+3.  История
 
     <!--list-separator-->
 

@@ -2,8 +2,8 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-04-24T16:56:00+03:00
-tags: ["sysadmin"]
+lastmod: 2025-06-02T15:47:00+03:00
+tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "system-administration"
@@ -323,33 +323,40 @@ slug: "system-administration"
 ## <span class="section-num">13</span> Серверы приложений {#серверы-приложений}
 
 
-### <span class="section-num">13.1</span> Drupal {#drupal}
+### <span class="section-num">13.1</span> RSS {#rss}
+
+-   [rss. Сервер FreshRSS]({{< relref "2025-06-02--rss-server-freshrss" >}})
+-   [Подключение ресурсов через RSS]({{< relref "2022-01-17-resources-to-rss" >}})
+-   [Emacs. Чтение rss. Elfeed]({{< relref "2025-06-02--emacs-rss-elfeed" >}})
+
+
+### <span class="section-num">13.2</span> Drupal {#drupal}
 
 -   [Перенос Drupal на другую машину]({{< relref "2022-09-13-move-drupal-other-machine" >}})
 
 
-### <span class="section-num">13.2</span> OJS {#ojs}
+### <span class="section-num">13.3</span> OJS {#ojs}
 
 -   [Open Journal Systems]({{< relref "2022-10-22-open-journal-systems" >}})
 
 
-### <span class="section-num">13.3</span> Ldap {#ldap}
+### <span class="section-num">13.4</span> Ldap {#ldap}
 
 -   [Перенос Openldap на другую машину]({{< relref "2023-09-01-openldap-migration" >}})
 -   [Настройка Openldap]({{< relref "2023-09-02-configure-openldap-rocky-linux" >}})
 
 
-### <span class="section-num">13.4</span> Kerberos {#kerberos}
+### <span class="section-num">13.5</span> Kerberos {#kerberos}
 
 -   [Перенос kerberos на другую машину]({{< relref "2023-09-03-kerberos-migration" >}})
 
 
-### <span class="section-num">13.5</span> Git {#git}
+### <span class="section-num">13.6</span> Git {#git}
 
 -   [Хостинг git. gitea]({{< relref "2023-10-29-git-hosting-gitea" >}})
 
 
-### <span class="section-num">13.6</span> Хранилища {#хранилища}
+### <span class="section-num">13.7</span> Хранилища {#хранилища}
 
 -   [Файловое хранилище Seafile]({{< relref "2025-04-08--seafile-file-server" >}})
 

@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-05-25T12:04:00+03:00
+lastmod: 2025-06-06T20:59:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -969,16 +969,18 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Emacs package that displays available keybindings in popup
-    ;;; https://github.com/justbur/emacs-which-key
+    ;; https://github.com/justbur/emacs-which-key
 
-    ;;; Key-Based replacement
+    ;;; Code:
+
+    ;;;; Key-Based replacement
     (which-key-add-key-based-replacements "C-x C-f" "find files")
     (which-key-add-major-mode-key-based-replacements
      'org-mode
      "C-c C-c" "Org C-c C-c"
      "C-c C-a" "Org Attach")
 
-    ;;; Key and Description replacement
+    ;;;; Key and Description replacement
     (add-to-list 'which-key-replacement-alist '(("TAB" . nil) . ("↹" . nil)))
     (add-to-list 'which-key-replacement-alist '(("RET" . nil) . ("⏎" . nil)))
     (add-to-list 'which-key-replacement-alist '(("DEL" . nil) . ("⇤" . nil)))
@@ -991,49 +993,59 @@ slug: "emacs-desire-configuration"
     (setopt which-key-special-keys nil)
 
 
-    ;;; Sorting Options
-    ;;;; Default
+    ;;;; Sorting Options
+    ;;;;; Default
     (setopt which-key-sort-order 'which-key-key-order)
-    ;;;; Same as default, except single characters are sorted alphabetically
+    ;;;;; Same as default, except single characters are sorted alphabetically
     ;; (setopt which-key-sort-order 'which-key-key-order-alpha)
-    ;;;; Same as default, except all prefix keys are grouped together at the end
+    ;;;;; Same as default, except all prefix keys are grouped together at the end
     ;; (setopt which-key-sort-order 'which-key-prefix-then-key-order)
-    ;;;; Same as default, except all keys from local maps shown first
+    ;;;;; Same as default, except all keys from local maps shown first
     ;; (setopt which-key-sort-order 'which-key-local-then-key-order)
-    ;;;; Sort based on the key description ignoring case
+    ;;;;; Sort based on the key description ignoring case
     ;; (setopt which-key-sort-order 'which-key-description-order)
 
-    ;;; Popup Type Options
-    ;;; minibuffer | side-window | frame | custom
+    ;;;; Popup Type Options
+    ;;;; minibuffer | side-window | frame | custom
     (setopt which-key-popup-type 'minibuffer)
 
-    ;;; Set the time delay (in seconds) for the which-key popup to appear
+    ;;;;; Set the time delay (in seconds) for the which-key popup to appear
     (setopt which-key-idle-delay 1.0)
+    (setopt which-key-idle-secondary-delay 0.05)
 
-    ;;; Set the maximum length (in characters) for key descriptions (commands or prefixes)
+    ;;;; Set the maximum length (in characters) for key descriptions (commands or prefixes)
     (setopt which-key-max-description-length 27)
 
-    ;;; Use additional padding between columns of keys
+    ;;;; Use additional padding between columns of keys
     (setopt which-key-add-column-padding 0)
 
-    ;;; The maximum number of columns to display in the which-key buffer
+    ;;;; The maximum number of columns to display in the which-key buffer
     (setopt which-key-max-display-columns nil)
 
-    ;;; Set the separator used between keys and descriptions
+
+    ;;;; Use unicode
+    (setopt which-key-dont-use-unicode nil)
+
+    ;;;; Set the separator used between keys and descriptions
     (setopt which-key-separator " → " )
     (setopt which-key-unicode-correction 3)
 
-    ;;; Set the prefix string that will be inserted in front of prefix commands
+    ;;;; Set the prefix string that will be inserted in front of prefix commands
     (setopt which-key-prefix-prefix "+" )
 
-    ;;; Show the key prefix on the left, top, or bottom (nil means hide the prefix)
+    ;;;; Show the key prefix on the left, top, or bottom (nil means hide the prefix)
     (setopt which-key-show-prefix 'left)
 
-    ;; Set to t to show the count of keys shown vs. total keys in the mode line
+    ;;;; Set to t to show the count of keys shown vs. total keys in the mode line
     (setopt which-key-show-remaining-keys nil)
 
+    ;;;; Show actual combinations
+    (setopt which-key-computer-remaps t)
 
+    ;;;; Like [C-h m]
+    (setopt which-key-show-major-mode t)
 
+    ;;;; Enable globally
     (which-key-mode)
 
     ;;;
@@ -1417,15 +1429,550 @@ slug: "emacs-desire-configuration"
         </div>
 
 
-#### <span class="section-num">3.9.4</span> Завершение {#завершение}
+#### <span class="section-num">3.9.4</span> shr-tag-pre-highlight : раскрашивание eww {#shr-tag-pre-highlight-раскрашивание-eww}
 
-```emacs-lisp
-;;;}}}
-```
-<div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 61:</span>
-  rc.packages.el
-</div>
+-   Загрузка.
+    ```emacs-lisp
+    ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Syntax highlighting code block in HTML for shr/eww
+    ;; https://github.com/xuchunyang/shr-tag-pre-highlight.el
+
+    ;;; Code:
+
+    (require 'shr-tag-pre-highlight)
+
+    (add-to-list 'shr-external-rendering-functions '(pre . shr-tag-pre-highlight))
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 61:</span>
+      packages/shr-tag-pre-highlight.ecf
+    </div>
+
+
+#### <span class="section-num">3.9.5</span> shrface : функциональность Org-mode для eww {#shrface-функциональность-org-mode-для-eww}
+
+-   [Emacs. Пакет shrface]({{< relref "2025-06-05--emacs-shrface" >}})
+
+<!--list-separator-->
+
+1.  Основной пакет : shrface
+
+    -   Подключение.
+        ```emacs-lisp
+        (desire 'shrface)
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 62:</span>
+          rc.packages.el
+        </div>
+    -   Объявления.
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 63:</span>
+          packages/shrface/loaddefs.ecf
+        </div>
+    -   Загрузка.
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 64:</span>
+          packages/shrface/desire.ecf
+        </div>
+    -   Настройка.
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (defvar shrface-general-rendering-functions
+          (append '((title . eww-tag-title)
+                    (form . eww-tag-form)
+                    (input . eww-tag-input)
+                    (button . eww-form-submit)
+                    (textarea . eww-tag-textarea)
+                    (select . eww-tag-select)
+                    (link . eww-tag-link)
+                    (meta . eww-tag-meta)
+                    (code . shrface-tag-code)
+                    (pre . shrface-shr-tag-pre-highlight))
+                  shrface-supported-faces-alist))
+
+        (defvar shrface-nov-rendering-functions
+          (append '((img . nov-render-img)
+                    (svg . nov-render-svg)
+                    (title . nov-render-title)
+                    (pre . shrface-shr-tag-pre-highlight)
+                    (code . shrface-tag-code)
+                    (form . eww-tag-form)
+                    (input . eww-tag-input)
+                    (button . eww-form-submit)
+                    (textarea . eww-tag-textarea)
+                    (select . eww-tag-select)
+                    (link . eww-tag-link)
+                    (meta . eww-tag-meta))
+                  shrface-supported-faces-alist))
+
+        (defvar shrface-anki-rendering-functions
+          (append '((img . anki-render-img)
+                    (pre . shrface-shr-tag-pre-highlight)
+                    (code . shrface-tag-code)
+                    (form . eww-tag-form)
+                    (input . eww-tag-input)
+                    (button . eww-form-submit)
+                    (textarea . eww-tag-textarea)
+                    (select . eww-tag-select)
+                    (link . eww-tag-link)
+                    (meta . eww-tag-meta))
+                  shrface-supported-faces-alist))
+
+        (setq shr-cookie-policy nil)
+        (if (string-equal system-type "android")
+            (setq shrface-bullets-bullet-list '("▼" "▽" "▿" "▾"))
+          (setq shrface-bullets-bullet-list '("▼" "▽" "▿" "▾")))
+        (add-hook 'outline-view-change-hook 'shrface-outline-visibility-changed)
+
+        (desire 'shr-tag-pre-highlight)
+        (require 'shr-tag-pre-highlight)
+
+        (setq shr-tag-pre-highlight-lang-modes
+              '(("ocaml" . tuareg) ("elisp" . emacs-lisp) ("ditaa" . artist)
+                ("asymptote" . asy) ("dot" . fundamental) ("sqlite" . sql)
+                ("calc" . fundamental) ("C" . c) ("cpp" . c++) ("C++" . c++)
+                ("screen" . shell-script) ("shell" . sh) ("bash" . sh)
+                ("rust" . rustic)
+                ("rust" . rustic)
+                ("awk" . bash)
+                ("json" . "js")
+                ;; Used by language-detection.el
+                ("emacslisp" . emacs-lisp)
+                ;; Used by Google Code Prettify
+                ("el" . emacs-lisp)))
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 65:</span>
+          packages/shrface/desire.ecd/config.ecf
+        </div>
+
+    -   Функции.
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (defun shrface-eww-setup ()
+          (unless shrface-toggle-bullets
+            (shrface-regexp)
+            (setq-local imenu-create-index-function #'shrface-imenu-get-tree))
+          ;; workaround to show annotations in eww
+          (shrface-show-all-annotations))
+
+        (defun shrface-anki-setup ()
+          (unless shrface-toggle-bullets
+            (shrface-regexp)
+            (setq-local imenu-create-index-function #'shrface-imenu-get-tree)))
+
+        (defun shrface-anki-advice (orig-fun &rest args)
+          (require 'eww)
+          (let ((shrface-org nil)
+                (shr-bullet (concat (char-to-string shrface-item-bullet) " "))
+                (shr-table-vertical-line "")
+                (shr-width 90)
+                (shr-indentation 3)
+                (anki-shr-rendering-functions shrface-anki-rendering-functions)
+                (shrface-toggle-bullets nil)
+                (shrface-href-versatile t))
+            (apply orig-fun args)))
+
+        (defun shrface-shr-tag-pre-highlight (pre)
+          "Highlighting code in PRE."
+          (let* ((shr-folding-mode 'none)
+                 (shr-current-font 'default)
+                 (code (with-temp-buffer
+                         (shr-generic pre)
+                         ;; (indent-rigidly (point-min) (point-max) 2)
+                         (buffer-string)))
+                 (lang (or (shr-tag-pre-highlight-guess-language-attr pre)
+                           (let ((sym (language-detection-string code)))
+                             (and sym (symbol-name sym)))))
+                 (mode (and lang
+                            (shr-tag-pre-highlight--get-lang-mode lang))))
+            (shr-ensure-newline)
+            (shr-ensure-newline)
+            (setq start (point))
+            (insert
+             ;; (propertize (concat "#+BEGIN_SRC " lang "\n") 'face 'org-block-begin-line)
+             (or (and (fboundp mode)
+                      (with-demoted-errors "Error while fontifying: %S"
+                        (shr-tag-pre-highlight-fontify code mode)))
+                 code)
+             ;; (propertize "#+END_SRC" 'face 'org-block-end-line )
+             )
+            (shr-ensure-newline)
+            (setq end (point))
+            (pcase (frame-parameter nil 'background-mode)
+              ('light
+               (add-face-text-property start end '(:background "#D8DEE9" :extend t)))
+              ('dark
+               (add-face-text-property start end '(:background "#292b2e" :extend t))))
+            (shr-ensure-newline)
+            (insert "\n")))
+
+        (defun shrface-nov-render-html ()
+          (require 'eww)
+          (let ((shrface-org nil)
+                (shr-bullet (concat (char-to-string shrface-item-bullet) " "))
+                (shr-table-vertical-line "|")
+                (shr-width 7000) ;; make it large enough, it would not fill the column (use visual-line-mode/writeroom-mode instead)
+                (shr-indentation 0) ;; remove all unnecessary indentation
+                (tab-width 8)
+                (shr-external-rendering-functions shrface-nov-rendering-functions)
+                (shrface-toggle-bullets nil)
+                (shrface-href-versatile t)
+                (shr-use-fonts nil)           ; nil to use default font
+                (shr-map nov-mode-map))
+
+            ;; HACK: `shr-external-rendering-functions' doesn't cover
+            ;; every usage of `shr-tag-img'
+            (cl-letf (((symbol-function 'shr-tag-img) 'nov-render-img))
+              (shr-render-region (point-min) (point-max)))
+            ;; workaround, need a delay to update the header line
+            (run-with-timer 0.01 nil 'shrface-update-header-line)
+            ;; workaround, show annotations when document updates
+            (shrface-show-all-annotations)))
+
+        (defun shrface-remove-blank-lines-at-the-end (start end)
+          "A fix for `shr--remove-blank-lines-at-the-end' which will remove image at the end of the document."
+          (save-restriction
+            (save-excursion
+              (narrow-to-region start end)
+              (goto-char end)
+              (when (and (re-search-backward "[^ \n]" nil t)
+                         (not (eobp)))
+                (forward-line 1)
+                (delete-region (point) (min (1+ (point)) (point-max)))))))
+
+        (defun shrface-nov-setup ()
+          (unless shrface-toggle-bullets
+            (shrface-regexp))
+          (set-visited-file-name nil t)
+          (setq tab-width 8)
+          (if (string-equal system-type "android")
+              (setq-local touch-screen-enable-hscroll nil)))
+
+        (defun shrface-wallabag-setup ()
+          (unless shrface-toggle-bullets
+            (shrface-regexp)
+            (setq-local imenu-create-index-function #'shrface-imenu-get-tree))
+          (if (string-equal system-type "android")
+              (setq-local touch-screen-enable-hscroll nil)))
+
+        (defun shrface-wallabag-render-html (beg end)
+          ;; workaround, show annotations when document updates
+          (shrface-render-region beg end)
+          (shrface-update-header-line)
+          (paw-annotation-mode 1)
+          (visual-line-mode 1))
+
+        (defun shrface-render-region (beg end)
+          (require 'eww)
+          (let ((shrface-org nil)
+                (shr-bullet (concat (char-to-string shrface-item-bullet) " "))
+                ;; make it large enough, it would not fill the column
+                ;; I uses visual-line-mode, writeroom-mode for improving the reading experience instead
+                (shr-width 7000)
+                (shr-indentation (if (string-equal system-type "android") 0 0))
+                (shr-table-vertical-line "|")
+                (shr-external-rendering-functions shrface-general-rendering-functions)
+                (shrface-toggle-bullets nil)
+                (shrface-href-versatile t)
+                (shr-use-fonts nil))
+            (shr-render-region beg end)))
+
+        (defun shrface-render-advice (orig-fun &rest args)
+          (require 'eww)
+          (let ((shrface-org nil)
+                (shr-bullet (concat (char-to-string shrface-item-bullet) " "))
+                (shr-table-vertical-line "|")
+                (shr-width 65)
+                (shr-indentation 0)
+                (shr-external-rendering-functions shrface-general-rendering-functions)
+                (shrface-toggle-bullets nil)
+                (shrface-href-versatile t)
+                (shr-use-fonts nil))
+            ;; workaround, need a delay to update the header line
+            (run-with-timer 0.01 nil 'shrface-update-header-line)
+            (apply orig-fun args)))
+
+        (defun shrface-elfeed-advice (orig-fun &rest args)
+          (require 'eww)
+          (let ((shrface-org nil)
+                (shr-bullet (concat (char-to-string shrface-item-bullet) " "))
+                ;; make it large enough, it would not fill the column
+                ;; I uses visual-line-mode, writeroom-mode for improving the reading experience instead
+                (shr-width 7000)
+                (shr-indentation 0)
+                (shr-table-vertical-line "|")
+                (shr-external-rendering-functions shrface-general-rendering-functions)
+                (shrface-toggle-bullets nil)
+                (shrface-href-versatile t)
+                (shr-use-fonts nil))
+            (apply orig-fun args)
+            (with-current-buffer "*elfeed-entry*"
+              (shrface-show-all-annotations))))
+
+        (defun shrface-show-all-annotations()
+          (when (bound-and-true-p paw-annotation-mode)
+            (paw-clear-annotation-overlay)
+            (paw-show-all-annotations)
+            (if paw-annotation-show-wordlists-words-p
+                (paw-focus-find-words :wordlist t))
+            (if paw-annotation-show-unknown-words-p
+                (paw-focus-find-words))))
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 66:</span>
+          packages/shrface/desire.ecd/advice.ecf
+        </div>
+
+<!--list-separator-->
+
+2.  Поддержка nov
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (add-hook 'nov-mode-hook #'eldoc-mode)
+        (add-hook 'nov-mode-hook #'org-indent-mode)
+        (add-hook 'nov-mode-hook #'eldoc-box-hover-mode)
+        (add-hook 'nov-mode-hook #'shrface-nov-setup)
+
+        (setopt nov-render-html-function #'shrface-nov-render-html)
+        (advice-add 'shr--remove-blank-lines-at-the-end :override #'shrface-remove-blank-lines-at-the-end)
+
+        (define-key nov-mode-map (kbd "<tab>") 'shrface-outline-cycle)
+        (define-key nov-mode-map (kbd "S-<tab>") 'shrface-outline-cycle-buffer)
+        (define-key nov-mode-map (kbd "C-t") 'shrface-toggle-bullets)
+        (define-key nov-mode-map (kbd "C-j") 'shrface-next-headline)
+        (define-key nov-mode-map (kbd "C-k") 'shrface-previous-headline)
+        (define-key nov-mode-map (kbd "M-l") 'shrface-links-consult) ; or 'shrface-links-helm or 'shrface-links-counsel
+        (define-key nov-mode-map (kbd "M-h") 'shrface-headline-consult) ; or 'shrface-headline-helm or 'shrface-headline-counsel
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 67:</span>
+          packages/nov/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+3.  Поддержка eww
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (advice-add 'eww-display-html :around #'shrface-render-advice)
+        (add-hook 'eww-after-render-hook #'org-indent-mode)
+        (add-hook 'eww-after-render-hook #'eldoc-mode)
+        (add-hook 'eww-after-render-hook #'eldoc-box-hover-mode)
+        (add-hook 'eww-after-render-hook #'shrface-eww-setup)
+
+        (define-key eww-mode-map (kbd "<tab>") 'shrface-outline-cycle)
+        (define-key eww-mode-map (kbd "S-<tab>") 'shrface-outline-cycle-buffer)
+        (define-key eww-mode-map (kbd "C-t") 'shrface-toggle-bullets)
+        (define-key eww-mode-map (kbd "C-j") 'shrface-next-headline)
+        (define-key eww-mode-map (kbd "C-k") 'shrface-previous-headline)
+        (define-key eww-mode-map (kbd "M-l") 'shrface-links-consult) ; or 'shrface-links-helm or 'shrface-links-counsel
+        (define-key eww-mode-map (kbd "M-h") 'shrface-headline-consult) ; or 'shrface-headline-helm or 'shrface-headline-counsel
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 68:</span>
+          packages/eww/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+4.  Поддержка anki
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (add-hook 'anki-mode-hook #'org-indent-mode)
+        (advice-add 'anki-render-html :around #'shrface-anki-advice)
+        (advice-add 'anki-render-region :around #'shrface-anki-advice)
+        (add-hook 'anki-mode-hook #'eldoc-mode)
+        (add-hook 'anki-mode-hook #'eldoc-box-hover-mode)
+        (add-hook 'anki-mode-hook #'shrface-anki-setup)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 69:</span>
+          packages/anki/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+5.  Поддержка calibredb
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (advice-add 'calibredb-show-entry :around #'shrface-render-advice)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 70:</span>
+          packages/calibredb/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+6.  Поддержка wallabag
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (add-hook 'wallabag-entry-mode-hook #'org-indent-mode)
+        (add-hook 'wallabag-entry-mode-hook #'eldoc-mode)
+        (add-hook 'wallabag-entry-mode-hook #'eldoc-box-hover-mode)
+        (add-hook 'wallabag-entry-mode-hook #'shrface-wallabag-setup)
+        (advice-add 'wallabag-entry-quit :after #'(lambda (&rest args)
+                                                    (interactive)
+                                                    (if (get-buffer "*Ilist*")
+                                                        (kill-buffer "*Ilist*"))))
+
+        (setq wallabag-render-html-function #'shrface-wallabag-render-html)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 71:</span>
+          packages/wallabag/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+7.  Поддержка mu4e
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (advice-add 'mu4e-shr2text :around #'shrface-render-advice)
+
+        (define-key mu4e-view-mode-map (kbd "<tab>") 'shrface-outline-cycle)
+        (define-key mu4e-view-mode-map (kbd "S-<tab>") 'shrface-outline-cycle-buffer)
+        (define-key mu4e-view-mode-map (kbd "C-t") 'shrface-toggle-bullets)
+        (define-key mu4e-view-mode-map (kbd "C-j") 'shrface-next-headline)
+        (define-key mu4e-view-mode-map (kbd "C-k") 'shrface-previous-headline)
+        (define-key mu4e-view-mode-map (kbd "M-l") 'shrface-links-consult) ; or 'shrface-links-helm or 'shrface-links-counsel
+        (define-key mu4e-view-mode-map (kbd "M-h") 'shrface-headline-consult) ; or 'shrface-headline-helm or 'shrface-headline-counsel
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 72:</span>
+          packages/mu4e/shrface.ecf
+        </div>
+
+<!--list-separator-->
+
+8.  Поддержка elfeed
+
+    -   Настройка:
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Extend eww/nov with org-mode features, archive web pages to org files with shr
+        ;; https://github.com/chenyanming/shrface
+
+        ;;; Code:
+
+        (require 'shrface)
+
+        (add-hook 'elfeed-show-mode-hook #'org-indent-mode)
+        (add-hook 'elfeed-show-mode-hook #'eldoc-mode)
+        (add-hook 'elfeed-show-mode-hook #'eldoc-box-hover-mode)
+        (add-hook 'elfeed-show-mode-hook #'shrface-wallabag-setup)
+        (advice-add 'elfeed-insert-html :around #'shrface-elfeed-advice)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 73:</span>
+          packages/elfeed/shrface.ecf
+        </div>
 
 
 ### <span class="section-num">3.10</span> Автодополнение {#автодополнение}
@@ -1503,7 +2050,7 @@ slug: "emacs-desire-configuration"
     (desire 'transient)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 62:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 74:</span>
       rc.packages.el
     </div>
 -   Дополнительные объявления:
@@ -1517,7 +2064,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 63:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 75:</span>
       packages/transient/loaddefs.ecf
     </div>
 -   Загрузка:
@@ -1533,7 +2080,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 64:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 76:</span>
       packages/transient/desire.ecf
     </div>
 
@@ -1552,7 +2099,7 @@ slug: "emacs-desire-configuration"
         ;; (desire 'casual)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 65:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 77:</span>
           rc.packages.el
         </div>
 
@@ -1571,7 +2118,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 66:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 78:</span>
           packages/casual/loaddefs.ecf
         </div>
     -   Файл `packages/casual/desire.ecf`:
@@ -1624,7 +2171,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 67:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 79:</span>
           packages/casual/desire.ecf
         </div>
     -   Файл сделан под все элементы пакета.
@@ -1654,7 +2201,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 68:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 80:</span>
           packages/avy/casual.ecf
         </div>
 
@@ -1676,7 +2223,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 69:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 81:</span>
           packages/casual/symbol-overlay.ecf
         </div>
 
@@ -1704,7 +2251,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 70:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 82:</span>
           packages/org/casual.ecf
         </div>
 
@@ -1716,7 +2263,7 @@ slug: "emacs-desire-configuration"
     ;;;; Navigation
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 71:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 83:</span>
       rc.packages.el
     </div>
 
@@ -1728,7 +2275,7 @@ slug: "emacs-desire-configuration"
     (desire 'avy)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 72:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 84:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -1744,7 +2291,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 73:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 85:</span>
       packages/avy/loaddefs.ecf
     </div>
 -   Настройка клавиатуры:
@@ -1778,7 +2325,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 74:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 86:</span>
       packages/avy/desire.ecd/keybinding.ecf
     </div>
 
@@ -1795,7 +2342,7 @@ slug: "emacs-desire-configuration"
     ;;; Window navigation {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 75:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 87:</span>
       rc.packages.el
     </div>
 
@@ -1808,7 +2355,7 @@ slug: "emacs-desire-configuration"
     (desire 'windmove)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 76:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 88:</span>
       rc.packages.el
     </div>
 -   Настройка пакета:
@@ -1818,7 +2365,7 @@ slug: "emacs-desire-configuration"
     ;;; https://www.emacswiki.org/emacs/WindMove
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 77:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 89:</span>
       packages/windmove.ecf
     </div>
 
@@ -1828,7 +2375,7 @@ slug: "emacs-desire-configuration"
     ;; (windmove-default-keybindings)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 78:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 90:</span>
       packages/windmove.ecf
     </div>
 -   Будем использовать  `Ctrl` + стрелки:
@@ -1837,7 +2384,7 @@ slug: "emacs-desire-configuration"
     (windmove-default-keybindings 'ctrl)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 79:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 91:</span>
       packages/windmove.ecf
     </div>
 
@@ -1847,7 +2394,7 @@ slug: "emacs-desire-configuration"
     (setopt windmove-wrap-around t)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 80:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 92:</span>
       packages/windmove.ecf
     </div>
 
@@ -1856,7 +2403,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 81:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 93:</span>
       packages/windmove.ecf
     </div>
 
@@ -1868,7 +2415,7 @@ slug: "emacs-desire-configuration"
     ;;;}}}
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 82:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 94:</span>
       rc.packages.el
     </div>
 
@@ -1884,7 +2431,7 @@ slug: "emacs-desire-configuration"
     ;; (desire 'origami)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 83:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 95:</span>
       rc.packages.el
     </div>
 -   Подключение:
@@ -1915,7 +2462,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 84:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 96:</span>
       packages/origami.ecf
     </div>
 
@@ -1928,7 +2475,7 @@ slug: "emacs-desire-configuration"
     (desire 'outli :recipe '(:fetcher github :repo "jdtsmith/outli" :branch "main"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 85:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 97:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -1942,7 +2489,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 86:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 98:</span>
       packages/outli/loaddefs.ecf
     </div>
 -   Настройка:
@@ -1962,7 +2509,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 87:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 99:</span>
       packages/outli/desire.ecf
     </div>
 
@@ -1974,7 +2521,7 @@ slug: "emacs-desire-configuration"
     (desire 'hideshow)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 88:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 100:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -1991,7 +2538,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 89:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 101:</span>
       packages/hideshow/loaddefs.ecf
     </div>
 -   Настройка:
@@ -2019,7 +2566,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 90:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 102:</span>
       packages/hideshow/desire.ecf
     </div>
 
@@ -2033,7 +2580,7 @@ slug: "emacs-desire-configuration"
     (desire 'bicycle)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 91:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 103:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2049,7 +2596,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 92:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 104:</span>
       packages/bicycle/loaddefs.ecf
     </div>
 -   Настройка:
@@ -2080,7 +2627,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 93:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 105:</span>
       packages/bicycle/desire.ecf
     </div>
 
@@ -2093,7 +2640,7 @@ slug: "emacs-desire-configuration"
     ;;;; Spaces
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 94:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 106:</span>
       rc.packages.el
     </div>
 
@@ -2105,7 +2652,7 @@ slug: "emacs-desire-configuration"
     (desire 'stripspace)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 95:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 107:</span>
       rc.packages.el
     </div>
 -   Подключение:
@@ -2136,7 +2683,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 96:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 108:</span>
       packages/stripspace.ecf
     </div>
 
@@ -2193,7 +2740,7 @@ slug: "emacs-desire-configuration"
     (desire 'jinx)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 97:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 109:</span>
       rc.packages.el
     </div>
 -   Начальная загрузка:
@@ -2214,7 +2761,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 98:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 110:</span>
       packages/jinx/loaddefs.ecf
     </div>
 -   Настройки:
@@ -2233,7 +2780,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 99:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 111:</span>
       packages/jinx/desire.ecf
     </div>
 -   Поддержка vertico:
@@ -2251,7 +2798,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 100:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 112:</span>
       packages/jinx/vertico.ecf
     </div>
 
@@ -2307,7 +2854,7 @@ slug: "emacs-desire-configuration"
     (desire 'biblio)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 101:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 113:</span>
       rc.packages.el
     </div>
 -   Настройка:
@@ -2328,7 +2875,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 102:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 114:</span>
       packages/biblio.ecf
     </div>
 
@@ -2340,7 +2887,7 @@ slug: "emacs-desire-configuration"
     (desire 'bibtex)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 103:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 115:</span>
       rc.packages.el
     </div>
 
@@ -2355,7 +2902,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 104:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 116:</span>
           packages/bibtex/personal.ecf
         </div>
     -   Основной файл библиографии:
@@ -2364,7 +2911,7 @@ slug: "emacs-desire-configuration"
         (setq personal-bibliography '("~/work/bib/bib/main.bib"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 105:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 117:</span>
           packages/bibtex/personal.ecf
         </div>
     -   Файлы книг и статей:
@@ -2374,7 +2921,7 @@ slug: "emacs-desire-configuration"
         (setq personal-library-path '("~/work/bib/data/pdf"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 106:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 118:</span>
           packages/bibtex/personal.ecf
         </div>
     -   Расположение литературных заметок:
@@ -2390,7 +2937,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 107:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 119:</span>
           packages/bibtex/personal.ecf
         </div>
 
@@ -2417,7 +2964,7 @@ slug: "emacs-desire-configuration"
     ;;;; Work with text
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 108:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 120:</span>
       rc.packages.el
     </div>
 
@@ -2429,7 +2976,7 @@ slug: "emacs-desire-configuration"
     ;;;;; Tables
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 109:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 121:</span>
       rc.packages.el
     </div>
 
@@ -2444,7 +2991,7 @@ slug: "emacs-desire-configuration"
         (desire 'lte)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 110:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 122:</span>
           rc.packages.el
         </div>
     -   Настройка:
@@ -2456,7 +3003,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 111:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 123:</span>
           packages/lte.ecf
         </div>
     -   Поддержка markdown-mode:
@@ -2471,7 +3018,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 112:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 124:</span>
           packages/markdown-mode/lte.ecf
         </div>
     -   Поддержка org-mode:
@@ -2486,7 +3033,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 113:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 125:</span>
           packages/org/lte.ecf
         </div>
 
@@ -2498,7 +3045,7 @@ slug: "emacs-desire-configuration"
     ;;;;; Text view
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 114:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 126:</span>
       rc.packages.el
     </div>
 
@@ -2530,7 +3077,7 @@ slug: "emacs-desire-configuration"
     (desire 'move-text)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 115:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 127:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2544,7 +3091,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 116:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 128:</span>
       packages/move-text/loaddefs.ecf
     </div>
 -   Настройка:
@@ -2559,7 +3106,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 117:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 129:</span>
       packages/move-text/desire.ecf
     </div>
 -   Перестройка отступов:
@@ -2583,7 +3130,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 118:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 130:</span>
       packages/move-text/desire.ecd/reindent.ecf
     </div>
 
@@ -2597,7 +3144,7 @@ slug: "emacs-desire-configuration"
     (desire 'delsel)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 119:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 131:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2613,7 +3160,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 120:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 132:</span>
       packages/delsel.ecf
     </div>
 
@@ -2645,7 +3192,7 @@ slug: "emacs-desire-configuration"
         (desire 'doc-toc)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 121:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 133:</span>
           rc.packages.el
         </div>
     -   Предварительные настройки:
@@ -2662,7 +3209,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 122:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 134:</span>
           packages/doc-toc/loaddefs.ecf
         </div>
     -   Загрузка пакета:
@@ -2679,7 +3226,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 123:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 135:</span>
           packages/doc-toc/desire.ecf
         </div>
 
@@ -2692,7 +3239,7 @@ slug: "emacs-desire-configuration"
         (desire 'pdf-tools)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 124:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 136:</span>
           rc.packages.el
         </div>
 
@@ -2710,7 +3257,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 125:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 137:</span>
           packages/pdf-tools/doc-toc.ecf
         </div>
 
@@ -2742,7 +3289,7 @@ slug: "emacs-desire-configuration"
     (desire 'quarto-mode)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 126:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 138:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2761,7 +3308,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 127:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 139:</span>
       packages/quarto-mode.ecf
     </div>
 
@@ -2775,7 +3322,7 @@ slug: "emacs-desire-configuration"
     (desire 'calibredb)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 128:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 140:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2789,7 +3336,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 129:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 141:</span>
       packages/calibredb/loaddefs.ecf
     </div>
 -   Конфигурация:
@@ -2808,7 +3355,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 130:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 142:</span>
       packages/calibredb/desire.ecf
     </div>
 -   Персональные настройки:
@@ -2832,7 +3379,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 131:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 143:</span>
       packages/calibredb/personal.ecf
     </div>
 -   Поддержка `nerd-icons`:
@@ -2848,7 +3395,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 132:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 144:</span>
       packages/calibredb/nerd-icons.ecf
     </div>
 -   Поддержка `all-the-icons`:
@@ -2864,7 +3411,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 133:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 145:</span>
       packages/calibredb/all-the-icons.ecf
     </div>
 
@@ -2876,7 +3423,7 @@ slug: "emacs-desire-configuration"
     ;;;; Time management
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 134:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 146:</span>
       rc.packages.el
     </div>
 
@@ -2889,7 +3436,7 @@ slug: "emacs-desire-configuration"
     (desire 'pomm)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 135:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 147:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -2905,7 +3452,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 136:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 148:</span>
       packages/pomm/loaddefs.ecf
     </div>
 -   Настройка:
@@ -2931,7 +3478,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 137:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 149:</span>
       packages/pomm/desire.ecf
     </div>
 -   Интерфейс к polybar (разным реализациям):
@@ -2948,7 +3495,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 138:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 150:</span>
       packages/pomm/desire.ecd/polybar.ecf
     </div>
 -   Сохранение истории:
@@ -2969,7 +3516,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 139:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 151:</span>
       packages/pomm/desire.ecd/history.ecf
     </div>
 
@@ -2993,7 +3540,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 140:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 152:</span>
           packages/org/pomm.ecf
         </div>
 
@@ -3029,7 +3576,7 @@ slug: "emacs-desire-configuration"
     (desire 'auctex)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 141:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 153:</span>
       rc.packages.el
     </div>
 
@@ -3046,7 +3593,7 @@ slug: "emacs-desire-configuration"
         ;;; Code:
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 142:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 154:</span>
           packages/auctex/desire.ecd/parsing.ecf
         </div>
     -   Автопарсинг:
@@ -3056,7 +3603,7 @@ slug: "emacs-desire-configuration"
         (setopt TeX-auto-save t)                  ; Enable parse on save
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 143:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 155:</span>
           packages/auctex/desire.ecd/parsing.ecf
         </div>
     -   Убрать символы табуляции:
@@ -3065,7 +3612,7 @@ slug: "emacs-desire-configuration"
         (setopt TeX-auto-untabify t)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 144:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 156:</span>
           packages/auctex/desire.ecd/parsing.ecf
         </div>
     -   Финал:
@@ -3073,7 +3620,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 145:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 157:</span>
           packages/auctex/desire.ecd/parsing.ecf
         </div>
 
@@ -3086,7 +3633,7 @@ slug: "emacs-desire-configuration"
     ;;;; Org-mode
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 146:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 158:</span>
       rc.packages.el
     </div>
 
@@ -3102,7 +3649,7 @@ slug: "emacs-desire-configuration"
     ;;; Code:
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 147:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 159:</span>
       packages/org/desire.ecd/babel.ecf
     </div>
 -   Сохраняем отступы:
@@ -3111,7 +3658,7 @@ slug: "emacs-desire-configuration"
     ;; (setopt org-src-preserve-indentation t)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 148:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 160:</span>
       packages/org/desire.ecd/babel.ecf
     </div>
 -   Отключим подтверждение запутывания:
@@ -3120,7 +3667,7 @@ slug: "emacs-desire-configuration"
     (setopt org-confirm-babel-evaluate nil)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 149:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 161:</span>
       packages/org/desire.ecd/babel.ecf
     </div>
 
@@ -3141,7 +3688,7 @@ slug: "emacs-desire-configuration"
         ;; (setopt org-auto-tangle-default t)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 150:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 162:</span>
           packages/org/desire.ecd/babel.ecf
         </div>
 
@@ -3210,7 +3757,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 151:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 163:</span>
           packages/org/desire.ecd/ob.ecf
         </div>
 
@@ -3222,7 +3769,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 152:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 164:</span>
       packages/org/desire.ecd/babel.ecf
     </div>
 
@@ -3237,7 +3784,7 @@ slug: "emacs-desire-configuration"
 (desire 'org-custom-cookies)
 ;; (desire 'svg-tag-mode)
 (desire 'org-superstar)
-(desire 'org-modern-indent :recipe '(:fetcher github :repo "jdtsmith/org-modern-indent" :branch "main" :files ("*.el")))
+;; (desire 'org-modern-indent :recipe '(:fetcher github :repo "jdtsmith/org-modern-indent" :branch "main" :files ("*.el")))
 (desire 'org-modern)
 ;; (desire 'org-contacts)
 ;; (desire 'google-contacts)
@@ -3246,7 +3793,7 @@ slug: "emacs-desire-configuration"
 (desire 'org-tree-slide)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 153:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 165:</span>
   rc.packages.el
 </div>
 
@@ -3283,12 +3830,75 @@ slug: "emacs-desire-configuration"
 (desire 'org-transclusion)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 154:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 166:</span>
   rc.packages.el
 </div>
 
 
-#### <span class="section-num">3.25.4</span> org-gtd {#org-gtd}
+#### <span class="section-num">3.25.4</span> org-node {#org-node}
+
+-   Подключение:
+    ```emacs-lisp
+    (desire 'org-node)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 167:</span>
+      rc.packages.el
+    </div>
+-   Загрузка:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; A notetaking system like Roam using Emacs Org-mode
+    ;; https://github.com/meedstrom/org-node
+
+    ;;; Code:
+
+    (desire 'org-mem)
+
+    (require 'org-node)
+
+    (setopt org-mem-do-sync-with-org-id t)
+    (setopt org-mem-watch-dirs (list org-roam-directory))
+    (org-mem-updater-mode)
+    (org-node-cache-mode)
+    (org-node-roam-accelerator-mode)
+    (setopt org-node-creation-fn #'org-node-new-via-roam-capture)
+    (setopt org-node-file-slug-fn #'org-node-slugify-like-roam-default)
+    (setopt org-node-file-timestamp-format "%Y%m%dT%H%M%S--")
+
+    (keymap-set global-map "M-s M-f" #'org-node-find)
+    (keymap-set org-mode-map "M-s M-i" #'org-node-insert-link)
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 168:</span>
+      packages/org-node/desire.ecf
+    </div>
+
+<!--list-separator-->
+
+1.  Интеграция с org-roam
+
+    -   Используем не отдельно, а как надстройку над org-roam:
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; A notetaking system like Roam using Emacs Org-mode
+        ;; https://github.com/meedstrom/org-node
+
+        ;;; Code:
+
+        (require 'org-node)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 169:</span>
+          packages/org-roam/org-node.ecf
+        </div>
+
+
+#### <span class="section-num">3.25.5</span> org-gtd {#org-gtd}
 
 -   [Emacs. Пакеты. Org-gtd]({{< relref "2023-07-31-emacs-packages-org-gtd" >}})
 -   Подключение для загрузки:
@@ -3297,7 +3907,7 @@ slug: "emacs-desire-configuration"
     (desire 'org-gtd)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 155:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 170:</span>
       rc.packages.el
     </div>
 
@@ -3306,18 +3916,18 @@ slug: "emacs-desire-configuration"
 1.  Клавиатурные сочетания
 
 
-#### <span class="section-num">3.25.5</span> mobileorg {#mobileorg}
+#### <span class="section-num">3.25.6</span> mobileorg {#mobileorg}
 
 ```emacs-lisp
 (desired 'mobileorg)
 ```
 <div class="src-block-caption">
-  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 156:</span>
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 171:</span>
   rc.packages.el
 </div>
 
 
-#### <span class="section-num">3.25.6</span> org-download {#org-download}
+#### <span class="section-num">3.25.7</span> org-download {#org-download}
 
 -   [Emacs. Пакет org-download]({{< relref "2025-05-19--emacs-org-download" >}})
 -   Объявление пакета:
@@ -3325,7 +3935,7 @@ slug: "emacs-desire-configuration"
     (desire 'org-download)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 157:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 172:</span>
       rc.packages.el
     </div>
 -   Подключение пакета:
@@ -3339,7 +3949,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 158:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 173:</span>
       packages/org-download/loaddefs.ecf
     </div>
 -   Загрузка пакета:
@@ -3384,7 +3994,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 159:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 174:</span>
       packages/org-download/desire.ecf
     </div>
 -   Настройка для скриншотов:
@@ -3407,7 +4017,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 160:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 175:</span>
       packages/org-download/desire.ecd/screenshot.ecf
     </div>
 
@@ -3428,7 +4038,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 161:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 176:</span>
           packages/org/org-download.ecf
         </div>
 
@@ -3450,12 +4060,12 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 162:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 177:</span>
           packages/dired/org-download.ecf
         </div>
 
 
-#### <span class="section-num">3.25.7</span> org-mode {#org-mode}
+#### <span class="section-num">3.25.8</span> org-mode {#org-mode}
 
 -   Собственно org-mode.
 -   [Org-mode]({{< relref "2021-10-14-org-mode" >}})
@@ -3469,7 +4079,7 @@ slug: "emacs-desire-configuration"
     ;;;}}}
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 163:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 178:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -3480,7 +4090,7 @@ slug: "emacs-desire-configuration"
     ;;; Code:
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 164:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 179:</span>
       packages/org/loaddefs.ecf
     </div>
 
@@ -3489,7 +4099,7 @@ slug: "emacs-desire-configuration"
     (add-to-list 'auto-mode-alist '("\\.\\(org\\|org_archive\\|txt\\)$" . org-mode))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 165:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 180:</span>
       packages/org/loaddefs.ecf
     </div>
 
@@ -3499,7 +4109,7 @@ slug: "emacs-desire-configuration"
     (global-set-key (kbd "C-c d e") #'("Engage" . org-gtd-engage))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 166:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 181:</span>
       packages/org/loaddefs.ecf
     </div>
 
@@ -3508,12 +4118,12 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 167:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 182:</span>
       packages/org/loaddefs.ecf
     </div>
 
 
-#### <span class="section-num">3.25.8</span> Предпросмотр LaTeX {#предпросмотр-latex}
+#### <span class="section-num">3.25.9</span> Предпросмотр LaTeX {#предпросмотр-latex}
 
 -   [Org-mode. Предпросмотр TeX]({{< relref "2024-01-06-org-mode-latex-preview" >}})
     ```emacs-lisp
@@ -3522,7 +4132,7 @@ slug: "emacs-desire-configuration"
     ;;; https://orgmode.org/manual/Previewing-LaTeX-fragments.html
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 168:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 183:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 -   Зададим каталог для создаваемых изображений (по умолчанию они создаются в рабочем каталоге):
@@ -3531,7 +4141,7 @@ slug: "emacs-desire-configuration"
     (setopt org-preview-latex-image-directory (concat home-cache-path "org-latex/"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 169:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 184:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 -   Зададим опции создания изображений:
@@ -3542,7 +4152,7 @@ slug: "emacs-desire-configuration"
     (setopt org-format-latex-options (plist-put org-format-latex-options :background "Transparent"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 170:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 185:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 -   Зададим формат изображений. В данном случае это формат `svg`:
@@ -3575,7 +4185,7 @@ slug: "emacs-desire-configuration"
                        ("convert -density %D -trim -antialias %f -quality 100 %O"))))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 171:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 186:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 -   Теперь зададим настройки для LaTeX:
@@ -3586,7 +4196,7 @@ slug: "emacs-desire-configuration"
     (setopt org-latex-default-figure-position "!htbp")
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 172:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 187:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 -   Опишем используемые пакеты:
@@ -3604,7 +4214,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 173:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 188:</span>
       packages/org/desire.ecd/preview-latex.ecf
     </div>
 
@@ -3617,7 +4227,7 @@ slug: "emacs-desire-configuration"
     ;;; Notes {{{
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 174:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 189:</span>
       rc.packages.el
     </div>
 
@@ -3661,7 +4271,7 @@ slug: "emacs-desire-configuration"
         (setopt org-roam-graph-exclude-matcher '("private" "dailies"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 175:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 190:</span>
           packages/org-roam/desire.ecd/dailies.ecf
         </div>
     -   Каталог для записей:
@@ -3672,7 +4282,7 @@ slug: "emacs-desire-configuration"
           (make-directory (concat org-roam-directory "/" org-roam-dailies-directory) t))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 176:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 191:</span>
           packages/org-roam/desire.ecd/dailies.ecf
         </div>
     -   Шаблон записи:
@@ -3691,7 +4301,7 @@ slug: "emacs-desire-configuration"
         "))))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 177:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 192:</span>
           packages/org-roam/desire.ecd/dailies.ecf
         </div>
     -   Сочетания клавиш:
@@ -3733,8 +4343,31 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 178:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 193:</span>
           packages/org-roam/desire.ecd/dailies.ecf
+        </div>
+
+<!--list-separator-->
+
+2.  org-daily-reflection
+
+    -   [Emacs. Пакет org-daily-reflection]({{< relref "2025-06-06--emacs-org-daily-reflection" >}})
+    -   Загрузка.
+        ```emacs-lisp
+        ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Reflect on your org-roam daily entries, comparing N org-roam dailies at M intervals
+        ;; https://github.com/emacsomancer/org-daily-reflection
+
+        ;;; Code:
+
+        (desire 'org-daily-reflection)
+        (require 'org-daily-reflection)
+
+        ;;;
+        ```
+        <div class="src-block-caption">
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 194:</span>
+          packages/org-roam/desire.ecd/org-daily-reflection.ecf
         </div>
 
 
@@ -3767,7 +4400,7 @@ slug: "emacs-desire-configuration"
         ;; (desire 'org-gantt-mode :recipe '(:fetcher gitlab :repo "joukeHijlkema/org-gantt-mode" :branch "master"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 179:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 195:</span>
           rc.packages.el
         </div>
     -   Загрузка пакета:
@@ -3781,7 +4414,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 180:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 196:</span>
           packages/org-gantt-mode.ecf
         </div>
 
@@ -3794,7 +4427,7 @@ slug: "emacs-desire-configuration"
         (desire 'elgantt :recipe '(:fetcher github :repo "legalnonsense/elgantt" :branch "master"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 181:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 197:</span>
           rc.packages.el
         </div>
     -   Загрузка пакета:
@@ -3808,7 +4441,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 182:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 198:</span>
           packages/elgantt/loaddefs.ecf
         </div>
 
@@ -3826,7 +4459,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 183:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 199:</span>
           packages/org/desire.ecd/ox-taskjuggler.ecf
         </div>
 
@@ -3892,7 +4525,7 @@ slug: "emacs-desire-configuration"
         (desire 'otpp)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 184:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 200:</span>
           rc.packages.el
         </div>
     -   Предварительные настройки:
@@ -3906,7 +4539,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 185:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 201:</span>
           packages/otpp/loaddefs.ecf
         </div>
     -   Загрузка пакета:
@@ -3920,7 +4553,7 @@ slug: "emacs-desire-configuration"
         (require 'otpp)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 186:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 202:</span>
           packages/otpp/desire.ecf
         </div>
     -   Задание параметров:
@@ -3945,7 +4578,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 187:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 203:</span>
           packages/otpp/desire.ecf
         </div>
     -   Подключение к project.el:
@@ -3959,7 +4592,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 188:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 204:</span>
           packages/project/otpp.ecf
         </div>
 
@@ -3997,7 +4630,7 @@ slug: "emacs-desire-configuration"
     (desire 'projection)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 189:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 205:</span>
       rc.packages.el
     </div>
 -   Подготовка:
@@ -4011,7 +4644,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 190:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 206:</span>
       packages/projection/loaddefs.ecf
     </div>
 -   Загрузка:
@@ -4033,7 +4666,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 191:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 207:</span>
       packages/projection/desire.ecf
     </div>
 
@@ -4060,7 +4693,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 192:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 208:</span>
           packages/projection/compile-multi.ecf
         </div>
     -   Интеграция с `ibuffer`:
@@ -4078,7 +4711,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 193:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 209:</span>
           packages/projection/ibuffer.ecf
         </div>
     -   Загрузка при использовании `project`:
@@ -4097,7 +4730,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 194:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 210:</span>
           packages/project/projection.ecf
         </div>
 
@@ -4109,7 +4742,7 @@ slug: "emacs-desire-configuration"
     (desire 'project)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 195:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 211:</span>
       rc.packages.el
     </div>
 
@@ -4176,7 +4809,7 @@ slug: "emacs-desire-configuration"
     (desire 'mu4e :precondition-system-executable "mu")
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 196:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 212:</span>
       rc.packages.el
     </div>
 -   Использование интерфейса transient:
@@ -4193,7 +4826,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 197:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 213:</span>
       packages/mu4e/transient.ecf
     </div>
 
@@ -4264,7 +4897,7 @@ slug: "emacs-desire-configuration"
     (desire 'wallabag :recipe '(:fetcher github :repo "chenyanming/wallabag.el" :branch "master" :files ("*.el" "*.alist" "*.css")))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 198:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 214:</span>
       rc.packages.el
     </div>
 -   Начальные настройки:
@@ -4277,7 +4910,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 199:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 215:</span>
       packages/wallabag/loaddefs.ecf
     </div>
 -   Загрузка пакета:
@@ -4297,7 +4930,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 200:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 216:</span>
       packages/wallabag/desire.ecf
     </div>
 -   Шаблон настройки параметров для пользователя:
@@ -4324,8 +4957,274 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 201:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 217:</span>
       packages/wallabag/personal.ecf
+    </div>
+
+<!--list-separator-->
+
+1.  Интеграция с elfeed
+
+    -   Подгружаем `wallabag`.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Emacs wallabag client - A Read It Later/Web Archiving Solution in Emacs
+    ;; https://github.com/chenyanming/wallabag.el
+
+    ;;; Code:
+
+    (require 'wallabag)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 218:</span>
+      packages/elfeed/wallabag.ecf
+    </div>
+
+    -   Клавиша `w` добавляет просматриваемую статью в wallabag.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    (general-define-key
+     :keymaps 'elfeed-show-mode-map
+     "w" #'("Add entry to wallabag" . wallabag-add-entry))
+
+    ;;;
+    ```
+
+
+#### <span class="section-num">3.35.3</span> Elfeed {#elfeed}
+
+-   [Emacs. Чтение rss. Elfeed]({{< relref "2025-06-02--emacs-rss-elfeed" >}})
+    Объявление:
+    ```emacs-lisp
+    (desire 'elfeed)
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 219:</span>
+      rc.packages.el
+    </div>
+-   Подключение:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; An Emacs web feeds client
+    ;; https://github.com/skeeto/elfeed
+
+    ;;; Code:
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 220:</span>
+      packages/elfeed/loaddefs.ecf
+    </div>
+-   Загрузка:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; An Emacs web feeds client
+    ;; https://github.com/skeeto/elfeed
+
+    ;;; Code:
+
+    (require 'elfeed)
+
+    ;;;; Elfeed-protocol
+    (desire 'elfeed-protocol)
+    (require 'elfeed-protocol)
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 221:</span>
+      packages/elfeed/desire.ecf
+    </div>
+-   Загрузка:
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; An Emacs web feeds client
+    ;; https://github.com/skeeto/elfeed
+
+    ;;; Code:
+
+    ;;;; Mark all as read
+    (defun mark-all-read-and-refresh ()
+      (interactive)
+      (when (y-or-n-p "Mark all items as read?")
+        (elfeed-mark-all-as-read)
+        (elfeed-search-fetch nil)))
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 222:</span>
+      packages/elfeed/desire.ecd/utils.ecf
+    </div>
+
+
+#### <span class="section-num">3.35.4</span> Elfeed-protocol {#elfeed-protocol}
+
+-   Поддержка серверов rss:
+
+<!--listend-->
+
+```emacs-lisp
+;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+;;; Extra protocols to make like Fever, NewsBlur, Nextcloud/ownCloud News and Tiny Tiny RSS work with elfeed
+;; https://github.com/fasheng/elfeed-protocol
+
+;;; Code:
+
+(desire 'elfeed-protocol)
+(require 'elfeed-protocol)
+
+;;;; curl recommend
+(setopt elfeed-use-curl t)
+(elfeed-set-timeout 36000)
+;;;;; For https without a trust certificate
+(setopt elfeed-curl-extra-arguments '("--insecure"))
+
+;;;; enable elfeed-protocol
+(setq elfeed-protocol-enabled-protocols '(fever newsblur owncloud ttrss))
+(elfeed-protocol-enable)
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 223:</span>
+  packages/elfeed-protocol/desire.ecf
+</div>
+
+-   Обновить при поиске:
+
+<!--listend-->
+
+```emacs-lisp
+;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+;;; Extra protocols to make like Fever, NewsBlur, Nextcloud/ownCloud News and Tiny Tiny RSS work with elfeed
+;; https://github.com/fasheng/elfeed-protocol
+
+;;; Code:
+
+(add-hook 'elfeed-search-mode-hook 'elfeed-update)
+
+;;;
+```
+<div class="src-block-caption">
+  <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 224:</span>
+  packages/elfeed-protocol/desire.ecd/search.ecf
+</div>
+
+<!--list-separator-->
+
+1.  Fever протокол
+
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Extra protocols to make like Fever, NewsBlur, Nextcloud/ownCloud News and Tiny Tiny RSS work with elfeed
+    ;; https://github.com/fasheng/elfeed-protocol
+
+    ;;; Code:
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 225:</span>
+      packages/elfeed-protocol/desire.ecd/fever.ecf
+    </div>
+
+    -   По умолчанию получайте статьи с ID записи по одной.
+    -   Для некоторых сервисов, которые не предоставляют действительный ID записи, например FressRSS, просто установите для `elfeed-protocol-fever-update-unread-only` значение `t` в качестве обходного пути.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    (setopt elfeed-protocol-fever-update-unread-only t)
+    ```
+
+    -   Получение удаленной категории в качестве тега.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    (setopt elfeed-protocol-fever-fetch-category-as-tag t)
+    ```
+
+    -   Скачивать только непрочитанные.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    (setopt elfeed-protocol-fever-update-unread-only t)
+    ```
+
+    -   Перечитать источник.
+
+    <!--listend-->
+
+    ```emacs-lisp
+    (general-define-key
+     :keymaps 'elfeed-search-mode-map
+     "C-c C-u" #'("Retry initial sync operation" . elfeed-protocol-fever-reinit))
+
+      ;;;
+    ```
+
+<!--list-separator-->
+
+2.  Персональные настройки
+
+    ```emacs-lisp
+    ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+    ;;; Extra protocols to make like Fever, NewsBlur, Nextcloud/ownCloud News and Tiny Tiny RSS work with elfeed
+    ;; https://github.com/fasheng/elfeed-protocol
+
+    ;;; Code:
+
+    (setopt
+     elfeed-protocol-feeds
+     '(
+    ;;;; same format with elfeed-feeds
+       ;; "http://foo/"
+       ;; ("http://baz/" comic)
+
+    ;;;; format 1
+       ;; "owncloud+https://user:pass@myhost.com"
+
+    ;;;; format 2, for username or password with special characters
+       ;; ("owncloud+https://user@domain.com@myhost.com"
+       ;;  :password "password/with|special@characters:")
+
+    ;;;; format 3, for password in file
+       ;; ("owncloud+https://user@myhost.com"
+       ;;  :password-file "~/.password")
+
+    ;;;; format 4, for password in .authinfo,
+    ;;;; ensure (auth-source-search :host "myhost.com" :port "443" :user "user4") exists
+       ;; ("owncloud+https://user@myhost.com"
+       ;;  :use-authinfo t)
+
+    ;;;; format 5, for password in gnome-keyring
+       ;; ("owncloud+https://user@myhost.com"
+       ;;  :password (shell-command-to-string "echo -n `secret-tool lookup attribute value`"))
+
+    ;;;; format 6, for password in pass(1), using password-store.el
+       ;; ("owncloud+https://user@myhost.com"
+       ;;  :password (password-store-get "owncloud/app-pass"))
+
+    ;;;; FreshRSS
+       ;; ("fever+http://username@mydomain.org"
+       ;;  :api-url "http://mydomain.org/api/fever.php"
+       ;;  :password "my password")
+
+    ;;;; use autotags
+       ;; ("owncloud+https://user@myhost.com"
+       ;;  :password "password"
+       ;;  :autotags (("example.com" comic)))
+       ))
+
+    ;;;
+    ```
+    <div class="src-block-caption">
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 226:</span>
+      packages/elfeed-protocol/personal.ecf
     </div>
 
 
@@ -4411,7 +5310,7 @@ slug: "emacs-desire-configuration"
     (desire 'ebuild-mode :recipe '(:fetcher github :repo "emacsmirror/ebuild-mode" :branch "master"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 202:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 227:</span>
       rc.packages.el
     </div>
 -   Настроим загрузку:
@@ -4456,7 +5355,7 @@ slug: "emacs-desire-configuration"
     (modify-coding-system-alist 'file "\\.\\(ebuild\\|eclass\\)\\'" 'utf-8)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 203:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 228:</span>
       packages/ebuild-mode/loaddefs.ecf
     </div>
 
@@ -4476,7 +5375,7 @@ slug: "emacs-desire-configuration"
         (desire 'asy-mode :recipe '(:fetcher github :repo "vectorgraphics/asymptote" :branch "master" :files ("base/asy-mode.el")))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 204:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 229:</span>
           rc.packages.el
         </div>
     -   Конфигурационный файл:
@@ -4493,7 +5392,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 205:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 230:</span>
           packages/asy-mode.ecf
         </div>
 
@@ -4517,7 +5416,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 206:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 231:</span>
       packages/org/desire.ecd/ob-asymptote.ecf
     </div>
 
@@ -4531,7 +5430,7 @@ slug: "emacs-desire-configuration"
     ;; (desire 'kbd-mode :recipe '(:fetcher github :repo "kmonad/kbd-mode" :branch "master"))
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 207:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 232:</span>
       rc.packages.el
     </div>
 -   Конфигурационный файл:
@@ -4546,7 +5445,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 208:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 233:</span>
       packages/kbd-mode.ecf
     </div>
 
@@ -4583,7 +5482,7 @@ slug: "emacs-desire-configuration"
     (desire 'fish-mode)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 209:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 234:</span>
       rc.packages.el
     </div>
 -   Настройка пакета:
@@ -4599,7 +5498,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 210:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 235:</span>
       packages/fish-mode.ecf
     </div>
 
@@ -4761,7 +5660,7 @@ slug: "emacs-desire-configuration"
         ;; (desire 'diredc)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 211:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 236:</span>
           rc.packages.el
         </div>
 
@@ -4841,7 +5740,7 @@ slug: "emacs-desire-configuration"
     (desire 'go-translate)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 212:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 237:</span>
       rc.packages.el
     </div>
 -   Загрузка:
@@ -4855,7 +5754,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 213:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 238:</span>
       packages/go-translate/loaddefs.ecf
     </div>
 -   Конфигурация:
@@ -4868,7 +5767,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 214:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 239:</span>
       packages/go-translate/desire.ecf
     </div>
 -   Простейшая конфигурация:
@@ -4884,7 +5783,7 @@ slug: "emacs-desire-configuration"
     ;;;
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 215:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 240:</span>
       packages/go-translate/desire.ecd/google-simple.ecf
     </div>
 
@@ -4896,7 +5795,7 @@ slug: "emacs-desire-configuration"
     ;;;; UI
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 216:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 241:</span>
       rc.packages.el
     </div>
 
@@ -4909,7 +5808,7 @@ slug: "emacs-desire-configuration"
     ;;;;; Fonts
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 217:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 242:</span>
       rc.packages.el
     </div>
 
@@ -4923,7 +5822,7 @@ slug: "emacs-desire-configuration"
     (desired 'iosevka)
     ```
     <div class="src-block-caption">
-      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 218:</span>
+      <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 243:</span>
       rc.packages.el
     </div>
 
@@ -4936,7 +5835,7 @@ slug: "emacs-desire-configuration"
         (desire 'fontset)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 219:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 244:</span>
           rc.packages.el
         </div>
     -   Загрузка:
@@ -5009,7 +5908,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 220:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 245:</span>
           packages/fontset/loaddefs.ecf
         </div>
     -   Эмодзи:
@@ -5031,7 +5930,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 221:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 246:</span>
           packages/fontset/desire.ecd/emoji.ecf
         </div>
     -   Unicode:
@@ -5048,7 +5947,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 222:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 247:</span>
           packages/fontset/desire.ecd/unicode.ecf
         </div>
     -   Шрифты
@@ -5075,7 +5974,7 @@ slug: "emacs-desire-configuration"
             ;;;
             ```
             <div class="src-block-caption">
-              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 223:</span>
+              <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 248:</span>
               packages/fontset/iosevka.ecf
             </div>
 
@@ -5133,7 +6032,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 224:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 249:</span>
           packages/unicode-fonts/loaddefs.ecf
         </div>
     -   Настройка:
@@ -5183,7 +6082,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 225:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 250:</span>
           packages/unicode-fonts/desire.ecf
         </div>
 
@@ -5199,7 +6098,7 @@ slug: "emacs-desire-configuration"
         ;;;;; Modeline
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 226:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 251:</span>
           rc.packages.el
         </div>
 
@@ -5212,7 +6111,7 @@ slug: "emacs-desire-configuration"
         (desire-conf 'modeline)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 227:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 252:</span>
           rc.packages.el
         </div>
 
@@ -5222,7 +6121,7 @@ slug: "emacs-desire-configuration"
         ;;; Configure modeline
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 228:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 253:</span>
           packages/modeline.ecf
         </div>
     -   Показывать столбец, в котором находится курсор (<https://www.gnu.org/software/emacs/manual/html_node/efaq/Displaying-the-current-line-or-column.html>):
@@ -5231,7 +6130,7 @@ slug: "emacs-desire-configuration"
         (setopt column-number-mode t)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 229:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 254:</span>
           packages/modeline.ecf
         </div>
     -   Задаём 24-часовой формат времени:
@@ -5241,7 +6140,7 @@ slug: "emacs-desire-configuration"
         (setopt display-time-24hr-format t)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 230:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 255:</span>
           packages/modeline.ecf
         </div>
     -   Мы можем захотеть видеть и секунды:
@@ -5255,7 +6154,7 @@ slug: "emacs-desire-configuration"
         (setopt display-time-interval 1)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 231:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 256:</span>
           packages/modeline.ecf
         </div>
 
@@ -5267,7 +6166,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 232:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 257:</span>
           packages/modeline.ecf
         </div>
 
@@ -5328,7 +6227,7 @@ slug: "emacs-desire-configuration"
 
     -   Подключаем темы в файле `rc.packages.el`:
         ```emacs-lisp
-        (desire 'doric-themes :recipe '(:fetcher github :repo "protesilaos/doric-themes" :branch "main"))
+        (desire 'doric-themes)
         ```
     -   Загружаем темы:
         ```emacs-lisp
@@ -5343,7 +6242,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 233:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 258:</span>
           packages/doric-themes/loaddefs.ecf
         </div>
     -   Конфигурация:
@@ -5357,7 +6256,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 234:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 259:</span>
           packages/doric-themes/desire.ecf
         </div>
     -   Поддержка Moody:
@@ -5373,7 +6272,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 235:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 260:</span>
           packages/doric-themes/moody.ecf
         </div>
     -   Выбор темы:
@@ -5415,7 +6314,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 236:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 261:</span>
           packages/doric-themes/personal.ecf
         </div>
 
@@ -5433,7 +6332,7 @@ slug: "emacs-desire-configuration"
         ;; (desire 'posframe)
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 237:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 262:</span>
           rc.packages.el
         </div>
     -   Загрузка:
@@ -5449,7 +6348,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 238:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 263:</span>
           packages/posframe/loaddefs.ecf
         </div>
     -   Настройка:
@@ -5461,7 +6360,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 239:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 264:</span>
           packages/posframe/desire.ecf
         </div>
     -   Поддержка _vertico_:
@@ -5491,7 +6390,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 240:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 265:</span>
           packages/posframe/vertico.ecf
         </div>
 
@@ -5507,7 +6406,7 @@ slug: "emacs-desire-configuration"
         ;; (desire 'nova :recipe '(:fetcher github :repo "thisisran/nova" :branch "main"))
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 241:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 266:</span>
           rc.packages.el
         </div>
     -   Загрузка:
@@ -5521,7 +6420,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 242:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 267:</span>
           packages/nova/loaddefs.ecf
         </div>
     -   Настройка:
@@ -5533,7 +6432,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 243:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 268:</span>
           packages/nova/desire.ecf
         </div>
     -   Поддержка _vertico_:
@@ -5548,7 +6447,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 244:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 269:</span>
           packages/nova/vertico.ecf
         </div>
     -   Поддержка _corfu_:
@@ -5566,7 +6465,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 245:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 270:</span>
           packages/nova/corfu.ecf
         </div>
     -   Поддержка _eldoc-box_:
@@ -5581,7 +6480,7 @@ slug: "emacs-desire-configuration"
         ;;;
         ```
         <div class="src-block-caption">
-          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 246:</span>
+          <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 271:</span>
           packages/nova/eldoc-box.ecf
         </div>
 

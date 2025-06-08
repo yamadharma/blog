@@ -2,7 +2,8 @@
 title: "Самоорганизация"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-03T12:16:00+03:00
-lastmod: 2024-12-10T16:46:00+03:00
+lastmod: 2025-06-07T19:49:00+03:00
+tags: ["MOC"]
 categories: ["self-management"]
 draft: false
 slug: "self-management"
@@ -45,20 +46,29 @@ slug: "self-management"
 -   [Диаграммы Ганта]({{< relref "2024-12-10-gantt-charts" >}})
 
 
-## <span class="section-num">3</span> Чтение {#чтение}
+## <span class="section-num">3</span> Ведение дневника {#ведение-дневника}
+
+-   [Структурированный дневник по методу Айры Прогоффа]({{< relref "2025-06-07--structured-diary-ira-progoff" >}})
+-   [Emacs. Пакет org-daily-reflection]({{< relref "2025-06-06--emacs-org-daily-reflection" >}})
 
 
-### <span class="section-num">3.1</span> Отложенное чтение {#отложенное-чтение}
+## <span class="section-num">4</span> Ведение блога {#ведение-блога}
+
+
+## <span class="section-num">5</span> Чтение {#чтение}
+
+
+### <span class="section-num">5.1</span> Отложенное чтение {#отложенное-чтение}
 
 -   [Отложенное чтение. Pocket]({{< relref "2023-09-06-deferred-reading-pocket" >}})
 -   [Отложенное чтение. Wallabag]({{< relref "2024-12-05-read-it-later-wallabag" >}})
 
 
-## <span class="section-num">4</span> Работа на компьютере {#работа-на-компьютере}
+## <span class="section-num">6</span> Работа на компьютере {#работа-на-компьютере}
 
 -   [Слепой метод печати]({{< relref "2023-09-10-touch-typing" >}})
 
 
-## <span class="section-num">5</span> Аналоговые инструменты {#аналоговые-инструменты}
+## <span class="section-num">7</span> Аналоговые инструменты {#аналоговые-инструменты}
 
 -   [Инструменты для письма]({{< relref "2023-09-09-writing-tools" >}})
