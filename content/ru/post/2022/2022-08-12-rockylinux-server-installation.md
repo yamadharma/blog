@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2024-12-04T20:16:00+03:00
+lastmod: 2025-06-22T16:15:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -81,6 +81,8 @@ slug: "rockylinux-server-installation"
 
 
 ## <span class="section-num">2</span> Установка образа {#установка-образа}
+
+-   [Proxmox. Установка Rocky Linux]({{< relref "2025-06-22--proxmox-install-rocky-linux" >}})
 
 
 ## <span class="section-num">3</span> После установки {#после-установки}

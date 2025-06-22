@@ -2,7 +2,7 @@
 title: "Обновление деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-12T12:48:00+03:00
-lastmod: 2024-09-24T14:42:00+03:00
+lastmod: 2025-06-22T20:20:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -319,3 +319,6 @@ slug: "redhat-derivatives-update"
     ```
 
     -   Установите SELinux в `enforcing` в файле `/etc/selinux/config`.
+
+
+## <span class="section-num">4</span> 9 → 10 {#9-10}

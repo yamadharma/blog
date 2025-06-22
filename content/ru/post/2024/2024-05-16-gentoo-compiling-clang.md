@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-06-01T12:03:00+03:00
+lastmod: 2025-06-21T17:36:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -263,7 +263,7 @@ slug: "gentoo-compiling-clang"
     kde-apps/step					compiler-clang-mold-18
     llvm-core/lldb					compiler-clang
     mail-client/thunderbird				compiler-gcc
-    media-gfx/asymptote				compiler-gcc
+    # media-gfx/asymptote				compiler-gcc
     media-gfx/autopano-sift-C			compiler-gcc
     media-gfx/blender:4.0				compiler-gcc
     media-gfx/exact-image				compiler-gcc

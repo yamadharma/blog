@@ -2,7 +2,7 @@
 title: "Перенос виртуальной машины на Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-04T16:58:00+03:00
-lastmod: 2024-09-09T08:28:00+03:00
+lastmod: 2025-06-22T17:15:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -75,4 +75,4 @@ slug: "migrating-virtual-machine-proxmox"
 
 -   Проверьте настройку виртуальной машины.
 -   Проверьте ip-адрес машины (у вас изменился mac-адрес).
--   Установите, если надо quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).
+-   Установите, если надо, quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).

@@ -2,7 +2,7 @@
 title: "Linux. Дистрибутив Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T10:45:00+03:00
-lastmod: 2025-04-08T13:17:00+03:00
+lastmod: 2025-06-22T14:41:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -49,6 +49,7 @@ slug: "linux-proxmox-distribution"
 -   [Proxmox. Установка OpenVPN в LXC]({{< relref "2025-01-27--proxmox-installing-openvpn-lxc" >}})
 -   [Proxmox. Установка Windows]({{< relref "2025-02-22--proxmox-windows-install" >}})
 -   [Proxmox. Сервер Seafile]({{< relref "2025-04-08--proxmox-seafile" >}})
+-   [Proxmox. Установка Rocky Linux]({{< relref "2025-06-22--proxmox-install-rocky-linux" >}})
 
 
 ## <span class="section-num">5</span> Дополнительный функционал {#дополнительный-функционал}

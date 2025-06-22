@@ -2,8 +2,8 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2025-02-05T14:23:00+03:00
-tags: ["science-being"]
+lastmod: 2025-06-17T15:35:00+03:00
+tags: ["science-being", "MOC"]
 categories: ["science"]
 draft: false
 slug: "being-science"
@@ -95,3 +95,8 @@ _Бытие науки_. Разрозненные мысли.
 ### <span class="section-num">4.4</span> Эффект Даннинга-Крюгера {#эффект-даннинга-крюгера}
 
 -   _Человек не в состоянии объективно оценить уровень своей компетентности._
+
+
+## <span class="section-num">5</span> Общие подходы к науке {#общие-подходы-к-науке}
+
+-   [Исследование как код]({{< relref "2025-06-17--research-as-code" >}})

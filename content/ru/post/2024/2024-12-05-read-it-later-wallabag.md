@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2025-05-25T21:00:00+03:00
+lastmod: 2025-06-15T20:18:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -61,14 +61,28 @@ slug: "read-it-later-wallabag"
 
 -   Репозиторий: <https://git.sr.ht/~bacardi55/cleanABag>
 -   cli-инструмент для удаления статей старше указанной даты из wallabag.
--   Омтавляет поменные и непрочтённые сообщения по умолчанию.
--   Пример запуска:
+-   Оставляет помеченные и непрочтённые сообщения по умолчанию.
+-   Конфигурационный файл credentials.json:
+    ```js
+    {
+      "WallabagURL": "https://your.wallabag.tld",
+      "ClientId": "client ID generate in your profile on wallabag"
+      "ClientSecret": "client secrete generate in your profile on wallabag"
+      "UserName": "your username",
+      "UserPassword": "your password"
+    }
+    ```
+-   Пример запуска.
     ```shell
     # Удалите архивные статьи старше 2021-12-31 (дата в формате YYYY-MM-DD), не затрагивая непрочтённые и отмеченные
     # Протестировать
     cleanABag prune -c /path/to/credentials.json -d "2021-12-31"
     # Удалить
     cleanABag prune -c /path/to/credentials.json -d "2021-12-31" --delete
+    ```
+-   Удалить статьи старше 3 месяцев:
+    ```shell
+    cleanABag -v -c credentials.json prune -d $(date -d "-3 month" +"%F") --delete
     ```
 
 

@@ -2,7 +2,7 @@
 title: "Клавиатура. Раскладка Kenkyo"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-05-07T21:45:00+03:00
-lastmod: 2025-05-09T13:19:00+03:00
+lastmod: 2025-06-10T12:51:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false

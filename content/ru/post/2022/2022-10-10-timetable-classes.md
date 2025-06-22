@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-06-07T18:42:00+03:00
+lastmod: 2025-06-19T17:04:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -688,7 +688,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[5/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[6/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -905,7 +905,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2024--2025 <code>[0/4]</code>
+1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2024--2025 <code>[2/4]</code>
 
     <!--list-separator-->
 
@@ -933,11 +933,11 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, экзамен  <code>[0/4]</code>
+    2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, экзамен  <code>[2/4]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Компьютерные науки и технология программирования, 2024--2025, экзамен, НММбд
+        1. <span class="org-todo done DONE">DONE</span>  Компьютерные науки и технология программирования, 2024--2025, экзамен, НММбд
 
             -   НММбд-01-24, 10:00, ауд. 295
             -   НММбд-02-24, 10:00, ауд. 297
@@ -946,7 +946,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НБИбд
+        2. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НБИбд
 
             -   НБИбд-01-24, 12:00, ауд. 295
             -   НБИбд-02-24, 12:00, ауд. 297
@@ -972,11 +972,11 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен <code>[0/3]</code>
+    3. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, экзамен <code>[3/3]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НКАбд
+        1. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, экзамен, НКАбд
 
             -   НКАбд-01-23, 10:00, ауд. 295
             -   НКАбд-02-23, 10:00, ауд. 297
@@ -985,7 +985,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НПИбд
+        2. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, экзамен, НПИбд
 
             -   НПИбд-01-23, 12:00, ауд. 295
             -   НПИбд-02-23, 12:00, ауд. 297
@@ -993,18 +993,18 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, экзамен, НБИбд
+        3. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, экзамен, НБИбд
 
             -   НБИбд-01-23, 13:00, ауд. 297
             -   НБИбд-02-23, 14:00, ауд. 295
 
     <!--list-separator-->
 
-    4. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, экзамен <code>[/]</code>
+    4. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование, 2024--2025, экзамен <code>[1/1]</code>
 
         <!--list-separator-->
 
-        1.  Имитационное моделирование, 2024--2025, экзамен
+        1. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование, 2024--2025, экзамен
 
             -   НКНбд-01-22, 10:00, ауд. 299
             -   НФИбд-01-22, 10:00, ауд. 298
@@ -1045,15 +1045,15 @@ slug: "timetable-classes"
         2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, Переаттестация № 2, семестр 2, 2024--2025
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.7</span> Государственные экзамены, 2024--2025 <code>[0/2]</code> {#государственные-экзамены-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.7</span> Государственные экзамены, 2024--2025 <code>[2/2]</code> {#государственные-экзамены-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo NEXT">NEXT</span>  Защиты, бакалавры, НФИбд, НКНбд
+1. <span class="org-todo done DONE">DONE</span>  Защиты, бакалавры, 2024--2025, НФИбд, НКНбд
 
 <!--list-separator-->
 
-2. <span class="org-todo todo NEXT">NEXT</span>  Защиты, магистры
+2. <span class="org-todo done DONE">DONE</span>  Защиты, магистры, 2024--2025, 01.04.02, 02.04.02
 
 
 ### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> 2023--2024 учебный год, промежуточные аттестации <code>[6/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}

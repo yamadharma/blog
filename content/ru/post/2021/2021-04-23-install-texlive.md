@@ -2,7 +2,7 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2025-03-20T14:08:00+03:00
+lastmod: 2025-06-18T19:44:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -171,7 +171,7 @@ slug: "install-texlive"
     ```
 -   Можно пересоздать кэш _lualatex_ под пользователем:
     ```shell
-    rm -rvf ~/.texlive2024
+    mv ~/.texlive2024 ~/.texlive2025
     luaotfload-tool -fu
     ```
 
