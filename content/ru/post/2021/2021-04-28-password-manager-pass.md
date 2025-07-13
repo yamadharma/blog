@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2025-06-02T15:44:00+03:00
+lastmod: 2025-07-08T20:11:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -108,6 +108,7 @@ slug: "password-manager-pass"
 
     -   Репозиторий с кодом: <https://github.com/android-password-store/Android-Password-Store>
     -   Форк от основного репозитория.
+    -   Выглядит живым.
 
 <!--list-separator-->
 
@@ -160,6 +161,15 @@ slug: "password-manager-pass"
 
 -   Интерфейс _ivy_ для _pass_.
 -   Репозиторий: <https://github.com/ecraven/ivy-pass>
+
+
+### <span class="section-num">3.5</span> Форки {#форки}
+
+
+#### <span class="section-num">3.5.1</span> passage {#passage}
+
+-   Репозиторий: <https://github.com/FiloSottile/passage>
+-   Используется `age` (<https://age-encryption.org>) как бэкенд.
 
 
 ## <span class="section-num">4</span> Установка {#установка}

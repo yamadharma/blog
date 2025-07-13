@@ -2,7 +2,7 @@
 title: "Непрерывная интеграция. GitHub Actions"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-16T19:04:00+03:00
-lastmod: 2023-07-17T14:41:00+03:00
+lastmod: 2025-07-02T11:38:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -143,3 +143,8 @@ slug: "continuous-integration-github-actions"
     -   Читать содержимое репозитория
 -   Установка значения по умолчанию `contents:read` достаточна для любых рабочих процессов, которые просто необходимо клонировать и компилировать.
 -   Если вам нужны дополнительные разрешения, вам нужно будет указать их в `yaml` вашего рабочего процесса.
+
+
+## <span class="section-num">5</span> Варианты использования {#варианты-использования}
+
+-   [github action при клонировании репозитория]({{< relref "2025-07-02--github-action-clone-repo" >}})

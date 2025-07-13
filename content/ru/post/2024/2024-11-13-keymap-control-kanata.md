@@ -2,7 +2,7 @@
 title: "Раскладка клавиатуры. kanata"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-13T14:42:00+03:00
-lastmod: 2025-05-09T14:09:00+03:00
+lastmod: 2025-07-05T21:09:00+03:00
 tags: ["hard"]
 categories: ["computer-science"]
 draft: false
@@ -19,7 +19,9 @@ slug: "keymap-control-kanata"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Репозиторий: <https://github.com/jtroo/kanata>
--   Документация: <https://github.com/jtroo/kanata/blob/main/docs/config.adoc>
+-   Документация:
+    -   <https://github.com/jtroo/kanata/blob/main/docs/config.adoc>
+    -   <https://jtroo.github.io/config.html>
 -   Поддержка ОС: Linux, Windows, MacOS.
 -   Язык реализации: Rust.
 
@@ -96,12 +98,28 @@ slug: "keymap-control-kanata"
     ```
 
 
-## <span class="section-num">4</span> Пример разделов файла конфигурации {#пример-разделов-файла-конфигурации}
+## <span class="section-num">4</span> Отслеживание приложений {#отслеживание-приложений}
+
+-   Можно отслеживать приложения.
+-   С помощью дополнительного демона, зависящего от графического окружения.
+-   Демон передаёт kanata название слоя, основанное на приложении.
+-   Linux
+    -   hyprkan: <https://github.com/mdSlash/hyprkan>
+    -   nata : <https://github.com/mdSlash/nata>
+    -   qanata : <https://github.com/veyxov/qanata>
+-   macOS
+    -   kanata-vk-agent : <https://github.com/devsunb/kanata-vk-agent>
+-   Windows
+    -   komokana : <https://github.com/LGUG2Z/komokana>
+    -   kanawin : <https://github.com/Aqaao/kanawin>
+
+
+## <span class="section-num">5</span> Пример разделов файла конфигурации {#пример-разделов-файла-конфигурации}
 
 -   Файла конфигурации по умолчанию `~/.config/kanata/kanata.kbd`
 
 
-### <span class="section-num">4.1</span> defcfg {#defcfg}
+### <span class="section-num">5.1</span> defcfg {#defcfg}
 
 -   В этом разделе хранятся «глобальные» параметры, которые применяются ко всему Kanata.
 -   Например, настроим, чтобы обрабатывалась каждая нажатая клавишу, независимо от того, указана ли она в конфигурации явно.
@@ -117,7 +135,7 @@ slug: "keymap-control-kanata"
 ```
 
 
-### <span class="section-num">4.2</span> defsrc {#defsrc}
+### <span class="section-num">5.2</span> defsrc {#defsrc}
 
 -   Этот раздел может появляться в конфигурации только один раз.
 -   Он сообщает Kanata, какие исходные клавиши следует ожидать для сопоставления.
@@ -133,7 +151,7 @@ slug: "keymap-control-kanata"
     ```
 
 
-### <span class="section-num">4.3</span> deflayer {#deflayer}
+### <span class="section-num">5.3</span> deflayer {#deflayer}
 
 -   Можно определить много слоёв и активировать их нажатием клавиш.
 -   Например, определим два слоя: всегда активный слой, который означает клавиши, которые я хочу постоянно переназначать, чтобы делать что-то другое, и второй слой, который активируется только тогда, когда я удерживаю `caps lock`.
@@ -162,7 +180,7 @@ slug: "keymap-control-kanata"
     ```
 
 
-### <span class="section-num">4.4</span> defvar {#defvar}
+### <span class="section-num">5.4</span> defvar {#defvar}
 
 -   Kanata позволяет тонко настраивать поведение, указывая такие вещи, как длительность нажатия клавиши, чтобы она считалась «удержанной».
 -   Хотя можно вводить эти значения (в миллисекундах) каждый раз, проще определить их как переменную в одном месте и ссылаться на них повсюду.
@@ -174,7 +192,7 @@ slug: "keymap-control-kanata"
     ```
 
 
-### <span class="section-num">4.5</span> defalias {#defalias}
+### <span class="section-num">5.5</span> defalias {#defalias}
 
 -   Здесь определяются все псевдонимы (`@`).
 -   Псевдоним принимает форму: `name-of-alias-without-@sign (type-of-functionality options-for-that-function multiple-options-are-space-separated)`.
@@ -204,7 +222,7 @@ slug: "keymap-control-kanata"
 -   `caps-word` : функция, которая позволяет вам вводить CAPITALIZED_WORDS и автоматически отключает CAPS, если это не буква или подчеркивание.
 
 
-### <span class="section-num">4.6</span> Аккорды (defchords) {#аккорды--defchords}
+### <span class="section-num">5.6</span> Аккорды (defchords) {#аккорды--defchords}
 
 -   Простые аккорды без гибких таймаутов и release-поведения.
 -   Позволяют выполнять различные действия в зависимости от того, какая конкретная комбинация клавиш ввода нажимаются вместе.
@@ -238,12 +256,12 @@ slug: "keymap-control-kanata"
     -   В отличие от `defseq`, эти ключи не соответствуют напрямую реальным ключам и являются просто произвольными метками, которые имеют смысл в контексте аккорда.
 
 
-### <span class="section-num">4.7</span> Аккорды (defchordsv2) {#аккорды--defchordsv2}
+### <span class="section-num">5.7</span> Аккорды (defchordsv2) {#аккорды--defchordsv2}
 
 -   Расширенные настройки, интеграция с макросами, управление слоями.
 
 
-#### <span class="section-num">4.7.1</span> Синтаксис `defchordsv2` {#синтаксис-defchordsv2}
+#### <span class="section-num">5.7.1</span> Синтаксис `defchordsv2` {#синтаксис-defchordsv2}
 
 -   Синтаксис `defchordsv2`
     ```lisp
@@ -264,7 +282,7 @@ slug: "keymap-control-kanata"
     -   `disabled-layers` --- слои, где аккорд не работает (например, `()` для всех слоёв).
 
 
-#### <span class="section-num">4.7.2</span> Примеры использования {#примеры-использования}
+#### <span class="section-num">5.7.2</span> Примеры использования {#примеры-использования}
 
 <!--list-separator-->
 
@@ -308,7 +326,7 @@ slug: "keymap-control-kanata"
         -   `nop0` --- блокирует исходные клавиши.
 
 
-#### <span class="section-num">4.7.3</span> Особенности {#особенности}
+#### <span class="section-num">5.7.3</span> Особенности {#особенности}
 
 -   Обратное сопоставление
     -   Для работы с текстовыми словарями (как в ZipChord) требуется ручное сопоставление символов с клавишами `defsrc`, что может быть недетерминированным при пересечении слоёв.
@@ -323,10 +341,10 @@ slug: "keymap-control-kanata"
     -   Нет встроенной поддержки автоматического пробела/заглавных букв --- это настраивается вручную через макросы.
 
 
-## <span class="section-num">5</span> Примеры конфигураций {#примеры-конфигураций}
+## <span class="section-num">6</span> Примеры конфигураций {#примеры-конфигураций}
 
 -   [kanata. Клавиша Caps Lock]({{< relref "2025-05-06--kanata-capslock" >}})
 -   [kanata. Русская раскладка]({{< relref "2025-04-21--kanata-russian-layout" >}})
--   [kanata. Пример конфигурации]({{< relref "2025-04-23--kanata-configuration-example" >}})
+-   [Пример конфигурации раскладки клавиатуры]({{< relref "2025-04-23--kanata-configuration-example" >}})
 -   [kanata. Настройка Home Row Mods]({{< relref "2025-05-01--kanata-home-row-mods" >}})
 -   [kanata. Настройка Caps Word]({{< relref "2025-05-05--kanata-capsword" >}})

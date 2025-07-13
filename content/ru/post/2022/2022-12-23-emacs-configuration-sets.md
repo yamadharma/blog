@@ -2,7 +2,7 @@
 title: "Наборы конфигураций Emacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-12-23T15:41:00+03:00
-lastmod: 2025-02-02T17:37:00+03:00
+lastmod: 2025-07-09T21:08:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

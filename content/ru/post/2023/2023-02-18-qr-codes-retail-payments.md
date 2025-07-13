@@ -2,7 +2,7 @@
 title: "QR-коды в розничных платежах"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-02-18T20:42:00+03:00
-lastmod: 2024-01-11T19:42:00+03:00
+lastmod: 2025-07-09T21:05:00+03:00
 tags: ["money"]
 categories: ["life"]
 draft: false

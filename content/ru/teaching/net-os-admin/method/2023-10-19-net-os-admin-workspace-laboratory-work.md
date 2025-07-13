@@ -2,13 +2,13 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-19T17:57:00+03:00
-lastmod: 2024-07-26T14:04:00+03:00
+lastmod: 2025-07-02T16:43:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 weight: 810
 toc: true
-type: docs
+type: "docs"
 feedback: false
 summary: "Рабочее пространство для лабораторной работы"
 linktitle: "Рабочее пространство для лабораторной работы"
@@ -30,17 +30,17 @@ menu:
 -   Репозиторий: <https://github.com/yamadharma/course-directory-student-template>.
 -   Репозиторий с примерами кода: <https://github.com/yamadharma/net-os-admin-lab-code>
 -   Аббревиатура курса: `net-os-admin`
--   Учебный год: 2024--2025
+-   Учебный год: 2025--2026
 
 
 ## <span class="section-num">2</span> Создание репозитория для курса Администрирование сетевых подсистем {#создание-репозитория-для-курса-администрирование-сетевых-подсистем}
 
 -   Создадим репозиторий с помощью утилит командной строки gh (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})):
     ```shell
-    mkdir -p ~/work/study/2024-2025/"Администрирование сетевых подсистем"
-    cd ~/work/study/2024-2025/"Администрирование сетевых подсистем"
-    gh repo create study_2024-2025_net-os-admin --template=yamadharma/course-directory-student-template --public
-    git clone --recursive git@github.com:<owner>/study_2024-2025_net-os-admin.git net-os-admin
+    mkdir -p ~/work/study/2025-2026/"Администрирование сетевых подсистем"
+    cd ~/work/study/2025-2026/"Администрирование сетевых подсистем"
+    gh repo create study_2025-2026_net-os-admin --template=yamadharma/course-directory-student-template --public
+    git clone --recursive git@github.com:<owner>/study_2025-2026_net-os-admin.git net-os-adminy
     ```
 
 
@@ -51,11 +51,7 @@ menu:
     -   каталог курса называется как аббревиатура курса.
 -   Перейдите в каталог курса:
     ```shell
-    cd ~/work/study/2024-2025/"Администрирование сетевых подсистем"/net-os-admin
-    ```
--   Удалите лишние файлы:
-    ```shell
-    rm package.json
+    cd ~/work/study/2025-2026/"Администрирование сетевых подсистем"/net-os-admin
     ```
 -   Создайте необходимые каталоги:
     ```shell

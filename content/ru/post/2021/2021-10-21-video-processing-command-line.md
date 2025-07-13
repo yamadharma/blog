@@ -2,7 +2,7 @@
 title: "Обработка видео. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-21T17:26:00+03:00
-lastmod: 2025-04-29T10:08:00+03:00
+lastmod: 2025-07-09T18:15:00+03:00
 categories: ["computer-science"]
 draft: false
 slug: "video-processing-command-line"

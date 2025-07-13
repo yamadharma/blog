@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-06-19T17:04:00+03:00
+lastmod: 2025-06-26T16:50:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -901,39 +901,39 @@ slug: "timetable-classes"
 1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[0/2]</code> {#сессия-семестр-2-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[1/2]</code> {#сессия-семестр-2-2024-2025}
 
 <!--list-separator-->
 
-1. <span class="org-todo todo TODO">TODO</span>  Экзамены, семестр 2, 2024--2025 <code>[2/4]</code>
+1. <span class="org-todo done DONE">DONE</span>  Экзамены, семестр 2, 2024--2025 <code>[4/4]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен <code>[0/3]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, экзамен <code>[3/3]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НКНбд
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, экзамен, НКНбд
 
             -   НКНбд-01-22, 10:00, ауд. 297
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НФИбд
+        2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, экзамен, НФИбд
 
             -   НФИбд-01-22, 11:00, ауд. 295
             -   НФИбд-02-22, 10:00, ауд. 297
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, экзамен, НПИбд
+        3. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, экзамен, НПИбд
 
             -   НПИбд-01-22, 12:00, ауд. 295
             -   НПИбд-02-22, 12:00, ауд. 297
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, экзамен  <code>[2/4]</code>
+    2. <span class="org-todo done DONE">DONE</span>  Операционные системы, 2024--2025, экзамен  <code>[4/4]</code>
 
         <!--list-separator-->
 
@@ -954,7 +954,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НКАбд
+        3. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НКАбд
 
             -   НКАбд-01-24, 10:00, ауд. 295
             -   НКАбд-02-24, 10:00, ауд. 297
@@ -964,7 +964,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        4. <span class="org-todo todo TODO">TODO</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НПИбд
+        4. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы, 2024--2025, экзамен, НПИбд
 
             -   НПИбд-01-24, 12:00, ауд. 297
             -   НПИбд-02-24, 13:00, ауд. 295

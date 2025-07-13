@@ -2,8 +2,8 @@
 title: "Квартили списка ВАК"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T20:12:00+03:00
-lastmod: 2025-03-10T09:47:00+03:00
-tags: ["science-being"]
+lastmod: 2025-07-04T18:16:00+03:00
+tags: ["education", "science-being"]
 categories: ["science"]
 draft: false
 slug: "hac-list-quartiles"

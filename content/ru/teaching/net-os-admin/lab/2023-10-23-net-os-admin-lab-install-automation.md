@@ -2,13 +2,13 @@
 title: "Автоматизация установки операционных систем"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-10-23T13:04:00+03:00
-lastmod: 2023-11-15T09:53:00+03:00
+lastmod: 2025-07-03T19:09:00+03:00
 tags: ["sysadmin", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 101
 toc: false
-type: docs
+type: "docs"
 feedback: false
 summary: "Автоматизация установки операционных систем"
 linktitle: "Автоматизация установки операционных систем"
@@ -27,75 +27,16 @@ menu:
 ## <span class="section-num">1</span> Видео {#видео}
 
 
-### <span class="section-num">1.1</span> Packer: создание box файла {#packer-создание-box-файла}
+### <span class="section-num">1.1</span> Создание виртуальной машины (Virtualbox) {#создание-виртуальной-машины--virtualbox}
 
-{{< tabs tabTotal="3" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Создание виртуальной машины с Virtualbox" >}}
 
-{{< rutube 5ca02ddb70b62eb6ec824903ab2bff97 >}}
+{{< tab "RuTube" >}}{{< rutube 0a52857a1fb8a79cbf58fcb58d2d8593 >}}{{< /tab >}}
 
-{{< /rtab >}}
-{{< rtab tabName="VKVideo" >}}
+{{< tab "Платформа" >}}{{< plvideo Dncja2upfmNQ >}}{{< /tab >}}
 
-{{< vkvideo oid="606414976" id="456239571" hd="2" >}}
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239038 hd=2 >}}{{< /tab >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< tab "Youtube" >}}{{< youtube WwYYYIQdUTk >}}{{< /tab >}}
 
-{{< youtube B1n2nWrXQ2M >}}
-
-{{< /rtab >}}
-{{< /tabs >}}
-
-
-### <span class="section-num">1.2</span> Vagrant: запуск виртуальной машины {#vagrant-запуск-виртуальной-машины}
-
-{{< tabs tabTotal="3" >}}
-{{< rtab tabName="RuTube" >}}
-
-{{< rutube 62fc8bdec2792bbd1dc146519da69689 >}}
-
-{{< /rtab >}}
-{{< rtab tabName="VKVideo" >}}
-
-{{< vkvideo oid="606414976" id="456239572" hd="2" >}}
-
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
-
-{{< youtube 7VbuL3jPhKw >}}
-
-{{< /rtab >}}
-{{< /tabs >}}
-
-
-### <span class="section-num">1.3</span> Packer и Vagrant под Windows {#packer-и-vagrant-под-windows}
-
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
-
-{{< rutube bd71894a8c9a6c616da23276939247df >}}
-
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
-
-{{< youtube u58DRlSm4YI >}}
-
-{{< /rtab >}}
-{{< /tabs >}}
-
-
-### <span class="section-num">1.4</span> Vagrant: provisioning {#vagrant-provisioning}
-
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
-
-{{< rutube 55c2d2498f5ffda4bf79657237313417 >}}
-
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
-
-{{< youtube Z9zvD_Uzq6Q >}}
-
-{{< /rtab >}}
 {{< /tabs >}}

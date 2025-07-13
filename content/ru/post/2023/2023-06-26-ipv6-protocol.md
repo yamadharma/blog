@@ -2,8 +2,8 @@
 title: "Протокол IPv6"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-26T19:36:00+03:00
-lastmod: 2023-07-11T11:18:00+03:00
-tags: ["network", "ipv6"]
+lastmod: 2025-07-09T20:30:00+03:00
+tags: ["MOC", "network", "ipv6"]
 categories: ["computer-science"]
 draft: false
 slug: "ipv6-protocol"
@@ -29,3 +29,5 @@ slug: "ipv6-protocol"
     -   <https://ipv6test.google.com/>
     -   <http://ipv6-test.com/>
     -   <https://test-ipv6.com/>
+    -   <http://k9a.ru>
+    -   <https://yandex.ru/internet/>

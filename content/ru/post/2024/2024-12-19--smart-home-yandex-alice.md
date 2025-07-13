@@ -2,7 +2,7 @@
 title: "Умный дом. Яндекс. Алиса"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-19T12:45:00+03:00
-lastmod: 2025-01-01T16:05:00+03:00
+lastmod: 2025-07-11T14:45:00+03:00
 tags: ["appliance"]
 categories: ["life", "computer-science"]
 draft: false
@@ -50,3 +50,13 @@ slug: "smart-home-yandex-alice"
 -   По 2799 ₽.
 -   Работают по протоколу Zigbee.
 -   Установил в детскую и гостиную.
+
+
+### <span class="section-num">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-07-10 Чт] </span></span> Выключатель проводной, двукнопочный, Zigbee {#выключатель-проводной-двукнопочный-zigbee}
+
+-   Купил.
+-   Умный выключатель Yandex YNDX-00532 двухклавишный, белый.
+-   2746 ₽.
+-   Установил в коридоре.
+-   Долго разбирался с проводами, что куда вставить.
+-   Нейтрали нет.

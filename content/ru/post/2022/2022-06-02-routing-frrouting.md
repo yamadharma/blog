@@ -2,7 +2,7 @@
 title: "Маршрутизация. FRRouting"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-06-02T19:30:00+03:00
-lastmod: 2023-07-09T17:40:00+03:00
+lastmod: 2025-07-04T18:12:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -44,15 +44,10 @@ slug: "routing-frrouting"
 
 ### <span class="section-num">3.1</span> Видео: Установка приложения (маршрутизатор FRR) {#видео-установка-приложения--маршрутизатор-frr}
 
-{{< tabs tabTotal="2" >}}
-{{< rtab tabName="RuTube" >}}
+{{< tabs "Установка приложения (маршрутизатор FRR)" >}}
 
-{{< rutube f90d7b7baaea8a0d5549384327207060 >}}
+{{< tab "RuTube" >}}{{< rutube f90d7b7baaea8a0d5549384327207060 >}}{{< /tab >}}
 
-{{< /rtab >}}
-{{< rtab tabName="Youtube" >}}
+{{< tab "Youtube" >}}{{< youtube BgIzJo18yp8 >}}{{< /tab >}}
 
-{{< youtube BgIzJo18yp8 >}}
-
-{{< /rtab >}}
 {{< /tabs >}}

@@ -2,7 +2,7 @@
 title: "Гостиница Жемчужина, Сочи"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-17T18:42:00+03:00
-lastmod: 2024-08-03T18:03:00+03:00
+lastmod: 2025-07-09T20:27:00+03:00
 tags: ["recreation"]
 categories: ["life"]
 draft: false
@@ -19,6 +19,7 @@ slug: "zhemchuzhina-hotel-sochi"
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   Сайт: <https://www.zhem.ru/>.
+-   Рекламный сайт: <https://jemchuzhina-sochi.ru/>
 -   Количество звёзд: 4.
 
 

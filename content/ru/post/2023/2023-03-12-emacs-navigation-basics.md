@@ -2,7 +2,7 @@
 title: "Emacs. Основы навигации"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-12T13:24:00+03:00
-lastmod: 2024-10-15T15:53:00+03:00
+lastmod: 2025-07-09T21:04:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false

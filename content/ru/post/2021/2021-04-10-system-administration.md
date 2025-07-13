@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-06-02T15:47:00+03:00
+lastmod: 2025-06-26T12:40:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -271,6 +271,7 @@ slug: "system-administration"
 ### <span class="section-num">10.13</span> Сетевые клиенты {#сетевые-клиенты}
 
 -   [Почтовый клиент aerc]({{< relref "2024-07-17-email-client-aerc" >}})
+-   [Linux. Использование мессенджеров]({{< relref "2025-06-26--linux-messengers" >}})
 
 
 #### <span class="section-num">10.13.1</span> Броузеры {#броузеры}

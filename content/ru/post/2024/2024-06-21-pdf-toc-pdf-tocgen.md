@@ -2,7 +2,7 @@
 title: "Pdf. Оглавление. pdf.tocgen"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-21T20:36:00+03:00
-lastmod: 2025-05-10T16:57:00+03:00
+lastmod: 2025-07-11T19:34:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -249,5 +249,5 @@ Pdf. Оглавление. pdf.tocgen.
 
 -   Пример использования:
     ```shell
-    ./increment.sh toc 1
+    ./increment_page.sh toc 1
     ```

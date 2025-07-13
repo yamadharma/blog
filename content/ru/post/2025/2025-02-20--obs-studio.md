@@ -2,7 +2,7 @@
 title: "OBS Studio"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-02-20T11:38:00+03:00
-lastmod: 2025-02-20T13:26:00+03:00
+lastmod: 2025-07-08T20:17:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -69,3 +69,8 @@ OBS Studio.
         ```shell
         emerge media-video/obs-multi-rtmp
         ```
+
+
+## <span class="section-num">4</span> Управление {#управление}
+
+-   [OBS Studio. Удалённое управление]({{< relref "2025-07-08--obs-studio-remote-control" >}})

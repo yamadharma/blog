@@ -2,7 +2,7 @@
 title: "Org-mode. Экспорт"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-10T15:06:00+03:00
-lastmod: 2023-09-30T20:00:00+03:00
+lastmod: 2025-07-09T21:08:00+03:00
 tags: ["org-mode", "emacs"]
 categories: ["computer-science"]
 draft: false
@@ -89,8 +89,6 @@ slug: "org-mode-export"
     -   `toc` --- переключатель включения содержания или установка уровня содержания `(org-export-with-toc)`.
     -   `todo` --- переключатель включения в экспорт ключевых слов `TODO` `(org-export-with-todo-keywords)`.
     -   `|` --- переключатель экспорта таблиц `(org-export-with-tables)`.
-
-<!--listend-->
 
 -   Для поддерева свойства имеют префикс `EXPORT_`.
     -   Например, `DATE` становится `EXPORT_DATE` при использовании для определённого поддерева.

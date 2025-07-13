@@ -2,8 +2,8 @@
 title: "Emacs. Основы работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-03T12:35:00+03:00
-lastmod: 2024-10-15T16:01:00+03:00
-tags: ["programming", "emacs"]
+lastmod: 2025-07-09T21:10:00+03:00
+tags: ["MOC", "programming", "emacs"]
 categories: ["computer-science"]
 draft: false
 slug: "emacs-basics"

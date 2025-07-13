@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2025-01-28T20:28:00+03:00
+lastmod: 2025-07-09T19:42:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -180,6 +180,34 @@ $ pdftk input.pdf drop_xmp вывод output.pdf
 -   При просмотре в evince тема оказывается в поле ключевых слов метаданных файла PDF.
 -   Adobe Acrobat и PDF-XChange показывают правильно.
 -   `pdfinfo` показывает правильно.
+
+
+#### <span class="section-num">9.2.2</span> pdftk {#pdftk}
+
+-   Извлечь метаданные:
+    ```shell
+    pdftk input.pdf dump_data output metadata.txt
+    ```
+-   Измените файл metadata.txt.
+-   Обновить pdf-файл:
+    ```shell
+    pdftk input.pdf update_info metadata.txt output output.pdf
+    ```
+-   Проверьте новые метаданные pdf:
+    ```shell
+    pdftk output.pdf dump_data
+    ```
+
+
+### <span class="section-num">9.3</span> Удалить метаданные {#удалить-метаданные}
+
+
+#### <span class="section-num">9.3.1</span> exiftool {#exiftool}
+
+-   Удалить все метаданные:
+    ```shell
+    exiftool -all= input.pdf
+    ```
 
 
 ## <span class="section-num">10</span> Уменьшить размер pdf-файла (сжатие) {#уменьшить-размер-pdf-файла--сжатие}

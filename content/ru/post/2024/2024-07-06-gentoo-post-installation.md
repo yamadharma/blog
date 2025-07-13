@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2025-02-07T18:59:00+03:00
+lastmod: 2025-07-13T15:52:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -273,7 +273,7 @@ slug: "gentoo-post-installation"
 
     -   Управление пакетами Node.js (оверлей `karma`, см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
         ```shell
-        emerge ${EMERGE_FLAGS} sys-apps/pnpm-bin
+        emerge ${EMERGE_FLAGS} sys-apps/pnpm
         ```
 
 <!--list-separator-->
@@ -341,6 +341,18 @@ slug: "gentoo-post-installation"
     ```
 
 
+#### <span class="section-num">3.6.2</span> Ядро {#ядро}
+
+-   Установим ядро:
+    ```shell
+    emerge ${EMERGE_FLAGS} gentoo-sources
+    ```
+-   Создание установочного образа (см. [Gentoo. Пакет installkernel]({{< relref "2025-05-22--gentoo-installkernel" >}})):
+    ```shell
+    emerge ${EMERGE_FLAGS} installkernel
+    ```
+
+
 ### <span class="section-num">3.7</span> Утилиты пользователя {#утилиты-пользователя}
 
 -   Для установки пользовательских утилит необходимо использовать файл `user.sh`:
@@ -370,4 +382,28 @@ slug: "gentoo-post-installation"
     ```shell
     ## Keys
     # emerge ${EMERGE_FLAGS} net-misc/keychain
+    ```
+
+
+#### <span class="section-num">3.7.3</span> Работа с текстом {#работа-с-текстом}
+
+<!--list-separator-->
+
+1.  Markdown
+
+    -   Pandoc (см. [Pandoc]({{< relref "2021-08-28-pandoc" >}})):
+        ```shell
+        emerge ${EMERGE_FLAGS} app-text/pandoc-bin
+        ```
+    -   Quarto (см. [Система Quarto]({{< relref "2025-03-22--quarto-system" >}})):
+        ```shell
+        emerge ${EMERGE_FLAGS} app-text/quarto
+        ```
+
+
+#### <span class="section-num">3.7.4</span> Чтение {#чтение}
+
+-   Calibre (см. [Каталогизатор книг Calibre]({{< relref "2025-02-04--calibre-book-cataloger" >}})):
+    ```shell
+    emerge ${EMERGE_FLAGS} app-text/calibre
     ```

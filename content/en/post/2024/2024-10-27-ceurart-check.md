@@ -2,7 +2,7 @@
 title: "CEURART document verification"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2024-12-17T12:47:00+03:00
+lastmod: 2025-07-03T13:44:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -28,11 +28,20 @@ CEURART document verification.
 ## <span class="section-num">2</span> Utilities {#utilities}
 
 -   The document verification utilities for CEUR-WS can be found in the repository: <https://github.com/yamadharma/ceurart-check>
--   `check-pdf-errors`:
-    -   Checks pdf files.
-    -   Checks for the presence of the phrase 'Creative Commons' in pdf files.
-        -   This is to check if the text can be highlighted (if the document is not an image).
-    -   Checking for the use of Libertinus fonts.
-    -   Checking for duplication of pdf files.
--   `check-index-errors`:
-    -   Checks the `index.html` file.
+
+
+### <span class="section-num">2.1</span> `check-pdf-errors` {#check-pdf-errors}
+
+-   Checks pdf files.
+-   Checks for the presence of the phrase 'Creative Commons' in pdf files.
+    -   This is to check if the text can be highlighted (if the document is not an image).
+-   Checking for the use of Libertinus fonts.
+-   Checking for duplication of pdf files.
+
+
+### <span class="section-num">2.2</span> `check-index-errors` {#check-index-errors}
+
+-   Checks the `index.html` file.
+-   Rules:
+    -   paper PDFs that are in the directory but not listed in `index.html`;
+    -   papers that are linked in `index.html` but not included in the directory.
