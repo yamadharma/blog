@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2025-06-15T20:18:00+03:00
+lastmod: 2025-07-19T11:08:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -66,8 +66,8 @@ slug: "read-it-later-wallabag"
     ```js
     {
       "WallabagURL": "https://your.wallabag.tld",
-      "ClientId": "client ID generate in your profile on wallabag"
-      "ClientSecret": "client secrete generate in your profile on wallabag"
+      "ClientId": "client ID generate in your profile on wallabag",
+      "ClientSecret": "client secrete generate in your profile on wallabag",
       "UserName": "your username",
       "UserPassword": "your password"
     }

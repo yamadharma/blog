@@ -2,7 +2,7 @@
 title: "LaTeX. Пакет tabularray"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-07-13T15:57:00+03:00
-lastmod: 2025-07-13T16:46:00+03:00
+lastmod: 2025-07-13T19:36:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false

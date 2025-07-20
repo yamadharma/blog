@@ -2,8 +2,8 @@
 title: "Linux. Дистрибутив Gentoo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-17T13:18:00+03:00
-lastmod: 2025-05-22T12:01:00+03:00
-tags: ["sysadmin", "linux", "gentoo"]
+lastmod: 2025-07-13T20:41:00+03:00
+tags: ["sysadmin", "linux", "MOC", "gentoo"]
 categories: ["computer-science"]
 draft: false
 slug: "linux-gentoo-distribution"
@@ -27,3 +27,4 @@ slug: "linux-gentoo-distribution"
 -   [Gentoo. Компиляция системы clang]({{< relref "2024-05-16-gentoo-compiling-clang" >}})
 -   [Gentoo. Создание ebuild для Rust]({{< relref "2024-11-02-gentoo-ebuild-rust" >}})
 -   [Gentoo. Пакет installkernel]({{< relref "2025-05-22--gentoo-installkernel" >}})
+-   [Gentoo. Пакет eclean-kernel]({{< relref "2025-07-13--gentoo-eclean-kernel" >}})

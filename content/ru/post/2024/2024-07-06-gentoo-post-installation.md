@@ -2,7 +2,7 @@
 title: "Gentoo. Постустановка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-07-06T16:06:00+03:00
-lastmod: 2025-07-13T15:52:00+03:00
+lastmod: 2025-07-13T20:40:00+03:00
 tags: ["sysadmin", "gentoo", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -350,6 +350,10 @@ slug: "gentoo-post-installation"
 -   Создание установочного образа (см. [Gentoo. Пакет installkernel]({{< relref "2025-05-22--gentoo-installkernel" >}})):
     ```shell
     emerge ${EMERGE_FLAGS} installkernel
+    ```
+-   Управление очисткой ядер (см. [Gentoo. Пакет eclean-kernel]({{< relref "2025-07-13--gentoo-eclean-kernel" >}})):
+    ```shell
+    emerge ${EMERGE_FLAGS} app-admin/eclean-kernel
     ```
 
 

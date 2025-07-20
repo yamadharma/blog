@@ -2,7 +2,7 @@
 title: "Высокий и низкий контекст"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-05-25T21:04:00+03:00
-lastmod: 2025-05-25T21:11:00+03:00
+lastmod: 2025-07-20T20:42:00+03:00
 categories: ["thinking", "science"]
 draft: false
 slug: "high-context-low-context"
@@ -17,7 +17,7 @@ slug: "high-context-low-context"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Высокий и низкий контекст --— это термины, введённые Эдвардом Холлом для описания различий в способах коммуникации между культурами.
+-   Высокий и низкий контекст --— это термины, введённые Эдвардом Холлом для описания различий в способах коммуникации между культурами [<a href="#citeproc_bib_item_1">1</a>–<a href="#citeproc_bib_item_3">3</a>].
 
 
 ## <span class="section-num">2</span> Высокий контекст {#высокий-контекст}
@@ -40,3 +40,14 @@ slug: "high-context-low-context"
     -   речь выразительна, предоставляемый объём информации формализован;
     -   невербальным способам общения отводится небольшая роль;
     -   отсутствие недосказанности в коммуникативном акте.
+
+
+## <span class="section-num">4</span> Библиография {#библиография}
+
+## Литература
+
+<div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Hall, E.T. Jr. The Silent Language / E.T. Hall Jr Впервые введены понятия высокого и низкого контекста. – New York : Anchor Books, 1959.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>2.	Hall, E.T. Jr. The Hidden Dimension / E.T. Hall Jr. – Garden City, N.Y. : Doubleday, 1966. – 201 сс.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>3.	Hall, E.T. Jr. Beyond Culture / E.T. Hall Jr Расширенное исследование культурных контекстов. – New York : Anchor Books, 1976.</div>
+</div>

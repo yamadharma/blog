@@ -2,7 +2,7 @@
 title: "Emacs. Пакет treemacs"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-01-20T09:09:00+03:00
-lastmod: 2025-07-08T10:05:00+03:00
+lastmod: 2025-07-14T19:37:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -119,8 +119,8 @@ Emacs. Пакет treemacs.
 | g/r/gr        | treemacs-refresh                            | Refresh the project at point.                                                                          |
 | `d`           | treemacs-delete-file                        | Delete node at point.                                                                                  |
 | `R`           | treemacs-rename-file                        | Rename node at point.                                                                                  |
-| cf            | treemacs-create-file                        | Create a file.                                                                                         |
-| cd            | treemacs-create-dir                         | Create a directory.                                                                                    |
+| cf            | treemacs-create-file                        | Создать файл.                                                                                          |
+| cd            | treemacs-create-dir                         | Создать каталог.                                                                                       |
 | q             | treemacs-quit                               | Hide the treemacs window.                                                                              |
 | Q             | treemacs-kill-buffer                        | Delete the treemacs buffer.                                                                            |
 | P             | treemacs-peek-mode                          | Peek at the files at point without fully opening them.                                                 |

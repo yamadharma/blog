@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-07-07T19:05:00+03:00
+lastmod: 2025-07-18T14:32:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -1320,7 +1320,10 @@ slug: "emacs-desire-configuration"
 
 2.  tab-bar
 
-    -   Подключение:
+    <!--list-separator-->
+
+    1.  Подключение
+
         ```emacs-lisp
         (desire 'tab-bar)
         ```
@@ -1328,6 +1331,175 @@ slug: "emacs-desire-configuration"
           <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 47:</span>
           rc.packages.el
         </div>
+
+    <!--list-separator-->
+
+    2.  Загрузка
+
+        -   Файл: `packages/tab-bar/loaddefs.ecf`
+
+        <!--listend-->
+
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Emacs Tab Bar
+
+        ;;; Code:
+
+        (require 'tab-bar)
+
+        ;;;
+        ```
+
+    <!--list-separator-->
+
+    3.  Настройка
+
+        <!--list-separator-->
+
+        1.  Основная
+
+            -   Файл: `packages/tab-bar/desire.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Emacs Tab Bar
+
+            ;;; Code:
+
+            (tab-bar-mode 1)
+            (setopt tab-bar-show 1)
+
+            (setopt tab-bar-new-tab-to 'right)
+
+            ;; (setopt tab-bar-new-tab-choice "*dashboard*")
+            ;; (setopt tab-bar-new-tab-choice #'ibuffer)
+
+            (setopt tab-bar-tab-hints t)
+            ;; (setq tab-bar-select-tab-modifiers "super") ;; FIXME
+
+            (setopt tab-bar-format '(tab-bar-format-history tab-bar-format-tabs tab-bar-separator))
+
+            ;;;
+            ```
+
+        <!--list-separator-->
+
+        2.  Клавиатурные сочетания
+
+            -   Файл: `packages/tab-bar/desire.ecd/keybinding.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Emacs Tab Bar
+            ;;; Key bindings
+
+            ;;; Code:
+
+            ;;;; Select the previous available tab
+            (global-set-key (kbd "C-{")  'tab-bar-switch-to-prev-tab)
+            (global-set-key (kbd "s-{") 'tab-bar-switch-to-prev-tab)
+
+            ;;;; Select the next available tab
+            (global-set-key (kbd "C-}") 'tab-bar-switch-to-next-tab)
+            (global-set-key (kbd "s-}") 'tab-bar-switch-to-next-tab)
+
+            ;;; Move current tabe to left
+            ;; (global-set-key (kbd "C-M-{") 'centaur-tabs-move-current-tab-to-left)
+
+            ;;; Move current tabe to right
+            ;; (global-set-key (kbd "C-M-}") 'centaur-tabs-move-current-tab-to-right)
+
+            ;; (global-set-key (kbd "s-t") 'tab-bar-new-tab)
+            ;; (global-set-key (kbd "s-w") 'tab-bar-close-tab)
+
+            ;; (setopt tab-bar-select-tab-modifiers "super")
+
+            ;;;
+            ```
+
+        <!--list-separator-->
+
+        3.  Заголовки
+
+            -   Файл: `packages/tab-bar/desire.ecd/title.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Emacs Tab Bar
+
+            ;;; Code:
+
+            (setopt tab-bar-close-button-show t)
+
+            (setopt tab-bar-tab-hints t)
+
+            (defvar ecf/circle-numbers-alist
+              '((0 . "⓪")
+                (1 . "①")
+                (2 . "②")
+                (3 . "③")
+                (4 . "④")
+                (5 . "⑤")
+                (6 . "⑥")
+                (7 . "⑦")
+                (8 . "⑧")
+                (9 . "⑨"))
+              "Alist of integers to strings of circled unicode numbers.")
+
+            (defun ecf/tab-bar-tab-name-format-default (tab i)
+              (let ((current-p (eq (car tab) 'current-tab))
+                    (tab-num (if (and tab-bar-tab-hints (< i 10))
+                                 (alist-get i ecf/circle-numbers-alist) "")))
+                (propertize
+                 (concat tab-num
+                         " "
+                         (alist-get 'name tab)
+                         (or (and tab-bar-close-button-show
+                                  (not (eq tab-bar-close-button-show
+                                           (if current-p 'non-selected 'selected)))
+                                  tab-bar-close-button)
+                             "")
+                         " ")
+                 'face (funcall tab-bar-tab-face-function tab))))
+            (setopt tab-bar-tab-name-format-function #'ecf/tab-bar-tab-name-format-default)
+
+            ;;;
+            ```
+
+    <!--list-separator-->
+
+    4.  Интеграция
+
+        <!--list-separator-->
+
+        1.  vim-tab-bar
+
+            -   Файл: `packages/tab-bar/desire.ecd/vim-tab-bar.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; A Vim-Inspired Tab-Bar That Automatically Adapts to Any Emacs Theme
+            ;; https://github.com/jamescherti/vim-tab-bar.el
+
+            ;;; Code
+
+            (desire 'vim-tab-bar)
+            (vim-tab-bar-mode)
+
+            ;;;; Show the tab groups
+            (setq vim-tab-bar-show-groups t)
+
+            ;;;
+            ```
 
 <!--list-separator-->
 
@@ -4866,11 +5038,218 @@ slug: "emacs-desire-configuration"
     (desire 'ibuffer)
     ;; (desire 'persp-mode)
     ;; (desire 'perspective)
-    ;; (desire 'bufler)
     ;; (desire 'tabspaces)
-
-    ;;}}}
     ```
+
+<!--list-separator-->
+
+3.  bufler
+
+    <!--list-separator-->
+
+    1.  Подключение
+
+        -   Файл: `rc.packages.el`
+            ```emacs-lisp
+            (desire 'bufler)
+            ```
+
+    <!--list-separator-->
+
+    2.  Объявление
+
+        -   Файл: `packages/bufler/loaddefs.ecf`
+
+        <!--listend-->
+
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Group buffers into workspaces with programmable rules
+        ;; https://github.com/alphapapa/bufler.el
+
+        ;;; Code:
+
+        (desire' burly)
+
+        (require 'bufler)
+
+        ;;;
+        ```
+
+    <!--list-separator-->
+
+    3.  Настройка
+
+        <!--list-separator-->
+
+        1.  Основной файл
+
+            -   Файл: `packages/bufler/desire.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Group buffers into workspaces with programmable rules
+            ;; https://github.com/alphapapa/bufler.el
+
+            ;;; Code:
+
+            (bufler-mode 1)
+
+            ;;;
+            ```
+
+        <!--list-separator-->
+
+        2.  Сочетания клавиш
+
+            -   Файл: `packages/bufler/desire.ecd/keybinding.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Group buffers into workspaces with programmable rules
+            ;; https://github.com/alphapapa/bufler.el
+
+            ;;; Code:
+
+            (defun ecf/bufler-one-window (&optional force-refresh)
+              (interactive "P")
+              (bufler-list)
+              (delete-other-windows))
+
+            (global-set-key (kbd "C-x C-b") #'ecf/bufler-one-window)
+
+            ;;;
+            ```
+
+        <!--list-separator-->
+
+        3.  Группы буферов
+
+            -   Файл: `packages/bufler/desire.ecd/group.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Group buffers into workspaces with programmable rules
+            ;; https://github.com/alphapapa/bufler.el
+
+            ;;; Code:
+
+            ;; (setopt bufler-groups
+            ;;       (bufler-defgroups
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting all named workspaces.
+            ;; 	 (auto-workspace))
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting all `help-mode' and `info-mode' buffers.
+            ;; 	 (group-or "*Help/Info*"
+            ;; 		   (mode-match "*Help*" (rx bos "help-"))
+            ;; 		   (mode-match "*Info*" (rx bos "info-"))))
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting all special buffers (i.e. ones that are not
+            ;; 	 ;; file-backed), except `magit-status-mode' buffers (which are allowed to fall
+            ;; 	 ;; through to other groups, so they end up grouped with their project buffers).
+            ;; 	 (group-and "*Special*"
+            ;; 		    (lambda (buffer)
+            ;; 		      (unless (or (funcall (mode-match "Magit" (rx bos "magit-status"))
+            ;; 					  buffer)
+            ;; 				 (funcall (mode-match "Dired" (rx bos "dired"))
+            ;; 					  buffer)
+            ;; 				 (funcall (auto-file) buffer))
+            ;; 			"*Special*")))
+            ;; 	 (group
+            ;; 	  ;; Subgroup collecting these "special special" buffers
+            ;; 	  ;; separately for convenience.
+            ;; 	  (name-match "**Special**"
+            ;; 		      (rx bos "*" (or "Messages" "Warnings" "scratch" "Backtrace") "*")))
+            ;; 	 (group
+            ;; 	  ;; Subgroup collecting all other Magit buffers, grouped by directory.
+            ;; 	  (mode-match "*Magit* (non-status)" (rx bos (or "magit" "forge") "-"))
+            ;; 	  (auto-directory))
+            ;; 	 ;; Subgroup for Helm buffers.
+            ;; 	 (mode-match "*Helm*" (rx bos "helm-"))
+            ;; 	 ;; Remaining special buffers are grouped automatically by mode.
+            ;; 	 (auto-mode))
+            ;; 	;; All buffers under "~/.emacs.d" (or wherever it is).
+            ;; 	(dir user-emacs-directory)
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting buffers in `org-directory' (or "~/org" if
+            ;; 	 ;; `org-directory' is not yet defined).
+            ;; 	 (dir (if (bound-and-true-p org-directory)
+            ;; 		  org-directory
+            ;; 		"~/org"))
+            ;; 	 (group
+            ;; 	  ;; Subgroup collecting indirect Org buffers, grouping them by file.
+            ;; 	  ;; This is very useful when used with `org-tree-to-indirect-buffer'.
+            ;; 	  (auto-indirect)
+            ;; 	  (auto-file))
+            ;; 	 ;; Group remaining buffers by whether they're file backed, then by mode.
+            ;; 	 (group-not "*special*" (auto-file))
+            ;; 	 (auto-mode))
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting buffers in a projectile project.
+            ;; 	 (auto-projectile))
+            ;; 	(group
+            ;; 	 ;; Subgroup collecting buffers in a version-control project,
+            ;; 	 ;; grouping them by directory.
+            ;; 	 (auto-project))
+            ;; 	;; Group remaining buffers by directory, then major mode.
+            ;; 	(auto-directory)
+            ;; 	(auto-mode))
+            ;;       )
+
+            ;;;
+            ```
+
+    <!--list-separator-->
+
+    4.  Интеграция
+
+        <!--list-separator-->
+
+        1.  tab-bar
+
+            -   Файл: `packages/bufler/tab-bar.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Group buffers into workspaces with programmable rules
+            ;; https://github.com/alphapapa/bufler.el
+
+            ;;; Code:
+
+            (require 'bufler-workspace-tabs)
+
+            ;;;
+            ```
+
+        <!--list-separator-->
+
+        2.  helm
+
+            -   Файл: `packages/bufler/helm.ecf`
+
+            <!--listend-->
+
+            ```emacs-lisp
+            ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+            ;;; Group buffers into workspaces with programmable rules
+            ;; https://github.com/alphapapa/bufler.el
+
+            ;;; Code
+
+            (desire 'helm-bufler)
+            (require 'helm-bufler)
+
+            ;;;
+            ```
 
 
 ### <span class="section-num">3.31</span> Проекты {#проекты}
@@ -6277,6 +6656,8 @@ slug: "emacs-desire-configuration"
         (define-key treemacs-mode-map [mouse-1] #'treemacs-single-click-expand-action)
 
         ;; (treemacs-start-on-boot)
+
+
 
         ;;;
         ```

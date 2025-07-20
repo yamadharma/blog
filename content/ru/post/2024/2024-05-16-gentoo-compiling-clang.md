@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-06-21T17:36:00+03:00
+lastmod: 2025-07-16T17:05:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -181,7 +181,6 @@ slug: "gentoo-compiling-clang"
     =app-emulation/virtualbox-7.1*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.0*		compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.1*		compiler-gcc    # ld.lld error
-    =dev-perl/PDL-2.63*				compiler-gcc
     =dev-util/gengetopt-2.23*			compiler-gcc	#
     =sci-libs/coinor-osi-0.108.6			compiler-gcc		# bug: #919825
     =sci-mathematics/octave-8*			compiler-gcc
@@ -221,7 +220,7 @@ slug: "gentoo-compiling-clang"
     dev-lang/gprolog				compiler-clang-mold
     dev-lang/harbour				compiler-gcc
     dev-lang/rust					compiler-gcc
-    # dev-lang/rust					compiler-clang-mold-19
+    dev-lang/zig					compiler-gcc
     dev-libs/cereal					compiler-clang-mold-18
     dev-libs/efl					compiler-clang-mold-18
     dev-libs/ffcall					compiler-gcc
@@ -254,6 +253,7 @@ slug: "gentoo-compiling-clang"
     dev-qt/qtwebengine:5				compiler-clang-mold-18
     dev-qt/qtwebengine:6				compiler-clang-mold-18
     dev-tex/tectonic				compiler-gcc
+    dev-util/android-tools				compiler-gcc
     dev-util/kdevelop				compiler-clang-mold-18
     dev-util/mingw64-toolchain			compiler-gcc	# gcc itself
     dev-util/yacc					compiler-gcc
@@ -263,7 +263,6 @@ slug: "gentoo-compiling-clang"
     kde-apps/step					compiler-clang-mold-18
     llvm-core/lldb					compiler-clang
     mail-client/thunderbird				compiler-gcc
-    # media-gfx/asymptote				compiler-gcc
     media-gfx/autopano-sift-C			compiler-gcc
     media-gfx/blender:4.0				compiler-gcc
     media-gfx/exact-image				compiler-gcc
@@ -305,6 +304,7 @@ slug: "gentoo-compiling-clang"
     net-misc/netkit-telnetd				compiler-gcc
     net-misc/omniORB				compiler-gcc
     net-misc/openssh-contrib			compiler-gcc
+    net-misc/remmina				compiler-gcc
     net-nds/openldap				compiler-clang-mold
     net-print/gutenprint				compiler-gcc
     net-proxy/dante					compiler-gcc
@@ -340,9 +340,6 @@ slug: "gentoo-compiling-clang"
     x11-libs/fox					compiler-gcc
     x11-misc/redshift				compiler-gcc
     x11-misc/virtualgl				compiler-clang-mold
-    dev-util/android-tools				compiler-gcc
-    net-misc/remmina				compiler-gcc
-    dev-lang/zig					compiler-gcc
     ```
 
 

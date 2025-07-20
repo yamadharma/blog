@@ -2,7 +2,7 @@
 title: "BibTeX. Поля"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-11T18:07:00+03:00
-lastmod: 2025-03-12T15:15:00+03:00
+lastmod: 2025-07-20T21:20:00+03:00
 tags: ["tex"]
 categories: ["computer-science"]
 draft: false
@@ -67,3 +67,64 @@ slug: "bibtex-fields"
 -   Примеры:
     -   Один автор: `author = {Иванов, И. И.}`
     -   Несколько авторов: `author = {Петров, П. П. and Иванов, И. И.}`.
+
+
+### <span class="section-num">3.1</span> Формат: `{Firstname Lastname}` {#формат-firstname-lastname}
+
+-   Сначала имя, а затем фамилия.
+-   Этот формат широко используется, но может не обеспечить необходимого различия между именем и фамилией, особенно в случае сложных фамилий.
+
+<!--listend-->
+
+```bibtex
+@article{Doe2023,
+title  = {Title of the Article},
+year   = 2023,
+author = {Isaac Newton},
+...}
+```
+
+
+### <span class="section-num">3.2</span> Формат: `{Lastname, Firstname}` {#формат-lastname-firstname}
+
+-   Сначала указать фамилию, затем имя, разделённые запятой.
+-   Этот формат рекомендуется, так как он чётко разделяет имя и фамилию.
+
+<!--listend-->
+
+```bibtex
+@article{Doe2023,
+title  = {Title of the Article},
+year   = 2023,
+author = {Newton, Isaac},
+...}
+```
+
+
+### <span class="section-num">3.3</span> Формат: `{Lastname, Suffix, Firstname}` {#формат-lastname-suffix-firstname}
+
+-   Формат применяется в том случае, если требуется включить суффикс (например, Jr., Sr., III и т. д.), этот формат будет полезен. Важно строго соблюдать порядок, чтобы точно отразить имя автора.
+
+**Пример** :
+
+```c
+@article{Doe2023,  title  = {Title of the Article},  year   = 2023,  author = {King, Jr, Martin Luther},  ...}
+```
+
+
+### <span class="section-num">3.4</span> Указание нескольких авторов {#указание-нескольких-авторов}
+
+-   Если в работе несколько авторов, BibTeX позволяет указать их через разделитель `and`.
+-   Этот разделитель используется для чёткого перечисления авторов в соответствии с выбранным форматом.
+
+<!--listend-->
+
+```bibtex
+@article{Doe2023,
+title  = {Title of the Article},
+year   = 2023,
+author = {Fisher, James and Clark, John},
+...}
+```
+
+Заключение

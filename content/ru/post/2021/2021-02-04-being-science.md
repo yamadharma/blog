@@ -2,7 +2,7 @@
 title: "Бытие науки"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-04T19:24:00+03:00
-lastmod: 2025-06-27T20:53:00+03:00
+lastmod: 2025-07-17T17:20:00+03:00
 tags: ["science-being", "MOC"]
 categories: ["science"]
 draft: false
@@ -68,6 +68,7 @@ _Бытие науки_. Разрозненные мысли.
 -   [Репозитории для научных исследований]({{< relref "2024-11-02-research-repositories" >}})
 -   [Требования к рецензиям]({{< relref "2025-01-11--review-requirements" >}})
 -   [Требования к рецензентам]({{< relref "2025-01-11--requirements-reviewers" >}})
+-   [Сервисы проверки на плагиат]({{< relref "2025-07-17--сервисы_проверки_на_плагиат" >}})
 
 
 ## <span class="section-num">4</span> Принципы социологии науки {#принципы-социологии-науки}
