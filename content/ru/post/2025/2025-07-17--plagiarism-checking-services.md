@@ -2,7 +2,7 @@
 title: "Сервисы проверки на плагиат"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-07-17T17:05:00+03:00
-lastmod: 2025-07-17T19:38:00+03:00
+lastmod: 2025-07-20T21:30:00+03:00
 tags: ["science-being", "education"]
 categories: ["science"]
 draft: false
