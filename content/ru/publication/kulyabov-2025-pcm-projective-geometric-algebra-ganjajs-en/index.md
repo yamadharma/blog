@@ -8,7 +8,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevast'yanov
 date: '2025-01-01'
-publishDate: '2025-04-07T11:49:45.650486Z'
+publishDate: '2025-08-11T18:50:36.485895Z'
 publication_types:
 - article-journal
 doi: 10.1134/S0361768824700865

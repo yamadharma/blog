@@ -2,7 +2,7 @@
 title: "Подготовка документов для защиты диссертации"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-23T15:51:00+03:00
-lastmod: 2025-06-17T14:39:00+03:00
+lastmod: 2025-08-11T16:59:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

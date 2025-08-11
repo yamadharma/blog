@@ -2,7 +2,7 @@
 title: "CentOS 8. Изменение адресов репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-10T14:39:00+03:00
-lastmod: 2023-08-14T14:06:00+03:00
+lastmod: 2025-08-10T19:35:00+03:00
 tags: ["redhat", "linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -37,7 +37,5 @@ slug: "centos8-changing-repository-addresses"
 -   Следует использовать `vault.centos.org` вместо `mirror.centos.org`.
 -   Предлагается выполнить следующие команды:
     ```shell
-    sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" \
-    -e "s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g" \
-    -e "s|\$contentdir|centos|g" /etc/yum.repos.d/CentOS-*
+    sudo sed -i -e "s|mirrorlist=|#mirrorlist=|g" -e "s|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g" -e "s|\$contentdir|centos|g" /etc/yum.repos.d/CentOS-*
     ```

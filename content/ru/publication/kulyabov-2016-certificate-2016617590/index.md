@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Екатерина Геннадьевна Еферина
 date: '2016-06-01'
-publishDate: '2025-04-07T11:49:44.225208Z'
+publishDate: '2025-08-11T18:50:35.397669Z'
 publication_types:
 - patent
 tags:

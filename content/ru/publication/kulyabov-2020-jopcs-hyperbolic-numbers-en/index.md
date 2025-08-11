@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Migran Nelsonovich Gevorkyan
 date: '2020-05-01'
-publishDate: '2025-04-07T11:49:45.172932Z'
+publishDate: '2025-08-11T18:50:36.102101Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'

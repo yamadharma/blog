@@ -9,7 +9,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2017-05-01'
-publishDate: '2025-04-07T11:49:44.560669Z'
+publishDate: '2025-08-11T18:50:35.677087Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings 31st European Conference on Modelling and Simulation, ECMS

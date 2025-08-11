@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2020-12-01'
-publishDate: '2025-04-07T11:49:45.166820Z'
+publishDate: '2025-08-11T18:50:36.096795Z'
 publication_types:
 - paper-conference
 publication: '*Information Technology, Telecommunications and Control Systems (ITTCS),

@@ -8,7 +8,7 @@ authors:
 - Калилу Диаррассуба
 - Джерейе Тьерри Ги Дали
 date: '2016-01-01'
-publishDate: '2025-04-07T11:49:44.434064Z'
+publishDate: '2025-08-11T18:50:35.589609Z'
 publication_types:
 - article-journal
 publication: '*Вестник РУДН. Серия «Математика. Информатика. Физика»*'

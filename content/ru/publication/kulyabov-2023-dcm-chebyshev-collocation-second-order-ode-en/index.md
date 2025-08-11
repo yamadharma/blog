@@ -7,7 +7,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Stepan V. Sergeev
 date: '2023-01-01'
-publishDate: '2025-04-07T11:49:45.460761Z'
+publishDate: '2025-08-11T18:50:36.331279Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

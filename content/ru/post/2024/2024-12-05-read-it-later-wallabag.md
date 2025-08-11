@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2025-07-19T11:08:00+03:00
+lastmod: 2025-08-07T14:24:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -186,7 +186,7 @@ slug: "read-it-later-wallabag"
 
 #### <span class="section-num">5.5.2</span> docker-compose {#docker-compose}
 
--   Создадим файл docker-compose `wallabag-sqlite.yaml`:
+-   Создадим файл для docker-compose `docker-compose.yml`:
     ```yaml
     version: '3'
 
@@ -257,6 +257,27 @@ slug: "read-it-later-wallabag"
 -   Запустим службу:
     ```shell
     systemctl start wallabag.service
+    ```
+
+
+#### <span class="section-num">5.5.4</span> Обновление через compose {#обновление-через-compose}
+
+-   Обновить:
+    ```shell
+    podman compose pull
+    ```
+-   Остановим и переименуем старый контейнер:
+    ```shell
+    podman stop wallabag
+    podman rename wallabag wallabag.$(date -I)
+    ```
+-   Собираем контейнеры:
+    ```shell
+    podman-compose up -d
+    ```
+-   Если всё нормально, удаляем старый контейнер:
+    ```shell
+    podman rm wallabag.<дата>
     ```
 
 

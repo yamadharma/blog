@@ -2,7 +2,7 @@
 title: "rss. Сервер FreshRSS"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-06-02T14:37:00+03:00
-lastmod: 2025-06-02T15:30:00+03:00
+lastmod: 2025-08-07T14:15:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -110,7 +110,28 @@ rss. Сервер FreshRSS.
         ```
 
 
-### <span class="section-num">2.2</span> Обратный proxy {#обратный-proxy}
+### <span class="section-num">2.2</span> Обновление {#обновление}
+
+-   Обновить:
+    ```shell
+    podman compose pull
+    ```
+-   Остановим и переименуем старый контейнер:
+    ```shell
+    podman stop freshrss
+    podman rename freshrss freshrss.$(date -I)
+    ```
+-   Собираем контейнеры:
+    ```shell
+    podman-compose up -d
+    ```
+-   Если всё нормально, удаляем старый контейнер:
+    ```shell
+    podman rm freshrss.<дата>
+    ```
+
+
+### <span class="section-num">2.3</span> Обратный proxy {#обратный-proxy}
 
 -   Настроим обратный proxy на nginx:
     ```conf-unix
@@ -158,7 +179,7 @@ rss. Сервер FreshRSS.
     </div>
 
 
-### <span class="section-num">2.3</span> Информация {#информация}
+### <span class="section-num">2.4</span> Информация {#информация}
 
 -   Узнать расположение каталога с данными:
     ```shell

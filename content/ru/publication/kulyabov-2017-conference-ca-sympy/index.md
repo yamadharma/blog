@@ -9,7 +9,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Леонид Антонович Севастьянов
 date: '2017-10-01'
-publishDate: '2025-04-07T11:49:44.532380Z'
+publishDate: '2025-08-11T18:50:35.660224Z'
 publication_types:
 - paper-conference
 publication: '*Компьютерная алгебра*'

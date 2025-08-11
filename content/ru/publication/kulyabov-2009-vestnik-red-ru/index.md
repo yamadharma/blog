@@ -5,7 +5,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - А И Черноиванов
 date: '2009-01-01'
-publishDate: '2025-04-07T11:49:43.793147Z'
+publishDate: '2025-08-11T18:50:34.996441Z'
 publication_types:
 - article-journal
 publication: '*Вестник РУДН. Серия «Математика. Информатика. Физика»*'

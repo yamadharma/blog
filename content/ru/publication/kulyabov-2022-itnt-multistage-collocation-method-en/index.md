@@ -6,7 +6,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Dmitry Sergeevich Kulyabov
 date: '2022-05-01'
-publishDate: '2025-04-07T11:49:45.345029Z'
+publishDate: '2025-08-11T18:50:36.241723Z'
 publication_types:
 - paper-conference
 publication: '*2022 VIII International Conference on Information Technology and Nanotechnology

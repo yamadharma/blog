@@ -2,7 +2,7 @@
 title: "Перенос виртуальной машины на Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-04T16:58:00+03:00
-lastmod: 2025-06-22T17:15:00+03:00
+lastmod: 2025-08-10T15:12:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -33,6 +33,10 @@ slug: "migrating-virtual-machine-proxmox"
 
 #### <span class="section-num">1.1.2</span> Интерфейс командной строки {#интерфейс-командной-строки}
 
+-   Выберите свободный идентификатор машины:
+    ```shell
+    qm list
+    ```
 -   Пусть идентификатор машины будет 111 (для определённости).
 -   Рекомендуется использовать на всех виртуальных машинах _qemu agent_, для обеспечения взаимодействия между гипервизором и виртуальной машиной (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).
 -   Создадим виртуальную машину:
@@ -69,6 +73,18 @@ slug: "migrating-virtual-machine-proxmox"
     ```
 
     -   Подключить можно и через графический интерфейс.
+-   Зададим порядок загрузки (SCSI диск):
+    ```shell
+    qm set 111 --boot order='scsi0'
+    ```
+-   Зададим тип CPU:
+    ```shell
+    qm set 111 --cpu cputype=host
+    ```
+-   Подключим мышку:
+    ```shell
+    qm set 111 --tablet 1
+    ```
 
 
 ### <span class="section-num">1.4</span> После переноса {#после-переноса}

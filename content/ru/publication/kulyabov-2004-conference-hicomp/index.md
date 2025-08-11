@@ -6,7 +6,7 @@ authors:
 - С В Соловьёва
 - А В Ставцев
 date: '2004-01-01'
-publishDate: '2025-04-07T11:49:43.595669Z'
+publishDate: '2025-08-11T18:50:34.752486Z'
 publication_types:
 - paper-conference
 publication: '*Труды XL Всероссийской научной конференции по проблемам математики,

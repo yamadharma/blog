@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-06-26T12:40:00+03:00
+lastmod: 2025-07-31T19:48:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,7 @@ slug: "system-administration"
 ## <span class="section-num">1</span> DevOps {#devops}
 
 -   [Непрерывная интеграция. GitHub Actions]({{< relref "2023-07-16-continuous-integration-github-actions" >}})
+-   [Графические интерфейсы для управления Ansible]({{< relref "2025-07-31--ansible-graphical-interface" >}})
 
 
 ## <span class="section-num">2</span> Безопасность {#безопасность}

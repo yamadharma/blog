@@ -6,7 +6,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Юрий Юрьевич Сёмкин
 date: '2010-01-01'
-publishDate: '2025-04-07T11:49:43.798804Z'
+publishDate: '2025-08-11T18:50:35.001879Z'
 publication_types:
 - paper-conference
 publication: '*Труды XXI Международной конференции «Применение новых технологий в

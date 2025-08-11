@@ -5,7 +5,7 @@ authors:
 - Анна Владиславовна Королькова
 - Леонид Антонович Севастьянов
 date: '2015-01-01'
-publishDate: '2025-04-07T11:49:44.182294Z'
+publishDate: '2025-08-11T18:50:35.353563Z'
 publication_types:
 - article-journal
 publication: '*Вестник НИЯУ МИФИ*'

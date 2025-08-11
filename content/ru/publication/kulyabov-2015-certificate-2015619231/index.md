@@ -4,7 +4,7 @@ authors:
 - Литвяков Егор Владимирович
 - Дмитрий Сергеевич Кулябов
 date: '2015-08-01'
-publishDate: '2025-04-07T11:49:44.115948Z'
+publishDate: '2025-08-11T18:50:35.290277Z'
 publication_types:
 - patent
 tags:

@@ -5,7 +5,7 @@ authors:
 - Nikolay Yurievich Kravchenko
 - Dmitry Sergeevich Kulyabov
 date: '2019-12-01'
-publishDate: '2025-04-07T11:49:45.003458Z'
+publishDate: '2025-08-11T18:50:35.989603Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

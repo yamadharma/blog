@@ -8,7 +8,7 @@ authors:
 - Ivan Sergeevich Zaryadov
 - Dmitry Sergeevich Kulyabov
 date: '2018-05-01'
-publishDate: '2025-04-07T11:49:44.788306Z'
+publishDate: '2025-08-11T18:50:35.835947Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings 32st European Conference on Modelling and Simulation, ECMS

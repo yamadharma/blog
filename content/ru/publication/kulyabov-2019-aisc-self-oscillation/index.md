@@ -7,7 +7,7 @@ authors:
 - Anastasiya Vyacheslavovna Demidova
 - Dmitry Sergeevich Kulyabov
 date: '2019-01-01'
-publishDate: '2025-04-07T11:49:44.918241Z'
+publishDate: '2025-08-11T18:50:35.929390Z'
 publication_types:
 - chapter
 publication: '*Contemporary Complex Systems and Their Dependability: Proceedings of

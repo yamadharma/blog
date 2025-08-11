@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Ali Weddeye Hissein
 date: '2022-05-01'
-publishDate: '2025-04-07T11:49:45.338231Z'
+publishDate: '2025-08-11T18:50:36.235838Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

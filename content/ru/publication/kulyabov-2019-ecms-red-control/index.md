@@ -6,7 +6,7 @@ authors:
 - Tatyana Refatovna Velieva
 - Ivan Sergeevich Zaryadov
 date: '2019-06-01'
-publishDate: '2025-04-07T11:49:45.011723Z'
+publishDate: '2025-08-11T18:50:35.994820Z'
 publication_types:
 - paper-conference
 publication: '*33 European Conference on Modelling and Simulation, ECMS 2019*'

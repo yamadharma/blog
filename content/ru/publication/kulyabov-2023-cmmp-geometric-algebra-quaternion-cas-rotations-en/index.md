@@ -8,7 +8,7 @@ authors:
 - Anna Vladislavovna Korol'kova
 - Dmitry Sergeevich Kulyabov
 date: '2023-01-01'
-publishDate: '2025-04-07T11:49:45.437306Z'
+publishDate: '2025-08-11T18:50:36.314153Z'
 publication_types:
 - article-journal
 publication: '*Computational Mathematics and Mathematical Physics*'

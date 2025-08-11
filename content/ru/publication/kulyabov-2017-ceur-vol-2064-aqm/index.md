@@ -7,7 +7,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2017-11-01'
-publishDate: '2025-04-07T11:49:44.512853Z'
+publishDate: '2025-08-11T18:50:35.648488Z'
 publication_types:
 - paper-conference
 publication: '*2nd International Scientific Conference \"Convergent Cognitive Information

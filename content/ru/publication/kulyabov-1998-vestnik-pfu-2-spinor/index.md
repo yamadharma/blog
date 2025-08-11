@@ -3,7 +3,7 @@ title: Приложение 2-спинорного формализма к вы�
 authors:
 - Дмитрий Сергеевич Кулябов
 date: '1998-01-01'
-publishDate: '2025-04-07T11:49:43.551479Z'
+publishDate: '2025-08-11T18:50:34.699345Z'
 publication_types:
 - article-journal
 publication: '*Вестник РУДН. Серия «Физика»*'

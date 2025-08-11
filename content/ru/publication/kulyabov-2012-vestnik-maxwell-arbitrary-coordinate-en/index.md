@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Vladislav Ivanovich Korolkov
 date: '2012-01-01'
-publishDate: '2025-04-07T11:49:43.907594Z'
+publishDate: '2025-08-11T18:50:35.104740Z'
 publication_types:
 - article-journal
 publication: "*Bulletin of Peoples' Friendship University of Russia. Series ``Mathematics.

@@ -6,7 +6,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Dmitry Sergeevich Kulyabov
 date: '2019-11-01'
-publishDate: '2025-04-07T11:49:45.046784Z'
+publishDate: '2025-08-11T18:50:36.012119Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'

@@ -2,7 +2,7 @@
 title: "Обновление деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-12T12:48:00+03:00
-lastmod: 2025-06-22T20:20:00+03:00
+lastmod: 2025-08-11T13:22:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -52,6 +52,7 @@ slug: "redhat-derivatives-update"
 
 #### <span class="section-num">2.1.2</span> Подготовка к обновлению {#подготовка-к-обновлению}
 
+-   Возможно, придётся заменить репозитории: [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
 -   Обновите систему:
     ```shell
     sudo yum -y upgrade
@@ -132,8 +133,16 @@ slug: "redhat-derivatives-update"
     dnf install fail2ban
     systemctl enable --now fail2ban.service
     ```
+-   Если используете LVM, обновите метаданные:
+    ```shell
+    sudo vgck --updatemetadata <volume_group_name>
+    ```
 
-    -   Установите SELinux в `enforcing` в файле `/etc/selinux/config`.
+    -   Можно в виде скрипта:
+        ```shell
+        for i in $(vgdisplay -A -c 2>/dev/null | cut -f1 -d: | xargs ); do sudo vgck --updatemetadata ${i}; done
+        ```
+-   Установите SELinux в `enforcing` в файле `/etc/selinux/config`.
 
 
 ## <span class="section-num">3</span> 8 → 9 {#8-9}
@@ -317,8 +326,16 @@ slug: "redhat-derivatives-update"
     sudo dnf -y install fail2ban
     sudo systemctl enable --now fail2ban.service
     ```
+-   Если используете LVM, обновите метаданные:
+    ```shell
+    sudo vgck --updatemetadata <volume_group_name>
+    ```
 
-    -   Установите SELinux в `enforcing` в файле `/etc/selinux/config`.
+    -   Можно в виде скрипта:
+        ```shell
+        for i in $(vgdisplay -A -c 2>/dev/null | cut -f1 -d: | xargs ); do sudo vgck --updatemetadata ${i}; done
+        ```
+-   Установите SELinux в `enforcing` в файле `/etc/selinux/config`.
 
 
 ## <span class="section-num">4</span> 9 → 10 {#9-10}

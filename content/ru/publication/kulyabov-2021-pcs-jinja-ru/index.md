@@ -5,7 +5,7 @@ authors:
 - Анна Владиславовна Королькова
 - Дмитрий Сергеевич Кулябов
 date: '2021-01-01'
-publishDate: '2025-04-07T11:49:45.283706Z'
+publishDate: '2025-08-11T18:50:36.190988Z'
 publication_types:
 - article-journal
 publication: '*Программирование*'

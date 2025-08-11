@@ -6,7 +6,7 @@ authors:
 - Tatiana Refatovna Velieva
 - Migran Nelsonovich Gevorkyan
 date: '2019-06-01'
-publishDate: '2025-04-07T11:49:45.077211Z'
+publishDate: '2025-08-11T18:50:36.028932Z'
 publication_types:
 - paper-conference
 publication: '*Saratov Fall Meeting 2018: Laser Physics, Photonic Technologies, and

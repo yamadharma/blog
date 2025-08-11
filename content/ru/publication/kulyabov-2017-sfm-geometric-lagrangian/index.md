@@ -7,7 +7,7 @@ authors:
 - Ekaterina Gennadyevna Eferina
 - Tatyana Refatovna Velieva
 date: '2017-01-01'
-publishDate: '2025-04-07T11:49:44.654914Z'
+publishDate: '2025-08-11T18:50:35.748151Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics

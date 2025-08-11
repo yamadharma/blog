@@ -5,7 +5,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Dmitry Sergeevich Kulyabov
 date: '2022-12-01'
-publishDate: '2025-04-07T11:49:45.331724Z'
+publishDate: '2025-08-11T18:50:36.230344Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

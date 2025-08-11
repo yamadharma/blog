@@ -6,7 +6,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Dmitry Sergeevich Kulyabov
 date: '2008-01-01'
-publishDate: '2025-04-07T11:49:43.716291Z'
+publishDate: '2025-08-11T18:50:34.909830Z'
 publication_types:
 - paper-conference
 publication: '*12-th Workshop on Computer Algebra*'
