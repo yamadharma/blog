@@ -9,7 +9,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2016-01-01'
-publishDate: '2025-08-11T18:50:35.463899Z'
+publishDate: '2025-08-27T16:24:58.245997Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks. DCCN 2016. Communications

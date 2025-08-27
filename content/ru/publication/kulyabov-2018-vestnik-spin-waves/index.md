@@ -5,7 +5,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Le Anh Nhat
 date: '2018-01-01'
-publishDate: '2025-08-11T18:50:35.923385Z'
+publishDate: '2025-08-27T16:24:58.716528Z'
 publication_types:
 - article-journal
 publication: '*RUDN Journal of Mathematics, Information Sciences and Physics*'

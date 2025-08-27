@@ -6,7 +6,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Leonid Antonovich Sevastianov
 date: '2019-06-01'
-publishDate: '2025-08-11T18:50:36.040529Z'
+publishDate: '2025-08-27T16:24:58.853738Z'
 publication_types:
 - paper-conference
 publication: '*Saratov Fall Meeting 2018: Laser Physics, Photonic Technologies, and

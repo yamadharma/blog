@@ -2,7 +2,7 @@
 title: "Умный дом. Яндекс. Алиса"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-19T12:45:00+03:00
-lastmod: 2025-07-11T14:45:00+03:00
+lastmod: 2025-08-19T12:22:00+03:00
 tags: ["appliance"]
 categories: ["life", "computer-science"]
 draft: false
@@ -60,3 +60,25 @@ slug: "smart-home-yandex-alice"
 -   Установил в коридоре.
 -   Долго разбирался с проводами, что куда вставить.
 -   Нейтрали нет.
+
+
+## <span class="section-num">2</span> Оборудование {#оборудование}
+
+
+### <span class="section-num">2.1</span> Общая информация {#общая-информация}
+
+-   Описание оборудования:
+    -   <https://habr.com/ru/articles/859622/>
+
+
+### <span class="section-num">2.2</span> Светодиодная лента {#светодиодная-лента}
+
+-   <https://alice.yandex.ru/store/product/led-strip-3m>
+-   Протокол: Matter
+-   Идёт в комплекте с управляющим модулем и блоком питания.
+
+
+### <span class="section-num">2.3</span> Реле {#реле}
+
+-   <https://alice.yandex.ru/store/product/relay-single>
+-   Протокол: Zigbee

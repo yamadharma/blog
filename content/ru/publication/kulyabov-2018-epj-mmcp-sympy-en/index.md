@@ -8,7 +8,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2018-02-01'
-publishDate: '2025-08-11T18:50:35.852604Z'
+publishDate: '2025-08-27T16:24:58.640354Z'
 publication_types:
 - paper-conference
 publication: '*Mathematical Modeling and Computational Physics 2017*'

@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Ivan Sergeevich Zaryadov
 date: '2017-12-01'
-publishDate: '2025-08-11T18:50:35.694290Z'
+publishDate: '2025-08-27T16:24:58.481102Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'

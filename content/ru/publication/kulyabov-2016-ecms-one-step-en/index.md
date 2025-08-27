@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Dmitry Sergeevich Kulyabov
 date: '2016-06-01'
-publishDate: '2025-08-11T18:50:35.515454Z'
+publishDate: '2025-08-27T16:24:58.298173Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings 30th European Conference on Modelling and Simulation*'

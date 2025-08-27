@@ -94,7 +94,7 @@ outputs:
 
 imaging:
   resampleFilter: lanczos
-  quality: 85
+  quality: 90
   anchor: smart
 timeout: 600000
 
@@ -111,7 +111,7 @@ markup:
     renderHooks:
       link:
         # Process backlinks hook
-        enableDefault: true
+        useEmbedded: auto
     renderer:
       # Render HTML in Markdown
       unsafe: true
@@ -231,4 +231,3 @@ mediaTypes:
   application/manifest+json:
     suffixes:
       - webmanifest
-

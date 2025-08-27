@@ -2,7 +2,7 @@
 title: "Подготовка курса Компьютерный практикум по научному письму"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-09T20:04:00+03:00
-lastmod: 2024-03-31T21:30:00+03:00
+lastmod: 2025-08-15T18:02:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -59,15 +59,80 @@ slug: "scientific-writing-computer-preparation"
     -   Диаграммы и чертежи как код
 
 
-## <span class="section-num">6</span> Используемая литература {#используемая-литература}
+## <span class="section-num">6</span> Laboratory work {#laboratory-work}
 
 
-### <span class="section-num">6.1</span> Основная литература {#основная-литература}
+### <span class="section-num">6.1</span> LaTeX basics {#latex-basics}
+
+-   Installing LaTeX
+    -   TeX Live.
+-   Hello world!
+    -   Typesetting your first document in TeXworks.
+
+
+### <span class="section-num">6.2</span> LaTeX Document Structure {#latex-document-structure}
+
+-   Structure
+    -   Structure of a LaTeX file, document classes, packages, topmatter, groups, commands and environments.
+-   Advanced document structure
+    -   Writing an article. Chapters, sections, paragraphs, theorems, figures, tables, floats, references, bibliography.
+-   Basics
+    -   LaTeX fundamentals
+-   Writing texts
+    -   Special characters and accents, paragraphs, non-breaking space, emphasis, lists, verbatim, url and quoting.
+-   Errors and warnings
+    -   Error fixing 101.
+-   Rewriting poor work
+    -   Exercise in editing
+
+
+### <span class="section-num">6.3</span> Mathematics Typing {#mathematics-typing}
+
+-   Writing mathematical texts
+    -   Math environment, characters, powers and indices, operators, fractions, roots, dots, matrices, brackets, horizontal whitespace, layout, list of symbols.
+-   Advanced mathematics
+    -   Gather, align, matrices, text in mathematical expressions, cases, multiline subscripts, references.
+
+
+### <span class="section-num">6.4</span> Inserting Images {#inserting-images}
+
+
+### <span class="section-num">6.5</span> Creating lists and tables {#creating-lists-and-tables}
+
+
+### <span class="section-num">6.6</span> Working with bibliography {#working-with-bibliography}
+
+-   Bibliography and citations in LaTeX
+    -   Making a bibliography.
+-   Proper citations in the text
+    -   Proper citations in the text.
+-   BibTex
+    -   Working with Bibtex.
+
+
+### <span class="section-num">6.7</span> Presentation based on Beamer {#presentation-based-on-beamer}
+
+-   LaTeX Beamer
+    -   Presentations with LaTeX Beamer.
+-   Posters
+    -   Creating a poster in LaTeX.
+
+
+### <span class="section-num">6.8</span> Diagrams and drawings as code {#diagrams-and-drawings-as-code}
+
+-   TikZ
+    -   Creating images with TikZ.
+
+
+## <span class="section-num">7</span> Используемая литература {#используемая-литература}
+
+
+### <span class="section-num">7.1</span> Основная литература {#основная-литература}
 
 -   В качестве основной литературы предлагается использовать [<a href="#citeproc_bib_item_1">1</a>; <a href="#citeproc_bib_item_2">2</a>].
 
 
-### <span class="section-num">6.2</span> Дополнительная литература {#дополнительная-литература}
+### <span class="section-num">7.2</span> Дополнительная литература {#дополнительная-литература}
 
 -   В качестве дополнительной литературы предлагается использовать [<a href="#citeproc_bib_item_3">3</a>–<a href="#citeproc_bib_item_5">5</a>].
 

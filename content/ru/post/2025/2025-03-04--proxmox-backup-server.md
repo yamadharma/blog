@@ -2,7 +2,7 @@
 title: "Proxmox Backup Server"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-04T14:02:00+03:00
-lastmod: 2025-03-11T16:34:00+03:00
+lastmod: 2025-08-19T20:35:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -155,7 +155,7 @@ Proxmox Backup Server.
 
 -   Proxmox Backup Server Post Install
     ```shell
-    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pbs-install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pbs-install.sh)"
     ```
 
 
@@ -552,3 +552,96 @@ Proxmox Backup Server.
     pvesm status --storage pbs_backup
     ```
 -   Добавив хранилище данных типа «Proxmox Backup Server» в PVE, можно создавать резервные копии ВМ и контейнеров в это хранилище, так же как и в любые другие хранилища.
+
+
+## <span class="section-num">10</span> Обновление {#обновление}
+
+
+### <span class="section-num">10.1</span> 3 → 4 {#3-4}
+
+-   Документация: <https://pbs.proxmox.com/wiki/Upgrade_from_3_to_4>
+-   Проверить версию:
+    -   Команда `proxmox-backup-manager versions` выдаст версию 3.4.2 (или выше).
+-   Сделайте резервную копию `/etc/proxmox-backup` чтобы гарантировать, что в худшем случае можно будет восстановить любую соответствующую конфигурацию:
+
+<!--listend-->
+
+```shell
+tar czf "pbs3-etc-backup-$(date -I).tar.gz" -C "/etc" "proxmox-backup"
+```
+
+-   Убедитесь, что в корневой точке монтирования имеется не менее 10 ГБ свободного места на диске:
+
+<!--listend-->
+
+```shell
+df -h /
+```
+
+-   Программа `pbs3to4` выводит подсказки и предупреждения о потенциальных проблемах:
+
+<!--listend-->
+
+```shell
+pbs3to4
+```
+
+-   Чтобы запустить её со всеми включенными проверками, выполните:
+
+<!--listend-->
+
+```shell
+pbs3to4 --full
+```
+
+-   Обновите все записи репозитория для Trixie:
+
+<!--listend-->
+
+```shell
+sed -i 's/bookworm/trixie/g' /etc/apt/sources.list
+```
+
+-   Обновите корпоративный репозиторий до Trixie в новом формате deb822 с помощью следующей команды (не надо делать):
+    ```shell
+    cat > /etc/apt/sources.list.d/pbs-enterprise.sources << EOF
+    Types: deb
+    URIs: https://enterprise.proxmox.com/debian/pbs
+    Suites: trixie
+    Components: pbs-enterprise
+    Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg
+    EOF
+    ```
+-   Подключите репозиторий:
+    ```shell
+    cat > /etc/apt/sources.list.d/proxmox.sources << EOF
+    Types: deb
+    URIs: http://download.proxmox.com/debian/pbs
+    Suites: trixie
+    Components: pbs-no-subscription
+    Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg
+    EOF
+    ```
+
+-   Проверьте, подключились ли репозитории:
+    ```shell
+    apt update
+    apt policy
+    ```
+-   Обновите систему:
+    ```shell
+    apt update
+    apt dist-upgrade
+    ```
+-   Перегрузитесь:
+    ```shell
+    systemctl reboot
+    ```
+-   Проверьте статус сервиса:
+    ```shell
+    systemctl status proxmox-backup-proxy.service proxmox-backup.service
+    ```
+-   Перенести существующие источники репозитория в рекомендуемый формат стиля deb822:
+    ```shell
+    apt modernize-sources
+    ```

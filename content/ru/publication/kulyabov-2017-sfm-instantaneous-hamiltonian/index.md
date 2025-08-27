@@ -8,7 +8,7 @@ authors:
 - Tatyana Refatovna Velieva
 - Ivan Sergeevich Zaryadov
 date: '2017-01-01'
-publishDate: '2025-08-11T18:50:35.765009Z'
+publishDate: '2025-08-27T16:24:58.552170Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics

@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2015-01-01'
-publishDate: '2025-08-11T18:50:35.218128Z'
+publishDate: '2025-08-27T16:24:58.001534Z'
 publication_types:
 - paper-conference
 publication: '*6th International Congress on Ultra Modern Telecommunications and Control
@@ -27,5 +27,5 @@ links:
 - name: arXiv
   url: https://arxiv.org/abs/1504.02324
 - name: URL
-  url: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7002164
+  url: https://ieeexplore.ieee.org/document/7002164
 ---

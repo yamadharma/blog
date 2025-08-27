@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-07-31T19:48:00+03:00
+lastmod: 2025-08-21T11:53:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -49,6 +49,7 @@ slug: "system-administration"
 
 -   [Ротирование бэкапов]({{< relref "2025-03-11--backup-rotation" >}})
 -   [Proxmox Backup Server]({{< relref "2025-03-04--proxmox-backup-server" >}})
+-   [Резервное копирование. Restic]({{< relref "2025-08-17--backup-restic" >}})
 
 
 ## <span class="section-num">3</span> Гаджеты {#гаджеты}
@@ -76,6 +77,7 @@ slug: "system-administration"
 -   [Тайловые оконные менеджеры]({{< relref "2023-06-19-tiling-window-manager" >}})
 -   [Консоль linux. Kmscon]({{< relref "2024-06-25-linux-console-kmscon" >}})
 -   [Лаунчеры]({{< relref "2024-08-11-launcher" >}})
+-   [Дисплейный менеджер gdm]({{< relref "2025-08-21--display-manager-gdm" >}})
 
 
 ### <span class="section-num">4.3</span> Wayland {#wayland}
@@ -468,6 +470,7 @@ slug: "system-administration"
 -   [Файловая система afs]({{< relref "2023-08-28-file-system-afs" >}})
 -   [Использование Яндекс-диска]({{< relref "2024-06-25-using-yandex-disk" >}})
 -   [Файловая система ipfs]({{< relref "2024-08-30-ipfs-file-system" >}})
+-   [Настройка NFS]({{< relref "2025-08-17--nfs-setting" >}})
 
 
 ### <span class="section-num">17.3</span> Файловые системы объединения (union) {#файловые-системы-объединения--union}

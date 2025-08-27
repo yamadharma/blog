@@ -4,7 +4,7 @@ authors:
 - Nickolay Yu Kravchenko
 - Dmitry Sergeevich Kulyabov
 date: '2019-04-01'
-publishDate: '2025-08-11T18:50:35.956473Z'
+publishDate: '2025-08-27T16:24:58.758419Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 9th International Conference

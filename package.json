@@ -1,17 +1,31 @@
 {
-    "name": "blog",
-    "version": "1.0.0",
-    "description": "Dmitry S. Kulyabov's blog",
-    "main": "index.js",
-    "repository": "git@github.com:yamadharma/blog.git",
-    "author": "Dmitry S. Kulyabov <yamadharma@gmail.com>",
-    "license": "CC-BY-4.0",
+  "name": "hugo-blox-academic-cv-starter",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.14.0",
+  "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
+  "scripts": {
+    "dev": "hugo server --disableFastRender",
+    "build": "hugo --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "tailwindcss": "^4.1.12",
+    "katex": "^0.16.9",
+    "medium-zoom": "^1.0.8",
+    "mermaid": "^10.6.0",
+    "markmap-autoloader": "^0.15.4",
+    "alpinejs": "^3.13.10",
+    "plotly.js": "^2.27.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "vite": "^7.1.2",
+    "vite-hugo-plugin": "^3.1.0",
+    "vite-plugin-static-copy": "^3.1.1"
+  },
     "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
-    },
-    "dependencies": {
-        "mermaid": "^11.5.0"
+	"commitizen": {
+	    "path": "cz-conventional-changelog"
+	}
     }
 }

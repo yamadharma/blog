@@ -2,13 +2,13 @@
 title: "Сетевые технологии. Лабораторные работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-07-14T12:27:00+03:00
-lastmod: 2022-08-17T20:18:00+03:00
+lastmod: 2025-08-23T14:52:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science"]
 draft: false
 weight: 200
 toc: true
-type: docs
+type: "docs"
 slug: "nettech-lab"
 summary: "Лабораторные работы"
 menu:

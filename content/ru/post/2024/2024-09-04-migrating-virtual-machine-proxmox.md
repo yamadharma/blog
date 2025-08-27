@@ -2,7 +2,7 @@
 title: "Перенос виртуальной машины на Proxmox"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-04T16:58:00+03:00
-lastmod: 2025-08-10T15:12:00+03:00
+lastmod: 2025-08-12T12:07:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -87,7 +87,19 @@ slug: "migrating-virtual-machine-proxmox"
     ```
 
 
-### <span class="section-num">1.4</span> После переноса {#после-переноса}
+### <span class="section-num">1.4</span> Загрузка через UEFI {#загрузка-через-uefi}
+
+-   Установите тип загрузки в UEFI (если необходимо):
+    ```shell
+    qm set 111 --bios ovmf
+    ```
+-   Добавьте диск для партиции UEFI:
+    ```shell
+    qm set 111 --efidisk0 local-lvm:1,format=raw
+    ```
+
+
+### <span class="section-num">1.5</span> После переноса {#после-переноса}
 
 -   Проверьте настройку виртуальной машины.
 -   Проверьте ip-адрес машины (у вас изменился mac-адрес).

@@ -2,7 +2,7 @@
 title: "Синхронизация файлов с помощью syncthing"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-01T15:58:00+03:00
-lastmod: 2024-05-29T15:41:00+03:00
+lastmod: 2025-08-19T19:02:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -50,6 +50,10 @@ slug: "synchronizing-files-syncthing"
 -   Debian:
     ```shell
     apt install syncthing
+    ```
+-   Manjaro:
+    ```shell
+    pamac install syncthing
     ```
 
 

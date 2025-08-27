@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - С О Томила
 date: '2009-01-01'
-publishDate: '2025-08-11T18:50:34.925135Z'
+publishDate: '2025-08-27T16:24:57.706021Z'
 publication_types:
 - paper-conference
 publication: '*XLV Всероссийская конференция по проблемам математики, информатики,

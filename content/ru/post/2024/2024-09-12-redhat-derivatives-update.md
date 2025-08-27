@@ -2,7 +2,7 @@
 title: "Обновление деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-12T12:48:00+03:00
-lastmod: 2025-08-11T13:22:00+03:00
+lastmod: 2025-08-18T18:54:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -96,7 +96,7 @@ slug: "redhat-derivatives-update"
 -   Там же находятся и рекомендации по устранению проблем.
 -   Тут же будет список неподписанных пакетов, которые, скорее всего, вам придётся установить заново после обновления.
 -   Также создаётся файл `/var/log/leapp/answerfile`, где нужно подтвердить действия.
--   Подтвердите удаление модуляя PAM PKCS#11:
+-   Подтвердите удаление модуля PAM PKCS#11:
     ```shell
     sudo leapp answer --section remove_pam_pkcs11_module_check.confirm=True
     ```
@@ -232,6 +232,7 @@ slug: "redhat-derivatives-update"
 
 #### <span class="section-num">3.2.2</span> Подготовка к обновлению {#подготовка-к-обновлению}
 
+-   Возможно, придётся заменить репозитории: [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
 -   Обновите систему:
     ```shell
     sudo dnf -y upgrade
@@ -294,8 +295,8 @@ slug: "redhat-derivatives-update"
 
 -   Обычно пакеты `make-devel` и `rocky-logos` приводят к сбою обновления. Удалите их:
     ```shell
-    dnf remove make-devel
-    dnf remove rocky-logos
+    dnf -y remove make-devel
+    dnf -y remove rocky-logos
     ```
 -   После подготовки сделайте обновление:
     ```shell
@@ -315,7 +316,8 @@ slug: "redhat-derivatives-update"
 -   Установите внешние репозитории:
     ```shell
     sudo dnf config-manager --set-enabled crb
-    sudo dnf install epel-release
+    sudo dnf -y install epel-release
+    sudo /usr/bin/crb enable
     ```
 -   Обновите необновлённые пакеты:
     ```shell

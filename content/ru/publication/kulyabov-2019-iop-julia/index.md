@@ -7,7 +7,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2019-04-01'
-publishDate: '2025-08-11T18:50:36.000423Z'
+publishDate: '2025-08-27T16:24:58.810390Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'

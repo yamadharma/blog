@@ -2,7 +2,7 @@
 title: "Gentoo. Компиляция системы clang"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-16T15:18:00+03:00
-lastmod: 2025-07-16T17:05:00+03:00
+lastmod: 2025-08-16T12:13:00+03:00
 tags: ["gentoo", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -179,8 +179,10 @@ slug: "gentoo-compiling-clang"
     ```conf-unix
     =app-emulation/virtualbox-7.0*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-7.1*			compiler-gcc    # ld.lld error
+    =app-emulation/virtualbox-7.2*			compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.0*		compiler-gcc    # ld.lld error
     =app-emulation/virtualbox-kvm-7.1*		compiler-gcc    # ld.lld error
+    =app-emulation/virtualbox-kvm-7.2*		compiler-gcc    # ld.lld error
     =dev-util/gengetopt-2.23*			compiler-gcc	#
     =sci-libs/coinor-osi-0.108.6			compiler-gcc		# bug: #919825
     =sci-mathematics/octave-8*			compiler-gcc

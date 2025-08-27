@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2025-06-22T16:15:00+03:00
+lastmod: 2025-08-21T15:24:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false

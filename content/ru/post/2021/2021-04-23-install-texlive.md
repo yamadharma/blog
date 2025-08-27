@@ -2,8 +2,8 @@
 title: "Установка TeXlive"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-23T18:09:00+03:00
-lastmod: 2025-06-18T19:44:00+03:00
-tags: ["tex"]
+lastmod: 2025-08-15T15:43:00+03:00
+tags: ["latex", "tex"]
 categories: ["computer-science"]
 draft: false
 slug: "install-texlive"

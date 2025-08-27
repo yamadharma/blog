@@ -6,7 +6,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Анна Владиславовна Королькова
 date: '2018-08-01'
-publishDate: '2025-08-11T18:50:35.792669Z'
+publishDate: '2025-08-27T16:24:58.579558Z'
 publication_types:
 - patent
 tags:

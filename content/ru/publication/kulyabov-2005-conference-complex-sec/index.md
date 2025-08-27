@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - А В Ульянов
 date: '2005-01-01'
-publishDate: '2025-08-11T18:50:34.776690Z'
+publishDate: '2025-08-27T16:24:57.555045Z'
 publication_types:
 - paper-conference
 publication: '*XLI Научная конференция факультета физико-математических и естественных

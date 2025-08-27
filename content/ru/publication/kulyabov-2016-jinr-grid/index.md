@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2016-07-01'
-publishDate: '2025-08-11T18:50:35.549483Z'
+publishDate: '2025-08-27T16:24:58.333711Z'
 publication_types:
 - paper-conference
 publication: '*7th International Conference Distributed Computing and Gridtechnologies

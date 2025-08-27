@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-06-26T16:50:00+03:00
+lastmod: 2025-08-20T20:57:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -16,266 +16,185 @@ slug: "timetable-classes"
 {{< toc >}}
 
 
-## <span class="org-todo done DONE">DONE</span> <span class="section-num">1</span> Расписание занятий <code>[2/2]</code> {#расписание-занятий}
-
-
-### <span class="section-num">1.1</span> Информация {#информация}
+## <span class="section-num">1</span> Информация {#информация}
 
 -   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2</span> 2024--2025 учебный год, расписание занятий <code>[7/7]</code> {#2024-2025-учебный-год-расписание-занятий}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Расписание занятий <code>[2/3]</code> {#расписание-занятий}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.1</span> Информация <code>[2/2]</code> {#информация}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1</span> 2025--2026 учебный год, расписание занятий <code>[0/3]</code> {#2025-2026-учебный-год-расписание-занятий}
 
-<!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Числитель/знаменатель
-
-    <div class="table-caption">
-      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
-      1 семестр 2024/2025 учебного года
-    </div>
-
-    | Числитель    | Знаменатель  |
-    |--------------|--------------|
-    | 01.09--02.09 | 04.09--09.09 |
-    | 11.09--16.09 | 18.09--23.09 |
-    | 25.09--30.09 | 02.10--07.10 |
-    | 09.10--14.10 | 16.10--21.10 |
-    | 23.10--28.10 | 30.10--04.11 |
-    | 06.11--11.11 | 13.11--18.11 |
-    | 20.11--25.11 | 27.11--02.12 |
-    | 04.12--09.12 | 11.12--16.12 |
-    | 18.12--23.12 | 25.12--30.12 |
-
-    <div class="table-caption">
-      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
-      2 семестр 2024/2025 учебного года
-    </div>
-
-    | Числитель    | Знаменатель  |
-    |--------------|--------------|
-    | 07.02--10.02 | 12.02--17.02 |
-    | 19.02--24.02 | 26.02--03.03 |
-    | 04.03--09.03 | 11.03--16.03 |
-    | 18.03--23.03 | 25.03--30.03 |
-    | 01.04--06.04 | 08.04--13.04 |
-    | 15.04--20.04 | 22.04--27.04 |
-    | 29.04--04.05 | 06.05--11.05 |
-    | 13.05--18.05 | 20.05--25.05 |
-    | 27.05--01.06 | 03.06--08.06 |
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> 2025--2026 учебный год, 1 семестр <code>[0/7]</code> {#2025-2026-учебный-год-1-семестр}
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  Изменения <span class="timestamp-wrapper"><span class="timestamp">[2025-01-22 Ср]</span></span>
+1. <span class="org-todo todo TODO">TODO</span>  Информация <code>[0/1]</code>
 
-    -   В связи с проведением праздничных мероприятий, посвященных 65-летию РУДН, 7 и 8 февраля 2025 года объявлены днями самостоятельной работы.
-    -   Неделя с 10 по 17 февраля 2025 года считается верхней в общеуниверситетском расписании занятий.
+    <!--list-separator-->
 
-
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.2</span> 2024--2025 учебный год, 1 четверть <code>[2/2]</code> {#2024-2025-учебный-год-1-четверть}
-
--   2024-09-01 Пт--2024-11-05 Вс
+    1. <span class="org-todo todo TODO">TODO</span>  Числитель/знаменатель
 
 <!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы) <code>[6/6]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing <code>[0/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+    1. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing, НПМмд-02-24
 
-        -   ОРД-299
-        -   НФИбд-01-21
-        -   Пн 09:00-10:20
+        -   ОРД-299, НПМмд-02-24
 
     <!--list-separator-->
 
-    2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+    2. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing, НФИмд-01-24
 
-        -   ОРД-299
-        -   НФИбд-01-21
-        -   Пн 10:30-11:50
+        -   ОРД-299, НФИмд-01-24
+        -   ОРД-299, НПИмд-01-24
 
-    <!--list-separator-->
+<!--list-separator-->
 
-    3. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
-
-        -   ОРД-298
-        -   НФИбд-02-21
-        -   Пн 12:00-13:20
+3. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем <code>[0/2]</code>
 
     <!--list-separator-->
 
-    4. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+    1. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем (лабораторные)
 
-        -   ОРД-298
-        -   НФИбд-02-21
-        -   Пн 13:30-14:50
+        -   ОРД-297, НПИбд-02-23
+        -   ОРД-295, НПИбд-01-23
+        -   ОРД-298, НФИбд-01-23, НФИбд-02-23
 
     <!--list-separator-->
 
-    5. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+    2. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем (лекции)
+
+        -   дист.
+        -   НФИбд-01-23
+        -   НФИбд-02-23
+        -   НПИбд-01-23
+        -   НПИбд-02-23
+
+<!--list-separator-->
+
+4. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/1]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных (лабораторные)
 
         -   ОРД-297
-        -   НБИбд-01-21
-        -   Ср 10:30-11:50
-
-    <!--list-separator-->
-
-    6. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
-
-        -   ОРД-297
-        -   НБИбд-01-21
-        -   Ср 12:00-13:20
+        -   НКНбд-01-22
+        -   НФИбд-01-22
+        -   НФИбд-02-22
+        -   НПИбд-01-22
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лекция)
-
-    -   Группы: НПМ-21, НКН-21, НФИ-21, НПИ-21, НБИ-21
-    -   По четвергам, 09:00-10:20
-    -   Занятие проводится дистанционно
-
-
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.3</span> 2024--2025 учебный год, 2 четверть <code>[2/2]</code> {#2024-2025-учебный-год-2-четверть}
-
-<!--list-separator-->
-
-1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных <code>[3/3]</code>
+5. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
+    1. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лабораторные)
 
-        -   НКНбд-01-21
-        -   НФИбд-01-21
-        -   НФИбд-02-21
-        -   НПИбд-01-21
-        -   НПИбд-02-21
         -   ОРД-298
+        -   НФИбд-01-22
+        -   НФИбд-02-22
+        -   НПИбд-01-22
 
     <!--list-separator-->
 
-    2. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
+    2. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных (лекции)
 
-        -   НКНбд-01-21
-        -   НФИбд-01-21
-        -   НФИбд-02-21
-        -   НПИбд-01-21
-        -   НПИбд-02-21
-        -   ОРД-298
-
-    <!--list-separator-->
-
-    3. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
-
-        -   НКНбд-01-21
-        -   НФИбд-01-21
-        -   НФИбд-02-21
-        -   НПИбд-01-21
-        -   НПИбд-02-21
-        -   ОРД-298
+        -   дист.
+        -   НФИбд-01-22
+        -   НФИбд-02-22
+        -   НПИбд-01-22
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных <code>[2/2]</code>
+6. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ <code>[0/5]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
+    1. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
 
-        -   НКНбд-01-21
-        -   НФИбд-01-21
-        -   НФИбд-02-21
-        -   НПИбд-01-21
-        -   НПИбд-02-21
-        -   ОРД-299
+        -   дист.
+        -   НПМмд-02-25
+        -   НФИмд-01-25
+        -   НФИмд-02-25
+        -   НПИмд-01-24
 
     <!--list-separator-->
 
-    2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
+    2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НПМмд-02-25
 
-        -   НКНбд-01-21
-        -   НФИбд-01-21
-        -   НФИбд-02-21
-        -   НПИбд-01-21
-        -   НПИбд-02-21
-        -   ОРД-299
+        -   ОРД-297, НПМмд-02-25
 
+    <!--list-separator-->
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.4</span> 2024--2025 учебный год, 1 семестр <code>[4/4]</code> {#2024-2025-учебный-год-1-семестр}
+    3. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НФИмд-02-25
+
+        -   ОРД-295, НФИмд-02-25
+
+    <!--list-separator-->
+
+    4. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НФИмд-01-25
+
+        -   ОРД-295, НФИмд-01-25
+
+    <!--list-separator-->
+
+    5. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НПИмд-01-24
+
+        -   ОРД-299, НПИмд-01-24
 
 <!--list-separator-->
 
-1. <span class="org-todo done DONE">DONE</span>  Научное программирование
+7. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС <code>[0/2]</code>
 
-    -   ОРД-295
-    -   НПМмд-02-24
-    -   Ср 21:00-22:20
-    -   Ср 15:00-16:20
+    <!--list-separator-->
+
+    1. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лабораторные работы)
+
+        -   ОРД-297, НПИбд-02-24
+        -   ОРД-295, НПИбд-01-24
+        -   ОРД-298, НПИбд-03-24
+
+    <!--list-separator-->
+
+    2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
+
+        -   дист., НПИбд-00-24
+        -   НПИбд-02-24
+        -   НПИбд-01-24
+        -   НПИбд-03-24
 
 <!--list-separator-->
 
-2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ <code>[2/2]</code>
+8. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии <code>[0/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лекция)
+    1. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии (лабораторные)
 
-        -   ОРД-295
-        -   НПМмд-02-24
-        -   НФИмд-00-24
-        -   НПИмд-01-23
-        -   ~~Ср 19:30-20:50~~
-        -   Ср 9:00-10:20, дистанционно
+        -   ОРД-297, НПИбд-02-23
+        -   ОРД-295, НПИбд-01-23
+        -   ОРД-298, НФИбд-01-23, НФИбд-02-23
 
     <!--list-separator-->
 
-    2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лабораторная работа)
+    2. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии (лекции)
 
-        -   ОРД-295
-        -   ОРД-297
-        -   ОРД-298
-        -   НПМмд-02-24
-        -   НФИмд-00-24
-        -   НПИмд-01-23
-        -   ~~Ср 19:30-20:50~~
-        -   Ср 16:30-17:50
-
-<!--list-separator-->
-
-3. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС <code>[2/2]</code>
-
-    <!--list-separator-->
-
-    1. <span class="org-todo done CNCL">CNCL</span>  Основы администрирования ОС (лабораторные работы) <span class="tag"><span class="CNCL">CNCL</span></span>
-
-        -   ОРД-295, ОРД-297; НПИбд-01,02-22
-
-    <!--list-separator-->
-
-    2. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лекция)
-
-        -   ОРД-559
-        -   НПИбд-00-23
-
-<!--list-separator-->
-
-4. <span class="org-todo done DONE">DONE</span>  Спецдисциплина для аспирантов
-
-    -   [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmRjYmUwNGUtMWY3MS00ZWZjLTk5YjEtYTkxZGM1ODU3ZjBi%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%2296135d12-2269-4589-add7-7eca251a8b13%22%7d)
+        -   дист.
+        -   НФИбд-01-23
+        -   НФИбд-02-23
+        -   НПИбд-01-23
+        -   НПИбд-02-23
 
 
-#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.5</span> 2024--2025 учебный год, 3 четверть <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-3-четверть}
-
-
-#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">1.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-4-четверть}
-
-
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.2.7</span> 2024--2025 учебный год, 2 семестр <code>[17/17]</code> {#2024-2025-учебный-год-2-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.2</span> 2025--2026 учебный год, 2 семестр <code>[17/17]</code> {#2025-2026-учебный-год-2-семестр}
 
 <!--list-separator-->
 
@@ -422,10 +341,408 @@ slug: "timetable-classes"
     -   НФИбд-01-22
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3</span> 2023--2024 учебный год, расписание занятий <code>[7/7]</code> {#2023-2024-учебный-год-расписание-занятий}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> 2024--2025 учебный год, расписание занятий <code>[7/7]</code> {#2024-2025-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.1</span> Информация {#информация}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Информация <code>[2/2]</code> {#информация}
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Числитель/знаменатель
+
+    <div class="table-caption">
+      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 1:</span>
+      1 семестр 2024/2025 учебного года
+    </div>
+
+    | Числитель    | Знаменатель  |
+    |--------------|--------------|
+    | 01.09--02.09 | 04.09--09.09 |
+    | 11.09--16.09 | 18.09--23.09 |
+    | 25.09--30.09 | 02.10--07.10 |
+    | 09.10--14.10 | 16.10--21.10 |
+    | 23.10--28.10 | 30.10--04.11 |
+    | 06.11--11.11 | 13.11--18.11 |
+    | 20.11--25.11 | 27.11--02.12 |
+    | 04.12--09.12 | 11.12--16.12 |
+    | 18.12--23.12 | 25.12--30.12 |
+
+    <div class="table-caption">
+      <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 2:</span>
+      2 семестр 2024/2025 учебного года
+    </div>
+
+    | Числитель    | Знаменатель  |
+    |--------------|--------------|
+    | 07.02--10.02 | 12.02--17.02 |
+    | 19.02--24.02 | 26.02--03.03 |
+    | 04.03--09.03 | 11.03--16.03 |
+    | 18.03--23.03 | 25.03--30.03 |
+    | 01.04--06.04 | 08.04--13.04 |
+    | 15.04--20.04 | 22.04--27.04 |
+    | 29.04--04.05 | 06.05--11.05 |
+    | 13.05--18.05 | 20.05--25.05 |
+    | 27.05--01.06 | 03.06--08.06 |
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  Изменения <span class="timestamp-wrapper"><span class="timestamp">[2025-01-22 Ср]</span></span>
+
+    -   В связи с проведением праздничных мероприятий, посвященных 65-летию РУДН, 7 и 8 февраля 2025 года объявлены днями самостоятельной работы.
+    -   Неделя с 10 по 17 февраля 2025 года считается верхней в общеуниверситетском расписании занятий.
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> 2024--2025 учебный год, 1 четверть <code>[2/2]</code> {#2024-2025-учебный-год-1-четверть}
+
+-   2024-09-01 Пт--2024-11-05 Вс
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы) <code>[6/6]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-299
+        -   НФИбд-01-21
+        -   Пн 09:00-10:20
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-299
+        -   НФИбд-01-21
+        -   Пн 10:30-11:50
+
+    <!--list-separator-->
+
+    3. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-298
+        -   НФИбд-02-21
+        -   Пн 12:00-13:20
+
+    <!--list-separator-->
+
+    4. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-298
+        -   НФИбд-02-21
+        -   Пн 13:30-14:50
+
+    <!--list-separator-->
+
+    5. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-297
+        -   НБИбд-01-21
+        -   Ср 10:30-11:50
+
+    <!--list-separator-->
+
+    6. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лабораторные работы)
+
+        -   ОРД-297
+        -   НБИбд-01-21
+        -   Ср 12:00-13:20
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  Информационная безопасность (лекция)
+
+    -   Группы: НПМ-21, НКН-21, НФИ-21, НПИ-21, НБИ-21
+    -   По четвергам, 09:00-10:20
+    -   Занятие проводится дистанционно
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> 2024--2025 учебный год, 2 четверть <code>[2/2]</code> {#2024-2025-учебный-год-2-четверть}
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных <code>[3/3]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
+    <!--list-separator-->
+
+    3. <span class="org-todo done DONE">DONE</span>  Моделирование сетей передачи данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-298
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных <code>[2/2]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-299
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  Компьютерный практикум по статистическому анализу данных
+
+        -   НКНбд-01-21
+        -   НФИбд-01-21
+        -   НФИбд-02-21
+        -   НПИбд-01-21
+        -   НПИбд-02-21
+        -   ОРД-299
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.4</span> 2024--2025 учебный год, 1 семестр <code>[4/4]</code> {#2024-2025-учебный-год-1-семестр}
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Научное программирование
+
+    -   ОРД-295
+    -   НПМмд-02-24
+    -   Ср 21:00-22:20
+    -   Ср 15:00-16:20
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ <code>[2/2]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лекция)
+
+        -   ОРД-295
+        -   НПМмд-02-24
+        -   НФИмд-00-24
+        -   НПИмд-01-23
+        -   ~~Ср 19:30-20:50~~
+        -   Ср 9:00-10:20, дистанционно
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  МОЗИиИБ (лабораторная работа)
+
+        -   ОРД-295
+        -   ОРД-297
+        -   ОРД-298
+        -   НПМмд-02-24
+        -   НФИмд-00-24
+        -   НПИмд-01-23
+        -   ~~Ср 19:30-20:50~~
+        -   Ср 16:30-17:50
+
+<!--list-separator-->
+
+3. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС <code>[2/2]</code>
+
+    <!--list-separator-->
+
+    1. <span class="org-todo done CNCL">CNCL</span>  Основы администрирования ОС (лабораторные работы) <span class="tag"><span class="CNCL">CNCL</span></span>
+
+        -   ОРД-295, ОРД-297; НПИбд-01,02-22
+
+    <!--list-separator-->
+
+    2. <span class="org-todo done DONE">DONE</span>  Основы администрирования ОС (лекция)
+
+        -   ОРД-559
+        -   НПИбд-00-23
+
+<!--list-separator-->
+
+4. <span class="org-todo done DONE">DONE</span>  Спецдисциплина для аспирантов
+
+    -   [MS Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmRjYmUwNGUtMWY3MS00ZWZjLTk5YjEtYTkxZGM1ODU3ZjBi%40thread.v2/0?context=%7b%22Tid%22%3a%222ae95c20-c675-4c48-88d3-f276b762bf52%22%2c%22Oid%22%3a%2296135d12-2269-4589-add7-7eca251a8b13%22%7d)
+
+
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.5</span> 2024--2025 учебный год, 3 четверть <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-3-четверть}
+
+
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.6</span> 2024--2025 учебный год, 4 четверть <code>[0/0]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#2024-2025-учебный-год-4-четверть}
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.7</span> 2024--2025 учебный год, 2 семестр <code>[17/17]</code> {#2024-2025-учебный-год-2-семестр}
+
+<!--list-separator-->
+
+1. <span class="org-todo done DONE">DONE</span>  Архитектура компьютеров и операционные системы (лекция, дистанционно)
+
+    <!--list-separator-->
+
+    1.  Группы
+
+        -   01.03.00 Математика и механика
+            -   НММбд-01-23, НММбд-02-23, НММбд-03-23, НММбд-04-23
+        -   02.03.00 Компьютерные и информационные науки
+            -   НКАбд-01-23, НКАбд-02-23, НКАбд-03-23, НКАбд-04-23, НКАбд-05-23, НКАбд-06-23
+        -   09.03.03 Прикладная информатика
+            -   НПИбд-01-23, НПИбд-02-23, НПИбд-03-23
+        -   38.03.05 Бизнес-информатика
+            -   НБИбд-01-23, НБИбд-02-23, НБИбд-03-23
+
+    <!--list-separator-->
+
+    2.  Даты
+
+        1.
+        2.
+        3.
+        4.
+        5.
+        6.
+        7.
+        8.
+
+<!--list-separator-->
+
+2. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лекция, дистанционно)
+
+<!--list-separator-->
+
+3. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НКАбд-03-23
+
+<!--list-separator-->
+
+4. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НКАбд-04-23
+
+<!--list-separator-->
+
+5. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НКАбд-02-23
+
+<!--list-separator-->
+
+6. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НКАбд-01-23
+
+<!--list-separator-->
+
+7. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НБИбд-01-23
+
+<!--list-separator-->
+
+8. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности (лабораторные)
+
+    -   ОРД-295
+    -   НБИбд-02-23
+
+<!--list-separator-->
+
+9. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование (лабораторные)
+
+    -   НФИбд-01-22
+        -   ОРД-297
+    -   НКНбд-01-22
+        -   ОРД-295
+
+<!--list-separator-->
+
+10. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование (лабораторные)
+
+    -   НФИбд-01-22
+        -   ОРД-297
+    -   НКНбд-01-22
+        -   ОРД-295
+
+<!--list-separator-->
+
+11. <span class="org-todo done DONE">DONE</span>  Администрирование локальных сетей (лекция, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+12. <span class="org-todo done DONE">DONE</span>  Администрирование локальных сетей (лабораторные, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+13. <span class="org-todo done DONE">DONE</span>  Администрирование локальных сетей (лабораторные, по выбору)
+
+    -   ОРД-295
+    -   НФИбд, НПИбд-22
+
+<!--list-separator-->
+
+14. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лекция, дистанционно)
+
+    -   НКН-22
+    -   НФИ-22
+    -   НПИбд-22
+
+<!--list-separator-->
+
+15. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НКНбд-01-22
+
+<!--list-separator-->
+
+16. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НФИбд-02-22
+
+<!--list-separator-->
+
+17. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (лабораторные)
+
+    -   ОРД-295
+    -   НФИбд-01-22
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> 2023--2024 учебный год, расписание занятий <code>[7/7]</code> {#2023-2024-учебный-год-расписание-занятий}
+
+
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.1</span> Информация {#информация}
 
 <!--list-separator-->
 
@@ -466,7 +783,7 @@ slug: "timetable-classes"
     | 27.05--01.06 | 03.06--08.06 |
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.2</span> 2023--2024 учебный год, 1 четверть <code>[2/2]</code> {#2023-2024-учебный-год-1-четверть}
 
 -   2023-09-01 Пт--2023-11-05 Вс
 
@@ -515,7 +832,7 @@ slug: "timetable-classes"
     -   Занятие проводится дистанционно
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.3</span> 2023--2024 учебный год, 2 четверть <code>[1/1]</code> {#2023-2024-учебный-год-2-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.3</span> 2023--2024 учебный год, 2 четверть <code>[1/1]</code> {#2023-2024-учебный-год-2-четверть}
 
 <!--list-separator-->
 
@@ -524,7 +841,7 @@ slug: "timetable-classes"
     -   2023-11-06 Пн 13:30-14:50--2023-12-25 Пн 13:30-14:50
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.4</span> 2023--2024 учебный год, 1 семестр <code>[5/5]</code> {#2023-2024-учебный-год-1-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.4</span> 2023--2024 учебный год, 1 семестр <code>[5/5]</code> {#2023-2024-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -557,7 +874,7 @@ slug: "timetable-classes"
     -   ОРД-295, НПИбд-22
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.5</span> 2023--2024 учебный год, 3 четверть <code>[1/1]</code> {#2023-2024-учебный-год-3-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.5</span> 2023--2024 учебный год, 3 четверть <code>[1/1]</code> {#2023-2024-учебный-год-3-четверть}
 
 <!--list-separator-->
 
@@ -588,10 +905,10 @@ slug: "timetable-classes"
             -   НПИбд-01-21, НПИбд-02-21
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.6</span> 2023--2024 учебный год, 4 четверть <code>[0/0]</code> {#2023-2024-учебный-год-4-четверть}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3.7</span> 2023--2024 учебный год, 2 семестр <code>[6/6]</code> {#2023-2024-учебный-год-2-семестр}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.7</span> 2023--2024 учебный год, 2 семестр <code>[6/6]</code> {#2023-2024-учебный-год-2-семестр}
 
 <!--list-separator-->
 
@@ -680,18 +997,18 @@ slug: "timetable-classes"
     -   ОРД-297
 
 
-## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Промежуточные аттестации <code>[5/6]</code> {#промежуточные-аттестации}
+## <span class="org-todo todo TODO">TODO</span> <span class="section-num">3</span> Промежуточные аттестации <code>[5/6]</code> {#промежуточные-аттестации}
 
 
-### <span class="section-num">2.1</span> Информация {#информация}
+### <span class="section-num">3.1</span> Информация {#информация}
 
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[6/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">3.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[6/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
 
 <!--list-separator-->
 
@@ -753,7 +1070,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.2</span> Сессия, модуль 2, 2024--2025 <code>[3/3]</code> {#сессия-модуль-2-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.2</span> Сессия, модуль 2, 2024--2025 <code>[3/3]</code> {#сессия-модуль-2-2024-2025}
 
 <!--list-separator-->
 
@@ -784,7 +1101,7 @@ slug: "timetable-classes"
     2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2 - 2024-2025, модуль 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.3</span> Сессия, семестр 1, 2024--2025 <code>[3/3]</code> {#сессия-семестр-1-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.3</span> Сессия, семестр 1, 2024--2025 <code>[3/3]</code> {#сессия-семестр-1-2024-2025}
 
 <!--list-separator-->
 
@@ -883,7 +1200,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Основы администрирования операционных систем. Переаттестация № 2
 
 
-#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.4</span> Сессия, модуль 3, 2024--2025 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-3-2024-2025}
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">3.2.4</span> Сессия, модуль 3, 2024--2025 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-3-2024-2025}
 
 <!--list-separator-->
 
@@ -894,14 +1211,14 @@ slug: "timetable-classes"
 2. <span class="org-todo done CNCL">CNCL</span>  Переаттестации, модуль 3 <code>[2/2]</code> <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">2.2.5</span> Сессия, модуль 4, 2024--2025 <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-4-2024-2025}
+#### <span class="org-todo done CNCL">CNCL</span> <span class="section-num">3.2.5</span> Сессия, модуль 4, 2024--2025 <code>[1/1]</code> <span class="tag"><span class="CNCL">CNCL</span></span> {#сессия-модуль-4-2024-2025}
 
 <!--list-separator-->
 
 1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2.6</span> Сессия, семестр 2, 2024--2025 <code>[1/2]</code> {#сессия-семестр-2-2024-2025}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">3.2.6</span> Сессия, семестр 2, 2024--2025 <code>[1/2]</code> {#сессия-семестр-2-2024-2025}
 
 <!--list-separator-->
 
@@ -1018,19 +1335,27 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1, семестр 2, 2024--2025 <code>[0/3]</code>
+    1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1, семестр 2, 2024--2025 <code>[0/4]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 1
+        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, Переаттестация № 1, семестр 2, 2024--2025
+        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Операционные системы, Переаттестация № 1, семестр 2, 2024--2025
+        3. <span class="org-todo todo TODO">TODO</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 1
+
+        <!--list-separator-->
+
+        4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 1
+
+        <!--list-separator-->
+
+        5. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, Переаттестация № 1
 
     <!--list-separator-->
 
@@ -1042,10 +1367,22 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Операционные системы, Переаттестация № 2, семестр 2, 2024--2025
+        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 1
+
+        <!--list-separator-->
+
+        3. <span class="org-todo todo TODO">TODO</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 2
+
+        <!--list-separator-->
+
+        4. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, Переаттестация № 2
+
+        <!--list-separator-->
+
+        5. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 1
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2.7</span> Государственные экзамены, 2024--2025 <code>[2/2]</code> {#государственные-экзамены-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.7</span> Государственные экзамены, 2024--2025 <code>[2/2]</code> {#государственные-экзамены-2024-2025}
 
 <!--list-separator-->
 
@@ -1056,10 +1393,10 @@ slug: "timetable-classes"
 2. <span class="org-todo done DONE">DONE</span>  Защиты, магистры, 2024--2025, 01.04.02, 02.04.02
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3</span> 2023--2024 учебный год, промежуточные аттестации <code>[6/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3</span> 2023--2024 учебный год, промежуточные аттестации <code>[6/6]</code> {#2023-2024-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.1</span> Сессия, модуль 1, 2023--2024 <code>[3/3]</code> {#сессия-модуль-1-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.1</span> Сессия, модуль 1, 2023--2024 <code>[3/3]</code> {#сессия-модуль-1-2023-2024}
 
 <!--list-separator-->
 
@@ -1116,7 +1453,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2. Информационная безопасность
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.2</span> Сессия, модуль 2, 2023--2024 <code>[3/3]</code> {#сессия-модуль-2-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.2</span> Сессия, модуль 2, 2023--2024 <code>[3/3]</code> {#сессия-модуль-2-2023-2024}
 
 <!--list-separator-->
 
@@ -1131,7 +1468,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.3</span> Сессия, семестр 1, 2023--2024 <code>[3/3]</code> {#сессия-семестр-1-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.3</span> Сессия, семестр 1, 2023--2024 <code>[3/3]</code> {#сессия-семестр-1-2023-2024}
 
 <!--list-separator-->
 
@@ -1186,7 +1523,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Научное программирование. Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.4</span> Сессия, модуль 3, 2023--2024 <code>[2/2]</code> {#сессия-модуль-3-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.4</span> Сессия, модуль 3, 2023--2024 <code>[2/2]</code> {#сессия-модуль-3-2023-2024}
 
 <!--list-separator-->
 
@@ -1243,14 +1580,14 @@ slug: "timetable-classes"
         -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.5</span> Сессия, модуль 4, 2023--2024 <code>[1/1]</code> {#сессия-модуль-4-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.5</span> Сессия, модуль 4, 2023--2024 <code>[1/1]</code> {#сессия-модуль-4-2023-2024}
 
 <!--list-separator-->
 
 1. <span class="org-todo done DONE">DONE</span>  Зачёты
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.3.6</span> Сессия, семестр 2, 2023--2024 <code>[3/3]</code> {#сессия-семестр-2-2023-2024}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.3.6</span> Сессия, семестр 2, 2023--2024 <code>[3/3]</code> {#сессия-семестр-2-2023-2024}
 
 <!--list-separator-->
 
@@ -1486,10 +1823,10 @@ slug: "timetable-classes"
                 -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4</span> 2022--2023 учебный год, промежуточные аттестации <code>[6/6]</code> {#2022-2023-учебный-год-промежуточные-аттестации}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4</span> 2022--2023 учебный год, промежуточные аттестации <code>[6/6]</code> {#2022-2023-учебный-год-промежуточные-аттестации}
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.1</span> Модуль 1 <code>[3/3]</code> {#модуль-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.1</span> Модуль 1 <code>[3/3]</code> {#модуль-1}
 
 <!--list-separator-->
 
@@ -1536,7 +1873,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.2</span> Модуль 2 <code>[3/3]</code> {#модуль-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.2</span> Модуль 2 <code>[3/3]</code> {#модуль-2}
 
 <!--list-separator-->
 
@@ -1551,7 +1888,7 @@ slug: "timetable-classes"
 3. <span class="org-todo done DONE">DONE</span>  Переаттестации
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.3</span> Семестр 1 <code>[3/3]</code> {#семестр-1}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.3</span> Семестр 1 <code>[3/3]</code> {#семестр-1}
 
 <!--list-separator-->
 
@@ -1607,7 +1944,7 @@ slug: "timetable-classes"
         2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.4</span> Модуль 3 <code>[3/3]</code> {#модуль-3}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.4</span> Модуль 3 <code>[3/3]</code> {#модуль-3}
 
 <!--list-separator-->
 
@@ -1665,7 +2002,7 @@ slug: "timetable-classes"
     2. <span class="org-todo done DONE">DONE</span>  Математическое моделирование (3 курс). Переаттестация № 2
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.5</span> Семестр 2 <code>[2/2]</code> {#семестр-2}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.5</span> Семестр 2 <code>[2/2]</code> {#семестр-2}
 
 <!--list-separator-->
 
@@ -1935,7 +2272,7 @@ slug: "timetable-classes"
                 -   На переаттестации может потребоваться продемонстрировать, как были выполнены все лабораторные работы, дать пояснения, ответить на вопросы.
 
 
-#### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.4.6</span> Модуль 4 <code>[1/1]</code> {#модуль-4}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.4.6</span> Модуль 4 <code>[1/1]</code> {#модуль-4}
 
 <!--list-separator-->
 
@@ -1954,7 +2291,7 @@ slug: "timetable-classes"
         2.  02.03.02
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.5</span> Модули на 2021--2022 учебный год {#модули-на-2021-2022-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.5</span> Модули на 2021--2022 учебный год {#модули-на-2021-2022-учебный-год}
 
 -   Модуль 1
     -   01.09.2021--31.10.2021
@@ -1985,7 +2322,7 @@ slug: "timetable-classes"
                 -   НФИмд-02-21, 12:00, MS Teams
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.6</span> Модули на 2020--2021 учебный год {#модули-на-2020-2021-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.6</span> Модули на 2020--2021 учебный год {#модули-на-2020-2021-учебный-год}
 
 -   Расписание экзаменов:
     <https://esystem.rudn.ru/faculty/ffmien/raspisanie>
@@ -2029,7 +2366,7 @@ slug: "timetable-classes"
             -   НБИбд-01-20
 
 
-### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.7</span> Модули на 2019--2020 учебный год {#модули-на-2019-2020-учебный-год}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.7</span> Модули на 2019--2020 учебный год {#модули-на-2019-2020-учебный-год}
 
 -   Модуль 1: 5.11-9.11.19 (1 неделя)
 -   Модуль 2: 13.01-24.01.20 (2 недели)
@@ -2040,7 +2377,7 @@ slug: "timetable-classes"
     -   15.06.2020-27.06.2020 --- экзаменационная сессия.
 
 
-## <span class="section-num">3</span> Соответствие специальностей и кодов групп {#соответствие-специальностей-и-кодов-групп}
+## <span class="section-num">4</span> Соответствие специальностей и кодов групп {#соответствие-специальностей-и-кодов-групп}
 
 <div class="table-caption">
   <span class="table-number">&#1058;&#1072;&#1073;&#1083;&#1080;&#1094;&#1072; 9:</span>

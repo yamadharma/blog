@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2013-01-01'
-publishDate: '2025-08-11T18:50:35.158367Z'
+publishDate: '2025-08-27T16:24:57.936149Z'
 publication_types:
 - paper-conference
 publication: '*The 15th small triangle meeting of Theoretical Physics*'

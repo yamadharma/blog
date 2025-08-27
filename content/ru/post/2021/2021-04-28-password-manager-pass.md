@@ -2,7 +2,7 @@
 title: "Менеджер паролей pass"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-28T18:50:00+03:00
-lastmod: 2025-07-08T20:11:00+03:00
+lastmod: 2025-08-19T16:38:00+03:00
 tags: ["security", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -59,9 +59,23 @@ slug: "password-manager-pass"
 ### <span class="section-num">3.1</span> Утилиты командной строки {#утилиты-командной-строки}
 
 -   На данный момент существует 2 основных реализации:
-    -   `pass` --- классическая реализация в виде shell-скриптов (<https://www.passwordstore.org/>);
-    -   `gopass` --- реализация на go с дополнительными интегрированными функциями (<https://www.gopass.pw/>).
+    -   `pass`;
+    -   `gopass`.
+-   Они имеют высокуую совместимость по опциям и хранилищам.
 -   Дальше в тексте будет использоваться программа `pass`, но всё то же самое можно сделать с помощью программы `gopass`.
+
+
+#### <span class="section-num">3.1.1</span> pass {#pass}
+
+-   Классическая реализация в виде shell-скриптов
+-   Сайт: <https://www.passwordstore.org/>
+
+
+#### <span class="section-num">3.1.2</span> gopass {#gopass}
+
+-   Реализация `pass` на go с дополнительными интегрированными функциями
+-   Сайт: <https://www.gopass.pw/>.
+-   [Менеджер паролей gopass]({{< relref "2025-08-19--gopass-password-manager" >}})
 
 
 ### <span class="section-num">3.2</span> Графические интерфейсы {#графические-интерфейсы}
@@ -106,7 +120,7 @@ slug: "password-manager-pass"
 
 2.  buckley-w-david/Android-Password-Store
 
-    -   Репозиторий с кодом: <https://github.com/android-password-store/Android-Password-Store>
+    -   Репозиторий с кодом: <https://github.com/buckley-w-david/Android-Password-Store>
     -   Форк от основного репозитория.
     -   Выглядит живым.
 

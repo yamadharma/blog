@@ -5,7 +5,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2015-01-01'
-publishDate: '2025-08-11T18:50:35.359493Z'
+publishDate: '2025-08-27T16:24:58.139678Z'
 publication_types:
 - article-journal
 publication: '*Mathematical Modelling and Geometry*'

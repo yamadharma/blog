@@ -4,7 +4,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2024-01-01'
-publishDate: '2025-08-11T18:50:36.392559Z'
+publishDate: '2025-08-27T16:24:59.219017Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

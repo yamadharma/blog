@@ -8,7 +8,7 @@ authors:
 - Кристина Александровна Штепа
 - Дмитрий Сергеевич Кулябов
 date: '2024-01-01'
-publishDate: '2025-08-11T18:50:36.447451Z'
+publishDate: '2025-08-27T16:24:59.275456Z'
 publication_types:
 - article-journal
 publication: '*Программирование*'

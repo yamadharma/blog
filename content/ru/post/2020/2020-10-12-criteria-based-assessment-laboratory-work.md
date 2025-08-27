@@ -2,7 +2,7 @@
 title: "Критериальное оценивание лабораторных работ"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-10-12T09:57:00+03:00
-lastmod: 2025-02-18T09:18:00+03:00
+lastmod: 2025-08-24T20:16:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -93,12 +93,12 @@ slug: "criteria-based-assessment-laboratory-work"
 ## <span class="section-num">2</span> Список элементов (чек-лист) для  загрузки лабораторных работ в LMS {#список-элементов--чек-лист--для-загрузки-лабораторных-работ-в-lms}
 
 -   [ ] В качестве ответа на лабораторную работу необходимо представить:
-    -   [ ] _Ссылка_ на плейлист (<https://rutube.ru/> + <https://www.plvideo.ru/>).
-    -   [ ] Отдельные _ссылки_ на скринкасты (<https://rutube.ru/> + <https://www.plvideo.ru/>):
+    -   [ ] _Ссылка_ на плейлист (<https://rutube.ru/> + <https://vkvideo.ru/> + <https://www.plvideo.ru/>).
+    -   [ ] Отдельные _ссылки_ на скринкасты (<https://rutube.ru/> + <https://vkvideo.ru/> + <https://www.plvideo.ru/>):
         -   [ ] ссылка на скринкаст выполнения лабораторной работы;
-        -   [ ] ссылка на скринкаст защиты презентации лабораторной работы;
         -   [ ] ссылка на скринкаст процесса подготовки отчёта;
-        -   [ ] ссылка на скринкаст процесса подготовки презентации.
+        -   [ ] ссылка на скринкаст процесса подготовки презентации;
+        -   [ ] ссылка на скринкаст защиты презентации лабораторной работы.
     -   [ ] Ссылка на репозиторий (<https://github.com/>):
         -   [ ] ссылка на весь репозиторий;
         -   [ ] ссылка на конкретный релиз.
@@ -110,6 +110,38 @@ slug: "criteria-based-assessment-laboratory-work"
         -   [ ] презентацию в `pdf` (сделанную из `markdown`) (_приложено к ответу_ и в файлах релиза);
         -   [ ] презентацию в `html` (сделанную из `markdown`) (в файлах релиза);
         -   [ ] презентацию в `markdown` (в каталоге git и в файлах релиза).
+
+
+### <span class="section-num">2.1</span> Пример ответа {#пример-ответа}
+
+-   Текстовая часть ответа может выглядеть следующим образом (форматирование в Markdown):
+    ```markdown
+    ## Скринкасты
+
+    - [Rutube](https://rutube.ru/plst/114257/)
+    ​    - [Выполнение лабораторной работы](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
+    ​    - [Подготовка отчёта](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
+    ​    - [Подготовка презентации](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
+    ​    - [Защита лабораторной работы](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
+
+    - [VKvideo](https://vkvideo.ru/playlist/606414976_6)
+    ​    - [Выполнение лабораторной работы](https://vkvideo.ru/video606414976_456239192)
+    ​    - [Подготовка отчёта](https://vkvideo.ru/video606414976_456239192)
+    ​    - [Подготовка презентации](https://vkvideo.ru/video606414976_456239192)
+    ​    - [Защита лабораторной работы](https://vkvideo.ru/video606414976_456239192)
+
+    - [Платформа](https://studio.plvideo.ru/channel/vZSk2MkaG7Qm/playlist/rNGbr_m0PhMU)
+    ​    - [Выполнение лабораторной работы](https://plvideo.ru/watch?v=W5741K4QRBi1)
+    ​    - [Подготовка отчёта](https://plvideo.ru/watch?v=W5741K4QRBi1)
+    ​    - [Подготовка презентации](https://plvideo.ru/watch?v=W5741K4QRBi1)
+    ​    - [Защита лабораторной работы](https://plvideo.ru/watch?v=W5741K4QRBi1)
+
+    ## Репозиторий
+
+    - [Рабочий репозиторий](https://github.com/yamadharma/academic-laboratory-report-template)
+    ​- [Релиз v2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/releases/tag/v2.0.2)
+    ```
+-   Также к ответу должны быть прикреплены необходимые файлы.
 
 
 ## <span class="section-num">3</span> Критерии  выполнения лабораторной работы {#критерии-выполнения-лабораторной-работы}

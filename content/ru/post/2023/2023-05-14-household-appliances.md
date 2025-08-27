@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2025-03-18T10:15:00+03:00
+lastmod: 2025-08-26T13:38:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -19,6 +19,7 @@ slug: "household-appliances"
 ## <span class="section-num">1</span> Телевизионная техника {#телевизионная-техника}
 
 -   [SmartTV. Операционные системы]({{< relref "2023-05-14-smarttv-operating-systems" >}})
+-   [Бытовая техника. Телевизор]({{< relref "2025-08-26--appliances-tv" >}})
 
 
 ## <span class="section-num">2</span> Уборка {#уборка}

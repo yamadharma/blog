@@ -2,7 +2,7 @@
 title: "Syncthing. Командная строка"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-05-29T15:35:00+03:00
-lastmod: 2024-05-29T19:54:00+03:00
+lastmod: 2025-08-19T20:28:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -57,4 +57,34 @@ slug: "syncthing-cli"
 -   Посмотреть идентификатор папки:
     ```shell
     syncthing cli config dump-json | jq '.folders[] | select(.path == "/folder/path") | .id'
+    ```
+
+
+## <span class="section-num">2</span> Установка и настройка {#установка-и-настройка}
+
+-   Запустите и включите службу Syncthing:
+
+<!--listend-->
+
+```shell
+sudo systemctl enable --now syncthing@<username>.service
+```
+
+-   Замените `username`  на ваше имя пользователя.
+-   Проверьте статус службы:
+    ```shell
+    sudo systemctl status syncthing@<username>.service
+    ```
+-   Чтобы узнать идентификатор вашего устройства, выполните следующую команду (под под пользователем):
+    ```shell
+    syncthing --device-id
+    ```
+-   Для добавления второго устройства в конфигурацию выполните команду:
+    ```shell
+    syncthing cli config devices add --device-id $DEVICE_ID_B
+    ```
+
+-   Чтобы поделиться папкой по умолчанию со вторым устройством, используйте команду:
+    ```shell
+    syncthing cli config folders $FOLDER_ID devices add --device-id $DEVICE_ID_B
     ```

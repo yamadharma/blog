@@ -7,7 +7,7 @@ authors:
 - Виктор Б. Малютин
 - Леонид Антонович Севастьянов
 date: '2016-01-01'
-publishDate: '2025-08-11T18:50:35.555245Z'
+publishDate: '2025-08-27T16:24:58.339672Z'
 publication_types:
 - article-journal
 publication: '*Математическое моделирование*'

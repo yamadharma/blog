@@ -2,7 +2,7 @@
 title: "Подготовка курса Моделирование сетей передачи данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-24T15:01:00+03:00
-lastmod: 2025-01-03T22:57:00+03:00
+lastmod: 2025-08-23T20:57:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -72,12 +72,15 @@ slug: "course-simulation-data-networks"
     -   T8. Контроль скорости TCP.
 
 
-## <span class="section-num">4</span> Лабораторные работы {#лабораторные-работы}
+## <span class="section-num">4</span> Активности {#активности}
+
+
+### <span class="section-num">4.1</span> Лабораторные работы {#лабораторные-работы}
 
 -   [Mininet. Лабораторные работы]({{< relref "teaching/simulation-networks/lab" >}})
 
 
-## <span class="section-num">5</span> Лекции {#лекции}
+### <span class="section-num">4.2</span> Лекции {#лекции}
 
 1.  Современные технологии межсетевого уровня IP.
 2.  Параметры TCP.
@@ -89,7 +92,7 @@ slug: "course-simulation-data-networks"
 8.  Средства QoS коммуникационного узла. Протоколы сигнализации QoS и службы QoS IP-уровня.
 
 
-## <span class="section-num">6</span> Темы докладов {#темы-докладов}
+### <span class="section-num">4.3</span> Темы докладов {#темы-докладов}
 
 -   Обзор возможностей системы моделирования Mininet.
 -   Генераторы трафика. Особенности в разных системах моделирования.
@@ -117,3 +120,28 @@ slug: "course-simulation-data-networks"
 -   Измерение справедливости TCP.
 -   Контроль скорости TCP.
 -   Влияние MSS на пропускную способность.
+
+
+## <span class="section-num">5</span> Оценивание {#оценивание}
+
+-   [Критериальное оценивание лабораторных работ]({{< relref "2020-10-12-criteria-based-assessment-laboratory-work" >}})
+-   [Критериальное оценивание докладов]({{< relref "2020-12-08-criteria-assessment-presentation" >}})
+
+
+## <span class="section-num">6</span> Ресурсы {#ресурсы}
+
+
+### <span class="section-num">6.1</span> Запись занятий {#запись-занятий}
+
+-   [Rutube: Моделирование сетей передачи данных](https://rutube.ru/plst/1164043)
+-   [VKvideo: Моделирование сетей передачи данных](https://vkvideo.ru/playlist/-230024722_10)
+-   [Платформа: Моделирование сетей передачи данных](https://plvideo.ru/playlist?list=-sZuY7sI3LPj)
+-   [Youtube: Моделирование сетей передачи данных](https://www.youtube.com/playlist?list=PLhyPdV6jkp-QMV44srqbl79yok6VGUoOD)
+
+
+### <span class="section-num">6.2</span> Материалы курса {#материалы-курса}
+
+-   [Rutube: Моделирование сетей передачи данных](https://rutube.ru/plst/692821)
+-   [VKvideo: Моделирование сетей передачи данных](https://vkvideo.ru/playlist/606414976_4)
+-   [Платформа: Моделирование сетей передачи данных](https://plvideo.ru/playlist?list=uv_yAs9CWM0k)
+-   [Youtube: Моделирование сетей передачи данных](https://www.youtube.com/playlist?list=PLhyPdV6jkp-SsmPa60FqazVkDlVsNPBNJ)

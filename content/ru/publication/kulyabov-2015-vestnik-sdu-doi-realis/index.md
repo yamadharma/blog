@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastyanov
 date: '2015-01-01'
-publishDate: '2025-08-11T18:50:35.370793Z'
+publishDate: '2025-08-27T16:24:58.151592Z'
 publication_types:
 - article-journal
 publication: "*Bulletin of Peoples' Friendship University of Russia. Series ``Mathematics.

@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Mariya Gennadyevna Kokotchikova
 date: '2007-01-01'
-publishDate: '2025-08-11T18:50:34.850902Z'
+publishDate: '2025-08-27T16:24:57.631234Z'
 publication_types:
 - paper-conference
 publication: "*The 4th International Workshop \\\"Quantum Physics and Communication''

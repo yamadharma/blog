@@ -2,7 +2,7 @@
 title: "Репозитории для научных исследований"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-02T19:43:00+03:00
-lastmod: 2024-11-02T20:20:00+03:00
+lastmod: 2025-08-27T17:43:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -41,6 +41,7 @@ slug: "research-repositories"
 
 ### <span class="section-num">3.1</span> Zenodo {#zenodo}
 
+-   [Репозитории для научных исследований. Zenodo]({{< relref "2025-08-27--research-repositories-zenodo" >}})
 -   <https://zenodo.org/>
 -   Репозиторий научных данных.
 -   Предназначен для хранения «всех результатов исследований любого направления науки».

@@ -2,7 +2,7 @@
 title: "Просмотренные фильмы"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-08-10T15:42:00+03:00
-lastmod: 2025-08-10T15:45:00+03:00
+lastmod: 2025-08-12T11:16:00+03:00
 tags: ["movie"]
 categories: ["book"]
 draft: false

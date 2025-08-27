@@ -2,8 +2,8 @@
 title: "Система управления обучением Moodle"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-15T16:10:00+03:00
-lastmod: 2025-02-04T20:59:00+03:00
-tags: ["education"]
+lastmod: 2025-08-21T15:35:00+03:00
+tags: ["education", "MOC"]
 categories: ["science", "computer-science"]
 draft: false
 slug: "moodle-learning-management-system"
@@ -19,6 +19,7 @@ slug: "moodle-learning-management-system"
 ## <span class="section-num">1</span> Администрирование {#администрирование}
 
 -   [Moodle. Обновление]({{< relref "2024-09-15-moodle-upgrade" >}})
+-   [Moodle. Администрирование. Moosh]({{< relref "2025-08-21--moodle-administration-moosh" >}})
 
 
 ## <span class="section-num">2</span> Литература {#литература}

@@ -2,7 +2,7 @@
 title: "Linux. Дистрибутив Gentoo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-09-17T13:18:00+03:00
-lastmod: 2025-07-13T20:41:00+03:00
+lastmod: 2025-08-21T11:29:00+03:00
 tags: ["sysadmin", "linux", "MOC", "gentoo"]
 categories: ["computer-science"]
 draft: false
@@ -28,3 +28,4 @@ slug: "linux-gentoo-distribution"
 -   [Gentoo. Создание ebuild для Rust]({{< relref "2024-11-02-gentoo-ebuild-rust" >}})
 -   [Gentoo. Пакет installkernel]({{< relref "2025-05-22--gentoo-installkernel" >}})
 -   [Gentoo. Пакет eclean-kernel]({{< relref "2025-07-13--gentoo-eclean-kernel" >}})
+-   [Gentoo. Поддержка бинарных пакетов]({{< relref "2025-08-21--gentoo-binary-package-support" >}})

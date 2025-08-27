@@ -3,7 +3,7 @@ title: Geometrization of Electromagnetic Waves
 authors:
 - Dmitry Sergeevich Kulyabov
 date: '2013-01-01'
-publishDate: '2025-08-11T18:50:35.136344Z'
+publishDate: '2025-08-27T16:24:57.914738Z'
 publication_types:
 - paper-conference
 publication: '*Mathematical Modeling and Computational Physics*'

@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2017-04-01'
-publishDate: '2025-08-11T18:50:35.642441Z'
+publishDate: '2025-08-27T16:24:58.428620Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 7th International Conference

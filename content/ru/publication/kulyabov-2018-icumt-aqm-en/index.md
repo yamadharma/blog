@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Sergey Aleksandrovich Abramov
 date: '2019-01-01'
-publishDate: '2025-08-11T18:50:35.863915Z'
+publishDate: '2025-08-27T16:24:58.652460Z'
 publication_types:
 - paper-conference
 publication: '*10th International Congress on Ultra Modern Telecommunications and

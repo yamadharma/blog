@@ -5,7 +5,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Migran Nelsonovich Gevorkyan
 date: '2008-01-01'
-publishDate: '2025-08-11T18:50:34.895156Z'
+publishDate: '2025-08-27T16:24:57.675922Z'
 publication_types:
 - paper-conference
 publication: "*The 8th WSEAS International Conference on Applied Informatics and Communications

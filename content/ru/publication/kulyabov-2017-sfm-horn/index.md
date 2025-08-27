@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Anton Leonidovich Sevastianov
 date: '2017-01-01'
-publishDate: '2025-08-11T18:50:35.759581Z'
+publishDate: '2025-08-27T16:24:58.546729Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics

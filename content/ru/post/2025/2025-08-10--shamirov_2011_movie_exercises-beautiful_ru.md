@@ -2,7 +2,9 @@
 title: "Шамиров, В. В. et al. (2011) Упражнения в прекрасном"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-08-10T15:36:00+03:00
-lastmod: 2025-08-11T20:42:00+03:00
+lastmod: 2025-08-12T11:16:00+03:00
+tags: ["movie"]
+categories: ["book"]
 draft: false
 slug: "shamirov_2011_movie_exercises-beautiful_ru"
 ---

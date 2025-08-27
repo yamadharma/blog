@@ -5,7 +5,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Леонид Антонович Севастьянов
 date: '2012-01-01'
-publishDate: '2025-08-11T18:50:35.088211Z'
+publishDate: '2025-08-27T16:24:57.866763Z'
 publication_types:
 - paper-conference
 publication: '*XI Белорусская математическая конференция*'

@@ -2,7 +2,7 @@
 title: "NAS. TerraMaster"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-11-10T18:35:00+03:00
-lastmod: 2025-03-01T12:22:00+03:00
+lastmod: 2025-08-18T15:59:00+03:00
 tags: ["sysadmin", "hard"]
 categories: ["computer-science"]
 draft: false
@@ -118,10 +118,25 @@ NAS. TerraMaster.
 -   Создание снепшотов btrfs.
 
 
-## <span class="section-num">4</span> Программное обеспечение {#программное-обеспечение}
+## <span class="section-num">4</span> Особенности настройки {#особенности-настройки}
 
 
-### <span class="section-num">4.1</span> qBittorrent {#qbittorrent}
+### <span class="section-num">4.1</span> sshd {#sshd}
+
+-   По умолчанию предлагается порт 9222.
+-   Включается в Терминал и SNMP &gt; Telnet/SSH.
+
+
+### <span class="section-num">4.2</span> sftpd {#sftpd}
+
+-   По умолчанию предлагается порт 9333.
+-   Включается в Файловая служба &gt; FTP.
+
+
+## <span class="section-num">5</span> Программное обеспечение {#программное-обеспечение}
+
+
+### <span class="section-num">5.1</span> qBittorrent {#qbittorrent}
 
 -   В стандартном репозитории.
 -   Более новые версии в репозитории сообщества: <https://tmnascommunity.eu/download/qbittorrent/>.
@@ -130,18 +145,18 @@ NAS. TerraMaster.
     -   password: adminadmin
 
 
-### <span class="section-num">4.2</span> Plex Media Server {#plex-media-server}
+### <span class="section-num">5.2</span> Plex Media Server {#plex-media-server}
 
 -   [Plex Media Server]({{< relref "2025-01-27--plex-media-server" >}})
 -   В стандартном репозитории.
 
 
-## <span class="section-num">5</span> Entware {#entware}
+## <span class="section-num">6</span> Entware {#entware}
 
 -   [Репозиторий программного обеспечения Entware]({{< relref "2024-12-20--entware-software-repository" >}})
 
 
-### <span class="section-num">5.1</span> Установка {#установка}
+### <span class="section-num">6.1</span> Установка {#установка}
 
 -   Подключиться по ssh.
 -   Создать каталог для установки:
@@ -178,10 +193,10 @@ NAS. TerraMaster.
     ```
 
 
-### <span class="section-num">5.2</span> Программное обеспечение {#программное-обеспечение}
+### <span class="section-num">6.2</span> Программное обеспечение {#программное-обеспечение}
 
 
-#### <span class="section-num">5.2.1</span> git {#git}
+#### <span class="section-num">6.2.1</span> git {#git}
 
 -   Для работы с git:
     ```shell
@@ -189,7 +204,7 @@ NAS. TerraMaster.
     ```
 
 
-#### <span class="section-num">5.2.2</span> Syncthing {#syncthing}
+#### <span class="section-num">6.2.2</span> Syncthing {#syncthing}
 
 -   Установить:
     ```shell
@@ -205,15 +220,15 @@ NAS. TerraMaster.
     ```
 
 
-## <span class="section-num">6</span> Файловая система {#файловая-система}
+## <span class="section-num">7</span> Файловая система {#файловая-система}
 
 
-### <span class="section-num">6.1</span> data {#data}
+### <span class="section-num">7.1</span> data {#data}
 
 -   Всё хранится в `/Volume1/data`.
 
 
-#### <span class="section-num">6.1.1</span> Видеофайлы для plex {#видеофайлы-для-plex}
+#### <span class="section-num">7.1.1</span> Видеофайлы для plex {#видеофайлы-для-plex}
 
 -   Создайте необходимые каталоги:
     ```shell
@@ -228,7 +243,7 @@ NAS. TerraMaster.
     ```
 
 
-#### <span class="section-num">6.1.2</span> Торренты (qBittorrent) {#торренты--qbittorrent}
+#### <span class="section-num">7.1.2</span> Торренты (qBittorrent) {#торренты--qbittorrent}
 
 -   Создайте необходимые каталоги:
     ```shell
@@ -243,10 +258,10 @@ NAS. TerraMaster.
     ```
 
 
-## <span class="section-num">7</span> Администрирование {#администрирование}
+## <span class="section-num">8</span> Администрирование {#администрирование}
 
 
-### <span class="section-num">7.1</span> btrfs {#btrfs}
+### <span class="section-num">8.1</span> btrfs {#btrfs}
 
 -   Обновите утилиты:
     ```shell
@@ -254,10 +269,10 @@ NAS. TerraMaster.
     ```
 
 
-## <span class="section-num">8</span> Стандартные операции {#стандартные-операции}
+## <span class="section-num">9</span> Стандартные операции {#стандартные-операции}
 
 
-### <span class="section-num">8.1</span> Увеличение количества жёстких дисков {#увеличение-количества-жёстких-дисков}
+### <span class="section-num">9.1</span> Увеличение количества жёстких дисков {#увеличение-количества-жёстких-дисков}
 
 -   Информация: <https://www.terra-master.com/ru/terramaster-traid>
 -   Не выключая TNAS, вставьте новый жесткий диск.
@@ -265,7 +280,7 @@ NAS. TerraMaster.
 -   Выберите _Добавить жёсткие диски в RAID_.
 
 
-### <span class="section-num">8.2</span> Замена жёсткого диска {#замена-жёсткого-диска}
+### <span class="section-num">9.2</span> Замена жёсткого диска {#замена-жёсткого-диска}
 
 -   Информация: <https://www.terra-master.com/ru/terramaster-traid>
 -   Ёмкость вновь добавленного диска должна быть как минимум такой же, как и диск наименьшей емкости в TRAID.
@@ -274,23 +289,23 @@ NAS. TerraMaster.
 -   Выберите «Восстановить».
 
 
-### <span class="section-num">8.3</span> Миграция пула носителей {#миграция-пула-носителей}
+### <span class="section-num">9.3</span> Миграция пула носителей {#миграция-пула-носителей}
 
 -   Информация: <https://www.terra-master.com/ru/storage-pool-migration>
 
 
-## <span class="section-num">9</span> Ресурсы {#ресурсы}
+## <span class="section-num">10</span> Ресурсы {#ресурсы}
 
 -   Сайт по сравнению NAS: <https://nascompares.com/tag/terramaster-nas/>
 
 
-## <span class="section-num">10</span> Опыт использования {#опыт-использования}
+## <span class="section-num">11</span> Опыт использования {#опыт-использования}
 
 
-### <span class="section-num">10.1</span> TerraMaster F6-424 {#terramaster-f6-424}
+### <span class="section-num">11.1</span> TerraMaster F6-424 {#terramaster-f6-424}
 
 
-#### <span class="section-num">10.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
+#### <span class="section-num">11.1.1</span> Установленное программное обеспечение {#установленное-программное-обеспечение}
 
 <!--list-separator-->
 
@@ -327,7 +342,7 @@ NAS. TerraMaster.
     -   В стандартном репозитории.
 
 
-#### <span class="section-num">10.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
+#### <span class="section-num">11.1.2</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-01 Вс] </span></span> Первичное подключение {#первичное-подключение}
 
 -   В консоли не смог залогиниться.
 -   Посмотрел ip-адрес (на сервере DHCP, но можно было и в консоли).
@@ -358,7 +373,7 @@ NAS. TerraMaster.
 -   Установил BTRFS (см. [Файловая система btrfs]({{< relref "2021-08-27-btrfs-file-system" >}})).
 
 
-#### <span class="section-num">10.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
+#### <span class="section-num">11.1.3</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-12 Чт] </span></span> Добавление диска {#добавление-диска}
 
 -   Купил 2 жёстких диска.
 -   Жесткий диск 18TB SATA 6Gb/s Seagate ST18000NM000J
@@ -372,7 +387,7 @@ NAS. TerraMaster.
 -   Размер хранилища остался 3.63TB.
 
 
-#### <span class="section-num">10.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
+#### <span class="section-num">11.1.4</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-13 Пт] </span></span> Замена диска {#замена-диска}
 
 -   Перешёл в меню _Панель управления &gt; Жёсткий диск &gt; Жёсткий диск_.
 -   Выбрал диск на 4TB.
@@ -395,7 +410,7 @@ NAS. TerraMaster.
 -   Запустил перестройку RAID.
 
 
-#### <span class="section-num">10.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
+#### <span class="section-num">11.1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2024-12-14 Сб] </span></span> Расширение тома {#расширение-тома}
 
 -   Синхронизация RAID закончилась.
 -   Перешёл в меню _Панель управления &gt; Том &gt; Том 1_.

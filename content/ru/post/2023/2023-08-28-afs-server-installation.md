@@ -2,7 +2,7 @@
 title: "Установка сервера afs"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-28T10:22:00+03:00
-lastmod: 2023-08-30T21:52:00+03:00
+lastmod: 2025-08-13T20:26:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -136,8 +136,19 @@ slug: "afs-server-installation"
 -   Нужно будет собрать собрать RPM-пакеты с помощью команды `rpmbuild`.
 -   Установите необходимое программное обеспечение:
     ```shell
-    dnf install rpm-build yum-utils make perl libtool bzip2 wget -y
+    dnf install rpm-build yum-utils make perl libtool bzip2 wget mock elfutils-libelf-devel libtirpc-devel -y
     ```
+-   Установите версия ядра для разработчиков:
+    ```shell
+    dnf install -y "kernel-devel-uname-r == $(uname -r)"
+    dnf install -y elfutils-devel
+    dnf install -y dkms gcc kernel-devel kernel-headers
+    ```
+
+
+#### <span class="section-num">5.1.1</span> Готовый пакет srpm {#готовый-пакет-srpm}
+
+-   К сожалению, для более новых версий пакетов нет.
 -   Скачайте пакет исходных кодов для openafs:
     ```shell
     wget https://www.openafs.org/dl/openafs/<version>/openafs-<version>-1-src.rpm
@@ -146,16 +157,62 @@ slug: "afs-server-installation"
     ```shell
     wget https://www.openafs.org/dl/openafs/1.8.10/openafs-1.8.10-1.src.rpm
     ```
+
+
+#### <span class="section-num">5.1.2</span> Сделать собственный srpm {#сделать-собственный-srpm}
+
+-   Создайте структуру каталогов для сборки:
+    ```shell
+    mkdir -p ~/rpmbuild/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}
+    ```
+-   Скачайте исходники OpenAFS:
+    ```shell
+    cd ~/rpmbuild/SOURCES
+    wget https://www.openafs.org/dl/openafs/1.8.13.2/openafs-1.8.13.2-src.tar.bz2
+    wget https://www.openafs.org/dl/openafs/1.8.13.2/openafs-1.8.13.2-doc.tar.bz2
+    ```
+-   Используйте стандартный шаблон из исходников:
+    ```shell
+    tar xjvf openafs-1.8.13.2-src.tar.bz2
+    cd openafs-1.8.13.2/src/packaging/RedHat
+    ./makesrpm.pl ~/rpmbuild/SOURCES/openafs-1.8.13.2-src.tar.bz2 /root/rpmbuild/SOURCES/openafs-1.8.13.2-doc.tar.bz2
+    mv openafs-1.8.13.2-1.src.rpm ~/rpmbuild/SRPMS
+    ```
+
+
+#### <span class="section-num">5.1.3</span> Компиляция пакета {#компиляция-пакета}
+
 -   Установите необходимы зависимости:
     ```shell
-    dnf builddep openafs-<version>-1.src.rpm
+    cd ~/rpmbuild/SRPMS
+    dnf builddep openafs-1.8.13.2-1.src.rpm
     ```
 -   Откомпилите исходные коды:
     ```shell
-    rpmbuild --rebuild --define "build_userspace 1" --define "build_modules 0" openafs-<version>-1.src.rpm
+    rpmbuild --rebuild --define "build_userspace 1" --define "build_modules 1" --define "kmod_kernel_versions $(uname -r)" openafs-1.8.13.2-1.src.rpm
     ```
--   Здесь вы не компилите модули ядра, соответственно не сможете использовать сервер как клиента.
+-   Опции:
+    -   `build_userspace 1` : собирать пользовательские компоненты;
+    -   `build_modules 1` : собирать модули ядра;
+    -   `kmod_kernel_versions` : версия ядра для модулей.
+-   Можно не компилировать модули ядра, соответственно вы не сможете использовать сервер как клиента.
 -   Можно откомпилить всё с поддержкой моделей ядра (см. компиляцию для клиентов).
+-   Можно собрать и через mock (при желании, тогда ручной сборки не надо):
+    ```shell
+    mock -r epel-9-x86_64 --rebuild ~/rpmbuild/SRPMS/openafs-*.src.rpm
+    ```
+-   После успешной сборки пакеты будут в:
+    ```shell
+    ls ~/rpmbuild/RPMS/x86_64/openafs-*.rpm
+    ```
+
+
+#### <span class="section-num">5.1.4</span> Установка пакетов {#установка-пакетов}
+
+-   Установите пакеты:
+    ```shell
+    sudo dnf -y install ~/rpmbuild/RPMS/x86_64/openafs-1.8.13.2-*.rpm ~/rpmbuild/RPMS/x86_64/openafs-{client,server,krb5,authlibs,compat,docs}-1.8.13.2-*.rpm ~/rpmbuild/RPMS/x86_64/{dkms,kmod}-openafs-1.8.13.2-*.rpm
+    ```
 
 
 ### <span class="section-num">5.2</span> Компиляция клиента {#компиляция-клиента}
@@ -184,7 +241,6 @@ slug: "afs-server-installation"
     dnf install -y elfutils-devel
     dnf install -y dkms gcc kernel-devel kernel-headers
     ```
--
 
 -   Откомпилите исходные коды:
     ```shell

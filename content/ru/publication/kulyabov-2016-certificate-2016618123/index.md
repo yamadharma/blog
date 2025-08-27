@@ -6,7 +6,7 @@ authors:
 - Эли Торрес Рондон Рэй
 - Хуан Карлос Гонсалез Антекеро
 date: '2016-06-01'
-publishDate: '2025-08-11T18:50:35.407390Z'
+publishDate: '2025-08-27T16:24:58.188621Z'
 publication_types:
 - patent
 tags:

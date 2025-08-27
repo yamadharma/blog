@@ -3,7 +3,7 @@ title: Spinor-Like Hamiltonian for Maxwellian Optics
 authors:
 - Dmitry Sergeevich Kulyabov
 date: '2016-01-01'
-publishDate: '2025-08-11T18:50:35.534199Z'
+publishDate: '2025-08-27T16:24:58.316880Z'
 publication_types:
 - article-journal
 publication: '*EPJ Web of Conferences*'

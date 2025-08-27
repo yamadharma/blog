@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Tatyana Refatovna Velieva
 date: '2016-01-01'
-publishDate: '2025-08-11T18:50:35.457928Z'
+publishDate: '2025-08-27T16:24:58.239912Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks. DCCN 2016. Communications

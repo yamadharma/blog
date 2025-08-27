@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Mariya Gennadyevna Kokotchikova
 date: '2009-01-01'
-publishDate: '2025-08-11T18:50:34.974978Z'
+publishDate: '2025-08-27T16:24:57.755442Z'
 publication_types:
 - article-journal
 publication: '*Physics of Particles and Nuclei Letters*'

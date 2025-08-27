@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Michal Hnatič
 date: '2020-09-01'
-publishDate: '2025-08-11T18:50:36.080172Z'
+publishDate: '2025-08-27T16:24:58.898915Z'
 publication_types:
 - paper-conference
 publication: '*Распределенные компьютерные и телекоммуникационные сети: управление,

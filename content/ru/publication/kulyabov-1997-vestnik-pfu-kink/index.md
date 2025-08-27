@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Pavlovich Yuschenko
 date: '1997-01-01'
-publishDate: '2025-08-11T18:50:34.684209Z'
+publishDate: '2025-08-27T16:24:57.461154Z'
 publication_types:
 - article-journal
 publication: "*Bulletin of Peoples' Friendship University of Russia. Series ``Physics''*"
