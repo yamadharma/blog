@@ -2,7 +2,7 @@
 title: "Подготовка курса Компьютерный практикум"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-15T21:13:00+03:00
-lastmod: 2023-12-20T11:57:00+03:00
+lastmod: 2025-08-30T21:11:00+03:00
 tags: ["education", "modeling"]
 categories: ["science", "computer-science"]
 draft: false
@@ -201,3 +201,28 @@ slug: "course-computer-workshop"
 -   Курс про основы Julia для применения в Data Science проектах.
 -   Репозиторий: <https://github.com/JuliaEvangelists/Julia-in-DS>
 -   Видео: <https://www.youtube.com/playlist?list=PLTlO6nV_TaGDX81p4b1dbqtJWHR1iZqof>
+
+
+## <span class="section-num">5</span> Оценивание {#оценивание}
+
+-   [Критериальное оценивание лабораторных работ]({{< relref "2020-10-12-criteria-based-assessment-laboratory-work" >}})
+-   [Критериальное оценивание докладов]({{< relref "2020-12-08-criteria-assessment-presentation" >}})
+
+
+## <span class="section-num">6</span> Ресурсы {#ресурсы}
+
+
+### <span class="section-num">6.1</span> Запись занятий {#запись-занятий}
+
+-   [Rutube: Компьютерный практикум по статистическому анализу данных](https://rutube.ru/plst/1173761)
+-   [VKvideo: Компьютерный практикум по статистическому анализу данных](https://vkvideo.ru/playlist/-230024722_13)
+-   [Платформа: Компьютерный практикум по статистическому анализу данных](https://plvideo.ru/playlist?list=EMALLvKkEGya)
+-   [Youtube: Компьютерный практикум по статистическому анализу данных](https://www.youtube.com/playlist?list=PLhyPdV6jkp-S3ve-O-3dWuYwYliOnc45D)
+
+
+### <span class="section-num">6.2</span> Материалы курса {#материалы-курса}
+
+-   [Rutube: Компьютерный практикум по статистическому анализу данных](https://rutube.ru/plst/692853)
+-   [VKvideo: Компьютерный практикум по статистическому анализу данных](https://vkvideo.ru/playlist/606414976_20)
+-   [Платформа: Компьютерный практикум по статистическому анализу данных](https://plvideo.ru/playlist?list=nzMc1T2z9weL)
+-   [Youtube: Компьютерный практикум по статистическому анализу данных](https://www.youtube.com/playlist?list=PLhyPdV6jkp-TiNnhN104KkSKEVoNV3iCD)

@@ -2,7 +2,7 @@
 title: "Подготовка курса Основы администрирования операционных систем"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-03T16:32:00+03:00
-lastmod: 2025-08-23T18:01:00+03:00
+lastmod: 2025-08-28T20:05:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -158,6 +158,7 @@ slug: "course-operating-systems-2"
 -   [VKvideo: Основы администрирования операционных систем](https://vkvideo.ru/playlist/-230024722_9)
 -   [Платформа: Основы администрирования операционных систем](https://plvideo.ru/playlist?list=SH_8e25p0wVz)
 -   [Youtube: Основы администрирования операционных систем](https://www.youtube.com/playlist?list=PLhyPdV6jkp-SoFRVLtDAsKkeTo42YTucE)
+-   [Телемост](https://telemost.yandex.ru/j/7980116385)
 
 
 ### <span class="section-num">3.2</span> Материалы курса {#материалы-курса}

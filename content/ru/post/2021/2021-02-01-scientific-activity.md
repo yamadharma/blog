@@ -2,7 +2,8 @@
 title: "Научная деятельность"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-02-01T20:00:00+03:00
-lastmod: 2024-09-27T10:44:00+03:00
+lastmod: 2025-09-01T19:58:00+03:00
+tags: ["MOC"]
 categories: ["science"]
 draft: false
 slug: "scientific-activity"
@@ -47,3 +48,4 @@ slug: "scientific-activity"
 ## <span class="section-num">5</span> Писательство {#писательство}
 
 -   [Книгописание]({{< relref "2024-09-15-book-writing" >}})
+-   [Научные заметки]({{< relref "2025-09-01--scientific-notes" >}})

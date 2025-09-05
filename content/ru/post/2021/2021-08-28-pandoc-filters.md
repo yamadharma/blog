@@ -2,7 +2,7 @@
 title: "Фильтры pandoc"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-28T20:00:00+03:00
-lastmod: 2023-11-05T19:06:00+03:00
+lastmod: 2025-09-05T21:27:00+03:00
 tags: ["pandoc", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -101,3 +101,14 @@ slug: "pandoc-filters"
 ### <span class="section-num">3.2</span> Перекрёстные ссылки {#перекрёстные-ссылки}
 
 -   [Pandoc. Фильтры. Перекрёстные ссылки]({{< relref "2023-11-05-pandoc-filters-cross-referencing" >}})
+
+
+### <span class="section-num">3.3</span> Mustache {#mustache}
+
+-   [Подстановка Mustache]({{< relref "2025-09-03--mustache-substitution" >}})
+
+
+#### <span class="section-num">3.3.1</span> lustache {#lustache}
+
+-   Репозиторий: <https://github.com/Olivine-Labs/lustache>
+-   Реализация на lua.

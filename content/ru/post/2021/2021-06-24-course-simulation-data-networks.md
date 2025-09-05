@@ -2,7 +2,7 @@
 title: "Подготовка курса Моделирование сетей передачи данных"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-06-24T15:01:00+03:00
-lastmod: 2025-08-23T20:57:00+03:00
+lastmod: 2025-08-31T13:23:00+03:00
 tags: ["network", "education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -137,6 +137,7 @@ slug: "course-simulation-data-networks"
 -   [VKvideo: Моделирование сетей передачи данных](https://vkvideo.ru/playlist/-230024722_10)
 -   [Платформа: Моделирование сетей передачи данных](https://plvideo.ru/playlist?list=-sZuY7sI3LPj)
 -   [Youtube: Моделирование сетей передачи данных](https://www.youtube.com/playlist?list=PLhyPdV6jkp-QMV44srqbl79yok6VGUoOD)
+-   [Телемост](https://telemost.yandex.ru/j/0262206022)
 
 
 ### <span class="section-num">6.2</span> Материалы курса {#материалы-курса}

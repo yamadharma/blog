@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-08-20T20:57:00+03:00
+lastmod: 2025-09-04T18:51:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -18,7 +18,9 @@ slug: "timetable-classes"
 
 ## <span class="section-num">1</span> Информация {#информация}
 
--   Расписание занятий находится на странице: <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
+-   Расписание занятий находится на странице:
+    -   <https://www.rudn.ru/education/schedule>
+    -   <https://esystem.rudn.ru/faculty/ffmien/raspisanie>.
 
 
 ## <span class="org-todo todo TODO">TODO</span> <span class="section-num">2</span> Расписание занятий <code>[2/3]</code> {#расписание-занятий}
@@ -27,7 +29,7 @@ slug: "timetable-classes"
 ### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1</span> 2025--2026 учебный год, расписание занятий <code>[0/3]</code> {#2025-2026-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> 2025--2026 учебный год, 1 семестр <code>[0/7]</code> {#2025-2026-учебный-год-1-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> 2025--2026 учебный год, 1 семестр <code>[0/8]</code> {#2025-2026-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -45,14 +47,14 @@ slug: "timetable-classes"
 
     1. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing, НПМмд-02-24
 
-        -   ОРД-299, НПМмд-02-24
+        -   ОРД-296, НПМмд-02-24
 
     <!--list-separator-->
 
     2. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing, НФИмд-01-24
 
-        -   ОРД-299, НФИмд-01-24
-        -   ОРД-299, НПИмд-01-24
+        -   ОРД-296, НФИмд-01-24
+        -   ОРД-296, НПИмд-01-24
 
 <!--list-separator-->
 
@@ -71,6 +73,9 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем (лекции)
 
         -   дист.
+        -   <https://telemost.yandex.ru/j/7980116385>
+        -   НФИбд-00-23
+        -   НПИбд-00-23
         -   НФИбд-01-23
         -   НФИбд-02-23
         -   НПИбд-01-23
@@ -121,6 +126,7 @@ slug: "timetable-classes"
     1. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лекция)
 
         -   дист.
+        -   <https://telemost.yandex.ru/j/5575733616>
         -   НПМмд-02-25
         -   НФИмд-01-25
         -   НФИмд-02-25
@@ -130,7 +136,7 @@ slug: "timetable-classes"
 
     2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НПМмд-02-25
 
-        -   ОРД-297, НПМмд-02-25
+        -   ОРД-295, НПМмд-02-25
 
     <!--list-separator-->
 
@@ -167,8 +173,9 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС (лекция)
 
         -   дист., НПИбд-00-24
-        -   НПИбд-02-24
+        -   <https://telemost.yandex.ru/j/6885813211>
         -   НПИбд-01-24
+        -   НПИбд-02-24
         -   НПИбд-03-24
 
 <!--list-separator-->
@@ -188,6 +195,7 @@ slug: "timetable-classes"
     2. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии (лекции)
 
         -   дист.
+        -   <https://telemost.yandex.ru/j/7378229803>
         -   НФИбд-01-23
         -   НФИбд-02-23
         -   НПИбд-01-23
@@ -2393,3 +2401,4 @@ slug: "timetable-classes"
 | 38.03.05          | НБИбд      | НБ                | Бакалавр |
 | 01.04.02          | НПМмд      | НП                | Магистр  |
 | 02.04.02          | НФИмд      | НИ                | Магистр  |
+| 09.04.03          | НПИмд      |                   | Магистр  |

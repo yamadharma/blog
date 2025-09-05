@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-08-25T15:50:00+03:00
+lastmod: 2025-09-05T14:14:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -4716,12 +4716,12 @@ slug: "emacs-desire-configuration"
                       :image-converter ("dvipng -D %D -T tight -o %O %f")
                       :transparent-image-converter
                       ("dvipng -D %D -T tight -bg Transparent -o %O %f"))
-              (dvisvgm :programs ("xelatex" "dvisvgm") :description "dvi > svg"
+              (dvisvgm :programs ("xelatex" "dvisvgm") :description "xdv > svg"
                        :message
                        "you need to install the programs: latex and dvisvgm."
-                       :image-input-type "dvi" :image-output-type "svg"
+                       :image-input-type "xdv" :image-output-type "svg"
                        :image-size-adjust (1.7 . 1.5) :latex-compiler
-                       ("xelatex -no-pdf -interaction nonstopmode -output-directory %o %f")
+                       ("xelatex --no-pdf -interaction nonstopmode -output-directory %o %f")
                        :image-converter
                        ("dvisvgm %f --no-fonts --exact-bbox --scale=%S --output=%O"))
               (imagemagick :programs ("xelatex" "convert") :description "pdf > png"
@@ -5004,7 +5004,12 @@ slug: "emacs-desire-configuration"
         ```emacs-lisp
         ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
         ;;;  Exporting Gantt charts with Taskjuggler
+        ;; https://github.com/h-oll/ox-taskjuggler
 
+        ;;; Code:
+
+        ;; (desire 'ox-taskjuggler :recipe '(:fetcher github :repo "h-oll/ox-taskjuggler" :branch "master"))
+        (desire 'ox-taskjuggler :pkgman 'straight :recipe '(:type git :host github :repo "h-oll/ox-taskjuggler" :branch "master" :files ("lisp/*")))
         (require 'ox-taskjuggler)
 
         ;;;

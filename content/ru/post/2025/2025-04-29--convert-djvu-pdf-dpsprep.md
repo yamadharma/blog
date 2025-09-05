@@ -2,7 +2,7 @@
 title: "Конвертация djvu в pdf. dpsprep"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-29T16:29:00+03:00
-lastmod: 2025-04-29T17:12:00+03:00
+lastmod: 2025-09-04T19:00:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -59,7 +59,7 @@ slug: "convert-djvu-pdf-dpsprep"
     ```
 -   Создать `output.pdf` с пониженным качеством изображения и агрессивной оптимизацией изображений PDF:
     ```shell
-    dpsprep ---quality=30 -O3 input.djvu output.pdf
+    dpsprep --quality=30 -O3 input.djvu output.pdf
     ```
 -   Использовать большой пул рабочих процессов:
     ```shell

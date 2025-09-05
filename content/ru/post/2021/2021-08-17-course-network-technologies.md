@@ -2,7 +2,7 @@
 title: "Подготовка курса Сетевые технологии"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-17T14:10:00+03:00
-lastmod: 2025-08-23T18:00:00+03:00
+lastmod: 2025-08-29T11:32:00+03:00
 tags: ["education", "network"]
 categories: ["computer-science", "science"]
 draft: false
@@ -341,6 +341,7 @@ slug: "course-network-technologies"
 -   [VKvideo: Сетевые технологии](https://vkvideo.ru/playlist/-230024722_8)
 -   [Платформа: Сетевые технологии](https://plvideo.ru/playlist?list=F1f2QDYo6kQ5)
 -   [Youtube: Сетевые технологии](https://www.youtube.com/playlist?list=PLhyPdV6jkp-RIwIx7ynBVniSBB7uTNpUn)
+-   [Телемост](https://telemost.yandex.ru/j/7378229803)
 
 
 ### <span class="section-num">3.2</span> Материалы курса {#материалы-курса}

@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2025-08-22T20:03:00+03:00
+lastmod: 2025-09-03T12:04:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -98,3 +98,4 @@ slug: "rudn-digital-resources"
 -   Учебный портал (ТУИС --- Телекоммуникационная учебно-информационная система): <https://esystem.rudn.ru/>.
     -   [РУДН. Учебный портал ТУИС]({{< relref "2025-08-22--rudn-esystem" >}})
 -   Портал обучения Дирекции по цифровизации РУДН: <https://digital-edu.rudn.ru/>.
+-   Расписание занятий: <https://www.rudn.ru/education/schedule>

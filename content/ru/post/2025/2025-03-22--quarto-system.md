@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-05-19T09:37:00+03:00
+lastmod: 2025-09-03T20:54:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -123,3 +123,4 @@ flowchart LR
 -   [Quarto. Формат pdf]({{< relref "2025-03-27--quarto-pdf-format" >}})
 -   [Quarto. Листинги]({{< relref "2025-05-13--quarto-code-listing" >}})
 -   [Quarto. Таблицы]({{< relref "2025-05-17--quarto-table" >}})
+-   [Quarto. Плагины]({{< relref "2025-09-03--quarto-plugins" >}})
