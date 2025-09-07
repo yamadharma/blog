@@ -2,7 +2,7 @@
 title: "Настройка рабочей среды"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-30T15:25:00+03:00
-lastmod: 2024-03-05T17:50:00+03:00
+lastmod: 2025-09-06T15:58:00+03:00
 tags: ["education"]
 categories: ["computer-science"]
 draft: false
@@ -531,27 +531,37 @@ menu:
 ### <span class="section-num">3.2</span> Управление файлами конфигурации {#управление-файлами-конфигурации}
 
 
+#### <span class="section-num">3.2.1</span> Установка {#установка}
+
+-   Fedora
+    -   Установка из COPR:
+        ```shell
+        sudo dnf -y copr enable lihaohong/chezmoi
+        sudo dnf -y install chezmoi
+        ```
+
+
 ### <span class="section-num">3.3</span> Дополнительное программное обеспечение {#дополнительное-программное-обеспечение}
 
 -   Установите дополнительное программное обеспечение:
     ```shell
     sudo dnf -y install \
-         dunst \
-         fontawesome-fonts \
-         powerline-fonts \
-         light \
-         fuzzel \
-         swaylock \
-         kitty \
-         waybar swaybg \
-         wl-clipboard \
-         mpv \
-         grim \
-         slurp
+             dunst \
+             fontawesome-fonts \
+             powerline-fonts \
+             light \
+             fuzzel \
+             swaylock \
+             kitty \
+             waybar swaybg \
+             wl-clipboard \
+             mpv \
+             grim \
+             slurp
     ```
 -   Установите шрифты:
     ```shell
-    sudo dnf copr enable peterwu/iosevka
+    sudo dnf copr -y enable peterwu/iosevka
     sudo dnf search iosevka
     sudo dnf install iosevka-fonts iosevka-aile-fonts iosevka-curly-fonts iosevka-slab-fonts iosevka-etoile-fonts iosevka-term-fonts
     ```

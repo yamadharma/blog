@@ -2,7 +2,7 @@
 title: "Quarto. Плагин quarto-partials"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-05T20:35:00+03:00
-lastmod: 2025-09-05T21:34:00+03:00
+lastmod: 2025-09-06T13:43:00+03:00
 tags: ["markdown"]
 categories: ["computer-science"]
 draft: false
@@ -40,12 +40,9 @@ quarto add gadenbuie/quarto-partials
 ### <span class="section-num">3.1</span> \_hello.md {#hello-dot-md}
 
 -   Пусть `_hello.md` содержит следующее содержание:
-
-<!--listend-->
-
-```markdown
-Hello, {{ name }}!
-```
+    ```markdown
+    Hello, {{ name }}!
+    ```
 
 -   Укажем наше собственное значение для `{{ name }}`:
     ```markdown
@@ -73,9 +70,13 @@ Or used inline: To you I say "{{</* partial _hello.md */>}}"
 
 -   Результат:
 
-> Hello, friend!
->
-> Or used inline: To you I say “Hello, friend!”
+<!--listend-->
+
+```text
+Hello, friend!
+
+Or used inline: To you I say “Hello, friend!”
+```
 
 -   В качестве альтернативы второй аргумент шорткода может указывать на пользовательский ключ в вашем YAML-файле, например
 
@@ -93,7 +94,11 @@ my-data:
 
 -   Результат:
 
-> Hello, amigo!
+<!--listend-->
+
+```text
+Hello, amigo!
+```
 
 -   Другой вариант --- предоставить JSON в данные шорткода.
 -   Любая пара «ключ-значение», начинающаяся с `{` или `[`  будет преобразован в объект или массив JSON.

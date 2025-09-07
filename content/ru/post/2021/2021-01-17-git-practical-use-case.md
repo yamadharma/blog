@@ -2,7 +2,7 @@
 title: "Практический сценарий использования git"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-17T20:06:00+03:00
-lastmod: 2025-09-02T17:11:00+03:00
+lastmod: 2025-09-06T18:47:00+03:00
 tags: ["programming", "education"]
 categories: ["computer-science"]
 draft: false
@@ -53,8 +53,8 @@ slug: "git-practical-use-case"
     ```
 -   Fedora
     ```shell
-    dnf install nodejs
-    apt-get install pnpm
+    sudo dnf -y install nodejs
+    sudo dnf -y install yarn pnpm
     ```
 -   Windows
     -   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
@@ -83,11 +83,11 @@ slug: "git-practical-use-case"
             ```shell
             source ~/.bashrc
             ```
-    -   `yarn`
-        -   В файле `~/.bashrc` добавьте к переменной `PATH`:
-            ```conf-unix
-            PATH=~/.yarn/bin:$PATH
-            ```
+-   `yarn`
+    -   В файле `~/.bashrc` добавьте к переменной `PATH`:
+        ```conf-unix
+        PATH=~/.yarn/bin:$PATH
+        ```
 
 
 ### <span class="section-num">2.3</span> Установка git-flow {#установка-git-flow}
@@ -104,15 +104,19 @@ slug: "git-practical-use-case"
     -   Centos
         -   Первоначально нужно установить репозиторий _epel_ (<https://fedoraproject.org/wiki/EPEL>):
             ```shell
-            yum install epel-release
+            sudo dnf -y install epel-release
             ```
         -   Затем, собственно, установить git-flow:
             ```shell
-            yum install gitflow
+            sudo dnf -y install gitflow
             ```
     -   Fedora
-        -   Это программное обеспечение удалено из репозитория.
-        -   Необходимо устанавливать его вручную:
+        -   Устанавливается из COPR:
+            ```shell
+            sudo dnf -y copr enable elegos/gitflow
+            sudo dnf install gitflow
+            ```
+        -   Можно устанавливать вручную:
             ```shell
             cd /tmp
             wget --no-check-certificate -q https://raw.github.com/petervanderdoes/gitflow/develop/contrib/gitflow-installer.sh

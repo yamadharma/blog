@@ -2,8 +2,8 @@
 title: "Научный семинар Математическое моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-02-18T15:26:00+03:00
-lastmod: 2025-02-28T17:10:00+03:00
-tags: ["science-admin", "research"]
+lastmod: 2025-09-07T17:23:00+03:00
+tags: ["science-admin", "MOC", "research"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling"
@@ -68,3 +68,4 @@ slug: "workshop-mathematical-modeling"
 -   [Семинар Математическое моделирование, 2022-2023]({{< relref "2022-09-07-workshop-mathematical-modeling-2022-2" >}})
 -   [Семинар Математическое моделирование, 2023-2024]({{< relref "2023-09-17-workshop-mathematical-modeling-2023-2024" >}})
 -   [Семинар Математическое моделирование, 2024-2025]({{< relref "2024-09-06-workshop-mathematical-modeling-2024-2025" >}})
+-   [Семинар Математическое моделирование, 2025-2026]({{< relref "2025-09-07--workshop-mathematical-modeling-2025-2026" >}})

@@ -2,7 +2,7 @@
 title: "Управление файлами конфигурации. Домашний каталог. Chezmoi"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-28T19:49:00+03:00
-lastmod: 2023-08-13T19:13:00+03:00
+lastmod: 2025-09-06T15:39:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -46,6 +46,11 @@ slug: "configuration-file-management-chezmoi"
             emerge chezmoi-bin
             ```
     -   Fedora
+        -   Установка из COPR:
+            ```shell
+            sudo dnf -y copr enable lihaohong/chezmoi
+            sudo dnf -y install chezmoi
+            ```
         -   Установка через _Snap_:
             -   Установите _Snap_:
                 ```shell

@@ -2,9 +2,9 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-16T12:51:00+03:00
-lastmod: 2025-09-02T18:55:00+03:00
+lastmod: 2025-09-07T16:10:00+03:00
 tags: ["education"]
-categories: ["science"]
+categories: ["computer-science", "science"]
 draft: false
 slug: "workspace-laboratory-work"
 ---
@@ -23,7 +23,239 @@ slug: "workspace-laboratory-work"
 -   Стандартная настройка курса внутри шаблона курса
 
 
-## <span class="section-num">2</span> Общие правила {#общие-правила}
+## <span class="section-num">2</span> Используемые стандарты и программные продукты {#используемые-стандарты-и-программные-продукты}
+
+-   Стандарт Git Flow (см. [Варианты Git Workflow]({{< relref "2020-10-30-git-workflow" >}})).
+-   Стандарт [Семантическое версионирование]({{< relref "2020-12-11-semantic-versioning" >}}).
+-   Стандарт [Общепринятые коммиты]({{< relref "2020-12-11-conventional-commits" >}}).
+
+
+## <span class="section-num">3</span> Дополнительное программное обеспечение {#дополнительное-программное-обеспечение}
+
+
+### <span class="section-num">3.1</span> Средства разработки {#средства-разработки}
+
+
+#### <span class="section-num">3.1.1</span> Fedora {#fedora}
+
+-   Установите средства разработки:
+    ```shell
+    sudo dnf -y group install development-tools
+    ```
+
+
+### <span class="section-num">3.2</span> Quarto {#quarto}
+
+
+#### <span class="section-num">3.2.1</span> Установка {#установка}
+
+<!--list-separator-->
+
+1.  Windows
+
+    -   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+        ```shell
+        choco install quarto
+        ```
+
+<!--list-separator-->
+
+2.  Linux
+
+    <!--list-separator-->
+
+    1.  Linux в общем
+
+        -   Установка с помощью скрипта:
+            ```shell
+            #!/bin/bash
+
+            ## Система
+            TARGET=/opt
+            TARGET_BIN=/usr/local/bin
+            ## Домашний каталог
+            # TARGET=~/opt
+            # TARGET_BIN=~/.local/bin
+
+
+            ## Получить тег
+            TAG=`basename $(curl -sL -o /dev/null -w %{url_effective} https://github.com/quarto-dev/quarto-cli/releases/latest)`
+            TAG=${TAG/v/}
+
+            ## Скачать
+            cd /tmp
+            wget https://github.com/quarto-dev/quarto-cli/releases/download/v${TAG}/quarto-${TAG}-linux-amd64.tar.gz
+
+            ## Распаковать
+            mkdir -p ${TARGET}
+            tar -C ${TARGET} -xvzf /tmp/quarto-${TAG}-linux-amd64.tar.gz
+            mv ${TARGET}/quarto-${TAG} ${TARGET}/quarto
+
+            ## Симлинк на исполняемый файл
+            mkdir -p ${TARGET_BIN}
+            ln -s ${TARGET}/quarto/bin/quarto ${TARGET_BIN}/quarto
+            ```
+
+    <!--list-separator-->
+
+    2.  Gentoo
+
+        -   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+            ```shell
+            emerge quarto
+            ```
+
+    <!--list-separator-->
+
+    3.  Arch
+
+        -   Arch linux:
+            ```shell
+            pacman -S quarto-cli-bin
+            ```
+        -   Manjaro linux:
+            ```shell
+            pamac install quarto-cli-bin
+            ```
+
+    <!--list-separator-->
+
+    4.  Fedora
+
+        -   Установка из CORP:
+            ```shell
+            sudo dnf -y copr enable iucar/rstudio
+            sudo dnf -y install quarto
+            sudo dnf -y install libxcrypt-compat
+            ```
+
+
+### <span class="section-num">3.3</span> Общепринятые коммиты {#общепринятые-коммиты}
+
+
+#### <span class="section-num">3.3.1</span> Установка Node.js {#установка-node-dot-js}
+
+-   На Node.js базируется программное обеспечение для семантического версионирования и общепринятых коммитов.
+-   Для управления пакетами лучше использовать `pnpm`, но можно и `yarn`.
+-   Gentoo
+    -   Node.js:
+        ```shell
+        emerge nodejs
+        emerge yarn
+        ```
+    -   pnpm ставим из оверлея `guru` (см. [Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
+        ```shell
+        eselect repository enable guru
+        emerge --sync guru
+        emerge pnpm-bin
+        ```
+-   Ubuntu
+    ```shell
+    apt-get install nodejs
+    apt-get install yarn
+    apt-get install pnpm
+    ```
+-   Fedora
+    ```shell
+    sudo dnf -y install nodejs
+    sudo dnf -y install yarn pnpm
+    ```
+-   Windows
+    -   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+        ```shell
+        choco install nodejs
+        choco install yarn
+        choco install pnpm
+        ```
+-   MacOS
+    ```shell
+    brew install node
+    ```
+
+
+#### <span class="section-num">3.3.2</span> Настройка Node.js {#настройка-node-dot-js}
+
+Для работы с Node.js добавим каталог с исполняемыми файлами, устанавливаемыми пакетным менеджером, в переменную `PATH`.
+
+-   Linux
+    -   `pnpm`
+        -   Запустите:
+            ```shell
+            pnpm setup
+            ```
+        -   Перелогиньтесь, или выполните:
+            ```shell
+            source ~/.bashrc
+            ```
+    -   `yarn`
+        -   В файле `~/.bashrc` добавьте к переменной `PATH`:
+            ```conf-unix
+            PATH=~/.yarn/bin:$PATH
+            ```
+
+
+#### <span class="section-num">3.3.3</span> Установка git-flow {#установка-git-flow}
+
+-   Linux
+    -   Gentoo
+        ```shell
+        emerge dev-vcs/git-flow
+        ```
+    -   Ubuntu
+        ```shell
+        apt-get install git-flow
+        ```
+    -   Fedora
+        -   Устанавливается из COPR:
+            ```shell
+            sudo dnf -y copr enable elegos/gitflow
+            sudo dnf install gitflow
+            ```
+
+-   Windows
+    Git-flow входит в состав пакета git.
+    ```shell
+    choco install git
+    ```
+-   MacOS
+    ```shell
+    brew install git-flow
+    ```
+
+
+#### <span class="section-num">3.3.4</span> Общепринятые коммиты {#общепринятые-коммиты}
+
+<!--list-separator-->
+
+1.  commitizen
+
+    -   Данная программа используется для помощи в форматировании коммитов.
+        -   pnpm:
+            ```shell
+            pnpm add -g commitizen
+            ```
+        -   yarn:
+            ```shell
+            yarn global add commitizen
+            ```
+    -   При этом устанавливается скрипт `git-cz`, который мы и будем использовать для коммитов.
+
+<!--list-separator-->
+
+2.  standard-version
+
+    -   Данная программа автоматизирует изменение номера версии.
+        -   pnpm:
+            ```shell
+            pnpm add -g standard-version
+            ```
+        -   yarn:
+            ```shell
+            yarn global add standard-version
+            ```
+
+
+## <span class="section-num">4</span> Общие правила {#общие-правила}
 
 -   Для именования каталогов и файлов будем использовать соглашение Denote (см. [Denote. Соглашение об именовании]({{< relref "2025-01-03--denote-naming-convention" >}})).
 -   Рабочее пространство по предмету располагается в следующей иерархии:
@@ -57,17 +289,17 @@ slug: "workspace-laboratory-work"
 -   Этапы проекта обозначаются как `stage<номер>`.
 
 
-## <span class="section-num">3</span> Шаблон для рабочего пространства {#шаблон-для-рабочего-пространства}
+## <span class="section-num">5</span> Шаблон для рабочего пространства {#шаблон-для-рабочего-пространства}
 
 -   Репозиторий: <https://github.com/yamadharma/course-directory-student-template>.
 
 
-### <span class="section-num">3.1</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
+### <span class="section-num">5.1</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
 
 -   Репозиторий на основе шаблона можно создать либо вручную, через web-интерфейс, либо с помощью утилит `gh` (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})).
 
 
-#### <span class="section-num">3.1.1</span> Создание с помощью утилит {#создание-с-помощью-утилит}
+#### <span class="section-num">5.1.1</span> Создание с помощью утилит {#создание-с-помощью-утилит}
 
 -   Создание выглядит следующим образом:
     ```shell
@@ -82,12 +314,12 @@ slug: "workspace-laboratory-work"
     ```
 
 
-#### <span class="section-num">3.1.2</span> Создание вручную {#создание-вручную}
+#### <span class="section-num">5.1.2</span> Создание вручную {#создание-вручную}
 
 -   Сделать свой репозиторий на основе шаблона можно и вручную: <https://docs.github.com/ru/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>.
 
 
-### <span class="section-num">3.2</span> Структура шаблона {#структура-шаблона}
+### <span class="section-num">5.2</span> Структура шаблона {#структура-шаблона}
 
 -   Посмотреть доступные цели `make`:
     ```shell
@@ -102,7 +334,7 @@ slug: "workspace-laboratory-work"
     -   каталог курса называется как аббревиатура курса.
 
 
-### <span class="section-num">3.3</span> Настройка каталога курса {#настройка-каталога-курса}
+### <span class="section-num">5.3</span> Настройка каталога курса {#настройка-каталога-курса}
 
 -   Перейдите в каталог курса:
     ```shell
@@ -121,13 +353,13 @@ slug: "workspace-laboratory-work"
     ```
 
 
-### <span class="section-num">3.4</span> Использование git flow {#использование-git-flow}
+### <span class="section-num">5.4</span> Использование git flow {#использование-git-flow}
 
 -   Будем использовать для работы git flow (см. [Рабочий процесс Gitflow]({{< relref "2021-04-18-gitflow-workflow" >}})).
 -   [Практический сценарий использования git]({{< relref "2021-01-17-git-practical-use-case" >}})
 
 
-#### <span class="section-num">3.4.1</span> Конфигурация git-flow {#конфигурация-git-flow}
+#### <span class="section-num">5.4.1</span> Конфигурация git-flow {#конфигурация-git-flow}
 
 -   Инициализируем git-flow
     ```shell
@@ -173,3 +405,18 @@ slug: "workspace-laboratory-work"
     ```shell
     gh release create v1.0.0 -F ../release/CHANGELOG.md
     ```
+
+
+## <span class="section-num">6</span> Видео {#видео}
+
+{{< tabs "Рабочее пространство для лабораторной работы" >}}
+
+{{< tab "RuTube" >}}{{< rutube 90a6233297bc6de30acb3af992eaedc8 >}}{{< /tab >}}
+
+{{< tab "Платформа" >}}{{< plvideo Jjf4mXm-h65_ >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239047 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 39bu5avPoDU >}}{{< /tab >}}
+
+{{< /tabs >}}

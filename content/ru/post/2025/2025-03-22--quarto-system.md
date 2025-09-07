@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-09-03T20:54:00+03:00
+lastmod: 2025-09-06T16:24:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -95,7 +95,25 @@ slug: "quarto-system"
     ```
 
 
-## <span class="section-num">3</span> Общий алгоритм работы {#общий-алгоритм-работы}
+#### <span class="section-num">2.2.4</span> Fedora {#fedora}
+
+-   Установка из CORP:
+    ```shell
+    sudo dnf -y copr enable iucar/rstudio
+    sudo dnf -y install quarto
+    sudo dnf -y install libxcrypt-compat
+    ```
+
+
+## <span class="section-num">3</span> Установка модулей {#установка-модулей}
+
+-   Установка tinytex:
+    ```shell
+    quarto install tinytex
+    ```
+
+
+## <span class="section-num">4</span> Общий алгоритм работы {#общий-алгоритм-работы}
 
 ```mermaid
 flowchart LR
@@ -113,7 +131,7 @@ flowchart LR
 ```
 
 
-## <span class="section-num">4</span> Использование {#использование}
+## <span class="section-num">5</span> Использование {#использование}
 
 -   [Quarto. Язык markdown]({{< relref "2025-03-23--quarto-markdown" >}})
 -   [Quarto. Оформление метаданных]({{< relref "2025-03-23--quarto-metadata-formatting" >}})

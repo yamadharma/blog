@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2025-04-18T19:20:00+03:00
+lastmod: 2025-09-06T15:25:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
@@ -500,7 +500,16 @@ menu:
     ```
 
 
-#### <span class="section-num">3.5.1</span> Обновления {#обновления}
+#### <span class="section-num">3.5.1</span> Исправления {#исправления}
+
+-   Запретите устанавливать заблокированный openh264:
+    ```shell
+    sudo dnf config-manager setopt fedora-cisco-openh264.enabled=0
+    sudo dnf clean all
+    ```
+
+
+#### <span class="section-num">3.5.2</span> Обновления {#обновления}
 
 -   Установите средства разработки:
     ```shell
@@ -512,7 +521,7 @@ menu:
     ```
 
 
-#### <span class="section-num">3.5.2</span> Повышение комфорта работы {#повышение-комфорта-работы}
+#### <span class="section-num">3.5.3</span> Повышение комфорта работы {#повышение-комфорта-работы}
 
 -   Программы для удобства работы в консоли:
     ```shell
@@ -524,7 +533,7 @@ menu:
     ```
 
 
-#### <span class="section-num">3.5.3</span> Автоматическое обновление {#автоматическое-обновление}
+#### <span class="section-num">3.5.4</span> Автоматическое обновление {#автоматическое-обновление}
 
 -   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
@@ -538,7 +547,7 @@ menu:
     ```
 
 
-#### <span class="section-num">3.5.4</span> Отключение SELinux {#отключение-selinux}
+#### <span class="section-num">3.5.5</span> Отключение SELinux {#отключение-selinux}
 
 -   В данном курсе мы не будем рассматривать работу с системой безопасности SELinux.
 -   Поэтому отключим его.
