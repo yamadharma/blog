@@ -2,7 +2,7 @@
 title: "Подготовка курса Методы математического моделирования в кибербезопасности"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-02T19:27:00+03:00
-lastmod: 2025-05-02T15:18:00+03:00
+lastmod: 2025-09-10T10:45:00+03:00
 tags: ["security", "education"]
 categories: ["science", "computer-science"]
 draft: false

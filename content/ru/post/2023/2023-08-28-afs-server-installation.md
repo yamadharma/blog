@@ -2,7 +2,7 @@
 title: "Установка сервера afs"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-08-28T10:22:00+03:00
-lastmod: 2025-08-13T20:26:00+03:00
+lastmod: 2025-09-10T17:30:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -140,7 +140,7 @@ slug: "afs-server-installation"
     ```
 -   Установите версия ядра для разработчиков:
     ```shell
-    dnf install -y "kernel-devel-uname-r == $(uname -r)"
+    dnf install -y "kernel-devel-uname-r = $(uname -r)"
     dnf install -y elfutils-devel
     dnf install -y dkms gcc kernel-devel kernel-headers
     ```

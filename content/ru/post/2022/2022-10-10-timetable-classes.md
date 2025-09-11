@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-09-04T18:51:00+03:00
+lastmod: 2025-09-11T17:53:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -1339,31 +1339,31 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2024--2025  <code>[0/2]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2024--2025  <code>[1/2]</code>
 
     <!--list-separator-->
 
-    1. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 1, семестр 2, 2024--2025 <code>[0/4]</code>
+    1. <span class="org-todo done DONE">DONE</span>  Переаттестация № 1, семестр 2, 2024--2025 <code>[5/5]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, Переаттестация № 1
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 1
+        2. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 1
+        3. <span class="org-todo done DONE">DONE</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        4. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 1
+        4. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 1
 
         <!--list-separator-->
 
-        5. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, Переаттестация № 1
+        5. <span class="org-todo done DONE">DONE</span>  Операционные системы, 2024--2025, Переаттестация № 1
 
     <!--list-separator-->
 
@@ -1371,11 +1371,11 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование (3 курс). Переаттестация № 2
+        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 1
+        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
@@ -1387,7 +1387,7 @@ slug: "timetable-classes"
 
         <!--list-separator-->
 
-        5. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 1
+        5. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 2
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.7</span> Государственные экзамены, 2024--2025 <code>[2/2]</code> {#государственные-экзамены-2024-2025}

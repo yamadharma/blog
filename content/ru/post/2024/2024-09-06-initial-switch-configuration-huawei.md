@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Huawei"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-06T15:31:00+03:00
-lastmod: 2024-10-26T13:53:00+03:00
+lastmod: 2025-09-11T18:38:00+03:00
 tags: ["network", "sysadmin"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Обновление деривативов RedHat"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-12T12:48:00+03:00
-lastmod: 2025-08-18T18:54:00+03:00
+lastmod: 2025-09-10T15:12:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -31,6 +31,14 @@ slug: "redhat-derivatives-update"
     -   миграция на Oracle Linux 9 доступна с утилитой Oracle Leapp.
 
 
+#### <span class="section-num">1.1.1</span> Scientific Linux 7 {#scientific-linux-7}
+
+-   Scientific Linux 7 была последняя поддерживаемая версия.
+-   Они рекомендуют обновляться на AlmaLinux:
+    -   <https://listserv.fnal.gov/scripts/wa.exe?A2=ind2212&L=SCIENTIFIC-LINUX-USERS&P=78>
+    -   <https://scientificlinux.org/category/uncategorized/fermilab-cern-recommendation-for-linux-distribution/>
+
+
 ### <span class="section-num">1.2</span> Предварительные действия {#предварительные-действия}
 
 -   Определите версию операционной системы:
@@ -53,6 +61,12 @@ slug: "redhat-derivatives-update"
 #### <span class="section-num">2.1.2</span> Подготовка к обновлению {#подготовка-к-обновлению}
 
 -   Возможно, придётся заменить репозитории: [CentOS 8. Изменение адресов репозиториев]({{< relref "2022-02-10-centos8-changing-repository-addresses" >}})
+-   Удалите внешние репозитории:
+    ```shell
+    sudo yum -y remove epel-release
+    sudo yum -y remove rpmforge-release
+    sudo yum -y remove elrepo-release
+    ```
 -   Обновите систему:
     ```shell
     sudo yum -y upgrade
@@ -70,18 +84,15 @@ slug: "redhat-derivatives-update"
     sudo yum install -y leapp-upgrade leapp-data-rocky
     ```
 
-    -   Другие варианты установки: `centos`, `almalinux`, `eurolinux`, `oraclelinux`.
+    -   Другие варианты установки: `centos`, `almalinux`, `eurolinux`, `oraclelinux`:
+        ```shell
+        sudo yum install -y leapp-upgrade leapp-data-almalinux
+        ```
 -   Лучше установить SELinux в `permissive` в файле `/etc/selinux/config`.
 -   Перегрузите компьютер.
 -   Восстановите метки SELinux:
     ```shell
     sudo restorecon -vR /
-    ```
--   Удалите внешние репозитории:
-    ```shell
-    yum remove epel-release
-    yum remove rpmforge-release
-    yum remove elrepo-release
     ```
 -   Удалите неподдерживаемые модули ядра:
     ```shell
@@ -118,6 +129,7 @@ slug: "redhat-derivatives-update"
 -   Удалите старые пакеты от Centos7:
     ```shell
     rpm -qa | grep -E 'el7[.-]' | xargs rpm -e
+    rpm -qa | grep -E 'sl7[.-]' | xargs rpm -e
     ```
 -   Выполните последующие действия либо обновляйте до следующей версии.
 -   Установите внешние репозитории:
@@ -247,12 +259,17 @@ slug: "redhat-derivatives-update"
     ```
 -   Отменить исключение пакетов, выполненное при предыдущем обновлении:
     ```shell
-    dnf config-manager --save --setopt exclude=''
+    sudo dnf config-manager --save --setopt exclude=''
     ```
 -   Установите утилиты для миграции:
     ```shell
     sudo dnf install -y leapp-upgrade leapp-data-rocky
     ```
+
+    -   Другие варианты установки: `centos`, `almalinux`:
+        ```shell
+        sudo yum install -y leapp-upgrade leapp-data-almalinux
+        ```
 -   Лучше установить SELinux в `permissive` в файле `/etc/selinux/config`.
 -   Перегрузите компьютер.
 -   Восстановите метки SELinux:
