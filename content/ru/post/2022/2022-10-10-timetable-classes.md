@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-09-12T11:26:00+03:00
+lastmod: 2025-09-18T15:40:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -136,7 +136,7 @@ slug: "timetable-classes"
 
     2. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ (лабораторная работа), НПМмд-02-25
 
-        -   ОРД-295, НПМмд-02-25
+        -   ОРД-299, НПМмд-02-25
 
     <!--list-separator-->
 
@@ -1005,7 +1005,7 @@ slug: "timetable-classes"
     -   ОРД-297
 
 
-## <span class="org-todo todo TODO">TODO</span> <span class="section-num">3</span> Промежуточные аттестации <code>[5/6]</code> {#промежуточные-аттестации}
+## <span class="org-todo done DONE">DONE</span> <span class="section-num">3</span> Промежуточные аттестации <code>[6/6]</code> {#промежуточные-аттестации}
 
 
 ### <span class="section-num">3.1</span> Информация {#информация}
@@ -1013,7 +1013,7 @@ slug: "timetable-classes"
 -   Распоряжение о проведении аттестации и расписание экзаменов размещаются на странице: <https://esystem.rudn.ru/faculty/ffmien/vedomosti>.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">3.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[6/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2</span> 2024--2025 учебный год, промежуточные аттестации <code>[7/7]</code> {#2024-2025-учебный-год-промежуточные-аттестации}
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.1</span> Сессия, модуль 1, 2024--2025 <code>[3/3]</code> {#сессия-модуль-1-2024-2025}
@@ -1226,7 +1226,7 @@ slug: "timetable-classes"
 1. <span class="org-todo done CNCL">CNCL</span>  Зачёты <span class="tag"><span class="CNCL">CNCL</span></span>
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">3.2.6</span> Сессия, семестр 2, 2024--2025 <code>[1/2]</code> {#сессия-семестр-2-2024-2025}
+#### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.6</span> Сессия, семестр 2, 2024--2025 <code>[2/2]</code> {#сессия-семестр-2-2024-2025}
 
 <!--list-separator-->
 
@@ -1339,7 +1339,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Переаттестации, семестр 2, 2024--2025  <code>[1/2]</code>
+2. <span class="org-todo done DONE">DONE</span>  Переаттестации, семестр 2, 2024--2025  <code>[2/2]</code>
 
     <!--list-separator-->
 
@@ -1367,27 +1367,27 @@ slug: "timetable-classes"
 
     <!--list-separator-->
 
-    2. <span class="org-todo todo TODO">TODO</span>  Переаттестация № 2, семестр 2, 2024--2025 <code>[0/2]</code>
+    2. <span class="org-todo done DONE">DONE</span>  Переаттестация № 2, семестр 2, 2024--2025 <code>[5/5]</code>
 
         <!--list-separator-->
 
-        1. <span class="org-todo todo TODO">TODO</span>  Математическое моделирование, 2024--2025, Переаттестация № 2
+        1. <span class="org-todo done DONE">DONE</span>  Математическое моделирование, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
-        2. <span class="org-todo todo TODO">TODO</span>  Имитационное моделирование, 2024--2025, Переаттестация № 2
+        2. <span class="org-todo done DONE">DONE</span>  Имитационное моделирование, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
-        3. <span class="org-todo todo TODO">TODO</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 2
+        3. <span class="org-todo done DONE">DONE</span>  Администрирование локальный сетей, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
-        4. <span class="org-todo todo TODO">TODO</span>  Операционные системы, 2024--2025, Переаттестация № 2
+        4. <span class="org-todo done DONE">DONE</span>  Операционные системы, 2024--2025, Переаттестация № 2
 
         <!--list-separator-->
 
-        5. <span class="org-todo todo TODO">TODO</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 2
+        5. <span class="org-todo done DONE">DONE</span>  Основы информационной безопасности, 2024--2025, Переаттестация № 2
 
 
 #### <span class="org-todo done DONE">DONE</span> <span class="section-num">3.2.7</span> Государственные экзамены, 2024--2025 <code>[2/2]</code> {#государственные-экзамены-2024-2025}
