@@ -2,7 +2,7 @@
 title: "CEURART document verification"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2025-07-03T13:44:00+03:00
+lastmod: 2025-09-23T20:48:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -45,3 +45,10 @@ CEURART document verification.
 -   Rules:
     -   paper PDFs that are in the directory but not listed in `index.html`;
     -   papers that are linked in `index.html` but not included in the directory.
+
+
+### <span class="section-num">2.3</span> `ceur-add-pagenum` {#ceur-add-pagenum}
+
+-   Repo: <https://github.com/amato-gianluca/ceur-add-pagenum>
+-   A small Python script for counting the number of pages in the PDF files linked to an index.html document (prepared for submission to CEUR-WS), and updating the CEURPAGES fields.
+-   The script does not alter the PDF files, just the `index.html`.

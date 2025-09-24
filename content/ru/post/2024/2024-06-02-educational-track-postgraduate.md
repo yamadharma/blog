@@ -2,7 +2,7 @@
 title: "Учебная траектория аспиранта"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-02T20:33:00+03:00
-lastmod: 2025-06-14T20:27:00+03:00
+lastmod: 2025-09-24T14:19:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false

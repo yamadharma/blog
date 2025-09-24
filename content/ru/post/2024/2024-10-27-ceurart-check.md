@@ -2,7 +2,7 @@
 title: "Проверка документов в CEURART"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2025-07-03T13:43:00+03:00
+lastmod: 2025-09-23T20:49:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -47,6 +47,14 @@ slug: "ceurart-check"
 -   Правила:
     -   документы в формате `pdf`, которые есть в каталоге, но не перечислены в `index.html`;
     -   документы, на которые даны ссылки в `index.html`, но которые отсутствуют.
+
+
+### <span class="section-num">2.3</span> `ceur-add-pagenum` {#ceur-add-pagenum}
+
+-   Репозиторий: <https://github.com/amato-gianluca/ceur-add-pagenum>
+-   Скрипт на Python для подсчёта количества страниц в PDF-файлах, связанных с документом index.html (подготовленным для отправки в CEUR-WS), и обновления полей CEURPAGES.
+-   Скрипт не изменяет PDF-файлы, а только `index.html`.
+-   Скрипт зависит от пакетов `lxml` и `PyPDF2`.
 
 
 ## <span class="section-num">3</span> Проверка {#проверка}

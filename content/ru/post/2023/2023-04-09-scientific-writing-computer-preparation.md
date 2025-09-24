@@ -2,7 +2,7 @@
 title: "Подготовка курса Компьютерный практикум по научному письму"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-04-09T20:04:00+03:00
-lastmod: 2025-08-31T18:45:00+03:00
+lastmod: 2025-09-22T17:14:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -110,7 +110,7 @@ slug: "scientific-writing-computer-preparation"
     -   Working with Bibtex.
 
 
-### <span class="section-num">6.7</span> Presentation based on Beamer {#presentation-based-on-beamer}
+### <span class="section-num">6.7</span> Presentation with Beamer {#presentation-with-beamer}
 
 -   LaTeX Beamer
     -   Presentations with LaTeX Beamer.

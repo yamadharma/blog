@@ -2,7 +2,7 @@
 title: "Quarto. Плагины"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-03T20:53:00+03:00
-lastmod: 2025-09-21T21:01:00+03:00
+lastmod: 2025-09-22T15:31:00+03:00
 tags: ["markdown"]
 categories: ["computer-science"]
 draft: false
@@ -42,8 +42,4 @@ Quarto. Плагины.
 
 ### <span class="section-num">4.1</span> minted-quarto {#minted-quarto}
 
--   Репозиторий: <https://github.com/nikitoshina/minted-quarto>
--   Установка:
-    ```shell
-    quarto install --no-prompt extension nikitoshina/minted-quarto
-    ```
+-   [Quarto. Плагин minted-quarto]({{< relref "2025-09-22--quarto-plugin-minted-quarto" >}})
