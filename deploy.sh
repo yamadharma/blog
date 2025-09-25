@@ -6,7 +6,7 @@ set -e
 rm -f static/ltximg/*
 
 DEBUG_MODE=false
-PAGEFIND=true
+PAGEFIND=false
 
 while [ $# -gt 0 ];
 do
@@ -84,9 +84,6 @@ if [ "$DEBUG_MODE" = true ]; then
 fi
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
-
-hugo "${HUGO_ARGS[@]}"
-
 
 
 # Build the project.

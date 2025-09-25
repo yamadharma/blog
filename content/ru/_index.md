@@ -9,7 +9,7 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: resume-biography
+  - block: resume-biography-3
     content:
       ## Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
@@ -18,18 +18,26 @@ sections:
       # button:
       #   text: Download CV
       #   url: uploads/resume.pdf
+      headings:
+        about: ''
+        education: ''
+        interests: ''
     design:
-      css_class: dark
-      background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: true
+      css_class: hbx-bg-gradient
+      # Avatar customization
+      avatar:
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
+      # background:
+      #   color: black
+      #   image:
+      #     # Add your image background to `assets/media/`.
+      #     filename: stacked-peaks.svg
+      #     filters:
+      #       brightness: 1.0
+      #     size: cover
+      #     position: center
+      #     parallax: true
   # - block: markdown
   #   content:
   #     # title: '📚 My Research'
@@ -67,12 +75,13 @@ sections:
       # Page order: descending (desc) or ascending (asc) date.
       order: desc
     design:
-      # Choose a layout view
-      view: date-title-summary
+      ## Choose a layout view
+      # view: date-title-summary
+      view: card
       columns: '1'
-      # Reduce spacing
-      # spacing:
-      #   padding: [0, 0, 0, 0]
+      ## Reduce spacing
+      spacing:
+        padding: [0, 0, 0, 0]
   # - block: collection
   #   id: papers
   #   content:

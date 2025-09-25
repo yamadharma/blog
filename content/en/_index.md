@@ -9,7 +9,7 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: resume-biography
+  - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
@@ -19,17 +19,11 @@ sections:
       #   text: Download CV
       #   url: uploads/resume.pdf
     design:
-      css_class: dark
-      background:
-        color: black
-        image:
-          # Add your image background to `assets/media/`.
-          filename: stacked-peaks.svg
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: true
+      css_class: hbx-bg-gradient
+      # Avatar customization
+      avatar:
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
   # - block: markdown
   #   content:
   #     title: '📚 My Research'
@@ -38,7 +32,7 @@ sections:
   #       Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
 
   #       I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
+
   #       Please reach out to collaborate 😃
   #   design:
   #     columns: '1'
@@ -64,7 +58,15 @@ sections:
       # Choose how many pages you would like to offset by
       offset: 0
       # Page order: descending (desc) or ascending (asc) date.
-      order: desc  
+      order: desc
+    design:
+      ## Choose a layout view
+      # view: date-title-summary
+      view: card
+      columns: '1'
+      ## Reduce spacing
+      spacing:
+        padding: [0, 0, 0, 0]
   # - block: collection
   #   id: papers
   #   content:
