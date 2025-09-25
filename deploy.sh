@@ -6,7 +6,7 @@ set -e
 rm -f static/ltximg/*
 
 DEBUG_MODE=false
-PAGEFIND=false
+PAGEFIND=true
 
 while [ $# -gt 0 ];
 do
