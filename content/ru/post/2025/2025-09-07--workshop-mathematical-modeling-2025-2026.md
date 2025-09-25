@@ -2,8 +2,8 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2025-09-20T16:15:00+03:00
-tags: ["modeling"]
+lastmod: 2025-09-25T08:01:00+03:00
+tags: ["modeling", "seedling"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2025-2026"
