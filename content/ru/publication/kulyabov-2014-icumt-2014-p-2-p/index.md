@@ -9,14 +9,8 @@ date: '2015-01-01'
 publishDate: '2025-08-27T16:24:57.995521Z'
 publication_types:
 - paper-conference
-publication: '*6th International Congress on Ultra Modern Telecommunications and Control
-  Systems and Workshops (ICUMT)*'
-doi: 10.1109/ICUMT.2014.7002162
-abstract: The models of peer to peer protocols are presented with the help of one-step
-  processes. On the basis of this presentation and the method of randomization of
-  one-step processes, it is described method for constructing models of peer to peer
-  protocols. The models of FastTrack and Bittorrent protocols are studied by means
-  of proposed method.
+publication: '*6th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT)*'
+abstract: The models of peer to peer protocols are presented with the help of one-step processes. On the basis of this presentation and the method of randomization of one-step processes, it is described method for constructing models of peer to peer protocols. The models of FastTrack and Bittorrent protocols are studied by means of proposed method.
 tags:
 - mine
 - index:wos
@@ -27,4 +21,8 @@ links:
   url: https://arxiv.org/abs/1504.00576
 - name: URL
   url: http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=7002162
+hugoblox:
+  ids:
+    doi: 10.1109/ICUMT.2014.7002162
+
 ---

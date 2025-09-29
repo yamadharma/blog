@@ -14,5 +14,9 @@ tags:
 - index:rinc
 - index:vak
 - index:rinc
-url_pdf: http://www.media-publisher.ru/pdf/nom-11-2013-sait.pdf
+hugoblox:
+  links:
+  - type: pdf
+    url: http://www.media-publisher.ru/pdf/nom-11-2013-sait.pdf
+
 ---

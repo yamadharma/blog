@@ -2,8 +2,8 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2025-09-25T08:01:00+03:00
-tags: ["modeling", "seedling"]
+lastmod: 2025-09-26T12:24:00+03:00
+tags: ["modeling"]
 categories: ["science"]
 draft: false
 slug: "workshop-mathematical-modeling-2025-2026"
@@ -19,17 +19,17 @@ slug: "workshop-mathematical-modeling-2025-2026"
 ## <span class="section-num">1</span> Семинар Математическое моделирование, 2025-2 {#семинар-математическое-моделирование-2025-2}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-09-25 Чт&gt; </span></span> Сергеев С. В. - Модифицированный метод Чебышевской коллокации {#сергеев-с-dot-в-dot-модифицированный-метод-чебышевской-коллокации}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-09-25 Чт&gt; </span></span> Сергеев С. В. - Модифицированный метод Чебышевской коллокации {#сергеев-с-dot-в-dot-модифицированный-метод-чебышевской-коллокации}
 
 
-### <span class="section-num">1.2</span> Докладчик {#докладчик}
+#### <span class="section-num">1.1.1</span> Докладчик {#докладчик}
 
 -   Сергеев, Степан Викторович
     -   аспирант
     -   кафедра математического моделирования и искусственного интеллекта, РУДН
 
 
-### <span class="section-num">1.3</span> Информация {#информация}
+#### <span class="section-num">1.1.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/295/>
 -   Модифицированный метод Чебышевской коллокации построения полной системы решений двухточечных задач для линейных обыкновенных дифференциальных уравнений второго порядка с целью решения начально-краевых линейных параболический задач
@@ -51,6 +51,21 @@ slug: "workshop-mathematical-modeling-2025-2026"
 We consider initial-boundary value problems for linear parabolic equations, which may be decomposed into a two-point second-order LODE problem and a homogeneous initial-boundary value problem for a linear parabolic equation. An example of solving initial-boundary value problems for parabolic equations using a modified Chebyshev collocation method is given, which can be decomposed into a two-point problem for the simplest second-order LODE.
 
 Solving initial boundary value problems for more general parabolic equations (with a general second-order ODE equation instead of the Poisson equation) requires finding a general (complete) solution to such an ODE. The second chapter provides a method for solving at least one second-order equation of general form using Chebyshev differentiation and integration matrices. To find a second independent solution to a general second-order ODE with one known solution (in Chapter 2, we demonstrated two methods for finding the first solution), we use the so-called d'Alembert method. The method involves reducing a second-order ODE to a total derivative. In the second section, we apply this procedure to a first-order ODE. Then, using the results obtained, in the third section, we apply this procedure to a second-order LODE. The resulting auxiliary results, although technically extraordinarily complex, lead to the final result---a complete solution to the second-order LODE, necessary for solving initial-boundary value problems for general one-dimensional parabolic equations.
+
+
+#### <span class="section-num">1.1.3</span> Видео {#видео}
+
+{{< tabs "Создание виртуальной машины с Virtualbox" >}}
+
+{{< tab "RuTube" >}}{{< rutube 2ad8097514db84d66ebce8b4e5eb59fd >}}{{< /tab >}}
+
+{{< tab "Платформа" >}}{{< plvideo Y9zG7WMf-A3A >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239055 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 0rEol7HPLtU >}}{{< /tab >}}
+
+{{< /tabs >}}
 
 
 ## <span class="section-num">2</span> Семинар Математическое моделирование, 2026-1 {#семинар-математическое-моделирование-2026-1}

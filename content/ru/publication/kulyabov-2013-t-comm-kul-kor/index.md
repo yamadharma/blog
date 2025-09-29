@@ -1,6 +1,5 @@
 ---
-title: Автоматизация управления и распространения образа на большое число типовых
-  рабочих мест пользователя при помощи протокола BitTorrent
+title: Автоматизация управления и распространения образа на большое число типовых рабочих мест пользователя при помощи протокола BitTorrent
 authors:
 - Дмитрий Сергеевич Кулябов
 - Анна Владиславовна Королькова
@@ -14,5 +13,9 @@ tags:
 - index:rinc
 - index:vak
 - index:rinc
-url_pdf: http://www.media-publisher.ru/pdf/nom-11-2013-sait.pdf
+hugoblox:
+  links:
+  - type: pdf
+    url: http://www.media-publisher.ru/pdf/nom-11-2013-sait.pdf
+
 ---

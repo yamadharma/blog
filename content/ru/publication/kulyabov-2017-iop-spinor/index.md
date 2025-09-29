@@ -9,14 +9,7 @@ publishDate: '2025-08-27T16:24:58.469406Z'
 publication_types:
 - article-journal
 publication: '*Journal of Physics: Conference Series*'
-doi: 10.1088/1742-6596/788/1/012025
-abstract: Spinors are more special objects than tensor. Therefore possess more properties
-  than the more generic objects such as tensors. Thus, the group of Lorentz two-spinors
-  is the covering group of the Lorentz group. Since the Lorentz group is a symmetry
-  group of Maxwell's equations, it is assumed to reasonable to use when writing the
-  Maxwell equations Lorentz two-spinors and not tensors. We describe in detail the
-  representation of the Maxwell's equations in the form of Lorentz two-spinors. This
-  representation of Maxwell's equations can be of considerable theoretical interest.
+abstract: Spinors are more special objects than tensor. Therefore possess more properties than the more generic objects such as tensors. Thus, the group of Lorentz two-spinors is the covering group of the Lorentz group. Since the Lorentz group is a symmetry group of Maxwell's equations, it is assumed to reasonable to use when writing the Maxwell equations Lorentz two-spinors and not tensors. We describe in detail the representation of the Maxwell's equations in the form of Lorentz two-spinors. This representation of Maxwell's equations can be of considerable theoretical interest.
 tags:
 - mine
 - grant:rfbr:14-01-00628
@@ -29,6 +22,9 @@ tags:
 - index:scopus
 links:
 - name: URL
-  url: 
-    http://stacks.iop.org/1742-6596/788/i=1/a=012025?key=crossref.9f00e218364c421a4b43726ae69dc7c6
+  url: http://stacks.iop.org/1742-6596/788/i=1/a=012025?key=crossref.9f00e218364c421a4b43726ae69dc7c6
+hugoblox:
+  ids:
+    doi: 10.1088/1742-6596/788/1/012025
+
 ---

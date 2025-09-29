@@ -7,13 +7,15 @@ date: '2019-04-01'
 publishDate: '2025-08-27T16:24:58.758419Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of the Selected Papers of the 9th International Conference
-  \"Information and Telecommunication Technologies and Mathematical Modeling of High-Tech
-  Systems\" (ITTMM-2019), Moscow, Russia, April 15-19, 2019*'
+publication: '*Proceedings of the Selected Papers of the 9th International Conference \"Information and Telecommunication Technologies and Mathematical Modeling of High-Tech Systems\" (ITTMM-2019), Moscow, Russia, April 15-19, 2019*'
 tags:
 - mine
 - index:rinc
 - grant:rudn:5-100
 - index:scopus
-url_pdf: http://ceur-ws.org/Vol-2407/paper-08-172.pdf
+hugoblox:
+  links:
+  - type: pdf
+    url: http://ceur-ws.org/Vol-2407/paper-08-172.pdf
+
 ---

@@ -10,13 +10,7 @@ publishDate: '2025-08-27T16:24:58.955791Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'
-doi: 10.1134/S036176882002005X
-abstract: Computer algebra systems are complex software systems that cover a wide
-  range of scientific and practical problems. However, the absolute coverage cannot
-  be achieved. Often, it is required to create a user extension for an existing computer
-  algebra system. In this case, the extensibility of the system should be taken into
-  account. In this paper, we consider a technology for extending the SymPy computer
-  algebra system with a low-level module that implements a random number generator.
+abstract: Computer algebra systems are complex software systems that cover a wide range of scientific and practical problems. However, the absolute coverage cannot be achieved. Often, it is required to create a user extension for an existing computer algebra system. In this case, the extensibility of the system should be taken into account. In this paper, we consider a technology for extending the SymPy computer algebra system with a low-level module that implements a random number generator.
 tags:
 - mine
 - type:article
@@ -30,4 +24,8 @@ tags:
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2005.05261
+hugoblox:
+  ids:
+    doi: 10.1134/S036176882002005X
+
 ---

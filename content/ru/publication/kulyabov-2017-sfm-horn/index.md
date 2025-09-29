@@ -1,6 +1,5 @@
 ---
-title: Field Calculation for the Horn Waveguide Transition in the Single-Mode Approximation
-  of the Cross-Sections Method
+title: Field Calculation for the Horn Waveguide Transition in the Single-Mode Approximation of the Cross-Sections Method
 authors:
 - Migran Nelsonovich Gevorkyan
 - Dmitry Sergeevich Kulyabov
@@ -11,14 +10,8 @@ date: '2017-01-01'
 publishDate: '2025-08-27T16:24:58.546729Z'
 publication_types:
 - paper-conference
-publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics
-  XVII and Computational Biophysics and Analysis of Biomedical Data III*'
-doi: 10.1117/12.2267906
-abstract: We investigate the waveguide propagation of polarized monochromatic light
-  in a smoothly irregular transition between two regular planar dielectric waveguides.
-  The single-mode approximation of the cross-sections method is used. The smooth evolution
-  of the electromagnetic field propagating mode is calculated. The calculation is
-  performed using the regularized stable numerical method.
+publication: '*Proceedings of SPIE. Saratov Fall Meeting 2016: Laser Physics and Photonics XVII and Computational Biophysics and Analysis of Biomedical Data III*'
+abstract: We investigate the waveguide propagation of polarized monochromatic light in a smoothly irregular transition between two regular planar dielectric waveguides. The single-mode approximation of the cross-sections method is used. The smooth evolution of the electromagnetic field propagating mode is calculated. The calculation is performed using the regularized stable numerical method.
 tags:
 - mine
 - grant:rfbr:14-01-00628
@@ -28,4 +21,8 @@ tags:
 - index:wos
 - index:rinc
 - index:scopus
+hugoblox:
+  ids:
+    doi: 10.1117/12.2267906
+
 ---

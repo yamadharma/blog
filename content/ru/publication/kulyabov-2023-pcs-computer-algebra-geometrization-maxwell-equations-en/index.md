@@ -10,17 +10,7 @@ publishDate: '2025-08-27T16:24:59.179001Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'
-doi: 10.1134/S0361768823020111
-abstract: Calculations of optical devices in the geometrized Maxwell’s theory use
-  well-known formalisms of general theory of relativity and differential geometry.
-  In particular, for such calculations it is required to know the analytical form
-  of the geodesic equations, which leads to the need to calculate a large number of
-  monotonous mathematical expressions. One of the purposes of computer algebra is
-  to facilitate the researcher's work by automating cumbersome symbolic computations.
-  Thus, the use of computer algebra systems seems to be quite an obvious way. Several
-  free implementations of symbolic computations for the apparatus of general relativity
-  are considered. A practical example of symbolic computations for the geometrized
-  Maxwell's theory is given.
+abstract: Calculations of optical devices in the geometrized Maxwell’s theory use well-known formalisms of general theory of relativity and differential geometry. In particular, for such calculations it is required to know the analytical form of the geodesic equations, which leads to the need to calculate a large number of monotonous mathematical expressions. One of the purposes of computer algebra is to facilitate the researcher's work by automating cumbersome symbolic computations. Thus, the use of computer algebra systems seems to be quite an obvious way. Several free implementations of symbolic computations for the apparatus of general relativity are considered. A practical example of symbolic computations for the geometrized Maxwell's theory is given.
 tags:
 - category:cas
 - category:electrodynamics
@@ -32,4 +22,8 @@ tags:
 - index-rank:scopus:sjr:q4
 - index:rinc
 - index:rinc-core
+hugoblox:
+  ids:
+    doi: 10.1134/S0361768823020111
+
 ---

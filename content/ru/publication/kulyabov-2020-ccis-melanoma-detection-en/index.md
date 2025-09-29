@@ -10,20 +10,8 @@ date: '2020-01-01'
 publishDate: '2025-08-27T16:24:58.859981Z'
 publication_types:
 - chapter
-publication: '*Distributed Computer and Communication Networks: Control, Computation,
-  Communications*'
-doi: 10.1007/978-3-030-66242-4_33
-abstract: 'This paper examines the problem of detecting skin malignancies, in particular,
-  melanoma, from the analysis of dermoscopic images using deep learning methods. For
-  this purpose, a deep convolutional neural network architecture was developed, which
-  was used to process dermoscopic images of various skin lesions contained in the
-  HAM10000 data set. The studied images were previously cleared of noise and other
-  contaminants for processing by neural networks. In addition, since the disease classes
-  are unbalanced, a number of transformations have been made to balance them. At the
-  first stage, the images were divided into two classes: melanoma and benign tumor.
-  At the second stage, all images of skin injuries were grouped into seven classes.
-  Computer experiments on the use of the constructed deep neural network on the data
-  obtained in this way have shown that the proposed approach provides 91%.'
+publication: '*Distributed Computer and Communication Networks: Control, Computation, Communications*'
+abstract: 'This paper examines the problem of detecting skin malignancies, in particular, melanoma, from the analysis of dermoscopic images using deep learning methods. For this purpose, a deep convolutional neural network architecture was developed, which was used to process dermoscopic images of various skin lesions contained in the HAM10000 data set. The studied images were previously cleared of noise and other contaminants for processing by neural networks. In addition, since the disease classes are unbalanced, a number of transformations have been made to balance them. At the first stage, the images were divided into two classes: melanoma and benign tumor. At the second stage, all images of skin injuries were grouped into seven classes. Computer experiments on the use of the constructed deep neural network on the data obtained in this way have shown that the proposed approach provides 91%.'
 tags:
 - mine
 - project:machine-learning
@@ -33,4 +21,8 @@ tags:
 links:
 - name: URL
   url: http://link.springer.com/10.1007/978-3-030-66242-4_33
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-030-66242-4_33
+
 ---

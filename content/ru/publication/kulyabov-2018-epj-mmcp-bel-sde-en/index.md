@@ -1,6 +1,5 @@
 ---
-title: Functional Integral Approach to the Solution of a System of Stochastic Differential
-  Equations
+title: Functional Integral Approach to the Solution of a System of Stochastic Differential Equations
 authors:
 - Edik Artashevich Ayrjan
 - Alexander Egorov
@@ -12,13 +11,7 @@ publishDate: '2025-08-27T16:24:58.634577Z'
 publication_types:
 - paper-conference
 publication: '*Mathematical Modeling and Computational Physics 2017*'
-doi: 10.1051/epjconf/201817302003
-abstract: A new method for the evaluation of the characteristics of the solution of
-  a system of stochastic differential equations is presented. This method is based
-  on the representation of a probability density function p through a functional integral.
-  The functional integral representation is obtained by means of the Onsager-Machlup
-  functional technique for a special case when the diffusion matrix for the SDE system
-  defines a Riemannian space with zero curvature.
+abstract: A new method for the evaluation of the characteristics of the solution of a system of stochastic differential equations is presented. This method is based on the representation of a probability density function p through a functional integral. The functional integral representation is obtained by means of the Onsager-Machlup functional technique for a special case when the diffusion matrix for the SDE system defines a Riemannian space with zero curvature.
 tags:
 - mine
 - index:rinc
@@ -29,4 +22,8 @@ tags:
 links:
 - name: URL
   url: https://www.epj-conferences.org/10.1051/epjconf/201817302003
+hugoblox:
+  ids:
+    doi: 10.1051/epjconf/201817302003
+
 ---

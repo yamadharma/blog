@@ -10,9 +10,12 @@ publishDate: '2025-08-27T16:24:59.325717Z'
 publication_types:
 - manuscript
 publication: '*Zenodo*'
-doi: 10.5281/zenodo.16963589
 tags:
 - mine
 - category:cas
 - project:cas
+hugoblox:
+  ids:
+    doi: 10.5281/zenodo.16963589
+
 ---

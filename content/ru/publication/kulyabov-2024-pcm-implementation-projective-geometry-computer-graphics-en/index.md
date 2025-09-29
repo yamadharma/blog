@@ -10,7 +10,6 @@ publishDate: '2025-08-27T16:24:59.259128Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'
-doi: 10.1134/s0361768824020075
 tags:
 - category:cas
 - category:geometry
@@ -21,5 +20,11 @@ tags:
 - index-rank:scopus:sjr:q3
 - index:wos
 - index-rank:wos:jcr:q4
-url_pdf: https://link.springer.com/content/pdf/10.1134/S0361768824020075.pdf
+hugoblox:
+  ids:
+    doi: 10.1134/s0361768824020075
+  links:
+  - type: pdf
+    url: https://link.springer.com/content/pdf/10.1134/S0361768824020075.pdf
+
 ---

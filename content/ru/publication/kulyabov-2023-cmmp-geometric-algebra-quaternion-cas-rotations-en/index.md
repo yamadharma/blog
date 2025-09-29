@@ -1,6 +1,5 @@
 ---
-title: Geometric Algebra and Quaternion Techniques in Computer Algebra Systems for
-  Describing Rotations in Eucledean Space
+title: Geometric Algebra and Quaternion Techniques in Computer Algebra Systems for Describing Rotations in Eucledean Space
 authors:
 - Tatiana Refatovna Velieva
 - Migran Nelsonovich Gevorkyan
@@ -12,18 +11,7 @@ publishDate: '2025-08-27T16:24:59.139366Z'
 publication_types:
 - article-journal
 publication: '*Computational Mathematics and Mathematical Physics*'
-doi: 10.1134/S0965542523010141
-abstract: Tensor formalism (and its special case—vector formalism) is a mathematical
-  technique that is widely used in physical and engineering problems. Even though
-  this formalism is fairy universal and suitable for describing many spaces, the application
-  of other special mathematical techniques is some times required. For example, the
-  problem of rotation in a 3D space is not very well described in tensor representation,
-  and it is reasonable to use the formalism of Clifford algebra, in particular, quaternions
-  and geometric algebra representations for its solution. In this paper, computer
-  algebra is used to demonstrate the solution of the problem of rotation in a 3D space
-  using both the quaternion and geometric algebra formalisms. It is shown that although
-  these formalisms are fundamentally similar, the latter one seems to be clearer both
-  for computations and interpretation of results.
+abstract: Tensor formalism (and its special case—vector formalism) is a mathematical technique that is widely used in physical and engineering problems. Even though this formalism is fairy universal and suitable for describing many spaces, the application of other special mathematical techniques is some times required. For example, the problem of rotation in a 3D space is not very well described in tensor representation, and it is reasonable to use the formalism of Clifford algebra, in particular, quaternions and geometric algebra representations for its solution. In this paper, computer algebra is used to demonstrate the solution of the problem of rotation in a 3D space using both the quaternion and geometric algebra formalisms. It is shown that although these formalisms are fundamentally similar, the latter one seems to be clearer both for computations and interpretation of results.
 tags:
 - project:cas
 - mine
@@ -36,4 +24,8 @@ tags:
 - index-rank:wos:jcr:q4
 - index:rinc
 - index:rinc-core
+hugoblox:
+  ids:
+    doi: 10.1134/S0965542523010141
+
 ---

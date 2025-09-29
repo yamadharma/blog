@@ -8,7 +8,6 @@ publishDate: '2025-08-27T16:24:59.229567Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'
-doi: 10.22363/2658-4670-2024-32-3-255–259
 abstract: We describe introduced in the journal the rubric system.
 tags:
 - mine
@@ -17,5 +16,11 @@ tags:
 - index-rank:vak:k2
 - index:scopus
 - index-rank:scopus:sjr:q4
-url_pdf: https://journals.rudn.ru/miph/article/download/43406/24536.pdf
+hugoblox:
+  ids:
+    doi: 10.22363/2658-4670-2024-32-3-255–259
+  links:
+  - type: pdf
+    url: https://journals.rudn.ru/miph/article/download/43406/24536.pdf
+
 ---

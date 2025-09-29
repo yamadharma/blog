@@ -8,16 +8,8 @@ date: '2020-12-01'
 publishDate: '2025-08-27T16:24:58.916198Z'
 publication_types:
 - paper-conference
-publication: '*Information Technology, Telecommunications and Control Systems (ITTCS),
-  2020*'
-doi: 10.1088/1742-6596/1694/1/012025
-abstract: This work is devoted to studying the possibilities of hybrid modeling of
-  communication network algorithms in the Julia programming language. A simulation
-  of the system, which consists of an incoming stream processed according to the Transmission
-  Control Protocol (TCP) and a router processing traffic according to the Random Early
-  Detection (RED) algorithm, is carried out. This model contains both continuous and
-  discrete elements, for example, a discrete probability function of random packet
-  dropping in the case of queue congestion.
+publication: '*Information Technology, Telecommunications and Control Systems (ITTCS), 2020*'
+abstract: This work is devoted to studying the possibilities of hybrid modeling of communication network algorithms in the Julia programming language. A simulation of the system, which consists of an incoming stream processed according to the Transmission Control Protocol (TCP) and a router processing traffic according to the Random Early Detection (RED) algorithm, is carried out. This model contains both continuous and discrete elements, for example, a discrete probability function of random packet dropping in the case of queue congestion.
 tags:
 - mine
 - project:aqm
@@ -25,4 +17,8 @@ tags:
 - grant:rudn:5-100
 - index:scopus
 - index:rinc
+hugoblox:
+  ids:
+    doi: 10.1088/1742-6596/1694/1/012025
+
 ---

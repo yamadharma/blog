@@ -8,9 +8,7 @@ publishDate: '2025-08-27T16:24:57.760779Z'
 publication_types:
 - article-journal
 publication: '*Physics of Particles and Nuclei Letters*'
-doi: 10.1134/S1547477109070115
-abstract: This paper describes Lorentz two-spinors and proposes using them in calculations
-  with Dirac four-spinors and quaternions.
+abstract: This paper describes Lorentz two-spinors and proposes using them in calculations with Dirac four-spinors and quaternions.
 tags:
 - mine
 - index:rinc
@@ -23,4 +21,8 @@ links:
   url: https://arxiv.org/abs/1312.6655
 - name: URL
   url: http://www.springerlink.com/content/bhmw776v15110271/ http://arxiv.org/abs/1312.6655
+hugoblox:
+  ids:
+    doi: 10.1134/S1547477109070115
+
 ---

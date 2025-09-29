@@ -9,16 +9,7 @@ publishDate: '2025-08-27T16:24:59.151179Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'
-doi: 10.22363/2658-4670-2023-31-2-139-149
-abstract: This article discusses a universal way to create animation using Asymptote
-  the language for vector graphics. The Asymptote language itself has a built-in library
-  for creating animations, but its practical use is complicated by an extremely brief
-  description in the official documentation and unstable execution of existing examples.
-  The purpose of this article is to eliminate this gap. The method we describe is
-  based on creating a PDF-file with frames using Asymptote, with further converting
-  it into a set of PNG images and merging them into a video using FFmpeg. All stages
-  are described in detail, which allows the reader to use the described method without
-  being familiar with the used utilities.
+abstract: This article discusses a universal way to create animation using Asymptote the language for vector graphics. The Asymptote language itself has a built-in library for creating animations, but its practical use is complicated by an extremely brief description in the official documentation and unstable execution of existing examples. The purpose of this article is to eliminate this gap. The method we describe is based on creating a PDF-file with frames using Asymptote, with further converting it into a set of PNG images and merging them into a video using FFmpeg. All stages are described in detail, which allows the reader to use the described method without being familiar with the used utilities.
 tags:
 - category:cas
 - mine
@@ -26,4 +17,8 @@ tags:
 - index-rank:vak:k2
 - project:cas
 - index:scopus
+hugoblox:
+  ids:
+    doi: 10.22363/2658-4670-2023-31-2-139-149
+
 ---
