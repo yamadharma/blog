@@ -2,8 +2,8 @@
 title: "Язык программирования Julia"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-01-21T16:52:00+03:00
-lastmod: 2025-05-18T19:51:00+03:00
-tags: ["julia", "programming"]
+lastmod: 2025-10-09T17:55:00+03:00
+tags: ["MOC", "julia", "programming"]
 categories: ["computer-science"]
 draft: false
 slug: "julia-programming-language"
@@ -53,6 +53,7 @@ slug: "julia-programming-language"
 -   [Julia. Пакет Revise]({{< relref "2025-03-22--julia-revise-package" >}})
 -   [Julia. Пакет DrWatson]({{< relref "2025-05-14--julia-drwatson" >}})
 -   [Julia. Утилита juliaup]({{< relref "2025-05-18--julia-juliaup" >}})
+-   [Обновление Julia]({{< relref "2025-10-09--update-julia" >}})
 
 
 ### <span class="section-num">4.3</span> Скрипты {#скрипты}

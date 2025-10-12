@@ -2,7 +2,7 @@
 title: "Конвертация djvu в pdf. dpsprep"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-29T16:29:00+03:00
-lastmod: 2025-09-04T19:00:00+03:00
+lastmod: 2025-10-01T20:20:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,18 @@ slug: "convert-djvu-pdf-dpsprep"
 -   Позволяет сохранять структуру документа (например, оглавление) и текстовые слои (например, OCR).
 
 
-## <span class="section-num">2</span> Параметры {#параметры}
+## <span class="section-num">2</span> Установка {#установка}
+
+
+### <span class="section-num">2.1</span> Gentoo {#gentoo}
+
+-   Оверлей karma ([Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+    ```shell
+    emerge dpsprep
+    ```
+
+
+## <span class="section-num">3</span> Параметры {#параметры}
 
 -   `-q`, `--quality` : качество изображений на выходе. Используется только для сжатия JPEG, т.е. изображений RGB и Grayscale. Передается напрямую в Pillow и оптимизатору OCRmyPDF.
 -   `-p`, `--pool-size` : размер пула MultiProcessing для обработки постраничных операций.
@@ -39,7 +50,7 @@ slug: "convert-djvu-pdf-dpsprep"
 -   `-O3` : используйте агрессивную оптимизацию изображений PDF с потерями от OCRmyPDF.
 
 
-## <span class="section-num">3</span> Выполнение сжатия {#выполнение-сжатия}
+## <span class="section-num">4</span> Выполнение сжатия {#выполнение-сжатия}
 
 -   Компрессия поводится в два этапа:
     -   сжатие по умолчанию, предоставляемое Pillow. Для битональных изображений код генерации PDF говорит, если `libtiff` доступен, для сжатия используется `group4`.
@@ -51,7 +62,7 @@ slug: "convert-djvu-pdf-dpsprep"
     ```
 
 
-## <span class="section-num">4</span> Примеры использования {#примеры-использования}
+## <span class="section-num">5</span> Примеры использования {#примеры-использования}
 
 -   Создать файл `file.pdf` в текущем каталоге:
     ```shell

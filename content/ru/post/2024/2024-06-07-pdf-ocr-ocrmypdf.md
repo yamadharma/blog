@@ -2,7 +2,7 @@
 title: "Распознавание pdf. OCRmyPDF"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-07T21:07:00+03:00
-lastmod: 2025-04-13T19:33:00+03:00
+lastmod: 2025-10-11T16:53:00+03:00
 tags: ["pdf", "read"]
 categories: ["computer-science"]
 draft: false
@@ -23,6 +23,9 @@ slug: "pdf-ocr-ocrmypdf"
 
 
 ## <span class="section-num">2</span> Примеры использования {#примеры-использования}
+
+
+### <span class="section-num">2.1</span> Распознавание {#распознавание}
 
 -   Список языков для распознавания:
     ```shell
@@ -64,12 +67,11 @@ slug: "pdf-ocr-ocrmypdf"
     ```shell
     ocrmypdf --skip-text --title "<title>" --author "<author>" --subject "<subject>" --keywords "<keyword; key phrase; ...>" input_file.pdf output.pdf
     ```
--   Не распознавать pdf-файл
 
-    -   При установке параметра `--tesseract-timeout 0`  OCRmyPDF будет обрабатывать изображения без выполнения OCR.
 
-    <!--listend-->
+### <span class="section-num">2.2</span> Не распознавать pdf-файл {#не-распознавать-pdf-файл}
 
+-   При установке параметра `--tesseract-timeout 0`  OCRmyPDF будет обрабатывать изображения без выполнения OCR.
     ```shell
     ocrmypdf --tesseract-timeout=0 --remove-background input.pdf output.pdf
     ```
@@ -80,4 +82,39 @@ slug: "pdf-ocr-ocrmypdf"
 -   Оптимизация изображений без выполнения распознавания:
     ```shell
     ocrmypdf --tesseract-timeout=0 --optimize 3 --skip-text input.pdf output.pdf
+    ```
+
+
+### <span class="section-num">2.3</span> OCR для больших изображений {#ocr-для-больших-изображений}
+
+-   Иногда не распознаются некоторые страницы.
+-   Tesseract имеет внутренние ограничения по размеру изображений, которые он обработает.
+-   По умолчанию включён `--tesseract-downsample-large-images`, OCRmyPDF будет понижает разрешение изображений.
+-   Эту функцию можно отключить с использованием `--no-tesseract-downsample-large-images`.
+-   Необходимо установить `--tesseract-timeout` достаточно большим:
+
+<!--listend-->
+
+```shell
+ocrmypdf --tesseract-timeout 600 --tesseract-downsample-large-images bigfile.pdf output.pdf
+```
+
+-   Можно установить границу уменьшения в 5000 пикселей:
+
+<!--listend-->
+
+```shell
+ocrmypdf --tesseract-timeout 120 --tesseract-downsample-large-images --tesseract-downsample-above 5000 bigfile.pdf output_downsampled_ocr.pdf
+```
+
+
+### <span class="section-num">2.4</span> Используемые мной команды {#используемые-мной-команды}
+
+-   Удалить весь распознанный текст из pdf-файла (если текст кракозябрами):
+    ```shell
+    ocrmypdf --tesseract-timeout 0 --optimize 3 --force-ocr input.pdf output.pdf
+    ```
+-   Распознать файл:
+    ```shell
+    ocrmypdf -l rus+eng --optimize 3 --tesseract-timeout 600 --tesseract-downsample-large-images input.pdf output.pdf
     ```

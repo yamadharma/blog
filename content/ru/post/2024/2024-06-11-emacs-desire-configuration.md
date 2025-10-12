@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-09-05T14:14:00+03:00
+lastmod: 2025-10-06T11:52:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -4781,31 +4781,126 @@ slug: "emacs-desire-configuration"
     </div>
 
 
-#### <span class="section-num">3.27.1</span> Org-roam {#org-roam}
+#### <span class="section-num">3.27.1</span> Инфраструктура Org-roam {#инфраструктура-org-roam}
 
 ```emacs-lisp
-;;; Org-roam {{{
+;;;;; Org-roam
 
 (desire 'emacsql)
 
 ;; (desire 'delve :recipe '(:fetcher github :repo "publicimageltd/delve" :branch "main"))
-(desire 'zetteldesk)
-
-;; (desire 'org-roam-server)
-;; (desire 'org-roam-ui :recipe '(:host github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
-;; (desire 'org-roam-ui :recipe '(:fetcher github :repo "org-roam/org-roam-ui" :files ("*.el" "out")))
-(desire 'org-roam-ui)
-
-
-(desire 'magit-section)
-(desire 'org-roam)
-
-;;;}}}
 ```
 
 <!--list-separator-->
 
-1.  Org-daily
+1.  Zetteldesk
+
+    <!--list-separator-->
+
+    1.  Подключение
+
+        -   Файл: `rc.packages.el`
+
+        <!--listend-->
+
+        ```emacs-lisp
+        (desire 'zetteldesk)
+        ```
+
+    <!--list-separator-->
+
+    2.  Включение
+
+        -   Файл: `packages/zetteldesk/loaddefs.ecf`
+
+        <!--listend-->
+
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Zetteldesk.el is an emacs library built on top of org-roam with the purpose of easier revision on various subjects and a better outliner tool for emacs
+        ;; https://github.com/Vidianos-Giannitsis/zetteldesk.el
+
+        ;;; Code:
+
+        (desire 'zetteldesk-kb)
+        (desire 'zetteldesk-info)
+        (desire 'zetteldesk-ref)
+        (desire 'zetteldesk-kb)
+        (desire 'zetteldesk-remark)
+
+        ;;;
+        ```
+
+    <!--list-separator-->
+
+    3.  Загрузка
+
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Zetteldesk.el is an emacs library built on top of org-roam with the purpose of easier revision on various subjects and a better outliner tool for emacs
+        ;; https://github.com/Vidianos-Giannitsis/zetteldesk.el
+
+        ;;; Code:
+
+        (require 'zetteldesk)
+
+        (setopt zetteldesk-kb-hydra-prefix (kbd "C-c z"))
+
+        (zetteldesk-mode 1)
+
+        (require 'zetteldesk-ref)
+        (require 'zetteldesk-info)
+        (require 'zetteldesk-remark)
+
+        ;;;
+        ```
+
+    <!--list-separator-->
+
+    4.  Интеграция с org-roam
+
+        ```emacs-lisp
+        ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
+        ;;; Zetteldesk.el is an emacs library built on top of org-roam with the purpose of easier revision on various subjects and a better outliner tool for emacs
+        ;; https://github.com/Vidianos-Giannitsis/zetteldesk.el
+
+        ;;; Code:
+
+        (require 'zetteldesk)
+
+        ;;;
+        ```
+
+<!--list-separator-->
+
+2.  Org-roam-ui
+
+    <!--list-separator-->
+
+    1.  Подключение
+
+        -   Файл: `rc.packages.el`
+
+        <!--listend-->
+
+        ```emacs-lisp
+        (desire 'org-roam-ui :recipe '(:fetcher github :repo "lkarp-744/org-roam-ui"))
+        ;; (desire 'org-roam-ui :recipe '(:fetcher github :repo "lkarp-744/org-roam-ui" :files ("*.el" "public")))
+        ;; (desire 'org-roam-ui)
+        ```
+
+<!--list-separator-->
+
+3.  Org-roam
+
+    ```emacs-lisp
+    (desire 'magit-section)
+    (desire 'org-roam)
+    ```
+
+<!--list-separator-->
+
+4.  Org-daily
 
     -   Загрузка:
         ```emacs-lisp
@@ -4898,7 +4993,7 @@ slug: "emacs-desire-configuration"
 
 <!--list-separator-->
 
-2.  org-daily-reflection
+5.  org-daily-reflection
 
     -   [Emacs. Пакет org-daily-reflection]({{< relref "2025-06-06--emacs-org-daily-reflection" >}})
     -   Загрузка.
@@ -6947,12 +7042,12 @@ slug: "emacs-desire-configuration"
 ### <span class="section-num">3.42</span> Перевод {#перевод}
 
 
-#### <span class="section-num">3.42.1</span> go-translate {#go-translate}
+#### <span class="section-num">3.42.1</span> gt {#gt}
 
 -   Подключаем:
     ```emacs-lisp
     ;;; Translator on Emacs
-    (desire 'go-translate)
+    (desire 'gt)
     ```
     <div class="src-block-caption">
       <span class="src-block-number">&#1056;&#1072;&#1089;&#1087;&#1077;&#1095;&#1072;&#1090;&#1082;&#1072; 240:</span>
@@ -6962,9 +7057,9 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Translator on Emacs. Supports multiple engines such as Google, Bing, deepL, ChatGPT, StarDict, Youdao and so on
-    ;;; https://github.com/lorniu/go-translate
+    ;; https://github.com/lorniu/gt.el
 
-    (require 'go-translate)
+    (require 'gt)
 
     ;;;
     ```
@@ -6976,7 +7071,7 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Translator on Emacs. Supports multiple engines such as Google, Bing, deepL, ChatGPT, StarDict, Youdao and so on
-    ;;; https://github.com/lorniu/go-translate
+    ;; https://github.com/lorniu/gt.el
 
 
     ;;;
@@ -6989,7 +7084,7 @@ slug: "emacs-desire-configuration"
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Translator on Emacs. Supports multiple engines such as Google, Bing, deepL, ChatGPT, StarDict, Youdao and so on
-    ;;; https://github.com/lorniu/go-translate
+    ;; https://github.com/lorniu/gt.el
 
     ;;; Initialize the default translator, let it translate between en and ru via Google Translate, and the result will be displayed in the Echo Area.
     (setopt gt-langs '(en ru))

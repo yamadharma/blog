@@ -2,7 +2,7 @@
 title: "Quarto. Плагины"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-03T20:53:00+03:00
-lastmod: 2025-09-22T15:31:00+03:00
+lastmod: 2025-10-12T18:56:00+03:00
 tags: ["markdown"]
 categories: ["computer-science"]
 draft: false
@@ -43,3 +43,23 @@ Quarto. Плагины.
 ### <span class="section-num">4.1</span> minted-quarto {#minted-quarto}
 
 -   [Quarto. Плагин minted-quarto]({{< relref "2025-09-22--quarto-plugin-minted-quarto" >}})
+
+
+## <span class="section-num">5</span> Диаграммы {#диаграммы}
+
+
+### <span class="section-num">5.1</span> pandoc-ext/diagram {#pandoc-ext-diagram}
+
+-   [Quarto. Плагин pandoc-ext/diagram]({{< relref "2025-10-12--quarto-plugin-pandoc-diagram" >}})
+-   Поддерживает разные реализации диаграмм.
+
+
+### <span class="section-num">5.2</span> danmackinlay/quarto_tikz {#danmackinlay-quarto-tikz}
+
+
+#### <span class="section-num">5.2.1</span> Общая информация {#общая-информация}
+
+-   Репозиторий: <https://github.com/danmackinlay/quarto_tikz>
+-   Рендерит диаграммы [PGF/TikZ](https://en.wikipedia.org/wiki/PGF/TikZ).
+-   Использует Inkscape.
+-   С первого раза не удалось заставить работать.

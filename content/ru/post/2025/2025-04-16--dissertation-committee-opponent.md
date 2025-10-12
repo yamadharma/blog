@@ -2,7 +2,7 @@
 title: "Диссовет. Оппоненты"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-04-16T11:23:00+03:00
-lastmod: 2025-04-17T14:33:00+03:00
+lastmod: 2025-10-09T13:39:00+03:00
 tags: ["rudn", "science-admin"]
 categories: ["job", "science"]
 draft: false

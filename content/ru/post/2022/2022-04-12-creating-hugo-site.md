@@ -2,7 +2,7 @@
 title: "Создание сайта на Hugo"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-12T20:49:00+03:00
-lastmod: 2023-09-28T16:26:00+03:00
+lastmod: 2025-10-02T15:57:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -94,13 +94,6 @@ slug: "creating-hugo-site"
     ~/work/blog/blog
     ```
 -   Структура сайта
-    ```sh
-    ls ~/work/blog/blog
-
-    archetypes  config.toml  content  data  docs  layouts  README.md  static  themes
-    ```
-
--   Каталоги:
     -   archetypes Каталог, содержащий шаблоны новых md-файлов, которые создаёт Hugo с помощью команды `hugo new`.
     -   config.toml Основной конфиг сайта
     -   content Каталог данных, из которых Hugo будет генерировать сайт

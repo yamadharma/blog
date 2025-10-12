@@ -2,7 +2,7 @@
 title: "Организация рабочего каталога"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-08-01T15:51:00+03:00
-lastmod: 2023-11-07T09:02:00+03:00
+lastmod: 2025-10-05T20:27:00+03:00
 categories: ["self-management"]
 draft: false
 slug: "organization-working-directory"
@@ -20,6 +20,7 @@ slug: "organization-working-directory"
 
 ### <span class="section-num">1.1</span> Общая информация {#общая-информация}
 
+-   [Подходы к организации структуры файлов]({{< relref "2025-10-05--approaches-organizing-file-structure" >}})
 -   Все свои рабочие материалы держу в каталоге `~/work`.
 -   Этот каталог синхронизируется на все мои компьютеры (см. [Синхронизация файлов с помощью syncthing]({{< relref "2021-08-01-synchronizing-files-syncthing" >}})).
 -   Для работ, не предназначенных для синхронизации на все компьютеры, используется каталог `~/work-local`.

@@ -29,7 +29,7 @@ def migrate_fields(content):
     modified = False
     hugoblox = data.get('hugoblox', {})
 
-    # Обработка обычных полей
+    ## Processing regular fields
     for old_field, new_path in FIELDS_MAPPING.items():
         if old_field in data:
             value = data[old_field]
@@ -43,13 +43,13 @@ def migrate_fields(content):
             del data[old_field]
             modified = True
 
-    # Обработка url_pdf и url_video
+    ## Processing url_pdf, url_video
     for url_field, link_type in [('url_pdf', 'pdf'), ('url_video', 'video')]:
         if url_field in data:
             url = data[url_field]
             links = hugoblox.get('links', [])
 
-            # Проверяем существование ссылки такого типа
+            ## Check if a link of this type exists
             if not any(link.get('type') == link_type for link in links):
                 links.append({'type': link_type, 'url': url})
                 hugoblox['links'] = links
@@ -59,7 +59,7 @@ def migrate_fields(content):
             modified = True
 
     if modified:
-        # Объединяем изменения с существующим hugoblox
+        ## Merge changes with existing hugoblox
         if 'hugoblox' in data:
             data['hugoblox'].update(hugoblox)
         else:
@@ -101,11 +101,11 @@ def process_directory(directory='content/publications/', backup=True):
         print(f" - {path}")
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Миграция полей в файлах Hugo-Blox")
+    parser = argparse.ArgumentParser(description="Migrating fields in files Hugo-Blox")
     parser.add_argument('--directory', '-d', default='content/publications/',
-                       help='Путь к каталогу с публикациями')
+                       help='Path to the publication directory')
     parser.add_argument('--no-backup', action='store_false', dest='backup',
-                       help='Отключить создание бэкапов')
+                       help='Disable backup')
 
     args = parser.parse_args()
     process_directory(args.directory, args.backup)

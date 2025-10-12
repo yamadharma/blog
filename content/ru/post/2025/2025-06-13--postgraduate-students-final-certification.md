@@ -2,7 +2,7 @@
 title: "Аспиранты. РУДН. Итоговая аттестация"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-06-13T15:17:00+03:00
-lastmod: 2025-09-25T11:18:00+03:00
+lastmod: 2025-10-02T10:54:00+03:00
 tags: ["education", "rudn"]
 categories: ["job"]
 draft: false

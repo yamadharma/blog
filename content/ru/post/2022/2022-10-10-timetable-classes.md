@@ -2,7 +2,7 @@
 title: "Расписание занятий"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-10-10T10:16:00+03:00
-lastmod: 2025-09-29T17:50:00+03:00
+lastmod: 2025-10-09T16:22:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -29,7 +29,7 @@ slug: "timetable-classes"
 ### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1</span> 2025--2026 учебный год, расписание занятий <code>[0/3]</code> {#2025-2026-учебный-год-расписание-занятий}
 
 
-#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> 2025--2026 учебный год, 1 семестр <code>[0/8]</code> {#2025-2026-учебный-год-1-семестр}
+#### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1.1</span> 2025--2026 учебный год, 1 семестр <code>[0/9]</code> {#2025-2026-учебный-год-1-семестр}
 
 <!--list-separator-->
 
@@ -41,7 +41,13 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-2. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing <code>[0/2]</code>
+2. <span class="org-todo todo TODO">TODO</span>  Спецсеминар для аспирантов
+
+    -   [Спецсеминар для аспирантов]({{< relref "2025-09-18--special-seminar-postgraduate-students" >}})
+
+<!--list-separator-->
+
+3. <span class="org-todo todo TODO">TODO</span>  Computer Skills for Scientific Writing <code>[0/2]</code>
 
     <!--list-separator-->
 
@@ -58,7 +64,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-3. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем <code>[0/2]</code>
+4. <span class="org-todo todo TODO">TODO</span>  Администрирование сетевых подсистем <code>[0/2]</code>
 
     <!--list-separator-->
 
@@ -83,7 +89,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-4. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/1]</code>
+5. <span class="org-todo todo TODO">TODO</span>  Компьютерный практикум по статистическому анализу данных <code>[0/1]</code>
 
     <!--list-separator-->
 
@@ -97,7 +103,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-5. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/2]</code>
+6. <span class="org-todo todo TODO">TODO</span>  Моделирование сетей передачи данных <code>[0/2]</code>
 
     <!--list-separator-->
 
@@ -119,7 +125,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-6. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ <code>[0/5]</code>
+7. <span class="org-todo todo TODO">TODO</span>  МОЗИиИБ <code>[0/5]</code>
 
     <!--list-separator-->
 
@@ -158,7 +164,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-7. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС <code>[0/2]</code>
+8. <span class="org-todo todo TODO">TODO</span>  Основы администрирования ОС <code>[0/2]</code>
 
     <!--list-separator-->
 
@@ -180,7 +186,7 @@ slug: "timetable-classes"
 
 <!--list-separator-->
 
-8. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии <code>[0/2]</code>
+9. <span class="org-todo todo TODO">TODO</span>  Сетевые технологии <code>[0/2]</code>
 
     <!--list-separator-->
 

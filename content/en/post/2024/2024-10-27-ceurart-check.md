@@ -2,7 +2,7 @@
 title: "CEURART document verification"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2025-09-23T20:48:00+03:00
+lastmod: 2025-10-11T14:18:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -32,6 +32,7 @@ CEURART document verification.
 
 ### <span class="section-num">2.1</span> `check-pdf-errors` {#check-pdf-errors}
 
+-   Source: <https://ceur-ws.org/check-pdf-errors>
 -   Checks pdf files.
 -   Checks for the presence of the phrase 'Creative Commons' in pdf files.
     -   This is to check if the text can be highlighted (if the document is not an image).
@@ -41,6 +42,7 @@ CEURART document verification.
 
 ### <span class="section-num">2.2</span> `check-index-errors` {#check-index-errors}
 
+-   Source: <https://ceur-ws.org/check-index-errors>
 -   Checks the `index.html` file.
 -   Rules:
     -   paper PDFs that are in the directory but not listed in `index.html`;
@@ -52,3 +54,4 @@ CEURART document verification.
 -   Repo: <https://github.com/amato-gianluca/ceur-add-pagenum>
 -   A small Python script for counting the number of pages in the PDF files linked to an index.html document (prepared for submission to CEUR-WS), and updating the CEURPAGES fields.
 -   The script does not alter the PDF files, just the `index.html`.
+-   The script depends on the `lxml` and `PyPDF2` packages.

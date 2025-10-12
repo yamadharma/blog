@@ -2,7 +2,7 @@
 title: "Quarto. Плагин minted-quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-22T15:29:00+03:00
-lastmod: 2025-09-22T15:35:00+03:00
+lastmod: 2025-10-12T19:00:00+03:00
 tags: ["programming", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -33,7 +33,23 @@ Quarto. Плагин minted-quarto.
 ## <span class="section-num">3</span> yamadharma/minted-quarto {#yamadharma-minted-quarto}
 
 -   Репозиторий: <https://github.com/yamadharma/minted-quarto>
--   Установка:
+
+
+### <span class="section-num">3.1</span> Установка {#установка}
+
+-   Quarto:
     ```shell
     quarto install --no-prompt extension yamadharma/minted-quarto
     ```
+
+
+### <span class="section-num">3.2</span> Использование {#использование}
+
+-   Добавить фильтр в заголовок:
+    ```yaml
+    ---
+    filters:
+    ​  - minted-quarto
+    ---
+    ```
+-   Рекомендуется установить его после других фильтров, использующих блоки (например, рисующих диаграммы).
