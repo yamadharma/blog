@@ -2,7 +2,7 @@
 title: "LaTeX. Пакет tabularray"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-07-13T15:57:00+03:00
-lastmod: 2025-07-13T19:36:00+03:00
+lastmod: 2025-10-22T22:29:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -19,6 +19,7 @@ LaTeX. Пакет tabularray.
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
 -   CTAN: <https://ctan.org/pkg/tabularray>
+-   Репозиторий: <https://github.com/lvjr/tabularray>
 -   Написан на LaTeX3.
 -   Напрямую использует функции LaTeX3 для разбора таблицы.
 -   Разделяет содержание и стиль таблицы.
@@ -30,7 +31,7 @@ LaTeX. Пакет tabularray.
 ## <span class="section-num">2</span> Особенности {#особенности}
 
 -   Синтаксис с ключевыми параметрами
-    -   Настройка таблиц осуществляется через ключевые параметры в среде `tblr`, что делает код более читаемым:
+    -   Настройка таблиц осуществляется через ключевые параметры в окружении `tblr`, что делает код более читаемым:
         ```tex
         \begin{tblr}{
           colspec = {rX},
@@ -90,11 +91,9 @@ LaTeX. Пакет tabularray.
 
 ```tex
 \newcommand{\introrow}{Cat & Dog \\}
-\newcommand{\outrorow}{Frog & Duck \\}
 \begin{tblr}[expand=\introrow]{cc}
   \introrow
   Crow & Hawk \\
-  \outrorow
 \end{tblr}
 ```
 

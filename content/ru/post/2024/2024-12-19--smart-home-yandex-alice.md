@@ -2,7 +2,7 @@
 title: "Умный дом. Яндекс. Алиса"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-19T12:45:00+03:00
-lastmod: 2025-08-19T12:22:00+03:00
+lastmod: 2025-10-22T14:44:00+03:00
 tags: ["appliance"]
 categories: ["life", "computer-science"]
 draft: false
@@ -62,6 +62,15 @@ slug: "smart-home-yandex-alice"
 -   Нейтрали нет.
 
 
+### <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">[2025-10-22 Ср] </span></span> Реле одноканальное (YNDX-00537) {#реле-одноканальное--yndx-00537}
+
+-   Установил для подсветки на кухне и подсветки шкафа в коридоре.
+-   Заменено реле HiTE PRO Relay-1
+-   Каждое реле по 5000₽.
+-   На кухне включалось но не выключалось.
+-   В корридоре и не включалось, и не выключалось.
+
+
 ## <span class="section-num">2</span> Оборудование {#оборудование}
 
 
@@ -78,7 +87,7 @@ slug: "smart-home-yandex-alice"
 -   Идёт в комплекте с управляющим модулем и блоком питания.
 
 
-### <span class="section-num">2.3</span> Реле {#реле}
+### <span class="section-num">2.3</span> Реле одноканальное (YNDX-00537) {#реле-одноканальное--yndx-00537}
 
 -   <https://alice.yandex.ru/store/product/relay-single>
 -   Протокол: Zigbee

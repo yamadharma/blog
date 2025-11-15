@@ -2,7 +2,7 @@
 title: "Бытовая техника"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-14T19:44:00+03:00
-lastmod: 2025-08-26T13:38:00+03:00
+lastmod: 2025-10-17T20:28:00+03:00
 tags: ["appliance"]
 categories: ["life"]
 draft: false
@@ -137,6 +137,11 @@ slug: "household-appliances"
 
 -   [NAS. Synology]({{< relref "2024-11-01-nas-synology" >}})
 -   [NAS. TerraMaster]({{< relref "2024-11-10-nas-terramaster" >}})
+
+
+### <span class="section-num">5.4</span> Дополнительное оборудование {#дополнительное-оборудование}
+
+-   [Источник бесперебойного питания]({{< relref "2025-10-17--uninterruptible-power-supply" >}})
 
 
 ## <span class="section-num">6</span> Гаджеты {#гаджеты}

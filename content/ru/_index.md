@@ -76,8 +76,10 @@ sections:
       order: desc
     design:
       ## Choose a layout view
-      # view: date-title-summary
-      view: card
+      view: date-title-summary
+      # view: card
+      # view: article-grid
+      fill_image: false
       columns: '1'
       ## Reduce spacing
       spacing:

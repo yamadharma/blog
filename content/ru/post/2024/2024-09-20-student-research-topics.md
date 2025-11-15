@@ -2,7 +2,7 @@
 title: "Темы исследований студентов"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-20T15:54:00+03:00
-lastmod: 2025-09-22T20:44:00+03:00
+lastmod: 2025-11-12T20:58:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -60,3 +60,8 @@ slug: "student-research-topics"
 ### <span class="section-num">2.4</span> Статистическое моделирование {#статистическое-моделирование}
 
 -   Статистические методы в моделировании физико-технических систем
+
+
+### <span class="section-num">2.5</span> Информационная безопасность {#информационная-безопасность}
+
+-   [Моделирование компьютерных угроз]({{< relref "2025-11-12--modeling-computer-threats" >}})

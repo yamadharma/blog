@@ -2,7 +2,7 @@
 title: "Системное администрирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-04-10T18:18:00+03:00
-lastmod: 2025-08-21T11:53:00+03:00
+lastmod: 2025-11-06T08:54:00+03:00
 tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -322,6 +322,8 @@ slug: "system-administration"
 ## <span class="section-num">12</span> Разработка {#разработка}
 
 -   [Обновление хостовых ключей ssh Bitbucket Cloud]({{< relref "2023-06-14-update-bitbucket-ssh-host-keys" >}})
+-   [Система контроля версий git]({{< relref "2020-12-07-git-cvs" >}})
+-   [Система контроля версий Jujutsu]({{< relref "2025-10-13--jujutsu-vcs" >}})
 
 
 ## <span class="section-num">13</span> Серверы приложений {#серверы-приложений}
@@ -390,6 +392,7 @@ slug: "system-administration"
 -   [VPN. L2TP+IPsec. Подключение клиента]({{< relref "2023-02-05-l2tp-ipsec-vpn-client-setup" >}})
 -   [Подключение к Cisco VPN]({{< relref "2023-08-19-cisco-vpn-client-setup" >}})
 -   [Настройка vpn-клиента Континент АП]({{< relref "2025-02-05--configuring-continent-ap-vpn-client" >}})
+-   [WireGuard VPN]({{< relref "2025-11-06--wireguard_vpn" >}})
 
 
 ### <span class="section-num">15.4</span> Железо {#железо}
@@ -453,6 +456,7 @@ slug: "system-administration"
 -   [Web консоль Cockpit]({{< relref "2022-01-18-cockpit-web-console" >}})
 -   [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})
 -   [Система мониторинга Observium]({{< relref "2023-03-02-observium-monitoring-system" >}})
+-   [IPMI. Supermicro]({{< relref "2025-10-27--ipmi_supermicro" >}})
 
 
 ## <span class="section-num">17</span> Файловые системы {#файловые-системы}

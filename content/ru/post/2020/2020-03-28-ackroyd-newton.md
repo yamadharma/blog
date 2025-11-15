@@ -8,7 +8,6 @@ summary: ""
 authors: []
 tags: ["science-people"]
 categories: ["листая-страницы"]
-slug: ackroyd-newton
 date: 2020-03-28T16:43:46+03:00
 lastmod: 2020-03-28T16:43:46+03:00
 featured: false

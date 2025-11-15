@@ -2,7 +2,7 @@
 title: "Структура исследовательской статьи по IMRAD"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-01-21T18:37:00+03:00
-lastmod: 2025-05-28T15:55:00+03:00
+lastmod: 2025-10-17T20:50:00+03:00
 tags: ["research"]
 categories: ["science"]
 draft: false
@@ -49,6 +49,7 @@ slug: "structure-imrad-research-article"
 
 -   Формируется с учётом правил формирования списка авторов.
 -   В разных областях науки эти правила могут различаться.
+-   [Порядок авторов в научной статье]({{< relref "2025-08-06--scientific-article-authors-order" >}})
 
 
 ### <span class="section-num">2.3</span> Keywords (Ключевые слова) {#keywords--ключевые-слова}
@@ -254,7 +255,22 @@ slug: "structure-imrad-research-article"
 -   Приложения обычно содержат сведения, которые необходимы для полного объяснения и понимания результатов, но слишком громоздки и сложны, чтобы их можно было включить в основной текст статьи.
 
 
-## <span class="section-num">3</span> Библиография {#библиография}
+## <span class="section-num">3</span> Видео {#видео}
+
+{{< tabs "Структура исследовательской статьи по IMRAD" >}}
+
+{{< tab "RuTube" >}}{{< rutube 8ef89f425119b2e0ede3762a1bb93030 >}}{{< /tab >}}
+
+{{< tab "Платформа" >}}{{< plvideo YMq30CrcOaKH >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239064 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 5R-u_cCPzJ8 >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
+## <span class="section-num">4</span> Библиография {#библиография}
 
 ## Литература
 

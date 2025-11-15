@@ -2,7 +2,7 @@
 title: "Темы исследований студентов. Кинетические процессы"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-22T19:13:00+03:00
-lastmod: 2025-09-25T12:03:00+03:00
+lastmod: 2025-10-16T10:25:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -302,7 +302,12 @@ slug: "student-research-topics-kinetic-processes"
     -   Использование: Прогнозирование вспышек численности насекомых в лесах.
 
 
-## <span class="section-num">6</span> Библиография {#библиография}
+## <span class="section-num">6</span> Структура работы {#структура-работы}
+
+-   На примере модели хищник--жертва.
+
+
+## <span class="section-num">7</span> Библиография {#библиография}
 
 ## Литература
 

@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2025-04-08T10:54:00+03:00
+lastmod: 2025-10-27T17:22:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -77,7 +77,7 @@ slug: "proxmox-ve-install"
     ```
 -   Разные утилиты:
     ```shell
-    apt -y install p7zip-full git
+    apt -y install 7zip git
     ```
 -   Для удалённой работы с kitty:
     ```shell
@@ -89,13 +89,13 @@ slug: "proxmox-ve-install"
 
 -   Proxmox VE Post Install
     ```shell
-    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"
     ```
 
 -   Proxmox VE Processor Microcode
     ```shell
     apt -y install iucode-tool
-    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/microcode.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/microcode.sh)"
     ```
 
 

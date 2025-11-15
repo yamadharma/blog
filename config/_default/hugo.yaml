@@ -71,6 +71,7 @@ pagination:
 
 enableEmoji: true
 enableRobotsTXT: true
+canonifyURLs: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 
@@ -111,7 +112,7 @@ markup:
     renderHooks:
       link:
         # Process backlinks hook
-        useEmbedded: auto
+        useEmbedded: fallback
     renderer:
       # Render HTML in Markdown
       unsafe: true
@@ -223,9 +224,6 @@ related:
       weight: 70.0
     - name: authors
       weight: 20.0
-
-enableRobotsTXT: true
-canonifyURLs: true
 
 mediaTypes:
   application/manifest+json:

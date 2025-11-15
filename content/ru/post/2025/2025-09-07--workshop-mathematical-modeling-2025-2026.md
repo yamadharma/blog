@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2025-10-10T21:06:00+03:00
+lastmod: 2025-11-15T21:19:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -95,7 +95,22 @@ Solving initial boundary value problems for more general parabolic equations (wi
 We review the early period of research on finite projective planes, beginning with the achievements of Hermann Wiener (1857-1939), Gino Fano (1871-1951), Federigo Enriques (1871-1946), Eliakim Moore (1862-1932), and David Hilbert (1862-1943) in pure mathematics in the late 19th century. By 1937, many examples of non-Desarguesian planes had been discovered, changing our view of the foundations of geometry. A major change occurred in 1938, when Raj Chandra Bose (1901-1987) gave finite planes a new application by establishing a nontrivial connection between Galois fields and, say, potato fields. The next step in increasing interest in finite planes was the creation of error-correcting codes. A new field of applied mathematics blossomed.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-10-23 Чт&gt; </span></span> Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами {#степанцов-м-dot-е-dot-метод-замены-дифференциальных-уравнений-клеточными-автоматами}
+#### <span class="section-num">1.2.3</span> Видео {#видео}
+
+{{< tabs "Селиверстов А. В. - Конечные проективные плоскости с 1892 года до середины XX века" >}}
+
+{{< tab "RuTube" >}}{{< rutube 054af06db4dbfb2b52daccb2bdd7b386 >}}{{< /tab >}}
+
+{{< tab "Платформа" >}}{{< plvideo 7-dwcxIsRko6 >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239061 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 21zQH5ooY-Y >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.3</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-10-23 Чт&gt; </span></span> Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами {#степанцов-м-dot-е-dot-метод-замены-дифференциальных-уравнений-клеточными-автоматами}
 
 
 #### <span class="section-num">1.3.1</span> Докладчик {#докладчик}
@@ -130,17 +145,110 @@ We review the early period of research on finite projective planes, beginning wi
 The report is the presentation of a doctoral thesis considering the method of replacing differential equations with cellular automata in a certain class of problems. When we study socio-economic dynamics, the modeled reality is essentially discrete, therefore such processes should be described using discrete models, in particular, cellular automata. On the other hand a lot of socio-economic processes are widely modeled basing on differential equations by analogy with physical processes. The report proposes a general method for replacing differential equations with cellular automata in models that can be reduced to Cauchy problems for ordinary differential equations. This allows expanding the applicability of the original models and increasing the efficiency of calculations. A theorem on the convergence of a solution obtained with a cellular automaton to a solution to the original problem is presented as well as its corollary. Report also includes presentation of approbation of this method on six mathematical models of socio-economic dynamics. Solutions are obtained to corresponding applied problems that were difficult or even impossible to obtain analytically or numerically while using classical approach.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-10-30 Чт&gt; </span></span> Хлебников Ф. Б. - Математическое моделирование электромагнитного поля зеркального коллиматора {#хлебников-ф-dot-б-dot-математическое-моделирование-электромагнитного-поля-зеркального-коллиматора}
+#### <span class="section-num">1.3.3</span> Видео {#видео}
+
+{{< tabs "Степанцов М. Е. - Метод замены дифференциальных уравнений клеточными автоматами" >}}
+
+{{< tab "RuTube" >}}{{< rutube a44d00aa7e748ef7f19aec51a574d42e >}}{{< /tab >}}
+
+{{< tab "Платформа" >}}{{< plvideo YgtwLmJxWp8j >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239066 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube ASmJR2ipr_E >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.4</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-10-30 Чт&gt; </span></span> Ермолаева А. М., Велиева Т. Р., Живцова А. А. - Воспроизводимые исследования при моделировании сетей {#ермолаева-а-dot-м-dot-велиева-т-dot-р-dot-живцова-а-dot-а-dot-воспроизводимые-исследования-при-моделировании-сетей}
 
 
 #### <span class="section-num">1.4.1</span> Докладчик {#докладчик}
+
+-   Ермолаева Анна Михайловна
+-   Велиева Татьяна Рефатовна
+-   Живцова Анна Александровна
+    -   кафедра теории вероятностей и кибербезопасности
+    -   Российский университет дружбы народов
+
+
+#### <span class="section-num">1.4.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/302/>
+-   Воспроизводимые исследования при моделировании сетей
+-   Ермолаева Анна Михайловна
+-   Велиева Татьяна Рефатовна
+-   Живцова Анна Александровна
+    -   кафедра теории вероятностей и кибербезопасности
+    -   Российский университет дружбы народов
+
+**Предпосылки**
+При моделировании сетей возникает проблема получения экспериментальных данных для верификации других модельных подходов.
+И даже при наличии каких-либо экспериментальных данных необходимо быть уверенным в их достоверности.
+**Цель**
+Необходимо предложить методы получения достоверных экспериментальных данных.
+**Методы**
+По своей природе сетевое оборудование есть программно-аппаратный комплекс.
+Поэтому натурная программная модель может считаться полностью эквивалентной реальному оборудования.
+И реальный эксперимент можно заменить на натурный эксперимент.
+Достоверность же натурного эксперимента будет базироваться на его воспроизводимости.
+**Результаты**
+Проведено сравнение популярных пакетов натурного сетевого моделирование.
+Проведено разделение этих пакетов по функциональности и реализуемости воспроизводимых исследований.
+**Выводы**
+Большинство программных пакетов удовлетворяет критериям воспроизводимости.
+Выбор конкретного решения зависит от нетехнических факторов: популярности и знания пакета.
+
+---
+
+-   Reproducible Research in Network Modeling
+-   Anna M. Ermolayeva
+-   Tatyana R. Velieva
+-   Anna A. Zhivtsova
+    -   Department of Probability Theory and Cybersecurity, RUDN University
+
+**Background**
+When we model networks, there is a problem of obtaining experimental data to verify other model approaches.
+And even if there are some experimental data, it is necessary to be sure of their reliability.
+**Purpose**
+It is necessary to propose methods for obtaining reliable experimental data.
+**Method**
+By its nature, network equipment is a software and hardware complex.
+Therefore, a full-scale software model can be considered completely equivalent to real equipment.
+And a real experiment can be replaced by a nature experiment.
+The reliability of a nature experiment will be based on its reproducibility.
+**Results**
+A comparison of popular nature network modeling packages was carried out.
+These packages were divided by functionality and feasibility of reproducible studies.
+**Conclusions**
+Most software packages meet the reproducibility criteria.
+The choice of a specific solution depends on non-technical factors: popularity and knowledge of the package.
+
+
+#### <span class="section-num">1.4.3</span> Видео {#видео}
+
+{{< tabs "Ермолаева А. М. и др. - Воспроизводимые исследования при моделировании сетей" >}}
+
+{{< tab "RuTube" >}}{{< rutube 09fc1fc1d3f0198e6f7c58cc1744371f >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239071 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 0s_-WH33ZyE >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.5</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-11-13 Чт&gt; </span></span> Хлебников Ф. Б. - Математическое моделирование электромагнитного поля зеркального коллиматора {#хлебников-ф-dot-б-dot-математическое-моделирование-электромагнитного-поля-зеркального-коллиматора}
+
+
+#### <span class="section-num">1.5.1</span> Докладчик {#докладчик}
 
 -   Хлебников Фёдор Борисович
     -   ведущий программист
     -   кафедра математики физического факультета МГУ им. М. В. Ломоносова
 
 
-#### <span class="section-num">1.4.2</span> Информация {#информация}
+#### <span class="section-num">1.5.2</span> Информация {#информация}
 
 -   <https://events.rudn.ru/event/301/>
 -   Математическое моделирование электромагнитного поля зеркального коллиматора
@@ -160,6 +268,19 @@ The report is the presentation of a doctoral thesis considering the method of re
 
 This paper examines a number of problems, both direct and inverse, related to the mathematical modeling of the electromagnetic field of a mirror collimator with rounded edges. Mirror collimators are used in compact range testing facilities (CATRs) to provide the measurements of electromagnetic characteristics of objects, and specially shaped rounded edges can significantly improve the field quality in the quiet zone of the collimator. This paper poses and solves a model direct problem of calculating the field characteristics in the quiet zone of ​​an extended collimator, composed of a material with constant or variable impedance. The solution to this problem allowed us to move on to inverse problems of synthesizing optimized parameters for the mirror's rounding, which produce a field with improved characteristics in the quiet zone, as well as the parameters of the absorbing material designed to counteract re-reflected lateral rays.
 Using cross-sections of extended model collimators with different parameters, it was also possible to construct a three-dimensional asymmetric mirror with rounded edges and solve the problem of distributing the reflected field in the quiet zone. It was shown that optimizing the two-dimensional mirror cross-sections used in this design significantly improves the field properties in the quiet zone of ​​the three-dimensional collimator, thereby eliminating the need to directly solve the complicated problem of synthesizing the rounded edges of a three-dimensional asymmetric collimator mirror. A pair of two-dimensional inverse problems for extended model mirrors can be solved significantly faster.
+
+
+#### <span class="section-num">1.5.3</span> Видео {#видео}
+
+{{< tabs "Хлебников Ф. Б. - Математическое моделирование электромагнитного поля зеркального коллиматора" >}}
+
+{{< tab "RuTube" >}}{{< rutube 1cbb1c2836c98959cd680429aad8368e >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239079 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube HUkLdCuLMB4 >}}{{< /tab >}}
+
+{{< /tabs >}}
 
 
 ## <span class="section-num">2</span> Семинар Математическое моделирование, 2026-1 {#семинар-математическое-моделирование-2026-1}

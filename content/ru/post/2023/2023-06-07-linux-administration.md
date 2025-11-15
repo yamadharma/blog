@@ -2,8 +2,8 @@
 title: "Администрирование Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-06-07T18:35:00+03:00
-lastmod: 2025-01-26T19:50:00+03:00
-tags: ["sysadmin", "linux"]
+lastmod: 2025-10-14T20:17:00+03:00
+tags: ["MOC", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
 slug: "linux-administration"
@@ -51,3 +51,8 @@ slug: "linux-administration"
 -   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
 -   [Установка Linux в WSL]({{< relref "2024-05-30-linux-wsl-install" >}})
 -   [Linux. Установка в kvm]({{< relref "2024-12-28--linux-installation-kvm" >}})
+
+
+## <span class="section-num">4</span> Управление программным обеспечением {#управление-программным-обеспечением}
+
+-   [Linux. Пакетные менеджеры]({{< relref "2025-10-14--linux-package-managers" >}})

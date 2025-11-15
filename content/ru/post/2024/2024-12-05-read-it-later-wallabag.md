@@ -2,7 +2,7 @@
 title: "Отложенное чтение. Wallabag"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-05T11:58:00+03:00
-lastmod: 2025-08-07T14:24:00+03:00
+lastmod: 2025-11-07T12:42:00+03:00
 tags: ["sysadmin", "read"]
 categories: ["computer-science", "self-management"]
 draft: false
@@ -84,6 +84,13 @@ slug: "read-it-later-wallabag"
     ```shell
     cleanABag -v -c credentials.json prune -d $(date -d "-3 month" +"%F") --delete
     ```
+
+
+### <span class="section-num">3.2</span> wallabag-client {#wallabag-client}
+
+-   [Wallabag. Консольный склиент. wallabag-client]({{< relref "2025-11-07--wallabag-cli-wallabag-client" >}})
+-   Репозиторий:
+-   Клиент командной строки.
 
 
 ## <span class="section-num">4</span> Установка {#установка}

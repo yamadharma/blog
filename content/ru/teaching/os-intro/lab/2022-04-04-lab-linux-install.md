@@ -2,7 +2,7 @@
 title: "Лабораторная работа Установка ОС Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-04-04T13:40:00+03:00
-lastmod: 2025-09-06T15:25:00+03:00
+lastmod: 2025-10-28T19:05:00+03:00
 tags: ["linux", "education"]
 categories: ["computer-science"]
 draft: false
@@ -43,7 +43,7 @@ menu:
 -   Для установки в виртуальную машину используется дистрибутив Linux Fedora (<https://getfedora.org>), вариант с менеджером окон _sway_ (<https://fedoraproject.org/spins/sway/>).
 -   При выполнении лабораторной работы на своей технике вам необходимо скачать необходимый образ операционной системы (<https://fedoraproject.org/spins/sway/download/index.html>).
 -   В дисплейных классах можно воспользоваться образом в каталоге `/afs/dk.sci.pfu.edu.ru/common/files/iso`.
--   Для определённости в описании будем использовать версию `Fedora-Sway-Live-x86_64-41-1.4.iso`.
+-   Для определённости в описании будем использовать версию `Fedora-Sway-Live-x86_64-43-1.6.iso`.
 
 
 ### <span class="section-num">2.2</span> Соглашения об именовании {#соглашения-об-именовании}
@@ -106,7 +106,7 @@ menu:
 -   Запустите виртуальную машину:
     ```shell
     qemu-system-x86_64 -boot menu=on -m 2048 -cpu max -smp 4 \
-        -cdrom Fedora-Sway-Live-x86_64-41-1.4.iso \
+        -cdrom Fedora-Sway-Live-x86_64-43-1.6.iso \
         -drive file=fedora-sway.qcow2,format=qcow2,if=virtio,aio=native,cache=none \
         -bios /usr/share/edk2-ovmf/OVMF_CODE.fd \
         -enable-kvm -machine q35 -device intel-iommu \
@@ -117,7 +117,7 @@ menu:
     ```
 
     -   Видео-устройств подключено на видеокарту компьютера.
--   Выберите `Start Fedora-Sway-Live 41`.
+-   Выберите `Start Fedora-Sway-Live 43`.
 -   Загрузится графический режим.
 -   Если вы запускаете из-под Sway, включите `Passthrough mode`.
 -   Также можно использовать режим захвата, переключая его по комбинации `Ctrl+Alt+g`.
@@ -264,7 +264,7 @@ menu:
             -   Перенесите установочный образ в папку `/var/tmp/имя_пользователя/iso`:
                 ```shell
                 mkdir -p "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso"
-                mv Fedora-Sway-Live-x86_64-39-1.5.iso "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso"
+                mv Fedora-Sway-Live-x86_64-43-1.6.iso "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso"
                 ```
 
 <!--list-separator-->
@@ -342,7 +342,7 @@ menu:
             ```
         -   Подключите к виртуальной машине ISO-файл:
             ```shell
-            vboxmanage storageattach "$(id -un)_os-intro" --storagectl "IDE Controller" --port 0 --device 1 --type dvddrive --medium "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso/Fedora-Sway-Live-x86_64-39-1.5.iso"
+            vboxmanage storageattach "$(id -un)_os-intro" --storagectl "IDE Controller" --port 0 --device 1 --type dvddrive --medium "$(vboxmanage list systemproperties | grep 'Default machine folder:' | cut -d':' -f2 | tr -d ' ')/iso/Fedora-Sway-Live-x86_64-43-1.6.iso"
             ```
 -   При установке на собственной технике используйте скачанный образ операционной системы Fedora.
 -   В качестве графического контроллера поставьте VMSVGA.

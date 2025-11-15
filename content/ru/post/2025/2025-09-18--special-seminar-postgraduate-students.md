@@ -2,7 +2,7 @@
 title: "Спецсеминар для аспирантов"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-18T12:48:00+03:00
-lastmod: 2025-09-24T14:24:00+03:00
+lastmod: 2025-11-12T12:18:00+03:00
 draft: false
 slug: "special-seminar-postgraduate-students"
 ---
@@ -37,14 +37,41 @@ slug: "special-seminar-postgraduate-students"
 -   Они также помогают аспирантам быть в курсе последних исследований и тенденций в своей области.
 
 
-## <span class="section-num">5</span> Материалы для занятий {#материалы-для-занятий}
+## <span class="section-num">5</span> Список тем занятий {#список-тем-занятий}
+
+
+### <span class="section-num">5.1</span> Подготовка к завершению аспирантуры {#подготовка-к-завершению-аспирантуры}
+
+
+### <span class="section-num">5.2</span> Подготовка к защите диссертации {#подготовка-к-защите-диссертации}
+
+
+### <span class="section-num">5.3</span> Структура научной статьи {#структура-научной-статьи}
+
+
+### <span class="section-num">5.4</span> Структура диссертации {#структура-диссертации}
+
+
+### <span class="section-num">5.5</span> Структура автореферата {#структура-автореферата}
+
+
+### <span class="section-num">5.6</span> Организация научной работы {#организация-научной-работы}
+
+
+### <span class="section-num">5.7</span> Начала работы в системе LaTeX {#начала-работы-в-системе-latex}
+
+
+### <span class="section-num">5.8</span> Подготовка диссертации в LaTeX {#подготовка-диссертации-в-latex}
+
+
+## <span class="section-num">6</span> Материалы для занятий {#материалы-для-занятий}
 
 -   [Поступление в аспирантуру студентов]({{< relref "2021-02-07-admission-postgraduate-students" >}})
 -   [Учебная траектория аспиранта]({{< relref "2024-06-02-educational-track-postgraduate" >}})
 -   [Аспиранты. РУДН. Итоговая аттестация]({{< relref "2025-06-13--postgraduate-students-final-certification" >}})
 
 
-## <span class="section-num">6</span> Материалы {#материалы}
+## <span class="section-num">7</span> Материалы {#материалы}
 
 -   [Rutube](https://rutube.ru/plst/1203750)
 -   [Платформа](https://plvideo.ru/playlist?list=bsKBKRI2id-G)

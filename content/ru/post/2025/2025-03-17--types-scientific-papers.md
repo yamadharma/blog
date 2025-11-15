@@ -2,7 +2,7 @@
 title: "Типы научных статей"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-17T16:36:00+03:00
-lastmod: 2025-03-17T16:49:00+03:00
+lastmod: 2025-10-21T20:23:00+03:00
 tags: ["science-writing"]
 categories: ["science"]
 draft: false
@@ -68,6 +68,7 @@ slug: "types-scientific-papers"
 ### <span class="section-num">2.7</span> Дискуссионные статьи (Perspectives/Opinions/Editorial/Letter to the Editor) {#дискуссионные-статьи--perspectives-opinions-editorial-letter-to-the-editor}
 
 -   Представляют собой субъективное мнение автора о какой-то проблеме.
+-   Обычно такие письма предполагают публикацию и служат способом влиять на общественное мнение, спорить, поддерживать позиции или корректировать информацию в издании.
 
 
 ### <span class="section-num">2.8</span> Комментарий к статье (Comments) {#комментарий-к-статье--comments}

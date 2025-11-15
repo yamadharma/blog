@@ -2,7 +2,7 @@
 title: "Квартили списка ВАК"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-05-18T20:12:00+03:00
-lastmod: 2025-07-04T18:16:00+03:00
+lastmod: 2025-10-20T17:29:00+03:00
 tags: ["education", "science-being"]
 categories: ["science"]
 draft: false
@@ -53,7 +53,7 @@ slug: "hac-list-quartiles"
 -   Российские журналы WoS/Scopus Q4, ESCI эквивалентны К2 ВАК.
 -   Зарубежные журналы WoS/Scopus Q4 эквивалентны К3 ВАК
 -   Конференции в список ВАК не входят.
--   <https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92685697002&f=21727>
+-   <https://vak.gisnauka.ru/s3-files/01cc80c69fae4988a0246a8f5e2774e7:fisgna/public/media/uploaded/news_files/95b18614-ac93-490c-9650-0b545506660c/31e23623-a6c8-41d7-8399-448ad24_qgmZMPL.pdf>
 
 
 ### <span class="section-num">2.2</span> На что влияет категорирование журналов ВАК на квартили? {#на-что-влияет-категорирование-журналов-вак-на-квартили}
@@ -63,6 +63,6 @@ slug: "hac-list-quartiles"
 
 ## <span class="section-num">3</span> Распределение журналов Перечня рецензируемых научных изданий по категориям К1, К2, К3 {#распределение-журналов-перечня-рецензируемых-научных-изданий-по-категориям-к1-к2-к3}
 
--   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-01 Пн] </span></span> <https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92685697002&f=36257> (итоговое распределение)
+-   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-01 Пн] </span></span> <https://vak.gisnauka.ru/s3-files/01cc80c69fae4988a0246a8f5e2774e7:fisgna/public/media/uploaded/news_files/95b18614-ac93-490c-9650-0b545506660c/14538a82-e232-4d0b-bd6f-e77b99baad07.pdf> (итоговое распределение)
 -   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-26 Пт] </span></span> <https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92685697002&f=21725> (итоговое рейтингование)
 -   <span class="timestamp-wrapper"><span class="timestamp">[2022-12-06 Вт] </span></span> <https://vak.minobrnauki.gov.ru/uploader/loader?type=19&name=92263438002&f=14239>
