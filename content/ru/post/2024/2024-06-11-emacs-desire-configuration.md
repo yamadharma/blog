@@ -2,7 +2,7 @@
 title: "Emacs. Desire. Конфигурация"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-11T18:55:00+03:00
-lastmod: 2025-11-15T17:16:00+03:00
+lastmod: 2025-11-16T17:44:00+03:00
 tags: ["emacs"]
 categories: ["computer-science"]
 draft: false
@@ -92,7 +92,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.3</span> Управление пакетами {#управление-пакетами}
 
--   [Emacs. Управление пакетами]({{< relref "2023-12-18-emacs-package-management" >}})
+-   [Emacs. Управление пакетами]({{< relref "../notes/public/20231218161900-emacs_управление_пакетами.md" >}})
 
 <!--listend-->
 
@@ -103,7 +103,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.3.1</span> Встроенный пакетный менеджер {#встроенный-пакетный-менеджер}
 
--   [Emacs. Управление пакетами. package]({{< relref "2025-01-25--emacs-package-management-package" >}})
+-   [Emacs. Управление пакетами. package]({{< relref "../notes/public/20250125T141900--emacs_управление_пакетами_package.md" >}})
 
 <!--listend-->
 
@@ -558,7 +558,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.7</span> Поддержка LSP {#поддержка-lsp}
 
--   [Emacs. Поддержка LSP]({{< relref "2024-01-14-emacs-lsp" >}})
+-   [Emacs. Поддержка LSP]({{< relref "../notes/public/20240114183500-emacs_поддержка_lsp.md" >}})
 
 
 #### <span class="section-num">3.7.1</span> Начало {#начало}
@@ -882,7 +882,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.9.1</span> xclip {#xclip}
 
--   [Emacs. xclip]({{< relref "2025-03-12--emacs-xclip" >}})
+-   [Emacs. xclip]({{< relref "../notes/public/20250312T142900--emacs_xclip.md" >}})
 -   Подключение:
     ```emacs-lisp
     (desire 'xclip)
@@ -1163,7 +1163,7 @@ slug: "emacs-desire-configuration"
 
         1.  tab-line
 
-            -   [Emacs. Пакет tab-line]({{< relref "2024-01-08-emacs-tab-line" >}})
+            -   [Emacs. Пакет tab-line]({{< relref "../notes/public/20240108200200-emacs_пакет_tab_line.md" >}})
             -   Поддержка `nerd-icons` в `tab-line`:
                 -   <https://github.com/lucius-martius/tab-line-nerd-icons>
             -   Пакет применяет иконки из `nerd-icons` к вкладкам `tab-line`.
@@ -1306,7 +1306,7 @@ slug: "emacs-desire-configuration"
 
 1.  centaur-tabs
 
-    -   [Emacs. Пакет Centaur tabs]({{< relref "2024-01-08-emacs-centaur-tabs" >}})
+    -   [Emacs. Пакет Centaur tabs]({{< relref "../notes/public/20240108202300-emacs_пакет_centaur_tabs.md" >}})
     -   Подключение:
         ```emacs-lisp
         ;; (desire 'centaur-tabs)
@@ -1320,7 +1320,7 @@ slug: "emacs-desire-configuration"
 
 2.  tab-bar
 
-    -   [Emacs. Пакет tab-bar]({{< relref "2025-07-14--emacs-tab-bar" >}})
+    -   [Emacs. Пакет tab-bar]({{< relref "../notes/public/20250714T131000--emacs_пакет_tab_bar.md" >}})
 
     <!--list-separator-->
 
@@ -1471,7 +1471,7 @@ slug: "emacs-desire-configuration"
 
         1.  tab-bar-lost-commands
 
-            -   [Emacs. tab-bar. Пакет tab-bar-lost-commands]({{< relref "2025-10-18--emacs-tab-bar-lost-commands" >}})
+            -   [Emacs. tab-bar. Пакет tab-bar-lost-commands]({{< relref "../notes/public/20251018T153100--emacs_tab_bar_пакет_tab_bar_lost_commands.md" >}})
             -   Файл: `packages/tab-bar/desire.ecd/tab-bar-lost-commands.ecf`
                 ```emacs-lisp
                 ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -1523,7 +1523,7 @@ slug: "emacs-desire-configuration"
 
 3.  tab-line
 
-    -   [Emacs. Пакет tab-line]({{< relref "2024-01-08-emacs-tab-line" >}})
+    -   [Emacs. Пакет tab-line]({{< relref "../notes/public/20240108200200-emacs_пакет_tab_line.md" >}})
 
     <!--list-separator-->
 
@@ -1602,7 +1602,7 @@ slug: "emacs-desire-configuration"
 
     5.  Intuitive Tabs in Emacs
 
-        -   [Emacs. tab-line. Пакет intuitive-tab-line-mode]({{< relref "2025-10-16--emacs-intuitive-tab-line-mode" >}})
+        -   [Emacs. tab-line. Пакет intuitive-tab-line-mode]({{< relref "../notes/public/20251016T091900--emacs_tab_line_пакет_intuitive_tab_line_mode.md" >}})
         -   Файл: `packages/tab-line/desire.ecd/intuitive-tab-line.ecf`
             ```emacs-lisp
             ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -1636,7 +1636,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.10.3</span> Нумерация строк {#нумерация-строк}
 
--   [Emacs. Нумерация строк]({{< relref "2024-11-28-emacs-line-numbering" >}})
+-   [Emacs. Нумерация строк]({{< relref "../notes/public/20241128195000-emacs_нумерация_строк.md" >}})
 
 <!--list-separator-->
 
@@ -1764,7 +1764,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.10.5</span> shrface : функциональность Org-mode для eww {#shrface-функциональность-org-mode-для-eww}
 
--   [Emacs. Пакет shrface]({{< relref "2025-06-05--emacs-shrface" >}})
+-   [Emacs. Пакет shrface]({{< relref "../notes/public/20250605T150200--emacs_пакет_shrface.md" >}})
 
 <!--list-separator-->
 
@@ -2421,7 +2421,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.13.1</span> transient {#transient}
 
--   [Emacs. Пакет transient]({{< relref "2024-10-26-emacs-transient" >}})
+-   [Emacs. Пакет transient]({{< relref "../notes/public/20241026172400-emacs_пакет_transient.md" >}})
 -   Подключение:
     ```emacs-lisp
     ;;;;; Transient
@@ -2465,7 +2465,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.13.2</span> Casual Suite {#casual-suite}
 
--   [Emacs. Пакет casual]({{< relref "2024-10-26-emacs-casual" >}})
+-   [Emacs. Пакет casual]({{< relref "../notes/public/20241026173500-emacs_пакет_casual.md" >}})
 
 <!--list-separator-->
 
@@ -2710,7 +2710,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.15</span> Навигация по окнам {#навигация-по-окнам}
 
--   [Emacs. Окна]({{< relref "2024-10-15-emacs-window" >}})
+-   [Emacs. Окна]({{< relref "../notes/public/20241015155800-emacs_окна.md" >}})
 
 
 #### <span class="section-num">3.15.1</span> Начало {#начало}
@@ -2727,7 +2727,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.15.2</span> Windmove {#windmove}
 
--   [Emacs. Окна. Windmove]({{< relref "2024-10-20-emacs-window-windmove" >}})
+-   [Emacs. Окна. Windmove]({{< relref "../notes/public/20241020190800-emacs_окна_windmove.md" >}})
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     (desire 'windmove)
@@ -2803,7 +2803,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.16.1</span> origami {#origami}
 
--   [Emacs. Сворачивание (folding)]({{< relref "2025-01-28--emacs-folding" >}})
+-   [Emacs. Сворачивание (folding)]({{< relref "../notes/public/20250128T111800--emacs_сворачивание_folding.md" >}})
 -   Подключение:
     ```emacs-lisp
     ;; (desire 'origami)
@@ -2847,7 +2847,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.16.2</span> outli {#outli}
 
--   [Emacs. Пакет outli]({{< relref "2025-01-28--emacs-outli" >}})
+-   [Emacs. Пакет outli]({{< relref "../notes/public/20250128T121000--emacs_пакет_outli.md" >}})
 -   Подключение:
     ```emacs-lisp
     (desire 'outli :recipe '(:fetcher github :repo "jdtsmith/outli" :branch "main"))
@@ -3015,7 +3015,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.17.1</span> Apheleia {#apheleia}
 
--   [Emacs. Автоформатирование. apheleia]({{< relref "2025-11-15--emacs-autoformatting-apheleia" >}})
+-   [Emacs. Автоформатирование. apheleia]({{< relref "../notes/public/20251115T135400--emacs_автоформатирование_apheleia.md" >}})
 
 <!--list-separator-->
 
@@ -3063,7 +3063,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.17.2</span> Форматер tex-fmt {#форматер-tex-fmt}
 
--   [Форматирование. LaTeX. tex-fmt]({{< relref "2025-11-15--formatting-latex-tex-fmt" >}})
+-   [Форматирование. LaTeX. tex-fmt]({{< relref "../notes/public/20251115T140500--форматирование_latex_tex_fmt.md" >}})
 -   Файл: `packages/apheleia/desire.ecd/tex-fmt.ecf`
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -3090,7 +3090,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.17.3</span> Пробелы {#пробелы}
 
--   [Emacs. Пробелы]({{< relref "2025-04-11--emacs-space" >}})
+-   [Emacs. Пробелы]({{< relref "../notes/public/20250411T193500--emacs_пробелы.md" >}})
 -   Секция:
     ```emacs-lisp
     ;;;; Spaces
@@ -3353,7 +3353,7 @@ slug: "emacs-desire-configuration"
 1.  Расположение файлов
 
     -   Персональные настройки расположения файлов.
-    -   [Организация рабочего каталога]({{< relref "2021-08-01-organization-working-directory" >}})
+    -   [Организация рабочего каталога]({{< relref "../notes/public/20210801155100-организация_рабочего_каталога.md" >}})
         ```emacs-lisp
         ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
         ;;;
@@ -3527,7 +3527,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.23.3</span> move-text {#move-text}
 
--   [Emacs. Работа с текстом]({{< relref "2025-01-27--emacs-working-text" >}})
+-   [Emacs. Работа с текстом]({{< relref "../notes/public/20250127T211000--emacs_работа_с_текстом.md" >}})
 -   Позволяет перемещать строки текста.
 -   Подключение:
     ```emacs-lisp
@@ -3648,7 +3648,7 @@ slug: "emacs-desire-configuration"
 
     1.  lsp-mode
 
-        -   [Emacs. LSP для Markdown]({{< relref "2025-08-11--emacs-lsp-markdown" >}})
+        -   [Emacs. LSP для Markdown]({{< relref "../notes/public/20250811T135900--emacs_lsp_для_markdown.md" >}})
         -   Файл: `packages/markdown-mode/lsp-mode.ecf`
             ```emacs-lisp
             ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -3670,7 +3670,7 @@ slug: "emacs-desire-configuration"
 
     2.  eglot
 
-        -   [Emacs. LSP для Markdown]({{< relref "2025-08-11--emacs-lsp-markdown" >}})
+        -   [Emacs. LSP для Markdown]({{< relref "../notes/public/20250811T135900--emacs_lsp_для_markdown.md" >}})
         -   Файл: `packages/markdown-mode/eglot.ecf`
             ```emacs-lisp
             ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -3693,7 +3693,7 @@ slug: "emacs-desire-configuration"
 
 1.  Оглавление pdf
 
-    -   [Emacs. Пакет doc-toc]({{< relref "2025-05-10--emacs-package-doc-toc" >}})
+    -   [Emacs. Пакет doc-toc]({{< relref "../notes/public/20250510T141500--emacs_пакет_doc_toc.md" >}})
     -   Подключение:
         ```emacs-lisp
         (desire 'doc-toc)
@@ -3741,7 +3741,7 @@ slug: "emacs-desire-configuration"
 
 2.  Метаданные pdf
 
-    -   [Emacs. Пакет pdf-meta-edit]({{< relref "2025-06-15--emacs-pdf-meta-edit" >}})
+    -   [Emacs. Пакет pdf-meta-edit]({{< relref "../notes/public/20250615T193100--emacs_пакет_pdf_meta_edit.md" >}})
     -   Подключение:
         ```emacs-lisp
         (desire 'pdf-meta-edit)
@@ -3873,7 +3873,7 @@ slug: "emacs-desire-configuration"
 
     1.  lsp-mode
 
-        -   [Emacs. LSP для Markdown]({{< relref "2025-08-11--emacs-lsp-markdown" >}})
+        -   [Emacs. LSP для Markdown]({{< relref "../notes/public/20250811T135900--emacs_lsp_для_markdown.md" >}})
         -   Файл: `packages/quarto-mode/lsp-mode.ecf`
             ```emacs-lisp
             ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -3895,7 +3895,7 @@ slug: "emacs-desire-configuration"
 
     2.  eglot
 
-        -   [Emacs. LSP для Markdown]({{< relref "2025-08-11--emacs-lsp-markdown" >}})
+        -   [Emacs. LSP для Markdown]({{< relref "../notes/public/20250811T135900--emacs_lsp_для_markdown.md" >}})
         -   Файл: `packages/markdown-mode/eglot.ecf`
             ```emacs-lisp
             ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -3914,7 +3914,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.23.9</span> calibredb {#calibredb}
 
--   Клиент для Calibre (см. [Каталогизатор книг Calibre]({{< relref "2025-02-04--calibre-book-cataloger" >}})).
+-   Клиент для Calibre (см. [Каталогизатор книг Calibre]({{< relref "../notes/public/20250204T190900--каталогизатор_книг_calibre.md" >}})).
 -   <https://github.com/chenyanming/calibredb.el>
 -   Подключение:
     ```emacs-lisp
@@ -4029,7 +4029,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.24.1</span> pomm {#pomm}
 
--   [Emacs. Метод pomodoro]({{< relref "2025-01-16--emacs-pomodoro-method" >}})
+-   [Emacs. Метод pomodoro]({{< relref "../notes/public/20250116T173000--emacs_метод_pomodoro.md" >}})
 -   Подключение:
     ```emacs-lisp
     (desire 'pomm)
@@ -4226,7 +4226,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.26</span> Org-mode {#org-mode}
 
--   [Org-mode]({{< relref "2021-10-14-org-mode" >}})
+-   [Org-mode]({{< relref "../notes/public/20211014181100-org_mode.md" >}})
 -   Конфигурация для `org-mode`:
     ```emacs-lisp
     ;;;; Org-mode
@@ -4239,7 +4239,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.26.1</span> Babel {#babel}
 
--   [Emacs. Org Babel]({{< relref "2022-10-15-emacs-org-babel" >}})
+-   [Emacs. Org Babel]({{< relref "../notes/public/20221015212100-emacs_org_babel.md" >}})
 -   Общие настройки babel:
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -4658,7 +4658,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.26.7</span> org-gtd {#org-gtd}
 
--   [Emacs. Пакеты. Org-gtd]({{< relref "2023-07-31-emacs-packages-org-gtd" >}})
+-   [Emacs. Пакеты. Org-gtd]({{< relref "../notes/public/20230731182400-emacs_пакеты_org_gtd.md" >}})
 -   Подключение для загрузки:
     ```emacs-lisp
     ;;; GTD
@@ -4687,7 +4687,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.26.9</span> org-download {#org-download}
 
--   [Emacs. Пакет org-download]({{< relref "2025-05-19--emacs-org-download" >}})
+-   [Emacs. Пакет org-download]({{< relref "../notes/public/20250519T154900--emacs_пакет_org_download.md" >}})
 -   Объявление пакета:
     ```emacs-lisp
     (desire 'org-download)
@@ -4826,7 +4826,7 @@ slug: "emacs-desire-configuration"
 #### <span class="section-num">3.26.10</span> org-mode {#org-mode}
 
 -   Собственно org-mode.
--   [Org-mode]({{< relref "2021-10-14-org-mode" >}})
+-   [Org-mode]({{< relref "../notes/public/20211014181100-org_mode.md" >}})
 -   Подключение:
     ```emacs-lisp
     (desire 'org)
@@ -4947,7 +4947,7 @@ slug: "emacs-desire-configuration"
     ;; (advice-add 'org-export-output-file-name :around #'org-export-output-file-name-modified)
     ```
 
-    -   [Org-mode. Экспорт ссылок на видео в Hugo]({{< relref "2025-07-03--org-mode-video-export-hugo" >}})
+    -   [Org-mode. Экспорт ссылок на видео в Hugo]({{< relref "../notes/public/20250703T203000--org_mode_экспорт_ссылок_на_видео_в_hugo.md" >}})
 
     <!--listend-->
 
@@ -5024,7 +5024,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.26.11</span> Предпросмотр LaTeX {#предпросмотр-latex}
 
--   [Org-mode. Предпросмотр TeX]({{< relref "2024-01-06-org-mode-latex-preview" >}})
+-   [Org-mode. Предпросмотр TeX]({{< relref "../notes/public/20240106193800-org_mode_предпросмотр_tex.md" >}})
     ```emacs-lisp
     ;;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
     ;;; Previewing LaTeX fragments
@@ -5122,7 +5122,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.27</span> Заметочники {#заметочники}
 
--   [Emacs. Персональная база знаний]({{< relref "2023-11-07-emacs-personal-knowledge-base" >}})
+-   [Emacs. Персональная база знаний]({{< relref "../notes/public/20231107155400-emacs_персональная_база_знании.md" >}})
 -   Разные заметочники:
     ```emacs-lisp
     ;;; Notes {{{
@@ -5347,7 +5347,7 @@ slug: "emacs-desire-configuration"
 
 5.  org-daily-reflection
 
-    -   [Emacs. Пакет org-daily-reflection]({{< relref "2025-06-06--emacs-org-daily-reflection" >}})
+    -   [Emacs. Пакет org-daily-reflection]({{< relref "../notes/public/20250606T204800--emacs_пакет_org_daily_reflection.md" >}})
     -   Загрузка.
         ```emacs-lisp
         ;; -*- mode: emacs-lisp; lexical-binding: t; coding: utf-8-unix; -*-
@@ -5385,7 +5385,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.28.1</span> Диаграммы Ганта {#диаграммы-ганта}
 
--   [Emacs. Диаграммы Ганта]({{< relref "2024-12-10-emacs-gantt-charts" >}})
+-   [Emacs. Диаграммы Ганта]({{< relref "../notes/public/20241210170100-emacs_диаграммы_ганта.md" >}})
 
 <!--list-separator-->
 
@@ -5459,6 +5459,202 @@ slug: "emacs-desire-configuration"
         (desire 'ox-taskjuggler :pkgman 'straight :recipe '(:type git :host github :repo "h-oll/ox-taskjuggler" :branch "master" :files ("lisp/*")))
         (require 'ox-taskjuggler)
 
+        ;;;; Report width
+
+        (setopt org-taskjuggler-default-reports
+          '("textreport report \"Plan\" {
+          formats html
+          header '== %title =='
+
+          center -8<-
+            [#Plan Plan] | [#Resource_Allocation Resource Allocation]
+            ----
+            === Plan ===
+            <[report id=\"plan\"]>
+            ----
+            === Resource Allocation ===
+            <[report id=\"resourceGraph\"]>
+          ->8-
+        }
+
+        # A traditional Gantt chart with a project overview.
+        taskreport plan \"\" {
+          headline \"Project Plan\"
+          columns bsi, name, start, end, effort, chart { width 1000 }
+          loadunit shortauto
+          hideresource 1
+        }
+
+        # A graph showing resource allocation. It identifies whether each
+        # resource is under- or over-allocated for.
+        resourcereport resourceGraph \"\" {
+          headline \"Resource Allocation Graph\"
+          columns no, name, effort, weekly { width 1000 }
+          loadunit shortauto
+          hidetask ~(isleaf() & isleaf_())
+          sorttasks plan.start.up
+        }"))
+
+        ;;;; Some tweaks
+        (setopt org-taskjuggler-default-project-duration 999)
+        (setopt org-taskjuggler-valid-task-attributes
+                '(account start note duration endbuffer endcredit end
+                          flags journalentry length limits maxend maxstart minend
+                          minstart period reference responsible scheduling
+                          startbuffer startcredit statusnote chargeset charge booking))
+
+
+
+        ;;;; precedes
+        (defun org-taskjuggler-resolve-precedes (task info)
+          "Return a list of all tasks TASK precedes on.
+        TASK is a headline.  INFO is a plist used as a communication
+        channel."
+          (let ((precs-ids
+                 ;; Get all dependencies specified in BLOCKER and PRECEDES task
+                 ;; properties.  Clean options from them.
+                 (let ((precs (concat (org-element-property :BLOCKER task)
+                                     (org-element-property :PRECEDES task))))
+                   (and precs
+                        (split-string (replace-regexp-in-string "{.*?}" "" precs)
+                                      "[ ,]* +"))))
+                precedes)
+            (when precs-ids
+              ;; Find tasks with :task_id: property matching id in PRECS-IDS.
+              ;; Add them to PRECEDES.
+              (let* ((project (org-taskjuggler-get-project info))
+                     (tasks (if org-taskjuggler-keep-project-as-task project
+                              (org-element-contents project))))
+                (setq precedes
+                      (org-element-map tasks 'headline
+                        (lambda (task)
+                          (let ((task-id (or (org-element-property :TASK_ID task)
+                                             (org-element-property :ID task))))
+                            (and task-id (member task-id precs-ids) task)))
+                        info)))
+              ;; Check BLOCKER and PRECEDES properties.  If "previous-sibling"
+              ;; belongs to PRECS-ID, add it to PRECEDES.
+              ;; (when (and (member-ignore-case "previous-sibling" precs-ids)
+              ;;            (not (org-export-first-sibling-p task info)))
+              ;;   (let ((prev (org-export-get-previous-element task info)))
+              ;;     (and (not (memq prev precedes)) (push prev precedes))))
+              )
+            ;; Check ORDERED status of parent.
+            ;; (let ((parent (org-export-get-parent task)))
+            ;;   (when (and parent
+            ;;              (org-element-property :ORDERED parent)
+            ;;              (not (org-export-first-sibling-p task info)))
+            ;;     (push (org-export-get-previous-element task info) precedes)))
+            ;; Return dependencies.
+            precedes))
+
+        (defun org-taskjuggler-format-precedes (precedes task info)
+          "Format PRECEDES to match TaskJuggler syntax.
+        PRECEDES is list of precedes for TASK, as returned by
+        `org-taskjuggler-resolve-depedencies'.  TASK is a headline.
+        INFO is a plist used as a communication channel.  Return value
+        doesn't include leading \"precedes\"."
+          (let* ((dep-str (concat (org-element-property :BLOCKER task)
+                                  " "
+                                  (org-element-property :PRECEDES task)))
+                 (get-path
+                  (lambda (dep)
+                    ;; Return path to DEP relatively to TASK.
+                    (let ((parent (org-export-get-parent task))
+                          (exclamations 1)
+                          (option
+                           (let ((id (org-element-property :TASK_ID dep)))
+                             (and id
+                                  (string-match (concat id " +\\({.*?}\\)") dep-str)
+                                  (match-string-no-properties 1 dep-str))))
+                          path)
+                      ;; Compute number of exclamation marks by looking for the
+                      ;; common ancestor between TASK and DEP.
+                      (while (not (org-element-map parent 'headline
+                                  (lambda (hl) (eq hl dep))))
+                        (cl-incf exclamations)
+                        (setq parent (org-export-get-parent parent)))
+                      ;; Build path from DEP to PARENT.
+                      (while (not (eq parent dep))
+                        (push (org-taskjuggler-get-id dep info) path)
+                        (setq dep (org-export-get-parent dep)))
+                      ;; Return full path.  Add dependency options, if any.
+                      (concat (make-string exclamations ?!)
+                              (mapconcat 'identity path ".")
+                              (and option (concat " " option)))))))
+            ;; Return precedes string, without the leading "precedes".
+            (mapconcat (lambda (dep) (funcall get-path dep)) precedes ", ")))
+
+        (defun org-taskjuggler--build-task (task info)
+          "Return a task declaration.
+
+        TASK is a headline.  INFO is a plist used as a communication
+        channel.
+
+        All valid attributes from TASK are inserted.  If TASK defines
+        a property \"task_id\" it will be used as the id for this task.
+        Otherwise it will use the ID property.  If neither is defined
+        a unique id will be associated to it."
+          (let* ((allocate (org-element-property :ALLOCATE task))
+                 (complete
+                  (if (eq (org-element-property :todo-type task) 'done) "100"
+                    (org-element-property :COMPLETE task)))
+                 (depends (org-taskjuggler-resolve-dependencies task info))
+                 (precedes (org-taskjuggler-resolve-precedes task info))
+                 (effort (let ((property
+                                (intern (concat ":" (upcase org-effort-property)))))
+                           (org-element-property property task)))
+                 (milestone
+                  (or (org-element-property :MILESTONE task)
+                      (not (or (org-element-map (org-element-contents task) 'headline
+                                 'identity info t)  ; Has task any child?
+                               effort
+                               (org-element-property :LENGTH task)
+                               (org-element-property :DURATION task)
+                               (and (org-taskjuggler-get-start task)
+                                    (org-taskjuggler-get-end task))
+                               (org-element-property :PERIOD task)))))
+                 (priority
+                  (let ((pri (org-element-property :priority task)))
+                    (and pri
+                         (max 1 (/ (* 1000 (- org-priority-lowest pri))
+                                   (- org-priority-lowest org-priority-highest)))))))
+            (concat
+             ;; Opening task.
+             (format "task %s \"%s\" {\n"
+                     (org-taskjuggler-get-id task info)
+                     (org-taskjuggler-get-name task))
+             ;; Add default attributes.
+             (and depends
+                  (format "  depends %s\n"
+                          (org-taskjuggler-format-dependencies depends task info)))
+             (and precedes
+                  (format "  precedes %s\n"
+                          (org-taskjuggler-format-precedes precedes task info)))
+             (and allocate
+                  (format "  purge %s\n  allocate %s\n"
+                          ;; Compatibility for previous TaskJuggler versions.
+                          (if (>= org-taskjuggler-target-version 3.0) "allocate"
+                            "allocations")
+                          allocate))
+             (and complete (format "  complete %s\n" complete))
+             (and effort (format "  effort %s\n" effort))
+             (and priority (format "  priority %s\n" priority))
+             (and milestone "  milestone\n")
+             ;; Add other valid attributes.
+             (org-taskjuggler--indent-string
+              (org-taskjuggler--build-attributes
+               task org-taskjuggler-valid-task-attributes))
+             ;; Add inner tasks.
+             (org-taskjuggler--indent-string
+              (mapconcat 'identity
+                         (org-element-map (org-element-contents task) 'headline
+                           (lambda (hl) (org-taskjuggler--build-task hl info))
+                           info nil 'headline)
+                         ""))
+             ;; Closing task.
+             "}\n")))
+
         ;;;
         ```
         <div class="src-block-caption">
@@ -5520,7 +5716,7 @@ slug: "emacs-desire-configuration"
 
 1.  one-tab-per-project
 
-    -   [Emacs. Пакет otpp]({{< relref "2025-02-03--emacs-otpp" >}})
+    -   [Emacs. Пакет otpp]({{< relref "../notes/public/20250203T195700--emacs_пакет_otpp.md" >}})
     -   Автоматическое создание вкладки для каждого проекта, обеспечивающее управление рабочим пространством на основе панели вкладок для Emacs.
     -   <https://github.com/abougouffa/one-tab-per-project>
     -   Подключение пакета:
@@ -6091,7 +6287,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.36.1</span> Pocket reader {#pocket-reader}
 
--   [Emacs. Pocket reader]({{< relref "2023-09-06-emacs_pocket_reader" >}})
+-   [Emacs. Pocket reader]({{< relref "../notes/public/20230906155200-emacs_pocket_reader.md" >}})
 
 <!--listend-->
 
@@ -6208,7 +6404,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.36.3</span> Elfeed {#elfeed}
 
--   [Emacs. Чтение rss. Elfeed]({{< relref "2025-06-02--emacs-rss-elfeed" >}})
+-   [Emacs. Чтение rss. Elfeed]({{< relref "../notes/public/20250602T154400--emacs_чтение_rss_elfeed.md" >}})
     Объявление:
     ```emacs-lisp
     (desire 'elfeed)
@@ -6470,7 +6666,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.38.2</span> Пакет csv-mode {#пакет-csv-mode}
 
--   [Emacs. cvs-mode]({{< relref "2024-09-04-emacs-cvs-mode" >}})
+-   [Emacs. cvs-mode]({{< relref "../notes/public/20240904111600-emacs_cvs_mode.md" >}})
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     ;;; csv-mode
@@ -6971,7 +7167,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.39</span> Редактирование текста в броузере {#редактирование-текста-в-броузере}
 
--   [Emacs. Редактирование текста в броузере]({{< relref "2024-08-28-emacs-edit-text-area-browser" >}})
+-   [Emacs. Редактирование текста в броузере]({{< relref "../notes/public/20240828210100-emacs_редактирование_текста_в_броузере.md" >}})
 
 
 #### <span class="section-num">3.39.1</span> Начало {#начало}
@@ -7052,7 +7248,7 @@ slug: "emacs-desire-configuration"
 
 ### <span class="section-num">3.40</span> Навигация по файлам {#навигация-по-файлам}
 
--   [Emacs. Просмотр каталогов]({{< relref "2021-10-03-emacs-directory-browsing" >}})
+-   [Emacs. Просмотр каталогов]({{< relref "../notes/public/20211003202500-emacs_просмотр_каталогов.md" >}})
 
 
 #### <span class="section-num">3.40.1</span> dired {#dired}
@@ -7096,7 +7292,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.40.2</span> Neotree {#neotree}
 
--   [Emacs. Neotree]({{< relref "2022-03-23-emacs-neotree" >}})
+-   [Emacs. Neotree]({{< relref "../notes/public/20220323185200-emacs_neotree.md" >}})
 -   Файл `rc.packages.el`:
     ```emacs-lisp
     ;; (desire 'neotree)
@@ -7105,7 +7301,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.40.3</span> Treemacs {#treemacs}
 
--   [Emacs. Пакет treemacs]({{< relref "2025-01-20--emacs-treemacs" >}})
+-   [Emacs. Пакет treemacs]({{< relref "../notes/public/20250120T090900--emacs_пакет_treemacs.md" >}})
 
 <!--list-separator-->
 
@@ -7464,7 +7660,7 @@ slug: "emacs-desire-configuration"
 
 #### <span class="section-num">3.43.1</span> Шрифты {#шрифты}
 
--   [Emacs. Шрифты]({{< relref "2025-04-01--emacs-fonts" >}})
+-   [Emacs. Шрифты]({{< relref "../notes/public/20250401T150400--emacs_шрифты.md" >}})
 -   Раздел:
     ```emacs-lisp
     ;;;;; Fonts
@@ -7970,7 +8166,7 @@ slug: "emacs-desire-configuration"
 
 1.  Modus-themes
 
-    -   [Emacs. Темы. Modus-themes]({{< relref "2023-02-15-emacs-themes-modus-themes" >}})
+    -   [Emacs. Темы. Modus-themes]({{< relref "../notes/public/20230215172600-emacs_темы_modus_themes.md" >}})
     -   Подключаем темы в файле `rc.packages.el`:
         ```emacs-lisp
         (desire 'modus-themes)
@@ -7980,7 +8176,7 @@ slug: "emacs-desire-configuration"
 
 2.  Ef-themes
 
-    -   [Emacs. Темы. Ef-themes]({{< relref "2023-06-13-emacs-themes-ef-themes" >}})
+    -   [Emacs. Темы. Ef-themes]({{< relref "../notes/public/20230613153800-emacs_темы_ef_themes.md" >}})
     -   Подключаем темы в файле `rc.packages.el`:
         ```emacs-lisp
         ;; (desire 'ef-themes)
