@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2025-11-16T21:30:00+03:00
+lastmod: 2025-11-16T21:33:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -191,14 +191,15 @@ slug: "hugo-template-for-scientists"
     ```shell
     cd content
     grep -r 'page_type:' *
-    find . -iname "_index.md" -exec sed -ie 's/page_type: post/page_type: blog/g' '{}' \;
+    find . -iname "_index.md" -exec sed -i -e 's/page_type: post/page_type: blog/g' '{}' \;
     find -iname '_index.mde' -delete
     cd ru
     git mv post blog
     cd en
     git mv post blog
-    find . -iname "*.org" -exec sed -ie "s:ru/post/:ru/blog/:g" '{}' \;
-    find . -iname "*.org" -exec sed -ie "s:en/post/:en/blog/:g" '{}' \;
+    find . -iname "*.org" -exec sed -i -e "s:ru/post/:ru/blog/:g" '{}' \;
+    find . -iname "*.org" -exec sed -i -e "s:en/post/:en/blog/:g" '{}' \;
+    find . -iname "*.orge" -delete
     ```
 
 
