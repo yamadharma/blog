@@ -9,7 +9,7 @@ printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 # Build the project.
 hugo --minify
 
-npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
+# npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
 
 # Go To Public folder
 cd public

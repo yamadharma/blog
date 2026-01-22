@@ -2,7 +2,7 @@
 title: "Quarto. Подключение файлов"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-11-19T21:15:00+03:00
-lastmod: 2025-11-19T21:26:00+03:00
+lastmod: 2026-01-22T21:07:00+03:00
 tags: ["markdown"]
 categories: ["computer-science"]
 draft: false
@@ -32,7 +32,7 @@ Quarto. Подключение файлов.
 <!--listend-->
 
 ```markdown
-{{< include путь_к_файлу >}}
+{{</* include путь_к_файлу */>}}
 ```
 
 -   Где `путь_к_файлу` --- это путь к Markdown-файлу, который вы хотите включить.
@@ -47,7 +47,7 @@ Quarto. Подключение файлов.
 ### <span class="section-num">3.1</span> Включение файла из текущей директории {#включение-файла-из-текущей-директории}
 
 ```markdown
-{{< include src.md >}}
+{{</* include src.md */>}}
 ```
 
 -   Этот код включит содержимое файла `src.md`, который находится в той же папке, что и ваш основной документ.
@@ -56,7 +56,7 @@ Quarto. Подключение файлов.
 ### <span class="section-num">3.2</span> Включение файла из поддиректории {#включение-файла-из-поддиректории}
 
 ```markdown
-{{< include subfolder/another_src.md >}}
+{{</* include subfolder/another_src.md */>}}
 ```
 
 -   Будет включён файл `another_src.md` из поддиректории `subfolder`.
@@ -70,10 +70,10 @@ Quarto. Подключение файлов.
 
 ```markdown
 ## Раздел 1
-{{< include intro.md >}}
+{{</* include intro.md */>}}
 ## Раздел 2
-{{< include sections/part1.md >}}
-{{< include sections/part2.md >}}
+{{</* include sections/part1.md */>}}
+{{</* include sections/part2.md */>}}
 ```
 
 

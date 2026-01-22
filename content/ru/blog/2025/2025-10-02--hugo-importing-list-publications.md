@@ -18,7 +18,7 @@ Hugo. Сайт научника. Импорт списка публикаций.
 
 ## <span class="section-num">1</span> Программа для импорта {#программа-для-импорта}
 
--   [Hugo. Шаблон для научных работников. Библиография]({{< relref "20250108T203500--hugo_шаблон_для_научных_работников_библиография.md" >}})
+-   [Hugo. Шаблон для научных работников. Библиография]({{< relref "2025-01-08--hugo-template-for-scientists-bibliography" >}})
 -   Используется пакет `academic`.
 -   PyPi: <https://pypi.org/project/academic/>
 -   Репозиторий: <https://github.com/BuildLore/academic-file-converter>

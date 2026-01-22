@@ -12,7 +12,6 @@ date: 2020-03-30T15:18:29+03:00
 lastmod: 2020-03-30T15:18:29+03:00
 featured: false
 draft: false
-slug: sidorov-holms
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

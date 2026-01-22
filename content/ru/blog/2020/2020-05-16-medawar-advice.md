@@ -12,7 +12,6 @@ date: 2020-05-16T14:32:16+03:00
 lastmod: 2020-05-16T14:32:16+03:00
 featured: false
 draft: false
-slug: medawar-advice
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

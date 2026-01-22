@@ -2,7 +2,7 @@
 title: "Hugo. HugoBlox. Обновление шаблонов"
 author: ["Dmitry S. Kulyabov"]
 date: 2026-01-21T21:54:00+03:00
-lastmod: 2026-01-22T20:40:00+03:00
+lastmod: 2026-01-22T21:24:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -123,7 +123,7 @@ Hugo. HugoBlox. Обновление шаблонов.
 
 #### <span class="section-num">3.2.2</span> Публикации типа book {#публикации-типа-book}
 
--   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
+-   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
 -   Тип публикации `book` отсутствует.
 -   Вместо него следует использовать тип `docs`:
     ```yaml
@@ -151,6 +151,7 @@ Hugo. HugoBlox. Обновление шаблонов.
 
 ### <span class="section-num">4.1</span> Общая информация {#общая-информация}
 
+-   Меняются именования каталогов.
 -   Рекомендуется использовать фиксированные названия каталогов.
 -   В Hugo Blox стандартизированы типы контента:
 
@@ -282,7 +283,7 @@ chmod +x migrate-content-types.sh
 #### <span class="section-num">4.4.3</span> Обновите ссылки на `page_type` в файлах контента {#обновите-ссылки-на-page-type-в-файлах-контента}
 
 -   Искать `page_type:` в файлах Markdown
--   Обновлять `page_type: post` к `page_type: blog`
+-   Обновлять `page_type: post` → `page_type: blog`
 -   И так далее для других типов контента.
 
 

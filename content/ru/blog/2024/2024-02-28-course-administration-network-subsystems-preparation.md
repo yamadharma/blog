@@ -2,7 +2,7 @@
 title: "Подготовка курса Администрирование сетевых подсистем"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-02-28T09:41:00+03:00
-lastmod: 2025-08-28T20:02:00+03:00
+lastmod: 2026-01-22T21:23:00+03:00
 tags: ["sysadmin", "education"]
 categories: ["science", "computer-science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "course-administration-network-subsystems-preparation"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   [Курс Администрирование сетевых подсистем]({{< relref "teaching/net-os-admin" >}})
+-   [Курс Администрирование сетевых подсистем]({{< relref "courses/net-os-admin" >}})
 
 
 ## <span class="section-num">2</span> Требования к оборудованию {#требования-к-оборудованию}

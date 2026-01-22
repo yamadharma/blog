@@ -2,7 +2,7 @@
 title: "Преподавание. Курсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-21T10:59:00+03:00
-lastmod: 2025-09-18T12:53:00+03:00
+lastmod: 2026-01-22T21:22:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -25,7 +25,7 @@ slug: "teaching-courses"
 #### Операционные системы {#операционные-системы}
 
 -   [Подготовка курса Операционные системы]({{< relref "2021-01-21-course-operating-systems" >}})
--   [Операционные системы. Лабораторные работы]({{< relref "teaching/os-intro/lab" >}})
+-   [Операционные системы. Лабораторные работы]({{< relref "courses/os-intro/lab" >}})
 
 
 ### 2 курс {#2-курс}
@@ -66,7 +66,7 @@ slug: "teaching-courses"
 
 #### Администрирование сетевых подсистем {#администрирование-сетевых-подсистем}
 
--   [Курс Администрирование сетевых подсистем]({{< relref "teaching/net-os-admin" >}})
+-   [Курс Администрирование сетевых подсистем]({{< relref "courses/net-os-admin" >}})
 -   [Подготовка курса Администрирование сетевых подсистем]({{< relref "2024-02-28-course-administration-network-subsystems-preparation" >}})
 
 
