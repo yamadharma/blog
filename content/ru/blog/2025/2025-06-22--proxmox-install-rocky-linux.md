@@ -2,7 +2,7 @@
 title: "Proxmox. Установка Rocky Linux"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-06-22T13:47:00+03:00
-lastmod: 2025-06-22T16:59:00+03:00
+lastmod: 2025-12-11T09:19:00+03:00
 tags: ["linux", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -18,8 +18,8 @@ Proxmox. Установка Rocky Linux.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   [Linux. Дистрибутив Proxmox]({{< relref "2024-06-04-linux-proxmox-distribution" >}})
--   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
+-   [Linux. Дистрибутив Proxmox]({{< relref "20240604104500-linux_дистрибутив_proxmox.md" >}})
+-   [Замена Centos]({{< relref "20210525152200-замена_centos.md" >}})
 
 
 ## <span class="section-num">2</span> Установка Rocky Linux в Proxmox из командной строки {#установка-rocky-linux-в-proxmox-из-командной-строки}
@@ -29,7 +29,7 @@ Proxmox. Установка Rocky Linux.
     -   Загрузите ISO-образ на сервер Proxmox, если он ещё не загружен.
     -   Это можно сделать через веб-интерфейс Proxmox или с помощью команды:
         ```shell
-        wget https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.0-x86_64-minimal.iso -O /var/lib/vz/template/iso/Rocky-10.0-x86_64-minimal.iso
+        wget https://download.rockylinux.org/pub/rocky/10/isos/x86_64/Rocky-10.1-x86_64-minimal.iso -O /var/lib/vz/template/iso/Rocky-10.1-x86_64-minimal.iso
         ```
 
 2.  Создайте виртуальную машину в Proxmox:
@@ -37,10 +37,7 @@ Proxmox. Установка Rocky Linux.
         ```shell
         qm list
         ```
-    -   Создайте диск для виртуальной машины:
-        ```shell
-
-        ```
+    -   Выберите свободный идентификатор.
 
     -   Используйте команду для создания VM:
         ```shell
@@ -58,7 +55,7 @@ Proxmox. Установка Rocky Linux.
 
     -   Подключите ISO-образ к виртуальной машине:
         ```shell
-        qm set <VMID> --cdrom local:iso/Rocky-10.0-x86_64-minimal.iso
+        qm set <VMID> --cdrom local:iso/Rocky-10.1-x86_64-minimal.iso
         ```
     -   Можно добавить дополнительный диск:
         ```shell
@@ -71,6 +68,6 @@ Proxmox. Установка Rocky Linux.
         qm start <VMID>
         ```
     -   Подключитесь к консоли VM через веб-интерфейс Proxmox и следуйте инструкциям по установке Rocky Linux.
-    -   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
+    -   [Rocky Linux. Установка сервера]({{< relref "20220812135700-rocky_linux_9_установка_сервера.md" >}})
 5.  Guest agent
-    -   Установите quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).
+    -   Установите quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "20240905161800-kvm_qemu_guest_agent.md" >}})).

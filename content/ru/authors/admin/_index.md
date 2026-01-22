@@ -32,7 +32,7 @@ role: Профессор кафедры теории вероятностей и
 # Organizations/Affiliations
 organizations:
   - name: Российский университет дружбы народов им. Патриса Лумумбы
-    url: "http://www.rudn.ru/"
+    url: "https://www.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: Мои научные интересы включают физику, администрирование Unix и сетей.

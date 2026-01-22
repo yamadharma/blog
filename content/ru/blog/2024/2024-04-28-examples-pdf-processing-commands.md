@@ -2,7 +2,7 @@
 title: "Примеры команд для обработки pdf"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-04-28T18:02:00+03:00
-lastmod: 2025-07-09T19:42:00+03:00
+lastmod: 2025-12-15T19:50:00+03:00
 tags: ["pdf"]
 categories: ["computer-science"]
 draft: false
@@ -557,12 +557,12 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 
 ## <span class="section-num">20</span> Стандарт PDF/A {#стандарт-pdf-a}
 
--   [Стандарт PDF/A]({{< relref "2021-07-30-pdf-a-standard" >}})
+-   [Стандарт PDF/A]({{< relref "../notes/public/20210730104700-стандарт_pdf_a.md" >}})
 
 
 ### <span class="section-num">20.1</span> Преобразование PDF в стандарт PDF/A {#преобразование-pdf-в-стандарт-pdf-a}
 
--   [Распознавание pdf. OCRmyPDF]({{< relref "2024-06-07-pdf-ocr-ocrmypdf" >}})
+-   [Распознавание pdf. OCRmyPDF]({{< relref "../notes/public/20240607210700-распознавание_pdf_ocrmypdf.md" >}})
 
 
 #### <span class="section-num">20.1.1</span> ghostscript {#ghostscript}
@@ -586,10 +586,10 @@ pdftk "${IN}" cat \\((non\_blank) вывод "\\){filename}_noblanks.pdf"
 
 ## <span class="section-num">21</span> Оглавление в PDF {#оглавление-в-pdf}
 
--   [Pdf. Оглавление. pdf.tocgen]({{< relref "2024-06-21-pdf-toc-pdf-tocgen" >}})
--   [Pdf. Оглавление. pdf-toc]({{< relref "2024-06-21-pdf-toc-pdf-toc" >}})
+-   [Pdf. Оглавление. pdf.tocgen]({{< relref "../notes/public/20240621203600-pdf_оглавление_pdf_tocgen.md" >}})
+-   [Pdf. Оглавление. pdf-toc]({{< relref "../notes/public/20240621202000-pdf_оглавление_pdf_toc.md" >}})
 
 
 ## <span class="section-num">22</span> Преобразование djvu в pdf {#преобразование-djvu-в-pdf}
 
--   [Преобразование djvu в pdf]({{< relref "2024-07-26-convert-djvu-pdf" >}})
+-   [Преобразование djvu в pdf]({{< relref "../notes/public/20240726185400-преобразование_djvu_в_pdf.md" >}})

@@ -2,7 +2,7 @@
 title: "Proxmox. Вспомогательные скрипты"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T13:34:00+03:00
-lastmod: 2025-03-04T15:46:00+03:00
+lastmod: 2025-11-20T16:00:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -35,8 +35,13 @@ slug: "proxmox-helper-scripts"
 -   Добавление тестового репозитория.
 -   Отключение подписки nag.
 -   Обновление Proxmox VE.
+-   Github:
     ```shell
-    bash -c "$(wget -qLO - https://github.com/community-scripts/ProxmoxVE/raw/main/misc/post-pve-install.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/pve/post-pve-install.sh)"
+    ```
+-   Gitea:
+    ```shell
+    bash -c "$(curl -fsSL https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/tools/pve/post-pve-install.sh)"
     ```
 
 

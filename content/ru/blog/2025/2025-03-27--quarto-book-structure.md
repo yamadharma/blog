@@ -2,7 +2,7 @@
 title: "Quarto. Структура для книги"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-27T16:33:00+03:00
-lastmod: 2025-05-11T19:42:00+03:00
+lastmod: 2025-11-19T21:10:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false

@@ -2,7 +2,7 @@
 title: "Linux. Установка Proxmox VE"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-06-04T11:23:00+03:00
-lastmod: 2025-10-27T17:22:00+03:00
+lastmod: 2025-11-17T18:25:00+03:00
 tags: ["sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -85,7 +85,7 @@ slug: "proxmox-ve-install"
     ```
 
 
-### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты--dot-dot-notes-public-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
+### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "20240604133400-proxmox_вспомогательные_скрипты.md" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
 
 -   Proxmox VE Post Install
     ```shell
@@ -110,7 +110,7 @@ slug: "proxmox-ve-install"
 
 ### <span class="section-num">3.4</span> Безопасность {#безопасность}
 
--   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})):
+-   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "20231030110100-fail2ban_основные_настроики.md" >}})):
     ```shell
     apt install fail2ban
     ```
@@ -186,3 +186,32 @@ slug: "proxmox-ve-install"
     ```shell
     vlmremove /dev/pve/newdisk
     ```
+
+
+## <span class="section-num">6</span> SSL сертификаты {#ssl-сертификаты}
+
+
+### <span class="section-num">6.1</span> Ручная установка собственных сертификатов {#ручная-установка-собственных-сертификатов}
+
+-   Этот метод предназначен для сертификата веб-интерфейса Proxmox VE.
+-   Не заменяйте и не изменяйте файлы `pve-ssl.pem` и `pve-ssl.key` в каталоге `/etc/pve/nodes/<node>/`, так как они используются для взаимодействия с кластером и управляются Proxmox VE.
+-   Если вы используете кластер Proxmox VE, вам необходимо выполнить эти действия на каждом узле, где вы хотите использовать пользовательский сертификат для веб-интерфейса.
+-   Понадобятся закрытый ключ сервера и соответствующий сертификат в формате PEM.
+-   Если ваша цепочка сертификатов включает промежуточные сертификаты, объедините их с основным сертификатом в правильном порядке (сначала сертификат сервера, затем промежуточные).
+-   Поместите файл закрытого ключа в папку `/etc/pve/local/pveproxy-ssl.key`.
+-   Поместите файл сертификата (включая все промежуточные сертификаты) в папку `/etc/pve/local/pveproxy-ssl.pem`.
+    ```shell
+    cp /path/to/your/private.key /etc/pve/local/pveproxy-ssl.key
+    cp /path/to/your/certificate.pem /etc/pve/local/pveproxy-ssl.pem
+    ```
+
+-   Убедитесь, что файл закрытого ключа (`pveproxy-ssl.key`) не содержит парольной фразы. Если она есть, вам потребуется удалить её с помощью OpenSSL.
+-   Установите правильные права доступа:
+    ```shell
+    chmod 600 /etc/pve/local/pveproxy-ssl.key
+    ```
+-   Перезапустите службу веб-интерфейса Proxmox VE:
+    ```shell
+    systemctl restart pveproxy.service
+    ```
+-   Это применит новый сертификат.

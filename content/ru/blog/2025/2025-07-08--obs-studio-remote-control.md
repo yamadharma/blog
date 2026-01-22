@@ -2,7 +2,9 @@
 title: "OBS Studio. Удалённое управление"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-07-08T20:16:00+03:00
-lastmod: 2025-07-08T20:58:00+03:00
+lastmod: 2026-01-07T13:55:00+03:00
+tags: ["sysadmin"]
+categories: ["computer-science"]
 draft: false
 slug: "obs-studio-remote-control"
 ---
@@ -96,7 +98,7 @@ OBS Studio. Удалённое управление.
 
 #### <span class="section-num">4.3.1</span> Gentoo {#gentoo}
 
--   Репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+-   Репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "20240525205200-gentoo_репозитории_karma.md" >}})):
     ```shell
     emerge obs-cmd
     ```

@@ -2,7 +2,7 @@
 title: "KVM. QEMU Guest Agent"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-05T16:18:00+03:00
-lastmod: 2024-09-22T20:57:00+03:00
+lastmod: 2025-12-11T15:08:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false

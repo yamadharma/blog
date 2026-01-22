@@ -2,7 +2,7 @@
 title: "Графические интерфейсы для управления Ansible"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-07-31T19:44:00+03:00
-lastmod: 2025-07-31T20:25:00+03:00
+lastmod: 2025-12-10T20:43:00+03:00
 tags: ["sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -16,10 +16,7 @@ slug: "ansible-graphical-interface"
 {{< toc >}}
 
 
-## <span class="section-num">1</span> Основные графические интерфейсы для Ansible {#основные-графические-интерфейсы-для-ansible}
-
-
-### <span class="section-num">1.1</span> 1. Ansible Tower {#1-dot-ansible-tower}
+## <span class="section-num">1</span> Ansible Tower {#ansible-tower}
 
 -   Коммерческий продукт с расширенными возможностями управления автоматизацией.
 -   Веб-интерфейс с визуализацией рабочих процессов и мониторингом состояния заданий.
@@ -35,8 +32,9 @@ slug: "ansible-graphical-interface"
     -   Централизованное управление инфраструктурой в гибридных облаках.
 
 
-### <span class="section-num">1.2</span> 2. AWX {#2-dot-awx}
+## <span class="section-num">2</span> AWX {#awx}
 
+-   [Ansible. Графический интерфейс AWX]({{< relref "20251210T202400--ansible_графическии_интерфеис_awx.md" >}})
 -   Репозиторий: <https://github.com/ansible/awx>
 -   Лицензия: Apache License
 -   Открытая версия Ansible Tower с аналогичным функционалом, но с открытым исходным кодом.
@@ -51,9 +49,9 @@ slug: "ansible-graphical-interface"
     -   Тестирование перед переходом на Ansible Tower.
 
 
-### <span class="section-num">1.3</span> 3. Semaphore UI {#3-dot-semaphore-ui}
+## <span class="section-num">3</span> Semaphore UI {#semaphore-ui}
 
--   [Ansible. Графический интерфейс Semaphore UI]({{< relref "2025-07-31--ansile-semaphore-ui" >}})
+-   [Ansible. Графический интерфейс Semaphore UI]({{< relref "20250731T201100--ansible_графическии_интерфеис_semaphore_ui.md" >}})
 -   Сайт:
     -   <https://www.semaphoreui.ru/>
     -   <https://semaphoreui.com/>
@@ -68,7 +66,7 @@ slug: "ansible-graphical-interface"
 -   Поддержка Terraform и Bash-скриптов.
 
 
-### <span class="section-num">1.4</span> Сравнение инструментов {#сравнение-инструментов}
+## <span class="section-num">4</span> Сравнение инструментов {#сравнение-инструментов}
 
 | Критерий               | Ansible Tower | AWX          | Semaphore UI |
 |------------------------|---------------|--------------|--------------|

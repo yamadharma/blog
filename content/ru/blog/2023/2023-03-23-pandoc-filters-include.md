@@ -2,7 +2,7 @@
 title: "Pandoc. Фильтры. Включение файлов"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-03-23T19:35:00+03:00
-lastmod: 2023-03-23T19:52:00+03:00
+lastmod: 2025-11-19T21:28:00+03:00
 tags: ["pandoc"]
 categories: ["computer-science"]
 draft: false
@@ -155,3 +155,8 @@ slug: "pandoc-filters-include"
     Section title levels are shifted by n (0 if not specified).
     :::
     ````
+
+
+## <span class="section-num">2</span> Quarto {#quarto}
+
+-   В Quarto можно использовать стандартное сокращение для подключения файлов: [Quarto. Подключение файлов]({{< relref "../notes/public/20251119T211500--quarto_подключение_фаилов.md" >}}).

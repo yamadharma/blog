@@ -2,7 +2,7 @@
 title: "Мысли"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-12-14T17:33:00+03:00
-lastmod: 2025-05-25T21:08:00+03:00
+lastmod: 2025-12-10T18:09:00+03:00
 tags: ["MOC"]
 categories: ["thinking"]
 draft: false
@@ -29,7 +29,8 @@ slug: "reflections"
 
 ## <span class="section-num">3</span> По областям {#по-областям}
 
--   [Синтаксис, семантика, прагматика]({{< relref "2023-05-08-syntax-semantics-pragmatics" >}})
--   [Junior, Middle, Senior]({{< relref "2023-05-08-junior-middle-senior" >}})
--   [Учёный и инженер]({{< relref "2023-05-09-scientist-engineer" >}})
--   [Высокий и низкий контекст]({{< relref "2025-05-25--high-context-low-context" >}})
+-   [Синтаксис, семантика, прагматика]({{< relref "20230508163200-синтаксис_семантика_прагматика.md" >}})
+-   [Junior, Middle, Senior]({{< relref "20230508170000-junior_middle_senior.md" >}})
+-   [Учёный и инженер]({{< relref "20230509113000-ученыи_и_инженер.md" >}})
+-   [Высокий и низкий контекст]({{< relref "20250525T210400--высокии_и_низкии_контекст.md" >}})
+-   [Метод прогрессивного джипега]({{< relref "20251210T180700--метод_прогрессивного_джипега.md" >}})

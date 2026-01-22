@@ -2,7 +2,7 @@
 title: "Rocky Linux. Установка сервера"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-08-12T13:57:00+03:00
-lastmod: 2025-08-21T15:24:00+03:00
+lastmod: 2025-12-11T10:48:00+03:00
 tags: ["redhat", "sysadmin", "linux"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "rockylinux-server-installation"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})).
+-   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. [Замена Centos]({{< relref "../notes/public/20210525152200-замена_centos.md" >}})).
 -   Сайт: <https://rockylinux.org/>.
 -   Образы:
     -   <https://rockylinux.org/download>;
@@ -82,7 +82,7 @@ slug: "rockylinux-server-installation"
 
 ## <span class="section-num">2</span> Установка образа {#установка-образа}
 
--   [Proxmox. Установка Rocky Linux]({{< relref "2025-06-22--proxmox-install-rocky-linux" >}})
+-   [Proxmox. Установка Rocky Linux]({{< relref "../notes/public/20250622T134700--proxmox_установка_rocky_linux.md" >}})
 
 
 ## <span class="section-num">3</span> После установки {#после-установки}
@@ -110,11 +110,11 @@ slug: "rockylinux-server-installation"
     ```
 -   Если нет необходимой, установите её:
     ```shell
-    dnf -y install glibc-langpack-ru
+    sudo dnf -y install glibc-langpack-ru
     ```
 -   Установите нужную локализацию:
     ```shell
-    localectl set-locale ru_RU.UTF-8
+    sudo localectl set-locale ru_RU.UTF-8
     ```
 -   Проверьте текущую локализацию:
     ```shell
@@ -126,8 +126,8 @@ slug: "rockylinux-server-installation"
 
 -   Установим _EPEL_:
     ```shell
-    dnf config-manager --set-enabled crb
-    dnf -y install epel-release
+    sudo dnf config-manager --set-enabled crb
+    sudo dnf -y install epel-release
     ```
 
 
@@ -135,11 +135,11 @@ slug: "rockylinux-server-installation"
 
 -   Просмотрите список всех часовых поясов:
     ```shell
-    timedatectl list-timezones
+    sudo timedatectl list-timezones
     ```
 -   Установите часовой пояс (например, UTC):
     ```shell
-    timedatectl set-timezone Etc/UTC
+    sudo timedatectl set-timezone Etc/UTC
     ```
 
 
@@ -147,19 +147,19 @@ slug: "rockylinux-server-installation"
 
 -   Запустите демон:
     ```shell
-    systemctl enable --now chronyd
+    sudo systemctl enable --now chronyd
     ```
 -   Проверьте работу демона `chronyd`:
     ```shell
-    chronyc -a tracking
+    sudo chronyc -a tracking
     ```
 -   Включите сетевую синхронизацию времени:
     ```shell
-    timedatectl set-ntp true
+    sudo timedatectl set-ntp true
     ```
 -   Проверьте, работает ли он:
     ```shell
-    timedatectl status
+    sudo timedatectl status
     ```
 
 
@@ -192,23 +192,23 @@ slug: "rockylinux-server-installation"
 
 -   Программы для удобства работы в консоли:
     ```shell
-    dnf -y install tmux perl-DateTime-HiRes mc kitty-terminfo
+    sudo dnf -y install tmux mc kitty-terminfo
     ```
 -   Программы мониторинга:
     ```shell
-    dnf -y install htop lsof
+    sudo dnf -y install htop lsof
     ```
 -   Утилита для ssh:
     ```shell
-    dnf -y install mosh
+    sudo dnf -y install mosh
     ```
 -   Удобство работы с bash:
     ```shell
-    dnf -y install bash-completion bash-color-prompt
+    sudo dnf -y install bash-completion bash-color-prompt
     ```
 -   Разные утилиты:
     ```shell
-    dnf -y install wget git tar zstd p7zip
+    sudo dnf -y install wget git tar zstd 7zip
     ```
 
 
@@ -216,12 +216,12 @@ slug: "rockylinux-server-installation"
 
 -   Посмотрите, в каком режиме загружается сервер:
     ```shell
-    systemctl get-default
+    sudo systemctl get-default
     ```
 -   Если результатом является `graphical.target`, то отключите загрузку графического интерфейса.
 -   Переключите на загрузку в терминальном многопользовательском режиме:
     ```shell
-    systemctl set-default multi-user.target
+    sudo systemctl set-default multi-user.target
     ```
 
 
@@ -235,7 +235,7 @@ slug: "rockylinux-server-installation"
     dnf -y install fail2ban
     ```
 
--   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})) и запустить:
+-   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "../notes/public/20231030110100-fail2ban_основные_настроики.md" >}})) и запустить:
     ```shell
     systemctl enable --now fail2ban.service
     ```
@@ -250,15 +250,15 @@ slug: "rockylinux-server-installation"
 
 #### <span class="section-num">3.10.1</span> Автоматическое обновление {#автоматическое-обновление}
 
--   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
+-   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "../notes/public/20220925094200-автообновление_систем_на_базе_деривативов_redhat.md" >}})).
 -   Установка программного обеспечения:
     ```shell
-    dnf -y install dnf-automatic
+    sudo dnf -y install dnf-automatic
     ```
 -   Задаёте необходимую конфигурацию в файле `/etc/dnf/automatic.conf`.
 -   Запустите таймер:
     ```shell
-    systemctl enable --now dnf-automatic.timer
+    sudo systemctl enable --now dnf-automatic.timer
     ```
 
 
@@ -429,8 +429,8 @@ slug: "rockylinux-server-installation"
 
 ### <span class="section-num">4.7</span> DNS сервера {#dns-сервера}
 
--   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
--   [DNS. Bind]({{< relref "2023-09-19-dns-bind" >}})
+-   [DNS. PowerDNS Recursor]({{< relref "../notes/public/20230523100800-dns_powerdns_recursor.md" >}})
+-   [DNS. Bind]({{< relref "../notes/public/20230919143200-dns_bind.md" >}})
 
 
 ### <span class="section-num">4.8</span> Контроль версий {#контроль-версий}
@@ -462,4 +462,4 @@ slug: "rockylinux-server-installation"
 
 ### <span class="section-num">4.10</span> Виртуализация и контейнеры {#виртуализация-и-контейнеры}
 
--   [Контейнеры. podman]({{< relref "2024-12-04-containers-podman" >}})
+-   [Контейнеры. podman]({{< relref "../notes/public/20241204201300-контеинеры_podman.md" >}})

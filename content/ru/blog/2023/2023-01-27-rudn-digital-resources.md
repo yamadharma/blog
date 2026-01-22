@@ -2,7 +2,7 @@
 title: "РУДН. Электроресурсы"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-01-27T14:33:00+03:00
-lastmod: 2025-09-06T20:00:00+03:00
+lastmod: 2026-01-13T19:09:00+03:00
 tags: ["rudn"]
 categories: ["job"]
 draft: false
@@ -58,7 +58,7 @@ slug: "rudn-digital-resources"
 
 -   Для доступа к этим ресурсам необходима идентификация пользователя: <https://id.rudn.ru/>.
 -   Подача документов на конкурс на замещение должностей ППС: <https://vote.rudn.ru/>.
--   Система 1С (см. [Работа с 1С в РУДН]({{< relref "2020-12-09-working-with-1c-rudn-university" >}})).
+-   Система 1С (см. [Работа с 1С в РУДН]({{< relref "../notes/public/20201209113500-работа_с_1с_в_рудн.md" >}})).
 -   Портал единой информационной системы РУДН (ЕИС): <https://portal.pfur.ru/>.
     -   Постепенно информация переносится на другие сайты. Например, на <https://lk.rudn.ru/>.
 -   Многофункциональный центр для студентов и сотрудников РУДН (Личный кабинет РУДН):
@@ -81,7 +81,7 @@ slug: "rudn-digital-resources"
 -   Список публикаций в системе 1С.Бит.Наука: <https://eisweb.rudn.ru/NIR_RUDN/ru_RU/?N=external&P=client>
     -   Только для чтения.
     -   Требуется при переизбрании и т. д.
--   [Суперкомпьютер РУДН]({{< relref "2023-02-12-supercomputer-rudn" >}})
+-   [Суперкомпьютер РУДН]({{< relref "../notes/public/20230212183500-суперкомпьютер_рудн.md" >}})
 
 
 ### <span class="section-num">4.1</span> Диссоветы {#диссоветы}
@@ -96,7 +96,28 @@ slug: "rudn-digital-resources"
 ## <span class="section-num">5</span> Учебные ресурсы {#учебные-ресурсы}
 
 -   Учебный портал (ТУИС --- Телекоммуникационная учебно-информационная система): <https://esystem.rudn.ru/>.
-    -   [РУДН. Учебный портал ТУИС]({{< relref "2025-08-22--rudn-esystem" >}})
+    -   [РУДН. Учебный портал ТУИС]({{< relref "../notes/public/20250822T194200--рудн_учебныи_портал_туис.md" >}})
 -   Портал обучения Дирекции по цифровизации РУДН: <https://digital-edu.rudn.ru/>.
 -   Расписание занятий: <https://www.rudn.ru/education/schedule>
--   Журнал успеваемости и посещаемости: [РУДН. Журнала успеваемости и посещаемости]({{< relref "2025-09-06--rudn-progress-attendance-journal" >}})
+-   Журнал успеваемости и посещаемости: [РУДН. Журнала успеваемости и посещаемости]({{< relref "../notes/public/20250906T195700--рудн_журнала_успеваемости_и_посещаемости.md" >}})
+
+
+## <span class="section-num">6</span> Мобильные приложения {#мобильные-приложения}
+
+
+### <span class="section-num">6.1</span> RUDN University {#rudn-university}
+
+-   Google Play: <https://play.google.com/store/apps/details?id=lc.deck.rudn>
+-   Официальное приложение РУДН.
+-   Работает до 31 марта 2026 года.
+
+
+### <span class="section-num">6.2</span> RUDN UX {#rudn-ux}
+
+-   Официальное приложение РУДН.
+-   Google Play: <https://play.google.com/store/apps/details?id=ru.rudn.ux>
+
+
+### <span class="section-num">6.3</span> СЭД РУДН {#сэд-рудн}
+
+-   Google Play: <https://play.google.com/store/apps/details?id=ru.rudn.sed>

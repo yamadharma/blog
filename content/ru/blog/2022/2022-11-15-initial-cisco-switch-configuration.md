@@ -2,7 +2,7 @@
 title: "Начальная конфигурация коммутатора Cisco"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-11-15T14:51:00+03:00
-lastmod: 2024-10-26T14:21:00+03:00
+lastmod: 2025-11-20T14:10:00+03:00
 tags: ["cisco", "network", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -278,7 +278,7 @@ slug: "initial-cisco-switch-configuration"
 
 ### <span class="section-num">3.1</span> nsupdate {#nsupdate}
 
--   [nsupdate: динамический редактор зон DNS]({{< relref "2023-10-28-nsupdate-dynamic-dns-editor" >}})
+-   [nsupdate: динамический редактор зон DNS]({{< relref "20231028192800-nsupdate_динамическии_редактор_зон_dns.md" >}})
 -   Добавьте адрес коммутатора в DNS:
     ```shell
     echo -e "update add sw-103-1.example.com 86400 a 192.168.0.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
@@ -309,15 +309,15 @@ slug: "initial-cisco-switch-configuration"
 
 ### <span class="section-num">4.2</span> Подключение к Librenms {#подключение-к-librenms}
 
--   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
+-   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "20230320150700-система_мониторинга_librenms.md" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:
     ```shell
-    sudo -u librenms /usr/local/bin/lnms device:add sw-103-1 -c rocom
-    sudo -u librenms /usr/local/bin/lnms device:poll sw-103-1
+    sudo -u librenms env "PATH=$PATH" lnms device:add sw-103-1 -c rocom
+    sudo -u librenms env "PATH=$PATH" lnms device:poll sw-103-1
     ```
 -   Если есть в базе данное устройство, но под другим именем, то можно его переименовать:
     ```shell
-    sudo -u librenms /usr/local/bin/lnms device:rename <old hostname> <new hostname>
+    sudo -u librenms env "PATH=$PATH" lnms device:rename <old hostname> <new hostname>
     ```
 
 [^fn:1]: Установка пароля может быть выполнена двумя командами `password` и `secret`. В первом случае пароль хранится в конфигурационном файле в открытом виде, а во втором в зашифрованном. Если использовалась команда `password`, необходимо зашифровать пароли, хранящиеся в устройстве в открытом виде с помощью команды `service password-encryption` в режиме глобальной конфигурации.

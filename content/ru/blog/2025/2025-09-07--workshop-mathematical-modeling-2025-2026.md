@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2025-11-15T21:19:00+03:00
+lastmod: 2026-01-20T13:45:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -283,4 +283,117 @@ Using cross-sections of extended model collimators with different parameters, it
 {{< /tabs >}}
 
 
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">1.6</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2025-12-11 Чт&gt; </span></span> Блинков Ю. А. - PyGInv. Исследование и решение полиномиальных и дифференциальных систем {#блинков-ю-dot-а-dot-pyginv-dot-исследование-и-решение-полиномиальных-и-дифференциальных-систем}
+
+
+#### <span class="section-num">1.6.1</span> Докладчик {#докладчик}
+
+-   Блинков Ю.А.
+-   доктор физико-математических наук
+-   зав. каф. СГУ
+-   e-mail: blinkovua@info.sgu.ru
+
+
+#### <span class="section-num">1.6.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/303/>
+-   PyGInv. Исследование и решение полиномиальных и дифференциальных систем
+-   Блинков Ю. А.
+-   д.ф.м.-н., зав. каф. СГУ
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+Представлены вычисления в пакете PyGInv базисов Грёбнера в полиномиальных и дифференциальных системах и построении численных схем. Результаты позволяют найти размерность пространства решений. Численно найти все решения в полиномиальном случае для нульмерных идеалов. Вычислить симметрии дифференциальных уравнений без использования специальных формул. Проводить преобразования с разностными схемами, например, в случае компактных разностных схем. Пакет PyGInv представляет собой облегчённый вариант GInv, написанный на чистом Python и интегрирован с системой компьютерной алгебры SymPy.
+
+В настоящее время PyGInv позволяет строить базисы Грёбнера для полиномов, модулей, линейных дифференциальных уравнений и линейных разностных схем. Во многих случаях, как будет показано ниже, можно работать и с нелинейными дифференциальными уравнениями и разностными схемами. PyGInv содержит дополнительные функции для исследования и решения полиномиальных и дифференциальных систем.
+
+Исходный код представленный в четырех файлах (monomial.py, polynomial.py, janet.py, ginv.py) занимает чуть меньше 2000 строк кода. Все исходные файлы и файла примеров, в том числе, и изложенных ниже находятся по адресу <https://github.com/blinkovua/GInv/tree/master/pyginv>.
+
+---
+
+-   PyGInv. Investigation and Solution of Polynomial and Differential Systems
+-   Blinkov, Yu. A.
+-   Doctor of Physics and Mathematics
+-   Head. department SSU
+-   <https://github.com/blinkovua/GInv/tree/master/pyginv>
+
+Computations in the PyGInv package for Gröbner bases in polynomial and differential systems and the construction of numerical schemes are presented. The results allow one to find the dimension of the solution space, numerically find all solutions in the polynomial case for zero-dimensional ideals, compute symmetries of differential equations without using special formulas, and perform transformations with difference schemes, for example, in the case of compact difference schemes. The PyGInv package is a lightweight version of GInv, written in pure Python and integrated with the SymPy computer algebra system.
+
+Currently, PyGInv allows building Gröbner bases for polynomials, modules, linear differential equations, and linear difference schemes. In many cases, as will be shown below, it is also possible to work with nonlinear differential equations and difference schemes. PyGInv contains additional functions for investigating and solving polynomial and differential systems.
+
+The source code, presented in four files (monomial.py, polynomial.py, janet.py, ginv.py), takes up just under 2000 lines of code. All source files and example files, including those described below, are located at <https://github.com/blinkovua/GInv/tree/master/pyginv>.
+
+
+#### <span class="section-num">1.6.3</span> Видео {#видео}
+
+{{< tabs "Блинков Ю. А. - PyGInv. Исследование и решение полиномиальных и дифференциальных систем" >}}
+
+{{< tab "RuTube" >}}{{< rutube f5435b5c0fb36e0d96d9350deb8e4d70 >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239563 hd=2 >}}{{< /tab >}}
+
+{{< tab "Youtube" >}}{{< youtube 2vLbHAWE_-s >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
 ## <span class="section-num">2</span> Семинар Математическое моделирование, 2026-1 {#семинар-математическое-моделирование-2026-1}
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-01-29 Чт&gt; </span></span> Захаров И. И. - Математическое моделирование нелокальных физических процессов в средах с фрактальной структурой {#захаров-и-dot-и-dot-математическое-моделирование-нелокальных-физических-процессов-в-средах-с-фрактальной-структурой}
+
+
+#### <span class="section-num">2.1.1</span> Докладчик {#докладчик}
+
+-   Захаров Иван Иванович
+-   аспирант
+-   кафедра высшей математики МГСУ
+
+
+#### <span class="section-num">2.1.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/307/>
+-   Математическое моделирование нелокальных физических процессов в средах с фрактальной структурой
+-   Захаров И. И.
+-   аспирант
+-   кафедра высшей математики МГСУ
+
+Работа посвящена развитию аппарата математического моделирования с помощью методов дробного дифференцирования. Рассматривается задача адвекции-диффузии, модель которой рассматривается в виде дифференциального уравнения с различными дробно-дифференциальными операторами (в виде Капуто и в виде Римана-Лиувилля). К нашему времени подготовлено немало работ о решении различных задач, содержащих дробно-дифференциальными операторы, но большая их часть посвящена численным методам (метод конечных разно­стей, метод сплайнов, метод коллокации и т.д.). Интерес данной работы направлен на разрабатывание приближенных методов вычисления, осно­ванных на аналитических методах (методе Фурье). Хотя численные методы и демонстрируют высокую эффективность в решение предложенных задач, именно аналитические методы позволяют разрабатывать необходимый на­ бор инструментов для верификации решения задач, для чего абсолютно необходимо разрабатывать эффективные методы реализации приближён­ных решений.
+
+---
+
+-   Mathematical modeling of nonlocal physical processes in environments with fractal structure
+-   I. I. Zakharov
+-   graduate student
+-   Department of Higher Mathematics, Moscow State University of Civil Engineering
+
+This paper explores the development of mathematical modeling tools using fractional differentiation methods. We consider an advection-diffusion problem, whose model is treated as a differential equation with various fractional differential operators (Caputo and Riemann-Liouville). While numerous papers have been published on solving various problems involving fractional differential operators, most of them are devoted to numerical methods (finite difference methods, spline methods, collocation methods, etc.). This paper focuses on the development of approximate computational methods based on analytical methods (the Fourier method). Although numerical methods demonstrate high efficiency in solving the proposed problems, it is analytical methods that enable the development of the necessary toolset for verifying problem solutions, which necessitates the development of effective methods for implementing approximate solutions.
+
+
+### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-02-04 Ср&gt; </span></span> Штепа К. А. - Моделирование трансформирующих сред средствами лучевой оптики {#штепа-к-dot-а-dot-моделирование-трансформирующих-сред-средствами-лучевой-оптики}
+
+
+#### <span class="section-num">2.2.1</span> Докладчик {#докладчик}
+
+-   Штепа Кристина Александровна
+-   аспирант
+-   кафедра теории вероятностей и кибербезопасности РУДН
+
+
+#### <span class="section-num">2.2.2</span> Информация {#информация}
+
+-   <https://events.rudn.ru/event/308/>
+-   Моделирование трансформирующих сред средствами лучевой оптики
+-   Штепа К. А.
+-   аспирант
+-   кафедра теории вероятностей и кибербезопасности РУДН
+
+Проведено исследование математических и вычислительных методов моделирования распространения излучения в трансформирующих средах на основе уравнения эйконала. Сформулирована постановка задачи в приближении геометрической оптики, проведён анализ радиально-симметричных профилей показателя преломления, включая линзы Люнеберга, Максвелла и Итона. Реализован численный алгоритм решения уравнения Эйконала методом быстрого распространения фронта (Fast Sweeping Method, FSM), проведено исследование сходимости и устойчивости схемы. Разработано программное обеспечение на языке Julia для построения линий уровня фазовой функции и восстановления траекторий лучей. Выполнено моделирование волновых фронтов и верификация результатов на аналитических профилях. Реализован нейросетевой подход к решению уравнения Эйконала на основе Physics-Informed Neural Networks (PINN) с использованием библиотеки SciML языка Julia. Проведено сравнение численных и нейросетевых решений и обоснована перспектива их совместного применения для моделирования дифракционных систем.
+
+---
+
+-   Mathematical modeling of nonlocal physical processes in environments with fractal structure
+-   Shtepa, Kristina Aleksandrovna
+-   graduate student
+-   Department of Probability Theory and Cybersecurity at RUDN University
+
+The research is devoted to the study of mathematical and computational methods for modeling the propagation of radiation in transforming media based on the eikonal equation. A formulation of the problem is given within the framework of geometrical optics, and an analysis of radially symmetric refractive index profiles, including the Luneburg, Maxwell, and Eaton lenses, is carried out. A numerical algorithm for solving the eikonal equation using the Fast Sweeping Method (FSM) has been implemented, and the convergence and stability of the scheme have been investigated. Software in the Julia programming language has been developed to compute level lines of the phase function and reconstruct ray trajectories. Wavefront modeling and verification on analytical profiles have been performed. A neural network-based approach to solving the eikonal equation using Physics-Informed Neural Networks (PINN) within the SciML library of the Julia language has been implemented. A comparative analysis of numerical and neural approaches has been conducted, and the feasibility of their combined application for modeling diffraction systems has been substantiated.

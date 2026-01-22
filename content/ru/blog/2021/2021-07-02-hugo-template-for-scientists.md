@@ -2,7 +2,7 @@
 title: "Hugo. Шаблон для научных работников"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-07-02T15:02:00+03:00
-lastmod: 2025-11-16T21:33:00+03:00
+lastmod: 2026-01-21T21:57:00+03:00
 tags: ["hugo", "sysadmin"]
 categories: ["computer-science"]
 draft: false
@@ -23,7 +23,7 @@ slug: "hugo-template-for-scientists"
 -   Сайт: <https://hugoblox.com/>
 -   Репозиторий темы: <https://github.com/HugoBlox/theme-academic-cv>
 -   Репозитории вариантов тем: <https://github.com/HugoBlox>
--   Репозиторий модулей тем: <https://github.com/HugoBlox/hugo-blox-builder>
+-   Репозиторий модулей тем: <https://github.com/HugoBlox/kit>
 
 
 ### <span class="section-num">1.1</span> На основе bootstrap {#на-основе-bootstrap}
@@ -40,167 +40,7 @@ slug: "hugo-template-for-scientists"
 
 ## <span class="section-num">2</span> Обновление шаблонов Wowchemy {#обновление-шаблонов-wowchemy}
 
-
-### <span class="section-num">2.1</span> До версии 5.3 {#до-версии-5-dot-3}
-
--   Примечания до версии 5.3 находятся в блоге <https://wowchemy.com/blog/>.
--   В файле `go.mod` установите необходимую версию (например, `5.3`), исправив строку:
-    ```conf-unix
-    require (
-            github.com/wowchemy/wowchemy-hugo-modules/v5 v5.3.0
-    )
-    ```
--   Обновите пути к модулям в конфигурации в файле `config/_default/config.yaml`:
-    ```yaml
-    module:
-      imports:
-    ​    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5
-    ​    - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5
-    ```
-    или `config/_default/config.toml`:
-    ```toml
-    [module]
-      [[module.imports]]
-        path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5"
-      [[module.imports]]
-        path = "github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5"
-    ```
--   Для использования с _netlify_:
-    -   Обновите `HUGO_VERSION` в `netlify.toml` до необходимой версии `0.84.4`.
--   Обновите модуль:
-    -   текущий релиз:
-        ```shell
-        hugo mod get -u
-        ```
-    -   текущая версия разработчика:
-        ```shell
-        hugo mod get -u ./...
-        ```
-
-
-### <span class="section-num">2.2</span> Общие рекомендации {#общие-рекомендации}
-
--   Текущую версию можно найти:
-    -   в файле `themes/academic/data/academic.toml` (если всё делалось очень давно);
-    -   в файле `go.mod`:
-        -   точная версия (например, `v5.0.0`);
-        -   версия сборки в ​​​​форме `v<dummy-version-number>-<date>-<build-number>`.
--   Отредактируйте файл `go.mod`:
-    ```conf-unix
-    module my_website
-
-    go 1.15
-
-    require (
-            github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.6
-            github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231108141515-0478cf6921f9
-            github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal v1.1.2
-    )
-    ```
-
-    -   Вы настраиваете версию модуля в операторе `require`.
-    -   ~~Вместо версии `main` можно задать конкретную версию модуля (в формате `v5.x.y`).~~
--   Обновите пути модулей в файле `config/_default/module.yaml`:
-    ```yaml
-    imports:
-    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
-    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
-    ​  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5
-    ```
--   Определите необходимую версию `hugo` (`HUGO_VERSION`) (возьмите из примечания к выпуску <https://github.com/HugoBlox/hugo-blox-builder/releases>).
--   Проверьте, что локальная версия _Hugo Extended_ имеет необходимую версию.
--   Последовательно примените любые критические изменения из соответствующих примечаний к выпуску. Если в релизе нет раздела _Breaking Changes_, то никаких изменений не требуется.
--   Обновите модули темы:
-    -   до последней официальной версии:
-        ```shell
-        hugo mod get -u
-        ```
-    -   до текущей версии в репозитории:
-        ```shell
-        hugo mod get -u ./...
-        ```
--   После этого `main` в `go.mod` будет заменена на конкретную версию.
--   Если Вы обновляете совсем старую версию, Вам может быть проще создать новый сайт и перенести папку `content`.
-
-
-### <span class="section-num">2.3</span> Миграция на tailwind {#миграция-на-tailwind}
-
-
-#### <span class="section-num">2.3.1</span> Общая информация {#общая-информация}
-
--   Последний релиз на bootstrap вышел 2023-11-14.
--   Далее релиз стал базироваться на tailwind.
--   Сайт tailwind:
-    -   <https://tailwindcss.com/>
-    -   <https://tailwindcss.ru/>
-
-
-#### <span class="section-num">2.3.2</span> Основные изменения {#основные-изменения}
-
-<!--list-separator-->
-
-1.  Первая страница
-
-    -   Вместо отдельных файлов-блоков в каталоге `content/home` осуществлён переход к страницам типа `landing`:
-        -   `content/_index.md`;
-        -   `content/experience.md`;
-        -   `content/projects.md`.
-
-<!--list-separator-->
-
-2.  Публикации типа book
-
-    -   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
-    -   Тип публикации `book` отсутствует.
-    -   Вместо него следует использовать тип `docs`:
-        ```yaml
-        type: docs
-        ```
-    -   Убран шорткод:
-        ```text
-        {{< list_children >}}
-        ```
-
-<!--list-separator-->
-
-3.  Поиск
-
-    -   Теперь необходимо создать индекс поиска отдельно.
-    -   Сначала сгенерим страницы сайта, потом создадим индекс поиска, после можно запустить `hugo server` для просмотра:
-        ```shell
-        hugo && \
-        npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind && \
-        hugo server -D
-        ```
-
-
-### <span class="section-num">2.4</span> Обновление до blox-tailwind/v0.8.0 {#обновление-до-blox-tailwind-v0-dot-8-dot-0}
-
--   Рекомендуется использовать фиксированные названия каталогов.
--   Рекомендуемые переименования:
-    -   post -&gt; blog
-    -   publication -&gt; publications
-    -   project -&gt; projects
--   Меняются
-    -   `page_type:`
-
-
-#### <span class="section-num">2.4.1</span> Скрипты {#скрипты}
-
--   В каталоге `content`:
-    ```shell
-    cd content
-    grep -r 'page_type:' *
-    find . -iname "_index.md" -exec sed -i -e 's/page_type: post/page_type: blog/g' '{}' \;
-    find -iname '_index.mde' -delete
-    cd ru
-    git mv post blog
-    cd en
-    git mv post blog
-    find . -iname "*.org" -exec sed -i -e "s:ru/post/:ru/blog/:g" '{}' \;
-    find . -iname "*.org" -exec sed -i -e "s:en/post/:en/blog/:g" '{}' \;
-    find . -iname "*.orge" -delete
-    ```
+-   [Hugo. HugoBlox. Обновление шаблонов]({{< relref "../notes/public/20260121T215400--hugo_hugoblox_обновление_шаблонов.md" >}})
 
 
 ## <span class="section-num">3</span> Устранение проблем {#устранение-проблем}

@@ -2,7 +2,7 @@
 title: "gopass. Интеграция с git"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-08-19T15:56:00+03:00
-lastmod: 2025-08-19T16:29:00+03:00
+lastmod: 2025-11-21T10:43:00+03:00
 tags: ["sysadmin", "git", "programming"]
 categories: ["computer-science"]
 draft: false

@@ -32,7 +32,7 @@ role: Professor of the Department of Probability Theory and Cybersecurity
 # Organizations/Affiliations
 organizations:
   - name: RUDN University
-    url: "http://www.rudn.ru/en"
+    url: "https://eng.rudn.ru/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include physics, Unix administration, and networking.

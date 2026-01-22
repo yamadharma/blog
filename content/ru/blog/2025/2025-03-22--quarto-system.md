@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-10-08T19:57:00+03:00
+lastmod: 2025-12-14T20:15:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -24,7 +24,7 @@ slug: "quarto-system"
 -   Входной язык: Markdown.
 -   Выходные форматы: html, pdf, epub, docx, презентации в формате reveal.js.
 -   Интеграция с языками программирования: R, Python, Julia, Observable JS.
-    -   Интеграция как в babel (см. [Emacs. Org Babel]({{< relref "2022-10-15-emacs-org-babel" >}})) или julyter.
+    -   Интеграция как в babel (см. [Emacs. Org Babel]({{< relref "20221015212100-emacs_org_babel.md" >}})) или julyter.
     -   Позволяет включать в документы интерактивные элементы, такие как виджеты и динамические визуализации.
 
 
@@ -33,7 +33,7 @@ slug: "quarto-system"
 
 ### <span class="section-num">2.1</span> Windows {#windows}
 
--   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "2021-01-18-package-manager-windows-chocolatey" >}})):
+-   Chocolatey (см. [Пакетный менеджер для Windows. Chocolatey]({{< relref "20210118112300-пакетныи_менеджер_для_windows_chocolatey.md" >}})):
     ```shell
     choco install quarto
     ```
@@ -77,7 +77,7 @@ slug: "quarto-system"
 
 #### <span class="section-num">2.2.2</span> Gentoo {#gentoo}
 
--   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
+-   Gentoo, репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "20240525205200-gentoo_репозитории_karma.md" >}})):
     ```shell
     emerge quarto
     ```
@@ -133,13 +133,19 @@ flowchart LR
 
 ## <span class="section-num">5</span> Использование {#использование}
 
--   [Quarto. Язык markdown]({{< relref "2025-03-23--quarto-markdown" >}})
--   [Quarto. Оформление метаданных]({{< relref "2025-03-23--quarto-metadata-formatting" >}})
--   [Quarto. Цитирование]({{< relref "2025-03-23--quarto-citations" >}})
--   [Quarto. Перекрёстные ссылки]({{< relref "2025-03-23--quarto-cross-references" >}})
--   [Quarto. Структура для книги]({{< relref "2025-03-27--quarto-book-structure" >}})
--   [Quarto. Формат pdf]({{< relref "2025-03-27--quarto-pdf-format" >}})
--   [Quarto. Листинги]({{< relref "2025-05-13--quarto-code-listing" >}})
--   [Quarto. Таблицы]({{< relref "2025-05-17--quarto-table" >}})
--   [Quarto. Плагины]({{< relref "2025-09-03--quarto-plugins" >}})
--   [Quarto. Профили]({{< relref "2025-10-08--quarto-profiles" >}})
+-   [Quarto. Язык markdown]({{< relref "20250323T203600--quarto_язык_markdown.md" >}})
+-   [Quarto. Оформление метаданных]({{< relref "20250323T202400--quarto_оформление_метаданных.md" >}})
+-   [Quarto. Цитирование]({{< relref "20250323T202900--quarto_цитирование.md" >}})
+-   [Quarto. Перекрёстные ссылки]({{< relref "20250323T203300--quarto_перекрестные_ссылки.md" >}})
+-   [Quarto. Структура для книги]({{< relref "20250327T163300--quarto_структура_для_книги.md" >}})
+-   [Quarto. Формат pdf]({{< relref "20250327T163600--quarto_формат_pdf.md" >}})
+-   [Quarto. Листинги]({{< relref "20250513T160400--quarto_листинги.md" >}})
+-   [Quarto. Таблицы]({{< relref "20250517T154200--quarto_таблицы.md" >}})
+-   [Quarto. Плагины]({{< relref "20250903T205300--quarto_плагины.md" >}})
+-   [Quarto. Профили]({{< relref "20251008T194500--quarto_профили.md" >}})
+-   [Quarto. Подключение файлов]({{< relref "20251119T211500--quarto_подключение_фаилов.md" >}})
+
+
+## <span class="section-num">6</span> Ресурсы {#ресурсы}
+
+-   Набор шаблонов для дипломов: <https://github.com/Jupyter4Science/awesome-quarto-thesis>

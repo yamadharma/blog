@@ -2,7 +2,7 @@
 title: "Подготовка документов для защиты диссертации. РУДН. Инстанции"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-10-07T15:44:00+03:00
-lastmod: 2025-10-07T15:53:00+03:00
+lastmod: 2025-12-04T12:04:00+03:00
 tags: ["science-admin", "rudn"]
 categories: ["job", "science"]
 draft: false
@@ -30,3 +30,23 @@ slug: "preparing-documents-dissertation-defense-rudn-authorities"
 
 -   Патенты необходимо заверить в патентно-информационном отделе РУДН  (Миклухо-Маклая ул., 10 корп.2, ГУМСОЦ, каб. 827)
 -   Ахапкина Галина Николаевна (<mailto:akhapkina_gn@pfur.ru>)
+
+
+## <span class="section-num">3</span> Секретариат учёного совета {#секретариат-учёного-совета}
+
+-   <https://www.rudn.ru/about/struktura-rudn/units/prorektor-po-kadrovoy-politike-i-administrativnoy-rabote/sekretariat-uchenogo-soveta>
+-   Курылев Константин Петрович
+    -   ученый секретарь
+    -   доктор исторических наук
+    -   (495) 787-38-03 доб. 2849
+    -   kurylev-kp@rudn.ru
+-   Зуева Елена Валентиновна
+    -   (495) 744-16-44 доб. 2052
+    -   zueva-ev@rudn.ru
+    -   заведующий лабораторией, ведущий документовед
+-   Семухина Галина Федоровна
+    -   кандидат биологических наук
+    -   (495) 433-23-11 доб. 2052
+    -   semukhina-gf@rudn.ru
+    -   ведущий документовед
+-   Можно оставить документ на подпись в ячейке Учёного секретаря в Кресте, в Канцелярии.

@@ -2,8 +2,8 @@
 title: "Средство натурного моделирования сетей GNS3"
 author: ["Dmitry S. Kulyabov"]
 date: 2022-05-07T15:54:00+03:00
-lastmod: 2025-04-13T15:15:00+03:00
-tags: ["network", "education"]
+lastmod: 2026-01-04T21:06:00+03:00
+tags: ["MOC", "network", "education"]
 categories: ["computer-science"]
 draft: false
 slug: "gns3-network-simulation-tool"
@@ -124,12 +124,13 @@ slug: "gns3-network-simulation-tool"
 
 ## <span class="section-num">4</span> Установка {#установка}
 
--   [GNS3 на Virtualbox]({{< relref "2022-06-25-gns3-virtualbox" >}})
--   [GNS3 на Hyper-V]({{< relref "2022-11-29-gns3-hyperv" >}})
--   [GNS3 на Qemu]({{< relref "2025-04-13--gns3-qemu" >}})
--   [Отключение поддержки KVM в GNS3]({{< relref "2023-10-08-gns3-kvm-disable" >}})
+-   [GNS3 на Virtualbox]({{< relref "20220625165700-gns3_virtualbox.md" >}})
+-   [GNS3 на Hyper-V]({{< relref "20221129140500-gns3_на_hyper_v.md" >}})
+-   [GNS3 на Qemu]({{< relref "20250413T151200--gns3_на_qemu.md" >}})
+-   [GNS3 на vmWare]({{< relref "20260104T210500--gns3_на_vmware.md" >}})
+-   [Отключение поддержки KVM в GNS3]({{< relref "20231008181300-отключение_поддержки_kvm_в_gns3.md" >}})
 
 
 ## <span class="section-num">5</span> Оборудование {#оборудование}
 
--   [GNS3. Образы оборудования]({{< relref "2022-05-07-gns3-appliances" >}})
+-   [GNS3. Образы оборудования]({{< relref "20220507154700-gns3_образы_оборудования.md" >}})
