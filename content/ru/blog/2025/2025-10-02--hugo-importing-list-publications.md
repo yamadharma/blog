@@ -2,7 +2,7 @@
 title: "Hugo. Сайт научника. Импорт списка публикаций"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-10-02T15:57:00+03:00
-lastmod: 2025-10-05T20:32:00+03:00
+lastmod: 2026-01-22T20:25:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ Hugo. Сайт научника. Импорт списка публикаций.
 
 ## <span class="section-num">1</span> Программа для импорта {#программа-для-импорта}
 
--   [Hugo. Шаблон для научных работников. Библиография]({{< relref "2025-01-08--hugo-template-for-scientists-bibliography" >}})
+-   [Hugo. Шаблон для научных работников. Библиография]({{< relref "20250108T203500--hugo_шаблон_для_научных_работников_библиография.md" >}})
 -   Используется пакет `academic`.
 -   PyPi: <https://pypi.org/project/academic/>
 -   Репозиторий: <https://github.com/BuildLore/academic-file-converter>
@@ -218,14 +218,14 @@ hugoblox:
 
     DIR=$(pwd)
 
-    academic import ~/work/bib/bib/mine.bib content/ru/publication --compact --overwrite --verbose
+    academic import ~/work/bib/bib/mine.bib content/ru/publications --compact --overwrite --verbose
 
-    cd ${DIR}/content/en/publication
+    cd ${DIR}/content/en/publications
     find . -xtype l -delete
-    ln -s ../../ru/publication/* .
+    ln -s ../../ru/publications/* .
     grep -r russian * | cut -f1 -d":" | xargs -r dirname | xargs -r rm
 
     cd ${DIR}
 
-    ./scripts/bib-hugoblox-fix.py --directory content/ru/publication/ --no-backup
+    ./scripts/bib-hugoblox-fix.py --directory content/ru/publications/ --no-backup
     ```

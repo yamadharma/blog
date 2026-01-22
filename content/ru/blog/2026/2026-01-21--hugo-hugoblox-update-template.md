@@ -2,7 +2,7 @@
 title: "Hugo. HugoBlox. Обновление шаблонов"
 author: ["Dmitry S. Kulyabov"]
 date: 2026-01-21T21:54:00+03:00
-lastmod: 2026-01-22T20:19:00+03:00
+lastmod: 2026-01-22T20:40:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -123,7 +123,7 @@ Hugo. HugoBlox. Обновление шаблонов.
 
 #### <span class="section-num">3.2.2</span> Публикации типа book {#публикации-типа-book}
 
--   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
+-   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
 -   Тип публикации `book` отсутствует.
 -   Вместо него следует использовать тип `docs`:
     ```yaml
@@ -266,20 +266,17 @@ chmod +x migrate-content-types.sh
     git mv post blog
     cd en
     git mv post blog
-    find . -iname "*.org" -exec sed -i -e "s:ru/post/:ru/blog/:g" '{}' \;
-    find . -iname "*.org" -exec sed -i -e "s:en/post/:en/blog/:g" '{}' \;
-    find . -iname "*.orge" -delete
     ```
 
 
-#### <span class="section-num">4.4.2</span> Обновите ссылки на папки в файлах контента: {#обновите-ссылки-на-папки-в-файлах-контента}
+#### <span class="section-num">4.4.2</span> Обновите ссылки на папки в файлах контента {#обновите-ссылки-на-папки-в-файлах-контента}
 
 -   Искать `folders:` разделы в файлах Markdown
--   Обновите ссылки, например: `- post` к `- blog`
--   Обновите ссылки, например: `- publication` к `- publications`
--   Обновите ссылки, например: `- project` к `- projects`
--   Обновите ссылки, например: `- event` к `- events`
--   Обновите ссылки, например: `- teaching` к `- courses`
+-   Обновите ссылки, например: `- post` → `- blog`
+-   Обновите ссылки, например: `- publication` → `- publications`
+-   Обновите ссылки, например: `- project` → `- projects`
+-   Обновите ссылки, например: `- event` → `- events`
+-   Обновите ссылки, например: `- teaching` → `- courses`
 
 
 #### <span class="section-num">4.4.3</span> Обновите ссылки на `page_type` в файлах контента {#обновите-ссылки-на-page-type-в-файлах-контента}
@@ -316,11 +313,17 @@ chmod +x migrate-content-types.sh
 
 #### <span class="section-num">4.4.6</span> При ведении блога из org-roam {#при-ведении-блога-из-org-roam}
 
--   В каталоге `content`:
+-   Для `post` → `blog`:
     ```shell
     cd ~/work/org
     find . -iname "*.org" -exec sed -i "s:ru/post/:ru/blog/:g" '{}' \;
     find . -iname "*.org" -exec sed -i "s:en/post/:en/blog/:g" '{}' \;
+    ```
+-   Для `teaching` → `courses`:
+    ```shell
+    cd ~/work/org
+    find . -iname "*.org" -exec sed -i "s:ru/teaching:ru/courses:g" '{}' \;
+    find . -iname "*.org" -exec sed -i "s:en/teaching:en/courses:g" '{}' \;
     ```
 
 

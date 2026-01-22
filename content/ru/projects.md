@@ -15,7 +15,7 @@ sections:
       text: Список основных проектов, над которыми я работаю.
       filters:
         folders:
-          - project
+          - projects
     design:
       view: article-grid
       fill_image: false

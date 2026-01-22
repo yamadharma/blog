@@ -91,7 +91,7 @@ sections:
   #     title: Избранные публикации
   #     filters:
   #       folders:
-  #         - publication
+  #         - publications
   #       featured_only: true
   #   design:
   #     view: article-grid
@@ -103,7 +103,7 @@ sections:
       text: ""
       filters:
         folders:
-          - publication
+          - publications
         exclude_featured: false
     design:
       view: citation
@@ -114,7 +114,7 @@ sections:
       title: Выступления
       filters:
         folders:
-          - event
+          - events
     design:
       view: article-grid
       columns: 1

@@ -22,7 +22,7 @@ sections:
       page_type: ''
       filters:
         folders:
-          - teaching
+          - courses
         author: ''
         category: ''
         tag: ''
