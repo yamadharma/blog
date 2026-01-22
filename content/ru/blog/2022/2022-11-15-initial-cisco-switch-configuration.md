@@ -278,7 +278,7 @@ slug: "initial-cisco-switch-configuration"
 
 ### <span class="section-num">3.1</span> nsupdate {#nsupdate}
 
--   [nsupdate: динамический редактор зон DNS]({{< relref "20231028192800-nsupdate_динамическии_редактор_зон_dns.md" >}})
+-   [nsupdate: динамический редактор зон DNS]({{< relref "2023-10-28-nsupdate-dynamic-dns-editor" >}})
 -   Добавьте адрес коммутатора в DNS:
     ```shell
     echo -e "update add sw-103-1.example.com 86400 a 192.168.0.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
@@ -309,7 +309,7 @@ slug: "initial-cisco-switch-configuration"
 
 ### <span class="section-num">4.2</span> Подключение к Librenms {#подключение-к-librenms}
 
--   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "20230320150700-система_мониторинга_librenms.md" >}})).
+-   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:
     ```shell
     sudo -u librenms env "PATH=$PATH" lnms device:add sw-103-1 -c rocom

@@ -34,9 +34,9 @@ slug: "linux-proxmox-distribution"
 
 ### <span class="section-num">2.1</span> Установка и настройка {#установка-и-настройка}
 
--   [Linux. Установка Proxmox VE]({{< relref "../notes/public/20240604112300-linux_установка_proxmox_ve.md" >}})
--   [Proxmox. Вспомогательные скрипты]({{< relref "../notes/public/20240604133400-proxmox_вспомогательные_скрипты.md" >}})
--   [Перенос виртуальной машины на Proxmox]({{< relref "../notes/public/20240904165800-перенос_виртуальнои_машины_на_proxmox.md" >}})
+-   [Linux. Установка Proxmox VE]({{< relref "2024-06-04-proxmox-ve-install" >}})
+-   [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})
+-   [Перенос виртуальной машины на Proxmox]({{< relref "2024-09-04-migrating-virtual-machine-proxmox" >}})
 
 
 ### <span class="section-num">2.2</span> Обновление {#обновление}
@@ -244,7 +244,7 @@ slug: "linux-proxmox-distribution"
         apt modernize-sources
         ```
 
-    -   Запустите скрипт Proxmox VE Post Install (см. [Proxmox. Вспомогательные скрипты]({{< relref "../notes/public/20240604133400-proxmox_вспомогательные_скрипты.md" >}}))
+    -   Запустите скрипт Proxmox VE Post Install (см. [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}}))
 
 <!--list-separator-->
 
@@ -257,18 +257,18 @@ slug: "linux-proxmox-distribution"
 
 ## <span class="section-num">3</span> Дистрибутивы для установки {#дистрибутивы-для-установки}
 
--   [Linux. Дистрибутив Turnkey]({{< relref "../notes/public/20250126T194800--linux_дистрибутив_turnkey.md" >}})
+-   [Linux. Дистрибутив Turnkey]({{< relref "2025-01-26--linux-distro-turnkey" >}})
 
 
 ## <span class="section-num">4</span> Установка виртуальных машин {#установка-виртуальных-машин}
 
--   [Proxmox. Установка OpenVPN в LXC]({{< relref "../notes/public/20250127T191600--proxmox_установка_openvpn_в_lxc.md" >}})
--   [Proxmox. Установка Wireguard в LXC]({{< relref "../notes/public/20251119T191600--proxmox_установка_wireguard_в_lxc.md" >}})
--   [Proxmox. Установка Windows]({{< relref "../notes/public/20250222T192000--proxmox_установка_windows.md" >}})
--   [Proxmox. Сервер Seafile]({{< relref "../notes/public/20250408T131500--proxmox_сервер_seafile.md" >}})
--   [Proxmox. Установка Rocky Linux]({{< relref "../notes/public/20250622T134700--proxmox_установка_rocky_linux.md" >}})
+-   [Proxmox. Установка OpenVPN в LXC]({{< relref "2025-01-27--proxmox-installing-openvpn-lxc" >}})
+-   [Proxmox. Установка Wireguard в LXC]({{< relref "2025-11-19--proxmox-install-wireguard-lxc" >}})
+-   [Proxmox. Установка Windows]({{< relref "2025-02-22--proxmox-windows-install" >}})
+-   [Proxmox. Сервер Seafile]({{< relref "2025-04-08--proxmox-seafile" >}})
+-   [Proxmox. Установка Rocky Linux]({{< relref "2025-06-22--proxmox-install-rocky-linux" >}})
 
 
 ## <span class="section-num">5</span> Дополнительный функционал {#дополнительный-функционал}
 
--   [Proxmox Backup Server]({{< relref "../notes/public/20250304T140200--proxmox_backup_server.md" >}})
+-   [Proxmox Backup Server]({{< relref "2025-03-04--proxmox-backup-server" >}})

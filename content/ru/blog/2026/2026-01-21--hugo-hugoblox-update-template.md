@@ -123,7 +123,7 @@ Hugo. HugoBlox. Обновление шаблонов.
 
 #### <span class="section-num">3.2.2</span> Публикации типа book {#публикации-типа-book}
 
--   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
+-   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
 -   Тип публикации `book` отсутствует.
 -   Вместо него следует использовать тип `docs`:
     ```yaml

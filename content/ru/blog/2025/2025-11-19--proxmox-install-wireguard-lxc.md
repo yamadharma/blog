@@ -18,7 +18,7 @@ Proxmox. Установка Wireguard в LXC.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   [WireGuard VPN]({{< relref "../notes/public/20251106T085300--wireguard_vpn.md" >}})
+-   [WireGuard VPN]({{< relref "2025-11-06--wireguard_vpn" >}})
 -   Сайт: <https://www.turnkeylinux.org/wireguard>
 -   Репозиторий: <https://github.com/turnkeylinux-apps/wireguard>
 -   Установочный скрипт: <https://community-scripts.github.io/ProxmoxVE/scripts?id=wireguard>

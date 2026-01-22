@@ -31,7 +31,7 @@ Gentoo. Создание ebuild для python.
 
 ### <span class="section-num">1.2</span> Установка {#установка}
 
--   В репозитории guru ([Gentoo. Дополнительные репозитории]({{< relref "../notes/public/20231001134100-gentoo_дополнительные_репозитории.md" >}})):
+-   В репозитории guru ([Gentoo. Дополнительные репозитории]({{< relref "2023-10-01-gentoo-additional-repositories" >}})):
     ```shell
     emerge dev-python/pyproject2ebuild
     ```

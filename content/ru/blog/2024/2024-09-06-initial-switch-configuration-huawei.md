@@ -120,7 +120,7 @@ slug: "initial-switch-configuration-huawei"
 
 ### <span class="section-num">2.5</span> DHCP snooping {#dhcp-snooping}
 
--   [DHCP snooping]({{< relref "20230905094900-dhcp_snooping.md" >}})
+-   [DHCP snooping]({{< relref "2023-09-05-dhcp-snooping" >}})
 -   Для использования DHCP snooping нам потребуется включить на коммутаторе глобально DHCP и DHCP snooping:
     ```shell
     [sw-103-1]dhcp enable
@@ -157,7 +157,7 @@ slug: "initial-switch-configuration-huawei"
 
 ### <span class="section-num">2.8</span> Настройка VCMP {#настройка-vcmp}
 
--   [Huawei. Протокол VCMP]({{< relref "20240921124900-huawei_протокол_vcmp.md" >}})
+-   [Huawei. Протокол VCMP]({{< relref "2024-09-21-huawei-vcmp" >}})
 -   Подключаем как клиента:
     ```shell
     [sw-103-1]vcmp role client
@@ -206,7 +206,7 @@ slug: "initial-switch-configuration-huawei"
 
 ### <span class="section-num">3.1</span> nsupdate {#nsupdate}
 
--   [nsupdate: динамический редактор зон DNS]({{< relref "20231028192800-nsupdate_динамическии_редактор_зон_dns.md" >}})
+-   [nsupdate: динамический редактор зон DNS]({{< relref "2023-10-28-nsupdate-dynamic-dns-editor" >}})
 -   Добавьте адрес коммутатора в DNS:
     ```shell
     echo -e "update add sw-103-1.example.com 86400 a 192.168.0.1\nshow\nsend" | nsupdate -v -k /etc/named/keys/example.com.key
@@ -285,7 +285,7 @@ slug: "initial-switch-configuration-huawei"
 
 ### <span class="section-num">4.4</span> Подключение к Librenms {#подключение-к-librenms}
 
--   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "20230320150700-система_мониторинга_librenms.md" >}})).
+-   Подключитесь к Librenms (см. [Система мониторинга LibreNMS]({{< relref "2023-03-20-librenms-monitoring-system" >}})).
 -   Добавьте коммутатор в список наблюдения в Librenms:
     ```shell
     sudo -u librenms env "PATH=$PATH" lnms device:add sw-103-1 -c rocom

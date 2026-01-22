@@ -26,7 +26,7 @@ slug: "latex-what-read"
 
 ### <span class="section-num">2.1</span> Русская специфика {#русская-специфика}
 
--   [Grinchuk, M. I. (1996) TeX and Russian Traditions of Typesetting]({{< relref "../literature/grinchuk_1996_tex-russian-typesetting_en.md" >}}) [<a href="#citeproc_bib_item_2">2</a>].
+-   [Grinchuk, M. I. (1996) TeX and Russian Traditions of Typesetting]({{< relref "2026-01-09--grinchuk_1996_tex-russian-typesetting_en" >}}) [<a href="#citeproc_bib_item_2">2</a>].
 
 
 ## <span class="section-num">3</span> Библиография {#библиография}

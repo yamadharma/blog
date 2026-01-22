@@ -34,7 +34,7 @@ slug: "ansible-graphical-interface"
 
 ## <span class="section-num">2</span> AWX {#awx}
 
--   [Ansible. Графический интерфейс AWX]({{< relref "20251210T202400--ansible_графическии_интерфеис_awx.md" >}})
+-   [Ansible. Графический интерфейс AWX]({{< relref "2025-12-10--ansible-awx" >}})
 -   Репозиторий: <https://github.com/ansible/awx>
 -   Лицензия: Apache License
 -   Открытая версия Ansible Tower с аналогичным функционалом, но с открытым исходным кодом.
@@ -51,7 +51,7 @@ slug: "ansible-graphical-interface"
 
 ## <span class="section-num">3</span> Semaphore UI {#semaphore-ui}
 
--   [Ansible. Графический интерфейс Semaphore UI]({{< relref "20250731T201100--ansible_графическии_интерфеис_semaphore_ui.md" >}})
+-   [Ansible. Графический интерфейс Semaphore UI]({{< relref "2025-07-31--ansile-semaphore-ui" >}})
 -   Сайт:
     -   <https://www.semaphoreui.ru/>
     -   <https://semaphoreui.com/>

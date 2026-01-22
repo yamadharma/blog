@@ -16,7 +16,7 @@ Proxmox. Установка OpenVPN в LXC.
 
 ## <span class="section-num">1</span> Информация о дистрибутиве {#информация-о-дистрибутиве}
 
--   [Linux. Дистрибутив Turnkey]({{< relref "20250126T194800--linux_дистрибутив_turnkey.md" >}})
+-   [Linux. Дистрибутив Turnkey]({{< relref "2025-01-26--linux-distro-turnkey" >}})
 -   Репозиторий: <https://github.com/turnkeylinux-apps/openvpn>
 -   Сайт: <https://www.turnkeylinux.org/openvpn>
 
@@ -27,7 +27,7 @@ Proxmox. Установка OpenVPN в LXC.
     ```shell
     pveam update
     ```
--   Установим дистрибутив Turnkey-OpenVPN (см. [Linux. Дистрибутив Turnkey]({{< relref "20250126T194800--linux_дистрибутив_turnkey.md" >}})):
+-   Установим дистрибутив Turnkey-OpenVPN (см. [Linux. Дистрибутив Turnkey]({{< relref "2025-01-26--linux-distro-turnkey" >}})):
     ```shell
     pveam available | grep openvpn
     pveam download local debian-12-turnkey-openvpn_18.1-1_amd64.tar.gz

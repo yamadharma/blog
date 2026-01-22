@@ -36,7 +36,7 @@ slug: "document-conversion-unoserver"
 
 ### <span class="section-num">2.1</span> Gentoo {#gentoo}
 
--   Репозиторий karma ([Gentoo. Репозиторий karma]({{< relref "../notes/public/20240525205200-gentoo_репозитории_karma.md" >}})):
+-   Репозиторий karma ([Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
     ```shell
     emerge app-office/unoserver
     ```

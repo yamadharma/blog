@@ -98,7 +98,7 @@ OBS Studio. Удалённое управление.
 
 #### <span class="section-num">4.3.1</span> Gentoo {#gentoo}
 
--   Репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "20240525205200-gentoo_репозитории_karma.md" >}})):
+-   Репозиторий karma (см. [Gentoo. Репозиторий karma]({{< relref "2024-05-25-gentoo-karma-repository" >}})):
     ```shell
     emerge obs-cmd
     ```

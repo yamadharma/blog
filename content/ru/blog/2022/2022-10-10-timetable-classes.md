@@ -25,7 +25,7 @@ slug: "timetable-classes"
 
 ## <span class="section-num">2</span> Расписание по годам {#расписание-по-годам}
 
--   [Расписание занятий - 2025-2026]({{< relref "../notes/public/20251221T203900--расписание_занятии_2025_2026.md" >}})
+-   [Расписание занятий - 2025-2026]({{< relref "2025-12-21--class-schedule-2025-2026" >}})
 
 
 ## <span class="org-todo done DONE">DONE</span> <span class="section-num">3</span> Расписание занятий <code>[2/2]</code><code>[100%]</code> {#расписание-занятий}

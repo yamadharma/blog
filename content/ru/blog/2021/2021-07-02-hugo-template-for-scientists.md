@@ -40,7 +40,7 @@ slug: "hugo-template-for-scientists"
 
 ## <span class="section-num">2</span> Обновление шаблонов Wowchemy {#обновление-шаблонов-wowchemy}
 
--   [Hugo. HugoBlox. Обновление шаблонов]({{< relref "../notes/public/20260121T215400--hugo_hugoblox_обновление_шаблонов.md" >}})
+-   [Hugo. HugoBlox. Обновление шаблонов]({{< relref "2026-01-21--hugo-hugoblox-update-template" >}})
 
 
 ## <span class="section-num">3</span> Устранение проблем {#устранение-проблем}
@@ -87,10 +87,10 @@ slug: "hugo-template-for-scientists"
 
 ## <span class="section-num">5</span> Типы контента Wowchemy {#типы-контента-wowchemy}
 
--   [Hugo. Wowchemy. Book]({{< relref "../notes/public/20221122163100-hugo_wowchemy_book.md" >}})
+-   [Hugo. Wowchemy. Book]({{< relref "2022-11-22-hugo-wowchemy-book" >}})
 
 
 ## <span class="section-num">6</span> Полезности {#полезности}
 
--   [Hugo. Шаблон для научных работников. Полезные скрипты]({{< relref "../notes/public/20250108T202900--hugo_шаблон_для_научных_работников_полезные_скрипты.md" >}})
--   [Hugo. Шаблон для научных работников. Библиография]({{< relref "../notes/public/20250108T203500--hugo_шаблон_для_научных_работников_библиография.md" >}})
+-   [Hugo. Шаблон для научных работников. Полезные скрипты]({{< relref "2025-01-08--hugo-template-for-scientists-scripts" >}})
+-   [Hugo. Шаблон для научных работников. Библиография]({{< relref "2025-01-08--hugo-template-for-scientists-bibliography" >}})

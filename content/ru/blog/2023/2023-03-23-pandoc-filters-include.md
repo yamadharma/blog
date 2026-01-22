@@ -159,4 +159,4 @@ slug: "pandoc-filters-include"
 
 ## <span class="section-num">2</span> Quarto {#quarto}
 
--   В Quarto можно использовать стандартное сокращение для подключения файлов: [Quarto. Подключение файлов]({{< relref "../notes/public/20251119T211500--quarto_подключение_фаилов.md" >}}).
+-   В Quarto можно использовать стандартное сокращение для подключения файлов: [Quarto. Подключение файлов]({{< relref "2025-11-19--quarto-include-file" >}}).

@@ -65,11 +65,11 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 
 ## <span class="section-num">3</span> Навигация {#навигация}
 
--   [Emacs. Клавиатура. Броузеры]({{< relref "../notes/public/20230819191500-emscs_клавиатура_броузеры.md" >}})
--   [Vim. Клавиатура. Броузеры]({{< relref "../notes/public/20230819184700-vim_клавиатура_броузеры.md" >}})
--   [Броузер. Расширение Vimium-c]({{< relref "../notes/public/20250406T140100--броузер_расширение_vimium_c.md" >}})
+-   [Emacs. Клавиатура. Броузеры]({{< relref "2023-08-19-emacs-keyboard-browsers" >}})
+-   [Vim. Клавиатура. Броузеры]({{< relref "2023-08-19-vim-keyboard-browsers" >}})
+-   [Броузер. Расширение Vimium-c]({{< relref "2025-04-06--browser-plugin-vimiumc" >}})
 
 
 ## <span class="section-num">4</span> Дополнения {#дополнения}
 
--   [Firefox. Расширения]({{< relref "../notes/public/20240823202500-firefox_расширения.md" >}})
+-   [Firefox. Расширения]({{< relref "2006-12-24-firefox-extention" >}})

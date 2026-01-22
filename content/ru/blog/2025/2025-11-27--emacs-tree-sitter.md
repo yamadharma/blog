@@ -18,5 +18,5 @@ Emacs. Инкрементальный парсер tree-sitter.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   [Инкрементальный парсер tree-sitter]({{< relref "../notes/public/20251125T115900--инкрементальныи_парсер_tree_sitter.md" >}})
+-   [Инкрементальный парсер tree-sitter]({{< relref "2025-11-25--incremental-parser-tree-sitter" >}})
 -   Для Emacs 29 испозовался внешний пакет (<https://emacs-tree-sitter.github.io>).

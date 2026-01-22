@@ -18,7 +18,7 @@ slug: "rockylinux-server-installation"
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. [Замена Centos]({{< relref "../notes/public/20210525152200-замена_centos.md" >}})).
+-   Rocky Linux --- сборка RedHat Linux, пришедший на смену Centos (см. [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})).
 -   Сайт: <https://rockylinux.org/>.
 -   Образы:
     -   <https://rockylinux.org/download>;
@@ -82,7 +82,7 @@ slug: "rockylinux-server-installation"
 
 ## <span class="section-num">2</span> Установка образа {#установка-образа}
 
--   [Proxmox. Установка Rocky Linux]({{< relref "../notes/public/20250622T134700--proxmox_установка_rocky_linux.md" >}})
+-   [Proxmox. Установка Rocky Linux]({{< relref "2025-06-22--proxmox-install-rocky-linux" >}})
 
 
 ## <span class="section-num">3</span> После установки {#после-установки}
@@ -235,7 +235,7 @@ slug: "rockylinux-server-installation"
     dnf -y install fail2ban
     ```
 
--   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "../notes/public/20231030110100-fail2ban_основные_настроики.md" >}})) и запустить:
+-   Следует сконфигурировать (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})) и запустить:
     ```shell
     systemctl enable --now fail2ban.service
     ```
@@ -250,7 +250,7 @@ slug: "rockylinux-server-installation"
 
 #### <span class="section-num">3.10.1</span> Автоматическое обновление {#автоматическое-обновление}
 
--   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "../notes/public/20220925094200-автообновление_систем_на_базе_деривативов_redhat.md" >}})).
+-   При необходимости можно использовать автоматическое обновление (см. [Автообновление систем на базе деривативов RedHat]({{< relref "2022-09-25-redhat-based-systems-auto-update" >}})).
 -   Установка программного обеспечения:
     ```shell
     sudo dnf -y install dnf-automatic
@@ -429,8 +429,8 @@ slug: "rockylinux-server-installation"
 
 ### <span class="section-num">4.7</span> DNS сервера {#dns-сервера}
 
--   [DNS. PowerDNS Recursor]({{< relref "../notes/public/20230523100800-dns_powerdns_recursor.md" >}})
--   [DNS. Bind]({{< relref "../notes/public/20230919143200-dns_bind.md" >}})
+-   [DNS. PowerDNS Recursor]({{< relref "2023-05-23-dns-powerdns-recursor" >}})
+-   [DNS. Bind]({{< relref "2023-09-19-dns-bind" >}})
 
 
 ### <span class="section-num">4.8</span> Контроль версий {#контроль-версий}
@@ -462,4 +462,4 @@ slug: "rockylinux-server-installation"
 
 ### <span class="section-num">4.10</span> Виртуализация и контейнеры {#виртуализация-и-контейнеры}
 
--   [Контейнеры. podman]({{< relref "../notes/public/20241204201300-контеинеры_podman.md" >}})
+-   [Контейнеры. podman]({{< relref "2024-12-04-containers-podman" >}})

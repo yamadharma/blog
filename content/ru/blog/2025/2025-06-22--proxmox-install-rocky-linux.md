@@ -18,8 +18,8 @@ Proxmox. Установка Rocky Linux.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   [Linux. Дистрибутив Proxmox]({{< relref "20240604104500-linux_дистрибутив_proxmox.md" >}})
--   [Замена Centos]({{< relref "20210525152200-замена_centos.md" >}})
+-   [Linux. Дистрибутив Proxmox]({{< relref "2024-06-04-linux-proxmox-distribution" >}})
+-   [Замена Centos]({{< relref "2021-05-25-replacing-centos" >}})
 
 
 ## <span class="section-num">2</span> Установка Rocky Linux в Proxmox из командной строки {#установка-rocky-linux-в-proxmox-из-командной-строки}
@@ -68,6 +68,6 @@ Proxmox. Установка Rocky Linux.
         qm start <VMID>
         ```
     -   Подключитесь к консоли VM через веб-интерфейс Proxmox и следуйте инструкциям по установке Rocky Linux.
-    -   [Rocky Linux. Установка сервера]({{< relref "20220812135700-rocky_linux_9_установка_сервера.md" >}})
+    -   [Rocky Linux. Установка сервера]({{< relref "2022-08-12-rockylinux-server-installation" >}})
 5.  Guest agent
-    -   Установите quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "20240905161800-kvm_qemu_guest_agent.md" >}})).
+    -   Установите quemu-guest-agent (см. [KVM. QEMU Guest Agent]({{< relref "2024-09-05-kvm-qemu-guest-agent" >}})).

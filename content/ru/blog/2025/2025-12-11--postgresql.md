@@ -23,7 +23,7 @@ PostgreSQL.
 
 ## <span class="section-num">2</span> Операции {#операции}
 
--   [PostgreSQL. Установка]({{< relref "../notes/public/20251211T113800--postgresql_установка.md" >}})
+-   [PostgreSQL. Установка]({{< relref "2025-12-11--postgresql-install" >}})
 
 
 ### <span class="section-num">2.1</span> Rocky Linux {#rocky-linux}

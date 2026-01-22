@@ -82,4 +82,4 @@ Epub. Утилиты
 ### <span class="section-num">1.2</span> EpubMerge {#epubmerge}
 
 -   Репозиторий: <https://github.com/JimmXinu/EpubMerge>
--   Плагин для Calibre (см. [Каталогизатор книг Calibre]({{< relref "../notes/public/20250204T190900--каталогизатор_книг_calibre.md" >}})).
+-   Плагин для Calibre (см. [Каталогизатор книг Calibre]({{< relref "2025-02-04--calibre-book-cataloger" >}})).

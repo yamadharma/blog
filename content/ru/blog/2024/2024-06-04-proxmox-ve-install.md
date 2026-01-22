@@ -85,7 +85,7 @@ slug: "proxmox-ve-install"
     ```
 
 
-### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "20240604133400-proxmox_вспомогательные_скрипты.md" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
+### <span class="section-num">3.2</span> Скрипты для тьюнинга (см. [Proxmox. Вспомогательные скрипты]({{< relref "2024-06-04-proxmox-helper-scripts" >}})) {#скрипты-для-тьюнинга--см-dot-proxmox-dot-вспомогательные-скрипты-20240604133400-proxmox-вспомогательные-скрипты-dot-md}
 
 -   Proxmox VE Post Install
     ```shell
@@ -110,7 +110,7 @@ slug: "proxmox-ve-install"
 
 ### <span class="section-num">3.4</span> Безопасность {#безопасность}
 
--   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "20231030110100-fail2ban_основные_настроики.md" >}})):
+-   Установите и настройте fail2ban (см. [fail2ban. Основные настройки]({{< relref "2023-10-30-fail2ban-basic-settings" >}})):
     ```shell
     apt install fail2ban
     ```
