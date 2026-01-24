@@ -7,7 +7,7 @@ authors:
 - Victor Malyutin
 - Leonid Antonovich Sevastianov
 date: '2018-02-01'
-publishDate: '2025-08-27T16:24:58.634577Z'
+publishDate: '2026-01-23T13:43:22.973390Z'
 publication_types:
 - paper-conference
 publication: '*Mathematical Modeling and Computational Physics 2017*'

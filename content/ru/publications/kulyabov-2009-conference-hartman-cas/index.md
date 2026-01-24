@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastianov
 date: '2009-01-01'
-publishDate: '2025-08-27T16:24:57.710895Z'
+publishDate: '2026-01-23T13:43:19.199414Z'
 publication_types:
 - paper-conference
 publication: '*Mathematical Modeling and Computational Physics*'

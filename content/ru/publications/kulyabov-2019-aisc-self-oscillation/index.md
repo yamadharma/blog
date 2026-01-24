@@ -6,7 +6,7 @@ authors:
 - Anastasiya Vyacheslavovna Demidova
 - Dmitry Sergeevich Kulyabov
 date: '2019-01-01'
-publishDate: '2025-08-27T16:24:58.722924Z'
+publishDate: '2026-01-23T13:43:23.365282Z'
 publication_types:
 - chapter
 publication: '*Contemporary Complex Systems and Their Dependability: Proceedings of the Thirteenth International Conference on Dependability and Complex Systems DepCoS-RELCOMEX, July 2-6, 2018, Brunów, Poland*'

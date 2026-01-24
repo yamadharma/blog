@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korol'kova
 - Leonid Antonovich Sevast'yanov
 date: '2019-03-01'
-publishDate: '2025-08-27T16:24:58.828167Z'
+publishDate: '2026-01-23T13:43:23.677245Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

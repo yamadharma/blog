@@ -8,7 +8,7 @@ authors:
 - Виктор Б. Малютин
 - Леонид Антонович Севастьянов
 date: '2016-09-01'
-publishDate: '2025-08-27T16:24:58.162459Z'
+publishDate: '2026-01-23T13:43:21.014608Z'
 publication_types:
 - paper-conference
 publication: '*XII Белорусская математическая конференция*'

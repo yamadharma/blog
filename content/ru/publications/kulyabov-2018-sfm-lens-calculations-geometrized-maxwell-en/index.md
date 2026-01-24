@@ -7,7 +7,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Anastasiya Vyacheslavovna Demidova
 date: '2018-04-01'
-publishDate: '2025-08-27T16:24:58.690742Z'
+publishDate: '2026-01-23T13:43:23.247430Z'
 publication_types:
 - paper-conference
 publication: '*Saratov Fall Meeting 2017: Laser Physics and Photonics XVIII; and Computational Biophysics and Analysis of Biomedical Data IV*'

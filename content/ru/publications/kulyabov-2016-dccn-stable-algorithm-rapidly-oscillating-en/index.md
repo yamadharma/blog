@@ -6,7 +6,7 @@ authors:
 - Nikolai E. Nikolaev
 - Leonid Antonovich Sevastianov
 date: '2016-11-01'
-publishDate: '2025-08-27T16:24:58.286922Z'
+publishDate: '2026-01-23T13:43:21.517807Z'
 publication_types:
 - paper-conference
 publication: '*Distributed computer and communication networks: control, computation,

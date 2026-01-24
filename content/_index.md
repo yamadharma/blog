@@ -1,5 +1,7 @@
 ---
 title: Posts
+date: 2022-10-24
+type: landing
 
 # View.
 #   1 = List

@@ -8,7 +8,7 @@ authors:
 - Sergey Ilyich Vinitsky
 - A A Gusev
 date: '2007-01-01'
-publishDate: '2025-08-27T16:24:57.640981Z'
+publishDate: '2026-01-23T13:43:18.939005Z'
 publication_types:
 - paper-conference
 publication: '*11-th Workshop on Computer Algebra*'

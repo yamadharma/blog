@@ -5,7 +5,7 @@ authors:
 - Анна Владиславовна Королькова
 - Леонид Антонович Севастьянов
 date: '2016-01-01'
-publishDate: '2025-08-27T16:24:58.229021Z'
+publishDate: '2026-01-23T13:43:21.236729Z'
 publication_types:
 - paper-conference
 publication: '*Компьютерная алгебра*'

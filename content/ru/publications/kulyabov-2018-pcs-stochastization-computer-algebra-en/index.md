@@ -8,7 +8,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevast'yanov
 date: '2018-01-01'
-publishDate: '2025-08-27T16:24:58.677134Z'
+publishDate: '2026-01-23T13:43:23.168247Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

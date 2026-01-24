@@ -6,7 +6,7 @@ authors:
 - Юрий Юрьевич Сёмкин
 - С О Томила
 date: '2008-01-01'
-publishDate: '2025-08-27T16:24:57.680820Z'
+publishDate: '2026-01-23T13:43:19.080439Z'
 publication_types:
 - paper-conference
 publication: '*Материалы XI научной конференции МГТУ «СТАНКИН» и «Учебно-научного

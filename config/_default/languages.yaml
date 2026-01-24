@@ -30,10 +30,10 @@ ru:
         url: experience/
         weight: 25
       - name: Проекты
-        url: 'projects/'
+        url: projects/
         weight: 30
       - name: Преподавание
-        url: teaching/
+        url: courses/
         weight: 50
       # - name: Контакты
       #   url: '#contact'

@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2021-04-01'
-publishDate: '2025-08-27T16:24:59.001626Z'
+publishDate: '2026-01-23T13:43:24.265989Z'
 publication_types:
 - paper-conference
 publication: '*Workshop on information technology and scientific computing in the framework of the XI International Conference Information and Telecommunication Technologies and Mathematical Modeling of High-Tech Systems (ITTMM-2021)*'

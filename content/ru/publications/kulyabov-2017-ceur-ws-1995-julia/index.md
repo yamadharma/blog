@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2017-04-01'
-publishDate: '2025-08-27T16:24:58.422598Z'
+publishDate: '2026-01-23T13:43:22.009695Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 7th International Conference \"Information and Telecommunication Technologies and Mathematical Modeling of High-Tech Systems\" (ITTMM-2017), Moscow, Russia, April 24, 2017*'

@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2013-01-01'
-publishDate: '2025-08-27T16:24:57.904383Z'
+publishDate: '2026-01-23T13:43:20.074879Z'
 publication_types:
 - paper-conference
 publication: '*16-th Workshop on Computer Algebra*'

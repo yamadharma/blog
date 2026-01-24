@@ -7,7 +7,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastyanov
 date: '2016-01-01'
-publishDate: '2025-08-27T16:24:58.310083Z'
+publishDate: '2026-01-23T13:43:21.597963Z'
 publication_types:
 - article-journal
 publication: '*EPJ Web of Conferences*'

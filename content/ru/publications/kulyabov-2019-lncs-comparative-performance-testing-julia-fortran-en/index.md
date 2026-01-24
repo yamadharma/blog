@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Konstantin Petrovich Lovetskiy
 date: '2019-01-01'
-publishDate: '2025-08-27T16:24:58.816387Z'
+publishDate: '2026-01-23T13:43:23.645142Z'
 publication_types:
 - chapter
 publication: '*Numerical Methods and Applications. NMA 2018*'

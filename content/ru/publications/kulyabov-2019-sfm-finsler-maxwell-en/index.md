@@ -6,7 +6,7 @@ authors:
 - Tatyana Refatovna Velieva
 - Anastasiya Vyacheslavovna Demidova
 date: '2019-06-01'
-publishDate: '2025-08-27T16:24:58.847074Z'
+publishDate: '2026-01-23T13:43:23.722309Z'
 publication_types:
 - paper-conference
 publication: '*Saratov Fall Meeting 2018: Laser Physics, Photonic Technologies, and Molecular Modeling*'

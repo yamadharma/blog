@@ -5,7 +5,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - Анастасия Андреевна Шарапова
 date: '2016-09-01'
-publishDate: '2025-08-27T16:24:58.218485Z'
+publishDate: '2026-01-23T13:43:21.205040Z'
 publication_types:
 - patent
 tags:

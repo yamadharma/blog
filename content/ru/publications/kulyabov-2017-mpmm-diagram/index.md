@@ -4,7 +4,7 @@ authors:
 - Ekaterina Gennadyevna Eferina
 - Dmitry Sergeevich Kulyabov
 date: '2017-05-01'
-publishDate: '2025-08-27T16:24:58.513255Z'
+publishDate: '2026-01-23T13:43:22.312522Z'
 publication_types:
 - paper-conference
 publication: "*6th International conference ``Problems of Mathematical Phisics and

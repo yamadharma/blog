@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Stepan Viktorovich Sergeev
 date: '2024-01-01'
-publishDate: '2025-08-27T16:24:59.253482Z'
+publishDate: '2026-01-23T13:43:25.455240Z'
 publication_types:
 - article-journal
 publication: '*Izvestiya of Saratov University. Mathematics. Mechanics. Informatics*'
@@ -17,6 +17,8 @@ tags:
 - index:rinc
 - index:rinc-core
 - index-rank:scopus:sjr:q4
+- index:wos
+- index:scopus
 hugoblox:
   ids:
     doi: 10.18500/1816-9791-2024-24-4-512-525

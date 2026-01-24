@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Ivan Mikhailovich Gostev
 date: '2018-09-01'
-publishDate: '2025-08-27T16:24:58.605946Z'
+publishDate: '2026-01-23T13:43:22.816423Z'
 publication_types:
 - paper-conference
 publication: '*Selected Papers of the 8th International Conference \"Distributed Computing and Grid-technologies in Science and Education\"*'

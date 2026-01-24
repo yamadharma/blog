@@ -8,7 +8,7 @@ authors:
 - Tatiana Aleksandrovna Milovanova
 - Vladimir Tsurlukov
 date: '2017-09-01'
-publishDate: '2025-08-27T16:24:58.452261Z'
+publishDate: '2026-01-23T13:43:22.121591Z'
 publication_types:
 - paper-conference
 publication: '*20th International Conference Distributed Computer and Communication

@@ -4,7 +4,7 @@ authors:
 - Дмитрий Сергеевич Кулябов
 - А В Ставцев
 date: '2005-01-01'
-publishDate: '2025-08-27T16:24:57.559901Z'
+publishDate: '2026-01-23T13:43:18.705609Z'
 publication_types:
 - paper-conference
 publication: '*XLI Научная конференция факультета физико-математических и естественных

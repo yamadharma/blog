@@ -4,7 +4,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2020-01-01'
-publishDate: '2025-08-27T16:24:58.950579Z'
+publishDate: '2026-01-23T13:43:24.114534Z'
 publication_types:
 - article-journal
 publication: '*EPJ Web of Conferences*'

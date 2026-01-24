@@ -6,7 +6,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2025-06-01'
-publishDate: '2025-08-27T16:24:59.286719Z'
+publishDate: '2026-01-23T13:43:25.593425Z'
 publication_types:
 - paper-conference
 publication: '*Computer Algebra, 6th International Conference Materials*'

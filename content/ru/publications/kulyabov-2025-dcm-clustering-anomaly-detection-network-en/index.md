@@ -4,7 +4,7 @@ authors:
 - Aleksandr Sergeevich Baklashov
 - Dmitry Sergeevich Kulyabov
 date: '2025-01-01'
-publishDate: '2025-08-27T16:24:59.292207Z'
+publishDate: '2026-01-23T13:43:25.609999Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'
@@ -16,11 +16,11 @@ tags:
 - index-rank:vak:k2
 - index:scopus
 - index-rank:scopus:sjr:q3
+links:
+- name: URL
+  url: https://journals.rudn.ru/miph/article/download/44731/24875
 hugoblox:
   ids:
     doi: 10.22363/2658-4670-2025-33-1-27-45
-  links:
-  - type: pdf
-    url: https://journals.rudn.ru/miph/article/download/44731/24875.pdf
 
 ---

@@ -2,7 +2,7 @@
 title: "Hugo. HugoBlox. Обновление шаблонов"
 author: ["Dmitry S. Kulyabov"]
 date: 2026-01-21T21:54:00+03:00
-lastmod: 2026-01-22T21:24:00+03:00
+lastmod: 2026-01-23T20:13:00+03:00
 tags: ["hugo"]
 categories: ["computer-science"]
 draft: false
@@ -131,7 +131,7 @@ Hugo. HugoBlox. Обновление шаблонов.
     ```
 -   Убран шорткод:
     ```text
-    {{< list_children >}}
+    {{</* list_children */>}}
     ```
 
 
@@ -151,6 +151,7 @@ Hugo. HugoBlox. Обновление шаблонов.
 
 ### <span class="section-num">4.1</span> Общая информация {#общая-информация}
 
+-   Релиз: <https://github.com/HugoBlox/kit/releases/tag/modules%2Fblox-tailwind%2Fv0.8.0>
 -   Меняются именования каталогов.
 -   Рекомендуется использовать фиксированные названия каталогов.
 -   В Hugo Blox стандартизированы типы контента:
@@ -289,30 +290,36 @@ chmod +x migrate-content-types.sh
 
 #### <span class="section-num">4.4.4</span> Удалите переопределения постоянных ссылок в конфигурации Hugo: {#удалите-переопределения-постоянных-ссылок-в-конфигурации-hugo}
 
--   Отредактируйте свой `hugo.yaml`, `config.yaml`, или `config.toml`
--   Удалить или обновить любой `permalinks:` разделы
+-   Отредактируйте свой `hugo.yaml`, `config.yaml`, или `config.toml`.
+-   Удалить или обновить любой `permalinks:` разделы, заменив название каталогов.
+-   У меня получилось следующее:
+    ```yaml
+    permalinks:
+      blog: "/blog/:year/:month/:day/:slug"
+    ```
 
 
 #### <span class="section-num">4.4.5</span> Добавьте перенаправления в ваш `netlify.toml` для обратной совместимости {#добавьте-перенаправления-в-ваш-netlify-dot-toml-для-обратной-совместимости}
 
-```toml
-[[redirects]]
-  from = "/post/*"
-  to = "/blog/:splat"
-  status = 301
-  force = true
+-   Если вы используете netlify.
+    ```toml
+    [[redirects]]
+      from = "/post/*"
+      to = "/blog/:splat"
+      status = 301
+      force = true
 
-[[redirects]]
-  from = "/publication/*"
-  to = "/publications/:splat"
-  status = 301
-  force = true
+    [[redirects]]
+      from = "/publication/*"
+      to = "/publications/:splat"
+      status = 301
+      force = true
 
-# And so on for other content types
-```
+    # And so on for other content types
+    ```
 
 
-#### <span class="section-num">4.4.6</span> При ведении блога из org-roam {#при-ведении-блога-из-org-roam}
+### <span class="section-num">4.5</span> При ведении блога из org-roam {#при-ведении-блога-из-org-roam}
 
 -   Для `post` → `blog`:
     ```shell
@@ -328,10 +335,87 @@ chmod +x migrate-content-types.sh
     ```
 
 
-### <span class="section-num">4.5</span> После миграции {#после-миграции}
+### <span class="section-num">4.6</span> После миграции {#после-миграции}
 
 -   Запустите свой сайт локально с помощью `hugo server` чтобы проверить изменения.
 -   Проверьте все страницы, чтобы убедиться в их корректном отображении.
 -   Попробуйте выполнить поиск в папке вашего сайта по таким запросам, как `folders`, `type`, `layout` или старые типы страниц (например, `post` ) чтобы подтвердить, что у вас нет фильтров, ищущих контент в старой структуре.
 -   Проверьте корректную работу ссылок и изображений.
 -   Зафиксируйте изменения в вашем репозитории.
+
+
+## <span class="section-num">5</span> Обновление до blox/v0.11.0 {#обновление-до-blox-v0-dot-11-dot-0}
+
+
+### <span class="section-num">5.1</span> Общая информация {#общая-информация}
+
+-   Релиз: <https://github.com/HugoBlox/kit/releases/tag/modules%2Fblox%2Fv0.11.0>
+
+
+### <span class="section-num">5.2</span> Основные изменения {#основные-изменения}
+
+-   Пути модулей и репозиториев
+    -   Репозиторий и пути всех модулей были переименованы (например, `modules/blox-tailwind` → `modules/blox`).
+    -   Сделать: обязательно обновить `go.mod` и `config/_default/modules.yaml` в проекте.                    |
+-   Структура конфигурации
+    -   Все настройки теперь находятся в едином пространстве `hugoblox:`. Ключевые секции переименованы (например, `branding` → `identity`).
+    -   Сделать: перенести старые настройки из `params.yaml` в новую структуру, используя таблицы соответствия.
+-   CMS и авторские профили
+    -   Устаревший Decap (Netlify) CMS удален. Система авторских профилей стала data-ориентированной.
+    -   Сделать: для авторов: перенести файлы из `content/authors/` в `data/authors/`.
+-   События (Events)
+    -   Логика работы с событиями изменена для совместимости со стандартными датами Hugo.
+    -   Сделать: перенести события из `content/event/` в `content/events/` и обновить параметры в front matter.
+-   Материалы (логотипы, иконки)
+    -   Введена система автоматического определения файлов.
+    -   Сделать: Поместить логотип, фавикон и соц. изображение в `assets/media/` с понятными именами.
+
+
+### <span class="section-num">5.3</span> Рекомендуемый процесс обновления {#рекомендуемый-процесс-обновления}
+
+-   Для максимально гладкого перехода разработчики настоятельно рекомендуют использовать HugoBlox CLI.
+-   Этот инструмент автоматизирует большинство задач.
+
+
+#### <span class="section-num">5.3.1</span> Установите HugoBlox CLI {#установите-hugoblox-cli}
+
+```shell
+pnpm install -g hugoblox
+```
+
+-   В терминале доступна команда `hbx`.
+
+
+#### <span class="section-num">5.3.2</span> Автоматическое обновление модулей: {#автоматическое-обновление-модулей}
+
+-   Чтобы обновить пути в `go.mod`, выполните:
+    ```shell
+    hbx upgrade
+    ```
+
+
+#### <span class="section-num">5.3.3</span> Перенос данных: {#перенос-данных}
+
+-   Перенос авторов:
+    ```shell
+    hbx migrate v0.11.0-authors
+    ```
+-   Переноса событий:
+    ```shell
+    hbx migrate v0.11.0-events
+    ```
+
+
+#### <span class="section-num">5.3.4</span> Настройка конфигурации {#настройка-конфигурации}
+
+-   Вручную обновите ваш `params.yaml`, используя подробные таблицы соответствия из руководства.
+-   Скачайте новый шаблон конфига и перенесите в него старые значения.
+
+
+#### <span class="section-num">5.3.5</span> Проверка {#проверка}
+
+-   Запустите:
+    ```shell
+    hbx doctor
+    ```
+-   Запустите `hugo server` и тщательно проверьте все разделы сайта: шапку, подвал, цвета, поиск, аналитику.

@@ -5,7 +5,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Dmitry Sergeevich Kulyabov
 date: '2022-05-01'
-publishDate: '2025-08-27T16:24:59.066655Z'
+publishDate: '2026-01-23T13:43:24.577706Z'
 publication_types:
 - paper-conference
 publication: '*2022 VIII International Conference on Information Technology and Nanotechnology (ITNT)*'

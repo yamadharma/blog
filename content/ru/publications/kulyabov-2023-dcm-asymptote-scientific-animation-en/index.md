@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2023-01-01'
-publishDate: '2025-08-27T16:24:59.151179Z'
+publishDate: '2026-01-23T13:43:24.926688Z'
 publication_types:
 - article-journal
 publication: '*Discrete and Continuous Models and Applied Computational Science*'

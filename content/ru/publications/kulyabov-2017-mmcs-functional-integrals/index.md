@@ -7,7 +7,7 @@ authors:
 - V. B. Malyutin
 - Leonid Antonovich Sevastyanov
 date: '2017-01-01'
-publishDate: '2025-08-27T16:24:58.507416Z'
+publishDate: '2026-01-23T13:43:22.277334Z'
 publication_types:
 - article-journal
 publication: '*Mathematical Models and Computer Simulations*'

@@ -6,7 +6,7 @@ authors:
 - Dmitry Sergeevich Kulyabov
 - Leonid Antonovich Sevastyanov
 date: '2015-01-01'
-publishDate: '2025-08-27T16:24:57.995521Z'
+publishDate: '2026-01-23T13:43:20.374969Z'
 publication_types:
 - paper-conference
 publication: '*6th International Congress on Ultra Modern Telecommunications and Control Systems and Workshops (ICUMT)*'

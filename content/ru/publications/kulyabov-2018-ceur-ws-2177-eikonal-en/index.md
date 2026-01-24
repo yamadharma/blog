@@ -5,7 +5,7 @@ authors:
 - Migran Nelsonovich Gevorkyan
 - Anna Vladislavovna Korolkova
 date: '2018-04-01'
-publishDate: '2025-08-27T16:24:58.594486Z'
+publishDate: '2026-01-23T13:43:22.767891Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 8th International Conference \"Information and Telecommunication Technologies and Mathematical Modeling of High-Tech Systems\" (ITTMM-2018), Moscow, Russia, April 16, 2018*'

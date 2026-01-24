@@ -7,7 +7,7 @@ authors:
 - K. A. Shtepa
 - Dmitry Sergeevich Kulyabov
 date: '2024-04-01'
-publishDate: '2025-08-27T16:24:59.270156Z'
+publishDate: '2026-01-23T13:43:25.516628Z'
 publication_types:
 - article-journal
 publication: '*Programming and Computer Software*'

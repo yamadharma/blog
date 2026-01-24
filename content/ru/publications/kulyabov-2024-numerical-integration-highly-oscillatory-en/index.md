@@ -6,7 +6,7 @@ authors:
 - Michal Hnatič
 - Dmitry Sergeevich Kulyabov
 date: '2024-01-17'
-publishDate: '2025-08-27T16:24:59.247631Z'
+publishDate: '2026-01-23T13:43:25.427291Z'
 publication_types:
 - article-journal
 publication: '*Mathematics*'

@@ -7,7 +7,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Leonid Antonovich Sevastianov
 date: '2017-05-01'
-publishDate: '2025-08-27T16:24:58.523153Z'
+publishDate: '2026-01-23T13:43:22.342659Z'
 publication_types:
 - paper-conference
 publication: "*6th International conference ``Problems of Mathematical Phisics and

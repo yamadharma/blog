@@ -12,7 +12,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
+      username: me_en
       text: ""
       # # Show a call-to-action button under your biography? (optional)
       # button:
@@ -40,8 +40,8 @@ sections:
     id: news
     content:
       title: Recent Posts
-      subtitle: ''
-      text: ''
+      subtitle: ""
+      text: ""
       # Page type to display. E.g. post, talk, publication...
       page_type: blog
       # Choose how many pages you would like to display (0 = all pages)
@@ -62,10 +62,10 @@ sections:
     design:
       ## Choose a layout view
       # view: date-title-summary
-      # view: card
-      view: article-grid
+      view: card
+      # view: article-grid
       # fill_image: false
-      columns: '1'
+      columns: "1"
       ## Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
@@ -81,6 +81,7 @@ sections:
   #     view: article-grid
   #     columns: 2
   - block: collection
+    id: papers
     content:
       title: Recent Publications
       text: ""

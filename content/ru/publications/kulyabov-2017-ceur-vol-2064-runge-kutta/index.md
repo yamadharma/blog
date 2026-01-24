@@ -8,7 +8,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - M. M. Kotukov
 date: '2017-11-01'
-publishDate: '2025-08-27T16:24:58.440635Z'
+publishDate: '2026-01-23T13:43:22.085157Z'
 publication_types:
 - paper-conference
 publication: '*2nd International Scientific Conference \"Convergent Cognitive Information

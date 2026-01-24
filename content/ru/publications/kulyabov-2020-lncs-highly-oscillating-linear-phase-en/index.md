@@ -5,7 +5,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Dmitry Sergeevich Kulyabov
 date: '2020-01-01'
-publishDate: '2025-08-27T16:24:58.932868Z'
+publishDate: '2026-01-23T13:43:24.043052Z'
 publication_types:
 - chapter
 publication: '*Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)*'

@@ -9,6 +9,8 @@ title: "Dmitry S. Kulyabov"
 baseURL: "https://yamadharma.github.io/"
 copyright: "&copy; {year} Dmitry S. Kulyabov"
 
+relativeURLs: true
+
 ############################
 ## LANGUAGE
 ############################
@@ -29,9 +31,9 @@ languages:
 ############################
 
 cascade:
-  # Blog post options
+  ## Blog post options
   - _target:
-      path: post/**
+      path: /blog/**
     editable: false
     reading_time: true
     commentable: false
@@ -43,7 +45,7 @@ cascade:
       navbar:
         enable: true
   - _target:
-      path: teaching/**
+      path: /courses/**
     editable: false
     reading_time: true
     commentable: false
@@ -55,6 +57,10 @@ cascade:
     header:
       navbar:
         enable: true
+  - _target:
+      path: /slides/**
+      kind: page
+    outputs: [HTML, present]
 
 ############################
 ## ADVANCED
@@ -73,37 +79,37 @@ enableEmoji: true
 enableRobotsTXT: true
 canonifyURLs: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-
-# permalinks:
-#   post: "/post/:year/:month/:day/:slug"
-#   authors: "/author/:slug/"
-#   event: "/talk/:slug/"
-#   tags: "/tag/:slug/"
-#   categories: "/category/:slug/"
-#   publication_types: "/publication-type/:slug/"
-
+ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 disableAliases: true
+
+permalinks:
+  blog: "/blog/:year/:month/:day/:slug"
+  # authors: "/author/:slug/"
+  # event: "/events/:slug/"
+  # categories: "/category/:slug/"
+  # publication_types: "/publication-type/:slug/"
+  # tags: "/tag/:slug/"
+
+taxonomies:
+  author: authors
+  tag: tags
+  publication_type: publication_types
+  # category: categories
 
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
-  page: [HTML, RSS]
-  rss: [RSS]
   section: [HTML, RSS]
-  taxonomy: [HTML, RSS]
-  term: [HTML, RSS]
+  # page: [HTML, RSS]
+  # rss: [RSS]
+  # taxonomy: [HTML, RSS]
+  # term: [HTML, RSS]
 
 imaging:
   resampleFilter: lanczos
   quality: 90
   anchor: smart
+  hint: picture
 timeout: 600000
-
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
 
 markup:
   _merge: deep
@@ -167,27 +173,7 @@ minify:
       keepSpecialComments: true
 sitemap:
   changefreq: weekly
-module:
-  hugoVersion:
-    min: "0.126.0"
-    extended: true
-  imports:
-    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics
-  mounts:
-    - source: content
-      target: content
-    - source: static
-      target: static
-    - source: layouts
-      target: layouts
-    - source: data
-      target: data
-    - source: assets
-      target: assets
-    - source: i18n
-      target: i18n
-    - source: archetypes
-      target: archetypes
+
 security:
   funcs:
     getenv:

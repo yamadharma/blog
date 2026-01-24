@@ -10,7 +10,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Eugeny Borisovich Laneev
 date: '2016-01-01'
-publishDate: '2025-08-27T16:24:58.252010Z'
+publishDate: '2026-01-23T13:43:21.357777Z'
 publication_types:
 - chapter
 publication: '*Distributed Computer and Communication Networks. DCCN 2016. Communications in Computer and Information Science*'

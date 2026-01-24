@@ -1,10 +1,28 @@
 ---
 title: Преподавание
-layout: docs
+summary: Мои курсы
+type: landing
 
-# Optional header image (relative to `static/img/` folder).
-header:
-  caption: ""
-  image: ""
+cascade:
+  - target:
+      path: '{/courses/*/**}'
+    type: docs
+    params:
+      show_breadcrumb: true
+
+sections:
+  - block: collection
+    id: courses
+    content:
+      title: Courses
+      filters:
+        tag: Course
+        kinds:
+          - section
+    design:
+      view: article-grid
+      show_read_time: false
+      show_date: false
+      show_read_more: false
+      columns: 1
 ---
-

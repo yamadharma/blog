@@ -7,7 +7,7 @@ authors:
 - Anton Leonidovich Sevastyanov
 - Leonid Antonovich Sevastyanov
 date: '2015-01-01'
-publishDate: '2025-08-27T16:24:58.145525Z'
+publishDate: '2026-01-23T13:43:20.960284Z'
 publication_types:
 - article-journal
 publication: '*Mathematical Modelling and Geometry*'

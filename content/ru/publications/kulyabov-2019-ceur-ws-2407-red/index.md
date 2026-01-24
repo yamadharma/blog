@@ -5,7 +5,7 @@ authors:
 - Anna Vladislavovna Korolkova
 - Dmitry Sergeevich Kulyabov
 date: '2019-04-01'
-publishDate: '2025-08-27T16:24:58.765550Z'
+publishDate: '2026-01-23T13:43:23.465778Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the Selected Papers of the 9th International Conference \"Information and Telecommunication Technologies and Mathematical Modeling of High-Tech Systems\" (ITTMM-2019), Moscow, Russia, April 15-19, 2019*'

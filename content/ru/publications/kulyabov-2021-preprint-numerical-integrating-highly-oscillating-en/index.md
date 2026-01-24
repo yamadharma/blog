@@ -5,7 +5,7 @@ authors:
 - Konstantin Petrovich Lovetskiy
 - Dmitry Sergeevich Kulyabov
 date: '2021-01-01'
-publishDate: '2025-08-27T16:24:59.032185Z'
+publishDate: '2026-01-23T13:43:24.398115Z'
 publication_types:
 - manuscript
 publication: '*arXiv*'

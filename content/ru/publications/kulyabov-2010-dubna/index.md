@@ -6,7 +6,7 @@ authors:
 - Leonid Antonovich Sevastianov
 - Dmitry Sergeevich Kulyabov
 date: '2010-01-01'
-publishDate: '2025-08-27T16:24:57.811158Z'
+publishDate: '2026-01-23T13:43:19.730157Z'
 publication_types:
 - paper-conference
 publication: '*Доклад на Международном рабочем совещании по компьютерной алгебре*'
