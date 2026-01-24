@@ -10,7 +10,7 @@ title: ""
 baseURL: "https://yamadharma.github.io/"
 copyright: "&copy; {year} Dmitry S. Kulyabov"
 
-relativeURLs: true
+# relativeURLs: true
 
 ############################
 ## LANGUAGE

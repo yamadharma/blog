@@ -14,8 +14,8 @@ postnominals:
   - DSc
   - PhD
 
-status:
-  icon: "☕️"
+# status:
+#   icon: "☕️"
 
 role: Профессор кафедры теории вероятностей и кибербезопасности
 
