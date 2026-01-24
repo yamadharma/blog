@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
+rm static/ltximg/*
 
-mkdir -p "$(pwd)/resources/hugo_cache"
-export HUGO_CACHEDIR="$(pwd)/resources/hugo_cache"
-
-hugo server --disableFastRender --i18n-warnings
+hugo server --disableFastRender

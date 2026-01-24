@@ -3,11 +3,11 @@ title: "Математические основы защиты информац�
 date: 2021-03-05T11:22:00+03:00
 lastmod: 2021-03-09T20:53:00+03:00
 tags: ["education"]
-categories: ["сиянс", "computer-science"]
+categories: ["сиянс", "computer-science", "course"]
 draft: false
-weight: 1
+weight: 511
 toc: true
-type: "book"
+type: docs
 menu:
   mathsec:
     identifier: "index"

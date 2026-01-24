@@ -1,15 +1,16 @@
-#!/bin/sh
-
+#!/usr/bin/env bash
 # If a command fails then the deploy stops
 set -e
 
+rm -rvf static/ltximg
+
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-mkdir -p "$(pwd)/resources/hugo_cache"
-export HUGO_CACHEDIR="$(pwd)/resources/hugo_cache"
-
 # Build the project.
-hugo 
+hugo --minify --gc
+
+npm_config_yes=true npx pagefind --site "public" --output-subdir ../static/pagefind
+# pnpm run pagefind --site "public" --output-subdir ../static/pagefind
 
 # Go To Public folder
 cd public
