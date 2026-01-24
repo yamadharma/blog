@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/yamadharma/blog/compare/v1.0.1...v1.0.2) (2026-01-24)
+
+
+### Bug Fixes
+
+* **main:** remove submodule ([f5f15bf](https://github.com/yamadharma/blog/commit/f5f15bfa6d33b3382ff64cb1702ac0cfc7b42361))
+
+
+
 ## [1.0.1](https://github.com/yamadharma/blog/compare/v1.0.0...v1.0.1) (2026-01-24)
 
 

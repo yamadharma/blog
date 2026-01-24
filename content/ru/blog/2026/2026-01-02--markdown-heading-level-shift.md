@@ -2,7 +2,7 @@
 title: "Markdown. Сдвиг уровня заголовков"
 author: ["Dmitry S. Kulyabov"]
 date: 2026-01-02T20:57:00+03:00
-lastmod: 2026-01-08T19:07:00+03:00
+lastmod: 2026-01-24T18:21:00+03:00
 tags: ["emacs", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -420,7 +420,7 @@ sed -E -i 's/^(#+)(.*)$/\1#\2/g' файл.md
 <!--listend-->
 
 ```shell
-sed -E -i '' 's/^(#+)#(.*)$/\1\2/g' файл.md
+sed -E -i 's/^(#+)#(.*)$/\1\2/g' файл.md
 ```
 
 <!--list-separator-->
