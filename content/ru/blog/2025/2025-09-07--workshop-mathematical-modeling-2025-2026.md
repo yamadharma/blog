@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2026-01-20T13:45:00+03:00
+lastmod: 2026-01-29T14:02:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -339,7 +339,7 @@ The source code, presented in four files (monomial.py, polynomial.py, janet.py, 
 ## <span class="section-num">2</span> Семинар Математическое моделирование, 2026-1 {#семинар-математическое-моделирование-2026-1}
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-01-29 Чт&gt; </span></span> Захаров И. И. - Математическое моделирование нелокальных физических процессов в средах с фрактальной структурой {#захаров-и-dot-и-dot-математическое-моделирование-нелокальных-физических-процессов-в-средах-с-фрактальной-структурой}
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.1</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-01-29 Чт&gt; </span></span> Захаров И. И. - Математическое моделирование нелокальных физических процессов в средах с фрактальной структурой {#захаров-и-dot-и-dot-математическое-моделирование-нелокальных-физических-процессов-в-средах-с-фрактальной-структурой}
 
 
 #### <span class="section-num">2.1.1</span> Докладчик {#докладчик}

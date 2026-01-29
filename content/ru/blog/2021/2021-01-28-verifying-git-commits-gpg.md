@@ -2,7 +2,7 @@
 title: "Верификация коммитов git с помощью GPG"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-28T18:47:00+03:00
-lastmod: 2024-08-23T16:07:00+03:00
+lastmod: 2026-01-28T18:41:00+03:00
 tags: ["sysadmin", "programming"]
 categories: ["computer-science"]
 draft: false
@@ -62,9 +62,14 @@ slug: "verifying-git-commits-gpg"
 
 -   Копируем ключ и добавляем его в настройках профиля на GitHub (или GitLab).
 -   Cкопируйте ваш сгенерированный PGP ключ в буфер обмена:
-    ```shell
-    gpg --armor --export <PGP Fingerprint> | xclip -sel clip
-    ```
+    -   X11:
+        ```shell
+        gpg --armor --export <PGP Fingerprint> | xclip -sel clip
+        ```
+    -   Wayland:
+        ```shell
+        gpg --armor --export <PGP Fingerprint> | wl-copy
+        ```
 -   Перейдите в настройки GitHub (<https://github.com/settings/keys>), нажмите на кнопку _New GPG key_ и вставьте полученный ключ в поле ввода.
 
 

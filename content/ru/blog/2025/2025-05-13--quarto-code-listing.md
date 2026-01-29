@@ -2,7 +2,7 @@
 title: "Quarto. Листинги"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-05-13T16:04:00+03:00
-lastmod: 2025-05-13T17:14:00+03:00
+lastmod: 2026-01-27T19:13:00+03:00
 tags: ["science-writing"]
 categories: ["computer-science"]
 draft: false
@@ -191,4 +191,40 @@ Quarto. Листинги.
     Some additional markdown content.
 
     ````
+    `````
+
+
+## <span class="section-num">7</span> Подключение внешних файлов {#подключение-внешних-файлов}
+
+-   Для подключения листингов из внешнего файла можно использовать плагины.
+
+
+### <span class="section-num">7.1</span> quarto-ext/include-code-files {#quarto-ext-include-code-files}
+
+-   Репозиторий: <https://github.com/quarto-ext/include-code-files>
+-   На данный момент поддерживаются следующие языки: python, r, julia, html, js, ojs, css.
+
+
+#### <span class="section-num">7.1.1</span> Установка {#установка}
+
+`````shell
+quarto add quarto-ext/include-code-files
+`````
+
+
+#### <span class="section-num">7.1.2</span> Подключение {#подключение}
+
+-   Добавьте в файл `_quarto.yml`:
+    `````yaml
+    filters:
+    ​   - include-code-files
+    `````
+
+
+#### <span class="section-num">7.1.3</span> Использование {#использование}
+
+-   Подключите код из внешнего файла:
+    `````markdown
+    ```{.python include="script.py"}
+    ```
     `````

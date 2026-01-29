@@ -2,7 +2,7 @@
 title: "Подготовка курса Имитационное моделирование"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-12-01T19:51:00+03:00
-lastmod: 2026-01-22T20:07:00+03:00
+lastmod: 2026-01-29T14:44:00+03:00
 tags: ["rudn", "education"]
 categories: ["job", "science"]
 draft: false
@@ -56,6 +56,8 @@ slug: "course-simulation-modeling-preparation"
 
 
 ### <span class="section-num">3.1</span> Установка и настройка программного обеспечения {#установка-и-настройка-программного-обеспечения}
+
+-   [Рабочее пространство на основе DrWatson]({{< relref "2026-01-29--workspace-based-drwatson" >}})
 
 
 ### <span class="section-num">3.2</span> Сквозные задачи {#сквозные-задачи}
