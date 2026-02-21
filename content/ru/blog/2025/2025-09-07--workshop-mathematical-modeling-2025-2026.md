@@ -2,7 +2,7 @@
 title: "Семинар Математическое моделирование, 2025-2026"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-07T17:19:00+03:00
-lastmod: 2026-01-29T14:02:00+03:00
+lastmod: 2026-02-04T18:48:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -369,7 +369,18 @@ The source code, presented in four files (monomial.py, polynomial.py, janet.py, 
 This paper explores the development of mathematical modeling tools using fractional differentiation methods. We consider an advection-diffusion problem, whose model is treated as a differential equation with various fractional differential operators (Caputo and Riemann-Liouville). While numerous papers have been published on solving various problems involving fractional differential operators, most of them are devoted to numerical methods (finite difference methods, spline methods, collocation methods, etc.). This paper focuses on the development of approximate computational methods based on analytical methods (the Fourier method). Although numerical methods demonstrate high efficiency in solving the proposed problems, it is analytical methods that enable the development of the necessary toolset for verifying problem solutions, which necessitates the development of effective methods for implementing approximate solutions.
 
 
-### <span class="org-todo todo TODO">TODO</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-02-04 Ср&gt; </span></span> Штепа К. А. - Моделирование трансформирующих сред средствами лучевой оптики {#штепа-к-dot-а-dot-моделирование-трансформирующих-сред-средствами-лучевой-оптики}
+#### <span class="section-num">2.1.3</span> Видео {#видео}
+
+{{< tabs "Захаров И. И. - Математическое моделирование нелокальных физических процессов в средах с фрактальной структурой" >}}
+
+{{< tab "RuTube" >}}{{< rutube fd3fff3c41bd634374e8a8f81d87f525 >}}{{< /tab >}}
+
+{{< tab "VKvideo" >}}{{< vkvideo oid=-230024722 id=456239602 hd=2 >}}{{< /tab >}}
+
+{{< /tabs >}}
+
+
+### <span class="org-todo done DONE">DONE</span> <span class="section-num">2.2</span> <span class="timestamp-wrapper"><span class="timestamp">&lt;2026-02-04 Ср&gt; </span></span> Штепа К. А. - Моделирование трансформирующих сред средствами лучевой оптики {#штепа-к-dot-а-dot-моделирование-трансформирующих-сред-средствами-лучевой-оптики}
 
 
 #### <span class="section-num">2.2.1</span> Докладчик {#докладчик}

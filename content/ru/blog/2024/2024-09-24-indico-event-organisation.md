@@ -2,8 +2,8 @@
 title: "Система управления событиями Indico"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-24T11:13:00+03:00
-lastmod: 2024-09-24T11:29:00+03:00
-tags: ["sysadmin"]
+lastmod: 2026-02-14T17:03:00+03:00
+tags: ["MOC", "sysadmin"]
 categories: ["computer-science"]
 draft: false
 slug: "indico-event-organisation"
@@ -28,4 +28,9 @@ slug: "indico-event-organisation"
 
 ## <span class="section-num">2</span> Администрирование {#администрирование}
 
--   [Indico. Обновление]({{< relref "2024-09-24-indico-update" >}})
+-   [Indico. Обновление]({{< relref "20240924112300-indico_обновление.md" >}})
+
+
+## <span class="section-num">3</span> Виды событий {#виды-событий}
+
+-   [Indico. Конференции]({{< relref "20260214T170200--indico_конференции.md" >}})

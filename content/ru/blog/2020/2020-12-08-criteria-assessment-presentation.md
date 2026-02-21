@@ -2,7 +2,7 @@
 title: "Критериальное оценивание докладов"
 author: ["Dmitry S. Kulyabov"]
 date: 2020-12-08T09:06:00+03:00
-lastmod: 2025-08-28T19:28:00+03:00
+lastmod: 2026-02-08T15:43:00+03:00
 tags: ["education"]
 categories: ["science"]
 draft: false
@@ -18,7 +18,7 @@ slug: "criteria-assessment-presentation"
 
 ## <span class="section-num">1</span> Прагматика использования докладов {#прагматика-использования-докладов}
 
--   Доклады являются элементом реализации таксономии Блума в преподавании (см. [Таксономия Блума]({{< relref "2021-03-24-bloom-taxonomy" >}})).
+-   Доклады являются элементом реализации таксономии Блума в преподавании (см. [Таксономия Блума]({{< relref "../notes/public/20210324122700-таксономия_блума.md" >}})).
 
 
 ## <span class="section-num">2</span> Элементы выступления и доклада {#элементы-выступления-и-доклада}
@@ -195,7 +195,6 @@ slug: "criteria-assessment-presentation"
 -   Видеозаписи должны быть размещены на следующих хостингах:
     -   <https://rutube.ru/>
     -   <https://vkvideo.ru/>
-    -   <https://plvideo.ru/>
 -   Элементы видео-выступления:
     -   изображение презентации;
     -   изображение выступающего с камеры компьютера (обычно в углу экрана);
@@ -284,13 +283,16 @@ slug: "criteria-assessment-presentation"
 
 ## <span class="section-num">7</span> Список элементов (чек-лист) для  загрузки докладов в LMS {#список-элементов--чек-лист--для-загрузки-докладов-в-lms}
 
+
+### <span class="section-num">7.1</span> Список элементов (чек-лист) {#список-элементов--чек-лист}
+
 -   [ ] В качестве ответа на лабораторную работу необходимо представить:
-    -   [ ] _Ссылка_ на плейлист (<https://rutube.ru/> + <https://vkvideo.ru/> + <https://www.plvideo.ru/>).
-    -   [ ] Отдельные _ссылки_ на скринкасты (<https://rutube.ru/> + <https://vkvideo.ru/> + <https://www.plvideo.ru/>):
+    -   [ ] _Ссылка_ на плейлист (<https://rutube.ru/> + <https://vkvideo.ru/>).
+    -   [ ] Отдельные _ссылки_ на скринкасты (<https://rutube.ru/> + <https://vkvideo.ru/>):
         -   [ ] ссылка на скринкаст процесса подготовки реферата;
         -   [ ] ссылка на скринкаст процесса подготовки презентации;
         -   [ ] ссылка на скринкаст доклада.
-    -   [ ] Ссылка на репозиторий (<https://github.com/>):
+    -   [ ] Ссылка на репозиторий (<https://github.com/> + <https://gitverse.ru>):
         -   [ ] ссылка на весь репозиторий;
         -   [ ] ссылка на конкретный релиз.
     -   [ ] Следует представить отдельными файлами (не общим архивом):
@@ -303,7 +305,7 @@ slug: "criteria-assessment-presentation"
         -   [ ] презентацию в `markdown` (в каталоге git и в файлах релиза).
 
 
-### <span class="section-num">7.1</span> Пример ответа {#пример-ответа}
+### <span class="section-num">7.2</span> Пример ответа {#пример-ответа}
 
 -   Текстовая часть ответа может выглядеть следующим образом (форматирование в Markdown):
     ```markdown
@@ -319,15 +321,12 @@ slug: "criteria-assessment-presentation"
     ​    - [Подготовка презентации](https://vkvideo.ru/video606414976_456239192)
     ​    - [Доклад](https://vkvideo.ru/video606414976_456239192)
 
-    - [Платформа](https://studio.plvideo.ru/channel/vZSk2MkaG7Qm/playlist/rNGbr_m0PhMU)
-    ​    - [Подготовка реферата](https://plvideo.ru/watch?v=W5741K4QRBi1)
-    ​    - [Подготовка презентации](https://plvideo.ru/watch?v=W5741K4QRBi1)
-    ​    - [Доклад](https://plvideo.ru/watch?v=W5741K4QRBi1)
+    ## Репозитории
 
-    ## Репозиторий
-
-    - [Рабочий репозиторий](https://github.com/yamadharma/academic-laboratory-report-template)
-    ​- [Релиз v2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/releases/tag/v2.0.2)
+    - [github](https://github.com/yamadharma/academic-laboratory-report-template)
+    ​    - [Релиз v2.2.1](https://github.com/yamadharma/academic-laboratory-report-template/releases/tag/v2.2.1)
+    ​- [gitverse](https://gitverse.ru/dharma/academic-laboratory-report-template)
+    ​    - [Релиз v2.2.1](https://gitverse.ru/dharma/academic-laboratory-report-template/releases/tag/v2.2.1)
     ```
 -   Также к ответу должны быть прикреплены необходимые файлы.
 

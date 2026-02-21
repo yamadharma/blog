@@ -2,7 +2,7 @@
 title: "Проверка документов в CEURART"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2025-09-23T20:49:00+03:00
+lastmod: 2026-02-19T16:28:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -34,6 +34,7 @@ slug: "ceurart-check"
 
 ### <span class="section-num">2.1</span> `check-pdf-errors` {#check-pdf-errors}
 
+-   Источник: <https://ceur-ws.org/check-pdf-errors>
 -   Проверяет pdf-файлы.
 -   Проверка наличия фразы 'Creative Commons' в pdf-файлах.
     -   Это делается чтобы проверить, можно ли выделить текст (не является ли документ картинкой).
@@ -43,10 +44,12 @@ slug: "ceurart-check"
 
 ### <span class="section-num">2.2</span> `check-index-errors` {#check-index-errors}
 
+-   Источник: <https://ceur-ws.org/check-index-errors>
 -   Проверяет файл `index.html`.
 -   Правила:
     -   документы в формате `pdf`, которые есть в каталоге, но не перечислены в `index.html`;
-    -   документы, на которые даны ссылки в `index.html`, но которые отсутствуют.
+    -   документы, на которые даны ссылки в `index.html`, но которые отсутствуют;
+    -   проверка количества статей, опубликованных в рамках программы `CEURVOLEDITOR`, что помогает проверить часть правила разнообразия.
 
 
 ### <span class="section-num">2.3</span> `ceur-add-pagenum` {#ceur-add-pagenum}
@@ -57,7 +60,15 @@ slug: "ceurart-check"
 -   Скрипт зависит от пакетов `lxml` и `PyPDF2`.
 
 
-## <span class="section-num">3</span> Проверка {#проверка}
+## <span class="section-num">3</span> Пререквизиты {#пререквизиты}
+
+
+### <span class="section-num">3.1</span> Official W3C HTML validation check {#official-w3c-html-validation-check}
+
+-   Download vnu.jar from <https://github.com/validator/validator/releases/download/latest/vnu.jar> into `$HOME/bin` for a full check.
+
+
+## <span class="section-num">4</span> Проверка {#проверка}
 
 -   Проверьте pdf-файлы:
     ```shell

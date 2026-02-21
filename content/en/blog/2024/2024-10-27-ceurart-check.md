@@ -2,7 +2,7 @@
 title: "CEURART document verification"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-10-27T19:39:00+03:00
-lastmod: 2025-10-11T14:18:00+03:00
+lastmod: 2026-02-19T19:59:00+03:00
 tags: ["latex"]
 categories: ["computer-science"]
 draft: false
@@ -38,6 +38,7 @@ CEURART document verification.
     -   This is to check if the text can be highlighted (if the document is not an image).
 -   Checking for the use of Libertinus fonts.
 -   Checking for duplication of pdf files.
+-   Checking whether article titles and author lists in PDF files match the title in the `index.html` file.
 
 
 ### <span class="section-num">2.2</span> `check-index-errors` {#check-index-errors}
@@ -46,7 +47,8 @@ CEURART document verification.
 -   Checks the `index.html` file.
 -   Rules:
     -   paper PDFs that are in the directory but not listed in `index.html`;
-    -   papers that are linked in `index.html` but not included in the directory.
+    -   papers that are linked in `index.html` but not included in the directory;
+    -   there is now a test on how many regular papers a CEURVOLEDITOR has. This helps to check part of the diversity rule.
 
 
 ### <span class="section-num">2.3</span> `ceur-add-pagenum` {#ceur-add-pagenum}
@@ -55,3 +57,30 @@ CEURART document verification.
 -   A small Python script for counting the number of pages in the PDF files linked to an index.html document (prepared for submission to CEUR-WS), and updating the CEURPAGES fields.
 -   The script does not alter the PDF files, just the `index.html`.
 -   The script depends on the `lxml` and `PyPDF2` packages.
+
+
+## <span class="section-num">3</span> Prerequisites {#prerequisites}
+
+
+### <span class="section-num">3.1</span> Official W3C HTML validation check {#official-w3c-html-validation-check}
+
+-   Download vnu.jar from <https://github.com/validator/validator/releases/download/latest/vnu.jar> into `$HOME/bin` for a full check.
+
+
+## <span class="section-num">4</span> Check {#check}
+
+-   Check PDF files:
+
+<!--listend-->
+
+```shell
+check-pdf-errors
+```
+
+-   Check `index.html`:
+
+<!--listend-->
+
+```shell
+check-index-errors
+```

@@ -2,7 +2,7 @@
 title: "Moodle. Обновление"
 author: ["Dmitry S. Kulyabov"]
 date: 2024-09-15T16:37:00+03:00
-lastmod: 2025-05-01T16:46:00+03:00
+lastmod: 2026-02-08T11:06:00+03:00
 tags: ["education", "sysadmin"]
 categories: ["science", "computer-science"]
 draft: false
@@ -147,8 +147,8 @@ Moodle. Обновление.
     ```
 -   Выберите нужную ветвь:
     ```shell
-    sudo -u nginx git branch --track MOODLE_500_STABLE origin/MOODLE_500_STABLE
-    sudo -u nginx git checkout MOODLE_500_STABLE
+    sudo -u nginx git branch --track MOODLE_501_STABLE origin/MOODLE_501_STABLE
+    sudo -u nginx git checkout MOODLE_501_STABLE
     ```
 -   Исправьте разрешения:
     ```shell

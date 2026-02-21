@@ -2,7 +2,7 @@
 title: "git. Несколько удалённых репозиториев"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-03-27T14:08:00+03:00
-lastmod: 2024-03-30T21:49:00+03:00
+lastmod: 2026-02-02T21:55:00+03:00
 tags: ["programming"]
 categories: ["computer-science"]
 draft: false
@@ -66,3 +66,38 @@ slug: "git-multiple-remote-repositories"
     ```shell
     git remote set-url origin https://github.com/your_name/repository_name.git
     ```
+
+
+## <span class="section-num">4</span> Submodules {#submodules}
+
+-   Если репозиторий содержит подмодули, то желательно, чтобы они находились на том же хостинге.
+
+
+### <span class="section-num">4.1</span> Скрипт для автоматической замены URL {#скрипт-для-автоматической-замены-url}
+
+-   Можно сделать с помощью хуков.
+-   Создайте скрипт `.git/hooks/post-checkout`:
+
+<!--listend-->
+
+```shell
+#!/bin/bash
+# fix-submodules.sh
+
+# Определяем текущий origin URL
+ORIGIN_URL=$(git remote get-url origin)
+
+if [[ $ORIGIN_URL == *"github.com"* ]]; then
+    git submodule set-url lib/mylib https://github.com/user/mylib.git
+elif [[ $ORIGIN_URL == *"gitlab.com"* ]]; then
+    git submodule set-url lib/mylib https://gitlab.com/user/mylib.git
+fi
+
+git submodule sync
+```
+
+-   Сделайте файл исполняемым:
+    ```shell
+    chmod +x .git/hooks/post-checkout
+    ```
+-   Впрочем, поскольку хуки не отправляются в репозиторий, они действуют только локально.

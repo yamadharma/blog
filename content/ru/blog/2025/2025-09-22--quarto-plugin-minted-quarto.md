@@ -2,7 +2,7 @@
 title: "Quarto. Плагин minted-quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-09-22T15:29:00+03:00
-lastmod: 2025-10-12T19:00:00+03:00
+lastmod: 2026-02-07T15:36:00+03:00
 tags: ["programming", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -18,7 +18,7 @@ Quarto. Плагин minted-quarto.
 
 ## <span class="section-num">1</span> Общая информация {#общая-информация}
 
--   Плагин служит для выделения кода посредством minted (см. [LaTeX. Пакет minted]({{< relref "2024-11-05-latex-minted" >}})).
+-   Плагин служит для выделения кода посредством minted (см. [LaTeX. Пакет minted]({{< relref "20241105120700-latex_пакет_minted.md" >}})).
 
 
 ## <span class="section-num">2</span> nikitoshina/minted-quarto {#nikitoshina-minted-quarto}
@@ -32,7 +32,9 @@ Quarto. Плагин minted-quarto.
 
 ## <span class="section-num">3</span> yamadharma/minted-quarto {#yamadharma-minted-quarto}
 
--   Репозиторий: <https://github.com/yamadharma/minted-quarto>
+-   Репозиторий:
+    -   <https://github.com/yamadharma/minted-quarto>
+    -   <https://gitverse.ru/dharma/minted-quarto>
 
 
 ### <span class="section-num">3.1</span> Установка {#установка}
@@ -47,9 +49,8 @@ Quarto. Плагин minted-quarto.
 
 -   Добавить фильтр в заголовок:
     ```yaml
-    ---
-    filters:
-    ​  - minted-quarto
-    ---
+    pdf:
+      filters:
+    ​    - minted-quarto
     ```
 -   Рекомендуется установить его после других фильтров, использующих блоки (например, рисующих диаграммы).

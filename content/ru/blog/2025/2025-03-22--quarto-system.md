@@ -2,7 +2,7 @@
 title: "Система Quarto"
 author: ["Dmitry S. Kulyabov"]
 date: 2025-03-22T17:37:00+03:00
-lastmod: 2025-12-14T20:15:00+03:00
+lastmod: 2026-02-01T18:43:00+03:00
 tags: ["science-writing", "markdown"]
 categories: ["computer-science"]
 draft: false
@@ -144,8 +144,19 @@ flowchart LR
 -   [Quarto. Плагины]({{< relref "2025-09-03--quarto-plugins" >}})
 -   [Quarto. Профили]({{< relref "2025-10-08--quarto-profiles" >}})
 -   [Quarto. Подключение файлов]({{< relref "2025-11-19--quarto-include-file" >}})
+-   [Quarto. Использование переменных]({{< relref "2026-01-31--quarto-variables" >}})
+-   [Quarto. Библиография]({{< relref "2026-02-01--quarto-bibliography" >}})
+-   [Quarto. subfigures]({{< relref "2026-02-01--quarto-subfigures" >}})
 
 
 ## <span class="section-num">6</span> Ресурсы {#ресурсы}
 
+
+### <span class="section-num">6.1</span> Шаблоны {#шаблоны}
+
 -   Набор шаблонов для дипломов: <https://github.com/Jupyter4Science/awesome-quarto-thesis>
+
+
+### <span class="section-num">6.2</span> Рекомендации {#рекомендации}
+
+-   Quarto for Scientists: <https://qmd4sci.njtierney.com>

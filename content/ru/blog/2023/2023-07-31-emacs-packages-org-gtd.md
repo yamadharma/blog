@@ -2,7 +2,7 @@
 title: "Emacs. Пакеты. Org-gtd"
 author: ["Dmitry S. Kulyabov"]
 date: 2023-07-31T18:24:00+03:00
-lastmod: 2023-08-27T19:07:00+03:00
+lastmod: 2026-02-04T14:49:00+03:00
 tags: ["emacs", "gtd"]
 categories: ["computer-science"]
 draft: false
@@ -20,6 +20,50 @@ slug: "emacs-packages-org-gtd"
 
 -   Репозиторий: <https://github.com/Trevoke/org-gtd.el>
 -   Пакет пытается максимально точно воспроизвести рабочий процесс GTD (см. [Метод GTD]({{< relref "2021-07-12-gtd-method" >}})).
+
+<!--listend-->
+
+```mermaid
+graph TD
+    STUFF["STUFF"]
+    INBOX[INBOX]
+    A{What is it?}
+    B{Is it Actionable?}
+    Trash[Trash]
+    Someday[Someday/Maybe]
+    Reference[Reference]
+    Projects[Projects]
+    Planning[Planning]
+    C{What's the NEXT Action?}
+    DO[DO IT]
+    Waiting[Waiting For]
+    NextActions[Next Actions]
+    Calendar[Calendar]
+
+    STUFF --> INBOX
+    INBOX --> A
+    A --> B
+
+
+    B -- NO --> Trash
+    B -- NO --> Someday
+    B -- NO --> Reference
+
+    B -- YES --> C
+
+    C -- "Less than 2 minutes" --> DO
+
+    C -- Delegate --> Waiting
+
+    C -- "ASAP" --> NextActions
+    C -- "Specific Date or Time" --> Calendar
+
+
+    B -- "YES (multi-step)" --> Projects
+    Projects --> Planning
+    Planning --> C
+
+```
 
 
 ## <span class="section-num">2</span> Режимы {#режимы}

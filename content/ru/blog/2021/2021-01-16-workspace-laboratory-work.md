@@ -2,7 +2,7 @@
 title: "Рабочее пространство для лабораторной работы"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-01-16T12:51:00+03:00
-lastmod: 2025-09-07T16:10:00+03:00
+lastmod: 2026-02-01T21:37:00+03:00
 tags: ["education"]
 categories: ["computer-science", "science"]
 draft: false
@@ -291,12 +291,14 @@ slug: "workspace-laboratory-work"
 
 ## <span class="section-num">5</span> Шаблон для рабочего пространства {#шаблон-для-рабочего-пространства}
 
--   Репозиторий: <https://github.com/yamadharma/course-directory-student-template>.
+-   Репозиторий:
+    -   <https://gitverse.ru/dharma/course-directory-student-template>
+    -   <https://github.com/yamadharma/course-directory-student-template>.
 
 
 ### <span class="section-num">5.1</span> Сознание репозитория курса на основе шаблона {#сознание-репозитория-курса-на-основе-шаблона}
 
--   Репозиторий на основе шаблона можно создать либо вручную, через web-интерфейс, либо с помощью утилит `gh` (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})).
+-   Репозиторий на основе шаблона можно создать либо вручную, через web-интерфейс, либо с помощью утилит `gh` для github (см. [github: утилиты командной строки]({{< relref "2021-08-04-github-command-line-utilities" >}})).
 
 
 #### <span class="section-num">5.1.1</span> Создание с помощью утилит {#создание-с-помощью-утилит}
@@ -305,7 +307,7 @@ slug: "workspace-laboratory-work"
     ```shell
     gh repo create <new-repo-name> --template="<owner/template-repo>"
     ```
--   Например, для 2024-2025 учебного года и предмета «Операционные системы» (аббревиатура предмета --- `os-intro`) создание репозитория примет следующий вид:
+-   Например, для 2025-2026 учебного года и предмета «Операционные системы» (аббревиатура предмета --- `os-intro`) создание репозитория примет следующий вид:
     ```shell
     mkdir -p ~/work/study/2026-1/2026-1==study--os-intro
     cd ~/work/study/2026-1/2026-1==study--os-intro
@@ -317,6 +319,13 @@ slug: "workspace-laboratory-work"
 #### <span class="section-num">5.1.2</span> Создание вручную {#создание-вручную}
 
 -   Сделать свой репозиторий на основе шаблона можно и вручную: <https://docs.github.com/ru/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>.
+-   Авторизуйтесь на <https://gitverse.ru>.
+-   Перейдите в репозиторий <https://gitverse.ru/dharma/course-directory-student-template>.
+-   Найдите кнопку (ссылку) «Использовать как шаблон» <https://gitverse.ru/new?template_id=195300>.
+-   После нажатия откроется форма для создания нового репозитория.
+-   Укажите название и описание для вашего нового проекта.
+-   Выберите уровень доступа (публичный).
+-   Нажмите кнопку для подтверждения создания.
 
 
 ### <span class="section-num">5.2</span> Структура шаблона {#структура-шаблона}

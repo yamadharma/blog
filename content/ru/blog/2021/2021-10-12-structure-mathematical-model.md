@@ -2,7 +2,7 @@
 title: "Структура математической модели"
 author: ["Dmitry S. Kulyabov"]
 date: 2021-10-12T19:46:00+03:00
-lastmod: 2023-06-28T17:51:00+03:00
+lastmod: 2026-02-02T15:12:00+03:00
 tags: ["modeling"]
 categories: ["science"]
 draft: false
@@ -18,7 +18,8 @@ slug: "structure-mathematical-model"
 
 ## <span class="section-num">1</span> Структура математической модели {#структура-математической-модели}
 
--   Моделирование как дисциплина охватывает разные типы модельных подходов. С нашей точки зрения эти подходы можно схематически описать единым образом. В данном случае структура исследования состоит из операциональных и теоретических частей. Операциональные части представлены процедурами приготовления системы и измерения. Также распространено описание операциональной части как входных и выходных данных.
+-   Моделирование как дисциплина охватывает разные типы модельных подходов. С нашей точки зрения эти подходы можно схематически описать единым образом. В данном случае структура исследования состоит из операциональных и теоретических частей.
+-   Операциональные части представлены процедурами приготовления системы и измерения. Также распространено описание операциональной части как входных и выходных данных.
 
 -   Теоретическая часть состоит из двух слоёв: модельного слоя и слоя реализации. Слой реализации описывает конкретную структуру эволюции системы.
 
@@ -60,5 +61,5 @@ slug: "structure-mathematical-model"
 ## Литература
 
 <div class="csl-bib-body">
-  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Sevastianov L. A. <a href="http://ceur-ws.org/Vol-2507/272-275-paper-48.pdf">Structural approach to the deep learning method</a> / L. A. Sevastianov, A. L. Sevastianov, E. A. Ayrjan [и др.] // Proceedings of the 27th symposium on nuclear electronics and computing (nec-2019) : Ceur workshop proceedings / ред. V. Korenkov [и др.]. – Budva, 2019. – Т. 2507. – Сс. 272–275.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>1.	Sevastianov, L.A. <a href="http://ceur-ws.org/Vol-2507/272-275-paper-48.pdf">Structural Approach to the Deep Learning Method</a> / L.A. Sevastianov, A.L. Sevastianov, E.A. Ayrjan и др. // Proceedings of the 27th Symposium on Nuclear Electronics and Computing (NEC-2019) : CEUR Workshop Proceedings / V. Korenkov и др. ред. . – Budva, 2019. – Т. 2507. – Сс. 272–275.</div>
 </div>
